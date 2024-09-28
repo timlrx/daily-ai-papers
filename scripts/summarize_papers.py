@@ -6,20 +6,33 @@ updates the README with the summaries, and cleans up temporary files.
 """
 
 # Standard library imports
-import enum
 import json
 import os
 import time
-from rich import print
 from datetime import datetime
 from typing import List, Optional
 
 # Third party imports
 import google.generativeai as genai
-from scripts.schemas import PaperResponse
+from scripts.schemas import ClassificationChoices, PaperResponse
 
 # Configure the Gemini API
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+
+
+categories_of_interest = [
+    ClassificationChoices.MULTIMODAL,
+    ClassificationChoices.TEXT_GENERATION,
+    ClassificationChoices.TEXT_CLASSIFICATION,
+    ClassificationChoices.TEXT2TEXT_GENERATION,
+    ClassificationChoices.SUMMARIZATION,
+    ClassificationChoices.QUESTION_ANSWERING,
+    ClassificationChoices.NATURAL_LANGUAGE_PROCESSING,
+    ClassificationChoices.AUDIO,
+    ClassificationChoices.TEXT_TO_SPEECH,
+    ClassificationChoices.AUDIO_TO_AUDIO,
+]
+categories_of_interest = [category.value for category in categories_of_interest]
 
 
 def summarize_paper(
@@ -152,14 +165,15 @@ def update_readme(date_str: str, papers: List[PaperResponse]) -> None:
             else "N/A"
         )
 
-        new_content += (
-            f"| {paper['title']} (Read more on [arXiv]({paper['link']})) "
-            f"| {paper['authors']} "
-            f"| {summary_text} "
-            f"| {classification} "
-            f"| {github_links} "
-            f"| {huggingface_links} |\n"
-        )
+        if any(cls in categories_of_interest for cls in classification):
+            new_content += (
+                f"| [{paper['title']}]({paper['link']}) "
+                f"| {paper['authors']} "
+                f"| {summary_text} "
+                f"| {classification} "
+                f"| {github_links} "
+                f"| {huggingface_links} |\n"
+            )
 
     # Archive the markdown content
     archive_markdown(date_str, new_content)
@@ -184,7 +198,9 @@ def update_readme(date_str: str, papers: List[PaperResponse]) -> None:
         intro_content = f.read()
 
     # Add the date to the intro
-    intro_content = intro_content.replace("{DATE}", f"{date_str} \n \n")
+    intro_content = intro_content.replace("{DATE}", f"{date_str} \n \n").replace(
+        "{CATEGORIES_OF_INTEREST}", ", ".join(categories_of_interest)
+    )
 
     # Remove the existing header
     front_content = existing_content.split("## Papers for")[0]
@@ -216,13 +232,12 @@ def main(date: Optional[str] = None) -> None:
                 title=paper["title"],
                 authors=paper["authors"],
                 pdf_path=paper["pdf_path"],
-                model_name="gemini-1.5-flash",
+                model_name="gemini-1.5-pro",
                 # Replace null values with empty strings
                 github_repo=paper.get("github_repo", ""),
             )
-            print(summary)
             summaries.append({**paper, "summary": summary})
-            time.sleep(10)  # Sleep for 1 minute to avoid rate limiting
+            time.sleep(60)  # Sleep for 1 minute to avoid rate limiting
         except Exception:
             try:
                 print(
@@ -240,13 +255,12 @@ def main(date: Optional[str] = None) -> None:
                     f"Failed to summarize paper {paper['title']} with both models. Due to {e}"
                 )
                 continue
-    print(summaries)
     update_readme(date, summaries)
 
     # Clean up temporary PDF files
-    # for paper in papers:
-    #     if os.path.exists(paper["pdf_path"]):
-    #         os.remove(paper["pdf_path"])
+    for paper in papers:
+        if os.path.exists(paper["pdf_path"]):
+            os.remove(paper["pdf_path"])
 
 
 if __name__ == "__main__":

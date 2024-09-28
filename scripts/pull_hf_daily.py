@@ -10,7 +10,7 @@ import json
 import os
 import re
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 # Third party imports
 import requests
@@ -39,12 +39,20 @@ def download_pdf(arxiv_id: str, save_path: str) -> bool:
     return False
 
 
-def pull_hf_daily() -> None:
+def pull_hf_daily(date: Optional[str] = None) -> None:
     """
     Pulls the daily papers from Hugging Face's papers page, downloads their PDFs,
-    and saves their information in a JSON file.
+    extracts GitHub and Hugging Face links, and saves their information in a JSON file.
+
+    Parameters:
+    - date (str, optional): Date for the file naming convention (YYYY-MM-DD).
+                            Defaults to today's date if not specified.
     """
-    response = requests.get(HF_URL)
+    # Use today's date if not specified
+    if not date:
+        date = datetime.now().strftime("%Y-%m-%d")
+
+    response = requests.get(f"{HF_URL}?date={date}")
     soup = BeautifulSoup(response.content, "html.parser")
 
     papers: List[Dict[str, str]] = []
@@ -89,6 +97,16 @@ def pull_hf_daily() -> None:
         # Create the full link to the paper
         full_link = f"https://arxiv.org/abs/{arxiv_id}"
 
+        # Visit the arXiv page to check for GitHub links
+        paper_page = requests.get(full_link)
+        paper_soup = BeautifulSoup(paper_page.content, "html.parser")
+
+        # Extract GitHub repository link if present
+        github_repo = None
+        github_link_tag = paper_soup.find("a", href=re.compile(r"github\.com"))
+        if github_link_tag:
+            github_repo = github_link_tag["href"]
+
         # Attempt to download the PDF
         pdf_path = os.path.join(temp_pdf_dir, f"{arxiv_id}.pdf")
         if download_pdf(arxiv_id, pdf_path):
@@ -97,18 +115,20 @@ def pull_hf_daily() -> None:
                     "title": title,
                     "authors": ", ".join(authors),
                     "link": full_link,
+                    "github_repo": github_repo,  # Add GitHub repository if present
                     "pdf_path": pdf_path,
                 }
             )
         else:
             print(f"Failed to download PDF for {arxiv_id}")
 
-    date = datetime.now().strftime("%Y-%m-%d")
+    # Ensure 'data' directory exists
     data_dir = "data"
     print(f"Ensuring data directory exists: {data_dir}")
     os.makedirs(data_dir, exist_ok=True)  # Create 'data' directory if it doesn't exist
     data_file_path = os.path.join(data_dir, f"{date}_papers.json")
 
+    # Write data to JSON
     print(f"Writing data to {data_file_path}")
     with open(data_file_path, "w") as f:
         json.dump(papers, f, indent=2)

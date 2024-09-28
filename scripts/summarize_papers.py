@@ -9,7 +9,6 @@ updates the README with the summaries, and cleans up temporary files.
 import json
 import os
 import time
-from rich import print
 from datetime import datetime
 from typing import List, Optional
 

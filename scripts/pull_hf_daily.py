@@ -136,4 +136,4 @@ def pull_hf_daily(date: Optional[str] = None) -> None:
 
 
 if __name__ == "__main__":
-    pull_hf_daily()
+    pull_hf_daily("2024-09-26")

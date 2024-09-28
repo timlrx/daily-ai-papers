@@ -184,6 +184,7 @@ def update_readme(date_str: str, papers: List[PaperResponse]) -> None:
         summary_data = json.loads(paper["summary"])
         paper.update(summary_data)
         paper.pop("pdf_path", None)
+        paper["date"] = date_str
 
     # Write the new content to the archive
     save_daily_results(date_str, papers)

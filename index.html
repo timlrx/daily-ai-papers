@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Results Table</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: #f0f2f5;
+        --text-color: #333;
+        --table-bg: #fff;
+        --table-header-bg: #f8f9fa;
+        --table-border: #e0e0e0;
+        --table-hover: #f5f8ff;
+        --button-bg: #e0e0e0;
+        --button-active: #007bff;
+        --button-text: #333;
+        --button-active-text: white;
+        --link-color: #007bff;
+        --github-bg: #24292e;
+        --huggingface-bg: #ff9d00;
+        --input-bg: #fff;
+        --input-text: #333;
+        --input-border: #ced4da;
+      }
+
+      .dark-mode {
+        --bg-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --table-bg: #2c2c2c;
+        --table-header-bg: #3a3a3a;
+        --table-border: #4a4a4a;
+        --table-hover: #3c3c3c;
+        --button-bg: #3a3a3a;
+        --button-active: #0056b3;
+        --button-text: #f0f0f0;
+        --button-active-text: #f0f0f0;
+        --link-color: #66b3ff;
+        --github-bg: #4a4a4a;
+        --huggingface-bg: #b36b00;
+        --input-bg: #2c2c2c;
+        --input-text: #f0f0f0;
+        --input-border: #4a4a4a;
+      }
+
+      body,
+      html {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        height: 100%;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .container {
+        padding: 20px;
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--text-color);
+        margin-bottom: 20px;
+      }
+
+      #categoryTabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .category-tab {
+        padding: 8px 16px;
+        background-color: var(--button-bg);
+        color: var(--button-text);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .category-tab.active {
+        background-color: var(--button-active);
+        color: var(--button-active-text);
+      }
+
+      .dataTables_wrapper {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .dataTables_filter {
+        float: left !important;
+        margin-bottom: 10px;
+      }
+
+      .dataTables_filter input {
+        width: 300px;
+        padding: 6px 10px;
+        border: 1px solid var(--input-border);
+        border-radius: 4px;
+        background-color: var(--input-bg);
+        color: var(--input-text);
+      }
+
+      .dataTables_length {
+        float: right !important;
+        margin-bottom: 10px;
+      }
+
+      .dataTables_length select {
+        padding: 6px 10px;
+        border: 1px solid var(--input-border);
+        border-radius: 4px;
+        background-color: var(--input-bg);
+        color: var(--input-text);
+      }
+
+      .dataTables_scroll {
+        flex-grow: 1;
+        overflow: auto;
+      }
+
+      table.dataTable {
+        width: 100% !important;
+        margin: 0 !important;
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: var(--table-bg);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      table.dataTable thead th {
+        background-color: var(--table-header-bg);
+        color: var(--text-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 15px 10px;
+        border-bottom: 2px solid var(--table-border);
+        white-space: nowrap;
+      }
+
+      table.dataTable tbody td {
+        padding: 12px 10px;
+        border-bottom: 1px solid var(--table-border);
+        color: var(--text-color);
+        background-color: var(--table-bg);
+      }
+
+      table.dataTable tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      table.dataTable tbody tr:hover {
+        background-color: var(--table-hover);
+      }
+
+      table.dataTable tbody tr:hover td {
+        background-color: var(--table-hover);
+      }
+
+      .github-link,
+      .huggingface-link {
+        display: inline-block;
+        padding: 4px 8px;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.9em;
+        transition: opacity 0.3s ease;
+      }
+
+      .github-link:hover,
+      .huggingface-link:hover {
+        opacity: 0.8;
+      }
+
+      .github-link {
+        background-color: var(--github-bg);
+      }
+
+      .huggingface-link {
+        background-color: var(--huggingface-bg);
+      }
+
+      .dataTables_info,
+      .dataTables_paginate {
+        margin-top: 15px;
+        color: var(--text-color);
+      }
+
+      .paginate_button {
+        padding: 5px 10px;
+        margin: 0 2px;
+        border: 1px solid var(--table-border);
+        border-radius: 4px;
+        cursor: pointer;
+        color: var(--text-color);
+        background-color: var(--table-bg);
+      }
+
+      .paginate_button.current {
+        background-color: var(--button-active);
+        color: var(--button-active-text);
+        border-color: var(--button-active);
+      }
+
+      a {
+        color: var(--link-color);
+      }
+
+      /* Theme toggle switch */
+      .theme-switch-wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+
+      .theme-switch {
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        width: 60px;
+      }
+
+      .theme-switch input {
+        display: none;
+      }
+
+      .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: 0.4s;
+        width: 26px;
+      }
+
+      input:checked + .slider {
+        background-color: #66b3ff;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+      .theme-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        color: #f0f0f0;
+        font-size: 14px;
+      }
+
+      .sun-icon {
+        left: 8px;
+      }
+
+      .moon-icon {
+        right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round">
+          <i class="fas fa-sun theme-icon sun-icon"></i>
+          <i class="fas fa-moon theme-icon moon-icon"></i>
+        </div>
+      </label>
+    </div>
+    <div class="container">
+      <h1>Research Results Table</h1>
+      <div id="categoryTabs"></div>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Authors</th>
+            <th>Summary</th>
+            <th>Classification</th>
+            <th>GitHub</th>
+            <th>HuggingFace</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be inserted here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        let classifications = new Set();
+        let activeCategories = new Set();
+
+        // Theme toggle functionality
+        const toggleSwitch = document.querySelector(
+          '.theme-switch input[type="checkbox"]'
+        );
+        function switchTheme(e) {
+          if (e.target.checked) {
+            document.documentElement.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+          } else {
+            document.documentElement.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+          }
+        }
+        toggleSwitch.addEventListener("change", switchTheme, false);
+
+        // Check for saved theme preference
+        const currentTheme = localStorage.getItem("theme");
+        if (currentTheme) {
+          document.documentElement.classList[
+            currentTheme === "dark" ? "add" : "remove"
+          ]("dark-mode");
+          toggleSwitch.checked = currentTheme === "dark";
+        }
+
+        $.getJSON("consolidated_results.json", function (data) {
+          let tableBody = "";
+          data.forEach(function (item) {
+            item.classification.forEach((c) => classifications.add(c));
+            tableBody += `
+                        <tr>
+                            <td><a href="${item.link}" target="_blank">${
+              item.title
+            }</a></td>
+                            <td>${item.authors}</td>
+                            <td>${item.summary}</td>
+                            <td>${item.classification.join(", ")}</td>
+                            <td>${
+                              item.github_urls
+                                .map(
+                                  (url) =>
+                                    `<a href="${url}" class="github-link" target="_blank">GitHub</a>`
+                                )
+                                .join(" ") || "N/A"
+                            }</td>
+                            <td>${
+                              item.huggingface_urls
+                                .map(
+                                  (url) =>
+                                    `<a href="${url}" class="huggingface-link" target="_blank">HuggingFace</a>`
+                                )
+                                .join(" ") || "N/A"
+                            }</td>
+                            <td>${item.date}</td>
+                        </tr>
+                    `;
+          });
+          $("#resultsTable tbody").html(tableBody);
+
+          // Create category tabs
+          classifications.forEach((c) => {
+            $("#categoryTabs").append(
+              `<button class="category-tab" data-category="${c}">${c}</button>`
+            );
+          });
+
+          // Initialize DataTable
+          let table = $("#resultsTable").DataTable({
+            responsive: true,
+            order: [[6, "desc"]], // Sort by date column (index 6) in descending order
+            pageLength: 10,
+            lengthMenu: [
+              [10, 25, 50, -1],
+              [10, 25, 50, "All"],
+            ],
+            scrollY: "calc(100vh - 250px)", // Adjust based on your header/filter height
+            scrollCollapse: true,
+            dom: '<"top"lf>rt<"bottom"ip><"clear">',
+          });
+
+          // Custom filtering function
+          $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+            if (activeCategories.size === 0) return true;
+            let rowClassifications = data[3].split(", "); // Classification is in the 4th column
+            return rowClassifications.some((rc) => activeCategories.has(rc));
+          });
+
+          // Event listener for category tabs
+          $(".category-tab").on("click", function () {
+            let category = $(this).data("category");
+            $(this).toggleClass("active");
+            if (activeCategories.has(category)) {
+              activeCategories.delete(category);
+            } else {
+              activeCategories.add(category);
+            }
+            table.draw();
+          });
+
+          // Adjust table height on window resize
+          $(window).resize(function () {
+            table.draw();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

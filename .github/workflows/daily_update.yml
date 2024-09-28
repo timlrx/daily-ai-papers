@@ -2,8 +2,8 @@ name: Daily Paper Update
 
 on:
   schedule:
-    - cron: '0 12 * * 1-5'  # Run Monday to Friday at 12 noon UTC
-  workflow_dispatch:  # Allow manual triggering
+    - cron: "0 12 * * 1-5" # Run Monday to Friday at 12 noon UTC
+  workflow_dispatch: # Allow manual triggering
 
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
         run: |
@@ -45,7 +45,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Download PDFs and JSON
         uses: actions/download-artifact@v4
@@ -60,6 +60,7 @@ jobs:
       - name: Run paper summarization
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONPATH: "."
         run: |
           python scripts/summarize_papers.py
 

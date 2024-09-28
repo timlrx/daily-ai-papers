@@ -1,0 +1,170 @@
+[
+    {
+        "title": "Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Multimodal Models",
+        "authors": "SMSD75, jamepark3922, yyupenn, sharpen, mattdeitke",
+        "link": "https://arxiv.org/abs/2409.17146",
+        "github_repo": null,
+        "summary": "This paper introduces Molmo, a family of open-weight and open-data multimodal models for image captioning and visual question answering. The authors curate a novel dataset, PixMo, which includes detailed image descriptions from human annotators and diverse question-answer pairs. Molmo achieves state-of-the-art performance on 11 academic benchmarks, matching or surpassing proprietary models like GPT-4V and exceeding Gemini 1.5 Pro and Flash on certain tasks. Human evaluation further supports Molmo's efficacy, demonstrating its competitive performance against both open and closed models.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "Programming Every Example: Lifting Pre-training Data Quality like Experts at Scale",
+        "authors": "Qian Liu, Pengfei, lockon, SinclairWang, koalazf99",
+        "link": "https://arxiv.org/abs/2409.17115",
+        "github_repo": "https://github.com/GAIR-NLP/ProX",
+        "summary": "\u2022 This paper introduces Programming Every Example (PROX), a framework that utilizes small language models to refine pre-training corpora at scale by generating and executing data processing programs for each example. \u2022 Experimental results demonstrate that PROX-curated data consistently improves downstream task performance by over 2% on average and surpasses existing data selection methods. \u2022 PROX shows efficacy across different model sizes and pre-training corpora, achieving comparable performance to models trained on 20x larger datasets, especially in domain-specific continual pre-training. \u2022 Further analysis indicates PROX leads to more efficient pre-training, requiring less computing power for comparable performance, highlighting its potential for reducing training costs and enabling wider access to LLM development. \u2022 The authors propose future directions such as incorporating more refining operations and expanding PROX to other domains like code and multilingual data.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/GAIR-NLP/ProX"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/gair-prox"
+        ]
+    },
+    {
+        "title": "Boosting Healthcare LLMs Through Retrieved Context",
+        "authors": "Ashwin Kumar Gururajan, dariog, JordiBayarri",
+        "link": "https://arxiv.org/abs/2409.15127",
+        "github_repo": null,
+        "summary": " - This paper presents a context retrieval system designed to enhance the accuracy and reliability of Large Language Models (LLMs) for medical question answering, specifically focusing on multiple-choice question answering (MCQA).\n -  The authors demonstrate that their optimized context retrieval system significantly boosts the performance of various open-source LLMs on four benchmark medical MCQA datasets, achieving results comparable to, and even surpassing, much larger private models like Google's MedPalm-2 and OpenAI's GPT-4.\n -  The paper investigates the impact of different components within the context retrieval framework, such as choice shuffling, number of ensembles, embedding models, databases, and reranking models, leading to recommendations for optimal configuration based on empirical findings.\n - Acknowledging the limitations of MCQA in real-world clinical settings, the authors extend their approach to develop OpenMedprompt, a novel framework specifically designed for open-ended medical question answering.\n - Two OpenMedprompt strategies, Ensemble Refining (OM-ER) and Self-Reflection (OM-SR), are introduced and evaluated, showing promising results in improving open-ended answer generation accuracy compared to baseline approaches. ",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "AIM 2024 Sparse Neural Rendering Challenge: Dataset and Benchmark",
+        "authors": "Radu Timofte, Richard Shaw, sibicatleychandar, thomas-tanay, michaal94",
+        "link": "https://arxiv.org/abs/2409.15041",
+        "github_repo": null,
+        "summary": "- This paper introduces SpaRe, a new benchmark and dataset for Sparse Neural Rendering designed to address shortcomings in existing protocols that rely on the DTU dataset.\n- SpaRe consists of 102 synthetic scenes with higher-quality renderings and a setup that closely mimics the DTU capture, facilitating a more robust and fair evaluation of sparse view synthesis.\n-  The proposed benchmark protocol employs full-resolution images, randomized input camera views, and a hidden ground-truth test set to ensure reliable comparisons and prevent overfitting.\n- Experimental results demonstrate that generalizable methods, pretrained on a large and diverse dataset, show superior performance when only 3 input views are available, highlighting their ability to leverage strong object priors.\n- In contrast, per-scene optimization methods perform better with 9 input views, indicating their capacity to effectively utilize a greater number of priors for 3D representation reconstruction.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "DreamWaltz-G: Expressive 3D Gaussian Avatars from Skeleton-Guided 2D Diffusion",
+        "authors": "Lei Zhang, Zheng-Jun Zha, Jianan Wang, alkxncda, KevinHuang",
+        "link": "https://arxiv.org/abs/2409.17145",
+        "github_repo": null,
+        "summary": "This research presents DreamWaltz-G, a novel framework for generating animatable 3D avatars from text descriptions.  - DreamWaltz-G leverages skeleton priors from the SMPL-X human parametric model to guide a score distillation process using pretrained 2D diffusion models, achieving 3D consistency and pose alignment for high-quality outputs. - The method utilizes a hybrid 3D Gaussian representation combining Neural Radiance Fields (NeRF) and 3D meshes, effectively balancing generation quality, efficient SDS optimization, and animation capabilities.  - User studies indicate DreamWaltz-G outperforms existing text-to-3D avatar methods in terms of geometric and appearance quality, as well as alignment with text prompts. - The framework further supports various applications including shape control/editing, talking avatar creation, human video reenactment, and multi-subject 3D scene composition.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "Synchronize Dual Hands for Physics-Based Dexterous Guitar Playing",
+        "authors": "Pei Xu, rcwang",
+        "link": "https://arxiv.org/abs/2409.16629",
+        "github_repo": null,
+        "summary": "This paper proposes a novel approach for learning physics-based bimanual control, specifically for the task of guitar playing. The key innovation is a two-step training process: first, policies are trained separately for each hand (left and right), and then these policies are synchronized in a centralized environment to generate synchronized two-hand motions. The approach significantly outperforms prior methods, particularly in terms of temporal precision and smoothness of the generated motions. The approach achieves high accuracy in generating physically plausible motions for diverse guitar-playing techniques and rhythms, which were not included in the training data. The paper also introduces a new motion capture dataset, which is publicly available, capturing over an hour of data from a professional guitarist. The approach has promising implications for creating realistic and compelling virtual music performances, particularly for instruments like guitars.",
+        "classification": [
+            "Robotics"
+        ]
+    },
+    {
+        "title": "NoTeeline: Supporting Real-Time Notetaking from Keypoints with Large Language Models",
+        "authors": "Jeffrey P. Bigham, Xiaodi Alice Tang, David Chuan-en Lin, Abdus Samee, oaishi",
+        "link": "https://arxiv.org/abs/2409.16493",
+        "github_repo": null,
+        "summary": "This paper introduces NoTeeline, a novel system for real-time notetaking from videos that leverages large language models (LLMs). NoTeeline allows users to jot down concise \"micronotes\" and expands them into full-fledged notes reflecting the user's writing style using contextual information from video transcripts and prior user notes. The user study demonstrated that NoTeeline significantly reduced notetaking time and text length compared to a baseline note-taking application, while also increasing the number of notes taken and reducing disruptions during video watching. Furthermore, NoTeeline achieved high factual consistency (93.2%) in generated notes and received positive feedback from users for its ability to capture essential information, maintain writing style, and facilitate efficient note organization and review.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale",
+        "authors": "Nghi D. Q. Bui, Phong X. Nguyen, Huy Nhat Phan",
+        "link": "https://arxiv.org/abs/2409.16299",
+        "github_repo": null,
+        "summary": " - This paper introduces HyperAgent, a novel generalist multi-agent system designed to address a wide spectrum of software engineering (SE) tasks across different programming languages. \n - HyperAgent achieves state-of-the-art performance across various SE tasks, including a 25.01% success rate on SWE-Bench-Lite and 31.40% on SWE-Bench-Verified for GitHub issue resolution, surpassing existing methods. \n - It also demonstrates superior performance in code generation at repository scale (RepoExec) and fault localization and program repair (Defects4J), often outperforming specialized systems. \n - HyperAgent comprises four specialized agents \u2013 Planner, Navigator, Code Editor, and Executor \u2013 mimicking human developers' workflows to manage the full lifecycle of SE tasks. \n - The system's adaptability, efficiency, and use of open-source models position it as a practical solution for various SE tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "Game4Loc: A UAV Geo-Localization Benchmark from Game Data",
+        "authors": "Liaoni Wu, Zhuoyue Tan, heboyong, Yux1ang",
+        "link": "https://arxiv.org/abs/2409.16925",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces GTA-UAV, a novel benchmark dataset for UAV geo-localization, addressing the limitations of existing datasets by incorporating partial matching between drone-view and satellite-view images, thereby better reflecting real-world scenarios. \n\u2022 The authors propose a weighted contrastive learning method, weighted-InfoNCE, which leverages the intersection over union (IOU) of ground area coverage as weight labels during training, improving retrieval accuracy by enabling the model to better understand partial matching relationships. \n\u2022 Experimental results on GTA-UAV demonstrate that weighted-InfoNCE outperforms existing state-of-the-art methods in various metrics, achieving a 7.74% improvement in Recall@1 and a reduction of 109.29 meters in distance error compared to the baseline InfoNCE. \n\u2022 The paper further highlights the significance of GTA-UAV in improving UAV geo-localization in real-world scenarios by showing its superior transferability to real-world datasets with limited data, outperforming models pretrained on other datasets in zero-shot and fine-tuning settings.",
+        "classification": [
+            "Image Feature Extraction",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "Degradation-Guided One-Step Image Super-Resolution with Diffusion Priors",
+        "authors": "Renjing Pei, Aiping Zhang, cxc361461518, Akowang, OAOA",
+        "link": "https://arxiv.org/abs/2409.17058",
+        "github_repo": "https://github.com/ArcticHare105/S3Diff",
+        "summary": "\u2022 This research introduces S3Diff, a novel one-step image super-resolution model that leverages a pre-trained text-to-image (T2I) diffusion model, significantly improving inference speed compared to multi-step diffusion-based methods. \n\u2022 The authors propose a degradation-guided Low-Rank Adaptation (LoRA) module to fine-tune the T2I model, which effectively incorporates degradation information from low-resolution images, enabling data-dependent model adaptation. \n\u2022 The paper also introduces an online negative prompting strategy during training, further enhancing the model's ability to distinguish between high- and low-quality images. \n\u2022 Experimental results demonstrate that S3Diff outperforms state-of-the-art methods on both synthetic and real-world datasets in terms of perceptual quality, achieving superior scores on metrics like LPIPS, DISTS, and FID, while maintaining competitive performance on reference metrics like PSNR and SSIM.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/ArcticHare105/S3Diff"
+        ],
+        "huggingface_urls": []
+    },
+    {
+        "title": "TalkinNeRF: Animatable Neural Fields for Full-Body Talking Humans",
+        "authors": "Rakesh Ranjan, Amit Kumar, Bindita Chaudhuri, nsarafianos, aggelina",
+        "link": "https://arxiv.org/abs/2409.16666",
+        "github_repo": null,
+        "summary": "This paper introduces TalkinNeRF, a novel dynamic neural radiance field (NeRF) model that generates videos of full-body talking humans from monocular videos, combining body pose, hand articulation, and facial expressions. TalkinNeRF utilizes a multi-identity representation, enabling simultaneous training on multiple identities, enhancing robustness to novel poses, and reducing training time.  Evidence suggests that TalkinNeRF outperforms state-of-the-art NeRF-based works, HumanNeRF and MonoHuman, in synthesizing high-quality videos of talking humans under novel poses and with fine-grained articulation, as evidenced by quantitative metrics like PSNR, SSIM, and LPIPS, particularly in challenging scenarios such as novel pose rendering from different identities. The model also demonstrates successful adaptation to novel identities not present in the training dataset and can generate speech-driven poses from audio prompts using a speech-to-motion model.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Video",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": []
+    },
+    {
+        "title": "Self-Supervised Any-Point Tracking by Contrastive Random Walks",
+        "authors": "Andrew Owens, ayshrv",
+        "link": "https://arxiv.org/abs/2409.16288",
+        "github_repo": "https://github.com/ayshrv/gmrw/",
+        "summary": "\u2022 The paper introduces a self-supervised method for long-range point tracking in videos, addressing the Tracking Any Point (TAP) task.\n\u2022 The method leverages a global matching transformer architecture, trained through cycle consistency using a contrastive random walk approach.\n\u2022 The authors demonstrate their method's effectiveness on the TAP-Vid benchmark, outperforming existing self-supervised tracking methods and achieving competitive results against supervised approaches.\n\u2022 The paper also highlights the importance of addressing shortcut solutions in cycle-consistent training for global matching models and introduces label warping as a remedy.\n\u2022 Overall, the research signifies progress towards developing effective self-supervised learning methods for complex video understanding tasks like long-range point tracking.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Image",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ayshrv/gmrw/"
+        ],
+        "huggingface_urls": []
+    }
+]

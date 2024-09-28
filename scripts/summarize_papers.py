@@ -9,6 +9,7 @@ updates the README with the summaries, and cleans up temporary files.
 import json
 import os
 import time
+from rich import print
 from datetime import datetime
 from typing import List, Optional
 
@@ -248,6 +249,7 @@ def main(date: Optional[str] = None) -> None:
                     authors=paper["authors"],
                     pdf_path=paper["pdf_path"],
                     model_name="gemini-1.5-flash",
+                    github_repo=paper.get("github_repo", ""),
                 )
                 summaries.append({**paper, "summary": summary})
             except Exception as e:
@@ -264,4 +266,4 @@ def main(date: Optional[str] = None) -> None:
 
 
 if __name__ == "__main__":
-    main("2024-09-26")
+    main()

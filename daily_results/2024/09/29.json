@@ -1,0 +1,191 @@
+[
+    {
+        "title": "MaskLLM: Learnable Semi-Structured Sparsity for Large Language Models",
+        "authors": "wxcTest, gheinrich, srvm, yinhongxu, Vinnnf",
+        "link": "https://arxiv.org/abs/2409.17481",
+        "github_repo": "https://github.com/NVlabs/MaskLLM",
+        "summary": "\n- MaskLLM, a new learnable pruning method, introduces semi-structured (N:M) sparsity to Large Language Models (LLMs) to reduce computational overhead during inference.\n- Unlike traditional methods that rely on importance criteria, MaskLLM learns N:M patterns as a distribution, using Gumbel Softmax for differentiable sampling, and training these distributions end-to-end.\n- Evaluation on LLMs such as LLaMA-2, Nemotron-4, and GPT-3 shows MaskLLM achieves better perplexity than existing techniques. For example, on Wikitext, MaskLLM achieves a 6.72 perplexity with frozen weights compared to 10 or higher from state-of-the-art methods and 5.12 PPL with dense models.\n- MaskLLM's learnable masks enable transfer learning of sparsity across domains or tasks and can even be customized for lossless application of sparsity for specific downstream tasks.\n- The method successfully scales to large datasets, enabling effective mask learning while leveraging the vast knowledge embedded in LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/NVlabs/MaskLLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "LLaVA-3D: A Simple yet Effective Pathway to Empowering LMMs with 3D-awareness",
+        "authors": "Wenwei Zhang, XihuiLiu, Jiangmiao, taiwang, ChaimZhu",
+        "link": "https://arxiv.org/abs/2409.18125",
+        "github_repo": null,
+        "summary": "-\nLLaVA-3D, a novel framework built upon the 2D large multimodal model (LMM) LLaVA, empowers LMMs with 3D spatial understanding by introducing 3D Patches, integrating 2D patch features with 3D positional embeddings.\n- This model achieves state-of-the-art performance on various 3D tasks, including 3D question answering, captioning, and visual grounding, as demonstrated by its superior results on ScanQA, SQA3D, MMScan QA, Scan2Cap, and ScanRefer benchmarks.\n- LLaVA-3D converges 3.5 times faster than other existing 3D LMMs and maintains strong 2D capabilities by employing joint instruction tuning on 2D and 3D vision-language datasets.\n- The model utilizes efficient 3D pooling strategies like voxelization and farthest point sampling to handle multiple input views effectively, and introduces a novel 2D click-based interaction for 3D understanding and reasoning tasks.\n- Experimental analysis demonstrates the efficacy of 3D patches, the advantage of using pre-trained 2D LMMs, and the impact of different components, such as pooling strategies and multi-view image sampling.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "EMOVA: Empowering Language Models to See, Hear and Speak with Vivid Emotions",
+        "authors": "vikyzeng2, 17day, zhili-liu, gyhdog, KaiChen1998",
+        "link": "https://arxiv.org/abs/2409.18042",
+        "github_repo": null,
+        "summary": "- EMOVA, an end-to-end omni-modal Large Language Model (LLM), is introduced, integrating vision, speech, and text modalities with emotional spoken dialogue capabilities.\n- It leverages a continuous vision encoder for detailed visual understanding and a semantic-acoustic disentangled speech tokenizer/detokenizer for speech processing and emotional control.\n- The model employs a text-centric omni-modal alignment strategy, using text as a bridge to connect different modalities, thus eliminating the need for scarce omni-modal data.\n- EMOVA achieves state-of-the-art performance on both vision-language and speech benchmarks, surpassing existing open-source and some proprietary models.\n- A lightweight style module is incorporated, enabling control over speech styles like emotions and pitches, adding vividness to spoken dialogue.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Speech",
+            "Automatic Speech Recognition",
+            "Text-to-Audio",
+            "Audio-to-Audio",
+            "Visual Question Answering",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Lotus: Diffusion-based Visual Foundation Model for High-quality Dense Prediction",
+        "authors": "Leheng Li, Yixun Liang, Wei Yin, Jing He, haodongli",
+        "link": "https://arxiv.org/abs/2409.18124",
+        "github_repo": null,
+        "summary": " - Lotus, a diffusion-based visual foundation model, is introduced for high-quality dense prediction, specializing in depth and normal map estimation.\n- It utilizes a novel single-step diffusion process with direct annotation prediction for improved performance and a detail preserver to enhance predictions in intricate areas.\n- Evaluation on standard datasets like NYUv2, KITTI, ETH3D, ScanNet, iBims-1, and Sintel shows that Lotus achieves state-of-the-art zero-shot results, outperforming competitors trained on much larger datasets, especially Marigold trained with 74K vs 59K images used for training Lotus, achieving an avg. rank between 1.0 - 7.0 vs 1.5 - 2.5 on Lotus across all datasets and metrics.\n- Lotus offers significant efficiency gains, being hundreds of times faster than existing diffusion-based methods.\n- The efficiency and quality enable various applications like joint estimation and 3D reconstruction.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Discovering the Gems in Early Layers: Accelerating Long-Context LLMs with 1000x Input Token Reduction",
+        "authors": "Shafiq Joty, Yingyu Liang, Xuan-Phi Nguyen, Zhenmei Shi, alvinming",
+        "link": "https://arxiv.org/abs/2409.17422",
+        "github_repo": "https://github.com/SalesforceAIResearch/GemFilter",
+        "summary": " - This research introduces GemFilter, a novel algorithm to accelerate Large Language Model (LLM) inference and reduce GPU memory consumption for long context inputs. \n- It leverages the observation that LLMs identify crucial information in early layers by using those layers as filters to select relevant input tokens before full model inference. \n- This approach achieves a 2.4x speedup and 30% reduction in GPU memory usage compared to state-of-the-art methods like SnapKV. \n- Evaluation on Needle in a Haystack and LongBench benchmarks demonstrates GemFilter\u2019s superior performance in information retrieval tasks with long contexts and effectiveness similar to SnapKV and H2O. \n- Moreover, the algorithm is simple, training-free, applicable across diverse LLMs, and offers enhanced interpretability.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/SalesforceAIResearch/GemFilter"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "https://huggingface.co/mistralai/Mistral-Nemo-Base-2407",
+            "https://huggingface.co/microsoft/Phi-3.5-mini-instruct"
+        ],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Pixel-Space Post-Training of Latent Diffusion Models",
+        "authors": "Felix Juefei-Xu, Ji Hou, Matthew Yu, Simran Motwani, Christina Zhang",
+        "link": "https://arxiv.org/abs/2409.17565",
+        "github_repo": null,
+        "summary": " - This research proposes a novel pixel-space post-training method for Latent Diffusion Models (LDMs) to enhance the generation of high-frequency details and complex compositions, which are often imperfect in LDMs.\n- This method addresses the limitations of latent space training by adding pixel-space supervision during post-training, thereby preserving details lost in the compression of the latent space. \n- Human evaluations on a DiT transformer model demonstrate a significant improvement of 18.2% in visual appeal and 23.5% in reduction of visual flaws with supervised fine-tuning, and 17.8% and 11.3% with preference-based fine-tuning using this method compared to a latent-space baseline. \n- This improvement is also validated on U-Net diffusion models, showing a 32.8% improvement on visual flaws with the same fine-tuning dataset. \n- This simple method can be easily integrated into any existing LDM, offering advancements in both supervised and preference-based post-training.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Instruction Following without Instruction Tuning",
+        "authors": "Christopher D. Manning, Percy Liang, Nelson F. Liu, John Hewitt",
+        "link": "https://arxiv.org/abs/2409.14254",
+        "github_repo": null,
+        "summary": "\n- This paper introduces the concept of implicit instruction tuning, where language models exhibit instruction-following behavior through training methods not explicitly designed for this purpose. \n- Two forms of implicit instruction tuning are explored: response tuning (training only on responses without corresponding instructions), and single-task fine-tuning (training on narrow-domain data). \n- Experiments show that response-tuned models achieve competitive win rates against instruction-tuned models in AlpacaEval, suggesting a pre-existing instruction-response mapping within pretrained models. \n- Single-task fine-tuning on diverse datasets also yields general instruction-following behavior, demonstrating that learning the distribution of desirable responses can generalize beyond the narrow training domain. \n- A rule-based language model with three simple rules is introduced, which, when combined with a pretrained model, exhibits instruction following, providing evidence for the simplicity of the mapping from pretrained to instruction-following distributions.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/john-hewitt/implicit-ins"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "The Imperative of Conversation Analysis in the Era of LLMs: A Survey of Tasks, Techniques, and Trends",
+        "authors": "Longze Chen, Minzheng Wang, Yongbin Li, Haiyang Yu, Xinghua Zhang",
+        "link": "https://arxiv.org/abs/2409.14195",
+        "github_repo": null,
+        "summary": " - This paper surveys Conversation Analysis (CA) tasks, techniques, and trends, focusing on extracting actionable insights from conversation data in the Large Language Model (LLM) era.\n- It defines CA as a four-step process: scene reconstruction, causality analysis, skill enhancement, and conversation generation, aimed at continuous goal-directed optimization of conversations.\n- The paper reviews existing CA datasets and metrics, highlighting the lack of comprehensive datasets with detailed scene elements and the gap between shallow analysis results and business needs.\n- It also discusses the shift towards deeper semantic understanding, more flexible task formulations, and first-person interactive simulation modeling with the rise of LLMs.\n-  Finally, it outlines future directions, including LLM conversation simulators, fine-grained benchmarks, long-context modeling, in-depth attribution analysis, goal-directed optimization and evaluation, cross-session KV cache, and conversation security.",
+        "classification": [
+            "Natural Language Processing",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Reducing the Footprint of Multi-Vector Retrieval with Minimal Performance Impact via Token Pooling",
+        "authors": "Griffin Adams, Benjamin Clavi\u00e9, NohTow",
+        "link": "https://arxiv.org/abs/2409.14683",
+        "github_repo": null,
+        "summary": "This paper introduces TOKEN POOLING, a method to reduce storage and memory costs for ColBERT multi-vector retrieval method using clustering and average pooling of token representations.\n- Using hierarchical clustering based pooling approach, the method can reduce the vector count by 50% with almost no performance impact on various evaluation datasets.\n- It can achieve even further reduction of vector count by 66% with less than 3% performance degradation.\n- This approach requires no change in architecture and no query-time processing and therefore can be used with any existing ColBERT models.\n- The method is tested on various datasets including BEIR and LoTTe, and with both unquantized and quantized vectors.\n- The result shows that the method consistently reduces storage requirements with minimal impact on performance and can also be used with Japanese ColBERT models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/colbert-ir/colbertv2.0"
+        ],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Enhancing Structured-Data Retrieval with GraphRAG: Soccer Data Case Study",
+        "authors": "P\u00e5l Halvorsen, Michael A. Riegler, Cise Midoglu, Sushant Gautam, Zahra Sepasdar",
+        "link": "https://arxiv.org/abs/2409.17580",
+        "github_repo": null,
+        "summary": "\n- This paper introduces Structured-GraphRAG, a framework designed to enhance information retrieval across structured datasets using knowledge graphs (KGs) and retrieval-augmented generation (RAG).\n- It leverages the structured relationships and rich semantics within KGs to improve retrieval accuracy and context awareness.\n- Compared to traditional RAG and direct data analysis methods on a SoccerNet dataset, Structured-GraphRAG shows improvements in both accuracy and query processing time.\n- The framework's design enables the creation of KGs without requiring deep expertise in graph theory and also effectively reduces the occurence of hallucinations in LLMs.\n- While the demonstration focuses on soccer data, the framework is adaptable to other structured data, offering a powerful tool for diverse applications.",
+        "classification": [
+            "Question Answering",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Robot See Robot Do: Imitating Articulated Object Manipulation with Monocular 4D Reconstruction",
+        "authors": "Qianqian Wang, Brent Yi, Mingxuan Wu, Chung Min Kim, Justin Kerr",
+        "link": "https://arxiv.org/abs/2409.18121",
+        "github_repo": null,
+        "summary": "-\"Robot See Robot Do (RSRD)\" is introduced, a method for robots to imitate articulated object manipulation from a single monocular RGB human demonstration, given a static multi-view object scan.\n- RSRD uses 4D Differentiable Part Models (4D-DPM) to recover 3D part motion from monocular video using part-centric feature fields and iterative optimization with geometric regularizers.\n- The robot replicates demonstrated object trajectories by planning bimanual arm motions inducing the same part motion, focusing on the intended behavior rather than mimicking human hand motions.\n- RSRD achieves an average 87% success rate in each phase (registration, planning, grasping, execution), resulting in a 60% total end-to-end success rate across 90 trials with 9 objects.\n- This is achieved using feature fields from pre-trained vision models without task-specific training, fine-tuning, data collection, or annotation.",
+        "classification": [
+            "Robotics",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    },
+    {
+        "title": "Disco4D: Disentangled 4D Human Generation and Animation from a Single Image",
+        "authors": "Tianwei Zhang, Lei Yang, Zhongang Cai, Shuai Liu, Hui En Pang",
+        "link": "https://arxiv.org/abs/2409.17280",
+        "github_repo": null,
+        "summary": "- Disco4D is a novel Gaussian Splatting framework that generates and animates 4D clothed humans from a single image, outperforming existing methods by disentangling clothing from the human body.\n- Disco4D uses the SMPL-X model for body representation and Gaussian models for clothing, allowing for detailed generation and flexibility.\n- It leverages diffusion models to enhance 3D generation, particularly for occluded parts, and includes an identity encoding for each clothing Gaussian for asset separation.\n- Disco4D supports 4D human animation with vivid dynamics, enabling virtual try-on and avatar customization.\n- User studies confirm that Disco4D generates higher-fidelity outputs and aligns better with original image content compared to competing methods.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-29"
+    }
+]

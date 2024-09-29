@@ -233,7 +233,7 @@ def main(date: Optional[str] = None) -> None:
                 title=paper["title"],
                 authors=paper["authors"],
                 pdf_path=paper["pdf_path"],
-                model_name="gemini-1.5-pro",
+                model_name="gemini-1.5-pro-002",
                 # Replace null values with empty strings
                 github_repo=paper.get("github_repo", ""),
             )
@@ -248,7 +248,7 @@ def main(date: Optional[str] = None) -> None:
                     title=paper["title"],
                     authors=paper["authors"],
                     pdf_path=paper["pdf_path"],
-                    model_name="gemini-1.5-flash",
+                    model_name="gemini-1.5-flash-002",
                     github_repo=paper.get("github_repo", ""),
                 )
                 summaries.append({**paper, "summary": summary})

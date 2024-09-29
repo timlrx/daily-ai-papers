@@ -1,6 +1,21 @@
-Read the AI research paper carefully and summarise it in 4-5 sentences in point form. In the first sentence, state the main contribution of the paper (e.g., a new model, dataset, or technique). If it claims to outperform existing methods, provide evidence to support this claim. 
+Read the AI research paper carefully and return a json containing the summary, classification, github url, and huggingface url.
+
+## Summary
+
+The summary should be 4-5 sentences long in point form. In the first sentence, state the main contribution of the paper (e.g., a new model, dataset, or technique). If it claims to outperform existing methods, provide evidence to support this claim. 
 
 Be formal and academic in your tone.
+
+Follow this template for the summary:
+```md
+- Point 1
+- Point 2
+- Point 3
+- Point 4
+- Point 5
+```
+
+## Classification
 
 Classify the paper into one of the following categories of interest:
 - Multimodal
@@ -60,7 +75,11 @@ Classify the paper into one of the following categories of interest:
 
 Be as specfic as possible when classifying the paper. If the paper does not fit into any of the categories, select "Other".
 
+## GitHub URLs and HuggingFace URLs
+
 Include the github url of the paper (should contain the `github.com` domain) if the paper shares the associated code, as well as the huuggingface url (should contain the `huggingface.co` domain) if there's an available model or dataset as part of the release. Do not include third party links or references that are not directly related to the paper itself. The links should only be for the main paper.
+
+## Additional Information
 
 Here is additional information about the paper:
 Title: {title}

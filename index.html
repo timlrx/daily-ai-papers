@@ -193,6 +193,7 @@
         border-radius: 4px;
         font-size: 0.9em;
         transition: opacity 0.3s ease;
+        margin-left: 5px;
       }
 
       .github-link:hover,
@@ -308,6 +309,81 @@
       .moon-icon {
         right: 8px;
       }
+
+      /* New styles for link filters */
+      #linkFilters {
+        margin-bottom: 20px;
+        display: flex;
+        gap: 15px;
+      }
+
+      .link-filter {
+        padding: 8px 12px;
+        background-color: var(--button-bg);
+        color: var(--button-text);
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .link-filter:hover {
+        background-color: var(--button-active);
+      }
+
+      .link-filter input {
+        margin-right: 8px;
+      }
+
+      .link-filter.active {
+        background-color: var(--button-active);
+        color: var(--button-active-text);
+      }
+
+      .dark-mode .link-filter {
+        color: var(--text-color);
+      }
+
+      /* Ensure visibility of theme button icons */
+      .theme-switch .slider {
+        overflow: visible;
+      }
+
+      .theme-icon {
+        color: #333;
+      }
+
+      .dark-mode .theme-icon {
+        color: #f0f0f0;
+      }
+
+      /* Style DataTables elements for dark theme */
+      .dark-mode .dataTables_wrapper .dataTables_length,
+      .dark-mode .dataTables_wrapper .dataTables_filter,
+      .dark-mode .dataTables_wrapper .dataTables_info,
+      .dark-mode .dataTables_wrapper .dataTables_processing,
+      .dark-mode .dataTables_wrapper .dataTables_paginate {
+        color: var(--text-color);
+      }
+
+      .dark-mode .dataTables_wrapper .dataTables_paginate .paginate_button {
+        background-color: var(--button-bg);
+        color: var(--text-color) !important;
+        border-color: var(--table-border);
+      }
+
+      .dark-mode
+        .dataTables_wrapper
+        .dataTables_paginate
+        .paginate_button.current,
+      .dark-mode
+        .dataTables_wrapper
+        .dataTables_paginate
+        .paginate_button.current:hover {
+        background-color: var(--button-active) !important;
+        color: var(--button-active-text) !important;
+        border-color: var(--button-active);
+      }
     </style>
   </head>
   <body>
@@ -322,6 +398,15 @@
     </div>
     <div class="container">
       <h1>Research Results Table</h1>
+      <div id="linkFilters">
+        <button class="link-filter active" id="allFilter">Show All</button>
+        <button class="link-filter" id="githubFilter">
+          Show only GitHub links
+        </button>
+        <button class="link-filter" id="huggingfaceFilter">
+          Show only HuggingFace links
+        </button>
+      </div>
       <div id="categoryTabs"></div>
       <table id="resultsTable">
         <thead>
@@ -330,8 +415,6 @@
             <th>Authors</th>
             <th>Summary</th>
             <th>Classification</th>
-            <th>GitHub</th>
-            <th>HuggingFace</th>
             <th>Date</th>
           </tr>
         </thead>
@@ -345,6 +428,7 @@
       $(document).ready(function () {
         let classifications = new Set();
         let activeCategories = new Set();
+        let activeFilter = "all";
 
         // Theme toggle functionality
         const toggleSwitch = document.querySelector(
@@ -374,33 +458,37 @@
           let tableBody = "";
           data.forEach(function (item) {
             item.classification.forEach((c) => classifications.add(c));
+            let hasGithub = item.github_urls.length > 0 ? "true" : "false";
+            let hasHuggingface =
+              item.huggingface_urls.length > 0 ? "true" : "false";
+            console.log(item);
+
+            let githubLinks = item.github_urls
+              .map(
+                (url) =>
+                  `<a href="${url}" class="github-link" target="_blank"><i class="fab fa-github"></i></a>`
+              )
+              .join(" ");
+            let huggingfaceLinks = item.huggingface_urls
+              .map(
+                (url) =>
+                  `<a href="${url}" class="huggingface-link" target="_blank"><i class="fas fa-face-smile"></i></a>`
+              )
+              .join(" ");
+
             tableBody += `
-                        <tr>
-                            <td><a href="${item.link}" target="_blank">${
-              item.title
-            }</a></td>
-                            <td>${item.authors}</td>
-                            <td>${item.summary}</td>
-                            <td>${item.classification.join(", ")}</td>
-                            <td>${
-                              item.github_urls
-                                .map(
-                                  (url) =>
-                                    `<a href="${url}" class="github-link" target="_blank">GitHub</a>`
-                                )
-                                .join(" ") || "N/A"
-                            }</td>
-                            <td>${
-                              item.huggingface_urls
-                                .map(
-                                  (url) =>
-                                    `<a href="${url}" class="huggingface-link" target="_blank">HuggingFace</a>`
-                                )
-                                .join(" ") || "N/A"
-                            }</td>
-                            <td>${item.date}</td>
-                        </tr>
-                    `;
+        <tr data-github="${hasGithub}" data-huggingface="${hasHuggingface}">
+            <td>
+              <a href="${item.link}" target="_blank">${item.title}</a>
+              ${githubLinks}
+              ${huggingfaceLinks}
+            </td>
+            <td>${item.authors}</td>
+            <td>${item.summary}</td>
+            <td>${item.classification.join(", ")}</td>
+            <td>${item.date}</td>
+        </tr>
+    `;
           });
           $("#resultsTable tbody").html(tableBody);
 
@@ -414,7 +502,7 @@
           // Initialize DataTable
           let table = $("#resultsTable").DataTable({
             responsive: true,
-            order: [[6, "desc"]], // Sort by date column (index 6) in descending order
+            order: [[4, "desc"]], // Sort by date column (index 4) in descending order
             pageLength: 10,
             lengthMenu: [
               [10, 25, 50, -1],
@@ -427,9 +515,23 @@
 
           // Custom filtering function
           $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
-            if (activeCategories.size === 0) return true;
-            let rowClassifications = data[3].split(", "); // Classification is in the 4th column
-            return rowClassifications.some((rc) => activeCategories.has(rc));
+            let row = $(table.row(dataIndex).node());
+            // console.log(activeFilter);
+            console.log(row.data("github"));
+            let hasGithub = row.data("github");
+            let hasHuggingface = row.data("huggingface");
+            let classifications = data[3].split(", ");
+
+            let categoryMatch =
+              activeCategories.size === 0 ||
+              classifications.some((c) => activeCategories.has(c));
+
+            if (activeFilter === "all") return categoryMatch;
+            if (activeFilter === "github") return hasGithub && categoryMatch;
+            if (activeFilter === "huggingface")
+              return hasHuggingface && categoryMatch;
+
+            return false;
           });
 
           // Event listener for category tabs
@@ -441,6 +543,14 @@
             } else {
               activeCategories.add(category);
             }
+            table.draw();
+          });
+
+          // Event listeners for link filters
+          $(".link-filter").on("click", function () {
+            $(".link-filter").removeClass("active");
+            $(this).addClass("active");
+            activeFilter = this.id.replace("Filter", "");
             table.draw();
           });
 

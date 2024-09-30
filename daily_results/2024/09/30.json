@@ -1,0 +1,67 @@
+[
+    {
+        "title": "MIO: A Foundation Model on Multimodal Tokens",
+        "authors": "Jiaheng Liu, Wangchunshu Zhou, Chunpu Xu, King Zhu, Zekun Wang",
+        "link": "https://arxiv.org/abs/2409.17692",
+        "github_repo": null,
+        "summary": " - MIO is a novel any-to-any foundation model, built upon multimodal tokens, that integrates understanding and generation across four modalities: text, image, speech, and video.\n- It supports generating multimodal interleaved sequences and is trained in four stages: alignment pre-training, interleaved pre-training, speech-enhanced pre-training, and supervised fine-tuning.\n- Experimental results show MIO performs competitively against other dual-modal and any-to-any models and surpasses some modality-specific baselines.\n- It boasts advanced any-to-any capabilities, such as interleaved video-text generation and chain-of-visual-thought reasoning.\n- MIO's design addresses limitations of existing multimodal LLMs by handling diverse modalities in a unified framework and enabling more complex multimodal outputs.",
+        "classification": [
+            "Multimodal",
+            "Any-to-Any",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Text-to-Speech",
+            "Automatic Speech Recognition",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-30"
+    },
+    {
+        "title": "VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models",
+        "authors": "Li Lyna Zhang, Shengyu Ye, Jicheng Wen, Yifei Liu, yangwang92",
+        "link": "https://arxiv.org/abs/2409.17066",
+        "github_repo": null,
+        "summary": " - This paper introduces Vector Post-Training Quantization (VPTQ), a novel approach for extremely low-bit quantization of Large Language Models (LLMs) using Vector Quantization.\n- VPTQ leverages second-order optimization to guide the design of its quantization algorithm and employs channel-independent second-order optimization for a granular vector quantization.\n- The authors claim that VPTQ achieves state-of-the-art accuracy on extremely low-bit LLMs, reducing perplexity by 0.01-0.34 on LLaMA-2, 0.38-0.68 on Mistral-7B, and 4.41-7.34 on LLaMA-3 over existing methods at 2-bit quantization.\n- They also report an average accuracy improvement of 0.79-1.5% on LLaMA-2, 1% on Mistral-7B, and 11-22% on LLaMA-3 on question answering tasks.\n- VPTQ offers a lightweight and efficient approach with low quantization overhead, utilizing only 10.4-18.6% of the quantization algorithm execution time compared to SOTA and resulting in a 1.6-1.8x increase in inference throughput.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/VPTQ"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-09-30"
+    },
+    {
+        "title": "Modulated Intervention Preference Optimization (MIPO): Keep the Easy, Refine the Difficult",
+        "authors": "fetong",
+        "link": "https://arxiv.org/abs/2409.17545",
+        "github_repo": null,
+        "summary": "This research paper introduces Modulated Intervention Preference Optimization (MIPO), a novel algorithm designed for preference optimization in large language models (LLMs).\n- MIPO modulates the influence of the reference model during training based on the alignment between the reference model and the given preference pair, allowing for more effective learning.\n- Experimental results demonstrate that MIPO consistently outperforms Direct Preference Optimization (DPO) across various benchmarks, including AlpacaEval 2.0 and MT-Bench, using both Mistral-7B and Llama3-8B models.\n- On AlpacaEval 2.0, MIPO shows significant improvements over DPO, achieving gains of approximately 9 points with Llama3-8B and 8 points with Mistral-7B.\n- MIPO simplifies hyperparameter tuning by using only a single parameter, \u03b2, exhibiting robustness across different model architectures and datasets within a specific range.\n- MIPO effectively maintains performance on well-aligned pairs while substantially improving poorly aligned pairs, thereby efficiently enhancing the alignment of the policy model with given preferences.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/princeton-nlp/llama3-ultrafeedback"
+        ],
+        "date": "2024-09-30"
+    },
+    {
+        "title": "MSI-Agent: Incorporating Multi-Scale Insight into Embodied Agents for Superior Planning and Decision-Making",
+        "authors": "Guanting Dong, Che Jiang, Yihuai Gao, Biqing Qi, Dayuan Fu",
+        "link": "https://arxiv.org/abs/2409.16686",
+        "github_repo": null,
+        "summary": "- The paper introduces MSI-Agent, an embodied agent designed to enhance the planning and decision-making abilities of Large Language Models (LLMs) by effectively summarizing and utilizing insights at multiple scales.\n- MSI-Agent leverages a three-part pipeline consisting of an experience selector, insight generator, and insight selector to generate, store, and utilize task-specific and high-level insights.\n- Experimental results demonstrate that MSI-Agent outperforms other insight strategies when used with GPT-3.5 for planning tasks in the TEACh TfD benchmark and Alfworld environment.\n- The paper investigates different strategies for selecting seed experiences and insights, showing that MSI-Agent exhibits improved robustness in domain-shifting scenarios.\n- MSI-Agent effectively addresses the challenges of irrelevant insights and the lack of general insights, which can hinder the performance of LLM-based agents.",
+        "classification": [
+            "Robotics",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-09-30"
+    }
+]

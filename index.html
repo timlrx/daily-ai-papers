@@ -490,6 +490,34 @@
     </div>
 
     <script>
+      function formatSummary(summary) {
+        let cleanSummary = summary.trim();
+
+        // Split the summary into points
+        // This regex splits on newlines that start with a dash,
+        // or on double newlines, whichever comes first
+        const points = cleanSummary.split(/\n(?=-)|\n\n/);
+
+        // Process each point
+        const formattedPoints = points
+          .map((point) => {
+            // Remove leading dash and whitespace
+            point = point.replace(/^-\s*/, "").trim();
+
+            // Remove surrounding quotes if present
+            point = point.replace(/^"(.*)"$/, "$1");
+
+            // Capitalize first letter if it's not already
+            point = point.charAt(0).toUpperCase() + point.slice(1);
+
+            return `<li>${point}</li>`;
+          })
+          .filter((point) => point.length > 0);
+
+        // Join the points and wrap in a <ul> tag
+        return `<ul>${formattedPoints.join("")}</ul>`;
+      }
+
       $(document).ready(function () {
         let classifications = new Set();
         let activeCategories = new Set();
@@ -557,7 +585,7 @@
                 ${huggingfaceLinks}
               </td>
               <td>${item.authors}</td>
-              <td>${item.summary}</td>
+                <td>${formatSummary(item.summary)}</td>
               <td>${item.classification.join(", ")}</td>
               <td>${item.date}</td>
           </tr>
@@ -589,8 +617,6 @@
           // Custom filtering function
           $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
             let row = $(table.row(dataIndex).node());
-            // console.log(activeFilter);
-            console.log(row.data("github"));
             let hasGithub = row.data("github");
             let hasHuggingface = row.data("huggingface");
             let classifications = data[3].split(", ");

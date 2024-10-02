@@ -1,0 +1,191 @@
+[
+    {
+        "title": "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+        "authors": "xwhan, ruihou16, xwwang, astonzhang, MingZhong",
+        "link": "https://arxiv.org/abs/2409.19951",
+        "github_repo": "https://github.com/facebookresearch/llm-cross-capabilities",
+        "summary": " - This research paper explores the intersection of multiple abilities, termed \"cross capabilities,\" in Large Language Models (LLMs), which are essential for real-world tasks but often overlooked in current evaluations that focus on individual capabilities.\n- It introduces CROSSEVAL, a benchmark with 1,400 human-annotated prompts and 8,400 human ratings, designed to evaluate both individual and cross capabilities, revealing that current LLMs underperform in cross-capability tasks.\n- The study finds that LLM cross-capability performance adheres to the \"Law of the Weakest Link,\" being significantly limited by the weakest individual capability, regardless of improvements in other areas.\n- The results highlight that tool use is a major challenge for LLMs and suggest that prioritizing the enhancement of weaker capabilities is more crucial for improving overall performance than focusing on already strong ones.\n-  The work emphasizes the importance of shifting focus towards cross-capability evaluation and development to improve LLM effectiveness in complex, real-world scenarios rather than just on individual capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/llm-cross-capabilities"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "TPI-LLM: Serving 70B-scale LLMs Efficiently on Low-resource Edge Devices",
+        "authors": "Hongfang Yu, Mohsen Guizani, Jiaoshen, LIKirin",
+        "link": "https://arxiv.org/abs/2410.00531",
+        "github_repo": "https://github.com/Lizonghang/TPI-LLM",
+        "summary": "TPI-LLM is a tensor parallel inference system designed for serving 70B-scale LLMs efficiently on low-resource edge devices.\n- It addresses memory limitations by introducing a sliding window memory scheduler that dynamically manages layer weights during inference, overlapping disk I/O with computation and communication.\n- TPI-LLM prioritizes tensor parallelism over pipeline parallelism for single-user scenarios on edge devices and implements a star-based allreduce algorithm to minimize link latency.\n- Experimental results show significant reductions in time-to-first-token, token latency, and peak memory footprint compared to benchmarks like Transformers, Accelerate, and Galaxy.\n- TPI-LLM successfully runs Llama 2-70B with a peak memory footprint of 3.1GB across 8 low-resource devices, enabling larger models to run on edge devices while preserving user privacy.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Lizonghang/TPI-LLM"
+        ],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "Atlas-Chat: Adapting Large Language Models for Low-Resource Moroccan Arabic Dialect",
+        "authors": "imomayiz, amr-mohamed, khoubrane-yousef, habdine, guokan-shang",
+        "link": "https://arxiv.org/abs/2409.17912",
+        "github_repo": null,
+        "summary": "Atlas-Chat introduces the first Large Language Models (LLMs) for Moroccan Arabic, a low-resource dialectal Arabic (DA) variant also known as Darija.\n- A new instruction dataset, Darija-SFT-Mixture, was created by combining existing and new manually and synthetically created Darija resources, as well as translated English instructions.\n- Atlas-Chat-9B and 2B models, fine-tuned on this dataset, outperform existing LLMs, including Arabic-specific and state-of-the-art models like LLaMa, Jais, and AceGPT, achieving a 13% improvement over a 13B model on a new Darija benchmark.\n- A new evaluation suite, including DarijaMMLU, DarijaHellaSwag, and DarijaBench, was developed for comprehensive LLM assessment in Darija, focusing on discriminative and generative tasks. \n- An experimental analysis was conducted on fine-tuning strategies and base model choices, finding that instruction-tuned Gemma 2 models with LoRA performed optimally.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/MBZUAI-Paris/Atlas-Chat-9B",
+            "https://hf.co/datasets/MBZUAI-Paris/Darija-SFT-Mixture"
+        ],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+        "authors": "sebgao, wangpichao, meihaiyang, tonghe, ZechenBai",
+        "link": "https://arxiv.org/abs/2409.19603",
+        "github_repo": "https://github.com/showlab/VideoLISA",
+        "summary": "-\nVideoLISA, a video-based multimodal large language model, is introduced for language-instructed reasoning segmentation in videos. \n- It leverages the reasoning capabilities of large language models and the Segment Anything Model to generate temporally consistent segmentation masks.\n- VideoLISA employs a Sparse Dense Sampling strategy, balancing temporal context and spatial detail, and a One-Token-Seg-All approach using a <TRK> token for object tracking.\n- Evaluations on various benchmarks, including the newly introduced ReasonVOS, demonstrate its superior performance in video object segmentation with complex reasoning.\n- While optimized for videos, it generalizes well to image segmentation, showing potential as a foundation model for language-instructed object segmentation.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/VideoLISA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "Illustrious: an Open Advanced Illustration Model",
+        "authors": "Junha Lee, leehg57, mhy9910, solbon1212, andyp-nvidia",
+        "link": "https://arxiv.org/abs/2409.19946",
+        "github_repo": null,
+        "summary": "\n- Illustrious, a state-of-the-art, open-source anime image generation model, leverages a large dataset and detailed prompt guidance to generate high-resolution, dynamic images with anatomical integrity.\n- The model focuses on three key improvements: batch size and dropout control for faster concept activation learning, increased training resolution for accurate anatomy depiction, and refined multi-level captions covering tags and natural language for enhanced model development.\n- Illustrious outperforms existing models in animation style and allows for easier customization, as shown in Figure 17, which demonstrates diverse image generation using various prompts.\n- Evaluation using Elo Rating, TrueSkill 2, and Character-wise Image Comparison (CCIP) demonstrates Illustrious's superior performance compared to other models.\n- The model addresses limitations of existing datasets and text encoders within the illustration/animation domain by employing techniques like No Dropout Token and Quasi-Register Tokens.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/OnomaAIResearch/Illustrious-xl-early-release-v0",
+            "https://huggingface.co/datasets/nyanko7/danbooru2023"
+        ],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "Flex3D: Feed-Forward 3D Generation With Flexible Reconstruction Model And Input View Curation",
+        "authors": "Filippos Kokkinos, Andrea Vedaldi, philiptorr, JianyuanWang, Junlinh",
+        "link": "https://arxiv.org/abs/2410.00890",
+        "github_repo": null,
+        "summary": "Flex3D is a novel two-stage framework for generating high-quality 3D content from text, single images, or sparse view images.\n- The first stage generates a pool of candidate views using fine-tuned multi-view image and video diffusion models, followed by a selection process to filter these views based on quality and consistency.\n- The second stage introduces FlexRM (Flexible Reconstruction Model), a transformer-based architecture that reconstructs detailed 3D Gaussian points from the selected views using a tri-plane representation.\n- Flex3D also employs a novel training strategy simulating imperfect input views by injecting noise into the generated 3D Gaussian points to enhance robustness for generation tasks. \n- Experimental results show that Flex3D achieves state-of-the-art performance in both 3D generation and reconstruction tasks, with a user study win rate exceeding 92% in generation tasks. \n- FlexRM outperforms other baselines in 3D reconstruction across various input view settings, demonstrating its flexibility and efficiency.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "ACE: All-round Creator and Editor Following Instructions via Diffusion Transformer",
+        "authors": "Jingren, chenweix7, chaojiemao, jingfengzhang, jiangzeyinzi",
+        "link": "https://arxiv.org/abs/2410.00086",
+        "github_repo": null,
+        "summary": " - ACE, a unified framework based on a Diffusion Transformer, supports a wide range of visual generation and editing tasks through natural language instructions, including text-guided generation, low-level visual analysis, controllable generation, semantic editing, element editing, repainting, layer editing, and reference generation.\n- ACE introduces the Long-context Condition Unit (LCU) to incorporate historical information from previous generation rounds, enabling multi-turn and long-context generation.\n- A meticulous data collection workflow is established to construct a 0.7 billion-scale dataset covering various generation and editing tasks.\n- Evaluation on benchmarks such as MagicBrush and a user study on a manually curated benchmark demonstrates ACE\u2019s superior performance in various visual generation tasks.\n- ACE can be easily integrated into a multimodal chat system to streamline image creation and editing, avoiding cumbersome pipelines typically employed in visual agents.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/runwayml/stable-diffusion-v1-5",
+            "https://huggingface.co/runwayml/stable-diffusion-inpainting"
+        ],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "Helpful DoggyBot: Open-World Object Fetching using Legged Robots and Vision-Language Models",
+        "authors": "Xiaolong Wang, Xuxin Cheng, Zipeng Fu, Qi Wu, cbfinn",
+        "link": "https://arxiv.org/abs/2410.00231",
+        "github_repo": null,
+        "summary": "-\"Helpful DoggyBot\" is introduced, a quadrupedal robot system for open-world object fetching in indoor environments, integrating a 1-DoF gripper, a learned whole-body controller, and vision-language models (VLMs).\n-The system uses a two-phase training process for the controller, focusing on whole-body control and agility, leveraging privileged information in simulation and distilling it to a deployable policy using egocentric depth.\n-VLMs are used for zero-shot generalization to unseen environments and objects, enabling open-vocabulary object detection, efficient navigation, and precise grasping.\n-Real-world experiments show that the system achieves a 60% first-attempt success rate in fetching objects from beds and sofas, outperforming baselines and approaching teleoperation performance in terms of average time to completion.\n-The system demonstrates the potential of integrating learned controllers and VLMs for complex mobile manipulation tasks in unstructured indoor settings.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://helpful-doggybot.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "DressRecon: Freeform 4D Human Reconstruction from Monocular Video",
+        "authors": "Shubham Tulsiani, Donglai Xiang, Jeff Tan, gengshan-y, devakramanan",
+        "link": "https://arxiv.org/abs/2409.20563",
+        "github_repo": null,
+        "summary": "DressRecon reconstructs temporally consistent 4D human body models from monocular RGB videos, focusing on challenging scenarios with loose clothing and object interactions.\n- It leverages a hierarchical \"bag-of-bones\" motion model, disentangling body and clothing deformations as separate layers.\n- The method uses image-based priors such as human body pose, surface normals, and optical flow to optimize the model and improve reconstruction quality.\n- The resulting neural fields can be converted to meshes or further optimized as explicit 3D Gaussians for interactive rendering.\n- On datasets with challenging clothing deformations, DressRecon shows superior performance over prior art in terms of reconstruction fidelity and rendering quality.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "Visual Context Window Extension: A New Perspective for Long Video Understanding",
+        "authors": "Zhenzhong Chen, hcwei",
+        "link": "https://arxiv.org/abs/2409.20018",
+        "github_repo": null,
+        "summary": "This research paper proposes a novel approach to enhance long video understanding by extending the visual context window of Large Multimodal Models (LMMs).\n- It redefines the context window in LMMs as two distinct windows: visual and language, addressing the discrepancies between these modalities.\n- The study introduces a method to extend positional embeddings within the visual context window, enabling LMMs to handle lengthy videos without retraining on large video-text datasets.\n- A progressive pooling strategy is implemented to reduce memory consumption by selectively adjusting the spatial resolution of frame embeddings.\n- Experimental results on benchmarks like MLVU, VideoMME, and LongVideoBench demonstrate consistent performance improvements with increasing video frames, outperforming models like GPT-40 and achieving memory savings of approximately 45%.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "SyntheOcc: Synthesize Geometric-Controlled Street View Images through 3D Semantic MPIs",
+        "authors": "Qing Lian, Xu Yan, Yingjie Cai, Weichao Qiu, Leheng Li",
+        "link": "https://arxiv.org/abs/2410.00337",
+        "github_repo": null,
+        "summary": "-\nSyntheOcc, a novel image generation framework, achieves fine-grained 3D geometric control by conditioning on 3D occupancy labels, enabling applications like 3D editing, dataset generation, and long-tailed scene generation.\n- It leverages 3D semantic Multi-Plane Images (MPIs) as conditional input, offering precise spatial alignment with generated images.\n- An MPI encoder and reweighing strategies enhance image quality and recognizability.\n- SyntheOcc outperforms existing methods in generating realistic and controllable street view images, as demonstrated by its superior performance on the nuScenes dataset.\n- The synthetic data generated by SyntheOcc effectively augments perception models for 3D occupancy prediction.",
+        "classification": [
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    },
+    {
+        "title": "Posterior-Mean Rectified Flow: Towards Minimum MSE Photo-Realistic Image Restoration",
+        "authors": "Michael Elad, Michato, ohayonguy",
+        "link": "https://arxiv.org/abs/2410.00418",
+        "github_repo": null,
+        "summary": "This paper introduces Posterior-Mean Rectified Flow (PMRF), a new algorithm for photo-realistic image restoration.\n- PMRF aims to minimize the mean squared error (MSE) under the constraint of a perfect perceptual index, unlike methods that sample from the posterior or optimize a weighted sum of distortion and perceptual losses.\n- PMRF first predicts the posterior mean and then uses a rectified flow model to transport the result to a high-quality image distribution, approximating the optimal estimator for minimal MSE under perfect perceptual index.\n- PMRF consistently outperforms existing methods on various image restoration tasks, including blind face restoration, as demonstrated by improved FID, KID, PSNR, and SSIM scores on the CelebA-Test benchmark and lower IndRMSE on real-world datasets, while maintaining competitive performance on other perceptual and distortion metrics.\n- PMRF's effectiveness is attributed to its novel framework, which directly targets the optimal MSE estimator under a perfect perceptual index constraint, as shown by its superior performance compared to alternative flow-based methods in controlled experiments.\n- The codes are available at https://github.com/ohayonguy/PMRF.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ohayonguy/PMRF"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-02"
+    }
+]

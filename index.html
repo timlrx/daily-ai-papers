@@ -523,37 +523,46 @@
           let tableBody = "";
           data.forEach(function (item) {
             item.classification.forEach((c) => classifications.add(c));
-            let hasGithub = item.github_urls.length > 0 ? "true" : "false";
+            let hasGithub =
+              item.github_urls && item.github_urls.length > 0
+                ? "true"
+                : "false";
             let hasHuggingface =
-              item.huggingface_urls.length > 0 ? "true" : "false";
+              item.huggingface_urls && item.huggingface_urls.length > 0
+                ? "true"
+                : "false";
             console.log(item);
 
-            let githubLinks = item.github_urls
-              .map(
-                (url) =>
-                  `<a href="${url}" class="github-link" target="_blank"><i class="fab fa-github"></i></a>`
-              )
-              .join(" ");
-            let huggingfaceLinks = item.huggingface_urls
-              .map(
-                (url) =>
-                  `<a href="${url}" class="huggingface-link" target="_blank"><i class="fas fa-face-smile"></i></a>`
-              )
-              .join(" ");
+            let githubLinks =
+              item.github_urls &&
+              item.github_urls
+                .map(
+                  (url) =>
+                    `<a href="${url}" class="github-link" target="_blank"><i class="fab fa-github"></i></a>`
+                )
+                .join(" ");
+            let huggingfaceLinks =
+              item.huggingface_urls &&
+              item.huggingface_urls
+                .map(
+                  (url) =>
+                    `<a href="${url}" class="huggingface-link" target="_blank"><i class="fas fa-face-smile"></i></a>`
+                )
+                .join(" ");
 
             tableBody += `
-        <tr data-github="${hasGithub}" data-huggingface="${hasHuggingface}">
-            <td>
-              <a href="${item.link}" target="_blank">${item.title}</a>
-              ${githubLinks}
-              ${huggingfaceLinks}
-            </td>
-            <td>${item.authors}</td>
-            <td>${item.summary}</td>
-            <td>${item.classification.join(", ")}</td>
-            <td>${item.date}</td>
-        </tr>
-    `;
+          <tr data-github="${hasGithub}" data-huggingface="${hasHuggingface}">
+              <td>
+                <a href="${item.link}" target="_blank">${item.title}</a>
+                ${githubLinks}
+                ${huggingfaceLinks}
+              </td>
+              <td>${item.authors}</td>
+              <td>${item.summary}</td>
+              <td>${item.classification.join(", ")}</td>
+              <td>${item.date}</td>
+          </tr>
+      `;
           });
           $("#resultsTable tbody").html(tableBody);
 

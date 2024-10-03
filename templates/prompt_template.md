@@ -2,11 +2,11 @@ Read the AI research paper carefully and return a json containing the summary, c
 
 ## Summary
 
-The summary should be 4-5 sentences long in point form. In the first sentence, state the main contribution of the paper (e.g., a new model, dataset, or technique). If it claims to outperform existing methods, provide evidence to support this claim. 
+The summary should be 4-5 sentences long in point form. In the first sentence, state the main contribution of the paper (e.g., a new model, dataset, or technique). If it is a new model include details on the model architecture. If it claims to outperform existing methods, provide evidence to support this claim. 
 
 Be formal and academic in your tone.
 
-Follow this template for the summary:
+The summary should be in markdown bullet points. Here is an example:
 ```md
 - Point 1
 - Point 2

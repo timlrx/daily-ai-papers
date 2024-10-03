@@ -948,5 +948,224 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-02"
+    },
+    {
+        "title": "From Code to Correctness: Closing the Last Mile of Code Generation with Hierarchical Debugging",
+        "authors": "Xiaodong Gu, Chengcheng Wan, Songsong Wang, YerbaPage",
+        "link": "https://arxiv.org/abs/2410.01215",
+        "github_repo": "https://github.com/YerbaPage/MGDebugger",
+        "summary": " - MGDebugger, a hierarchical code debugger, is introduced to improve the pass rate of LLM-generated code by addressing bugs at multiple levels of granularity. \n - MGDebugger decomposes code into subfunctions, debugs them iteratively in a bottom-up manner, and uses an LLM-simulated Python executor to track variable states for precise error identification. \n - Experiments show that MGDebugger significantly outperforms existing debugging systems, achieving an 18.9% accuracy improvement over seed generations in HumanEval and a 97.6% repair success rate in HumanEval-Fix. \n- Ablation studies confirm the effectiveness of hierarchical debugging, and further analysis highlights the robustness of MGDebugger across diverse bug types, code lengths, and debugging attempts. \n- MGDebugger leverages pretrained LLMs for debugging, eliminating task-specific retraining for a lightweight and scalable solution.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/YerbaPage/MGDebugger"
+        ],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "Is Preference Alignment Always the Best Option to Enhance LLM-Based Translation? An Empirical Analysis",
+        "authors": "nunonmg, PierreColombo, CelineH, emmanuelmalherbe, hgissbkh",
+        "link": "https://arxiv.org/abs/2409.20059",
+        "github_repo": null,
+        "summary": "This paper conducts an empirical analysis of preference-based alignment techniques for enhancing large language model (LLM)-based translation, focusing on Contrastive Preference Optimization (CPO).\n- CPO consistently outperforms Supervised Fine-Tuning (SFT) on high-quality data regarding alignment metrics, like xCOMET-QE.\n- Preference-based alignment is highly sensitive to the choice of candidate translation systems used for generating preference data, affecting both the alignment metric and downstream metric consistency.\n- Aligning a model using its own translations achieves performance comparable to employing multiple external systems, ensuring better metric consistency. \n- The paper also finds that preference-based lexical alignment using the gold reference as the preferred translation performs poorly. \n- Optimizing preference data in a mono-system setting, specifically setting the quality of the chosen and rejected translations, allows the model to match the performance of multi-system settings.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/artefactory/translation-alignment-analysis"
+        ],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "LEOPARD : A Vision Language Model For Text-Rich Multi-Image Tasks",
+        "authors": "Zhihan Zhang, Tianqing Fang, Mengzhao Jia, kaixinm, wyu1",
+        "link": "https://arxiv.org/abs/2410.01744",
+        "github_repo": "https://github.com/Jill0001/Leopard",
+        "summary": "-\nLEOPARD, a Multimodal Large Language Model (MLLM), specializes in handling text-rich, multi-image tasks, addressing the limitations of existing MLLMs in this area by focusing on high-quality instruction tuning data and image resolution.\n- A new dataset, LEOPARD-INSTRUCT, comprising 925K samples, including 739K designed for text-rich, multi-image scenarios, is introduced to train the model. The dataset focuses on real-world domains like multi-page documents, multi-charts, and webpage snapshots.\n- An adaptive, high-resolution, multi-image encoding module dynamically optimizes the visual sequence length based on image dimensions using pixel shuffling for compression, enabling processing of multiple high-resolution images without information loss.\n- Experiments conducted on 13 benchmarks demonstrate LEOPARD's superior performance in text-rich multi-image benchmarks with a +9.61 point improvement over other open-source MLLMs.\n- The model remains competitive on single image and general-domain tasks, highlighting the benefits of training on high-quality, tailored multi-image datasets",
+        "classification": [
+            "Multimodal",
+            "Document Question Answering",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Jill0001/Leopard"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "ComfyGen: Prompt-Adaptive Workflows for Text-to-Image Generation",
+        "authors": "galchechik, cohenor, yuvalalaluf, adihaviv, rinong",
+        "link": "https://arxiv.org/abs/2410.01731",
+        "github_repo": null,
+        "summary": "ComfyGen is introduced, which is a large language model (LLM) capable of creating prompt-specific text-to-image workflows to enhance image quality and prompt alignment.\n- It leverages ComfyUI, which stores workflows as JSON files, for easier parsing.\n- It collects 500 user prompts to generate images, scores them using ensemble aesthetic predictors and human preference estimators.\n- It uses two approaches: tuning-based (ComfyGen-FT), learning from user-preference data, and training-free (ComfyGen-IC), using an LLM to select existing flows.\n- The methods shows improved image quality and alignment compared to single models and fixed workflows.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "Not All LLM Reasoners Are Created Equal",
+        "authors": "Aaron Courville, Daniel Toyama, Alessandro Sordoni, agarwl, arianhosseini",
+        "link": "https://arxiv.org/abs/2410.01748",
+        "github_repo": null,
+        "summary": " - This paper investigates Large Language Models' (LLMs) reasoning abilities on grade-school math (GSM) problems, specifically focusing on compositional GSM problems, where the answer to the first question is a variable in the second question.\n- The study reveals a significant reasoning gap in most LLMs, indicated by a performance difference between solving compositional question pairs and solving each question independently.\n- This gap is more pronounced in smaller, more cost-efficient, and math-specialized models, suggesting potential limitations in reasoning abilities.\n-  Instruction-tuning, code generation, and finetuning have varying effects across LLMs, while finetuning can lead to overfitting.\n- Large reasoning gaps stem from distraction from additional context and poor second-hop reasoning, rather than dataset leakage, impacting performance despite high scores on standard GSM benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused Sampling for 3D Object Detection",
+        "authors": "Dan Xu, Yuanliang, YangCaoCS",
+        "link": "https://arxiv.org/abs/2410.01647",
+        "github_repo": "https://github.com/yangcaoai/3DGS-DET",
+        "summary": "-\n3DGS-DET is introduced, integrating 3D Gaussian Splatting (3DGS) into 3D Object Detection, marking the first such integration.\n- This approach addresses inherent 3DGS limitations by improving spatial differentiation between objects and background and minimizing noisy background blobs.\n- Boundary Guidance leverages 2D boundary information to optimize 3D Gaussian blob distribution for clearer differentiation between objects and background in 3D space, effectively enhancing detection. \n- Box-Focused Sampling employs 2D bounding box projections to construct 3D probability spaces, allowing object-focused sampling of Gaussian blobs for better preservation of object details.\n- Experiments show a significant performance boost of +5.6 mAP@0.25 and +3.7 mAP@0.5 over baseline, notably outperforming the state-of-the-art NeRF-Det by +6.6 mAP@0.25 and +8.1 mAP@0.5 on ScanNet, and +31.5 mAP@0.25 on ARKitScenes.",
+        "classification": [
+            "Object Detection",
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/yangcaoai/3DGS-DET"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "HelpSteer2-Preference: Complementing Ratings with Preferences",
+        "authors": "okuchaiev, gshennvm, trias702, odelalleau, alexwb",
+        "link": "https://arxiv.org/abs/2410.01257",
+        "github_repo": null,
+        "summary": " \n- This paper introduces HelpSteer2-Preference, a novel dataset of preference annotations designed to complement the existing ratings in the HelpSteer2 dataset, enabling a head-to-head comparison of Bradley-Terry and Regression style reward models.\n- The authors propose a novel approach combining Bradley-Terry and Regression reward modeling, leading to a Llama 3.1 70B Instruct model that achieved a state-of-the-art 94.1 score on RewardBench as of October 1, 2024.\n- The preference annotations are accompanied by human-written justifications, enhancing data interpretability and providing insights into annotator decision-making.\n- The research demonstrates that data format (regression vs. preference) is less critical than the model's ability to capture annotation information, with preference magnitude being key for Bradley-Terry models. \n- The combined reward model effectively aligns language models to follow instructions using online Reinforcement Learning from Human Feedback (RLHF), particularly with the REINFORCE algorithm.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/nvidia/HelpSteer2",
+            "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Reward"
+        ],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "RATIONALYST: Pre-training Process-Supervision for Improving Reasoning",
+        "authors": "Guoxuan Wang, danyaljj, ChuyuLiu, ylu610, Dongwei",
+        "link": "https://arxiv.org/abs/2410.01044",
+        "github_repo": "https://github.com/JHU-CLSP/Rationalyst",
+        "summary": "- RATIONALYST, a model pre-trained on implicit rationales extracted from unlabeled text and existing reasoning datasets, is introduced for process-supervision of reasoning.\n- RATIONALYST leverages these implicit rationales during inference to guide the reasoning process of large language models, enhancing both interpretability and performance.\n- It consistently generalizes across various reasoning tasks, demonstrating an average 3.9% accuracy improvement on 7 representative reasoning benchmarks when fine-tuned from LLaMa-3-8B.\n- RATIONALYST outperforms both stronger general-purpose verifiers like GPT-4 and similarly sized models trained on matching datasets, showcasing the efficacy of its process supervision approach.\n- An ablation study shows that rationales from web-scale data enhance performance, while implicit supervision proves more robust than explicit supervision due to tolerance for imperfect rationales.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/JHU-CLSP/Rationalyst"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "Quantifying Generalization Complexity for Large Language Models",
+        "authors": "maxtiktok, Nrain, zhuokai, Xulianghuang, luohy",
+        "link": "https://arxiv.org/abs/2410.01769",
+        "github_repo": null,
+        "summary": "This paper introduces SCYLLA, a dynamic evaluation framework designed to measure the generalization ability of Large Language Models (LLMs) and disentangle it from memorization.\n- SCYLLA evaluates LLMs across 20 tasks and 5 complexity levels, generating in-distribution and out-of-distribution data to assess generalization.\n- The study reveals a \"generalization valley,\" where the performance gap between in-distribution and out-of-distribution data is non-monotonic with task complexity.\n- The peak of this valley, the \"critical complexity,\" represents the upper bound of an LLM's generalization and shifts to higher complexity levels with increasing model size.\n- The benchmark results covering 28 LLMs show that closed-source models generally exhibit stronger generalization abilities and higher critical complexity than their open-sourced counterparts.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zhentingqi/scylla"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis",
+        "authors": "George Kopanas, Alexander Mai, xharlie, dorverbin, phedman",
+        "link": "https://arxiv.org/abs/2410.01804",
+        "github_repo": null,
+        "summary": "This paper introduces EVER (Exact Volumetric Ellipsoid Rendering), a new real-time differentiable emission-only volume rendering method.\n- EVER uses constant-density ellipsoids as primitives for scene representation, allowing for exact volume rendering without numerical quadrature, unlike the approximate alpha compositing used in methods like 3D Gaussian Splatting (3DGS).\n- This approach addresses issues like popping artifacts and view-dependent density that are common in 3DGS while maintaining real-time frame rates of ~30 FPS at 720p on an NVIDIA RTX4090.\n- The method achieves sharper results on large-scale scenes from the Zip-NeRF dataset compared to other real-time techniques.\n-  EVER is built upon ray tracing, which enables it to handle effects like radial distortion lensing (fisheye, defocus blur), which is difficult with rasterization-based methods.\n-  EVER\u2019s performance and quality benefits come from its exact rendering of ellipsoid primitives, ensuring 3D consistency by design and resolving blending issues that plague previous techniques like 3DGS.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+        "authors": "Ying Shan, Yang Wu, Zhongang Qi, Zongyang Ma, Ye Liu",
+        "link": "https://arxiv.org/abs/2409.18111",
+        "github_repo": null,
+        "summary": "-\"E.T. Bench\", a large-scale benchmark designed for open-ended, event-level video understanding.\n- The benchmark comprises 7.3K samples across 12 tasks, spanning 8 domains and featuring 7K videos totaling 251.4 hours.\n-A novel Video-LLM called \"E.T. Chat\" is introduced, which excels in event-level understanding by treating timestamp prediction as an embedding matching problem.\n- A dedicated instruction-tuning dataset, \"E.T. Instruct 164K\", tailored for multi-event, time-sensitive videos is created.\n- State-of-the-art models on existing video question answering benchmarks struggle with this new benchmark indicating that current methods struggle with fine-grained time-sensitive video understanding.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "Closed-loop Long-horizon Robotic Planning via Equilibrium Sequence Modeling",
+        "authors": "Jiazhong Yu, Cao Sheng, Fei Li, feifeiobama, ljh0104",
+        "link": "https://arxiv.org/abs/2410.01440",
+        "github_repo": "https://github.com/Singularity0104/equilibrium-planner",
+        "summary": " - This paper introduces equilibrium sequence modeling, a novel method for training large language models (LLMs) to perform long-horizon robotic planning by iteratively refining plans based on environmental feedback through a self-refinement process.\n- The approach formulates self-refinement as a fixed-point problem, allowing for end-to-end supervised training without needing external verifiers or reward models, simplifying training compared to reinforcement learning methods.\n- A nested equilibrium sequence modeling procedure enables efficient closed-loop planning, leveraging feedback from the environment (or a world model) and accelerating plan refinement by reusing previously computed equilibrium solutions.\n- Evaluations on VirtualHome-Env benchmark demonstrate state-of-the-art performance in most metrics, especially when incorporating environmental feedback, and show advantageous scaling of performance with increased inference computation.\n- Ablation studies highlight the effectiveness of equilibrium sequence modeling, reuse of previous solutions, and dynamic computation allocation in improving plan quality and computational efficiency.",
+        "classification": [
+            "Robotics",
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Singularity0104/equilibrium-planner"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "HarmoniCa: Harmonizing Training and Inference for Better Feature Cache in Diffusion Transformer Acceleration",
+        "authors": "Xinjie Zhang, Jing Liu, Ruihao Gong, Zining Wang, Yushi Huang",
+        "link": "https://arxiv.org/abs/2410.01723",
+        "github_repo": null,
+        "summary": "This paper introduces HarmoniCa, a novel framework to improve the training and inference processes of Diffusion Transformers by leveraging a feature cache. HarmoniCa features a Step-wise Denoising Training (SDT) to improve consistency between the training and inference processes. It also utilizes an Image Error Proxy-Guided Objective (IEPO) to balance image quality and cache utilization. Experimental results on various datasets and models show that HarmoniCa achieves a 1.5x speedup over PixArt and a 1.24 FID decrease for DiT-XL/2 256x256 with a higher speedup ratio, demonstrating HarmoniCa's superior speedup and quality. Finally, the approach boasts higher training efficiency with no image data and shorter training times compared to similar caching methods.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
+    },
+    {
+        "title": "Selective Aggregation for Low-Rank Adaptation in Federated Learning",
+        "authors": "Huijie Fan, Liangqiong-QU, yanranw1, stevezs, gpx333",
+        "link": "https://arxiv.org/abs/2410.01463",
+        "github_repo": null,
+        "summary": " - This research paper introduces FedSA-LoRA, a new method for federated learning that selectively aggregates learned A and B matrices from LoRA.\n- It asserts that A matrices learn general knowledge while B matrices capture client-specific information, leading to only sharing A matrices for aggregation.\n- Experimental validation across language understanding and generation tasks on benchmarks like GLUE and GSM8K demonstrates FedSA-LoRA outperforms other methods. \n- The authors extend this approach to other LoRA variants (rsLoRA and VeRA), creating FedSA-rsLoRA and FedSA-VeRA, and show consistent improvements.\n- The findings provide insights into LoRA in federated settings and a general framework for using future LoRA adaptations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-03"
     }
 ]

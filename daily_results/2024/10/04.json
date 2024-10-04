@@ -1,0 +1,273 @@
+[
+    {
+        "title": "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+        "authors": "Chen Chen, Vasileios Saveris, haotiz, Hong-You, jefflai",
+        "link": "https://arxiv.org/abs/2410.02740",
+        "github_repo": null,
+        "summary": "This paper investigates the role of large-scale image-caption data in pre-training multimodal foundation models, particularly focusing on the interplay between synthetic captions and original AltText.\n- It proposes a controllable and scalable captioning pipeline capable of generating diverse caption formats (short, descriptive, dense, AltText-fused).\n- Experiments across CLIP, multimodal LLMs, and diffusion models reveal that a hybrid approach, combining synthetic captions and AltText, often outperforms using synthetic captions alone. \n- Different model types exhibit preferences for specific caption formats: shorter captions for CLIP, descriptive for multimodal LLMs and diffusion models.\n- Combining AltText with synthetic captions enhances performance, likely due to improved image-text alignment from synthetic captions and increased data diversity from AltText.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Video Instruction Tuning With Synthetic Data",
+        "authors": "Wei Li, Chunyuan24, liuziwei7, kimingng, ZhangYuanhan",
+        "link": "https://arxiv.org/abs/2410.02713",
+        "github_repo": null,
+        "summary": " - This paper introduces LLaVA-Video, a large multimodal model for video understanding, and LLaVA-Video-178K, a synthetic dataset created for video instruction following.\n- LLaVA-Video-178K consists of 178,510 videos with 1.3 million instruction samples including detailed captions generated with a recurrent, multi-level approach, along with open-ended and multiple-choice question answering generated using GPT-4.\n- The model leverages a SlowFast video representation technique to optimize the balance between frame count and limited GPU memory, enabling processing of three times more frames than traditional methods.\n- LLaVA-Video achieves state-of-the-art results on various video benchmarks, outperforming existing open-source models and demonstrating the effectiveness of the proposed synthetic dataset and training approach.\n- The dataset, codebase, model checkpoints, and a visual chat demo are publicly released to foster development of general-purpose visual assistants.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/lmms-lab/VideoDetailCaption"
+        ],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Loong: Generating Minute-level Long Videos with Autoregressive Language Models",
+        "authors": "Tianwei Xiong, XihuiLiu, bykang, Ikuinen, Epiphqny",
+        "link": "https://arxiv.org/abs/2410.02757",
+        "github_repo": null,
+        "summary": " - Loong is a novel autoregressive LLM-based video generator that produces minute-level long videos. \n- It addresses the challenges of imbalanced loss and error accumulation during long video generation by using a progressive short-to-long training strategy with loss re-weighting and video token re-encoding. \n- Loong models text and video tokens as a unified sequence, trained from scratch on both image and video data, unlike prior approaches which use pretrained models. \n- The model utilizes a low-resolution video and later upscales the output to enhance visual quality. \n- User studies show that Loong outperforms StreamingT2V in terms of content consistency and visual text matching.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://epiphqny.github.io/Loong-video"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "LLaVA-Critic: Learning to Evaluate Multimodal Models",
+        "authors": "Chunyuan24, henghuang, thughost, russwang, txiong23",
+        "link": "https://arxiv.org/abs/2410.02712",
+        "github_repo": null,
+        "summary": "**-** LLaVA-Critic is the first open-source large multimodal model (LMM) designed as a generalist evaluator to assess the performance of other multimodal models across various tasks. \n**-** It leverages a new high-quality critic instruction-following dataset incorporating diverse evaluation criteria and scenarios, including pointwise scoring and pairwise ranking. \n**-** The model shows strong performance as an LMM-as-a-Judge, generating evaluation scores and rankings comparable to commercial GPT models. \n**-** In preference learning, LLaVA-Critic generates effective reward signals for iterative Direct Preference Optimization (DPO), surpassing rewards from human feedback as seen in LLaVA-RLHF. \n**-** LLaVA-Critic is open-sourced, including its data, code, checkpoints, and demo.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Contrastive Localized Language-Image Pre-Training",
+        "authors": "Marcin Eichner, Xinze Wang, haotiz, jefflai, Hong-You",
+        "link": "https://arxiv.org/abs/2410.02746",
+        "github_repo": null,
+        "summary": "-\nCLOC is a new pre-training framework for vision encoders with enhanced localization capabilities.\n- It augments the CLIP loss with a region-text contrastive loss and a lightweight prompter module that extracts region embeddings from the image embedding given spatial hints.\n- A visually-enriched and spatially-localized captioning pipeline is designed to generate region-text pseudo-labels at scale, resulting in a two-billion image-text dataset with fine-grained region-text annotations.\n- CLOC consistently outperforms CLIP on 31 evaluation tasks, including standard image-text tasks, newly constructed region-text tasks, and downstream evaluations with MLLMs, particularly on referring and grounding tasks.\n- The enhanced localization capabilities of CLOC enable it to be a drop-in replacement of CLIP to enhance MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Image Classification",
+            "Image Feature Extraction",
+            "Visual Question Answering",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/zzliang/GRIT"
+        ],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Depth Pro: Sharp Monocular Metric Depth in Less Than a Second",
+        "authors": "Hugo Germain, Aleksei Bochkovskii, srrichter, msantoso98, amael-apple",
+        "link": "https://arxiv.org/abs/2410.02073",
+        "github_repo": "https://github.com/apple/ml-depth-pro",
+        "summary": "\u2022 Depth Pro is a foundation model for zero-shot metric monocular depth estimation that uses a multi-scale Vision Transformer (ViT) architecture.\n\u2022 It synthesizes high-resolution (2.25-megapixel) depth maps in 0.3 seconds on a standard GPU, achieving both speed and accuracy, outperforming previous state-of-the-art methods in boundary tracing and metric depth accuracy (demonstrated by a higher \u03b4\u2081 score and faster inference time compared to baselines).\n\u2022 Depth Pro estimates metric depth with absolute scale without requiring camera intrinsics or metadata, and introduces new evaluation metrics leveraging matting datasets for boundary accuracy assessment.\n\u2022 A two-stage training curriculum combining real and synthetic datasets contributes to enhanced performance, and the inclusion of zero-shot focal length estimation further improves accuracy.\n\u2022 Depth Pro is designed for broader applicability and efficiency in tasks like novel view synthesis and is evaluated on diverse datasets not seen during training to demonstrate its generalization capabilities.",
+        "classification": [
+            "Depth Estimation",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/apple/ml-depth-pro"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Large Language Models as Markov Chains",
+        "authors": "Abdelhakim Benechehab, Oussama Zekri, ievred, NBoulle, ambroiseodt",
+        "link": "https://arxiv.org/abs/2410.02724",
+        "github_repo": null,
+        "summary": " - This paper draws an equivalence between large language models (LLMs) and Markov chains, offering a new theoretical framework to analyze LLM inference.\n - By representing LLMs with vocabulary size *T* and context window *K* as Markov chains on a state space of size O(*T*<sup>*K*</sup>), the authors derive findings on stationary distribution, convergence speed, and temperature influence.\n - The paper derives generalization bounds for pre-training and in-context learning under minimal assumptions, using concentration inequalities for dependent random variables and leveraging insights from the Markov chain equivalence.\n - The theoretical analysis predicts in-context scaling laws that are experimentally validated on recent LLMs (2023-2024), showing that LLMs outperform minimax optimal frequentist Markov chain learning.\n - Experimental results on various Markov chains and dynamical systems further support the theoretical findings and demonstrate the practical implications of the proposed framework.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "CLIP-MoE: Towards Building Mixture of Experts for CLIP with Diversified Multiplet Upcycling",
+        "authors": "Yu Cheng, Jihai Zhang, Spico, Xiaoye08",
+        "link": "https://arxiv.org/abs/2409.19291",
+        "github_repo": null,
+        "summary": "-\n\nThis paper introduces Diversified Multiplet Upcycling (DMU), a novel method for enhancing the Contrastive Language-Image Pre-training (CLIP) model by integrating it with a Mixture of Experts (MoE) architecture. DMU fine-tunes multiple CLIP models from a pre-trained checkpoint using Multistage Contrastive Learning (MCL) to capture diverse feature distributions. These fine-tuned models, sharing parameters except for the Feed-Forward Network, are then used to initialize a CLIP-MoE. The approach significantly improves CLIP's performance on various zero-shot tasks, including retrieval and image classification, as well as in downstream Multimodal Large Language Model (MLLM) benchmarks when serving as a vision encoder. Notably, CLIP-MoE surpasses the base OpenAI CLIP model by approximately 20% on retrieval tasks and exhibits minimal additional training overhead, using only 2% of the computational resources required to train a CLIP from scratch. This method provides a model-agnostic and computationally efficient way to scale CLIP and enhance its ability to capture rich, fine-grained information for improved performance in various multimodal applications.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/OpenSparseLLMS/CLIP-MOE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Eliminating Oversaturation and Artifacts of High Guidance Scales in Diffusion Models",
+        "authors": "Otmar Hilliges, RMW, msadat97",
+        "link": "https://arxiv.org/abs/2410.02416",
+        "github_repo": null,
+        "summary": "\u2022 Proposes Adaptive Projected Guidance (APG), a method to mitigate oversaturation and artifacts in classifier-free guidance (CFG) at high guidance scales in diffusion models.\n\u2022 Decomposes the CFG update into parallel and orthogonal components, down-weighting the parallel component responsible for oversaturation, while preserving the orthogonal component that enhances image quality.\n\u2022 Introduces rescaling and reverse momentum inspired by gradient ascent to regulate update impact and refine sampling trajectories.\n\u2022 Demonstrates through experiments on various diffusion models that APG improves FID, recall, and saturation scores while maintaining precision comparable to CFG, even with higher guidance scales.\n\u2022 Shows APG compatibility with various conditional diffusion models, samplers, and distilled models, making it a superior plug-and-play alternative to CFG.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration",
+        "authors": "Jun Zhu, Pengle Zhang, Jia wei, Jintao Zhang, surfingtomchen",
+        "link": "https://arxiv.org/abs/2410.02367",
+        "github_repo": null,
+        "summary": "-\nSageAttention, a novel post-training quantization method designed to accelerate attention in Transformer models by quantizing tensors to 8-bit integers.\n- It overcomes the challenges of accuracy degradation in existing methods by smoothing the K matrix to mitigate outlier effects and employing a low-precision FP16 accumulator for the PV matrix multiplication.\n- It integrates effective kernel fusion with ROPE and an online softmax inspired by FlashAttention.\n- Comprehensive experiments demonstrate a 2.1x speed improvement over FlashAttention2 and 2.7x over xFormers on an RTX 4090.\n- It maintains comparable end-to-end metrics across diverse applications, including language, image, and video generation models.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Text2Text Generation",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/thu-ml/SageAttention"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "MVGS: Multi-view-regulated Gaussian Splatting for Novel View Synthesis",
+        "authors": "Xin Yu, Yida Wang, xiaobiaodu",
+        "link": "https://arxiv.org/abs/2410.02103",
+        "github_repo": null,
+        "summary": " - MVGS, a new optimization method for 3D Gaussian Splatting (3DGS)-based novel view synthesis, addresses overfitting issues and enhances 3D geometry and appearance accuracy. \n- The method replaces single-view training with multi-view regulated learning, enabling joint optimization across multiple views and incorporating a cross-intrinsic guidance scheme for coarse-to-fine training.\n- A cross-ray densification strategy increases Gaussian kernels in crucial overlapped 3D regions and a multi-view augmented densification strategy intensifies this process when perspectives differ significantly.\n- MVGS improves novel view synthesis by approximately 1 dB PSNR across various Gaussian-based explicit representation methods and tasks, including general/reflective object and dynamic 4D scene reconstruction.\n- Experiments demonstrate consistent improvements in PSNR, SSIM, and LPIPS across diverse datasets, showcasing MVGS's effectiveness in challenging scenes with reflections, fine details, and lighting variations.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "L-CiteEval: Do Long-Context Models Truly Leverage Context for Responding?",
+        "authors": "Jianye Hou, Baibei Ji, Juntao Li, Keyan Zhou, ZetangForward",
+        "link": "https://arxiv.org/abs/2410.02115",
+        "github_repo": null,
+        "summary": "\u2022 L-CiteEval, a new multi-task benchmark for evaluating long-context understanding with citations in large language models (LLMs) is introduced.\n\u2022 The benchmark comprises 11 diverse tasks with context lengths ranging from 8K to 48K tokens and employs automatic evaluation metrics for reproducibility.\n\u2022 Evaluation of 11 LLMs reveals that open-source models lag significantly behind closed-source counterparts in citation accuracy, suggesting reliance on inherent knowledge rather than provided context.\n\u2022 Retrieval-Augmented Generation (RAG) improves faithfulness in open-source LLMs but slightly diminishes generation quality.\n\u2022 A strong correlation is observed between LLMs' attention mechanisms and citation generation process, offering insight into LLM evaluation and development.",
+        "classification": [
+            "Question Answering",
+            "Summarization",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ZetangForward/L-CITEEVAL.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis",
+        "authors": "Rob Fergus, lerrel, upiter",
+        "link": "https://arxiv.org/abs/2410.02749",
+        "github_repo": null,
+        "summary": "-\nLintSeq, a synthetic data generation algorithm, refactors existing code into edit sequences to improve code synthesis in large language models (LLMs).\n- LLMs trained on this data produce more diverse programs, resulting in better inference-time scaling for benchmark pass rate.\n- Tiny (150M parameter) edit sequence LMs achieve state-of-the-art performance for their model class, matching or outperforming models twice their size.\n- Repeated sampling from smaller edit sequence finetuned LLMs achieves HumanEval coverage competitive with GPT-4 at similar cumulative inference cost to single samples from large open-source LLMs.\n- Ablating linter guidance from LintSeq degrades downstream performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/upiterbarg/lintseq"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+        "authors": "Michael Ryan, Ella Li, zyanzhe, missblanchett, WillHeld",
+        "link": "https://arxiv.org/abs/2410.02678",
+        "github_repo": null,
+        "summary": "**Summary of \"Distilling an End-to-End Voice Assistant Without Instruction Training Data\"**\n\n- This paper introduces DiVA, a new speech large language model (LLM) trained through knowledge distillation from a text-based LLM, eliminating the need for explicit instruction-following data. DiVA utilizes a novel cross-modal context distillation method, which uses a frozen text-based LLM to guide the audio model's training by matching the output distribution from text transcripts of the audio. The audio input is processed using Whisper for feature extraction and a Q-Former initialized from Whisper's decoder to achieve audio-text feature alignment.\n- DiVA generalizes well to various spoken language tasks such as Spoken Question Answering, Classification (emotion, humor, and sarcasm detection), and Translation, using only ASR data for training.\n- In evaluation benchmarks, DiVA outperforms other open-access Speech and Audio LLMs on question answering by a significant margin despite using substantially less compute for training.\n- DiVA excels in following text-based instructions provided through prompts and user's speech, addressing the \"forgetting\" issue observed in other models trained using supervised fine-tuning. \n- In a user study, DiVA received a 72% preference rate compared to Qwen 2 Audio, demonstrating its effectiveness in real-world scenarios despite some limitations like inheriting the base LLM's bias.",
+        "classification": [
+            "Multimodal",
+            "Audio",
+            "Automatic Speech Recognition",
+            "Question Answering",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "MedVisionLlama: Leveraging Pre-Trained Large Language Model Layers to Enhance Medical Image Segmentation",
+        "authors": "Amir Shmuel, Janine Mendola, amanchadha, gurucharan-marthi",
+        "link": "https://arxiv.org/abs/2410.02458",
+        "github_repo": null,
+        "summary": "This study introduces MedVisionLlama, a novel approach for enhancing medical image segmentation by integrating pre-trained Large Language Model (LLM) transformer blocks into a Vision Transformer (ViT) architecture.\n- The architecture inserts a frozen LLM transformer block into the encoder of a ViT and uses residual connections between the LLM and ViT components, where the LLM block acts as a visual encoder. \n- It proposes a Hybrid Attention Mechanism that balances global and local feature learning and a Multi-Scale Fusion Block to aggregate features across different scales.\n- Experimental results across ten medical imaging modalities from the Medical Segmentation Decathlon (MSD) demonstrate significant performance gains, including an average Dice score increase from 0.74 to 0.79. \n- Ablation studies further validate the effectiveness of incorporating frozen LLM transformer blocks and the proposed hybrid attention mechanism.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Vinoground: Scrutinizing LMMs over Dense Temporal Reasoning with Short Videos",
+        "authors": "Jianrui Zhang, yjlee0222, mucai",
+        "link": "https://arxiv.org/abs/2410.02763",
+        "github_repo": null,
+        "summary": "\n- This paper introduces Vinoground, a novel temporal counterfactual benchmark for evaluating Large Multimodal Models (LMMs) on dense temporal reasoning in short videos.\n- Vinoground contains 1000 short video and caption pairs with captions containing the same words but in different orders to create temporal counterfactuals.\n- The benchmark evaluates an LMM\u2019s ability to distinguish temporal differences between actions and object transformations (e.g., \"water turning into ice\u201d vs. \u201cice turning into water\u201d).\n- Experimental results show that even state-of-the-art LMMs struggle with temporal reasoning, with the best model (GPT-40) achieving only 54% accuracy on text score and much worse on other metrics, while human performance is around 90%.\n- All open-source models and CLIP-based models perform much worse, suggesting that existing methods struggle at fully understanding video temporality.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://vinoground.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    },
+    {
+        "title": "Synthio: Augmenting Small-Scale Audio Classification Datasets with Synthetic Data",
+        "authors": "manocha, ctnzr, rafaelvalle, ZhifengKong, SreyanG-NVIDIA",
+        "link": "https://arxiv.org/abs/2410.02056",
+        "github_repo": "https://github.com/Sreyan88/Synthio",
+        "summary": "Synthio is a novel approach to augment small-scale audio classification datasets using synthetic data generated from text-to-audio (T2A) diffusion models, aligning the generated data with the target dataset's acoustic characteristics through preference optimization.\n- It addresses the challenge of creating diverse synthetic augmentations by introducing MixCap, a technique that leverages Large Language Models (LLMs) to generate and refine meaningful audio captions used for prompting the T2A model.\n- Synthio's evaluation across ten datasets and four limited-data settings demonstrates consistent outperformance of existing baselines, improving classification accuracy by 0.1% to 39% using a T2A model trained solely on weakly-captioned AudioSet.\n- Ablation studies show the vital role of preference optimization and MixCap in achieving optimal results.\n- Additional analysis demonstrates effectiveness of Synthio in enhancing captioning tasks and addressing long-tail categories.",
+        "classification": [
+            "Audio",
+            "Audio Classification",
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://github.com/Sreyan88/Synthio"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-04"
+    }
+]

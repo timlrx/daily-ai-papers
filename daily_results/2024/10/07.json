@@ -1,0 +1,150 @@
+[
+    {
+        "title": "Addition is All You Need for Energy-efficient Language Models",
+        "authors": "Wei Sun, luohy",
+        "link": "https://arxiv.org/abs/2410.00907",
+        "github_repo": null,
+        "summary": "-\nThe paper proposes a novel linear-complexity multiplication (L-Mul) algorithm to approximate floating-point multiplication with integer addition, aiming to reduce energy consumption in large language models (LLMs).\n-\nL-Mul replaces expensive floating-point multiplications with less energy-intensive integer additions and introduces an offset to maintain accuracy.\n-\nThe authors claim L-Mul achieves higher precision and requires less computation compared to 8-bit floating-point multiplications and 80% energy reduction for dot products.\n-\nExperiments on various LLMs and tasks (MMLU, BBH, GSM8k, visual question answering) showed that L-Mul in attention layers maintained or even slightly improved performance compared to standard multiplication and outperformed float8 with training free setting.\n-\nFine-tuning models with all multiplications replaced by 3-bit L-Mul achieved comparable results to models using float8_e4m3 accumulation, showcasing its potential for efficient LLM training and deployment.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "NL-Eye: Abductive NLI for Images",
+        "authors": "Zorik Gekhman, yonatanbitton, nitay, tokeron, MorVentura",
+        "link": "https://arxiv.org/abs/2410.02613",
+        "github_repo": null,
+        "summary": "\n- NL-EYE, a benchmark designed to evaluate the visual abductive reasoning skills of Visual Language Models (VLMs), is introduced.\n- NL-EYE tasks models with evaluating the plausibility of hypothesis images given a premise image, requiring explanations for their choices and consisting of 350 image triplets across six reasoning categories: physical, functional, logical, emotional, cultural, and social.\n- Results show that while humans perform well, VLMs struggle, often failing to surpass random baselines in plausibility prediction.\n- Even with correct predictions, VLM explanations are frequently unhelpful, indicating weaknesses in visual interpretation and accurate representation generation for reasoning.\n- Further analysis suggests that VLMs face challenges with temporal reasoning, absolute judgments, and non-correlational tasks, particularly emotional reasoning.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "Selective Attention Improves Transformer",
+        "authors": "Yossi Matias, Matan Kalman, yanivle",
+        "link": "https://arxiv.org/abs/2410.02703",
+        "github_repo": null,
+        "summary": "-\"Selective Attention\" is introduced; a parameter-free adjustment to the standard attention mechanism in Transformers, enabling a token to deem another as no longer relevant for future tokens and masking it, improving language modelling performance across various model sizes and context lengths.\n-It allows for reduction in the attention context buffer size without quality loss, resulting in significant memory and compute savings during inference, achieving up to 16X, 25X, and 47X memory reduction for context sizes of 512, 1024, and 2048 respectively with a 100M parameter model trained on C4.\n-Selective attention transformers often outperform standard transformers with ~2X more parameters and heads in their attention module.\n-Visualizations show selective attention exhibiting dynamic context pruning behavior; masking previous assignments to the same variable in variable assignment, masking ambiguous inputs until ambiguity resolution, and retaining only necessary elements in tasks like Parity and Copy.\n-Evaluation on C4 dataset shows consistent perplexity improvements across different model sizes and context lengths; further improvements via explicit loss to encourage masking, and HellaSwag benchmark reveals consistent accuracy gains across various model sizes using selective attention.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise",
+        "authors": "Susanna Loeb, ddemszky, carlycodes, Analu, rose-e-wang",
+        "link": "https://arxiv.org/abs/2410.03017",
+        "github_repo": null,
+        "summary": " - This paper introduces Tutor CoPilot, a Human-AI system designed to enhance real-time tutoring in K-12 education by providing expert-like guidance to tutors as they interact with students. \n- Tutor CoPilot leverages the Bridge method, which captures expert decision-making patterns and adapts Large Language Models (LLMs) to generate contextually relevant suggestions for tutors during live sessions. \n- A randomized controlled trial involving 900 tutors and 1,800 K-12 students demonstrates that Tutor CoPilot significantly improves student learning outcomes, particularly for students with lower-rated tutors. \n- Analysis of over 550,000 chat messages reveals that tutors using Tutor CoPilot are more likely to employ high-quality pedagogical strategies that foster student understanding and less likely to simply provide answers. \n- Tutor CoPilot offers a scalable and cost-effective solution (\n$20 per tutor annually) for enhancing tutoring quality, especially in under-served communities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "RoCoTex: A Robust Method for Consistent Texture Synthesis with Diffusion Models",
+        "authors": "Jeonga Wi, Junyoung Choi, Jiun, DK9, longshiine",
+        "link": "https://arxiv.org/abs/2409.19989",
+        "github_repo": null,
+        "summary": "RoCoTex is a novel diffusion-based method for high-quality, consistent texture synthesis on 3D meshes.\n- The method employs a symmetrical view synthesis strategy with regional prompts, which leverage a 2D diffusion prior (SDXL) along with multiple ControlNets, to enhance view consistency and texture alignment with the underlying 3D geometry.\n-  A confidence-based texture blending technique and a Differential Diffusion-based soft-inpainting method minimize seam artifacts and inconsistencies between different views.\n- Quantitative results demonstrate that RoCoTex achieves state-of-the-art performance in terms of image quality, diversity and user preference compared to existing methods.\n- User studies confirm that RoCoTex generates textures with superior quality, consistency, and alignment compared to baseline approaches such as TEXTure, Text2Tex and Paint3D.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "Erasing Conceptual Knowledge from Language Models",
+        "authors": "David Bau, Samuel Marks, sfeucht, RohitGandikota",
+        "link": "https://arxiv.org/abs/2410.02760",
+        "github_repo": null,
+        "summary": "-\nThis research introduces Erasure of Language Memory (ELM), a novel method for removing specific concepts from large language models (LLMs) while preserving fluency and general knowledge.\n-\nELM employs a multi-objective fine-tuning approach with targeted low-rank updates (LoRA).\n-\nThe method optimizes for erasure of the target concept, retention of unrelated information, and generation fluency when prompted with the erased concept.\n-\nExperiments on biosecurity, cybersecurity, and literary domains demonstrate ELM\u2019s efficacy in achieving near-random performance on erased topics while maintaining high scores on general knowledge benchmarks and generating more fluent text than baseline methods.\n-\nELM also exhibits robustness against adversarial attacks, further highlighting its potential for safe and controlled LLM editing.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/rohitgandikota/erasing-llm"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/cais/Zephyr_RMU"
+        ],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "A Comprehensive Survey of Mamba Architectures for Medical Image Analysis: Classification, Segmentation, Restoration and Beyond",
+        "authors": "gduggal, Man1kandan, Madddy, HARI45SH, shubhii0712",
+        "link": "https://arxiv.org/abs/2410.02362",
+        "github_repo": null,
+        "summary": " - This survey paper explores Mamba architectures, a type of State Space Model (SSM), for medical image analysis.\n- Mamba offers linear time complexity, efficient processing of long sequences and strong performance in multimodal data merging, making it suitable for complex medical image analysis tasks.\n- The paper discusses core SSM concepts, various Mamba architecture designs (pure, U-Net variants, and hybrid models), optimization techniques, adaptations for different learning paradigms (weakly, semi-, and self-supervised learning), and diverse applications in medical image segmentation, classification, restoration, registration, and other miscellaneous tasks.\n-  Experimental results demonstrate that Mamba models outperform or are comparable to attention and transformer-based methods on benchmark medical datasets, like BraTS2023, ISIC2017, and ACDC.\n- The paper also discusses Mamba's limitations, including spatial information loss and parameter initialization challenges, along with emerging research areas like Mamba 2 and xLSTM.",
+        "classification": [
+            "Image Segmentation",
+            "Image Classification",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "CANVAS: Commonsense-Aware Navigation System for Intuitive Human-Robot Interaction",
+        "authors": "wpiioos, Unmanned-YuBeen, lastdefiance20, PurpleSand, MilkClouds",
+        "link": "https://arxiv.org/abs/2410.01273",
+        "github_repo": null,
+        "summary": " - CANVAS, a novel framework for intuitive human-robot interaction, is introduced for commonsense-aware navigation. It combines visual and linguistic instructions to generate robot actions, leveraging pre-trained vision-language models (VLMs) to achieve this.\n- A new dataset called COMMAND, containing 48 hours of driving data over 219 kilometers with human-annotated instructions and navigation outcomes across office, street and orchard simulated environments, was collected to train and test the model.\n- Experimental results show that CANVAS consistently outperforms the rule-based ROS NavStack in all environments, especially in challenging scenarios like uneven terrain or misleading instructions, with higher success and lower collision rates.\n- CANVAS achieves successful Sim2Real transfer with a 69% success rate in a real-world office setting, demonstrating its robustness beyond simulated data.\n- Ablation study confirms that using pre-trained VLM weights improves performance considerably, indicating the usefulness of existing knowledge for navigation tasks.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "MIGA: Mixture-of-Experts with Group Aggregation for Stock Market Prediction",
+        "authors": "Heming Weng, Genesis Wang, yh1567, zjy2001",
+        "link": "https://arxiv.org/abs/2410.02241",
+        "github_repo": null,
+        "summary": "-\nMIGA, a Mixture of Experts with Group Aggregation framework, is proposed for stock market prediction.\n- MIGA employs a two-stage design: an expert router that encodes stock data and assigns weights to experts, and an expert group aggregation stage that facilitates information sharing among experts within groups.\n- MIGA outperforms existing end-to-end models on three Chinese Stock Index benchmarks (CSI300, CSI500, and CSI1000), with MIGA-Conv achieving a 24% excess annual return on CSI300, surpassing the previous state-of-the-art by 8%.\n- A comprehensive analysis reveals the specialization of MIGA's experts for different types of stocks and market conditions.\n- The paper explores the impact of expert aggregation size and inner group attention on model performance, demonstrating their effectiveness in enhancing prediction accuracy and stability.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    },
+    {
+        "title": "NRGBoost: Energy-Based Generative Boosted Trees",
+        "authors": "joaobravo",
+        "link": "https://arxiv.org/abs/2410.03535",
+        "github_repo": null,
+        "summary": "-\nNRGBoost, a novel energy-based generative boosting model, is introduced. The model is trained to maximize a local second-order approximation to the likelihood at each boosting round, analogous to XGBoost.\n- An amortized sampling approach is proposed to reduce the training time, which is often dominated by sampling in energy-based models.\n- The algorithm achieves similar discriminative performance to XGBoost on several real-world tabular datasets while remaining competitive with other generative models for sampling.\n- It also outperforms alternative generative approaches on smaller datasets and produces visually similar samples to real data on MNIST and California Housing datasets.\n- The work also explores bagged ensembles of Density Estimation Trees (DET) with feature subsampling as a generative counterpart to Random Forests.",
+        "classification": [
+            "Tabular",
+            "Tabular Classification",
+            "Tabular Regression"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-07"
+    }
+]

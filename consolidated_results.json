@@ -1586,5 +1586,239 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-10-07"
+    },
+    {
+        "title": "Differential Transformer",
+        "authors": "Li Dong, thegenerality, sunyt32, yuqxia, ytz20",
+        "link": "https://arxiv.org/abs/2410.05258",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces the Differential Transformer (DIFF Transformer), a novel architecture for large language models (LLMs) designed to improve attention to relevant context and mitigate noise.\n\u2022 The core innovation is the differential attention mechanism, which calculates attention scores as the difference between two separate softmax attention maps, thus canceling noise and promoting sparse attention patterns.\n\u2022 Experimental results on language modeling demonstrate that DIFF Transformer outperforms standard Transformer models in various scaling settings, requiring only about 65% of the model size or training tokens to achieve comparable performance.\n\u2022 The model also exhibits advantages in downstream tasks such as long-context modeling, key information retrieval, hallucination mitigation, and in-context learning.\n\u2022 Additionally, DIFF Transformer demonstrates increased robustness to order permutation in in-context learning and a reduction in activation outliers, which presents opportunities for model quantization.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations",
+        "authors": "Roi Reichart, Zorik Gekhman, belinkov, tokeron, hadasor",
+        "link": "https://arxiv.org/abs/2410.02707",
+        "github_repo": null,
+        "summary": " \n- This paper investigates the internal representations of large language models (LLMs) and their connection to the phenomenon of hallucinations.\n- The research finds that truthfulness information is highly localized within exact answer tokens, leading to improved error detection when probing these specific tokens.\n- The study demonstrates that while error detection is enhanced by focusing on these tokens, probing classifiers trained on one dataset often fail to generalize effectively to others, indicating that truthfulness mechanisms are skill-specific.\n- The authors further categorize LLM errors based on repeated sampling, showing that error types are predictable from internal representations.\n- Finally, they highlight a discrepancy between LLM internal encoding and external behavior, revealing that models may internally identify the correct answer but consistently generate an incorrect one, suggesting the potential for harnessing this existing knowledge to reduce errors.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/technion-cs-nlp/LLMsKnow"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "FAN: Fourier Analysis Networks",
+        "authors": "Yongding Tao, Ge Li, Jingjingxu, zkcpku, dongyh",
+        "link": "https://arxiv.org/abs/2410.02675",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces the Fourier Analysis Network (FAN), a novel neural network architecture designed to effectively model and reason about periodic phenomena by incorporating Fourier Series into its structure and computational process.\n-\nFAN aims to address the limitations of existing neural networks, such as MLPs and Transformers, which often struggle to generalize periodic functions beyond the training data domain.\n-\nThe architecture consists of stacking FAN layers where each layer outputs a concatenation of cosine, sine transformations, and an activation function applied to a linear transformation of the input.\n-\nExperimental results demonstrate FAN's superior performance compared to MLP, KAN, and Transformer on various tasks, including symbolic formula representation, time series forecasting, and language modeling tasks.\n-\nBy seamlessly replacing MLP layers with FAN layers, models achieve improved generalization while reducing parameters and FLOPs.",
+        "classification": [
+            "Time Series Forecasting",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/YihongDong/FAN"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "VideoGuide: Improving Video Diffusion Models without Training Through a Teacher's Guide",
+        "authors": "Jong Chul Ye, geonyoung-park, bryanswkim, DHCAI",
+        "link": "https://arxiv.org/abs/2410.04364",
+        "github_repo": null,
+        "summary": " - VideoGuide is a novel framework that enhances the temporal consistency of pre-trained text-to-video diffusion models without requiring any additional training or fine-tuning.\n- It leverages any pre-trained video diffusion model or itself as a guide during the initial steps of inference, improving temporal quality by interpolating the guide model's denoised samples into the sampling model's denoising process.\n- VideoGuide significantly improves both subject and background consistency without sacrificing image quality or motion smoothness. \n- This method demonstrates prior distillation, where the base model's text coherence is enhanced by leveraging the superior data prior of the guiding model. \n- By applying VideoGuide, underperforming video diffusion models achieve state-of-the-art quality.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "Presto! Distilling Steps and Layers for Accelerating Music Generation",
+        "authors": "Jonah Casebeer, Ge Zhu, Njb, tberg12, ZacharyNovack",
+        "link": "https://arxiv.org/abs/2410.05167",
+        "github_repo": null,
+        "summary": "\n- Presto! is a new dual-faceted distillation approach for accelerating score-based diffusion transformers by reducing sampling steps and the cost per step.\n- Presto includes score-based distribution-matching distillation for continuous-time diffusion (EDM) using a GAN, improved conditional layer distillation with better-preserved hidden-state variance, and combined layer-step distillation.\n- For step distillation, Presto-S achieves best-in-class performance among step distillation techniques and matches the original model quality with 4-step inference.\n- When combined with the novel layer distillation Presto-L, which independently outperforms SOTA layer dropping and base diffusion sampling, the resulting Presto-LS approach accelerates the model by 10-18x, generating 32-second mono audio in 230ms and stereo audio in 435ms on an A100 40GB GPU, outperforming Stable Audio Open by 15x.",
+        "classification": [
+            "Audio",
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://presto-music.github.io/web/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "Named Clinical Entity Recognition Benchmark",
+        "authors": "Cl\u00e9ment Christophe, Tathagata Raha, Muhammad Umar Salman, Marco AF Pimentel, Wadood M Abdul",
+        "link": "https://arxiv.org/abs/2410.05046",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces a Named Clinical Entity Recognition (NER) benchmark designed for evaluating language models in healthcare.\n- This benchmark encompasses a curated selection of publicly accessible medical datasets with standardized entities adhering to the Observational Medical Outcomes Partnership (OMOP) Common Data Model.\n- The leaderboard accommodates various language model architectures, including encoder, decoder, and GLiNER models, and employs standardized evaluation metrics, predominantly the F1-score, to ensure consistent performance comparisons.\n- Initial findings from the leaderboard indicate superior performance by GLiNER-based models over decoder-only architectures, commonly used in Large Language Models (LLMs).\n- The choice of evaluation strategy, token-based or span-based, has been found to influence model ranking.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification"
+        ],
+        "github_urls": [
+            "https://github.com/WadoodAbdul/clinical_ner_benchmark"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/m42-health/clinical_ner_leaderboard",
+            "https://huggingface.co/spaces/m42-health/clinical_ner_leaderboard"
+        ],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "OmniBooth: Learning Latent Control for Image Synthesis with Multi-modal Instruction",
+        "authors": "Xu Yan, Weichao Qiu, bingbl, Evenc, lilelife",
+        "link": "https://arxiv.org/abs/2410.04932",
+        "github_repo": null,
+        "summary": "OmniBooth is a novel image generation framework that enables spatial control with instance-level multi-modal customization using text or image guidance.  It leverages latent control signals, a high-dimensional spatial feature, to seamlessly integrate spatial, textual, and image conditions.  The method expands the capabilities of text-to-image generation, providing enhanced performance in image synthesis fidelity and alignment.  Experimental results demonstrate improved performance compared to existing methods on instance segmentation tasks and image quality metrics.  OmniBooth is a unified framework for text and image conditioned generation offering improved flexibility and control compared to existing methods.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://len-li.github.io/omnibooth-web"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+        "authors": "Rui Wang, Tong Xiao, tbpangolin, pzzhang, deqing",
+        "link": "https://arxiv.org/abs/2410.04734",
+        "github_repo": null,
+        "summary": " - This paper introduces TLDR, a novel token-level reward model designed to improve the performance and interpretability of large vision-language models (VLMs).\n- The TLDR model assigns rewards to individual tokens rather than entire sequences, enabling finer-grained feedback and more precise identification of errors, like hallucinations.\n- A perturbation-based method is used to generate synthetic hard negatives for training TLDR, enhancing its robustness.\n- Experiments demonstrate that TLDR significantly improves VLM performance in various tasks and reduces human annotation time by approximately threefold.\n- The study shows that the proposed model speeds up human annotation by 3 times in acquiring high-quality vision-language data.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "UniMuMo: Unified Text, Music and Motion Generation",
+        "authors": "Yutong Zhang, Kun Su, Han Yang, auspicious3000, Jiaben",
+        "link": "https://arxiv.org/abs/2410.04534",
+        "github_repo": null,
+        "summary": "  - UniMuMo is a unified multimodal model that uses a transformer-based encoder-decoder architecture to generate music, motion, and text from any combination of the three modalities as input.\n- The model bridges the modalities through a unified encoder-decoder architecture after converting inputs to a token-based representation and addresses the lack of time-synchronized data by aligning unpaired music and motion data based on rhythmic patterns and using existing large-scale datasets of single modalities. \n- It utilizes a music codebook to encode motion and introduces a music-motion parallel generation scheme.\n- This design unifies all music and motion generation tasks into a single transformer decoder architecture with one training task of music-motion joint generation and can be efficiently achieved by fine-tuning existing pre-trained single-modality models.\n- Extensive evaluations shows that UniMuMo achieves competitive results across all unidirectional generation benchmarks including text-to-music, music-to-motion, motion-to-music, music captioning and motion captioning.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Audio",
+            "Text-to-Video",
+            "Audio-to-Audio",
+            "Audio-to-Audio",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://hanyangclarence.github.io/unimumo_demo/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "LLaMA-Berry: Pairwise Optimization for O1-like Olympiad-Level Mathematical Reasoning",
+        "authors": "Tong Che, Jingdi Lei, schrodingers-tiger, jwu323, qq8933",
+        "link": "https://arxiv.org/abs/2410.02884",
+        "github_repo": null,
+        "summary": "LLaMA-Berry is a new framework for enhancing the mathematical reasoning ability of Large Language Models (LLMs) by combining Monte Carlo Tree Search (MCTS) with iterative Self-Refine and a pairwise reward model.\n- The framework uses Self-Refine applied to MCTS (SR-MCTS) to optimize the reasoning path by leveraging the self-critic and rewriting capabilities of LLMs.\n- A Pairwise Preference Reward Model (PPRM), inspired by Reinforcement Learning from Human Feedback (RLHF), is used to evaluate different reasoning paths globally.\n- An Enhanced Borda Count (EBC) method synthesizes pairwise preferences between solutions into a global ranking score to identify better answers.\n- Experimental results on benchmarks like GSM8K, MATH, AIME24, AMC23, and GPQA Diamond demonstrate that LLaMA-Berry significantly improves the performance of LLaMA-3.1-8B, achieving results competitive with GPT-4 Turbo without additional training.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "MathHay: An Automated Benchmark for Long-Context Mathematical Reasoning in LLMs",
+        "authors": "cxiong, lunshi, hendrydong, yuhuixu, demolei",
+        "link": "https://arxiv.org/abs/2410.04698",
+        "github_repo": null,
+        "summary": "**- MATHHAY: An automated benchmark designed to assess the long-context mathematical reasoning capabilities of LLMs.**\n**- Unlike previous benchmarks, MATHHAY requires both information retrieval and complex mathematical reasoning, focusing on real-world scenarios within a specified time period.**\n**- Includes questions of varying difficulty levels across different input lengths (32K, 64K, 128K) and utilizes a combination of rule-based exact matching and LLM-based judgment for evaluation.**\n**- Experimental results reveal that even top-performing LLMs like Gemini struggle with long contexts in mathematical reasoning, indicating room for improvement.**\n**- Open-source models significantly underperform compared to closed-source models.**",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "TurtleBench: Evaluating Top Language Models via Real-World Yes/No Puzzles",
+        "authors": "siminniu, fan2goa1, WinfredShi, Ki-Seki, Duguce",
+        "link": "https://arxiv.org/abs/2410.05262",
+        "github_repo": null,
+        "summary": " - TurtleBench is a new benchmark for evaluating the reasoning abilities of Large Language Models (LLMs) using real user guesses from an online Turtle Soup Puzzle game.\n- This dynamic approach creates a bilingual dataset (Chinese and English) with 1532 annotated user guesses, which are then used to test the reasoning abilities of the LLMs. \n- The benchmark emphasizes reasoning ability and minimizes reliance on memorization and background knowledge. \n- Nine advanced LLMs, including open and closed-source models, were tested on TurtleBench. \n- The results show that Claude-3.5-Sonnet and GPT-4 performed best but that OpenAI's o1 series models performed sub-optimally.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/mazzzystar/TurtleBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion",
+        "authors": "fcole, trevordarrell, hurjunhwa, irwinherrmann, Junyi42",
+        "link": "https://arxiv.org/abs/2410.03825",
+        "github_repo": null,
+        "summary": "-\nMotion DUSt3R (MonST3R) is a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes, effectively adapting DUSt3R's representation for dynamic scenes by estimating a pointmap for each timestep.\n- The key insight is that by estimating pointmaps per timestep and aligning them in the same camera coordinate frame it is possible to handle the dynamics of the scene without explicitly modelling motion.\n- This approach addresses the challenge of scarce training data by posing the problem as a fine-tuning task and strategically training the model on limited dynamic, posed videos with depth labels.\n- MonST3R achieves strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency, and demonstrates promising results for 4D reconstruction.\n- It improves performance on Sintel dataset when finetuned with PointOdyssey, TartanAir, Spring and Waymo datasets.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "Autonomous Character-Scene Interaction Synthesis from Text Instruction",
+        "authors": "thuhsy, YixinChen, awfuact, milleret, jnnan",
+        "link": "https://arxiv.org/abs/2410.03187",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces a new framework for synthesizing multi-stage, scene-aware human motion in 3D environments from text instructions and goal locations. \n\u2022 It uses an auto-regressive diffusion model to generate realistic and coherent motion sequences, along with an autonomous scheduler for stage transitions. \n\u2022 A dual voxel scene encoder captures both current and imminent scene contexts for enhanced realism and collision avoidance. \n\u2022 The method integrates frame embeddings with language input for precise semantic guidance, and a stage-specific goal encoder conditions motion generation relative to current interaction goals. \n\u2022 Results show the model's ability to generate high-quality motions closely aligned with text instructions and scene constraints, showcasing an improvement over existing methods for locomotion, object reaching, and interaction motion synthesis.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video",
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
+    },
+    {
+        "title": "Grounding Language in Multi-Perspective Referential Communication",
+        "authors": "alsuhr, mao1207, ZinengTang",
+        "link": "https://arxiv.org/abs/2410.03959",
+        "github_repo": null,
+        "summary": "This paper introduces a new task and dataset for evaluating referring expression generation and comprehension in multi-agent embodied environments. The dataset, comprising 2,970 human-written referring expressions, requires agents to consider each other's perspective when generating and understanding references to objects.  The authors find that model performance lags behind that of human agents in both generation and comprehension tasks.  A speaker model fine-tuned using communicative success significantly improves performance, surpassing even a strong proprietary model (GPT-40). The contributions include a novel platform for generating 3D scenes, a new dataset, and analysis of language strategies in embodied referential communication.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/zinengtang/MulAgentRef"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-08"
     }
 ]

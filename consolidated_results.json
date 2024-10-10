@@ -1948,5 +1948,707 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-10-09"
+    },
+    {
+        "title": "GLEE: A Unified Framework and Benchmark for Language-based Economic Environments",
+        "authors": "Roi Reichart, Samuel Joseph Amouyal, Omer Madmon, ireinman, EilamSha",
+        "link": "https://arxiv.org/abs/2410.05254",
+        "github_repo": null,
+        "summary": "  - This paper introduces GLEE, a unified framework and benchmark for evaluating Large Language Models (LLMs) in language-based economic games like bargaining, negotiation, and persuasion.\n  - It parameterizes the space of these games, defines consistent evaluation metrics (self-gain, efficiency, and fairness), and provides an open-source framework for interaction simulation.\n  - A dataset of 7.15M LLM decisions across various game configurations and an additional human vs. LLM dataset are collected using four different LLMs.\n  - The framework facilitates controlled experiments across numerous game configurations and LLMs, enabling robust evaluation.\n  - Demonstrates the framework's utility in evaluating and comparing LLMs to human players and in quantifying the impact of economic environment parameters.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/eilamshapira/GLEE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Personalized Visual Instruction Tuning",
+        "authors": "Jipeng Zhang, Tianyang Han, research4pan, Sterzhang, renjiepi",
+        "link": "https://arxiv.org/abs/2410.07113",
+        "github_repo": null,
+        "summary": " PVIT (Personalized Visual Instruction Tuning) is a new training paradigm designed to enable Multimodal Large Language Models (MLLMs) to engage in personalized conversations by identifying target individuals within an image.\n- The framework leverages in-context learning, utilizing a multimodal prefix of <personal image, personal introduction> and personalized wrapper tokens to eliminate ambiguity.\n- PVIT involves an automatic framework to create training data in three stages: visual concept curation, dual-level textual information extraction and fusion, and dataset generation using LLM reasoning.\n- A benchmark named P-Bench, with various question types, is introduced to evaluate the personalized capabilities of MLLMs. \n- Experimental results on P-Bench demonstrate that current MLLMs have limited ability for personalized conversations. P-LLaVA trained with PVIT significantly improves performance on both answerable and unanswerable question types across all input complexities, achieving an average accuracy of 96.69% for answerable questions and 99.72% for unanswerable questions on the multiple choice questions in P-Bench.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/sterzhang/PVIT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Sterzhang/PVIT-3M"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Towards World Simulator: Crafting Physical Commonsense-Based Benchmark for Video Generation",
+        "authors": "kpzhang, hflqf88888, wqshao126, ljq940913, FanqingM",
+        "link": "https://arxiv.org/abs/2410.05363",
+        "github_repo": "https://github.com/OpenGVLab/PhyGenBench",
+        "summary": "PhyGenBench, a novel benchmark designed to evaluate Text-to-Video (T2V) models' understanding of physical commonsense.\n- It comprises 160 prompts across 27 distinct physical laws spanning four fundamental physical domains: mechanics, optics, thermal, and material properties. \n- A novel Physics Generation Evaluation framework, PhyGenEval, is introduced that combines GPT-40 for physical commonsense understanding and a hierarchical three-tier evaluation structure. \n- This structure uses vision-language models for single image, multiple image, and full video evaluations. \n- Experimental results on various T2V models indicate a general deficiency in generating physically plausible videos, with the best model, Gen-3, achieving only a 0.51 score.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/PhyGenBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Deciphering Cross-Modal Alignment in Large Vision-Language Models with Modality Integration Rate",
+        "authors": "Pan Zhang, Xiaoyi Dong, lindahua, yuhangzang, shikiw",
+        "link": "https://arxiv.org/abs/2410.07167",
+        "github_repo": "https://github.com/shikiw/Modality-Integration-Rate",
+        "summary": "-\nThis paper introduces the Modality Integration Rate (MIR), a new metric for evaluating the cross-modal alignment quality during the pre-training phase of Large Vision-Language Models (LVLMs).\n-\nMIR quantifies the domain divergence between vision and language features across all layers of the LLM, thus, correlates strongly with the model's post-SFT multi-modal performance and exhibits convergence behavior during pre-training, offering insights for training optimization.\n-\nFurthermore, it is robust to variations in input type and training/evaluation datasets, and generalizes across different pre-training recipes, strategies, and module designs.\n-\nA lightweight and learnable calibration module called MoCa is proposed, improving alignment between visual and textual tokens and leading to performance gains when integrated into both pre-training and SFT stages.\n-\nExperiments show that MoCa yields a 1.5% average performance increase for LLaVA-1.5 and a 0.9% increase for Mini-Gemini.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/shikiw/Modality-Integration-Rate"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "IterComp: Iterative Composition-Aware Feedback Learning from Model Gallery for Text-to-Image Generation",
+        "authors": "Ling Yang, Thu-redrobot, kelisiya, yaqicc, comin",
+        "link": "https://arxiv.org/abs/2410.07171",
+        "github_repo": "https://github.com/YangLing0818/IterComp",
+        "summary": "\u2022 IterComp, a novel framework, aggregates composition-aware model preferences from multiple diffusion models and uses iterative feedback learning to enhance text-to-image generation.\n\u2022 It curates a gallery of six powerful open-source diffusion models and evaluates their performance on attribute binding, spatial, and non-spatial relationships to build a composition-aware model preference dataset.\n\u2022 The framework trains reward models for each compositional metric and uses them for iterative feedback learning, enabling progressive self-refinement of both the base diffusion model and reward models.\n\u2022 IterComp shows significant improvements over existing methods like Omost and FLUX, especially in complex object compositions and semantic alignments, according to experiments.\n\u2022 The method demonstrates superior performance in both compositional accuracy and image realism.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/YangLing0818/IterComp"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Pixtral 12B",
+        "authors": "saurabhgarg, devendrachaplot, EmmaBH, Simontwice, pragra",
+        "link": "https://arxiv.org/abs/2410.07073",
+        "github_repo": null,
+        "summary": "\n- Pixtral 12B is a 12-billion parameter multimodal language model trained to understand both images and text.\n- It utilizes a novel vision encoder trained from scratch, allowing it to process images at native resolution, and a multimodal decoder based on Mistral Nemo 12B.\n- Pixtral 12B outperforms open models of similar size on multimodal benchmarks, such as Llama 3.2 11B and Qwen-2-VL 7B and even surpasses larger models like Llama 3.2 90B on certain tasks. \n- It also achieves strong performance on text-only tasks, demonstrating its capability as a general purpose language model. \n- The authors introduce MM-MT-Bench, an open-source benchmark to evaluate vision-language models in practical multi-turn scenarios.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/mistralai/mistral-inference",
+            "https://github.com/mistralai/mistral-evals"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/mistralai/MM-MT-Bench"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Aria: An Open Multimodal Native Mixture-of-Experts Model",
+        "authors": "JunnanLi, guoyinwang, sirius-ctrl, teowu, dxli1",
+        "link": "https://arxiv.org/abs/2410.05993",
+        "github_repo": null,
+        "summary": "**Summary of Aria: An Open Multimodal Native Mixture-of-Experts Model:**\n- ARIA is an open-source, multimodal native, mixture-of-experts (MoE) model with 24.9B parameters, trained from scratch and designed for comprehensive understanding across diverse modalities.\n- With a visual encoder lightweight of only 438M parameters, ARIA's MoE decoder has 3.9B and 3.5B activated parameters per visual and text token, respectively, enabling efficient parameter utilization and leading to faster training and inference. It outperforms Pixtral-12B and Llama3.2-11B and is competitive with top proprietary models on various multimodal tasks.\n- Trained in a 4-stage pipeline, the model progressively develops capabilities in language understanding, multimodal understanding, long context (64k tokens), and instruction following. This pipeline design ensures that each stage enhances the model's capabilities while preserving the already acquired skills from the previous stages.\n- ARIA's training data includes 6.4T language tokens and 400B multimodal tokens, with a rigorous curation process employing a combination of rule-based and model-based filtering to maintain data quality.\n- Qualitative results showcases ARIA is able to integrate information across multiple modalities in complex reasoning tasks involving chart, table, text, and images understanding and show advanced coding, debugging, math, paper reading, video understanding abilities.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Text2Text Generation",
+            "Video-Text-to-Text",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Unveiling the Backbone-Optimizer Coupling Bias in Visual Representation Learning",
+        "authors": "szli-0000, sunbaigui, SOTA-Owner, ZCLiu35, ZedongWangAI",
+        "link": "https://arxiv.org/abs/2410.06373",
+        "github_repo": null,
+        "summary": " - This paper introduces the concept of Backbone-Optimizer Coupling Bias (BOCB), where the performance of a vision backbone is shown to be significantly influenced by the choice of optimizer. \n- It presents a benchmark evaluating 20 backbones and 20 optimizers on CIFAR-100, ImageNet, and COCO, demonstrating that classical CNNs favor SGD-family optimizers, while modern architectures like ViTs and ConvNeXt perform better with adaptive learning rate optimizers. \n- The paper investigates the influence of backbone macro design and token mixers on BOCB, finding that increased complexity in modern architectures necessitates adaptive optimization strategies. \n- It further analyzes hyperparameter robustness and parameter patterns to understand the underlying mechanisms of BOCB. \n- This analysis leads to recommendations for optimizer selection and insights for designing robust vision backbones, including suggestions for pre-training and transfer learning.",
+        "classification": [
+            "Image Classification",
+            "Object Detection",
+            "Keypoint Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Pyramidal Flow Matching for Efficient Video Generative Modeling",
+        "authors": "quzhe, Payne53, Ninggggy, feifeiobama, rain1011",
+        "link": "https://arxiv.org/abs/2410.05954",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces pyramidal flow matching, a novel video generation framework leveraging spatial and temporal pyramid representations for enhanced efficiency.\n-\nThe model reinterprets the denoising trajectory as a series of pyramid stages, with only the final stage operating at full resolution, thus minimizing redundant computations.\n- It utilizes a unified flow matching objective within a single Diffusion Transformer (DiT) for joint optimization of pyramid stages and streamlines knowledge sharing and decompression. The proposed temporal pyramid employs compressed, lower-resolution history for conditioning, improving training efficiency.\n-\nThe model supports generating high-quality videos at resolutions up to 768p and 24fps, requiring fewer computational resources and training time compared to full-sequence diffusion models.\n-\nEvaluation on VBench and EvalCrafter benchmarks demonstrates highly competitive performance against other open-source models, and in some aspects, even surpasses commercial models, particularly in motion smoothness and dynamic degree metrics.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://pyramid-flow.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "MM-Ego: Towards Building Egocentric Multimodal LLMs",
+        "authors": "HaoxuanYou, FrozzZen, edaxberger, haotiz, leoye",
+        "link": "https://arxiv.org/abs/2410.07177",
+        "github_repo": null,
+        "summary": "**Key Points:**\n- Introduces MM-Ego, a multimodal large language model (MLLM) designed for egocentric video understanding, featuring a novel \"Memory Pointer Prompting\" mechanism. This mechanism incorporates a global glimpse step, which extracts compressed visual embeddings from the entire video to gain an overarching understanding, and a fallback step, which uses higher-resolution key visual embeddings identified in the global glimpse stage to respond to questions.\n- Creates a 7M egocentric QA dataset, generated automatically from human-annotated video narrations from the Ego4D dataset, that ranges from 30 seconds to one hour, representing the largest egocentric QA dataset currently available.\n- Introduces EgoMemoria, a benchmark to evaluate egocentric video understanding capabilities with 7,026 multiple-choice questions across 629 videos ranging from 30 seconds to one hour in length, alongside a debiased metric to mitigate language bias.\n- In experiments, MM-Ego outperforms prior state-of-the-art models on the EgoMemoria benchmark and demonstrates competitive results on general video benchmarks like EgoSchema and Video-MME.\n- The Memory Pointer Prompting and data augmentation strategies show improvements even after the removal of language-biased questions, demonstrating their efficacy for the targeted task.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "One Initialization to Rule them All: Fine-tuning via Explained Variance Adaptation",
+        "authors": "Marc Peter Deisenroth, Benedikt Alkin, thomasschmied, sirluk, paischer101",
+        "link": "https://arxiv.org/abs/2410.07170",
+        "github_repo": "https://github.com/ml-jku/EVA",
+        "summary": "\n- This paper introduces Explained Variance Adaptation (EVA), a novel data-driven initialization method for Low-Rank Adaptation (LoRA) used in fine-tuning large foundation models.\n- EVA computes the Singular Value Decomposition (SVD) on mini-batches of activation vectors derived from downstream data to initialize LoRA weights, maximizing explained variance and enabling adaptive rank allocation across model layers.\n- Experiments conducted on diverse tasks, including language generation, understanding, image classification, and reinforcement learning, demonstrate EVA's superior performance to existing initialization and rank adaptation techniques.\n- EVA achieves faster convergence than competitor models across multiple tasks, such as achieving higher average scores on commonsense reasoning with LLMs and even exceeding full fine-tuning performance when combined with DORA on reinforcement learning tasks.\n- Ablation studies confirm that both the directional components and scale obtained from SVD contribute to EVA's enhanced performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Image Classification",
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/ml-jku/EVA",
+            "https://github.com/BenediktAlkin/vtab1k-pytorch",
+            "https://github.com/sirluk/peft/blob/main/examples/eva_finetuning/eva_finetuning.py"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Story-Adapter: A Training-free Iterative Framework for Long Story Visualization",
+        "authors": "Yunfei Xie, RitaCoding, MudeHui, xk-huang, JohnWeck",
+        "link": "https://arxiv.org/abs/2410.06244",
+        "github_repo": null,
+        "summary": "Story-Adapter is a training-free and computationally efficient framework designed to enhance long story visualization (up to 100 frames), which leverages an iterative paradigm that refines each generated image using both the text prompt and all generated images from the previous iteration.\n- A novel Global Reference Cross-Attention (GRCA) module aggregates all generated images from the previous iteration to preserve semantic consistency across the entire story, while minimizing computational costs with global embeddings.\n- This iterative process progressively optimizes image generation by repeatedly incorporating text constraints, leading to more precise and fine-grained interactions.\n- Story-Adapter outperforms existing methods for visualizing both regular and long stories, showing a 9.4% improvement in aCCS and a 21.71 reduction in aFID compared to StoryGen and achieving a 3.4% improvement in aCCS and an 8.14 reduction in aFID compared to StoryDiffusion.\n- The iterative paradigm enhances both semantic consistency and the quality of fine-grained interactions across iterations, and GRCA sustains global story semantics for long story visualization.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Self-Boosting Large Language Models with Synthetic Preference Data",
+        "authors": "Zhifang Sui, Li Dong, thegenerality, THU-CHUNXIA, Rsy24",
+        "link": "https://arxiv.org/abs/2410.06961",
+        "github_repo": null,
+        "summary": "SynPO, a novel self-boosting paradigm, leverages synthetic preference data for Large Language Model (LLM) alignment, eliminating the need for extensive human preference data. It employs an iterative mechanism where a self-prompt generator creates diverse prompts, and a response improver refines model responses.  After four SynPO iterations, LLMs like Llama2-8B and Mistral-7B demonstrated significant improvements, achieving over 22.1% win rate improvements on benchmarks like AlpacaEval 2.0 and ArenaHard. Moreover, SynPO boosts the general LLM performance, as evidenced by a 3.2 to 5.0 average score increase on the Open LLM leaderboard.  SynPO's self-boosting mechanism dynamically guides LLMs to refine their own outputs, effectively integrating generative rewards for preference learning.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Falcon Mamba: The First Competitive Attention-free 7B Language Model",
+        "authors": "Ilyas Chahed, Dhia Eddine Rhaiem, ybelkada, yellowvm, JingweiZuo",
+        "link": "https://arxiv.org/abs/2410.05355",
+        "github_repo": null,
+        "summary": "-\nFalcon Mamba 7B is a new large language model based on the Mamba architecture, making it attention-free, trained on 5.8 trillion tokens.\n-\nIt outperforms other open-source 7B models like Mistral 7B and Llama 3.1 8B, as well as larger models such as Falcon2 11B in benchmarks like the Open LLM Leaderboard.\n-\nFalcon Mamba 7B has faster inference speeds and lower memory usage, especially beneficial for long sequence generation due to the Mamba architecture's linear memory scaling.\n-\nThe model uses an AdamW optimizer with a warmup-stable-decay learning rate schedule and is trained on a dataset mixture of web data, curated content, code, and math data.\n-\nFalcon Mamba 7B is available with a permissive license on Hugging Face, supporting functionalities such as inference, quantization, and fine-tuning.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/tiiuae/falcon-mamba-7b",
+            "https://huggingface.co/tiiuae/falcon-mamba-7b-pre-decay"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Temporal Reasoning Transfer from Text to Video",
+        "authors": "Chancy, PY007, yaolily, lyx97, tobiaslee",
+        "link": "https://arxiv.org/abs/2410.06166",
+        "github_repo": null,
+        "summary": "-\nT3 (Textual Temporal reasoning Transfer) is introduced, a method that enhances Video Large Language Models' (Video LLMs) temporal reasoning by transferring knowledge from the text domain. \n- T3 creates diverse temporal reasoning tasks in text format from existing image-text datasets, addressing the lack of video samples with complex temporal scenarios. \n- Without using any video data, T3 improves LongVA-7B's performance significantly, achieving a 5.3 absolute accuracy gain on TempCompass, exceeding ShareGPT4Video-8B (trained on 28,000 video samples).\n- The enhanced LongVA-7B achieves competitive performance on video benchmarks, e.g. 49.7 accuracy on Video-MME's Temporal Reasoning task, outperforming InternVL-Chat-V1.5-20B and VILA1.5-40B. \n-  Analysis reveals a strong correlation between textual and video temporal task performance (e.g., Pearson r=0.89 on TempCompass), validating the efficacy of T3.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "TRACE: Temporal Grounding Video LLM via Causal Event Modeling",
+        "authors": "Xiaoying Tang, Mingda Li, Jingyu Liu, qingbinliu, Yongxin-Guo",
+        "link": "https://arxiv.org/abs/2410.05643",
+        "github_repo": "https://github.com/gyxxyg/TRACE",
+        "summary": "\n- TRACE, a novel task-interleaved video Large Language Model (LLM), is introduced for Video Temporal Grounding (VTG). It addresses the limitations of current video LLMs that rely solely on natural language generation, which lack the clear structure and information presented in videos. \n- TRACE models videos as sequences of events, each with timestamps, salient scores, and captions, and leverages causal event modeling framework to represent the inherent structure of videos.\n- The TRACE architecture uses an interleaved sequence of task tokens for visual frames, timestamps, salient scores, and text, and employs separate encoders and decoding heads for each task.\n- The model also incorporates an adaptive head-switching mechanism for improved generation and achieves superior performance on various VTG tasks and datasets, outperforming current video LLMs.\n- TRACE improves zero-shot performance by 3.1% and 4.9% on Youcook2 (CIDEr and F1 Score), by 6.5% and 3.7% on Charades-STA (Recall with IOU=0.5 and IOU=0.7 respectively), and by 10.3% and 9.2% on QVHighlights (mAP and HIT@1).",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/gyxxyg/TRACE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Data Selection via Optimal Control for Language Models",
+        "authors": "Li Dong, thegenerality, Rsy24, howang, t1101675",
+        "link": "https://arxiv.org/abs/2410.07064",
+        "github_repo": "https://github.com/microsoft/LMOps/tree/main/data_selection",
+        "summary": "This paper introduces PMP-based Data Selection (PDS), a framework for selecting high-quality pre-training data for language models (LMs).\nPDS formulates data selection as an Optimal Control problem and leverages Pontryagin's Maximum Principle (PMP) to derive necessary conditions for optimal data selection.\nExperiments show that PDS accelerates LM pre-training by 2x and improves performance across various model sizes and downstream tasks, even extrapolating to 400B models trained on 15T tokens.\nPDS also enhances data utilization in data-constrained settings, reducing pre-training data demand by 1.8 times.\nThis method offers a principled, theory-driven approach to data selection compared to existing heuristics, leading to more efficient and effective LM training.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/LMOps/tree/main/data_selection"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "CursorCore: Assist Programming through Aligning Anything",
+        "authors": "Shijin Wang, Rui Li, Qi Liu, Eviloder, TechxGenus",
+        "link": "https://arxiv.org/abs/2410.07002",
+        "github_repo": "https://github.com/TechxGenus/CursorCore",
+        "summary": "\n- This paper introduces CursorCore, a new framework for AI-assisted programming that integrates various information sources such as coding history, current code, and user instructions for enhanced automation. \n- It also presents a new benchmark called APEval (Assist Programming Eval) to evaluate models on this task and a data generation pipeline, Programming-Instruct, to create synthetic training data from diverse sources. \n- This pipeline generated 219K samples to fine-tune the CursorCore models. \n- The CursorCore models reportedly outperforms other models of comparable size on the APEval benchmark. \n- This framework unifies applications like inline chat and automated editing, contributing to the advancement of coding assistants.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/TechxGenus/CursorCore"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "TweedieMix: Improving Multi-Concept Fusion for Diffusion-based Image/Video Generation",
+        "authors": "Jong Chul Ye, gkwon",
+        "link": "https://arxiv.org/abs/2410.05591",
+        "github_repo": "https://github.com/KwonGihyun/TweedieMix",
+        "summary": "-\n\nTweedieMix is a novel method that enhances the fusion of multiple personalized concepts in diffusion-based image and video generation models during inference.\n\n-\n\nThe method involves a two-stage sampling process: multi-object-aware sampling with a novel resampling strategy and concept fusion sampling using object-wise region guidance and Tweedie's formula for combining custom concept samples in the denoised image space.\n\n-\n\nThis approach allows for seamless integration of multiple, even semantically related, concepts without blending issues and can handle more than two concepts effectively.\n\n-\n\nExperimental results demonstrate higher fidelity in generating multiple personalized concepts compared to existing methods, achieving better CLIP scores and user preference ratings.\n\n-\n\nThe framework extends to image-to-video diffusion models, enabling multi-concept video generation through a training-free strategy involving feature injection from the first frame to subsequent frames, outperforming fine-tuning-based methods.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/KwonGihyun/TweedieMix"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Response Tuning: Aligning Large Language Models without Instruction",
+        "authors": "Hyounghun Kim, seokhyun",
+        "link": "https://arxiv.org/abs/2410.02465",
+        "github_repo": null,
+        "summary": "\n- Response Tuning (RT) is proposed, a novel fine-tuning method that omits the instruction-conditioning step of instruction tuning, instead focusing exclusively on the supervision of response space.\n- RT models, trained solely on responses, exhibit helpfulness and open-ended instruction following capabilities comparable to instruction-tuned models, demonstrating the potential of response space supervision in alignment.\n- Refining the structural attributes of training responses leads to significant improvements in user preference for RT models, while incorporating contextual refusals into the training data allows RT models to implicitly evaluate and reject unsafe queries. \n- These findings emphasize the importance of controlling response distribution in safety alignment and suggest that large language models inherently acquire many capabilities during pre-training.\n- In-context learning with response demonstrations only yields effective instruction-following and refusal behaviors, further strengthening the argument for the power of response supervision and highlighting the inherent potential of pretrained large language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/seokhyunan/response-tuning"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "ING-VP: MLLMs cannot Play Easy Vision-based Games Yet",
+        "authors": "Haoran Zhang, zhangysk, CheeryLJH, EZ-hwh, Rosiness",
+        "link": "https://arxiv.org/abs/2410.06555",
+        "github_repo": "https://github.com/Thisisus7/ING-VP.git",
+        "summary": "\n- This research introduces ING-VP, a novel interactive game-based vision planning benchmark designed to evaluate the spatial imagination and multi-step reasoning capabilities of Multimodal Large Language Models (MLLMs).\n- ING-VP comprises six distinct games with varying complexity, offering 300 levels and six unique configurations per level, leading to over 60,000 interaction rounds for a single model.\n- The benchmark incorporates image-text and text-only input modalities, single and multi-step reasoning settings, and conditions with and without interaction history, facilitating a comprehensive evaluation of MLLM performance.\n- Initial evaluations using ING-VP demonstrate that current state-of-the-art MLLMs struggle with these seemingly simple game tasks. The highest performing model, Claude-3.5 Sonnet, only achieves an average accuracy of 3.37%, significantly below human performance.\n- This underscores the need for further research and development to enhance MLLMs' capacity for complex spatial reasoning and planning, a crucial aspect of achieving robust artificial general intelligence.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Thisisus7/ING-VP.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Mixed-Session Conversation with Egocentric Memory",
+        "authors": "Taeyoung Kim, khh3323, jihyoung",
+        "link": "https://arxiv.org/abs/2410.02503",
+        "github_repo": null,
+        "summary": "\u2022 The paper introduces Mixed-Session Conversation, a new dialogue paradigm where a main speaker interacts with different partners across multiple sessions, promoting deeper layered interactions and complex dynamics. \n\u2022 MISC, a new dataset comprising 8.5K episodes with 6 sessions and 4 speakers per episode is presented, implementing Mixed-Session Conversation and managing memories across sessions and partners from the main speaker's perspective.  \n\u2022 EMMA (Egocentric Memory Enhanced Mixed-session Conversation Agent), a novel dialogue model trained on MISC, facilitates seamless conversation continuity using Egocentric Memory, and allows retention of all conversational contexts across sessions and partners.  \n\u2022 Human evaluations validate that dialogues in MISC demonstrate seamless conversational flow even with changing partners, with EMMA exhibiting high humanness, engagingness, and memorability. \n\u2022 EMMA's use of Egocentric memory retains high memorability without contradiction by connecting instances within and across sessions and tagging memory to each utterance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://mixed-session.github.io/"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Retrieval-Augmented Decision Transformer: External Memory for In-context RL",
+        "authors": "Markus Hofmarcher, razp, vihangp, paischer101, thomasschmied",
+        "link": "https://arxiv.org/abs/2410.07071",
+        "github_repo": null,
+        "summary": "-\nRetrieval-Augmented Decision Transformer (RA-DT) is introduced, a novel in-context reinforcement learning (ICL) method that addresses the limitations of current approaches requiring entire episodes in the agent's context by incorporating an external memory with sub-trajectory retrieval.\n-\nRA-DT uses a pre-trained embedding model to encode sub-trajectories and maximum inner product search to retrieve relevant past experiences, which are then fused with the current context in the decision transformer (DT) via cross-attention.\n-\nThis retrieval mechanism does not require training and can be domain-agnostic.\n-\nRA-DT significantly outperforms existing ICL baselines on grid-world environments with sparse rewards while requiring only a fraction of their context length.\n-\nA domain-agnostic embedding model utilizing a FrozenHopfield mechanism and BERT shows comparable retrieval performance to a domain-specific DT, and RA-DT demonstrates consistent improvement on hold-out tasks in complex environments like robotics simulations and procedurally-generated video games, though without achieving general in-context improvement.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ml-jku/RA-DT"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "F\u00fcrElise: Capturing and Physically Synthesizing Hand Motions of Piano Performance",
+        "authors": "C. Karen Liu, Elizabeth Schumann, Haochen Shi, Pei Xu, rcwang",
+        "link": "https://arxiv.org/abs/2410.05791",
+        "github_repo": null,
+        "summary": "-\n  This paper introduces F\u00fcrElise, a large-scale dataset of 3D hand motions and audio from 15 pianists playing 153 classical music pieces, captured using a markerless multi-view video setup and refined with MIDI data from a Disklavier piano.  \n- A new model is proposed to synthesize physically plausible piano playing motions from sheet music, combining a diffusion model for initial motion generation, a music-based motion retrieval method for enhancing accuracy, and reinforcement learning for physics-based bimanual control. \n- The diffusion model, trained on F\u00fcrElise, generates kinematic hand trajectories conditioned on sheet music, providing high-level guidance and fingering information. \n- Motion retrieval augments the diffusion model's output by retrieving similar motions from F\u00fcrElise based on musical similarity, improving the precision of key presses. \n- The reinforcement learning policy learns to control simulated hands interacting with a piano keyboard, optimizing a combination of imitation and goal-based rewards to achieve realistic and musically accurate performance.",
+        "classification": [
+            "Computer Vision",
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs",
+        "authors": "Edward Suh, huansun, someshjha, peiranli0930, ShletonLiu-N",
+        "link": "https://arxiv.org/abs/2410.05295",
+        "github_repo": "https://github.com/SaFoLab-WISC/AutoDAN-Turbo",
+        "summary": "-\nAutoDAN-Turbo, a novel black-box jailbreak method for Large Language Models (LLMs), automatically discovers and combines diverse jailbreak strategies using a lifelong learning approach.\n-\nThis method leverages three core modules: an Attack Generation and Exploration Module, a Strategy Library Construction Module, and a Jailbreak Strategy Retrieval Module, allowing for continuous strategy discovery, evolution, and integration of human-designed strategies.\n-\nEvaluation on Harmbench and StrongREJECT benchmarks shows that AutoDAN-Turbo significantly outperforms existing methods, achieving a 74.3% higher average attack success rate and a 92.3% higher StrongREJECT score than the runner-up.\n-\nNotably, it demonstrates exceptional effectiveness on GPT-4-1106-turbo, reaching an 88.5% attack success rate, which further increases to 93.4% with the integration of human-designed strategies.\n-\nThe learned strategy library exhibits strong transferability across different target models and datasets, demonstrating its robustness and adaptability in various attack scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SaFoLab-WISC/AutoDAN-Turbo"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Multimodal Situational Safety",
+        "authors": "xw-eric, dawnsong, acompalas, Xuandong, LCZZZZ",
+        "link": "https://arxiv.org/abs/2410.06172",
+        "github_repo": null,
+        "summary": "\n- This paper introduces the novel problem of Multimodal Situational Safety, which focuses on evaluating a multimodal model's ability to consider safety aspects based on visual context.\n- A new benchmark called MSSBench is created to evaluate the situational safety performance of current Multimodal Large Language Models (MLLMs).\n- The benchmark comprises 1820 language query-image pairs across two scenarios: chat and embodied assistants, where half the images depict safe situations and the other half unsafe.\n- An evaluation framework analyzes key safety aspects, including explicit safety reasoning, visual understanding, and situational safety reasoning.\n- Results show current MLLMs struggle with recognizing unsafe situations, especially open-source models which frequently ignore safety clues. ",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Visual Question Answering",
+            "Image-Text-to-Text"
+        ],
+        "github_urls": [
+            "mssbench.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data, Reward, and Conditional Guidance Design",
+        "authors": "wangwilliamyang, wenhu, rpiramuthu, xfgao, jiachenli-ucsb",
+        "link": "https://arxiv.org/abs/2410.05677",
+        "github_repo": null,
+        "summary": "\u2022 T2V-Turbo-v2, a novel text-to-video (T2V) generation model, enhances post-training through incorporating various supervision signals, including high-quality training data, reward model feedback, and conditional guidance into the consistency distillation process. \n\u2022 It eliminates the target network from T2V-Turbo for improved memory efficiency and enables full model training, rather than just LORA.\n\u2022 It leverages motion guidance from training videos to formulate an energy function that augments the ODE solver, improving motion quality. \n\u2022 Evaluated on VBench, T2V-Turbo-v2 achieves state-of-the-art performance with a Total Score of 85.13, surpassing proprietary systems such as Gen-3 and Kling. \n\u2022 Ablation studies confirm the benefits of curating specialized datasets, utilizing diverse reward models and employing motion guidance.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/Vchitect/VBench_Leaderboard"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "ViBiDSampler: Enhancing Video Interpolation Using Bidirectional Diffusion Sampler",
+        "authors": "Jong Chul Ye, Taesung Kwon, sr2851766",
+        "link": "https://arxiv.org/abs/2410.05651",
+        "github_repo": null,
+        "summary": " - This paper introduces ViBiDSampler, a novel bidirectional diffusion sampling method for video interpolation, which addresses off-manifold issues common in existing time-reversal fusion methods.\n- ViBiDSampler sequentially samples along forward and backward paths conditioned on start and end frames, improving coherence and on-manifold generation of intermediate frames.\n- The method incorporates CFG++ and DDS guidance techniques to enhance interpolation performance and ensure proper alignment with keyframes.\n- Experimental results on DAVIS and Pexels datasets demonstrate state-of-the-art performance in terms of fidelity and perceptual quality, outperforming baselines like FILM, TRF, and Generative Inbetweening.\n- ViBiDSampler efficiently generates high-resolution (1024x576) 25-frame videos in 195 seconds on a single 3090 GPU without fine-tuning or multiple re-noising steps.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://vibid.github.io/"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Collective Critics for Creative Story Generation",
+        "authors": "Hyounghun Kim, minwook",
+        "link": "https://arxiv.org/abs/2410.02428",
+        "github_repo": null,
+        "summary": "CRITICS is a novel framework for long-form story generation that integrates a collaborative critique mechanism to enhance story creativity and expressiveness.\n- It consists of two stages: CRPLAN for refining story plans and CRTEXT for enhancing story expressiveness.\n- Multiple LLM critics and a leader collaborate to refine story plans and enhance story texts based on criteria for creativity.\n- Human evaluation shows that CRITICS significantly improves story creativity and reader engagement while maintaining coherence.\n- It supports interactive writing, where humans can participate as any player within the framework.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/EMNLP-2024-CritiCS/Collective-Critics-for-Creative-Story-Generation"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Diversity-Rewarded CFG Distillation",
+        "authors": "alexrame, Sper42, bachem, ferretj, aagostinelli86",
+        "link": "https://arxiv.org/abs/2410.06084",
+        "github_repo": null,
+        "summary": "\n- This paper introduces diversity-rewarded CFG distillation, a novel finetuning strategy to enhance the quality-diversity trade-off in generative models, specifically for text-to-music generation.\n- It combines distillation and reinforcement learning (RL) to optimize two complementary objectives; a novel CFG distillation objective and an RL with diversity reward objective.\n- By interpolating between the weights of two models(quality-focused and diversity-focused model), the strategy controls the quality-diversity trade-off at deployment time, further boosting performance.\n- Experiments on MusicLM using human evaluation validate that the model generates more diverse music samples while maintaining high quality.\n- The finetuned-then-merged model outperforms CFG augmentation in terms of Pareto-optimal quality and diversity, generating high-quality samples with improved diversity.",
+        "classification": [
+            "Text-to-Audio",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Jointly Generating Multi-view Consistent PBR Textures using Collaborative Control",
+        "authors": "Dante De Nigris, SlavaElizarov, CiaraRowles, bostadynamics, esx2ve",
+        "link": "https://arxiv.org/abs/2410.06985",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel end-to-end pipeline for generating multi-view consistent Physically Based Rendering (PBR) textures from a 3D mesh and a text prompt. \n- The approach leverages a pre-trained text-to-image diffusion model within a Collaborative Control framework, extending it to multi-view by incorporating cross-attention to a reference view, its DINOv2 features, and pixel-wise correspondences between views with occlusion awareness.\n- The generated multi-view PBR images, including albedo, roughness, metallic, and normal bump maps, are consistent enough for naive fusion into a single texture map using a tri-planar representation and a small neural decoder.\n- The method bypasses the need for inverse rendering, directly modeling the PBR material distribution.\n- Qualitative comparisons suggest that the proposed method generates cleaner PBR textures than FlashTex, exhibiting better multi-view consistency, and produces high-resolution bump maps, although the overall realism is slightly lower than that of MetaTextureGen in some cases.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "TinyEmo: Scaling down Emotional Reasoning via Metric Projection",
+        "authors": "ggcristian",
+        "link": "https://arxiv.org/abs/2410.07062",
+        "github_repo": "https://github.com/ggcr/TinyEmo",
+        "summary": "\n- TinyEmo, a family of small Multimodal Large Language Models (MM-LLMs), is introduced for enhanced emotional reasoning and classification, integrating a synthetic emotional instruction dataset, a Metric Projector for classification, and a conditional reasoning approach.\n- The architecture includes a vision encoder (CLIP ViT-L/14), two projectors for classification and reasoning respectively and different LLM backbones (OpenELM, TinyLlama, Phi-2) ranging from 0.7B to 3.21B parameters. The Metric Projector is trained separately with metric learning, detaching classification from the LLM to improve efficiency and performance.\n- TinyEmo-700M outperforms larger state-of-the-art models like EmoVIT (7.91B parameters) with only 700M parameters on emotion classification and achieves a Zero-Shot accuracy of 57.62% when trained with data augmentation, outperforming EmoVIT's 55.57%.\n- A Conditional Reasoning approach, where the predicted emotion label from the Metric Projector is inserted into the prompt, leads to more accurate reasoning compared to the standard approach.\n- A semi-automated framework is proposed which uses the Metric Projector for interpretability and bias detection by analyzing neuron activations and embedding space robustness, showing the potential for mitigating bias and improving understanding of model behavior.",
+        "classification": [
+            "Multimodal",
+            "Image Classification",
+            "Visual Question Answering",
+            "Text Generation",
+            "Zero-Shot Classification",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ggcr/TinyEmo"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching",
+        "authors": "Zhikang Niu, kaiyu-hf, ChunHuiWangFN, D-Keqi, SWivid",
+        "link": "https://arxiv.org/abs/2410.06885",
+        "github_repo": null,
+        "summary": "\u2022 F5-TTS is a fully non-autoregressive text-to-speech model based on flow matching with Diffusion Transformer (DiT) and ConvNeXt V2.\n\u2022 It simplifies the pipeline by removing the need for a duration model, text encoder, phoneme alignment, and semantically infused codec, using padded character sequences as input.\n\u2022 The model employs a novel Sway Sampling strategy during inference, improving performance and allowing for faster inference with fewer function evaluations.\n\u2022 Evaluation on LibriSpeech-PC, Seed-TTS test-en, and test-zh demonstrates that F5-TTS achieves state-of-the-art zero-shot performance with a real-time factor (RTF) of 0.15, outperforming existing methods in terms of both speed and quality.\n\u2022 Ablation studies highlight the robustness of F5-TTS, especially in handling challenging scenarios where the alignment between text and speech is crucial.",
+        "classification": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "github_urls": [
+            "https://github.com/SWivid/F5-TTS"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "MentalArena: Self-play Training of Language Models for Diagnosis and Treatment of Mental Health Disorders",
+        "authors": "Chi Han, Qingyun Wang, May Fung, jindongwang, Cheng228",
+        "link": "https://arxiv.org/abs/2410.06845",
+        "github_repo": "https://github.com/Scarelette/MentalArena/tree/main",
+        "summary": "-\nMentalArena is a novel self-play training framework for LLMs to improve their ability to diagnose and treat mental health disorders by generating personalized training data.\n- It consists of three modules: Symptom Encoder simulates realistic mental health patients, Symptom Decoder mitigates intent bias in patient-therapist dialogues, and Model Optimizer fine-tunes the LLM on the generated data.\n- The Symptom Encoder uses cognitive models and behavior principles of patients to produce realistic symptom descriptions.\n- The framework significantly outperformed several state-of-the-art and mental-health-specific LLMs, including GPT-4, on six benchmark datasets, demonstrating improvement over base models by 20.7% for GPT-3.5-turbo and 6.6% for Llama-3-8b.\n- Further analysis revealed a strong correlation between model performance and perplexity of the training data, and that maintaining data diversity above a certain threshold during training contributes to improved model performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Scarelette/MentalArena/tree/main"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "TextToon: Real-Time Text Toonify Head Avatar from Single Video",
+        "authors": "Chenliang Xu, Lele Chen, Luchuan Song, pliu23, goddice",
+        "link": "https://arxiv.org/abs/2410.07160",
+        "github_repo": null,
+        "summary": "**TextToon** is a real-time text-driven toonification model for generating stylized head avatars from single-view videos.\n* The model uses a conditional Tri-plane Gaussian deformation field to learn facial expressions and deformations in a canonical space, allowing for text-driven stylization.\n* The framework is first pre-trained on photo-realistic appearances and then fine-tuned on stylized images generated by a text-to-image (T2I) model. \n* A \"lazy factor\" is introduced to enhance the handling of shoulder movements. \n* Results show qualitative and quantitative improvements over existing methods in terms of style preservation, identity retention, and real-time animation, achieving up to 48 FPS on a GPU and 15-18 FPS on a mobile device. \n* Evaluation shows that fine-tuning is completed within five minutes, enabling fast stylization and adaptation.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://songluchuan.github.io/TextToon/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Holistic Unlearning Benchmark: A Multi-Faceted Evaluation for Text-to-Image Diffusion Model Unlearning",
+        "authors": "Dongwoo Kim, Sangdon Park, Minjong, hi-sammy",
+        "link": "https://arxiv.org/abs/2410.05664",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces Holistic Unlearning Benchmark (HUB), a comprehensive evaluation framework for assessing the effectiveness of unlearning methods in text-to-image diffusion models.\n- HUB evaluates unlearning methods across five key aspects: effectiveness on target concepts, faithfulness of images, compliance with prompts, robustness on side effects, and consistency in downstream applications.\n- The benchmark was used to evaluate six state-of-the-art unlearning methods including ESD, UCE, AC, SA, SalUn, and Receler.\n- Empirical results reveal that current unlearning methods exhibit limitations, especially in handling complex prompts and downstream tasks. \n- The authors release their evaluation code and datasets to facilitate further research in unlearning methods for text-to-image diffusion models.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning",
+        "authors": "Jie Chen, Wojciech Matusik, Michael Sun, Gang Liu, mjiang89",
+        "link": "https://arxiv.org/abs/2410.04223",
+        "github_repo": null,
+        "summary": "This research paper presents Llamole, a multimodal large language model (MLLM) for controllable and synthesizable molecular generation and retrosynthetic planning. Llamole integrates a base LLM with a graph diffusion transformer, graph neural networks, and A* search, allowing for the seamless generation of text, molecules, and reactions. Benchmarks on 14 LLMs of various sizes reveal the limitations of existing models in controllable molecular design and synthetic planning. Llamole shows significant improvement, increasing success rates from 5.5% to 35% and enhancing controllability by up to 80.9% across various metrics.",
+        "classification": [
+            "Multimodal",
+            "Graph Machine Learning",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way",
+        "authors": "Pan Zhang, Pengyang Ling, Jiazi Bu, lindahua, yuhangzang",
+        "link": "https://arxiv.org/abs/2410.06241",
+        "github_repo": null,
+        "summary": "BroadWay is a training-free method to improve the quality of text-to-video generation without introducing additional parameters or increasing memory and sampling time. It has two main components: Temporal Self-Guidance and Fourier-based Motion Enhancement. Temporal Self-Guidance improves structural plausibility and temporal consistency by reducing disparity between temporal attention maps across decoder blocks. Fourier-based Motion Enhancement amplifies motion magnitude and richness by scaling the high-frequency components of temporal attention maps. Experimental results on AnimateDiff and VideoCrafter2 backbones show significant improvement in generated video quality without any training or fine-tuning.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Hallucinating AI Hijacking Attack: Large Language Models and Malicious Code Recommenders",
+        "authors": "fgmckee, dnoever",
+        "link": "https://arxiv.org/abs/2410.06462",
+        "github_repo": null,
+        "summary": " - This research paper explores the adversarial potential of Large Language Models (LLMs) to recommend malicious code within popular code repositories.\n- It demonstrates that while LLMs have guardrails against harmful outputs, these can be bypassed using context-shifting techniques.\n- Empirical examples are presented showing LLMs suggesting compromised APIs, RSS feeds, GitHub repositories, and NPM packages.\n- The attack surface is amplified by the use of trojan-hosting repositories and content delivery networks.\n- This work highlights the vulnerability of software supply chains to LLM-generated recommendations and calls for further research to improve context-aware safety measures.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "None"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Seeker: Enhancing Exception Handling in Code with LLM-based Multi-Agent Approach",
+        "authors": "Minlie Huang, Yuan Yuan, Yuxuan Chen, XUANMINGZHANG",
+        "link": "https://arxiv.org/abs/2410.06949",
+        "github_repo": null,
+        "summary": "\n- Seeker, a multi-agent framework leverages LLMs to enhance exception handling in code by addressing three key issues: insensitive detection of fragile code, inaccurate capture of exception types, and distorted handling solutions.\n- Seeker employs five agents\u2014Scanner, Detector, Predator, Ranker, and Handler\u2014inspired by expert developer strategies.\n-  A Common Exception Enumeration (CEE) document, built from trusted external experience and exception practices, is used to improve retrieval and handling.\n- A deep retrieval-augmented generation (Deep-RAG) algorithm is proposed to handle complex inheritance relationships between exception types.\n- Experimental results show that Seeker outperforms baselines on various metrics including code quality, coverage, accuracy, and edit similarity.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/XMZhangAI/Seeker"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Do great minds think alike? Investigating Human-AI Complementarity in Question Answering with CAIMIRA",
+        "authors": "Jordan Boyd-Graber, Hal Daum\u00e9 III, zhoutianyi, mgor",
+        "link": "https://arxiv.org/abs/2410.06524",
+        "github_repo": null,
+        "summary": "\n- This paper introduces CAIMIRA, a novel framework based on Item Response Theory (IRT) for evaluating and comparing the question-answering abilities of humans and AI systems.\n- CAIMIRA uses question text to infer characteristics, enabling generalization to new questions without needing prior responses and allowing for analysis of over 300,000 responses from ~70 AI systems and 155 humans across thousands of quiz questions.\n- The study finds that humans outperform AI in knowledge-grounded abductive and conceptual reasoning, while LLMs like GPT-4-TURBO excel at targeted information retrieval and fact-based reasoning.\n- The authors suggest future QA tasks focus on challenging higher-order reasoning, scientific thinking, nuanced linguistic interpretation, and cross-contextual knowledge application.\n- The implementation can be found at https://github.com/maharshi95/neural-irt",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/maharshi95/neural-irt"
+        ],
+        "huggingface_urls": [
+            "mgor/protobowl-11-13"
+        ],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+        "authors": "lilianweng, tejalp, thesofakillers, evanmays, nch0w",
+        "link": "https://arxiv.org/abs/2410.07095",
+        "github_repo": "http://github.com/openai/mle-bench/",
+        "summary": "\n- This paper introduces MLE-bench, a new benchmark for evaluating how well AI agents can perform at machine learning engineering. \n- The benchmark consists of 75 diverse Kaggle competitions to reflect real-world ML engineering skills such as training models, preparing datasets, and running experiments. \n- The authors establish human baselines for each competition using Kaggle\u2019s publicly available leaderboards and evaluate several frontier language models. \n- They found that the best-performing model, OpenAI\u2019s ol-preview with AIDE scaffolding, achieves at least the level of a Kaggle bronze medal in 16.9% of competitions. \n- The study further explores resource scaling for AI agents and the impact of contamination from pre-training data.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/openai/mle-bench/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
+    },
+    {
+        "title": "Does Spatial Cognition Emerge in Frontier Models?",
+        "authors": "vkoltun, philkra, erikwijmans, sramakrishnan",
+        "link": "https://arxiv.org/abs/2410.06468",
+        "github_repo": null,
+        "summary": " - The paper introduces SPACE, a benchmark for evaluating spatial cognition in large language models (LLMs) and large multimodal models. \n - SPACE evaluates large-scale mapping abilities and smaller-scale reasoning about object shapes and layouts. \n - The benchmark includes tasks from cognitive science, instantiated in parallel via text and images. \n - Results indicate that current frontier models fall short of animal spatial intelligence, performing near chance level on several classic tests. \n - The authors suggest that spatial cognition is a crucial form of intelligence, and its emergence in models is worthy of further investigation.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering",
+            "Zero-Shot Image Classification",
+            "Zero-Shot Object Detection",
+            "Computer Vision",
+            "Image Classification",
+            "Image Segmentation",
+            "Video Classification",
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-10"
     }
 ]

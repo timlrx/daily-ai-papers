@@ -1,0 +1,274 @@
+[
+    {
+        "title": "MathCoder2: Better Math Reasoning from Continued Pretraining on Model-translated Mathematical Code",
+        "authors": "juntingpan, shiwk20, Houxing, scikkk, AJZhou",
+        "link": "https://arxiv.org/abs/2410.08196",
+        "github_repo": "https://github.com/mathllm/MathCoder2",
+        "summary": "\n- MathCoder2, a new family of models, enhances mathematical reasoning in Large Language Models (LLMs) through continued pretraining on a 19.2B token dataset named MathCode-Pile, which pairs mathematical code with corresponding natural language reasoning steps.\n- The MathCode-Pile dataset was constructed by filtering and combining various math-related data sources, including web data, synthetic data, code using math packages, textbooks, and model-translated mathematical code.\n- A novel method was introduced to extract reasoning steps (conditions, LaTeX expressions, and results) from text using Llama 3.1-70B Instruct, subsequently translated into executable Python snippets.\n- MathCoder2-Llama-3-8B, a model from the MathCoder2 family, achieves 4-shot accuracies of 38.4% on MATH and 69.9% on GSM8K, improving upon the baseline by 3.1% and 4.1% respectively.\n- The complete data processing and training code, along with the dataset, is open-sourced for transparency and reproducibility.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/mathllm/MathCoder2"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "PrefixQuant: Static Quantization Beats Dynamic through Prefixed Outliers in LLMs",
+        "authors": "Yi Bin, Jiahao Wang, Yi Liu, wqshao126, ChenMnZ",
+        "link": "https://arxiv.org/abs/2410.05265",
+        "github_repo": "https://github.com/ChenMnZ/PrefixQuant",
+        "summary": "\u2022 PrefixQuant is a novel quantization technique for Large Language Models (LLMs) that leverages the observation that outlier tokens often appear at predictable locations or have low semantic value. \n\u2022 The technique involves offline identification and prefixing of these outlier tokens in the key-value cache to prevent their generation during inference, enabling the use of per-tensor static quantization. \n\u2022 This method enables static quantization to outperform the more computationally expensive per-token dynamic quantization. \n\u2022 The authors demonstrate PrefixQuant's efficacy on Llama-2, Llama-3, and other LLMs, achieving perplexity improvements and accuracy gains over existing methods like QuaRot while also improving inference speed. \n\u2022 For example, in a W4A4KV4 quantized Llama-3-8B model, PrefixQuant attains a 7.43 WikiText2 perplexity and 71.08% average accuracy on five common sense reasoning tasks, surpassing QuaRot by 0.98 perplexity and 5.98 accuracy points.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/ChenMnZ/PrefixQuant"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "MLLM as Retriever: Interactively Learning Multimodal Retrieval for Embodied Agents",
+        "authors": "Zongqing Lu, Xinru Xu, tellarin, yuejunpengpku",
+        "link": "https://arxiv.org/abs/2410.03450",
+        "github_repo": null,
+        "summary": "-\nMART (MLLM As ReTriever) is a new approach for multimodal retrieval in embodied agents, using interactive learning to fine-tune an MLLM retriever to assess trajectory effectiveness.\n- It leverages interaction data and preference learning to prioritize trajectories that are most beneficial for unseen tasks, addressing limitations of current retrieval methods that focus on surface-level similarities.\n- It introduces Trajectory Abstraction, a mechanism using MLLMs' summarization capabilities to condense trajectories while preserving key information, improving comprehension and efficiency in long-horizon tasks.\n- Experimental results across various environments show that MART significantly improves task success rates in unseen scenes compared to baselines, often exceeding 10% improvement.\n- MART offers a new paradigm for multimodal retrieval, adapting general-purpose MLLMs as retrievers for embodied agents to consider the task-specific relevance of retrieved information.",
+        "classification": [
+            "Multimodal",
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "DICE: Discrete Inversion Enabling Controllable Editing for Multinomial Diffusion and Masked Generative Models",
+        "authors": "akashsri, FelixXu, quandao10, ligongh, AristHe",
+        "link": "https://arxiv.org/abs/2410.08207",
+        "github_repo": null,
+        "summary": "-\nDICE (Discrete Inversion for Controllable Editing) is introduced as the first method to enable precise inversion for discrete diffusion models such as VQ-Diffusion, Paella, and masked generative models such as RoBERTa.\n- DICE enhances the editability of these models by recording noise sequences or masking patterns in the reverse sampling process, allowing for accurate reconstruction and controlled editing without reliance on predefined masks or attention manipulations.\n- The method's effectiveness has been demonstrated in image and text modalities.  For image editing, the experimental results on PIE-Bench using Paella show that the proposed method achieves lower structure distance while preserving background as well as competitive CLIP similarity compared to baselines including DDIM inversion with Stable Diffusion v1.4 and masked inpainting.\n- For text editing, using RoBERTa as the language model, DICE shows the ability to adjust a sentence\u2019s sentiment without altering its original structure, outperforming masked generation by a large margin based on structure preservation and sentiment correctness evaluation using ChatGPT-4.\n- A novel text-editing dataset, Sentiment Editing, focusing on controlled sentiment adjustments in sentences while preserving their structure and theme, is presented",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Benchmarking Agentic Workflow Generation",
+        "authors": "Ningyu, xiaoyuehanbin, consultantQ, Runnaning, GoooDte",
+        "link": "https://arxiv.org/abs/2410.07869",
+        "github_repo": "https://github.com/zjunlp/WorFBench",
+        "summary": "WORFBENCH, a unified workflow generation benchmark featuring diverse scenarios and complex graph workflow structures, is introduced to evaluate Large Language Model (LLM) agents' ability to decompose problems into executable workflows.\n- WORFEVAL, a systematic evaluation protocol employing subsequence and subgraph matching algorithms, is presented to rigorously assess workflow generation capabilities.\n- Evaluations across different LLMs reveal performance gaps between sequence and graph planning, with GPT-4 showing a 15% gap.\n- Two open-source models are trained and evaluated, demonstrating improved but limited generalization on held-out tasks.\n- Generated workflows enhance downstream tasks by serving as Chain-of-Thought augmentation and prior knowledge, enabling superior performance with reduced inference time through parallel and shortened planning steps.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/WorFBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Rectified Diffusion: Straightness Is Not Your Need in Rectified Flow",
+        "authors": "Ling Yang, hsli-cuhk, Edify-Kd2024, DrinkingCoder, wangfuyun",
+        "link": "https://arxiv.org/abs/2410.07303",
+        "github_repo": "https://github.com/G-U-N/Rectified-Diffusion",
+        "summary": " - This paper introduces Rectified Diffusion, a novel method for enhancing the training of diffusion models by focusing on achieving a first-order approximate ODE path during training, rather than prioritizing straight ODE paths as in previous rectified flow methods.\n - The key insight is that using pre-trained diffusion models to collect matched pairs of noise and samples, coupled with retraining, significantly improves model performance.\n- Rectified Diffusion generalizes the design space and application scope to broader diffusion model variants and prediction types.\n- Experimental results on Stable Diffusion v1-5 and XL demonstrate faster training and superior performance compared to rectified flow-based methods like InstaFlow, particularly in low-step generation scenarios. \n - It achieves one-step FID scores of 27.26 and 16.88 for SD and SDXL, respectively.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/G-U-N/Rectified-Diffusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+        "authors": "Shuyu Gan, Saaket Agashe, xw-eric, jc-y42, Jiuzhouh",
+        "link": "https://arxiv.org/abs/2410.08164",
+        "github_repo": "https://github.com/simular-ai/Agent-S",
+        "summary": "\n- Agent S is introduced as an open agentic framework designed for autonomous interaction with computers through a GUI, aiming to automate complex multi-step tasks.\n- The framework utilizes experience-augmented hierarchical planning, learning from both external web knowledge searches and internal experience retrieval to plan and execute subtasks efficiently.\n- It employs an Agent-Computer Interface (ACI) that improves grounding by using vision-augmented accessibility tree observations and restricts the agent's action space to enhance safety and control.\n- Evaluation on the OSWorld benchmark demonstrates a significant performance improvement, achieving a 9.37% higher success rate than the baseline and establishing a new state-of-the-art, with consistent improvement across five categories of computer tasks.\n- Further evaluation on the WindowsAgentArena benchmark reveals the framework's broad generalizability to different operating systems with an improvement from 13.3% to 18.2% on an equivalent setup without explicit adaption.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/simular-ai/Agent-S"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Intriguing Properties of Large Language and Vision Models",
+        "authors": "Ho-Jin Choi, yechan99, mkmiracle, kobiso, passing2961",
+        "link": "https://arxiv.org/abs/2410.04751",
+        "github_repo": "https://github.com/passing2961/IP-LLVM",
+        "summary": "\u2022 This paper investigates the intriguing properties of Large Language and Vision Models (LLVMs), focusing on how they perceive and process images. \n\u2022 The study evaluates the performance of LLaVA-series models across 10 diverse benchmarks, including visual question answering, OCR and mathematical reasoning tasks, revealing that LLVMs process images globally despite using localized visual tokens.\n\u2022 The experiments show that LLVMs can solve math problems even with missing numerical details from the image, and the lower layers of the model are crucial for visual understanding while higher layers focus on text interpretation.\n\u2022 The research highlights LLVMs' struggle to preserve initial visual understanding capabilities after alignment and visual instruction tuning. \n\u2022 It suggests that future work should focus on developing interactive evaluation benchmarks and new model architectures to improve cross-modal alignment and visual perception.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/passing2961/IP-LLVM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Towards Self-Improvement of LLMs via MCTS: Leveraging Stepwise Knowledge with Curriculum Preference Learning",
+        "authors": "Ye Tian, haitaominlp, Pluie1503, freesunshine0316, russwang",
+        "link": "https://arxiv.org/abs/2410.06508",
+        "github_repo": null,
+        "summary": "-\nALPHALLM-CPL, a novel pairwise training framework, enhances the reasoning capabilities of Large Language Models (LLMs) through Monte Carlo Tree Search (MCTS) behavior distillation.\n- It leverages stepwise trajectory pairs from child nodes in the search tree, providing step-level information for effective distillation.\n- Curriculum preference learning dynamically adjusts the training sequence, prioritizing critical learning steps and mitigating overfitting.\n- Experiments on mathematical reasoning tasks (GSM8K and MATH) show substantial improvements over existing MCTS distillation methods.\n- ALPHALLM-CPL boosts LLaMA2-7B's accuracy on GSM8K by 150%, Mistral-7B by 48.8%, and LLaMA3-8B by 17.4% on MATH, demonstrating its effectiveness in LLM self-improvement.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Preserving Multi-Modal Capabilities of Pre-trained VLMs for Improving Vision-Linguistic Compositionality",
+        "authors": "Junmo Kim, In So Kweon, Dong-Jin Kim, Jae Won Cho, ytaek-oh",
+        "link": "https://arxiv.org/abs/2410.05210",
+        "github_repo": "https://github.com/ytaek-oh/fsc-clip",
+        "summary": "-\nFSC-CLIP, a novel fine-tuning framework for Vision-Language Models (VLMs), enhances compositional reasoning without sacrificing performance in zero-shot multi-modal tasks.\n-\nIt integrates Local Hard Negative (LHN) Loss, which uses dense alignments between image patches and text tokens to compute loss, and Selective Calibrated Regularization (SCR) to regulate hard negative supervision.\n-\nExtensive evaluations on 11 compositionality benchmarks and 21 zero-shot classification tasks show that FSC-CLIP achieves comparable compositionality to state-of-the-art methods while better preserving multi-modal capabilities and exceeding pre-trained CLIP's zero-shot classification score by +0.5 points when fine-tuned on 100k LAION-COCO samples, a substantial improvement compared to a drop of -4.9 observed in existing methods.\n-\nAdditionally, FSC-CLIP demonstrates superior retrieval capabilities, particularly in counterfactual scenarios, showcasing a more nuanced understanding of compositional concepts, as evidenced by qualitative examples on COCO-Counterfactuals.\n-\nFSC-CLIP addresses the trade-off between compositionality and multi-modal task performance, common in existing fine-tuning approaches that use global hard negative losses and often lead to degraded performance in tasks like zero-shot classification and retrieval.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image-to-Text",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ytaek-oh/fsc-clip"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "SFTMix: Elevating Language Model Instruction Tuning with Mixup Recipe",
+        "authors": "Sanqiang Zhao, Marzyeh Ghassemi, wzhouad, szhang42, YuxinXiao",
+        "link": "https://arxiv.org/abs/2410.05248",
+        "github_repo": null,
+        "summary": "-\nSFTMix is a novel Mixup-based recipe for Large Language Model (LLM) instruction tuning that aims to improve performance without relying on curated datasets. \n- SFTMix leverages training dynamics to identify and split the training dataset into confident and unconfident subsets based on the model's perplexity.\n- A Mixup-based regularization is then applied, interpolating examples between these subsets to mitigate overfitting on confident examples and propagate supervision to unconfident ones.\n- SFTMix significantly outperforms next-token prediction (NTP) across various instruction-following tasks and healthcare-related benchmarks using different LLMs and dataset sizes. \n- Ablation studies confirm the method's robustness and design choices, demonstrating its potential across NLP applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Progressive Autoregressive Video Diffusion Models",
+        "authors": "Hao Tan, Zhan Xu, smebliu, YicongHong, desaix",
+        "link": "https://arxiv.org/abs/2410.08151",
+        "github_repo": null,
+        "summary": "-\nProgressive Autoregressive Video Diffusion Models (PA-VDM) extends video diffusion models to generate long, high-quality videos by assigning progressively increasing noise levels to latent frames during denoising.\n-\nThis approach enables fine-grained conditioning among latent frames and large overlaps between attention windows, facilitating smoother temporal transitions and motion consistency.\n-\nPA-VDM can be implemented by adjusting noise scheduling and fine-tuning existing video diffusion model architectures, such as UNet and Diffusion Transformer-based models, without any major changes. \n-\nExperimental results on long video generation (60 seconds) demonstrate PA-VDM outperforms baselines on several metrics, including dynamic degree, aesthetic quality, and imaging quality, while maintaining competitive results for subject/background consistency and motion smoothness.\n-\nQualitative analysis showcases PA-VDM's ability to preserve frame fidelity and motion realism over extended durations. ",
+        "classification": [
+            "Text-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/desaixie/pa_vdm"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "GLOV: Guided Large Language Models as Implicit Optimizers for Vision Language Models",
+        "authors": "aquila147, mdorkenw, paulgavrikov, sivand, kevinmzy",
+        "link": "https://arxiv.org/abs/2410.06154",
+        "github_repo": "https://github.com/jmiemirza/GLOV",
+        "summary": "\u2022 GLOV is a novel method that utilizes LLMs as implicit optimizers for Vision-Language Models (VLMs), enhancing performance on downstream tasks by optimizing natural language prompts. \n\u2022 It uses a meta-prompt to guide iterative prompt generation, incorporating ranked in-context examples based on a few-shot training set and explicit guidance in the embedding space using offset vectors. \n\u2022 This guidance steers the LLM towards positive solutions, improving recognition performance by up to 15% and 57.5% (3.8% and 21.6% average) on dual-encoder and encoder-decoder VLMs. \n\u2022  Comprehensive evaluation on 16 diverse datasets using CLIP and LLaVa demonstrates GLOV's ability to consistently improve performance.\n\u2022 The method was shown to be effective even for challenging fine-grained recognition tasks using encoder-decoder models without requiring gradient-based learning.",
+        "classification": [
+            "Zero-Shot Image Classification",
+            "Image Classification",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/jmiemirza/GLOV"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Optima: Optimizing Effectiveness and Efficiency for LLM-Based Multi-Agent System",
+        "authors": "Cheng Yang, Chen Qian, Jiarui Yuan, zibuyu9, weizechen",
+        "link": "https://arxiv.org/abs/2410.08115",
+        "github_repo": null,
+        "summary": "\n- OPTIMA, a novel framework designed to optimize Large Language Model (LLM)-based Multi-Agent Systems (MAS) by enhancing both communication efficiency and task effectiveness through LLM training. \n- Employs an iterative \"generate, rank, select, and train\" paradigm and utilizes a reward function that balances task performance, token efficiency, and communication interpretability. \n- Integrates Monte Carlo Tree Search (MCTS)-inspired techniques for DPO data generation, to explore diverse interaction paths during conversations. \n- Evaluated on various multi-agent tasks, including information-asymmetric question answering and complex reasoning, OPTIMA consistently outperforms single-agent and vanilla LLM-based MAS baselines, showing significant improvements in token usage and task performance (up to 2.8x performance gain with <10% tokens). \n- The efficiency gains also contribute to improved inference-time scaling laws, enhancing the overall capabilities of LLM systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Emergent properties with repeated examples",
+        "authors": "Fran\u00e7ois Charton, Knykny",
+        "link": "https://arxiv.org/abs/2410.07041",
+        "github_repo": null,
+        "summary": "This study explores the impact of training example repetition on transformer performance using generated datasets for three mathematical tasks: greatest common divisor (GCD), modular multiplication, and matrix eigenvalues.\n- For a fixed number of training steps, models trained on smaller datasets with repeated examples outperform models trained on larger datasets with single-use examples.\n- This \"repetition helps\" phenomenon sometimes leads to the emergence of properties learned only by models trained on smaller, repeated datasets. \n- A \"two-set training\" approach, where a small random subset of examples is repeated more often alongside normal sampling on the rest of the training set, further improves learning speed and performance.  \n- The findings suggest that repetition's benefits can outweigh those of data diversity, challenging the common practice of minimizing example reuse.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "Scaling Up Your Kernels: Large Kernel Design in ConvNets towards Universal Representations",
+        "authors": "xyyue, DingXiaoH, Yiyuan",
+        "link": "https://arxiv.org/abs/2410.08049",
+        "github_repo": "https://github.com/AILab-CVC/UniRepLKNet",
+        "summary": " \n- UniRepLKNet, a large-kernel Convolutional Neural Network (ConvNet) architecture, is proposed, challenging the dominance of Vision Transformers (ViTs) in multimodal tasks by demonstrating comparable performance with faster inference and reduced complexity.\n- The architecture employs a few strategically placed large kernels to efficiently capture global context, supplemented by small kernels for detailed spatial feature extraction, achieving a balance between receptive field coverage and computational efficiency.\n- Design principles for large-kernel ConvNets are introduced, including guidelines for kernel size selection based on task and layer depth, efficient implementation of large kernels using depth-wise convolutions, the vital role of identity shortcuts, and the use of dilated small kernels for re-parameterizing large kernels.\n- Experiments across diverse modalities like images, audio, video, point clouds, and time series demonstrate UniRepLKNet's superior performance. It achieves state-of-the-art results on ImageNet classification, ADE20K semantic segmentation, and a global weather forecasting task, surpassing both existing large-kernel ConvNets and recent transformer-based models.\n- When scaled to 1.4B parameters and pretrained on a massive dataset of 10B image-text pairs, UniRepLKNet exhibits exceptional zero-shot image recognition capabilities and competitive performance on large vision-language model benchmarks, showcasing its scalability and potential for broader applications in multimodal learning.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Object Detection",
+            "Image Segmentation",
+            "Zero-Shot Image Classification",
+            "Audio Classification",
+            "Time Series Forecasting",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/AILab-CVC/UniRepLKNet"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    },
+    {
+        "title": "MotionGS: Exploring Explicit Motion Guidance for Deformable 3D Gaussian Splatting",
+        "authors": "ztz1989, jiahao97, Free1unch, Rosetta-Leong, RuijieZhu",
+        "link": "https://arxiv.org/abs/2410.07707",
+        "github_repo": null,
+        "summary": " - MotionGS, a novel deformable 3D Gaussian Splatting framework, is proposed for dynamic scene reconstruction by explicitly modeling and constraining object motion.\n- The framework incorporates an optical flow decoupling module, which separates motion flow from optical flow priors to provide explicit supervision for 3D Gaussian deformation.\n- A camera pose refinement module alternately optimizes 3DGS and camera poses to enhance rendering quality and robustness.\n- Experimental results on NeRF-DS and HyperNeRF datasets demonstrate state-of-the-art performance, showcasing improvements in handling complex dynamic scenes with rapid movements and inaccurate camera poses. \n- The approach is agnostic to specific network designs and applicable to similar deformation-based 3DGS methods.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-11"
+    }
+]

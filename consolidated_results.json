@@ -2922,5 +2922,110 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-10-11"
+    },
+    {
+        "title": "Baichuan-Omni Technical Report",
+        "authors": "kenshinn, dbv, dongguosheng, TJU-Tianpengli, lin5547",
+        "link": "https://arxiv.org/abs/2410.08565",
+        "github_repo": null,
+        "summary": " - Baichuan-Omni is a 7B Multimodal Large Language Model (MLLM) capable of processing image, video, audio, and text modalities concurrently.\n- The model architecture involves separate encoders for each modality, projectors to map these encodings into the language model's embedding space, and a shared decoder.\n- The training process consists of two phases: multimodal alignment pre-training and multitask fine-tuning, using a diverse dataset of open-source, synthetic, and internally annotated data.\n- Evaluation across various benchmarks demonstrates that Baichuan-Omni outperforms existing open-source omni-modal models like VITA and achieves competitive results compared to closed-source models like GPT-4, particularly excelling in Chinese benchmarks and audio tasks.\n- Real-time interaction is facilitated by predicting audio input boundaries while concurrently processing visual data, enhancing dynamic attention calculation and streaming capabilities.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Any-to-Any",
+            "Audio",
+            "Automatic Speech Recognition",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/westlake-baichuan-mllm/bc-omni"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-14"
+    },
+    {
+        "title": "Semantic Score Distillation Sampling for Compositional Text-to-3D Generation",
+        "authors": "Runjia Li, Bohan Zeng, Junlin Han, Zixiang Zhang, Ling Yang",
+        "link": "https://arxiv.org/abs/2410.09009",
+        "github_repo": "https://github.com/YangLing0818/SemanticSDS-3D",
+        "summary": "-\nSEMANTICSDS, a novel semantic-guided score distillation sampling approach, is introduced to enhance the expressiveness and precision of compositional text-to-3D generation.\n-\nThe approach integrates program-aided layout planning, derived from large language models (LLMs), to ensure accurate object placement and scene composition from textual descriptions.\n-\nNovel semantic embeddings maintain view consistency and distinguish different objects and parts within the 3D scene, rendered into a semantic map that guides a region-wise score distillation sampling (SDS) process for fine-grained control.\n-\nUsing 3D Gaussian Splatting (3DGS) and leveraging pre-trained 2D diffusion priors, SEMANTICSDS achieves superior quality in generating complex 3D objects and scenes with multiple attributes, as demonstrated by qualitative comparisons and a user study.\n-\nQuantitative results show improvements across prompt alignment, spatial arrangement, geometric fidelity, and overall scene quality, outperforming state-of-the-art baselines.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/YangLing0818/SemanticSDS-3D"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-14"
+    },
+    {
+        "title": "SuperCorrect: Supervising and Correcting Language Models with Error-Driven Insights",
+        "authors": "Joseph E. Gonzalez, Minkai Xu, Tianjun Zhang, Zhaochen Yu, Ling Yang",
+        "link": "https://arxiv.org/abs/2410.09008",
+        "github_repo": "https://github.com/YangLing0818/SuperCorrect-llm",
+        "summary": "SuperCorrect is a novel two-stage framework that leverages a large teacher model to supervise and correct the reasoning and reflection processes of a smaller student model, thereby improving mathematical reasoning and self-correction abilities.  The first stage uses hierarchical thought templates extracted from the teacher model to guide the student in generating more fine-grained reasoning thoughts.  The second stage employs cross-model collaborative direct preference optimization (DPO) to refine the student model's self-correction capabilities by following the teacher's correction traces during training.  Experimental results show that SuperCorrect achieves state-of-the-art performance among 7B models on MATH and GSM8K benchmarks, outperforming DeepSeekMath-7B by 7.8%/5.3% and Qwen2.5-Math-7B by 15.1%/6.3%, respectively and surpasses models that are larger, such as Llama3-70B.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/YangLing0818/SuperCorrect-llm"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-14"
+    },
+    {
+        "title": "Mechanistic Permutability: Match Features Across Layers",
+        "authors": "Ian Maksimov, kefirski, elephantmipt",
+        "link": "https://arxiv.org/abs/2410.07656",
+        "github_repo": null,
+        "summary": " - This paper introduces SAE Match, a data-free method for aligning Sparse Autoencoder (SAE) features across different layers of a neural network, addressing the challenge of understanding feature evolution and polysematicity in large language models (LLMs).\n- The method involves matching features by minimizing the mean squared error (MSE) between the \"folded\" parameters of SAEs, a technique that integrates activation thresholds into encoder and decoder weights to account for differences in feature scales.\n- Experiments on the Gemma 2 language model demonstrate improved feature matching quality compared to methods without parameter folding and provide insights into feature persistence and transformation across layers.\n- The approach also shows potential for approximating hidden states across layers, effectively skipping intermediate layers with minimal performance loss, especially in later layers where features are more monosemantic. \n-  Evaluation using external LLMs and matching scores shows that feature similarity gradually declines over several layers but remains significant for approximately five layers, while initial layers appear to exhibit higher polysematicity, making feature matching more challenging in these layers.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/loubnabnl/github-small-near-dedup"
+        ],
+        "date": "2024-10-14"
+    },
+    {
+        "title": "Mentor-KD: Making Small Language Models Better Multi-step Reasoners",
+        "authors": "SKyii, monocrat23, nokomon",
+        "link": "https://arxiv.org/abs/2410.09037",
+        "github_repo": null,
+        "summary": " - Mentor-KD is a novel reasoning distillation framework that improves the multi-step reasoning capabilities of small language models (LLMs) by addressing the limitations of insufficient distillation sets from large LLM teachers.\n- It introduces a mentor model, an intermediate-sized task-specific model, to augment the distillation sets by generating additional chain-of-thought (CoT) rationales and soft labels for the student model.\n- Through extensive experiments, Mentor-KD has shown to improve student performance and outperform existing reasoning distillation baselines on complex reasoning tasks, including commonsense, arithmetic, logical, and symbolic reasoning.\n- Notably, the student models trained with Mentor-KD sometimes even surpassed the performance of the LLM teacher (GPT-3.5) on certain tasks.\n- The framework also proved effective in low-resource scenarios, offering performance improvements even with limited distillation sets, which showcases its cost-efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/2hojae/mentor-kd"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-14"
+    },
+    {
+        "title": "DA-Code: Agent Data Science Code Generation Benchmark for Large Language Models",
+        "authors": "Yiming Huang, lx865712528, bjEdward, FangyuLei, Jianwen2003",
+        "link": "https://arxiv.org/abs/2410.07331",
+        "github_repo": null,
+        "summary": " - Introduces DA-Code, a benchmark designed to evaluate Large Language Models (LLMs) on agent-based data science tasks.\n - DA-Code features challenging tasks requiring advanced coding skills, diverse real-world data sources, and complex data science programming languages (Python, SQL, Bash).\n - A controllable and executable environment simulating real-world scenarios is provided, along with a meticulously designed evaluation suite and a DA-Agent baseline.\n - Experimental results show that even state-of-the-art LLMs achieve only 30.5% accuracy on DA-Code, indicating significant room for improvement in LLM-agent capabilities.\n - The benchmark and baseline are released to facilitate research in this area.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://da-code-bench.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-14"
     }
 ]

@@ -1,0 +1,186 @@
+[
+    {
+        "title": "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+        "authors": "WendellZwh, wangzhaoyang, StarThomas1002, Lillianwei, richardxp888",
+        "link": "https://arxiv.org/abs/2410.10139",
+        "github_repo": null,
+        "summary": "\u2022 MMIE is a large-scale benchmark designed to evaluate the interleaved multimodal comprehension and generation capabilities of Large Vision-Language Models (LVLMs).\n\u2022 The benchmark comprises 20K meticulously curated multimodal queries across diverse fields, supporting both interleaved inputs and outputs in multiple-choice and open-ended formats.\n\u2022 An automated evaluation metric is proposed based on a fine-tuned InternVL-2-4B scoring model, which demonstrates strong alignment with human evaluation and mitigates potential biases. \n\u2022 Experimental results reveal that even state-of-the-art LVLMs and the combination of advanced LLMs with text-to-image models face significant challenges in MMIE, with most achieving moderate performance, indicating substantial room for improvement. \n\u2022 Error analysis categorizes key challenges into temporal understanding (cross-modality coherence, generation adaptability) and reasoning (multimodal information comprehension, complex reasoning) skills.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://mmie-bench.github.io/"
+        ],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "LOKI: A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models",
+        "authors": "Junan Zhang, Zilong Huang, beccabai, bczhou, Yejy53",
+        "link": "https://arxiv.org/abs/2410.09732",
+        "github_repo": null,
+        "summary": "- LOKI, a new benchmark designed to evaluate large multimodal models (LMMs) on synthetic data detection across various modalities (video, image, 3D, text, and audio), has been introduced.\n- The benchmark includes 18K questions across 26 subcategories, with multi-level annotations including coarse-grained and multiple-choice questions, and fine-grained anomaly selection and explanation tasks.\n- An evaluation of 22 open-source and 6 closed-source LMMs on LOKI has revealed their potential as synthetic data detectors while also showing limitations such as model biases, a lack of expert domain knowledge, and unbalanced multimodal capabilities.\n- While LMMs exhibited moderate capabilities with some levels of explainability and generalization, they still lag behind human performance in synthetic data detection tasks.\n- Chain-of-thought prompting improved the performance of most LMMs, but not GPT-4, suggesting that GPT-4 already exhibits strong reasoning capabilities for this task.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "Toward General Instruction-Following Alignment for Retrieval-Augmented Generation",
+        "authors": "Zhicheng Dou, Runqi Qiao, Yutao Zhu, Xiaoshuai Song, Guanting Dong",
+        "link": "https://arxiv.org/abs/2410.09584",
+        "github_repo": null,
+        "summary": " \n- This paper introduces VIF-RAG, an automated, scalable, and verifiable data synthesis pipeline designed to improve instruction-following alignment in Retrieval-Augmented Generation (RAG) systems. \n- VIF-RAG begins with a small set of manually crafted atomic instructions and uses a combination of rule-based composition, supervised rewriting, and code-based verification to generate a large-scale dataset (VIF-RAG-QA) of instruction-following data for RAG. \n- It also presents FollowRAG, a new benchmark for evaluating complex instruction-following capabilities in RAG, composed of 2.8K samples covering 22 categories of general instruction constraints and 4 knowledge-intensive QA datasets. \n- In experiments, VIF-RAG significantly boosts performance across various LLMs and datasets, demonstrating a remarkable 44% improvement over the Llama3-base model in instruction-following within RAG scenarios. \n- The results further indicate that VIF-RAG not only enhances IF capability but also maintains stability in RAG performance across different model sizes and datasets, offering promise for real-world applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+        "authors": "wenhu, yuexiang96, DongfuJiang, yuanshengni, shermansiu",
+        "link": "https://arxiv.org/abs/2410.10563",
+        "github_repo": null,
+        "summary": " \n- MEGA-BENCH is a multimodal evaluation benchmark comprising over 500 real-world tasks designed to assess the diverse capabilities of contemporary vision-language models. \n- The benchmark employs a taxonomy of multimodal tasks and incorporates diverse output formats, moving beyond standard multiple-choice questions to include numbers, phrases, code, LaTeX, and coordinates. \n-  A range of over 40 unique evaluation metrics, including rule-based and LLM-assisted options, is used to accommodate these diverse formats. \n-  In evaluations, MEGA-BENCH demonstrated GPT-4's superior performance over other flagship models, and Qwen2-VL's leading performance among open-source models. \n-  The benchmark facilitates fine-grained capability analysis by offering a breakdown of model performance across various dimensions such as input/output format and required skill. ",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "Animate-X: Universal Character Image Animation with Enhanced Motion Representation",
+        "authors": "Dandan Zheng, Shiwei Zhang, Xiang Wang, Shuai Tan, BiaoGong",
+        "link": "https://arxiv.org/abs/2410.10306",
+        "github_repo": null,
+        "summary": "\u2022 Animate-X is a universal image animation framework based on Latent Diffusion Models (LDM) that generates videos from a reference image and target pose sequence, applicable to various character types, including anthropomorphic characters. \n\u2022 It introduces a Pose Indicator with implicit and explicit components to enhance motion representation; the Implicit Pose Indicator (IPI) extracts comprehensive motion patterns from driving videos using CLIP visual features, while the Explicit Pose Indicator (EPI) strengthens LDM generalization by simulating misalignments between reference and pose during training.\n\u2022 Animate-X excels at animating anthropomorphic characters, addressing limitations of existing human-centric models by improving motion modeling and handling unique body structures.\n\u2022 A new Animated Anthropomorphic Benchmark (A2Bench) with 500 diverse characters and dance videos is introduced for evaluation.\n\u2022 Extensive experiments on A2Bench and existing human animation datasets demonstrate Animate-X's superior performance in preserving identity and motion consistency compared to state-of-the-art methods.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "LiveXiv -- A Multi-Modal Live Benchmark Based on Arxiv Papers Content",
+        "authors": "M. Jehanzeb Mirza, Sivan Doveh, Felipe Maia Polo, Nimrod Shabtay, wlin21at",
+        "link": "https://arxiv.org/abs/2410.10783",
+        "github_repo": null,
+        "summary": "\n- LiveXiv is a novel, fully automated, multimodal live benchmark focusing on scientific domains, designed to address test set contamination and provide an updated evaluation of Large Multi-modal Models (LMMs).\n- It uses scientific papers from arXiv to generate Visual Question Answering (VQA) and Table Question Answering (TQA) pairs automatically, avoiding human bias and ensuring scalability.\n- An efficient evaluation pipeline based on Item Response Theory (IRT) allows for performance estimation on new benchmark versions by reevaluating only a small subset of models, significantly reducing computational costs.\n- The benchmark has been evaluated with 17 prominent open and proprietary LMMs, demonstrating its challenging nature and exposing model capabilities on less-contaminated data.\n- It provides the first version of the dataset including VQA and TQA pairs, alongside an efficient evaluation methodology and benchmark results, along with its limitations.",
+        "classification": [
+            "Visual Question Answering",
+            "Table Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/IBM/LiveXiv"
+        ],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "Cavia: Camera-controllable Multi-view Video Diffusion with View-Integrated Attention",
+        "authors": "Thorsten Gernoth, Liangchen Song, Chen Huang, Yifan Jiang, ir1d",
+        "link": "https://arxiv.org/abs/2410.10774",
+        "github_repo": null,
+        "summary": "Cavia is a novel framework for generating multi-view consistent videos with precise camera control by converting an input image into multiple spatiotemporally consistent videos.\n- The framework extends spatial and temporal attention modules into view-integrated attention modules to enhance viewpoint and temporal consistency, enabling joint training with diverse curated data sources, including scene-level static videos, object-level synthetic multi-view dynamic videos, and real-world monocular videos.\n- Cavia allows users to specify camera motion while obtaining object motion.\n- Experiments demonstrate that Cavia surpasses state-of-the-art methods in geometric consistency and perceptual quality, showing its applicability in challenging indoor, outdoor, object-centric, and large-scene cases.\n- The framework allows for extrapolation to generate four views during inference and enables 3D reconstruction of generated frames.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models",
+        "authors": "Jianrui Zhang, Reuben Tan, Mu Cai, fengyao1909, BochengZou",
+        "link": "https://arxiv.org/abs/2410.10818",
+        "github_repo": null,
+        "summary": " - TemporalBench, a novel video understanding benchmark, is introduced to evaluate the fine-grained temporal understanding abilities of multimodal video models.\n- The benchmark consists of ~10K video question-answer pairs derived from ~2K human-annotated captions with rich activity details, focusing on long-range dependencies and event progression.\n-  State-of-the-art models like GPT-4o achieve only 38.5% question answering accuracy on TemporalBench, significantly lower than human performance (67.9%).\n- A critical pitfall in multi-choice QA is identified where LLMs can detect subtle changes in negative captions and find a \"centralized\" description as a cue for prediction.\n- Multiple Binary Accuracy (MBA) is proposed to correct such bias by decomposing multi-choice QA into multiple binary QAs.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://TemporalBench.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "Semantic Image Inversion and Editing using Rectified Stochastic Differential Equations",
+        "authors": "Sanjay Shakkottai, Constantine Caramanis, Nataniel Ruiz, Yujia Chen, Litu Rout",
+        "link": "https://arxiv.org/abs/2410.10792",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces a novel zero-shot method for inverting Rectified Flow (RF) models, particularly Flux, enabling image editing without additional training or optimization.\n\u2022 A controlled ODE is used for inversion, navigating between consistency with the input image and the true image distribution via a tunable controller guidance parameter.\n\u2022 It is theoretically shown that this controlled ODE corresponds to a rectified Stochastic Differential Equation (SDE).\n\u2022 Extensive qualitative results are demonstrated on tasks like stroke-to-image synthesis, cartoonization, and semantic image editing, with large-scale human evaluations indicating superior performance to existing methods.\n\u2022 For example, the method outperforms state-of-the-art by 89% in photorealism for stroke-to-image generation and shows 4.7% improvement in faithfulness on LSUN-bedroom compared to optimization-free methods.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "Tree of Problems: Improving structured problem solving with compositionality",
+        "authors": "Rachel Bawden, Beno\u00eet Sagot, Armel Zebaze",
+        "link": "https://arxiv.org/abs/2410.06634",
+        "github_repo": "https://github.com/ArmelRandy/tree-of-problems",
+        "summary": "-\nThis research paper proposes Tree of Problems (ToP), a novel prompting approach for enhancing the problem-solving abilities of Large Language Models (LLMs).\n-\nToP decomposes complex problems into a tree structure of simpler, analogous subproblems, leveraging compositionality for efficient problem-solving, and drawing inspiration from techniques like divide-and-conquer.\n-\nEmpirical results demonstrate that ToP outperforms existing methods like Chain-of-Thought (CoT), Tree of Thoughts (ToT), and Graph of Thoughts (GoT) on structured tasks.\n-\nFurthermore, ToP excels in out-of-distribution generalization scenarios.\n-\nThe authors provide evidence of superior performance across various LLMs, including GPT-3.5, on difficult benchmark tasks such as Last Letter Concatenation and Navigate from BIG-Bench Hard.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ArmelRandy/tree-of-problems"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies",
+        "authors": "Xialin He, Tianyi Chen, Wenhao Wang, Zixuan Chen, Yanjie Ze",
+        "link": "https://arxiv.org/abs/2410.10803",
+        "github_repo": null,
+        "summary": "\n- This paper introduces iDP3, an improved 3D diffusion policy for generalizable humanoid manipulation. \n- iDP3 leverages egocentric 3D visual representations, eliminating the need for camera calibration and point cloud segmentation, which are limitations in current methods that hinder deployment on mobile robots.\n- A whole-upper-body teleoperation system is developed to efficiently collect data from human demonstrations for training iDP3.\n- Experimental results show that iDP3 enables a full-sized humanoid robot to generalize contact-rich manipulation skills to a wide array of real-world scenarios, using only data collected in a single scene.\n- iDP3 demonstrates notable view invariance and object generalization capabilities.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "humanoid-manipulation.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    },
+    {
+        "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+        "authors": "Kai-Wei Chang, Yuwei Zhang, Wenhao Yu, Hongwei Wang, xiaowu0162",
+        "link": "https://arxiv.org/abs/2410.10813",
+        "github_repo": null,
+        "summary": "-\nLongMemEval, a comprehensive benchmark designed to evaluate the long-term memory capabilities of chat assistants. \n- It focuses on five core abilities: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention.\n- The benchmark consists of 500 meticulously curated questions embedded within freely scalable user-assistant chat histories.\n- A unified framework is presented that breaks down long-term memory design into four design choices across indexing, retrieval, and reading stages. \n- Several memory designs, including session decomposition, fact-augmented key expansion, and time-aware query expansion, are proposed and shown to greatly improve both memory recall and downstream question answering.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/xiaowu0162/LongMemEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-15"
+    }
+]

@@ -3211,5 +3211,138 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-15"
+    },
+    {
+        "title": "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+        "authors": "Haoming Xu, Bozhong Tian, Xiang Chen, Chenxi Wang, Ningyu",
+        "link": "https://arxiv.org/abs/2410.11779",
+        "github_repo": "https://github.com/zjunlp/DeCo",
+        "summary": "This paper introduces DeCo, a novel dynamic correction decoding method for Multimodal Large Language Models (MLLMs) designed to mitigate hallucinations by leveraging information from preceding layers.\n- DeCo dynamically selects an appropriate preceding layer (\"anchor layer\") based on the probabilities of candidate tokens, and integrates its knowledge into the final layer to adjust the output logits, thereby correcting potential hallucinations.\n- The method is training-free and model-agnostic, compatible with various decoding strategies (greedy search, nucleus sampling, beam search) and applicable to different MLLMs.\n- Experimental results on benchmarks like CHAIR and POPE demonstrate that DeCo significantly reduces hallucination rates compared to baselines and existing methods like OPERA and VCD, with an average suppression rate of 10.8% on image captioning datasets.\n- Empirical analysis suggests that MLLMs can recognize visual objects in earlier layers, but this recognition is suppressed in later layers due to language model priors, leading to hallucinations. DeCo addresses this by correcting final-layer logits using more accurate information from preceding layers.\n- Further analysis shows DeCo is also effective in reducing snowballing hallucinations, where an initial hallucination leads to a cascade of errors.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/DeCo"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+        "authors": "Xiaoshuai Song, Jiaheng Liu, Zekun Wang, Yanan Wu, Pei Wang",
+        "link": "https://arxiv.org/abs/2410.11710",
+        "github_repo": null,
+        "summary": " - This paper introduces MTU-Bench, a multi-granularity tool-use benchmark designed to evaluate large language models' (LLMs) ability to interact with external tools. \n- MTU-Bench consists of two main components: MTU-Instruct, a diverse instruction tuning dataset for training LLMs on tool usage, and MTU-Eval, a comprehensive evaluation framework featuring fine-grained metrics that assess various tool-use scenarios without relying on GPT-based evaluation. \n- The authors propose a novel automated data synthesis pipeline based on existing task-oriented dialogue datasets to create MTU-Bench. \n- The benchmark covers five tool usage scenes: single-turn and single-tool, single-turn and multiple-tool, multiple-turn and single-tool, multiple-turn and multiple-tool, and out-of-distribution tasks. \n- Experiments demonstrate that fine-tuning LLaMA on MTU-Bench yields a robust model, MTU-LLaMA, with improved performance in various tool-use scenarios, outperforming the baseline model and demonstrating the efficacy of the MTU-Instruct dataset.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/MTU-Bench-Team/MTU-Bench.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "SecCodePLT: A Unified Platform for Evaluating the Security of Code GenAI",
+        "authors": "Wenbo Guo, Yuheng Tang, Zhun Wang, Yuzhou Nie, yuyangy",
+        "link": "https://arxiv.org/abs/2410.11096",
+        "github_repo": null,
+        "summary": " - This paper introduces SECCODEPLT, a unified evaluation platform designed to assess the security risks of code generation AI models concerning insecure coding and cyberattack helpfulness. \n- For insecure coding, a two-stage data creation pipeline is employed, combining expert-crafted seed examples with LLM-based mutation and dynamic testing to ensure benchmark quality and scalability, covering 27 critical Python CWEs compared to existing benchmarks' 8. \n- For cyberattack helpfulness, a real-world attack environment with dynamic metrics is designed to evaluate models' capabilities across different attack stages based on MITRE ATT&CK. \n- Experimental results indicate SECCODEPLT outperforms CYBERSECEVAL in benchmark quality and reveals higher risks in SOTA models, including GPT-40 and Claude\u2019s capability to generate end-to-end attacks, also uncovering risks in the code agent Cursor where it failed on code injection, access control and data leakage prevention CWEs. \n- Additionally, providing security policy reminders significantly improves model performance in secure coding by 30%.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Virtue-AI-HUB/SecCodePLT"
+        ],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "LVD-2M: A Long-take Video Dataset with Temporally Dense Captions",
+        "authors": "Zhijie Lin, Daquan Zhou, Yuqing Wang, XihuiLiu, YuuTennYi",
+        "link": "https://arxiv.org/abs/2410.10816",
+        "github_repo": "https://github.com/SilentView/LVD-2M",
+        "summary": " - This paper introduces LVD-2M, a large-scale dataset of 2 million long-take videos with temporally dense captions, designed to address the limitations of existing datasets for training long video generation models.\n- The dataset creation involved an automatic pipeline with low-level filtering (scene cut detection, optical flow) and semantic-level filtering (video LLMs) to select high-quality videos, and a hierarchical captioning approach combining LLaVA and Claude3-Haiku to generate detailed descriptions of video content over time.\n- Human evaluations show LVD-2M surpasses other datasets in long-take consistency, dynamic degree, and caption quality.\n- Fine-tuning experiments with both diffusion-based and LM-based video generation models demonstrate that LVD-2M improves their ability to generate longer, more dynamic videos with smoother transitions and camera motions.\n- The authors argue that LVD-2M will significantly benefit future research in long video generation.",
+        "classification": [
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/SilentView/LVD-2M"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "What Matters in Transformers? Not All Attention is Needed",
+        "authors": "Zheyu Shen, Guoheng Sun, Shwai He, charleslipku",
+        "link": "https://arxiv.org/abs/2406.15786",
+        "github_repo": "https://github.com/Shwai-He/LLM-Drop",
+        "summary": "-\"What Matters in Transformers? Not All Attention is Needed\" introduces a method called \"Joint Layer Drop\" to efficiently prune redundant attention and MLP layers in Transformer-based language models.\n-The method identifies these layers using a similarity-based metric, removing those with minimal transformation between input and output, and prioritizes dropping attention layers due to their observed higher redundancy.\n-Experiments demonstrate that removing a substantial portion of attention layers (e.g., 50% in Llama-2-70B) leads to minimal performance degradation while significantly improving inference speed (48.4% speedup with a 2.4% performance drop).\n-The redundancy in attention layers is found to be consistent throughout training, suggesting it's an inherent property, and Joint Layer Drop allows for even more aggressive pruning by targeting both attention and MLP layers for increased efficiency.\n-This work reveals that not all attention layers are equally important in transformers, leading to potential improvements in future network architecture designs and training techniques.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/Shwai-He/LLM-Drop"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k"
+        ],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "GS^3: Efficient Relighting with Triple Gaussian Splatting",
+        "authors": "Xiang Feng, Fan Pei, Yixin Zeng, Zoubin Bi, NCJ",
+        "link": "https://arxiv.org/abs/2410.11419",
+        "github_repo": null,
+        "summary": "GS\u00b3 is a novel spatial and angular Gaussian-based representation with a triple splatting process for real-time, high-quality novel lighting-and-view synthesis from multi-view point-lit images.\n- Each spatial Gaussian uses a Lambertian plus a mixture of angular Gaussians as an effective reflectance function.\n- Self-shadowing is efficiently generated by splatting spatial Gaussians towards the light source and refining with an MLP.\n- An additional MLP compensates for global illumination effects.\n- Achieves a training time of 40-70 minutes and rendering speed of 90 fps on a single commodity GPU, outperforming state-of-the-art techniques in terms of quality/performance.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://GSrelight.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation",
+        "authors": "Jia Zeng, Jisong Cai, Li Chen, Hongyang Li, qwbu",
+        "link": "https://arxiv.org/abs/2410.08001",
+        "github_repo": null,
+        "summary": "-\"RoboDual\", a novel synergistic dual-system framework for robotic manipulation, combines a large-scale pre-trained generalist (OpenVLA) with an efficient, task-specific diffusion transformer-based specialist.\n- The specialist refines the generalist's high-level understanding and discretized actions through multimodal sensory inputs (RGB, depth, tactile) for precise real-time control.\n- RoboDual improves performance and efficiency over standalone generalist or specialist models, achieving a 12% gain on CALVIN and a 20% improvement in real-world multi-instruction tasks.\n- The system demonstrates strong generalization across varying positions, distractions, backgrounds, and objects with minimal training data (5% of demonstrations).\n- With a higher control frequency (15Hz), RoboDual enables more complex, dexterous control than is possible with current VLA models alone.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-16"
+    },
+    {
+        "title": "Efficient Diffusion Models: A Comprehensive Survey from Principles to Practices",
+        "authors": "Liangliang Zhao, Guoli Jia, Yuzhu Zhang, Zhiyuan Ma, iseesaw",
+        "link": "https://arxiv.org/abs/2410.11795",
+        "github_repo": null,
+        "summary": "\u2022 This survey paper provides a comprehensive overview of efficient Diffusion Models (DMs), focusing on principles and practices related to architecture design, training, inference, and deployment.\n\u2022 The paper categorizes efficient DMs into six areas: principles, efficient architecture, training and fine-tuning, sampling and inference, deployment, and applications and discusses the tradeoffs between performance, efficiency, and computational costs. \n\u2022  It also emphasizes the potential of DMs to develop emergent capabilities similar to LLMs, highlighting the recent success of models like Sora in video generation. \n\u2022 The survey also discusses the limitations of current DMs, including computational complexity, limited generalization of fine-tuned models, and deployment challenges, and points out potential future research directions such as designing unified frameworks for multimodal control and integrating Mixture of Experts (MoE) designs. \n\u2022 It includes a GitHub repository compiling the surveyed papers with the same taxonomy for easy access and future updates.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/ponyzym/Efficient-DMs-Survey"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-16"
     }
 ]

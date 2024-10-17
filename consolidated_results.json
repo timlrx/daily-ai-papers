@@ -3344,5 +3344,270 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-16"
+    },
+    {
+        "title": "HumanEval-V: Evaluating Visual Understanding and Reasoning Abilities of Large Multimodal Models Through Coding Tasks",
+        "authors": "Xiao Li, Guancheng Lin, Huiyu Bai, Linquan Wu, zfj1998",
+        "link": "https://arxiv.org/abs/2410.12381",
+        "github_repo": "https://github.com/HumanEval-V/HumanEval-V-Benchmark",
+        "summary": "-\nHumanEval-V is introduced; a novel benchmark designed to evaluate the visual understanding and reasoning abilities of Large Multimodal Models (LMMs) through Python code generation tasks. \n- The benchmark comprises 108 coding tasks adapted from platforms like CodeForces and Stack Overflow, each requiring LMMs to integrate visual and textual information to generate functional code. \n- Evaluation results for 19 state-of-the-art LMMs reveal that even leading proprietary models struggle, with GPT-4o achieving 13% pass@1, highlighting limitations in visual reasoning and coding abilities. \n-  Ablation studies indicate current LMMs have limitations in vision reasoning and coding capabilities, showing significant performance improvement when image descriptions are provided.\n- Further analysis reveals that open-weight LMMs suffer deteriorated coding performance after vision-encoder integration, suggesting areas for future LMM research.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/HumanEval-V/HumanEval-V-Benchmark"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "VidEgoThink: Assessing Egocentric Video Understanding Capabilities for Embodied AI",
+        "authors": "Sicheng Zhou, Yangyang Yu, Kechen Fang, yetian, SijieCheng",
+        "link": "https://arxiv.org/abs/2410.11623",
+        "github_repo": null,
+        "summary": " - VidEgoThink is introduced; a benchmark designed to assess egocentric video understanding capabilities for embodied AI, focusing on bridging the gap between Multimodal Large Language Models (MLLMs) and low-level control.\n- It incorporates four tasks: video question answering, hierarchical planning, visual grounding, and reward modeling.\n - Leverages GPT-4 to generate data automatically, which is filtered by human annotators.  This pipeline is based on the Ego4D dataset.\n- Experimental evaluation of various MLLMs, including GPT-4, open-source image and video-based models, reveals poor performance across all tasks, particularly in sequence and order understanding.\n - Findings indicate a need for significant advancements in foundational models for first-person Embodied AI applications.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "The Curse of Multi-Modalities: Evaluating Hallucinations of Large Multimodal Models across Language, Visual, and Audio",
+        "authors": "Hang Zhang, Yang Zhou, Yun Xing, Sicong Leng, ClownRat",
+        "link": "https://arxiv.org/abs/2410.12787",
+        "github_repo": null,
+        "summary": "-\nThis paper investigates hallucinations in Large Multimodal Models (LMMs) across language, visual, and audio modalities.\n- Two key contributors to hallucinations are identified: overreliance on unimodal priors and spurious inter-modality correlations.\n- The Curse of Multi-Modalities (CMM) benchmark is introduced, which provides a detailed analysis of these underlying issues.\n- CMM converts hallucination evaluation into a binary classification task with object-level and event-level probing across 1200 samples with 2400 probing questions.\n- Experimental results reveal key vulnerabilities, including imbalances in modality integration and biases from training data.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "github.com/DAMO-NLP-SG/CMM"
+        ],
+        "huggingface_urls": [
+            "cmm-damovl.site"
+        ],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Revealing the Barriers of Language Agents in Planning",
+        "authors": "Kai Zhang, Siyu Yuan, jiangjiechen, kexunz, hsaest",
+        "link": "https://arxiv.org/abs/2410.12409",
+        "github_repo": null,
+        "summary": " - This paper investigates the limitations of current large language models (LLMs) in planning tasks using feature attribution analysis. \n- It identifies two key weaknesses: a limited understanding of constraints and the diminishing influence of questions as the planning horizon expands.\n- The study explores episodic and parametric memory updating strategies, finding that while they improve constraint and question utilization, they do not fully resolve the core issues.\n- The episodic memory updating reiterates constraints, making them easier for agents to recognize, but agents primarily understand it on a global level.\n-  Parametric memory updating enhances the impact of questions, yet agents still lose focus on them as the horizon increases; both strategies resemble shortcut learning and are insufficient for high-level planning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "DocLayout-YOLO: Enhancing Document Layout Analysis through Diverse Synthetic Data and Global-to-Local Adaptive Perception",
+        "authors": "Conghui He, Bin Wang, Hengrui Kang, Zhiyuan Zhao",
+        "link": "https://arxiv.org/abs/2410.12628",
+        "github_repo": "https://github.com/opendatalab/DocLayout-YOLO",
+        "summary": " - This paper introduces DocLayout-YOLO, a novel approach for Document Layout Analysis (DLA) that balances speed and accuracy. \n- DocLayout-YOLO employs document-specific optimizations in pre-training and model design, using the DocSynth-300K dataset generated by the Mesh-candidate BestFit algorithm. \n- The model incorporates a Global-to-Local Controllable Receptive Module (GL-CRM) to handle multi-scale variations in document elements. \n- DocLayout-YOLO achieves state-of-the-art performance on D\u2074LA (70.3% mAP), DocLayNet (79.7% mAP), and the newly introduced DocStructBench (78.8% mAP) datasets. \n - The method maintains an inference speed of 85.5 frames per second (FPS).",
+        "classification": [
+            "Object Detection",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/opendatalab/DocLayout-YOLO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Exploring Model Kinship for Merging Large Language Models",
+        "authors": "Huajun Chen, Shumin Deng, Ningyu Zhang, Yunzhi Yao, Yedi Hu",
+        "link": "https://arxiv.org/abs/2410.12613",
+        "github_repo": "https://github.com/zjunlp/ModelKinship",
+        "summary": "\n- This paper introduces \"model kinship\", a metric to assess the similarity between Large Language Models (LLMs), drawing an analogy to biological kinship, for enhanced model merging.\n- It is shown empirically that model kinship correlates with performance gains after merging, which helps guide the selection of candidate models for merging and escape local optima.\n- A novel merging strategy, \"Top-k Greedy Merging with Model Kinship\", is proposed, demonstrating improved performance on benchmark datasets by mitigating performance degradation and avoiding local optima during model evolution.\n- The analysis of model evolution through iterative merging reveals two distinct stages: a learning stage with rapid performance improvement and a saturation stage where improvements plateau, with the latter attributed to weight space convergence and high kinship values.\n- Model kinship is further suggested as a criterion for early stopping in the merging process, which improves efficiency without compromising performance gains.\n",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/ModelKinship"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Large Language Model Evaluation via Matrix Nuclear-Norm",
+        "authors": "Yi Chang, Yahan Li, WhiteCatY, xiatingyu",
+        "link": "https://arxiv.org/abs/2410.10672",
+        "github_repo": "https://github.com/MLGroupJLU/MatrixNuclearNorm",
+        "summary": "\u2022 This paper introduces Matrix Nuclear-Norm, a novel metric for evaluating the information compression and redundancy reduction capabilities of Large Language Models (LLMs).\n\u2022 The metric leverages the nuclear norm and its L1,2-norm approximation to quantify the data compression proficiency of LLMs.\n\u2022 Matrix Nuclear-Norm addresses the computational limitations of existing metrics like Matrix Entropy by reducing the time complexity from O(n\u00b3) to O(n\u00b2), eliminating the need for Singular Value Decomposition (SVD).\n\u2022 Experimental results on various LLMs, including Cerebras-GPT and Pythia, demonstrate that Matrix Nuclear-Norm effectively captures compression capabilities with values decreasing as model size increases.\n\u2022 Evaluations on benchmark datasets like AlpacaEval and Chatbot Arena confirm that the proposed metric reliably assesses and ranks model performance, achieving a balance between accuracy and computational efficiency.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/MLGroupJLU/MatrixNuclearNorm"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "ProSA: Assessing and Understanding the Prompt Sensitivity of LLMs",
+        "authors": "Dahua Lin, Xinyu Fang, KennyUTC, zsytony, JingmingZ",
+        "link": "https://arxiv.org/abs/2410.12405",
+        "github_repo": "https://github.com/open-compass/ProSA",
+        "summary": "\u2022 ProSA, a framework designed to evaluate and understand prompt sensitivity in LLMs, is introduced, incorporating a novel sensitivity metric, PromptSensiScore (PSS), and leveraging decoding confidence.\n\u2022 PSS quantifies the average discrepancy in LLM responses when given different semantic variants of the same instruction.\n\u2022 The study, spanning multiple tasks and models, reveals that prompt sensitivity varies across datasets and models, with larger models generally exhibiting better robustness, and few-shot examples, especially for larger models, mitigate sensitivity.\n\u2022 Subjective evaluations highlight increased sensitivity in complex reasoning tasks compared to straightforward ones, with higher model confidence correlating with increased prompt robustness.\n\u2022 Prompt sensitivity is linked to decoding confidence, where greater confidence corresponds to higher robustness against prompt variations.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/ProSA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "ZipVL: Efficient Large Vision-Language Models with Dynamic Token Sparsification and KV Cache Compression",
+        "authors": "Wenqi Shao, Jing Liu, Feng Chen, Yefei He, kpzhang996",
+        "link": "https://arxiv.org/abs/2410.08584",
+        "github_repo": null,
+        "summary": "-\nZipVL is an efficient inference framework for Large Vision-Language Models (LVLMs) that addresses computational and memory bottlenecks through dynamic token sparsification and KV cache compression.\n-\nIt employs a layer-wise adaptive ratio assignment for important tokens based on attention score distribution, optimizing both prefill and decoding phases.\n-\nThe prefill phase is accelerated by performing attention only on important tokens, seamlessly integrating with existing attention implementations.\n-\nMixed-precision quantization is applied to the KV cache, using higher bit-width for important tokens and lower bit-width for others, reducing memory usage without significant performance loss.\n-\nExperiments show ZipVL accelerates prefill by 2.6x and reduces GPU memory by 50% with minimal accuracy reduction on Video-MME, outperforming fixed-ratio methods like FastV.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Improving Long-Text Alignment for Text-to-Image Diffusion Models",
+        "authors": "Chongxuan Li, Zehan Wang, Tianyu Pang, Chao Du, luping-liu",
+        "link": "https://arxiv.org/abs/2410.11817",
+        "github_repo": "https://github.com/luping-liu/LongAlign",
+        "summary": "LongAlign is proposed to improve long-text alignment for text-to-image (T2I) generation using diffusion models.\n- The method introduces segment-level encoding, where long texts are divided into shorter segments and encoded individually before merging the results. \n- For preference optimization, decomposed CLIP-based preference models are used to fine-tune diffusion models, separating text-relevant alignment from other visual aspects. \n- A reweighting strategy is proposed to assign different weights to the text-relevant and text-irrelevant components, addressing overfitting. \n- Fine-tuning Stable Diffusion v1.5 with LongAlign for 20 hours on 6 A100 GPUs leads to improved alignment, outperforming models like PixArt-a and Kandinsky v2.2 on long text inputs.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/luping-liu/LongAlign"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Simplifying, Stabilizing and Scaling Continuous-Time Consistency Models",
+        "authors": "Yang Song, Cheng Lu",
+        "link": "https://arxiv.org/abs/2410.11081",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces simplified continuous-time consistency models (sCMs), a new class of diffusion-based generative models trained for fast sampling.\n\u2022 sCMs address training instabilities in continuous-time models through improvements in diffusion process parameterization (TrigFlow), network architecture (time-conditioning and adaptive group normalization), and training objectives (adaptive weighting and progressive annealing).\n\u2022 These sCMs scale effectively, reaching 1.5 billion parameters on ImageNet 512x512 and achieving FID scores competitive with state-of-the-art diffusion models using only two sampling steps.\n\u2022 The paper demonstrates that continuous-time CMs achieve better sample quality by minimizing discretization errors compared to discrete-time variants.\n\u2022  sCMs produce more diverse samples and handle guidance better than variational score distillation (VSD), which can struggle with high guidance levels and produce overly smooth samples.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Insights from the Inverse: Reconstructing LLM Training Goals Through Inverse RL",
+        "authors": "Sonali Parbhoo, Arjun Jagota, Jared Joselowitz, skrishna",
+        "link": "https://arxiv.org/abs/2410.12491",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces a novel approach to interpreting Large Language Models (LLMs) by applying Inverse Reinforcement Learning (IRL) to recover their implicit reward functions, focusing on toxicity-aligned LLMs.\n\u2022 Experiments conducted on toxicity-aligned LLMs of varying sizes extracted reward models that achieved up to 80.40% accuracy in predicting human preferences.\n\u2022 The analysis reveals insights into the non-identifiability of reward functions, the relationship between model size and interpretability, and potential pitfalls in the Reinforcement Learning from Human Feedback (RLHF) process.\n\u2022 The study demonstrates that IRL-derived reward models can be used to fine-tune new LLMs, resulting in comparable or improved performance on toxicity benchmarks.\n\u2022 The paper proposes that this work provides a new perspective for understanding and improving LLM alignment, with implications for responsible development.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Neural Metamorphosis",
+        "authors": "Xinchao Wang, Xingyi Yang",
+        "link": "https://arxiv.org/abs/2410.11878",
+        "github_repo": null,
+        "summary": "-\nNeuMeta, a novel learning paradigm to construct self-morphable neural networks.\n- Instead of training separate models for different architectures or sizes, NeuMeta learns the continuous weight manifold of neural networks using neural implicit functions as hypernetworks. \n- These hypernetworks take coordinates within the model space as input and generate corresponding weight values on the manifold. \n- To enhance the smoothness of the manifold, NeuMeta employs weight matrix permutation and introduces noise during hypernetwork training.\n- Experimental results across image classification, semantic segmentation, and image generation tasks demonstrate that NeuMeta preserves full-sized model performance even at high compression rates, generalizes to unseen network configurations, and even outperforms individually trained models in some cases.",
+        "classification": [
+            "Image Classification",
+            "Image Segmentation",
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "WorldMedQA-V: a multilingual, multimodal medical examination dataset for multimodal language models evaluation",
+        "authors": "Juan Carlos Climent Pardo, Yingya Li, Siena Placino, Jo\u00e3o Matos, shanchen",
+        "link": "https://arxiv.org/abs/2410.12722",
+        "github_repo": null,
+        "summary": "\n- WorldMedQA-V is a new multilingual and multimodal dataset designed to evaluate the performance of multimodal language models (VLMs) on medical question answering tasks.\n- The dataset consists of 568 multiple-choice questions with images from real medical exams in Brazil, Israel, Japan, and Spain.\n- Evaluations of several popular open and closed-source VLMs reveal that GPT4o achieved the best performance, generally exceeding passing thresholds across countries and both local languages and English translations.\n- Including the associated image with the medical question generally improves the model performance, particularly for models with lower baseline accuracies.\n- The results also highlight persistent language disparities, where models showed relatively lower performance on Hebrew, potentially due to underrepresentation in pre-training datasets.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/WorldMedQA/V"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/WorldMedQA/V"
+        ],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "OMCAT: Omni Context Aware Transformer",
+        "authors": "Andrew Tao, Rafael Valle, Matthieu Le, Karan Sapra, goarushi27",
+        "link": "https://arxiv.org/abs/2410.12109",
+        "github_repo": null,
+        "summary": " - The paper introduces OMCAT (Omni Context Aware Transformer), a novel multimodal large language model designed for enhanced temporal understanding and cross-modal alignment in audio-visual contexts. \n- OMCAT leverages ROTE (Rotary Time Embeddings), a modification of RoPE (Rotary Position Embeddings), to encode absolute and relative temporal information, improving performance on time-anchored tasks.\n-  A new dataset, OCTAV (Omni Context and Temporal Audio Video), is also introduced, focusing on event transitions within videos and their correlation with audio cues, facilitating training for fine-grained temporal reasoning. \n-  OMCAT undergoes a three-stage training process: feature alignment, instruction tuning, and OCTAV-specific training, achieving state-of-the-art results on Audio-Visual Question Answering (AVQA) and temporal video grounding benchmarks, surpassing existing models on the OCTAV dataset by a significant margin. \n- The paper's contributions include a new model and dataset, demonstrating significant advancements in multimodal LLMs' capacity for fine-grained temporal and cross-modal understanding.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "Tracking Universal Features Through Fine-Tuning and Model Merging",
+        "authors": "Desmond Elliott, nilq",
+        "link": "https://arxiv.org/abs/2410.12391",
+        "github_repo": null,
+        "summary": "\n- This paper investigates the evolution of features in one-layer Transformer language models during fine-tuning and merging.\n- The study uses sparse autoencoders to extract and track features across models trained on different domains (English text, Python, Lua, TinyStories).\n- Findings reveal that few features persist across models, but those that do are often interpretable, relating to code-related elements like punctuation and formatting.\n- Case studies highlight a persistent variable assignment feature and a disappearing Python exception-handling feature.\n- The paper contributes to understanding feature dynamics in transfer learning scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
+    },
+    {
+        "title": "DyVo: Dynamic Vocabularies for Learned Sparse Retrieval with Entities",
+        "authors": "Jeff Dalton, Iain Mackie, Sean MacAvaney, Shubham Chatterjee, Thong Nguyen",
+        "link": "https://arxiv.org/abs/2410.07722",
+        "github_repo": "https://github.com/thongnt99/DyVo",
+        "summary": "-\nDyVo, a novel dynamic vocabulary model, is introduced to enhance Learned Sparse Retrieval (LSR) by incorporating Wikipedia entities into the vocabulary.\n- The model utilizes a Dynamic Vocabulary (DyVo) head which leverages existing entity embeddings and an entity retrieval component to generate entity weights.\n- These weights are merged with word piece weights and used for efficient indexing and retrieval using an inverted index.\n- Experiments on three entity-rich document ranking datasets show DyVo consistently outperforms state-of-the-art baselines, demonstrating significant improvements over traditional LSR models by incorporating entities.\n- A few-shot generative entity retrieval approach using LLMs like Mixtral and GPT-4 is introduced, generating highly relevant entity candidates leading to superior performance compared to using linked entities or entities found by human annotators.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/thongnt99/DyVo"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-17"
     }
 ]

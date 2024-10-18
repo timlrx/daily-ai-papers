@@ -3609,5 +3609,475 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-17"
+    },
+    {
+        "title": "MixEval-X: Any-to-Any Evaluations from Real-World Data Mixtures",
+        "authors": "kcz358, fuzhao, Junhao233, dghosal, jinjieni",
+        "link": "https://arxiv.org/abs/2410.13754",
+        "github_repo": null,
+        "summary": "\n- MixEval-X is a benchmark for evaluating multimodal models across various input-output modalities, including image, video, audio, text, and actions.\n- The benchmark covers eight input-output modality combinations and uses a mixture of existing datasets and real-world web data to construct evaluations. \n- MixEval-X employs a novel multi-modal benchmark mixture and adaptation-rectification pipeline to optimize evaluation tasks by aligning them with real-world task distributions and mitigating biases. \n- Meta-evaluations demonstrate that MixEval-X effectively aligns benchmark samples with real-world distributions, with model rankings correlating strongly (up to 0.98) with crowd-sourced real-world evaluations. \n- The benchmark offers comprehensive leaderboards to rerank existing models and organizations across modalities.",
+        "classification": [
+            "Multimodal",
+            "Any-to-Any",
+            "Image-to-Text",
+            "Video-Text-to-Text",
+            "Text-to-Image",
+            "Text-to-Video",
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://mixeval-x.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Movie Gen: A Cast of Media Foundation Models",
+        "authors": "Animesh Sinha, Andros Tjandra, Andrew Brown, Amit Zohar, Adam Polyak",
+        "link": "https://arxiv.org/abs/2410.13720",
+        "github_repo": null,
+        "summary": " \n- Meta introduces MovieGen, a suite of foundation models for generating high-quality HD videos with synchronized audio, personalized characters, and video editing capabilities. \n- The core is a 30B parameter transformer (MovieGen Video) trained using a flow matching objective on a large-scale dataset of image-text and video-text pairs. It jointly models text-to-image and text-to-video generation with additional finetuning stages for personalization and editing. \n- MovieGen outperforms prior work, including commercial systems (Runway Gen-3, LumaLabs, OpenAI Sora) on overall video quality and demonstrates novel capabilities in personalization and precise video editing.  \n- A 13B parameter model (MovieGen Audio) generates high-quality sound effects and music synchronized with video using text or video input. \n- MovieGen is state-of-the-art on multiple media generation tasks, validated by comprehensive human and automated metric evaluations and benchmarks. ",
+        "classification": [
+            "Text-to-Video",
+            "Text-to-Image",
+            "Video-Text-to-Text",
+            "Video-Text-to-Text",
+            "Text-to-Audio",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/MovieGenBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+        "authors": "Yuxiao Qu, Yifan Song, yuexiang96, oottyy, jeepliu",
+        "link": "https://arxiv.org/abs/2410.13824",
+        "github_repo": null,
+        "summary": "\n- This paper introduces MultiUI, a 7.3 million sample dataset synthesized from 1 million web page UIs using LLMs, for training multimodal models in text-rich visual understanding.\n- MultiUI covers nine diverse tasks across three categories (visual understanding and reasoning, text recognition, and grounding), enhancing model perception, comprehension, grounding, and reasoning capabilities. \n- Models trained on MultiUI demonstrate significant improvement, up to 48% on VisualWebBench and 19.1% on Mind2Web, outperforming larger models like LLaVA 1.6 34B and GPT-4V in GUI tasks. \n- MultiUI also generalizes well to non-web UI tasks like document understanding, OCR, and chart interpretation, showing strong cross-domain generalization.\n- This highlights the value of structured web UI data for advancing text-rich visual understanding in MLLMs.\n",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://neulab.github.io/MultiUI/"
+        ],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "MobA: A Two-Level Agent System for Efficient Mobile Task Automation",
+        "authors": "Yixuan Jiang, Kunyao Lan, Yansi Li, Hao Tang, JamesZhutheThird",
+        "link": "https://arxiv.org/abs/2410.13757",
+        "github_repo": null,
+        "summary": "-\nMobA, a novel two-level agent architecture designed to enhance the abilities of mobile phone assistants, using Multimodal Large Language Models (MLLMs).\n- \nComposed of a higher-level Global Agent for tasks such as command interpretation and task planning, and a lower-level Local Agent to select and execute actions based on current screen information and historical data.\n- \nA double reflection mechanism allowing the system to correct errors quickly and avoid sub-optimal operations, as well as an integrated memory module to track actions and optimize execution.\n- \nEvaluation performed on the Mobbench dataset containing 50 mobile tasks across 10 applications of varying difficulty, outperforming other mobile agents, achieving the highest milestone score of 66.2%.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation",
+        "authors": "zdaxie, zizhpan, XCLiu, CNMaxwell, WuChengyue",
+        "link": "https://arxiv.org/abs/2410.13848",
+        "github_repo": null,
+        "summary": "-\nJanus is an autoregressive multimodal model that decouples visual encoding pathways for understanding and generation tasks using a shared transformer architecture. \n- For understanding, it uses a SigLIP encoder for high-level semantic information, while for generation, it utilizes a VQ tokenizer focusing on fine-grained visual details. \n- This approach addresses the conflicting representational needs of the two tasks, enabling both strong performance and model flexibility. \n- Experimental results demonstrate that Janus outperforms other unified models of comparable size and matches or exceeds task-specific models on benchmarks like MMBench, SEED-Bench, POPE, MSCOCO, and GenEval. \n- The model's performance and flexibility make it a potential candidate for the next generation of unified multimodal models.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/deepseek-ai/Janus"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+        "authors": "Weijia Shi, Tianze Wang, Haoran Li, Kangyu Zhu, richardxp888",
+        "link": "https://arxiv.org/abs/2410.13085",
+        "github_repo": "https://github.com/richard-peng-xia/MMed-RAG",
+        "summary": "MMed-RAG is a new multimodal retrieval-augmented generation (RAG) system designed to improve the factuality of Medical Large Vision-Language Models (Med-LVLMs).\n- It incorporates a domain-aware retrieval mechanism, adaptive context selection, and RAG-based preference fine-tuning to address misalignment issues and enhance alignment with ground truth.\n- The model achieves an average improvement of 43.8% in factual accuracy across five medical datasets and two tasks (medical VQA and report generation) compared to the original Med-LVLM. \n- It outperforms other decoding-based and RAG-based approaches on medical VQA and report generation tasks.\n- MMed-RAG demonstrates strong generalizability, achieving consistent improvements across various medical image modalities (radiology, ophthalmology, and pathology).\n- Through ablation studies, the contribution of each proposed component is validated, demonstrating its effectiveness in enhancing the factuality and performance of Med-LVLMs in different medical domains.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/richard-peng-xia/MMed-RAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "A Unified View of Delta Parameter Editing in Post-Trained Large-Scale Models",
+        "authors": "Keming Lu, Hongyu Lin, Bowen Yu, Le Yu, TangQiaoYu",
+        "link": "https://arxiv.org/abs/2410.13841",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces a unified perspective on delta parameter editing in post-trained large-scale models, formulating editing operations based on Riemann sum approximation of the loss difference.\n- This analysis categorizes existing methods into three performance classes: competitive (e.g., DARE, DELLA-Merging), decreased (e.g., BitDelta, Twin-Merging, TIES-Merging), and improved (e.g., EXPO), explaining their impact on model performance through the lens of Riemann sum approximation.\n- Extensive experiments on visual and language models (ViT, LLaMA 3, Qwen 2, Mistral) support the theoretical findings.\n- The paper further proposes extensions to existing techniques like DARE and BitDelta, generalizing their formats and improving applicability.\n- For example, introducing a factor *k* to DARE handles dropped parameters more effectively and expanding BitDelta to use multiple bits improves performance beyond the original post-trained model.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "PopAlign: Diversifying Contrasting Patterns for a More Comprehensive Alignment",
+        "authors": "Ke Xu, Jiaheng Liu, Shawn Wang, Zekun Moore Wang, kangz",
+        "link": "https://arxiv.org/abs/2410.13785",
+        "github_repo": null,
+        "summary": "PopAlign is a framework for aligning large language models (LLMs) by diversifying contrasting patterns across prompt, model, and pipeline levels.\n- It integrates six distinct contrasting strategies: Prefix Contrast, Demon Contrast, Elicitive Contrast, NParam Contrast, Leaderboard Contrast, and Refine Contrast.\n- These strategies synthesize preference-contrastive data without requiring additional feedback labeling.\n- Experimental results demonstrate that PopAlign significantly outperforms existing methods on various alignment tasks and leaderboards.\n- Notably, PopAlign achieves higher scores than strong baselines trained on original labels, indicating its effectiveness in preference modeling and comprehensive alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+        "authors": "Shuicheng Yan, Li Yuan, Bo Zhu, Chat-UniVi",
+        "link": "https://arxiv.org/abs/2410.11842",
+        "github_repo": "https://github.com/SkyworkAI/MoH",
+        "summary": "-\nMixture-of-Head attention (MoH) is proposed, which integrates multi-head attention with a Mixture-of-Experts (MoE) mechanism by treating attention heads as experts.\n-\nMoH employs a router to select the top-k heads for each token, improving inference efficiency, and uses a weighted sum of outputs rather than standard summation, potentially enhancing performance.\n-\nShared heads in MoH retain constant activation, capturing general knowledge.\n-\nEvaluations on ViT, DiT, and LLMs show MoH outperforms multi-head attention using only 50%~90% of heads.\n-\nPre-trained models like LLaMA3-8B can be continue-tuned into MoH models, with MoH-LLaMA3-8B showing improved accuracy with fewer heads.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Unconditional Image Generation",
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SkyworkAI/MoH"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "DreamVideo-2: Zero-Shot Subject-Driven Video Customization with Precise Motion Control",
+        "authors": "Haonan Qiu, Xiang Wang, Hangjie Yuan, Shiwei Zhang, Yujie Wei",
+        "link": "https://arxiv.org/abs/2410.13830",
+        "github_repo": null,
+        "summary": "-\nDreamVideo-2 is a zero-shot video customization framework that generates videos with specified subjects and motion trajectories guided by a single image and bounding box sequence, respectively, without test-time fine-tuning.\n-\nIt introduces reference attention, leveraging inherent model capabilities for subject learning, and a mask-guided motion module comprising a spatiotemporal encoder and ControlNet for precise motion control using box masks.\n-\nTo address motion control dominance over subject representation, it incorporates masked reference attention with blended latent mask modeling to prioritize subject identity at desired positions, along with a reweighted diffusion loss balancing subject learning and motion control by differentiating regional contributions within and outside bounding boxes.\n-\nDreamVideo-2 consistently outperforms current state-of-the-art methods in subject customization and motion control, as demonstrated on a newly curated, comprehensive single-subject video dataset with captions, masks, and bounding boxes.\n-\nThe dataset, code, and models will be made public.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "VidPanos: Generative Panoramic Videos from Casual Panning Videos",
+        "authors": "Shiran Zada, Roni Paiss, Erika Lu, Jingwei Ma, fcole",
+        "link": "https://arxiv.org/abs/2410.13832",
+        "github_repo": null,
+        "summary": "This paper introduces a novel method for generating panoramic videos from casually captured panning videos, effectively extending the field of view beyond the camera's limits. \n- The method addresses the challenge of limited spatio-temporal context windows in existing generative video models by employing a coarse-to-fine synthesis approach and spatial aggregation techniques.\n- It leverages pre-trained diffusion-based (Lumiere) and token-based (Phenaki) video generation models and adapts them to complete panoramic videos of arbitrary length and width, realistically filling in unseen regions.\n- The approach demonstrates success in generating coherent and plausible panoramas with dynamic elements like moving people and objects, even in challenging scenarios with camera motion.\n- Evaluation on synthetic and real-world panning videos shows qualitative and quantitative improvements over baseline methods, including linear interpolation, flow-based inpainting, and a recent video generation model (MAGVIT).",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Retrospective Learning from Interactions",
+        "authors": "Anne Wu, Gloria Geng, Yiwei Chen, Mustafa Omer Gul, Zizhao Chen",
+        "link": "https://arxiv.org/abs/2410.13852",
+        "github_repo": null,
+        "summary": " - This paper introduces RESPECT, a novel method for improving large language models (LLMs) through retrospective learning from implicit feedback signals in multi-turn interactions.\n- RESPECT leverages user responses such as rephrased requests, expressions of frustration, or task pivots as implicit feedback signals, eliminating the need for explicit annotations or feedback solicitation.\n - The method involves decoding feedback from past interactions by prompting the LLM to analyze interaction contexts and follow-up utterances.\n-  This decoded feedback is then used to re-train the LLM, resulting in continual improvement over multiple rounds of interaction and training.\n-  In a new multimodal interaction scenario called MULTIREF, where humans instruct an LLM to solve an abstract reasoning task, RESPECT demonstrates significant improvement, boosting task completion rate from 31% to 82% without external annotations.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://lil-lab.github.io/respect"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "FlatQuant: Flatness Matters for LLM Quantization",
+        "authors": "Kang Zhao, Han Bao, Haoli Bai, Yuxuan Sun, lianlio",
+        "link": "https://arxiv.org/abs/2410.09426",
+        "github_repo": "https://github.com/ruikangliu/FlatQuant",
+        "summary": " - FLATQUANT, a novel post-training quantization approach, enhances the flatness of Large Language Model (LLM) weights and activations through fast and learnable affine transformations, improving quantization accuracy and reducing error propagation.\n- FLATQUANT employs a lightweight, block-wise training strategy over calibration data and utilizes Kronecker decomposition for efficient affine transformations, minimizing memory and computational demands.\n- A single kernel fusing affine transformations and quantization reduces transformation overhead, resulting in inference speedups of up to 2.3x for prefill and 1.7x for decoding compared to the FP16 baseline. \n- FLATQUANT achieves state-of-the-art quantization results, including less than 1% accuracy drop for W4A4 quantization on LLaMA-3-70B, outperforming SpinQuant by 7.5%. \n- The method's effectiveness is shown on various LLMs (LLaMA-2/3, 7B to 70B parameters) across tasks like language modeling and question answering, demonstrating superior accuracy and inference latency compared to other state-of-the-art techniques.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ruikangliu/FlatQuant"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "MedMobile: A mobile-sized language model with expert-level clinical capabilities",
+        "authors": "Eric Karl Oermann, Daniel Alexander Alber, Anton Alaykin, Jaden Stryker, KrithikV",
+        "link": "https://arxiv.org/abs/2410.09019",
+        "github_repo": null,
+        "summary": "-\nMedMobile, a fine-tuned 3.8B parameter phi-3-mini language model, demonstrates expert-level clinical reasoning capabilities, achieving a 75.7% accuracy on MedQA (USMLE), surpassing the passing score for physicians and outperforming previous state-of-the-art sub-5B parameter models by over 20%.\n- MedMobile leverages chain-of-thought prompting, ensemble methods, and supervised fine-tuning, with the latter contributing an 8.4% improvement in accuracy. \n- Unlike larger models, techniques such as k-shot prompting and retrieval-augmented generation did not enhance MedMobile's performance, possibly due to context window limitations, leaving potential avenues for future research. \n- This model holds promise for low-resource medical settings and democratizes access to advanced language models beyond large technology companies. \n- The model can be expanded to vision-language tasks by utilizing Phi-3-vision architecture.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/nyuolab/MedMobile"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/KrithikV/MedMobile"
+        ],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Failing Forward: Improving Generative Error Correction for ASR with Synthetic Data and Retrieval Augmentation",
+        "authors": "Jian Xue, Peidong Wang, Michael Levit, Mohammad Sadegh Rasooli, Sreyan Ghosh",
+        "link": "https://arxiv.org/abs/2410.13198",
+        "github_repo": null,
+        "summary": " - This paper introduces DARAG (Data- and Retrieval-Augmented Generative Error Correction), a novel approach to improve the performance of generative error correction (GEC) models for automatic speech recognition (ASR) systems. \n- DARAG addresses limitations of traditional GEC models by augmenting training data with synthetic examples generated by prompting large language models (LLMs) and text-to-speech (TTS) models, simulating realistic ASR errors. \n- It also incorporates retrieval augmentation, extracting named entities from the training data and retrieving similar entities during correction to handle novel or unknown named entities more effectively.\n- Experimental results on various in-domain and out-of-domain settings show that DARAG consistently outperforms baseline methods, with relative word error rate (WER) improvements of 8%-30% in in-domain and 10%-33% in out-of-domain scenarios.\n-  DARAG improves named entity correction and shows the benefit of using synthetic data in low-resource domain adaptation setting as well.",
+        "classification": [
+            "Automatic Speech Recognition",
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "LoLDU: Low-Rank Adaptation via Lower-Diag-Upper Decomposition for Parameter-Efficient Fine-Tuning",
+        "authors": "Chengwei Sun, Ran Ran, Yujia Wu, Jiwei Wei, Shiym",
+        "link": "https://arxiv.org/abs/2410.13618",
+        "github_repo": "https://github.com/SKDDJ/LoLDU",
+        "summary": "\u2022 LoLDU is a novel Parameter-Efficient Fine-Tuning (PEFT) method that leverages Lower-Diag-Upper (LDU) decomposition to reduce the number of trainable parameters during fine-tuning.\n\u2022 LoLDU initializes low-rank matrices with orthogonal properties using LDU decomposition, focusing on optimizing a diagonal matrix for scaling transformations and dynamic adjustment of a scaling factor to align updates with the target matrix.\n\u2022 LoLDU achieves comparable performance to full fine-tuning and other PEFT methods while drastically reducing trainable parameters, sometimes down to 0.00025% of the original model.\n\u2022 Experimental results across various tasks, including instruction following, natural language understanding, image classification, and image generation, with models ranging from 86 million to 7 billion parameters (LLaMA2, RoBERTa, ViT, and Stable Diffusion) demonstrate LoLDU's effectiveness.\n\u2022 LoLDU excels in preserving pre-trained knowledge and enhancing generalization through the use of orthogonal lower and upper triangular matrices, outperforming LoRA on certain tasks while using significantly fewer parameters.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Text-to-Image",
+            "Natural Language Processing",
+            "Text Generation",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/SKDDJ/LoLDU"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "BenTo: Benchmark Task Reduction with In-Context Transferability",
+        "authors": "Lichao Sun, Ming Li, Hongyu Zhao, zhoutianyi",
+        "link": "https://arxiv.org/abs/2410.13804",
+        "github_repo": null,
+        "summary": "BENTO: Benchmark Task Reduction with In-Context Transferability\n- This paper introduces a novel benchmark reduction method called BENTO (Benchmark Task Reduction) designed to reduce the evaluation cost of Large Language Models (LLMs). \n- BENTO leverages In-Context Transferability (ICT), a training-free approach to estimate the transferability between different tasks using in-context learning. \n- By analyzing the ICT matrix and applying spectral clustering, BENTO identifies representative tasks that capture the overall benchmark's essence. \n- The paper shows that BENTO can reduce the number of tasks in popular LLM benchmarks like MMLU and FLAN by up to 95% while maintaining evaluation accuracy within a 4% margin of the full benchmark. \n- This method is significantly more efficient than existing benchmark reduction techniques as it doesn't rely on computationally expensive fine-tuning or extensive training data.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/bento"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "AERO: Softmax-Only LLMs for Efficient Private Inference",
+        "authors": "Brandon Reagen, Nandan Kumar Jha",
+        "link": "https://arxiv.org/abs/2410.13060",
+        "github_repo": null,
+        "summary": "\n- AERO, a four-step architectural optimization framework, refines existing large language models (LLMs) for efficient private inference (PI) by removing nonlinearities and reducing FLOPs.\n- AERO systematically removes nonlinearities such as LayerNorm and GELU, proposes using ReLU in LayerNorm-free models, and designs a Softmax-only architecture tailored for PI.\n- A novel entropy regularization technique mitigates entropic overload, improving the performance of the Softmax-only model.\n- AERO achieves up to a 4.23x reduction in communication overhead and a 1.94x speedup in latency compared to the baseline.\n- Experiments were conducted on GPT-2 and Pythia-70M models, trained from scratch on CodeParrot and Languini datasets, demonstrating improvements across various context sizes and model depths.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Long-LRM: Long-sequence Large Reconstruction Model for Wide-coverage Gaussian Splats",
+        "authors": "Fujun Luan, Sai Bi, Kai Zhang, Hao Tan, arthurhero",
+        "link": "https://arxiv.org/abs/2410.12781",
+        "github_repo": null,
+        "summary": " \n- Long-LRM, a novel generalizable 3D Gaussian reconstruction model, processes lengthy image sequences for large-scale scene reconstruction.\n- The model architecture combines Mamba2 and transformer blocks for handling long input sequences, and incorporates token merging and Gaussian pruning for efficiency. \n- It reconstructs entire scenes from up to 32 images at 960x540 resolution in 1.3 seconds on a single A100 80G GPU, outperforming existing optimization-based methods in speed.\n- Evaluation on DL3DV-140 and Tanks and Temples demonstrates comparable or better novel view synthesis quality than optimization-based 3D Gaussian Splatting (3D GS), while being significantly faster. \n- The method offers the first feed-forward solution for wide-coverage scene-level Gaussian Splatting reconstruction, enabling large-scale scene reconstruction within seconds.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/arthurhero/projects/tree/main/llrm"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Remember, Retrieve and Generate: Understanding Infinite Visual Concepts as Your Personalized Assistant",
+        "authors": "Xiangyu Yue, Yu-Feng Li, Changsheng Li, Jiaming Han, Hoar012",
+        "link": "https://arxiv.org/abs/2410.13360",
+        "github_repo": "https://github.com/Hoar012/RAP-MLLM",
+        "summary": "\n- This paper introduces Retrieval Augmented Personalization (RAP), a framework for personalizing Multimodal Large Language Models (MLLMs) by integrating user-specific visual concepts without requiring further training.\n- RAP employs a key-value database to store user-provided concept information (image, name, description), retrieves relevant information using a multimodal retriever based on user input (image and/or text), and feeds both the query and retrieved information to the MLLM for personalized response generation.\n- A dedicated dataset is created using a pipeline that leverages Gemini to automatically generate personalized captions, descriptions, and question-answer pairs associated with user-provided visual concepts. \n- Experimental results show that RAP-MLLMs, trained on this dataset using LLaVA and Phi-3V backbones, achieve superior performance in personalized image captioning and visual question answering compared to finetuning and other personalization methods, while also performing well on standard multimodal benchmarks like MMMU and InfoSeek.\n- RAP offers real-time concept editing and addition by updating the external database, providing flexibility and eliminating retraining needs, though performance depends on the robustness of the multimodal retriever.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Hoar012/RAP-MLLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "MuVi: Video-to-Music Generation with Semantic Alignment and Rhythmic Synchronization",
+        "authors": "Shengpeng Ji, Ziang Zhang, Xize Cheng, Siqi Zheng, Ruiqi Li",
+        "link": "https://arxiv.org/abs/2410.12957",
+        "github_repo": null,
+        "summary": "MuVi is a novel video-to-music generation framework that focuses on semantic alignment and rhythmic synchronization.\n- MuVi employs a non-autoregressive encoder-decoder architecture, using a pre-trained visual encoder and a flow-matching-based music generator.\nA visual adaptor connects the two modules and performs efficient compression of high-frame-rate visual features.\n- A contrastive music-visual pre-training scheme is introduced, utilizing negative samples from temporal shifts and random replacements to enhance rhythmic synchronization.\n- Experimental results demonstrate MuVi's superior performance over existing methods, achieving improvements in audio quality and temporal synchronization in generated music.",
+        "classification": [
+            "Text-to-Audio",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Do LLMs Have Political Correctness? Analyzing Ethical Biases and Jailbreak Vulnerabilities in AI Systems",
+        "authors": "Isack Lee, hbseong",
+        "link": "https://arxiv.org/abs/2410.13334",
+        "github_repo": null,
+        "summary": " - This paper introduces PCJailbreak, a method to analyze how intentional biases in Large Language Models (LLMs), implemented for safety alignment, can be exploited to generate harmful content. \n- The method involves using LLM-generated keywords representing contrasting demographic groups in prompts containing harmful requests to assess the model's susceptibility to jailbreak attacks. \n- Experiments on various LLMs, including GPT models and open-source alternatives, revealed that intentional biases lead to significant differences in jailbreak success rates between marginalized and privileged groups. \n- The paper also proposes PCDefense, a mitigation strategy that uses prompts to adjust biases without the need for additional inference or models, unlike Guard Models. \n- The authors advocate for responsible development and deployment of LLMs, emphasizing careful consideration of safety measures to avoid unintended vulnerabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "SBI-RAG: Enhancing Math Word Problem Solving for Students through Schema-Based Instruction and Retrieval-Augmented Generation",
+        "authors": "Tim Oates, pdx97",
+        "link": "https://arxiv.org/abs/2410.13293",
+        "github_repo": null,
+        "summary": " - This paper introduces SBI-RAG, a Schema-Based Instruction Retrieval-Augmented Generation framework, for enhancing math word problem solving using a Large Language Model (LLM).\n - SBI-RAG uses a schema classifier (trained on DistilBERT) to predict the problem's schema, which guides prompt creation for context retrieval using RAG and generates step-by-step solutions using Ollama Llama 3.1.\n - The authors evaluate SBI-RAG on GSM8K, comparing it with GPT-4 and GPT-3.5 Turbo, using a \"reasoning score\" to assess solution quality.\n - Results suggest SBI-RAG enhances reasoning clarity and problem-solving accuracy, potentially improving student learning.\n - The approach incorporates a schema classifier, structured prompt generation, schema-relevant RAG, and a new evaluation metric.",
+        "classification": [
+            "Question Answering",
+            "Text2Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "$\u03b3-$MoD: Exploring Mixture-of-Depth Adaptation for Multimodal Large Language Models",
+        "authors": "Xiaoshuai Sun, Yiyi Zhou, Jiayi Ji, Gen Luo, YaxinLuo",
+        "link": "https://arxiv.org/abs/2410.13859",
+        "github_repo": null,
+        "summary": "\n- This paper introduces $\\gamma$-MoD, a novel mixture-of-depth (MoD) adaptation strategy for enhancing the computational efficiency of existing Multimodal Large Language Models (MLLMs).\n- $\\gamma$-MoD employs a new metric called Rank of Attention Maps (ARank) to identify and replace redundant MLLM layers with MoD layers, dynamically allocating computational resources based on token relevance.\n- Two key designs, shared vision-language router and masked routing learning, are incorporated to maximize sparsity while preserving performance.\n- The shared router applies routing to the entire multimodal sequence for better optimization, and masked routing learning prevents critical tokens from being skipped during training.\n- Experiments on nine benchmarks show that $\\gamma$-MoD notably reduces training and inference time while maintaining competitive performance compared to existing dense and sparse MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Toward Guidance-Free AR Visual Generation via Condition Contrastive Alignment",
+        "authors": "Jun Zhu, Peize Sun, Hang Su, ChenDRAG",
+        "link": "https://arxiv.org/abs/2410.09347",
+        "github_repo": "https://github.com/thu-ml/CCA",
+        "summary": "-\nThis paper introduces Condition Contrastive Alignment (CCA), a fine-tuning technique for autoregressive (AR) visual generation models to improve sample quality without relying on guided sampling methods like Classifier-Free Guidance (CFG).\n- CCA fine-tunes pre-trained models by contrasting positive and negative image-condition pairs, directly optimizing the model to achieve the desired target distribution, similar to alignment techniques used in language models.\n- Experimental results on LlamaGen and VAR models demonstrate significant improvement in guidance-free FID and IS scores after just one epoch of fine-tuning with CCA, achieving performance comparable to CFG while reducing sampling costs.\n- CCA offers a controllable trade-off between image diversity and fidelity similar to CFG by adjusting a training hyperparameter (\u03bb), further confirming their theoretical connection in targeting the same sampling distribution.\n- Combining CCA with CFG can lead to further performance gains, showcasing its potential as a complementary technique for enhancing visual generation.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/thu-ml/CCA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Can MLLMs Understand the Deep Implication Behind Chinese Images?",
+        "authors": "Xinrun Du, Yuelin Bai, Xi Feng, zhangysk, MING-ZCH",
+        "link": "https://arxiv.org/abs/2410.13854",
+        "github_repo": "https://github.com/MING_X/CII-Bench",
+        "summary": " - This research introduces CII-Bench, a benchmark designed to evaluate Multimodal Large Language Models (MLLMs) ability to understand the implications behind Chinese images, including those deeply rooted in Chinese traditional culture.\n- CII-Bench includes 698 images across diverse domains and visual content types, paired with 800 multiple-choice questions to assess comprehension and reasoning abilities.\n- Experimental findings reveal a notable performance gap between MLLMs and humans, with models achieving a maximum accuracy of 64.4% compared to human accuracy averaging 78.2%.\n- A custom evaluation metric is designed using GPT-4 to better evaluate Chinese traditional painting comprehension, revealing model limitations in grasping complex cultural nuances.\n- Models benefit from image emotion hints in prompts, indicating ongoing struggles with emotional understanding crucial for accurate interpretation.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MING_X/CII-Bench"
+        ],
+        "huggingface_urls": [
+            "https://cii-bench.github.io/"
+        ],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "Minimum Tuning to Unlock Long Output from LLMs with High Quality Data as the Key",
+        "authors": "Yunlin Mao, Jintao Huang, Daoze, wangxingjun778, Yingda",
+        "link": "https://arxiv.org/abs/2410.10210",
+        "github_repo": null,
+        "summary": " - This research introduces a technique for enhancing the long-form output generation capabilities of Large Language Models (LLMs) through minimal tuning with high-quality data.\n- By curating a smaller, higher-quality dataset from the existing LongWriter-6k dataset, and combining it with a small fraction of alignment data, this method demonstrates comparable performance improvements to more compute-intensive training approaches.\n- Notably, the new dataset requires just 3.74% of the original training data, improving tuning efficiency by effectively addressing issues with data quality such as mismatched output lengths and missing instructions in the original data.\n- Evaluations based on length-following score (SL) and writing quality score (SQ) show improvements across various models, including the Qwen and GLM families.\n- This approach provides an efficient method for enhancing long-form output generation while preserving model coherence and alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://www.modelscope.com/models/swift/MS-LongWriter-GLM4-9B-Chat",
+            "https://www.modelscope.com/models/swift/MS-LongWriter-Qwen2-7B-Instruct",
+            "https://www.modelscope.com/models/swift/MS-LongWriter-Qwen2.5-7B-instruct",
+            "https://www.modelscope.com/datasets/ZhipuAI/LongWriter-6k",
+            "https://huggingface.co/datasets/THUDM/LongWriter-6k",
+            "https://huggingface.co/THUDM/LongWriter-glm4-9b",
+            "https://github.com/modelscope/evalscope/tree/main/evalscope/third_party/longbench_write",
+            "https://www.modelscope.com/datasets/swift/longwriter-6k-filtered",
+            "https://huggingface.co/datasets/Magpie-Align/Magpie-Qwen2-Pro-200K-Chinese",
+            "https://huggingface.co/datasets/Magpie-Align/Magpie-Qwen2-Pro-200K-English",
+            "https://huggingface.co/THUDM/glm-4-9b"
+        ],
+        "date": "2024-10-18"
+    },
+    {
+        "title": "TransAgent: Transfer Vision-Language Foundation Models with Heterogeneous Agent Collaboration",
+        "authors": "Yali Wang, Yu Qiao, Kunchang Li, Shaobin Zhuang, markywg",
+        "link": "https://arxiv.org/abs/2410.12183",
+        "github_repo": null,
+        "summary": "TransAgent is a novel framework that transfers knowledge from heterogeneous vision, language, and multimodal agents to enhance the generalization of Vision-Language (V-L) foundation models like CLIP.\n- It leverages 11 different pre-trained agents covering various tasks and modalities, including visual recognition, dense prediction, chatbot, text encoding, multimodal generation, and captioning.\n- The knowledge transfer is achieved through a unified distillation framework, where a Mixture-of-Agents (MoA) gating mechanism adaptively integrates knowledge from different agents.\n- TransAgent achieves state-of-the-art performance on 11 visual recognition datasets, outperforming CoOp by approximately 10% on average and 20% on EuroSAT under the same low-shot setting.\n- All pre-trained agent models can be unloaded after distillation, resulting in efficient deployment with no need for model ensembles in the inference phase.",
+        "classification": [
+            "Zero-Shot Image Classification",
+            "Image Classification",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/markywg/transagent"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-18"
     }
 ]

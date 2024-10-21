@@ -4079,5 +4079,194 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-18"
+    },
+    {
+        "title": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+        "authors": "jihoonkim25, Gwanwoo, ktio, kimnamssya, hyungjoochae",
+        "link": "https://arxiv.org/abs/2410.13232",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces World-Model-Augmented (WMA) web agents, which leverage world models to simulate the outcomes of actions for enhanced decision-making in web navigation.\n\u2022 WMA agents address the limitations of Large Language Models (LLMs) in long-horizon web navigation tasks by incorporating a world model that predicts the effects of actions, enabling the agent to foresee potential outcomes.\n\u2022 The authors propose a transition-focused observation abstraction method to overcome training challenges, where the world model is trained to generate natural language descriptions of state differences between time steps, rather than predicting the entire next observation.\n\u2022 The WMA agent employs a value function to estimate rewards for simulated next observations, guiding the policy model to select optimal actions.\n\u2022 Experimental results on WebArena and Mind2Web show that WMA agents improve policy selection, achieve state-of-the-art performance on Mind2Web, and demonstrate superior cost and time efficiency compared to tree-search-based agents.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/kyle8581/WMA-Agents"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "MagicTailor: Component-Controllable Personalization in Text-to-Image Diffusion Models",
+        "authors": "gychen, jzwangcuhk, BryanW, jiancheng, donghao-zhou",
+        "link": "https://arxiv.org/abs/2410.13370",
+        "github_repo": null,
+        "summary": " - MagicTailor, a novel framework, is introduced to address Component-Controllable Personalization in Text-to-Image (T2I) diffusion models; the model allows modification of specific components of a personalized visual concept within generated images using additional visual references.\n -  It leverages two techniques: Dynamic Masked Degradation (DM-Deg), which perturbs unwanted visual semantics to mitigate semantic pollution, and Dual-Stream Balancing (DS-Bal) to balance the learning of visual semantics and address semantic imbalance.\n- In qualitative comparisons, MagicTailor demonstrates superior performance in generating text-aligned images with accurate concept and component integration compared to existing personalization methods like Textual Inversion, DreamBooth, Custom Diffusion, Break-A-Scene, and CLiC.\n- Quantitative evaluations show that MagicTailor achieves state-of-the-art results in both identity fidelity and text alignment using automatic metrics (CLIP-T, CLIP-I, DINO, and DreamSim) and user studies.\n- MagicTailor's versatility is highlighted through further applications, including decoupled concept and component generation and enhancing other generative tools like ControlNet and InstantMesh, by furnishing these tools with component control capabilities.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://correr-zhou.github.io/MagicTailor"
+        ],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "UCFE: A User-Centric Financial Expertise Benchmark for Large Language Models",
+        "authors": "Yilin Guo, Yan Hu, wittenberg, amstrongzyf, TobyYang7",
+        "link": "https://arxiv.org/abs/2410.14059",
+        "github_repo": null,
+        "summary": "-\nUCFE, a User-Centric Financial Expertise benchmark, is introduced to evaluate LLMs' ability to handle complex, real-world financial tasks using dynamic, task-specific interactions in a hybrid approach combining human and LLM evaluations.\n-\nBased on a user study with 804 participants, a dataset is created that incorporates various user intents and interactions across different user groups, serving as a foundation for benchmarking 12 LLMs using LLM-as-Judge methodology.\n-\nResults demonstrate a strong correlation (Pearson coefficient 0.78) between benchmark scores and human preferences, validating the UCFE dataset and evaluation method.\n-\nMid-sized LLMs (7B-14B parameters), fine-tuned on financial texts, achieve a balance between performance and resource efficiency.\n-\nThe user-centric design highlights the necessity of aligning AI systems with diverse user requirements in finance, setting the stage for enhanced, reliable AI-driven solutions.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/TobyYang7/UCFE-Benchmark"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+        "authors": "Daniel Jiang, Wenxuan Peng, Zhiqiu Lin, Nyandwi, BaiqiL",
+        "link": "https://arxiv.org/abs/2410.14669",
+        "github_repo": null,
+        "summary": "\u2022 NaturalBench is a new benchmark designed for evaluating vision-language models (VLMs) on natural adversarial samples.\n\u2022 These are image-question pairs derived from real-world images and questions, which are easily answered by humans but pose a challenge for current VLMs.\n\u2022 The authors use a semi-automated approach to curate the benchmark, making use of CLIP and ChatGPT to source and filter questions from image caption datasets.\n\u2022 The benchmark comprises 10,000 human-verified question-answer samples, categorized by visual reasoning skill.\n\u2022 Evaluation results of 53 state-of-the-art VLMs demonstrate a significant performance gap compared to humans, suggesting the benchmark's efficacy in revealing areas for improvement.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://linzhiqiu.github.io/papers/naturalbench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "SeerAttention: Learning Intrinsic Sparse Attention in Your LLMs",
+        "authors": "Hayden Kwok-Hay So, Dayou Du, Shijie, CharyZeng, Retromonic",
+        "link": "https://arxiv.org/abs/2410.13276",
+        "github_repo": null,
+        "summary": " - This paper introduces SeerAttention, a novel attention mechanism designed to improve the efficiency and scalability of Large Language Models (LLMs), especially those with long context windows, by learning intrinsic sparse attention rather than using predefined patterns.\n- SeerAttention augments conventional attention with a learnable gate, called Attention Gate (AttnGate), to dynamically select important blocks in an attention map and treat the rest as sparse.\n- It employs a customized FlashAttention kernel to extract the block-level ground truth of attention maps for efficient training of the gating network, minimizing overhead.\n- Evaluations show SeerAttention outperforms existing sparse attention methods in post-training and achieves near-lossless accuracy with high sparsity (up to 90%) during fine-tuning for long context extension using YaRN.\n-  With a block-sparse pattern, the attention kernel achieves up to a 5.67x speedup over the FlashAttention-2 dense baseline on a single A100 GPU.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/SeerAttention"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "Are AI Detectors Good Enough? A Survey on Quality of Datasets With Machine-Generated Texts",
+        "authors": "Yury Chekhovich, Anastasia Voznyuk, German Gritsai, andriygav",
+        "link": "https://arxiv.org/abs/2410.14677",
+        "github_repo": null,
+        "summary": " - This paper presents a systematic review of datasets used in competitions and research papers dedicated to AI-generated content detection and proposes methods for evaluating the quality of such datasets.\n- The authors argue that the high performance of current detectors on benchmark datasets may be due to the poor quality of the evaluation datasets rather than the true effectiveness of the detectors.\n- The authors investigate different metrics, such as detecting low-quality generations with the use of metrics based on topological time series, detecting suspicious activation maps, and detecting sensibility to perturbations, such as text modification and sentence shuffling\n- The paper emphasizes the need for robust and qualitative methods to evaluate generated data to be secure against bias and low generalization ability of future models and provide a more comprehensive understanding of the dynamics between human and machine text.\n- The paper suggests that the use of high-quality generated data can be used for two purposes: enhancing the training of detection models and refining the training datasets themselves.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "Diffusion Curriculum: Synthetic-to-Real Generative Curriculum Learning via Image-Guided Diffusion",
+        "authors": "Shweta Bhardwaj, Yijun Liang, zhoutianyi",
+        "link": "https://arxiv.org/abs/2410.13674",
+        "github_repo": "http://github.com/tianyi-lab/DisCL",
+        "summary": " - This paper introduces Diffusion Curriculum (DisCL), a novel paradigm for enhancing model performance with low-quality or scarce data by bridging the distribution gap between original and target data using synthetic data.\n- DisCL leverages image guidance in diffusion models to generate a spectrum of interpolated data, ranging from synthetic to real, offering diverse properties for curriculum learning. \n- The approach includes generating synthetic images with varying image guidance strengths and designing curricula to select data according to diversity and feature types for different training stages.\n- DisCL demonstrates significant and robust improvements in long-tail classification and learning from low-quality data, across various base model settings. \n - Experimental results on ImageNet-LT and iWildCam exhibit improvements, highlighting DisCL's effectiveness in challenging scenarios and its ability to improve hard data learning.",
+        "classification": [
+            "Image Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/DisCL"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "DAWN: Dynamic Frame Avatar with Non-autoregressive Diffusion Framework for Talking Head Video Generation",
+        "authors": "Pengfei Hu, Pengcheng Xia, Chenyu Liu, Limin Lin, Hanbo-Cheng",
+        "link": "https://arxiv.org/abs/2410.13726",
+        "github_repo": "https://github.com/Hanbo-Cheng/DAWN-pytorch",
+        "summary": "\n- DAWN (Dynamic frame Avatar With Non-autoregressive diffusion) is a novel framework for generating dynamic-length talking-head videos from a single portrait image and an audio clip in a non-autoregressive manner using a diffusion model.\n- It disentangles lip movements from head pose and blinks, using an Audio-to-Video Flow Diffusion Model (A2V-FDM) for lip-sync and a Pose and Blink generation Network (PBNet) for head and eye movements, improving temporal consistency and extrapolation capabilities.\n- A Two-stage Curriculum Learning (TCL) strategy enhances convergence and extrapolation by first training on short clips with fixed poses for lip motion, then on variable-length sequences with random poses for broader motion control.\n- DAWN achieves state-of-the-art performance on CREMA and HDTF datasets in terms of FID, FVD, lip-sync accuracy, identity preservation, and rhythmic head/blink movements.\n- Its non-autoregressive approach offers significantly faster generation speed compared to previous autoregressive and semi-autoregressive methods, while maintaining high visual quality and realism.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Hanbo-Cheng/DAWN-pytorch"
+        ],
+        "huggingface_urls": [
+            "https://hanbo-cheng.github.io/DAWN/"
+        ],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "A Common Pitfall of Margin-based Language Model Alignment: Gradient Entanglement",
+        "authors": "Mengdi Wang, Huazheng Wang, Yue Wu, yokey, huiyuan23",
+        "link": "https://arxiv.org/abs/2410.13828",
+        "github_repo": null,
+        "summary": "\n- This paper identifies a common pitfall in margin-based language model alignment methods used in Reinforcement Learning from Human Feedback (RLHF): the under-specification of ideal behavior on preferred and dispreferred responses. \n- This issue leads to two problems as the margin increases: an increase in unsafe responses, and a decrease in preferred, ideal responses. \n- The underlying cause is identified as the *gradient entanglement* effect, in which margin-based losses couple the preferred and dispreferred probabilities, thus often preventing ideal changes. \n- This effect is characterized by an inner product condition involving the gradients of preferred and dispreferred log-probabilities. \n- The theoretical analysis is empirically validated, and suggests potential mitigation through pairwise normalized gradient descent and sparsity regularized token masking.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/HumainLab/Understand_MarginPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "DPLM-2: A Multimodal Diffusion Protein Language Model",
+        "authors": "Shujian Huang, Dongyu Xue, Fei Ye, Zaixiang Zheng, Xinyou Wang",
+        "link": "https://arxiv.org/abs/2410.13782",
+        "github_repo": null,
+        "summary": "\u2022 DPLM-2 is a multimodal protein foundation model based on a discrete diffusion probabilistic framework that models both protein sequences and structures. \n\u2022 DPLM-2 employs a lookup-free quantizer (LFQ) to convert 3D coordinates to discrete tokens, facilitating structure learning within the language model. \n\u2022 It uses an efficient warm-up strategy, leveraging pre-trained sequence-based DPLM and evolutionary data to enhance structural modeling. \n\u2022 DPLM-2 demonstrates competitive performance in co-generation of structure and sequence, achieving high designability and outperforming ESM3-Open and Multiflow in structure-sequence compatibility. \n\u2022 DPLM-2 also shows strong results in various conditional generation tasks like folding, inverse folding, and motif scaffolding and structure-aware representations for predictive tasks.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "Context is Key(NMF): Modelling Topical Information Dynamics in Chinese Diaspora Media",
+        "authors": "Mette Thun\u00f8, Rebecca M. M. Hicke, Ross Deans Kristensen-McLachlan, kardosdrur",
+        "link": "https://arxiv.org/abs/2410.12791",
+        "github_repo": null,
+        "summary": "This paper introduces KeyNMF, a novel approach to topic modeling that leverages contextual embeddings and Non-negative Matrix Factorization (NMF).\n- KeyNMF extracts keywords from documents using contextual embeddings and then applies NMF to these embeddings to generate topics. \n- It is evaluated on Chinese news data and demonstrates competitive performance compared to other contextual topic models, especially in terms of external coherence.\n- KeyNMF is integrated with existing methods for analyzing information dynamics to study Chinese diaspora media's coverage of the 2024 European parliamentary elections. \n-  The pipeline identifies trends in novelty and resonance signals that correlate with key political events, demonstrating its effectiveness in capturing information dynamics.\n- The researchers find that KeyNMF enables nuanced analysis of information flow and agenda-setting within Chinese diaspora media during the election period.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+        ],
+        "date": "2024-10-21"
+    },
+    {
+        "title": "How Do Training Methods Influence the Utilization of Vision Models?",
+        "authors": "Janis Keuper, Margret Keuper, Shashank Agnihotri, Paul Gavrikov",
+        "link": "https://arxiv.org/abs/2410.14470",
+        "github_repo": "https://github.com/paulgavrikov/layer_criticality",
+        "summary": " - This research paper investigates how different training methods affect the utilization of layers in vision models, specifically focusing on ImageNet-1k classification using ResNet-50.\n-  The study's core finding reveals that training methods significantly influence layer criticality, indicating some layers are more crucial to the model's decisions than others.\n- Adversarial training increases criticality proportionally to the attack budget, while self-supervised learning emphasizes early layers and improved training recipes prioritize early operations.\n-  Contrary to previous findings, no single layer was consistently auxiliary across all training methods. \n- These findings were established by randomizing layer parameters and observing model performance to determine the criticality of each layer.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/paulgavrikov/layer_criticality"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-21"
     }
 ]

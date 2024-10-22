@@ -4268,5 +4268,307 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-21"
+    },
+    {
+        "title": "CompassJudger-1: All-in-one Judge Model Helps Model Evaluation and Evolution",
+        "authors": "Hongwei Liu, Maosong Cao, zsytony, KennyUTC, acylam",
+        "link": "https://arxiv.org/abs/2410.16256",
+        "github_repo": "https://github.com/open-compass/CompassJudger",
+        "summary": "-\nCompassJudger-1 is introduced as the first open-source all-in-one judge LLM.\n- It supports unitary scoring, two-model comparisons, formatted evaluations, critique generation and diverse tasks.\n- A new benchmark called JudgerBench is created to evaluate judge models. It includes realistic human annotation from the LLM arena and GPT annotations on subjective benchmarks.\n- Training data for CompassJudger-1 includes several sources, like pair-wise data, critiques and reward data.\n- Several data filtering and sampling strategies are developed for training.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/CompassJudger"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "SAM2Long: Enhancing SAM 2 for Long Video Segmentation with a Training-Free Memory Tree",
+        "authors": "lindahua, guoyww, yhcao, yuhangzang, Mar2Ding",
+        "link": "https://arxiv.org/abs/2410.16268",
+        "github_repo": "https://github.com/Mark12Ding/SAM2Long",
+        "summary": "\n- SAM2Long is a training-free method for enhancing the Segment Anything Model 2 (SAM 2) for long video object segmentation. \n- The method introduces a constrained tree memory structure that maintains multiple segmentation pathways, reducing error accumulation and improving robustness against occlusions and object reappearances. \n- An object-aware memory bank selectively stores frames with clear object cues and modulates memory attention calculation based on occlusion scores to prioritize reliable information. \n- SAM2Long consistently outperforms SAM 2 across various model sizes and datasets, showing significant improvements, particularly in long-term and occlusion-heavy scenarios. \n- Experimental results on six video object segmentation benchmarks demonstrate the effectiveness of SAM2Long in handling complex videos and achieving enhanced performance without requiring additional training or parameters.",
+        "classification": [
+            "Video Classification",
+            "Image Segmentation",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/Mark12Ding/SAM2Long"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "PUMA: Empowering Unified MLLM with Multi-granular Visual Generation",
+        "authors": "hsli-cuhk, daijifeng, zengxingyu, gogoduan, LucasFang",
+        "link": "https://arxiv.org/abs/2410.13861",
+        "github_repo": "https://github.com/rongyaofang/PUMA",
+        "summary": " \n- PUMA, a unified multimodal large language model (MLLM), is introduced, featuring multi-granular visual feature processing for diverse visual tasks. \n- The model uses a three-part architecture: a multi-granular image encoder (CLIP), a set of dedicated diffusion-based decoders, and an autoregressive MLLM. \n- PUMA is trained in two stages: Multimodal pretraining on large datasets (Laion-2B, Laion-Aesthetics, GRIT, The Pile, OCR-VQA-200K, LLaVAR) followed by task-specific instruction tuning. \n- The evaluation shows that PUMA excels in diverse text-to-image generation, image editing, conditional image generation, and understanding, outperforming existing unified MLLMs. \n- The multi-granular approach balances diversity and controllability by processing features at multiple levels from coarse-grained abstractions to fine-grained details.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/rongyaofang/PUMA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Baichuan Alignment Technical Report",
+        "authors": "dongguosheng, YijieZhou, TJU-Tianpengli, zilchshen, lin5547",
+        "link": "https://arxiv.org/abs/2410.14940",
+        "github_repo": null,
+        "summary": "\u2022 This report introduces Baichuan Alignment, a comprehensive suite of techniques used to align the Baichuan series of large language models (LLMs), including optimization methods, data strategies, and evaluation processes.\n\u2022 Baichuan Alignment consists of three phases: Prompt Augmentation System (PAS) which transforms user queries into actionable instructions, Supervised Fine-Tuning (SFT) which trains LLMs for dialogue and complex tasks, and Preference Alignment which aligns LLMs with human preferences.\n\u2022 The alignment process employs several optimizations such as sample packing and multi-layer gradient checkpointing to increase training efficiency and model merging to improve performance across domains.\n\u2022 Evaluations of Qwen2-Nova-72B and Llama3-PBM-Nova-70B, instruct versions of open-source models optimized with Baichuan Alignment, show significant performance improvements across various benchmarks, outperforming official instruct versions and competing with leading LLMs.\n\u2022 Baichuan-Instruct, an internal model, demonstrates 17% to 28% user experience improvement in core capabilities, highlighting the effectiveness of the proposed alignment techniques.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/PKU-Baichuan-MLSystemLab/Llama3-PBM-Nova-70B"
+        ],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "AutoTrain: No-code training for state-of-the-art models",
+        "authors": "abhishek",
+        "link": "https://arxiv.org/abs/2410.15735",
+        "github_repo": "https://github.com/huggingface/autotrain-advanced",
+        "summary": "AutoTrain (AutoTrain Advanced) is an open-source, no-code tool/library for training and fine-tuning machine learning models on a variety of tasks and modalities.\n- It supports various tasks, including large language model (LLM) fine-tuning, text classification/regression, token classification, sequence-to-sequence tasks, fine-tuning of sentence transformers, visual language model (VLM) fine-tuning, image classification/regression, and tabular data classification/regression.\n- AutoTrain simplifies the training process by providing a user-friendly interface and automating tasks such as dataset processing, hyperparameter tuning, and model validation.\n- It offers flexibility by supporting local and cloud-based training, multiple data formats (zip, CSV, JSONL), and various model architectures compatible with Hugging Face Transformers.\n- AutoTrain is designed for both novice and experienced users, enabling them to build and deploy high-performing models easily.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision",
+            "Image Classification",
+            "Object Detection",
+            "Text Classification",
+            "Token Classification",
+            "Tabular Classification",
+            "Tabular Regression",
+            "Text2Text Generation",
+            "Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/huggingface/autotrain-advanced"
+        ],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "FrugalNeRF: Fast Convergence for Few-shot Novel View Synthesis without Learned Priors",
+        "authors": "Shih-Han Yen, Chang-Han Yeh, yulunliu, kkennethwu, chinyanglin",
+        "link": "https://arxiv.org/abs/2410.16271",
+        "github_repo": null,
+        "summary": "FrugalNeRF is a novel few-shot NeRF framework that leverages weight-sharing voxels across multiple scales to efficiently represent scene details.\n- It incorporates a cross-scale geometric adaptation scheme that selects pseudo ground truth depth based on reprojection errors across scales, guiding training without relying on externally learned priors.\n- This method significantly reduces computational demands and accelerates training through self-adaptive mechanisms.\n- Experiments on LLFF, DTU, and RealEstate-10K show FrugalNeRF outperforms other few-shot NeRF methods in terms of quality and training time.\n- It achieves an optimal balance between rendering quality and training time without relying on complex scheduling for voxels.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://linjohnss.github.io/frugalnerf/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+        "authors": "Rui Min, Yantao Liu, juanli, Nuomei, TranSirius",
+        "link": "https://arxiv.org/abs/2410.16184",
+        "github_repo": "https://github.com/THU-KEG/RM-Bench",
+        "summary": "This paper introduces RM-BENCH, a novel benchmark designed to evaluate reward models for language models.  RM-BENCH focuses on assessing reward models' sensitivity to subtle content differences and resistance to style biases, unlike existing benchmarks.  Extensive experiments show RM-BENCH strongly correlates with policy model performance, making it a reliable tool for selecting effective reward models. Results indicate that current state-of-the-art reward models perform poorly when faced with style bias, showcasing areas for improvement in future model development. The benchmark includes datasets across various domains, including chat, code, math, and safety, with style-controlled variations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THU-KEG/RM-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+        "authors": "Nyandwi, seungone, akariasai, yueqis, yuexiang96",
+        "link": "https://arxiv.org/abs/2410.16153",
+        "github_repo": null,
+        "summary": "This paper introduces PANGEA, a fully open multilingual multimodal large language model (LLM) trained on a diverse 6M instruction dataset spanning 39 languages.  PANGEA significantly outperforms existing open-source models in multilingual settings and diverse cultural contexts, showing comparable performance to state-of-the-art (SOTA) models in English while substantially exceeding them in multilingual scenarios.  The model's architecture is based on LLaVA-Next, using Qwen2-7B-Instruct as the language model backbone.  PANGEA, along with its associated data and code, is fully open-sourced to promote equitable and accessible access to robust multilingual MLLMs.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://neulab.github.io/Pangea/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/cmarkea/table-vqa",
+            "https://huggingface.co/datasets/deepvk/GQA-ru",
+            "https://huggingface.co/datasets/cmarkea/doc-vqa",
+            "https://huggingface.co/datasets/cmarkea/table-vqa",
+            "https://huggingface.co/datasets/BUAADreamer/Chinese-LLaVA-Med-7B",
+            "https://huggingface.co/datasets/LinkSoul-AI/Chinese-LLaVA",
+            "https://huggingface.co/datasets/Toshi456/LLaVA-Japanese-Instruct",
+            "https://huggingface.co/datasets/AI-MO/NuminaMath-CoT"
+        ],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Meta-Chunking: Learning Efficient Text Segmentation via Logical Perception",
+        "authors": "Zhiyuan Ji, jimi888, siminniu, MoCun, Robot2050",
+        "link": "https://arxiv.org/abs/2410.12788",
+        "github_repo": "https://github.com/IAAR-Shanghai/Meta-Chunking",
+        "summary": " - This paper introduces Meta-Chunking, a novel text segmentation technique that leverages Large Language Models (LLMs) to divide documents into logically coherent chunks at a granularity between sentences and paragraphs.\n- Two strategies are proposed: Margin Sampling Chunking, which performs binary classification on consecutive sentences based on probability differences, and Perplexity Chunking, which analyzes perplexity distribution to identify chunk boundaries.\n- A dynamic merging strategy is also introduced to balance fine-grained and coarse-grained chunking, adjusting chunk sizes based on user-specified length requirements.\n- Experimental results across eleven datasets and four benchmarks demonstrate that Meta-Chunking significantly improves single-hop and multi-hop question answering performance in Retrieval-Augmented Generation (RAG) systems.\n- On the 2WikiMultihopQA dataset, for example, Meta-Chunking outperforms similarity chunking by 1.32 in F1 score while requiring only 45.8% of the processing time.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/IAAR-Shanghai/Meta-Chunking"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Pre-training Distillation for Large Language Models: A Design Space Exploration",
+        "authors": "Xin Lv, juanli, NeoZ123, bys0318, Wesleythu",
+        "link": "https://arxiv.org/abs/2410.16215",
+        "github_repo": null,
+        "summary": "-\nThis paper explores pre-training distillation (PD), a method for transferring knowledge from a larger teacher LLM to a smaller student LLM during the pre-training phase.\n- The study investigates four key aspects of PD: logits processing, loss selection, scaling law (model and data size), and the use of offline vs. online logits.\n- A preliminary experiment using GLM-4-9B as the teacher and a 1.9B parameter student model shows a 1.6% average improvement across various datasets with PD.\n- Further experiments reveal that larger student LLMs benefit more from PD, while larger teacher LLMs don't always guarantee better results.\n- The best results are achieved by combining Kullback-Leibler divergence loss with language modeling loss using a Warmup-Stable-Decay scheduling strategy.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Alchemy: Amplifying Theorem-Proving Capability through Symbolic Mutation",
+        "authors": "Ping Wei, opotle, yegong, shuailu, EurekaWu123",
+        "link": "https://arxiv.org/abs/2410.15748",
+        "github_repo": null,
+        "summary": " - Alchemy, a novel framework, synthesizes formal theorems through symbolic mutations to address the data scarcity challenge in Neural Theorem Proving (NTP).\n- For each candidate theorem, Alchemy identifies invocable theorems from Mathlib and performs mutations by replacing terms with equivalent forms or antecedents.\n- This method significantly increases the number of theorems in Mathlib from 110k to 6M.\n- Continual pretraining and supervised finetuning on this augmented dataset for Large Language Models leads to a 5% absolute performance improvement on the Leandojo benchmark and a 2.5% gain on the miniF2F benchmark.\n- The analysis of synthetic data composition and training paradigms offers valuable insights for developing strong theorem provers.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "SemiEvol: Semi-supervised Fine-tuning for LLM Adaptation",
+        "authors": "Wei Ju, Xiao Luo, Shockzipper, XtremSup, luojunyu",
+        "link": "https://arxiv.org/abs/2410.14745",
+        "github_repo": null,
+        "summary": "-\nSemiEvol is a semi-supervised fine-tuning framework designed to improve large language model (LLM) performance in scenarios with limited labeled data and abundant unlabeled data.\n-\nIt employs a bi-level knowledge propagation strategy, transferring knowledge from labeled data to unlabeled data through both model adaptation and context enhancement. \n- For unlabeled data utilization, it involves collaborative learning among multiple LLMs with diverse configurations and adaptive data selection.\n- Experimental results on various datasets, including MMLU, MMLU-Pro, ARC, FPB, USMLE, PubMedQA, and ConvFinQA, demonstrate significant performance improvements compared to SFT and self-evolution methods.\n- SemiEvol effectively utilizes both labeled and unlabeled data, enabling LLMs to adapt to specific scenarios more economically.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/luo-junyu/SemiEvol"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Solshine/reflection-llama-3.1-8B",
+            "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B"
+        ],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+        "authors": "GPaolo, albert9000, Xssama, ambroiseodt, abenechehab",
+        "link": "https://arxiv.org/abs/2410.11711",
+        "github_repo": "https://github.com/abenechehab/dicl",
+        "summary": " - This paper introduces Disentangled In-Context Learning (DICL), a novel approach for applying in-context learning (ICL) with large language models (LLMs) to reinforcement learning (RL) environments with continuous state spaces.\n- DICL addresses the challenges of incorporating action information and handling state-action dimension interdependence by projecting the state-action vector into a latent space using Principal Component Analysis (PCA) where features are linearly uncorrelated, then applying ICL.\n- The paper demonstrates the effectiveness of DICL in two RL applications: model-based policy evaluation and data-augmented off-policy RL, showing improved sample efficiency in both cases.\n- A theoretical analysis provides a novel return bound for the policy evaluation algorithm resulting from multi-branch rollouts with the LLM-based dynamics model. \n- Additionally, the paper provides empirical evidence suggesting that LLMs offer well-calibrated uncertainty estimations, a desirable property for model-based RL algorithms.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/abenechehab/dicl"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Selecting Influential Samples for Long Context Alignment via Homologous Models' Guidance and Contextual Awareness Measurement",
+        "authors": "Yunshui Li, Gang Chen, Haozhe Zhao, Shuzheng Si, kaikai1",
+        "link": "https://arxiv.org/abs/2410.15633",
+        "github_repo": null,
+        "summary": " - This paper introduces GATEAU, a novel framework for selecting influential samples to improve long-context alignment in large language models (LLMs).\n - GATEAU leverages Homologous Models' Guidance (HMG) and Contextual Awareness Measurement (CAM) to identify high-quality samples exhibiting strong long-range dependencies.\n - HMG compares perplexity scores from homologous models with different context windows to assess response generation difficulty, while CAM evaluates whether the model focuses on important input segments.\n - Experimental results show that LLMs trained on samples selected by GATEAU outperform those trained on the full dataset and various baselines across multiple benchmarks, including LongBench, LongBench-Chat, and MT-Bench.\n - Ablation studies demonstrate that both HMG and CAM contribute significantly to GATEAU's effectiveness.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Summarization",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "CBT-Bench: Evaluating Large Language Models on Assisting Cognitive Behavior Therapy",
+        "authors": "Travis Labrum, wangwilliamyang, xz97, Xianjun, billmianz",
+        "link": "https://arxiv.org/abs/2410.13218",
+        "github_repo": null,
+        "summary": "This paper introduces CBT-BENCH, a new benchmark for evaluating large language models' (LLMs) ability to assist cognitive behavioral therapy (CBT).  CBT-BENCH includes three levels of tasks: basic CBT knowledge acquisition, cognitive model understanding, and therapeutic response generation.  The benchmark uses three new datasets (CBT-QA, CBT-CD, CBT-PC, CBT-FC and CBT-DP) to evaluate the LLMs across these tasks.  The results show that while LLMs perform well on knowledge-based tasks, they struggle with complex tasks that require deep understanding of patient cognitive structures and effective response generation.  This suggests the need for further research into how LLMs can be improved for real-world CBT applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/mianzhang/CBT-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "Cross-Lingual Auto Evaluation for Assessing Multilingual LLMs",
+        "authors": "anoopk, prajdabre, dipsivenkatesh, safikhan, sumanthd",
+        "link": "https://arxiv.org/abs/2410.13394",
+        "github_repo": null,
+        "summary": "This paper introduces CIA Suite, a framework for cross-lingual auto-evaluation of multilingual LLMs.  The framework includes a novel test set (RECON) with human annotations across six languages and a cross-lingual evaluator LLM (HERCULE). HERCULE leverages English reference answers to evaluate responses in other languages, addressing the scarcity of reference answers in low-resource scenarios. Experiments show HERCULE aligns more closely with human judgments than existing models, exhibiting effectiveness in zero-shot settings.  The CIA suite is publicly available to encourage further research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text Classification",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/CIA"
+        ],
+        "huggingface_urls": [
+            "huggingface.co/CIA-Suite"
+        ],
+        "date": "2024-10-22"
+    },
+    {
+        "title": "DM-Codec: Distilling Multimodal Representations for Speech Tokenization",
+        "authors": "A K M Mahbubur Rahman, Md Fahim, amanchadha, tasnim, mubtasim",
+        "link": "https://arxiv.org/abs/2410.15017",
+        "github_repo": "https://github.com/mubtasimahasan/DM-Codec",
+        "summary": "DM-Codec is a novel speech tokenizer that leverages a neural codec architecture with Residual Vector Quantization (RVQ) and incorporates two novel distillation approaches: LM-guided and combined LM and SM-guided distillation.\n- The LM-guided approach distills contextual representations from a Language Model (LM) and integrates them with acoustic representations, while the combined approach incorporates semantic representations from a Speech Model (SM) along with contextual and acoustic representations. \n- DM-Codec adopts a streamlined encoder-decoder framework enhanced by a multi-discriminator setup comprising Multi-Scale, Multi-Period, and Multi-Scale Short-Time Fourier Transform discriminators.\n- Experimental results on the LibriSpeech benchmark demonstrate that DM-Codec significantly outperforms state-of-the-art models, reducing Word Error Rate (WER) by up to 13.46%, Word Information Lost (WIL) by 9.82%, and improving speech quality and intelligibility. \n- The combined distillation approach results in a WER of 4.05 and a WIL of 6.61, surpassing existing speech tokenization models.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/mubtasimahasan/DM-Codec"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-22"
     }
 ]

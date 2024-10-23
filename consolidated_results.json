@@ -4570,5 +4570,136 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-22"
+    },
+    {
+        "title": "PyramidDrop: Accelerating Your Large Vision-Language Models via Pyramid Visual Redundancy Reduction",
+        "authors": "lindahua, jiaqiwang-rex, conghui, yhcao, yuhangzang",
+        "link": "https://arxiv.org/abs/2410.17247",
+        "github_repo": null,
+        "summary": " - PyramidDrop is a novel visual redundancy reduction strategy for Large Vision-Language Models (LVLMs) designed to accelerate training and inference.\n- It partitions the LVLM into stages and progressively drops image tokens at each stage's end based on a lightweight similarity calculation with the instruction's last token. \n- This pyramid-like token reduction leverages the observation that token redundancy increases in deeper LVLM layers.\n- Experiments on LLaVA-NeXT-7B show 40% training time and 55% inference FLOPs reduction without performance loss on 15 vision-language tasks. \n- PyramidDrop also allows training with doubled resolution using only 70% of the original training time and serves as a plug-and-play inference acceleration strategy outperforming existing methods.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Cooperx521/PyramidDrop"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes",
+        "authors": "Jie-Ying Lee, Yi-Ruei Liu, Cheng-De Fan, yulunliu, stevenchang",
+        "link": "https://arxiv.org/abs/2410.17249",
+        "github_repo": null,
+        "summary": "-\nSpectroMotion reconstructs dynamic specular scenes by combining 3D Gaussian Splatting (3DGS) with physically-based rendering (PBR) and deformation fields. \n- It introduces a residual correction technique for accurate surface normal computation during deformation, a deformable environment map adapting to time-varying lighting, and a coarse-to-fine training strategy. \n- The model outperforms existing methods in view synthesis of dynamic specular scenes. \n- It's the only 3DGS method capable of synthesizing photorealistic real-world dynamic specular scenes. \n- Evaluations on NeRF-DS and HyperNeRF datasets demonstrate superior performance in rendering complex, dynamic, and specular content.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "Aligning Large Language Models via Self-Steering Optimization",
+        "authors": "Jingren, xphan, luyaojie, keminglu, sanmusunrise",
+        "link": "https://arxiv.org/abs/2410.17131",
+        "github_repo": null,
+        "summary": " \n- This paper introduces Self-Steering Optimization (SSO), an algorithm designed for automated alignment of large language models (LLMs), eliminating the need for manual annotation. \n- SSO autonomously generates preference signals by prompting the policy model with contrastive principles and optimizing based on three objectives: steering the model towards chosen responses, maintaining on-policy behavior, and ensuring a consistent quality gap between responses.\n-  Experiments conducted on Qwen2 and Llama3.1 demonstrate SSO's ability to generate accurate and learnable signals, leading to significant performance improvements across various benchmarks without manual annotation or external models.\n- SSO enhanced the training of reward models using data generated during the alignment process, further highlighting its effectiveness.\n- This work contributes a scalable approach to preference optimization for more efficient and effective automated alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/icip-cas/SSO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "JMMMU: A Japanese Massive Multi-discipline Multimodal Understanding Benchmark for Culture-aware Evaluation",
+        "authors": "Yuki Imajuku, gneubig, ku21fan, AtsuMiyai, shtapm",
+        "link": "https://arxiv.org/abs/2410.17250",
+        "github_repo": null,
+        "summary": "JMMMU is a new large-scale Japanese benchmark dataset designed to evaluate Large Multimodal Models (LMMs) focusing on Japanese cultural understanding.\n- It comprises two subsets: a Culture-Agnostic (CA) subset, containing translations of culture-independent components from the MMMU benchmark, and a Culture-Specific (CS) subset with newly crafted questions related to Japanese culture.\n- The benchmark is significantly larger than existing culture-aware Japanese benchmarks, totaling 1,320 questions with 1,118 images across a diverse range of 28 subjects.\n- An evaluation of 15 open-source and 3 proprietary LMMs reveals up to 58.6% overall accuracy, indicating significant room for improvement in utilizing the Japanese context.\n- The results indicate that many LMMs perform worse on questions in Japanese compared to their English counterparts and highlight the importance of culture-specific evaluation.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/cyberagent/llava-calm2-siglip",
+            "https://huggingface.co/datasets/SakanaAI/JA-Multi-Image-VQA",
+            "https://huggingface.co/datasets/SakanaAI/JA-VG-VQA-500",
+            "https://huggingface.co/datasets/SakanaAI/JA-VLM-Bench-In-the-Wild"
+        ],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "EvoPress: Towards Optimal Dynamic Model Compression via Evolutionary Search",
+        "authors": "dalistarh, ekurtic, SpiridonSunRotator, OliverSieberling",
+        "link": "https://arxiv.org/abs/2410.14649",
+        "github_repo": "https://github.com/IST-DASLab/EvoPress",
+        "summary": "\u2022 EvoPress, a new evolutionary search approach for dynamic compression of large language models (LLMs), is introduced, offering provable convergence and low sample and iteration complexity.\n\u2022 EvoPress challenges the assumption of error monotonicity in LLM compression, demonstrating instances where lower per-layer error sums do not translate to better overall performance.\n\u2022 This method improves upon existing layer dropping, unstructured sparsity, and quantization techniques, setting new state-of-the-art results.\n\u2022 It achieves significant improvements, particularly at higher compression ratios, across various LLM families.\n\u2022 EvoPress converges efficiently, often within hours on a single GPU, even for large models, and a lightweight version is available for faster processing.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/IST-DASLab/EvoPress"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "MiniPLM: Knowledge Distillation for Pre-Training Language Models",
+        "authors": "Minlie Huang, Jie Zhou, Hao Zhou, fandong, t1101675",
+        "link": "https://arxiv.org/abs/2410.17215",
+        "github_repo": "https://github.com/thu-coai/MiniPLM",
+        "summary": "\n- MINIPLM is a new Knowledge Distillation (KD) framework for pre-training Language Models (LMs) that refines the training data distribution using a teacher LM's knowledge.\n- It addresses the efficiency, flexibility, and effectiveness challenges of existing KD methods during pre-training through offline teacher inference, corpus-based operation, and a Difference Sampling technique that leverages the discrepancies between large and small LMs.\n- Experiments across various student LM sizes show that MINIPLM improves performance on 9 downstream tasks, language modeling capabilities, and reduces pre-training computation by 2.2 times compared to Vanilla KD which achieves similar performance but with more compute.\n- MINIPLM also supports KD across model families with different tokenizations, unlike existing online KD methods.\n- Further analysis suggests that MINIPLM improves pre-training data utilization, reducing the data demand by 2.4 times.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/thu-coai/MiniPLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "Mitigating Object Hallucination via Concentric Causal Attention",
+        "authors": "Shijian Lu, Ivan Laptev, Yiheng Li, xing0047",
+        "link": "https://arxiv.org/abs/2410.15926",
+        "github_repo": "https://github.com/xing0047/cca-llava",
+        "summary": "-\nThis paper introduces Concentric Causal Attention (CCA), a novel position alignment strategy for Large Vision-Language Models (LVLMs) designed to mitigate object hallucination, a phenomenon where LVLMs generate text responses misaligned with image content. \n- CCA addresses the limitations of Rotary Position Encoding (ROPE), commonly used in LVLMs, where long-term decay in attention can lead to hallucination. \n- The method reorganizes visual tokens in a concentric manner, reducing the relative distance between visual and instruction tokens and improving spatial locality. It also introduces a modified causal attention mask to support the 2-D structure of image data. \n- Experimental results on benchmarks like POPE, CHAIR, and MME demonstrate that CCA surpasses existing debiasing methods, improving accuracy and reducing hallucination. \n- CCA also enhances the overall perception capability of LVLMs in multiple-choice visual question answering tasks.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/xing0047/cca-llava.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
+    },
+    {
+        "title": "Math Neurosurgery: Isolating Language Models' Math Reasoning Abilities Using Only Forward Passes",
+        "authors": "Thomas Hartvigsen, Jonathan Kropko, Zack Gottesman, Bryan R. Christ",
+        "link": "https://arxiv.org/abs/2410.16930",
+        "github_repo": null,
+        "summary": "\n- MathNeuro is introduced; a method for isolating math-specific parameters in LLMs using forward passes, building upon existing work by calculating parameter importance with weights and activations, but with the key innovation of removing parameters also important for general language tasks measured on non-math datasets.\n- Pruning MathNeuro-identified parameters eliminates a LLM's math reasoning ability, while the impact on other tasks is similar to pruning random parameters.\n- Scaling up MathNeuro-identified parameters by a small constant (1.1 for smaller models and 1.01 for larger models) improves performance on GSM8K by 4-17% without affecting non-math performance.\n- MathNeuro remains effective with a single sample for parameter identification, demonstrating its data efficiency.\n- Math-specific parameters are distributed across the model's decoder blocks, suggesting math reasoning is not localized.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/bryanchrist/MathNeuro"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-23"
     }
 ]

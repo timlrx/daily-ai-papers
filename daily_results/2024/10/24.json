@@ -1,0 +1,159 @@
+[
+    {
+        "title": "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+        "authors": "conghui, KennyUTC, yhcao, yuhangzang, ziyuliu",
+        "link": "https://arxiv.org/abs/2410.17637",
+        "github_repo": "https://github.com/Liuziyu77/MIA-DPO",
+        "summary": "**- MIA-DPO: a novel Multi-Image Augmented Direct Preference Optimization (DPO) framework, designed to enhance the multi-image understanding of Large Vision-Language Models (LVLMs).**\n**- MIA-DPO addresses the scarcity of diverse multi-image training data and high annotation costs by augmenting existing single-image data with noisy or unrelated images arranged in grid collages or pic-in-pic formats, reducing the need for manual annotation of multi-image data.**\n**- This framework leverages an attention-aware selection mechanism that filters out rejected responses by analyzing the attention value distribution across multiple images, allowing for automated, cost-effective, and scalable DPO data construction without relying on manual annotations or expensive APIs.**\n**- Experimental results demonstrate that MIA-DPO consistently outperforms existing methods on five multi-image benchmarks, achieving an average performance boost of 3.0% on LLaVA-v1.5 and 4.3% on InternLM-XC2.5.**\n**- MIA-DPO maintains competitive performance on single-image tasks while boosting the performance on multi-image tasks, demonstrating its robustness across various architectures and its ability to handle both single and multiple images effectively.**",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Liuziyu77/MIA-DPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "WorldSimBench: Towards Video Generation Models as World Simulators",
+        "authors": "XihuiLiu, JeremyYin, LIJUNLI, Zhoues, CoachXP",
+        "link": "https://arxiv.org/abs/2410.18072",
+        "github_repo": null,
+        "summary": "-\nWorldSimBench is introduced, a new dual evaluation framework for World Simulators, which are video generation models capable of producing actionable videos.\n- The framework consists of Explicit Perceptual Evaluation, assessing visual quality and alignment with human perception using a Human Preference Evaluator trained on a new HF-Embodied dataset with fine-grained human feedback.\n- It also includes Implicit Manipulative Evaluation, measuring the video-action consistency in embodied simulations by converting generated videos into control signals.\n- Tested across Open-Ended Embodied Environment, Autonomous Driving, and Robot Manipulation scenarios, WorldSimBench reveals strengths and limitations of current World Simulators in generating physically consistent and actionable content.\n- The HF-Embodied Dataset contains 35,701 entries with multi-dimensional human feedback across the three scenarios, enabling both evaluation and broader applications for video generation models.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+        "authors": "Jiacheng Ye, Yizhe Zhang, kiaia, shivamag99, Sansa",
+        "link": "https://arxiv.org/abs/2410.17891",
+        "github_repo": "https://github.com/HKUNLP/DiffuLLaMA",
+        "summary": "\n- This paper introduces a novel approach to scaling Diffusion Language Models (DLMs) by adapting pre-trained autoregressive (AR) language models like GPT2 and LLaMA.\n- The adaptation method bridges the gap between AR and DLM objectives through attention mask annealing to remove causal masking bias and inheriting the shift operation from AR models.\n- The resulting models, DiffuGPT and DiffuLLaMA (up to 7B parameters), are trained on less than 200B tokens and evaluated on various benchmarks, demonstrating competitive performance with their AR counterparts and state-of-the-art results among existing DLMs.\n- DiffuLLaMA showcases promising in-context learning and infilling abilities.\n- The models and training code are released to facilitate further DLM research. \n",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/HKUNLP/DiffuLLaMA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "Lightweight Neural App Control",
+        "authors": "Jianye Hao, ShaoKun-HW, Fahren24, gpap, semitable",
+        "link": "https://arxiv.org/abs/2410.17883",
+        "github_repo": null,
+        "summary": " - This paper introduces Lightweight Multi-modal App Control (LiMAC), a novel mobile phone control architecture designed for efficient interaction and control across various Android apps.\n - LiMAC combines a small Action Transformer (AcT) with a fine-tuned vision-language model (VLM) to process textual goals and past mobile observations (screenshots, UI trees) and generate precise actions.\n -  AcT predicts action types (click, scroll, input text) and executes straightforward interactions, while the VLM handles complex text generation tasks (composing messages, search queries). \n - Experimental results on two mobile control datasets show LiMAC significantly outperforms fine-tuned open-source VLMs (Florence2, Qwen2-VL) and prompt engineering baselines using GPT-40, increasing overall action accuracy by up to 19% and 42% respectively. \n - LiMAC also executes tasks 30 times faster than GPT-40 methods, making it more suitable for real-time mobile applications.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "Scalable Ranked Preference Optimization for Text-to-Image Generation",
+        "authors": "Sergey Tulyakov, Zeynep Akata, anilkagak2, hcoskun, shyamgopal",
+        "link": "https://arxiv.org/abs/2410.18013",
+        "github_repo": null,
+        "summary": "\u2022 This research presents a method for cost-effectively fine-tuning Text-to-Image (T2I) models through a novel ranking-based Direct Preference Optimization (DPO) technique, called RankDPO, and a synthetic preference dataset (Syn-Pic), to improve the prompt following and image quality.\n\u2022 Syn-Pic, a synthetically labelled preference dataset, is constructed by generating images from several pre-trained T2I models using the same prompts as an existing human preference dataset (Pick-a-Picv2), then ranked using multiple pre-trained reward models to create rankings per prompt rather than pairwise comparisons.\n\u2022 RankDPO is a ranking-enhanced DPO objective that optimizes the many-way preference between generated images by leveraging the discounted cumulative gains (DCG) from ground truth scores to refine model preferences beyond pairwise preferences.\n\u2022 Experiments on the SDXL and SD3-Medium models demonstrate improved prompt following and visual quality using Syn-Pic and RankDPO, and the results further improve over other DPO variations and existing methods on DPG-Bench, T2I-Compbench, and GenEval.\n\u2022 In addition to outperforming existing methods, RankDPO only requires a fraction of the training time and images compared to other recent techniques like ELLA and reward fine-tuning methods.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "DynamicCity: Large-Scale LiDAR Generation from Dynamic Scenes",
+        "authors": "Yu Qiao, Liang Pan, Haozhe Xie, Lingdong Kong, Hengwei Bian",
+        "link": "https://arxiv.org/abs/2410.18084",
+        "github_repo": null,
+        "summary": "DynamicCity is a novel 4D LiDAR generation framework based on Variational Autoencoder (VAE) and Diffusion Transformer (DiT) that generates large-scale, high-quality dynamic LiDAR scenes.\n- The VAE employs a novel Projection Module to compress 4D LiDAR features into six 2D feature maps for HexPlane construction, which shows a 12.56 mIoU gain compared to naive averaging.\n- An Expansion & Squeeze Strategy is used to decode the HexPlane to 3D feature volumes in parallel. It leads to a 7.05 mIoU gain, 2.06x training speedup, and 70.84% memory reduction compared to the baseline method.\n- A padded rollout operation is proposed to make HexPlane feasible for DiT, which reorganizes all six feature planes of the HexPlane into a square 2D feature map.\n- DynamicCity outperforms other state-of-the-art methods on multiple metrics using the CarlaSC and Waymo datasets.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "ARKit LabelMaker: A New Scale for Indoor 3D Scene Understanding",
+        "authors": "Hermann Blum, Marc Pollefeys, Francis Engelmann, Silvan Weder, Guangda Ji",
+        "link": "https://arxiv.org/abs/2410.13924",
+        "github_repo": null,
+        "summary": "-\nThe paper introduces ARKit LabelMaker, a large-scale, real-world 3D dataset with dense semantic annotations generated automatically using an enhanced LabelMaker pipeline.\n- It leverages ARKitScenes and complements it with automatically created dense annotations, addressing the lack of sufficient training data for 3D scene understanding.\n- The pipeline integrates Grounded-SAM and gravity alignment for improved quality and robustness, scaling to large datasets.\n- Experimental results on ScanNet, ScanNet200, and ScanNet++ benchmarks demonstrate that pre-training with ARKit LabelMaker significantly boosts the performance of MinkowskiNet and PointTransformerV3.\n- State-of-the-art performance is achieved on ScanNet and ScanNet200 datasets using ARKit LabelMaker pre-training.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/cvg/LabelMaker/",
+            "https://github.com/quantaji/labelmaker-mix3d",
+            "https://github.com/quantaji/LabelMaker-Pointcept"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/labelmaker/arkit_labelmaker"
+        ],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "MedINST: Meta Dataset of Biomedical Instructions",
+        "authors": "Zirui Song, Yu Yin, Zihan Zhang, Meng Fang, Wenhan Han",
+        "link": "https://arxiv.org/abs/2410.13458",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces MEDINST, a large biomedical instruction meta-dataset comprising 133 tasks and over 7 million training examples spanning 12 distinct categories.\n\u2022 The authors curate MEDINST32, a benchmark derived from MEDINST consisting of 32 tasks with varying difficulty to evaluate large language models' (LLMs) generalization abilities in the biomedical domain. \n\u2022 Several LLMs are fine-tuned on MEDINST and show improved generalization performance across various biomedical tasks, as evaluated on MEDINST32. \n\u2022 The study finds that instruction fine-tuning is more effective than further pre-training on domain-specific data for adapting general LLMs to the biomedical domain.\n\u2022 Experimental results on MEDINST32 reveal that the models often struggle with generalization to new tasks when only fine-tuned on smaller datasets or in limited task formats, highlighting the value of large, comprehensive datasets.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Classification",
+            "Token Classification",
+            "Summarization",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/aialt/MedINST"
+        ],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "M-RewardBench: Evaluating Reward Models in Multilingual Settings",
+        "authors": "Drishti Sharma, Rishabh Maheshwary, Lester James V. Miranda, shayekh, srishti-hf1110",
+        "link": "https://arxiv.org/abs/2410.15522",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces M-REWARDBENCH, a multilingual benchmark for evaluating reward models (RMs) across 23 languages and six tasks.\n\u2022 M-REWARDBENCH consists of 2.87k preference instances covering chat, safety, reasoning, and translation capabilities.\n\u2022 Evaluation results show a significant performance gap between English and non-English languages, with RMs exhibiting higher performance in English and variations across different languages.\n\u2022 The analysis indicates that translation quality positively impacts RM performance, with better translations leading to improved accuracy.\n\u2022 The authors also explore the sensitivity of different RM types to translation quality and analyze the performance variations across different language families and scripts.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/datasets/C4AI-Community/multilingual-reward-bench"
+        ],
+        "date": "2024-10-24"
+    },
+    {
+        "title": "TP-Eval: Tap Multimodal LLMs' Potential in Evaluation by Customizing Prompts",
+        "authors": "Tianhua Li, Yuxuan Xie, kpzhang, wqshao126",
+        "link": "https://arxiv.org/abs/2410.18071",
+        "github_repo": null,
+        "summary": "TP-Eval is a new evaluation framework for Multimodal Large Language Models (MLLMs) that addresses the issue of prompt sensitivity, where minor prompt variations can lead to significant performance fluctuations, resulting in underestimation or bias in evaluation.\n- It introduces a prompt customization method using an automatic prompt optimizer, tailored for MLLMs, to generate optimal prompts for each model, tapping their full potential.\n- This optimizer leverages a scorer, composed of the target MLLM and an answer analyzer, to iteratively refine prompts based on accuracy, semantic similarity to the original prompt, and introspection from incorrect responses.\n- Experiments on MMT-Bench and MMMU datasets demonstrate that TP-Eval effectively reduces underestimation and bias, revealing models' true capabilities and facilitating fairer comparisons.\n- TP-Eval also shows promising results in zero-shot settings using in-context learning, enabling prompt optimization even with limited data.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-24"
+    }
+]

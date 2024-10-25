@@ -4858,5 +4858,341 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-10-24"
+    },
+    {
+        "title": "Breaking the Memory Barrier: Near Infinite Batch Size Scaling for Contrastive Loss",
+        "authors": "Kehan Li, Hang Zhang, LidongBing, Zhiqiang007, ClownRat",
+        "link": "https://arxiv.org/abs/2410.17243",
+        "github_repo": null,
+        "summary": "-\nInf-CL, a novel tile-based contrastive loss implementation, is introduced to address the GPU memory limitations in scaling batch sizes for contrastive learning. \n- By partitioning the log-sum-exp (LSE) calculation into smaller tiles and iteratively accumulating the LSE term, Inf-CL avoids full materialization of the similarity matrix, significantly reducing memory overhead and enabling training with near-infinite batch sizes.\n- A multi-level tiling strategy further enhances practical efficiency by distributing computations across multiple GPUs with ring-based communication and within each GPU across CUDA cores with fused kernels.\n- Experimental results show that Inf-CL achieves unprecedented batch sizes (e.g., 12M for CLIP-ViT-L/14 on 32 A800 80GB GPUs) without sacrificing accuracy.\n- Compared to state-of-the-art memory-efficient solutions, Inf-CL demonstrates a two-order-of-magnitude reduction in memory while maintaining comparable speed.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/DAMO-NLP-SG/Inf-CLIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "LOGO -- Long cOntext aliGnment via efficient preference Optimization",
+        "authors": "Min Zhang, Qiaoming Zhu, Zechen Sun, douvleplus, ZetangForward",
+        "link": "https://arxiv.org/abs/2410.18533",
+        "github_repo": null,
+        "summary": "This paper introduces LOGO (Long cOntext aliGnment via efficient preference Optimization), a novel training strategy to enhance the generation ability of Long-Context Models (LCMs) and address issues like hallucinations and instruction unfollowing.\n- LOGO employs reference-free preference optimization, guiding the model to distinguish between preferred and dis-preferred outputs, and a data construction pipeline leveraging open-source models.\n- It incorporates a position synthesis method, enabling training with a substantial 0.3B dataset on a single 8xA800 GPU within 16 hours.\n- Experimental results on LongBench show that LOGO significantly improves LCM performance, outperforming existing methods and approaching top closed-source models like GPT-4.\n- LOGO effectively scales context window size for short-context models and maintains performance on short-context tasks like MMLU, indicating its adaptability and minimal alignment tax.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/ZetangForward/LCM_Stack.git"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/namespace-Pt/long-llm-data"
+        ],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Unleashing Reasoning Capability of LLMs via Scalable Question Synthesis from Scratch",
+        "authors": "Qiaoming Zhu, Xiaobo Liang, douvleplus, XinyuShi, dyyyyyyyy",
+        "link": "https://arxiv.org/abs/2410.18693",
+        "github_repo": null,
+        "summary": "-\nScaleQuest, a novel data synthesis method to generate large-scale question-answer pairs by leveraging \"small-sized\" open-source LLMs.\n-\nThe method uses a two-stage question-tuning process of Question Fine-Tuning (QFT) and Question Preference Optimization (QPO) to improve question quality.\n-\nA filtering process for language clarity, solvability, and appropriate difficulty is used along with reward-based filtering for high-quality responses.\n-\nExperiments on a dataset of 1 million math problem-solution pairs show improvements of 29.2% to 46.4% on MATH benchmark across mainstream open-source models, outperforming existing datasets and models like GPT-4-Turbo and Claude 3.5.\n-\nThe data synthesis method also proves to be cost-effective, with 10x reduced cost as compared to GPT-40.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yyDing1/ScaleQuest"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Can Knowledge Editing Really Correct Hallucinations?",
+        "authors": "kaishu666, apayani, XiongxiaoXu, canyuchen, BaixHuang",
+        "link": "https://arxiv.org/abs/2410.16251",
+        "github_repo": null,
+        "summary": " - This paper introduces HalluEditBench, a benchmark designed to evaluate the effectiveness of knowledge editing methods in correcting hallucinations generated by Large Language Models (LLMs).\n- The benchmark includes a new dataset of over 6,000 verified hallucinations across 9 domains and 26 topics, collected from Llama2-7B, Llama3-8B, and Mistral-v0.3-7B.\n-  HalluEditBench assesses knowledge editing methods across five dimensions: Efficacy, Generalization, Portability, Locality, and Robustness, offering a more comprehensive evaluation compared to existing datasets.\n- The evaluation reveals that existing methods struggle with generalization, portability, and robustness, despite showing high performance on standard knowledge editing datasets. For instance, while FT-M and MEMIT achieve near-perfect scores on existing datasets, their efficacy in correcting real-world hallucinations is significantly lower.\n-  ICE and GRACE show superior performance in correcting hallucinations but have limitations in other aspects, particularly robustness, suggesting that the efficacy of current knowledge editing techniques is highly dependent on domains and LLMs and requires further research.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Framer: Interactive Frame Interpolation",
+        "authors": "Wen Wang, BiaoGong, Azily, zkcys001, qiuyuu",
+        "link": "https://arxiv.org/abs/2410.18978",
+        "github_repo": null,
+        "summary": "-\"Framer\" is an interactive frame interpolation framework that generates smooth transitions between two images, guided by user-defined point trajectories or an \"autopilot\" mode.\n- Framer employs a large-scale pre-trained image-to-video diffusion model, fine-tuned with both start and end frame conditioning for video interpolation and a control branch for customized point trajectory guidance.\n- The \"autopilot\" mode integrates a novel bi-directional point-tracking method to automatically estimate and refine keypoint trajectories across frames without manual input.\n- Experimental results show that Framer generates higher quality transitions and greater control in challenging scenarios, including image morphing, slow-motion video generation, time-lapse video creation, and cartoon interpolation compared to existing methods.\n- Framer enhances controllability and addresses the ambiguity in transitions using keypoint-based interactions that establish correspondences across frames.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Unbounded: A Generative Infinite Game of Character Life Simulation",
+        "authors": "flavoredquark, mohitbansal, davejacobs, NealWadhwa, yzli",
+        "link": "https://arxiv.org/abs/2410.18975",
+        "github_repo": null,
+        "summary": "\n- UNBOUNDED, a generative infinite game transcending finite, hard-coded video game systems by integrating generative AI models.\n- It simulates character life in open-ended virtual worlds inspired by sandbox and digital pet games, incorporating unconstrained storytelling of tabletop RPGs.\n- It uses a specialized, distilled LLM for dynamic game mechanics, narrative, character interactions and IP-Adapter for consistent character visuals across environments.\n- Evaluations showed improvement in character simulation, instruction following, narrative coherence, and visual consistency compared to traditional related approaches, as well as real-time interactivity (refreshing every second).\n- It also features a novel regional image prompt adapter that allows consistent and flexible visual generation of character in various environments.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Distill Visual Chart Reasoning Ability from LLMs to MLLMs",
+        "authors": "zifeishan, cnxup, zh2001, WooooDyy, hewei2001",
+        "link": "https://arxiv.org/abs/2410.18798",
+        "github_repo": "https://github.com/hewei2001/ReachQA",
+        "summary": " - This paper introduces Code-as-Intermediary Translation (CIT), a method to improve visual reasoning in Multimodal Large Language Models (MLLMs) by using code to translate visual charts into text, which is then used by LLMs to generate and answer complex questions about the charts.\n- The authors construct REACHQA, a dataset with 3k reasoning-intensive charts and 20k question-answer pairs, using CIT and leveraging LLMs for data synthesis.\n- Experiments demonstrate that fine-tuning MLLMs on REACHQA enhances their performance on chart-related benchmarks, improving LLaVA-Next-Llama3-8B by over 30% on average and notably transferring abilities to general mathematical reasoning tasks like MathVista.\n- The study also suggests that expert rationales distilled from stronger LLMs significantly impact reasoning abilities, and the balance between recognition- and reasoning-oriented data influences model performance.\n- This work provides valuable insights into improving and evaluating multimodal reasoning in LLMs through the innovative use of code as an intermediary representation.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hewei2001/ReachQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Robust Watermarking Using Generative Priors Against Image Editing: From Benchmarking to Advances",
+        "authors": "Adams Wai-Kin Kong, Zihan Zhou, Yuanzhi, devSulyvahn, LUSHILIN",
+        "link": "https://arxiv.org/abs/2410.18775",
+        "github_repo": "https://github.com/Shilin-LU/VINE",
+        "summary": " - This paper introduces VINE, a novel invisible watermarking method robust against various image editing techniques, including image regeneration, global and local editing, and image-to-video generation.\n- VINE leverages a pre-trained diffusion model, SDXL-Turbo, as a generative prior for the watermark encoder, improving both image quality and robustness.\n- The method incorporates blurring distortions into the noise layers during training, enhancing robustness by exploiting the observation that image editing primarily affects high-frequency information.\n- Additionally, skip connections and zero-convolution layers are introduced to the VAE of SDXL-Turbo to maintain high fidelity between watermarked and original images.\n- Experimental results on W-Bench, a new comprehensive watermarking benchmark also introduced in this paper, demonstrate that VINE outperforms existing methods in terms of robustness and image quality under various image editing scenarios.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Shilin-LU/VINE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Why Does the Effective Context Length of LLMs Fall Short?",
+        "authors": "Shansan Gong, Lei Li, Ming Zhong, Jun Zhang, Chenxin An",
+        "link": "https://arxiv.org/abs/2410.18745",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces ShifTed Rotray position embeddING (STRING), a training-free method to improve the effective context length of Large Language Models (LLMs).\n- STRING addresses the issue of left-skewed position frequency distribution in LLMs by shifting well-trained position indices to overwrite less effective ones during inference.\n- This allows LLMs to better capture distant information within their existing training lengths, improving long-range dependency modeling.\n- Experimental results show STRING boosts the performance of LLMs like Llama 3.1 70B and Qwen-2 72B by a significant margin on benchmarks like RULER and InfiniteBench, achieving state-of-the-art results for open-source LLMs.\n- Notably, Llama 3.1 70B with STRING outperforms commercial models like GPT-4-128K and surpasses Claude 2 and Kimi-chat.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/HKUNLP/STRING"
+        ],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Skywork-Reward: Bag of Tricks for Reward Modeling in LLMs",
+        "authors": "Jujie He, Rui Yan, Jiacai Liu, zengliangcs, chrisliu298",
+        "link": "https://arxiv.org/abs/2410.18451",
+        "github_repo": null,
+        "summary": "-\nThe paper introduces Skywork-Reward, a collection of data-centric methods for enhancing reward modeling in LLMs, along with a new dataset called Skywork-Reward, consisting of 80K curated preference pairs from public sources. \n- Skywork-Reward data collection focuses on important domains for RLHF optimization, such as math and code, using a smaller, higher-quality data composition compared to larger datasets like Preference 700K. \n- The paper details data selection and filtering strategies designed to prioritize pairs that effectively improve model performance, focusing on maximizing the margin between preferred and rejected responses during training. \n- This work also explores various loss functions and finds that the vanilla Bradley-Terry loss consistently outperforms other options. \n- As of October 2024, the resulting Skywork-Reward model series holds the top position on the RewardBench leaderboard, demonstrating the effectiveness of their approach.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/Skywork/skywork-reward-model-66d7fbdebae0e60d00a6b60d",
+            "https://huggingface.co/collections/Skywork/skywork-reward-data-collection-66d7fda6a5098dc77035336d"
+        ],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms",
+        "authors": "Lei Zhang, Shunlin Lu, Xuan Ju, Wenxun Dai, Ling-Hao Chen",
+        "link": "https://arxiv.org/abs/2410.18977",
+        "github_repo": null,
+        "summary": "MotionCLR is an attention-based motion diffusion model for interactive human motion generation and editing.  The model architecture is U-Net-like and consists of CLR blocks containing convolutional, self-attention, cross-attention, and feed-forward network layers. MotionCLR supports training-free motion editing including motion (de-)emphasizing, in-place motion replacement, style transfer and example-based motion generation by manipulating self- and cross-attention activations. Experimental results on the HumanML3D dataset demonstrate comparable generation performance to state-of-the-art methods, along with improved explainability and editing control.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+        "authors": "Zeyu Li, Peijie Dong, Zhenheng Tang, Qi Li, Dominic789654",
+        "link": "https://arxiv.org/abs/2410.18785",
+        "github_repo": "https://github.com/lqinfdim/EditingEvaluation",
+        "summary": " - This paper evaluates the impact of different model editing methods on the general abilities of Large Language Models (LLMs).\n- The study finds that existing editing methods lead to inevitable performance deterioration on general benchmarks, especially when the number of edits increases.\n- The research also reveals that instruction-tuned models are more robust to editing and that larger models are more resistant compared to smaller models.\n- Additionally, the study finds that editing can significantly weaken the safety of LLMs, even for safety-aligned models.\n- The results suggest that current editing methods are only suitable for small-scale knowledge updates, motivating further research on more practical and reliable editing methods.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/lqinfdim/EditingEvaluation"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "ADEM-VL: Adaptive and Embedded Fusion for Efficient Vision-Language Tuning",
+        "authors": "Han Hu, Yong Luo, Li Shen, Jianyuan Guo, Zhiwei840",
+        "link": "https://arxiv.org/abs/2410.17779",
+        "github_repo": "https://github.com/Hao840/ADEM-VL",
+        "summary": "-\nADEM-VL is an efficient vision-language (VL) tuning framework based on pre-trained large language models (LLMs) that uses a parameter-free cross-attention mechanism for multimodal fusion.\n- This approach reduces trainable parameters and improves training and inference speed by embedding visual features into the language space and utilizing multiscale visual feature generation.\n- An adaptive fusion scheme dynamically discards less relevant visual information based on attention scores, allowing the model to concentrate on more pertinent visual features.\n- The model outperforms existing methods on ScienceQA by 0.77% with average accuracy and demonstrates comparable performance on image captioning tasks.\n- The framework suggests more efficient VL model development by utilizing intermediate-layer fusion.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/Hao840/ADEM-VL"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "CCI3.0-HQ: a large-scale Chinese dataset of high quality designed for pre-training large language models",
+        "authors": "Xiaofeng Shi, Hanyu Zhao, Chengwei Wu, Bo-Wen Zhang, ldwang",
+        "link": "https://arxiv.org/abs/2410.18505",
+        "github_repo": null,
+        "summary": " \n- This paper introduces CCI3.0-HQ, a 500GB high-quality subset of the Chinese Corpora Internet 3.0 (CCI3.0) designed for pre-training large language models (LLMs).\n- The dataset was created using a novel two-stage hybrid filtering approach: 1. Fundamental Processing(safety filtering, text extraction, deduplication, and initial quality assessment) 2. High-Quality Processing (employs Qwen2-72B-Instruct to identify high-quality samples and train a smaller 0.5B classifier to filter the dataset).\n- A 0.5B parameter model trained from scratch on CCI3.0-HQ using 100B tokens achieved superior performance on 10 benchmarks compared to CCI3.0, SkyPile, and WanjuanV1 in zero-shot settings. \n- The introduced quality classifier (CCI3-HQ) also outperforms existing classifiers like FineWeb-edu, IndustryCorpus2, and ChineseWebText in terms of F1 score.\n- The dataset and the classifier are open-sourced to benefit the community in developing high-quality Chinese LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/FlagAI-Open/FlagAI/tree/master/examples/CCI3-HQ"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/BAAI/CCI3-HQ",
+            "https://huggingface.co/datasets/BAAI/CCI3-Data",
+            "https://huggingface.co/BAAI/CCI3-HQ-Classifier"
+        ],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "CAMEL-Bench: A Comprehensive Arabic LMM Benchmark",
+        "authors": "Ines Riahi, Ali Alharthi, Omkar Thawakar, Sara Ghaboura, ahmedheakl",
+        "link": "https://arxiv.org/abs/2410.18976",
+        "github_repo": null,
+        "summary": "CAMEL-Bench is a comprehensive Arabic LMM benchmark comprising eight diverse domains and 38 sub-domains, including multi-image understanding, complex visual perception, and video understanding.\n- It contains around 29,036 questions filtered from a larger pool of samples, and quality is manually verified by native speakers.\n- Evaluations of both closed-source, including GPT-4 series, and open-source LMMs were conducted.\n- GPT-4o achieved an overall score of 62%, revealing a need for improvement, especially among the best open-source models.\n- Closed-source models generally outperformed open-source models in most tests.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "WAFFLE: Multi-Modal Model for Automated Front-End Development",
+        "authors": "Lin Tan, Shangshu Qian, jiang719, shanchao",
+        "link": "https://arxiv.org/abs/2410.18362",
+        "github_repo": null,
+        "summary": "-\nWAFFLE is a new fine-tuning strategy for Multi-modal Large Language Models (MLLMs) designed to automate front-end development by generating HTML code from UI design images.\n- It incorporates a structure-aware attention mechanism, enabling MLLMs to better understand HTML structure and a contrastive fine-tuning approach to align the visual understanding of UI designs with the generated HTML code.\n- The evaluation on WebSight-Test shows improvements of up to +9.00 percentage points in HTML Match, +0.0982 in CW-SSIM, +32.99 in CLIP, and +27.12 percentage points in LLEM.\n- Similar improvements are observed on Design2Code, another benchmark, demonstrating WAFFLE's effectiveness in bridging the gap between visual UI designs and text-based HTML/CSS code.\n- WAFFLE, as a fine-tuning method, is model-agnostic and therefore applicable to any MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/lt-asset/Waffle"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Language Models are Symbolic Learners in Arithmetic",
+        "authors": "Hanjie Chen, Ruidi Chang, Roy Xie, Zhiqi Li, Chunyuan Deng",
+        "link": "https://arxiv.org/abs/2410.15580",
+        "github_repo": null,
+        "summary": "This paper investigates how Large Language Models (LLMs) learn arithmetic, specifically focusing on whether they leverage partial products during calculations and how they approach the task symbolically.\n- It finds that LLMs struggle to leverage partial products to solve multiplications and suggests that improvements in recognizing them arise from their symbol-learning process, not actual partial product calculation.\n- By decomposing arithmetic tasks into subgroups based on token-level analysis, the paper finds that LLMs treat a collection of different arithmetic operations similarly when subgroup complexity is fixed.\n- Through position-level accuracy analysis, it's observed that LLM learning follows a U-shaped curve, initially and finally performing well on easy patterns but struggling with harder patterns in between.\n- Overall, the study concludes that LLMs do not perform true calculations during arithmetic tasks. Rather, they act as symbolic learners by selecting subgroups based on complexity, which provides a novel framework for understanding these models' approach to arithmetic reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Stable Consistency Tuning: Understanding and Improving Consistency Models",
+        "authors": "Hongsheng Li, Gsunshine, wangfuyun",
+        "link": "https://arxiv.org/abs/2410.18958",
+        "github_repo": "https://github.com/G-U-N/Stable-Consistency-Tuning",
+        "summary": "-\nStable Consistency Tuning (SCT) is introduced, a novel method for training consistency models.\n-\nSCT builds upon Easy Consistency Tuning (ECT) and incorporates variance-reduced learning using the score identity to improve training stability and performance.\n-\nThe paper introduces a novel framework for understanding consistency models by modeling the denoising process of diffusion models as a Markov Decision Process (MDP) and framing consistency model training as value estimation through Temporal Difference (TD) Learning.\n-\nSCT achieves state-of-the-art results on ImageNet-64, achieving 1-step FID 2.42 and 2-step FID 1.55 for consistency models.\n-\nThe method extends ECT to multistep settings, allowing for deterministic multistep sampling, and explores classifier-free guidance in consistency models.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/G-U-N/Stable-Consistency-Tuning"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Taipan: Efficient and Expressive State Space Language Models with Selective Attention",
+        "authors": "Hanieh Deilamsalehy, Ruiyi Zhang, Thang M. Pham, Huy Huu Nguyen, chiennv",
+        "link": "https://arxiv.org/abs/2410.18572",
+        "github_repo": null,
+        "summary": " - Taipan, a hybrid architecture for efficient long-context language modeling, combines the efficiency of Mamba-2 with Selective Attention Layers (SALs) to enhance long-range dependency handling.\n- SALs strategically select tokens requiring long-range interactions, refine their features, and augment them with attention, balancing efficiency and expressiveness.\n- Taipan scales to billions of parameters and demonstrates superior performance on various tasks, including zero-shot language modeling and memory-intensive tasks like in-context retrieval.\n- It achieves linear memory scaling, making it applicable for contexts up to 1 million tokens, and significantly outperforms Transformers and other SSM-based models on long sequences.\n- The ablation study emphasizes the importance of the attention budget and the absence of positional embeddings for efficient and enhanced generalization.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus"
+        ],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Value Residual Learning For Alleviating Attention Concentration In Transformers",
+        "authors": "Zhenzhong Lan, Zhiyun Jiang, Tianyi Wu, Zcchill",
+        "link": "https://arxiv.org/abs/2410.17897",
+        "github_repo": null,
+        "summary": "\u2022 This paper introduces two novel Transformer variants: ResFormer and SVFormer.\n\u2022 ResFormer incorporates a residual connection from the first layer\u2019s value embeddings to subsequent layers\u2019 value embeddings to mitigate attention concentration, which is defined as a model\u2019s attention increasingly focuses on fewer tokens as the network depth increases.\n\u2022 SVFormer shares the first layer\u2019s value embeddings across all layers, reducing KV cache by approximately 50%.\n\u2022 Experimental results on a 20B SlimPajama dataset show ResFormer outperforms vanilla Transformer, DenseFormer, and NeuTRENO in training and downstream tasks.\n\u2022 SVFormer is shown to train faster than vanilla Transformer and perform better than GQA and CLA when sequence length is longer.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Zcchill/Value-Residual-Learning"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/cerebras/SlimPajama-627B"
+        ],
+        "date": "2024-10-25"
+    },
+    {
+        "title": "Multi-Draft Speculative Sampling: Canonical Architectures and Theoretical Limits",
+        "authors": "Roland Memisevic, Arash Behboodi, Hassan Dbouk, Ashish Khisti, mamaj92",
+        "link": "https://arxiv.org/abs/2410.18234",
+        "github_repo": null,
+        "summary": "This paper introduces a canonical architecture for multi-draft speculative sampling, where multiple draft models independently generate proposal token sequences.\n- It demonstrates that the optimal draft selection scheme can be achieved through a two-step process: importance sampling to select an intermediate token and single-draft speculative sampling on the selected token.\n- For two identical draft models, an analytical expression for optimal acceptance probability is derived, along with a necessary and sufficient condition for achieving an acceptance probability of 1.\n- A new token selection scheme based on weighted importance sampling is proposed, along with heuristic approaches to reduce computational complexity.\n- Experimental results on OPT models across various tasks show consistent improvements in block efficiency and token rates compared to baseline methods, especially when using non-identical draft distributions.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-25"
     }
 ]

@@ -1,0 +1,190 @@
+[
+    {
+        "title": "ROCKET-1: Master Open-World Interaction with Visual-Temporal Context Prompting",
+        "authors": "Xiaojian Ma, Zhancun Mu, Zihao Wang, kevinLian, phython96",
+        "link": "https://arxiv.org/abs/2410.17856",
+        "github_repo": null,
+        "summary": "ROCKET-1 is a novel, low-level policy that leverages visual-temporal context prompting, a communication protocol using object segmentation masks and interaction types from past and present observations to guide policy-environment interactions.\nROCKET-1 uses a causal transformer architecture that processes observations and object segmentations concatenated into a 4-channel image along with interaction types as conditions.\nExperiments in Minecraft demonstrate that agents using this approach achieve higher success rates on complex tasks, outperforming methods based on language, future image, or latent code prompting.\nA backward trajectory relabeling method efficiently generates segmentation annotations, enabling automatic dataset creation for training ROCKET-1.\nThe approach allows for spatial understanding in embodied decision-making, leading to agents accomplishing previously unattainable tasks like \u201cplace oak door on diamond block\u201d with a 91% success rate and others requiring long-horizon planning such as obtaining obsidian with a 70% success rate.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Continuous Speech Synthesis using per-token Latent Diffusion",
+        "authors": "Hagai Aronowitz, Slava Shechtman, Arnon Turetzky, Avihu, NimrodShabtay1986",
+        "link": "https://arxiv.org/abs/2410.16048",
+        "github_repo": null,
+        "summary": " - This paper introduces SALAD, a per-token latent diffusion model for zero-shot text-to-speech that operates on continuous representations, inspired by the per-token diffusion head for image generation.\n- It extends the image generation method to handle variable-length outputs, uses semantic tokens for context and stopping conditions, and doesn't require text-audio alignment.\n- Three SALAD variants are proposed: T2A (Text2Acoustic), S2A-AR (Semantic2Acoustic Autoregressive), and S2A-NAR (Semantic2Acoustic Non-Autoregressive), along with corresponding discrete baseline models for comparison.\n-  Evaluations on speech quality, intelligibility, and speaker similarity show that SALAD's T2A model achieves the highest intelligibility score.\n-  It also maintains speech quality and speaker similarity comparable to ground-truth audio based on subjective listening tests.",
+        "classification": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Infinity-MM: Scaling Multimodal Performance with Large-Scale and High-Quality Instruction Data",
+        "authors": "Jialing Zhang, Shuhao Gu, ZacLiu, bowen92, ldwang",
+        "link": "https://arxiv.org/abs/2410.18558",
+        "github_repo": null,
+        "summary": "{- Introduced Infinity-MM, a large-scale multimodal instruction dataset with 40 million samples, enhanced through quality filtering and deduplication. \n- Proposed a synthetic instruction generation method using open-source VLMs, detailed image annotations, and diverse question generation to improve data quality and scale. \n- Trained Aquila-VL-2B, a 2-billion parameter VLM based on the LLaVA-OneVision architecture, using Infinity-MM and synthetic data. \n- Aquila-VL-2B achieved state-of-the-art performance for models of similar scale on various visual benchmarks, including MMBench, MMStar, and MathVista. \n- Demonstrated that scaling instruction data and generating synthetic data can significantly improve the performance of open-source multimodal models.}",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/LLaVA-VL/LLaVA-NeXT/tree/main/scripts/train"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Teach Multimodal LLMs to Comprehend Electrocardiographic Images",
+        "authors": "Ping Zhang, Xiang Yue, Yuelin Bai, Ruoqi Liu",
+        "link": "https://arxiv.org/abs/2410.19008",
+        "github_repo": null,
+        "summary": "-\nThis paper introduces PULSE, a new Multimodal Large Language Model (MLLM) tailored for electrocardiogram (ECG) image comprehension. \n-\nIt also presents ECGInstruct, a new instruction tuning dataset of over one million ECG image-text samples featuring realistic image synthesis and a diverse range of ECG-related tasks.  \n-\nA new evaluation benchmark, ECGBench, covering four key ECG image interpretation tasks across nine different datasets is also constructed. \n-\nPULSE achieves state-of-the-art results, significantly outperforming proprietary MLLMs such as GPT-40 by 15-30% accuracy on out-of-domain datasets.\n-\nAblation studies highlight the importance of diverse data sources and incorporating instruction tasks for ECG image comprehension.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://aimedlab.github.io/PULSE/"
+        ],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "FasterCache: Training-Free Video Diffusion Model Acceleration with High Quality",
+        "authors": "Yu Qiao, Zhenyu Yang, Junhao Song, Chenyang Si, Zhengyao Lv",
+        "link": "https://arxiv.org/abs/2410.19355",
+        "github_repo": null,
+        "summary": "\u2022 FasterCache is a training-free strategy designed to accelerate video diffusion model inference.\n\u2022 It uses a dynamic feature reuse strategy for attention modules, adjusting reused features across timesteps to balance detail and temporal consistency.\n\u2022 It introduces CFG-Cache, storing residuals between conditional and unconditional outputs to speed up classifier-free guidance.\n\u2022 Evaluation on models like Vchitect-2.0 shows significant speedups (e.g., 1.67x) while maintaining comparable video quality to the baseline.\n\u2022 It outperforms existing methods in both inference speed and video quality.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/Vchitect/FasterCache"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+        "authors": "Ramaneswaran Selvakumar, Ashish Seth, Sonal Kumar, Utkarsh Tyagi, S Sakshi",
+        "link": "https://arxiv.org/abs/2410.19168",
+        "github_repo": null,
+        "summary": "-\nMMAU, a massive multi-task audio understanding and reasoning benchmark, is introduced to evaluate expert-level reasoning and knowledge retrieval abilities in Large Audio-Language Models (LALMs). \n- It consists of 10,000 expertly annotated audio-question-response pairs across speech, sound, and music domains, covering 27 distinct tasks, including 16 for reasoning and 11 for information extraction. \n- Evaluations of 18 open-source and proprietary LALMs reveal that even the best-performing model only achieves 53% accuracy on MMAU, with human performance at 82%, highlighting significant room for improvement.\n- Models performed best on sound-based tasks but struggled the most with music. Cascaded models employing audio captioning followed by an LLM achieved the best performance, suggesting the potential for independent advancements in audio perception and text-based reasoning.\n- A detailed error analysis highlights perceptual errors as the most common mistake, emphasizing the need for better audio processing capabilities in current models.",
+        "classification": [
+            "Audio",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Counting Ability of Large Language Models and Impact of Tokenization",
+        "authors": "Chenyu You, Juntai Cao, Wyattz23",
+        "link": "https://arxiv.org/abs/2410.19730",
+        "github_repo": null,
+        "summary": "This paper investigates the impact of tokenization on the counting abilities of Large Language Models (LLMs), demonstrating that tokenization choices significantly influence model performance on counting tasks.\n- The study adopts a model-agnostic approach, manipulating input string formats to control tokenization in both open and closed-source LLMs.\n- It is observed that byte-pair encoding (BPE), commonly used in LLMs, can severely degrade counting accuracy due to a mismatch between the unit being counted (letters) and the unit processed (tokens).\n- The research reveals that Chain-of-Thought (CoT) prompting significantly improves counting abilities by enabling iterative inductive reasoning in the text space, partially overcoming the inherent limitations of Transformer models in sequential computations.\n- Through extensive experiments, the study finds that clear item-separated tokenization, as opposed to letter-grouped tokenization, enhances counting accuracy. Furthermore, the experiments showed that lower-frequency characters are easier to count compared to higher-frequency ones.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+        "authors": "Yang Zhang, Tommi Jaakkola, code-terminator, yujianll",
+        "link": "https://arxiv.org/abs/2410.19290",
+        "github_repo": "https://github.com/UCSB-NLP-Chang/Prereq_tune.git",
+        "summary": "-\nPREREQ-TUNE, a novel fine-tuning strategy designed to mitigate LLM hallucinations, is introduced.\n-\nPREREQ-TUNE incorporates a two-stage process: a prerequisite learning stage where a knowledge LoRA is trained to acquire necessary knowledge, followed by a supervised fine-tuning (SFT) stage where a skill LoRA focuses solely on learning task-specific skills.  The prerequisite learning stage enhances factuality by equipping the LLM with the required knowledge for subsequent fine-tuning, thereby reducing reliance on generating incorrect information.\n-\nThe method also utilizes fictitious synthetic data for multi-version training, further improving the grounding of LLM outputs to internal knowledge.  This decoupling of knowledge and skill learning allows for more robust factual generation and control.\n-\nExperiments on long-form generation (biography and medical QA) and short QA tasks demonstrate PREREQ-TUNE's superior performance compared to baselines, including those utilizing reinforcement learning and direct preference optimization.\n-\nAnalysis confirms the effectiveness of PREREQ-TUNE's disentanglement mechanism, even when trained solely on fictitious data, opening possibilities for new retrieval augmented generation (RAG) paradigms and knowledge-controlled text generation.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/UCSB-NLP-Chang/Prereq_tune.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Hybrid Preferences: Learning to Route Instances for Human vs. AI Feedback",
+        "authors": "Valentina Pyatkin, Sachin Kumar, Yanai Elazar, Yizhong Wang, ljvmiranda921",
+        "link": "https://arxiv.org/abs/2410.19133",
+        "github_repo": "https://github.com/allenai/hybrid-preferences",
+        "summary": " - This paper introduces a routing framework for preference learning that dynamically allocates instances to either human or LM annotators, creating a hybrid approach to data annotation.\n- The framework employs a performance prediction model (PPM) to estimate the performance of reward models trained on different mixes of human and LM annotations and uses this to strategically select an optimal combination.\n- Results on the MULTIPREF dataset and others show that the proposed hybrid preference approach significantly outperforms using either human or LM preferences exclusively, as well as random combinations, across several benchmarks.\n- Analysis of the framework highlights that instances with moderate semantic similarity, safety concerns, or intent complexity tend to benefit the most from human annotation.\n- The authors release the code, data, and annotation platform used to promote further research in efficient and effective preference data collection.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/allenai/hybrid-preferences"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/datasets/allenai/multipref"
+        ],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Leveraging Skills from Unlabeled Prior Data for Efficient Online Exploration",
+        "authors": "Sergey Levine, Kevin Frans, Qiyang Li, Max Wilcoxson",
+        "link": "https://arxiv.org/abs/2410.18076",
+        "github_repo": "https://github.com/rail-berkeley/supe",
+        "summary": "\u2022 SUPE (Skills from Unlabeled Prior data for Exploration) leverages unlabeled prior trajectory data in two ways: offline for skill pretraining with a trajectory-segment VAE and online for training a high-level off-policy RL agent to compose these skills for efficient exploration.\n\u2022 SUPE uses an optimistic reward model to pseudo-label past trajectories, enabling their use as off-policy data for fast learning with limited online interactions.\n\u2022 The method outperforms prior approaches in a suite of long-horizon, sparse-reward tasks, including AntMaze, Kitchen, and Visual AntMaze, demonstrating faster learning and more efficient exploration by finding sparse reward signals more quickly.\n\u2022 Empirical evaluations show that leveraging unlabeled data during both offline and online phases is crucial for efficient exploration, with SUPE successfully solving tasks where other methods struggle.\n\u2022 Ablation studies confirm the benefits of both skill pretraining and online use of offline data, and demonstrate that SUPE is robust to data corruption scenarios like insufficient coverage and limited data.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/rail-berkeley/supe"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Dynamic 3D Gaussian Tracking for Graph-Based Neural Dynamics Modeling",
+        "authors": "Yunzhu Li, Kaifeng Zhang, MingtongZ",
+        "link": "https://arxiv.org/abs/2410.18912",
+        "github_repo": null,
+        "summary": "-\nThis research introduces a new framework for learning object dynamics and generating 3D action-conditioned video predictions by combining dynamic 3D reconstruction with a graph-based neural dynamics model trained on multi-view RGB videos of robot-object interactions.\n- The approach utilizes 3D Gaussian Splatting (3DGS) to represent and track objects as particles, trains a Graph Neural Network (GNN) on these particles to model their dynamics under different robot actions, and employs an interpolation scheme to predict dense Gaussian motion for video prediction.\n- In comparison to other state-of-the-art methods, experimental results on various deformable objects, such as ropes, cloths, and toys, showed significant improvements in motion prediction accuracy and video prediction quality. \n- Additionally, the integration of this model within a Model Predictive Control framework showcased its efficacy in model-based planning for object manipulation tasks.\n- A key strength of this method is its ability to learn directly from real-world video data, potentially bridging the gap between simulation and real-world performance, despite the inherent limitations in dataset acquisition and handling complex real-world scenarios like significant occlusions or textureless objects.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Video Classification",
+            "Image-to-Video",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    },
+    {
+        "title": "Reflection-Bench: probing AI intelligence with reflection",
+        "authors": "Yan Teng, Shuqi Kong, Haiquan Zhao, Yixu Wang, LingyuLi",
+        "link": "https://arxiv.org/abs/2410.16270",
+        "github_repo": "https://github.com/YabYum/ReflectionBench",
+        "summary": "This paper introduces Reflection-Bench, a new benchmark designed to evaluate the reflection capabilities of Large Language Models (LLMs).\n- Reflection is defined as the ability of an intelligent system to adapt its beliefs or behaviors in response to unexpected outcomes, encompassing core cognitive functions such as perception, memory, belief updating, decision-making, prediction, counterfactual thinking, and meta-reflection.\n- The benchmark comprises seven tasks adapted from cognitive science paradigms, including the oddball paradigm, n-back task, probabilistic reversal learning task, Wisconsin card sorting test, weather prediction task, double-choice Iowa gambling task, and meta-bandit task.\n- An evaluation of 13 prominent LLMs reveals that current models still fall short of human-level reflection abilities, particularly lacking meta-reflection capabilities. \n- The authors argue that reflection is a crucial aspect of intelligence and propose Reflection-Bench as a valuable tool for evaluating and furthering the development of more sophisticated AI systems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/YabYum/ReflectionBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-28"
+    }
+]

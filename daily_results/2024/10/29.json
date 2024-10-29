@@ -1,0 +1,261 @@
+[
+    {
+        "title": "Bielik 7B v0.1: A Polish Language Model -- Development, Insights, and Evaluation",
+        "authors": "Remek, adgw, djstrong, lflis, chrisociepa",
+        "link": "https://arxiv.org/abs/2410.18565",
+        "github_repo": null,
+        "summary": "- This paper introduces Bielik 7B v0.1, a 7-billion parameter generative text model based on the Mistral 7B v0.1 architecture and trained on a curated Polish corpora.\n- The model utilizes techniques such as Weighted Instruction Cross-Entropy Loss and Adaptive Learning Rate, and incorporates architectural features like Sliding Window Attention and SwiGLU activation function for enhanced performance.\n- To evaluate the model, new benchmark frameworks, the Open PL LLM Leaderboard and Polish MT-Bench, were created for assessing NLP tasks and conversational abilities.\n- Bielik 7B v0.1 showed a significant improvement of 9 percentage points in the RAG Reader task compared to Mistral-7B-v0.1.\n- In subjective conversational evaluations, Bielik outperformed models with higher average scores on the Open PL LLM Leaderboard benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/speakleash/mt-bench-pl",
+            "https://huggingface.co/spaces/open-llm-leaderboard-old/open_llm_leaderboard",
+            "https://huggingface.co/datasets/teknium/OpenHermes-2.5",
+            "https://huggingface.co/spaces/speakleash/open_pl_llm_leaderboard"
+        ],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "AgentStore: Scalable Integration of Heterogeneous Agents As Specialized Generalist Computer Assistant",
+        "authors": "Fangzhi Xu, Qiushi Sun, Zhuohang Dang, Minnan Luo, Chengyou Jia",
+        "link": "https://arxiv.org/abs/2410.18603",
+        "github_repo": null,
+        "summary": "- AgentStore, a scalable platform designed to dynamically integrate heterogeneous agents, has been introduced for automating diverse computer tasks.\n- It leverages a novel MetaAgent with an AgentToken strategy, enabling efficient management of diverse agents by representing each agent as a learnable token embedding and predicting the appropriate token(s) for task execution.\n- AgentStore allows for seamless third-party agent integration, enabling adaptability to evolving operating systems.\n- Evaluation on OSWorld and a mobile environment demonstrate its ability to improve performance in automating computer tasks, achieving a success rate of 23.85% on OSWorld\u2014more than double the previous best (11.21%).\n- AgentStore's ability to integrate agents and specialize them for specific tasks while maintaining general capabilities demonstrates significant improvement over single generalist or specialized agents in handling complex tasks within real-world OS environments.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "GPT-4o System Card",
+        "authors": "Adam Perelman, Adam P. Goucher, Adam Lerer, Aaron Hurst, OpenAI",
+        "link": "https://arxiv.org/abs/2410.21276",
+        "github_repo": null,
+        "summary": " - OpenAI's GPT-40 is an \"omni\" autoregressive model that accepts and generates combinations of text, audio, image, and video, trained end-to-end across these modalities.\n- GPT-40 matches GPT-4 Turbo's performance on English text and code, surpasses it in non-English languages, and demonstrates significant improvement on vision and audio understanding.\n- The model's training data includes publicly available data, code and math data, multimodal data (images, audio, and video), and proprietary data from partnerships, with a cutoff date of October 2023.\n- Prior to deployment, OpenAI performed risk assessments and mitigations with methods including safety classifiers, content filtering, and preference alignment to reduce harms such as information hazards, bias, and policy violations.\n- Deployment preparation encompassed a four-phased external red teaming process with over 100 participants to evaluate risks and test mitigations across multiple modalities and potential harms such as disallowed content and misinformation.",
+        "classification": [
+            "Multimodal",
+            "Any-to-Any",
+            "Audio",
+            "Automatic Speech Recognition",
+            "Text-to-Speech",
+            "Text-to-Audio",
+            "Computer Vision",
+            "Image-to-Text",
+            "Image Classification",
+            "Object Detection",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "Document Parsing Unveiled: Techniques, Challenges, and Prospects for Structured Information Extraction",
+        "authors": "Zhengren Wang, Junyuan Zhang, Bin Wang, Victor Shea-Jay Huang, Qintong Zhang",
+        "link": "https://arxiv.org/abs/2410.21169",
+        "github_repo": null,
+        "summary": " - This survey paper provides a comprehensive overview of document parsing, consolidating recent advancements in modular pipeline systems and end-to-end models driven by large vision-language models (VLMs) and covering key methodologies, challenges, and future research directions.\n- The paper discusses core document parsing components, including layout detection, content extraction (text, tables, mathematical expressions), and multimodal data integration, examining algorithms for each stage.\n- It addresses the challenges faced by modular document parsing systems and VLMs in handling complex layouts, integrating modules, and recognizing high-density text.\n- The survey consolidates widely used datasets and evaluation metrics for document parsing tasks, providing valuable resources for researchers and practitioners.\n- Finally, the paper emphasizes the importance of developing larger, more diverse datasets and outlines future research directions in the field, such as handling complex layouts and improving OCR for densely packed text.",
+        "classification": [
+            "Natural Language Processing",
+            "Document Question Answering",
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "LongReward: Improving Long-context Large Language Models with AI Feedback",
+        "authors": "Zhenyu Hou, Shulin Cao, Xin Lv, Zhongni Hou, Jiajie Zhang",
+        "link": "https://arxiv.org/abs/2410.21252",
+        "github_repo": null,
+        "summary": "- LongReward, a novel method to improve long-context large language models (LLMs) using AI feedback, is introduced.\n- It uses an off-the-shelf LLM to assign rewards to model responses based on four dimensions: helpfulness, logicality, faithfulness, and completeness.\n- When combined with the reinforcement learning algorithm Direct Preference Optimization (DPO), LongReward significantly boosts the performance of long-context SFT models, outperforming baseline methods.\n- Experiments show improvements on long-context question answering and summarization and a positive impact on short instruction following.\n- LongReward enhances model capabilities by mitigating common issues like hallucinations and ineffective context utilization in long-context scenarios.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/LongReward"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+        "authors": "Xiaotian Han, Huaibo Huang, Xiaoqiang Zhou, Yuang Ai, Ye27",
+        "link": "https://arxiv.org/abs/2410.18666",
+        "github_repo": "https://github.com/shallowdream204/DreamClear",
+        "summary": "- This paper introduces DreamClear, a novel high-capacity image restoration model based on a Diffusion Transformer (DiT) architecture.\n- It employs a dual-branch framework with textual guidance from multimodal large language models (MLLMs) and a Mixture of Adaptive Modulator (MoAM) to handle diverse real-world degradations.\n- DreamClear leverages a new, privacy-safe, synthetic dataset of one million high-quality images generated using a novel dual-prompt learning data curation pipeline (GenIR). \n- The authors conducted extensive experiments on synthetic and real-world benchmarks demonstrating that DreamClear achieves state-of-the-art performance across a range of metrics, including perceptual metrics (LPIPS, DISTS, FID), no-reference metrics (NIQE, MANIQA, MUSIQ, CLIPIQA), and high-level vision tasks, and also achieves high scores in user preference studies.\n- The newly introduced GenIR dataset generation technique improves model generalizability and restoration performance when used for training.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/shallowdream204/DreamClear"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "A Survey of Small Language Models",
+        "authors": "Samyadeep Basu, Yu Xia, Ryan Aponte, Xuan Shen, Chien Van Nguyen",
+        "link": "https://arxiv.org/abs/2410.20011",
+        "github_repo": null,
+        "summary": "- This paper presents a comprehensive survey of Small Language Models (SLMs), focusing on architectures, training techniques, and model compression methods.\n- The authors introduce a novel taxonomy to categorize SLM optimization methods, considering techniques used in pre-processing, training, post-processing, and the constraints being optimized (e.g., inference compute, training time).\n- The survey covers lightweight architectures, efficient self-attention approximations, neural architecture search for model building, efficient pre-training and fine-tuning strategies, and model compression techniques like pruning, quantization, and knowledge distillation.\n- Additionally, it summarizes benchmark datasets and evaluation metrics commonly used for assessing SLM performance and lists various real-world applications enabled by SLMs, categorized by constraints like real-time interaction, content generation, edge inference, and privacy.\n- Lastly, the paper highlights important open challenges and future research directions for SLMs, such as hallucination, bias, inference-time energy efficiency, and data privacy.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "MarDini: Masked Autoregressive Diffusion for Video Generation at Scale",
+        "authors": "Yanping Xie, Mengmeng Xu, Zijian Zhou, Shikun Liu, Haozhe Liu",
+        "link": "https://arxiv.org/abs/2410.20280",
+        "github_repo": null,
+        "summary": "**- MarDini: An innovative family of video diffusion models that combines masked auto-regression (MAR) for temporal planning and a diffusion model (DM) for spatial generation within an efficient asymmetric framework.**  MAR operates on low-resolution inputs to create planning signals, while the lighter DM uses these signals alongside high-resolution inputs. \n**- This structure allows MarDini to perform various video generation tasks**: video interpolation, image-to-video generation, and video expansion by flexibly masking frames during training. \n**- The design prioritizes scalability by using a progressive training strategy and mask ratio tuning.**  MarDini is trained from scratch without reliance on image-based pre-training. \n**- Evaluated on VIDIM-Bench and VBench**: MarDini shows state-of-the-art performance on video interpolation while being computationally efficient, particularly in inference speed compared to other competitive video generation models. \n**- MarDini's efficiency is attributed to**: the asymmetric design allowing more compute resources for the MAR model at a lower resolution and the DM requiring fewer steps for convergence due to the informative planning signal.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "GrounDiT: Grounding Diffusion Transformers via Noisy Patch Transplantation",
+        "authors": "Minhyuk Sung, Taehoon Yoon, Phillip Y. Lee",
+        "link": "https://arxiv.org/abs/2410.20474",
+        "github_repo": null,
+        "summary": " - Introduces GrounDiT, a training-free spatial grounding technique for text-to-image generation using Diffusion Transformers (DiT).\n- Employs a novel noisy patch cultivation-transplantation mechanism, where patches corresponding to bounding boxes are denoised separately and then transplanted into the main image during generation.\n- Leverages the \"semantic sharing\" property of DiT, where jointly denoising a smaller patch alongside a generatable-size image results in the two becoming semantically similar.\n- Achieves state-of-the-art performance on HRS and DrawBench benchmarks, demonstrating superior spatial grounding compared to existing training-free methods, especially in complex scenarios with multiple or small bounding boxes.\n- Improves spatial accuracy on the HRS benchmark by +14.87% over the previous state-of-the-art method R&B and +7.88% over the base PixArt-\u03b1 model.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "COAT: Compressing Optimizer states and Activation for Memory-Efficient FP8 Training",
+        "authors": "Kurt Keutzer, Yao Lu, Ligeng Zhu, Han Cai, Haocheng Xi",
+        "link": "https://arxiv.org/abs/2410.19313",
+        "github_repo": "https://github.com/NVlabs/COAT",
+        "summary": "- COAT is a novel FP8 training framework designed to reduce memory footprint and increase training speed for large models by compressing both optimizer states and activations.\n- It introduces Dynamic Range Expansion, aligning optimizer state distributions with FP8's range, thereby minimizing quantization error.\n- For activations, COAT proposes Mixed-Granularity Activation Quantization, using fine-grained quantization for non-linear layers and per-tensor quantization for linear layers.\n- COAT achieves nearly lossless performance while decreasing memory by 1.54x and increasing training speed by 1.43x on Llama 7B, 13B, and 30B models compared to BF16.\n- COAT facilitates training larger models on fewer GPUs by enabling full-parameter training of 7B models on a single GPU and supports doubling the micro-batch size for distributed training.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/NVlabs/COAT"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "Vision Search Assistant: Empower Vision-Language Models as Multimodal Search Engines",
+        "authors": "Xiangyu Yue, Xiaohan Ding, Yiyuan Zhang, Zhixin Zhang",
+        "link": "https://arxiv.org/abs/2410.21220",
+        "github_repo": "https://github.com/cnzzx/VSA",
+        "summary": "-\nVision Search Assistant, a novel framework to address the limitation of traditional methods in understanding unfamiliar visual content. \n-\nThe framework facilitates collaboration between VLMs and web agents, leveraging VLMs' visual understanding capabilities and web agents' real-time information access to perform open-world Retrieval-Augmented Generation via the web.\n-\nBy integrating visual and textual representations through this collaboration, the model can provide informed responses even when the image is novel to the system. \n-\nIt involves Visual Content Formulation to represent visual content with correlated formulations, Web Knowledge Search with Chain of Search algorithm to obtain comprehensive web knowledge, and Collaborative Generation to generate the final answer. \n-\nExtensive experiments on open-set and closed-set QA benchmarks demonstrate that Vision Search Assistant significantly outperforms other models.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/cnzzx/VSA"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/opencompass/open_vlm_leaderboard",
+            "https://huggingface.co/liuhaotian/llava-v1.6-vicuna-7b"
+        ],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "LARP: Tokenizing Videos with a Learned Autoregressive Generative Prior",
+        "authors": "Abhinav Shrivastava, Hao Chen, Yixuan Ren, Saksham Suri, Hanyu Wang",
+        "link": "https://arxiv.org/abs/2410.21264",
+        "github_repo": null,
+        "summary": "-\nLARP is a novel video tokenizer designed for autoregressive (AR) generative models, utilizing a holistic tokenization scheme with learned queries to capture global and semantic video representations.\n-\nUnlike traditional patchwise tokenizers, LARP employs a set of learned queries to gather information from the visual content, enabling more holistic and semantic representations.\n-\nIt incorporates a lightweight AR transformer as a prior model during training, optimizing the latent space for AR generation and automatically determining an optimal token order.\n-\nLARP achieves state-of-the-art Frechet Video Distance (FVD) of 57 on the UCF101 class-conditional video generation benchmark, outperforming existing published and proprietary video generation models, demonstrating its efficacy for AR video generation tasks.\n-\nFurther scalability is shown by achieving better results when using larger AR generators with the LARP tokenizer and in improving generative representation efficiency when reducing tokens from 512 to 256.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "Fast Best-of-N Decoding via Speculative Rejection",
+        "authors": "Jiahao Qiu, Huitao Yang, Ruiqi Zhang, Momin Haider, Hanshi Sun",
+        "link": "https://arxiv.org/abs/2410.20290",
+        "github_repo": null,
+        "summary": "- This paper introduces Speculative Rejection, a novel inference-time alignment algorithm designed to improve the efficiency of Best-of-N decoding for large language models (LLMs).\n- The key idea is to dynamically reduce the batch size during generation by halting the generation of unpromising responses early, based on partial reward scores.\n- The algorithm starts with a large batch size, effectively simulating Best-of-N with large N and leverages a reward model to rank partial utterances and terminate low-scoring ones.\n- The results on the AlpacaFarm dataset demonstrate that Speculative Rejection can achieve higher rewards with similar latency while requiring significantly fewer GPUs (16-32 times less compute power) compared to standard Best-of-N. \n- The method is also shown to be effective in maximizing the probability of generated utterances.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Zanette-Labs/SpeculativeRejection"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "Neural Fields in Robotics: A Survey",
+        "authors": "Abhinav Valada, Nick Heppert, Yen-Chen Lin, Mauro Comi, Muhammad Zubair Irshad",
+        "link": "https://arxiv.org/abs/2410.20220",
+        "github_repo": null,
+        "summary": "\n- This survey paper offers a comprehensive overview of Neural Fields (NFs) and their transformative impact on robotics, encompassing various applications, strengths, and limitations.\n- It categorizes and reviews over 200 research papers, examining how NFs enhance perception, planning, and control in robotics.\n- Four key NF frameworks are presented: Occupancy Networks, Signed Distance Fields, Neural Radiance Fields, and Gaussian Splatting.\n- The paper explores applications of NFs in five major robotics domains: pose estimation, manipulation, navigation, physics simulations, and autonomous driving, providing insights into current progress and open challenges.\n- It concludes by outlining future research directions for NFs in robotics, proposing new avenues for development and application.\n",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "robonerf.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "Language Models And A Second Opinion Use Case: The Pocket Professional",
+        "authors": "David Noever",
+        "link": "https://arxiv.org/abs/2410.20636",
+        "github_repo": null,
+        "summary": "\n- This research assesses Large Language Models (LLMs) as second opinion tools in complex medical and legal scenarios.\n- Evaluated LLM performance on 183 medical cases from Medscape and 21 Supreme Court legal cases, comparing responses with crowd-sourced physician opinions and documented legal votes respectively.\n- Found high accuracy in straightforward medical cases (>81%) but reduced performance (43%) in complex scenarios, suggesting LLMs may be valuable for generating differential diagnoses rather than as primary diagnostic tools.\n- Developed novel benchmarks for others to assess the reliability of responses by both LLMs and human practitioners, revealing high contestation among human experts.\n- Suggests that using LLMs as specialized agents for second opinions in medicine, especially in challenging cases, might be more appropriate than current approaches that emphasize automation of routine tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/reveondivad/certify"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    },
+    {
+        "title": "Leveraging Locality to Boost Sample Efficiency in Robotic Manipulation",
+        "authors": "Yang Gao, Jiacheng You, Yingdong Hu, Tong Zhang",
+        "link": "https://arxiv.org/abs/2406.10615",
+        "github_repo": null,
+        "summary": "- This paper introduces SGRv2, a new visuomotor policy framework for robotic manipulation that improves sample efficiency by leveraging action locality, an inductive bias positing that robot actions are primarily influenced by the target object and local environment.\n- SGRv2 builds on the Semantic-Geometric Representation (SGR) framework but incorporates action locality throughout its design, using an encoder-decoder architecture for point-wise features, predicting relative target position, applying point-wise weights to highlight critical regions, and using dense supervision.\n- Extensive experiments on RLBench, ManiSkill2, and MimicGen benchmarks show that SGRv2 significantly outperforms existing methods, achieving state-of-the-art results with limited demonstrations, even as few as 5 for certain RLBench tasks.\n- In real-world experiments with a Franka Emika Panda robot, SGRv2 achieves considerably higher success rates compared to baselines.\n- Further evaluations highlight the model's emergent ability to focus on object affordances and generalize to unseen object colors.",
+        "classification": [
+            "Robotics",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-29"
+    }
+]

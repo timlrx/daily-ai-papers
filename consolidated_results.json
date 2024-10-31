@@ -5755,5 +5755,84 @@
         ],
         "huggingface_urls": [],
         "date": "2024-10-30"
+    },
+    {
+        "title": "CORAL: Benchmarking Multi-turn Conversational Retrieval-Augmentation Generation",
+        "authors": "Hongjin Qian, Ziliang Zhao, Kelong Mao, dongguanting, ariya2357",
+        "link": "https://arxiv.org/abs/2410.23090",
+        "github_repo": null,
+        "summary": "- This paper introduces CORAL, a large-scale benchmark designed to evaluate Retrieval-Augmented Generation (RAG) systems in multi-turn conversational settings.\n- CORAL is derived from Wikipedia, containing 8,000 information-seeking conversations covering various topics with citation labels.\n- It includes three tasks: passage retrieval, response generation, and citation labeling and proposes a framework to standardize different RAG methods.\n- Evaluations show that fine-tuned open-source LLMs outperform commercial closed-source LLMs in retrieval, and that input length reduction maintains response quality and improves citation accuracy.\n- The benchmark addresses challenges in multi-turn conversational RAG, such as redundant information and topic shifts, paving the way for evaluating and improving multi-turn conversational RAG systems.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Ariya12138/CORAL"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-31"
+    },
+    {
+        "title": "A Large Recurrent Action Model: xLSTM enables Fast Inference for Robotics Tasks",
+        "authors": "Korbinian P\u00f6ppel, Maximilian Beck, Vihang Patil, Thomas Adler, Thomas Schmied",
+        "link": "https://arxiv.org/abs/2410.22391",
+        "github_repo": null,
+        "summary": "- This paper introduces the Large Recurrent Action Model (LRAM), a novel architecture for reinforcement learning employing modern recurrent neural networks, specifically xLSTM, for faster inference in robotics tasks.\n- LRAM utilizes an xLSTM core with linear time inference complexity and excels in sequence length extrapolation, making it suitable for real-time applications like robotics.\n- The model is trained on a large-scale multi-domain dataset of 894M transitions from 432 tasks across 6 domains.\n- Experiments on various model sizes demonstrate that xLSTM-based LRAMs achieve performance comparable to or exceeding Transformer-based models while offering significantly faster inference speeds.\n- Further analyses demonstrate that modern recurrent backbones are better suited for building LAMs than Transformers.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/ml-jku/LRAM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-31"
+    },
+    {
+        "title": "Stealing User Prompts from Mixture of Experts",
+        "authors": "Nicholas Carlini, Jamie Hayes, Ilia Shumailov, Itay Yona",
+        "link": "https://arxiv.org/abs/2410.22884",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel attack, called MoE Tiebreak Leakage, which exploits a vulnerability in Mixture-of-Experts (MoE) models to extract user prompts.\n- The attack leverages the Expert-Choice-Routing (ECR) strategy, manipulating the order of inputs within a batch to cause predictable token dropping, thereby revealing information about a victim's prompt.\n- The authors successfully demonstrate the attack on a two-layer Mixtral model, extracting almost all secret messages (996/1000) across varying lengths (1-11 tokens), and achieving 99.9% success in recovering individual tokens (4833/4838).\n- The attack's complexity is O(VM\u00b2) for the number of queries to the target model and O(2DNVM\u00b2) for queries to a local model copy, where V is vocabulary size, M is prompt length, D is the number of layers, and N is the number of experts.\n- The paper discusses potential mitigations, including preserving in-batch data independence and introducing stochasticity into the model's routing or capacity parameters.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-10-31"
+    },
+    {
+        "title": "AutoMIR: Effective Zero-Shot Medical Information Retrieval without Relevance Labels",
+        "authors": "Xiao Zhou, Xiangxu Zhang, Lei Li, zl101",
+        "link": "https://arxiv.org/abs/2410.20050",
+        "github_repo": "https://github.com/CMIRB-benchmark/CMIRB",
+        "summary": "- This paper introduces SL-HyDE (Self-Learning Hypothetical Document Embeddings), a novel approach for zero-shot medical information retrieval that eliminates the need for labeled data.\n- SL-HyDE leverages LLMs to generate hypothetical documents from user queries, and utilizes a retriever to find relevant documents based on these hypothetical documents.\n- It employs a self-learning mechanism to enhance both LLM document generation and retriever performance without relying on labeled medical data.\n- A new benchmark for Chinese Medical Information Retrieval (CMIRB) is introduced, consisting of five tasks and ten datasets derived from real-world scenarios.\n- Experimental results on CMIRB show SL-HyDE surpasses HYDE by 4.9% in NDCG@10 and demonstrates performance gains across various LLM and retriever combinations.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/CMIRB-benchmark/CMIRB"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-31"
+    },
+    {
+        "title": "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters",
+        "authors": "Jan Eric Lenssen, Yongqin Xian, Muhammad Ferjad Naeem, Yue Fan, Haiyang Wang",
+        "link": "https://arxiv.org/abs/2410.23168",
+        "github_repo": "https://github.com/Haiyang-W/TokenFormer",
+        "summary": "- TokenFormer, a novel fully attention-driven neural network architecture, is introduced, which treats model parameters as tokens, enhancing flexibility in token-parameter computations.\n- By utilizing a cross-attention mechanism between input tokens and learnable parameter tokens, TokenFormer allows for scaling model parameters without altering input or output dimensions, enabling progressive scaling by adding new key-value parameter pairs.\n- This approach facilitates efficient scaling by reusing pre-trained models, thereby significantly reducing training costs compared to training large transformer models from scratch.\n- Experimental results demonstrate that TokenFormer achieves comparable perplexity to Transformers trained from scratch on language modeling tasks while substantially reducing the training budget, and maintains similar performance in visual modeling and zero-shot classification tasks.\n- TokenFormer offers controllable computational costs for long-context modeling, preserves learned distributions during scaling, and shows potential for integration into Mixture-of-Experts frameworks and parameter-efficient tuning strategies.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision",
+            "Image Classification",
+            "Text Generation",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/Haiyang-W/TokenFormer"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-10-31"
     }
 ]

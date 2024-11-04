@@ -5998,5 +5998,186 @@
         ],
         "huggingface_urls": [],
         "date": "2024-11-01"
+    },
+    {
+        "title": "OS-ATLAS: A Foundation Action Model for Generalist GUI Agents",
+        "authors": "Fangzhi Xu, Zhenyu Wu, Zhiyong Wu, heroding77, QiushiSun",
+        "link": "https://arxiv.org/abs/2410.23218",
+        "github_repo": null,
+        "summary": "- This paper introduces OS-Atlas, a large action model designed for generalist GUI agents, focusing on GUI grounding and out-of-distribution (OOD) generalization.\n- It leverages a novel multi-platform data synthesis toolkit, enabling the creation of a 13 million GUI element dataset spanning Windows, macOS, Linux, Android, and web interfaces.\n- OS-Atlas employs a two-stage training process: GUI grounding pre-training on the large dataset and action fine-tuning on existing agent datasets with a unified action space to mitigate conflicts.\n- Evaluations across six benchmarks and three platforms (mobile, desktop, web) show significant performance improvements over state-of-the-art models.\n- OS-Atlas-Base, the pre-trained model, serves as an open-source alternative to commercial VLMs for building GUI agents, achieving comparable performance in some settings.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "Constant Acceleration Flow",
+        "authors": "Youngjoon Hong, Taehoon Lee, Sihyeon Kim, Sojin Lee, Dogyun Park",
+        "link": "https://arxiv.org/abs/2411.00322",
+        "github_repo": "https://github.com/mlvlab/CAF",
+        "summary": "- Introduces Constant Acceleration Flow (CAF), a novel ODE-based generative model that integrates acceleration as a learnable variable for enhanced precision in image generation.\n- Proposes Initial Velocity Conditioning (IVC) and a reflow process for initial velocity to address the flow crossing problem, improving trajectory estimation.\n- Achieves state-of-the-art Fr\u00e9chet Inception Distance (FID) scores of 1.39 and 1.69 on CIFAR-10 and ImageNet 64x64, respectively, outperforming strong baselines in conditional image generation.\n- Demonstrates superior performance in one-step and few-step generation, coupling preservation, flow straightness, and inversion tasks.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/mlvlab/CAF"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "Randomized Autoregressive Visual Generation",
+        "authors": "Liang-Chieh Chen, Xiaohui Shen, Xueqing Deng, turkeyju, yucornetto",
+        "link": "https://arxiv.org/abs/2411.00776",
+        "github_repo": "https://github.com/bytedance/1d-tokenizer",
+        "summary": "- This paper introduces Randomized AutoRegressive modeling (RAR), a new training paradigm for autoregressive visual generation that enhances bidirectional context learning.\n- RAR employs a Vision Transformer architecture and operates by randomly permuting the input image token sequence during training with a probability *r* that linearly anneals from 1 to 0, encouraging bidirectional context learning while converging to a standard raster scan order by the end of training.\n-  This approach maximizes the expected likelihood over all factorization orders and thus improves the model's ability to capture bidirectional contexts without modifying the autoregressive framework, ensuring compatibility with language models.\n- On the ImageNet-256 benchmark, RAR achieves a state-of-the-art FID score of 1.48, outperforming not only prior autoregressive models but also leading diffusion-based and masked transformer-based methods.\n- RAR also shows strong scaling behavior and high sampling speed thanks to its compatibility with language model optimization techniques such as KV-caching.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/1d-tokenizer"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "Adapting While Learning: Grounding LLMs for Scientific Problems with Intelligent Tool Usage Adaptation",
+        "authors": "Leon Bergen, Duncan Watson-Parris, Yadi Cao, yuqirose, Bohan22",
+        "link": "https://arxiv.org/abs/2411.00412",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel two-stage training method called Adapting While Learning (AWL) to enhance Large Language Models (LLMs) for solving scientific problems by incorporating tool usage and direct reasoning.\n- AWL consists of World Knowledge Distillation (WKD) which fine-tunes LLMs to internalize domain knowledge from solutions generated using tools and Tool Usage Adaptation (TUA) which trains LLMs to choose between direct answering and tool usage based on problem complexity.\n- Evaluation across six scientific benchmarks demonstrate average improvements of 28.18% in answer accuracy and 13.89% in tool usage precision compared to baselines and state-of-the-art models such as GPT-4 and Claude-3.5.\n- The model surpasses existing approaches on custom datasets that include complex and specialized scientific questions not commonly seen during pre-training.\n- It also showcases improved robustness in noisy data scenarios and adaptability to open-ended questions through integration with preference learning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "Personalization of Large Language Models: A Survey",
+        "authors": "Yijia Shao, Branislav Kveton, Ryan A. Rossi, Zhehao Zhang, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2411.00027",
+        "github_repo": null,
+        "summary": "- This survey paper provides a comprehensive overview of personalized Large Language Models (LLMs), unifying research on personalized text generation and downstream task personalization.\n- It introduces a taxonomy for personalized LLM usage, formalizing foundations, and analyzing personalization granularity (user-level, persona-level, global preference).\n- The paper surveys techniques for personalization, including retrieval-augmented generation, prompting, representation learning, and reinforcement learning from human feedback (RLHF).\n- It also covers evaluation metrics and datasets for personalized LLMs, along with various applications like AI assistants, recommendation systems, and search engines.\n- Finally, it discusses open problems such as benchmarks, cold-start issues, bias, privacy, and multimodality in personalized LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models",
+        "authors": "Sergio Martin, Clara P\u00e9rez-Molina, sascha-kirch, jolalde5",
+        "link": "https://arxiv.org/abs/2411.00233",
+        "github_repo": null,
+        "summary": "- SambaMixer, a novel structured state space model (SSM) based on the MambaMixer architecture, is proposed for predicting the state of health (SOH) of Li-ion batteries. \n- It is designed to handle multivariate time signals and long-range temporal dependencies and leverages an anchor-based resampling method to ensure consistent sample lengths and augment data.\n- Evaluation on NASA's Li-ion battery discharge dataset demonstrates superior performance compared to state-of-the-art models on metrics such as MAE, RMSE, and MAPE for predicting SOH and AEOLE for EOL prediction.\n- A novel sample time-based positional encoding scheme is introduced to manage sample jitter, varying signal lengths, and recuperation effects in Li-ion batteries.\n- The model effectively predicts the dynamic behavior of SOH curves and accurately identifies EOL indicators.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/sascha-kirch/samba-mixer"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "In-Context LoRA for Diffusion Transformers",
+        "authors": "Huanzhang Dou, Yupeng Shi, Zhi-Fan Wu, Wei Wang, lhhuang",
+        "link": "https://arxiv.org/abs/2410.23775",
+        "github_repo": "https://github.com/ali-vilab/In-Context-LoRA",
+        "summary": "- This paper introduces In-Context LoRA (IC-LORA), a novel approach for adapting text-to-image diffusion transformers (DiTs) to diverse generative tasks.\n- IC-LORA leverages the inherent in-context generation capabilities of pre-trained DiTs by concatenating images and prompts, followed by minimal LoRA tuning on a small dataset of 20-100 image sets.\n- This method simplifies the architecture compared to previous work like Group Diffusion Transformers (GDT) and achieves high-fidelity image set generation while preserving in-context abilities and model knowledge.\n- The proposed framework is task-agnostic in its architecture and pipeline, requiring only task-specific tuning data, enabling adaptation to a wide range of applications.\n- Image-conditional generation is also supported through SDEdit, allowing inpainting of masked images within the concatenated image, though maintaining consistency between input and generated images remains a challenge for future exploration.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ali-vilab/In-Context-LoRA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "M2rc-Eval: Massively Multilingual Repository-level Code Completion Evaluation",
+        "authors": "Shukai Liu, Jian Yang, Congnan Liu, Ken Deng, Jiaheng Liu",
+        "link": "https://arxiv.org/abs/2410.21157",
+        "github_repo": null,
+        "summary": "- This paper introduces M2RC-EVAL, a massively multilingual repository-level code completion benchmark encompassing 18 programming languages.\n- It offers two types of fine-grained annotations: bucket-level (based on abstract syntax tree depth) and semantic-level (categorizing completion scenarios).\n- The authors also present M2RC-INSTRUCT, a multilingual instruction dataset designed to improve repository-level code completion abilities in LLMs.\n- Experimental results show that incorporating cross-file context and fine-tuning on M2RC-INSTRUCT significantly enhances performance across various languages.\n- Code Llama with fine-tuning outperforms non-finetuned StarCoder after fine-tuning. ",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/M2RC-Eval-Team/M2RC-Eval"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "HelloMeme: Integrating Spatial Knitting Attentions to Embed High-Level and Fidelity-Rich Conditions in Diffusion Models",
+        "authors": "Chenhui Xue, Chaojie Yang, Tian Li, Nianhong Jiao, Shengkai Zhang",
+        "link": "https://arxiv.org/abs/2410.22901",
+        "github_repo": null,
+        "summary": "- HelloMeme is a novel method for inserting adapters into text-to-image foundation models, enabling complex downstream tasks like meme video generation without sacrificing the base model's generalization ability.\n- The method focuses on optimizing the attention mechanism related to 2D feature maps, using Spatial Knitting Attentions (SK Attentions) to fuse high-level features (head pose, facial expressions) and fidelity-rich features from a reference image.\n-  It leverages a three-module architecture: HMReferenceNet extracts fidelity-rich features, HMControlNet extracts high-level features, and HMDenoisingNet combines these features to generate the output image or video frames.\n-  Evaluations on tasks like self-reenactment and cross-reenactment using metrics like FID, FVD, PSNR, SSIM, LPIPS, AED, and APD demonstrate that HelloMeme outperforms existing open-source state-of-the-art methods.\n- The method maintains compatibility with SD1.5 derivative models and offers value to the open-source community by releasing the associated code.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://songkey.github.io/hellomeme",
+            "https://github.com/HelloVision/ExperimentsOnSKAttentions"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "WikiNER-fr-gold: A Gold-Standard NER Corpus",
+        "authors": "Pierre-Fran\u00e7ois Marteau, Nicolas B\u00e9chet, Danrun Cao",
+        "link": "https://arxiv.org/abs/2411.00030",
+        "github_repo": null,
+        "summary": "- This paper introduces WikiNER-fr-gold, a manually revised gold-standard version of the French portion of the WikiNER corpus, aimed at improving the quality of Named Entity Recognition (NER) resources.\n- The corpus consists of 20% of the original WikiNER-fr (26,818 sentences, ~700k tokens), randomly sampled and corrected for inconsistencies in annotation stemming from the semi-supervised nature of the original WikiNER.\n- The correction process focused on standardizing entity boundaries and categories, resolving ambiguous hyperlinks, and addressing inconsistencies in the application of annotation guidelines.\n- The authors analyzed the errors in the silver-standard WikiNER-fr, categorized them, and described the correction strategies employed.\n- The paper also discusses future work, including a broader assessment of entity categorization and potential automation of the correction process for the remaining WikiNER data.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "Survey of User Interface Design and Interaction Techniques in Generative AI Applications",
+        "authors": "Reuben Luera, puneetm, zhangry868, subright, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2410.22370",
+        "github_repo": null,
+        "summary": "- This survey paper presents a comprehensive overview of user interface (UI) design and interaction techniques in generative AI applications, focusing on user-guided interactions where users deliberately initiate actions.\n- It introduces four taxonomies: user-guided interaction techniques (prompting, selection, system manipulation, object manipulation), UI layouts (conversational, canvas, contextual, modular, simulated), human-AI engagement levels (passive, deterministic, assistive, collaborative), and generative AI application areas (content creation, data analysis, research, automation, assistance).\n- The goal is to provide a design compendium for generative AI designers and developers, lowering the entry barrier and offering a foundation for research in human-AI interaction.\n- The survey analyzes various generative AI systems and tools, categorizing their UI/UX patterns and interaction modalities, emphasizing how these choices enhance user experience and streamline generative processes.\n- The paper concludes by discussing open problems and challenges in generative AI, highlighting accessibility for users with disabilities and limited technical literacy, the future of UI design for evolving AI technologies, and ethical considerations regarding bias mitigation and misuse prevention.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
+    },
+    {
+        "title": "GRS-QA -- Graph Reasoning-Structured Question Answering Dataset",
+        "authors": "Jincen Shuai, Devasha Trivedi, Anish Pahilajani, Franck-Dernoncourt, namyongp",
+        "link": "https://arxiv.org/abs/2411.00369",
+        "github_repo": null,
+        "summary": "- This paper introduces GRS-QA, a new multi-hop question answering dataset that includes explicit reasoning structures in the form of graphs for enhanced reasoning analysis of LLMs.\n- Unlike existing datasets that lack clear reasoning pathways, GRS-QA captures intricate structures by constructing reasoning graphs, where nodes denote textual contexts and edges signify logical flow.\n- GRS-QA offers benefits such as providing transparent reasoning steps for answer derivation, allowing fine-grained evaluation of LLM reasoning capabilities across diverse structures.\n- It also includes negative reasoning graphs, created by perturbing the structure of positive graphs, to isolate the impact of reasoning structures compared to content on question answering performance.\n- The authors benchmark state-of-the-art models on GRS-QA from retrieval, direct question answering, and retrieval-augmented generation perspectives, revealing that LLM performance degrades with increasing reasoning complexity and highlighting the importance of GRS-QA in pushing the limits of current QA models.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-04"
     }
 ]

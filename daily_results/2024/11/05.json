@@ -1,0 +1,218 @@
+[
+    {
+        "title": "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+        "authors": "Hao Yu, Siyi Cheng, Xueqiao Sun, Xiao Liu, Yifan Xu",
+        "link": "https://arxiv.org/abs/2410.24024",
+        "github_repo": "https://github.com/THUDM/Android-Lab",
+        "summary": "- ANDROIDLAB, a systematic Android agent framework, is introduced for training and evaluating both open-source and closed-source large language models (LLMs) and large multimodal models (LMMs).\n- It offers an operation environment with different modalities, an action space, and a reproducible benchmark featuring 138 tasks across nine apps on Android virtual devices.\n- An Android Instruction dataset with 10.5k traces and 94.3k steps was created, facilitating fine-tuning of six open-source LLMs and LMMs. \n- Fine-tuning resulted in improved success rates, increasing from 4.59% to 21.50% for LLMs and from 1.93% to 13.28% for LMMs. \n- Open-source models demonstrated significant performance gains after fine-tuning, approaching or even surpassing some closed-source models in certain aspects.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/Android-Lab"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning",
+        "authors": "Hanyu Lai, Iat Long Iong, Xiao Liu, Zehan Qi, tianjiezhang",
+        "link": "https://arxiv.org/abs/2411.02337",
+        "github_repo": null,
+        "summary": "- WEBRL, a self-evolving online curriculum reinforcement learning framework, is introduced for training high-performance web agents using open LLMs.\n- WEBRL addresses challenges such as scarcity of training tasks, sparse feedback signals, and policy distribution drift in online learning by incorporating a self-evolving curriculum for task generation, a robust outcome-supervised reward model (ORM), and adaptive reinforcement learning strategies.\n- Applying WEBRL to open Llama-3.1 and GLM-4 models resulted in significant success rate improvements on WebArena-Lite, outperforming GPT-4-Turbo, GPT-40, and previous state-of-the-art open LLM-based web agents.\n- Llama-3.1-8B's success rate increased from 4.8% to 42.4%, while GLM-4-9B improved from 6.1% to 43%.\n- WEBRL effectively bridges the gap between open and proprietary LLM-based web agents by enabling more accessible and powerful autonomous web interaction systems.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/WebRL"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Training-free Regional Prompting for Diffusion Transformers",
+        "authors": "Wenzhao Zheng, Jianjin Xu, wanghaofan, wangyida, antonio-c",
+        "link": "https://arxiv.org/abs/2411.02395",
+        "github_repo": "https://github.com/antonioo-c/Regional-Prompting-FLUX",
+        "summary": "- This paper introduces a training-free regional prompting method for Diffusion Transformers (DiT), specifically FLUX.1, enhancing compositional text-to-image generation.\n- The method involves manipulating attention maps using regional prompt-mask pairs, enabling fine-grained control over object placement and attributes within generated images.\n- By modifying cross-attention and self-attention mechanisms within the DiT architecture, the approach ensures that each region attends to its corresponding textual description while maintaining overall image coherence and preventing unwanted interactions between unrelated regions.\n- Experiments demonstrate the method's ability to handle complex, multi-regional prompts with improved semantic alignment and precise regional differentiation, shown qualitatively with visual results and quantitatively with ablation studies, memory and runtime analysis.\n- This training-free nature eliminates the need for model retraining or additional data, offering efficiency and flexibility in image generation workflows.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/antonioo-c/Regional-Prompting-FLUX"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "DynaMath: A Dynamic Visual Benchmark for Evaluating Mathematical Reasoning Robustness of Vision Language Models",
+        "authors": "Bin Hu, Junyu Zhang, Xingang Guo, Chengke Zou, Ray2333",
+        "link": "https://arxiv.org/abs/2411.00836",
+        "github_repo": null,
+        "summary": "- DYNAMATH, a dynamic visual benchmark, is introduced to evaluate the robustness of Vision Language Models (VLMs) in mathematical reasoning.\n- The benchmark consists of 501 seed questions represented as Python programs, enabling automatic generation of diverse concrete questions with variations in visual and textual content.\n- An evaluation of 14 state-of-the-art VLMs on 5,010 generated questions revealed a significant gap between average-case and worst-case accuracy, indicating current VLMs' lack of robustness in handling question variations.\n- The analysis also found high repetition consistency in many models, suggesting that incorrect answers on certain variants are due to consistent errors rather than inherent randomness.\n- DYNAMATH provides insights to guide development of more robust VLMs and the paper suggests using adversarial training or reinforcement learning from human feedback with fine-grained process rewards as potential improvement strategies.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Hunyuan-Large: An Open-Source MoE Model with 52 Billion Activated Parameters by Tencent",
+        "authors": "Jiaqi Zhu, Xingwu Sun, Ruobing-Xie, Mimosa77, YanfengChen",
+        "link": "https://arxiv.org/abs/2411.02265",
+        "github_repo": "https://github.com/Tencent/Hunyuan-Large",
+        "summary": "- Tencent introduces Hunyuan-Large, a 389 billion parameter (52 billion activated) open-source Mixture-of-Experts (MoE) model based on the Transformer architecture and capable of handling up to 256K tokens.\n- The model outperforms LLama3.1-70B on various benchmarks, including language understanding, generation, logical reasoning, mathematics, coding, and long-context tasks, and exhibits performance comparable to the much larger LLama3.1-405B model.\n- Key innovations include using large-scale synthetic data, a mixed expert routing strategy combining shared and specialized experts with recycle routing for discarded tokens, KV cache compression by grouped-query attention and cross-layer attention, and an expert-specific learning rate scaling strategy.\n- The model is pre-trained on 7 trillion tokens, including 1.5 trillion synthetic tokens, followed by post-training stages involving supervised fine-tuning and reinforcement learning from human feedback using direct preference optimization.\n- Both pre-trained and post-trained versions of Hunyuan-Large are released to the open-source community.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent/Tencent-Hunyuan-Large"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/tencent/Tencent-Hunyuan-Large"
+        ],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "How Far is Video Generation from World Model: A Physical Law Perspective",
+        "authors": "Yang Zhao, Zhijie Lin, Rui Lu, Bingyi Kang, Yang130",
+        "link": "https://arxiv.org/abs/2411.02385",
+        "github_repo": null,
+        "summary": "- This paper investigates the ability of video generation models, specifically diffusion-based models like Variational Auto-Encoder (VAE) and Diffusion Transformer (DiT), to learn fundamental physical laws from visual data without human priors.\n- The study uses a 2D physics engine to generate synthetic datasets of videos governed by classical mechanics laws, enabling quantitative evaluation of model performance across in-distribution, out-of-distribution (OOD), and combinatorial generalization scenarios.\n- Scaling experiments show near-perfect in-distribution generalization but a failure to improve in OOD scenarios, suggesting scaling alone is insufficient for learning physical laws.\n- The analysis suggests the models generalize through case-based reasoning, prioritizing color > size > velocity > shape when matching to training data rather than abstracting underlying rules.\n-  The limitations of purely visual representations for complete physics modeling are also highlighted, with examples demonstrating how visual ambiguity leads to inaccurate predictions.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Survey of Cultural Awareness in Language Models: Text and Beyond",
+        "authors": "Junho Myung, Arnav Arora, Junyeong Park, jinjh0123, sidicity",
+        "link": "https://arxiv.org/abs/2411.00860",
+        "github_repo": null,
+        "summary": "- This paper surveys efforts to incorporate cultural awareness into text-based and multimodal large language models (LLMs).\n- It defines cultural awareness in LLMs based on definitions from psychology and anthropology and examines methodologies for creating cross-cultural datasets and benchmarks, strategies for cultural inclusion in downstream tasks, and benchmarks for evaluating cultural awareness in LLMs.\n- The survey also discusses ethical implications of cultural alignment, the role of Human-Computer Interaction, and cultural alignment's role in social science research.\n- The paper identifies research gaps in current literature and provides suggestions for future research in areas such as cross-cultural LLMs and automatic context detection.\n- It organizes and compares efforts in incorporating culture into NLP and spans several modalities like image, video, audio and text.",
+        "classification": [
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "LIBMoE: A Library for comprehensive benchmarking Mixture of Experts in Large Language Models",
+        "authors": "Quang Pham, Van Nguyen, Luong Tran, doantienthongbku, DavidNguyen",
+        "link": "https://arxiv.org/abs/2411.00918",
+        "github_repo": null,
+        "summary": "- This paper introduces LibMoE, a comprehensive and modular framework designed to streamline the research, training, and evaluation of Mixture of Experts (MoE) algorithms in Large Language Models (LLMs).\n- LibMoE facilitates easier access to MoE research for a wider range of researchers by standardizing the training and evaluation process, and by reducing the computational cost via sparse upcycling from pre-trained LLMs.\n- The authors benchmark five state-of-the-art MoE algorithms with three model configurations across eleven datasets under a zero-shot setting.\n- Results show that all MoE algorithms achieve roughly similar performance when averaged across a variety of tasks.\n- Further analysis suggests the potential benefits of early stopping and the importance of balanced expert utilization in MoE models.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Sparsing Law: Towards Large Language Models with Greater Activation Sparsity",
+        "authors": "Chaojun Xiao, Yingfa Chen, Chenyang Song, Yuqi Luo, SillyXu",
+        "link": "https://arxiv.org/abs/2411.02335",
+        "github_repo": null,
+        "summary": "- This paper investigates activation sparsity in Large Language Models (LLMs), proposing a new metric called PPL-p% sparsity.\n- PPL-p% sparsity is performance-aware, versatile across activation functions, and precisely identifies weakly contributing neurons, improving upon existing metrics like CETT.\n- Through extensive experiments, the research reveals scaling laws relating activation sparsity to training data, activation function, width-depth ratio, and parameter scale.\n- ReLU activation is found to be superior to SiLU due to greater sparsity and comparable performance, with deeper models exhibiting higher sparsity below a certain bottleneck.\n- Notably, the limit of activation sparsity shows weak correlation with parameter scale, suggesting that activation patterns in LLMs are scale-insensitive.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/thunlp/SparsingLaw"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "GenXD: Generating Any 3D and 4D Scenes",
+        "authors": "Linjie Li, Zhiwen Yan, Kevin Lin, Chung-Ching Lin, Yuyang Zhao",
+        "link": "https://arxiv.org/abs/2411.02319",
+        "github_repo": null,
+        "summary": "- GenXD, a unified model, generates high-quality 3D and 4D scenes from any number of input images, leveraging multiview-temporal modules to disentangle camera and object motion and masked latent conditioning to support flexible conditioning views.\n- A novel data curation pipeline extracts camera poses and object motion strength from videos, leading to the creation of CamVid-30K, a large-scale 4D scene dataset.\n- GenXD integrates the latent diffusion model with multiview-temporal layers, including ResBlocks and transformers, to disentangle and fuse spatial and temporal information using an \u03b1-fusing strategy.\n- GenXD utilizes masked latent conditioning for image inputs, accommodating various input views without network modification and supporting both single and multi-view image/video generation within a single model.\n- Evaluations across real-world and synthetic datasets demonstrate GenXD's superior performance in single/multi-view 3D and 4D generation compared to existing methods, as evidenced by improved FID, FVD, PSNR, SSIM, and LPIPS scores.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
+        ],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "DynaSaur: Large Language Agents Beyond Predefined Actions",
+        "authors": "Ryan A. Rossi, Seunghyun Yoon, Viet Dac Lai, Dang Nguyen, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2411.01747",
+        "github_repo": "https://github.com/adobe-research/dynasaur",
+        "summary": "- DynaSaur is a novel LLM agent framework that dynamically creates and composes actions, represented as Python functions, enabling the agent to operate beyond a predefined action set.\n- At each step, the agent generates Python code to perform an action, accumulating these generated actions for reuse in future steps, enhancing flexibility and efficiency.\n- This framework outperforms existing methods on the GAIA benchmark, demonstrating its effectiveness in complex, long-horizon tasks.\n- Notably, DynaSaur allows the agent to recover from scenarios where the predefined action set is insufficient or existing actions fail due to unforeseen circumstances.\n- The dynamic action creation and accumulation capabilities enable the LLM agent to interact with various tools and systems, enhancing its ability to solve a diverse range of tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/adobe-research/dynasaur"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Adaptive Caching for Faster Video Generation with Diffusion Transformers",
+        "authors": "Menglin Jia, Ding Liu, Sen He, Haozhe Liu, kumarak",
+        "link": "https://arxiv.org/abs/2411.02397",
+        "github_repo": null,
+        "summary": " - This paper introduces Adaptive Caching (AdaCache), a training-free method to accelerate video generation using Diffusion Transformers (DiTs).\n - AdaCache caches computations and dynamically allocates resources based on video content, which varies in complexity.\n - A Motion Regularization (MoReg) scheme further enhances AdaCache's efficiency by prioritizing compute allocation based on motion content.\n - Experiments demonstrate significant inference speedups (e.g., up to 4.7\u00d7 on Open-Sora) across multiple video DiT baselines without sacrificing generation quality.\n - AdaCache is a plug-and-play component, making it easily adaptable to existing DiTs.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://adacache-dit.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Decoding Dark Matter: Specialized Sparse Autoencoders for Interpreting Rare Concepts in Foundation Models",
+        "authors": "Virginia Smith, Mona Diab, Aashiq Muhamed",
+        "link": "https://arxiv.org/abs/2411.00743",
+        "github_repo": null,
+        "summary": "- Introduces Specialized Sparse Autoencoders (SSAEs), which are designed to capture rare or infrequent features (tail concepts) within specific domains of foundation models.\n- Employs dense retrieval and TracIn reranking as effective methods for selecting training data relevant to the target domain, enabling targeted feature extraction without needing to scale to billions of features.\n- Utilizes Tilted Empirical Risk Minimization (TERM) as a training objective, demonstrating its effectiveness in enhancing tail concept representation in SSAEs compared to standard Empirical Risk Minimization (ERM).\n- Demonstrates through experiments on the Bias in Bios dataset that SSAEs improve interpretability by capturing rare features and significantly increase worst-group classification accuracy (12.5%) when used to remove spurious gender information.\n- Evaluation on downstream perplexity and Lo sparsity metrics shows SSAEs effectively capture domain-specific tail concepts, outperforming standard SAEs trained on general-purpose data.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    },
+    {
+        "title": "Swan and ArabicMTEB: Dialect-Aware, Arabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks",
+        "authors": "Muhammad Abdul-Mageed, Fakhraddin Alwajih, Abdellah El Mekki, El Moatez Billah Nagoudi, Gagan Bhatia",
+        "link": "https://arxiv.org/abs/2411.01192",
+        "github_repo": null,
+        "summary": "- This paper introduces Swan, a family of dialect-aware, Arabic-centric, cross-lingual, and cross-cultural embedding models.\n- Swan includes Swan-Small, based on ARBERTv2, and Swan-Large, based on the pretrained Arabic large language model ArMistral.\n- A new comprehensive benchmark suite, ArabicMTEB, is proposed to evaluate the models, covering eight tasks and 94 datasets, including cross-lingual, multi-dialectal, multi-domain, and multi-cultural Arabic text embedding performance.\n- Swan-Large achieves state-of-the-art results, outperforming Multilingual-E5-large in most Arabic tasks while maintaining monetary efficiency.\n- Swan-Small also shows strong performance, consistently surpassing Multilingual-E5-base on most Arabic tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Sentence Similarity",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-05"
+    }
+]

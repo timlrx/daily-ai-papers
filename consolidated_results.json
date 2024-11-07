@@ -6541,5 +6541,42 @@
         ],
         "huggingface_urls": [],
         "date": "2024-11-06"
+    },
+    {
+        "title": "Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level",
+        "authors": "Albert Thomas, Giuseppe Paolo, James Doran, Alexandre Maraval, Antoine Grosnit",
+        "link": "https://arxiv.org/abs/2411.03562",
+        "github_repo": null,
+        "summary": "- Introduced Agent K v1.0, an end-to-end autonomous data science agent capable of automating the entire data science lifecycle, including task setup, solution generation, and submission to Kaggle competitions.\n- Employs a structured reasoning framework with a memory module for experience-based learning, enabling adaptation without retraining or backpropagation.\n- Achieved a 92.5% success rate in automating tasks across multiple modalities (tabular, computer vision, NLP, multimodal).\n- Ranked in the top 38% when compared against almost 6000 human competitors on Kaggle and reached a performance equivalent to Kaggle Grandmaster, winning 6 gold, 3 silver, and 7 bronze medals across diverse challenges.\n- Proposed a novel evaluation methodology and competitive benchmark using real-world Kaggle competitions to rigorously assess agent capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Tabular",
+            "Computer Vision",
+            "Multimodal",
+            "Image Classification",
+            "Tabular Classification",
+            "Tabular Regression",
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-07"
+    },
+    {
+        "title": "Both Text and Images Leaked! A Systematic Analysis of Multimodal LLM Data Contamination",
+        "authors": "Benyou Wang, Lichao Sun, Shunian Chen, Sicheng Lai, Dingjie Song",
+        "link": "https://arxiv.org/abs/2411.03823",
+        "github_repo": null,
+        "summary": "- This paper introduces MM-Detect, a framework for detecting data contamination in Multimodal Large Language Models (MLLMs).\n- MM-Detect employs two methods: Option Order Sensitivity Test for multiple-choice questions and Slot Guessing for Perturbation Captions for caption-based questions. \n- Experiments on eleven MLLMs and five VQA datasets reveal varying degrees of contamination across models, impacting performance. \n- The study also finds that data leakage can originate from both the pre-training phase of the base LLMs and the multimodal fine-tuning phase. \n-  The results indicate that MM-Detect can identify contamination and demonstrate that training set leakage leads to performance inflation, creating unfair comparisons.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/MLLM-Data-Contamination/MM-Detect"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-07"
     }
 ]

@@ -6578,5 +6578,226 @@
         ],
         "huggingface_urls": [],
         "date": "2024-11-07"
+    },
+    {
+        "title": "OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models",
+        "authors": "Jiaran Hao, Jason Klein Liu, Tianhao Cheng, Siming Huang, Zenithwang",
+        "link": "https://arxiv.org/abs/2411.04905",
+        "github_repo": null,
+        "summary": "- OpenCoder, a top-tier code large language model (LLM) designed for code generation, reasoning, and agent systems, is introduced, boasting performance comparable to leading models while offering full transparency through the release of its training data, processing pipeline, and protocols.\n- OpenCoder's key ingredients for success include code-optimized heuristic rules for data cleaning and deduplication, incorporation of code-related text corpora, and utilization of high-quality synthetic data in annealing and fine-tuning.\n- The model architecture for OpenCoder is available in 1.5B and 8B parameter sizes, leveraging SwiGLU activation, RoPE positional embedding, and a vocabulary size of 96,640, with variations in layers, attention heads, and context window size between the two.\n- OpenCoder's training involves a two-stage instruction-tuning process: the first focuses on theoretical computer science question-answer pairs, while the second refines practical coding skills using high-quality code from GitHub.\n- Evaluation on benchmarks like HumanEval, MBPP, BigCodeBench, LiveCodeBench, and MultiPL-E reveals OpenCoder surpasses all previous fully open models and other open-access models at the 6B+ parameter scale.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/yuxiang630/hqcode"
+        ],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "ReCapture: Generative Video Camera Controls for User-Provided Videos using Masked Video Fine-Tuning",
+        "authors": "David E. Jacobs, Nikhil Karnad, Shiran Zada, Roni Paiss, David Junhao Zhang",
+        "link": "https://arxiv.org/abs/2411.05003",
+        "github_repo": null,
+        "summary": "- ReCapture, a novel method for generating videos with new camera trajectories from single user-provided videos, preserving original content and motion.\n- Employs a two-stage process: generating a noisy anchor video with the desired trajectory using either point cloud rendering or multiview diffusion, followed by refining it using masked video fine-tuning.\n- Masked video fine-tuning trains a temporal motion LoRA and context-aware spatial LoRA on known pixels from the anchor and source videos to enhance temporal consistency and complete missing information.\n- Post-processing with SDEdit further refines the output, reducing blur and artifacts.\n- Outperforms Generative Camera Dolly and other 4D reconstruction methods on Kubric and VBench datasets, demonstrating superior performance in generating high-quality videos with novel camera movements.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "BitNet a4.8: 4-bit Activations for 1-bit LLMs",
+        "authors": "Furu Wei, Shuming Ma, Hongyu Wang",
+        "link": "https://arxiv.org/abs/2411.04965",
+        "github_repo": null,
+        "summary": "- BitNet a4.8 introduces 4-bit activations and a hybrid quantization and sparsification strategy for 1-bit Large Language Models (LLMs), aiming to reduce inference costs while maintaining performance comparable to the 1.58-bit BitNet b1.58 model.\n- The model employs 4-bit activations for inputs to attention and feed-forward network layers, and sparsifies intermediate states with 8-bit quantization to mitigate quantization errors caused by outlier channels. \n- It also incorporates a two-stage training approach (from 8-bit to 4-bit activations) for efficiency. \n- Experimental results show BitNet a4.8 achieves comparable performance to BitNet b1.58 with equivalent training costs but faster inference due to enabling INT4/FP4 kernels and supporting 3-bit KV cache.\n- Additionally, BitNet a4.8 activates only 55% of the parameters, further enhancing efficiency for large-scale LLM deployment and inference.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion",
+        "authors": "Zilong Chen, Fangfu Liu, Shuo Chen, Wenqiang Sun, yikaiw",
+        "link": "https://arxiv.org/abs/2411.04928",
+        "github_repo": null,
+        "summary": "- DimensionX is a novel framework that generates photorealistic 3D and 4D scenes from a single image using controllable video diffusion.\n- It introduces ST-Director, which decouples spatial and temporal factors in video diffusion by learning dimension-aware LoRAs from dimension-variant datasets, enabling precise manipulation of spatial structure and temporal dynamics.\n- A trajectory-aware mechanism for 3D generation and an identity-preserving denoising strategy for 4D generation are introduced to bridge the gap between generated videos and real-world scenes. \n- Experimental results on various datasets demonstrate DimensionX's superior performance in controllable video generation, as well as 3D and 4D scene generation, compared to existing methods, as shown quantitatively in Table 1 and Table 2, as well as qualitatively in Figure 4 and Figure 5.\n- The project page can be found at https://chenshuo20.github.io/DimensionX/.",
+        "classification": [
+            "Text-to-3D",
+            "Text-to-Video",
+            "Image-to-3D",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "Mixture-of-Transformers: A Sparse and Scalable Architecture for Multi-Modal Foundation Models",
+        "authors": "Ning Dong, Srinivasan Iyer, Liang Luo, Lili Yu, WxWx",
+        "link": "https://arxiv.org/abs/2411.04996",
+        "github_repo": null,
+        "summary": "- This paper introduces Mixture-of-Transformers (MoT), a sparse multimodal transformer architecture designed to reduce the computational costs of pretraining large multimodal models.\n- MoT decouples the non-embedding parameters of the model by modality, including feed-forward networks, attention matrices, and layer normalization, enabling modality-specific processing with global self-attention over the full input sequence.\n- In the Chameleon 7B setting (autoregressive text and image generation), MoT matches the dense baseline performance using only 55.8% of the FLOPs.  With speech added, MoT reaches comparable speech performance using 37.2% of the FLOPs. \n- In the Transfusion setting, which uses multi-objective training with autoregressive text and diffusion-based image generation, a 760M MoT model outperforms a 1.4B dense baseline across key image generation metrics; a 7B MoT matches the image performance of the dense baseline with one-third of the FLOPs. \n- System profiling shows MoT achieves dense baseline image quality in 47.2% of the wall-clock time and text quality in 75.6% of the wall-clock time.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Text Generation",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "TIP-I2V: A Million-Scale Real Text and Image Prompt Dataset for Image-to-Video Generation",
+        "authors": "Yi Yang, Wenhao Wang",
+        "link": "https://arxiv.org/abs/2411.04709",
+        "github_repo": null,
+        "summary": "- This paper introduces TIP-I2V, a large-scale dataset of over 1.7 million text and image prompts specifically designed for image-to-video generation, accompanied by generated videos from five state-of-the-art models.\n- The dataset is sourced from Pika Discord channels and includes additional information like UUIDs, timestamps, embeddings, subjects, and NSFW scores.\n- Analysis reveals that TIP-I2V's prompts, which focus on animating existing image content, differ semantically from those in text-to-video and text-to-image datasets.\n- This dataset enables research into user preferences, improved model evaluation, misinformation detection, and source image tracing.\n- Initial benchmarks using TIP-I2V indicate that even early commercial image-to-video models can outperform open-source alternatives in key areas, emphasizing the importance of real-world user data.",
+        "classification": [
+            "Image-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://tip-i2v.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "Thanos: Enhancing Conversational Agents with Skill-of-Mind-Infused Large Language Model",
+        "authors": "Ho-Jin Choi, Kyeongjin Oh, Junyoung Youn, Dokyong Lee, Young-Jun Lee",
+        "link": "https://arxiv.org/abs/2411.04496",
+        "github_repo": "https://github.com/passing2961/Thanos",
+        "summary": "- This paper introduces THANOS, a family of large language models (LLMs) designed to improve the quality of responses generated by conversational agents by infusing them with \"skill-of-mind.\"\n- Skill-of-mind is a process that involves considering social context, interpreting dialogue situations, planning an appropriate skill strategy, and selecting the most effective conversational skill for a given response. \n- The authors also created MULTIFACETED SKILL-OF-MIND, a dataset of 100k conversations annotated with explanations and conversational skills, to train THANOS. \n- Experimental results indicate that THANOS effectively predicts conversational skills and enhances response quality in various scenarios, promoting prosocial behavior in human evaluations. \n- This improvement is demonstrated by incorporating the generated skill-of-mind as input for LLM-based conversational agents, leading to better response quality.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/passing2961/Thanos"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation",
+        "authors": "Chris Paxton, Soumith Chintala, Mohit Warke, Zhanqiu Guo, Peiqi Liu",
+        "link": "https://arxiv.org/abs/2411.04999",
+        "github_repo": null,
+        "summary": "- DynaMem, a novel dynamic spatio-semantic memory architecture for open-world mobile manipulation, is introduced, enabling robots to adapt to changing environments.\n- DynaMem maintains and updates a voxelized pointcloud of the environment, incorporating object additions and removals, and supports object localization queries using both Vision-Language Model features and Multimodal Large Language Model question answering.\n- In real-world experiments on Stretch SE3 robots across various dynamic scenes, DynaMem achieves a 70% pick-and-drop success rate for non-stationary objects, more than double the performance of static systems.\n- A new dynamic benchmark, DynaBench, is introduced to evaluate dynamic spatio-semantic memory algorithms in 9 changing environments, and ablation studies demonstrate the effectiveness of key design choices.\n- DynaMem handles object permanence, going beyond existing systems that often return incorrect matches when the queried object is absent.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "Needle Threading: Can LLMs Follow Threads through Near-Million-Scale Haystacks?",
+        "authors": "Samuel Albanie, Kai Han, Jonathan Roberts",
+        "link": "https://arxiv.org/abs/2411.05000",
+        "github_repo": null,
+        "summary": "- This paper introduces a new set of retrieval experiments to evaluate the long-context capabilities of Large Language Models (LLMs), called needle threading tasks.\n- These tasks involve following threads of linked information across different parts of the context and retrieving the final value, including single and multiple needle retrieval, conditional needle retrieval, threading and multi-threading, and branched threading variations.\n- The study evaluates 17 LLMs on these tasks using synthetically generated key-value pairs of UUIDs and finds that increased context length negatively impacts performance but concurrent threading is largely unaffected by concurrent queries.\n- It suggests the LLMs' \"effective\" context limit is shorter than stated due to performance degradation at longer context lengths.  \n- The paper introduces a task-specific and model-agnostic effective context limit metric and publicly releases the code and experimental data.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "RetrieveGPT: Merging Prompts and Mathematical Models for Enhanced Code-Mixed Information Retrieval",
+        "authors": "Subhankar Maity, Aniket Deroy",
+        "link": "https://arxiv.org/abs/2411.04752",
+        "github_repo": null,
+        "summary": "- This paper introduces RetrieveGPT, a novel approach for enhancing information retrieval from code-mixed conversations, particularly focusing on Roman transliterated Bengali mixed with English.\n- The approach uses GPT-3.5 Turbo with carefully designed prompts to evaluate document relevance to a given query, considering the sequential nature of conversations.\n- A mathematical model integrates GPT-3.5 Turbo's output, accounting for sequential dependencies among documents to determine relevance.\n- The model treats relevance detection as a problem of finding the optimal relevance chain across a sequence of documents.\n- Experiments on a Facebook dataset with Query Relevance files (QRels) demonstrate the effectiveness of the approach in extracting information from complex, code-mixed conversations.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation",
+        "authors": "Igor Gilitschenski, Yash Kant, Ziyi Wu, Sherwin Bahmani, Koichi Namekata",
+        "link": "https://arxiv.org/abs/2411.04989",
+        "github_repo": null,
+        "summary": "- SG-I2V, a self-guided, zero-shot framework for controllable image-to-video generation, is introduced, leveraging pre-trained video diffusion models without fine-tuning.\n- The method enables control over object motion and camera dynamics by aligning feature maps from self-attention layers and optimizing latent representations based on user-specified bounding box trajectories.\n- A high-frequency preservation post-processing step ensures quality by retaining original high-frequency noise.\n- Experimental results on the VIPSeg dataset demonstrate competitive motion fidelity and visual quality compared to supervised baselines and outperformance over zero-shot baselines.\n- The framework offers versatile control, animating diverse objects and camera motions while retaining object identity, as demonstrated in qualitative examples.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/kmcodel/Projects/SG-I2V"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "SVDQunat: Absorbing Outliers by Low-Rank Components for 4-Bit Diffusion Models",
+        "authors": "Xiuyu Li, Tianle Cai, Zhekai Zhang, Yujun Lin, Muyang Li",
+        "link": "https://arxiv.org/abs/2411.05007",
+        "github_repo": "https://github.com/mit-han-lab/deepcompressor",
+        "summary": "- SVDQuant, a novel post-training 4-bit quantization method for diffusion models, is introduced, which leverages a low-rank branch to absorb outliers in both weights and activations, thereby mitigating performance degradation from aggressive quantization.\n- A co-designed inference engine, Nunchaku, fuses the low-rank and 4-bit computation kernels to minimize overhead from additional memory access, enabling measured speedup even with extra branches and seamless integration with Low-Rank Adaptation (LoRA) without requiring re-quantization.\n- On a 12B parameter DiT model (FLUX.1), SVDQuant achieves 3.6x model size reduction and 3.0x speedup compared to a weight-only 4-bit quantized baseline on NVIDIA RTX 4090 GPUs. \n- It also demonstrates superior visual quality on various architectures like SDXL and PixArt-\u03a3, including both UNet and DiT backbones.\n- The method supports INT4 and FP4 data types and achieves a 10.1x speedup on a 16GB laptop RTX 4090 by eliminating the need for CPU offloading.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/mit-han-lab/deepcompressor",
+            "https://github.com/mit-han-lab/nunchaku"
+        ],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "GazeGen: Gaze-Driven User Interaction for Visual Content Generation",
+        "authors": "Kao-Den Chang, Wei-Te Mark Ting, Sai Qian Zhang, Ziyun Li, He-Yen Hsieh",
+        "link": "https://arxiv.org/abs/2411.04335",
+        "github_repo": null,
+        "summary": "- GazeGen, a novel multimodal system, empowers users to generate and edit visual content (images and videos) by leveraging their gaze.\n- The core component is DFT Gaze, a lightweight gaze estimation model (281K parameters) derived from ConvNeXt V2-A through knowledge distillation and personalized with Adapters for real-time performance on edge devices.\n- GazeGen integrates DFT Gaze with object detection (using FastSAM and YOLOv9) and generative AI (Stable Diffusion) for gaze-driven addition, deletion, repositioning, material transfer of objects, and animation of images into videos.\n- Evaluation on AEA and OpenEDS2020 datasets showcases DFT Gaze's accuracy with low angular gaze error, outperforming existing real-time gaze estimation methods on edge devices.\n- The system simplifies complex visual editing tasks, enhancing user experience and accessibility in AR by allowing intuitive, hands-free content manipulation.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection",
+            "Image-to-Video",
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-08"
+    },
+    {
+        "title": "VideoGLaMM: A Large Multimodal Model for Pixel-Level Visual Grounding in Videos",
+        "authors": "Eric Xing, Jiale Cao, Wenqi Zhu, Hanan Gani, Shehan Munasinghe",
+        "link": "https://arxiv.org/abs/2411.04923",
+        "github_repo": null,
+        "summary": "- VideoGLaMM, a large multimodal model designed for pixel-level visual grounding in videos, is introduced.\n- The model architecture comprises a Large Language Model (LLM), dual vision encoders (for spatial and temporal features), and a spatio-temporal decoder connected via tunable Vision-to-Language (V\u2192L) and Language-to-Vision (L\u2192V) adapters. \n- VideoGLaMM is trained on a new dataset of grounded conversation video question-answer triplets which include segmentation masks generated using a semi-automatic annotation pipeline. \n- The new dataset includes 38k video-QA triplets, 83k objects and 671k masks. \n- Experimental results demonstrate state-of-the-art performance on grounded conversation generation, visual grounding, and referring video segmentation tasks, outperforming existing approaches.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Mask Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://mbzuai-oryx.github.io/VideoGLaMM"
+        ],
+        "date": "2024-11-08"
     }
 ]

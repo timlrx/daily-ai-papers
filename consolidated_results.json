@@ -6799,5 +6799,103 @@
             "https://mbzuai-oryx.github.io/VideoGLaMM"
         ],
         "date": "2024-11-08"
+    },
+    {
+        "title": "Balancing Pipeline Parallelism with Vocabulary Parallelism",
+        "authors": "Min Lin, Penghui Qi, Man Tsung Yeung, ufotalent",
+        "link": "https://arxiv.org/abs/2411.05288",
+        "github_repo": "https://github.com/sail-sg/VocabularyParallelism",
+        "summary": "- This paper introduces Vocabulary Parallelism (VP), a novel technique designed to address computational and memory imbalances stemming from vocabulary layers in pipeline parallelism, a common strategy for training large language models.\n- VP partitions vocabulary layers across all pipeline devices and integrates the computation as passes within the pipeline schedule, similar to the handling of transformer layers.  The approach involves algorithms to reduce communication barriers within these vocabulary passes, thereby minimizing activation memory overhead.\n- When combined with memory-balanced pipeline schedules like V-Half, the proposed method achieves near-perfect balance in both memory and computation.\n- Experimental results show improvements in throughput ranging from 5% to 51% compared to existing methods, particularly under large vocabulary scenarios, with significant reductions in peak memory usage.\n- Notably, the benefits extend to various vocabulary and model sizes, demonstrating the robustness and generalizability of the approach.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/sail-sg/VocabularyParallelism"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-11"
+    },
+    {
+        "title": "StdGEN: Semantic-Decomposed 3D Character Generation from Single Images",
+        "authors": "Kaiwen Xiao, Zhongkai Wu, Wang Zhao, Yanning Zhou, Yuze He",
+        "link": "https://arxiv.org/abs/2411.05738",
+        "github_repo": null,
+        "summary": "- StdGEN is a novel pipeline for generating semantically decomposed 3D characters from single images, utilizing a Semantic-aware Large Reconstruction Model (S-LRM).\n- S-LRM, a transformer-based model, jointly reconstructs geometry, color, and semantics from multi-view images, enabling efficient and effective decomposition.\n- StdGEN integrates a multi-view diffusion model for generating multi-view consistent RGB and normal maps, followed by S-LRM for reconstruction and a mesh refinement module for enhancing quality.\n- Experiments on Anime3D++ dataset demonstrate state-of-the-art performance in 3D anime character generation, surpassing existing baselines in geometry, texture, and decomposability.\n- The decomposable nature of the generated characters and the efficient pipeline unlock potential for various downstream applications.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-11"
+    },
+    {
+        "title": "DELIFT: Data Efficient Language model Instruction Fine Tuning",
+        "authors": "Marina Danilevksy, Lucian Popa, Krishna Killamsetty, ishikaa",
+        "link": "https://arxiv.org/abs/2411.04425",
+        "github_repo": null,
+        "summary": "- DELIFT (Data Efficient Language Model Instruction Fine-Tuning) is a novel algorithm that optimizes data selection across three key stages of fine-tuning: instruction tuning, task-specific fine-tuning, and continual fine-tuning.\n- It utilizes a pairwise utility metric to quantify the value of a data sample in improving the model's responses to other samples and leverages submodular functions for optimal subset selection.\n- DELIFT reduces fine-tuning data size by up to 70% without compromising performance, leading to significant computational savings. \n- It outperforms current data selection techniques by up to 26% across diverse tasks and model scales.\n- Experiments show minimal performance drops compared to using full datasets and even surpasses full dataset performance in niche tasks such as query rewriting.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://anonymous.4open.science/r/optimizing-data-selection-0CD0"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-11"
+    },
+    {
+        "title": "Parameter-Efficient Fine-Tuning of Large Language Models for Unit Test Generation: An Empirical Study",
+        "authors": "Jingyue Li, andstor",
+        "link": "https://arxiv.org/abs/2411.02462",
+        "github_repo": null,
+        "summary": "- This paper conducts an empirical study on Parameter-Efficient Fine-Tuning (PEFT) methods for Large Language Models (LLMs) in generating unit tests for code.\n- It evaluates full fine-tuning, LoRA, (IA)\u00b3, and prompt tuning across various open-source LLMs (CodeGen, Code Llama, StarCoder) ranging from 350 million to 16 billion parameters and use well-established unit-test datasets for evaluation.\n- The findings indicate that LoRA generally performs best, matching or exceeding full fine-tuning's performance in several cases while using fewer parameters, whereas prompt tuning is the most resource-efficient but has more variable performance.\n- They evaluate using codebleu to evaluate the similarity between the generated tests and the reference tests.\n-  The results also show that both full fine-tuning and PEFT methods are mostly resistant to catastrophic forgetting, sometimes even improving the code generation capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/andstor/methods2test_small",
+            "https://huggingface.co/andstor/peft-unit-test-generation-experiments"
+        ],
+        "date": "2024-11-11"
+    },
+    {
+        "title": "LLM2CLIP: Powerful Language Model Unlock Richer Visual Representation",
+        "authors": "Yuqing Yang, Xufang Luo, Aoqi Wu, Weiquan Huang, Yif29",
+        "link": "https://arxiv.org/abs/2411.04997",
+        "github_repo": null,
+        "summary": "- LLM2CLIP is a novel approach that integrates Large Language Models (LLMs) into Contrastive Language-Image Pre-training (CLIP) to enhance visual representation learning.\n- It addresses the limitations of LLMs' output features by applying a caption contrastive fine-tuning strategy, which increases their discriminability and enables them to act as a more powerful teacher for CLIP's visual encoder.\n- This approach improves CLIP's ability to handle longer and more complex captions and incorporate richer knowledge from LLMs, without significant computational overhead.\n- LLM2CLIP demonstrates significant improvements across various cross-modal tasks, exceeding previous state-of-the-art models like EVA02 by a substantial margin on text and image retrieval benchmarks, and even enabling cross-lingual capabilities for models trained solely on English data.\n- It also shows promising results in multimodal training with models like LLaVA 1.5, consistently outperforming the original CLIP across several benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://aka.ms/llm2clip"
+        ],
+        "date": "2024-11-11"
+    },
+    {
+        "title": "Improving the detection of technical debt in Java source code with an enriched dataset",
+        "authors": "Rick Kazman, Davide Di Ruscio, Phuong T. Nguyen, Anh M. T. Bui, Nam Le Hai",
+        "link": "https://arxiv.org/abs/2411.05457",
+        "github_repo": null,
+        "summary": "- This paper introduces TESORO, a new dataset for detecting technical debt (TD) in Java source code, which includes both comments and the corresponding source code.\n- A pipeline is proposed for enriching technical debt data by extracting Self-Admitted Technical Debts (SATD) comments and their associated source code units.\n- The study demonstrates that incorporating source code context enhances the performance of state-of-the-art SATD detection models, and an ensemble approach combining predictions from different code context lengths yields even better results.\n- The paper investigates the accuracy of different pre-trained language models (PLMs) in detecting TD solely from source code, revealing the superior performance of CodeBERT and its variant GraphCodeBERT, and highlighting the potential of LLMs in this task.\n- The curated TESORO dataset is expected to catalyze future research in the domain of TD detection and facilitate the identification of other software artifacts such as code smells.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/NamCyan/tesoro"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-11"
     }
 ]

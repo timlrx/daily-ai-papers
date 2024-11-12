@@ -6897,5 +6897,187 @@
         ],
         "huggingface_urls": [],
         "date": "2024-11-11"
+    },
+    {
+        "title": "Add-it: Training-Free Object Insertion in Images With Pretrained Diffusion Models",
+        "authors": "Gal Chechik, Lior Wolf, Dvir Samuel Yuval Atzmon, Rinon Gal, Yoad Tewel",
+        "link": "https://arxiv.org/abs/2411.07232",
+        "github_repo": null,
+        "summary": "- Add-it is a training-free method for adding objects into images using a simple text prompt and a pretrained diffusion model like Stable Diffusion.\n- It extends the multi-modal attention mechanism by incorporating information from a source image, and dynamically weights the attention from the source image, target image, and text prompt.\n- The method uses structure transfer from the source image by noising the source and denoising it with the target, and applies subject-guided latent blending using SAM-2 to maintain existing structures from the source image.\n- Add-it outperforms existing methods on image insertion benchmarks for both real and generated images, showing a significant increase in object placement plausibility.\n- Human evaluation further shows Add-it is preferred by users against other methods, indicating more realistic and natural-looking results. ",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "OmniEdit: Building Image Editing Generalist Models Through Specialist Supervision",
+        "authors": "Xinrun Du, Weiming Ren, Zheyang Xiong, Cong Wei, wenhu",
+        "link": "https://arxiv.org/abs/2411.07199",
+        "github_repo": null,
+        "summary": "- OMNI-EDIT is a novel instruction-based image editing model trained using a specialist-to-generalist framework with supervision from seven specialized editing models covering tasks like object manipulation, style transfer, and background changes.\n- It leverages a diffusion-transformer architecture called EditNet to facilitate interaction between the control branch (editing instructions) and the original branch (image content), enabling more effective and nuanced edits.\n- Importance sampling based on scores from large multimodal models like GPT-40, distilled to InternVL2, is used to enhance the quality of the training data by filtering out noisy or low-quality generated samples.\n- OMNI-EDIT handles images of any aspect ratio and high resolution and outperforms existing models on a curated benchmark called OMNI-EDIT-BENCH, demonstrating superior performance in perceptual quality, semantic consistency, and adherence to editing instructions.\n- Both automatic and human evaluations show significant improvement, with a 20% overall improvement observed over the best baseline editing model (CosXL-Edit) in human evaluation.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models",
+        "authors": "Hui Huang, Yingshui Tan, Jiaheng Liu, Shilong Li, Yancheng He",
+        "link": "https://arxiv.org/abs/2411.07140",
+        "github_repo": null,
+        "summary": "- This paper introduces Chinese SimpleQA, a benchmark designed to evaluate the factuality of Large Language Models (LLMs) in answering short questions in Chinese.\n- The dataset consists of 3000 high-quality question-answer pairs across six diverse topics, with a focus on static answers that do not change over time.\n- The questions and answers in Chinese SimpleQA are short, simplifying evaluation with existing LLMs, and the grading process employs the OpenAI API.\n- Initial findings indicate that Chinese SimpleQA is challenging for existing LLMs, with only a few achieving passing scores.\n- The research demonstrates the importance of model size, calibration, and the effectiveness of Retrieval-Augmented Generation (RAG) strategies in improving LLM performance in Chinese factuality.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Edify Image: High-Quality Image Generation with Pixel Space Laplacian Diffusion Models",
+        "authors": "Tiffany Cai, Yogesh Balaji, Maciej Bala, Yuval Atzmon, NVIDIA",
+        "link": "https://arxiv.org/abs/2411.07126",
+        "github_repo": null,
+        "summary": "- Edify Image is a family of cascaded pixel-space diffusion models that generate photorealistic high-resolution images with enhanced controllability, using a novel multi-scale Laplacian diffusion process.\n- The Laplacian Diffusion Model simulates resolution-varying diffusion by attenuating different image frequency bands at varying rates, enabling precise detail capture and refinement across multiple scales.\n- Edify Image supports various applications, including text-to-image synthesis with long prompts and camera controls, 4K upsampling with a ControlNet-based approach, ControlNets for various modalities, 360\u00b0 HDR panorama generation via sequential inpainting, and finetuning for image customization.\n- The models achieve high fidelity and diversity in image generation, demonstrated by results across various aspect ratios, camera controls, long prompts, and different subject categories.\n- Finetuning experiments show the model's adaptability to personalization and stylization tasks, while maintaining compatibility with pre-trained ControlNets.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "IOPO: Empowering LLMs with Complex Instruction Following via Input-Output Preference Optimization",
+        "authors": "Yongbin Li, Fei Huang, Cheng Fu, Haiyang Yu, Xinghua Zhang",
+        "link": "https://arxiv.org/abs/2411.06208",
+        "github_repo": null,
+        "summary": "- This paper introduces IOPO (Input-Output Preference Optimization), a new alignment method for Large Language Models (LLMs) that aims to improve complex instruction following.\n- Unlike existing methods like DPO that focus on output preference, IOPO considers both input and output preferences, enabling LLMs to better understand fine-grained constraints within complex instructions.\n- A new benchmark called TRACE, comprising 120K training and 1K evaluation instances with varying constraint complexities, is also introduced to facilitate training and evaluation of complex instruction following abilities.\n- Experiments on TRACE, IFEval, and CFBench demonstrate IOPO's effectiveness, showing improvements of 2.18% and 3.13% over DPO on in-domain and out-of-domain datasets, respectively.\n- Ablation studies confirm that both input and output preference modeling are crucial for instruction following, especially in complex scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "M-Longdoc: A Benchmark For Multimodal Super-Long Document Understanding And A Retrieval-Aware Tuning Framework",
+        "authors": "Maojia Song, Chaoqun Liu, Hou Pong Chan, Liying Cheng, Yew Ken Chia",
+        "link": "https://arxiv.org/abs/2411.06176",
+        "github_repo": null,
+        "summary": "- Introduces M-LongDoc, a benchmark dataset with 851 samples for evaluating multimodal long document understanding.\n- Proposes a retrieval-aware tuning approach to improve model performance in document question answering.\n- Presents an automated evaluation framework leveraging multiple judge models to assess the correctness of open-ended solutions.\n- Demonstrates that the retrieval-aware tuning approach achieves a 4.6% relative improvement in answer correctness compared to baseline open-source models.\n- Finds that existing models struggle with figure and table-based questions, highlighting a multimodal bias.",
+        "classification": [
+            "Multimodal",
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Watermark Anything with Localized Messages",
+        "authors": "Matthijs Douze, Teddy Furon, Alain Durmus, Pierre Fernandez, Tom Sander",
+        "link": "https://arxiv.org/abs/2411.07231",
+        "github_repo": "https://github.com/facebookresearch/watermark-anything",
+        "summary": "- This paper introduces the Watermark Anything Model (WAM), a novel deep learning model for localized image watermarking.\n- WAM employs an encoder-decoder architecture for embedding and a ViT encoder with a pixel decoder for extracting watermarks, enabling the segmentation of watermarked regions and the recovery of multiple distinct messages from localized areas within an image. \n- The model is trained in two stages: the first stage focuses on robustness at low resolution, while the second refines for imperceptibility and multiple watermark handling using JND modulation and multi-mask training. \n- WAM demonstrates competitive performance against existing methods in terms of imperceptibility and robustness, specifically against inpainting and splicing attacks.\n- Notably, WAM showcases new capabilities in localizing watermarked areas in spliced images and extracting multiple 32-bit messages with high accuracy from small regions, exceeding the performance of traditional global watermarking techniques.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/watermark-anything"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Counterfactual Generation from Language Models",
+        "authors": "Ryan Cotterell, Anej Svete, vesteinn, Shauli",
+        "link": "https://arxiv.org/abs/2411.07180",
+        "github_repo": null,
+        "summary": "- This paper proposes a framework for generating counterfactual text from language models (LMs) by treating them as Generalized Structural Equation Models (GSEMs) and using the Gumbel-max trick.\n- This approach allows for modeling the joint distribution of original and counterfactual strings, enabling investigation of cause-and-effect relationships within LMs.\n- An algorithm based on hindsight Gumbel sampling infers the noise variables that produced an observed string, facilitating the generation of its counterfactual.\n- Experiments on GPT2-XL and LLaMA3-8b, with interventions like knowledge editing and linear steering, reveal unintended side effects, showing that these techniques are not as surgical as intended.\n- This work highlights the need for more precise intervention methods in LMs to minimize unintended changes in generated text.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/shauli-ravfogel/lm-counterfactuals"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/intfloat/e5-base-v2",
+            "https://huggingface.co/jujipotle/honest_llama3_8B_instruct",
+            "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct"
+        ],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Game-theoretic LLM: Agent Workflow for Negotiation Games",
+        "authors": "Julie Chen, Alfonso Amayuelas, Lingyao Li, Ollie Liu, Wenyue Hua",
+        "link": "https://arxiv.org/abs/2411.05990",
+        "github_repo": "https://github.com/Wenyueh/game_theory",
+        "summary": "- This paper introduces game-theory-inspired workflows to enhance the rationality of Large Language Models (LLMs) in strategic decision-making, particularly within negotiation games.\n- The authors evaluate several state-of-the-art LLMs across various complete and incomplete information games and find that LLMs often deviate from rational strategies, especially in complex games.\n- They design distinct workflows incorporating principles like dominant strategy search, backward induction, and Bayesian belief updating to guide LLMs' reasoning and improve decision-making.\n- Experimental results demonstrate that these workflows significantly improve LLM performance in identifying optimal strategies, achieving near-optimal allocations, and reducing susceptibility to exploitation during negotiations.\n-  The paper further explores the meta-strategic considerations of workflow adoption, highlighting a novel research direction in analyzing the rationality of using such workflows in different scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Wenyueh/game_theory"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Golden Touchstone: A Comprehensive Bilingual Benchmark for Evaluating Financial Large Language Models",
+        "authors": "Yiyan Qi, Zhouchi Lin, Huanyi Su, Junxi Liu, Xiaojun Wu",
+        "link": "https://arxiv.org/abs/2411.06272",
+        "github_repo": "https://github.com/IDEA-FinAI/Golden-Touchstone",
+        "summary": "- This paper introduces Golden Touchstone, a bilingual (English and Chinese) benchmark for evaluating Financial Large Language Models (FinLLMs).\n- The benchmark covers eight core financial NLP tasks, including sentiment analysis, question answering, and summarization, with 22 datasets in total. \n- The authors also release Touchstone-GPT, a FinLLM trained using continuous pre-training and financial instruction tuning on a 100B token dataset and 300k instruction-response pairs.\n- Evaluation results on Golden Touchstone show that while existing LLMs and FinLLMs perform reasonably well on some tasks like sentiment analysis, they struggle with more complex tasks like relation extraction and stock prediction.\n- Touchstone-GPT shows competitive performance compared to the other models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Classification",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/IDEA-FinAI/Golden-Touchstone"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "Ablation is Not Enough to Emulate DPO: How Neuron Dynamics Drive Toxicity Reduction",
+        "authors": "Adam Mahdi, Harry Mayne, Filip Sondej, Yushi Yang",
+        "link": "https://arxiv.org/abs/2411.06424",
+        "github_repo": null,
+        "summary": "- This paper investigates the internal mechanisms of Direct Preference Optimization (DPO) for toxicity reduction in language models, challenging the existing explanation that it primarily works by dampening the most toxic neurons.\n- By ablating toxic neurons and applying activation patching, the study finds that only 31.8% of toxicity reduction stems from dampened toxic neurons.\n- Instead, DPO reduces toxicity through a more complex process involving multiple neuron groups, accumulating effects by both reducing writing in the toxic direction and actively promoting anti-toxicity in the residual stream.\n- DPO's adjustments to neuron activations are noisy, with many neurons actually increasing toxicity, suggesting a balancing process between opposing neuron effects to achieve overall toxicity reduction.\n- The research provides a more nuanced understanding of DPO's mechanism, suggesting potential for targeted interventions to replicate its effects and improve safety in language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Yushi-Y/dpo-toxic-neurons"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
+    },
+    {
+        "title": "KMM: Key Frame Mask Mamba for Extended Motion Generation",
+        "authors": "Feng Chen, Qi Chen, Akide Liu, Zeyu Zhang, Ha0Tang",
+        "link": "https://arxiv.org/abs/2411.06481",
+        "github_repo": null,
+        "summary": "- This paper introduces Key Frame Mask Mamba (KMM), a novel architecture for extended motion generation that addresses the challenges of memory decay and poor text-motion alignment in previous methods by strategically masking key frames based on local density and minimum distances between high density motion embeddings within the latent space.\n- Using a customized contrastive learning strategy to learn dynamic text embeddings, the approach improves motion-text alignment by dynamically learning text encodings and enabling the generation of more accurate and aligned motion sequences.\n- On the BABEL dataset, KMM achieves state-of-the-art performance with a reduction of more than 57% in FID and 70% in parameters compared to existing methods.\n- A newly introduced benchmark, BABEL-D, focuses on evaluating text-motion alignment for directional instructions, and demonstrates KMM\u2019s superior performance.\n- User studies further confirmed the efficacy of the proposed KMM model through qualitative and quantitative analysis of the generated motions across a diversity of prompts.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-12"
     }
 ]

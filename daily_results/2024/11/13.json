@@ -1,0 +1,69 @@
+[
+    {
+        "title": "SAMPart3D: Segment Any Part in 3D Objects",
+        "authors": "Xiaoyang Wu, Liangjun Lu, Yuan-Chen Guo, Yukun Huang, Yunhan Yang",
+        "link": "https://arxiv.org/abs/2411.07184",
+        "github_repo": "https://github.com/yhyang-myron/SAMPart3D-website",
+        "summary": "- SAMPart3D, a novel zero-shot 3D part segmentation framework, segments any 3D object into semantic parts at multiple granularities without predefined part labels or text prompts.\n- It leverages a two-stage distillation process: first, pre-training a 3D feature extraction backbone (PTv3-object, adapted from Point Transformer V3) on Objaverse dataset by distilling visual features from DINOv2; second, fine-tuning scale-conditioned MLPs to distill 2D masks from SAM for multi-granularity segmentation.\n- After segmentation, it employs Multimodal Large Language Models (MLLMs) to assign semantic labels based on multi-view renderings of the segmented parts.\n- A new benchmark, PartObjaverse-Tiny, with detailed semantic and instance part annotations for 200 complex 3D objects is introduced, addressing limitations of existing datasets.\n- Experimental results show that SAMPart3D outperforms existing methods in zero-shot 3D part segmentation and facilitates applications like part-level editing and interactive segmentation.",
+        "classification": [
+            "Image Segmentation",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/yhyang-myron/SAMPart3D-website"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-13"
+    },
+    {
+        "title": "JanusFlow: Harmonizing Autoregression and Rectified Flow for Unified Multimodal Understanding and Generation",
+        "authors": "Chengyue Wu, Wen Liu, Xiaokang Chen, Xingchao Liu, Yiyang Ma",
+        "link": "https://arxiv.org/abs/2411.07975",
+        "github_repo": null,
+        "summary": "- JanusFlow is a unified multimodal model that integrates autoregressive language models with rectified flow for both image understanding and generation tasks.\n- The model uses a minimalist architecture with a lightweight encoder and decoder to adapt the LLM for rectified flow operations, and employs two key strategies: decoupling understanding and generation encoders and aligning their representations during training.\n- On text-to-image generation, JanusFlow surpasses existing models on benchmarks like MJHQ FID-30k, GenEval, and DPG-Bench.\n- It also achieves state-of-the-art performance in multimodal comprehension tasks on benchmarks like MMBench, SeedBench, and GQA, exceeding specialized models.\n- These results are achieved with a compact 1.3B parameter LLM, showing the potential for efficient and versatile vision-language models.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/DeepFloyd/IF-I-XL-v1.0"
+        ],
+        "date": "2024-11-13"
+    },
+    {
+        "title": "Stronger Models are NOT Stronger Teachers for Instruction Tuning",
+        "authors": "Radha Poovendran, Luyao Niu, Fengqing Jiang, Zhangchen Xu, yuchenlin",
+        "link": "https://arxiv.org/abs/2411.07133",
+        "github_repo": null,
+        "summary": "- This paper challenges the assumption that larger language models (LLMs) are always better teachers for instruction tuning of smaller LLMs, a phenomenon termed the \"Larger Models' Paradox.\"\n- Through experiments across five base models and twenty response generators, they demonstrate that larger models within a model family don't always lead to better instruction-following performance in smaller models after fine-tuning.\n- Existing metrics for data selection, such as quality, difficulty, and response length, fail to predict response generator effectiveness because they don't account for teacher-student model compatibility.\n- They propose a new metric, Compatibility-Adjusted Reward (CAR), that considers both the reward of generated responses and their compatibility with the base model (measured by loss on the base model), which outperforms baseline metrics in predicting response generator effectiveness.\n- Open-source models like Gemma-2-9b-it and Qwen2.5-72B-Instruct were found to be highly effective as response generators, outperforming even closed-source models like GPT-4 in some cases.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Magpie-Align/Magpie-100K-Generator-Zoo"
+        ],
+        "date": "2024-11-13"
+    },
+    {
+        "title": "Wavelet Latent Diffusion (Wala): Billion-Parameter 3D Generative Model with Compact Wavelet Encodings",
+        "authors": "Derek Cheung, Arianna Rampini, Pradyumna Reddy, Aliasghar Khani, adityasanghi",
+        "link": "https://arxiv.org/abs/2411.08017",
+        "github_repo": null,
+        "summary": "- Introduces WaLa, a novel billion-parameter 3D generative model employing wavelet-based compact latent encodings, addressing computational and dimensionality challenges in 3D generation.\n- WaLa compresses a 256\u00b3 signed distance field into a 12\u00b3 x 4 latent grid achieving a 2,427x compression ratio, enabling efficient training of large networks without impacting inference time.\n- Demonstrates state-of-the-art performance across multiple datasets, improving generation quality, diversity, and computational efficiency, generating high-quality 3D shapes within 2-4 seconds.\n- Supports diverse input modalities, including text, sketches, single/multi-view images, voxels, and point clouds, enhancing framework versatility.\n- Open-sources the largest pre-trained 3D generative models across different modalities to promote reproducibility.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/AutodeskAILab/WaLa"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-13"
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "title": "Large Language Models Can Self-Improve in Long-context Reasoning",
+        "authors": "Mo Yu, Lemao Liu, Zesen Cheng, Cheng Yang, Siheng99",
+        "link": "https://arxiv.org/abs/2411.08147",
+        "github_repo": "https://github.com/SihengLi99/SEALONG",
+        "summary": "- This paper introduces SEALONG, a self-improving method for Large Language Models (LLMs) to enhance long-context reasoning.\n- SEALONG samples multiple reasoning trajectories from the LLM, scores them using Minimum Bayes Risk (MBR), and fine-tunes using either supervised learning or preference optimization.\n- Experiments show improvement on LLMs like Llama-3.1-8B-Instruct by 4.2 points.\n- SEALONG outperforms existing methods reliant on human annotations or expert models by leveraging the LLM's own generated outputs.\n- The results demonstrate substantial potential for LLMs to self-improve in long-context reasoning and suggests promise for further research.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/SihengLi99/SEALONG"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-14"
+    },
+    {
+        "title": "EgoVid-5M: A Large-Scale Video-Action Dataset for Egocentric Video Generation",
+        "authors": "Guosheng Zhao, Jiayu Wang, Feng Liu, Kang Zhao, Xiaofeng Wang",
+        "link": "https://arxiv.org/abs/2411.08380",
+        "github_repo": null,
+        "summary": "- This paper introduces EgoVid-5M, a large-scale, high-quality dataset specifically designed for egocentric video generation, comprising 5 million 1080p video clips with detailed action annotations, including fine-grained kinematic control and high-level textual descriptions.\n- The dataset undergoes a rigorous cleaning process, ensuring frame consistency, action coherence, and motion smoothness, addressing the challenges posed by dynamic viewpoints and diverse actions in egocentric videos.\n- Various video generation baselines trained on EgoVid-5M show significant improvement in egocentric video generation quality.\n- The authors also introduce EgoDreamer, a novel model that leverages both action descriptions and kinematic control to drive egocentric video generation, demonstrating its capability to generate realistic and diverse egocentric videos.\n- Experimental results demonstrate that EgoVid-5M and EgoDreamer enhance the performance of several video generation models across metrics like CD-FVD, semantic and action consistency, clarity, and motion smoothness and strength.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-14"
+    },
+    {
+        "title": "Direct Preference Optimization Using Sparse Feature-Level Constraints",
+        "authors": "Hanqi Yan, Minjun Zhu, Hongbo Zhang, Chak Tou Leong, Qingyu Yin",
+        "link": "https://arxiv.org/abs/2411.07618",
+        "github_repo": null,
+        "summary": "- This paper introduces Feature-level constrained Preference Optimization (FPO), a novel method for aligning Large Language Models (LLMs) with human preferences.\n- FPO leverages pre-trained Sparse Autoencoders (SAEs) and introduces feature-level constraints, allowing for efficient, sparsity-enforced alignment, simplifying the alignment process while ensuring stability.\n- FPO achieves an above 5% absolute improvement in win rate with much lower computational cost compared to state-of-the-art baselines on benchmark datasets such as AlpacaEval-2 and Arena-Hard.\n- By constraining the shifts of sparse features during training, FPO achieves results that meet or exceed the effectiveness of sequential KL divergence with lower computational cost (17.6% reduction compared to TDPO2).\n- FPO combines the efficiency of SimPO with the constraint quality of sequential KL, making it a promising solution for efficient and controllable LLM alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-14"
+    },
+    {
+        "title": "CamemBERT 2.0: A Smarter French Language Model Aged to Perfection",
+        "authors": "Beno\u00eet Sagot, \u00c9ric de la Clergerie, Rian Touchent, Francis Kulumba, Wissam Antoun",
+        "link": "https://arxiv.org/abs/2411.08868",
+        "github_repo": null,
+        "summary": "- This paper introduces two new versions of the French language model CamemBERT: CamemBERTav2 and CamemBERTv2.\n- CamemBERTav2 is based on the DeBERTaV3 architecture and uses a Replaced Token Detection (RTD) training objective, while CamemBERTv2 uses the RoBERTa architecture with a Masked Language Modeling (MLM) objective.\n- Both models are trained on a significantly larger and more up-to-date dataset than their predecessors, with an updated tokenizer to better handle the nuances of modern French text.\n- Evaluations on various NLP tasks, including question answering, named entity recognition, and text classification, show that both models significantly outperform previous versions, particularly CamemBERTav2 which yielded the best performance in most cases.\n- All models and checkpoints are publicly available on Hugging Face.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Classification",
+            "Token Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/almanach?search_models=camembert+v2"
+        ],
+        "date": "2024-11-14"
+    },
+    {
+        "title": "Can sparse autoencoders be used to decompose and interpret steering vectors?",
+        "authors": "Adam Mahdi, Yushi Yang, Harry Mayne",
+        "link": "https://arxiv.org/abs/2411.08790",
+        "github_repo": null,
+        "summary": "- This paper investigates why applying sparse autoencoders (SAEs) directly to steering vectors results in inaccurate decompositions, hindering interpretability.\n- Two primary reasons are identified: steering vectors fall outside the training distribution of SAEs, and SAEs cannot accommodate meaningful negative projections present in steering vectors.\n- The study uses the corrigibility steering vector as a case study, demonstrating that the SAE decomposition is largely driven by the encoder bias, overshadowing the steering vector's contribution.\n- Scaling the steering vector's L2-norm does not resolve the out-of-distribution issue, as default components present in model activations are absent in steering vectors due to the subtraction process involved in their creation.\n-  The restriction of SAEs to non-negative reconstruction coefficients leads to misinterpretations, as it overlooks negative projections in feature directions, and these negative projections can also cause spurious positive activations in other features due to negative cosine similarity between features.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/HarryMayne/SV_interpretability"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/google/gemma-scope-2b-pt-res/tree/main/layer_14/width_16k/average_10_173"
+        ],
+        "date": "2024-11-14"
+    }
+]

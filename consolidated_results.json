@@ -7225,5 +7225,111 @@
             "https://huggingface.co/google/gemma-scope-2b-pt-res/tree/main/layer_14/width_16k/average_10_173"
         ],
         "date": "2024-11-14"
+    },
+    {
+        "title": "MagicQuill: An Intelligent Interactive Image Editing System",
+        "authors": "Qiuyu Wang, Hao Ouyang, wwen1997, bruceyyu, LiuZichen",
+        "link": "https://arxiv.org/abs/2411.09703",
+        "github_repo": null,
+        "summary": "- MagicQuill is an intelligent interactive image editing system built upon diffusion models that uses brushstrokes (add, subtract, and color) to edit images.\n- A Multimodal Large Language Model (MLLM) predicts user intentions from brushstrokes and image context, suggesting contextually relevant text prompts in real-time, a process referred to as Draw&Guess.\n- An Editing Processor with a two-branch architecture (inpainting and control) enables precise and controllable edits according to user brushstrokes and prompts.\n- Quantitative results on a custom dataset, comparing against methods like SmartEdit, SketchEdit and BrushNet, demonstrate superior edge alignment, color fidelity and controllable image generation in MagicQuill.\n- User studies showcase the system's effectiveness in accurately predicting user intent and significantly improving editing efficiency compared to other MLLMs such as LLaVA-1.5, LLaVA-Next, and GPT-4.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-15"
+    },
+    {
+        "title": "LLaMA-Mesh: Unifying 3D Mesh Generation with Language Models",
+        "authors": "Jun Zhu, Hang Su, Yikai Wang, Jonathan Lorraine, Zhengyi Wang",
+        "link": "https://arxiv.org/abs/2411.09595",
+        "github_repo": null,
+        "summary": "- LLaMA-Mesh is a novel approach that unifies 3D mesh generation with Large Language Models (LLMs) by representing meshes as plain text, allowing seamless integration without tokenizer or vocabulary modifications.\n- The model leverages the OBJ file format, treating vertex coordinates and face definitions as text sequences, enabling LLMs to process 3D data directly.\n- A supervised fine-tuning (SFT) dataset with text-3D pairs and interleaved dialogues is used to train a pretrained LLaMA model, enabling it to generate 3D meshes from text prompts, understand 3D meshes, and maintain conversational abilities.\n- LLaMA-Mesh achieves mesh generation quality comparable to specialized 3D generation models while preserving the LLMs' language capabilities, as demonstrated by qualitative and quantitative results.\n- The work represents a significant step towards integrating multi-modal content generation within a unified language model.",
+        "classification": [
+            "Text-to-3D",
+            "Multimodal",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-15"
+    },
+    {
+        "title": "Cut Your Losses in Large-Vocabulary Language Models",
+        "authors": "Philipp Kr\u00e4henb\u00fchl, Vladlen Koltun, Alexander Hertzberg, Brody Huval, erikwijmans",
+        "link": "https://arxiv.org/abs/2411.09009",
+        "github_repo": "https://github.com/apple/ml-cross-entropy",
+        "summary": "- This paper introduces Cut Cross-Entropy (CCE), a novel method to compute cross-entropy loss and its gradients without materializing the full logits matrix in memory.\n- CCE performs matrix multiplications and log-sum-exp operations within flash memory, reducing the memory footprint for loss calculation from gigabytes to megabytes.\n- It leverages softmax sparsity to further improve throughput by skipping negligible gradient computations.\n- Experiments on large language models like Gemma 2 and Llama 3 demonstrate significant memory reduction and increased batch size without impacting training speed or convergence.\n- The proposed method facilitates training larger language models with extended vocabulary sizes under memory constraints.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/apple/ml-cross-entropy"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-15"
+    },
+    {
+        "title": "ClinicalBench: Can LLMs Beat Traditional ML Models in Clinical Prediction?",
+        "authors": "Zhongwei Wan, Che Liu, Shan Chen, Jian Yu, canyuchen",
+        "link": "https://arxiv.org/abs/2411.06469",
+        "github_repo": null,
+        "summary": "- ClinicalBench, a new benchmark, was introduced to evaluate the performance of LLMs and traditional machine learning models on clinical prediction tasks.\n- The benchmark includes three common clinical prediction tasks (Length-of-Stay, Mortality, and Readmission), two real-world clinical databases (MIMIC-III and MIMIC-IV), 22 LLMs with varying sizes, and 11 traditional ML models.\n- Through empirical studies, traditional machine learning models outperformed both general-purpose and medical LLMs across all tasks and datasets, even with varying model sizes, prompting, or fine-tuning strategies.\n- This suggests a potential deficiency in the clinical reasoning and decision-making capabilities of current LLMs.\n- The benchmark and code are publicly available to facilitate further research in this domain.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+            "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+            "https://huggingface.co/google/gemma-2-9b-it",
+            "https://huggingface.co/Qwen/Qwen2-0.5B-Instruct",
+            "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
+            "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+            "https://huggingface.co/01-ai/Yi-1.5-6B-Chat",
+            "https://huggingface.co/01-ai/Yi-1.5-9B-Chat",
+            "https://huggingface.co/01-ai/Yi-1.5-34B-Chat",
+            "https://huggingface.co/lmsys/vicuna-7b-v1.5",
+            "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+            "https://huggingface.co/internlm/internlm2_5-7b-chat",
+            "https://huggingface.co/openbmb/MiniCPM3-4B",
+            "https://huggingface.co/epfl-llm/meditron-7b",
+            "https://huggingface.co/epfl-llm/meditron-70b",
+            "https://huggingface.co/ProbeMedicalYonseiMAILab/medllama3-v20",
+            "https://huggingface.co/BioMistral/BioMistral-7B",
+            "https://huggingface.co/m42-health/Llama3-Med42-8B",
+            "https://huggingface.co/m42-health/Llama3-Med42-70B",
+            "https://huggingface.co/PharMolix/BioMedGPT-LM-7B",
+            "https://huggingface.co/internistai/base-7b-v0.2",
+            "https://huggingface.co/docs/transformers/en/index"
+        ],
+        "date": "2024-11-15"
+    },
+    {
+        "title": "Hermes: A Large Language Model Framework on the Journey to Autonomous Networks",
+        "authors": "Merouane Debbah, Antonio De Domenico, Ali Maatouk, Fadhel Ayed, nicopi",
+        "link": "https://arxiv.org/abs/2411.06490",
+        "github_repo": null,
+        "summary": "- Hermes is a novel chain-of-agent LLM framework designed to automate the creation of Network Digital Twins (NDTs) using blueprints, enhancing the path towards autonomous network management.\n- Unlike existing NDT approaches that require distinct architectures for each use case, Hermes uses LLMs to generate step-by-step logical blocks (blueprints) for NDT construction, improving flexibility and scalability.\n- The framework consists of a Designer agent for creating and refining the blueprint based on network data and policies, and a Coder agent for translating the blueprint into executable Python code.\n- Experimental results across four autonomous network tasks demonstrated that Hermes with GPT-40 as LLM consistently outperforms chain-of-thought prompting and direct code generation, achieving success rates up to 80%.\n- While open-source LLMs show limited performance independently, integrating them with a library of expert-designed models significantly improves their effectiveness in NDT blueprint design, highlighting the potential for broader application.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-15"
+    },
+    {
+        "title": "Sharingan: Extract User Action Sequence from Desktop Recordings",
+        "authors": "Kehong Yuan, Jue Zhang, Xiaoting Qin, Yi Ren, Yanting Chen",
+        "link": "https://arxiv.org/abs/2411.08768",
+        "github_repo": null,
+        "summary": "- This paper introduces Sharingan, a method for extracting user action sequences from desktop recordings using Vision-Language Models (VLMs).\n- Two approaches are proposed: Direct Frame-Based (DF) which directly inputs video frames to VLMs, and Differential Frame-Based (DiffF) which incorporates explicit frame differences.\n- Evaluation on two datasets (a basic self-curated dataset and an advanced benchmark adapted from GUI-World) shows DF achieves 70-80% accuracy, with extracted sequences replayable through Robotic Process Automation (RPA).\n- While VLMs show potential, explicitly incorporating UI changes can degrade performance, favoring the DF approach.\n- This work represents the first application of VLMs for this task, contributing new methods, benchmarks, and insights for future research in desktop automation and user behavior understanding.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "date": "2024-11-15"
     }
 ]

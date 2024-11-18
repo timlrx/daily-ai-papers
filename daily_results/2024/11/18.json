@@ -1,0 +1,62 @@
+[
+    {
+        "title": "LLaVA-o1: Let Vision Language Models Reason Step-by-Step",
+        "authors": "LiYuan, sunlichao137, Yibing, Pengjin, Xkev",
+        "link": "https://arxiv.org/abs/2411.10440",
+        "github_repo": null,
+        "summary": "- This paper introduces LLaVA-01, a Vision Language Model (VLM) designed for improved multi-stage reasoning in visual question answering.\n- LLaVA-01 uses a structured approach with four stages: summarization, visual interpretation, logical reasoning, and conclusion generation, unlike traditional chain-of-thought prompting.\n- A new dataset, LLaVA-01-100k, was created with structured reasoning annotations from various visual question answering sources, used to fine-tune the Llama-3.2-11B-Vision-Instruct model.\n- A novel stage-level beam search method enables efficient inference-time scaling.\n- LLaVA-01 surpasses larger and closed-source models like Gemini-1.5-pro and GPT-40-mini on multiple multimodal reasoning benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-18"
+    },
+    {
+        "title": "GaussianAnything: Interactive Point Cloud Latent Diffusion for 3D Generation",
+        "authors": "doubling, hongfz16, ZhaoyangLyu, sczhou, yslan",
+        "link": "https://arxiv.org/abs/2411.08033",
+        "github_repo": null,
+        "summary": "- GAUSSIANANYTHING, a novel 3D generation framework, introduces an interactive Point-Cloud structured Latent space for scalable, high-quality 3D generation and editing.\n- The framework utilizes a 3D VAE that takes multi-view posed RGB-D-N renderings as input, encoding them into a point cloud-structured latent space, which is then decoded into surfel Gaussians.\n- Cascaded latent diffusion modeling is performed on this latent space, enabling shape-texture disentanglement and supporting multi-modal conditional 3D generation from point clouds, captions, and single/multi-view images.\n- Experimental results on multiple datasets show GAUSSIANANYTHING outperforms existing methods in both text- and image-conditioned 3D generation, demonstrating its effectiveness in generating and editing high-quality, editable 3D content.\n- The proposed Point Cloud-structured Latent space enables interactive 3D editing by directly manipulating the generated point cloud, similar to manipulations in 2D models, and facilitates geometry-texture disentanglement.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-18"
+    },
+    {
+        "title": "The Dawn of GUI Agent: A Preliminary Case Study with Claude 3.5 Computer Use",
+        "authors": "Mingyu Ouyang, AnalMom, QuStar, SiyuanH",
+        "link": "https://arxiv.org/abs/2411.10323",
+        "github_repo": "https://github.com/showlab/computer_use_ootb",
+        "summary": "- This paper presents a preliminary case study on Claude 3.5 Computer Use, a new large language model (LLM) designed for GUI automation.\n- The study evaluates the model's abilities in planning, action execution, and critic feedback across various desktop environments, including web search, office productivity software, workflow applications, and video games.\n- The researchers propose a novel framework, Computer Use Out-of-the-Box (OOTB), which offers a cross-platform solution for easy implementation and benchmarking of GUI automation models.\n- The study identifies some limitations in Claude 3.5's handling of tasks, including scrolling-based navigation and text selection precision, as well as occasional inaccuracies in final outcome evaluations.\n- The findings suggest the need for future research to focus on improved selection capabilities, more accurate validation feedback, and enhanced adaptability to real-world application complexities.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/computer_use_ootb"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-18"
+    },
+    {
+        "title": "Number it: Temporal Grounding Videos like Flipping Manga",
+        "authors": "Vito328, zhouzhouyi, tms28k, kaleidudu, Liang0223",
+        "link": "https://arxiv.org/abs/2411.10332",
+        "github_repo": "https://github.com/yongliang-wu/NumPro",
+        "summary": "- This paper introduces Number-Prompt (NumPro), a novel method to enhance Video Temporal Grounding (VTG) in Video Large Language Models (Vid-LLMs) by adding numerical identifiers to video frames, mimicking numbered manga panels.\n- NumPro transforms VTG into an intuitive visual sequence alignment task, enabling Vid-LLMs to directly link visual content with temporal information.\n- Experiments show that NumPro significantly improves VTG performance across various Vid-LLMs, both in training-free and fine-tuned settings (NumPro-FT).\n- NumPro-FT achieves state-of-the-art results on Charades-STA and ActivityNet, surpassing previous top methods by up to +11.8% and +9.9% in mIoU for moment retrieval, respectively, and +8.5% in mAP for highlight detection on QVHighlights.\n- Furthermore, NumPro minimally impacts general video-QA performance, allowing Vid-LLMs to maintain robust general video understanding while excelling at temporally precise grounding tasks.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/yongliang-wu/NumPro"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-18"
+    }
+]

@@ -1,0 +1,217 @@
+[
+    {
+        "title": "BlueLM-V-3B: Algorithm and System Co-Design for Multimodal Large Language Models on Mobile Devices",
+        "authors": "wolf1110, AJZhou, liuyangbian, yina0, lucky-lance",
+        "link": "https://arxiv.org/abs/2411.10640",
+        "github_repo": null,
+        "summary": "- BlueLM-V-3B is a 3 billion parameter multimodal large language model designed for mobile devices, featuring a 2.7B parameter language model and a 400M parameter vision encoder (SigLIP).\n- It introduces a relaxed aspect ratio matching method for dynamic image resolution, reducing the number of image tokens processed by the vision encoder without sacrificing model performance.\n- System optimizations include batched image encoding, pipeline parallelism for image processing, token downsampling, chunked computing of input tokens, and mixed-precision quantization.\n- BlueLM-V-3B achieves state-of-the-art performance on the OpenCompass benchmark, with an average score of 66.1, surpassing larger models like MiniCPM-V-2.6 and InternVL2-8B.\n- On a MediaTek Dimensity 9300 processor, it uses 2.2GB of memory, encodes 768x1536 images in 2.1 seconds, and generates text at 24.4 tokens/second.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "Generative World Explorer",
+        "authors": "Daniel Khashabi, Alan Yuille, Tianmin Shu, jienengchen, TaiMingLu",
+        "link": "https://arxiv.org/abs/2411.11844",
+        "github_repo": null,
+        "summary": "- The paper introduces Generative World Explorer (Genex), a novel egocentric video generation model that allows embodied agents to \"mentally\" explore 3D environments (e.g., urban scenes) by generating imagined future observations, and then use these observations to update the agent's beliefs about the world, which enable the agent to make more informed decisions.\n- The architecture is based on a video diffusion model that takes an initial egocentric view (represented as a panoramic image), the intended movement direction as action input, and then streams a video of future egocentric observations. \n- A spherical-consistent learning objective is introduced to ensure that generated pixels are continuous in the spherical space and improve the consistency and coherence of generated videos during long imaginative exploration.\n- The experimental evaluation, with a new synthetic urban scene dataset (Genex-DB) and new Embodied QA benchmark (Genex-EQA), shows that Genex generates high-quality and consistent observations during imaginative exploration and improves an existing LLM agent\u2019s decision-making process.\n- The authors extend Genex to multi-agent scenarios, where an agent infers the perspectives of other agents to make decisions based on a more complete understanding of the situation.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Beckschen/genex"
+        ],
+        "huggingface_urls": [
+            "https://generative-world-explorer.github.io/"
+        ],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "Search, Verify and Feedback: Towards Next Generation Post-training Paradigm of Foundation Models via Verifier Engineering",
+        "authors": "Ben He, Boxi Cao, Xinyu Lu, Yanjiang Liu, Xinyan Guan",
+        "link": "https://arxiv.org/abs/2411.11504",
+        "github_repo": null,
+        "summary": "This paper introduces verifier engineering, a novel post-training paradigm for foundation models.  It leverages automated verifiers to perform verification tasks and deliver feedback to the models, enhancing their capabilities.  The framework systematically categorizes this process into three stages: search, verify, and feedback.  The authors provide a comprehensive overview of state-of-the-art research in each stage. This approach is presented as a fundamental pathway toward achieving Artificial General Intelligence.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/icip-cas/Verifier-Engineering"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "AnimateAnything: Consistent and Controllable Animation for Video Generation",
+        "authors": "Rong Zhang, Hong Li, Chi Wang, Guojun Lei, yikaiw",
+        "link": "https://arxiv.org/abs/2411.10836",
+        "github_repo": null,
+        "summary": "- AnimateAnything is a novel approach for controllable video generation that unifies various control signals (text, camera trajectory, motion annotations) into a common optical flow representation.\n- The model architecture consists of two stages: a Unified Flow Generation stage that converts control signals into optical flow using a multi-scale control feature fusion network and a Video Generation stage that uses the optical flow to guide video generation using a diffusion model.\n- A frequency-based stabilization module is incorporated to improve the temporal coherence of generated videos and reduce flickering caused by large-scale motion.\n- The approach outperforms state-of-the-art methods in terms of video quality, consistency, and controllability, as demonstrated by quantitative and qualitative evaluations.\n- Extensive experiments on various datasets show AnimateAnything's robustness and superior performance in handling various control signals and generating high-quality videos.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "Drowning in Documents: Consequences of Scaling Reranker Inference",
+        "authors": "Michael Carbin, Matei Zaharia, Erik Lindgren, Mathew Jacob, mrdrozdov",
+        "link": "https://arxiv.org/abs/2411.11767",
+        "github_repo": null,
+        "summary": "\n- This paper investigates the performance of rerankers, which are models that rescore documents retrieved by an initial IR system.\n- The authors find that existing rerankers exhibit diminishing returns when scoring increasingly more documents, often degrading in quality beyond a certain threshold.\n- This contrasts with the common assumption that rerankers consistently improve retrieval quality as the number of scored documents increases.\n- Qualitative analyses reveal that the rerankers frequently assign high scores to documents that have minimal semantic overlap with the query.\n- The researchers suggest that listwise reranking using large language models may offer a solution to improve reranker robustness.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "SlimLM: An Efficient Small Language Model for On-Device Document Assistance",
+        "authors": "Viet Dac Lai, Seunghyun Yoon, Phat T. Nguyen, Thang M. Pham, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2411.09944",
+        "github_repo": null,
+        "summary": "- SlimLM, a series of small language models (SLMs) optimized for document assistance tasks on mobile devices like smartphones, is introduced.\n- The models range from 125M to 1B parameters and are pre-trained on SlimPajama-627B and fine-tuned on DocAssist, a new dataset constructed for summarization, question answering, and question suggestion.\n- SlimLM models demonstrate comparable or superior performance to existing SLMs of similar sizes on a Samsung Galaxy S24, efficiently handling contexts up to 800 tokens.\n- An Android application demonstrates SlimLM's real-world applicability.\n- The models offer a balance between performance, efficiency, and privacy for on-device document processing, potentially reducing reliance on server-based APIs.",
+        "classification": [
+            "Natural Language Processing",
+            "Document Question Answering",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "SmoothCache: A Universal Inference Acceleration Technique for Diffusion Transformers",
+        "authors": "Haomiao Jiang, Joshua Geddes, mnandwana, helloterran, josephliu-roblox",
+        "link": "https://arxiv.org/abs/2411.10510",
+        "github_repo": "https://github.com/Roblox/SmoothCache",
+        "summary": "- SmoothCache is a model-agnostic inference acceleration technique for Diffusion Transformers (DiTs) that leverages the high similarity between layer outputs across adjacent diffusion timesteps.\n- By analyzing layer-wise representation errors from a small calibration set, SmoothCache adaptively caches and reuses key features during inference.\n- This method achieves 8% to 71% speedup while maintaining or even improving generation quality across diverse modalities (image, video, and audio).\n- It has been shown to be effective on DiT-XL for image generation, Open-Sora for text-to-video, and Stable Audio Open for text-to-audio.\n- SmoothCache is compatible with various common solvers in diffusion transformers and requires only a single hyperparameter.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Text-to-Audio",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Roblox/SmoothCache"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "Top-$n\u03c3$: Not All Logits Are You Need",
+        "authors": "Liusheng Huang, Hongli Xu, Jianchun Liu, tomorrowdawn",
+        "link": "https://arxiv.org/abs/2411.07641",
+        "github_repo": null,
+        "summary": "- This paper introduces top-\n\u03c3, a novel sampling method for large language models (LLMs) that operates directly on pre-softmax logits by leveraging a statistical threshold.\n- The method distinguishes between a Gaussian-distributed noisy region and a distinct informative region in the logits, enabling efficient token filtering without complex probability manipulations.\n- Unlike existing methods, top-\n\u03c3 maintains a stable sampling space regardless of temperature scaling, making it suitable for test-time scaling techniques.\n- Experimental results across four reasoning-focused datasets demonstrate that top-\n\u03c3 outperforms existing sampling approaches and greedy decoding, while maintaining consistent performance at high temperatures.\n- The theoretical analysis of top-no provides further insights into its behavior and temperature invariance property.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "StableV2V: Stablizing Shape Consistency in Video-to-Video Editing",
+        "authors": "Dong Liu, Yunwei Lan, Kaidong Zhang, Rui Li, Chang Liu",
+        "link": "https://arxiv.org/abs/2411.11045",
+        "github_repo": "https://github.com/AlonzoLeeeooo/StableV2V",
+        "summary": "- StableV2V is a novel video editing method that prioritizes shape consistency between the edited video and user prompts, addressing limitations of existing methods that often produce inconsistent results.\n- It consists of three components: a Prompted First-Frame Editor (PFE) to edit the initial frame based on the prompt, an Iterative Shape Aligner (ISA) to ensure shape consistency across frames by simulating and refining depth maps, and a Conditional Image-to-Video Generator (CIG) to produce the final edited video.\n- Experimental results on the DAVIS-Edit benchmark demonstrate StableV2V's superior performance compared to state-of-the-art methods in various metrics, including visual quality, temporal consistency, and alignment with user prompts.\n- StableV2V is also shown to be more efficient than most competing methods, while achieving significant improvements in challenging scenarios involving large shape changes.\n- StableV2V supports a wide range of editing applications, including text-based editing, image-based editing, video style transfer, and video inpainting.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/AlonzoLeeeooo/StableV2V"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/AlonzoLeeeooo/StableV2V",
+            "https://huggingface.co/datasets/AlonzoLeeeooo/DAVIS-Edit"
+        ],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "Awaker2.5-VL: Stably Scaling MLLMs with Parameter-Efficient Mixture of Experts",
+        "authors": "Nanyi Fei, Hongpeng Lin, Guoxing Yang, Yanqi Dai, Jinqiang Long",
+        "link": "https://arxiv.org/abs/2411.10669",
+        "github_repo": "https://github.com/MetabrainAGI/Awaker",
+        "summary": "- This paper introduces Awaker2.5-VL, a Mixture of Experts (MoE) architecture designed for Multimodal Large Language Models (MLLMs) to address the \"multi-task conflict\" issue, where mixing data from various tasks leads to performance degradation.\n- Awaker2.5-VL utilizes multiple sparsely activated expert models, each specializing in a specific task, along with a global expert for general capabilities, and a gating network to control expert activation.\n- The model employs Low-Rank Adaptation (LoRA) for each expert to reduce training and inference costs and incorporates a simplified routing strategy for enhanced training stability.\n- The paper uses Qwen2-VL-7B-Instruct as its base model and evaluates performance on benchmarks such as MME-Realworld, MME-Realworld-CN, and MMBench.\n- Awaker2.5-VL achieves state-of-the-art results on the MME-Realworld-CN benchmark and shows significant improvements over the base model on other benchmarks, including a 5-point improvement in overall score on MME-Realworld-CN.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/MetabrainAGI/Awaker"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "FitDiT: Advancing the Authentic Garment Details for High-fidelity Virtual Try-on",
+        "authors": "Chengming Xu, Qingdong He, Donghao Luo, Xiaobin Hu, Boyuan Jiang",
+        "link": "https://arxiv.org/abs/2411.10499",
+        "github_repo": null,
+        "summary": "- FitDiT, a novel Diffusion Transformer (DiT) model designed for virtual try-on, focuses on enhancing high-resolution features related to garment patterns. \n- FitDiT introduces a two-stage training strategy, first using garment priors evolution to fine-tune garment feature extraction and then using a customized DiT block for virtual try-on. \n- A frequency-spectra distance loss aids in preserving intricate garment details in pixel space while a dilated-relaxed mask augmentation strategy improves size-aware fitting. \n-  Quantitative results on VITON-HD, DressCode, and a self-collected high-resolution dataset (CVDD) demonstrate FitDiT's significant performance improvements over existing try-on models. \n- FitDiT shows superiority by reducing FID error by 71.6% over existing models, demonstrating remarkable texture preservation and improved garment fitting, which makes it suitable for real-world try-on applications.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "LL\u00e4Mmlein: Compact and Competitive German-Only Language Models from Scratch",
+        "authors": "Andreas Hotho, Julia Wunderle, Jan Pfister",
+        "link": "https://arxiv.org/abs/2411.11171",
+        "github_repo": null,
+        "summary": "- This paper introduces LL\u00e4Mmlein, two new German-only decoder-only LLMs (120M and 1B parameters), trained from scratch on a filtered and preprocessed version of the RedPajama dataset.\n- A new German tokenizer with a 32,000 token vocabulary was created and models were evaluated on the SuperGLEBer and lm-evaluation-harness-de benchmarks, showing competitive performance against similarly sized models and even some larger models.\n- The 1B model matches the performance of much larger models, like the German finetuned Llama 8B on the SuperGLEBer benchmark and its instruction-tuned version outperforms all other 1B models on TruthfulQA by at least 6%.\n- Intermediate checkpoints were analyzed to track the learning dynamics, revealing varying rates of improvement across different tasks.\n- All artifacts, including the models, code, and data, will be open-sourced to promote transparency and future research within the German NLP community.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering",
+            "Token Classification",
+            "Sentence Similarity"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/cis-lmu/bavarian_to_english",
+            "https://huggingface.co/LSX-UniWue/Guanako",
+            "https://huggingface.co/FreedomIntelligence/alpaca-gpt4-deutsch",
+            "https://huggingface.co/FreedomIntelligence/evol-instruct-deutsch",
+            "https://huggingface.co/FreedomIntelligence/sharegpt-deutsch",
+            "https://huggingface.co/DiscoResearch/Llama3-DiscoLeo-Instruct-8B-v0.1"
+        ],
+        "date": "2024-11-19"
+    },
+    {
+        "title": "Adaptive Decoding via Latent Preference Optimization",
+        "authors": "Jason Weston, Asli Celikyilmaz, Ping Yu, Ilia Kulikov, Shehzaad Dhuliawala",
+        "link": "https://arxiv.org/abs/2411.09661",
+        "github_repo": null,
+        "summary": "- This paper introduces Adaptive Decoding, a method for dynamically adjusting the sampling temperature during language model generation, leading to improved performance on tasks requiring varying levels of creativity and factual accuracy.\n- The core component is the Adaptive Decoder module, a small neural network added to the LLM's architecture, predicting the optimal temperature at either the token or sequence level.\n- Latent Preference Optimization (LPO), a novel training approach based on Direct Preference Optimization, trains the Adaptive Decoder by sampling multiple responses with varying temperatures, scoring them with a reward model, and learning to prefer temperatures associated with higher-ranked responses.\n- Experiments on a combined dataset (UltraMathStories) of math, creative writing, and general instructions show that Adaptive Decoding outperforms fixed temperature baselines.\n- Additionally, the method demonstrates success in constrained creative writing, where it learns to use low temperatures for constrained parts and higher temperatures for creative parts of the text, outperforming greedy and high-temperature baselines.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-19"
+    }
+]

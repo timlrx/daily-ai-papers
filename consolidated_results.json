@@ -7606,5 +7606,81 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-11-19"
+    },
+    {
+        "title": "Continuous Speculative Decoding for Autoregressive Image Generation",
+        "authors": "Fei Li, Qi Yang, Kun Ding, Robert Zhang, MarkWang",
+        "link": "https://arxiv.org/abs/2411.11925",
+        "github_repo": "https://github.com/MarkXCloud/CSpD",
+        "summary": "- This paper introduces Continuous Speculative Decoding (CSpD), a novel method for accelerating autoregressive image generation models that use continuous tokens, such as those based on diffusion processes.\n- CSpD generalizes the speculative decoding algorithm from discrete tokens to continuous space by establishing an acceptance criterion based on the probability density functions of draft and target models' output distributions. \n- It addresses inconsistencies between draft and target outputs through denoising trajectory alignment and token pre-filling, and uses acceptance-rejection sampling to efficiently resample tokens from a modified distribution.\n- Experimental results on ImageNet 256x256 generation with MAR models demonstrate a speedup of up to 2.33x while maintaining generation quality, as measured by FID and IS. \n- The authors suggest that more substantial performance gains are expected with larger models and broader scale disparities.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MarkXCloud/CSpD"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-20"
+    },
+    {
+        "title": "Soft Robotic Dynamic In-Hand Pen Spinning",
+        "authors": "Jeffrey Ichnowski, Christopher G. Atkeson, Jean Oh, Uksang Yoo, Yunchao Yao",
+        "link": "https://arxiv.org/abs/2411.12734",
+        "github_repo": null,
+        "summary": "- SWIFT, a novel system for dynamic in-hand manipulation with soft robots, is introduced, enabling a soft robotic hand to learn and execute the complex task of pen spinning.\n- Unlike prior work relying on simulations or object models, SWIFT employs a trial-and-error learning approach based solely on real-world data, using a self-supervised process and a parameterized action space.\n- Using a soft, multi-finger gripper attached to a robotic arm, the system learns to grasp, spin, and catch a pen by optimizing the parameters of grasping location, servo targets for spinning, and delay time for catching, achieving a 100% success rate after 130 trials across three pens with different weights and weight distributions.\n- The system's robustness and generalizability are demonstrated by its successful application to other objects with diverse shapes and weights, such as a brush (10/10 success rate) and a screwdriver (5/10 success rate), after minimal additional training.\n- This work highlights the potential of soft robotics in performing complex dynamic in-hand manipulation tasks, bridging the gap between the capabilities of human hands and current limitations of soft robotic dexterity.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://soft-spin.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-20"
+    },
+    {
+        "title": "RedPajama: an Open Dataset for Training Large Language Models",
+        "authors": "Shane Adams, Yonatan Oren, Quentin Anthony, Daniel Fu, Maurice Weber",
+        "link": "https://arxiv.org/abs/2411.12372",
+        "github_repo": null,
+        "summary": "- The paper releases RedPajama-V1, an open reproduction of the LLaMA training dataset, and RedPajama-V2, a new web-based dataset comprising over 100 trillion tokens with quality signals for filtering.\n- RedPajama-V2 dataset emphasizes transparency by documenting its creation process, offering data at scale, and includes artifacts and quality signals for filtering and creating higher quality datasets.\n- This dataset has been instrumental in training production-ready large language models, such as Snowflake Arctic, Salesforce's XGen, and AI2's OLMo.\n- Ablation studies are conducted using decoder-only transformer models with up to 1.6B parameters, demonstrating how quality signals enhance dataset curation.\n- The study emphasizes the potential of RedPajama in building more transparent, high-performing large language models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "github.com/togethercomputer/RedPajama-Data"
+        ],
+        "huggingface_urls": [
+            "huggingface.co/datasets/togethercomputer/RedPajama-Data-1T",
+            "huggingface.co/datasets/togethercomputer/RedPajama-Data-V2"
+        ],
+        "date": "2024-11-20"
+    },
+    {
+        "title": "Building Trust: Foundations of Security, Safety and Transparency in AI",
+        "authors": "Huamin Chen, Mark Bestavros, Emily Fox, Garth Mollett, huzaifas-sidhpurwala",
+        "link": "https://arxiv.org/abs/2411.12275",
+        "github_repo": null,
+        "summary": "- This paper explores the security and safety implications of publicly available AI models, particularly large language models (LLMs).\n- It reviews current security and safety scenarios, highlighting challenges like issue tracking, remediation, and the lack of established lifecycle and ownership processes for AI models.\n- The paper proposes comprehensive strategies to enhance security and safety for both model developers and end-users.\n- It discusses the distinction between AI security (protecting systems from threats) and AI safety (preventing harm from the system's operation), emphasizing the need for a holistic approach to AI risk management.\n- The paper also suggests adapting existing vulnerability disclosure processes for AI security flaws and proposes the establishment of a central body for tracking safety hazards.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-20"
+    },
+    {
+        "title": "Evaluating Tokenizer Performance of Large Language Models Across Official Indian Languages",
+        "authors": "D. J. Bora, tamang0000",
+        "link": "https://arxiv.org/abs/2411.12240",
+        "github_repo": null,
+        "summary": "- This research paper evaluates the performance of tokenizers used by 12 Large Language Models (LLMs) across all 22 official languages of India.\n- The study uses Normalized Sequence Length (NSL) as the key metric for evaluation and finds that the SUTRA tokenizer outperforms other models, including Indic-specific models, in 14 out of 22 languages.\n- Notable findings include SUTRA's superior performance with Indic languages, GPT-40's improvement over GPT-4 in processing Indian languages, and the comparatively limited performance of Project Indus.\n- This suggests that Project Indus' better performance on some Indian language is tied to the training on common scripts (Devanagari) between the languages and not to the linguistic understanding.\n- The study highlights the importance of developing targeted tokenization strategies for multilingual and Indic-centric LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-20"
     }
 ]

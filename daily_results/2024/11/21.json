@@ -1,0 +1,134 @@
+[
+    {
+        "title": "SageAttention2 Technical Report: Accurate 4 Bit Attention for Plug-and-play Inference Acceleration",
+        "authors": "Jun Zhu, Jia Wei, Pengle Zhang, Haofeng Huang, jt-zhang",
+        "link": "https://arxiv.org/abs/2411.10958",
+        "github_repo": "https://github.com/thu-ml/SageAttention",
+        "summary": "- SageAttention2 is a new attention mechanism that uses 4-bit matrix multiplication and additional precision-enhancing techniques to accelerate attention computation while maintaining precision.\n- It quantizes matrices Q and K to INT4 in warp-level granularity, and matrices P and V to FP8, along with smoothing techniques for Q and V to enhance accuracy.\n- An adaptive mixed-precision method employs 8-bit attention for problematic layers/timesteps and 4-bit attention for others, further improving accuracy.\n- On an RTX 4090, SageAttention2 achieves a peak performance of 485 TOPS, surpassing FlashAttention2 and xformers by approximately 3.1x and 5.4x, respectively.\n- Comprehensive experiments across diverse models, including large language, image generation, and video generation models, demonstrate negligible end-to-end metric loss with SageAttention2.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/thu-ml/SageAttention"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "VBench++: Comprehensive and Versatile Benchmark Suite for Video Generative Models",
+        "authors": "Jiashuo Yu, Yinan He, Xiaojie Xu, Fan Zhang, Ziqi Huang",
+        "link": "https://arxiv.org/abs/2411.13503",
+        "github_repo": "https://github.com/Vchitect/VBench",
+        "summary": "- VBench++ is a comprehensive benchmark suite designed for evaluating video generative models, encompassing both text-to-video (T2V) and image-to-video (I2V) generation.\n- It introduces a hierarchical Evaluation Dimension Suite with 16 disentangled dimensions covering aspects like video quality, condition consistency, and trustworthiness.\n- It offers specialized prompt suites and an adaptive Image Suite to facilitate fair and comprehensive evaluation across different models and content types.\n- Human preference annotations are collected for each dimension, demonstrating strong alignment between VBench++ evaluations and human perception.\n- VBench++ provides valuable insights into model strengths and weaknesses, guiding future development in video generation, and is fully open-sourced.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Vchitect/VBench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/Vchitect/VBench_Leaderboard"
+        ],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "VideoAutoArena: An Automated Arena for Evaluating Large Multimodal Models in Video Analysis through User Simulation",
+        "authors": "Mohan Kankanhalli, Jing Ma, Dongxu Li, teowu, Ziyang",
+        "link": "https://arxiv.org/abs/2411.13281",
+        "github_repo": null,
+        "summary": "- Introduces VideoAutoArena, an automated arena-style benchmark for evaluating Large Multimodal Models (LMMs) in video analysis using simulated user interactions and open-ended questions.\n- Employs user simulation with role-playing by LMM agents to generate diverse, realistic questions based on video content and user personas with varying degrees of relevance to the video.\n- Implements a fault-driven evolution strategy to progressively increase question complexity, challenging models to address increasingly difficult video analysis scenarios.\n- Leverages an automated judging system based on the LMM-as-a-Judge paradigm, comparing responses and ranking models using a modified ELO rating system, showing strong alignment with human judgment (87.29%).\n- Introduces an auxiliary benchmark, VideoAutoBench, streamlining LMM evaluation by comparing model responses against human-selected winners from a subset of VideoAutoArena battles, demonstrating consistent ranking results between the arena and the bench.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://videoautoarena.github.io/"
+        ],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "Is Your LLM Secretly a World Model of the Internet? Model-Based Planning for Web Agents",
+        "authors": "Cheng Chang, Kai Zhang, Boyu Gou, Boyuan Zheng, Yu Gu",
+        "link": "https://arxiv.org/abs/2411.06559",
+        "github_repo": null,
+        "summary": "- WEB-DREAMER, a novel model-based planning paradigm for language agents in web environments, is introduced, leveraging LLMs as world models.\n- The approach involves simulating potential outcomes for each candidate action using natural language descriptions generated by LLMs, and then evaluating these imagined outcomes to determine the optimal action at each step.\n- This method addresses the safety risks and practical constraints of directly applying tree search on live websites, particularly for irreversible actions.\n- Empirical results on VisualWebArena and Mind2Web-live demonstrate substantial improvements over reactive baselines.\n- The findings highlight the potential of LLMs as world models and open new avenues for research in optimizing LLMs for world modeling and developing advanced model-based planning algorithms.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/OSU-NLP-Group/WebDreamer"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "SAMURAI: Adapting Segment Anything Model for Zero-Shot Visual Tracking with Motion-Aware Memory",
+        "authors": "Jenq-Neng Hwang, Hsiang-Wei Huang, Cheng-Yen Yang, Nitre, wchai",
+        "link": "https://arxiv.org/abs/2411.11922",
+        "github_repo": "https://github.com/yangchris11/samurai",
+        "summary": "- SAMURAI, an enhanced adaptation of SAM 2 for visual object tracking, is introduced, incorporating temporal motion cues and a motion-aware memory selection mechanism.\n- It addresses SAM 2's limitations in handling crowded scenes and occlusions by predicting object motion and refining mask selection, enabling robust and accurate tracking without retraining or fine-tuning.\n- SAMURAI achieves state-of-the-art zero-shot performance on LaSOT, LaSOText, GOT-10k, and other VOT benchmarks, showing a 7.1% AUC gain on LaSOText and a 3.5% AO gain on GOT-10k.\n- It operates in real-time and demonstrates strong generalization across diverse datasets, achieving competitive results compared to fully supervised methods on LaSOT.\n- SAMURAI's motion modeling and memory selection modules enhance visual tracking accuracy without additional computational overhead, offering a reliable real-time solution for online VOT.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/yangchris11/samurai"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "Stylecodes: Encoding Stylistic Information For Image Generation",
+        "authors": "CiaraRowles",
+        "link": "https://arxiv.org/abs/2411.12811",
+        "github_repo": "https://github.com/CiaraStrawberry/stylecodes",
+        "summary": "- This research introduces StyleCodes, an open-source architecture with training methods for style-conditioned image generation.\n- Stylecodes encodes image styles into short, shareable base64 codes, which offer greater control and collaboration compared to previous image-based conditioning or prompt engineering techniques.\n- The model consists of an attention-based autoencoder and a ControlNet-like UNet decoder, enabling the transfer and control of style from a given image to generated outputs by utilizing residual connections into a frozen pretrained model. \n- Trained using a combination of datasets like MidJourney, CommonCanvas, and JourneyDB, the encoder compresses image styles into 20-digit base64 codes, and initial results indicate effective style transfer with minimal quality loss compared to other methods, along with flexibility in prompt usage and compatibility with existing fine-tuned models. \n- Further investigation is needed regarding computational costs for larger models and biases introduced by dataset limitations, but the work presents a promising approach to more social and collaborative image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/CiaraStrawberry/stylecodes"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "When Precision Meets Position: BFloat16 Breaks Down RoPE in Long-Context Training",
+        "authors": "Cunxiao Du, Tongyao Zhu, Chao Du, Qian Liu, haonan3",
+        "link": "https://arxiv.org/abs/2411.13476",
+        "github_repo": "https://github.com/haonan3/AnchorContext",
+        "summary": "- This paper introduces AnchorAttention, a novel attention mechanism designed to improve long-context training of Large Language Models (LLMs) by addressing the numerical instability of Rotary Position Embedding (RoPE) when using BFloat16 precision.\n- AnchorAttention mitigates the issue by treating the first token in the input sequence as a shared anchor with a consistent position ID, visible to all documents within the context window, but masking out attention across different documents.\n- This reduces attention computations and the accumulation of numerical errors while ensuring the model learns a full spectrum of rotational angles in RoPE. \n- Experiments on the RULER benchmark and real-world long-context datasets like LongBench show that AnchorAttention outperforms standard full attention and intra-document attention, boosting performance and reducing training time by over 50%.\n- AnchorAttention maintains performance on medium and short context benchmarks such as MMLU and HellaSwag while excelling in long context settings.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/haonan3/AnchorContext"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-21"
+    },
+    {
+        "title": "ORID: Organ-Regional Information Driven Framework for Radiology Report Generation",
+        "authors": "Dongnan Liu, Ziyong Feng, Xiang An, Tiancheng Gu, Kaichengalex",
+        "link": "https://arxiv.org/abs/2411.13025",
+        "github_repo": null,
+        "summary": "- This paper introduces ORID, an Organ-Regional Information Driven framework, for generating radiology reports from medical images. \n- ORID leverages a fine-tuned multi-modal large language model (LLaVA-Med-RRG) to generate organ-specific diagnostic descriptions.\n- It employs an organ-based cross-modal fusion module and an organ importance coefficient analysis module to integrate image and text features effectively and to reduce the influence of unrelated organ regions, respectively. \n- The framework is evaluated on IU-Xray and MIMIC-CXR datasets, achieving state-of-the-art performance in NLG metrics on both datasets. \n- ORID also demonstrates superior clinical efficacy on MIMIC-CXR compared to other models.",
+        "classification": [
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-21"
+    }
+]

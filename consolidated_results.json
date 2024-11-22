@@ -7814,5 +7814,214 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-11-21"
+    },
+    {
+        "title": "Enhancing the Reasoning Ability of Multimodal Large Language Models via Mixed Preference Optimization",
+        "authors": "Yangzhou Liu, Yue Cao, Wenhai Wang, Zhe Chen, Weiyun Wang",
+        "link": "https://arxiv.org/abs/2411.10442",
+        "github_repo": null,
+        "summary": "- This paper introduces Mixed Preference Optimization (MPO), a method for enhancing the multimodal reasoning capabilities of Large Language Models (LLMs), by combining supervised fine-tuning loss with preference and quality losses.\n- A new dataset, MMPR, a large-scale multimodal reasoning preference dataset is created using an automated preference data construction pipeline.\n- The InternVL2-8B-MPO model, trained using MPO, achieves state-of-the-art performance on MathVision (25.7% accuracy) among open-source models and a score of 67.0% on MathVista, outperforming the baseline InternVL2-8B by 8.7 points.\n- MPO also leads to improved performance on hallucination benchmarks like POPE and CRPE, and complex VQA benchmarks like MM-Vet and LLaVA-bench, comparable to the much larger InternVL2-76B model.\n- The paper includes ablation studies demonstrating the impact of different optimization algorithms, data scale, and hyperparameters on performance.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering",
+            "Text Generation",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Marco-o1: Towards Open Reasoning Models for Open-Ended Solutions",
+        "authors": "Tianqi Shi, Hao Wang, Bo Zeng, Huifeng Yin, Yu Zhao",
+        "link": "https://arxiv.org/abs/2411.14405",
+        "github_repo": null,
+        "summary": "- Marco-01 is a large language model fine-tuned for enhanced reasoning abilities, focusing on both disciplines with standard answers (math, physics, coding) and open-ended problem-solving.\n- The model leverages Chain-of-Thought (CoT) fine-tuning, Monte Carlo Tree Search (MCTS), reflection mechanisms, and innovative reasoning strategies.\n- Marco-01 achieved accuracy improvements of +6.17% on MGSM (English) and +5.60% on MGSM (Chinese) datasets, demonstrating enhanced reasoning capabilities. \n- In translation tasks, Marco-01 excels at understanding colloquial nuances, translating slang expressions accurately, and surpassing tools like Google Translate.\n- It employs different granularities for MCTS actions ('steps' and 'mini-steps') to navigate diverse problem complexities and incorporates reflection mechanisms for self-correction and error detection in its reasoning process.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Translation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "OpenScholar: Synthesizing Scientific Literature with Retrieval-augmented LMs",
+        "authors": "Amanpreet Singh, Weijia Shi, Rulin Shao, jacquelinehe, akariasai",
+        "link": "https://arxiv.org/abs/2411.14199",
+        "github_repo": null,
+        "summary": "- Introduced OpenScholar, a retrieval-augmented language model (LM) designed to synthesize information from scientific literature.\n- OpenScholar leverages a specialized datastore of 45 million open-access papers, retrievers trained on scientific text, and an iterative self-feedback generation process.\n- Developed ScholarQABench, a multi-domain benchmark with nearly 3,000 expert-written queries and answers across computer science, physics, neuroscience, and biomedicine, to evaluate OpenScholar and other LMs.\n- Demonstrated that OpenScholar outperforms existing systems, including GPT-4, on ScholarQABench, particularly in citation accuracy, with human evaluation showing preference for OpenScholar responses over expert-written ones in over half of cases.\n- Open-sourced the code, models, datastore, data, and a public demo for OpenScholar and ScholarQABench.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/AkariAsai/OpenScholar",
+            "https://github.com/AkariAsai/ScholarBench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenScholar/openscholar-v1"
+        ],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Multimodal Autoregressive Pre-training of Large Vision Encoders",
+        "authors": "Michal Klein, Philipp Dufter, Xiujun Li, Mustafa Shukor, efini",
+        "link": "https://arxiv.org/abs/2411.14402",
+        "github_repo": "https://github.com/apple/ml-aim",
+        "summary": "- AIMv2, a family of generalist vision encoders, is introduced, utilizing a novel multimodal autoregressive pre-training method with image and text inputs.\n- The model architecture consists of a vision transformer encoder with prefix attention, followed by a causal multimodal decoder that autoregressively generates image patches and text tokens.\n- AIMv2 demonstrates strong performance across various vision and multimodal tasks, including image recognition, object detection, grounding, and multimodal understanding benchmarks.\n- Notably, AIMv2 outperforms state-of-the-art contrastive models like CLIP and DINOv2 in several tasks, exhibiting strong scaling properties with increasing data and parameters.\n- The model achieves 89.5% accuracy on ImageNet-1k with a frozen trunk after high-resolution finetuning.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image Classification",
+            "Object Detection",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/apple/ml-aim"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Ultra-Sparse Memory Network",
+        "authors": "Defa Zhu, Qiyang Min, Taoer, xyzed, FetchFortune",
+        "link": "https://arxiv.org/abs/2411.12364",
+        "github_repo": null,
+        "summary": "- This paper introduces UltraMem, a novel architecture incorporating large-scale, ultra-sparse memory layers to enhance the performance of transformer models.\n- UltraMem builds upon the Product Key Memory (PKM) concept and introduces several improvements including Tucker Decomposed Query-Key Retrieval, Implicit Value Expansion, and Multi-Core Scoring.\n- The paper claims that UltraMem reduces inference latency while maintaining model performance.\n- Experiments show UltraMem achieves up to 6x speedup compared to Mixture of Experts (MoE) models at the same scale and with a given computation budget.\n- It also exhibits favorable scaling properties, outperforming traditional and MoE models on various benchmarks including MMLU, TriviaQA, and BBH.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Hymba: A Hybrid-head Architecture for Small Language Models",
+        "authors": "Zijia Chen, Wonmin Byeon, Shizhe Diao, Yonggan Fu, Xin Dong",
+        "link": "https://arxiv.org/abs/2411.13676",
+        "github_repo": null,
+        "summary": "- Hymba, a family of small language models (LLMs), introduces a hybrid-head parallel architecture integrating transformer attention and state space models (SSMs) for improved efficiency and performance.\n- This architecture allows parallel processing, leveraging attention heads for high-resolution recall and SSM heads for efficient context summarization within the same layer.\n- Hymba incorporates learnable meta tokens, prepended to prompts to store critical information and optimize attention allocation, along with cross-layer key-value sharing and partial sliding window attention for a compact cache.\n- Hymba-1.5B-Base surpasses all sub-2B public models and even outperforms Llama-3.2-3B by 1.32% in average accuracy on commonsense reasoning tasks, with an 11.67\u00d7 cache size reduction and 3.49\u00d7 throughput improvement.\n- The instruction-tuned model, Hymba-1.5B-Instruct, achieves state-of-the-art results on various downstream tasks, including GSM8K, GPQA, and the Berkeley function-calling leaderboard.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/NVIDIA/Hymba-1.5B-Base",
+            "https://huggingface.co/NVIDIA/Hymba-1.5B-Instruct"
+        ],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Natural Language Reinforcement Learning",
+        "authors": "Mengyue Yang, Haotian Fu, Ziyu Wan, Xidong Feng, Benjamin-eecs",
+        "link": "https://arxiv.org/abs/2411.14251",
+        "github_repo": "https://github.com/waterhorse1/Natural-language-RL",
+        "summary": "- This paper introduces Natural Language Reinforcement Learning (NLRL), a novel paradigm that reinterprets core RL components (objectives, policies, value functions, Bellman equation) as language-based constructs, leveraging LLMs for improved efficiency, stability, and interpretability.\n- NLRL agents are implemented using LLMs as language policies, value function approximators, Monte Carlo/TD operators, and policy improvement operators. \n- The framework's effectiveness is demonstrated in Maze, Breakthrough, and Tic-Tac-Toe, showcasing its capacity for pure prompting enhancements and gradient-based training with textual feedback. \n- NLRL excels in leveraging textual feedback for decision-making, offering a more stable learning process compared to traditional scalar reward signals. \n- In Tic-Tac-Toe, NLRL demonstrates enhanced performance compared to a PPO baseline and LLM prompting approaches, highlighting the advantages of language-based learning and reasoning in RL.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/waterhorse1/Natural-language-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Insight-V: Exploring Long-Chain Visual Reasoning with Multimodal Large Language Models",
+        "authors": "Winston Hu, Jingkang Yang, Hai-Long Sun, Zuyan, THUdyh",
+        "link": "https://arxiv.org/abs/2411.14432",
+        "github_repo": null,
+        "summary": "- Insight-V is a novel system designed to enhance the visual reasoning capabilities of Multimodal Large Language Models (MLLMs) by generating structured reasoning data and employing a multi-agent training approach.\n- The system utilizes a two-step data generation pipeline with a progressive strategy to create diverse reasoning paths and a multi-granularity assessment method to ensure data quality, followed by training a multi-agent MLLM system with a reasoning agent and a summary agent to decompose the problem-solving process.\n- The reasoning agent produces detailed reasoning steps, while the summary agent assesses and selectively utilizes the reasoning to answer the question, with iterative DPO used to refine reasoning quality.\n- Evaluation on seven visual reasoning benchmarks demonstrates significant performance gains, with an average improvement of 7.0% for LLaVA-NeXT and 2.9% for a stronger base MLLM, showcasing the effectiveness and generalizability of Insight-V.\n- Insight-V\u2019s data generation pipeline and multi-agent system enables improvements to MLLM reasoning capabilities without needing expensive human labor.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/dongyh20/Insight-V"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Stable Flow: Vital Layers for Training-Free Image Editing",
+        "authors": "Kfir Aberman, Egor Nemchinov, Ohad Fried, Or Patashnik, omriav",
+        "link": "https://arxiv.org/abs/2411.14430",
+        "github_repo": null,
+        "summary": "- Stable Flow, a training-free image editing method, leverages the limited diversity of flow-based diffusion models, specifically FLUX and SD3, for consistent edits.\n- The method identifies \"vital layers\" within the Diffusion Transformer (DiT) architecture crucial for image formation through an automatic process that measures content deviation upon layer bypassing.\n- By selectively injecting attention features from a source image into the vital layers during the generation of an edited image, Stable Flow performs various image manipulations, including non-rigid editing, object addition, removal, and global scene editing.\n- An improved image inversion technique called \"latent nudging\" addresses the reconstruction limitations of FLUX for real image editing by perturbing the clean latent before inversion.\n- Quantitative and qualitative comparisons, along with user studies, show Stable Flow's effectiveness across various tasks while maintaining fidelity to the source image content and adherence to textual editing prompts.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "UnifiedCrawl: Aggregated Common Crawl for Affordable Adaptation of LLMs on Low-Resource Languages",
+        "authors": "Tae-Sun Chung, Akhil Kedia, Bethel Melesse Tessema",
+        "link": "https://arxiv.org/abs/2411.14343",
+        "github_repo": "https://github.com/bethelmelesse/unifiedcrawl",
+        "summary": "- UnifiedCrawl, a method to create large monolingual datasets for low-resource languages by efficiently filtering and extracting data from the Common Crawl corpus using minimal compute resources.\n- Demonstrates that fine-tuning multilingual LLMs with this data using efficient adapter methods like QLoRA significantly improves performance on low-resource languages while minimizing VRAM usage.\n- Shows large improvements in language modeling perplexity and few-shot prompting scores on downstream question-answering tasks.\n- Provides an affordable approach to improve LLMs for low-resource languages using consumer hardware.\n- The extracted Amharic dataset, UnifiedCrawl-Amharic, is significantly larger than existing Amharic datasets and leads to a 24% improvement in F1 score and 77% improvement in EM score on the Amharic question answering dataset, AmQA, when fine-tuning a 4.5B parameter XGLM model using QLoRA.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/bethelmelesse/unifiedcrawl"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "MagicDriveDiT: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control",
+        "authors": "Zhenguo Li, Lanqing Hong, Bo Xiao, Kai Chen, Ruiyuan Gao",
+        "link": "https://arxiv.org/abs/2411.13807",
+        "github_repo": null,
+        "summary": "- MagicDriveDiT, a novel DiT-based diffusion model, generates high-resolution, long street view videos with precise control over object positions, road semantics, and camera trajectories.\n- The model utilizes flow matching for enhanced scalability and incorporates spatial-temporal conditional encoding for precise control over spatial-temporal latents from CogVAE.\n- A progressive bootstrapping training strategy transitions from short, low-resolution videos to long, high-resolution videos, improving convergence and generalization.\n- MagicDriveDiT outperforms previous state-of-the-art methods in generating realistic street scene videos with higher resolution and longer durations, demonstrated by lower FVD scores and improved mAP and mIoU.\n- The model extrapolates to generate videos longer than those seen during training and supports diverse control signals, expanding its potential applications in autonomous driving simulations.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+        "authors": "Neel Nanda, Senthooran Rajamanoharan, Oscar Obeso, Javier Ferrando",
+        "link": "https://arxiv.org/abs/2411.14257",
+        "github_repo": null,
+        "summary": "- This paper investigates the mechanisms behind hallucinations in large language models (LLMs), focusing on entity recognition as a key factor.\n- Using sparse autoencoders (SAEs) as an interpretability tool, the researchers discovered directions in the representation space that detect whether a model recognizes an entity, indicating a form of self-knowledge about its capabilities.\n- These directions are causally relevant, capable of steering the model to refuse answering questions about known entities or hallucinate about unknown ones. \n- The study demonstrates that chat fine-tuning repurposes this existing mechanism from the base model, and that unknown entity recognition directions disrupt the factual recall mechanism by suppressing attention of attribute extraction heads.\n- Additionally, the researchers identify SAE latents seemingly representing uncertainty, which are predictive of incorrect answers.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/jbloom/Gemma-2b-IT-Residual-Stream-SAEs",
+            "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
+        ],
+        "date": "2024-11-22"
+    },
+    {
+        "title": "Patience Is The Key to Large Language Model Reasoning",
+        "authors": "Yijiong Yu",
+        "link": "https://arxiv.org/abs/2411.13082",
+        "github_repo": null,
+        "summary": "- This paper proposes a method for improving large language model (LLM) reasoning ability by encouraging a more patient reasoning style, without requiring new knowledge or skills.\n- The method involves training LLMs to favor thorough reasoning processes by using preference optimization, where detailed reasoning is treated as positive examples and simple answers as negative examples.\n- The model is fine-tuned using a lightweight dataset of mathematical problems and their solutions, which are further refined into more detailed steps.\n- Experimental results demonstrate a performance increase of up to 6.7% on the GSM8k benchmark, surpassing several previous works despite using less data and a simpler method.\n- Although the method increases inference time, the trade-off is considered worthwhile for enhanced accuracy in complex problem-solving.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-22"
     }
 ]

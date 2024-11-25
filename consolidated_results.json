@@ -8023,5 +8023,193 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2024-11-22"
+    },
+    {
+        "title": "Style-Friendly SNR Sampler for Style-Driven Generation",
+        "authors": "Sungroh Yoon, Heeseung Kim, Yeongtak, chaehun, jychoi",
+        "link": "https://arxiv.org/abs/2411.14793",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel Style-friendly SNR sampler to enhance personalized artistic style learning in large-scale text-to-image diffusion models by fine-tuning.\n- Motivated by the observation that styles emerge at higher noise levels, this sampler modifies the noise level sampling during fine-tuning, biasing it toward higher noise levels (lower log-SNR values) where stylistic features emerge.\n- Experiments fine-tune FLUX-dev and Stable Diffusion 3.5 using LoRA on style references from StyleDrop, demonstrating improved style capture over baselines using metrics like DINO and CLIP similarity, along with human evaluation of style and text alignment.\n- It achieves higher DINO and CLIP-I scores and outperforms even increasing the LoRA rank or model capacity.\n- The method enables new applications like creating coherent multi-panel comics and stylized typography from single reference images.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "T\u00dcLU 3: Pushing Frontiers in Open Language Model Post-Training",
+        "authors": "Hamish Ivison, Shengyi Huang, Valentina Pyatkin, Jacob Morrison, Nathan Lambert",
+        "link": "https://arxiv.org/abs/2411.15124",
+        "github_repo": null,
+        "summary": "- T\u00dcLU 3 is a family of open-source, state-of-the-art language models fine-tuned from Llama 3.1 using a novel four-stage post-training recipe.\n- The recipe includes supervised fine-tuning, preference tuning using Direct Preference Optimization, and a novel Reinforcement Learning with Verifiable Rewards (RLVR) stage.\n- RLVR trains models against ground truth rewards for specific skills with verifiable answers (e.g., math, precise instruction following). \n- T\u00dcLU 3 models outperform existing open-weight models and some closed models, like GPT 3.5 Turbo and GPT 40 mini, in terms of average performance across benchmarks.\n- The release includes model weights, training code, evaluation suite, and datasets related to various core skills.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/allenai/open-instruct",
+            "https://github.com/allenai/olmes"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/allenai/Llama-3.1-Tulu-3-70B",
+            "https://hf.co/allenai/Llama-3.1-Tulu-3-8B",
+            "https://hf.co/collections/allenai/tulu-3-datasets-673b8df14442393f7213f372"
+        ],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "A Flexible Large Language Models Guardrail Development Methodology Applied to Off-Topic Prompt Detection",
+        "authors": "Shaun Khoo, shingurding, gabrielchua",
+        "link": "https://arxiv.org/abs/2411.12946",
+        "github_repo": null,
+        "summary": "- This paper introduces a flexible, data-free methodology for developing guardrails for Large Language Models (LLMs) to prevent off-topic misuse.\n- The methodology involves using an LLM to generate a synthetic dataset of on-topic and off-topic prompts based on a qualitative problem analysis, then fine-tuning embedding (jina-embeddings-v2-small-en) or cross-encoder (stsb-roberta-base) models on this data to create off-topic classifiers.\n- The resulting guardrails outperform baseline methods, including cosine similarity, KNN, and zero-shot classification using LLMs, demonstrating higher precision in identifying off-topic prompts.\n- By framing the detection task as assessing relevance between system and user prompts, the guardrail effectively generalizes to other misuse categories such as jailbreak and harmful prompts.\n- The synthetic dataset and trained models are open-sourced to facilitate research and development in LLM safety.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/gabrielchua/off-topic",
+            "https://huggingface.co/collections/govtech/off-topic-guardrail-673838a62e4c661f248e81a4"
+        ],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "OminiControl: Minimal and Universal Control for Diffusion Transformer",
+        "authors": "Xinchao Wang, Qiaochu Xue, Xingyi Yang, Songhua Liu, Zhenxiong Tan",
+        "link": "https://arxiv.org/abs/2411.15098",
+        "github_repo": null,
+        "summary": "- OminiControl is a parameter-efficient framework that integrates image conditions into pre-trained Diffusion Transformer (DiT) models for image generation by leveraging a parameter reuse mechanism, which enables the DiT to use itself as an encoder.\n- It uses the existing VAE encoder to process conditioning images, which are integrated with learnable position embeddings alongside latent noise in the denoising network. \n- This design facilitates direct multi-modal attention interactions between condition and generation tokens, improving information exchange and control signal propagation. \n- Experimental results demonstrate that OminiControl outperforms existing UNet-based and DiT-adapted models in both subject-driven and spatially-aligned conditional generation tasks. \n- A new training dataset, Subjects200K, containing over 200,000 identity-consistent image pairs was created to advance research in subject-consistent generation.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Yuanshi9815/OminiControl",
+            "https://github.com/Yuanshi9815/Subjects200K"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "Large Multi-modal Models Can Interpret Features in Large Multi-modal Models",
+        "authors": "Ziwei Liu, Bo Li, Yifei Shen, Kaichen Zhang",
+        "link": "https://arxiv.org/abs/2411.14982",
+        "github_repo": null,
+        "summary": "- This paper introduces a framework to interpret the internal representations of Large Multimodal Models (LMMs), focusing on understanding their open-semantic features.\n- It employs Sparse Autoencoders (SAE) to disentangle complex representations into simpler, human-understandable features.\n- An automatic interpretation pipeline leverages larger LMMs to provide zero-shot explanations of these features, offering insights into model behavior.\n- The framework demonstrates the ability to steer LMM behavior by manipulating specific features, enabling targeted interventions and analysis of model decisions.\n- The authors analyze LLaVA-NeXT-8B using LLaVA-OV-72B and demonstrate effective feature interpretation and behavior steering, contributing to a deeper understanding of LMMs' strengths and weaknesses.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "VideoEspresso: A Large-Scale Chain-of-Thought Dataset for Fine-Grained Video Reasoning via Core Frame Selection",
+        "authors": "Xiu Su, Le Zhuo, Hairong Shi, Wei Huang, Songhao Han",
+        "link": "https://arxiv.org/abs/2411.14794",
+        "github_repo": "https://github.com/hshjerry/VideoEspresso",
+        "summary": "- VideoEspresso, a large-scale video question-answering (VideoQA) dataset, is introduced, focusing on fine-grained video reasoning and featuring VideoQA pairs that retain spatial and temporal context.\n- An automatic pipeline is used to construct the dataset, employing semantic key-frame extraction and GPT-40 for generating QA pairs and enriching them with Chain-of-Thought annotations.\n- A Hybrid LVLMs Collaboration framework is proposed, incorporating a Frame Selector and a two-stage reasoning LVLM to address cost-effectiveness and accuracy in video reasoning.\n- Evaluation on a 14-task benchmark against popular LVLMs shows superior performance, highlighting improved video reasoning capabilities compared to baseline methods.\n- Both objective and subjective evaluations, incorporating metrics such as logic, factuality, accuracy, and conciseness, showcase the dataset and model efficacy.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/hshjerry/VideoEspresso"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "Efficient Long Video Tokenization via Coordinated-based Patch Reconstruction",
+        "authors": "Pieter Abbeel, Jinwoo Shin, Sihyun Yu, Huiwon Jang, younggyoseo",
+        "link": "https://arxiv.org/abs/2411.14762",
+        "github_repo": null,
+        "summary": "- This paper introduces CoordTok, a novel video tokenizer designed for efficient encoding of long videos.\n- CoordTok leverages a coordinate-based patch reconstruction approach, encoding videos into factorized triplane representations and reconstructing patches corresponding to randomly sampled (x, y, t) coordinates, enabling efficient training on long videos.\n- Experiments demonstrate that CoordTok significantly reduces the number of tokens required to encode long videos compared to existing methods, achieving comparable reconstruction quality with substantially fewer tokens (e.g., encoding a 128-frame video into 1280 tokens compared to 6144 or 8192 tokens for baselines).\n- CoordTok's efficiency enables memory-efficient training of a diffusion transformer for long video generation, capable of generating 128 frames at once, leading to improved generation quality.\n- Further analysis reveals that CoordTok effectively captures temporal coherence in videos, leading to more efficient tokenization.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "Novel View Extrapolation with Video Diffusion Priors",
+        "authors": "Shijian Lu, Ling Shao, KunhaoLiu",
+        "link": "https://arxiv.org/abs/2411.14208",
+        "github_repo": null,
+        "summary": "- ViewExtrapolator, a novel view synthesis approach, leverages Stable Video Diffusion (SVD) priors to extrapolate novel views far beyond training view ranges.\n- It refines artifact-prone renderings from radiance fields or point clouds by guiding SVD's denoising process to preserve scene content using guidance and resampling annealing.\n- This training-free method enhances clarity and realism without fine-tuning SVD, making it efficient.\n- ViewExtrapolator generalizes to various 3D rendering methods, showing superior performance in novel view extrapolation compared to existing techniques.\n- Quantitative and qualitative results demonstrate its effectiveness across different scenes and rendering approaches.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Image",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "MyTimeMachine: Personalized Facial Age Transformation",
+        "authors": "David W. Jacobs, Annie N. Wang, Bang Gong, Jiaye Wu, Luchao Qi",
+        "link": "https://arxiv.org/abs/2411.14521",
+        "github_repo": null,
+        "summary": "- MyTimeMachine (MyTM) is a personalized facial age transformation network that leverages a personal photo collection (as few as 50 images) and a global aging prior (SAM) to generate realistic age-transformed faces.\n- MyTM introduces a novel Adapter Network, which combines personalized aging features learned from the individual's photo collection with global aging features from SAM, generating a re-aged image using StyleGAN2.\n- The training process utilizes three loss functions: personalized aging loss, extrapolation regularization, and adaptive w-norm regularization, which ensure identity preservation, accurate aging within and beyond the training data's age range, and distinct age-related facial changes.\n- MyTM outperforms existing global age transformation methods and naive personalization techniques in both age regression and age progression tasks, achieving higher identity preservation while maintaining age accuracy.\n- The approach extends to video re-aging, producing temporally consistent results by applying face-swapping techniques to a re-aged keyframe generated by MyTM.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+        "authors": "Maciej Wolczyk, Ulyana Piterbarg, Samuel Coward, Bart\u0142omiej Cupia\u0142, pagli98",
+        "link": "https://arxiv.org/abs/2411.13543",
+        "github_repo": null,
+        "summary": "- BALROG, a new benchmark designed to assess the agentic capabilities of LLMs and VLMs in complex, dynamic game environments, is introduced.\n- The benchmark incorporates six diverse reinforcement learning environments: BabyAI, Crafter, TextWorld, Baba Is AI, MiniHack, and NetHack, each testing various agentic skills like long-term planning and spatial reasoning.\n- Evaluations of several state-of-the-art LLMs and VLMs reveal that while they perform reasonably well on simpler tasks, they struggle significantly with more challenging environments like NetHack.\n- A notable observation is the poor performance of VLMs when presented with visual input, indicating a deficiency in vision-based decision-making.\n- The BALROG benchmark and framework, with its fine-grained metrics and support for various prompting strategies, are open-sourced to facilitate research in the agentic community.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "One to rule them all: natural language to bind communication, perception and action",
+        "authors": "Giuseppe Boccignone, Dimitri Ognibene, colo286",
+        "link": "https://arxiv.org/abs/2411.15033",
+        "github_repo": null,
+        "summary": "- This research presents a novel architecture for robot action planning which integrates Large Language Models (LLMs), perception, and action planning using a modified ReAct framework.\n- The core component, the Planner Module, translates natural language commands into executable actions and uses LLMs in a modified ReAct framework to dynamically adjust plans based on real-time feedback and environmental perception. \n- The system leverages scene graphs for semantic mapping and context understanding while utilizing an execution control mechanism and a failure management system to enable robust error handling. \n- Preliminary testing on RoBee, a humanoid robot, in a simulated kitchen and bedroom environment demonstrates the efficacy of the architecture.\n- It is able to handle simple, and moderately complex requests with good success rates, with future work directed to improve performance on complex, and open-ended requests and refining real-world integration.",
+        "classification": [
+            "Robotics",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
+    },
+    {
+        "title": "WildLMa: Long Horizon Loco-Manipulation in the Wild",
+        "authors": "Ge Yang, Sai Aneesh Suryadevara, Xuanbin Peng, Yuchen Song, Ri-Zhao Qiu",
+        "link": "https://arxiv.org/abs/2411.15131",
+        "github_repo": null,
+        "summary": "- WildLMa is a framework for in-the-wild mobile manipulation with quadruped robots, addressing the challenges of generalizability, long-horizon task execution, and complex manipulation beyond pick-and-place.\n- It combines a whole-body controller adapted for VR teleoperation, a skill library (WildLMa-Skill) learned through imitation learning and heuristics, and a language interface (WildLMa-Planner) for LLM-based skill coordination.\n- WildLMa-Skill enhances generalizability through language-conditioned imitation learning with CLIP and improves success rate in grasping tasks over existing RL baselines and a zero-shot method using only tens of demonstrations.\n- WildLMa-Planner utilizes a hierarchical approach for coordinating skills for long-horizon tasks, successfully completing tasks like cleaning up trash and rearranging items.\n- The framework is demonstrated through quantitative evaluations (showing improved success rates) and qualitative results on real-world robot deployments in diverse environments.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://wildlma.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-25"
     }
 ]

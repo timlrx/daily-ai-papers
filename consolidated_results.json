@@ -8211,5 +8211,285 @@
         ],
         "huggingface_urls": [],
         "date": "2024-11-25"
+    },
+    {
+        "title": "Material Anything: Generating Materials for Any 3D Object via Diffusion",
+        "authors": "Qing Wang, Ziwei Liu, Tengfei Wang, xanderhuang",
+        "link": "https://arxiv.org/abs/2411.15138",
+        "github_repo": null,
+        "summary": "- Material Anything is a novel diffusion-based framework for generating physically based rendering (PBR) materials for any 3D object, addressing the limitations of existing methods in handling diverse lighting and texture conditions.\n- It employs a two-stage pipeline: an image-space material diffusion model with a triple-head architecture and rendering loss, followed by a UV-space material refinement model to ensure consistency.\n- A confidence mask guides the model to leverage lighting cues or semantic information based on input quality, enabling it to handle various scenarios like texture-less, albedo-only, and generated objects.\n- A progressive material generation strategy maintains consistency across multiple views.\n- Experimental results on Material3D, a new dataset of 80K objects, demonstrate Material Anything's state-of-the-art performance, exceeding existing texture generation and optimization-based methods in quality and efficiency.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "Large-Scale Text-to-Image Model with Inpainting is a Zero-Shot Subject-Driven Image Generator",
+        "authors": "Sungroh Yoon, Heeseung Kim, Jooyoung Choi, Chaehun Shin",
+        "link": "https://arxiv.org/abs/2411.15466",
+        "github_repo": null,
+        "summary": "- This paper introduces Diptych Prompting, a novel zero-shot, subject-driven text-to-image generation framework based on diptych inpainting using large-scale text-to-image models (specifically, FLUX).\n- The method reinterprets subject-driven generation as an inpainting task where a reference image of the subject is placed in the left panel of a diptych, and the right panel is generated through text-conditioned inpainting based on a user prompt describing the desired context.\n- To improve subject fidelity and prevent content leakage, the framework incorporates background removal from the reference image and enhances attention weights between the diptych panels during inpainting.\n- Experimental results on DreamBench show that Diptych Prompting outperforms existing encoder-based image prompting methods in both qualitative comparisons and a human preference study, effectively capturing both subject details and text prompts.\n- Furthermore, the method's versatility is demonstrated by extending it to stylized image generation and subject-driven image editing.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+            "https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Beta"
+        ],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "Knowledge Transfer Across Modalities with Natural Language Supervision",
+        "authors": "Marco Grangetto, Emanuele Aiello, luca-molinaro, carloalbertobarbano",
+        "link": "https://arxiv.org/abs/2411.15611",
+        "github_repo": null,
+        "summary": "- This paper introduces Knowledge Transfer, a method for teaching pre-trained visual models new concepts using only textual descriptions.\n- The method leverages cross-modal interactions, hypothesizing that pre-trained visual encoders possess sufficient low-level features (shape, appearance, color) to represent unknown high-level concepts when provided with a textual description.\n- Explicit Knowledge Transfer involves synthesizing images via model inversion based on the textual description and then fine-tuning the visual encoder using an image-text matching loss.\n- Experiments demonstrate successful introduction of novel concepts into CLIP and ViLT models, with improved zero-shot performance on various tasks, including classification, segmentation, and image-text retrieval.\n- The method also shows potential for out-of-domain generalization, such as introducing medical concepts into models trained on natural images.",
+        "classification": [
+            "Multimodal",
+            "Zero-Shot Classification",
+            "Zero-Shot Image Classification",
+            "Image Classification",
+            "Image Segmentation",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge",
+        "authors": "Chengshuai Zhao, Alimohammad Beigi, Liangjie Huang, Bohan Jiang, Dawei Li",
+        "link": "https://arxiv.org/abs/2411.16594",
+        "github_repo": "https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge",
+        "summary": "- This paper surveys the emerging field of \"LLM-as-a-judge,\" where Large Language Models (LLMs) are used for scoring, ranking, or selecting content in various AI tasks.\n- The paper introduces a taxonomy categorizing LLM-as-a-judge approaches based on what to judge (e.g., helpfulness, harmlessness), how to judge (tuning, prompting), and where to judge (evaluation, alignment, retrieval, reasoning).\n- The study compiles existing benchmarks for LLM-as-a-judge evaluation, covering aspects like general performance, bias detection, and domain-specific tasks.\n- The authors highlight challenges such as bias, dynamic judgment, and the need for self-judging capabilities.\n- Finally, they suggest promising future directions like incorporating Retrieval Augmented Generation (RAG), creating bias-aware datasets, and developing human-LLM co-judgement systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "MH-MoE:Multi-Head Mixture-of-Experts",
+        "authors": "Furu Wei, Shuming Ma, Xun Wu, Shaohan Huang",
+        "link": "https://arxiv.org/abs/2411.16205",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel implementation of Multi-Head Mixture-of-Experts (MH-MoE), enhancing the multi-head mechanism by enabling it to attend to information from various representation spaces within different experts.\n- The key modifications include adding a \"heads\" dimension to the token dimension and incorporating two linear projection layers at the beginning and end of the MoE layer.\n- The new implementation maintains FLOPs and parameter parity with sparse Mixture of Experts models, which improves efficiency.\n- Experimental results on language models show that this new implementation leads to quality improvements over both vanilla MoE and fine-grained MoE models.\n- Additionally, the paper demonstrates MH-MoE's compatibility with 1-bit Large Language Models (LLMs), like BitNet.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation",
+        "authors": "Mohit Bansal, Jaehong Yoon, Han Lin, Jialu Li, Zun Wang",
+        "link": "https://arxiv.org/abs/2411.16657",
+        "github_repo": null,
+        "summary": "- DREAMRUNNER is a novel story-to-video generation model that uses a hierarchical system with a large language model (LLM) to create detailed scripts and plans for multi-scene, character-driven videos.\n- It employs retrieval-augmented test-time adaptation with motion-oriented videos and reference images to learn motion and subject priors, enabling fine-grained video generation with enhanced motion quality and seamless transitions.\n- DREAMRUNNER introduces SR3AI, a spatial-temporal region-based 3D attention and prior injection module, to bind objects and motions precisely while controlling frame-level semantics.\n- Evaluated on a new dataset, DreamStorySet, and T2V-CompBench, DREAMRUNNER outperforms existing methods in character consistency, text alignment, and smooth transitions, demonstrating strong performance in generating multi-character interactions and compositional video generation.\n- Notably, DREAMRUNNER shows a 13.1% relative improvement in character consistency, an 8.56% relative gain in text-following ability, and a 27.2% relative improvement in transition smoothness compared to previous state-of-the-art methods.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://dreamrunner-story2video.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "Factorized Visual Tokenization and Generation",
+        "authors": "Zheng Zhang, Pichao Wang, Ziteng Gao, Jianxiong Gao, Zechen Bai",
+        "link": "https://arxiv.org/abs/2411.16681",
+        "github_repo": null,
+        "summary": "- This paper introduces Factorized Quantization (FQ), a novel approach to improve visual tokenization for image generation by decomposing a large codebook into multiple smaller, independent sub-codebooks.\n- FQ enhances training stability and efficiency by reducing lookup complexity.\n- A disentanglement regularization mechanism and representation learning with pre-trained vision models like CLIP and DINOv2 encourage diversity and semantic richness in learned features, leading to more expressive representations.\n- Experiments show FQGAN substantially improves image reconstruction quality, achieving state-of-the-art performance, and can be effectively adapted for auto-regressive image generation.\n- The proposed FQGAN model outperforms existing VQ-based and LFQ-based models in image reconstruction quality, as measured by reconstruction FID.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://showlab.github.io/FQGAN"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "O1 Replication Journey -- Part 2: Surpassing O1-preview through Simple Distillation, Big Progress or Bitter Lesson?",
+        "authors": "Yuxiang Zheng, Yixiu Liu, Xuefeng Li, Haoyang Zou, Zhen Huang",
+        "link": "https://arxiv.org/abs/2411.16489",
+        "github_repo": null,
+        "summary": "- This paper investigates replicating OpenAI's O1 model capabilities, particularly its long-thought chain reasoning abilities using knowledge distillation from O1's API and supervised fine-tuning.\n- The authors demonstrate that a 72B parameter base model, fine-tuned on a distilled dataset of tens of thousands of samples, outperforms the O1-preview model on the American Invitational Mathematics Examination (AIME).\n-  The study also explores the generalization capabilities of the distilled model on diverse tasks including hallucination, safety, and open-domain QA, demonstrating strong generalization and reduced susceptibility to sycophancy despite training solely on mathematical problem-solving data.\n- The authors emphasize the potential risks of over-reliance on distillation techniques, highlighting concerns about transparency, innovation stagnation, and the cultivation of first-principles thinking in AI research. \n- A Technical Transparency Index (TTI) framework is proposed for evaluating and comparing O1 replication efforts based on transparency and reproducibility, advocating for a shift in research culture toward more transparent and innovative approaches.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/GAIR-NLP/01-Journey"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "GMAI-VL & GMAI-VL-5.5M: A Large Vision-Language Model and A Comprehensive Multimodal Dataset Towards General Medical AI",
+        "authors": "Zhe Chen, Bin Fu, Wei Li, Yanzhou Su, foreverbeliever",
+        "link": "https://arxiv.org/abs/2411.14522",
+        "github_repo": "https://github.com/uni-medical/GMAI-VL",
+        "summary": "- This paper introduces GMAI-VL, a large vision-language model for general medical AI, and GMAI-VL-5.5M, a comprehensive multimodal medical dataset.\n- GMAI-VL-5.5M is constructed from 219 specialized medical datasets, covering 13 medical imaging modalities and 18 specialties, totaling 5.5M image-text pairs.\n- GMAI-VL employs a three-stage training strategy: shallow alignment (projector training), deep alignment (vision encoder and projector training), and instruction tuning.\n- Experimental results indicate that GMAI-VL achieves state-of-the-art performance across various multimodal medical tasks, including visual question answering and medical image diagnosis, outperforming existing models on benchmarks such as VQA-RAD, OmniMedVQA, and Health & Medicine track of MMMU.\n- The authors claim that the comprehensive task coverage, diverse modalities, and high-quality of GMAI-VL-5.5M contribute to GMAI-VL's superior performance.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/uni-medical/GMAI-VL"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "VisualLens: Personalization through Visual History",
+        "authors": "Zhaojiang Lin, Yi Lu, Kai Sun, Deqing Fu, Wang Bill Zhu",
+        "link": "https://arxiv.org/abs/2411.16034",
+        "github_repo": null,
+        "summary": "- VisualLens is a novel approach for personalized recommendations that leverages a user's task-agnostic visual history, such as personal photos, instead of relying on traditional task-specific interaction logs or textual data.\n- The method addresses challenges like diversity and noise in visual histories by retrieving relevant images, extracting visual embeddings, captions, and aspect words, and using an iterative refinement process to improve aspect extraction.\n- VisualLens employs a grid-based approach to process multiple images simultaneously, reducing computational overhead, and uses a joint training strategy to enhance aspect word generation and candidate prediction.\n- Experimental results on two newly created benchmarks, Google Review-V and Yelp-V, demonstrate significant improvements over baselines and state-of-the-art methods, including a 1.6-4.6% improvement on Hit@3 over GPT-40.\n- The model uses an 8x8 grid for images along with their related captions and aspect words, which are combined with a d=2048 vector input to make predictions.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "One Diffusion to Generate Them All",
+        "authors": "Aniruddha Kembhavi, Christopher Clark, Sangho Lee, Tuan Pham, Duong H. Le",
+        "link": "https://arxiv.org/abs/2411.16318",
+        "github_repo": "https://github.com/lehduong/OneDiffusion",
+        "summary": "- OneDiffusion, a unified, large-scale diffusion model, supports bidirectional image synthesis and understanding across diverse tasks, including text-to-image generation, image editing using various modalities (depth, pose, layout, semantic maps), image restoration (deblurring, upscaling), and multi-view generation.\n- The model employs a straightforward approach, treating all tasks as frame sequences with varying noise scales during training, eliminating the need for specialized architectures.\n- Using a novel \"One-Gen\" dataset, integrating diverse sources and synthetic data, enables scalable joint training across various tasks and resolutions.\n- Experimental results demonstrate OneDiffusion achieves competitive or state-of-the-art performance on text-to-image generation, multi-view generation, depth estimation, and ID customization, showcasing its strong generalization capabilities.\n- OneDiffusion supports novel conditioning setups, including text-to-multi-view and image-to-multi-view generation.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal",
+            "Image-to-3D",
+            "Computer Vision",
+            "Depth Estimation",
+            "Keypoint Detection"
+        ],
+        "github_urls": [
+            "https://github.com/lehduong/OneDiffusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "Cautious Optimizers: Improving Training with One Line of Code",
+        "authors": "Qiang Liu, Bo Liu, Lizhang Chen, Kaizhao Liang",
+        "link": "https://arxiv.org/abs/2411.16085",
+        "github_repo": "https://github.com/kyleliang919/C-Optim",
+        "summary": "- This paper introduces Cautious Optimizer, a one-line code modification for momentum-based optimizers like AdamW and Lion.\n- The modification involves masking updates where the proposed update direction and current gradient are misaligned, leading to faster and more stable training.\n- Theoretical analysis shows that this change preserves convergence guarantees and speeds up loss reduction without breaking the Hamiltonian function or Lyapunov analysis.\n- Empirical results demonstrate significant speed-ups of up to 1.47x on tasks such as LLaMA and MAE pretraining.\n- The cautious variants achieve improved sample efficiency with virtually no computational overhead, outperforming standard optimizers across different model sizes and datasets.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/kyleliang919/C-Optim"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "The Impossible Test: A 2024 Unsolvable Dataset and A Chance for an AGI Quiz",
+        "authors": "Forrest McKee, David Noever",
+        "link": "https://arxiv.org/abs/2411.14486",
+        "github_repo": null,
+        "summary": "- This research paper introduces a novel evaluation framework, the \"impossible test,\" using a dataset of 675 fundamentally unsolvable problems to assess large language models' (LLMs) ability to acknowledge uncertainty.\n- Twelve state-of-the-art LLMs were evaluated on their propensity to admit \"I don't know\" rather than generate incorrect responses, with the best models achieving 62-68% accuracy in acknowledging uncertainty.\n- An inverse relationship was observed between problem difficulty and model accuracy, with GPT-4 demonstrating better uncertainty recognition on harder problems (35.8%) compared to simpler ones (20%).\n- The study reveals that models may be more prone to speculate when problems seem solvable and highlights variations in uncertainty acknowledgment across problem categories.\n- The impossible test contributes to Artificial General Intelligence (AGI) assessment by emphasizing uncertainty recognition as crucial for evaluating machine intelligence and prompting new directions for model training.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/reveondivad/certify"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "SplatFlow: Multi-View Rectified Flow Model for 3D Gaussian Splatting Synthesis",
+        "authors": "Soonwoo Kwon, Jin-Young Kim, Jiho Jang, Byeongjun Park, Hyojun Go",
+        "link": "https://arxiv.org/abs/2411.16443",
+        "github_repo": null,
+        "summary": "- SplatFlow is a novel framework for text-to-3D Gaussian Splatting (3DGS) generation and editing, consisting of a multi-view rectified flow (RF) model and a Gaussian Splatting Decoder (GSDecoder).\n- The multi-view RF model operates in latent space, generating multi-view images, depths, and camera poses conditioned on text prompts, effectively handling diverse scene scales and complex camera trajectories.\n- The GSDecoder translates these latent representations into pixel-aligned 3DGS using an efficient feed-forward approach.\n- SplatFlow utilizes training-free inversion and inpainting for 3DGS editing and supports various 3D tasks like object editing, novel view synthesis, and camera pose estimation, outperforming existing methods on MVImgNet and DL3DV-7k datasets in FID and CLIP Score.\n- Leveraging Stable Diffusion 3\u2019s encoder enhances generation quality and enables flexible integration with other generative models.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "Predicting Emergent Capabilities by Finetuning",
+        "authors": "Sergey Levine, Dan Klein, Eric Wallace, sea-snell",
+        "link": "https://arxiv.org/abs/2411.16035",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel method for predicting the emergence of capabilities in large language models (LLMs) by leveraging task-specific finetuning.\n- The key insight is that finetuning shifts the point of emergence to smaller models, and the amount of data controls the magnitude of this shift. \n- They introduce an \"emergence law\", a parametric function fitted to finetuning data to model this shift, extrapolating it to predict few-shot emergence.\n-  Evaluating on standard NLP benchmarks (MMLU, GSM8K, CommonsenseQA, and CoLA), they demonstrate accurate emergence prediction up to 4x the FLOPs in advance using only small pre-emergence models.\n- Case studies on data quality assessment (OpenLLaMA v1 vs. v2) and complex capability prediction (LLaMA 2 on APPS coding) showcase potential real-world applications.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "SegBook: A Simple Baseline and Cookbook for Volumetric Medical Image Segmentation",
+        "authors": "Zhongying Deng, Haoyu Wang, Yanjun Li, Ying Chen, Jin Ye",
+        "link": "https://arxiv.org/abs/2411.14525",
+        "github_repo": null,
+        "summary": "- This paper introduces SegBook, a large-scale benchmark for evaluating transfer learning in volumetric medical image segmentation.\n- It employs STU-Net, a scalable model pre-trained on a large full-body CT dataset (TotalSegmentator), to evaluate transfer learning across 87 public datasets with diverse modalities, targets, and sizes.\n- The results reveal a bottleneck effect where fine-tuning benefits diminish beyond a certain dataset size, with greater improvement on small and large datasets than medium-sized ones.\n- The pre-trained models show effective transfer to other modalities like MRI, irrespective of target presence during pre-training.\n- Moreover, pre-training on CT structural data shows promising results in both structure and lesion detection, highlighting adaptability across tasks.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "From CISC to RISC: language-model guided assembly transpilation",
+        "authors": "Abdulrahman Mahmoud, Rania Hossam, Chaimaa Abi, Ahmed Heakl",
+        "link": "https://arxiv.org/abs/2411.16341",
+        "github_repo": null,
+        "summary": "- This paper introduces CRT, a lightweight LLM-based transpiler that automatically converts x86 assembly to ARM and RISC-V assembly.\n- The approach uses a fine-tuned DeepSeekCoder-1.3B model with an extended tokenizer to handle assembly code specifics and a longer context window to capture complex semantic relationships.\n- Evaluated on real-world applications and compared against Apple's Rosetta 2, CRT achieves 79.25% translation accuracy from x86 to ARMv5 and 88.68% from x86 to RISC-V, along with 1.73x speedup, 1.47x better energy efficiency, and 2.41x better memory efficiency compared to Rosetta 2.\n- Analysis of the transpiled code reveals that the model maintains functional correctness despite syntactic variations, demonstrating the feasibility of LLM-based binary translation.\n- Further investigation revealed specific error patterns related to register allocation, memory addressing, and numerical token handling, indicating potential areas for future improvements.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/blog/lorinma/yi-coder"
+        ],
+        "date": "2024-11-26"
+    },
+    {
+        "title": "Best of Both Worlds: Advantages of Hybrid Graph Sequence Models",
+        "authors": "Bryan Perozzi, Clayton Sanford, Mahdi Karami, Ali Parviz, Ali Behrouz",
+        "link": "https://arxiv.org/abs/2411.15671",
+        "github_repo": null,
+        "summary": "- This paper introduces Graph Sequence Model (GSM), a unifying framework for adapting sequence models to graph-structured data, encompassing tokenization, local encoding, and global encoding steps.\n- Theoretical analysis reveals that recurrent models excel in counting tasks while Transformers struggle due to permutation equivariance; however, both suffer from representational collapse with increasing depth.\n- The paper also finds transformers are more effective than recurrent models for connectivity tasks. \n- This paper proposes GSM++, a hybrid model using hierarchical tokenization based on the Hierarchical Affinity Clustering (HAC) algorithm and a hybrid Transformer-Recurrent architecture.\n- Experimental results demonstrate GSM++'s superior performance on various benchmark graph tasks compared to existing methods.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-26"
     }
 ]

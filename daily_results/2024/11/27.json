@@ -1,0 +1,255 @@
+[
+    {
+        "title": "ShowUI: One Vision-Language-Action Model for GUI Visual Agent",
+        "authors": "Shiwei Wu, Zhengyuan Yang, Difei Gao, Linjie Li, Kevin Qinghong Lin",
+        "link": "https://arxiv.org/abs/2411.17465",
+        "github_repo": "https://github.com/showlab/ShowUI",
+        "summary": "- ShowUI, a novel 2B parameter vision-language-action (VLA) model, is designed to enhance Graphical User Interface (GUI) automation by processing visual screenshots, textual instructions, and generating appropriate actions.\n- The model employs UI-Guided Visual Token Selection, a technique that leverages connected components within UI screenshots to represent redundant visual areas, thus reducing computational overhead by 33% and improving training speed by 1.4x.\n- ShowUI implements Interleaved Vision-Language-Action Streaming to effectively manage interactions across different modalities and handle navigation history within multi-step GUI tasks.\n- Trained on a small, high-quality GUI instruction-following dataset consisting of only 256K samples, ShowUI achieves 75.1% accuracy in zero-shot screenshot grounding, outperforming larger models trained on larger datasets.\n- ShowUI also demonstrates strong navigation capabilities across diverse environments, including web, mobile, and online platforms.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/ShowUI"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "Star Attention: Efficient LLM Inference over Long Sequences",
+        "authors": "Boris Ginsburg, Fei Jia, Shantanu Acharya",
+        "link": "https://arxiv.org/abs/2411.17116",
+        "github_repo": "https://github.com/NVIDIA/Star-Attention",
+        "summary": "- Star Attention, a two-phase block-sparse approximation method, is introduced to improve the efficiency of Large Language Model (LLM) inference over long sequences.\n- The method involves an initial context encoding phase with blockwise local attention, followed by a query encoding and token generation phase using global attention via a distributed softmax algorithm.\n- This approach allows context length to scale linearly with the number of hosts, reducing memory requirements and inference time.\n- Evaluation on Llama3.1-8B and Llama3.1-70B across long-context benchmarks shows up to 11x faster inference while maintaining 95-100% accuracy compared to baseline methods.\n- Star Attention is compatible with existing LLM optimization techniques like Flash Attention and KV cache compression for potential further speed improvements.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/NVIDIA/Star-Attention"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "Rethinking Token Reduction in MLLMs: Towards a Unified Paradigm for Training-Free Acceleration",
+        "authors": "Honggang Chen, Donglin Wang, Pengxiang Ding, Xuyang Liu, Yuhang Han",
+        "link": "https://arxiv.org/abs/2411.17686",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel \"filter-correlate-compress\" paradigm for training-free token reduction in Multimodal Large Language Models (MLLMs), decomposing the process into three distinct stages for improved interpretability and flexibility.\n- A suite of methods called FiCoCo is proposed, implementing this paradigm with variants for different MLLM inference phases.\n- FiCoCo leverages intermediate computation products to minimize FLOPs and achieves up to 82.4% FLOPs reduction with minimal performance impact.\n- Experimental results on 10 multimodal benchmarks show FiCoCo outperforms state-of-the-art training-free token reduction methods.\n- Notably, FiCoCo achieves comparable performance to LLaVA-1.5-7B with just 17.6% of the computational cost and 67.6% of GPU memory in practical applications.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://ficoco-accelerate.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "MME-Survey: A Comprehensive Survey on Evaluation of Multimodal LLMs",
+        "authors": "Xinyu Fang, Bo Li, Shukang Yin, Chaoyou Fu, yifanzhang114",
+        "link": "https://arxiv.org/abs/2411.15296",
+        "github_repo": "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Benchmarks",
+        "summary": "- This paper presents a comprehensive survey of evaluation methods for Multimodal Large Language Models (MLLMs), categorizing existing benchmarks based on the capabilities they assess (foundational, behavioral, and application-oriented).\n- The survey discusses the benchmark construction process, including data collection, annotation, and potential challenges like data contamination and benchmark diversity.\n- It also covers evaluation methods (human, LLM/MLLM, and script-based) and introduces common metrics and available toolkits for streamlined evaluation.\n- The paper highlights current limitations of MLLMs, such as struggling with fine-grained perception, complex chart understanding, and long-context reasoning.\n- Finally, it proposes future directions for benchmark development, including creating well-defined capability taxonomies, focusing on real-world applications, and evaluating more diverse modalities beyond vision and language.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering",
+            "Video-Text-to-Text",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Benchmarks"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "TEXGen: a Generative Diffusion Model for Mesh Textures",
+        "authors": "Ying-Tian Liu, Yuan-Chen Guo, Xin Yu, Lp256, yuanze1024",
+        "link": "https://arxiv.org/abs/2411.14740",
+        "github_repo": null,
+        "summary": "- TEXGen is a novel generative diffusion model designed for mesh texturing, using a UV texture map representation for scalability and high-resolution detail preservation.\n- It employs a hybrid 2D-3D network architecture that combines 2D convolutions in UV space with sparse convolutions and attention layers in 3D space to learn both local details and global 3D dependencies.\n- Trained on a large dataset derived from Objaverse, TEXGen generates high-resolution textures guided by text prompts and single-view images, operating in a feed-forward manner without test-time optimization.\n- It outperforms existing generalizable texture generation methods in terms of quality and speed, achieving significantly lower FID and KID scores while being considerably faster.\n- The model supports various applications like text-guided texture synthesis, inpainting, and texture completion from sparse views.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/CVMI-Lab/TEXGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "Pathways on the Image Manifold: Image Editing via Video Generation",
+        "authors": "David Bensa\u00efd, Roy Velich, Daniel Silver, Gal Yona, Noam Rotstein",
+        "link": "https://arxiv.org/abs/2411.16819",
+        "github_repo": null,
+        "summary": "- This research introduces Frame2Frame (F2F), a novel image editing framework that leverages video generation for enhanced image manipulation.\n- F2F reformulates image editing as a temporal process, utilizing image-to-video models to generate smooth transitions from the original image to the desired edit, guided by temporally descriptive captions.\n- This approach traverses the image manifold continuously, ensuring consistent edits while preserving key elements of the original image and achieving improved edit accuracy.\n-  Evaluations on TEdBench and a new dataset, PosEdit (focused on human pose transformations), demonstrate state-of-the-art results, outperforming existing image-to-image methods in both edit accuracy and image preservation.\n- Further, a human evaluation confirms F2F's superior performance, showcasing its effectiveness in producing edits that align better with user intent while maintaining high visual quality.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "SketchAgent: Language-Driven Sequential Sketch Generation",
+        "authors": "Judith E Fan, Alex Zhao, Kristine Zheng, Tamar Rott Shaham, Yael Vinker",
+        "link": "https://arxiv.org/abs/2411.17673",
+        "github_repo": null,
+        "summary": "- SketchAgent is a novel language-driven sequential sketch generation method that leverages pre-trained multimodal Large Language Models (LLMs) and requires no training or fine-tuning.\n- The core innovation lies in its intuitive sketching language, introduced to the model via in-context examples, enabling the LLM to \"draw\" using string-based actions processed into vector graphics and then rendered onto a pixel canvas.\n- By drawing stroke-by-stroke, coupled with an LLM's sequential nature and rich prior knowledge, SketchAgent captures the dynamic and evolving process of human sketching.\n- Evaluations demonstrate SketchAgent's ability to generate diverse sketches, engage in dialogue-driven drawing, collaborate with humans in real-time, and edit sketches via chat, effectively capturing the sequential and dynamic aspects of human sketching.\n- This approach marks a departure from optimization-based methods, which lack temporal structure, and paves the way for intuitive, interactive artificial sketching systems.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://sketch-agent.csail.mit.edu/"
+        ],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "Learning 3D Representations from Procedural 3D Programs",
+        "authors": "Zezhou Cheng, Xuweiyi Chen",
+        "link": "https://arxiv.org/abs/2411.17467",
+        "github_repo": null,
+        "summary": "- This paper proposes Point-MAE-Zero, a self-supervised learning framework for 3D point cloud representations using procedurally generated 3D shapes.\n- Point-MAE-Zero leverages Point-MAE, a masked autoencoding framework and trains it on synthetic data generated using procedural programs. \n- It achieves comparable performance to Point-MAE-SN (trained on ShapeNet) on ModelNet40 and outperforms Point-MAE-SN on ScanObjectNN and part segmentation, demonstrating the efficacy of learning from procedurally generated data.\n- The study reveals that current self-supervised learning methods prioritize geometric structures over semantic content, evident from the comparable performance despite the synthetic dataset lacking explicit semantic annotations.\n- An analysis shows improved performance in Point-MAE-Zero with increased geometric diversity and dataset size of the procedurally generated shapes, indicating the importance of diverse and larger scale datasets in self-supervised 3D representation learning.",
+        "classification": [
+            "Computer Vision",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://point-mae-zero.cs.virginia.edu/"
+        ],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "SAR3D: Autoregressive 3D Object Generation and Understanding via Multi-scale 3D VQVAE",
+        "authors": "XIngang Pan, Tengfei Wang, Shangchen Zhou, Yushi Lan, Yongwei Chen",
+        "link": "https://arxiv.org/abs/2411.16856",
+        "github_repo": null,
+        "summary": "- SAR3D is a novel framework for fast 3D object generation and comprehensive understanding leveraging a multi-scale 3D vector-quantized variational autoencoder (VQVAE) and autoregressive modeling.\n- The multi-scale 3D VQVAE tokenizes 3D objects into hierarchical levels of tokens, enabling next-scale prediction training, which significantly reduces generation time, achieving speeds as fast as 0.82 seconds on an A6000 GPU.\n- For 3D generation, SAR3D employs an autoregressive model that predicts the next scale of the latent triplane representation, conditioned on single image or text prompts.\n- SAR3D-LLM, an extension of SAR3D for understanding, aligns the latent space of the 3D VQVAE with a large language model, enabling detailed 3D captioning and simultaneous generation and captioning.\n- Experimental results demonstrate that SAR3D surpasses existing 3D generation methods in both speed and quality, and enables detailed captioning of generated and encoded 3D objects.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://cyw-3d.github.io/projects/SAR3D/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "DreamMix: Decoupling Object Attributes for Enhanced Editability in Customized Image Inpainting",
+        "authors": "Ping Hu, Liqian Ma, Lu Zhang, Pengxiang Li, Yicheng Yang",
+        "link": "https://arxiv.org/abs/2411.17223",
+        "github_repo": "https://github.com/mycfhs/DreamMix",
+        "summary": "- DreamMix is a novel diffusion-based generative model for subject-driven image inpainting, enabling customized insertion of objects into images with text-driven attribute editing.\n- It utilizes a disentangled inpainting framework with Local Content Generation (LCG) and Global Context Harmonization (GCH) stages to ensure precise object placement and harmonious blending with the background.\n- An Attribute Decoupling Mechanism (ADM) diversifies training data to mitigate overfitting on provided subject images, enhancing the model's ability to generalize to new attributes. \n- A Textual Attribute Substitution (TAS) module refines text embeddings during inference, further improving the accuracy of attribute editing.\n- Experimental results demonstrate DreamMix's superior performance in identity preservation and attribute editing compared to existing methods, as evidenced by quantitative metrics and user studies.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/mycfhs/DreamMix"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "VLRewardBench: A Challenging Benchmark for Vision-Language Generative Reward Models",
+        "authors": "Yifan Song, Xuqing Yang, Zhihui Xie, Yuancheng Wei, Lei Li",
+        "link": "https://arxiv.org/abs/2411.17451",
+        "github_repo": null,
+        "summary": "- Introduces VL-RewardBench, a benchmark designed to evaluate Vision-Language Generative Reward Models (VL-GenRMs) and address limitations of existing evaluation methods that rely on biased AI-generated preferences or simplistic queries.\n- VL-RewardBench consists of 1,250 examples across three domains: general multimodal queries, visual hallucination detection, and complex reasoning tasks, curated through AI-assisted annotation with human verification.\n- Evaluation of 16 leading VL-GenRMs reveals that even top models like GPT-40 achieve only moderate accuracy on VL-RewardBench while open-source models struggle, highlighting the benchmark's challenging nature.\n- Analysis shows VL-GenRMs struggle more with basic visual perception than complex reasoning and that test-time scaling benefits vary by model capacity.\n- Demonstrates that critic training of VL-GenRMs for judgment substantially improves their evaluation abilities and that benchmark performance strongly correlates with downstream Best-of-N sampling effectiveness in MMMU-Pro.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "SALOVA: Segment-Augmented Long Video Assistant for Targeted Retrieval and Routing in Long-Form Video Analysis",
+        "authors": "Yong Man Ro, Hosu Lee, Hyunjun Kim, Junho Kim",
+        "link": "https://arxiv.org/abs/2411.16173",
+        "github_repo": null,
+        "summary": "- SALOVA, a novel video-LLM framework, enhances long-form video comprehension through a targeted retrieval process using a new dataset and architectural design.\n- The SceneWalk dataset, with 87.8K densely captioned long videos, enables capturing scene continuity and rich descriptive context for improved long-form video understanding.\n- SALOVA integrates a dynamic routing mechanism and spatio-temporal projector to retrieve relevant video segments efficiently, addressing the limitations of current video-LMMs in context length and memory overhead.\n- A FocusFast approach analyzes selected segments in detail while maintaining overall context awareness for enhanced video interpretation.\n- Experiments demonstrate SALOVA's superior performance in processing complex long videos, reducing information loss, and maintaining contextual integrity, outperforming existing video-LMMs on benchmarks like Video-MME and LongVideoBench, especially for medium to long videos.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "Low-Bit Quantization Favors Undertrained LLMs: Scaling Laws for Quantized LLMs with 100T Training Tokens",
+        "authors": "Haitao Mi, Zhisong Zhang, Thomas Hartvigsen, Tao Ge, Xu Ouyang",
+        "link": "https://arxiv.org/abs/2411.17691",
+        "github_repo": null,
+        "summary": "- This paper reveals that low-bit quantization tends to favor undertrained large language models (LLMs).\n- The authors study over 1500 quantized LLM checkpoints and derive scaling laws for quantization-induced degradation (QiD) concerning training tokens, model size, and bit width.\n- They propose using QiD to measure LLM training levels and predict quantization performance for models trained with 100 trillion tokens, finding that low-bit quantization might not be desirable for such extensively trained models.\n- Based on the scaling laws derived, the authors predict the number of training tokens needed to reach different training levels based on the magnitude of QiD for different LLM sizes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Xu-C"
+        ],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "MolReFlect: Towards In-Context Fine-grained Alignments between Molecules and Texts",
+        "authors": "Jingdi Le, Wei Liu, Yunqing Liu, Jiatong Li, qq8933",
+        "link": "https://arxiv.org/abs/2411.14721",
+        "github_repo": null,
+        "summary": "- MolReFlect, a teacher-student framework, is introduced to perform fine-grained molecule-caption alignments in the molecule-caption translation task.\n- A larger teacher LLM extracts important phrases from molecule SMILES or captions, aligning them with corresponding characteristics or sub-structures in a zero-shot manner. \n- In-Context Selective Reflection refines these alignments using similar examples and perplexity-based selection by a smaller student LLM.\n- Chain-of-Thought In-Context Molecule Tuning (CoT-ICMT) enhances the student LLM's learning by reformatting context examples into a thought chain, incorporating fine-grained alignments and reasoning. \n- MolReFlect achieves state-of-the-art performance on the ChEBI-20 dataset, outperforming baselines like ICMA and BioT5 in both Mol2Cap and Cap2Mol tasks without extra modalities or complex structures.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "Visual Counter Turing Test (VCT^2): Discovering the Challenges for AI-Generated Image Detection and Introducing Visual AI Index (V_AI)",
+        "authors": "Abhilekh Borah, Sainath Reddy Sankepally, Subhankar Ghosh, Shashwat Bajpai, Nasrin Imanpour",
+        "link": "https://arxiv.org/abs/2411.16754",
+        "github_repo": null,
+        "summary": "- This paper introduces the Visual Counter Turing Test (VCT^2), a benchmark dataset with ~130K images generated by state-of-the-art text-to-image models like Stable Diffusion, DALL-E 3, and Midjourney, along with corresponding real images and captions from MS COCO and Twitter.\n- It also proposes the Visual AI Index (VAI), a new metric for evaluating the visual quality of AI-generated images based on seven criteria, including texture complexity, color distribution, and object coherence.\n- The authors evaluate 15 existing AI-generated image detection methods on VCT^2 and find that they struggle to effectively detect images from newer models, especially proprietary ones like Midjourney.\n- They demonstrate a correlation between higher VAI scores and increased difficulty in detection, suggesting that improvements in image generation quality pose new challenges for detection techniques.\n- The paper makes the VCT^2 dataset and VAI code publicly available to foster research in AI-generated image detection and quality assessment.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    },
+    {
+        "title": "AnchorCrafter: Animate CyberAnchors Saling Your Products via Human-Object Interacting Video Generation",
+        "authors": "Xiaodong Cun, Yong Zhang, Juan Cao, Ziyao Huang, Ziyi Xu",
+        "link": "https://arxiv.org/abs/2411.17383",
+        "github_repo": null,
+        "summary": "- AnchorCrafter is a novel diffusion-based video generation framework designed to create realistic anchor-style product promotion videos by animating reference human images with specific products and motion controls.\n- It incorporates human-object interactions (HOI) through two key components: HOI-appearance perception, which enhances object appearance recognition and disentangles object and human appearances, and HOI-motion injection, which enables precise control of object trajectories and handles inter-occlusions.\n- Additionally, an HOI-region reweighting loss enhances the learning of object details.\n- Experimental results demonstrate superior performance in video quality, object perception, and hand generation, surpassing existing methods in object appearance preservation and shape awareness.\n-  AnchorCrafter effectively preserves object appearance and shape and generates high-quality videos with consistent human appearance and motion.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://cangcz.github.io/Anchor-Crafter/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-27"
+    }
+]

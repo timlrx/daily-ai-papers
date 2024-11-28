@@ -8744,5 +8744,284 @@
         ],
         "huggingface_urls": [],
         "date": "2024-11-27"
+    },
+    {
+        "title": "ROICtrl: Boosting Instance Control for Visual Generation",
+        "authors": "KevinQHLin, pcma, ynie, 365sleep, guyuchao",
+        "link": "https://arxiv.org/abs/2411.17949",
+        "github_repo": null,
+        "summary": "- The paper introduces ROICtrl, a novel adapter for pretrained diffusion models that enhances instance control in visual generation by incorporating regional instance control, where each instance is governed by a bounding box and a free-form caption.\n- ROICtrl utilizes ROI-Align and a new operation called ROI-Unpool to enable accurate and efficient ROI manipulation on high-resolution feature maps.\n- Unlike previous methods that rely on implicit position encoding or explicit attention masks, ROICtrl achieves superior performance in regional instance control with significantly reduced computational costs.\n- The proposed ROICtrl-Bench benchmark provides a comprehensive evaluation of instance control capabilities, covering both template-based and free-form instance captions.\n- Experiments demonstrate that ROICtrl outperforms existing methods on various benchmarks, achieving state-of-the-art performance and improved efficiency.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://roictrl.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Interleaved Scene Graph for Interleaved Text-and-Image Generation Assessment",
+        "authors": "ranjaykrishna, Tim666, lzy8465, Dipsy0830, shuaishuaicdp",
+        "link": "https://arxiv.org/abs/2411.17188",
+        "github_repo": null,
+        "summary": "- This paper introduces ISG (Interleaved Scene Graph), a new evaluation framework for assessing the quality of interleaved text and image generation.\n- ISG uses a scene graph structure to capture relationships between text and image blocks, enabling multi-level evaluation (holistic, structural, block-level, and image-specific).\n- Alongside ISG, a new benchmark dataset ISG-BENCH containing 1,150 samples across 8 categories and 21 subcategories is introduced to assess model performance on complex language-vision dependencies.\n- Experimental results reveal that current unified vision-language models perform sub-optimally at generating interleaved content; compositional models that split language and image generation perform better but also have room to improve.\n- A new compositional baseline agent ISG-AGENT, based on a \u201cplan-execute-refine\u201d pipeline achieves performance improvement compared to other evaluated methods.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://interleave-eval.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models",
+        "authors": "Ruiqi Gao, holynski, atrevithick, doinkda, rundi",
+        "link": "https://arxiv.org/abs/2411.18613",
+        "github_repo": null,
+        "summary": "- CAT4D is a novel method for generating dynamic 3D scenes from monocular video using a multi-view video diffusion model.\n- The model is trained on a diverse combination of datasets and uses a novel sampling approach to transform a single video into a multi-view video, enabling robust 4D reconstruction.\n- CAT4D demonstrates competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, outperforming existing methods.\n- The model's creative capabilities are highlighted through its ability to generate 4D scenes from both real and generated videos.\n- The method is applicable to various tasks, including novel view synthesis, dynamic scene reconstruction, and sparse view reconstruction.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/google-research/cat4d"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Large Language Model-Brained GUI Agents: A Survey",
+        "authors": "Gezelligheid520, liqul, bowenli, shilhe, vyokky",
+        "link": "https://arxiv.org/abs/2411.18279",
+        "github_repo": null,
+        "summary": "- This paper presents a comprehensive survey of Large Language Model (LLM)-brained Graphical User Interface (GUI) agents, exploring their evolution, components, techniques, and applications.\n- LLM-brained GUI agents represent a new frontier in human-computer interaction, allowing users to interact with and control software applications using natural language.\n- The survey covers key aspects such as agent frameworks, data collection strategies, model optimization methods, evaluation metrics, and real-world use cases.\n- The paper also identifies key research gaps and challenges in the field, including privacy concerns, latency limitations, and the need for improved human-agent interaction.\n- It proposes future directions for research and development, focusing on enhancing agent capabilities, ensuring safety and reliability, and addressing ethical considerations.",
+        "classification": [
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "MARVEL-40M+: Multi-Level Visual Elaboration for High-Fidelity Text-to-3D Content Creation",
+        "authors": "Sankalp Sinha, mzafzal, saali14, alootikki, SadilKhan",
+        "link": "https://arxiv.org/abs/2411.17945",
+        "github_repo": null,
+        "summary": "- This paper introduces MARVEL-40M+, a large-scale dataset with over 40 million text annotations for 8.9 million 3D assets, aimed at improving text-to-3D generation.\n- MARVEL, a multi-stage annotation pipeline, leverages open-source pretrained multi-view VLMs and LLMs to produce hierarchical descriptions ranging from detailed to concise tags.\n-  A two-stage text-to-3D framework, MARVEL-FX3D, is presented, which fine-tunes Stable Diffusion with MARVEL-40M+ annotations and utilizes a pretrained image-to-3D network.\n- Evaluations indicate that MARVEL-40M+ outperforms existing datasets in annotation quality and diversity, and MARVEL-FX3D achieves state-of-the-art results in text-to-3D generation.\n- Experimental results show that MARVEL-FX3D generates textured 3D meshes from text within 15 seconds, achieving superior prompt fidelity and overall preference compared to existing methods.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Collaborative Decoding Makes Visual Auto-Regressive Modeling Efficient",
+        "authors": "Xinchao Wang, Gongfan Fang, horseee, Zigeng",
+        "link": "https://arxiv.org/abs/2411.17787",
+        "github_repo": "https://github.com/czg1225/CoDe",
+        "summary": "- This paper introduces Collaborative Decoding (CoDe), a novel decoding strategy for Visual Auto-Regressive (VAR) models that significantly improves efficiency without compromising image quality.\n- CoDe partitions the multi-scale inference process into a collaboration between a large and a small model, where the large model generates low-frequency content and the small model refines high-frequency details.\n- Experimental results show that CoDe achieves a 1.7x speedup and reduces memory usage by around 50% compared to the original VAR model, with only a negligible increase in FID score.\n- Further improvements can be achieved by reducing drafting steps, leading to an impressive 2.9x speedup and reaching 41 images/s at 256x256 resolution on a single NVIDIA 4090 GPU.\n- Specialized fine-tuning is proposed to further optimize each model's performance, leading to a notable performance boost with limited additional cost.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/czg1225/CoDe"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving",
+        "authors": "Haoran Yin, xinggangw, bojiang-bentoml, csy71, LegendBC",
+        "link": "https://arxiv.org/abs/2411.15139",
+        "github_repo": "https://github.com/hustvl/DiffusionDrive",
+        "summary": "- This paper introduces DiffusionDrive, a novel truncated diffusion model for end-to-end autonomous driving that incorporates prior multi-mode anchors and truncates the diffusion schedule, resulting in a 10x reduction in denoising steps compared to vanilla diffusion models.\n- The model architecture consists of an efficient cascade diffusion decoder that enhances interaction with conditional scene context, achieving superior diversity and quality in just 2 steps.\n- On the NAVSIM dataset, DiffusionDrive achieves 88.1 PDMS without bells and whistles, outperforming previous state-of-the-art methods and running at a real-time speed of 45 FPS on an NVIDIA 4090.\n- Qualitative results on challenging scenarios demonstrate that DiffusionDrive robustly generates diverse and plausible driving actions.\n- The truncated diffusion policy addresses the limitations of vanilla diffusion models in real-time autonomous driving by efficiently capturing the multi-mode nature of driving behaviors.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/hustvl/DiffusionDrive"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "DreamCache: Finetuning-Free Lightweight Personalized Image Generation via Feature Caching",
+        "authors": "Diego Valsesia, emagli, mosams, u-michieli, Ema97x",
+        "link": "https://arxiv.org/abs/2411.17786",
+        "github_repo": null,
+        "summary": "- DreamCache is a novel finetuning-free approach to personalized image generation that utilizes feature caching to overcome limitations of existing methods.\n- It caches a small number of reference image features from a subset of layers and a single timestep of a pretrained diffusion model, enabling dynamic modulation of generated image features.\n- The model employs lightweight, trained conditioning adapters to achieve state-of-the-art image and text alignment, utilizing an order of magnitude fewer extra parameters.\n- DreamCache is both computationally more efficient and versatile than existing models and is shown to outperform current state-of-the-art baselines in quantitative results.\n- The approach is shown to be effective even with a reduced number of reference images and works with different backbones.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+        "authors": "Yunyuan Ge, LiuhanChen, hexianyi, Jinfa, BestWishYsh",
+        "link": "https://arxiv.org/abs/2411.17440",
+        "github_repo": null,
+        "summary": "- This paper introduces ConsisID, a novel tuning-free identity-preserving text-to-video generation model based on the Diffusion Transformer (DiT) architecture.\n- ConsisID addresses the challenges of existing methods by employing a frequency-aware heuristic control scheme that injects identity control signals into the frequency domain.\n- The model decouples identity features into high- and low-frequency components, injecting them into specific locations within the DiT to enhance both global and fine-grained feature preservation.\n- Experimental results demonstrate that ConsisID outperforms state-of-the-art methods in identity preservation, visual quality, text relevance, and motion amplitude across multiple metrics.\n- The authors also conduct a user study, which further confirms the superiority of ConsisID compared to existing methods.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://pku-yuangroup.github.io/ConsisID"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Omegance: A Single Parameter for Various Granularities in Diffusion-Based Synthesis",
+        "authors": "Xiaoming Li, cavanloy, OAOA, itsmag11",
+        "link": "https://arxiv.org/abs/2411.17769",
+        "github_repo": "https://github.com/itsmag11/Omegance",
+        "summary": "- This paper introduces Omegance, a novel single-parameter technique for controlling the granularity of diffusion-based image and video synthesis.\n- Omegance dynamically scales the predicted noise during each denoising step without requiring model retraining, architectural modifications, or additional computational overhead.\n- It allows for flexible granularity control, including global, spatial (using omega masks), and temporal (using omega schedules) adjustments.\n- The method demonstrates high performance on various image and video synthesis tasks, including text-to-image, image-to-image, and text-to-video generation.\n- The proposed technique adapts to different diffusion models and schedulers, offering a versatile and user-friendly solution for nuanced image and video generation.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/itsmag11/Omegance"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "UniPose: A Unified Multimodal Framework for Human Pose Comprehension, Generation and Editing",
+        "authors": "Shiguang Shan, Hong Chang, Heylon, flow2023, LiyiGang",
+        "link": "https://arxiv.org/abs/2411.16781",
+        "github_repo": null,
+        "summary": "- UniPose is a novel multimodal framework that unifies human pose comprehension, generation, and editing tasks.  It utilizes a pose tokenizer to convert 3D poses into discrete tokens for seamless integration with LLMs.\n- The model architecture incorporates a mixture of visual encoders (CLIP and a pose-specific visual encoder) to enhance fine-grained pose perception.\n- UniPose demonstrates superior performance across various pose-relevant tasks compared to existing methods, including pose comprehension, generation, and editing, as shown by experimental results in tables 2, 3, 4, and 5.\n- The model exhibits zero-shot generalization capabilities, enabling it to adapt to unseen tasks and enhance pose estimation, as shown in Figure 5.\n- UniPose addresses the limitations of existing methods by providing a unified multimodal framework that seamlessly handles multiple modalities, enabling finer-grained pose perception and more complex pose editing.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Draft Model Knows When to Stop: A Self-Verification Length Policy for Speculative Decoding",
+        "authors": "Xingyu Chen, Tian Liang, Jiahao Xu, Ziyin Zhang, zptu",
+        "link": "https://arxiv.org/abs/2411.18462",
+        "github_repo": "https://github.com/Geralt-Targaryen/SVIP",
+        "summary": "- This paper introduces SVIP, a self-verification length policy for speculative decoding systems that dynamically determines the length of draft sequences based on the entropy of each draft token distribution.\n- SVIP achieves up to 20% walltime speedup on SpecBench and 60% speedup on MT-Bench for long-form generation.\n- The proposed method is training-free and compatible with any existing speculative decoding methods that generate draft tokens autoregressively.\n- Experimental results demonstrate consistent wall-time improvements on GliDe & CaPE and EAGLE-2.\n- The core idea is to adaptively adjust the draft length based on token difficulty, unlike traditional methods using a fixed draft length.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Geralt-Targaryen/SVIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "VideoLLM Knows When to Speak: Enhancing Time-Sensitive Video Comprehension with Video-Text Duet Interaction Format",
+        "authors": "Jiansheng Wei, Jianxin Liang, Xiaojun Meng, Yueqian Wang, ColorfulAI",
+        "link": "https://arxiv.org/abs/2411.17991",
+        "github_repo": "https://github.com/yellow-binary-tree/MMDuet",
+        "summary": "- This paper introduces a novel video-text duet interaction format for VideoLLMs, addressing limitations of existing whole-video interaction methods.\n- The proposed format allows continuous video playback with interspersed text messages from both user and model, enabling real-time responses and improved time-sensitive task performance.\n- A new dataset, MMDuetIT, is created to train VideoLLMs on this new format, including dense video captioning, multi-answer grounded video QA, and temporal video grounding tasks.\n- Experiments demonstrate that using the video-text duet interaction format significantly improves VideoLLM performance on time-sensitive tasks compared to baselines.\n- The paper introduces a new model, MMDuet, which achieves state-of-the-art performance on various time-sensitive video tasks, with minimal training effort.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/yellow-binary-tree/MMDuet"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Adaptive Blind All-in-One Image Restoration",
+        "authors": "Javier Vazquez-Corral, Shaolin Su, Luis Herranz, davidserra9",
+        "link": "https://arxiv.org/abs/2411.18412",
+        "github_repo": null,
+        "summary": "- This paper introduces an Adaptive Blind All-in-One Image Restoration (ABAIR) model that addresses multiple and composite degradations in images with a flexible structure that easily incorporates new degradations.\n- The ABAIR model comprises three phases: pre-training with synthetic degradations, single-task adaptation using low-rank adapters, and multi-task integration via a lightweight degradation estimator.\n- The model demonstrates significant improvements over existing state-of-the-art all-in-one image restoration methods on five- and three-task setups, generalizing well to unseen degradations and composite distortions.\n- The adaptive combination of adapters enhances the flexibility of the model, making it easily adaptable to new degradations without needing to retrain the whole model.\n- This method effectively handles various distortions such as rain, haze, noise, blur, and low-light conditions, and also generalizes well to composite distortions and unseen degradation types.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://aba-ir.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Make-It-Animatable: An Efficient Framework for Authoring Animation-Ready 3D Characters",
+        "authors": "Houqiang Li, Wengang Zhou, Kai Ma, Jinxu Xiang, jasongzy",
+        "link": "https://arxiv.org/abs/2411.18197",
+        "github_repo": null,
+        "summary": "- This paper introduces Make-It-Animatable, a novel data-driven framework for efficiently generating animation-ready 3D character models from various input representations (meshes and 3D Gaussian splats) in under one second.\n- The framework employs a particle-based shape autoencoder for a coarse-to-fine representation of the 3D character, followed by a structure-aware transformer to model the bone structures and generate high-quality blend weights, bone positions, and pose transformations.\n- Experiments show significant improvements in both quality and speed compared to existing automatic rigging methods, such as Meshy and Tripo, surpassing them in terms of animation quality and the ability to handle diverse shapes and poses.\n- The method supports various 3D representations, arbitrary poses, and generates accurate and robust results even for characters with non-standard skeleton structures or additional accessories.\n- The authors demonstrate the effectiveness and efficiency of their approach through extensive experiments, showing its applicability to a wide range of 3D characters and animation styles.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Optimizing Brain Tumor Segmentation with MedNeXt: BraTS 2024 SSA and Pediatrics",
+        "authors": "Mohammed Elseiagy, Dinesh Saggurthi, Juan Lugo, pythn, Sarim-Hash",
+        "link": "https://arxiv.org/abs/2411.15872",
+        "github_repo": "https://github.com/python-arch/BioMbz-Optimizing-Brain-Tumor-Segmentation-with-MedNeXt-BraTS-2024-SSA-and-Pediatrics",
+        "summary": "- This paper introduces a novel approach to brain tumor segmentation using MedNeXt, an architecture combining the strengths of transformers and convolutional networks.\n- The proposed method employs a comprehensive model ensembling technique and thorough post-processing steps for improved accuracy.\n- The model achieved state-of-the-art results on the BraTS 2024 SSA dataset, with an average Dice Similarity Coefficient (DSC) of 0.896 and an average Hausdorff Distance (HD95) of 14.682.\n-  On the BraTS 2024 Pediatric Tumor dataset, the model achieved an average DSC of 0.830 and an average HD95 of 37.508, demonstrating robustness across different populations.\n- The study highlights the importance of addressing data distribution shifts in training data through comprehensive model ensembling and post-processing for reliable tumor segmentation across diverse populations.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/MIC-DKFZ/MedNeXt"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "ChatRex: Taming Multimodal LLM for Joint Perception and Understanding",
+        "authors": "Yihao Chen, Yuda Xiong, Yuqin Yang, Gen luo, Qing Jiang",
+        "link": "https://arxiv.org/abs/2411.18363",
+        "github_repo": "https://github.com/IDEA-Research/ChatRex",
+        "summary": "- ChatRex, a novel multimodal large language model (MLLM), is introduced, featuring a decoupled architecture to address the conflict between perception and understanding tasks, commonly observed in existing MLLMs.\n- The model utilizes a Universal Proposal Network (UPN), a DETR-based model trained with granularity-based prompt learning, to provide robust object proposals for the LLM's retrieval-based detection process, eliminating coordinate prediction issues.\n- A new dataset, Rexverse-2M, containing two million image-region-text annotation triplets with varying granularities, was created with a fully automated data engine to train the model on joint perception and understanding tasks.\n- ChatRex demonstrates strong performance on object detection benchmarks like COCO (48.5 mAP) and LVIS (43.1 mAP), comparable to dedicated object detectors, and outperforms other MLLMs, particularly in multi-object scenes.\n- The model maintains competitive results on general multimodal benchmarks, showcasing robust understanding and dialogue capabilities, enhanced by the integration of perception abilities.",
+        "classification": [
+            "Multimodal",
+            "Object Detection",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/IDEA-Research/ChatRex"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-28"
+    },
+    {
+        "title": "Training and Evaluating Language Models with Template-based Data Generation",
+        "authors": "yifAI",
+        "link": "https://arxiv.org/abs/2411.18104",
+        "github_repo": "https://github.com/iiis-ai/TemplateMath",
+        "summary": "- This paper introduces Template-based Data Generation (TDG), a novel method for generating large-scale, high-quality mathematical datasets using GPT-4 to automatically generate meta-templates.\n- The TDG method leverages parameterized templates and a reject-sampling-based verification process to ensure data quality and scalability.\n- A dataset called TemplateGSM, consisting of over 7 million synthetically generated grade school math problems with verified solutions, is created using TDG.\n- Experiments show that TemplateGSM significantly improves the performance of LLMs in mathematical reasoning tasks.\n- The authors release both the TemplateGSM dataset and the TDG code to facilitate further research and development.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/iiis-ai/TemplateMath"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/math-ai/TemplateGSM"
+        ],
+        "date": "2024-11-28"
     }
 ]

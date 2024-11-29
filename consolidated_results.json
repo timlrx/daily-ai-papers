@@ -9023,5 +9023,98 @@
             "https://huggingface.co/datasets/math-ai/TemplateGSM"
         ],
         "date": "2024-11-28"
+    },
+    {
+        "title": "Critic-V: VLM Critics Help Catch VLM Errors in Multimodal Reasoning",
+        "authors": "Jingdi Lei, jwu323, ZonglinY, Duke-de-Artois, qq8933",
+        "link": "https://arxiv.org/abs/2411.18203",
+        "github_repo": null,
+        "summary": "- This paper introduces Critic-V, a novel framework designed to enhance the reasoning capabilities of Vision-Language Models (VLMs) by incorporating a critic model that provides feedback during the reasoning process.\n- Critic-V features a Reasoner-Critic architecture where the Reasoner generates reasoning paths, and the Critic offers natural language critiques for refinement, inspired by the Actor-Critic paradigm and leveraging in-context reinforcement learning.\n- The Critic model is trained using Direct Preference Optimization (DPO) on a new dataset with critiques ranked by a Rule-based Reward (RBR) function to enhance its critic capabilities. \n- Evaluation results show that Critic-V significantly improves the performance of existing VLMs, like Qwen2-VL-7B and DeepSeek-VL-7B, on 5 out of 8 benchmarks, surpassing even GPT-4V on several datasets and particularly improving mathematical reasoning tasks.\n- Critic-V integrates a dynamic text-based policy for the Reasoner and uses constructive feedback from the preference-optimized Critic to create a reliable and context-sensitive multimodal reasoning process.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-29"
+    },
+    {
+        "title": "ChatGen: Automatic Text-to-Image Generation From FreeStyle Chatting",
+        "authors": "Hangwei Qian, Weijia Wu, Zhuohang Dang, Changliang Xia, ChengyouJia",
+        "link": "https://arxiv.org/abs/2411.17176",
+        "github_repo": null,
+        "summary": "- This paper introduces ChatGen, a novel framework for automating the text-to-image generation process from freestyle chat inputs.\n- It proposes a multi-stage evolution strategy (ChatGen-Evo) that equips language models with essential skills for prompt crafting, model selection, and argument configuration.\n- This approach outperforms baseline methods on a new benchmark dataset, ChatGenBench, which features diverse freestyle chat inputs paired with desired image outputs and generation parameters.\n- ChatGen-Evo with 2B parameters achieves comparable performance to a larger 8B parameter supervised baseline model.\n- The multi-stage evolution strategy results in high-quality images aligning with the diverse requirements from freestyle chat instructions.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://chengyou-jia.github.io/ChatGen-Home"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-29"
+    },
+    {
+        "title": "TryOffDiff: Virtual-Try-Off via High-Fidelity Garment Reconstruction using Diffusion Models",
+        "authors": "Barbara Hammer, Robin Chan, Petra Bevandic, rizavelioglu",
+        "link": "https://arxiv.org/abs/2411.18350",
+        "github_repo": null,
+        "summary": "- Introduces Virtual Try-Off (VTOFF), a new task for generating standardized garment images from real-world photos of clothed individuals.\n- Presents TryOffDiff, a model based on Stable Diffusion with SigLIP visual conditioning.\n- Demonstrates superior performance over baseline methods on a modified VITON-HD dataset, achieving higher fidelity in garment reconstruction.\n- Shows that traditional image generation metrics are insufficient for evaluating VTOFF and proposes DISTS as a more suitable metric.\n- Highlights the potential of VTOFF for enhancing product imagery, improving generative model evaluation, and future research in high-fidelity image reconstruction.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://rizavelioglu.github.io/tryoffdiff/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-29"
+    },
+    {
+        "title": "Free$^2$Guide: Gradient-Free Path Integral Control for Enhancing Text-to-Video Generation with Large Vision-Language Models",
+        "authors": "Jong Chul Ye, Bryan S Kim, kjm981995",
+        "link": "https://arxiv.org/abs/2411.17041",
+        "github_repo": null,
+        "summary": "- Free$^2$Guide is a novel gradient-free framework designed to enhance text-video alignment in diffusion-based generative models by leveraging Large Vision-Language Models (LVLMs).\n- The framework uses path integral control to approximate guidance during video generation, eliminating the need for gradients from reward functions and accommodating non-differentiable reward models like LVLMs.\n- Free$^2$Guide improves text alignment by processing multiple video frames and incorporates temporal understanding into the reward mechanism, allowing the use of powerful black-box vision-language model APIs.\n- It allows the ensembling of multiple reward models like LVLMs and image-based models to synergistically guide video generation, enhancing both text alignment and overall video quality.\n- Experiments demonstrate that using LVLMs in Free$^2$Guide significantly improved text alignment in video generation when compared to baseline models in various metrics, and exhibits improved general video quality across a range of attributes.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://kjm981995.github.io/free2guide/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-29"
+    },
+    {
+        "title": "Morph: A Motion-free Physics Optimization Framework for Human Motion Generation",
+        "authors": "Hao Liu, Xin Zhao, Ruibing Hou, Mingshuang Luo, Zhuo Li",
+        "link": "https://arxiv.org/abs/2411.14951",
+        "github_repo": null,
+        "summary": "- Morph is a novel motion-free physics optimization framework for generating realistic human motion from text or music, comprising a Motion Generator (MG) and a Motion Physics Refinement (MPR) module.\n- The MG synthesizes motion data, while the MPR, trained on this synthetic data, uses a motion imitator within a physics simulator to refine the generated motion, enforcing physical constraints and aligning its distribution with a discriminator using reinforcement learning.\n- This physics-refined data then fine-tunes the MG to enhance its realism.\n- Experiments on HumanML3D and AIST++ datasets show Morph improves physical plausibility metrics (e.g. Penetration, floating) drastically, while achieving competitive generation quality (FID, R-Precision) compared to state-of-the-art methods, across different generator architectures (diffusion, autoregressive, masked modeling).\n- This framework addresses the challenge of physically implausible artifacts in generated motion by leveraging synthetic data, making it a cost-effective and versatile solution.",
+        "classification": [
+            "Text-to-Video",
+            "Text-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-11-29"
+    },
+    {
+        "title": "LongKey: Keyphrase Extraction for Long Documents",
+        "authors": "Jean Paul Barddal, Cinthia Obladen de Almendra Freitas, Jeovane Honorio Alves, RaduState",
+        "link": "https://arxiv.org/abs/2411.17863",
+        "github_repo": "https://github.com/jeohalves/longkey",
+        "summary": "- LongKey, a novel framework for keyphrase extraction from lengthy documents, leverages an encoder-based language model, specifically Longformer, to capture extended text intricacies, supporting up to 96K tokens.\n- It employs a max-pooling embedder to consolidate context across the document, refining keyphrase candidate representation.\n- Validated on LDKP datasets and six diverse unseen datasets, LongKey consistently outperforms existing unsupervised and language model-based methods, achieving an F1@5 of 39.55% on LDKP3K and 41.81% on LDKP10K.\n- A component analysis confirmed the significant contribution of the keyphrase embedding pooler in enhancing performance.\n- While robust on long documents, LongKey's performance on short-context datasets suggests further development for broader applicability.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/jeohalves/longkey"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-11-29"
     }
 ]

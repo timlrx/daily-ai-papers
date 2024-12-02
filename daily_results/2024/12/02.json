@@ -1,0 +1,187 @@
+[
+    {
+        "title": "On Domain-Specific Post-Training for Multimodal Large Language Models",
+        "authors": "Xintong Zhang, doubling, edward2021, buaahsh, daixuancheng",
+        "link": "https://arxiv.org/abs/2411.19930",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach for domain-specific post-training of Multimodal Large Language Models (MLLMs), focusing on data synthesis, training pipelines, and task evaluation.\n- A visual instruction synthesizer is developed using open-source models to extract diverse visual instruction tasks from domain-specific image-caption pairs, outperforming manual rules, GPT-4, and GPT-4V in enhancing MLLM performance on specialized domains such as biomedicine and food.\n- A single-stage training pipeline, combining synthetic tasks and image-caption pairs, is proposed to improve task diversity and mitigate catastrophic forgetting compared to traditional two-stage training.\n- Experiments on various MLLMs (e.g., Qwen2-VL-2B, LLaVA-v1.6-8B, Llama-3.2-11B) across biomedicine and food domains show consistent improvement on diverse domain-specific tasks using the resulting AdaMLLM (Adapted Multimodal Large Language Model).\n- All implementations will be open-sourced to support further research.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/AdaptLLM"
+        ],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "Beyond Examples: High-level Automated Reasoning Paradigm in In-Context Learning via MCTS",
+        "authors": "Zengqi Wen, Feihu Che, Shuai Zhang, fmk345, Jinyang23",
+        "link": "https://arxiv.org/abs/2411.18478",
+        "github_repo": null,
+        "summary": "- This paper introduces HiAR-ICL, a novel automated reasoning paradigm that enhances in-context learning (ICL) by shifting the focus from specific examples to abstract thinking patterns, termed \"thought cards.\"\n- HiAR-ICL uses Monte Carlo Tree Search (MCTS) to construct these thought cards from a small seed dataset and employs a cognitive complexity framework to dynamically match problems with appropriate thought cards during inference.\n- Five atomic reasoning actions, including System Analysis, One-Step Thought, Chain-of-Thought, Divide and Conquer, and Self-Reflection and Refinement, are defined as fundamental building blocks for these patterns.\n- The approach outperforms state-of-the-art methods on the MATH benchmark with Qwen2.5-7B-Instruct (79.6% accuracy), surpassing GPT-40 (76.6%) and Claude 3.5 (71.1%).\n- HiAR-ICL reduces time complexity compared to existing tree search methods by leveraging pre-computed reasoning patterns.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "huggingface.co/peiyi9979/math-shepherd-mistral-7b-prm",
+            "huggingface.co/RLHFlow/Llama3.1-8B-ORM-Mistral-Data"
+        ],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "Timestep Embedding Tells: It's Time to Cache for Video Diffusion Model",
+        "authors": "MoonQiu, weilllllls, Jeff-Wang, StevenZhang, LiewFeng",
+        "link": "https://arxiv.org/abs/2411.19108",
+        "github_repo": null,
+        "summary": "- TeaCache, a training-free caching mechanism for Diffusion Transformer (DiT) models in video generation, leverages timestep embedding modulated noisy input to estimate output differences and selectively cache intermediate outputs, improving inference speed.\n- Unlike uniform caching strategies, TeaCache dynamically adapts to the varying differences between model outputs across timesteps by using a rescaling strategy based on polynomial fitting to refine the estimation of model output similarity for optimal timestep selection.\n- Experiments show TeaCache achieves substantial acceleration over existing training-free methods (up to 4.41x over Open-Sora-Plan) while maintaining or even improving visual quality (negligible -0.07% Vbench score degradation) across different models, resolutions, and video lengths.\n- It effectively balances efficiency and visual quality compared to methods like PAB, achieving higher speedups with competitive or superior image quality metrics (VBench, LPIPS, SSIM, PSNR).\n- The approach is compatible with various SOTA DiT-based generation models (Open-Sora, Open-Sora-Plan, Latte) and scales well with Dynamic Sequence Parallelism (DSP) to multiple GPUs, further boosting performance for high-resolution, long video generation.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "DisCoRD: Discrete Tokens to Continuous Motion via Rectified Flow Decoding",
+        "authors": "Mingu Kang, Minseo Kim, Jisoo Kim, junwann, whwjdqls99",
+        "link": "https://arxiv.org/abs/2411.19527",
+        "github_repo": null,
+        "summary": "- DisCoRD, a novel method for human motion generation, decodes discrete motion tokens into continuous motion using rectified flow, combining the naturalness of continuous representations with the faithfulness of discrete methods.\n- It employs an iterative refinement process in continuous space, capturing fine-grained dynamics and ensuring smoother motion, and uses discrete tokens as conditions in raw motion space to reduce noise.\n- A new metric, symmetric Jerk Percentage Error (sJPE), is introduced to evaluate both under-reconstruction and frame-wise noise in motion.\n- Extensive evaluations across text-to-motion, co-speech gesture, and music-to-dance generation demonstrate state-of-the-art performance, achieving an FID of 0.032 on HumanML3D and 0.169 on KIT-ML.\n- DisCoRD is adaptable to any discrete-based motion generation framework and improves naturalness without sacrificing faithfulness.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "Puzzle: Distillation-Based NAS for Inference-Optimized LLMs",
+        "authors": "nav4, nailon-nvidia, talor-abr, tomer-nv, abercovich",
+        "link": "https://arxiv.org/abs/2411.19146",
+        "github_repo": null,
+        "summary": "- Puzzle, a novel framework, leverages decomposed Neural Architecture Search (NAS) and Blockwise Local Distillation (BLD) with Mixed-Integer Programming to create inference-optimized Large Language Models (LLMs) tailored to specific hardware.\n- This framework optimizes models by creating heterogeneous architectures with varying block configurations, reducing redundant computations while preserving performance.\n- The resulting model, Nemotron-51B derived from Llama-3.1-70B-Instruct, achieves up to 2.17x inference speedup on a single NVIDIA H100 GPU while retaining 98.4% of the parent model's accuracy.\n- Demonstrating unprecedented efficiency, Nemotron-51B's training required only 45B tokens compared to over 15T for its parent, setting a new benchmark for throughput and memory efficiency.\n- This work also introduces a derivative of Llama-3.1-8B-Instruct further demonstrating Puzzle's capacity to create highly efficient models across various hardware and parameter scales.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "Video Depth without Video Models",
+        "authors": "toshas, PeterTor, peterjohnson, dnarnhofer, Bingxin",
+        "link": "https://arxiv.org/abs/2411.19189",
+        "github_repo": null,
+        "summary": "- RollingDepth, a novel image-based video depth estimation model, leverages a multi-frame latent diffusion model (LDM) adapted from a single-image LDM.\n- The model processes short video snippets with varying dilation rates, capturing temporal context through a modified cross-frame self-attention mechanism.\n- A robust, optimization-based global co-alignment algorithm assembles the depth snippets into a consistent video.\n- An optional refinement step using the LDM with decreasing snippet dilation rate further enhances details in the depth video.\n- RollingDepth achieves state-of-the-art performance on zero-shot benchmarks, outperforming both dedicated video depth estimators and high-performing single-frame models, particularly in challenging scenes with varying depth ranges.",
+        "classification": [
+            "Depth Estimation",
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "AlphaTablets: A Generic Plane Representation for 3D Planar Reconstruction from Monocular Videos",
+        "authors": "bys0318, AlbertHuyb, lshmouse, thuzhaowang, hyz317",
+        "link": "https://arxiv.org/abs/2411.19950",
+        "github_repo": null,
+        "summary": "- AlphaTablets, a novel 3D plane representation using rectangles with alpha channels, is introduced for accurate and flexible 3D planar surface modeling.\n- Differentiable rasterization is formulated on top of AlphaTablets, allowing efficient rendering of 3D planes into images and enabling gradient-based optimization.\n- A novel bottom-up 3D planar reconstruction pipeline from monocular videos is proposed; it initializes AlphaTablets using superpixels and geometric cues and then refines them via differentiable rendering.\n- A merging scheme facilitates the growth and refinement of AlphaTablets into complete planar structures.\n- Experiments on ScanNet demonstrate state-of-the-art performance in 3D planar reconstruction.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://hyzcluster.github.io/alphatablets"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "Look Every Frame All at Once: Video-Ma$^2$mba for Efficient Long-form Video Understanding with Multi-Axis Gradient Checkpointing",
+        "authors": "Hyunjun Kim, dwightro, arkimjh, lakelee",
+        "link": "https://arxiv.org/abs/2411.19460",
+        "github_repo": null,
+        "summary": "- Introduces Video-Ma$^2$mba, a novel model for long-form video understanding that replaces the attention mechanism in Large Multimodal Models (LMMs) with State Space Models (SSMs), achieving linear scaling in time and memory.\n- Employs Multi-Axis Gradient Checkpointing (MA-GC) to enhance memory efficiency by retaining only essential activations across multiple computational axes.\n- Processes long video sequences, equivalent to over two hours of continuous video at 1 FPS, on a single GPU by handling the full sequence without frame sampling.\n- Improves accuracy and relevance of responses in long video understanding tasks by capturing detailed temporal dynamics.\n- Demonstrates substantial advantages over existing frameworks on benchmarks like Video-MME and LongVideoBench, showcasing its efficiency in handling lengthy video content and responding effectively to complex queries.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "Trajectory Attention for Fine-grained Video Motion Control",
+        "authors": "Xingang-Pan, Jianlou, PKUWilliamYang, Vicky0522, zeqixiao",
+        "link": "https://arxiv.org/abs/2411.19324",
+        "github_repo": null,
+        "summary": "- This paper introduces trajectory attention, a novel approach for fine-grained camera motion control in video generation.\n- It works by performing attention along available pixel trajectories, providing a stronger inductive bias for precise motion control and content consistency.\n- The approach models trajectory attention as an auxiliary branch alongside traditional temporal attention, enabling synergy between motion control and new content generation.\n- Experiments show significant improvements in precision and long-range consistency for camera motion control on both images and videos while maintaining high generation quality.\n- The method's efficiency and extensibility to other video motion control tasks highlight its broad applicability.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "AC3D: Analyzing and Improving 3D Camera Control in Video Diffusion Transformers",
+        "authors": "willi-menapace, aliaksandr-siarohin, guochengqian, universome, sherwinbahmani",
+        "link": "https://arxiv.org/abs/2411.18673",
+        "github_repo": null,
+        "summary": "- This paper introduces AC3D, a new state-of-the-art model for generative video modeling with precise 3D camera control built upon a pre-trained 11.5B parameter Video Latent Diffusion Transformer (VDiT).\n- The authors analyze camera motion and find it is low-frequency, leading to adjusted training schedules and improved quality.\n- They also discover VDiTs implicitly perform camera pose estimation, enabling targeted conditioning and reduced training parameters.\n- A curated dataset of dynamic videos with static cameras helps the model differentiate between camera and scene motion, improving generated video dynamics.\n- AC3D surpasses previous models by 18% in video fidelity and 25% in camera steering accuracy, demonstrated on RE10K and MSR-VTT.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://snap-research.github.io/ac3d"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "FAM Diffusion: Frequency and Attention Modulation for High-Resolution Image Generation with Stable Diffusion",
+        "authors": "Xiatian Zhu, Hai X. Pham, Isma Hadji, Adrian Bulat, Haosen Yang",
+        "link": "https://arxiv.org/abs/2411.18552",
+        "github_repo": null,
+        "summary": "- FAM diffusion, a novel training-free method, enhances high-resolution image generation using pre-trained latent diffusion models by introducing Frequency Modulation (FM) and Attention Modulation (AM) modules.\n- The FM module leverages the Fourier domain, conditioning low-frequency components during high-resolution denoising for global structure consistency, while the AM module refines local texture patterns by leveraging attention maps from native resolution denoising.\n- This one-pass approach seamlessly integrates with any latent diffusion model without architectural changes or finetuning, offering efficient high-resolution image generation.\n- Extensive qualitative and quantitative results on the Laion-5B dataset demonstrate FAM diffusion\u2019s superior performance in terms of FIDC, KIDC, and CLIP Score across various scaling factors, surpassing existing methods like DemoFusion, AccDiffusion, FouriScale, and HiDiffusion.\n- Notably, FAM diffusion achieves this quality improvement with negligible latency overheads compared to direct inference at target resolutions.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-02"
+    },
+    {
+        "title": "LLM Teacher-Student Framework for Text Classification With No Manually Annotated Data: A Case Study in IPTC News Topic Classification",
+        "authors": "nljubesi, TajaKuzman",
+        "link": "https://arxiv.org/abs/2411.19638",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel teacher-student framework utilizing Large Language Models (LLMs) for multilingual news topic classification without manual annotation.\n- A GPT model serves as the teacher, automatically annotating news articles in Slovenian, Croatian, Greek, and Catalan with IPTC Media Topic labels to create a training dataset.\n- Smaller BERT-like student models, specifically XLM-ROBERTa, are then fine-tuned on this dataset, achieving comparable performance to the teacher model while being more computationally efficient. \n- The study demonstrates that student models achieve high performance with limited training data and exhibit strong zero-shot cross-lingual capabilities. \n-  The best performing model, a multilingual IPTC news topic classifier, is publicly released.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/TajaKuzman/IPTC-Media-Topic-Classification"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/classla/multilingual-IPTC-news-topic-classifier"
+        ],
+        "date": "2024-12-02"
+    }
+]

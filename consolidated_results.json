@@ -9301,5 +9301,360 @@
             "https://huggingface.co/classla/multilingual-IPTC-news-topic-classifier"
         ],
         "date": "2024-12-02"
+    },
+    {
+        "title": "X-Prompt: Towards Universal In-Context Image Generation in Auto-Regressive Vision Language Foundation Models",
+        "authors": "lindahua, TheYJ, yuhangzang, tongwu2020, Zery",
+        "link": "https://arxiv.org/abs/2412.01824",
+        "github_repo": "https://github.com/SunzeY/X-Prompt",
+        "summary": "- X-Prompt, an auto-regressive large vision-language model, is introduced for in-context image generation across various tasks.\n- It uses a novel design to compress features from in-context examples, enabling longer context sequences and better generalization to unseen tasks.\n- A unified training objective for text and image prediction allows the model to leverage task awareness from context.\n- Experimental results show competitive performance on several image generation tasks, including text-to-image generation, and improved in-context learning capabilities on novel tasks compared to baselines like OmniGen.\n- The method also exhibits strong capabilities in the image editing task by using Retrieval-Augmented Image Editing (RAIE), where a relevant image example is retrieved as in-context information to enhance editing performance.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image Segmentation",
+            "Depth Estimation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/SunzeY/X-Prompt"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "GATE OpenING: A Comprehensive Benchmark for Judging Open-ended Interleaved Image-Text Generation",
+        "authors": "LiruiZhao, yefly, xuzhaopan, xiaopengpeng, lyuukuu",
+        "link": "https://arxiv.org/abs/2411.18499",
+        "github_repo": null,
+        "summary": "- Introduces GATE OpenING (OpenING), a benchmark for evaluating open-ended interleaved image-text generation, comprised of 5,400 human-annotated instances across 56 real-world tasks and 23 meta-topics.\n- Presents IntJudge, a novel judging model trained with a Reference-Augmented Generation (RAG) approach and an Interleaved Arena for data annotation, achieving 82.42% agreement with human judgments, outperforming GPT-4 by 11.34%.\n- Demonstrates through experiments on OpenING that integrated pipelines for interleaved generation outperform end-to-end models, highlighting the potential of two-stage generators with unified architectures.\n- Reveals that generating high-quality, coherent interleaved content remains challenging for existing models, while GPT-generated text often surpasses human quality, and human-annotated images are preferred over generated ones.\n- Provides a comprehensive leaderboard and analysis of various interleaved generation methods, offering insights for future model development and benchmark design.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Switti: Designing Scale-Wise Transformers for Text-to-Image Synthesis",
+        "authors": "Dmitry Baranchuk, Valentin Khrulkov, Mikhail Khoroshikh, Anton Voronov, SpiridonSunRotator",
+        "link": "https://arxiv.org/abs/2412.01819",
+        "github_repo": null,
+        "summary": "- This paper introduces SWITTI, a scale-wise transformer model for text-to-image synthesis.\n- SWITTI uses a non-autoregressive approach, predicting higher resolution versions of the image progressively while attending to the current scale, unlike traditional autoregressive models which attend to all previous scales. \n- The model incorporates architectural changes to enhance training stability, including using FP32 for the model head, \"sandwich\" normalizations, and SwiGLU activation. \n- It also disables classifier-free guidance at the final scales, leading to a 20% speed increase and improved fine-grained detail generation. \n- Human preference studies and automated evaluations show that SWITTI outperforms existing T2I autoregressive models and is competitive with state-of-the-art diffusion models while being up to 7x faster.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+        ],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Open-Sora Plan: Open-Source Large Video Generation Model",
+        "authors": "Xinhua Cheng, Yunyang Ge, Lin-Chen, BestWishYsh, LanguageBind",
+        "link": "https://arxiv.org/abs/2412.00131",
+        "github_repo": "https://github.com/PKU-YuanGroup/Open-Sora-Plan",
+        "summary": "- Open-Sora Plan is an open-source project focused on generating high-resolution, long-duration videos from various user inputs, including text prompts, images, and structure control signals. \n- The model architecture comprises three key components: a Wavelet-Flow Variational Autoencoder (WF-VAE) for efficient feature extraction in the frequency domain, a Joint Image-Video Skiparse Denoiser (a modified 3D full attention structure) optimized for understanding spatiotemporal dynamics, and various condition controllers for incorporating user inputs. \n- The project also introduces several assistant strategies like Min-Max Token Strategy, Adaptive Gradient Clipping, and Prompt Refinement to enhance training and inference efficiency. \n- Evaluations show Open-Sora Plan achieves state-of-the-art results in aesthetic quality and motion smoothness, especially demonstrating proficiency in generating complex scenes. \n- Further improvements are planned, focusing on model scaling, data enhancement, and novel algorithmic implementations.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/PKU-YuanGroup/Open-Sora-Plan"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "TAPTRv3: Spatial and Temporal Context Foster Robust Tracking of Any Point in Long Video",
+        "authors": "Zhaoyang Zeng, Tianhe Ren, Shilong Liu, Hongyang Li, Jinyuan Qu",
+        "link": "https://arxiv.org/abs/2411.18671",
+        "github_repo": null,
+        "summary": "- TAPTRv3 is a DETR-like framework for robustly tracking any point in long videos, improving upon TAPTRv2 by addressing its limitations in feature querying.\n- It leverages spatial context through Context-aware Cross-Attention (CCA) for enhanced attention scores and eliminates distractions in feature comparisons.\n- For temporal context, it introduces Visibility-aware Long-Temporal Attention (VLTA) to consider past frames' visibility and address feature drifting.\n- A global matching module reinitializes point queries upon scene cut detection for tracking re-establishment.\n- TAPTRv3 achieves state-of-the-art performance on challenging datasets, outperforming TAPTRv2 and remaining competitive even against models trained with larger datasets.",
+        "classification": [
+            "Computer Vision",
+            "Keypoint Detection"
+        ],
+        "github_urls": [
+            "taptr.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "o1-Coder: an o1 Replication for Coding",
+        "authors": "Jinlin Xiao, Jiangming Shu, Yuqi Yang, Shangxi Wu, Yuxiang Zhang",
+        "link": "https://arxiv.org/abs/2412.00154",
+        "github_repo": "https://github.com/ADaM-BJTU/O1-CODER",
+        "summary": "- This paper introduces O1-CODER, a framework attempting to replicate OpenAI's O1 model, focusing on coding tasks and enhancing System-2 thinking through Reinforcement Learning (RL) and Monte Carlo Tree Search (MCTS).\n- The framework incorporates a Test Case Generator (TCG) for automated code evaluation, MCTS for generating reasoning data, and iterative fine-tuning of a policy model, initially producing pseudocode and subsequently full code.\n- O1-CODER uses pseudocode-based prompting and behavioral actions, addressing the challenges of self-play RL in code generation, including evaluation and process reward design.\n- While initial experiments on the MBPP benchmark show a slight decrease in overall pass rate with pseudocode, a significant improvement in the Average Sampling Pass Rate suggests enhanced reasoning capabilities when the generated pseudocode is correct.\n- The paper further discusses the broader implications of moving beyond human-recorded data, the potential of self-play+RL in complex problem solving, and the challenges in applying O1-like models to real-world applications requiring dynamic environment interaction.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/ADaM-BJTU/O1-CODER"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "TinyFusion: Diffusion Transformers Learned Shallow",
+        "authors": "Xinchao Wang, Xinyin Ma, Kunjun Li, Gongfan Fang",
+        "link": "https://arxiv.org/abs/2412.01199",
+        "github_repo": "https://github.com/VainF/TinyFusion",
+        "summary": "- TinyFusion, a novel depth pruning method, compresses diffusion transformers by removing redundant layers through end-to-end learning, focusing on optimizing the recoverability of the pruned model for better post-fine-tuning performance.\n- Introduces a differentiable sampling technique for making pruning decisions learnable and utilizes a co-optimized parameter, often implemented with LoRA, to simulate future fine-tuning, effectively integrating pruning and fine-tuning processes.\n- Demonstrates superior performance in compressing various transformer-based diffusion models like DiTs, MARs, and SiTs, achieving a 2x speedup with DiT-XL at less than 7% of the original training cost and a FID score of 2.86.\n- Employs MaskedKD, a variant of knowledge distillation, to mitigate the impact of massive activations in hidden states, further enhancing the recoverability and performance of pruned models.\n- Shows that minimizing immediate calibration loss after pruning might not be ideal for diffusion transformers, as models with higher initial losses pruned by TinyFusion can achieve significantly better FID scores after fine-tuning compared to methods focusing solely on minimizing calibration loss.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/VainF/TinyFusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "VLsI: Verbalized Layers-to-Interactions from Large to Small Vision Language Models",
+        "authors": "Yueh-Hua Wu, Yong Man Ro, Yu-Chiang Frank Wang, Ryo Hachiuma, BK-Lee",
+        "link": "https://arxiv.org/abs/2412.01822",
+        "github_repo": null,
+        "summary": "- Introduces VLSI, a new Vision Language Model (VLM) family (2B and 7B parameter sizes) that uses a novel natural language-based distillation process called \"Verbalized Layers-to-Interactions\" to transfer knowledge from large to small VLMs.\n- Employs layer-wise distillation with intermediate \"verbalizers\" to project features into natural language, which allows smaller VLMs to better align with the reasoning processes of larger VLMs, unlike traditional methods that focus solely on final-layer imitation.\n- Achieves notable performance improvements over GPT-4V (11.0% for 2B and 17.4% for 7B model sizes) on various vision-language benchmarks without increasing model size, module merging, or architectural modifications.\n- Validated across ten diverse benchmarks, demonstrating state-of-the-art performance and improved efficiency, especially for deployment on resource-constrained devices.\n- Offers an easily implementable and adaptable approach across different model architectures, showing significant gains with both Qwen2-VL and LLaVA-OV backbones.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "WF-VAE: Enhancing Video VAE by Wavelet-Driven Energy Flow for Latent Video Diffusion Model",
+        "authors": "Liuhan Chen, Yang Ye, Zongjian Li, BestWishYsh, LanguageBind",
+        "link": "https://arxiv.org/abs/2411.17459",
+        "github_repo": "https://github.com/PKU-YuanGroup/WF-VAE",
+        "summary": "- WF-VAE, a novel autoencoder designed for latent video diffusion models, leverages multi-level wavelet transforms to create a main energy flow pathway that prioritizes low-frequency video information in the latent representation.\n- This architecture simplifies the backbone design, reducing computational costs by bypassing low-frequency information through the backbone.\n- A Causal Cache mechanism maintains latent space integrity during block-wise inference, eliminating flickering artifacts often seen in reconstructed videos.\n- Experimental results show WF-VAE achieves state-of-the-art performance in reconstruction quality and computational efficiency, outperforming existing video VAEs.\n- It achieves 2x higher throughput and 4x lower memory consumption while maintaining highly competitive reconstruction quality and improving video generation metrics (FVD and IS) when paired with diffusion models.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/PKU-YuanGroup/WF-VAE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "SOLAMI: Social Vision-Language-Action Modeling for Immersive Interaction with 3D Autonomous Characters",
+        "authors": "Huaizhong Zhang, Zhengyu Lin, Weiye Xiao, Jianping Jiang, caizhongang",
+        "link": "https://arxiv.org/abs/2412.00174",
+        "github_repo": null,
+        "summary": "- SOLAMI is a novel end-to-end social Vision-Language-Action (VLA) model for generating multimodal responses (speech and motion) in interactions with 3D autonomous characters.\n- The model uses separate tokenizers for speech and motion, converting them into discrete tokens that are fed into a decoder-only LLM backbone (AnyGPT-base, based on LLaMA2-7B).\n- The model is trained in three stages: tokenizer training, multi-task pre-training for modality alignment (motion-text and speech-text), and instruction tuning on a synthetic multimodal social interaction dataset called SynMSI.\n- Quantitative results on SynMSI show that SOLAMI outperforms baseline methods (LLM+Speech, AnyGPT fine-tuned, and DLP) in terms of motion quality and inference latency, generating more natural and coherent responses.\n- A user study conducted with a VR interface further validates SOLAMI's superior performance, demonstrating enhanced user experience across metrics such as motion coherence, motion interaction, speech consistency, and overall experience.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Speech",
+            "Text-to-Video",
+            "Text-to-3D",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://solami-ai.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Long Video Diffusion Generation with Segmented Cross-Attention and Content-Rich Video Data Curation",
+        "authors": "Yuan Zhou, Qiuyue Wang, Yuxuan Cai, hyang0511, Cakeyan",
+        "link": "https://arxiv.org/abs/2412.01316",
+        "github_repo": null,
+        "summary": "- Presto, a novel video diffusion model, generates 15-second videos with long-range coherence and rich content using a Segmented Cross-Attention (SCA) strategy.\n- SCA divides hidden states into temporal segments, allowing each to cross-attend to a corresponding sub-caption, enhancing coherence without additional parameters.\n- The LongTake-HD dataset, comprising 261k content-rich videos with progressive sub-captions, facilitates high-quality long video generation.\n- Presto achieves 78.5% on VBench Semantic Score and 100% on Dynamic Degree, outperforming state-of-the-art methods in content richness and coherence.\n- A user study confirms Presto's superiority in scenario diversity, coherence, and text-video alignment compared to open-source and commercial alternatives.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Collaborative Instance Navigation: Leveraging Agent Self-Dialogue to Minimize User Input",
+        "authors": "Alessandro Farinelli, Alberto Castellini, Gianni Franchi, e-zorzi, ftaioli",
+        "link": "https://arxiv.org/abs/2412.01250",
+        "github_repo": null,
+        "summary": "- Introduces Collaborative Instance Navigation (CoIN), a new task for embodied agents involving interactive dialogue with humans to locate target objects in unknown environments.\n- Presents AIUTA, a training-free method leveraging Vision-Language Models (VLMs) and Large Language Models (LLMs) to facilitate agent self-dialogue, reducing reliance on full initial descriptions.\n- Includes a novel Normalized-Entropy based technique to estimate and mitigate VLM uncertainty during object description generation.\n- Introduces CoIN-Bench, a new benchmark with real and simulated human evaluations for CoIN, and demonstrates AIUTA\u2019s state-of-the-art performance on zero-shot instance navigation, handling user input flexibility.\n- Proposes IDKVQA, a dedicated dataset for evaluating VLM uncertainty estimation and shows the superiority of their approach.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://intelligolabs.github.io/COIN"
+        ],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "VLSBench: Unveiling Visual Leakage in Multimodal Safety",
+        "authors": "Jing Shao, Xuanjing Huang, LLLeo612, Max9803, Foreshhh",
+        "link": "https://arxiv.org/abs/2411.19939",
+        "github_repo": null,
+        "summary": "- This paper introduces VLSBench, a new multimodal visual leakless safety benchmark with 2.4k image-text pairs designed to address the Visual Safety Information Leakage (VSIL) problem in existing multimodal safety benchmarks.\n- VSIL occurs when sensitive image content is revealed in the text query, allowing models to bypass visual processing and make safety decisions based on text alone. \n- VLSBench pairs images with neutral text queries, forcing models to rely on visual understanding for safety assessments. \n- Experimental results show that VLSBench is challenging for both open-source and closed-source Multimodal Large Language Models (MLLMs), with even the best performing model only achieving a 49.78% safety rate. \n- The study also found that multimodal alignment methods outperform textual alignment on VLSBench, highlighting the importance of multimodal reasoning for visual safety in the absence of VSIL.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+        "authors": "atcbosselut, jjzha, jebish7, shayekh, angelika",
+        "link": "https://arxiv.org/abs/2411.19799",
+        "github_repo": null,
+        "summary": "- This paper introduces INCLUDE, a multilingual benchmark dataset designed to evaluate the regional knowledge understanding of large language models (LLMs).\n- INCLUDE consists of 197,243 multiple-choice questions across 44 languages and 15 scripts, collected from various sources, including academic exams, professional certifications, and regional licenses.\n- The benchmark is designed to address the lack of high-quality evaluation resources in languages other than English and to capture cultural nuances associated with each language.\n- Experimental results demonstrate that current LLMs achieve high variance in performance between different languages and often struggle with questions requiring regional knowledge.\n- Analysis suggests that performance limitations stem from model's grasp of specialized regional knowledge for different languages.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/CohereForAI/include-base-44"
+        ],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Efficient Track Anything",
+        "authors": "Chenchen Zhu, Lemeng Wu, Xiaoyu Xiang, Chong Zhou, yunyangx",
+        "link": "https://arxiv.org/abs/2411.18933",
+        "github_repo": null,
+        "summary": "- The paper introduces EfficientTAM, a lightweight model for video object segmentation and \"track anything\" tasks that prioritizes efficiency for real-world applications, especially on mobile devices.\n- EfficientTAM utilizes a plain, non-hierarchical Vision Transformer (ViT) as the image encoder and employs an efficient memory module with a novel cross-attention mechanism to reduce computational complexity.\n- The model is trained on SA-1B and SA-V datasets and achieves comparable performance to SAM 2 with a 2x speedup on A100 GPUs and a 2.4x parameter reduction.\n- On mobile devices like the iPhone 15 Pro Max, EfficientTAM runs at ~10 FPS with reasonable quality.\n- EfficientTAM also shows promising results on image segmentation benchmarks, outperforming the original SAM and achieving a 20x speedup on A100 GPUs with a 20x parameter reduction.",
+        "classification": [
+            "Image Segmentation",
+            "Video Classification",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://yformer.github.io/efficient-track-anything/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "VisOnlyQA: Large Vision Language Models Still Struggle with Visual Perception of Geometric Information",
+        "authors": "Rui Zhang, Ranran Haoran Zhang, Sarkar Snigdha Sarathi Das, Yusen Zhang, ryokamoi",
+        "link": "https://arxiv.org/abs/2412.00947",
+        "github_repo": "https://github.com/psunlpgroup/VisOnlyQA",
+        "summary": "- This paper introduces VisOnlyQA, a new dataset designed to evaluate the visual perception capabilities of Large Vision Language Models (LVLMs) on questions related to geometric and numerical information in scientific figures.\n- VisOnlyQA includes 1,200 multiple-choice questions across 12 tasks and four categories of figures, along with 70k synthetic training instances.\n- Experiments with 20 LVLMs, including GPT-40 and Gemini 1.5 Pro, reveal poor performance on VisOnlyQA compared to near-perfect human performance.\n- Fine-tuning on synthetic data shows potential but limited improvement, suggesting both training data and model architecture need improvement.\n- The authors observed that stronger language models enhanced the visual perception of LVLMs, even though the dataset focuses solely on visual perception.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/psunlpgroup/VisOnlyQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "VISTA: Enhancing Long-Duration and High-Resolution Video Understanding by Video Spatiotemporal Augmentation",
+        "authors": "Wenhu Chen, Cong Wei, Jie Min, hyang0511, wren93",
+        "link": "https://arxiv.org/abs/2412.00927",
+        "github_repo": null,
+        "summary": "- VISTA, a novel Video SpatioTemporal Augmentation framework, synthesizes long-duration and high-resolution video instruction-following pairs from existing video-caption datasets by spatially and temporally combining videos.\n- It leverages a large language model, Gemini 1.5-Pro, to generate question-answer pairs related to the newly synthesized videos.\n- VISTA-400K, a 400,000-sample video instruction-following dataset based on this approach, improves the performance of various video Large Multimodal Models (LMMs) by an average of 3.3% across four long-video understanding benchmarks.\n- Introduction of HRVideoBench, the first high-resolution video understanding benchmark, on which VISTA-finetuned models show a 6.5% performance gain.\n- Ablation studies demonstrate that disabling proposed augmentations reduces model performance, highlighting the quality and importance of the generated data.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://tiger-ai-lab.github.io/VISTA/"
+        ],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Steering Rectified Flow Models in the Vector Field for Controlled Image Generation",
+        "authors": "Yezhou Yang, Dimitris N. Metaxas, Song Wen, mpatel57",
+        "link": "https://arxiv.org/abs/2412.00100",
+        "github_repo": null,
+        "summary": "- FlowChef, a novel method for controlled image generation using rectified flow models (RFMs), is introduced, offering a unified framework for tasks such as linear inverse problems, image editing, and classifier guidance.\n- FlowChef steers the denoising trajectory within the vector field by gradient skipping without requiring backpropagation through ODE solvers or inversion, leading to improved computational efficiency.\n- The method addresses the limitations of current diffusion-based and flow-based methods, achieving state-of-the-art results with reduced computational costs.\n- Evaluations demonstrate superior performance across linear inverse problems, image editing on PIE benchmark, and classifier-guided style transfer, outperforming baselines on metrics like PSNR, SSIM, and LPIPS while using less memory and time.\n- FlowChef\u2019s adaptability is highlighted through extensions to multi-object image editing and 3D multiview synthesis using large-scale models like Flux.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "PhysGame: Uncovering Physical Commonsense Violations in Gameplay Videos",
+        "authors": "Hangyu Guo, Haoze Zhao, Haoran Tang, Meng Cao, zhangysk",
+        "link": "https://arxiv.org/abs/2412.01800",
+        "github_repo": null,
+        "summary": "- PhysGame, a benchmark designed to evaluate the ability of Video Large Language Models (Video LLMs) to identify and interpret physical commonsense violations in gameplay videos.\n- Constructed using 880 gameplay videos annotated with multiple-choice questions focused on uncovering glitches that defy physical commonsense understanding, categorized across four primary physical domains: mechanics, kinematics, optics, and material properties, subdivided into twelve distinct categories.\n-  Analysis shows open-source Video LLMs underperforming compared to proprietary counterparts, leading to the creation of PhysInstruct and PhysDPO, two datasets containing over 174k training examples in total. \n- The proposed physical knowledge-enhanced Video LLM, PhysVLM, trained on the introduced datasets, reaches state-of-the-art performance on PhysGame, outperforming existing open-source and commercial models. \n- PhysVLM demonstrates strong generalizability, achieving high scores on standard video understanding benchmarks such as Video-MME and VCG.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/PhysGame/PhysGame"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "FLOAT: Generative Motion Latent Flow Matching for Audio-driven Talking Portrait",
+        "authors": "Gyoungsu Chae, Dongchan Min, Taekyung Ki",
+        "link": "https://arxiv.org/abs/2412.01064",
+        "github_repo": null,
+        "summary": "- FLOAT is a novel audio-driven talking portrait video generation model based on flow matching in a learned motion latent space, enabling efficient design of temporally consistent motion.\n- It introduces a transformer-based vector field predictor with frame-wise conditioning, and supports emotion enhancement driven by speech-driven emotion labels.\n- FLOAT outperforms existing state-of-the-art audio-driven talking portrait methods on HDTF and RAVDESS datasets in terms of visual quality, motion fidelity, and efficiency, achieving FID scores of 21.10 and 31.68, respectively.\n- The use of flow matching allows for faster and higher quality sampling compared to diffusion-based methods, while the motion latent space ensures temporal consistency and expressiveness. \n- Ablation studies confirm the benefits of the proposed FMT architecture and the use of speech-driven emotional labels",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "A Simple and Provable Scaling Law for the Test-Time Compute of Large Language Models",
+        "authors": "Jingren Zhou, Bolin Ding, Yaliang Li, Xuchen Pan, yanxi-chen",
+        "link": "https://arxiv.org/abs/2411.19477",
+        "github_repo": null,
+        "summary": "- This paper proposes a two-stage algorithm for enhancing the test-time compute of Large Language Models (LLMs), aiming to boost their success probability on challenging tasks.\n- The algorithm first generates multiple candidate solutions and then selects the best one through a knockout tournament, where pairs of solutions are compared multiple times.\n- Theoretical analysis proves that the failure probability of this algorithm decreases exponentially with increased compute, given the assumptions that the LLM has a non-zero probability of generating a correct solution and can distinguish between correct and incorrect solutions better than random chance.\n- Empirical results on the MMLU-Pro benchmark validate these assumptions and demonstrate performance improvement with increased test-time compute, especially for reasoning-focused questions.\n- The paper discusses limitations and future research directions, including potential for handling complex tasks via decomposition and exploring more efficient algorithms with provable scaling laws.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
+    },
+    {
+        "title": "Towards Cross-Lingual Audio Abuse Detection in Low-Resource Settings with Few-Shot Learning",
+        "authors": "Noel Crespi, Reza Farahbaksh, callmesan",
+        "link": "https://arxiv.org/abs/2412.01408",
+        "github_repo": null,
+        "summary": "- This paper proposes a few-shot cross-lingual audio abuse detection method using Model-Agnostic Meta-Learning (MAML) with pre-trained audio representations in low-resource settings.\n- The model leverages Whisper and Wav2Vec and evaluates two feature normalization strategies: Temporal Mean and L2 normalization.\n- Experiments are conducted on the ADIMA dataset, comprising abusive audio clips in 10 Indian languages.\n- The best-performing model is Whisper with L2-Norm normalization, achieving accuracy scores ranging from 78.98% to 85.22% in the 100-shot setting.\n- A feature visualization study shows that language similarity can enhance cross-lingual abuse detection, especially in low-resource settings.",
+        "classification": [
+            "Audio",
+            "Audio Classification",
+            "Natural Language Processing",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/callmesanfornow/fsl-audio-abuse.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-03"
     }
 ]

@@ -9656,5 +9656,127 @@
         ],
         "huggingface_urls": [],
         "date": "2024-12-03"
+    },
+    {
+        "title": "VideoGen-of-Thought: A Collaborative Framework for Multi-Shot Video Generation",
+        "authors": "cqf, tfl01, AI4VR, Jethro37, Cheliosoops",
+        "link": "https://arxiv.org/abs/2412.02259",
+        "github_repo": null,
+        "summary": "- This paper introduces VideoGen-of-Thought (VGoT), a novel collaborative and training-free framework for generating multi-shot videos from a single user-provided sentence.\n- VGoT addresses the challenges of maintaining logical narrative and visual consistency by incorporating four modules: script generation, keyframe generation, shot-level video generation, and cross-shot smoothing.\n- The framework begins by elaborating a concise user prompt into detailed shot descriptions covering character, background, relations, camera pose, and HDR lighting.\n- Keyframes consistent with the character portrayal are generated using identity-preserving embeddings. Finally, individual video shots are synthesized and then seamlessly connected through a cross-shot smoothing mechanism. \n- Experimental results indicate that VGoT surpasses existing text-to-video generation methods in generating coherent multi-shot videos while exhibiting higher scores on visual quality metrics such as PSNR and IS, particularly excelling in cross-shot consistency as validated through user studies.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "Critical Tokens Matter: Token-Level Contrastive Estimation Enhence LLM's Reasoning Capability",
+        "authors": "zptu, Thu-redrobot, SihengLi, Chufan, Jiahao004",
+        "link": "https://arxiv.org/abs/2411.19943",
+        "github_repo": null,
+        "summary": "- This paper introduces cDPO, a novel token-level contrastive estimation and preference optimization framework designed to enhance the reasoning capabilities of Large Language Models (LLMs).\n- cDPO identifies \"critical tokens\" within incorrect reasoning trajectories by comparing the generation likelihood from positive and negative models fine-tuned on correct and incorrect reasoning trajectories, respectively.\n- It then leverages these contrastive likelihoods as token-level rewards during preference optimization, thereby guiding the model to avoid generating critical tokens that lead to erroneous outcomes.\n- Experimental results on GSM8K and MATH500 benchmarks demonstrate that cDPO significantly outperforms existing example-level and step-level baseline strategies (p < 0.005) across various LLMs, including Llama-3 (8B and 70B) and DeepSeek-math (7B), achieving average accuracies of 77.2% and 33.4% respectively.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "Free Process Rewards without Process Labels",
+        "authors": "iseesaw, stingning, ganqu, wendili, lievan",
+        "link": "https://arxiv.org/abs/2412.01981",
+        "github_repo": "https://github.com/lifan-yuan/ImplicitPRM",
+        "summary": "- This paper introduces implicit Process Reward Models (PRMs), which can be derived from Outcome Reward Models (ORMs) trained on response-level labels without needing expensive step-level annotations.\n- By parameterizing the outcome reward as the log-likelihood ratio of policy and reference language models, a PRM can be automatically learned during ORM training, significantly reducing the data collection and training costs.\n- Experiments on MATH demonstrate that the implicit PRM outperforms a strong MCTS-based baseline, Math-Shepherd, with less than 1/38 of the training data and achieves state-of-the-art performance compared to open-source reward models.\n- Further analysis shows scaling data and using majority voting improves performance, but incorporating step labels during training provides no gains.\n- The paper suggests that the reference model can even be omitted for models pre-trained with preference learning without harming the performance, increasing the inference efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/lifan-yuan/ImplicitPRM"
+        ],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "LSceneLLM: Enhancing Large 3D Scene Understanding Using Adaptive Visual Preferences",
+        "authors": "Sunxy111, Xiaomabufei, senfu, PeihaoChen, Hoyard",
+        "link": "https://arxiv.org/abs/2412.01292",
+        "github_repo": null,
+        "summary": "- LSceneLLM, an adaptive framework for enhancing large 3D scene understanding, is introduced, which addresses the challenges of accurately locating task-relevant visual information within high-density point clouds.\n- It employs a scene magnifier module with a dense token selector and an adaptive self-attention mechanism to dynamically identify task-relevant areas, guided by the LLM's visual preferences, and extract and fuse detailed information from these regions.\n- A new cross-room understanding benchmark, XR-Scene, featuring XR-QA, XR-EmbodiedPlanning, and XR-SceneCaption tasks, is also presented for comprehensive evaluation of large 3D scene understanding.\n- Experimental results demonstrate LSceneLLM's state-of-the-art performance on various 3D tasks and benchmarks, including both indoor and outdoor large-scene understanding, as well as existing single-room scene understanding benchmarks.\n- Integrating the scene magnifier module with existing 3D-VLMs leads to significant performance improvements.",
+        "classification": [
+            "Computer Vision",
+            "Visual Question Answering",
+            "Multimodal",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "OCR Hinders RAG: Evaluating the Cascading Impact of OCR on Retrieval-Augmented Generation",
+        "authors": "zichenwen, ouyanglinke, binwang, qintong21, Carkham",
+        "link": "https://arxiv.org/abs/2412.02592",
+        "github_repo": "https://github.com/opendatalab/OHR-Bench",
+        "summary": "- This paper introduces OHRBench, a new benchmark designed to evaluate the cascading impact of Optical Character Recognition (OCR) on Retrieval-Augmented Generation (RAG) systems.\n- OHRBench includes a diverse dataset of PDF documents from six real-world applications, along with questions based on multimodal elements, as well as a set of perturbed structured data designed to explore the fine-grained effect of two identified primary types of OCR noise on RAG systems: Semantic Noise and Formatting Noise.\n- Through comprehensive evaluation with existing OCR solutions, results demonstrate that none of the extracted structured data from these solutions are competent for constructing high-quality knowledge bases for RAG, as they all suffer performance losses of at least 7.5%.\n- Further analysis reveals that all retrievers and large language models are significantly affected by Semantic Noise, especially in tables and formulas, while Formatting Noise affects specific retrievers and large language models differently.\n- Finally, through experiments with Vision-Language Models in the generation stage, results show that combining image and OCR text as input can improve performance significantly, demonstrating potential for further research on integrating VLMs in RAG.",
+        "classification": [
+            "Document Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/opendatalab/OHR-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "MaskRIS: Semantic Distortion-aware Data Augmentation for Referring Image Segmentation",
+        "authors": "Dongyoon Han, Song Park, Seungho Lee, Minhyun Lee, bhheo",
+        "link": "https://arxiv.org/abs/2411.19067",
+        "github_repo": "https://github.com/naver-ai/maskris",
+        "summary": "- This paper introduces MaskRIS, a novel training framework for Referring Image Segmentation (RIS) that leverages image and text masking alongside Distortion-aware Contextual Learning (DCL).\n- MaskRIS addresses the limitations of conventional data augmentation techniques in RIS by mitigating semantic conflicts and enhancing data diversity.\n- This framework consists of a primary path that processes original inputs for training stability, and a secondary path that processes masked inputs to enhance model robustness.\n- MaskRIS achieves state-of-the-art performance on RefCOCO, RefCOCO+, and RefCOCOg, demonstrating significant improvements in oIoU scores compared to existing methods.\n- For example, MaskRIS improves oIoU by 1.82%, 1.33%, and 2.25% on RefCOCO validation, testA, and testB, respectively, over CARIS.",
+        "classification": [
+            "Multimodal",
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/naver-ai/maskris"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "A dynamic parallel method for performance optimization on hybrid CPUs",
+        "authors": "Liu Yucheng, Luo Yu, Haihao",
+        "link": "https://arxiv.org/abs/2411.19542",
+        "github_repo": null,
+        "summary": "- This paper introduces a dynamic parallel method for optimizing Large Language Model (LLM) inference performance on hybrid CPUs, which addresses the issue of imbalanced hardware capabilities among different cores.\n- The method dynamically balances the workload for each core before parallel processing begins, leading to significant performance improvements.\n- It integrates this new parallel method into Neural Speed, an optimized x86 assembly code framework based on llama.cpp.\n- The results demonstrate over 90% average memory bandwidth utilization on two hybrid Intel CPUs during 4-bit LLM inference, a 20%-30% improvement over the original OpenMP method in Neural Speed, and up to a 3.7x speedup compared to llama.cpp.\n- This dynamic approach adapts to varying system conditions and maximizes CPU performance by dynamically adjusting kernel workload distribution based on real-time performance ratios.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
+    },
+    {
+        "title": "VideoLights: Feature Refinement and Cross-Task Alignment Transformer for Joint Video Highlight Detection and Moment Retrieval",
+        "authors": "Nabeel Mohammed, Md Rizwan Parvez, shafin5, dpaul06",
+        "link": "https://arxiv.org/abs/2412.01558",
+        "github_repo": "https://github.com/dpaul06/VideoLights",
+        "summary": "- VideoLights is a novel framework for joint Video Highlight Detection (HD) and Moment Retrieval (MR) using a Bi-Directional Cross-Modal Fusion (Bi-CMF) Network within a transformer architecture.\n- The model incorporates a Feature Refinement and Alignment (FRA) Module to refine visual features and align them with textual features at local and global levels, and a Unidirectional Joint-Task Feedback Mechanism (Uni-JFM) to enhance task correlation.\n- VideoLights leverages features from Large Vision-Language Models (LVLMs) like BLIP-2, CLIP, and SlowFast, and employs intelligent model pre-training with synthetic data generated by LVLMs. \n- Adaptive hard positive/negative loss functions are utilized for adaptive error penalization and improved learning.\n- The model achieves state-of-the-art performance on QVHighlights, TVSum, and Charades-STA benchmarks, outperforming existing methods by significant margins and improving MR metrics such as R@0.5 by up to 6.81% and HD metrics such as mAP by up to 6.9%.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/dpaul06/VideoLights"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-04"
     }
 ]

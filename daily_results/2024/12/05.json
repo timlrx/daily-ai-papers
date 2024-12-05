@@ -1,0 +1,203 @@
+[
+    {
+        "title": "SNOOPI: Supercharged One-step Diffusion Distillation with Proper Guidance",
+        "authors": "Khoi Nguyen, anhttran1111, termanteus, aengusng, viettmab",
+        "link": "https://arxiv.org/abs/2412.02687",
+        "github_repo": null,
+        "summary": "- SNOOPI, a novel framework, enhances one-step text-to-image diffusion models through Proper Guidance-SwiftBrush (PG-SB) and Negative-Away Steer Attention (NASA).\n- PG-SB improves training stability by dynamically adjusting teacher model guidance scales during Variational Score Distillation (VSD), addressing common instabilities across diverse model architectures.\n- NASA introduces negative prompting to one-step diffusion models, a previously unsupported feature, by manipulating cross-attention layers, refining image generation by suppressing undesired features.\n- Evaluation on benchmarks like HPSv2 shows SNOOPI outperforming existing one-step diffusion models, achieving a state-of-the-art score of 31.08.\n-  The enhanced control and stability of SNOOPI make rapid, high-quality text-to-image generation more practical.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "Imagine360: Immersive 360 Video Generation from Perspective Anchor",
+        "authors": "liuziwei7, guoyww, mimihe, tongwu2020, jingtan",
+        "link": "https://arxiv.org/abs/2412.03552",
+        "github_repo": null,
+        "summary": "- Imagine360 is a novel framework that generates immersive 360\u00b0 videos from standard perspective videos, using a dual-branch denoising structure with panorama and perspective branches.\n- It incorporates cross-domain spherical attention with antipodal masking to capture long-range motion dependencies and ensure plausible spherical patterns.\n- Elevation-aware designs handle diverse video inputs with varying elevation angles, and a resource-friendly fine-tuning strategy optimizes performance on limited data.\n- Experimental results demonstrate superior graphics quality and motion coherence compared to existing 360\u00b0 video generation methods.\n- Imagine360 also exhibits a bonus advantage in achieving superior results for panorama image outpainting.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "Distilling Diffusion Models to Efficient 3D LiDAR Scene Completion",
+        "authors": "An Zhao, slysun, haoranxu, mengcy, SYZhang0805",
+        "link": "https://arxiv.org/abs/2412.03515",
+        "github_repo": "https://github.com/happyw1nd/ScoreLiDAR",
+        "summary": "- This paper introduces ScoreLiDAR, a novel distillation method for 3D LiDAR scene completion diffusion models, enabling efficient and high-quality scene completion.\n- ScoreLiDAR adapts Variational Score Distillation (VSD) and incorporates a Structural Loss, including scene-wise and point-wise terms, to capture geometric structure information and enhance detail retention.\n- ScoreLiDAR achieves a >5x speedup, completing scenes in ~5 seconds compared to ~30 seconds for the state-of-the-art LiDiff model.\n- Evaluation on SemanticKITTI and KITTI-360 datasets demonstrates superior performance with lower Chamfer Distance (CD) and Jensen-Shannon Divergence (JSD) compared to existing methods.\n- Ablation studies confirm the effectiveness of the structural loss in improving completion quality.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/happywlnd/ScoreLiDAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "TokenFlow: Unified Image Tokenizer for Multimodal Understanding and Generation",
+        "authors": "sweetrabor, gaozong, xuwang, liqingzju, leo1117",
+        "link": "https://arxiv.org/abs/2412.03069",
+        "github_repo": null,
+        "summary": "- Introduces TokenFlow, a novel unified image tokenizer with a dual-codebook architecture that decouples semantic and pixel-level feature learning while maintaining alignment via shared index mapping, bridging the gap between multimodal understanding and generation.\n- Demonstrates state-of-the-art autoregressive image generation with a GenEval score of 0.55 at 256x256 resolution and strong reconstruction performance (FID 0.63 at 384x384), surpassing methods like EMU3 and LlamaGen with fewer sampling steps. \n- Achieves a new state-of-the-art in multimodal understanding, surpassing LLaVA-1.5 13B by 7.2% on average by leveraging the Qwen-2.5-14B language model. \n- Shows that discrete visual input can outperform continuous visual baselines for the first time on understanding tasks. \n- Maintains high codebook utilization (95%+) even with large codebooks (over 130K), exceeding prior approaches in capacity and efficiency.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "Video-3D LLM: Learning Position-Aware Video Representation for 3D Scene Understanding",
+        "authors": "asdfg80, slvjul, zd11024",
+        "link": "https://arxiv.org/abs/2412.00493",
+        "github_repo": null,
+        "summary": "- This paper introduces Video-3D LLM, a novel generalist model for 3D scene understanding.\n- The model leverages a Video LLM framework, processing video frames augmented with corresponding 3D spatial coordinates obtained from depth images.\n- It enhances 3D scene understanding by creating position-aware video representations through the integration of 3D position encodings derived from spatial coordinates.\n- A maximum coverage sampling technique optimizes the balance between computational cost and performance.\n- The model achieves state-of-the-art performance on benchmarks like ScanRefer, Multi3DRefer, Scan2Cap, ScanQA, and SQA3D, outperforming LLaVA-3D while using only 26% of its 3D data.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Visual Question Answering",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/LaVi-Lab/Video-3D-LLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "NVComposer: Boosting Generative Novel View Synthesis with Multiple Sparse and Unposed Images",
+        "authors": "Chengwh, bluestyle97, Yw22, ZyZcuhk, l-li",
+        "link": "https://arxiv.org/abs/2412.03517",
+        "github_repo": null,
+        "summary": "- NVComposer is a novel view synthesis (NVS) model that generates novel views from multiple sparse and unposed images without requiring external alignment processes like pose estimation or pre-reconstruction.\n- It uses an image-pose dual-stream diffusion model to generate novel views and implicitly predict camera poses for input images, and a geometry-aware feature alignment module distills 3D knowledge from a pre-trained dense stereo model.\n- NVComposer achieves state-of-the-art performance on generative multi-view NVS tasks, outperforming existing methods on RealEstate10K and DL3DV datasets.\n- The model's performance improves as the number of unposed input views increases, demonstrating its ability to leverage additional information.\n- Unlike other multi-view methods that suffer performance degradation with more input views, NVComposer utilizes the extra information effectively, enhancing its utility for flexible and accessible generative NVS systems.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "VARCO-VISION: Expanding Frontiers in Korean Vision-Language Models",
+        "authors": "SunYoung Park, Daeyoung Kim, kimyoungjune, hojunssss",
+        "link": "https://arxiv.org/abs/2411.19103",
+        "github_repo": null,
+        "summary": "- This paper introduces VARCO-VISION-14B, a bilingual (Korean-English) vision-language model based on Qwen-2.5-14B-Instruct as its language model and SigLIP as its vision encoder, trained using a four-stage process involving feature alignment, supervised fine-tuning, and preference optimization.\n- The model outperforms similarly sized open-source models on Korean multimodal benchmarks and achieves comparable performance to larger proprietary models, demonstrating strong bilingual capabilities.\n- Five Korean evaluation datasets are released alongside the model, including four closed-set (K-MMBench, K-SEED, K-MMStar, K-DTCBench) and one open-set (K-LLaVA-W) benchmarks, translated and validated from established English benchmarks to assess bilingual proficiency and document, table and chart understanding.\n- VARCO-VISION exhibits proficient grounding, referring, and OCR capabilities in both languages.\n- The authors aim to promote open research in Korean VLMs with this release and encourage further development of bilingual multimodal models.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/NCSOFT/VARCO-VISION-14B",
+            "https://huggingface.co/datasets/NCSOFT/K-MMBench",
+            "https://huggingface.co/datasets/NCSOFT/K-SEED",
+            "https://huggingface.co/datasets/NCSOFT/K-MMStar",
+            "https://huggingface.co/datasets/NCSOFT/K-DTCBench",
+            "https://huggingface.co/datasets/NCSOFT/K-LLAVA-W"
+        ],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "CleanDIFT: Diffusion Features without Noise",
+        "authors": "Bj\u00f6rn Ommer, FrankFundel, kolja-b, stefan-baumann, kliyer",
+        "link": "https://arxiv.org/abs/2412.03439",
+        "github_repo": null,
+        "summary": "- CleanDIFT, a novel feature extraction method for diffusion models, produces noise-free, timestep-independent, general-purpose features.\n- CleanDIFT fine-tunes a trainable copy of a pre-trained diffusion model on clean images, aligning its features with the timestep-dependent internal representations of the original model using projection heads.\n- This approach eliminates the need to add noise to input images during feature extraction and avoids task-specific timestep tuning.\n- Experiments demonstrate significant performance improvements over existing diffusion feature methods across tasks like semantic correspondence, depth estimation, semantic segmentation, and classification, and sets a new state-of-the-art in zero-shot unsupervised semantic correspondence.\n- CleanDIFT also offers a 50x speedup for supervised semantic correspondence compared to methods requiring DDIM inversion.",
+        "classification": [
+            "Image Feature Extraction",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation",
+        "authors": "zouzx, yhyang-myron, XingqiaoAn, bennyguo, huanngzh",
+        "link": "https://arxiv.org/abs/2412.03558",
+        "github_repo": null,
+        "summary": "- MIDI is a novel paradigm for compositional 3D scene generation from a single image using multi-instance diffusion models, extending pre-trained image-to-3D object generation models.\n- It incorporates a multi-instance attention mechanism to capture inter-object interactions and spatial coherence directly within the generation process, eliminating the need for multi-step procedures.\n- MIDI is trained on scene-level data to supervise interactions between 3D instances and incorporates single-object data for regularization to maintain generalization ability.\n- Experimental results on synthetic, real-world, and stylized datasets demonstrate that MIDI achieves state-of-the-art performance in image-to-scene generation by accurately modeling inter-object relationships and producing better alignment with input images.\n- MIDI successfully generates coherent and accurate 3D scenes from various image inputs, highlighting its potential and generalization capabilities.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "One Shot, One Talk: Whole-body Talking Avatar from a Single Image",
+        "authors": "Boyang Guo, Leipeng Hu, JuyongZhang, YudongGuo, xiangjun-xj",
+        "link": "https://arxiv.org/abs/2412.01106",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for creating animatable, expressive, whole-body talking avatars from a single image, addressing the challenge of dynamic modeling and generalization to novel movements.\n- It proposes a pipeline that leverages pose-guided image-to-video diffusion models to generate pseudo-labels, followed by training a hybrid 3DGS-mesh avatar representation constrained by regularizations to handle inconsistencies in these labels.\n- The approach combines the single input image with imperfect pseudo video frames generated from diverse motion sequences and head animation techniques.\n- A perceptual-based loss is employed to improve appearance modeling and several regularization terms are introduced to stabilize the avatar reconstruction process and guide the Gaussian deformation based on mesh information.\n- Experimental results demonstrate superior performance compared to existing methods, even outperforming some techniques that use video input, on cross-identity motion reenactment tasks.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "Mimir: Improving Video Diffusion Models for Precise Text Understanding",
+        "authors": "Dandan Zheng, Kecheng Zheng, Yutong Feng, Shuai Tan, BiaoGong",
+        "link": "https://arxiv.org/abs/2412.03085",
+        "github_repo": null,
+        "summary": "- Mimir is a novel text-to-video generation framework that integrates large language models (LLMs) within a diffusion model for enhanced text comprehension.\n- It employs a \"token fuser\" to combine features from both text encoders (like T5) and decoder-only LLMs (like Phi-3.5), addressing the distribution gap between these models.\n- This design allows Mimir to leverage existing video priors in diffusion models while capitalizing on the enhanced reasoning and precise understanding of LLMs.\n- Quantitative and qualitative evaluations on VBench demonstrate Mimir's superior performance, particularly in handling multiple objects, spatial relationships, and short, descriptive prompts.\n- A user study further confirms Mimir's improved capabilities in instruction following, physics simulation, and overall visual quality compared to existing state-of-the-art models.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://lucaria-academy.github.io/Mimir/"
+        ],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "Weighted-Reward Preference Optimization for Implicit Model Fusion",
+        "authors": "Xiaojun Quan, Tianyuan Shi, Longguang Zhong, Fanqi Wan, Ziyi Yang",
+        "link": "https://arxiv.org/abs/2412.03187",
+        "github_repo": "https://github.com/SLIT-AI/WRPO",
+        "summary": "- This paper introduces Weighted-Reward Preference Optimization (WRPO), a novel implicit model fusion method for enhancing the capabilities of a Large Language Model (LLM) by leveraging preference optimization between source LLMs and a target LLM.\n- WRPO eliminates the need for vocabulary alignment and matrix fusion, enabling efficient scaling to accommodate diverse LLMs and mitigating distributional deviations through a progressive adaptation strategy that gradually shifts reliance on preferred examples from the target LLM to the source LLMs.\n- Experiments conducted on MT-Bench, AlpacaEval-2, and Arena-Hard benchmarks demonstrated that WRPO consistently outperforms existing knowledge fusion methods and various fine-tuning baselines.\n- Using LLaMA3-8B-Instruct as the target model, WRPO achieves a length-controlled win rate of 55.9% against GPT-4-Preview-1106 on AlpacaEval-2 and a 46.2% win rate against GPT-4-0314 on Arena-Hard, showcasing significant performance improvements.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SLIT-AI/WRPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    },
+    {
+        "title": "NitroFusion: High-Fidelity Single-Step Diffusion through Dynamic Adversarial Training",
+        "authors": "Yi-Zhe Song, Kai Zou, Hmrishav Bandyopadhyay, ChenDY",
+        "link": "https://arxiv.org/abs/2412.02030",
+        "github_repo": null,
+        "summary": "- NitroFusion is a novel single-step diffusion model for high-fidelity image generation that employs a dynamic adversarial training framework.\n- It utilizes a large, dynamic pool of specialized discriminator heads focusing on different image quality aspects and noise levels, providing diverse feedback to guide the generation process and prevent overfitting by refreshing 1% of heads each iteration. \n- NitroFusion also introduces a multi-scale strategy with dual training objectives for balancing image coherence and prompt alignment, using global heads to assess overall image structure and local heads to examine fine-grained details. \n- Unlike traditional step-reduction approaches, NitroFusion offers a flexible deployment through bottom-up refinement, enabling a trade-off between speed and quality by dynamically choosing between 1 to 4 denoising steps with the same model weights. \n- Experimental results demonstrate that NitroFusion outperforms existing single-step methods across multiple evaluation metrics, exhibiting superior quality on advanced metrics like Aesthetic Score and ImageReward, and often surpasses the performance of recent fast diffusion models while maintaining the speed advantages of single-step generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-05"
+    }
+]

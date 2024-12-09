@@ -10315,5 +10315,162 @@
         ],
         "huggingface_urls": [],
         "date": "2024-12-06"
+    },
+    {
+        "title": "Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
+        "authors": "Yangzhou Liu, Yue Cao, Zhe Chen, qishisuren, Weiyun1025",
+        "link": "https://arxiv.org/abs/2412.05271",
+        "github_repo": null,
+        "summary": "- This paper introduces InternVL 2.5, a series of advanced multimodal large language models (MLLMs) built upon InternVL 2.0, enhancing training and testing strategies and data quality.\n- InternVL 2.5 maintains the core \"ViT-MLP-LLM\" architecture, integrating an incrementally pre-trained InternViT-6B or InternViT-300M vision encoder with various large language models (LLMs) like InternLM 2.5 and Qwen 2.5.\n- The models demonstrate competitive performance, rivaling leading commercial models like GPT-40 and Claude-3.5-Sonnet, and achieving state-of-the-art results on benchmarks like MMMU and MathVista.\n- Key findings include the reduced dependency on training data with larger vision encoders, the impact of improved data quality, and the benefits of test-time scaling, especially with Chain-of-Thought (CoT) reasoning.\n- InternVL 2.5 is released open-source, aiming to push the boundaries of open-source multimodal models and facilitate further research in multimodal AI.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/InternVL"
+        ],
+        "huggingface_urls": [
+            "//huggingface.co/OpenGVLab/InternVL2_5-78B",
+            "https://huggingface.co/spaces/OpenGVLab/InternVL"
+        ],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "LiFT: Leveraging Human Feedback for Text-to-Video Model Alignment",
+        "authors": "Cheng Jin, Xiaomeng Yang, Junyan Wang, Zhiyu Tan, Yibin Wang",
+        "link": "https://arxiv.org/abs/2412.04814",
+        "github_repo": null,
+        "summary": "- This paper introduces LiFT, a novel fine-tuning method that leverages human feedback to better align text-to-video (T2V) models with human preferences.\n- The approach involves collecting human feedback on generated videos across three dimensions: semantic consistency, motion smoothness, and video fidelity.  A reward model (LIFT-CRITIC), based on a large multimodal model, is trained on this data to learn a reward function that predicts human preferences.\n- The T2V model is then fine-tuned using reward-weighted likelihood maximization to align its output with human expectations.\n- In experiments, the fine-tuned CogVideoX-2B model outperformed the larger CogVideoX-5B model across all 16 metrics of the VBench benchmark.\n- The results demonstrate the potential of using human feedback and reward learning to significantly improve the quality and alignment of T2V generation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "MAmmoTH-VL: Eliciting Multimodal Reasoning with Instruction Tuning at Scale",
+        "authors": "Yuelin Bai, Tuney Zheng, Jarvis Guo, yuexiang96, luodian",
+        "link": "https://arxiv.org/abs/2412.05237",
+        "github_repo": null,
+        "summary": "The paper introduces MAmmoTH-VL, a multimodal large language model (MLLM) trained on a newly created dataset containing 12 million instruction-response pairs.  The dataset was constructed using a cost-effective method employing open-source models.  MAmmoTH-VL-8B, based on the LLaVA-OneVision architecture, outperforms existing open-source models on various benchmarks, particularly those involving intricate reasoning. The model shows state-of-the-art performance on MathVerse (+8.1%), MMMU-Pro (+7%), and MuirBench (+13.3%). Ablation studies reveal the effectiveness of key components such as rewriting and self-filtering.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://mammoth-vl.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "EXAONE 3.5: Series of Large Language Models for Real-world Use Cases",
+        "authors": "Kyunghoon Bae, Soyoung An, LG AI Research, lhg912, Sunkyoung",
+        "link": "https://arxiv.org/abs/2412.04862",
+        "github_repo": null,
+        "summary": "The paper introduces EXAONE 3.5, a series of instruction-tuned language models available in three sizes (32B, 7.8B, and 2.4B).  The models demonstrate strong instruction-following capabilities and achieve high performance in various benchmarks, particularly in real-world scenarios and long-context understanding.  EXAONE 3.5 models outperform many similar-sized models on benchmark datasets. The models are open for research purposes and can be downloaded from HuggingFace.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/LGAI-EXAONE"
+        ],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "Moto: Latent Motion Token as the Bridging Language for Robot Manipulation",
+        "authors": "Mingyu Ding, Yixiao Ge, Yizhuo Li, Yuying Ge, Yi Chen",
+        "link": "https://arxiv.org/abs/2412.04445",
+        "github_repo": null,
+        "summary": "- Moto is a new robotics model that leverages latent motion tokens as a bridging language for autoregressive pre-training on video data and robot manipulation.\n- Moto-GPT is pre-trained through next motion token prediction, learning motion-related prior knowledge from videos and transferring this knowledge to downstream tasks via fine-tuning.\n- Moto-GPT is a transformer-based architecture (similar to GPT) with a motion tokenizer that encodes motion between frames and action query tokens for robot control prediction during fine-tuning.\n- Experimental results demonstrate that Moto-GPT exhibits superior robustness and efficiency on robot manipulation benchmarks compared to various baseline models.\n- Moto-GPT performs particularly well in low-resource scenarios, highlighting its effective transfer of learned knowledge from video data to downstream tasks.",
+        "classification": [
+            "Robotics",
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://chenyi99.github.io/moto/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "APOLLO: SGD-like Memory, AdamW-level Performance",
+        "authors": "Sem Park, Xi Liu, Wenyan Cong, Hanqing Zhu, Kyriection",
+        "link": "https://arxiv.org/abs/2412.05270",
+        "github_repo": null,
+        "summary": "- APOLLO, a new memory-efficient optimizer for Large Language Models (LLMs), is proposed, offering SGD-level memory cost while maintaining or exceeding AdamW's performance.\n- It leverages structured learning rate updates (channel-wise or tensor-wise) and approximates them in a low-rank auxiliary space using random projections, eliminating the need for costly SVD operations.\n- APOLLO-Mini, an extremely memory-efficient variant, utilizes tensor-wise scaling with a rank-1 auxiliary space, achieving similar performance to AdamW with drastically reduced memory usage.\n- Experimental results on various LLaMA model sizes (60M to 7B) show APOLLO consistently outperforms AdamW and other memory-efficient methods in pre-training, even achieving a 2.8 reduction in validation perplexity with significantly lower memory overhead.\n- APOLLO also offers practical system-level advantages including enhanced throughput (3x on LLaMA 7B compared to AdamW) and improved model scalability, enabling LLaMA-13B pre-training with naive DDP on a single A100-80GB GPU and LLaMA-7B training on a single GPU with less than 12GB memory when combined with quantization.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "SwiftEdit: Lightning Fast Text-Guided Image Editing via One-Step Diffusion",
+        "authors": "Cuong Pham, Anh Tran, Khoi Nguyen, Quang Nguyen, Tung11",
+        "link": "https://arxiv.org/abs/2412.04301",
+        "github_repo": null,
+        "summary": "- SwiftEdit is a novel, real-time text-guided image editing tool that leverages a one-step diffusion model and a one-step inversion framework, achieving edits in 0.23 seconds on an A100 GPU.\n- It introduces a two-stage training strategy for the inversion network: the first stage uses synthetic data generated by a one-step text-to-image model (SwiftBrushv2), while the second stage utilizes real images with perceptual and regularization losses to bridge the domain gap and ensure editability.\n- The method employs an attention rescaling technique with a self-guided editing mask, allowing flexible control over edit strength and precise localization.\n- Extensive quantitative and qualitative evaluations on the PieBench benchmark show that SwiftEdit significantly outperforms existing multi-step methods in terms of speed (at least 50x faster) while maintaining competitive editing quality and outperforms few-step editing approaches in terms of edit quality while maintaining a speed advantage (at least 5x faster).\n- A user study further demonstrates SwiftEdit's preference over other methods due to its balance of background preservation and accurate semantic edits.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration",
+        "authors": "Yu Wang, Xuefei Ning, Yukun Huang, fjxmlzn, NinaKarine",
+        "link": "https://arxiv.org/abs/2412.04440",
+        "github_repo": null,
+        "summary": "- GENMAC, an iterative multi-agent framework, is proposed for compositional text-to-video generation.\n- It uses a three-stage collaborative workflow: DESIGN, GENERATION, and REDESIGN, with an iterative loop between GENERATION and REDESIGN for refinement.\n- The REDESIGN stage uses four sequentially executed MLLM-based agents: verification, suggestion, correction, and output structuring.\n- A self-routing mechanism adaptively selects the appropriate correction agent from a collection of specialized agents.\n- Experiments on T2V-CompBench show state-of-the-art performance across seven compositional aspects, significantly outperforming 17 existing methods, with notable improvement in generative numeracy.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://karine-h.github.io/GenMAC/"
+        ],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "2DGS-Room: Seed-Guided 2D Gaussian Splatting with Geometric Constrains for High-Fidelity Indoor Scene Reconstruction",
+        "authors": "Xiansong Lai, Haodong Xiang, Crayon-Shinchan, ChaosLiao, Valentina-Zhang",
+        "link": "https://arxiv.org/abs/2412.03428",
+        "github_repo": null,
+        "summary": "- This paper introduces 2DGS-Room, a novel method for high-fidelity indoor scene reconstruction using seed-guided 2D Gaussian splatting.\n- The model incorporates a seed-guided mechanism to control the distribution and density of 2D Gaussians, improving geometric accuracy and efficiency.\n- It utilizes monocular depth and normal priors to provide geometric constraints for details and textureless regions, respectively.\n- Multi-view consistency constraints are employed to further enhance reconstruction quality and mitigate artifacts.\n- Extensive experiments demonstrate that 2DGS-Room achieves state-of-the-art performance in indoor scene reconstruction on ScanNet and ScanNet++ datasets.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://valentina-zhang.github.io/2DGS-Room/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
+    },
+    {
+        "title": "DEMO: Reframing Dialogue Interaction with Fine-grained Element Modeling",
+        "authors": "Haiyang Yu, Nan Xu, Kun Chen, Xinghua Zhang, iiiiwis",
+        "link": "https://arxiv.org/abs/2412.04905",
+        "github_repo": "https://github.com/MozerWang/DEMO",
+        "summary": "- This paper introduces Dialogue Element Modeling (DEMO), a new research task focusing on two core competencies: Element Awareness and Dialogue Agent Interaction.\n- Element Awareness involves reverse-engineering dialogue elements like goal, persona, and scene, while Dialogue Agent Interaction focuses on goal-directed multi-turn dialogue modeling.\n- A novel benchmark, DEMO, is proposed to facilitate comprehensive dialogue modeling and assessment in both English and Chinese, covering various dialogue elements and tasks.\n- A DEMO agent, trained using imitation learning and expert experience, demonstrates superior performance in both in-domain and out-of-domain tasks, exceeding several existing LLMs.\n- Experimental results show that current LLMs have room for improvement in dialogue element modeling, especially in feature perception tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MozerWang/DEMO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-09"
     }
 ]

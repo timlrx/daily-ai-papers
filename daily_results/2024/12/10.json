@@ -1,0 +1,112 @@
+[
+    {
+        "title": "ProcessBench: Identifying Process Errors in Mathematical Reasoning",
+        "authors": "Keming Lu, Beichen Zhang, Zhenru Zhang, RunjiLin, chujiezheng",
+        "link": "https://arxiv.org/abs/2412.06559",
+        "github_repo": null,
+        "summary": "- This paper introduces ProcessBench, a new benchmark for evaluating the ability of language models to identify erroneous steps in mathematical reasoning.\n- ProcessBench consists of 3,400 test cases, primarily focused on competition- and Olympiad-level math problems, with each test case containing a step-by-step solution annotated with error locations by human experts.\n- Through extensive evaluation on ProcessBench, the authors found that existing Process Reward Models (PRMs) typically fail to generalize to more challenging math problems and underperform compared to critic models (prompted general language models).\n- The best open-source model, QwQ-32B-Preview, demonstrates competitive critique capability with the proprietary model GPT-40, but still lags behind the reasoning-specialized o1-mini.\n- This work aims to foster future research in reasoning process assessment and pave the way toward scalable oversight of language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/ProcessBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    },
+    {
+        "title": "Exploring Multi-Grained Concept Annotations for Multimodal Large Language Models",
+        "authors": "Wanxiang Che, Libo Qin, Yuxi Xie, Tianhao Niu, LooperXX",
+        "link": "https://arxiv.org/abs/2412.05939",
+        "github_repo": "https://github.com/LooperXX/MMGiC",
+        "summary": "- This paper introduces MMGIC, a multimodal dataset featuring multi-grained concept annotations for Multimodal Large Language Models (MLLMs), including coarse-grained image captions, fine-grained object labels and regions, and label descriptions.\n- The authors propose a general MLLM framework and structured template to integrate these multi-grained annotations, facilitating vision-language alignment across different granularities.\n- Experiments demonstrate that MMGIC enhances MLLM performance in comprehension and generation tasks compared to training solely on image captions.\n- MMGIC and image-caption data complement each other; a curriculum learning strategy of pre-training on image captions and then MMGIC yields the best results, with gains of 3.95% and 2.34% on POPE and SEED-Bench, respectively. \n- The study explores various data recipes for multi-grained annotations and their impact on MLLM performance, demonstrating their complementary nature.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LooperXX/MMGiC"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    },
+    {
+        "title": "Training Large Language Models to Reason in a Continuous Latent Space",
+        "authors": "Zhiting Hu, Xian Li, DiJia Su, Sainbayar Sukhbaatar, Shibo Hao",
+        "link": "https://arxiv.org/abs/2412.06769",
+        "github_repo": null,
+        "summary": "- This paper introduces COCONUT (Chain of Continuous Thought), a novel paradigm for training large language models (LLMs) to reason in a continuous latent space, rather than the traditional language space used in chain-of-thought (CoT) prompting.\n- COCONUT utilizes the last hidden state of the LLM as a continuous representation of the reasoning state (\"continuous thought\") and feeds it directly back to the LLM as the next input embedding.\n- This latent reasoning approach allows the model to encode multiple potential next reasoning steps, enabling a breadth-first search (BFS) behavior and improved performance on logical reasoning tasks requiring backtracking compared to traditional CoT.\n- Experimental results on GSM8k, ProntoQA, and a newly proposed ProsQA dataset demonstrate the effectiveness of COCONUT, particularly in scenarios involving substantial planning and search.\n- The findings suggest that latent reasoning can be more efficient and adaptable for complex reasoning, offering insights into future research on LLM reasoning and problem-solving.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    },
+    {
+        "title": "Divot: Diffusion Powers Video Tokenizer for Comprehension and Generation",
+        "authors": "Ying Shan, Yixiao Ge, Yizhuo Li, Yuying Ge",
+        "link": "https://arxiv.org/abs/2412.04432",
+        "github_repo": "https://github.com/TencentARC/Divot",
+        "summary": "- This paper introduces Divot, a Diffusion-Powered Video Tokenizer, which uses a diffusion process for self-supervised video representation learning.\n- Divot is composed of a pre-trained Vision Transformer (ViT) encoder, a Spatial-Temporal transformer, and a Perceiver Resampler to get video representations.\n- It leverages a video diffusion model to predict the noise added to the VAE latents of video frames, conditioned on Divot\u2019s features.\n- The authors also introduce Divot-LLM, integrating Divot with a pre-trained LLM, which achieves competitive performance in video comprehension and zero-shot video generation benchmarks.\n- Divot-LLM also excels in video storytelling, generating interleaved narratives and corresponding videos.",
+        "classification": [
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/Divot"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    },
+    {
+        "title": "You See it, You Got it: Learning 3D Creation on Pose-Free Videos at Scale",
+        "authors": "Tiejun Huang, Zhengxiong Luo, Haoge Deng, Infinite888, bruiiii",
+        "link": "https://arxiv.org/abs/2412.06699",
+        "github_repo": null,
+        "summary": "- See3D, a visual-conditional multi-view diffusion model, is introduced for open-world 3D creation trained on a large-scale dataset of internet videos called WebVi3D containing 320 million frames from 16 million video clips.\n- This model uses a novel visual-condition, a 2D-inductive signal from time-dependent noise added to masked videos, eliminating the need for pose annotations, thereby enabling large-scale training.\n- A warping-based pipeline is used in conjunction with See3D to achieve high-fidelity 3D generation by iteratively refining the geometry of novel views.\n- See3D achieves state-of-the-art zero-shot and open-world single and sparse view reconstruction, outperforming models trained on constrained 3D datasets.\n- The model also supports image-conditioned 3D creation tasks such as 3D editing without requiring fine-tuning.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    },
+    {
+        "title": "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+        "authors": "Hang Li, Yang Liu, Yuanshun Yao, Jinghan Jia, xiaojunxu",
+        "link": "https://arxiv.org/abs/2412.03123",
+        "github_repo": "https://github.com/xiaojunxu/multi-bit-text-watermark",
+        "summary": "- This paper introduces a novel method for embedding imperceptible multi-bit watermarks into text using LLM-based paraphrasers.\n- The method uses a pair of fine-tuned LLMs, one as the encoder to embed the watermark and another as the decoder to extract it. The encoder injects the watermark by alternatively paraphrasing sentences based on a binary code, while the decoder classifies each sentence to extract the embedded bits.\n- The method achieves high detection accuracy (over 99.99% AUC) with small LLMs (1.1B parameters) while maintaining the semantic similarity between the original and watermarked texts.\n- It also demonstrates robustness against word substitutions and sentence paraphrasing perturbations and generalizes well to out-of-distribution data.\n- The watermark's stealthiness is evaluated through both human and LLM-based analysis, showing it is difficult to distinguish between watermarked and non-watermarked text.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/xiaojunxu/multi-bit-text-watermark"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    },
+    {
+        "title": "CARP: Visuomotor Policy Learning via Coarse-to-Fine Autoregressive Prediction",
+        "authors": "Mingyang Sun, Siteng Huang, Shangke Lyu, Pengxiang Ding, Zhefei Gong",
+        "link": "https://arxiv.org/abs/2412.06782",
+        "github_repo": null,
+        "summary": "- CARP (Coarse-to-Fine AutoRegressive Policy) is introduced for visuomotor policy learning; it combines autoregressive model efficiency with diffusion model performance. \n- CARP is a transformer-based model that uses multi-scale action tokenization; a coarse-to-fine autoregressive prediction refines actions, and it is trained using cross-entropy loss with relaxed markovian assumptions.\n- In simulated robotics benchmarks with single and multi-task settings, CARP matches or exceeds diffusion model performance with 10x faster inference.\n- On real-world robotic arm manipulation tasks, CARP demonstrates a 10% improvement in success rates over baseline with faster inference.\n- The flexibility of the GPT-style architecture allows CARP to easily extend to multi-task settings by just adding a task embedding.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-10"
+    }
+]

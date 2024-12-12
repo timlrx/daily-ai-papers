@@ -10918,5 +10918,177 @@
         ],
         "huggingface_urls": [],
         "date": "2024-12-11"
+    },
+    {
+        "title": "SynCamMaster: Synchronizing Multi-Camera Video Generation from Diverse Viewpoints",
+        "authors": "lemonaddie, ziyangy, Xintao, menghanxia, jianhongbai",
+        "link": "https://arxiv.org/abs/2412.07760",
+        "github_repo": null,
+        "summary": "- SynCamMaster is a novel text-to-video model that generates synchronized multi-view videos of dynamic, open-domain scenes from user-specified viewpoints.\n- The model architecture involves a pre-trained text-to-video diffusion model enhanced with a multi-view synchronization module and a camera encoder.\n- The multi-view synchronization module uses cross-view self-attention within the diffusion transformer blocks to ensure inter-view feature consistency.\n- A hybrid training dataset comprised of multi-view images, monocular videos, and Unreal Engine rendered videos is used to overcome data scarcity.\n- Quantitative and qualitative comparisons demonstrate SynCamMaster's superior performance over baseline methods in generating coherent, synchronized multi-view videos.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/KwaiVGI/SynCamMaster"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "LAION-SG: An Enhanced Large-Scale Dataset for Training Complex Image-Text Models with Structural Annotations",
+        "authors": "MAJIARUI, SYZhang0805, yeezlee, mengcy, hyllbd",
+        "link": "https://arxiv.org/abs/2412.08580",
+        "github_repo": null,
+        "summary": "- This paper introduces LAION-SG, a large-scale dataset with scene graph annotations for training complex image-text models.\n- LAION-SG is an enhancement of LAION-Aesthetics V2 (6.5+) with high-quality scene graph annotations by GPT-4, featuring multiple objects, detailed attributes, and relationships.\n- A new foundation model, SDXL-SG, based on Stable Diffusion XL, incorporates scene graph information through a graph neural network to improve complex scene generation.\n- Both quantitative and qualitative results show that models trained on LAION-SG significantly outperform those trained on existing datasets like COCO-Stuff and Visual Genome.\n- A new benchmark, CompSG-Bench, has been established to evaluate models on complex image generation, setting a new standard.",
+        "classification": [
+            "Text-to-Image",
+            "Graph Machine Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/mengcye/LAION-SG"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "POINTS1.5: Building a Vision-Language Model towards Real World Applications",
+        "authors": "Xiao Zhou, Le Tian, yangyu1, kavio, YuanLiuuuuuu",
+        "link": "https://arxiv.org/abs/2412.08443",
+        "github_repo": null,
+        "summary": "- POINTS1.5 is a new vision-language model based on the LLaVA architecture, which uses a pre-trained vision encoder, a randomly initialized projector, and a pre-trained large language model.\n- It incorporates a NaViT-style vision encoder that supports dynamic high resolution, eliminating the need to split images into tiles and improving performance on text-intensive tasks.\n- The model adds bilingual support (Chinese and English) and uses a refined chat template for pre-training, improving performance over its predecessor, POINTS1.0.\n- A rigorous filtering method is applied to visual instruction tuning datasets to remove samples with grammatical errors and questions answerable without images, further improving the quality of the training data.\n- POINTS1.5-7B achieves top ranking on the OpenCompass leaderboard among models under 10B parameters, outperforming models several times larger.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/WePOINTS/WePOINTS"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/WePOINTS/POINTS-1-5-Qwen-2-5-7B-Chat"
+        ],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "Learning Flow Fields in Attention for Controllable Person Image Generation",
+        "authors": "AdityaPatel, Wall-dandelion, Yuren, shikunl, franciszzj",
+        "link": "https://arxiv.org/abs/2412.08486",
+        "github_repo": "https://github.com/franciszzj/Leffa",
+        "summary": "- Leffa, a novel regularization loss for controllable person image generation, guides attention by learning flow fields, thereby reducing fine-grained detail distortion without increasing model parameters or inference costs.\n- Leffa transforms the attention map between target query and reference key into a flow field, warping the reference image to better align with the target, encouraging accurate attention to the correct reference key regions during training.\n- In virtual try-on and pose transfer experiments, Leffa achieves state-of-the-art performance across VITON-HD, DressCode, and DeepFashion datasets, surpassing existing methods in FID and KID metrics and preserving finer details, demonstrating its effectiveness in detail preservation.\n- Leffa's model-agnostic nature is validated through seamless integration with existing diffusion models (IDM-VTON and CatVTON), significantly boosting performance without added parameters, establishing it as a versatile solution for diverse diffusion-based models.\n- Human studies further confirm that Leffa generates significantly better quality images when comparing to the prior arts on tasks including virtual try-on and pose transfer.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/franciszzj/Leffa"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "StyleMaster: Stylize Your Video with Artistic Generation and Translation",
+        "authors": "Huijuan Huang, whluo, qq8933, Xintao, zixuan-ye",
+        "link": "https://arxiv.org/abs/2412.07744",
+        "github_repo": null,
+        "summary": "- StyleMaster is a novel video generation and translation model that leverages both global and local style representations, along with a motion adapter and a gray tile ControlNet, to achieve high-quality stylized video generation and accurate video style transfer.\n- The model architecture includes a contrastive learning strategy for training a global style extractor, local patch selection to capture texture details, a dual cross-attention mechanism for style injection, a motion adapter to enhance temporal and style quality, and a gray tile ControlNet for content guidance.\n- StyleMaster outperforms existing state-of-the-art methods, like VideoComposer and StyleCrafter, on several stylization tasks, including text-to-video generation and video/image style transfer, as demonstrated by both qualitative and quantitative results.\n- The quantitative results show significant improvements in text alignment, style similarity, visual and dynamic quality, and motion smoothness compared to competitors.\n- The model demonstrates enhanced robustness and ability to accurately capture and transfer diverse styles, while maintaining reasonable content preservation for effective style transfer.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "Generative Densification: Learning to Densify Gaussians for High-Fidelity Generalizable 3D Reconstruction",
+        "authors": "JustinOh, LeeYG, lelady, xysun, stnamjef",
+        "link": "https://arxiv.org/abs/2412.06234",
+        "github_repo": null,
+        "summary": "- This paper introduces Generative Densification (GD), a novel method to improve the quality of 3D reconstructions from feed-forward Gaussian models by selectively densifying Gaussian primitives.\n- GD up-samples feature representations and generates corresponding fine Gaussians in a single forward pass, leveraging embedded prior knowledge for enhanced generalization, in contrast to iterative splitting methods used in per-scene optimization.\n- The method utilizes a point-level transformer for efficient processing and incorporates a confidence mask to filter Gaussians that do not require further densification.\n- Integrating GD with LaRa and MVSplat models achieves state-of-the-art performance on large-scale datasets like Gobjaverse and RE10K, demonstrating significant improvements in reconstructing intricate details.\n- Qualitative analysis shows enhanced capture of thin structures and fine details, and cross-dataset evaluation confirms robust generalizability across different datasets.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://stnamjef.github.io/GenerativeDensification/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "StreamChat: Chatting with Streaming Video",
+        "authors": "Shiyi Lan, hsli-cuhk, LucasFang, Zhiding, jjjjh",
+        "link": "https://arxiv.org/abs/2412.08646",
+        "github_repo": null,
+        "summary": "- This paper introduces StreamChat, a novel approach for enhancing Large Multimodal Models (LMMs) to interact with streaming video content by dynamically updating the visual context at each decoding step using a cross-attention based architecture and visual feedforward network (V-FFN).\n- A parallel 3D-ROPE mechanism is used to better encode temporal information, and a dense instruction-tuning dataset based on existing dense caption datasets is created to train the model.\n- StreamChat outperforms state-of-the-art video LMMs in streaming interaction scenarios, demonstrating its superior ability to handle dynamic video content, even outperforming LLaVA-Video-72B with a smaller 7B model.\n- StreamChat also achieves competitive performance on established image and video benchmarks.\n-  The model effectively captures video dynamics and adjusts responses accordingly by incorporating the latest video information at each decoding step for more temporally aligned responses.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "Mogo: RQ Hierarchical Causal Transformer for High-Quality 3D Human Motion Generation",
+        "authors": "Frag1le",
+        "link": "https://arxiv.org/abs/2412.07797",
+        "github_repo": null,
+        "summary": "- Mogo is a novel GPT-type text-to-motion generation model composed of a hierarchical Residual Vector Quantized Variational Autoencoder (RVQ-VAE) and a Hierarchical Causal Transformer.\n- The RVQ-VAE discretizes motion sequences, while the Hierarchical Causal Transformer generates base motion sequences and infers residuals across layers, enabling the model to generate high-quality and diverse human motions from text descriptions.\n- Mogo outperforms existing GPT-type models on HumanML3D and KIT-ML datasets, achieving state-of-the-art FID scores. \n- It also demonstrates superior zero-shot performance on the CMP dataset, indicating its strong generalization capabilities and adaptability to unseen motion types. \n- Additionally, Mogo can generate longer motion sequences (up to 13 seconds) compared to existing datasets and integrates prompt engineering to enhance generation quality in zero/few-shot scenarios.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "FlowEdit: Inversion-Free Text-Based Editing Using Pre-Trained Flow Models",
+        "authors": "Tomer Michaeli, Inbar Huberman-Spiegelglas, Matan Kleiner, Vladimir Kulikov",
+        "link": "https://arxiv.org/abs/2412.08629",
+        "github_repo": null,
+        "summary": "- FlowEdit is a novel, inversion-free, optimization-free, and model-agnostic method for text-based image editing using pre-trained text-to-image (T2I) flow models.\n- Unlike traditional editing-by-inversion methods, FlowEdit constructs an ordinary differential equation (ODE) that directly maps the source image distribution to the target distribution, leading to better structure preservation and higher-quality edits.\n- The method achieves state-of-the-art results on complex editing tasks, as demonstrated with Stable Diffusion 3 and FLUX.\n- FlowEdit\u2019s direct path between distributions results in lower transport costs compared to inversion-based methods, leading to better fidelity to the source image.\n- The method's model-agnostic nature facilitates seamless transferability between different model architectures and sampling schemes.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "StyleStudio: Text-Driven Style Transfer with Selective Control of Style Elements",
+        "authors": "Chi Zhang, Hao Wang, Beier Zhu, Xue Song, Mingkun Lei",
+        "link": "https://arxiv.org/abs/2412.08503",
+        "github_repo": null,
+        "summary": "- StyleStudio, a novel text-driven style transfer model, addresses challenges like overfitting to reference styles, limited stylistic control, and misalignment with text content by employing three strategies.\n- It introduces cross-modal Adaptive Instance Normalization (AdaIN) to better integrate style and text features, Style-based Classifier-Free Guidance (SCFG) for selective style control, and a teacher model during early generation to stabilize layouts and reduce artifacts. \n- Evaluations show significant improvements in style transfer quality, alignment with text prompts, and layout stability across different styles. \n- The model achieves higher text alignment scores compared to existing methods and performs favorably in user studies assessing text alignment and style similarity.\n- The approach is versatile and can be integrated into various style transfer frameworks without requiring fine-tuning.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-12"
+    },
+    {
+        "title": "MIT-10M: A Large Scale Parallel Corpus of Multilingual Image Translation",
+        "authors": "Lijie Wen, Shaolin Zhu, liboaccn",
+        "link": "https://arxiv.org/abs/2412.07147",
+        "github_repo": null,
+        "summary": "- Introduced MIT-10M, a large-scale parallel corpus for multilingual image translation, containing over 10 million image-text pairs derived from real-world data and spanning 14 languages, 28 categories, and three difficulty levels.\n- The dataset underwent extensive cleaning and multilingual translation validation, including OCR annotation, NSFW detection, and sensitive content filtering.\n- Experiments demonstrated MIT-10M's superior performance in evaluating models on challenging real-world image translation tasks, particularly multi-line text in complex images. \n- Fine-tuning Qwen2-VL with MIT-10M resulted in significant improvements, tripling performance compared to the baseline.\n- The dataset promotes the development of more robust and adaptable multilingual image translation models.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/liboaccn/MIT-10M"
+        ],
+        "date": "2024-12-12"
     }
 ]

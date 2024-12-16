@@ -11467,5 +11467,234 @@
             "https://huggingface.co/SPRINGLab"
         ],
         "date": "2024-12-13"
+    },
+    {
+        "title": "GenEx: Generating an Explorable World",
+        "authors": "danyaljj, jiahaoplus, lambertxiao, tshu, TaiMingLu",
+        "link": "https://arxiv.org/abs/2412.09624",
+        "github_repo": null,
+        "summary": "- GenEx introduces a new framework for generating explorable 3D worlds from a single image, allowing embodied AI agents to navigate and interact.\n- The system generates 360\u00b0 panoramic video streams, offering a continuous and immersive environment grounded in physical principles through the use of physics engines for data curation.\n- GenEx leverages GPT-assisted agents for both goal-agnostic exploration and goal-driven navigation, enabling them to refine beliefs, simulate outcomes, and make informed decisions based on imagined observations.\n- Evaluated using metrics such as FVD, SSIM, LPIPS, and PSNR, GenEx demonstrates high-quality world generation and robust loop consistency over long trajectories.\n- The framework also supports multi-agent scenarios and demonstrates potential applications in embodied decision-making, showcasing the transformative capabilities of generative AI for world exploration and planning.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "Apollo: An Exploration of Video Understanding in Large Multimodal Models",
+        "authors": "minione, lichengyu, YannDubs, nicholswang, orrzohar",
+        "link": "https://arxiv.org/abs/2412.10360",
+        "github_repo": null,
+        "summary": "- The paper introduces Apollo, a family of state-of-the-art Large Multimodal Models (LMMs) designed for enhanced video understanding, capable of processing hour-long videos efficiently.\n- Apollo utilizes a unified architecture employing a combination of InternVideo2 and SigLIP-SO400M encoders, with features concatenated and resampled using a Perceiver Resampler before being fed to a large language model (LLM).\n- The authors claim Apollo-3B outperforms most existing 7B models, achieving a score of 58.4 on Video-MME (without subtitles), 68.7 on MLVU, and 62.7 on their proposed benchmark, ApolloBench. \n- Apollo-7B achieves state-of-the-art performance amongst 7B LMMs with scores of 61.2 on Video-MME, 70.9 on MLVU, and 66.3 on ApolloBench, demonstrating competitiveness with some 30B models.\n- The study also explores various design choices, such as video sampling strategies, encoder combinations, and data composition, introducing the concept of \"Scaling Consistency,\" where design decisions from smaller models effectively transfer to larger models.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "BiMediX2: Bio-Medical EXpert LMM for Diverse Medical Modalities",
+        "authors": "Saeed Yahya Alseiari, Mohammed Irfan Kurpath, hishamcholakkal, HuggingSara, sahalshajim",
+        "link": "https://arxiv.org/abs/2412.07769",
+        "github_repo": "https://github.com/mbzuai-oryx/BiMediX2",
+        "summary": "- BiMediX2 is a bilingual (Arabic-English) Large Multimodal Model (LMM) with a unified architecture integrating text and visual modalities for advanced medical image understanding and applications.\n- It leverages the Llama 3.1 architecture with integrated text and visual capabilities, supporting text and multi-turn conversations involving medical images and trained on a 1.6M sample bilingual healthcare dataset (BiMed-V).\n- BiMediX2 outperforms state-of-the-art models in medical LLM and VLM evaluation benchmarks, exceeding GPT-4 by 9% in UPHILL factual accuracy and showing over 9% improvement in English and 20% in Arabic on multimodal medical evaluations.\n- A new bilingual GPT4-based medical LLM benchmark called BiMed-MBench was introduced.\n- The model excels in medical Visual Question Answering, Report Generation, and Report Summarization tasks across diverse imaging modalities.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-Text-to-Text",
+            "Natural Language Processing",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/mbzuai-oryx/BiMedix2"
+        ],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "InstanceCap: Improving Text-to-Video Generation via Instance-aware Structured Caption",
+        "authors": "BradyFU, zhenheny, SherryX, nankepan, AnonMegumi",
+        "link": "https://arxiv.org/abs/2412.09283",
+        "github_repo": null,
+        "summary": "- InstanceCap, a novel instance-aware structured caption framework, is proposed to enhance the fidelity and detail of text-to-video (T2V) generation by creating more accurate video captions.\n- It uses an auxiliary models cluster (AMC) to extract instance-level information, including class, appearance, actions, motion, and positions, which helps reduce hallucinations and improves caption accuracy and consistency.\n- An improved Chain-of-Thought (CoT) process with Multimodal Large Language Models (MLLMs) refines prompts into structured phrases.\n- A new 22k InstanceVid dataset with instance-aware structured captions is introduced for training T2V models and a prompt enhancement pipeline, InstanceEnhancer, is designed for inference to further improve caption generation.\n- Experimental results on video reconstruction and T2V generation using the fine-tuned Open-Sora model with InstanceVid demonstrate that InstanceCap enhances detail fidelity and action accuracy compared to existing captioning methods.",
+        "classification": [
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/NJU-PCALab/InstanceCap"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "Large Action Models: From Inception to Implementation",
+        "authors": "Eliblo1969, substill, shilhe, Lujunting, vyokky",
+        "link": "https://arxiv.org/abs/2412.10047",
+        "github_repo": "https://github.com/microsoft/UFO/tree/main/dataflow",
+        "summary": "- This paper introduces Large Action Models (LAMs), a new type of AI model designed to perform actions in both physical and digital environments, extending the capabilities of Large Language Models (LLMs).\n- LAMs are trained using a four-phase approach: task-plan pretraining, learning from experts, self-boosting exploration, and learning from a reward model.\n- The authors demonstrate the effectiveness of LAMs by integrating them into a Windows OS-based agent, showing superior performance in task completion compared to LLMs like GPT-40, particularly in scenarios requiring precise interaction and manipulation within specific environments.\n- The LAM achieved an 81.2% Task Success Rate (TSR), surpassing GPT-40's 67.2% and GPT-40 Mini's 62.3% in a Word application environment, demonstrating the effectiveness of LAMs over traditional LLMs in action-oriented tasks.\n- The paper concludes by discussing the current limitations of LAMs and identifying key areas for future research.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/UFO/tree/main/dataflow"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "FreeScale: Unleashing the Resolution of Diffusion Models via Tuning-Free Scale Fusion",
+        "authors": "JacobYuan, Ruihang, weilllllls, StevenZhang, MoonQiu",
+        "link": "https://arxiv.org/abs/2412.09626",
+        "github_repo": null,
+        "summary": "- FreeScale, a tuning-free inference paradigm, enhances the resolution of pre-trained diffusion models for image and video generation by fusing information from different receptive scales.\n- The method employs tailored self-cascade upscaling and restrained dilated convolution to maintain visual structure and utilizes scale fusion within self-attention layers to combine global and local details, mitigating repetitive patterns.\n- FreeScale successfully generates images up to 8k resolution and produces higher-fidelity videos without fine-tuning.\n- Quantitative results on LAION-5B and WebVid-10M datasets demonstrate FreeScale's superior performance compared to existing methods in terms of FID, KID, and FVD metrics, often achieving best or second-best scores.\n- Qualitative comparisons and a user study further validate the enhanced quality and coherence of the generated visual content.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "ObjectMate: A Recurrence Prior for Object Insertion and Subject-Driven Generation",
+        "authors": "Dana Berman, Matan Cohen, Asaf Shul, yedid, danielwinter",
+        "link": "https://arxiv.org/abs/2412.08645",
+        "github_repo": null,
+        "summary": "- ObjectMate introduces a tuning-free method for object insertion and subject-driven generation, utilizing a novel \"object recurrence prior.\"\n- This prior leverages the recurrence of everyday objects across large, unlabeled image datasets to create a massive, supervised training dataset with diverse poses, lighting, and scenes.\n- The model architecture is based on a straightforward text-to-image diffusion model trained on this dataset, taking object views and scene descriptions as input.\n- ObjectMate achieves state-of-the-art results on object insertion and subject-driven generation tasks, outperforming existing methods in identity preservation and photorealistic composition.\n- The paper also introduces a new object insertion evaluation dataset with ground truth data and proposes a new metric for identity preservation that aligns better with human perception, validated through a user study.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "FireFlow: Fast Inversion of Rectified Flow for Image Semantic Editing",
+        "authors": "Fan Tang, Changwang Mei, duke1852022, MagicBag, yingying87",
+        "link": "https://arxiv.org/abs/2412.07517",
+        "github_repo": "https://github.com/HolmesShuan/FireFlow",
+        "summary": "- FireFlow is a zero-shot image editing approach leveraging Rectified Flows (ReFlows), specifically enhancing inversion and editing capabilities while maintaining the generation strengths of models like FLUX.\n- A novel second-order numerical solver is introduced for ReFlow inversion, achieving higher accuracy and faster runtime (3x speedup) compared to existing techniques, by reusing intermediate velocity estimations.\n- Demonstrates effective 8-step semantic image editing and stylization guided by prompts, preserving original content integrity.\n- Evaluation shows FireFlow's superior performance in image reconstruction with lower errors and faster convergence.\n- Outperforms or competes with other editing approaches in preservation and CLIP similarity on the PIE-Bench dataset using only 8 steps.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/HolmesShuan/FireFlow"
+        ],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation",
+        "authors": "morninghaze, baochenxi, wzk1015, JackyZhuo, wbs2788",
+        "link": "https://arxiv.org/abs/2412.09428",
+        "github_repo": "https://github.com/wbs2788/VMB",
+        "summary": "- This paper introduces Visuals Music Bridge (VMB), a novel multimodal music generation framework that uses text and music as explicit bridges for enhanced cross-modal alignment.\n- VMB consists of three core components: a Multimodal Music Description Model (MMDM) to convert visual input into text descriptions; a Dual-track Music Retrieval module to retrieve relevant music pieces; and an Explicitly Conditioned Music Generation framework to synthesize music.\n- The Explicitly Conditioned Music Generation module consists of a latent diffusion transformer (DiT) and employs Music ControlFormer and Stylization Module to enable high-quality generation.\n- The proposed method addresses challenges like data scarcity, weak cross-modal alignment, and limited controllability in existing multimodal music generation methods.\n- Experimental results on video-to-music, text-to-music, image-to-music, and controllable music generation tasks demonstrate that VMB significantly improves music quality, modality, and customization alignment compared to previous methods.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Audio",
+            "Video-Text-to-Text",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/wbs2788/VMB"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "SynerGen-VL: Towards Synergistic Image Understanding and Generation with Vision Experts and Token Folding",
+        "authors": "wzk1015, Einsiedler, hehesang, Changyao, cpsxhao",
+        "link": "https://arxiv.org/abs/2412.09604",
+        "github_repo": null,
+        "summary": "- SynerGen-VL is a unified Multimodal Large Language Model (MLLM) designed for synergistic image understanding and generation using a single architecture and training process with a next-token prediction paradigm.\n- It introduces a token folding mechanism with a hierarchical architecture to compress input image token sequences, enabling efficient handling of high-resolution images and a decoder that reconstructs the image during generation.\n- Vision-expert-based progressive alignment pretraining integrates visual capabilities into the pretrained LLM, minimizing disruption to existing knowledge by using image-specific Feed-Forward Networks (FFNs) and aligning visual representations with the LLM's representation space.\n- Trained on large-scale mixed image-text data, SynerGen-VL achieves competitive performance compared to existing encoder-free unified MLLMs with comparable or smaller parameter sizes and narrows the gap with task-specific state-of-the-art models.\n- With 2.4B activated parameters, SynerGen-VL matches the performance of Emu3, which has 8B parameters, demonstrating its strong potential as a next-generation unified MLLM.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+        "authors": "Chengruidong, luoxufang, qianhuiwu, iofu728, liyucheng",
+        "link": "https://arxiv.org/abs/2412.10319",
+        "github_repo": null,
+        "summary": "- Introduces SCBench, a benchmark designed to evaluate efficient long-context methods, particularly for shared context and multi-round interactions where KV Cache is reused.\n- Assesses four key long-context abilities: String Retrieval, Semantic Retrieval, Global Information processing, and Multi-tasking across 12 tasks with two shared context modes (multi-turn and multi-request).\n- Evaluates 13 long-context methods across four stages (generation, compression, retrieval, and loading) and eight categories on six open-source long-context LLMs.\n- Finds that sub-O(n) memory methods struggle in multi-turn scenarios, sparse encoding with O(n) memory performs robustly, and dynamic sparsity is more expressive for KV caches than static patterns.\n- Identifies attention distribution shift issues in long-generation scenarios, impacting performance even for O(n) memory methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "SmolTulu: Higher Learning Rate to Batch Size Ratios Can Lead to Better Reasoning in SLMs",
+        "authors": "SultanR",
+        "link": "https://arxiv.org/abs/2412.08347",
+        "github_repo": null,
+        "summary": "- This paper introduces SmolTulu-1.7b-Instruct, an instruction-tuned language model based on Huggingface's SmolLM2-1.7B and adapted from AllenAI's Tulu 3 training pipeline.\n- The research focuses on the impact of learning rate to batch size ratios on model performance across different tasks, finding that higher ratios benefit reasoning tasks while lower ratios are optimal for pattern recognition tasks.\n- SmolTulu achieves state-of-the-art performance among sub-2B parameter models on instruction following, scoring 67.7% on IFEval (\u039411%) and 51.6% on GSM8K (13.4%) for mathematical reasoning.\n- The model also achieved 57.1% on ARC (15.4%) with an alternate version. \n-  Training recipes and ablation studies are released to promote further research in efficient model alignment and optimization for small language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/SultanR/SmolTulu-1.7b-Instruct"
+        ],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers",
+        "authors": "Pinar Yanardag, Kavana Venkatesh, ydalva",
+        "link": "https://arxiv.org/abs/2412.09611",
+        "github_repo": null,
+        "summary": "- Introduces FluxSpace, a novel framework for disentangled image editing using rectified flow transformers, such as Flux.\n- Leverages the representational power of joint transformer blocks within Flux to enable fine-grained and coarse-level semantic edits during inference time without requiring additional training.\n- Employs a linear editing scheme within the FluxSpace representation enabling disentangled control over various image attributes and overall style through manipulation of attention outputs.\n- Demonstrates through qualitative and quantitative experiments, supported by a user study, the effectiveness of FluxSpace in achieving semantic edits while preserving image content and subject identity, outperforming state-of-the-art methods in image editing.\n- Successfully performs image edits in both real and generated images from various domains ranging from portraits to complex scenes, as well as stylized image modifications.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+        ],
+        "date": "2024-12-16"
+    },
+    {
+        "title": "Prompt2Perturb (P2P): Text-Guided Diffusion-Based Adversarial Attacks on Breast Ultrasound Images",
+        "authors": "Ilker Hacihaliloglu, Leonid Sigal, Clayton Allard, moein99, yasimed",
+        "link": "https://arxiv.org/abs/2412.09910",
+        "github_repo": "https://github.com/yasamin-med/P2P",
+        "summary": "- This paper introduces Prompt2Perturb (P2P), a novel language-guided adversarial attack method that generates perturbations in medical images using text instructions.\n- The approach leverages learnable prompts within the text encoder of a diffusion model, like Stable Diffusion, to create subtle yet effective perturbations that remain imperceptible while guiding the model towards targeted misclassifications.\n- Unlike existing diffusion-based attacks, P2P directly updates text embeddings instead of retraining diffusion models or adding noise to the latent space, thus suitable for data-scarce medical image domains.\n- P2P optimizes only the early reverse diffusion steps, boosting efficiency while ensuring that the generated adversarial examples incorporate subtle noise, therefore maintaining ultrasound image quality.\n- Experimental results on three breast ultrasound datasets demonstrate that P2P outperforms state-of-the-art attack techniques in FID and LPIPS, yielding both more natural and more effective adversarial examples compared to existing methods.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/yasamin-med/P2P"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-16"
     }
 ]

@@ -11696,5 +11696,283 @@
         ],
         "huggingface_urls": [],
         "date": "2024-12-16"
+    },
+    {
+        "title": "RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation",
+        "authors": "douzc, Benen2024, wuyongkang, jinjiajie, lixiaoxi45",
+        "link": "https://arxiv.org/abs/2412.11919",
+        "github_repo": "https://github.com/sunnynexus/RetroLLM",
+        "summary": "- RetroLLM is a novel framework that integrates retrieval and generation within a unified auto-regressive decoding process in LLMs, allowing direct generation of fine-grained evidence from a corpus using constrained decoding.\n- It employs hierarchical FM-Index constraints, generating corpus-constrained clues to identify relevant documents before evidence generation to mitigate false pruning.\n- It introduces forward-looking constrained decoding, utilizing document FM-Index to identify future windows and a relevance model to score these windows for improved evidence accuracy.\n- Experiments on five open-domain QA datasets demonstrate RetroLLM's superior performance in in-domain and out-of-domain tasks, outperforming traditional RAG and more complex RAG strategies.\n- RetroLLM also significantly reduces token consumption compared to existing RAG methods due to more precise retrieval granularity.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/sunnynexus/RetroLLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models",
+        "authors": "Yu Qiao, liuziwei7, Ziqi, shulin16, Fan-s",
+        "link": "https://arxiv.org/abs/2412.09645",
+        "github_repo": "https://github.com/Vchitect/Evaluation-Agent",
+        "summary": "- This paper introduces Evaluation Agent, a new framework for evaluating visual generative models (both image and video) that mimics human evaluation strategies.\n- It employs Large Language Model (LLM)-powered agents to dynamically adjust evaluation pathways, generate tailored prompts based on user needs, and provide detailed explanations of results.\n- Evaluation Agent significantly reduces evaluation time compared to traditional methods while maintaining comparable result quality, achieving a 90% reduction in evaluation time and also supports open-ended queries and model comparisons.\n- Experiments were conducted on various open-source models and benchmarks, showcasing the efficiency and versatility of the agent.\n- Evaluation Agent is fully open-sourced and can be scaled across various visual generative models and tools.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Vchitect/Evaluation-Agent"
+        ],
+        "huggingface_urls": [
+            "https://vchitect.github.io/Evaluation-Agent-project/"
+        ],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "ColorFlow: Retrieval-Augmented Image Sequence Colorization",
+        "authors": "Yong Liu, yshan2u, ZyZcuhk, juxuan27, JunhaoZhuang",
+        "link": "https://arxiv.org/abs/2412.11815",
+        "github_repo": null,
+        "summary": "- This paper introduces ColorFlow, a novel three-stage framework for reference-based image sequence colorization, designed to maintain consistent colors for characters and objects across frames.\n- The model uses a Retrieval-Augmented Pipeline (RAP) to extract relevant color patches from a reference image pool, an In-context Colorization Pipeline (ICP) with a dual-branch design for color identity extraction and colorization leveraging diffusion models and self-attention, and a Guided Super-Resolution Pipeline (GSRP) for upsampling and detail enhancement.\n-  A new benchmark dataset, ColorFlow-Bench, consisting of 30 manga chapters with reference images, is also introduced for evaluation.\n-  Experimental results on ColorFlow-Bench demonstrate state-of-the-art performance, achieving a 37% reduction in FID score compared to existing colorization models and ranking first in user studies for aesthetic quality, similarity to reference, and sequential consistency.\n-  The method excels in fine-grained color identity preservation and image quality improvement, making it potentially beneficial for industrial applications like manga and cartoon colorization.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "BrushEdit: All-In-One Image Inpainting and Editing",
+        "authors": "yshan2u, ZyZcuhk, juxuan27, BianYx, Yw22",
+        "link": "https://arxiv.org/abs/2412.10316",
+        "github_repo": null,
+        "summary": "- BrushEdit is an interactive image editing framework that combines language models and a dual-branch inpainting technique for seamless edits such as adding/removing objects and making structural changes with free-form masks.\n- It leverages pre-trained multimodal large language models (MLLMs) to interpret user instructions, identify editing types and target objects, and generate textual descriptions of the edited image.\n- The Editing Conductor, built on BrushNet, uses a mixed fine-tuning strategy with random and segmentation masks, allowing it to handle diverse mask-based inpainting tasks.\n- Experimental results on PIE-Bench, BrushBench, and EditBench demonstrate BrushEdit\u2019s superior performance in preserving unedited regions, ensuring accurate text-alignment, and outperforming existing methods in image editing and inpainting tasks.\n- BrushEdit offers flexible control over base diffusion model selection and scale adjustment, enhancing its practical value for diverse user needs.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
+        "authors": "spermwhale, Chunting, marg33, benjamin-mlr, artidoro",
+        "link": "https://arxiv.org/abs/2412.09871",
+        "github_repo": null,
+        "summary": "- BLT (Byte Latent Transformer) is a new byte-level LLM architecture that dynamically groups bytes into patches based on next-byte entropy, allocating more compute to complex segments.\n- It uses a local encoder and decoder for byte-patch transformations and a global latent transformer for patch processing, matching token-based models at scale while improving inference efficiency and robustness.\n- BLT achieves parity with Llama 3 in training FLOP-controlled performance while using up to 50% fewer FLOPS at inference, and shows better scaling trends with simultaneous increases in model and patch size.\n- It demonstrates qualitative improvements on reasoning, long-tail generalization, noisy input robustness, and sub-word aspect awareness, surpassing token-based models in these areas.\n- BLT's code is released for both training and inference.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/blt"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Causal Diffusion Transformers for Generative Modeling",
+        "authors": "Haoqi Fan, Shi Guan, Deyao Zh, Chaorui Deng, Andy1621",
+        "link": "https://arxiv.org/abs/2412.12095",
+        "github_repo": null,
+        "summary": "- CausalFusion, a decoder-only transformer model, dual-factorizes data across sequential tokens and diffusion noise levels, effectively unifying autoregressive (AR) and diffusion models for generative tasks.\n- This architecture allows flexible interpolation between AR and diffusion generation modes during training and inference, supporting arbitrary numbers of tokens, sequence order, and inference compute levels.\n- CausalFusion achieves state-of-the-art performance on ImageNet class-conditional generation, outperforming DiT and other baselines while using fewer parameters.\n- It also demonstrates strong capabilities in multimodal generation, including joint image-captioning and text-to-image generation, and exhibits zero-shot image manipulation abilities thanks to its AR nature.\n- Additionally, CausalFusion excels in visual representation learning tasks when fine-tuned for image classification and captioning, surpassing DiT in both domains.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Smaller Language Models Are Better Instruction Evolvers",
+        "authors": "Hua Zhou, Yaqi Zhang, Lulu Zhao, dongguanting, Chaox72",
+        "link": "https://arxiv.org/abs/2412.11231",
+        "github_repo": "https://github.com/HypherX/Evolution-Analysis",
+        "summary": "- This paper investigates the effectiveness of smaller language models (SLMs) compared to larger language models (LLMs) in evolving more complex and diverse instructions for instruction tuning.\n- Through experiments across three instruction evolution scenarios (Evol-Instruct, AutoIF, and Auto Evol-Instruct), the study demonstrates that SLMs outperform LLMs in evolving instructions, leading to better performance in downstream tasks including instruction following, mathematical reasoning, and code generation.\n- The authors hypothesize that SLMs' broader output space during instruction generation, due to their relatively weaker instruction-following capabilities compared to LLMs, results in more complex and diverse instructions.\n- They propose a new metric called Instruction Complex-Aware IFD (IC-IFD), incorporating instruction complexity into the original IFD score for a more accurate evaluation of instruction data effectiveness without requiring instruction tuning.\n- Experimental results demonstrate that SLMs generate more complex and diverse instructions than LLMs leading to improved performance in downstream tasks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/HypherX/Evolution-Analysis"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "IDArb: Intrinsic Decomposition for Arbitrary Number of Input Views and Illuminations",
+        "authors": "Jiaqiwang, Dubhe-zmc, jingtan, tongwu2020, lizb6626",
+        "link": "https://arxiv.org/abs/2412.12083",
+        "github_repo": null,
+        "summary": "- IDArb, a diffusion-based model, performs intrinsic decomposition from an arbitrary number of images with varying illumination, generating albedo, normal, metallic, and roughness maps.\n- It uses a cross-view, cross-component attention mechanism within a UNet architecture, adapted from Stable Diffusion, to fuse information across views and intrinsic components, promoting consistency.\n- A novel illumination-augmented, view-adaptive training strategy, using a new dataset called ARB-Objaverse, enhances robustness under different lighting and view conditions.\n- Evaluation on synthetic and real-world data shows IDArb significantly outperforms existing methods quantitatively and qualitatively, demonstrating state-of-the-art intrinsic decomposition.\n- This facilitates downstream tasks like relighting, material editing, photometric stereo, and 3D reconstruction, also improving optimization-based inverse rendering.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+        "authors": "howang, yuxiaod, lrxl, wangcunxiang, CCCCCC",
+        "link": "https://arxiv.org/abs/2412.11605",
+        "github_repo": "https://github.com/thu-coai/SPaR",
+        "summary": "- This paper introduces SPaR, a self-play framework that uses tree-search refinement to enhance the instruction-following capabilities of Large Language Models (LLMs).\n- SPaR involves an actor LLM generating responses and a refiner LLM critiquing and refining them through a tree-search process to create preference pairs for training.\n- This method aims to highlight key differences for instruction following by minimizing extraneous variations often present in independently sampled responses used by other preference learning methods.\n- Experiments demonstrate that a LLaMA-8B model trained with SPaR surpasses GPT-4-Turbo on the IFEval benchmark and shows promising scalability with larger models like LLaMA3-70B.\n- The study also finds that scaling inference in tree search improves performance, and the refiner's abilities can exceed the initially distilled LLM, suggesting potential for continuous self-improvement.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/thu-coai/SPaR"
+        ],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Wonderland: Navigating 3D Scenes from a Single Image",
+        "authors": "Hanwen Liang, ZanyRumata, guochengqian, vidit98, jlcao2",
+        "link": "https://arxiv.org/abs/2412.12091",
+        "github_repo": null,
+        "summary": "- Wonderland introduces a novel pipeline for generating high-quality 3D scenes from a single image in a feed-forward manner, overcoming limitations of existing methods like multi-view data requirements and per-scene optimization.\n- It leverages a camera-guided video diffusion model with dual-branch conditioning for generating 3D-aware video latents, capturing multi-view information while ensuring 3D consistency.\n- A novel latent-based large reconstruction model (LaLRM) then efficiently decodes these video latents into 3D Gaussian Splattings (3DGS), achieving significant compression and facilitating wide-scope scene representation.\n- Extensive evaluations demonstrate that Wonderland significantly outperforms state-of-the-art methods on benchmark datasets for single-view 3D scene generation, especially in out-of-domain images, demonstrating superior visual quality, wider scope, and efficiency.\n- The model effectively leverages video diffusion model latents for 3D reconstruction, enabling high-fidelity 3D scene generation from single images.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://snap-research.github.io/wonderland/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "GaussianProperty: Integrating Physical Properties to 3D Gaussians with LMMs",
+        "authors": "junweiliang, StarYDY, zhifeichen097, spongy, Xxlbigbrother",
+        "link": "https://arxiv.org/abs/2412.11258",
+        "github_repo": null,
+        "summary": "- GaussianProperty is a training-free framework that predicts physical properties of materials for 3D Gaussians using Segment Anything (SAM) and GPT-4V(ision).\n- It employs a global-local reasoning module for 2D images by leveraging SAM's segmentation capability and GPT-4V's recognition capability to estimate physical properties.\n- These properties are then projected from multi-view 2D images to 3D Gaussians using a voting strategy.\n-  The framework enables applications in physics-based dynamic simulation by leveraging Material Point Method (MPM) and robot grasping by developing a grasping force prediction strategy based on the estimated properties.\n- Experiments on material segmentation, dynamic simulation, and real-world robotic grasping demonstrate the effectiveness of GaussianProperty in enhancing downstream tasks.",
+        "classification": [
+            "Computer Vision",
+            "Multimodal",
+            "Image-to-3D",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+        "authors": "Xiaozhe Ren, Yihang Gao, Jiawei Li, Guoxuan Chen, shihan96",
+        "link": "https://arxiv.org/abs/2412.12094",
+        "github_repo": null,
+        "summary": "- SepLLM is a plug-and-play framework that accelerates LLM inference by compressing segments of text into separator tokens and eliminating redundant tokens. \n- It leverages a data-dependent sparse attention mechanism, retaining only initial, neighboring, and separator tokens and implementing efficient kernels for training acceleration.\n- Experimental results show that using the Llama-3-8B backbone, SepLLM can reduce KV cache by over 50% while maintaining comparable performance on GSM8K-CoT. \n- In streaming settings, SepLLM can effectively process sequences of up to 4 million tokens or more. \n- SepLLM addresses the limitations of other methods by maintaining consistent performance between training and inference and by achieving substantial reductions in computational costs and training time.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "sepllm.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Wonderful Matrices: Combining for a More Efficient and Effective Foundation Model Architecture",
+        "authors": "wubingheng, JingzeShi",
+        "link": "https://arxiv.org/abs/2412.11834",
+        "github_repo": "https://github.com/LoserCheems/Doge",
+        "summary": "- This paper introduces Wonderful Matrices, a novel foundation model architecture combining sequence and state transformations for enhanced efficiency and effectiveness in language modeling.\n- The architecture integrates Rotary Position Embedding (ROPE) for unified positional encoding in hybrid algorithms, Dynamic Mask Attention (DMAttn) for selective filtering of past states, and Cross Domain Mixture of Experts (CDMOE) for reduced parameter redundancy and efficient expert retrieval.\n- The paper demonstrates the effectiveness of each individual module (ROPE, DMAttn, CDMOE) through empirical validation, showing improvements in perplexity and multi-query associative recall.\n- Experimental results on language modeling tasks demonstrate that Wonderful Matrices outperforms other architectures like LlaMa3, Mamba2, and Jamba across various evaluation metrics, especially with increasing parameter scale.\n- The architecture uses a combination of State Space Duality (SSD) and DMAttn modules for sequence transformation and CDMOE modules for state transformation, achieving a balance between efficiency and performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/LoserCheems/Doge"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "StrandHead: Text to Strand-Disentangled 3D Head Avatars Using Hair Geometric Priors",
+        "authors": "Jian Yang, Zeyu Cai, yingtai, JesseZhang, XiaokunSun",
+        "link": "https://arxiv.org/abs/2412.11586",
+        "github_repo": null,
+        "summary": "- StrandHead is a novel text-to-3D head avatar generation framework that creates disentangled 3D hair with strand-level representations using geometric priors, eliminating the need for 3D hair training data by leveraging pre-trained 2D diffusion models.\n- A differentiable prismatization algorithm converts hair strands into watertight prismatic meshes, facilitating strand-level modeling, and uses mesh-based renderers, and physics-based simulations.\n- The framework incorporates orientation consistency and curvature regularization losses to maintain realistic hair strand distributions and overall hairstyle shapes.\n- StrandHead achieves state-of-the-art results in generating realistic and diverse 3D heads and hair, outperforming existing methods in visual quality and text alignment.\n- It supports flexible hairstyle transfer, editing, and physics-based rendering and simulation, broadening its applications in various fields, including gaming and virtual reality.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes",
+        "authors": "YuLiu, BuzzBeater, JunfengNi, YixinChen, JasonAplp",
+        "link": "https://arxiv.org/abs/2412.11457",
+        "github_repo": null,
+        "summary": "- MOVIS, a novel view synthesis model, enhances structural awareness in diffusion models for multi-object scenes by incorporating depth and object masks as input features and predicting novel view object masks as an auxiliary task.\n- A structure-guided timestep sampling scheduler balances the learning of global object placement and fine-grained detail recovery during training.\n- MOVIS outperforms baseline models on various synthetic and real-world datasets, including C3DFS, Objaverse, Room-Texture, 3D-FRONT, and SUNRGB-D, demonstrating superior performance in novel view synthesis and cross-view consistency.\n- The model's ability to generate plausible novel views with consistent object placement, geometry, and appearance, as evidenced by qualitative and quantitative results (PSNR, SSIM, LPIPS, IoU, Hit Rate, matching distance), highlights its potential for 3D-aware multi-object tasks.\n- MOVIS exhibits strong generalization capability by effectively synthesizing novel views on unseen datasets, showcasing its robustness and potential for broader application.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Whisper-GPT: A Hybrid Representation Audio Large Language Model",
+        "authors": "prateekv",
+        "link": "https://arxiv.org/abs/2412.11449",
+        "github_repo": null,
+        "summary": "- WHISPER-GPT, a novel hybrid large language model (LLM) for speech and music generation, leverages continuous audio representations (mel-spectrograms) alongside discrete acoustic tokens within a single Transformer decoder-only architecture.\n- This hybrid approach addresses context length limitations encountered in purely discrete token-based LLMs by incorporating continuous audio information while retaining the advantages of discrete tokens for sampling and generation.\n- Experimental results on LibriSpeech TTS and a music dataset demonstrate that WHISPER-GPT with 4M parameters achieves comparable performance to a 40M parameter purely token-based LLM, showcasing the efficiency of the hybrid representation.\n- The model predicts the next token given the past acoustic tokens and mel-spectrogram slices, improving the next token prediction metrics like negative log-likelihood and perplexity.\n- Future work involves using this hybrid LLM to fine-tune other audio tasks such as generating multi-scale acoustic tokens and generate high-fidelity audio samples conditioned on them.",
+        "classification": [
+            "Audio",
+            "Text-to-Audio",
+            "Text-to-Speech"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "TidyBot++: An Open-Source Holonomic Mobile Manipulator for Robot Learning",
+        "authors": "Yihuai Gao, Aaditya Prasad, Robert Holmberg, William Chong, jimmyyhwu",
+        "link": "https://arxiv.org/abs/2412.10447",
+        "github_repo": null,
+        "summary": "- This research paper introduces TidyBot++, an open-source, inexpensive, robust, and flexible holonomic mobile manipulator designed for robot learning research, particularly for real-world household tasks.\n- The key feature of TidyBot++ is its holonomic base, enabled by powered casters, which allows independent and simultaneous control of all planar degrees of freedom, enhancing maneuverability and simplifying mobile manipulation tasks compared to nonholonomic bases.\n- The robot is equipped with a user-friendly mobile phone teleoperation interface using WebXR, enabling easy data collection for imitation learning, and experiments demonstrated successful training of policies for various household tasks.\n- A head-to-head comparison with a differential drive base showed the advantages of holonomic drive in terms of efficiency and policy learning performance, especially for tasks requiring lateral movement.\n- The design prioritizes research flexibility, using easily modifiable frames and readily available components from the FIRST Robotics Competition ecosystem, making it highly customizable and easy to assemble and repair.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "http://tidybot2.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
+    },
+    {
+        "title": "Just a Simple Transformation is Enough for Data Protection in Vertical Federated Learning",
+        "authors": "Aleksandr Beznosikov, Philip Zmushko, pichuginad, Andron00e",
+        "link": "https://arxiv.org/abs/2412.11689",
+        "github_repo": null,
+        "summary": "- This paper explores the vulnerability of Vertical Federated Learning (VFL), particularly Split Learning (SL), to feature reconstruction attacks, focusing on Model Inversion (MI) and Feature-space Hijacking (FSHA).\n- It theoretically and experimentally demonstrates that these attacks are ineffective against Multilayer Perceptron (MLP)-based client-side models due to the inability to exploit prior knowledge of data distribution in the absence of dense layers before the cut layer.\n- The paper suggests that the success of existing attacks is largely attributed to the convolutional nature of client models used in image-based VFL, and argues that MLP-based models offer inherent data protection without requiring additional defense mechanisms.\n- Experiments on MNIST, Fashion-MNIST, and CIFAR-10 datasets using both CNN and MLP-based client models validate the hypothesis, demonstrating that MLP models prevent feature reconstruction while maintaining comparable accuracy.\n- Furthermore, the use of Fr\u00e9chet Inception Distance (FID) is proposed as a more suitable metric for evaluating the effectiveness of defenses against these attacks compared to Mean Squared Error (MSE), especially for complex images.",
+        "classification": [
+            "Computer Vision",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/Andron00e/JAST"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-17"
     }
 ]

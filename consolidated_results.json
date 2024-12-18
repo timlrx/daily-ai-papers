@@ -11974,5 +11974,81 @@
         ],
         "huggingface_urls": [],
         "date": "2024-12-17"
+    },
+    {
+        "title": "Are Your LLMs Capable of Stable Reasoning?",
+        "authors": "Linchen Xiao, Hongwei Liu, Junnan Liu, zsytony, Harold-lkk",
+        "link": "https://arxiv.org/abs/2412.13147",
+        "github_repo": "https://github.com/open-compass/GPassK",
+        "summary": "- This paper introduces G-Pass@k, a novel evaluation metric designed to assess both the potential and stability of Large Language Models (LLMs) in complex reasoning tasks, particularly mathematical problem-solving.\n- G-Pass@k quantifies an LLM's consistency in generating correct solutions across multiple generations by considering varying thresholds of correctness, thereby capturing limitations in traditional metrics like Greedy Accuracy and Pass@k, which often overlook output stability.\n- A new dynamic benchmark called LiveMathBench is introduced, comprising challenging mathematical problems from various competitions to minimize data leakage and ensure relevance to the latest advancements in LLM capabilities. \n- Through extensive experiments on LiveMathBench and other datasets, the paper reveals that current LLMs, including specialized and chain-of-thought enhanced models, exhibit significant instability in their reasoning abilities, with performance drops of up to 90% in challenging scenarios. \n- The findings underscore the inadequacy of conventional evaluation methods and highlight the need for stability-aware metrics like G-Pass@k for a more realistic assessment of LLM capabilities in complex reasoning tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/GPassk",
+            "https://github.com/open-compass/GPassK"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-18"
+    },
+    {
+        "title": "Multi-Dimensional Insights: Benchmarking Real-World Personalization in Large Multimodal Models",
+        "authors": "Xiaoshuai Song, Zhuoma GongQue, Runqi Qiao, Shanglin Lei, YiFan Zhang",
+        "link": "https://arxiv.org/abs/2412.12606",
+        "github_repo": null,
+        "summary": "- This paper introduces the Multi-Dimensional Insights (MDI) benchmark, a new benchmark for evaluating large multimodal models (LMMs) on real-world personalization tasks.\n- The MDI benchmark consists of over 500 images and 1.2k human-posed questions across six common real-world scenarios, focusing on two key dimensions: question complexity and age demographics.\n- Questions are categorized into simple and complex levels to assess basic understanding and reasoning abilities, respectively, while also being stratified across young, middle-aged, and older age groups to evaluate personalized responses.\n- Initial evaluations using the MDI benchmark reveal that while strong models like GPT-4 achieve a 79% accuracy on age-related tasks, there remains significant room for improvement in addressing the diverse needs and preferences of different age groups in real-world scenarios.\n- The MDI benchmark aims to foster development towards reliable, personalized human assistants by offering a comprehensive evaluation framework covering a broad spectrum of real-world personalized needs.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-18"
+    },
+    {
+        "title": "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+        "authors": "Ji-Rong Wen, Zhicheng Dou, Jiejun Tan, ShootingWong",
+        "link": "https://arxiv.org/abs/2412.13018",
+        "github_repo": "https://github.com/RUC-NLPIR/OmniEval",
+        "summary": "- This paper introduces OmniEval, an automatic and omnidirectional benchmark for evaluating Retrieval-Augmented Generation (RAG) systems in the financial domain.\n- The benchmark employs a matrix-based evaluation system categorizing queries into five tasks and 16 financial topics for a comprehensive assessment of diverse query scenarios.\n- It uses a multi-dimensional data generation approach combining GPT-4-based automatic generation and human annotation, achieving an 87.47% acceptance ratio in human evaluations.\n- A multi-stage evaluation system assesses both retrieval and generation performance, and robust evaluation metrics from rule-based (MAP, Rouge) and LLM-based methods ensure reliable assessment.\n- Experiments on various retrievers and LLMs demonstrate OmniEval's comprehensiveness and highlight performance variations across topics and tasks, showing improvement opportunities for RAG systems in the financial domain.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/RUC-NLPIR/OmniEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-18"
+    },
+    {
+        "title": "Emergence of Abstractions: Concept Encoding and Decoding Mechanism for In-Context Learning in Transformers",
+        "authors": "Pulkit Agrawal, Jeff Gore, Jinyeop Song, Seungwook Han",
+        "link": "https://arxiv.org/abs/2412.12276",
+        "github_repo": null,
+        "summary": "- This paper proposes a \"concept encoding-decoding\" mechanism to explain how transformers perform in-context learning (ICL).\n- The core idea is that transformers learn to encode different latent concepts (e.g., grammatical rules or arithmetic operations) into distinct, separable representations, and simultaneously develop concept-specific decoding algorithms.\n- Through experiments on synthetic and natural ICL tasks (part-of-speech tagging and bitwise arithmetic), the authors show that this mechanism emerges during training and exists in pretrained language models of varying scales (Gemma-2 and Llama).\n- They introduce a metric called \"Concept Decodability\" (CD) to quantify the separability of latent concepts in representations and demonstrate that CD is predictive of ICL performance.\n- Causal interventions and finetuning experiments further validate that concept encoding is causally related to and predictive of ICL performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-18"
+    },
+    {
+        "title": "MIVE: New Design and Benchmark for Multi-Instance Video Editing",
+        "authors": "Munchurl Kim, Jihyong Oh, Soo Ye Kim, Agus Gunawan, Samuel Teodoro",
+        "link": "https://arxiv.org/abs/2412.12877",
+        "github_repo": null,
+        "summary": "- MIVE, a novel mask-based zero-shot multi-instance video editing framework, enables users to specify localized edits to multiple objects within a video using individual instance captions and masks.\n- The framework incorporates two key modules: Disentangled Multi-Instance Sampling (DMS) to minimize attention leakage between edited instances, and Instance-centric Probability Redistribution (IPR) to improve the accuracy and faithfulness of edits.\n- A new benchmark dataset, MIVE Dataset, featuring 200 diverse videos with instance-level captions and masks is introduced, alongside a novel Cross-Instance Accuracy (CIA) score to evaluate attention leakage.\n- Extensive quantitative and qualitative results on MIVE Dataset and a user study demonstrate that MIVE outperforms state-of-the-art methods in terms of editing faithfulness, accuracy, and leakage prevention.\n- MIVE sets a new benchmark for multi-instance video editing, showcasing its ability to disentangle multiple edits and generate faithful localized modifications in videos.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://kaist-viclab.github.io/mive-site/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-18"
     }
 ]

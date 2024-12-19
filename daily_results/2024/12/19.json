@@ -1,0 +1,222 @@
+[
+    {
+        "title": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks",
+        "authors": "Kritanjali Jain, Yuxuan Tang, Boxuan Li, Yufan Song, Frank F. Xu",
+        "link": "https://arxiv.org/abs/2412.14161",
+        "github_repo": null,
+        "summary": "- This paper introduces TheAgentCompany, a benchmark for evaluating AI agents on real-world tasks simulating a software company environment.\n- The benchmark includes 175 tasks across various job functions like software engineering, project management, and finance, requiring agents to interact with web interfaces, code, and simulated colleagues via chat and email.\n- The evaluation includes both autonomous completion and partial credit based on checkpoint achievements, assessing the agents' ability to manage complex workflows.\n- Experiments with different LLMs (Claude, Gemini, GPT-40, Llama, Qwen) reveal that even the best model (Claude 3.5 Sonnet) achieves only 24% full and 34.4% partial completion, showing limitations in tasks demanding social interactions and handling complex interfaces.\n- Despite the leading LLM's strong performance, the high cost per task ($6.34) highlights the need for further research and optimization of cost-effectiveness in real-world deployments.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/TheAgentCompany/TheAgentCompany",
+            "https://github.com/TheAgentCompany/experiments"
+        ],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "AniDoc: Animation Creation Made Easier",
+        "authors": "Wen Wang, Qiuyu Wang, Hanlin Wang, Hao Ouyang, Yihao Meng",
+        "link": "https://arxiv.org/abs/2412.14173",
+        "github_repo": null,
+        "summary": "- AniDoc is a novel video line art colorization tool based on a video diffusion model that automatically transforms sketch sequences into colored animations guided by a reference character design.\n- It incorporates a correspondence-matching mechanism to address misalignment between the character design and sketches, enhancing color accuracy and consistency.\n- The model uses binarized sketches and background augmentation during training to reflect real-world scenarios and improve robustness.\n- A two-stage training strategy allows for sparse sketch input, enabling automated interpolation and colorization.\n- AniDoc demonstrates superior performance in qualitative and quantitative comparisons with existing approaches, showcasing high fidelity to the reference character design and temporal coherence.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "FashionComposer: Compositional Fashion Image Generation",
+        "authors": "Hao Luo, Xiaogang Xu, Xi Chen, Yiyang Wang, Sihui Ji",
+        "link": "https://arxiv.org/abs/2412.14168",
+        "github_repo": null,
+        "summary": "- FashionComposer is a novel diffusion-based model for compositional fashion image generation that takes multi-modal inputs such as text descriptions, parametric human models, garment images, and face images.\n- It employs a universal framework with a reference UNet and subject-binding attention to handle diverse input modalities and compose multiple visual assets in one pass, supporting applications like virtual try-on and album generation.\n- The model is trained on a scaled dataset constructed using existing datasets augmented with masked garments and generated captions, showing superior performance in multi-reference customization compared to existing methods like Emu2 and Collage Diffusion.\n- For consistent human image generation in albums, FashionComposer introduces correspondence-aware attention and latent code alignment to maintain both consistency and fidelity.\n- In virtual try-on tasks, FashionComposer achieves state-of-the-art results, outperforming other methods on standard benchmarks like VITON-HD for single garment and showing promising results on DressCode for multi-garment and outfit try-on scenarios.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning",
+        "authors": "Rudolf Lioutikov, Pulkit Agrawal, Jyothish Pari, Moritz Reuss",
+        "link": "https://arxiv.org/abs/2412.12953",
+        "github_repo": null,
+        "summary": "- This paper introduces Mixture-of-Denoising Experts (MoDE), a novel Diffusion Policy architecture that leverages a Mixture of Experts (MoE) Transformer with noise-conditioned routing for efficient and scalable multitask imitation learning.\n- MoDE incorporates noise-conditioned self-attention and expert caching, reducing active parameters by 40% and inference costs by 90% compared to dense Transformer baselines.\n- It achieves state-of-the-art performance on 134 tasks across four imitation learning benchmarks (CALVIN and LIBERO), surpassing both CNN and Transformer-based Diffusion Policies.\n- Pretraining MoDE on diverse robotics data leads to substantial performance gains, reaching scores of 4.01 on CALVIN ABC and 0.95 on LIBERO-90.\n- Ablation studies highlight the importance of noise-conditioned routing and specialized experts for efficient and robust action generation in diffusion policies.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://mbreuss.github.io/MoDE_Diffusion_Policy/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "Prompting Depth Anything for 4K Resolution Accurate Metric Depth Estimation",
+        "authors": "Jiaming Sun, Songyou Peng, Jingxiao Chen, Sida Peng, Haotong Lin",
+        "link": "https://arxiv.org/abs/2412.14015",
+        "github_repo": null,
+        "summary": "- This paper introduces Prompt Depth Anything, a new paradigm for metric depth estimation by prompting a depth foundation model with low-cost LiDAR depth as the metric prompt.\n- It proposes a concise prompt fusion architecture that integrates LiDAR depth at multiple scales within a DPT decoder, along with a scalable data pipeline that includes synthetic LiDAR simulation and pseudo ground truth generation from 3D reconstruction using real data.\n- An edge-aware depth loss is also introduced to address the limitations of pseudo ground truth.\n- The approach achieves state-of-the-art results on standard benchmarks like ARKitScenes and ScanNet++ across different metrics.\n- It shows practical benefits for downstream applications including 3D reconstruction and generalized robotic object grasping.",
+        "classification": [
+            "Depth Estimation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://PromptDA.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "AnySat: An Earth Observation Model for Any Resolutions, Scales, and Modalities",
+        "authors": "Loic Landrieu, Clement Mallet, Nicolas Gonthier, Guillaume Astruc",
+        "link": "https://arxiv.org/abs/2412.14123",
+        "github_repo": "https://github.com/gastruc/AnySat",
+        "summary": "- AnySat, a novel multimodal and multiresolution model for Earth Observation, is introduced, leveraging a Joint Embedding Predictive Architecture (JEPA) and scale-adaptive spatial encoders.\n- Trained on GeoPlex, a diverse dataset comprising various modalities, resolutions, and scales, the model demonstrates state-of-the-art performance across several downstream tasks, including land cover mapping, tree species identification, and flood segmentation.\n- AnySat's versatility allows it to seamlessly handle diverse EO datasets with varying properties and modalities, eliminating the need for dataset-specific retraining.\n- Evaluation on GeoPlex and external datasets showcases performance improvements, particularly in classification tasks and smaller datasets, due to the enhanced representation learning from diverse data sources.\n- AnySat's efficiency allows for linear probing for semantic segmentation with competitive results, reducing training costs significantly and opening possibilities for wider application in environmental monitoring.",
+        "classification": [
+            "Image Segmentation",
+            "Image Classification",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/gastruc/AnySat"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "GUI Agents: A Survey",
+        "authors": "Namyong Park, Gang Wu, Yu Wang, Jian Chen, dangmn",
+        "link": "https://arxiv.org/abs/2412.13501",
+        "github_repo": null,
+        "summary": "- This survey paper provides a comprehensive overview of Graphical User Interface (GUI) agents, which leverage Large Foundation Models (LFMs) to automate human-computer interaction.\n- It categorizes GUI agents based on benchmarks, evaluation metrics, architectures (perception, reasoning, planning, and acting), and training methods, proposing a unified framework for understanding their capabilities.\n- The paper discusses various datasets and interactive environments used for evaluating GUI agents, distinguishing between closed-world and open-world settings, and static and dynamic environments.\n- It also covers different architectural designs for perception (accessibility-based, HTML/DOM-based, screen-visual-based, and hybrid), reasoning, planning (with internal and external knowledge), and acting modules.\n- Finally, the survey summarizes training methods, including prompt-based and training-based approaches (pre-training, fine-tuning, and reinforcement learning), and identifies open challenges and future research directions in GUI agent research, such as intent understanding, security, and latency.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "RAG-RewardBench: Benchmarking Reward Models in Retrieval Augmented Generation for Preference Alignment",
+        "authors": "Yubo Chen, Pengfei Cao, Tianyi Men, Hongbang Yuan, Zhuoran Jin",
+        "link": "https://arxiv.org/abs/2412.13746",
+        "github_repo": null,
+        "summary": "- This paper introduces RAG-RewardBench, the first benchmark designed for evaluating reward models (RMs) within Retrieval Augmented Generation (RAG) settings, aiming to improve preference alignment between RAG models and human preferences.\n- The benchmark includes 1,485 preference pairs across four RAG-specific scenarios: multi-hop reasoning, fine-grained citation, appropriate abstaining, and conflict robustness, sourced from 18 datasets using six retrievers and 24 RALMs.\n- An LLM-as-a-judge approach is employed to enhance preference annotation efficiency and achieve a strong correlation (0.84 Pearson correlation) with human annotations.\n- Evaluation results on 45 existing RMs show the top-ranked model reaches only 78.3% accuracy, highlighting the benchmark's challenging nature and the need for RMs specifically tailored for RAG.\n- The paper finds that existing trained RALMs demonstrate minimal improvement (0.6%) in preference alignment over base LLMs based on their performance on RAG-RewardBench, suggesting a need to shift training towards preference-aligned approaches.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/jinzhuoran/RAG-RewardBench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/jinzhuoran/RAG-RewardBench/"
+        ],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "Mix-LN: Unleashing the Power of Deeper Layers by Combining Pre-LN and Post-LN",
+        "authors": "Shiwei Liu, Lu Yin, Pengxiang Li",
+        "link": "https://arxiv.org/abs/2412.13795",
+        "github_repo": "https://github.com/pixeli99/MixLN",
+        "summary": "- Mix-LN, a novel normalization technique for Large Language Models (LLMs), combines Pre-LN and Post-LN to address the inefficiency of deeper layers often observed in LLMs trained with Pre-LN.\n- Mix-LN applies Post-LN to early layers and Pre-LN to deeper layers, promoting more uniform gradients and enabling effective contribution from all layers during training.\n- Experiments across various model sizes (70M to 7B parameters) show Mix-LN consistently outperforms Pre-LN, Post-LN, and their variants, improving pre-training perplexity and demonstrating better performance in supervised fine-tuning and reinforcement learning from human feedback.\n- The improved performance is attributed to Mix-LN's ability to promote healthier gradient norms and representation diversity across all layers, leading to more effective learning and generalization.\n- The study highlights the importance of optimizing normalization techniques in LLMs to fully leverage the potential of deep layers and improve overall model capacity and efficiency.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/pixeli99/MixLN"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "Learning from Massive Human Videos for Universal Humanoid Pose Control",
+        "authors": "Junjie Ye, Tianheng Shi, Siqi Song, Siheng Zhao, Jiageng Mao",
+        "link": "https://arxiv.org/abs/2412.14172",
+        "github_repo": null,
+        "summary": "- This paper introduces Humanoid-X, a large-scale dataset with over 20 million humanoid robot poses and corresponding text descriptions, designed for universal humanoid pose control.\n- A new large humanoid model, UH-1, is proposed. UH-1 uses a Transformer architecture to translate text instructions into corresponding actions for controlling humanoid robots. It supports both text-to-keypoint and text-to-action control modes.\n- UH-1 is trained on Humanoid-X and shows strong generalization in text-based humanoid control, outperforming existing two-stage methods on the HumanoidML3D benchmark by over 23% in FID score.\n- Extensive simulated and real-world experiments demonstrate that UH-1 can reliably translate textual commands into diverse and accurate humanoid actions, achieving nearly 100% success rate in real-world deployment.\n- The scalability of Humanoid-X is demonstrated to improve model performance by training UH-1 on various dataset sizes.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "ChatDiT: A Training-Free Baseline for Task-Agnostic Free-Form Chatting with Diffusion Transformers",
+        "authors": "Yupeng Shi, Zhi-Fan Wu, Wei Wang, Lianghua Huang, bibona",
+        "link": "https://arxiv.org/abs/2412.12571",
+        "github_repo": "https://github.com/ali-vilab/ChatDiT",
+        "summary": "- ChatDiT is a novel zero-shot, general-purpose, interactive visual generation framework built upon pre-trained diffusion transformers (DiTs) without requiring fine-tuning or architectural modifications.\n- It leverages the inherent in-context generation capabilities of DiTs, allowing users to create complex multi-image outputs, edit images, generate illustrated articles, and design character settings through free-form natural language interaction.\n- This is achieved using a multi-agent system composed of an Instruction-Parsing Agent, a Strategy-Planning Agent, and an Execution Agent, which collaboratively interpret instructions, formulate generation plans, and execute actions using an in-context toolkit of DiTs.\n- Evaluation on IDEA-Bench shows that ChatDiT outperforms existing methods, including specialized multi-task frameworks and rephrasing-based models, achieving a top score of 23.19 out of 100.\n- Despite its strong performance, certain limitations exist, such as difficulty in preserving fine details and identity, especially when handling long contexts with multiple subjects or elements, highlighting areas for future research.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ali-vilab/ChatDiT"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "VidTok: A Versatile and Open-Source Video Tokenizer",
+        "authors": "Li Song, Xinle Cheng, Junliang Guo, Tianyu He, Anni Tang",
+        "link": "https://arxiv.org/abs/2412.13061",
+        "github_repo": "https://github.com/microsoft/VidTok",
+        "summary": "- VidTok is a versatile and open-source video tokenizer designed for both continuous and discrete tokenization.\n- It uses a novel architecture that handles spatial and temporal sampling separately for efficiency, using 2D convolutions and an AlphaBlender operator.\n- For discrete tokenization, VidTok leverages Finite Scalar Quantization (FSQ) to improve training stability and codebook utilization.\n- A two-stage training strategy, involving pre-training on low-resolution videos and fine-tuning the decoder on high-resolution videos, further enhances performance.\n- Experimental results demonstrate state-of-the-art performance across various metrics, including PSNR, SSIM, LPIPS, and FVD, outperforming existing models on standard benchmarks and a web video dataset.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/VidTok"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "CAD-Recode: Reverse Engineering CAD Code from Point Clouds",
+        "authors": "Anis Kacem, Kseniya Cherenkova, Dimitrios Mallis, Elona Dupont, Danila Rukhovich",
+        "link": "https://arxiv.org/abs/2412.14042",
+        "github_repo": null,
+        "summary": "- CAD-Recode is a novel Large Language Model (LLM)-based method for reconstructing Computer-Aided Design (CAD) models from 3D point clouds.\n- The architecture comprises a point cloud projector that converts a point cloud into input tokens for the LLM and an LLM fine-tuned to decode these tokens into Python code using the CadQuery library.\n- CAD-Recode is trained on a new synthetic dataset of one million CAD sketch-extrude sequences represented as Python code.\n- On DeepCAD and Fusion360 datasets, CAD-Recode achieves 10x lower mean Chamfer Distance than existing methods, demonstrating significantly improved geometric fidelity and setting a new state-of-the-art.\n- Additionally, the generated Python code is interpretable by off-the-shelf LLMs, allowing for CAD editing and CAD-specific question answering directly from the point cloud.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    },
+    {
+        "title": "AntiLeak-Bench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge",
+        "authors": "Shuai Zhao, Ruiwen Zhou, Yuxi Xie, Liangming Pan, Xiaobao Wu",
+        "link": "https://arxiv.org/abs/2412.13670",
+        "github_repo": null,
+        "summary": "- This paper introduces AntiLeak-Bench, an automated anti-leakage benchmarking framework for Large Language Models (LLMs).\n- It addresses data contamination issues in LLM evaluation by constructing test samples with updated real-world knowledge, ensuring the knowledge is absent from LLMs' training sets.\n- A fully automated workflow is designed to build and update the benchmark, eliminating the need for human labor and reducing maintenance costs.\n- Experiments with various LLMs demonstrate a performance drop after the cutoff time, highlighting data contamination issues in LLM evaluations.\n- Results manifest the effectiveness of AntiLeak-Bench for contamination-free evaluation.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/bobxwu/AntiLeak-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-19"
+    }
+]

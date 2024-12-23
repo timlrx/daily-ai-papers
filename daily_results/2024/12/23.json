@@ -1,0 +1,147 @@
+[
+    {
+        "title": "Parallelized Autoregressive Visual Generation",
+        "authors": "jshfeng, zhenheny, Ikuinen, ShuhuaiRen, Epiphqny",
+        "link": "https://arxiv.org/abs/2412.15119",
+        "github_repo": null,
+        "summary": "- This paper introduces Parallelized Autoregressive Visual Generation (PAR), a method for accelerating autoregressive image and video generation models without modifying model architecture or tokenizers.\n- PAR leverages the insight that distant visual tokens often have weak dependencies and can be generated in parallel, while local tokens with strong dependencies require sequential generation.\n- The method involves generating initial tokens for each region sequentially to establish global structure, followed by parallel generation of tokens at corresponding positions across different regions.\n- Experiments on ImageNet and UCF-101 demonstrate a 3.6x speedup with comparable quality and up to a 9.5x speedup with minimal quality degradation across both image and video generation tasks.\n- This parallel generation strategy is seamlessly integrated into standard autoregressive transformers using a reordering mechanism and learnable token embeddings to manage transitions between sequential and parallel modes.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Unconditional Image Generation",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/epiphqny/PAR-project"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "SCOPE: Optimizing Key-Value Cache Compression in Long-context Generation",
+        "authors": "Yilong Lai, Zhenglin Wang, zhoudeyu, lzhang472, callanwu",
+        "link": "https://arxiv.org/abs/2412.13649",
+        "github_repo": null,
+        "summary": "- SCOPE is a novel framework designed to optimize Key-Value (KV) cache compression for long-context generation in Large Language Models (LLMs), addressing the often-overlooked decoding phase.\n- It decouples KV cache optimization for prefill and decoding phases, preserving essential information from the prefill while dynamically allocating heavy hitters during decoding using a sliding window approach.\n- Further memory optimization is achieved through adaptive and discontinuous strategies, reducing memory usage and transfer overhead.\n- Experimental results on LONGGENBENCH show that SCOPE maintains comparable performance to full KV cache with a 35% overall compression rate, outperforming existing unified compression methods.\n- SCOPE also demonstrates its generalizability and effectiveness as a plug-in to other prefill-only KV cache compression methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Linking-ai/SCOPE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "Offline Reinforcement Learning for LLM Multi-Step Reasoning",
+        "authors": "yiwu, ZhangShenao, hendrydong, Shibo-UCSD, jwhj",
+        "link": "https://arxiv.org/abs/2412.16145",
+        "github_repo": null,
+        "summary": "- This paper introduces OREO (Offline REasoning Optimization), an offline reinforcement learning method designed to improve the multi-step reasoning abilities of Large Language Models (LLMs).\n- OREO jointly learns a policy model and value function by optimizing the soft Bellman Equation, enabling it to leverage unpaired data with sparse rewards and perform better credit assignment compared to methods like Direct Preference Optimization (DPO).\n- The approach is evaluated on mathematical reasoning (GSM8K, MATH) and embodied agent control (ALFWorld) tasks, demonstrating consistent improvements over baseline methods including rejection sampling, DPO, and KTO across different model sizes.\n- Notably, a 1.5B model achieves 52.5% accuracy on MATH using only the original training set, and iterative OREO shows continued improvement with additional training rounds.\n- The learned value function can also guide tree search during inference, leading to further performance gains (up to 17.9% relative improvement over greedy decoding on MATH).",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/jwhj/OREO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "CLEAR: Conv-Like Linearization Revs Pre-Trained Diffusion Transformers Up",
+        "authors": "wxcTest, ZhenxiongTang, flyingman",
+        "link": "https://arxiv.org/abs/2412.16112",
+        "github_repo": "https://github.com/Huage001/CLEAR",
+        "summary": "- CLEAR, a convolution-like local attention mechanism, linearizes pre-trained Diffusion Transformers (DiTs) for efficient high-resolution image generation.\n- By restricting feature interactions within a local window and employing knowledge distillation, CLEAR achieves comparable image quality to original DiTs while significantly reducing computational complexity.\n- Experiments show a 99.5% reduction in attention computations and 6.3x speedup for 8K image generation, with preserved zero-shot generalization across models and plugins, and improved support for multi-GPU parallel inference.\n- CLEAR also exhibits cross-resolution generalizability, enabling high-resolution image synthesis with limited fine-tuning, unlike methods that rely on coarse-to-fine upscaling.\n- Fine-tuning CLEAR on self-generated images proves more effective than on real-world datasets, potentially due to distribution mismatch and inherent training difficulties associated with using pre-trained models.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Huage001/CLEAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "Taming Multimodal Joint Training for High-Quality Video-to-Audio Synthesis",
+        "authors": "Akio Hayakawa, mittu1204, TakashiShibuyaSony, mi141, hkchengrex",
+        "link": "https://arxiv.org/abs/2412.15322",
+        "github_repo": null,
+        "summary": "- MMAudio, a novel multimodal joint training framework for synthesizing high-quality, synchronized audio from video and optional text conditions, is introduced. \n- This model uses a transformer-based architecture with visual, text, and audio branches, jointly trained on audio-visual and text-audio data, and incorporates a conditional synchronization module for precise temporal alignment. \n- MMAudio achieves state-of-the-art performance in video-to-audio generation on public benchmarks, outperforming existing methods in audio quality, semantic alignment, and audio-visual synchronization, while maintaining a low inference time. \n- Notably, it also demonstrates competitive performance in text-to-audio generation without fine-tuning. \n- The joint training strategy enables accessible data scaling and cross-modal understanding, which are key to the model's success.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Audio",
+            "Video-Text-to-Text",
+            "Audio"
+        ],
+        "github_urls": [
+            "hkchengrex.github.io/MMAudio"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "MixLLM: LLM Quantization with Global Mixed-precision between Output-features and Highly-efficient System Design",
+        "authors": "chuanjieliu, xiaonans, JamesTheZ",
+        "link": "https://arxiv.org/abs/2412.14590",
+        "github_repo": null,
+        "summary": "- MixLLM is a novel large language model (LLM) quantization technique that employs a global mixed-precision approach between output features, assigning higher bit-widths to features with greater impact on model accuracy, resulting in reduced memory consumption without compromising performance.\n- It identifies high-salience output channels by estimating their contribution to the final loss globally across all model layers, unlike previous methods that focus on per-layer salience.\n- MixLLM uses 8-bit symmetric activation quantization and 4-bit asymmetric weight quantization in a group-wise manner to maintain accuracy and employs a two-step dequantization process leveraging int8 Tensor Cores and fast integer-to-float conversion for optimized system efficiency.\n- Evaluation on popular LLMs like Llama 3.1 and Qwen2.5 across various benchmarks, including perplexity and downstream tasks like MMLU-Pro and BBH, demonstrates that MixLLM with only 4.4 bits for weights outperforms existing 4-bit methods and achieves results comparable to 5-bit quantization, while also exceeding the system performance of float16 and state-of-the-art 4-bit solutions.\n- Additionally, MixLLM with 8-bit weight quantization shows negligible accuracy loss compared to the float16 baseline, underscoring the efficacy of its group-wise activation quantization and system design.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "LLMs Lost in Translation: M-ALERT uncovers Cross-Linguistic Safety Gaps",
+        "authors": "navigli, mbrack, PSaiml, sted97, felfri",
+        "link": "https://arxiv.org/abs/2412.15035",
+        "github_repo": null,
+        "summary": "- This paper introduces M-ALERT, a multilingual benchmark for evaluating the safety of Large Language Models (LLMs) across five languages (English, French, German, Italian, and Spanish).\n- M-ALERT comprises 75k prompts (15k per language), translated and adapted from the ALERT benchmark, covering a wide range of safety categories.\n- Experiments on 10 state-of-the-art LLMs reveal inconsistencies in safety performance across languages and categories, with some models exhibiting language-specific vulnerabilities while others show consistently unsafe behavior in certain high-risk categories.\n- The study finds a less pronounced correlation between model safety and size compared to the impact of instruction tuning.\n- M-ALERT also facilitates category and policy-specific evaluations, highlighting its practical use for policy compliance assessment in LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/felfri/M-ALERT"
+        ],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "Sequence Matters: Harnessing Video Models in 3D Super-Resolution",
+        "authors": "juxhee, blee, yi0109-park, HEOK, lanikoisgod",
+        "link": "https://arxiv.org/abs/2412.11525",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel method for 3D super-resolution that leverages pre-trained Video Super-Resolution (VSR) models.\n- The method addresses the limitations of existing approaches that rely on Single Image Super-Resolution (SISR) and often produce results lacking 3D consistency.\n- The approach introduces efficient algorithms for ordering multi-view LR images into sequences suitable for VSR models, and these algorithms consider camera pose and visual feature similarity for optimal ordering.\n- It utilizes a multi-threshold approach for subsequence generation in which a stricter threshold is initially used in denser image regions, ensuring smoother trajectories. The threshold is then gradually loosened for sparser areas.\n- The proposed method achieves state-of-the-art performance on benchmark datasets, including NeRF-Synthetic and Mip-NeRF 360, outperforming baselines like NeRF-SR and DiSR-NeRF quantitatively and qualitatively.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-23"
+    },
+    {
+        "title": "Fietje: An open, efficient LLM for Dutch",
+        "authors": "BramVanroy",
+        "link": "https://arxiv.org/abs/2412.15450",
+        "github_repo": null,
+        "summary": "- This paper introduces Fietje, a family of 2.7B parameter decoder-only transformer language models for Dutch based on Phi-2.\n- Fietje was trained on 28B Dutch tokens from Wikipedia and the CulturaX dataset and comes in three versions: base, instruct, and chat.\n- At the time of its release, Fietje achieved competitive results with larger language models, sometimes even outperforming 7B models on ARC and MMLU benchmarks.\n- Evaluations on various Dutch NLP benchmarks demonstrated its efficacy compared to similar-sized models and established it as a significant step toward accessible language technology for Dutch.\n- The benchmark results also highlight the rapid advancement of the field and show that smaller multilingual models that were released after Fietje generally perform better.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/BramVanroy/fietje-2",
+            "https://github.com/BramVanroy/clin34-benchmarks"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/BramVanroy/fietje-2-662cb803ed5cc4f617404146"
+        ],
+        "date": "2024-12-23"
+    }
+]

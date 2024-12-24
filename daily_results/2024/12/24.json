@@ -1,0 +1,268 @@
+[
+    {
+        "title": "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+        "authors": "Zifei Shan, Yijun Wang, Lulu Zhao, Yuzhen Huang, Weihao Zeng",
+        "link": "https://arxiv.org/abs/2412.17256",
+        "github_repo": null,
+        "summary": "- B-STAR, a novel self-improving framework, balances exploration and exploitation by dynamically adjusting hyperparameters like temperature and reward thresholds to optimize a proposed balance score metric throughout training iterations.\n- This approach enhances the model's ability to generate both diverse and high-quality responses, addressing the limitations of current self-improving methods that often stagnate after a few iterations.\n- The effectiveness of B-STAR is validated across mathematical problem-solving (GSM8K and MATH datasets), coding challenges (APPS dataset), and commonsense reasoning (ARC-Challenge dataset).\n- Experimental results show significant performance improvement over various self-improving baselines (STaR/ReST-EM, Iterative RFT, Online RFT).\n- For example, B-STAR shows improved Pass@1 accuracy and sustained improvement over multiple training iterations without degradation, unlike other methods, demonstrating effective management of the exploration-exploitation trade-off.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/hkust-nlp/B-STaR"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "RobustFT: Robust Supervised Fine-tuning for Large Language Models under Noisy Response",
+        "authors": "Zhiping Xiao, Jingyang Yuan, Xiao Luo, Junyu Luo, kaize0409",
+        "link": "https://arxiv.org/abs/2412.14922",
+        "github_repo": null,
+        "summary": "- ROBUSTFT is a robust supervised fine-tuning framework designed to enhance the performance of Large Language Models (LLMs) in the presence of noisy response data, which is a common issue in real-world applications.\n- It employs a two-stage process: noise detection and denoising.  Noise detection leverages a multi-expert system with reasoning-enhanced LLMs and a consistency checker, while denoising uses context-enhanced relabeling with a review agent and entropy-based data selection.\n- The method was evaluated on three LLMs (Gemma2-9B, Llama3.1-8B, Llama3.2-3B) and five datasets (MMLU, ARC, PubMedQA, Drop, FPB) under varying noise levels (30%, 50%, and 70%).\n- Experimental results show consistent performance improvements across various noise conditions and datasets compared to vanilla LLMs and baseline denoising methods.\n- The framework also proves particularly beneficial for smaller models and maintains stable performance even with rephrased instructions, validating its robustness and generalizability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/luo-junyu/RobustFT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B",
+            "https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT"
+        ],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Diving into Self-Evolving Training for Multimodal Reasoning",
+        "authors": "Yu Cheng, Fan Zhou, Xiwen Zhang, Junlong Li, Wei Liu",
+        "link": "https://arxiv.org/abs/2412.17451",
+        "github_repo": null,
+        "summary": "- This paper introduces M-STAR, a novel self-evolving training framework for enhancing multimodal reasoning abilities of Large Multimodal Models (LMMs) without relying on human-annotated chain-of-thought data.\n- M-STAR systematically analyzes and optimizes three key components of self-evolving training: training methods, reward models, and prompt variations.\n- It presents a continuous self-evolving training scheme, trains the first process-based reward model for multimodal reasoning, and demonstrates that adding unlabeled data is only effective with reliable reward signals.\n- Additionally, M-STAR incorporates dynamic temperature adjustment to balance exploration and exploitation during training to counter exploration loss.\n- Experiments on five multimodal reasoning benchmarks show that M-STAR significantly improves the performance of models with varying sizes, such as MiniCPM-V-2.5 (8B), Phi-3.5-Vision (4B), and InternVL2 (2B), consistently surpassing pre-trained models across various subtasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hkust-nlp/mstar"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Distilled Decoding 1: One-step Sampling of Image Auto-regressive Models with Flow Matching",
+        "authors": "Yu Wang, Xuefei Ning, Enshu Liu, fjxmlzn",
+        "link": "https://arxiv.org/abs/2412.17153",
+        "github_repo": null,
+        "summary": "- Distilled Decoding (DD) is proposed, a novel method that allows pre-trained autoregressive (AR) models to generate images in few steps (e.g., one or two) by distilling a deterministic mapping from Gaussian noise to the output distribution of the AR model through flow matching.\n- DD is evaluated on ImageNet 256x256 and LAION-COCO datasets, showing significant speed improvements while achieving acceptable FID scores.\n- For image generation, DD reduces sampling steps from 10 to 1 for VAR and 256 to 1 for LlamaGen, leading to 6.3x and 217.8x speedups, respectively.\n- For text-to-image generation with LlamaGen, DD can reduce steps from 256 to 2 with a 92.9x speed up while minimally impacting FID scores.\n- The training process doesn't need original training data of the AR model.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/imagination-research/distilled-decoding"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Large Motion Video Autoencoding with Cross-modal Video VAE",
+        "authors": "Jiaxin Xie, Jingye Chen, Yingqing He, Yang Fei, Yazhou Xing",
+        "link": "https://arxiv.org/abs/2412.17805",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel cross-modal Video Variational Autoencoder (VAE) designed for high-fidelity video encoding, especially for videos containing large motion.\n- The proposed model uses a two-stage spatiotemporal architecture, combining the strengths of simultaneous and sequential spatial-temporal compression to enhance detail and motion recovery.\n- By incorporating text guidance from text-video paired datasets, the model improves reconstruction quality, particularly in detail preservation and temporal stability.\n- The model is trained jointly on both image and video datasets, enabling it to perform both image and video autoencoding, enhancing reconstruction quality and versatility.\n- Experimental results on benchmark datasets demonstrate superior performance compared to state-of-the-art methods, showing significant improvements in metrics like PSNR, SSIM, and LPIPS, especially in large-motion scenarios.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Deliberation in Latent Space via Differentiable Cache Augmentation",
+        "authors": "Arthur Szlam, Jun Xie, Jiaxing Wu, Jonas Pfeiffer, Luyang Liu",
+        "link": "https://arxiv.org/abs/2412.17747",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method called \"differentiable cache augmentation\" to enhance frozen decoder-only Large Language Models (LLMs) by adding a coprocessor that operates on the model's key-value cache.\n- The coprocessor, trained using the language modeling loss, augments the cache with latent embeddings, improving the fidelity of subsequent decoding without modifying the original LLM architecture.\n- Experimental results show that this approach consistently reduces perplexity and improves performance across a range of reasoning-intensive tasks, such as GSM8K and MMLU, even in zero/few-shot settings.\n- The approach allows asynchronous and offline coprocessor operation, opening possibilities for more deliberate and computationally intensive reasoning processes in future research.\n- The method outperforms the baseline model and a related method called \"Pause Token\" on tasks like GSM8K, showcasing the effectiveness of the learned context-dependent dynamic embeddings.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Revisiting In-Context Learning with Long Context Language Models",
+        "authors": "Oh, Geunseob, Prakhar Gupta, Sun Jae Lee, Jinheon Baek",
+        "link": "https://arxiv.org/abs/2412.16926",
+        "github_repo": null,
+        "summary": "- This paper revisits In-Context Learning (ICL) with Long Context Language Models (LCLMs) and challenges the prevailing assumption that sophisticated example selection strategies are crucial for optimal performance.\n- Through experiments on 18 datasets across 4 tasks, the study finds that simple random sampling is as effective as more complex selection methods in many-shot ICL scenarios.\n- The paper identifies a new challenge with LCLMs: underutilization of expanded context capacity, especially in low-resource tasks. \n- It proposes a data augmentation technique to address this which involves generating synthetic examples and filtering low-quality ones, leading to performance improvements of up to 5%.\n- The study also finds that while LCLMs benefit from larger contexts, performance plateaus and may decline when the context becomes extremely long, especially with noisy examples present, suggesting future research directions for improving robustness in LCLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Translation",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Outcome-Refining Process Supervision for Code Generation",
+        "authors": "Jindong Wang, Zhengran Zeng, Yidong Wang, Weizheng Gu, Zhuohao Yu",
+        "link": "https://arxiv.org/abs/2412.15118",
+        "github_repo": "https://github.com/zhuohaoyu/ORPS",
+        "summary": "- This paper introduces Outcome-Refining Process Supervision (ORPS), a novel paradigm for enhancing code generation by treating outcome refinement as the process to be supervised.\n- It leverages a tree-structured exploration space, enabling models to maintain multiple reasoning trajectories, guided by execution feedback as objective anchors for evaluation. \n- The framework combines beam search with a self-critique mechanism, where the model analyzes reasoning chains and execution outcomes before generating rewards, eliminating the need for trained Process Reward Models (PRMs).\n- ORPS demonstrates significant improvements across various benchmarks, achieving a 26.9% average increase in Pass@1 and a 42.2% reduction in execution time compared to existing methods. \n- These results highlight the effectiveness of coupling structured reasoning space with concrete feedback signals for solving complex coding tasks, offering a scalable and efficient solution.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zhuohaoyu/ORPS"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "DRT-o1: Optimized Deep Reasoning Translation via Long Chain-of-Thought",
+        "authors": "Jie Zhou, Yunlong Liang, Fandong Meng, Jiaan Wang",
+        "link": "https://arxiv.org/abs/2412.17498",
+        "github_repo": "https://github.com/krystalan/DRT-o1",
+        "summary": "- This paper introduces DRT-01, a new model that integrates long chain-of-thought (CoT) into neural machine translation (MT), specifically targeting sentences with similes or metaphors from literature books. \n- A multi-agent framework with a translator, advisor, and evaluator is used to iteratively refine translations, generating long-thought MT data. GPT-40 is then employed to enhance the readability of the generated data.\n- DRT-01 is trained on this data using Qwen2.5-7B/14B as backbones. \n- Experimental results show improvements of 7.33~8.26 BLEU and 1.66~3.36 CometScore over the baselines.\n- Notably, DRT-01-7B surpasses QwQ-32B-Preview by 7.82 BLEU and 1.46 CometScore, showcasing its effectiveness.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/krystalan/DRT-o1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Unbabel/wmt22-cometkiwi-da",
+            "https://huggingface.co/Unbabel/wmt22-comet-da",
+            "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+            "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct"
+        ],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Agent-SafetyBench: Evaluating the Safety of LLM Agents",
+        "authors": "Junxiao Yang, Jingzhuo Zhou, Yida Lu, Shiyao Cui, Zhexin Zhang",
+        "link": "https://arxiv.org/abs/2412.14470",
+        "github_repo": "https://github.com/thu-coai/Agent-SafetyBench",
+        "summary": "- This paper introduces AGENT-SAFETYBENCH, a comprehensive benchmark designed to evaluate the safety of LLM agents.\n- The benchmark encompasses 349 interaction environments and 2,000 test cases, evaluating 8 categories of safety risks and covering 10 common failure modes.\n- An evaluation of 16 popular LLM agents reveals that none achieve a safety score above 60%.\n- Analysis identifies two key safety defects: a lack of robustness and a lack of risk awareness.\n- The study finds that relying solely on defense prompts is insufficient for addressing these safety issues, suggesting the need for more advanced strategies.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/thu-coai/Agent-SafetyBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "NILE: Internal Consistency Alignment in Large Language Models",
+        "authors": "Hongru Wang, Bowei He, Yufei Wang, Qiyuan Zhang, Minda Hu",
+        "link": "https://arxiv.org/abs/2412.16686",
+        "github_repo": null,
+        "summary": "- The paper introduces NILE (iNternal consIstency aLignmEnt), a framework designed to improve the quality of Instruction Fine-Tuning (IFT) datasets for Large Language Models (LLMs) by aligning the datasets with the LLMs' internal knowledge.\n- NILE works by eliciting the internal knowledge of a pre-trained LLM, revising existing dataset answers using this internal knowledge, and filtering out inconsistent samples using a novel Internal Consistency Filtering (ICF) method.\n- Experiments show that NILE-aligned IFT datasets boost LLM performance across multiple benchmarks, including up to 66.6% gain on Arena-Hard and 68.5% on Alpaca-Eval V2.\n- Ablation studies validate each component of the framework\u2014Internal Knowledge Extraction, Knowledge-Aware Sample Revision, and Internal Consistency Filtering\u2014confirming their contribution to the improved performance.\n- The results demonstrate the significance of dataset consistency with pre-trained internal knowledge for maximizing LLM potential.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "LearnLM: Improving Gemini for Learning",
+        "authors": "Andrea Huber, Aliya Rysbek, Aditya Srikanth Veerubhotla, Abhinit Modi, LearnLM Team",
+        "link": "https://arxiv.org/abs/2412.16429",
+        "github_repo": null,
+        "summary": "- This paper introduces LearnLM, a new large language model (LLM) based on Gemini 1.5 Pro and fine-tuned specifically for educational applications.\n- LearnLM is trained using a method called pedagogical instruction following, which uses system-level instructions to guide desired pedagogical behaviours, rather than defining specific pedagogical behaviours. \n- It incorporates Reinforcement Learning from Human Feedback (RLHF) for enhanced adherence to nuanced instructions and user preferences.  \n- Human evaluation results show a significant preference for LearnLM over GPT-40, Claude 3.5, and Gemini 1.5 Pro across various learning scenarios. \n- LearnLM is available as an experimental model on Google AI Studio.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "OpenAI o1 System Card",
+        "authors": "Adam Richardson, Adam Lerer, Adam Kalai, Aaron Jaech, OpenAI",
+        "link": "https://arxiv.org/abs/2412.16720",
+        "github_repo": null,
+        "summary": "- OpenAI introduces the \"o1\" large language model family, trained with reinforcement learning for complex reasoning using chain-of-thought, enhancing safety and robustness.\n- The models demonstrate state-of-the-art performance in benchmarks related to generating illicit advice, stereotyped responses, and known jailbreaks due to deliberative alignment.\n- Trained on diverse public, proprietary, and custom datasets, o1 shows enhanced performance in jailbreak evaluations and adherence to safety guidelines compared to GPT-40.\n- The o1 models also demonstrate significant improvements in mitigating hallucinations, especially in factual question answering, and improved performance in tasks assessing demographic fairness.\n- Despite advancements, potential safety risks stemming from increased intelligence are acknowledged, highlighting the need for continuous improvement in alignment and safety methods and extensive stress-testing.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "OpenRFT: Adapting Reasoning Foundation Model for Domain-specific Tasks with Reinforcement Fine-Tuning",
+        "authors": "Jinlin Xiao, Yuhang Wang, Jiangming Shu, Yuqi Yang, Yuxiang Zhang",
+        "link": "https://arxiv.org/abs/2412.16849",
+        "github_repo": "https://github.com/ADaM-BJTU/OpenRFT",
+        "summary": "- OpenRFT adapts a generalist reasoning model for domain-specific tasks using reinforcement fine-tuning (RFT), addressing challenges like limited training data and lack of reasoning step data.\n- It leverages domain-specific samples through question augmentation, synthesizing reasoning process data using a teacher model, and few-shot in-context learning (ICL) to enhance RL exploration.\n- Evaluated on SciKnowEval, OpenRFT demonstrates significant performance improvements with limited samples, averaging 11% accuracy increase compared to a baseline model.\n- The study highlights that data augmentation, stronger reasoning foundation models, and aligned action space contribute to better RFT performance.\n-  OpenRFT's effectiveness depends on the availability of high-quality generalist reasoning models and corresponding Process Reward Models (PRMs).",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ADaM-BJTU/OpenRFT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Skywork"
+        ],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "Friends-MMC: A Dataset for Multi-modal Multi-party Conversation Understanding",
+        "authors": "Qun Liu, Jianxin Liang, Xiaojun Meng, Yueqian Wang, ColorfulAI",
+        "link": "https://arxiv.org/abs/2412.17295",
+        "github_repo": "https://github.com/yellow-binary-tree/Friends-MMC",
+        "summary": "- This paper introduces Friends-MMC, a multimodal multi-party conversation (MMC) dataset derived from the TV series *Friends*. \n- The dataset includes over 24,000 utterances paired with video contexts, speaker annotations, and bounding boxes of faces, facilitating research on character-centered understanding in conversations.\n- The authors propose a baseline method for conversation speaker identification leveraging visual and textual models, combined with a quadratic binary optimization solver, demonstrating its effectiveness compared to existing pre-trained models.\n- For conversation response prediction, they fine-tune generative dialogue models on Friends-MMC and show that incorporating speaker information improves performance. \n-  They argue for increased attention to modeling speaker information in conversational understanding research.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yellow-binary-tree/Friends-MMC"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    },
+    {
+        "title": "PC Agent: While You Sleep, AI Works -- A Cognitive Journey into Digital World",
+        "authors": "Runze Fan, Jiadi Su, Shijie Xia, Jiahe Jin, Yanheng He",
+        "link": "https://arxiv.org/abs/2412.17589",
+        "github_repo": null,
+        "summary": "- PC Agent, an AI system designed to perform complex digital work tasks, is introduced, transferring human cognition to AI agents. \n- The system consists of three key components: PC Tracker, a lightweight infrastructure for collecting human-computer interaction data; a cognition completion pipeline for enriching interaction data with semantics and thought processes; and a multi-agent architecture comprising a planning agent trained on cognitive trajectories and a robust visual grounding agent with self-validation. \n- PC Agent is trained and evaluated in the context of creating PowerPoint presentations, a task requiring complex multi-software coordination and higher-level cognitive functions. \n- Preliminary results demonstrate PC Agent\u2019s capacity to generate complex, multi-page presentations with as few as 133 training examples, showcasing substantial data efficiency in learning from human cognitive processes. \n- The multi-agent design combines specialized visual grounding capabilities with cognitive planning, enabling completion of complex, multi-step tasks involving up to 50 actions.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-24"
+    }
+]

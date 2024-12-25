@@ -1,0 +1,129 @@
+[
+    {
+        "title": "DepthLab: From Partial to Complete",
+        "authors": "Hao Ouyang, Shuzhe Wang, Qiuyu Wang, Ka Leong Cheng, Zhiheng Liu",
+        "link": "https://arxiv.org/abs/2412.18153",
+        "github_repo": null,
+        "summary": "- DepthLab is a novel dual-branch diffusion-based model for depth inpainting conditioned on RGB images and partial depth information.\n- The model architecture features a Reference U-Net for RGB feature extraction and an Estimation U-Net for depth completion, with layer-by-layer feature fusion for enhanced visual guidance.\n- DepthLab excels in preserving scale consistency with known depth regions and demonstrates strong generalization capabilities across diverse scenarios, outperforming existing methods on NYUv2, KITTI, ETH3D, ScanNet, and DIODE datasets for depth inpainting.\n- The model's effectiveness extends to various downstream tasks, including 3D scene inpainting, text-to-3D scene generation, sparse-view reconstruction with DUST3R, and LiDAR depth completion.\n- Random scale normalization during training and a diverse masking strategy contribute to the robustness and versatility of DepthLab.",
+        "classification": [
+            "Depth Estimation",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://johanan528.github.io/depthlab_web/"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding",
+        "authors": "Dmitry Yudin, wingrune",
+        "link": "https://arxiv.org/abs/2412.18450",
+        "github_repo": "https://github.com/CognitiveAISystems/3DGraphLLM",
+        "summary": "- 3DGraphLLM introduces a novel approach for 3D scene understanding by combining semantic graphs and large language models (LLMs).\n- The model architecture includes pre-trained encoders for 3D point clouds and semantic relationships, and a pre-trained LLM, trained via a two-stage approach using ground truth and predicted instance segmentation of point clouds.\n- 3DGraphLLM represents a 3D scene as a flattened sequence of learnable embeddings of object subgraphs, including object identifiers and relationships with k-nearest neighbors, which is then fed to an LLM.\n- Experimental results on ScanRefer, Multi3DRefer, and Scan2Cap datasets demonstrate state-of-the-art performance for the proposed method, improving F1@0.5 scores by +5.8% and +4.4% and CIDEr@0.5 by +5.8% respectively on the mentioned datasets.\n- Ablation studies confirm the benefit of incorporating semantic graph representation for several 3D vision-language tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision",
+            "Object Detection",
+            "Image-to-Text",
+            "Question Answering",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/CognitiveAISystems/3DGraphLLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "Fourier Position Embedding: Enhancing Attention's Periodic Extension for Length Generalization",
+        "authors": "Ning Ding, Kaiyan Zhang, Xingtai Lv, Che Jiang, Ermo Hua",
+        "link": "https://arxiv.org/abs/2412.17739",
+        "github_repo": null,
+        "summary": "- This paper proposes Fourier Position Embedding (FoPE) to improve the length generalization of Language Models (LMs). \n- FoPE enhances the periodic extension of attention by addressing the spectral damage caused by linear layers, activation functions, and under-trained frequency components. \n- Unlike Rotary Position Embedding (ROPE), which treats each dimension as a single-frequency function, FoPE models each dimension as a Fourier series of different frequency components.\n- FoPE also clips inadequately trained frequency components, replacing them with zero-frequency components to preserve long-wavelength information. \n- Experiments across various model scales demonstrate FoPE\u2019s superior length generalization compared to ROPE and ALiBi, maintaining stable perplexity and consistent accuracy in a needle-in-haystack task within varying context windows.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/TsinghuaC3I/Fourier-Position-Embedding"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "DiTCtrl: Exploring Attention Control in Multi-Modal Diffusion Transformer for Tuning-Free Multi-Prompt Longer Video Generation",
+        "authors": "Zhaoyang Zhang, Wenze Liu, Xiaoyu Li, Xiaodong Cun, Minghong Cai",
+        "link": "https://arxiv.org/abs/2412.18597",
+        "github_repo": "https://github.com/TencentARC/DiTCtrl",
+        "summary": "- DiTCtrl is a novel, tuning-free method for multi-prompt video generation using the Multi-Modal Diffusion Transformer (MM-DiT) architecture.\n- DiTCtrl analyzes MM-DiT's attention mechanism, finding similarities with UNet-like diffusion models, and introduces a mask-guided KV-sharing strategy and latent blending for smooth transitions between prompts.\n- It enables the generation of longer videos with consistent object motion and semantic transitions without additional training.\n- DiTCtrl achieves state-of-the-art performance on MPVBench, a new benchmark designed for multi-prompt video generation.\n- The authors also present MPVBench, a new benchmark specifically designed for multi-prompt video generation to evaluate the performance.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/DiTCtrl"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "In Case You Missed It: ARC 'Challenge' Is Not That Challenging",
+        "authors": "Borchmann",
+        "link": "https://arxiv.org/abs/2412.17758",
+        "github_repo": null,
+        "summary": "- This paper challenges the perceived difficulty of the ARC Challenge dataset, arguing that it appears harder for Large Language Models (LLMs) primarily due to an evaluation setup that hinders direct comparison of answer choices rather than inherent complexity.\n- The authors highlight a shift in evaluation practices where some researchers have adopted a fairer comparison scheme, allowing models to see all answer options simultaneously, which dramatically improves performance.\n- This fairer approach reduces performance gaps in other benchmarks, such as SocialIQa (SIQA), and even leads to superhuman results in OpenBookQA, suggesting that evaluation methods significantly shape perceived difficulty.\n- They demonstrate that switching from evaluating answers in isolation to evaluating them alongside other options leads to substantial performance gains, up to 35% improvement on ARC Challenge for some LLMs.\n- The paper proposes guidelines to ensure multiple-choice evaluations accurately reflect model capabilities by recommending the use of an evaluation setup where LLMs can compare answer options directly.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "PartGen: Part-level 3D Generation and Reconstruction with Multi-View Diffusion Models",
+        "authors": "Jianyuan Wang, Tom Monnier, Iro Laina, Roman Shapovalov, Minghao Chen",
+        "link": "https://arxiv.org/abs/2412.18608",
+        "github_repo": null,
+        "summary": "- PartGen is a novel approach that generates compositional 3D objects with meaningful parts from text, images, or unstructured 3D objects using multi-view diffusion models.\n- The method addresses the ambiguity in part segmentation and completion by using a two-stage generative approach that first extracts plausible part segmentations and then completes and reconstructs these parts in 3D.\n- This completion process accounts for the context of the entire object ensuring that parts integrate cohesively and can even hallucinate entirely invisible parts.\n- Evaluation on generated and real 3D assets demonstrates that PartGen significantly outperforms existing segmentation and part-extraction baselines.\n- PartGen has downstream applications like 3D part editing based on text instructions.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "ReMoE: Fully Differentiable Mixture-of-Experts with ReLU Routing",
+        "authors": "Jun Zhu, Jianfei Chen, Ziteng Wang",
+        "link": "https://arxiv.org/abs/2412.14711",
+        "github_repo": "https://github.com/thu-ml/ReMoE",
+        "summary": "- ReMoE, a fully differentiable Mixture-of-Experts (MoE) architecture based on ReLU routing, is proposed as a drop-in replacement for standard TopK routing, offering continuous training and dynamic expert allocation.\n- ReLU routing manages experts' on/off states independently and is combined with an adaptive load balancing L1 regularization to control sparsity.\n- ReMoE outperforms traditional TopK MoE and other routing methods across various model sizes, expert counts, and granularity levels on the LLaMA architecture trained on The Pile dataset.\n- ReMoE demonstrates improved scalability and performance gains compared to TopK MoE with increasing expert counts, suggesting its effectiveness with larger expert pools.\n- ReMoE exhibits dynamic expert allocation based on token frequency and stronger domain specialization, leading to efficient resource utilization and improved model expressivity.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/thu-ml/ReMoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    },
+    {
+        "title": "SKETCH: Structured Knowledge Enhanced Text Comprehension for Holistic Retrieval",
+        "authors": "Divya Chaudhary, Vinija Jain, Aman Chadha, Vinesh Kumar Gande, Aakash Mahalingam",
+        "link": "https://arxiv.org/abs/2412.15443",
+        "github_repo": null,
+        "summary": "- This paper introduces SKETCH, a novel methodology that enhances the Retrieval Augmented Generation (RAG) retrieval process by integrating semantic text retrieval with knowledge graphs.\n- SKETCH merges structured and unstructured data for a more holistic comprehension, aiming to improve retrieval performance and maintain context integrity.\n- Evaluated across four diverse datasets (QUALITY, QASPER, NarrativeQA, and Italian Cuisine), SKETCH consistently outperformed baseline approaches on key RAGAS metrics, including answer_relevancy, faithfulness, context_precision, and context_recall.\n- Notably, on the Italian Cuisine dataset, SKETCH achieved an answer relevancy of 0.94 and a context precision of 0.99, representing the highest performance across all evaluated metrics.\n- These results highlight SKETCH's capability to deliver more accurate and contextually relevant responses, setting new benchmarks for future retrieval systems by addressing challenges in handling large-scale discourse structures and complex queries across various domains.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-25"
+    }
+]

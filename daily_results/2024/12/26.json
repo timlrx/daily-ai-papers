@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Token-Budget-Aware LLM Reasoning",
+        "authors": "Zhenyu Chen, Shiqing Ma, Shiyu Zhao, Chunrong Fang, Tingxu Han",
+        "link": "https://arxiv.org/abs/2412.18547",
+        "github_repo": "https://github.com/GeniusHTX/TALE",
+        "summary": "- This paper introduces TALE (Token-Budget-Aware LLM rEasoning), a framework designed to optimize the reasoning process in Large Language Models (LLMs) by dynamically managing token budgets.\n- TALE estimates a token budget for each problem based on its complexity, then incorporates this budget into the prompt to guide the LLM's reasoning.\n- This method addresses the issue of token redundancy in current LLMs, which often produce unnecessarily lengthy reasoning processes, leading to increased costs and computational overhead.\n- Experimental results demonstrate that TALE significantly reduces token usage by an average of 68.64% while maintaining competitive accuracy (less than 5% decrease).\n- This suggests that TALE offers a practical approach to balancing efficiency and accuracy in LLM reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/GeniusHTX/TALE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-26"
+    }
+]

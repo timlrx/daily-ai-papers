@@ -1,0 +1,125 @@
+[
+    {
+        "title": "HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs",
+        "authors": "Wanlong Liu, Xidong Wang, Ke Ji, Zhenyang Cai, Junying Chen",
+        "link": "https://arxiv.org/abs/2412.18925",
+        "github_repo": null,
+        "summary": "- This paper introduces HuatuoGPT-01, a medical Large Language Model (LLM) designed for complex reasoning.\n- The model is trained in two stages: firstly, it learns complex reasoning by searching for correct reasoning trajectories guided by a medical verifier, and secondly, it refines this skill with reinforcement learning using verifier-based rewards.\n- It is trained on 40k verifiable medical problems converted from closed-set exam questions, supplemented by a general domain dataset for enhanced generalization.\n- HuatuoGPT-01 significantly outperforms existing general and medical-specific LLMs on multiple medical benchmarks, including MedQA, MedMCQA, and PubMedQA, as well as more challenging datasets MMLU-Pro and GPQA.\n- Ablation studies and other analysis demonstrate that the method of complex reasoning and reinforcement learning boosts performance compared to non-CoT or simple CoT approaches.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/HuatuoGPT-01"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "Task Preference Optimization: Improving Multimodal Large Language Models with Vision Task Alignment",
+        "authors": "Kunchang Li, Chenting Wang, Yinan He, Zhilin Li, Ziang Yan",
+        "link": "https://arxiv.org/abs/2412.19326",
+        "github_repo": "https://github.com/OpenGVLab/TPO",
+        "summary": "- This paper introduces Task Preference Optimization (TPO), a novel method to enhance Multimodal Large Language Models (MLLMs) with fine-grained visual task alignment.\n- TPO utilizes learnable task tokens and corresponding task heads for region, temporal, and mask-related visual tasks and incorporates visual task data during training via a local-to-global training process to improve both multimodal dialogue and task-specific performance.\n- Experiments on VideoChat and LLaVA demonstrate a 14.6% average improvement in multimodal performance on benchmarks like MVBench, VideoMME, NExT-GQA, MLVU, and SEED-Bench2.\n- The model performs competitively with state-of-the-art models on tasks like spatial grounding, moment retrieval, highlight detection, and tracking.\n- Ablation studies validate the efficacy of different TPO components, co-training benefits, and task data scaling.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/TPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "Orient Anything: Learning Robust Object Orientation Estimation from Rendering 3D Models",
+        "authors": "Hengshuang Zhao, Chao Du, Tianyu Pang, Ziang Zhang, Zehan Wang",
+        "link": "https://arxiv.org/abs/2412.18605",
+        "github_repo": null,
+        "summary": "- Introduces Orient Anything, a novel model designed for estimating 3D object orientation in single- and free-view images using a simple visual encoder and multiple prediction heads.\n- Collects a 2M image dataset with precise orientation annotations by rendering 3D models from random views after automatically annotating the front face of the 3D objects using a VLM and geometric analysis.\n- Proposes a robust training objective that models 3D orientation as probability distributions of three angles (polar, azimuth, and rotation) and predicts object orientation by fitting these distributions.\n- Employs DINOv2 initialization and data augmentation (random cropping during training and object masking during inference) to enhance synthetic-to-real transfer.\n- Achieves state-of-the-art orientation estimation accuracy in rendered and real images, outperforming existing expert models and large vision-language models, and exhibits impressive zero-shot generalization across diverse real-world scenarios.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "The Superposition of Diffusion Models Using the It\u00f4 Density Estimator",
+        "authors": "Kirill Neklyudov, Alexander Tong, Avishek Joey Bose, Lazar Atanackovic, Marta Skreta",
+        "link": "https://arxiv.org/abs/2412.17762",
+        "github_repo": "https://github.com/necludov/super-diffusion",
+        "summary": "- This paper introduces SUPERDIFF, a novel method for combining multiple pre-trained diffusion models at the inference stage without retraining.\n- SUPERDIFF leverages a new scalable It\u00f4 density estimator for the log-likelihood of the diffusion SDE, which incurs no additional overhead.\n- The method is theoretically grounded in the principle of superposition from physics and offers two algorithms: one for sampling from a mixture of densities (logical OR) and another for sampling from equal density regions (logical AND).\n- Empirically, SUPERDIFF demonstrates improved performance on image generation tasks, such as generating diverse images on CIFAR-10 and more faithful prompt-conditioned image editing using Stable Diffusion.\n- It also shows promise in protein generation, achieving better designability and novelty compared to individual models or simple averaging.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/necludov/super-diffusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "From Elements to Design: A Layered Approach for Automatic Graphic Design Composition",
+        "authors": "Ji Li, Ting Liu, Danqing Huang, Shizhao Sun, Jiawei Lin",
+        "link": "https://arxiv.org/abs/2412.19712",
+        "github_repo": null,
+        "summary": "- This research presents LaDeCo, a novel layered approach for automatic graphic design composition using large multimodal models (LMMs).\n- LaDeCo incorporates a layer planning module, using GPT-4 to categorize input elements into semantic layers (background, underlay, logo/image, text, and embellishment).\n- The model then generates design compositions layer by layer, rendering previous layers as images and feeding them back to the LMM for contextual information.\n- Experimental results on the Crello dataset demonstrate that LaDeCo outperforms baseline models in design composition and related subtasks.\n- LaDeCo also offers flexibility for specific design tasks like content-aware layout and typography generation without task-specific training and enables resolution adjustment, design variation, and element addition.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "Safeguard Fine-Tuned LLMs Through Pre- and Post-Tuning Model Merging",
+        "authors": "Shang-Tse Chen, Saurav Sahay, Shachi H Kumar, Hsuan Su, farnhua",
+        "link": "https://arxiv.org/abs/2412.19512",
+        "github_repo": null,
+        "summary": "- This paper introduces a method to mitigate safety degradation in fine-tuned Large Language Models (LLMs) without requiring additional safety data.\n- The method involves merging the weights of a pre-trained safety-aligned base model and its fine-tuned version after training on a downstream task.\n- Experimental results across various models (Llama-3, Gemma-2B-it), downstream tasks (reasoning, medical assistance, code generation, tool usage), and merging methods (linear merging, model stock, SLERP, DARE) show improvement in safety and downstream task performance.\n- The proposed approach reduces the Attack Success Rate (ASR) by up to 30% while enhancing downstream task performance, offering a simple yet robust solution.\n- Linear merging is highlighted as a practical method due to its efficacy and computational efficiency",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/allenai/wildguard"
+        ],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "SBS Figures: Pre-training Figure QA from Stage-by-Stage Synthesized Images",
+        "authors": "Yoshitaka Ushiku, Tosho Hirasawa, Shohei Tanaka, Kuniaki Saito, Risa Shinoda",
+        "link": "https://arxiv.org/abs/2412.17606",
+        "github_repo": "https://github.com/omron-sinicx/SBSFigures",
+        "summary": "- This paper introduces SBS Figures (Stage-by-Stage Synthetic Figures), a new dataset for pre-training figure question answering (QA) models.\n- The dataset is generated through a novel three-stage pipeline involving visualization target data generation, figure rendering via Python code, and QA pair generation, leveraging LLMs at each stage and producing 1 million synthetic chart figures with associated data and QA pairs.\n- Models pre-trained on SBS Figures demonstrate a strong performance boost on real-world chart QA datasets like ChartQA, outperforming models trained from scratch or other synthetic datasets.\n- This method allows efficient training of QA models even with a limited amount of real-world data by first pre-training on the large-scale SBS Figures dataset.\n- An ablation study investigating various factors in the pipeline reveals the importance of diverse figure appearance, high-quality LLM-generated QA pairs, and the scale of the dataset for optimal pre-training effectiveness.",
+        "classification": [
+            "Visual Question Answering",
+            "Document Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/omron-sinicx/SBSFigures"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    },
+    {
+        "title": "VideoMaker: Zero-shot Customized Video Generation with the Inherent Force of Video Diffusion Models",
+        "authors": "Junfu Pu, Zhongang Qi, Xiaodong Cun, Yong Zhang, Tao Wu",
+        "link": "https://arxiv.org/abs/2412.19645",
+        "github_repo": null,
+        "summary": "- VideoMaker, a novel framework leverages the inherent capabilities of Video Diffusion Models (VDMs) for zero-shot customized video generation, eliminating the need for additional training or external alignment models.\n- It utilizes the VDM itself for fine-grained feature extraction from reference images, treating a noise-free image input as a special case of the diffusion process at timestep 0.\n-  For feature injection, VideoMaker employs the VDM's spatial self-attention mechanism to directly interact subject features with the generated content within each frame, thereby improving subject fidelity and maintaining video diversity.\n-  A Guidance Information Recognition Loss aids the model in distinguishing between reference information and generated content during training, further enhancing performance.\n- Experiments on customized human and object video generation datasets demonstrate VideoMaker's superior performance compared to existing methods by achieving high subject fidelity while preserving text alignment.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-30"
+    }
+]

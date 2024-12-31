@@ -1,0 +1,171 @@
+[
+    {
+        "title": "Explanatory Instructions: Towards Unified Vision Tasks Understanding and Zero-shot Generalization",
+        "authors": "Tao Yuan, Yuxin Song, Yifan Sun, Xiu-Shen Wei, axxkaya",
+        "link": "https://arxiv.org/abs/2412.18525",
+        "github_repo": null,
+        "summary": "- This paper introduces \"Explanatory Instructions,\" a novel approach to define computer vision task objectives using detailed linguistic descriptions of transformations between images, moving beyond terminological classifications (e.g., \"segmentation\").\n- A large-scale dataset, DECVT, comprising 12 million image-instruction-output triplets, is created, enabling training of an autoregressive vision-language model (AR-based VLM) on various vision tasks and their linguistic objectives.\n- The AR-based VLM, trained on DECVT, demonstrates instruction-level zero-shot capabilities on seen tasks and promising task-level zero-shot generalization on unseen vision tasks like HED-to-Image, Canny-to-Image, and Depth-to-Image.\n- Quantitative evaluations on image editing and generation benchmarks indicate that the proposed model achieves improvement over some baselines, demonstrating its potential as a vision generalist, despite requiring further improvement.\n- The paper highlights the limitations in the model's zero-shot capabilities for tasks like Image-to-Canny or Image-to-Depth and discusses potential reasons, including the image tokenizer's alignment with text during pretraining.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Image",
+            "Zero-Shot Object Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "On the Compositional Generalization of Multimodal LLMs for Medical Imaging",
+        "authors": "Yonglin Deng, Weihong Wang, Rongsheng Wang, Junying Chen, Zhenyang Cai",
+        "link": "https://arxiv.org/abs/2412.20070",
+        "github_repo": "https://github.com/FreedomIntelligence/Med-MAT",
+        "summary": "- This paper introduces Med-MAT, a Visual Question Answering (VQA) dataset designed to investigate compositional generalization (CG) in Multimodal Large Language Models (MLLMs) applied to medical imaging.\n- Med-MAT comprises 106 medical datasets spanning 11 modalities, 14 anatomical areas, and 13 medical tasks, categorized by MAT-Triplets (Modality, Anatomical area, Task) to facilitate CG analysis.\n- Experiments using LLaVA and other MLLMs on Med-MAT confirm that these models can leverage CG to understand unseen medical image combinations, demonstrating improved performance in classification tasks compared to single-task or unrelated multi-task training.\n- The paper shows that increasing the volume of CG combinations improves model understanding, and that CG assists data-efficient learning even with limited target data.\n- The study also demonstrates the existence of CG across different MLLM backbones (LLaVA, Qwen2-VL, Llama 3.2) and its applicability in detection tasks, highlighting its broad applicability and robustness in medical image analysis.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/Med-MAT"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "Efficiently Serving LLM Reasoning Programs with Certaindex",
+        "authors": "Zhongdongming Dai, Zheyu Fu, Siqi Zhu, Junda Chen, Yichao Fu",
+        "link": "https://arxiv.org/abs/2412.20993",
+        "github_repo": null,
+        "summary": "- Dynasor optimizes inference-time compute for LLM reasoning queries by tracking and scheduling requests within reasoning queries and using certaindex, a proxy that measures statistical reasoning progress based on model certainty, to guide compute allocation dynamically.\n- Dynasor co-adapts scheduling with reasoning progress: it allocates more compute to hard queries, reduces compute for simpler ones, and terminates unpromising queries early, balancing accuracy, latency, and cost.\n- Dynasor reduces compute by up to 50% in batch processing and sustains 3.3x higher query rates or 4.7x tighter latency SLOs in online serving on diverse datasets and algorithms.\n- Certaindex quantifies how certain the LLM is in approaching its final answer during reasoning, which correlates with computational resources required for correct solutions.\n- Dynasor outperforms other systems by reducing token usage by 9-52% without sacrificing accuracy on offline workloads and achieving higher sustainable request rates and tighter SLO scales.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "TangoFlux: Super Fast and Faithful Text to Audio Generation with Flow Matching and Clap-Ranked Preference Optimization",
+        "authors": "Rafael Valle, Ambuj Mehrish, Zhifeng Kong, Navonil Majumder, Chia-Yu Hung",
+        "link": "https://arxiv.org/abs/2412.21037",
+        "github_repo": null,
+        "summary": "- TANGOFLUX, a novel text-to-audio (TTA) model based on a hybrid architecture of Multimodal Diffusion Transformer (MMDIT) and Diffusion Transformer (DiT) blocks, is introduced. \n- The model leverages rectified flows for audio generation, enabling faster inference speeds and utilizes CLAP-Ranked Preference Optimization (CRPO) for alignment. \n- CRPO iteratively generates synthetic audio preference data by ranking model outputs based on CLAP similarity scores and then optimizes the model using a novel loss function that prevents performance degradation. \n- Experimental results show that TANGOFLUX achieves state-of-the-art performance on objective metrics such as Frechet Distance and CLAP score while significantly reducing inference time compared to existing models. \n- Furthermore, human evaluations confirm that TANGOFLUX generates audio of higher quality and greater relevance to the input text compared to other leading TTA models.",
+        "classification": [
+            "Text-to-Audio",
+            "Audio"
+        ],
+        "github_urls": [
+            "https://github.com/declare-lab/TangoFlux"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/declare-lab/TangoFlux",
+            "https://huggingface.co/datasets/declare-lab/CRPO",
+            "https://huggingface.co/spaces/declare-lab/TangoFlux"
+        ],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "Edicho: Consistent Image Editing in the Wild",
+        "authors": "Ceyuan Yang, Qiuyu Wang, Yinghao Xu, Hao Ouyang, Qingyan Bai",
+        "link": "https://arxiv.org/abs/2412.21079",
+        "github_repo": "https://github.com/EzioBy/edicho",
+        "summary": "- Edicho is a training-free, plug-and-play method for consistent image editing across multiple images in the wild, leveraging explicit correspondence.\n- It enhances the self-attention mechanism and classifier-free guidance within diffusion models by incorporating pre-computed correspondence, ensuring coherent edits across images.\n- Fusing features from unconditional embeddings, inspired by null-text inversion, further improves consistency without compromising image quality. \n- Experimental results show Edicho's superior performance in quantitative metrics and qualitative assessments for both local and global editing tasks.\n- The method is robust to variations in lighting, backgrounds, perspectives, and occlusions common in real-world images.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/EzioBy/edicho"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "Bringing Objects to Life: 4D generation from 3D objects",
+        "authors": "Gal Chechik, Dvir Samuel, Ori Malca, Ohad Rahamim",
+        "link": "https://arxiv.org/abs/2412.20422",
+        "github_repo": null,
+        "summary": "- This paper introduces 3to4D, a novel method for generating 4D (dynamic 3D) content from a given 3D object and a text prompt describing the desired motion.\n- The method first creates a static 4D Neural Radiance Field (NeRF) from the input 3D mesh, preserving its appearance and structure. Then, it uses an image-to-video diffusion model, guided by the text prompt, to animate the NeRF, adding motion while maintaining the object's identity.\n- To improve motion realism, the paper proposes two enhancements: an incremental viewpoint selection protocol that samples camera perspectives around the object during optimization and an attention-masked Score Distillation Sampling (SDS) loss that focuses learning on object-relevant regions.\n- Experimental results show that 3to4D outperforms baseline methods, achieving up to three times better identity preservation measured by LPIPS, and demonstrates a better balance between visual quality and dynamic content.\n- The method effectively animates user-provided 3D objects according to text prompts, which enables users to create custom 4D content for various applications such as virtual worlds, media, and gaming.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "HumanEval Pro and MBPP Pro: Evaluating Large Language Models on Self-invoking Code Generation",
+        "authors": "Xiao-Ping Zhang, Arman Cohan, Yilun Zhao, Zhaojian Yu",
+        "link": "https://arxiv.org/abs/2412.21199",
+        "github_repo": null,
+        "summary": "- This paper introduces \"self-invoking code generation,\" a new task designed to evaluate LLMs' progressive reasoning and problem-solving abilities where models must use the solution from a base problem to address a more complex, related problem.\n- Three new benchmarks are created: HumanEval Pro, MBPP Pro, and BigCodeBench-Lite Pro, which are derived from existing benchmarks using a proposed method.\n- Experimental results on 20 LLMs reveal a significant performance gap between traditional code generation and self-invoking code generation, where models often struggle to utilize their own generated code effectively.\n- It's shown that instruction-tuned models offer limited improvement over base models in self-invoking tasks, indicating a need for more advanced training methods for this type of problem.\n- Analysis of failure modes reveals challenges LLMs face with self-invocation, emphasizing areas for future improvement in code generation and reasoning capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "github.com/CodeEval-Pro/CodeEval-Pro"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "Facilitating large language model Russian adaptation with Learned Embedding Propagation",
+        "authors": "Daniil Chernyshev, RefalMachine",
+        "link": "https://arxiv.org/abs/2412.21140",
+        "github_repo": null,
+        "summary": "- This paper introduces Learned Embedding Propagation (LEP), a novel method for adapting large language models (LLMs) to new languages requiring less training data and minimal disruption of existing LLM knowledge.\n- LEP employs an embedding propagation technique, bypassing instruction-tuning and directly integrating new language knowledge. \n- A new benchmark, Darumeru, is introduced to evaluate text generation robustness during training for Russian adaptation. \n- Applying LEP to adapt LLaMa-3-8B and Mistral-7B for Russian, across four vocabulary adaptation scenarios, demonstrates competitive performance comparable to OpenChat 3.5 and LLaMa-3-8B-Instruct. \n- Further improvements are observed using self-calibration and additional instruction-tuning, exceeding existing models' performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/RefalMachine/ruadapt",
+            "https://github.com/RefalMachine/llmtf_open"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/RefalMachine"
+        ],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+        "authors": "Navdeep Jaitly, Graham Neubig, Xingyao Wang, alsuhr, Jiayi-Pan",
+        "link": "https://arxiv.org/abs/2412.21139",
+        "github_repo": "https://github.com/SWE-Gym/SWE-Gym",
+        "summary": "- This paper introduces SWE-Gym, a new training environment for real-world software engineering (SWE) agents.\n- SWE-Gym consists of 2,438 Python tasks from GitHub, each with an executable runtime environment, unit tests, and a natural language task description.\n- Using SWE-Gym to train language model-based SWE agents led to up to a 19% improvement in resolve rate on SWE-Bench Verified and Lite datasets. \n- By training verifiers on agent trajectories from SWE-Gym and combining them with fine-tuned SWE agents, the resolve rate further increased to 32.0% and 26.0% on SWE-Bench Verified and Lite, respectively, setting a new state-of-the-art for open-weight agents.\n- The paper analyzes the scaling behavior of both the training process and the inference-time scaling using verifiers, revealing continuous improvements with increased compute budget.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SWE-Gym/SWE-Gym"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    },
+    {
+        "title": "OneKE: A Dockerized Schema-Guided LLM Agent-based Knowledge Extraction System",
+        "authors": "Mengshu Sun, Lin Yuan, Kangwei Liu, Xiangyuan Ru, Yujie Luo",
+        "link": "https://arxiv.org/abs/2412.20005",
+        "github_repo": "https://github.com/zjunlp/OneKE",
+        "summary": "- OneKE is a dockerized schema-guided knowledge extraction system based on LLMs and a multi-agent design.\n- The system uses three agents: a Schema Agent, an Extraction Agent, and a Reflection Agent to handle various extraction scenarios.\n- It supports extraction from various data sources like web pages and PDF documents without fine-tuning and incorporates a configurable knowledge base to improve performance and allow error debugging.\n- Experimental results on CrossNER and NYT-11-HRL datasets demonstrate the efficacy of OneKE, with the Case Retrieval component of the Extraction Agent showing significant improvement.\n- Case studies on web news and book knowledge extraction further illustrate the practical applicability of OneKE.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/OneKE"
+        ],
+        "huggingface_urls": [],
+        "date": "2024-12-31"
+    }
+]

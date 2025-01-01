@@ -1,0 +1,219 @@
+[
+    {
+        "title": "Explanatory Instructions: Towards Unified Vision Tasks Understanding and Zero-shot Generalization",
+        "authors": "Tao Yuan, Yuxin Song, Yifan Sun, Xiu-Shen Wei, axxkaya",
+        "link": "https://arxiv.org/abs/2412.18525",
+        "github_repo": null,
+        "summary": "- This paper introduces \"Explanatory Instructions,\" a method for achieving zero-shot generalization in computer vision tasks by providing linguistic descriptions of transformations between images rather than just task labels.\n- The authors create a 12-million-triplet dataset of image-instruction-output pairs spanning diverse vision tasks and train an autoregressive vision-language model (AR-based VLM).\n- This AR-based VLM takes both images and explanatory instructions as input and demonstrates instruction-level zero-shot capabilities for seen tasks and strong zero-shot generalization for unseen tasks such as image editing, inpainting, and outpainting.\n- While demonstrating improvement over previous models in zero-shot generalization, the proposed model still lags behind specialized or vision generalist models on standard benchmarks, particularly in quantitative metrics for controllable image generation tasks like Canny-to-Image and HED-to-Image.\n- Qualitative results showcase its capacity for tasks like low-light enhancement, deraining, desnowing, and more by following previously unseen instructions, showing promise for flexible, unified vision task understanding.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Image",
+            "Text-to-Image",
+            "Zero-Shot Object Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "On the Compositional Generalization of Multimodal LLMs for Medical Imaging",
+        "authors": "Yonglin Deng, Weihong Wang, Rongsheng Wang, Junying Chen, Zhenyang Cai",
+        "link": "https://arxiv.org/abs/2412.20070",
+        "github_repo": "https://github.com/FreedomIntelligence/Med-MAT",
+        "summary": "- This paper introduces Med-MAT, a visual question answering (VQA) dataset designed to investigate compositional generalization (CG) in multimodal large language models (MLLMs) applied to medical imaging.\n- Med-MAT comprises 106 medical datasets categorized by modality, anatomical area, and task (MAT-Triplet), forming 53 subsets with 11 modalities, 14 anatomical areas, and 13 medical tasks.\n- Experiments demonstrate that MLLMs can leverage CG to understand unseen medical images, which is a key driver of the generalization observed in multi-task training.\n- Further analysis shows that CG supports data-efficient training with limited data and demonstrates consistent performance across different MLLM backbones.\n- The authors also explore CG between detection and classification tasks, finding that MLLMs can combine knowledge from both to improve classification accuracy.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/Med-MAT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Bringing Objects to Life: 4D generation from 3D objects",
+        "authors": "Gal Chechik, Dvir Samuel, Ori Malca, Ohad Rahamim",
+        "link": "https://arxiv.org/abs/2412.20422",
+        "github_repo": null,
+        "summary": "- This paper introduces 3to4D, a novel method for generating 4D (dynamic 3D) content from a given 3D object and a text prompt describing the desired motion.\n- The method first creates a static 4D Neural Radiance Field (NeRF) representation of the 3D object and then animates it using an image-to-video diffusion model, conditioned on the text prompt and rendered views of the 3D object.\n- It incorporates two enhancements: an incremental viewpoint selection protocol for promoting realistic movement and a masked Score Distillation Sampling (SDS) loss to focus optimization on the object.\n- Experimental results on the Google Scanned Objects (GSO) dataset show that 3to4D outperforms baseline methods adapted for this task, achieving up to three times better identity preservation (measured by LPIPS) while maintaining good visual quality and motion fidelity.\n- The proposed method effectively balances preserving the original object's identity with generating dynamic content according to the text prompt.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Efficiently Serving LLM Reasoning Programs with Certaindex",
+        "authors": "Zhongdongming Dai, Zheyu Fu, Siqi Zhu, Junda Chen, Yichao Fu",
+        "link": "https://arxiv.org/abs/2412.20993",
+        "github_repo": null,
+        "summary": "- Dynasor optimizes inference-time compute for LLM reasoning queries by tracking and scheduling requests within reasoning queries and using certaindex, a proxy that measures statistical reasoning progress.\n- Certaindex guides compute allocation dynamically, allocating more compute to hard queries, reducing compute for simpler ones, and terminating unpromising queries early.\n- Evaluated on diverse datasets and algorithms, Dynasor reduces compute by up to 50% in batch processing and sustains 3.3\u00d7 higher query rates or 4.7\u00d7 tighter latency SLOs in online serving.\n- Dynasor is implemented as a scheduling layer compatible with existing serving engines.\n- The system utilizes certaindex as a narrow interface between itself and the applications to support various current and future reasoning algorithms.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "TangoFlux: Super Fast and Faithful Text to Audio Generation with Flow Matching and Clap-Ranked Preference Optimization",
+        "authors": "Rafael Valle, Ambuj Mehrish, Zhifeng Kong, Navonil Majumder, Chia-Yu Hung",
+        "link": "https://arxiv.org/abs/2412.21037",
+        "github_repo": null,
+        "summary": "- TANGOFLUX, a 515M parameter text-to-audio (TTA) model based on a hybrid multimodal and diffusion transformer architecture, generates up to 30 seconds of 44.1kHz audio in 3.7 seconds on a single A40 GPU using rectified flows.\n- The model uses CLAP-Ranked Preference Optimization (CRPO), which iteratively generates synthetic audio preference data and employs CLAP as a proxy reward model to improve alignment with textual descriptions.\n- Evaluation on AudioCaps and a challenging out-of-distribution dataset reveals that TANGOFLUX achieves state-of-the-art performance across various objective metrics, including Frechet Distance, KL divergence, CLAP score, and Inception Score, outperforming models like Tango 2, AudioLDM 2, and Stable Audio Open.\n- Human evaluation further confirms TANGOFLUX's superior audio quality and strong alignment with textual prompts.\n- Ablation studies demonstrate the effectiveness of CRPO's online data generation, the use of CLAP as a reward model, and the improvement of LCRPO over LDPO-FM loss for preference optimization.",
+        "classification": [
+            "Text-to-Audio",
+            "Audio"
+        ],
+        "github_urls": [
+            "https://github.com/declare-lab/TangoFlux"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/declare-lab/TangoFlux",
+            "https://huggingface.co/spaces/declare-lab/TangoFlux",
+            "https://huggingface.co/datasets/declare-lab/CRPO"
+        ],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Edicho: Consistent Image Editing in the Wild",
+        "authors": "Ceyuan Yang, Qiuyu Wang, Yinghao Xu, Hao Ouyang, Qingyan Bai",
+        "link": "https://arxiv.org/abs/2412.21079",
+        "github_repo": "https://github.com/EzioBy/edicho",
+        "summary": "- Edicho is a training-free, plug-and-play method for consistent image editing in the wild, using explicit image correspondence to guide the editing process.\n- It leverages a correspondence-guided denoising process with attention manipulation and a modified classifier-free guidance (CFG) computation incorporating correspondence, along with feature fusion from unconditional embeddings for improved consistency and quality.\n- Unlike previous training-free methods relying on implicit correspondence from attention weights, Edicho utilizes pre-computed explicit correspondence for more robust and accurate feature transfer, effectively handling variations in lighting, background, perspective, and occlusions.\n- Experiments demonstrate superior performance in both qualitative and quantitative metrics for local and global editing tasks compared to existing state-of-the-art methods.\n- The approach is compatible with most diffusion-based editing methods such as ControlNet and BrushNet.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/EzioBy/edicho"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs",
+        "authors": "Jianhui Pang, Zhiwei He, Tian Liang, Jiahao Xu, Xingyu Chen",
+        "link": "https://arxiv.org/abs/2412.21187",
+        "github_repo": null,
+        "summary": "- This paper investigates the \"overthinking\" issue in large language models (LLMs), particularly those like OpenAI's o1, where excessive computational resources are used for simple problems.\n- The authors introduce novel efficiency metrics from both outcome (accuracy improvement relative to token usage) and process (diversity of reasoning strategies) perspectives to evaluate the rational use of computational resources.\n- They propose a self-training paradigm using the PRM12K dataset and strategies to mitigate overthinking by streamlining reasoning processes while preserving accuracy.\n- Experimental results on various mathematical reasoning datasets, including GSM8K, MATH500, GPQA, and AIME, demonstrate that the proposed approach reduces computational overhead without compromising model performance.\n-  For example, the approach reduces token output by 48.6% while maintaining accuracy on the MATH500 dataset when applied to QwQ-32B-Preview.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Facilitating large language model Russian adaptation with Learned Embedding Propagation",
+        "authors": "Daniil Chernyshev, RefalMachine",
+        "link": "https://arxiv.org/abs/2412.21140",
+        "github_repo": null,
+        "summary": "- This paper introduces Learned Embedding Propagation (LEP), a novel method for adapting large language models (LLMs) to new languages without requiring extensive instruction-tuning data.\n- LEP works by propagating learned embeddings from a pre-trained, instruction-tuned LLM in one language to a new LLM initialized with a vocabulary tailored for the target language.\n- The method was evaluated on Russian adaptation of Mistral-7B and LLaMa-3-8B using a new benchmark called Darumeru, specifically designed for evaluating text generation robustness in Russian.\n- Results show that LEP achieves competitive performance compared to existing models like OpenChat 3.5 and LLaMa-3-8B-Instruct, demonstrating its effectiveness in language adaptation while reducing costs associated with traditional instruction-tuning.\n- Further improvements were observed by calibrating the adapted models through self-instruct tuning and additional instruction-tuning steps, highlighting the potential of LEP for enhancing LLM performance beyond existing benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/RefalMachine/ruadapt",
+            "https://github.com/RefalMachine/llmtf_open"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/RefalMachine"
+        ],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "OneKE: A Dockerized Schema-Guided LLM Agent-based Knowledge Extraction System",
+        "authors": "Mengshu Sun, Lin Yuan, Kangwei Liu, Xiangyuan Ru, Yujie Luo",
+        "link": "https://arxiv.org/abs/2412.20005",
+        "github_repo": "https://github.com/zjunlp/OneKE",
+        "summary": "- OneKE is a dockerized schema-guided knowledge extraction system based on LLMs and a multi-agent design.\n- It supports various data formats (web, PDF) and domains (science, news) through different agents.\n- The system includes a configurable knowledge base for schema configuration and error debugging.\n- Evaluation on benchmark datasets and case studies demonstrate OneKE's efficacy and adaptability.\n- The system is open-source and supports different LLMs without fine-tuning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/OneKE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Slow Perception: Let's Perceive Geometric Figures Step-by-step",
+        "authors": "Liang Zhao, Jia Wang, Yumeng Li, Youyang Yin, Haoran Wei",
+        "link": "https://arxiv.org/abs/2412.20631",
+        "github_repo": null,
+        "summary": "- This paper introduces \"slow perception\" (SP), a novel two-stage approach for improving geometric figure parsing in computer vision.\n- SP first decomposes complex figures into basic point-line units and then uses a \"perceptual ruler\" to trace each line segment stroke-by-stroke, mimicking human perception.\n- This method addresses the limitations of current Large Vision Language Models (LVLMs) which struggle to accurately copy and understand complex geometric figures. \n- Experiments on a synthetic dataset (SP-1) and a real-world dataset of middle school exam figures show that SP improves F1-score by 6% compared to baseline methods.\n- The paper also finds an inference time scaling law where slower, more deliberate tracing leads to better performance.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/Ucas-HaoranWei/Slow-Perception"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "PERSE: Personalized 3D Generative Avatars from A Single Portrait",
+        "authors": "Hanbyul Joo, Inhee Lee, Hyunsoo Cha",
+        "link": "https://arxiv.org/abs/2412.21206",
+        "github_repo": null,
+        "summary": "- PERSE generates personalized, animatable 3D avatars from a single portrait image, allowing continuous and disentangled editing of facial attributes.\n- It leverages a novel pipeline to create a synthetic 2D video dataset with diverse attribute variations, which is used to train a 3D Gaussian Splatting-based avatar model.\n- To ensure smooth attribute interpolation, a latent space regularization technique is introduced, using interpolated 2D faces as supervision.\n- PERSE outperforms existing methods in reconstruction quality and identity preservation, as demonstrated by quantitative metrics and user studies on interpolated samples.\n-  Additionally, it offers efficient fine-tuning using Low-Rank Adaptation (LoRA) to integrate new facial attributes from real images.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hyunsoocha.github.io/perse/"
+        ],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+        "authors": "Navdeep Jaitly, Graham Neubig, Xingyao Wang, alsuhr, Jiayi-Pan",
+        "link": "https://arxiv.org/abs/2412.21139",
+        "github_repo": "https://github.com/SWE-Gym/SWE-Gym",
+        "summary": "- This paper introduces SWE-Gym, a new training environment for software engineering (SWE) agents designed to address the limitations of current resources, which often lack executable environments and reward signals.\n- SWE-Gym contains 2,438 real-world Python tasks from GitHub issues, each with a codebase, an executable runtime environment, unit tests, and a natural language task description.\n- The authors demonstrate that fine-tuning a 32B Qwen-2.5 language model with SWE-Gym can achieve state-of-the-art resolve rates of 32.0% and 26.0% on the SWE-Bench Verified and Lite test sets, respectively.\n- This involves an improvement of 19% compared to existing methods on these benchmarks.\n- This is further enhanced by training a verifier on agent trajectories, enabling inference-time scaling through candidate solution selection.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SWE-Gym/SWE-Gym"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    },
+    {
+        "title": "HumanEval Pro and MBPP Pro: Evaluating Large Language Models on Self-invoking Code Generation",
+        "authors": "Xiao-Ping Zhang, Arman Cohan, Yilun Zhao, Zhaojian Yu",
+        "link": "https://arxiv.org/abs/2412.21199",
+        "github_repo": null,
+        "summary": "- This paper introduces \"self-invoking code generation,\" a new task to evaluate LLMs' progressive reasoning and problem-solving skills by requiring them to solve a base problem and then use its solution to address a more complex related problem.\n- Three new benchmarks, HumanEval Pro, MBPP Pro, and BigCodeBench-Lite Pro, are created by extending existing datasets using a proposed general recipe and involve Deepseek-V2.5 for problem generation and human expert review.\n- Experiments on over 20 LLMs reveal that while models excel in traditional code generation, their performance declines significantly on self-invoking tasks, with even top models like o1-mini showing a substantial drop.\n- Instruction-tuned models exhibit only marginal improvements in self-invoking tasks compared to base models.\n- Analysis of failure modes highlights LLMs' struggle with generating code that can effectively self-invoke and suggests limitations in instruction-based fine-tuning for such complex tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/CodeEval-Pro/CodeEval-Pro"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-01"
+    }
+]

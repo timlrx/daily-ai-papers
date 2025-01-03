@@ -13619,5 +13619,230 @@
         ],
         "huggingface_urls": [],
         "date": "2025-01-02"
+    },
+    {
+        "title": "2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining",
+        "authors": "Yongliang Shen, Jiashuo Sun, Xin Li, Hang Zhang, Wenqi Zhang",
+        "link": "https://arxiv.org/abs/2501.00958",
+        "github_repo": "https://github.com/DAMO-NLP-SG/multimodal_textbook",
+        "summary": "- This paper introduces \"Textbook\", a large-scale, high-quality multimodal dataset designed for vision-language pretraining.\n- The dataset is constructed from 2.5 years of online instructional videos, totaling 22,000 class hours and covering subjects like mathematics, physics, and chemistry. \n- The videos are processed into an interleaved format of images and text, focusing on coherent context and knowledge density.\n- Experimental results demonstrate that models pretrained on \"Textbook\" achieve significant improvements on knowledge- and reasoning-intensive tasks, such as ScienceQA and MathVista.\n- The dataset improves few-shot performance, attributed to its video-centric interleaved design that enhances in-context learning capabilities.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/DAMO-NLP-SG/multimodal_textbook"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "VideoAnydoor: High-fidelity Video Object Insertion with Precise Motion Control",
+        "authors": "Xiang Bai, Sihui Ji, Xi Chen, Hao Luo, Yuanpeng Tu",
+        "link": "https://arxiv.org/abs/2501.01427",
+        "github_repo": null,
+        "summary": "- VideoAnydoor is a novel, end-to-end framework for high-fidelity video object insertion with precise motion control.\n- It leverages a text-to-video diffusion model combined with an ID extractor for preserving object identity and a pixel warper for fine-grained motion control and detail preservation. \n- A reweighted reconstruction loss and an image-video mixed training strategy are employed to further enhance insertion quality.\n- VideoAnydoor surpasses existing methods in qualitative and quantitative comparisons on various video editing tasks, including virtual try-on and face swapping.\n- This method enables zero-shot customization of video content without requiring task-specific fine-tuning.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://videoanydoor.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "CodeElo: Benchmarking Competition-level Code Generation of LLMs with Human-comparable Elo Ratings",
+        "authors": "Dayiheng Liu, Bo Zheng, Bowen Yu, Jiaxi Yang, Shanghaoran Quan",
+        "link": "https://arxiv.org/abs/2501.01257",
+        "github_repo": null,
+        "summary": "- This paper introduces CODEELO, a new benchmark for evaluating competition-level code generation capabilities of Large Language Models (LLMs).\n- CODEELO uses problems from the CodeForces platform, along with contest divisions, problem difficulty ratings, and problem algorithm tags. \n- The benchmark employs a unique evaluation method where solutions are submitted directly to the CodeForces platform, ensuring accurate judgments with special judge support and a consistent execution environment. \n- An Elo rating system is implemented to provide human-comparable ratings for LLMs based on their performance. \n- Initial evaluation results demonstrate that OpenAI's o1-mini and QwQ-32B-Preview models achieve high Elo ratings, outperforming most open-source models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/Qwen/CodeElo"
+        ],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "VideoRefer Suite: Advancing Spatial-Temporal Object Understanding with Video LLM",
+        "authors": "Boqiang Zhang, Zesen Cheng, Wentong Li, Hang Zhang, Yuqian Yuan",
+        "link": "https://arxiv.org/abs/2501.00599",
+        "github_repo": null,
+        "summary": "- The VideoRefer Suite is introduced, which consists of a new dataset (VideoRefer-700K), a model (VideoRefer), and a benchmark (VideoRefer-Bench) designed to improve the spatial-temporal object understanding capabilities of Video Large Language Models (LLMs).\n- VideoRefer, built upon VideoLLaMA2, incorporates a novel spatial-temporal object encoder that extracts pixel-level regional features within single frames and aggregates temporal information across multiple frames using a Temporal Token Merge Module.\n- The VideoRefer-700K dataset was created using a multi-agent data engine, incorporating diverse object-level instructions including descriptions, short captions, and multi-round question-answer pairs.\n- Experimental results demonstrate that VideoRefer outperforms existing generalist and specialist models on VideoRefer-Bench and a traditional video referring benchmark, HC-STVG, showing improved performance in metrics like subject correspondence, appearance and temporal description, and hallucination detection.\n- Moreover, VideoRefer also shows performance improvements on general video understanding benchmarks like Perception-Test, MVBench, and VideoMME, indicating its broader applicability.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "Reconstruction vs. Generation: Taming Optimization Dilemma in Latent Diffusion Models",
+        "authors": "Xinggang Wang, Jingfeng Yao",
+        "link": "https://arxiv.org/abs/2501.01423",
+        "github_repo": "https://github.com/hustvl/LightningDiT",
+        "summary": "- This paper introduces VA-VAE, a novel Vision Foundation model Aligned Variational AutoEncoder, and LightningDiT, an enhanced Diffusion Transformer framework, to address the optimization dilemma in latent diffusion models, where increasing the feature dimension of visual tokens improves reconstruction but hinders generation quality.\n- VA-VAE aligns the latent space with pre-trained vision foundation models during visual tokenizer training using Vision Foundation model alignment Loss (VF Loss), thereby improving the feature distribution of high-dimensional latent spaces.\n- LightningDiT incorporates improved training strategies and architectural designs based on DiT to fully exploit the potential of VA-VAE.\n- This integrated system achieves state-of-the-art performance (FID score of 1.35) on ImageNet 256x256 generation, showing a 21x convergence speedup (FID of 2.11 in 64 epochs) compared to the original DiT.\n- The proposed approach allows for faster convergence of Diffusion Transformers in high-dimensional latent spaces, enabling improved generation performance.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/hustvl/LightningDiT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "ProgCo: Program Helps Self-Correction of Large Language Models",
+        "authors": "Wenbo Su, Jiaheng Liu, Weixun Wang, Yanan Wu, Xiaoshuai Song",
+        "link": "https://arxiv.org/abs/2501.01264",
+        "github_repo": null,
+        "summary": "- ProgCo, a novel program-driven self-correction method for Large Language Models (LLMs), is introduced, comprising program-driven verification (ProgVe) and refinement (ProgRe).\n- ProgVe employs self-generated, self-executing pseudo-programs for enhanced verification logic and validation, while ProgRe uses dual reflection and refinement on both responses and verification programs to mitigate misleading feedback in complex reasoning.\n- Experiments across instruction-following and mathematical reasoning tasks demonstrates ProgCo's efficacy in achieving effective self-correction.\n- Combining ProgCo with real program tools further enhances performance.\n- ProgCo shows greater improvement in mathematical reasoning tasks compared to existing baselines, highlighting its effectiveness in complex reasoning scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "A3: Android Agent Arena for Mobile GUI Agents",
+        "authors": "Guozhi Wang, Liang Liu, Jiayu Zhang, Hanhao Li, Yuxiang Chai",
+        "link": "https://arxiv.org/abs/2501.01149",
+        "github_repo": null,
+        "summary": "- This paper introduces Android Agent Arena (A3), a new comprehensive evaluation platform for mobile GUI agents, designed to address the limitations of static frame evaluations in prior work.\n- A3 features 201 tasks across 21 widely used third-party apps, categorized into operation, single-frame query, and multi-frame query tasks, along with a larger action space for broader agent compatibility and real-time online evaluations.\n- The platform offers two evaluation methods: task-specific functions and an LLM-based evaluation system using GPT-40 and Gemini 1.5 Pro, which enables semi-autonomous and fully autonomous task evaluation.\n- Experimental results demonstrate that fine-tuned agents struggle in dynamic environments due to a lack of action history and self-correction abilities.\n- Business-level LLMs show potential for information query tasks but face challenges in coordinate-based actions, while specialized agents like AppAgent achieve higher success rates due to advanced reasoning and planning capabilities.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://yuxiangchai.github.io/Android-Agent-Arena/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "MapEval: A Map-Based Evaluation of Geo-Spatial Reasoning in Foundation Models",
+        "authors": "Md Hasebul Hasan, Md Tanvir Parvez, Md Tanvir Hassan, Mahir Labib Dihan, eunus",
+        "link": "https://arxiv.org/abs/2501.00316",
+        "github_repo": null,
+        "summary": "- This paper introduces MAPEVAL, a benchmark designed to evaluate the geo-spatial reasoning capabilities of foundation models.\n- MAPEVAL features three task types: textual, API-based, and visual, requiring models to process diverse geo-spatial contexts, perform compositional reasoning, and interact with map tools.\n- An evaluation of 28 prominent foundation models using MAPEVAL revealed that while models like Claude-3.5-Sonnet, GPT-40, and Gemini-1.5-Pro performed competitively, substantial performance gaps exist, especially in the API-based tasks, and all models fall short of human performance.\n- The benchmark includes 700 unique multiple-choice questions spanning locations across 180 cities and 54 countries.\n- Further analyses suggest that integrating external tools, like calculators, can enhance performance in specific sub-tasks, such as calculating straight-line distances and cardinal directions.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MapEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "Dynamic Scaling of Unit Tests for Code Reward Modeling",
+        "authors": "Sijia Luo, Jifan Yu, Jing Zhang, Xiaokang Zhang, KAKA22",
+        "link": "https://arxiv.org/abs/2501.01054",
+        "github_repo": null,
+        "summary": "- This paper introduces CodeRM-8B, a lightweight unit test generator designed for efficient and high-quality unit test scaling in code reward modeling.\n- The authors demonstrate that scaling the number of unit tests improves the quality of the reward signal, particularly for more complex problems, leading to better identification of correct code solutions.\n- CodeRM-8B is trained using a novel data synthesis pipeline that produces high-quality unit tests from existing code instruction-tuning datasets. It leverages supervised fine-tuning (SFT) on Llama3.1-8B and implements a dynamic scaling mechanism adapting to problem difficulty for improved efficiency.\n- Experimental results on HumanEval Plus, MBPP Plus, and LiveCodeBench show significant performance improvements across various models, with CodeRM-8B achieving gains of 18.43% for Llama3-8B and 3.42% for GPT-40-mini on HumanEval Plus, comparable to the much larger Llama3.1-70B model.\n- Dynamic unit test scaling further boosts performance by allocating more computation resources to harder problems, leading to an additional 0.5% performance gain on MBPP Plus under fixed computational cost.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://code-reward-model.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction",
+            "https://huggingface.co/datasets/BAAI/TACO"
+        ],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "MLLM-as-a-Judge for Image Safety without Human Labeling",
+        "authors": "Felix Juefei-Xu, Xiaowen Lin, Shiyu Zhao, Shuming Hu, Zhenting Wang",
+        "link": "https://arxiv.org/abs/2501.00192",
+        "github_repo": null,
+        "summary": "- This paper introduces CLUE (Constitutional MLLM JUdgE), a novel framework for zero-shot image safety judgment using Multimodal Large Language Models (MLLMs) and a predefined safety constitution (a set of safety rules).\n- CLUE addresses challenges like subjective rules, complex constitutions, and model biases by objectifying rules, assessing rule-image relevance using contrastive models, and employing debiased token probabilities with logical precondition chains for judgments.\n- The method includes a deeper reasoning mechanism with cascaded chain-of-thought processes, if necessary, offering high confidence and explanations.\n- The experiments demonstrate CLUE's significant improvement over zero-shot and fine-tuning baselines for image safety classification using objective rules.\n- For example, CLUE with InternVL2-76B achieves 95.9% recall, 94.8% accuracy, and an F1-score of 0.949 on a newly created benchmark.",
+        "classification": [
+            "Multimodal",
+            "Zero-Shot Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+        "authors": "Jiajun Zhu, Yuehao Wang, Ruisi Cai, Peihao Wang, pragsri8",
+        "link": "https://arxiv.org/abs/2501.00658",
+        "github_repo": "https://github.com/VITA-Group/SSM-Bottleneck",
+        "summary": "- This paper identifies two key limitations of State Space Models (SSMs): strong recency bias, hindering recall of distant information and robustness, and over-smoothing in deeper architectures, making token representations indistinguishable.\n- The authors theoretically demonstrate the recency bias of SSMs, showing that influential scores between tokens decay exponentially with distance, and empirically validate this through a long-context retrieval task, where SSMs struggle compared to Transformers.\n- Over-smoothing is revealed through scaling experiments and theoretical analysis, demonstrating that SSM layers diminish pairwise differences between memory states, causing performance to plateau and decline with increasing depth.\n- A novel \"polarization\" technique is proposed, reserving dedicated channels in state transition matrices for values of zero and one, simultaneously addressing both recency and over-smoothing.\n- Experiments on associative recall demonstrate that polarization enhances long-range recall accuracy and enables SSMs to benefit from deeper architectures.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/VITA-Group/SSM-Bottleneck"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "MapQaTor: A System for Efficient Annotation of Map Query Datasets",
+        "authors": "Md Rizwan Parvez, Mohammed Eunus Ali, mahirlabibdihan",
+        "link": "https://arxiv.org/abs/2412.21015",
+        "github_repo": null,
+        "summary": "- MAPQATOR is a web application designed to streamline the creation of map-based question answering (QA) datasets by integrating with any map API in a plug-and-play manner, reducing manual effort.\n- It offers visualization tools and caches API responses for consistent ground truth and data reliability, enabling complex geospatial reasoning evaluation and improvement.\n- Evaluation shows MAPQATOR speeds up annotation by at least 30 times compared to manual methods.\n- The system addresses the gap in efficiently annotating language-map reasoning tasks, aiding in developing reliable LLM training datasets.\n- MAPQATOR facilitates better geospatial understanding by centralizing data retrieval, annotation, and visualization, benefiting tasks like complex map reasoning.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/mapqator/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "SeedVR: Seeding Infinity in Diffusion Transformer Towards Generic Video Restoration",
+        "authors": "Ceyuan Yang, Yang Zhao, Meng Wei, Zhijie Lin, Jianyi Wang",
+        "link": "https://arxiv.org/abs/2501.01320",
+        "github_repo": null,
+        "summary": "- SeedVR, a novel diffusion transformer model designed for generic video restoration, tackles resolution constraints and long video lengths effectively using shifted window attention and variable-sized windows near boundaries.\n- A causal video variational autoencoder (CVVAE) compresses the input video, significantly reducing computational costs while maintaining high reconstruction quality.\n- Trained on a large-scale dataset of images and videos with native and varying resolutions using a multi-stage progressive training strategy, the model is robust to diverse real-world video restoration tasks. \n- SeedVR surpasses existing methods in speed and performance on various benchmarks, including synthetic, real-world, and AI-generated videos.\n- Notably, it's at least twice as fast as other diffusion-based video restoration methods while having significantly more parameters (2.48B), and achieves state-of-the-art results across diverse benchmarks.",
+        "classification": [
+            "Text-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler"
+        ],
+        "date": "2025-01-03"
+    },
+    {
+        "title": "SeFAR: Semi-supervised Fine-grained Action Recognition with Temporal Perturbation and Learning Stabilization",
+        "authors": "Haozhou Sun, Zihan Jia, Zhenbang Xu, Haodong Chen, Yongle Huang",
+        "link": "https://arxiv.org/abs/2501.01245",
+        "github_repo": "https://github.com/KyleHuang9/SeFAR",
+        "summary": "- SeFAR, a semi-supervised fine-grained action recognition framework, is introduced, utilizing dual-level temporal elements modeling and moderate temporal perturbation for enhanced performance.\n- The model captures both fine-grained temporal details and broader temporal context through its dual-level modeling.\n- A novel strong augmentation strategy incorporating moderate temporal perturbation within fine-grained elements is proposed, while preserving temporal order in context elements for consistency regularization.\n- An adaptive regulation mechanism stabilizes training by dynamically adjusting loss weights based on the distribution of teacher model predictions.\n- SeFAR achieves state-of-the-art results on FineGym, FineDiving, UCF101, and HMDB51 datasets and demonstrates improved fine-grained understanding abilities for Multimodal Large Language Models (MLLMs).",
+        "classification": [
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/KyleHuang9/SeFAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-03"
     }
 ]

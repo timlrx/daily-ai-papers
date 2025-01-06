@@ -1,0 +1,117 @@
+[
+    {
+        "title": "EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation",
+        "authors": "jzzzzk, Shengcong, lyuukuu, pathcn, SiyuanH",
+        "link": "https://arxiv.org/abs/2501.01895",
+        "github_repo": null,
+        "summary": "- ENERVERSE is a novel framework for generating embodied future spaces for robotic manipulation tasks, integrating chunk-wise autoregressive video diffusion with a sparse memory context for long-range sequence generation and a Free Anchor View (FAV) space for flexible perspectives and enhanced 3D understanding.\n- It uses convolutional and bidirectional attention for local chunk modeling and a chunkwise unidirectional generative paradigm with sparse memory for long sequences, theoretically enabling infinite sequence generation.\n- A data engine pipeline integrates a generative model and 4D Gaussian Splatting (4DGS) to address data scarcity and the sim-to-real gap by iteratively enhancing data quality and diversity.\n- Evaluations on RT-1 dataset for video generation quality and LIBERO benchmark for policy performance demonstrates state-of-the-art results, particularly in long-range manipulation tasks, outperforming methods like DynamicCrafter and OpenVLA.\n- The model's effectiveness is further validated by real-world experiments with AgiBot robots in industrial scenarios requiring precise manipulation.",
+        "classification": [
+            "Robotics",
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-06"
+    },
+    {
+        "title": "VITA-1.5: Towards GPT-4o Level Real-Time Vision and Speech Interaction",
+        "authors": "hertin, shenyunhang, yifanzhang114, xiongwang, linhaojia13",
+        "link": "https://arxiv.org/abs/2501.01957",
+        "github_repo": "https://github.com/VITA-MLLM/VITA",
+        "summary": "- VITA-1.5 is a multimodal large language model (MLLM) that integrates vision, language, and speech modalities using a three-stage training approach, enabling real-time vision and speech interaction.\n- The model architecture consists of vision and audio encoders with adapters connected to an LLM, and an end-to-end speech generation module, eliminating the need for external ASR and TTS systems.\n- The training process involves vision-language training, followed by audio input tuning and audio output tuning stages which aims at minimizing the training conflicts between the multiple modalities.\n- VITA-1.5 achieves comparable performance to state-of-the-art models on image and video understanding benchmarks and exhibits significant improvements in speech capabilities.\n- Evaluation on ASR benchmarks shows that VITA-1.5 outperforms specialized speech models in both Mandarin and English tasks, highlighting the models ability to integrate effective real-time vision and audio-speech interaction.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Automatic Speech Recognition",
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/VITA-MLLM/VITA"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenGVLab/InternViT-300M-448px"
+        ],
+        "date": "2025-01-06"
+    },
+    {
+        "title": "Virgo: A Preliminary Exploration on Reproducing o1-like MLLM",
+        "authors": "jrwen, whenfra, yifanli, JohnCage, Richard1999",
+        "link": "https://arxiv.org/abs/2501.01904",
+        "github_repo": "https://github.com/RUCAIBox/Virgo",
+        "summary": "- This paper introduces Virgo, a multimodal slow-thinking system designed to enhance the reasoning capabilities of Multimodal Large Language Models (MLLMs) for complex visual tasks.\n- The core approach involves fine-tuning a capable MLLM (Qwen2-VL-72B-Instruct) with a small amount of textual long-form thought data, hypothesizing that slow-thinking capacity is primarily associated with the language component and can transfer across modalities.\n- Experimental results on MathVerse, MathVision, OlympiadBench, and MMMU benchmarks demonstrate that Virgo achieves competitive performance compared to commercial reasoning systems, sometimes even surpassing them.\n- It was found that textual reasoning data is generally more effective than visual reasoning data for improving the reasoning ability of the MLLMs.\n- Further analysis suggests that harder tasks benefit more from long thought reasoning, but excessively long reasoning processes may lead to performance degradation; moreover, current visual instruction generation methods do not show significant advantages over textual ones.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/RUCAIBox/Virgo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-06"
+    },
+    {
+        "title": "Graph Generative Pre-trained Transformer",
+        "authors": "XiaolinXu, y6q9, RArchered, Spony, xchen16",
+        "link": "https://arxiv.org/abs/2501.01073",
+        "github_repo": null,
+        "summary": "- This paper introduces the Graph Generative Pre-trained Transformer (G2PT), an auto-regressive model that learns graph structures by predicting the next token in a sequence representing nodes and edges.\n- The model uses a novel sequence-based representation to efficiently encode graph data and employs a transformer decoder architecture for sequence learning.\n- G2PT is shown to achieve superior performance in graph generation tasks compared to existing methods, especially in molecule generation.\n- For downstream tasks like goal-oriented generation and graph property prediction, fine-tuning strategies are proposed, further demonstrating the model's versatility.\n- Extensive experiments on molecule and graph datasets show G2PT's strong performance and generalizability across diverse downstream tasks.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-06"
+    },
+    {
+        "title": "VisionReward: Fine-Grained Multi-Dimensional Human Preference Learning for Image and Video Generation",
+        "authors": "Jiajun Xu, Yuanming Yang, Jiale Cheng, Yu Huang, xujz0703",
+        "link": "https://arxiv.org/abs/2412.21059",
+        "github_repo": "https://github.com/THUDM/VisionReward",
+        "summary": "- This paper introduces VisionReward, a fine-grained, multi-dimensional reward model for aligning text-to-image and text-to-video generation models with human preferences.\n- VisionReward decomposes human preferences into multiple dimensions, each represented by a series of judgment questions that are linearly weighted and summed to produce an interpretable score. \n-  It surpasses existing methods in preference prediction, particularly in video assessment, outperforming VideoScore by 17.2%.\n- A multi-objective preference learning algorithm (MPO) is also introduced to address the issue of confounding factors within preference data and optimize visual generation models.\n- The authors' approach surpasses existing image and video scoring methods based on both machine metrics and human evaluation.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/VisionReward"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-06"
+    },
+    {
+        "title": "BoxingGym: Benchmarking Progress in Automated Experimental Design and Model Discovery",
+        "authors": "Louise Li, Lyle Goodyear, ngoodman, michaelyli, obiwan96",
+        "link": "https://arxiv.org/abs/2501.01540",
+        "github_repo": null,
+        "summary": "- BoxingGym, a new benchmark, has been introduced to evaluate the performance of autonomous agents in experimental design and model discovery within a scientific context.\n- The benchmark uses 10 simulated environments based on real-world scientific models, allowing agents to actively experiment and revise theories based on data.\n- Evaluation metrics include Expected Information Gain for experiment design and a communication-based approach where an agent's explanation enables a novice agent to make predictions for model discovery.\n- Initial experiments show that current LLMs, augmented or not with statistical modeling capabilities, struggle with both experimental design and model discovery.\n- The benchmark aims to promote research on agents capable of iterative model discovery through active experimentation and communication.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/kanishkg/boxing-gym/tree/v0.1.0-beta"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-06"
+    },
+    {
+        "title": "LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models",
+        "authors": "anoperson, Franck-Dernoncourt, ryanrossi, ntnghia1811, Hieuman",
+        "link": "https://arxiv.org/abs/2501.00874",
+        "github_repo": null,
+        "summary": "- LUSIFER is a novel zero-shot approach that adapts English LLM-based embedding models for multilingual tasks without requiring explicit multilingual supervision.\n- It leverages XLM-R's multilingual representations and a learnable connector to transfer language understanding to English-optimized LLM embedding models.\n- Experimental results on 123 datasets across 14 languages show a significant performance increase, averaging 3.19 points across all tasks, with substantial gains for medium and low-resource languages.\n- In cross-lingual scenarios involving over 100 languages, LUSIFER surpasses existing English-centric models by 5.75 points on average.\n- This approach enhances multilingual representation capabilities without the need for explicit multilingual supervision.",
+        "classification": [
+            "Natural Language Processing",
+            "Sentence Similarity",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/hieum98/lusifer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-06"
+    }
+]

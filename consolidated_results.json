@@ -14184,5 +14184,200 @@
             "https://huggingface.co/bytedance-research/ToolHop"
         ],
         "date": "2025-01-07"
+    },
+    {
+        "title": "REINFORCE++: A Simple and Efficient Approach for Aligning Large Language Models",
+        "authors": "chuyi777",
+        "link": "https://arxiv.org/abs/2501.03262",
+        "github_repo": "https://github.com/OpenRLHF/OpenRLHF",
+        "summary": "- REINFORCE++ is an enhanced version of the REINFORCE algorithm designed for aligning large language models (LLMs) with human preferences by incorporating key optimizations from Proximal Policy Optimization (PPO) while eliminating the need for a critic network.\n- The approach focuses on simplicity, training stability, and efficiency.\n- Empirical evaluations demonstrate that REINFORCE++ exhibits superior stability compared to Group Relative Policy Optimization (GRPO) and achieves higher computational efficiency than PPO while maintaining comparable performance.\n- REINFORCE++ integrates token-level KL penalties and a PPO-clip loss to enhance training stability, and it uses mini-batch updates with reward normalization, clipping, and scaling for efficiency.\n- Experiments were conducted on general and mathematical domains, showing that REINFORCE++ effectively addresses reward and output length hacking issues while improving reward increase per unit KL divergence.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/OpenRLHF/OpenRLHF"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenRLHF/Llama-3-8b-sft-mixture",
+            "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+            "https://huggingface.co/datasets/OpenRLHF/prompt-collection-v0.1",
+            "https://huggingface.co/datasets/OpenRLHF/preference_700K",
+            "https://huggingface.co/datasets/meta-math/MetaMathQA"
+        ],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models",
+        "authors": "Lefan Wang, Weihan Wang, Zhuoyi Yang, LiquidAmmonia, wenyi",
+        "link": "https://arxiv.org/abs/2501.02955",
+        "github_repo": null,
+        "summary": "- This paper introduces MotionBench, a new benchmark designed to evaluate the fine-grained motion comprehension capabilities of video understanding models.\n- MotionBench consists of 8,052 questions across six motion-related categories, sourced from diverse web videos, public datasets, and synthetic videos, addressing a gap in existing benchmarks.\n- Experimental results reveal that current state-of-the-art Vision Language Models (VLMs) perform poorly on MotionBench, struggling to understand subtle motions, often achieving accuracy below 60%.\n- To address this, the authors propose a novel Through-Encoder (TE) Fusion method, enhancing video feature representation by deeply integrating fusion within the visual encoder.\n- TE Fusion achieves state-of-the-art performance on MotionBench, demonstrating particular advantages in high compression ratio scenarios, outperforming existing feature compression methods on other video understanding benchmarks.",
+        "classification": [
+            "Visual Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://motion-bench.github.io"
+        ],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+        "authors": "Yang Feng, Zhe Yang, Qingkai Fang, Shaolei Zhang",
+        "link": "https://arxiv.org/abs/2501.03895",
+        "github_repo": "https://github.com/ictnlp/LLaVA-Mini;",
+        "summary": "- LLaVA-Mini is an efficient large multimodal model (LMM) that minimizes the number of vision tokens while maintaining performance comparable to larger models like LLaVA.\n- It introduces a modality pre-fusion module to combine visual and textual information before compression, enabling the model to use only one vision token per image or video frame.\n- LLaVA-Mini incorporates a query-based compression module to reduce the number of vision tokens, leading to significant improvements in computational efficiency (77% FLOPs reduction), inference speed (2.92x faster), and memory usage.\n- Experiments across 11 image and 7 video benchmarks demonstrate LLaVA-Mini's ability to achieve comparable performance to LLaVA with just 1 vision token instead of 576, even on high-resolution images and long videos.\n- It also allows for processing long videos exceeding 10,000 frames on a 24GB GPU, a significant advancement in efficient real-time multimodal interaction.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ictnlp/LLAVA-Mini"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/ICTNLP/1lava-mini-llama-3.1-8b"
+        ],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "Cosmos World Foundation Model Platform for Physical AI",
+        "authors": "Yogesh Balaji, Maciej Bala, Arslan Ali, Niket Agarwal, NVIDIA",
+        "link": "https://arxiv.org/abs/2501.03575",
+        "github_repo": "https://github.com/NVIDIA/Cosmos",
+        "summary": "- NVIDIA introduces the Cosmos World Foundation Model (WFM) Platform, a comprehensive suite of tools for building customizable world models designed for Physical AI applications.\n- The platform offers pre-trained WFMs based on transformer architectures for both diffusion and autoregressive approaches, trained on a massive dataset of 100M video clips and 20M hours of video.\n- Cosmos WFM introduces innovations like a video data curation pipeline, causal video tokenizers for efficient representation, and techniques for scaling model training with joint image and video training on a 10,000-GPU cluster.\n- The platform also includes a diffusion decoder to enhance autoregressive model generation, a prompt upsampler, and a robust guardrail system for safety.\n- Evaluation demonstrates state-of-the-art performance in various downstream tasks including camera control for 3D world generation, robotic manipulation through instruction following and action conditioning, and multi-view generation for autonomous driving scenarios, outperforming existing methods like VideoLDM and CamCo.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/NVlabs/ShotBench",
+            "https://github.com/NVIDIA/Cosmos-Tokenizer",
+            "https://github.com/NVIDIA/Cosmos",
+            "https://github.com/pytorch-labs/gpt-fast"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos",
+        "authors": "Shilin Xu, Zilong Huang, Tao Zhang, Xiangtai Li, HarborYuan",
+        "link": "https://arxiv.org/abs/2501.04001",
+        "github_repo": null,
+        "summary": "- Sa2VA is a novel unified model for dense grounded understanding of images and videos, integrating the Segment Anything Model 2 (SAM-2) with Large Language and Vision Assistant (LLaVA)-like Multimodal Large Language Models (MLLMs).\n- This architecture unifies text, image, and video data within a shared token space, enabling instruction-guided mask generation by SAM-2, which facilitates grounded multimodal understanding.\n- Sa2VA supports various tasks such as image and video conversations, referring image/video segmentation, and grounded caption generation through a single-shot instruction-tuning process. \n- The model achieves state-of-the-art performance across multiple tasks, including referring video object segmentation, outperforming previous methods by a significant margin on the Ref-SAV dataset (over 15% under zero-shot settings).\n-  A key contribution is the introduction of Ref-SAV, a new large-scale dataset for referring video segmentation, which consists of more than 72,000 video object expressions. ",
+        "classification": [
+            "Multimodal",
+            "Image Segmentation",
+            "Visual Question Answering",
+            "Video Classification",
+            "Mask Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/ByteDance/Sa2VA-4B"
+        ],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control",
+        "authors": "Zhiyang Dou, Jiahao Lu, Rui Yan, Zekai Gu, pengHTYX",
+        "link": "https://arxiv.org/abs/2501.03847",
+        "github_repo": "https://github.com/IGL-HKUST/DiffusionAsShader",
+        "summary": "- DaS, a 3D-aware video diffusion model, introduces versatile video control by leveraging 3D tracking videos as control signals.\n- DaS uses a transformer-based latent diffusion model with a variational autoencoder (VAE), where the 3D tracking video is processed by a trainable copy of the denoising DiT.\n- The 3D tracking videos, generated from colored dynamic 3D points, enhance temporal consistency and enable precise control over various tasks such as mesh-to-video generation, camera control, motion transfer, and object manipulation.\n- Experiments demonstrate DaS's superior performance in camera control and motion transfer compared to existing methods.\n- DaS exhibits strong control capabilities across diverse tasks after being fine-tuned on less than 10k videos using 8 H800 GPUs for only 3 days.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/IGL-HKUST/DiffusionAsShader"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "MoDec-GS: Global-to-Local Motion Decomposition and Temporal Interval Adjustment for Compact Dynamic 3D Gaussian Splatting",
+        "authors": "Jihyong Oh, Won-Sik Cheong, Jun Young Jeong, Joonsoo Kim, Sangwoon Kwak",
+        "link": "https://arxiv.org/abs/2501.03714",
+        "github_repo": null,
+        "summary": "- MoDec-GS, a memory-efficient 3D Gaussian Splatting framework, reconstructs novel views from videos containing complex motion using Global-to-Local Motion Decomposition (GLMD).\n- GLMD employs Global Anchor Deformation (GAD) for global motion, deforming the position and attributes of anchors within a Global Canonical Scaffold-GS, and Local Gaussian Deformation (LGD) refines local motion by explicitly deforming reconstructed 3D Gaussians using a shared local hexplane.\n- Temporal Interval Adjustment (TIA) automatically controls the temporal intervals of each Local Canonical Scaffold-GS during training without pre-computed motion data, optimizing representation based on scene motion complexity.\n- MoDec-GS significantly reduces model size while maintaining or improving rendering quality compared to existing methods based on experiments of three monocular video datasets.\n- Evaluation on the iPhone, HyperNeRF, and Nvidia datasets demonstrates an average 70% reduction in model size and improved PSNR and SSIM while retaining comparable LPIPS scores.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+        "authors": "Hongyu Lin, Jia Zheng, Hao Kong, Xinyan Guan, Forceless",
+        "link": "https://arxiv.org/abs/2501.03936",
+        "github_repo": "https://github.com/icip-cas/PPTAgent",
+        "summary": "- PPTAgent, a novel framework, redefines automatic presentation generation as an interactive, edit-based workflow using both a document and reference presentation as inputs.\n- The two-stage framework first analyzes reference presentations for structural patterns and content through slide clustering and schema extraction, and then generates new slides via code actions, ensuring consistency and alignment through feedback mechanisms.\n- PPTAgent introduces PPT Eval, a comprehensive evaluation framework for presentation quality across three dimensions: Content, Design, and Coherence, using a multi-dimensional LLM-as-a-judge approach.\n- Experimental results demonstrate that PPTAgent outperforms current end-to-end text-generation methods, achieving a 97.8% success rate and a 3.67 average PPT Eval score across three dimensions: Content, Design, and Coherence, indicating high-quality presentation generation.\n- A new presentation dataset Zenodo10K consisting of 10,448 presentations with diverse domains is collected from Zenodo.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/icip-cas/PPTAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "MagicFace: High-Fidelity Facial Expression Editing with Action-Unit Control",
+        "authors": "Guoying Zhao, Huai-Qian Khor, Xingxun Jiang, Tuomas Varanka, Mengting Wei",
+        "link": "https://arxiv.org/abs/2501.02260",
+        "github_repo": "https://github.com/weimengting/MagicFace",
+        "summary": "- MagicFace is a novel diffusion-based model for high-fidelity facial expression editing that leverages Action Units (AUs) for precise and localized control.\n- The model architecture comprises a denoising UNet conditioned on AU variations, an ID encoder to preserve identity details through self-attention, and an Attribute Controller to maintain background and pose consistency.\n- MagicFace outperforms existing facial expression editing methods in terms of AU accuracy, identity preservation, and image similarity.\n- The model exhibits strong generalization to out-of-domain images and characters with unseen AUs and visual styles, allowing for flexible and extreme expression editing.\n- MagicFace utilizes AU dropout during training with classifier-free guidance, providing control over expression intensity",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/weimengting/MagicFace"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5"
+        ],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "Magic Mirror: ID-Preserved Video Generation in Video Diffusion Transformers",
+        "authors": "Zexin Yan, Bohao Peng, Bin Xia, Yaoyang Liu, julianjuaner",
+        "link": "https://arxiv.org/abs/2501.03931",
+        "github_repo": "https://github.com/dvlab-research/MagicMirror/",
+        "summary": "- Magic Mirror is a novel framework for generating identity-preserved videos using a dual-branch facial feature extractor, a lightweight cross-modal adapter, and a two-stage training strategy.\n- The dual-branch extractor captures both identity and structural facial features, which are then integrated with text embeddings through a cross-modal adapter with Conditioned Adaptive Normalization (CAN).\n- The two-stage training strategy involves pre-training on image data for robust identity representation and fine-tuning on video data for temporal consistency.\n- This method leverages Video Diffusion Transformers and outperforms existing methods in generating high-quality videos with dynamic motion while maintaining strong identity consistency.\n- Experimental results demonstrate superior performance across multiple metrics, including facial similarity, motion dynamics, and text alignment, without requiring per-identity fine-tuning.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/dvlab-research/MagicMirror/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-08"
+    },
+    {
+        "title": "Dolphin: Closed-loop Open-ended Auto-research through Thinking, Practice, and Feedback",
+        "authors": "Tao Chen, Botian Shi, Xiangchao Yan, Jiakang Yuan, BoZhang",
+        "link": "https://arxiv.org/abs/2501.03916",
+        "github_repo": null,
+        "summary": "- DOLPHIN is a closed-loop, open-ended automatic research framework designed to automate the scientific research process, encompassing idea generation, experimental verification, and feedback.\n- It retrieves and ranks relevant papers based on topic and task attributes, generates novel research ideas guided by these papers, filters them for novelty and independence, and formulates experimental plans using LLMs.\n- DOLPHIN automatically generates and debugs code using an exception-traceback-guided process and analyzes experimental results to provide feedback for subsequent idea generation rounds.\n- Experimental results on benchmarks like CIFAR-100, ModelNet40, and SST-2 show that DOLPHIN generates ideas that improve performance over baselines and, in some cases, achieves state-of-the-art results, demonstrating its potential for automated research.\n-  DOLPHIN automatically generated methods based on PointNet that showed comparable performance to human-designed state-of-the-art 3D classification methods on ModelNet40.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Zero-Shot Object Detection",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-08"
     }
 ]

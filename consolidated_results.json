@@ -14379,5 +14379,162 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-01-08"
+    },
+    {
+        "title": "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+        "authors": "Youran Sun, Yifei Liu, Xinyu Guan, J-shang, lynazhang",
+        "link": "https://arxiv.org/abs/2501.04519",
+        "github_repo": "https://github.com/microsoft/rStar",
+        "summary": "- rStar-Math is a novel framework that allows smaller language models to achieve state-of-the-art mathematical reasoning capabilities comparable to OpenAI's models.\n- It employs Monte Carlo Tree Search (MCTS) with a math policy SLM and a process reward model (PRM), and introduces innovations in data synthesis, reward modeling, and self-evolution.\n- A code-augmented chain-of-thought data synthesis method generates verifiable reasoning steps, and a process preference model (PPM) is trained using a pairwise ranking loss, eliminating the need for precise step-level reward annotation.\n- The system iteratively evolves the policy SLM and PPM to improve reasoning capabilities without relying on distillation from larger models.\n- Evaluations on various benchmarks show significant performance boosts, rivaling or exceeding OpenAI ol on competition-level problems, even with smaller model sizes.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/rStar"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "URSA: Understanding and Verifying Chain-of-thought Reasoning in Multimodal Mathematics",
+        "authors": "Xinzhe Ni, Yiyao Yu, Yifan Wang, fun6668, AntimageTHU",
+        "link": "https://arxiv.org/abs/2501.04686",
+        "github_repo": null,
+        "summary": "- This paper introduces URSA-7B, a multimodal large language model (MLLM) designed for enhanced mathematical reasoning, using a three-module synthesis strategy integrating chain-of-thought (CoT) distillation, trajectory format rewriting, and format unification for training data creation.\n- The model architecture comprises a hybrid vision encoder (SAM-B and SigLIP-L) combined with Qwen2.5-Math-7B-Instruct and trained with an MLP projector aligner between the vision and language models.\n- URSA-7B achieves state-of-the-art performance on several multimodal mathematical reasoning benchmarks, including MathVista, MathVerse, and DYNAMATH, outperforming other open-source models and some closed-source models.\n- For test-time scaling, a dual-view process supervision data synthesis strategy is proposed, generating the DualMath-1.1M dataset and URSA-RM-7B, a verifier model that improves URSA-7B's reasoning path selection and accuracy.\n- URSA-RM-7B shows strong out-of-distribution (OOD) verification capabilities, particularly on the Multimath-7B CoT solutions, indicating improved robustness and generalisation in multimodal mathematical reasoning",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Though",
+        "authors": "Kanishk Gandhi, Charlie Snell, Violet Xiang, nlile, Asap7772",
+        "link": "https://arxiv.org/abs/2501.04682",
+        "github_repo": null,
+        "summary": "- This paper proposes Meta Chain-of-Thought (Meta-CoT), a framework extending traditional Chain-of-Thought (CoT) by explicitly modeling the underlying reasoning process.\n- Meta-CoT models the latent \"thinking\" process involved in complex reasoning, addressing the limitations of traditional CoT in capturing non-linear, iterative, and latent exploration and verification.\n- Empirical evidence from state-of-the-art models like OpenAI's \"o1\" and DeepSeek-R1 shows behaviors consistent with internalized search, supporting the Meta-CoT hypothesis.\n- The authors outline a training pipeline for Meta-CoT, incorporating instruction tuning with linearized search traces and reinforcement learning.\n-  A \"Big MATH\" project is introduced, aiming to create a dataset of over 1,000,000 verifiable math problems to facilitate research in this area.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "Agent Laboratory: Using LLM Agents as Research Assistants",
+        "authors": "Jialian Wu, Ximeng Sun, Ze Wang, Yusheng Su, Samuel Schmidgall",
+        "link": "https://arxiv.org/abs/2501.04227",
+        "github_repo": null,
+        "summary": "- This paper introduces Agent Laboratory, an LLM-based autonomous framework designed to accelerate the research process in machine learning by completing literature reviews, conducting experiments, and writing research reports.\n- The framework uses a pipeline of specialized LLM agents and accepts a human-provided research idea as input, producing a code repository and a research report as output, and allows for human feedback and guidance at each stage.\n- Agent Laboratory was evaluated with different LLMs, and it was found that OpenAI's o1-preview model generated the best research outcomes, and that the generated machine learning code is able to achieve state-of-the-art performance compared to existing methods.\n- Furthermore, human feedback was found to greatly improve the research quality, and Agent Laboratory decreased research costs by 84% compared to other autonomous research methods.\n- It was found that Agent Laboratory is effective at creating viable ML experiments and reducing the required effort for researchers.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "LLM4SR: A Survey on Large Language Models for Scientific Research",
+        "authors": "Xinya Du, Wei Yang, Ziming Luo, Ason-jay, ZonglinY",
+        "link": "https://arxiv.org/abs/2501.04306",
+        "github_repo": "https://github.com/du-nlp-lab/LLM4SR",
+        "summary": "- This survey paper explores the transformative role of Large Language Models (LLMs) in the scientific research process, covering hypothesis discovery, experiment planning and implementation, scientific writing, and peer reviewing.\n- The paper analyzes how LLMs contribute to each stage, summarizing methodologies, benchmarks, and evaluation methods, and identifying current challenges and future research directions.\n- It provides a comprehensive overview of LLM applications across the entire scientific workflow, unlike previous surveys that focused on specific LLM capabilities or individual research stages.\n- The survey identifies key components and trends in each application area, such as feedback modules in hypothesis discovery, agent-based automation in experiment implementation, and multi-model architectures in peer review generation.\n- The authors conclude that while LLMs face limitations in areas like planning, prompt robustness, and domain-specific expertise, their ongoing development holds immense potential to revolutionize scientific research by enhancing productivity, fostering innovation, and promoting collaboration.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/du-nlp-lab/LLM4SR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "GeAR: Generation Augmented Retrieval",
+        "authors": "Hao Sun, Yuefeng Zhan, Jianfeng Liu, Shaohan Huang, noobimp",
+        "link": "https://arxiv.org/abs/2501.02772",
+        "github_repo": null,
+        "summary": "- This paper introduces Generation Augmented Retrieval (GeAR), a novel retrieval method that incorporates fusion and decoding modules to generate relevant text from documents based on the fused representation of the query and the document, enhancing fine-grained information retrieval.\n- GeAR consists of a bi-encoder for initial encoding of queries and documents, a fusion encoder utilizing cross-attention to combine query and document embeddings, and a text decoder to generate relevant information from the fused representation.\n- The model is trained using contrastive learning loss for retrieval and language modeling loss for generation, enabling joint optimization of retrieval and fine-grained understanding.\n- Experimental results demonstrate competitive performance in document retrieval and units localization tasks across various datasets, showing improvements over traditional retrieval methods, especially in capturing fine-grained semantic relationships.\n- GeAR also exhibits promising information generation capabilities and offers insights into the interpretation of retrieval results through visualization of information localization and cross-attention weights.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "InfiGUIAgent: A Multimodal Generalist GUI Agent with Native Reasoning and Reflection",
+        "authors": "Xueyu Hu, Congkai Xie, Zishu Wei, Yuhang Liu, pengxiang",
+        "link": "https://arxiv.org/abs/2501.04575",
+        "github_repo": "https://github.com/Reallm-Labs/InfiGUIAgent",
+        "summary": "- InfiGUIAgent, a Multimodal Large Language Model (MLLM)-based Graphical User Interface (GUI) agent, is introduced for enhanced task automation on computing devices.\n- The agent employs a two-stage supervised fine-tuning approach where the first stage focuses on fundamental GUI understanding, grounding, and visual-language comprehension, while the second stage integrates advanced reasoning skills, including hierarchical and expectation-reflection reasoning, using synthesized trajectory data.\n- InfiGUIAgent leverages a modular action space design enabling flexible action combinations and utilizes reference-augmented annotation for precise spatial referencing in GUI interactions.\n- Experimental results on ScreenSpot and AndroidWorld benchmarks demonstrate InfiGUIAgent's superior performance compared to several open-source baselines.\n- The model achieves a 76.3% accuracy on ScreenSpot, surpassing models like ShowUI and UGround-7B, and a 0.09 overall success rate on AndroidWorld, outperforming similar-sized models and some with larger parameter sizes, showcasing its effective GUI task automation capabilities without relying on additional GUI metadata.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Reallm-Labs/InfiGUIAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "Chirpy3D: Continuous Part Latents for Creative 3D Bird Generation",
+        "authors": "Chee Seng Chan, Jiankang Deng, Jia Wei Sii, Jing Yang, Kam Woh Ng",
+        "link": "https://arxiv.org/abs/2501.04144",
+        "github_repo": "https://github.com/kamwoh/chirpy3d",
+        "summary": "- Chirpy3D is a novel framework for fine-grained 3D generation that lifts 2D understanding to 3D using multi-view diffusion and models part latents as continuous distributions.\n- It introduces a continuous part-aware latent space enabling interpolation and sampling of new parts and a self-supervised feature consistency loss ensuring stable generation of unseen parts. \n- Chirpy3D empowers creation of novel 3D objects by interpolating and combining unseen part compositions. \n- It uses a pre-trained MVDream model fine-tuned with 2D images and additional objectives for regularization and part disentanglement. \n- Experimental results show that Chirpy3D outperforms existing methods in generating creative 3D objects with unprecedented fine-grained details, evidenced by superior FIDCLIP scores and visual fidelity.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/kamwoh/chirpy3d"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "SPAR3D: Stable Point-Aware Reconstruction of 3D Objects from Single Images",
+        "authors": "Varun Jampani, James M. Rehg, Aaryaman Vasishta, Zixuan Huang, mboss",
+        "link": "https://arxiv.org/abs/2501.04689",
+        "github_repo": null,
+        "summary": "- SPAR3D is a novel two-stage 3D reconstruction model from single images leveraging a point diffusion model and a meshing transformer.\n- Stage one generates a sparse colored point cloud conditioned on the input image using a point diffusion model similar to Point-E but enhanced with classifier-free guidance and albedo prediction.\n- Stage two transforms the point cloud into a detailed mesh using a triplane transformer conditioned on both the point cloud and image features, jointly estimating geometry, texture, and illumination using a differentiable renderer with a Disney PBR shader.\n- SPAR3D achieves state-of-the-art performance on GSO and OmniObject3D datasets, outperforming existing regression and generative models while maintaining high efficiency (0.7s inference). \n- Using point clouds as an intermediate representation also facilitates interactive user edits by modifying the point cloud and quickly regenerating the mesh.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://spar3d.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-09"
+    },
+    {
+        "title": "DPO Kernels: A Semantically-Aware, Kernel-Enhanced, and Divergence-Rich Paradigm for Direct Preference Optimization",
+        "authors": "Rajarshi Roy, Danush Khanna, Suranjana Trivedy, Amitava Das, amanchadha",
+        "link": "https://arxiv.org/abs/2501.03271",
+        "github_repo": null,
+        "summary": "- This paper introduces DPO-Kernels, a framework enhancing Direct Preference Optimization (DPO) for aligning large language models (LLMs) with human preferences by integrating kernel methods and diverse divergence measures.\n- DPO-Kernels incorporates kernelized representations, divergence alternatives (Jensen-Shannon, Hellinger, R\u00e9nyi, Bhattacharyya, Wasserstein, and f-divergences), and data-driven selection of optimal kernel-divergence pairs.\n- It introduces a Hierarchical Mixture of Kernels (HMK) to combine local and global kernels for precise and large-scale semantic modeling, automatically selecting the optimal kernel mixture during training.\n- Evaluations on 12 datasets demonstrate state-of-the-art generalization across various alignment tasks, including factuality, safety, reasoning, and instruction following.\n- Despite increased computational cost (3-4x higher than standard DPO), the improvements in alignment and generalization justify the overhead, with future work aiming to address scalability challenges.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Anthropic/hh-rlhf",
+            "https://huggingface.co/datasets/nvidia/HelpSteer",
+            "https://huggingface.co/datasets/lmsys/chatbot_arena_conversations",
+            "https://huggingface.co/datasets/lmsys/lmsys-arena-human-preference-55k",
+            "https://huggingface.co/datasets/tatsu-lab/alpaca_farm/viewer/alpaca_human_preference",
+            "https://huggingface.co/datasets/stanfordnlp/SHP-2",
+            "https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized",
+            "https://huggingface.co/datasets/argilla/distilabel-intel-orca-dpo-pairs"
+        ],
+        "date": "2025-01-09"
     }
 ]

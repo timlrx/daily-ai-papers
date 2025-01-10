@@ -14536,5 +14536,127 @@
             "https://huggingface.co/datasets/argilla/distilabel-intel-orca-dpo-pairs"
         ],
         "date": "2025-01-09"
+    },
+    {
+        "title": "An Empirical Study of Autoregressive Pre-training from Videos",
+        "authors": "Ilija Radosavovic, jitendra1995, yossig, rravishankar, brjathu",
+        "link": "https://arxiv.org/abs/2501.05453",
+        "github_repo": null,
+        "summary": "- This paper introduces Toto, a family of autoregressive video models trained on next-token prediction, treating videos as sequences of visual tokens using a causal transformer model with a LLaMa architecture and dVAE tokenization.\n- Toto models are pre-trained on a massive dataset of over one trillion visual tokens from diverse video and image sources, enabling joint training.\n- Evaluation on various downstream tasks, including image recognition (ImageNet), video classification (Kinetics-400), action anticipation (Ego4D), video tracking, object permanence, and robotic manipulation, demonstrated competitive performance compared to existing methods.\n- The paper explored design choices like tokenizers, probing methods, model architectures, and training resolution. Attention pooling was found to improve representation quality in decoder-only models.\n- Scaling studies revealed that Toto exhibits power-law scaling behavior with compute, similar to large language models, albeit at a slower rate.",
+        "classification": [
+            "Video Classification",
+            "Image Classification",
+            "Robotics",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "The GAN is dead; long live the GAN! A Modern GAN Baseline",
+        "authors": "jamestompkin, kuleshov, Skylion007, Eva1209",
+        "link": "https://arxiv.org/abs/2501.05441",
+        "github_repo": "https://github.com/brownvc/R3GAN/",
+        "summary": "- This paper introduces R3GAN (\"Re-GAN\"), a new baseline Generative Adversarial Network (GAN) architecture focusing on training stability and modernization.\n- R3GAN utilizes a regularized relativistic GAN loss (RpGAN + R1 + R2) which mathematically guarantees local convergence, addressing mode collapse and instability issues.\n- By discarding ad-hoc tricks and incorporating modern architectures like ResNet and grouped convolutions, R3GAN simplifies the GAN design while improving performance.\n- The model surpasses StyleGAN2 on datasets like FFHQ, ImageNet, CIFAR, and Stacked MNIST and compares favorably to state-of-the-art GANs and diffusion models.\n- The authors demonstrate how a well-behaved loss enables the integration of modern backbone architectures, leading to a simpler and more efficient GAN.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/brownvc/R3GAN"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives",
+        "authors": "ZwwWayne, Chonghao, THUdyh, ldkong, shaoyuanxie",
+        "link": "https://arxiv.org/abs/2501.04003",
+        "github_repo": null,
+        "summary": "- DriveBench, a new benchmark designed to assess the reliability of Vision-Language Models (VLMs) in autonomous driving, is introduced.\n- The benchmark comprises 19,200 images, 20,498 question-answer pairs, and covers four driving tasks (perception, prediction, planning, behavior) under 17 settings, including clean, corrupted, and text-only inputs, to evaluate VLM robustness and visual grounding.\n- Evaluations of 12 popular VLMs reveal that they often generate plausible but fabricated responses based on general knowledge rather than visual cues, especially with missing or degraded visual inputs.\n- This behavior poses risks in safety-critical scenarios like autonomous driving, and is masked by dataset imbalances and inadequate metrics.\n- The study emphasizes the need for refined evaluation metrics that focus on multi-modal understanding and robust visual grounding, and highlights the potential of using VLMs' awareness of corruptions to enhance their reliability.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/drive-bench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/drive-bench/arena"
+        ],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "On Computational Limits and Provably Efficient Criteria of Visual Autoregressive Models: A Fine-Grained Complexity Analysis",
+        "authors": "Yingyu Liang, Xiaoyu Li, Zhenmei, JamesSand, keyekun",
+        "link": "https://arxiv.org/abs/2501.04377",
+        "github_repo": null,
+        "summary": "- This paper analyzes the computational limits and efficiency of Visual Autoregressive (VAR) models for image generation, focusing on achieving faster than the current O(n^4) time complexity.\n- A key contribution is identifying a critical threshold for the norm of input matrices in VAR attention mechanisms, above which a sub-quartic time algorithm is proven impossible assuming the Strong Exponential Time Hypothesis (SETH).\n- The paper presents efficient construction leveraging low-rank approximations that satisfy the derived criteria for sub-quartic time complexity.\n- Specifically, when the bound of input matrices R is o(\u221alog n), an O(n^(2+o(1))) time algorithm exists that approximates the VAR model output with 1/poly(n) additive error.\n- Conversely, when R is \u03a9(\u221alog n), no truly sub-quartic time algorithm can achieve such approximation, establishing a fundamental computational limit for VAR models under SETH.",
+        "classification": [
+            "Text-to-Image",
+            "Computer Vision",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "Building Foundations for Natural Language Processing of Historical Turkish: Resources and Models",
+        "authors": "Ece Elif Adak, tcTHEBESTMAN, fatihburakkaragoz, temretiras, sbozates",
+        "link": "https://arxiv.org/abs/2501.04828",
+        "github_repo": null,
+        "summary": "- This paper introduces the first Named Entity Recognition (NER) dataset (HisTR) and Universal Dependencies treebank (OTA-BOUN) for historical Turkish, alongside a cleaned text corpus (OTC) and transformer-based models for NER, dependency parsing, and part-of-speech tagging.\n- HisTR consists of 812 manually annotated sentences, while OTA-BOUN contains 514 sentences annotated with part-of-speech tags and dependency relations. \n- The models were trained using BERTurk, mBERT, and TURNA architectures. \n- Experimental results show that BERTurk outperforms mBERT in NER and dependency parsing of historical Turkish, and fine-tuning with a combination of modern and historical Turkish data improves performance.\n- The resources and models are publicly available, establishing a baseline for future research in historical Turkish NLP.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification",
+            "Text Classification",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/UniversalDependencies/UD_Ottoman_Turkish-BOUN/tree/dev",
+            "https://github.com/Ottoman-NLP/ottominer-public"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/bucolin/HisTR",
+            "https://huggingface.co/datasets/bucolin/OTA-BOUN_UD_Treebank",
+            "https://huggingface.co/datasets/bucolin/OTC-Corpus",
+            "https://huggingface.co/bucolin"
+        ],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "Entropy-Guided Attention for Private LLMs",
+        "authors": "Brandon Reagen, nandan523",
+        "link": "https://arxiv.org/abs/2501.03489",
+        "github_repo": "https://github.com/Nandan91/entropy-guided-attention-llm",
+        "summary": "- This research introduces an entropy-guided attention mechanism for enhancing the privacy of large language models (LLMs) during inference.\n- Researchers discovered that removing nonlinearities in LLMs can cause training instability due to entropy collapse in deeper layers and entropic overload in earlier layers.\n- The study presents a novel entropy regularization technique and proposes PI-friendly alternatives to layer normalization.\n- Experimental results show that the proposed methods reduce communication overhead by 3.94x and improve inference speed by 1.72x in a private setting.\n- The work bridges information theory and architectural design, utilizing entropy dynamics to guide the development of efficient privacy-preserving LLM architectures.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Nandan91/entropy-guided-attention-llm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-10"
+    },
+    {
+        "title": "Centurio: On Drivers of Multilingual Ability of Large Vision-Language Model",
+        "authors": "Radu Timofte, Chris Biemann, Carolin Holtermann, Florian Schneider, Gregor Geigle",
+        "link": "https://arxiv.org/abs/2501.05122",
+        "github_repo": null,
+        "summary": "- This paper introduces Centurio, a massively multilingual Large Vision-Language Model (LVLM) supporting 100 languages, trained by machine-translating high-quality English data and benchmarked across 13 downstream vision-language tasks covering 43 diverse languages.\n- The study investigates optimal language distributions of pre-training and instruction-tuning data, finding that including up to 100 languages with as little as 25-50% non-English data improves multilingual performance while maintaining strong English performance. \n- The research also introduces a new benchmark, SMPQA (Synthetic Multilingual Plot Question Answering), for evaluating multilingual text-in-image understanding and finds that non-English OCR data in training is crucial for this task. \n- Centurio achieves state-of-the-art results on 14 tasks covering 56 languages, matching popular models' performance on English while outperforming them on low-resource languages. \n- One limitation is the heavy reliance on machine-translated data and the comparatively small image input resolution which affects performance on text-heavy tasks.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-10"
     }
 ]

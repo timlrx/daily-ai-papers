@@ -15007,5 +15007,251 @@
         ],
         "huggingface_urls": [],
         "date": "2025-01-14"
+    },
+    {
+        "title": "MiniMax-01: Scaling Foundation Models with Lightning Attention",
+        "authors": "Bangwei Gong, Aonian Li, MiniMax, Hannnnnxd, enochzhang",
+        "link": "https://arxiv.org/abs/2501.08313",
+        "github_repo": "https://github.com/MiniMax-AI",
+        "summary": "- This paper introduces the MiniMax-01 series, including MiniMax-Text-01 and MiniMax-VL-01, which leverage \"lightning attention\" and Mixture of Experts (MoE) to handle long contexts (up to 4 million tokens for MiniMax-Text-01).\n- MiniMax-Text-01 is a 456 billion parameter model, with 45.9 billion parameters activated per token and 32 experts, designed to match leading commercial models while offering a significantly larger context window.\n- MiniMax-VL-01 is a vision-language model trained on 512 billion vision-language tokens.\n- The authors claim their models match the performance of state-of-the-art models like GPT-4 and Claude-3.5-Sonnet on standard benchmarks and outperform them in long context scenarios (200k+ tokens).\n- They also highlight superior prefill latency due to their novel architecture.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering",
+            "Natural Language Processing",
+            "Question Answering",
+            "Translation",
+            "Summarization",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MiniMax-AI"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Padding Tone: A Mechanistic Analysis of Padding Tokens in T2I Models",
+        "authors": "Yoad Tewel, Rinon Gal, Hadas Orgad, Ido Galil, Michael Toker",
+        "link": "https://arxiv.org/abs/2501.06751",
+        "github_repo": null,
+        "summary": "- This paper investigates the role of padding tokens in text-to-image (T2I) diffusion models, a practice used to standardize input lengths.\n- Two causal intervention methods, Intervention in Text Encoder Output (ITE) and Intervention in the Diffusion Process (IDP), are introduced to analyze how padding tokens influence image generation.\n- Findings reveal that frozen text encoders often ignore padding tokens, but trained or fine-tuned encoders utilize them to encode semantic information.\n- Multi-modal attention architectures, like those in Stable Diffusion 3 and FLUX, can use padding tokens as \"registers\" to store and recall information during the diffusion process.\n- This deeper understanding of padding mechanisms may inform future model design and training in T2I systems.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "MangaNinja: Line Art Colorization with Precise Reference Following",
+        "authors": "Hao Ouyang, Jie Xiao, Xi Chen, Ka Leong Cheng, Zhiheng Liu",
+        "link": "https://arxiv.org/abs/2501.08332",
+        "github_repo": null,
+        "summary": "- MangaNinja is a novel reference-based line art colorization model derived from diffusion models, specializing in precise colorization guided by reference images.\n- It uses a dual-branch architecture, with a Reference U-Net for encoding reference image features and a Denoising U-Net for colorizing the line art, facilitated by cross-attention between the branches.\n- A progressive patch shuffling module enhances local matching capabilities by dividing the reference image into patches and randomly shuffling them during training, forcing the model to learn finer-grained correspondences.\n- A point-driven control scheme powered by PointNet allows users to specify matching point pairs between the reference and line art, enabling fine-grained control over colorization and handling complex scenarios such as varying poses, missing details, and multi-reference colorization.\n- Quantitative and qualitative evaluations on a self-collected benchmark demonstrate MangaNinja's superior performance over existing methods in terms of visual fidelity and identity preservation.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "A Multi-Modal AI Copilot for Single-Cell Analysis with Instruction Following",
+        "authors": "Jingyang Qian, Kangwei Liu, Xinle Deng, Ningyu, Fangyinfff",
+        "link": "https://arxiv.org/abs/2501.08187",
+        "github_repo": "https://github.com/zjunlp/Instructcell;",
+        "summary": "- INSTRUCTCELL, a multimodal AI copilot, is introduced for enhanced single-cell analysis, integrating natural language instructions with single-cell RNA sequencing (scRNA-seq) data. \n- The model architecture comprises a Q-Former for embedding gene expression profiles, a pretrained language model (LM) for text processing, and a cell reconstruction block for generating gene expression profiles. \n- INSTRUCTCELL excels in tasks such as conditional pseudo-cell generation, cell type annotation, and drug sensitivity prediction, adapting to diverse experimental settings. \n- Evaluation across multiple scRNA-seq datasets shows INSTRUCTCELL performs on par with or surpasses existing models like scBERT, scGPT, and Geneformer, demonstrating robustness and efficiency. \n- Through this unified approach, INSTRUCTCELL streamlines complex single-cell data exploration, lowering technical barriers and revealing deeper biological insights.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/InstructCell"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/zjunlp/InstructCell-chat",
+            "https://huggingface.co/zjunlp/InstructCell-instruct"
+        ],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Diffusion Adversarial Post-Training for One-Step Video Generation",
+        "authors": "Xuefeng Xiao, Ceyuan Yang, Yuxi Ren, Xin Xia, PeterL1n",
+        "link": "https://arxiv.org/abs/2501.08316",
+        "github_repo": null,
+        "summary": "- This paper introduces Adversarial Post-Training (APT), a novel approach for generating high-resolution images and videos in a single step.\n- APT utilizes a pre-trained diffusion transformer model (DiT) and continues training it with an adversarial objective against real data.\n- To stabilize the adversarial training process, the authors introduce several key improvements, including discriminator enhancements (architectural changes, ensemble across timesteps, approximated R1 regularization) and a generator initialized through deterministic distillation.\n- The resulting model, Seaweed-APT, generates 2-second, 1280x720, 24fps videos and 1024px images in a single evaluation step.\n- User studies indicate that Seaweed-APT achieves comparable quality to state-of-the-art one-step image generation methods regarding visual fidelity and structural integrity, while showing improvements in realism and details compared to the original diffusion model.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+            "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
+        ],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "PokerBench: Training Large Language Models to become Professional Poker Players",
+        "authors": "Zhengyu Li, Aniket Rahane, Richard Yang, Richard Zhuang, akshat57",
+        "link": "https://arxiv.org/abs/2501.08328",
+        "github_repo": "https://github.com/pokerllm/pokerbench",
+        "summary": "- This paper introduces PokerBench, a benchmark and dataset for evaluating and training large language models (LLMs) to play the strategic game of poker.\n- PokerBench includes 11,000 scenarios (1,000 pre-flop and 10,000 post-flop) designed to test LLMs on decision-making and game theory optimal (GTO) play.\n- The authors evaluate several prominent LLMs including GPT-4, ChatGPT 3.5, and various Llama and Gemma models, finding that pre-trained models underperform compared to fine-tuned models.\n- Fine-tuning Llama-3-8B significantly improves its performance, exceeding that of GPT-4 on PokerBench.\n- Head-to-head comparisons between checkpoints with varying PokerBench scores show a correlation between benchmark performance and actual win rates, demonstrating the efficacy of PokerBench as an evaluation tool.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/pokerllm/pokerbench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "FramePainter: Endowing Interactive Image Editing with Video Diffusion Priors",
+        "authors": "Hui Li, Hang Xu, Yihan Zeng, Xinpeng Zhou, Yabo Zhang",
+        "link": "https://arxiv.org/abs/2501.08225",
+        "github_repo": "https://github.com/YBYBZhang/FramePainter",
+        "summary": "- FramePainter is an innovative image editing model that leverages video diffusion priors by reformulating the task as an image-to-video generation problem.\n- The model is initialized with Stable Video Diffusion and incorporates a lightweight sparse control encoder to integrate user edits, ensuring temporal consistency and reducing training costs.\n- To address limitations in handling large motion between frames, FramePainter introduces matching attention, an auxiliary branch that complements spatial attention and fosters dense correspondence between edited and source image tokens.\n- This matching attention mechanism is further optimized using tracking results from CoTracker-v3 to achieve finer visual detail preservation.\n- Experimental results show that FramePainter outperforms existing training-free and training-based methods with significantly less training data, demonstrating its effectiveness in various editing tasks and generalization to out-of-domain scenarios.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/YBYBZhang/FramePainter"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Democratizing Text-to-Image Masked Generative Models with Compact Text-Aware One-Dimensional Tokens",
+        "authors": "Xiaohui Shen, Chenglin Yang, Qihang Yu, Dongwon Kim, turkeyju",
+        "link": "https://arxiv.org/abs/2501.07730",
+        "github_repo": null,
+        "summary": "- This paper introduces TA-TiTok, a novel text-aware 1D tokenizer, and MaskGen, a family of text-to-image masked generative models.\n- TA-TiTok improves upon previous 1D tokenizers by incorporating textual information during detokenization, using a simplified one-stage training process, and supporting both discrete and continuous tokens.\n- MaskGen leverages TA-TiTok to efficiently generate images from text, supporting both discrete and continuous token representations and utilizing CLIP for text encoding.\n-  Evaluated on MJHQ-30K and GenEval benchmarks, MaskGen achieves comparable performance to models trained on private data, despite being trained exclusively on open data.\n- Notably, MaskGen-XL (1.1B parameters) achieves an FID of 6.53 on MJHQ-30K and an overall score of 0.57 on GenEval, outperforming larger models trained on private datasets, while exhibiting faster inference.",
+        "classification": [
+            "Text-to-Image",
+            "Image Feature Extraction",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/laion/laion2B-en-aesthetic",
+            "https://huggingface.co/datasets/laion/laion-art",
+            "https://huggingface.co/datasets/laion/laion-pop",
+            "https://huggingface.co/datasets/ProGamerGov/synthetic-dataset-1m-dalle3-high-quality-captions"
+        ],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Omni-RGPT: Unifying Image and Video Region-level Understanding via Token Marks",
+        "authors": "Subhashree Radhakrishnan, Sifei Liu, De-An Huang, Min-Hung Chen, Miran Heo",
+        "link": "https://arxiv.org/abs/2501.08326",
+        "github_repo": null,
+        "summary": "- Omni-RGPT, a multimodal large language model, is introduced for region-level understanding in both images and videos.\n- It uses \"Token Mark,\" a set of learned tokens embedded into visual features and text prompts using region prompts (boxes or masks) to represent target regions.\n- An auxiliary \"Temporal Region Guide Head\" is introduced to improve region consistency in videos without relying on tracklets.\n- A new large-scale region-level video instruction dataset, RegVID-300k, is also introduced, containing 98k videos and 294k instruction samples.\n- Omni-RGPT achieves state-of-the-art performance on benchmarks like Causal-VidQA and VCR, demonstrating its effectiveness in region-level understanding tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "OpenCSG Chinese Corpus: A Series of High-quality Chinese Datasets for LLM Training",
+        "authors": "Ran Chen, Wei Wang, Zekun Wang, Ziyun Dai, yuyijiong",
+        "link": "https://arxiv.org/abs/2501.08197",
+        "github_repo": "https://github.com/yuyijiong/fineweb-edu-chinese",
+        "summary": "- This paper introduces the OpenCSG Chinese Corpus, a series of high-quality datasets designed for Chinese LLM pre-training, post-training, and fine-tuning.\n- The corpus comprises four distinct datasets: Fineweb-edu-chinese, Fineweb-edu-chinese-v2, Cosmopedia-chinese, and Smoltalk-chinese, each with unique characteristics catering to diverse training needs.\n- The datasets leverage automated scoring modules, synthetic text generation, and domain-focused curation, ensuring scalability, diversity, and openness.\n- Experimental results on a 2B-level LLM demonstrate significant performance improvements in tasks like C-Eval when pre-trained on Fineweb-edu-chinese compared to a baseline dataset.\n- This work addresses the scarcity of high-quality Chinese datasets and promotes advancements in Chinese NLP research by providing open-access resources.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yuyijiong/fineweb-edu-chinese"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Tarsier2: Advancing Large Vision-Language Models from Detailed Video Description to Comprehensive Video Understanding",
+        "authors": "Yuan Lin, Yuchen Zhang, Haomiao Sun, Jiawei Wang, Liping Yuan",
+        "link": "https://arxiv.org/abs/2501.07888",
+        "github_repo": null,
+        "summary": "- Tarsier2, a 7B parameter Large Vision-Language Model (LVLM), focuses on generating detailed video descriptions and demonstrates superior general video understanding.\n- It utilizes a simple architecture comprising a vision encoder, vision adapter, and LLM and undergoes three training stages: pre-training on 40M video-text pairs, supervised fine-tuning with fine-grained temporal alignment, and Direct Preference Optimization (DPO) with automatically generated preference data.\n- Evaluation results show Tarsier2-7B outperforming proprietary models like GPT-40 and Gemini 1.5 Pro in detailed video description and achieving state-of-the-art performance on 15 public benchmarks, including video question answering, grounding, and hallucination tests.\n- A key contribution is a new recaptioning dataset, Tarsier2-Recap-585K, used to enhance existing LVLMs for video description and general video understanding.\n- Ablation studies confirm the effectiveness of scaling the pre-training data, fine-grained temporal alignment, and DPO training.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Tarsier-LLM/Tarsier2-Recap-585K"
+        ],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Enhancing Automated Interpretability with Output-Centric Feature Descriptions",
+        "authors": "Mor Geva, Chen Agassy, Roy Mayan, Yoav Gur-Arieh, atticusg",
+        "link": "https://arxiv.org/abs/2501.08319",
+        "github_repo": null,
+        "summary": "- Proposes two output-centric methods, VocabProj and TokenChange, for generating natural language descriptions of features in Large Language Models (LLMs).\n- Introduces a two-faceted evaluation framework for feature descriptions, considering both input-based and output-based metrics.\n- Shows that output-centric methods outperform input-centric methods (like MaxAct) on output-based evaluations, and are often only slightly worse on input-based evaluations.\n- Demonstrates that combining input- and output-centric methods leads to more comprehensive and accurate feature descriptions.\n- Reveals that output-centric methods can be used to find inputs that activate \"dead\" features, which were previously thought to be inactive.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "Potential and Perils of Large Language Models as Judges of Unstructured Textual Data",
+        "authors": "Satya Kapoor, Sreyoshi Bhaduri, Natalie Perez, Rewina Bedemariam, amanchadha",
+        "link": "https://arxiv.org/abs/2501.08167",
+        "github_repo": null,
+        "summary": "- This research explores the effectiveness of Large Language Models (LLMs) as judges for evaluating the thematic alignment of summaries generated by other LLMs, focusing on open-text survey data.\n- The study uses an Anthropic Claude model to generate thematic summaries and employs Amazon's Titan Express, Nova Pro, and Meta's Llama as LLM judges, comparing their performance to human evaluations using Cohen's kappa, Spearman's rho, and Krippendorff's alpha.\n- Findings reveal that while LLMs can offer a scalable solution comparable to human raters in judging thematic alignment, humans may still excel at detecting subtle, context-specific nuances.\n- The study highlights the potential of LLMs as judges in organizational settings while emphasizing the need for careful consideration of their limitations.\n- Recommendations for future research include addressing potential biases in LLM evaluations and developing more comprehensive assessment methods that capture nuanced thematic understanding.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "HALoGEN: Fantastic LLM Hallucinations and Where to Find Them",
+        "authors": "Yejin Choi, David Wadden, Shrusti Ghela, Abhilasha Ravichander",
+        "link": "https://arxiv.org/abs/2501.08292",
+        "github_repo": null,
+        "summary": "- This paper introduces HALoGEN, a benchmark for evaluating hallucinations in large language models (LLMs).\n- HALoGEN consists of 10,923 prompts across nine domains, including programming, scientific attribution, and summarization, along with automatic verifiers.\n- The benchmark evaluates ~150,000 generations from 14 LLMs and finds that even top-performing models exhibit frequent hallucinations (4%-86% of generated atomic facts).\n- A novel error classification categorizes hallucinations as Type A (incorrect recollection of training data), Type B (incorrect or out-of-context training data), or Type C (fabrication).\n- The framework aims to facilitate research into why LLMs hallucinate and promote the development of trustworthy language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://halogen-hallucinations.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
+    },
+    {
+        "title": "AfriHate: A Multilingual Collection of Hate Speech and Abusive Language Datasets for African Languages",
+        "authors": "Ibrahim Said Ahmad, David Ifeoluwa Adelani, Abinew Ali Ayele, Idris Abdulmumin, Shamsuddeen Hassan Muhammad",
+        "link": "https://arxiv.org/abs/2501.08284",
+        "github_repo": "https://github.com/AfriHate/AfriHate",
+        "summary": "- This paper introduces AfriHate, a multilingual dataset of hate speech and abusive language in 15 African languages.\n- The dataset consists of tweets annotated by native speakers into three categories: hate, abusive/offensive, and neutral, with further labeling of hate speech targets based on attributes like ethnicity, religion, and gender.\n- Baseline experiments using Africa-centric pre-trained language models and prompted LLMs were conducted, revealing performance variations across languages and demonstrating that multilingual training often yields better results.\n- The study finds that while multilingual models generally perform better, LLMs show potential for improved hate speech detection in low-resource languages.\n- The datasets, scripts, models, and lexicons are publicly released to facilitate further research on hate speech and offensive language in African languages.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/AfriHate/AfriHate"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-15"
     }
 ]

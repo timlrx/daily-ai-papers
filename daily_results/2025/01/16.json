@@ -1,0 +1,143 @@
+[
+    {
+        "title": "MMDocIR: Benchmarking Multi-Modal Retrieval for Long Documents",
+        "authors": "Ruiming Tang, Dexun Li, Xin Deik Goh, Yujing Chang, daviddongdong",
+        "link": "https://arxiv.org/abs/2501.08828",
+        "github_repo": null,
+        "summary": "- This paper introduces MMDocIR, a novel benchmark for multi-modal document retrieval focusing on page-level and layout-level retrieval tasks.\n- MMDocIR comprises an evaluation set with 313 documents and 1,658 expert-annotated questions and a training set with 6,878 documents and 73,843 automatically annotated questions.\n- Experimental results demonstrate that visual retrievers outperform text-based methods, and models trained on MMDocIR exhibit superior performance.\n- The benchmark addresses limitations of existing datasets by focusing on retrieval granularity, offering complete page contexts, and improved question quality.\n- The benchmark also highlights the effectiveness of VLM-based text representations over OCR for multi-modal document retrieval.",
+        "classification": [
+            "Multimodal",
+            "Document Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/MMDocIR"
+        ],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "CityDreamer4D: Compositional Generative Model of Unbounded 4D Cities",
+        "authors": "liuziwei7, hongfz16, FrozenBurning, hzxie",
+        "link": "https://arxiv.org/abs/2501.08983",
+        "github_repo": null,
+        "summary": "- CityDreamer4D is a novel compositional generative model designed for creating unbounded 4D cities, separating dynamic elements (vehicles) from static ones (buildings, roads) and employing distinct neural fields for different object types.\n- The model uses a compact BEV representation, enhanced with a bottom-up height map for hollow structures, and generates dynamic traffic scenarios with vehicles on high-fidelity maps derived from city layouts.\n- The authors introduce a new dataset, CityTopia, comprising 37,500 high-fidelity street-view and drone-view images with precise 2D and 3D semantic and instance annotations, alongside OSM and Google Earth datasets for layout and visual details.\n- CityDreamer4D achieves state-of-the-art performance in generating realistic and diverse 4D cities, outperforming baselines in FID, KID, VBench, Depth Error, and Camera Error metrics, and demonstrates superior performance in a user study focusing on perceptual quality, 4D realism, and view consistency.\n- The model supports applications like urban simulation and localized editing, offering advancements in creating large-scale, dynamic, and customizable virtual city environments.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "Towards Best Practices for Open Datasets for LLM Training",
+        "authors": "jending12, ayahbdeir, avi-skowron, stellaathena, stefan-baack",
+        "link": "https://arxiv.org/abs/2501.08365",
+        "github_repo": null,
+        "summary": "- This paper discusses the challenges and best practices for creating open datasets for LLM training, focusing on sourcing, processing, governing, and releasing data.\n- It emphasizes the importance of dataset transparency for accountability and innovation in AI, particularly given the increasing criticism of data practices by large AI companies.\n- The authors recommend prioritizing community resources, providing thorough documentation, adhering to preference signals, and promoting diversity in data sources.\n- They also outline the need for clear legal frameworks and ethical considerations in data governance and release.\n- The paper emerged from a convening hosted by Mozilla and EleutherAI and builds on case studies from prominent open datasets.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/r-three/common-pile"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/HuggingFaceH4/c-pile"
+        ],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "RepVideo: Rethinking Cross-Layer Representation for Video Generation",
+        "authors": "liuziwei7, Ziqi, cszy98, weepiess2383, ChenyangSi",
+        "link": "https://arxiv.org/abs/2501.08994",
+        "github_repo": null,
+        "summary": "- RepVideo, a novel framework designed for text-to-video generation, enhances video diffusion models by leveraging enriched intermediate representations.\n- It employs a feature cache module to aggregate features from adjacent transformer layers and a gating mechanism to combine these aggregated features with the original input, improving spatial detail and temporal consistency.\n- RepVideo addresses the issue of fragmented spatial semantics and reduced temporal coherence in existing transformer-based video diffusion models.\n- Experimental results on VBench show that RepVideo-2B outperforms the baseline CogVideoX-2B and other state-of-the-art methods in various metrics, including motion smoothness, object class, multiple objects, and spatial relationship.\n- Both automated and human evaluations demonstrate RepVideo's superiority in generating high-quality videos with enhanced temporal coherence, spatial fidelity, and alignment with text prompts.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "XMusic: Towards a Generalized and Controllable Symbolic Music Generation Framework",
+        "authors": "Wenjie Zhu, Wei Tan, Wei Yuan, Can Zhang, Sida Tian",
+        "link": "https://arxiv.org/abs/2501.08809",
+        "github_repo": null,
+        "summary": "- XMusic is a novel framework for generating symbolic music from various prompt types, including images, videos, text, tags, and humming.\n- The framework consists of two main components: XProjector, which parses prompts into symbolic music elements (emotions, genres, rhythms, notes), and XComposer, which generates music based on these elements and selects high-quality outputs.\n- XComposer utilizes a Transformer Decoder as its generative model and incorporates a multi-task learning Selector for quality assessment, emotion recognition, and genre recognition.\n- XMusic is trained on a new large-scale symbolic music dataset, XMIDI, containing over 108,000 MIDI files with detailed emotion and genre annotations.\n- Both objective and subjective evaluations demonstrate XMusic\u2019s superior performance in terms of music quality and controllability compared to existing methods across various prompt types, including video, text and image conditioned generation.",
+        "classification": [
+            "Audio",
+            "Text-to-Audio",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "Trusted Machine Learning Models Unlock Private Inference for Problems Currently Infeasible with Cryptography",
+        "authors": "Sarah Meiklejohn, Ilia Shumailov, bballe, fhartmann, danrama",
+        "link": "https://arxiv.org/abs/2501.08970",
+        "github_repo": null,
+        "summary": "- This paper introduces Trusted Capable Model Environments (TCMEs), a novel framework for secure multi-party computation leveraging capable machine learning models as trusted third parties.\n- TCMEs address privacy concerns in scenarios where traditional cryptographic solutions are computationally infeasible due to the complexity or unstructured nature of the data or computation.\n- The core principles of a TCME include statelessness of the model, explicit information flow control, and the use of trustworthy and capable models.\n- The paper presents several practical examples, such as multi-agent non-competition in research and confidential audits, showcasing the potential of TCMEs in diverse applications.\n- While acknowledging current limitations in model capabilities and the need for further research in areas like model verification, the paper positions TCMEs as a promising direction for private inference in complex scenarios.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "Parameter-Inverted Image Pyramid Networks for Visual Perception and Multimodal Understanding",
+        "authors": "douwh, Changyao, favor123, Einsiedler, wzk1015",
+        "link": "https://arxiv.org/abs/2501.07783",
+        "github_repo": "https://github.com/OpenGVLab/PIIP",
+        "summary": "- PIIP (Parameter-Inverted Image Pyramid Networks) is proposed as a novel architecture for visual perception and multimodal understanding tasks.\n- It processes multi-scale images with different sized models: smaller models for higher resolutions and larger models for lower resolutions, which makes it more efficient than traditional image pyramids.\n- Cross-branch feature interaction and branch merging components allow information exchange and feature fusion between levels for enhanced performance.\n- PIIP-LLaVA, built on PIIP, adapts the architecture for efficient and effective high-resolution multimodal understanding.\n- PIIP demonstrates performance improvements of 1-2% with 40-60% less computation on object detection and semantic segmentation tasks, achieving 60.0 box AP on MS COCO and 59.7 mIoU on ADE20K with InternViT-6B.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection",
+            "Image Segmentation",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/PIIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "Multimodal LLMs Can Reason about Aesthetics in Zero-Shot",
+        "authors": "Vincentchang, Ruixiang",
+        "link": "https://arxiv.org/abs/2501.09012",
+        "github_repo": "https://github.com/songrise/MLLM4Art",
+        "summary": "- This paper investigates the ability of Multimodal Large Language Models (MLLMs) to evaluate the aesthetic quality of artworks, focusing on artistic stylization.\n- It introduces MM-StyleBench, a new large-scale dataset with diverse content and style instances, and develops a method for modeling human aesthetic preferences for benchmarking.\n- The study reveals a hallucination issue in MLLMs' art evaluation, tied to response subjectivity, and proposes ArtCoT, a prompting method with explicit task decomposition to mitigate this.\n- ArtCoT enhances MLLMs' reasoning ability, leading to increased alignment with human preferences, by encouraging concrete language and reducing subjective interpretations.\n- The findings offer insights into MLLMs' application in art evaluation and suggest potential benefits for downstream tasks like style transfer and image generation.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/songrise/MLLM4Art"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    },
+    {
+        "title": "Ouroboros-Diffusion: Exploring Consistent Content Generation in Tuning-free Long Video Diffusion",
+        "authors": "Jie An, GiantBision, qiudavy, FireCRT, jchensteve",
+        "link": "https://arxiv.org/abs/2501.09019",
+        "github_repo": null,
+        "summary": "- Ouroboros-Diffusion, a novel video denoising framework, is proposed for tuning-free long video generation, addressing the limitations of current methods like FIFO-Diffusion in maintaining temporal consistency.\n- The framework incorporates three key components: coherent tail latent sampling to improve structural consistency, Subject-Aware Cross-Frame Attention (SACFA) to enhance subject consistency within short segments, and self-recurrent guidance to leverage past subject information for long-range coherence.\n- Ouroboros-Diffusion outperforms state-of-the-art methods like FIFO-Diffusion and FreeNoise on the VBench benchmark, achieving higher scores in Subject Consistency, Background Consistency, Motion Smoothness, and Temporal Flickering.\n- The coherent tail latent sampling utilizes the low-frequency component of the second-to-last frame latent along with high-frequency noise for the new tail latent, ensuring structure similarity while introducing dynamics.\n- Experimental results on VBench demonstrate substantial improvements in generating consistent long videos, particularly in reducing temporal flickering and maintaining subject and background coherence across frames.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-16"
+    }
+]

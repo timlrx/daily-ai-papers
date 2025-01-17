@@ -1,0 +1,169 @@
+[
+    {
+        "title": "OmniThink: Expanding Knowledge Boundaries in Machine Writing through Thinking",
+        "authors": "Ningyu, Runnaning, callanwu, JizhanFang, ZekunXi",
+        "link": "https://arxiv.org/abs/2501.09751",
+        "github_repo": null,
+        "summary": "- OmniThink, a novel machine writing framework, enhances knowledge density in generated long-form articles by emulating human-like iterative expansion and reflection.\n- It simulates the cognitive process of learners progressively deepening their knowledge, iteratively adjusting retrieval strategies for thorough information exploration.\n- This framework incorporates expansion and reflection, outline structuring, and article composition stages, utilizing search engines and LLMs to generate nuanced, original content.\n- Evaluation on WildSeek dataset with GPT-40 and Qwen-Plus demonstrates improved knowledge density and overall quality compared to baselines like RAG, ORAG, STORM, and Co-STORM.\n- Human evaluations confirm enhanced breadth and depth, though automated and human novelty assessments diverge, suggesting areas for future evaluation refinement.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps",
+        "authors": "mingdazhang, ycsu, hexianghu, S8T, willllis",
+        "link": "https://arxiv.org/abs/2501.09732",
+        "github_repo": null,
+        "summary": "- This paper proposes a framework for scaling diffusion models at inference time by searching for optimal noise vectors for image generation, improving image quality beyond simply increasing denoising steps.\n- The framework introduces two key components: verifiers, which provide feedback during the search process, and search algorithms to explore the noise space.\n- Experiments on ImageNet and larger-scale text-conditioned image generation benchmarks show that increasing inference compute dedicated to search leads to substantial quality improvements across different model sizes and tasks.\n- The study demonstrates that different verifiers, such as CLIP, DINO, and ImageReward, possess different biases, and the optimal search configurations vary across tasks, suggesting the need for task-specific verifiers and search setups.\n- Random search, zero-order search, and search over paths algorithms are explored for efficiently scaling compute at inference time",
+        "classification": [
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "Exploring the Inquiry-Diagnosis Relationship with Advanced Patient Simulators",
+        "authors": "Quan Tu, hsaest, ShizhengLi, sdujq, zhaocheng",
+        "link": "https://arxiv.org/abs/2501.09484",
+        "github_repo": "https://github.com/LIO-H-ZEN/PatientSimulator",
+        "summary": "- This paper introduces a novel patient simulator trained on synthetic doctor-patient dialogue data generated using real patient dialogue strategies and medical records.\n- The simulator aims to address the limitations of prompt engineering in accurately representing patient behavior in online medical consultations (OMCs).\n- Experiments demonstrate that the simulator exhibits a lower hallucination rate and improved anthropomorphism compared to baselines, although the irrelevant response rate is slightly higher.\n- The study investigates the relationship between inquiry and diagnosis in OMCs and finds that they adhere to Liebig's law: poor inquiry limits effective diagnosis, and vice-versa.\n- By categorizing inquiries into four types, the research analyzes inquiry differences among models and reveals the importance of effective inquiry allocation within limited consultation rounds.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/LIO-H-ZEN/PatientSimulator"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "SynthLight: Portrait Relighting with Diffusion Model by Learning to Re-render Synthetic Faces",
+        "authors": "Jingyuan Liu, Yannick Hold-Geoffroy, Sumit Chaturvedi, zhixinshu, mengweir",
+        "link": "https://arxiv.org/abs/2501.09756",
+        "github_repo": null,
+        "summary": "- SynthLight, a novel diffusion-based model, relights portraits by learning to re-render synthetic faces using a physically-based rendering engine and environment map lighting, bypassing explicit inverse rendering.\n- Trained on a synthetic dataset of 3D head renders under varied lighting, the model leverages multi-task training with real images (using a text-to-image task) and inference-time adaptation with classifier-free guidance to bridge the domain gap between synthetic and real images.\n- Quantitative evaluations on synthetic and Light Stage data reveal performance comparable to or exceeding state-of-the-art relighting methods.\n- User studies confirm that SynthLight delivers superior lighting accuracy, identity preservation, and overall image quality.\n- Qualitative results showcase unprecedented lighting effects like specular highlights, cast shadows, catch lights, subsurface scattering, and inter-reflections, generalizing effectively to complex portraits and unseen scenarios like half-body shots.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+        "authors": "oier-mees, dannydriess, brianichter, kylestach, KarlP",
+        "link": "https://arxiv.org/abs/2501.09747",
+        "github_repo": null,
+        "summary": "- This paper introduces FAST (Frequency-space Action Sequence Tokenization), a novel compression-based tokenization scheme for robot actions, utilizing Discrete Cosine Transform (DCT) and Byte Pair Encoding (BPE) to improve the training of Vision-Language-Action (VLA) models, especially with high-frequency data.\n- It addresses the limitations of per-dimension binning, which struggles with high-frequency, correlated action sequences by compressing redundant data into fewer, high-information tokens.\n- Based on FAST, they introduce FAST+, a universal pre-trained tokenizer effective across different robot morphologies, action spaces, and control frequencies, offering a strong default for robot action tokenization.\n- Combining FAST with the \u03c00 VLA model, they demonstrate performance comparable to state-of-the-art diffusion-based VLAs on long-horizon, dexterous manipulation tasks while achieving up to 5x faster training speeds.\n- The \u03c00-FAST model trained with the proposed tokenization also successfully learns a generalist manipulation policy that generalizes to unseen environments in a zero-shot setting based on natural language prompts, the first of its kind on the DROID dataset.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/physical-intelligence/fast"
+        ],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "Learnings from Scaling Visual Tokenizers for Reconstruction and Generation",
+        "authors": "David Yan, Philippe Hansen-Estruch, endernewton, Tingbo, orrzohar",
+        "link": "https://arxiv.org/abs/2501.09755",
+        "github_repo": null,
+        "summary": "- This paper introduces ViTok, a Vision Transformer-based tokenizer for image and video generation, which replaces traditional convolutional neural networks (CNNs) with an enhanced Vision Transformer (ViT) architecture combined with Llama, to improve scalability.\n- The study explores the impact of scaling the bottleneck size, encoder, and decoder of the auto-encoder on reconstruction and generation performance, finding that total floating points in the latent code are crucial for reconstruction, while scaling the decoder improves reconstruction but has limited generative benefits.  Scaling the encoder yielded minimal if any improvements to reconstruction or generation.\n- ViTok achieves competitive or state-of-the-art performance in image and video reconstruction on ImageNet-1K, COCO, and UCF-101 benchmarks while using significantly fewer FLOPs than existing methods.\n- Integrated with Diffusion Transformers, ViTok achieves competitive results in image generation and sets new benchmarks for class-conditional video generation on UCF-101.\n- The paper analyzes the trade-off between different loss functions in the decoder, suggesting its role as an extension of the generative model.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://vitok.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "RLHS: Mitigating Misalignment in RLHF with Hindsight Simulation",
+        "authors": "Jaime Fern\u00e1ndez Fisac, Thomas L. Griffiths, Ryan Liu, Haimin Hu, kaiquliang",
+        "link": "https://arxiv.org/abs/2501.08617",
+        "github_repo": null,
+        "summary": "- This paper introduces Reinforcement Learning from Hindsight Simulation (RLHS), a new alignment algorithm to mitigate misalignment in Reinforcement Learning from Human Feedback (RLHF).\n- RLHS decouples human feedback on the outcomes of an interaction from the prediction of these outcomes by simulating plausible consequences and then eliciting feedback, reducing the AI's incentive to influence predictions and promoting better alignment with human utility.\n- The authors apply RLHS to both online (Proximal Policy Optimization - PPO) and offline (Direct Preference Optimization - DPO) preference optimization methods and show empirically that it reduces misalignment in both.\n- Through a human user study, RLHS outperforms RLHF, leading to improved user goal achievement and higher satisfaction ratings, despite training solely with simulated feedback.\n- These findings underscore the importance of incorporating long-term consequences, even if simulated, for enhancing alignment between AI and human values in RLHF.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models",
+        "authors": "Ouyangtj, zhazhahui7, berserkerko, zzfoutofspace, haohao11",
+        "link": "https://arxiv.org/abs/2501.09686",
+        "github_repo": null,
+        "summary": "- This paper surveys recent advancements in Large Language Model (LLM) reasoning, focusing on reinforced learning methods and prompting techniques.\n- The survey explores how \"thought\" sequences, representing intermediate reasoning steps, enhance LLM's reasoning abilities, moving beyond simple token generation.\n- It reviews techniques like Chain-of-Thought prompting, Tree-of-Thoughts, and reinforcement learning methods using Process Reward Models (PRMs) for training and test-time scaling.\n- The paper analyzes OpenAI's o1 series and open-source projects like OpenR, LLaMA-Berry, and Journey Learning, showcasing their approaches to achieving strong reasoning capabilities.\n- Finally, it discusses open challenges and future research directions, including refining test-time scaling, developing more advanced reasoning models, and exploring potential applications in diverse domains.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "AnyStory: Towards Unified Single and Multiple Subject Personalization in Text-to-Image Generation",
+        "authors": "Junjie He, Liefeng, gengyifeng, ashui, tuoyuxiang",
+        "link": "https://arxiv.org/abs/2501.09503",
+        "github_repo": null,
+        "summary": "- AnyStory, a novel framework, is introduced to address the challenge of generating personalized images from text, focusing on single and multiple subjects personalization.\n- It leverages an \"encode-then-route\" paradigm, using a simplified ReferenceNet combined with a CLIP vision encoder for enhanced subject encoding, capturing both high-fidelity details and semantic concepts.\n- AnyStory uses a decoupled instance-aware subject router to guide subject condition injection, mitigating subject blending issues common in multi-subject generation.\n- Experimental results highlight AnyStory's effectiveness in preserving subject details, adhering to text descriptions, and personalizing for single and multiple subjects, showcasing advancements in personalized text-to-image generation.\n- The router's behavior exhibits similarities to image instance segmentation, suggesting potential applications in reference-prompted image segmentation using denoising U-Nets and trained routers.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/RealVisXL/RealVisXL-V4.0"
+        ],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "CaPa: Carve-n-Paint Synthesis for Efficient 4K Textured Mesh Generation",
+        "authors": "Junyoung Choi, Jeong A Wi, Seongyeong Lee, Hwan Heo, longshiine",
+        "link": "https://arxiv.org/abs/2501.09433",
+        "github_repo": null,
+        "summary": "- CaPa is a two-stage carve-and-paint framework for generating high-fidelity, textured 3D meshes from text or image inputs, which decouples geometry and texture generation.\n- Geometry generation uses a multi-view guided 3D latent diffusion model, ensuring structural consistency, followed by the generation of high-resolution textures (up to 4K) using a novel, model-agnostic Spatially Decoupled Attention method, which resolves multi-view inconsistencies like the Janus problem.\n- A 3D-aware occlusion inpainting algorithm further enhances texture completeness by filling untextured regions guided by a specialized UV map respecting surface locality.\n- Experimental results show CaPa produces higher fidelity textures and geometry as compared to existing methods like DreamCraft3D, Unique3D and SF3D, while also significantly reducing generation time to under 30 seconds.\n- CaPa's model-agnostic architecture in texture synthesis allows for direct integration with large pre-trained 2D generative models like SDXL and ControlNet, enhancing scalability and avoiding the need for extensive retraining.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    },
+    {
+        "title": "Do generative video models learn physical principles from watching videos?",
+        "authors": "Priyank Jaini, Laura Culp, rgeirhos, kswersky, sam-motamed",
+        "link": "https://arxiv.org/abs/2501.09038",
+        "github_repo": "https://github.com/google-deepmind/physics-IQ-benchmark",
+        "summary": "- This paper introduces Physics-IQ, a benchmark dataset designed to evaluate the understanding of physical principles in generative video models. \n- The dataset consists of 396 real-world videos covering various physical phenomena like fluid dynamics, optics, and magnetism, filmed from three different perspectives. \n- The models are tasked to predict the continuation of a video after observing a short initial sequence, and their predictions are evaluated against ground truth using metrics such as spatial and temporal intersection over union (IoU), and mean squared error (MSE). \n- Across a range of generative video models like Sora, Runway, Pika, Lumiere, Stable Video Diffusion, and VideoPoet, the study finds a significant gap between visual realism and physical understanding, with even the best-performing models showing limited grasp of physical principles. \n- The research also finds no correlation between visual realism, assessed by a multimodal large language model (MLLM), and performance on the Physics-IQ benchmark, further highlighting the dissociation between generating realistic visuals and understanding underlying physics.",
+        "classification": [
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/google-deepmind/physics-IQ-benchmark"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-17"
+    }
+]

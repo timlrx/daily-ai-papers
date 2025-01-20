@@ -15561,5 +15561,129 @@
         ],
         "huggingface_urls": [],
         "date": "2025-01-17"
+    },
+    {
+        "title": "Evolving Deeper LLM Thinking",
+        "authors": "Shumeet Baluja, Dave Marwood, Yueh-Hua Wu, Ian Fischer, Kuang-Huei Lee",
+        "link": "https://arxiv.org/abs/2501.09891",
+        "github_repo": null,
+        "summary": "- This paper introduces Mind Evolution, a novel evolutionary search strategy for Large Language Models (LLMs) designed to enhance their problem-solving capabilities by efficiently utilizing inference-time compute.\n- Mind Evolution employs a genetic algorithm that generates, refines, and recombines candidate solutions in natural language, guided by an evaluator that provides feedback without needing explicit formalization of the underlying problem.\n- In experiments on TravelPlanner, Trip Planning, and Meeting Planning benchmarks, Mind Evolution with Gemini 1.5 Flash significantly outperformed Best-of-N and Sequential Revision, achieving success rates exceeding 95%, 96%, and 85%, respectively.\n- A two-stage approach using Gemini 1.5 Pro for unsolved instances further boosted performance to near-perfect scores on TravelPlanner and Meeting Planning, matching or exceeding state-of-the-art results achieved with formal solvers.\n- The authors also introduce StegPoet, a new challenging benchmark for stenographic encoding of hidden messages in creative text, where Mind Evolution achieved a success rate of 87% using Gemini 1.5 Pro, demonstrating the method's applicability to less formalized tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "PaSa: An LLM Agent for Comprehensive Academic Paper Search",
+        "authors": "Yuchen Zhang, Yuan Lin, Peiyuan Feng, Guanhua Huang, Yichen He",
+        "link": "https://arxiv.org/abs/2501.10120",
+        "github_repo": "https://github.com/bytedance/pasa",
+        "summary": "- PaSa is a novel Large Language Model (LLM) agent designed for comprehensive academic paper searches that mimics human researcher behaviour by autonomously making decisions such as invoking search tools, reading papers and selecting relevant references.\n- PaSa consists of two LLM agents, the Crawler and the Selector.\n- The Crawler collects relevant papers by using search tools or extracting citations from the current paper and adding them to a growing paper queue, which the Selector then reads each paper in to determine whether it meets the requirements of the user query.\n- The authors build a synthetic but high-quality academic search dataset, AutoScholarQuery, based on fine-grained scholar queries and their corresponding relevant papers from ICLR 2023, ICML 2023, NeurIPS 2023, ACL 2024, and CVPR 2024.\n- PaSa-7b significantly outperforms all baselines on the RealScholarQuery dataset including Google, Google Scholar, Google paired with GPT-4 for paraphrased queries, chatGPT (search-enabled GPT-4), GPT-3.5-Turbo, and PaSa-GPT-4, achieving 37.78% improvement in Recall@20 and 39.90% improvement in Recall@50 compared to the strongest Google based baseline (Google with GPT-4).",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/pasa"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "Textoon: Generating Vivid 2D Cartoon Characters from Text Descriptions",
+        "authors": "Liefeng Bo, Jianqiang Ren, Chao He",
+        "link": "https://arxiv.org/abs/2501.10020",
+        "github_repo": null,
+        "summary": "- Textoon is a novel method for generating animatable 2D cartoon characters in the Live2D format from text descriptions, leveraging large language and vision models.\n- The system parses complex text descriptions using a fine-tuned LLM to identify character features like hair, eyes, clothing, and shoes, achieving over 90% accuracy.\n- It employs Stable Diffusion XL for controllable appearance generation, ensuring high-quality images and precise text pattern generation while maintaining model driving performance.\n- Textoon addresses component completion challenges by using a template-based approach for pixel extraction and image-to-image control generation for refining occluded areas.\n- For animation, Textoon enhances facial expressiveness by integrating ARKit's face blend shape capabilities into Live2D, enabling more detailed and lively lip-sync and facial movements.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "Multiple Choice Questions: Reasoning Makes Large Language Models (LLMs) More Self-Confident Even When They Are Wrong",
+        "authors": "Pedro Reviriego, Gonzalo Mart\u00ednez, Javier Conde, Tairan Fu, mariagrandury",
+        "link": "https://arxiv.org/abs/2501.09775",
+        "github_repo": null,
+        "summary": "- This paper investigates how Large Language Models (LLMs) self-confidence changes when they are asked to provide reasoning before answering multiple-choice questions (MCQs).\n- The study uses the Massive Multitask Language Understanding (MMLU) benchmark and evaluates seven different LLMs, including models from Meta, Mistral, Google, 01.AI, and OpenAI.\n- Results show that LLMs exhibit higher confidence in their selected answers when they provide reasoning, regardless of answer correctness. \n- This increased confidence is more pronounced for incorrect answers and is attributed to the autoregressive nature of LLMs and the influence of reasoning on predicted probabilities.\n- This behavior is consistent with human behavior, suggesting potential limitations of using confidence estimates for LLM evaluation and raising questions about the effectiveness of reasoning for certain question types.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/aMa2210/LLM_MCQ_LogProbs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "HiFi-SR: A Unified Generative Transformer-Convolutional Adversarial Network for High-Fidelity Speech Super-Resolution",
+        "authors": "Chong Zhang, Yukun Ma, Zexu Pan, Kun Zhou, Shengkui Zhao",
+        "link": "https://arxiv.org/abs/2501.10045",
+        "github_repo": "https://github.com/modelscope/ClearerVoice-Studio",
+        "summary": "- HiFi-SR, a unified transformer-convolutional generative adversarial network (GAN), is proposed for high-fidelity speech super-resolution.\n- The model uses a transformer network as an encoder to convert low-resolution mel-spectrograms into latent representations, and a convolutional network (based on HiFi-GAN generator) upscales these representations into high-resolution waveforms.\n- A multi-band, multi-scale time-frequency discriminator and a multi-scale mel-reconstruction loss are incorporated to enhance high-frequency fidelity during adversarial training.\n- HiFi-SR can upscale any input speech signal between 4 kHz and 32 kHz to a 48 kHz sampling rate.\n- Experimental results on VCTK, EXPRESSO, and VocalSet datasets demonstrate that HiFi-SR significantly outperforms existing methods in both objective metrics (LSD) and subjective listening tests (ABX).",
+        "classification": [
+            "Audio",
+            "Audio-to-Audio"
+        ],
+        "github_urls": [
+            "https://github.com/modelscope/ClearerVoice-Studio"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "X-Dyna: Expressive Dynamic Human Image Animation",
+        "authors": "Zhengfei Kuang, Yipeng Gao, You Xie, Hongyi Xu, Boese0601",
+        "link": "https://arxiv.org/abs/2501.10021",
+        "github_repo": "https://github.com/bytedance/X-Dyna",
+        "summary": "- X-Dyna is a novel zero-shot, diffusion-based pipeline for animating a single human image using facial expressions and body movements derived from a driving video, generating realistic, context-aware dynamics for both the subject and the surrounding environment.\n- It addresses key shortcomings of prior pose control-centered approaches, enhancing the lifelike qualities of human video animations through a Dynamics-Adapter.\n- This lightweight module integrates reference appearance context into the diffusion backbone's spatial attentions while preserving motion modules' ability to synthesize dynamic details.\n- Beyond body pose, it employs a local control module for identity-disentangled facial expression transfer, enhancing realism. \n- Evaluations demonstrate X-Dyna outperforms state-of-the-art methods, creating lifelike and expressive animations, shown by improved metrics and user preference over existing models on dynamic texture generation.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/X-Dyna"
+        ],
+        "huggingface_urls": [
+            "https://x-dyna.github.io/xdyna.github.io/"
+        ],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "GaussianAvatar-Editor: Photorealistic Animatable Gaussian Head Avatar Editor",
+        "authors": "Yuan Liu, Qi Zhang, Heng Li, Kunming Luo, Xiangyue Liu",
+        "link": "https://arxiv.org/abs/2501.09978",
+        "github_repo": null,
+        "summary": "- GaussianAvatar-Editor is a novel framework for text-driven editing of animatable 3D Gaussian head avatars, enabling modifications to expression, pose, and viewpoint.\n- It addresses challenges like motion occlusion and 4D inconsistency by introducing the Weighted Alpha Blending Equation (WABE), prioritizing visible Gaussians during editing and preserving non-visible ones.\n- Conditional adversarial learning is incorporated to improve editing quality and ensure consistency during animation.\n- The method is evaluated on a multi-view video dataset, demonstrating superior performance compared to relevant baselines in novel view synthesis, self-reenactment, and cross-identity reenactment.\n- The results showcase consistent, high-quality edits across different viewpoints, expressions, and even when transferring edits to new actors.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
+    },
+    {
+        "title": "ComplexFuncBench: Exploring Multi-Step and Constrained Function Calling under Long-Context Scenario",
+        "authors": "Jie Tang, Haiyi Hu, Xiaohan Zhang, Zhengxiao Du, Lucen Zhong",
+        "link": "https://arxiv.org/abs/2501.10132",
+        "github_repo": "https://github.com/THUDM/ComplexFuncBench",
+        "summary": "- ComplexFuncBench, a new benchmark for evaluating complex function calling in LLMs, focusing on multi-step and constrained scenarios within a 128k long context, is introduced.\n- Unlike existing benchmarks, it incorporates multi-step calls, user constraints, parameter value reasoning from implicit info, long parameter values, and a 128k context.\n- ComplexEval, an automatic evaluation framework, uses multi-dimensional matching (rule-based, response-based, and LLM-based) to overcome limitations of traditional exact matching.\n- Experiments on various LLMs reveal that closed-source models outperform open-source models, and parameter value errors are a significant challenge.\n- Different models exhibit specific weaknesses in handling various parameter types and planning function call steps.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/ComplexFuncBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-20"
     }
 ]

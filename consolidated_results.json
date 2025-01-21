@@ -15685,5 +15685,36 @@
         ],
         "huggingface_urls": [],
         "date": "2025-01-20"
+    },
+    {
+        "title": "GameFactory: Creating New Games with Generative Interactive Videos",
+        "authors": "Yiran Qin, XihuiLiu, di-zhang-fdu, Xintao, VictorYuki",
+        "link": "https://arxiv.org/abs/2501.08325",
+        "github_repo": null,
+        "summary": "- GameFactory is a new framework for creating novel games using generative interactive videos by leveraging pre-trained video diffusion models and introducing a new action-controllable dataset, GF-Minecraft.\n- It employs a multi-phase training strategy that decouples the learning of game style from action control, addressing the challenge of scene generalization in game video generation.\n- GameFactory utilizes a specialized action control module that incorporates distinct mechanisms for continuous mouse movements (concatenation) and discrete keyboard inputs (cross-attention).\n- It extends the model to enable autoregressive long video generation, crucial for practical game applications.\n- Experimental results demonstrate GameFactory\u2019s ability to effectively generate open-domain, diverse, and action-controllable videos, representing a significant advancement in game generation technology.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/KwaiVGI/GF-Minecraft"
+        ],
+        "date": "2025-01-21"
+    },
+    {
+        "title": "VideoWorld: Exploring Knowledge Learning from Unlabeled Videos",
+        "authors": "Bingyi Kang, Yao Zhao, Xun Guo, Yunchao Wei, maverickrzw",
+        "link": "https://arxiv.org/abs/2501.09781",
+        "github_repo": null,
+        "summary": "- VideoWorld, an auto-regressive video generation model trained on unlabeled video data, is proposed to explore knowledge learning from visual input.\n- The model architecture consists of a VQ-VAE for encoding video frames into discrete tokens, a transformer for next-token prediction, and a Latent Dynamics Model (LDM) to represent multi-step future visual changes.\n- Experiments on video-based Go and robotic control tasks show that video-only training allows for knowledge acquisition, including rules, reasoning, and planning capabilities.\n- VideoWorld reached a 5-dan professional level in Video-GoBench without search or reward mechanisms, showing strong performance on complex planning tasks.\n- The model shows promising generalization in robotic control tasks across multiple environments, highlighting the potential of video-based knowledge learning.",
+        "classification": [
+            "Computer Vision",
+            "Robotics",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-21"
     }
 ]

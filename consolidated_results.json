@@ -15716,5 +15716,231 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-01-21"
+    },
+    {
+        "title": "Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training",
+        "authors": "Zhengyin Du, Zhiheng Xi, Junjie-Ye, lovesnowbest, siyuyuan",
+        "link": "https://arxiv.org/abs/2501.11425",
+        "github_repo": null,
+        "summary": "- This paper introduces Agent-R, a novel iterative self-training framework designed to improve the error correction capabilities of large language model (LLM) agents in interactive environments.\n- Agent-R leverages Monte Carlo Tree Search (MCTS) to dynamically construct training samples, enabling agents to learn from their mistakes by revising erroneous trajectories.\n- The framework includes a model-guided critique construction mechanism where the actor model pinpoints the first error in a failed trajectory and splices it with the adjacent correct path, facilitating timely error correction.\n- Experimental results across three interactive and agentic environments (WebShop, SciWorld, and TextCraft) demonstrate that Agent-R surpasses baseline methods and agents trained on expert trajectories, achieving superior performance (+5.59%).\n- Agent-R also equips agents with the ability to more effectively identify and correct erroneous actions in real time while avoiding loops, addressing a key limitation of previous methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/Agent-R"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered"
+        ],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "MMVU: Measuring Expert-Level Multi-Discipline Video Understanding",
+        "authors": "Lujing Xie, Yilun Zhao, Phil-01, entropyhu, freesky",
+        "link": "https://arxiv.org/abs/2501.12380",
+        "github_repo": null,
+        "summary": "- MMVU, a new expert-level multi-discipline benchmark, is introduced for evaluating foundation models in video understanding, comprising 3,000 expert-annotated questions across 27 subjects in Science, Healthcare, Humanities & Social Sciences, and Engineering.\n- MMVU emphasizes domain-specific knowledge application and complex reasoning for specialized-domain video analysis, going beyond basic visual perception common in current video benchmarks.\n- Each MMVU example includes expert annotations from scratch with stringent quality control, enriched by expert-written reasoning rationales and domain knowledge.\n- In evaluations of 32 prominent models, advanced System-2 models like o1 and Gemini 2.0 Flash Thinking achieved top performance, though still below human expertise.\n- This work provides valuable insights for enhancing expert-level, knowledge-intensive video understanding in specialized domains.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "github.com/yale-nlp/MMVU"
+        ],
+        "huggingface_urls": [
+            "huggingface.co/datasets/yale-nlp/MMVU"
+        ],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Demons in the Detail: On Implementing Load Balancing Loss for Training Specialized Mixture-of-Expert Models",
+        "authors": "Kaiyue Wen, Bo Zheng, Zeyu Huang, Zihan Qiu, Losin94",
+        "link": "https://arxiv.org/abs/2501.11873",
+        "github_repo": null,
+        "summary": "- This paper proposes a global-batch load balancing loss (LBL) strategy for training Mixture-of-Experts (MoE) models, addressing the limitations of the commonly used micro-batch LBL.\n- The micro-batch LBL enforces load balancing at the sequence level, hindering expert specialization, particularly in domain-specific tasks, whereas the global-batch LBL promotes load balancing at the corpus level, encouraging specialization.\n- The global-batch LBL involves synchronizing expert selection frequencies across parallel groups, introducing minimal computational overhead.\n- Experiments on various MoE model sizes (up to 42.8B parameters) trained on up to 400B tokens show that global-batch LBL significantly improves both pre-training perplexity and downstream task performance.\n- Analysis reveals that global-batch LBL leads to more interpretable expert specialization, aligning routing decisions with the language modeling task.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents",
+        "authors": "Shihao Liang, Haoming Wang, Junjie Fang, Yining Ye, Yujia Qin",
+        "link": "https://arxiv.org/abs/2501.12326",
+        "github_repo": null,
+        "summary": "- UI-TARS is a native GUI agent model that perceives screenshots and performs human-like interactions, such as keyboard and mouse operations, outperforming current agent frameworks.\n- It incorporates enhanced perception through a large-scale dataset of GUI screenshots for context-aware understanding, unified action modeling for multi-step execution across platforms, and system-2 reasoning for deliberate decision-making.\n- UI-TARS addresses the data bottleneck in end-to-end agent training by automatically collecting, filtering, and refining interaction traces on virtual machines, along with reflection tuning to recover from errors.\n- In experiments on 10+ GUI agent benchmarks, UI-TARS achieved SOTA performance in perception, grounding, and GUI task execution, surpassing models like GPT-40 and Claude.\n- Notably, UI-TARS achieved 24.6 on OSWorld (50 steps) and 46.6 on AndroidWorld, exceeding Claude's 22.0 and GPT-40's 34.5, respectively.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/UI-TARS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Mobile-Agent-E: Self-Evolving Mobile Assistant for Complex Tasks",
+        "authors": "Ming Yan, Xi Zhang, Junyang Wang, xhyandwyy, mikewang",
+        "link": "https://arxiv.org/abs/2501.11733",
+        "github_repo": null,
+        "summary": "- This paper introduces Mobile-Agent-E, a novel hierarchical multi-agent framework for mobile task automation, featuring self-evolution capabilities through learning and applying reusable *Shortcuts* and *Tips* from past experiences.\n- Mobile-Agent-E consists of a *Manager*, *Perceptor*, *Operator*, *Action Reflector*, and *Notetaker* agents to handle planning, visual perception, action execution, error verification, and information aggregation respectively.\n- It also proposes Mobile-Eval-E, a new benchmark focusing on complex, long-horizon, multi-app mobile tasks, along with a *Satisfaction Score* metric based on human-written rubrics for evaluating open-ended tasks.\n- Experimental results on Mobile-Eval-E demonstrate that Mobile-Agent-E outperforms previous state-of-the-art approaches by a significant margin, achieving a 22.1% absolute improvement in Satisfaction Score with GPT-40.\n- The inclusion of a self-evolution module shows further performance gains and improved efficiency.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/x-plug/MobileAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Video Depth Anything: Consistent Depth Estimation for Super-Long Videos",
+        "authors": "Zilong Huang, Feihu Zhang, Shengnan Zhu, Hengkai Guo, Sili Chen",
+        "link": "https://arxiv.org/abs/2501.12375",
+        "github_repo": null,
+        "summary": "- Video Depth Anything, a new feed-forward video transformer model based on Depth Anything V2, excels in temporally consistent video depth estimation for arbitrarily long videos.\n- This model substitutes the DPT head with a spatial-temporal head incorporating temporal attention layers and introduces a novel temporal gradient matching loss to ensure temporal consistency.\n- Trained jointly on video depth data and unlabeled images, the model demonstrates superior performance without relying on geometric or generative priors.\n- It utilizes a key-frame-based inference strategy for processing super-long videos.\n- Evaluation across various benchmarks reveals state-of-the-art results in zero-shot video depth estimation, surpassing baselines in accuracy and consistency while maintaining computational efficiency.",
+        "classification": [
+            "Depth Estimation",
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "videodepthanything.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation",
+        "authors": "Haolin Liu, Yunfei Zhao, Qingxiang Lin, Zeqiang Lai, Zibo Zhao",
+        "link": "https://arxiv.org/abs/2501.12202",
+        "github_repo": "https://github.com/Tencent/Hunyuan3D-2",
+        "summary": "- Hunyuan3D 2.0 is a large-scale 3D synthesis system that generates high-resolution textured 3D assets from images or text prompts using two foundational models: Hunyuan3D-DiT (shape generation) and Hunyuan3D-Paint (texture synthesis).\n- Hunyuan3D-DiT uses a scalable flow-based diffusion transformer on a latent space generated by an autoencoder (Hunyuan3D-ShapeVAE), enabling the creation of detailed meshes aligned with given image conditions.\n- Hunyuan3D-Paint utilizes a mesh-conditioned multi-view image generation pipeline along with image pre-processing and baking techniques to synthesize high-resolution texture maps consistent with the generated or user-provided mesh and the input prompt.\n- Evaluations show that Hunyuan3D 2.0 outperforms existing open-source and commercial models in geometry details, image alignment, and texture quality across various metrics.\n- A user study confirmed these results, indicating a preference for Hunyuan3D 2.0 generated assets and highlighting its superior alignment with image prompts.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent/Hunyuan3D-2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments",
+        "authors": "Tao Yu, Pengcheng Yin, Jinsung Yoon, Ruoxi Sun, Hongjin Su",
+        "link": "https://arxiv.org/abs/2501.10893",
+        "github_repo": null,
+        "summary": "- LEARN-BY-INTERACT is a data-centric framework designed to enable Large Language Model (LLM) agents to self-adapt to new environments without human annotations by synthesizing trajectories of agent-environment interactions based on documentation.\n- It constructs instructions by summarizing or abstracting interaction histories (backward construction) and uses these in training-based and training-free in-context learning scenarios with retrieval approaches optimized for agents.\n- Experiments across coding, web, and desktop environments (SWE-bench, WebArena, OSWorld, Spider2-V) show LEARN-BY-INTERACT improves baseline results, with up to 12.2% for in-context learning with Claude-3.5 and 19.5% for training with Codestral-22B.\n- Backward construction contributes significantly to performance, improving results by up to 14%.\n- The framework's agentic retrieval pipeline demonstrates superiority over conventional retrieval-augmented generation.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Reasoning Language Models: A Blueprint",
+        "authors": "Afonso Catarino, Ales Kubicek, Eric Schreiber, Julia Barth, Maciej Besta",
+        "link": "https://arxiv.org/abs/2501.11223",
+        "github_repo": null,
+        "summary": "- This paper introduces a blueprint for Reasoning Language Models (RLMs), providing a modular framework for their design and analysis.\n- The blueprint incorporates various reasoning structures, strategies, and training schemes, unifying diverse RLM approaches like MCTS, reinforcement learning, and structured prompting.\n- A modular implementation, x1, is presented for rapid RLM prototyping and experimentation, along with insights like multi-phase training and the importance of familiar training distributions.\n- Analysis of existing RLMs like LLaMA-Berry and QwQ demonstrates the blueprint's versatility and unifying potential.\n- The work aims to democratize advanced reasoning capabilities, fostering innovation and bridging the gap between \"rich AI\" and \"poor AI\".",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/spcl/x1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "Condor: Enhance LLM Alignment with Knowledge-Driven Data Synthesis and Refinement",
+        "authors": "Chuyu Zhang, Mo Li, Taolin Zhang, Maosong Cao, zsytony",
+        "link": "https://arxiv.org/abs/2501.12273",
+        "github_repo": "https://github.com/InternLM/Condor",
+        "summary": "- Condor, a two-stage framework for synthetic data generation, enhances Large Language Model (LLM) alignment by leveraging a World Knowledge Tree and self-reflection refinement.\n- The first stage, Condor Void, uses a knowledge inspiration strategy with the World Knowledge Tree to create diverse questions and initial responses, forming the Dv dataset.\n- The second stage, Condor Refine, applies a self-reflection mechanism allowing the model to iteratively refine Dv responses based on self-generated critiques, generating a higher-quality DR dataset.\n- Experiments using various LLMs, including Qwen, InternLM, and Llama, demonstrate that Condor-generated data significantly improves performance on subjective chat benchmarks compared to officially released and RLHF-trained models, even without RLHF incorporated in the Condor training pipeline.\n- Additional experiments on knowledge-based benchmarks reveal that Condor maintains the models' knowledge QA capabilities while improving conversational ability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/InternLM/Condor"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/datasets/internlm/Condor-SFT-20K"
+        ],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "EMO2: End-Effector Guided Audio-Driven Avatar Video Generation",
+        "authors": "Liefeng Bo, Bang Zhang, Qi Wang, Siqi Hu, Linrui Tian",
+        "link": "https://arxiv.org/abs/2501.10687",
+        "github_repo": null,
+        "summary": "- EMO2 is a novel two-stage audio-driven talking head method that generates expressive facial expressions and synchronized hand gestures from a single reference image and audio input.\n- The first stage uses a motion diffusion model to generate hand poses from audio, leveraging the strong correlation between audio and hand movements.\n- The second stage employs a diffusion-based model with a ReferenceNet backbone to synthesize video frames, incorporating the generated hand poses to produce realistic facial expressions and body movements, guided by \"pixels prior IK\".\n- Experimental results demonstrate that EMO2 outperforms state-of-the-art methods, such as CyberHost and Vlogger, in terms of visual quality, synchronization accuracy, and motion diversity, particularly in generating more vivid and expressive hand motions.\n- The method addresses the challenge of weak correspondence between audio and full-body gestures by focusing on hand motion generation and leveraging the implicit IK knowledge within 2D generative models.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "GPS as a Control Signal for Image Generation",
+        "authors": "Andrew Owens, Alexei A. Efros, Aleksander Holynski, Ziyang Chen, chfeng",
+        "link": "https://arxiv.org/abs/2501.12390",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach to image generation using GPS coordinates as a control signal, enabling the generation of images that reflect the visual characteristics of specific locations within a city.\n- The proposed GPS-to-image diffusion model is conditioned on both GPS coordinates and text prompts, enabling compositional generation and fine-grained control over the generated images.\n- The model can also be used to extract 3D models from images by conditioning a NeRF on GPS coordinates and utilizing a score distillation sampling technique, avoiding the need for explicit camera pose estimation or feature matching.\n- Evaluations on image and 3D datasets from New York City and Paris demonstrate that the model captures subtle location-based variations in images and improves 3D structure estimation.\n- This approach opens up possibilities for applications such as location-based image editing, generation of location-specific content, and 3D reconstruction from geotagged photo collections.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://cfeng16.github.io/gps-gen/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "TokenVerse: Versatile Multi-concept Personalization in Token Modulation Space",
+        "authors": "Shiran Zada, Omer Tov, Roni Paiss, Shahar Yadin, Daniel Garibi",
+        "link": "https://arxiv.org/abs/2501.12224",
+        "github_repo": null,
+        "summary": "- TokenVerse is a novel method for multi-concept personalization in text-to-image generation using diffusion transformers (DiTs).\n- It leverages the modulation space of DiTs, learning personalized modulation vectors for each token in a given text prompt, allowing for disentangled control over various visual concepts, including objects, poses, materials, and lighting.\n-  Unlike previous methods, TokenVerse handles multiple images with multiple concepts each, enabling the combination of learned concepts from different images into new generated images.\n- The method employs a two-stage optimization process to learn personalized modulation vectors and incorporates a concept isolation loss to prevent interference between concepts from different images.\n-  Evaluations show that TokenVerse outperforms existing methods in terms of concept preservation and prompt fidelity, both qualitatively and quantitatively, including a user study.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
+    },
+    {
+        "title": "MSTS: A Multimodal Safety Test Suite for Vision-Language Models",
+        "authors": "Alicia Parrish, Janis Goldzycher, Felix Friedrich, Giuseppe Attanasio, Paul R\u00f6ttger",
+        "link": "https://arxiv.org/abs/2501.10057",
+        "github_repo": null,
+        "summary": "- This paper introduces MSTS, a Multimodal Safety Test Suite for Vision-Language Models (VLMs).\n- MSTS comprises 400 unsafe multimodal English-language prompts across 40 fine-grained hazard categories and is designed to test the safety of VLMs in a structured manner.\n- MSTS test prompts consist of both a textual and visual component designed to be safe individually but unsafe when combined.\n- Commercial VLMs generally respond safely to MSTS while open VLMs have clear safety issues often responding unsafely or failing to interpret the multimodal input correctly.\n- This research highlights the need for further research into VLM safety and the importance of multimodal inputs in safety evaluation.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/paul-rottger/msts-multimodal-safety"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-22"
     }
 ]

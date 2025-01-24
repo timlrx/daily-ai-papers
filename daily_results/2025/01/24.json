@@ -1,0 +1,200 @@
+[
+    {
+        "title": "SRMT: Shared Memory for Multi-agent Lifelong Pathfinding",
+        "authors": "Yuri Kuratov, mbur, alsu-sagirova",
+        "link": "https://arxiv.org/abs/2501.13200",
+        "github_repo": "https://github.com/Aloriosa/srmt",
+        "summary": "- This paper introduces the Shared Recurrent Memory Transformer (SRMT), a novel architecture extending memory transformers to multi-agent settings for improved coordination in pathfinding tasks.\n- SRMT pools and globally broadcasts individual recurrent memory vectors, allowing agents to implicitly exchange information and coordinate actions without explicit communication, utilizing an attention block inspired by the Huggingface GPT-2 model.\n- Evaluated on a Partially Observable Multi-Agent Pathfinding (PO-MAPF) Bottleneck task and POGEMA benchmark, SRMT outperforms reinforcement learning baselines, particularly under sparse rewards, and generalizes to longer corridors.\n- In the Bottleneck task, SRMT demonstrates superior Cooperative Success Rate (CSR), Individual Success Rate (ISR), and Sum-of-Costs (SoC) compared to other methods, especially in challenging scenarios.\n- On POGEMA, SRMT is competitive with state-of-the-art MARL, hybrid, and planning-based algorithms, showing its potential as a robust solution for decentralized multi-agent pathfinding.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/Aloriosa/srmt"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/docs/transformers/model_doc/gpt2"
+        ],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Improving Video Generation with Human Feedback",
+        "authors": "Ziyang Yuan, Jiajun Liang, Gongye Liu, Xintao, jieliu",
+        "link": "https://arxiv.org/abs/2501.13918",
+        "github_repo": null,
+        "summary": "- This paper introduces a new framework for aligning text-to-video (T2V) generation models with human preferences using reinforcement learning from human feedback (RLHF).\n- A new 182k-example multi-dimensional human preference dataset focused on modern video generation models is constructed, along with VideoReward, a multi-dimensional video reward model.\n- Three new alignment algorithms for flow-based video generation models are derived: Flow-DPO, Flow-RWR (training-time algorithms), and Flow-NRG (inference-time algorithm). \n- Flow-DPO outperforms standard supervised fine-tuning and Flow-RWR on automatic and human preference evaluations when the KL-divergence parameter \\(\\beta\\) is fixed. \n- Flow-NRG enables personalized video generation by allowing users to adjust weights for multiple alignment objectives during inference.",
+        "classification": [
+            "Text-to-Video",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://gongyeliu.github.io/videoalign"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Sigma: Differential Rescaling of Query, Key and Value for Efficient Language Models",
+        "authors": "hanglics, yegong, lx865712528, tzh94588, Lin0",
+        "link": "https://arxiv.org/abs/2501.13629",
+        "github_repo": null,
+        "summary": "- SIGMA, a new large language model specializing in the system domain, is introduced, featuring DiffQKV attention for enhanced inference efficiency.\n- DiffQKV differentially optimizes Query, Key, and Value components: using compressed K and V and augmented Q, balancing performance and efficiency.\n- SIGMA is pre-trained on 6 trillion tokens, including 19.5 billion system domain data and 1 trillion synthesized/rewritten data.\n- In general domains, SIGMA's performance is comparable to state-of-the-art models.\n- On AIMICIUS, a new system domain benchmark, SIGMA significantly outperforms existing models, including GPT-4, with up to a 52.5% absolute improvement.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Temporal Preference Optimization for Long-Form Video Understanding",
+        "authors": "Zeyu Wang, yeunglevy, yuhuizhang, nicholswang, ruili0",
+        "link": "https://arxiv.org/abs/2501.13919",
+        "github_repo": null,
+        "summary": "- This paper introduces Temporal Preference Optimization (TPO), a novel post-training framework designed to enhance the temporal grounding capabilities of video Large MultiModal Models (LMMs).\n- TPO leverages preference learning at two granularities: localized temporal grounding, focusing on specific video segments, and comprehensive temporal grounding, addressing broader temporal dependencies.\n- By curating preference data at these two levels, TPO trains video-LMMs to differentiate between temporally grounded and ungrounded responses, improving their ability to capture nuanced temporal relationships in videos.\n- Experiments on LongVideoBench, MLVU, and Video-MME benchmarks demonstrate significant performance improvements with TPO across two state-of-the-art video-LMMs (LongVA-7B and LLaVA-Video-7B).\n- Notably, LLaVA-Video with TPO achieves state-of-the-art results on Video-MME among 7B models, highlighting the effectiveness of TPO in enhancing long-form video understanding.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "DiffuEraser: A Diffusion Model for Video Inpainting",
+        "authors": "Haolan Xue, Liefeng, lyraestar, asLKHFksasak",
+        "link": "https://arxiv.org/abs/2501.10018",
+        "github_repo": null,
+        "summary": "- DiffuEraser, a novel video inpainting model based on stable diffusion, is introduced. \n- It addresses three key challenges: propagation of known pixels, generation of unknown pixels, and temporal consistency. \n- The model incorporates priors for initialization and weak conditioning, mitigating noisy artifacts and hallucinations, and leverages a motion module and expanded temporal receptive fields for enhanced temporal consistency during long-sequence inference. \n- Experimental results demonstrate that DiffuEraser outperforms state-of-the-art techniques in content completeness and temporal consistency. \n- The model achieves this while maintaining acceptable efficiency by using only two steps to generate samples via Phased Consistency Models (PCM).",
+        "classification": [
+            "Computer Vision",
+            "Video Classification",
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/lixiaowen-xw/DiffuEraser.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Can We Generate Images with CoT? Let's Verify and Reinforce Image Generation Step by Step",
+        "authors": "Renrui Zhang, hsli-cuhk, gaopenghigh, zhizhengzhao, ZiyuG",
+        "link": "https://arxiv.org/abs/2501.13926",
+        "github_repo": "https://github.com/ZiyuGuo99/Image-Generation-CoT",
+        "summary": "- This paper investigates the application of Chain-of-Thought (CoT) reasoning to enhance autoregressive image generation, focusing on test-time verification and preference alignment.\n- The authors introduce two specialized reward models, Potential Assessment Reward Model (PARM) and PARM++, designed for autoregressive image generation. PARM performs adaptive step-wise potential assessment, while PARM++ incorporates a reflection mechanism for self-correction of generated images.\n- Using these strategies, the baseline model Show-o achieves a significant +24% improvement on the GenEval benchmark, outperforming Stable Diffusion 3 by +15%.\n- The research demonstrates the effectiveness of integrating CoT reasoning with autoregressive image generation through tailored reward models and strategic alignment techniques.\n- The findings pave a new path for enhancing image generation quality and provide valuable insights for future advancements in the field.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ZiyuGuo99/Image-Generation-CoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "IMAGINE-E: Image Generation Intelligence Evaluation of State-of-the-art Text-to-Image Models",
+        "authors": "lzyhha, JackyZhuo, RuoyiDu, Afeng-x, jyjyjyjy",
+        "link": "https://arxiv.org/abs/2501.13920",
+        "github_repo": "https://github.com/jylei16/Imagine-e",
+        "summary": "- IMAGINE-E, a comprehensive evaluation framework, is introduced to benchmark text-to-image (T2I) models across five key domains.\n- Six prominent models, including FLUX.1 and Ideogram2.0, were evaluated on tasks related to structured output generation, realism and physical consistency, specific domain generation, challenging scenarios, and multi-style creation.\n- FLUX.1 and Ideogram2.0 show superior performance, especially in structured and specific domain tasks.\n- The evaluation reveals that existing evaluation frameworks need to be improved to better assess these advanced models and that T2I models show progress towards becoming foundational AI tools.\n- The evaluation also highlights ongoing limitations in complex areas like 3D and code generation.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/jylei16/Imagine-e"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "EchoVideo: Identity-Preserving Human Video Generation by Multimodal Feature Fusion",
+        "authors": "Renjie Chen, Boyuan Liu, Shiyue Yan, Jiangchuan Wei, linwf",
+        "link": "https://arxiv.org/abs/2501.13452",
+        "github_repo": null,
+        "summary": "- EchoVideo is an identity-preserving text-to-video model based on Diffusion Transformers (DiT) that maintains high identity similarity while mitigating \"copy-paste\" artifacts.\n- It leverages an Identity Image-Text Fusion (IITF) module to integrate text semantics, image semantics, and facial identity, effectively capturing clean identity representations and resolving semantic conflicts between modalities. \n- A two-stage training strategy, incorporating a stochastic method in the second phase, reduces over-reliance on shallow facial information while enhancing fidelity. \n-  EchoVideo preserves both facial identity and full-body consistency, including attributes like clothing and hairstyle, controlled solely through text prompts. \n- Experimental results demonstrate superior performance in generating high-quality, controllable, and high-fidelity videos compared to existing methods, addressing challenges like rigid expressions and semantic mismatches.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Step-KTO: Optimizing Mathematical Reasoning through Stepwise Binary Feedback",
+        "authors": "spermwhale, yunhe, sainbar, jindi, yentinglin",
+        "link": "https://arxiv.org/abs/2501.10799",
+        "github_repo": null,
+        "summary": "- This paper introduces Step-KTO (Stepwise Kahneman-Tversky-inspired Optimization), a novel training framework designed to enhance the mathematical reasoning capabilities of Large Language Models (LLMs).\n- Step-KTO integrates both process-level and outcome-level binary feedback signals to guide LLMs in generating not only correct final answers but also logically sound intermediate reasoning steps.\n- By incorporating a Kahneman-Tversky-inspired value function, Step-KTO prioritizes correctness and coherence in the reasoning process.\n- Experimental results on benchmark mathematical reasoning datasets demonstrate that Step-KTO surpasses existing state-of-the-art methods, achieving a notable improvement in accuracy (e.g., 63.2% Pass@1 on MATH-500 vs. 53.4% for the baseline model) alongside producing more reliable intermediate solutions.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Debate Helps Weak-to-Strong Generalization",
+        "authors": "Yongbin-Li, hzhwcmhf, langnick",
+        "link": "https://arxiv.org/abs/2501.13124",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel approach to improve weak-to-strong generalization in natural language processing by leveraging debate between two large language models (LLMs).\n- The debate mechanism extracts trustworthy information from the LLMs, which is then used to train a better weak supervisor.\n- An ensemble of weak models is employed to process the long arguments generated during the debate, leading to more robust supervision estimates.\n- The proposed combination of scalable oversight and weak-to-strong generalization approaches results in improved alignment on OpenAI's weak-to-strong NLP benchmarks.\n- Experimental results show that the debate-enhanced weak supervision significantly outperforms baseline approaches in terms of performance gap recovered (PGR) and test accuracy on various question-answering datasets, including SciQ, BoolQ, CosmosQA, and AnthropicHH.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Evolution and The Knightian Blindspot of Machine Learning",
+        "authors": "Tarin Ziyaee, Kenneth O. Stanley, Tarek El-Gaaly, ekmeyerson, jal278",
+        "link": "https://arxiv.org/abs/2501.13075",
+        "github_repo": null,
+        "summary": "- This paper argues that machine learning (ML), and reinforcement learning (RL) in particular, overlooks the critical aspect of robustness to Knightian uncertainty (KU), or unknown unknowns, which is essential for general intelligence in open worlds.\n- By contrasting RL with biological evolution, the authors highlight how evolution's mechanisms, such as diversification, adaptation to novelty, and persistence as a filter for robustness, enable it to thrive in open-ended, unpredictable environments, unlike current RL agents, which struggle with out-of-distribution scenarios.\n- The paper identifies specific limitations in RL's core formalisms, including closed-world assumptions in MDPs, fixed time horizons in reward functions, episodic boundaries, and the treatment of training data as timeless, arguing that these limitations contribute to RL's blindness to KU. \n- The authors suggest that incorporating principles from evolution, such as open-endedness, artificial life, and revisiting core RL formalisms, might help address KU and lead to more robust AI.\n- The implications of KU for foundation models, RLHF, AI safety, and potential pathways to integrate KU into RL algorithms are discussed.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "Video-MMMU: Evaluating Knowledge Acquisition from Multi-Discipline Professional Videos",
+        "authors": "ZhangYuanhan, wangxiao1208, pufanyi, craigwu, KairuiHu",
+        "link": "https://arxiv.org/abs/2501.13826",
+        "github_repo": null,
+        "summary": "- Introduces Video-MMMU, a benchmark designed to evaluate large multimodal models' (LMMs) ability to acquire and apply knowledge from professional educational videos.\n- The benchmark includes 300 videos spanning six disciplines, each accompanied by three question-answer pairs aligned with Bloom\u2019s Taxonomy: Perception, Comprehension, and Adaptation.\n- A new metric, called *\u0394knowledge*, is proposed to quantify the models' performance improvement on practice exam questions after viewing a video.\n- Evaluation results of several LMMs revealed a progressive decline in model performance as the cognitive level increases from perception to comprehension to adaptation.\n- Analysis reveals that even top-performing models like Claude-3.5-Sonnet exhibit significant performance decline in complex scenarios, highlighting the limitations of current models in adapting video-based knowledge to solve real-world problems.",
+        "classification": [
+            "Multimodal",
+            "Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    },
+    {
+        "title": "GSTAR: Gaussian Surface Tracking and Reconstruction",
+        "authors": "Jie Song, Juan Zarate, Chengwei Zheng, lxxue",
+        "link": "https://arxiv.org/abs/2501.10283",
+        "github_repo": null,
+        "summary": "- GSTAR, a novel method for dynamic surface reconstruction and tracking from multi-view captures, is introduced, addressing topology changes like surface emergence, disappearance, and splitting.\n- It combines meshes with Gaussians, tracking consistent topology surfaces via mesh tracking and generating new surfaces from unbound Gaussians in topology-changing areas.\n- A surface-based scene flow method using 2D optical flow and depth enhances frame tracking initialization, handling significant deformations.\n- Evaluations show GSTAR outperforms state-of-the-art in appearance and geometry metrics, demonstrated through novel view synthesis and mesh comparisons, respectively.\n- It excels in tracking accuracy, even with topology changes, based on experiments using AprilTags attached to a moving human.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://eth-ait.github.io/GSTAR/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-24"
+    }
+]

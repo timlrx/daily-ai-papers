@@ -16282,5 +16282,77 @@
         ],
         "huggingface_urls": [],
         "date": "2025-01-24"
+    },
+    {
+        "title": "Humanity's Last Exam",
+        "authors": "Josephina Hu, Nathaniel Li, Ziwen Han, Alice Gatti, Long Phan",
+        "link": "https://arxiv.org/abs/2501.14249",
+        "github_repo": null,
+        "summary": "- This paper introduces HUMANITY'S LAST EXAM (HLE), a challenging multi-modal benchmark designed to assess the advanced academic capabilities of large language models (LLMs).\n- HLE comprises 3,000 multi-modal, multiple-choice, and exact-match questions across various subjects, emphasizing complex mathematics problems, and aims to be the final closed-ended academic benchmark of its kind.\n- The benchmark creation involved a rigorous process of expert contribution, LLM difficulty checks, and a multi-stage review process to ensure high quality and difficulty.\n- Initial evaluations demonstrate that state-of-the-art LLMs perform poorly on HLE and exhibit poor calibration, indicating significant room for improvement.\n- HLE's public release aims to provide a robust tool for researchers and policymakers to evaluate AI progress and inform discussions about AI development and governance.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-27"
+    },
+    {
+        "title": "Redundancy Principles for MLLMs Benchmarks",
+        "authors": "Chunyi Li, Xiangyu Zhao, Zicheng Zhang, KennyUTC, nebulae09",
+        "link": "https://arxiv.org/abs/2501.13953",
+        "github_repo": null,
+        "summary": "- This paper introduces a framework for evaluating redundancy in Multimodal Large Language Model (MLLM) benchmarks, addressing the issue of numerous benchmarks with overlapping capabilities.\n- The framework quantifies redundancy across three key perspectives: dimensions (intra-benchmark), instances (intra-benchmark), and cross-benchmarks within specific domains.\n- It uses performance correlation to measure redundancy, leveraging data from VLMEvalKit, a comprehensive dataset containing results from diverse benchmarks and over 100 MLLMs.\n- The study reveals significant redundancy in many existing benchmarks, suggesting opportunities for optimization by reducing redundant dimensions and instances.\n- The paper concludes with recommendations for constructing more efficient and effective MLLM benchmarks, including guidance on redundancy checks during the benchmark design process.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/VLMEval/OpenVLMRecords"
+        ],
+        "date": "2025-01-27"
+    },
+    {
+        "title": "Chain-of-Retrieval Augmented Generation",
+        "authors": "Zhicheng Dou, Xiaolong Huang, Nan Yang, Haonan Chen, Liang Wang",
+        "link": "https://arxiv.org/abs/2501.14342",
+        "github_repo": null,
+        "summary": "- This paper introduces CoRAG (Chain-of-Retrieval Augmented Generation), a novel approach for training RAG models that retrieve and reason over information step-by-step before generating answers.\n- Unlike conventional RAG methods that perform a single retrieval step, CoRAG allows dynamic query reformulation based on the model's evolving state, enhancing its effectiveness in handling complex queries.\n- CoRAG is trained effectively using rejection sampling to generate intermediate retrieval chains, augmenting existing RAG datasets and improving the model's ability to learn effective retrieval strategies.\n- Experiments across multiple benchmarks show CoRAG outperforming strong baselines, particularly in multi-hop question answering tasks, where it achieves more than 10 points improvement in EM score.\n- CoRAG establishes a new state-of-the-art performance on the KILT benchmark across various knowledge-intensive tasks, demonstrating its superior ability to handle diverse knowledge-intensive tasks.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-27"
+    },
+    {
+        "title": "RealCritic: Towards Effectiveness-Driven Evaluation of Language Model Critiques",
+        "authors": "Ruoyu Sun, Tian Ding, Zhenyang Xiao, Ziniu Li, Zhengyang Tang",
+        "link": "https://arxiv.org/abs/2501.14492",
+        "github_repo": "https://github.com/tangzhy/RealCritic",
+        "summary": "- The paper introduces RealCritic, a novel benchmark designed to assess the critique capabilities of large language models (LLMs) in a closed-loop manner.\n- Unlike existing benchmarks that evaluate critiques in isolation, RealCritic evaluates critique quality based on the effectiveness of the generated corrections.\n- RealCritic incorporates various critique settings, including self-critique, cross-critique, and iterative critique, providing a comprehensive evaluation.\n- The benchmark is implemented using eight challenging reasoning tasks across mathematical reasoning and multiple-choice question domains.\n- Experiments show that reasoning-based models outperform classical LLMs, particularly in self-critique settings, emphasizing the value of a closed-loop evaluation approach.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/tangzhy/RealCritic"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-27"
+    },
+    {
+        "title": "Relightable Full-Body Gaussian Codec Avatars",
+        "authors": "Timur Bagautdinov, Igor Santesteban, Tomas Simon, Shaofei Wang, psyth",
+        "link": "https://arxiv.org/abs/2501.14726",
+        "github_repo": null,
+        "summary": "- This paper introduces Relightable Full-Body Gaussian Codec Avatars, a novel method for creating and animating high-fidelity, relightable 3D human avatars from light stage data.\n- The model uses 3D Gaussian Splatting (3DGS) for geometry and appearance representation, combined with a learned radiance transfer function that leverages zonal harmonics for diffuse lighting and deferred shading for specular highlights.\n- A dedicated shadow network predicts non-local shadows caused by body articulation, improving realism.\n- The method outperforms a physically-based rendering (PBR) baseline and ablation studies demonstrate the importance of zonal harmonics, shadow networks, and deferred shading.\n- This allows for efficient, high-quality rendering of human avatars under various lighting and poses.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-27"
     }
 ]

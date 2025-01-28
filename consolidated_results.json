@@ -16354,5 +16354,147 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-01-27"
+    },
+    {
+        "title": "Baichuan-Omni-1.5 Technical Report",
+        "authors": "Song Chen, Tao Zhang, Tao Zhang, Jun Liu, AdamLee1",
+        "link": "https://arxiv.org/abs/2501.15368",
+        "github_repo": null,
+        "summary": "- Baichuan-Omni-1.5 is an open-source omnimodal model with end-to-end audio generation capabilities, utilizing a visual branch (NaViT based), audio branch (RVQ tokenizer and flow matching decoder), and a pretrained LLM backbone.\n- The model is trained using a three-stage strategy, focusing on image-text pretraining, image-audio-text pretraining, and multimodal fine-tuning using a 500B token dataset.\n- It claims to outperform leading open-source omnimodal models like VITA-1.5 and MiniCPM-0 2.6 on various tasks, including image, video, and audio understanding, and even surpasses proprietary models like GPT-40-mini on certain benchmarks.\n- On MMLU, it achieves 72.2% accuracy, and on OpenMM-Medical, it reaches 83.8% with a 7B LLM, exceeding Qwen2-VL-72B's 80.7%.\n- An audio tokenizer is designed for semantic and acoustic information capture, supporting controllable bilingual real-time conversations and general multimodal understanding.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Text-to-Audio",
+            "Text-to-Speech",
+            "Text-to-Video",
+            "Visual Question Answering",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/baichuan-inc/Baichuan-Omni-1.5"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "Qwen2.5-1M Technical Report",
+        "authors": "Fei Huang, Dayiheng Liu, Chengyuan Li, Bowen Yu, An Yang",
+        "link": "https://arxiv.org/abs/2501.15383",
+        "github_repo": null,
+        "summary": "- This paper introduces Qwen2.5-1M, a series of large language models (LLMs) that extend the context length to 1 million tokens, including open-source models Qwen2.5-7B/14B-Instruct-1M and an API-accessible model, Qwen2.5-Turbo.\n- Qwen2.5-1M employs several key techniques to enhance long context capabilities, such as long data synthesis, progressive pretraining, and multi-stage supervised fine-tuning.\n- It also includes a novel inference framework with training-free length extrapolation and sparse attention to reduce costs.\n- Evaluation shows significant improvement of Qwen2.5-1M on long-context tasks, sometimes outperforming GPT-4, while retaining comparable performance on short-context tasks to 128k versions.\n- Qwen2.5-Turbo stands out with faster inference speed and lower cost for long sequences, offering a practical solution for various real-world scenarios requiring extended contexts.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "ARWKV: Pretrain is not what we need, an RNN-Attention-Based Language Model Born from Transformer",
+        "authors": "Peter Yue, Li Zhiyuan, Lin Yueyu, xiaol",
+        "link": "https://arxiv.org/abs/2501.15570",
+        "github_repo": "https://github.com/yynil/RWKVInside",
+        "summary": "- This paper introduces ARWKV, a series of RNN-based language models distilled from Qwen 2.5, utilizing pure native RWKV-7 attention.\n- The architecture aims to enhance the expressiveness of RNNs and demonstrate state-tracking capabilities beyond transformers, replacing the self-attention mechanism in transformers with the RWKV-7 time mixing module.\n- The distillation process reduces the training time and resource requirements, enabling a 7B parameter model to be trained on a single A100 80G GPU, compared to the vast resources needed for training Qwen 2.5's 18 trillion tokens.\n- Initial experiments with a 7B model demonstrate competitive performance in benchmarks after stage 2 training. \n- The key innovation is to replace transformer's self-attention with RWKV time mixing module",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yynil/RWKVInside"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/RWKV-Red-Team/ARWKV-7B-Preview-0.1"
+        ],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "Towards General-Purpose Model-Free Reinforcement Learning",
+        "authors": "Michael Rabbat, Yuandong Tian, Amy Zhang, Pierluca D'Oro, Scott Fujimoto",
+        "link": "https://arxiv.org/abs/2501.16142",
+        "github_repo": null,
+        "summary": "- This paper introduces MR.Q, a model-free deep reinforcement learning algorithm designed for general-purpose learning across diverse environments and tasks.\n- MR.Q leverages model-based representations, learning features that approximate a linear relationship between state-action pairs and value, while utilizing a non-linear value function for prediction.\n- The algorithm uses a unified embedding space for states and actions, allowing for a single set of hyperparameters across different benchmarks.\n- Experimental results on 118 environments across four common RL benchmarks (Gym, DMC proprioceptive and visual, and Atari) show competitive performance against domain-specific and general baselines, including model-based methods like DreamerV3 and TD-MPC2.\n- MR.Q achieves this competitive performance with fewer network parameters and substantially faster training and evaluation speeds than general-purpose model-based methods.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/MRQ"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "Emilia: A Large-Scale, Extensive, Multilingual, and Diverse Dataset for Speech Generation",
+        "authors": "Yicheng Gu, Xuyuan Li, Chaoren Wang, Zengqiang Shang, Haorui He",
+        "link": "https://arxiv.org/abs/2501.15907",
+        "github_repo": null,
+        "summary": "- This paper introduces Emilia, a large-scale, multilingual, and diverse dataset for speech generation derived from in-the-wild speech data.\n- Emilia comprises over 101k hours of speech across six languages (English, Chinese, German, French, Japanese, and Korean) and is expanded to 216k hours with Emilia-Large, making it the largest open-source speech generation dataset available.\n- The paper also introduces Emilia-Pipe, an open-source preprocessing pipeline used to create the dataset, which standardizes, separates sources, diarizes speakers, segments by VAD, performs ASR, and filters data.\n- Experiments demonstrated that Emilia significantly outperforms traditional audiobook datasets in generating spontaneous, human-like speech, capturing diverse speaker timbres and speaking styles.\n- Further experiments validated the importance of scaling dataset size and showcased the effectiveness of Emilia for multilingual and crosslingual speech generation.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/open-mmlab/Amphion/tree/main/preprocessors/Emilia"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/amphion/Emilia-Dataset"
+        ],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "iFormer: Integrating ConvNet and Transformer for Mobile Application",
+        "authors": "Chuanyang Zheng",
+        "link": "https://arxiv.org/abs/2501.15369",
+        "github_repo": "https://github.com/ChuanyangZheng/iFormer",
+        "summary": "- iFormer, a family of mobile hybrid vision networks, is introduced, integrating convolutional networks for local feature extraction and a novel Single-Head Modulation Attention (SHMA) for efficient global modeling. \n- SHMA reduces memory overhead compared to Multi-Head Attention (MHA) by eliminating memory-intensive reshaping operations while maintaining competitive performance through an efficient modulation mechanism.\n- iFormer achieves state-of-the-art accuracy-latency trade-off on mobile devices, reaching 80.4% Top-1 accuracy on ImageNet-1k with only 1.10 ms latency on an iPhone 13, outperforming recent models like MobileNetV4. \n- The model also shows strong performance on downstream tasks such as COCO object detection, instance segmentation, and ADE20k semantic segmentation with low latency on mobile devices for high-resolution inputs.\n- Further, iFormer's efficiency and scalability are demonstracted with larger model and longer training schedules.",
+        "classification": [
+            "Image Classification",
+            "Object Detection",
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/ChuanyangZheng/iFormer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "Mixture-of-Mamba: Enhancing Multi-Modal State-Space Models with Modality-Aware Sparsity",
+        "authors": "Luke Zettlemoyer, Ning Dong, Genghan Zhang, Junhong Shen, Weixin Liang",
+        "link": "https://arxiv.org/abs/2501.16295",
+        "github_repo": "https://github.com/Weixin-Liang/Mixture-of-Mamba",
+        "summary": "- Mixture-of-Mamba (MoM) introduces modality-aware sparsity to State Space Models (SSMs) by incorporating modality-specific parameterization within the Mamba block, enhancing multi-modal pretraining.\n- MoM dynamically selects modality-specific weights in each processing component, enabling efficient handling of diverse data types while preserving SSM computational benefits.\n- Across three multi-modal settings (Transfusion, Chameleon, and a three-modality setup), MoM consistently achieves equivalent or better loss values at significantly reduced computational costs, outperforming dense baselines like Mamba Dense and Flex-Attention Transformer.\n- In Transfusion, MoM matches image loss with 34.76% of the FLOPs at the 1.4B scale; in Chameleon, it reaches similar image loss with 42.50% and text loss with 65.40% of the FLOPs; and in the three-modality setting, it matches speech loss with just 24.80% of the FLOPs.\n- An ablation study reveals synergistic effects from decoupling projection components, with joint decoupling yielding larger performance gains than individual modifications, establishing modality-aware sparsity as an effective design principle for both SSMs and Transformers.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Weixin-Liang/Mixture-of-Mamba"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-28"
+    },
+    {
+        "title": "Feasible Learning",
+        "authors": "Meraj Hashemizadeh, Jose Gallego-Posada, Juan Elenter, Ignacio Hounie, Juan Ramirez",
+        "link": "https://arxiv.org/abs/2501.14912",
+        "github_repo": "https://github.com/juan43ramirez/feasible-learning",
+        "summary": "- This paper introduces Feasible Learning (FL), a sample-centric learning paradigm that trains models by solving a feasibility problem, ensuring bounded loss for each training sample, as opposed to optimizing for average performance like Empirical Risk Minimization (ERM).\n- The authors use a primal-dual optimization approach, dynamically re-weighting sample importance based on fitting difficulty.\n- They also introduce Resilient Feasible Learning (RFL) to address potential infeasibility issues by incorporating slack variables.\n- Empirical analysis on image classification, age regression, and large language model preference optimization shows comparable average performance to ERM but improved tail behavior, with fewer high-loss samples.\n- The results suggest that RFL's concentrated loss distribution is particularly beneficial when consistent performance across all data points is crucial.",
+        "classification": [
+            "Image Classification",
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/juan43ramirez/feasible-learning"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/argilla/distilabel-intel-orca-dpo-pairs",
+            "https://huggingface.co/stabilityai/stablelm-zephyr-3b"
+        ],
+        "date": "2025-01-28"
     }
 ]

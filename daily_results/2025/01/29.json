@@ -1,0 +1,122 @@
+[
+    {
+        "title": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+        "authors": "Saining Xie, Shengbang Tong, Jihan Yang, Yuexiang Zhai, Tianzhe Chu",
+        "link": "https://arxiv.org/abs/2501.17161",
+        "github_repo": null,
+        "summary": "- This paper compares the effects of supervised fine-tuning (SFT) and reinforcement learning (RL) on the generalization and memorization abilities of foundation models.\n- The authors introduce a new arithmetic reasoning card game called GeneralPoints and utilize the existing V-IRL visual navigation environment to evaluate model performance across textual and visual domains.\n- Their findings reveal that RL, particularly when trained with outcome-based rewards, generalizes better to unseen variants than SFT, which tends to memorize the training data. \n- Interestingly, SFT is found to be helpful in stabilizing the model's output format for subsequent RL training, which allows RL to achieve its performance gains.\n- The research highlights the advantages of RL in acquiring generalizable knowledge for complex, multimodal tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "Optimizing Large Language Model Training Using FP4 Quantization",
+        "authors": "Guoshuai Zhao, Xiao Liu, Yeyun Gong, Ruizhe Wang, cp5555",
+        "link": "https://arxiv.org/abs/2501.17116",
+        "github_repo": null,
+        "summary": "- This paper introduces the first FP4 training framework for large language models (LLMs), addressing the challenges of significant quantization errors and limited representational capacity.\n- Two key innovations are presented: a differentiable quantization estimator for precise weight updates and an outlier clamping and compensation strategy to prevent activation collapse.\n- The framework integrates a mixed-precision training scheme and vector-wise quantization to ensure stability.\n- Experimental results demonstrate that the FP4 framework achieves accuracy comparable to BF16 and FP8, scaling effectively to 13B-parameter LLMs trained on up to 100B tokens.\n- The authors conclude that their framework sets a foundation for efficient ultra-low precision training, particularly with the emergence of next-generation hardware supporting FP4.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "Over-Tokenized Transformer: Vocabulary is Generally Worth Scaling",
+        "authors": "Ya Wang, Yutao Zeng, Banggu Wu, Defa Zhu, Hongzhi Huang",
+        "link": "https://arxiv.org/abs/2501.16975",
+        "github_repo": null,
+        "summary": "- This paper introduces Over-Tokenized Transformers, a framework that improves language modeling performance by decoupling input and output vocabularies and scaling up the input vocabulary with multi-gram tokens.\n- A log-linear relationship is observed between the input vocabulary size and training loss, showing that larger input vocabularies improve performance regardless of model size.\n- Using a large input vocabulary, the proposed method matches the performance of a model 2.5x larger (400M model matches 1B model) on the OLMo2 benchmark at no additional training cost.\n-  Over-encoding (OE) leverages hierarchical n-gram input vocabulary and over-decoding (OD) utilizes a large output vocabulary with multi-token prediction, which can be beneficial for large models.\n- The integration of OE and OD results in Over-Tokenized Transformer (OT), demonstrating further performance improvements.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "Open Problems in Mechanistic Interpretability",
+        "authors": "Jeff Wu, Jack Lindsey, Joshua Batson, Lee Sharkey, bilalchughtai",
+        "link": "https://arxiv.org/abs/2501.16496",
+        "github_repo": null,
+        "summary": "- This review paper discusses open problems in mechanistic interpretability, a field aiming to understand the computational mechanisms behind neural networks' abilities, particularly in natural language processing.\n- The authors categorize open problems into methods and foundations (reverse engineering, concept-based interpretability, proceduralization and automation), applications (monitoring, control, predictions, inference/training, microscope AI, and model/modality ranges), and socio-technical aspects.\n-  Key challenges include developing better decomposition methods beyond sparse dictionary learning, improving validation techniques, and connecting interpretability research to concrete engineering and scientific goals.\n- The paper also touches on the potential of mechanistic interpretability in AI governance, including risk assessment, policy development, and addressing social and philosophical implications.\n- This review focuses specifically on suggesting potential future research directions for the field, rather than simply summarizing the current state of mechanistic interpretability.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "DiffSplat: Repurposing Image Diffusion Models for Scalable Gaussian Splat Generation",
+        "authors": "Yadong Mu, Zeming Li, Bangbang Yang, Panwang Pan, Chenguo Lin",
+        "link": "https://arxiv.org/abs/2501.16764",
+        "github_repo": null,
+        "summary": "- This paper introduces DIFFSPLAT, a novel 3D generative framework that uses large-scale text-to-image diffusion models to generate 3D Gaussian splats.\n- Unlike previous methods, DIFFSPLAT leverages web-scale 2D priors while maintaining 3D consistency in a unified model.\n- A lightweight reconstruction model is proposed to bootstrap training and produce multi-view Gaussian splat grids for scalable dataset curation.\n- The compatibility with image diffusion models enables seamless adaptation of numerous techniques for image generation to the 3D realm.\n- Extensive experiments demonstrate the superiority of DIFFSPLAT in text- and image-conditioned generation tasks and downstream applications.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://chenguolin.github.io/projects/DiffSplat"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "IndicMMLU-Pro: Benchmarking Indic Large Language Models on Multi-Task Language Understanding",
+        "authors": "Nikunj Kotecha, Ashutosh Kumar, Sankalp KJ, amanchadha, laxmaanb",
+        "link": "https://arxiv.org/abs/2501.15747",
+        "github_repo": null,
+        "summary": "- IndicMMLU-Pro, a comprehensive benchmark for evaluating large language models (LLMs) across nine major Indic languages, is introduced. \n- The benchmark covers a wide range of tasks in language comprehension, reasoning, and generation, meticulously crafted to capture the complexities of Indic languages.\n- IndicMMLU-Pro's design principles, task taxonomy, and data collection methodology are detailed, and baseline results from state-of-the-art multilingual models are presented.\n- The benchmark is publicly available, aiming to contribute to advancements in Indic language-based technologies.\n- The results reveal that GPT-4 consistently outperforms other models across all Indic languages, highlighting the importance of both scale and specialized training for Indic languages.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/LinguaLift/IndicMMLU-Pro"
+        ],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "Low-Rank Adapters Meet Neural Architecture Search for LLM Compression",
+        "authors": "Nilesh Jain, Jinjie Yuan, J. Pablo Mu\u00f1oz",
+        "link": "https://arxiv.org/abs/2501.16372",
+        "github_repo": "https://github.com/IntelLabs/Hardware-Aware-Automated-Machine-Learning",
+        "summary": "- This paper introduces a novel approach to compressing Large Language Models (LLMs) by combining low-rank adapters with Neural Architecture Search (NAS) techniques.\n- The method, called LoNAS, uses elastic low-rank adapters that can dynamically adjust their configurations during fine-tuning, improving efficiency.\n- LoNAS achieves competitive results compared to traditional LoRA, reducing the total number of parameters by up to 20% while maintaining similar accuracy.\n- Further enhancements, such as Shears and SQFT, build upon LoNAS to address challenges in handling sparse or low-precision models and improve efficiency even further.\n- The results demonstrate significant improvements in inference speedup (up to 1.4x) and compression, making LLMs more accessible for resource-constrained environments.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/IntelLabs/Hardware-Aware-Automated-Machine-Learning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-29"
+    },
+    {
+        "title": "Histoires Morales: A French Dataset for Assessing Moral Alignment",
+        "authors": "Charlotte Laclau, Julien Velcin, Antoine Gourru, Irina Proskurina, Thibaud Leteno",
+        "link": "https://arxiv.org/abs/2501.17117",
+        "github_repo": null,
+        "summary": "- This paper introduces HISTOIRESMORALES, a new French dataset for evaluating the moral alignment of large language models (LLMs).\n- The dataset is created by translating and refining the MORALSTORIES dataset, ensuring grammatical accuracy and cultural relevance for the French context.\n- HISTOIRESMORALES includes annotations of moral values to align with French norms, covering diverse social situations.\n- Preliminary experiments reveal that while LLMs generally align with human moral norms, their alignment is easily influenced by user preferences, demonstrating a lack of robustness.\n- The authors demonstrate how their dataset can be used to investigate the alignment of LLMs with human moral norms and the impact of language on this alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/upunaprosk/histoires-morales"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/datasets/LabHC/histoires_morales"
+        ],
+        "date": "2025-01-29"
+    }
+]

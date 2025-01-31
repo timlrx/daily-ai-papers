@@ -16692,5 +16692,125 @@
             "https://huggingface.co/datasets/anonymous4486/Virus"
         ],
         "date": "2025-01-30"
+    },
+    {
+        "title": "GuardReasoner: Towards Reasoning-based LLM Safeguards",
+        "authors": "lakxtxue, JunXia97, zsf, HongchengGao, yueliu1998",
+        "link": "https://arxiv.org/abs/2501.18492",
+        "github_repo": "https://github.com/yueliu1999/GuardReasoner/",
+        "summary": "- This paper introduces GuardReasoner, a novel reasoning-based safeguard for Large Language Models (LLMs) designed to improve safety, explainability, and generalization of LLMs.\n- The GuardReasoner model architecture involves two stages: Reasoning Supervised Fine-tuning (R-SFT) to unlock reasoning capabilities and Hard Sample Direct Preference Optimization (HS-DPO) to refine reasoning, especially for ambiguous samples near decision boundaries.\n- GuardReasoner 8B outperforms GPT-40+CoT by 5.74% and LLaMA Guard 3 8B by 20.84% F1 score on average across 13 benchmarks covering 3 guardrail tasks, demonstrating superior performance.  A new dataset, GuardReasonerTrain, consisting of 127K samples with 460K detailed reasoning steps, was created to facilitate training.\n- Explainability is enhanced by the provision of not only moderation results but also the intermediate reasoning process, enabling transparency in decision-making. Generalization is improved by employing reasoning steps, which allows the model to handle open-ended categories of harm, exceeding the constraints of manually defined categories.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yueliu1999/GuardReasoner/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+        "authors": "Zhangren Chen, Yifei Li, Yuxin Zuo, stingning, lindsay-qu",
+        "link": "https://arxiv.org/abs/2501.18362",
+        "github_repo": null,
+        "summary": "- MedXpertQA is introduced as a challenging benchmark designed to evaluate expert-level medical knowledge and advanced reasoning capabilities in AI models.\n- It comprises two subsets: MedXpertQA Text for text-based evaluation and MedXpertQA MM for multimodal assessment, covering 17 medical specialties, 11 body systems, and 3 task categories.\n- The benchmark includes 4,460 multiple-choice questions derived from medical licensing exams and textbooks, with 2,005 multimodal questions accompanied by 2,839 diverse medical images.\n- A rigorous construction process involving data collection, filtering, augmentation, and expert review ensures high difficulty, diversity, and clinical relevance.\n- Initial evaluations of 16 leading large language and multimodal models on MedXpertQA reveal limited performance, especially in complex medical reasoning tasks, highlighting the benchmark's utility in driving further advancements in medical AI.",
+        "classification": [
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/TsinghuaC3I/MedXpertQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "Thoughts Are All Over the Place: On the Underthinking of o1-Like LLMs",
+        "authors": "yudian, freesunshine0316, zwhe99, Jiahao004, Dennis364",
+        "link": "https://arxiv.org/abs/2501.18585",
+        "github_repo": null,
+        "summary": "- This paper identifies and analyzes \"underthinking\" in large language models (LLMs) like OpenAI's o1, where models frequently switch between reasoning paths without sufficient exploration, especially in challenging mathematical problems.\n- A novel metric is introduced to quantify underthinking by measuring the token efficiency in incorrect answers, comparing the number of tokens used before the first correct thought to the total number of tokens used.\n- A new decoding strategy called \"Thought Switching Penalty (TIP)\" is proposed to mitigate underthinking. This method discourages premature thought transitions by adding penalties to tokens associated with thought switching during decoding.  \n- Experiments on challenging datasets like MATH500, GPQA Diamond, and AIME demonstrate that TIP consistently improves the accuracy of the QwQ-32B-Preview model without requiring any model fine-tuning.\n- The findings contribute to a better understanding of reasoning inefficiencies in o1-like LLMs and offer a practical solution to improve their problem-solving capabilities by encouraging deeper, more focused exploration of reasoning paths.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+        "authors": "Vitor Guizilini, Daniel Seita, Jiageng Mao, Boyiliee, WeiChow",
+        "link": "https://arxiv.org/abs/2501.16411",
+        "github_repo": null,
+        "summary": "- This paper introduces PhysBench, a new benchmark designed to evaluate the physical world understanding of Vision-Language Models (VLMs) across diverse tasks, including physical object properties, relationships, scene understanding, and physics-based dynamics.\n- The benchmark consists of 10,002 interleaved video-image-text entries, revealing that current VLMs, particularly open-source ones, struggle with physical reasoning despite excelling in common-sense tasks.\n- To address this limitation, the authors propose PhysAgent, a novel framework integrating vision foundation models and a physics knowledge memory, enhancing VLMs' perceptual capabilities and providing physical world priors.\n- Experimental results show that PhysAgent improves GPT-40's zero-shot performance on PhysBench by 18.4%.\n- Further experiments with embodied agents on robotic manipulation tasks demonstrate that enhancing VLMs' physical world understanding through PhysBench fine-tuning and PhysAgent zero-shot assistance can facilitate more effective deployment in embodied AI applications, such as MOKA.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "Streaming DiLoCo with overlapping communication: Towards a Distributed Free Lunch",
+        "authors": "Zachary Charles, Satyen Kale, Keith Rush, Yanislav Donchev, Arthur Douillard",
+        "link": "https://arxiv.org/abs/2501.18512",
+        "github_repo": null,
+        "summary": "- This paper introduces Streaming DiLoCo, a distributed training algorithm for large language models (LLMs) that significantly reduces communication bandwidth requirements without sacrificing performance.\n- Streaming DiLoCo improves upon DiLoCo by synchronizing subsets of parameters sequentially, overlapping worker computation with communication, and quantizing exchanged gradients.\n- By combining these modifications, Streaming DiLoCo achieves similar quality to data parallelism and the original DiLoCo but with two orders of magnitude less bandwidth.\n- Experiments on language models ranging from 35 million to 4 billion parameters trained on the C4 dataset demonstrate comparable performance to Data-Parallel and DiLoCo.\n- Furthermore, overtraining experiments on the Dolma dataset with a 1 billion parameter model show Streaming DiLoCo performs slightly better than Data-Parallel despite using substantially less bandwidth.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "WILDCHAT-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+        "authors": "Chinmay Hegde, penfever",
+        "link": "https://arxiv.org/abs/2501.18511",
+        "github_repo": "https://github.com/penfever/wildchat-50m",
+        "summary": "- This paper introduces WILDCHAT-50M, the largest public chat dataset comprising over 125 million chat transcripts generated by 50 different open-weight language models, ranging from 0.5B to 104B parameters.\n- The authors conduct a comparative analysis of model efficiency and response similarity, finding that model size and context window length strongly correlate with throughput and that LLM responses are surprisingly similar across different models.\n- They leverage WILDCHAT-50M to create RE-WILD, a novel data mixture for supervised fine-tuning (SFT), which outperforms the Tulu-3 SFT mixture with only 40% of the data.\n- The paper demonstrates that the choice of data generating model significantly impacts downstream benchmark performance and that blending different DGMs for SFT offers minimal benefit.\n- It concludes that data quality depends primarily on prompt diversity and that optimizing responses from a single high-quality DGM is more effective than blending multiple DGMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/penfever/wildchat-50m"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "o3-mini vs DeepSeek-R1: Which One is Safer?",
+        "authors": "Miriam Ugarte, ssegura, japarejo, pablovalle, aitorarrieta",
+        "link": "https://arxiv.org/abs/2501.18438",
+        "github_repo": null,
+        "summary": "- This paper presents a systematic safety assessment of two Large Language Models (LLMs): DeepSeek-R1 (70b) and OpenAI's o3-mini (beta). \n- The study leverages ASTRAL, an automated safety testing tool, to generate and execute 1260 unsafe test inputs across various safety categories, writing styles, and persuasion techniques.\n- The results indicate that DeepSeek-R1 exhibits a significantly higher rate of unsafe responses (11.98%) compared to o3-mini (1.19%).\n- Certain safety categories and writing styles were found to be more likely to trigger unsafe behaviors in DeepSeek-R1, while o3-mini's safety appeared less affected by specific categories or styles, potentially due to its policy violation feature.\n- The study concludes that OpenAI's latest LLMs demonstrate a stronger safety alignment compared to DeepSeek-R1.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Trust4AI/ASTRAL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
+    },
+    {
+        "title": "Large Language Models Think Too Fast To Explore Effectively",
+        "authors": "Robert C. Wilson, xhb120633, louanna",
+        "link": "https://arxiv.org/abs/2501.18009",
+        "github_repo": null,
+        "summary": "- This paper investigates the exploration capabilities of Large Language Models (LLMs) in open-ended tasks, using the game Little Alchemy 2 as a testbed.\n- Most LLMs underperform compared to humans in this task, except for the ol model, primarily relying on uncertainty-driven strategies rather than balancing uncertainty and empowerment like humans.\n- Representational analysis reveals that uncertainty and choices are processed earlier in transformer blocks, while empowerment is processed later, causing LLMs to \"think too fast\" and make premature decisions that hinder exploration.\n- The study highlights the limitations of current LLMs in open-ended exploration and suggests that improvements in reasoning capabilities are crucial for enhancing their adaptability.\n- The paper uses Sparse Autoencoders (SAE) to probe latent representations of exploration-related values in LLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-01-31"
     }
 ]

@@ -1,0 +1,134 @@
+[
+    {
+        "title": "s1: Simple test-time scaling",
+        "authors": "Xiang Lisa Li, percyliang, swj0419, zitongyang, Muennighoff",
+        "link": "https://arxiv.org/abs/2501.19393",
+        "github_repo": "https://github.com/simplescaling/s1",
+        "summary": "- This paper introduces s1-32B, a language model fine-tuned for enhanced reasoning by using test-time scaling.\n- The model is trained on s1K, a curated dataset of 1,000 reasoning questions and solutions distilled from Google's Gemini.\n- Budget forcing, a novel technique to control test-time computation, improves the model's reasoning abilities allowing it to extrapolate beyond performance achieved without test-time intervention.\n- Evaluation on benchmarks such as AIME24, MATH500, and GPQA Diamond shows s1-32B's superior sample efficiency and competitive performance compared to existing models, including OpenAI's o1-preview.\n- The authors emphasize the importance of dataset curation using criteria like difficulty, diversity, and quality, as well as the effectiveness of budget forcing for test-time scaling.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/simplescaling/s1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "Reward-Guided Speculative Decoding for Efficient LLM Reasoning",
+        "authors": "doyensahoo, JunnanLi, hendrydong, yuhuixu, baohao",
+        "link": "https://arxiv.org/abs/2501.19324",
+        "github_repo": null,
+        "summary": "- This paper introduces Reward-Guided Speculative Decoding (RSD), a novel framework designed to enhance the efficiency of Large Language Model (LLM) inference, especially in reasoning tasks.\n- RSD combines a \"draft\" model with a \"target\" model and uses a process reward model to evaluate intermediate steps, dynamically deciding when to invoke the target model based on these rewards.\n- By selectively refining high-reward draft outputs, RSD minimizes computational costs compared to traditional speculative decoding which enforces strict unbiasedness.\n- Experimental results on reasoning benchmarks demonstrate significant computational savings (up to 4.4x fewer FLOPs) while improving accuracy compared to target-only or parallel decoding methods (up to +3.5 on average).\n- The paper explores different threshold-based criteria and weighting functions, highlighting the effectiveness of the approach across math and general LLMs for a range of reasoning tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "Self-supervised Quantized Representation for Seamlessly Integrating Knowledge Graphs with Large Language Models",
+        "authors": "Fangzhi Xu, Zhen Peng, Kai He, Tianzhe Zhao, Qika",
+        "link": "https://arxiv.org/abs/2501.18119",
+        "github_repo": null,
+        "summary": "- This paper proposes a two-stage framework called Self-Supervised Quantized Representation (SSQR) to seamlessly integrate Knowledge Graphs (KGs) with Large Language Models (LLMs).\n- The SSQR method compresses KG structural and semantic knowledge into discrete codes (tokens) through a self-supervised quantization process using a Graph Convolutional Network (GCN) encoder and vector quantization.\n- In the second stage, KG instruction-following data is created using the learned codes as input features, allowing LLMs to be fine-tuned for KG tasks like link prediction and triple classification.\n- Experimental results show that SSQR outperforms existing unsupervised quantized methods, and fine-tuned LLMs using SSQR achieve superior performance on KG link prediction and triple classification with fewer tokens per entity.\n- The learned quantized representations are more distinguishable and allow LLMs to better differentiate between entities in KGs.",
+        "classification": [
+            "Graph Machine Learning",
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "Constitutional Classifiers: Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming",
+        "authors": "Primusa, euanong, sgoodfriend, jayelm, meg-tong",
+        "link": "https://arxiv.org/abs/2501.18837",
+        "github_repo": null,
+        "summary": "- This paper introduces Constitutional Classifiers, a new method for defending large language models (LLMs) against universal jailbreaks, which are prompting strategies that bypass model safeguards.\n- The approach involves training classifier safeguards on synthetic data generated using explicit constitutional rules that define permitted and restricted content categories.\n- This framework also employs data-augmentation techniques and leverages pool sets of benign data.\n- In over 3,000 estimated hours of red teaming, no red teamer found a universal jailbreak that could extract information from an early classifier-guarded LLM at a similar level of detail to an unguarded model.\n- On automated evaluations, enhanced classifiers showed strong defense against held-out, domain-specific jailbreaks while maintaining deployment viability with a small increase in production-traffic refusals and moderate inference overhead.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "Trading Inference-Time Compute for Adversarial Robustness",
+        "authors": "Sam Toyer, Stephanie Lin, Boaz Barak, Evgenia Nitishinskaya, Wojciech Zaremba",
+        "link": "https://arxiv.org/abs/2501.18841",
+        "github_repo": null,
+        "summary": "- This research investigates the impact of increased inference-time compute on the robustness of large language models (specifically OpenAI's 01-preview and 01-mini) against adversarial attacks.\n- Across various attacks, increased inference-time compute leads to improved robustness, often reducing the attack success rate to zero as computational resources increase, without explicit adversarial training.\n- The study introduces new attacks for reasoning models and explores scenarios where more compute does not guarantee reliability, and provides explanations.\n- The paper demonstrates that scaling inference-time compute, rather than pre-training compute, may be key to enhancing adversarial robustness in LLMs.\n- The analysis reveals limitations, such as the potential for adversaries to exploit policy ambiguities and introduce attacks like \"Think Less\" and \"nerd sniping,\" highlighting the need for further research.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "INT: Instance-Specific Negative Mining for Task-Generic Promptable Segmentation",
+        "authors": "Shaogang Gong, Zixu Cheng, Jian Hu",
+        "link": "https://arxiv.org/abs/2501.18753",
+        "github_repo": null,
+        "summary": "- INT, a training-free, cycle-generation model, introduces instance-specific negative mining for task-generic promptable image segmentation, enhancing the accuracy of instance-specific prompts derived from generic prompts.\n- By comparing VLM outputs before and after masking image regions, INT iteratively refines prompts and masks, addressing challenges like camouflaged objects and medical images where traditional methods struggle.\n- INT outperforms existing point and scribble-supervised methods on datasets like COD10K, CHAMELEON, and CAMO in camouflaged object detection and achieves competitive results on medical image segmentation datasets like CVC-ColonDB, Kvasir, and ISIC using only a task-generic prompt, demonstrating effectiveness, robustness, and scalability.\n- The model involves splitting the image into patches, generating candidate prompts with a VLM, using an inpainting module to mask potential objects, and selecting the prompt with the highest output difference for segmentation using SAM.\n- Progressive negative mining refines prompts by accumulating scores from each iteration, normalizing differences for stability and excluding the influence of unstable changes caused by incorrect prompt predictions, improving segmentation accuracy in complex scenes where objects blend into their backgrounds.",
+        "classification": [
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "Fast Encoder-Based 3D from Casual Videos via Point Track Processing",
+        "authors": "Haggai Maron, Wuyue Lu, Yoni Kasten",
+        "link": "https://arxiv.org/abs/2404.07097",
+        "github_repo": null,
+        "summary": "- TRACKSTO4D is a learning-based approach that reconstructs 3D structures and camera positions from casual videos of dynamic content using a single feed-forward pass.\n- It operates directly on 2D point tracks as input, leveraging inherent symmetries and assuming low-rank movement patterns for efficiency and generalization.\n- The architecture alternates attention between time and track dimensions and predicts camera poses, 3D point clouds as linear combinations of basis elements, and movement level values for each point.\n- Experiments on a casual pet video dataset and the Nvidia Dynamic Scenes Dataset demonstrate comparable accuracy to state-of-the-art methods with significantly faster runtime (up to 95% reduction).\n- The method generalizes well to unseen videos and semantic categories without requiring 3D supervision or scene-specific pre-processing.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://tracks-to-4d.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning",
+        "authors": "Lerrel Pinto, Yann LeCun, Hengkai Pan, Gaoyue Zhou",
+        "link": "https://arxiv.org/abs/2411.04983",
+        "github_repo": null,
+        "summary": "- DINO-WM, a novel method for training visual world models, leverages pre-trained DINOv2 spatial patch features to predict future world states without reconstructing the full visual observation.\n- This approach allows for task-agnostic behavior planning by optimizing action sequences to reach desired goal patch features, enabling zero-shot behavior generation at test time without expert demonstrations, reward functions, or pre-trained inverse models.\n- DINO-WM demonstrates superior performance compared to state-of-the-art world models in diverse tasks, including maze navigation, tabletop pushing, and particle manipulation, showcasing its strong generalization capabilities.\n- Notably, DINO-WM adapts to varied maze configurations, object shapes in manipulation tasks, and multi-particle scenarios, outperforming prior work in complex manipulation environments.\n- Trained decoders used for visualization reveal that DINO-WM produces significantly higher quality future world model predictions, exceeding previous state-of-the-art by 56% on LPIPS metrics for challenging tasks.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    },
+    {
+        "title": "Unraveling the Capabilities of Language Models in News Summarization",
+        "authors": "G\u00f6ksel Biricik, odabashi",
+        "link": "https://arxiv.org/abs/2501.18128",
+        "github_repo": null,
+        "summary": "- This research paper benchmarks 20 different language models (LLMs), both large and small, on their news summarization capabilities using zero-shot and few-shot learning.\n- The study employs three commonly used news summarization datasets: CNN/Daily Mail, Newsroom, and XSum, and evaluates the models using automatic metrics (ROUGE, METEOR, BERTScore), human evaluation, and LLM-based evaluation.\n- The results indicate that while larger models like GPT-3.5-Turbo and Gemini generally outperform smaller models, certain smaller models, such as Qwen1.5-7B, SOLAR-10.7B-Instruct-v1.0, Meta-Llama-3-8B, and Zephyr-7B-Beta, show competitive performance.\n- The paper finds that including demonstration examples in the few-shot learning setting does not necessarily improve performance and can even hinder it due to the sometimes low quality of the gold standard summaries in the datasets used.\n- The study highlights some common issues encountered with generated summaries, including early termination of text generation, redundancy and repetitive sequence generation, generation of prompts instead of task completions, inappropriate continuations and hallucinations and non-text outputs.",
+        "classification": [
+            "Summarization",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-03"
+    }
+]

@@ -16944,5 +16944,264 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-02-03"
+    },
+    {
+        "title": "The Differences Between Direct Alignment Algorithms are a Blur",
+        "authors": "Boris Shaposhnikov, kefirski, ZeL1k7, ummagumm-a, Myashka",
+        "link": "https://arxiv.org/abs/2502.01237",
+        "github_repo": null,
+        "summary": "- This paper analyzes Direct Alignment Algorithms (DAAs) for aligning language models with human preferences, focusing on the impact of different design choices like ranking losses (pairwise vs. pointwise), implicit rewards (likelihood ratios, odds ratios), and the necessity of Supervised Fine-Tuning (SFT).\n- It introduces a scaling parameter \\(\\beta\\) to control the strength of preference optimization for single-stage ORPO and ASFT methods, showing that incorporating an explicit SFT phase improves their performance, matching two-stage methods like DPO.\n- Through theoretical analysis, the paper reveals shared optimization dynamics between methods using odds ratios or reference-based rewards and demonstrates that the key factor influencing alignment quality is the use of pairwise or pointwise objectives rather than specific implicit reward formulations.\n- Experimental results on various datasets (UltraChat, UltraFeedback, Reddit TL;DR) and models (Llama 3.1 8B, Llama 3.2 3B) demonstrate that pairwise methods generally outperform pointwise methods, particularly with larger models, and even a small fraction (5-10%) of SFT data can yield substantial gains.\n- The study concludes that careful evaluation is crucial for understanding the differences between DAAs and optimizing LLM training pipelines, suggesting that pairwise methods with an SFT phase and tuned hyperparameters are most effective for alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Process Reinforcement through Implicit Rewards",
+        "authors": "Wendi Li, Zefan Wang, Lifan Yuan, hanbin, ganqu",
+        "link": "https://arxiv.org/abs/2502.01456",
+        "github_repo": "https://github.com/PRIME-RL/PRIME",
+        "summary": "- PRIME (Process Reinforcement through IMplicit rEwards) is a novel reinforcement learning (RL) framework designed to enhance the reasoning capabilities of Large Language Models (LLMs) using dense token-level rewards.\n- PRIME leverages implicit process rewards, derived from an Implicit Process Reward Model (PRM), enabling online updates of the reward model using only outcome labels, which mitigates reward hacking and reduces computational costs compared to traditional methods.\n- The framework integrates token-level dense rewards and sparse outcome rewards into a Monte Carlo advantage function with a leave-one-out baseline, making it adaptable to various RL algorithms.\n- Experimental results on mathematical and coding reasoning benchmarks demonstrate that PRIME achieves a 15.1% average improvement over the supervised fine-tuning baseline and surpasses the state-of-the-art Qwen2.5-Math-7B-Instruct model on several key benchmarks using significantly less training data.\n- An ablation study shows that online PRM updating and the use of dense rewards lead to substantial gains in both sample efficiency and overall performance.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/PRIME-RL/PRIME"
+        ],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "OmniHuman-1: Rethinking the Scaling-Up of One-Stage Conditioned Human Animation Models",
+        "authors": "Chao Liang, Zerong Zheng, Jiaqi Yang, Jianwen Jiang, Gaojie Lin",
+        "link": "https://arxiv.org/abs/2502.01061",
+        "github_repo": null,
+        "summary": "- OmniHuman, a Diffusion Transformer-based model, is introduced for generating realistic human animation videos conditioned on various modalities like text, audio, and pose.\n- The model uses an omni-conditions training strategy mixing motion-related conditions to scale up training data and improve generalization.\n- Two key training principles are introduced: stronger conditioned tasks leverage weaker ones for data scaling, and stronger conditions use lower training ratios to avoid overfitting.\n- OmniHuman outperforms existing methods in audio-driven portrait and body animation, supporting various aspect ratios and significantly improving gesture generation and object interaction.\n- It also handles various portrait contents, talking and singing, human-object interactions, and diverse image styles, demonstrating strong generalizability.",
+        "classification": [
+            "Text-to-Video",
+            "Audio-to-Audio",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Preference Leakage: A Contamination Problem in LLM-as-a-judge",
+        "authors": "Bohan Jiang, Ming Zhong, Yue Huang, Dawei Li, RLSNLP",
+        "link": "https://arxiv.org/abs/2502.01534",
+        "github_repo": "https://github.com/David-Li0406/Preference-Leakage",
+        "summary": "- This paper introduces the concept of \"preference leakage\", a contamination problem in Large Language Model (LLM)-as-a-judge scenarios.\n- Preference leakage occurs when the LLM used for data generation and the LLM used for evaluation are closely related, leading to systematic bias in the evaluation.\n- The authors define three types of relatedness: being the same model, having an inheritance relationship, and belonging to the same model family.\n- Experiments across multiple LLM baselines and benchmarks demonstrate the existence of preference leakage and its impact on evaluation results.\n- The study reveals that preference leakage is a pervasive and challenging problem, especially for subjective evaluation criteria, hindering the development of reliable LLM-based evaluation systems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/David-Li0406/Preference-Leakage"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model",
+        "authors": "Sensen Zhang, Zhiyu Li, Simin Niu, Xun Liang, UglyToilet",
+        "link": "https://arxiv.org/abs/2501.18636",
+        "github_repo": "https://github.com/IAAR-Shanghai/SafeRAG",
+        "summary": "- Introduces SafeRAG, a benchmark designed to evaluate the security of Retrieval-Augmented Generation (RAG) systems.\n- Identifies four attack tasks: silver noise, inter-context conflict, soft ad, and white Denial-of-Service (DoS) to manipulate the knowledge used by RAG.\n- Constructs a manually curated dataset, SafeRAG, with LLM assistance, focusing on Chinese news domain to perform these attacks and evaluate RAG security.\n- Proposes an evaluation framework using retrieval accuracy and adapted F1 score variants combined with attack success rate (ASR) to assess RAG system vulnerability across different attack stages (indexing, retrieval, and generation).\n- Experimental results reveal significant vulnerabilities in existing RAG systems, with lighter LLMs showing better security in some cases than larger, more complex models such as GPT series and DeepSeek.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/IAAR-Shanghai/SafeRAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "FastKV: KV Cache Compression for Fast Long-Context Processing with Token-Selective Propagation",
+        "authors": "Jae-Joon Kim, Yulhwa Kim, jiwonsong, dongwonjo",
+        "link": "https://arxiv.org/abs/2502.01068",
+        "github_repo": "https://github.com/dongwonjo/FastKV",
+        "summary": "- FastKV is a novel key-value (KV) cache compression method for LLMs that improves latency for long-context sequences by using a Token-Selective Propagation (TSP) approach and grouped-query attention (GQA)-aware KV cache compression.\n- TSP selectively propagates important tokens in deeper layers, leading to a 2.00x improvement in time-to-first-token and a 1.40\u00d7 improvement in throughput compared to HeadKV.\n-  FastKV maintains accuracy comparable to baselines on long-context benchmarks, with less than a 1% accuracy gap.\n- FastKV's dual-strategy approach compresses KV caches by prioritizing important tokens identified by attention scores in early layers and using TSP to selectively propagate tokens in later layers.\n- The effectiveness of the approach is demonstrated through experiments on LLMs like LLaMA-3.1-8B-Instruct and Mistral-Nemo-12B-Instruct.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/dongwonjo/FastKV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Almost Surely Safe Alignment of Large Language Models at Inference-Time",
+        "authors": "Jun Wang, Ilija Bogunovic, Matthieu Zimmer, Shyam Sundhar Ramesh, Xiaotong Ji",
+        "link": "https://arxiv.org/abs/2502.01208",
+        "github_repo": null,
+        "summary": "- This paper introduces InferenceGuard, a novel inference-time alignment method for Large Language Models (LLMs) that guarantees safe response generation with a probability approaching one.\n- It frames safe generation as a constrained Markov Decision Process (cMDP) within the LLM's latent space, augmenting a safety state to track constraint evolution and enable formal safety guarantees.\n- A critic is trained in the LLM's latent space for efficiency, using hidden state and logits as inputs to predict safety and task cost of generated text.\n- Empirically, InferenceGuard effectively balances safety and performance, achieving high safety rates (98.02% on Alpaca-7B and 100% on Beaver-7B-v3) while maintaining strong reward scores on the PKU-SafeRLHF dataset.\n- The method outperforms existing inference-time alignment techniques, demonstrating the efficacy of the safety augmentation approach in constrained MDPs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/PKU-Alignment/alpaca-7b-reproduced",
+            "https://huggingface.co/argsearch/llama-7b-rm-float32",
+            "https://github.com/PKU-Alignment/safe-rlhf"
+        ],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "DeepRAG: Thinking to Retrieval Step by Step for Large Language Models",
+        "authors": "Yaojie Lu, Chunlei Xin, Fandong Meng, Jiali Zeng, xinyan233333",
+        "link": "https://arxiv.org/abs/2502.01142",
+        "github_repo": null,
+        "summary": "- DeepRAG is a new framework that models retrieval-augmented reasoning as a Markov Decision Process (MDP) to enable strategic and adaptive retrieval for Large Language Models (LLMs).\n- DeepRAG iteratively decomposes complex queries into subqueries and dynamically decides whether to retrieve external knowledge or use parametric reasoning at each step, improving retrieval efficiency and reducing noise.\n- Experiments on five open-domain QA datasets show DeepRAG improves answer accuracy by 21.99% compared to existing methods while also improving retrieval efficiency.\n- Further analysis demonstrates DeepRAG's strong correlation between retrieval decisions and parametric knowledge, indicating effective knowledge boundary calibration.\n- The framework includes two key components: *retrieval narrative*, which generates subqueries informed by previously retrieved data, and *atomic decisions*, determining the retrieval strategy for each subquery.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "The Jumping Reasoning Curve? Tracking the Evolution of Reasoning Performance in GPT-[n] and o-[n] Models on Multimodal Puzzles",
+        "authors": "Soujanya Poria, Deepanway Ghosal, Yew Ken Chia, Vernon Y. H. Toh",
+        "link": "https://arxiv.org/abs/2502.01081",
+        "github_repo": "https://github.com/declare-lab/LLM-PuzzleTest",
+        "summary": "- This paper investigates the multimodal reasoning capabilities of large language models (LLMs), particularly GPT-[n] and o-[n] series from OpenAI, on visual reasoning tasks using PUZZLEVQA and ALGOPUZZLEVQA datasets.\n- It tracks the evolution of reasoning performance across different model iterations and analyzes their performance on puzzles requiring visual perception, inductive reasoning, deductive reasoning, and algorithmic problem-solving.\n- The study demonstrates that o1 achieves the best performance in the multiple choice setting across PUZZLEVQA (79.2% accuracy) and ALGOPUZZLEVQA (55.3% accuracy), outperforming earlier models like GPT-4.\n- A key observation reveals a substantial gap between current artificial intelligence and human reasoning abilities, as even o1 struggles with simple multimodal puzzles requiring abstract reasoning.\n- The study also identifies visual perception as the primary bottleneck for all models, with significant performance improvements observed upon providing additional visual details, and further suggests the need for advancements in visual understanding for LLMs.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/declare-lab/LLM-PuzzleTest"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning",
+        "authors": "Radha Poovendran, Ashish Sabharwal, Kyle Richardson, ronanlb, yuchenlin",
+        "link": "https://arxiv.org/abs/2502.01100",
+        "github_repo": null,
+        "summary": "- This paper introduces ZebraLogic, a new benchmark dataset of 1,000 logic grid puzzles designed to evaluate the logical reasoning capabilities of Large Language Models (LLMs).\n- The dataset enables systematic control over puzzle complexity using metrics like search space size and Z3 conflict count, allowing researchers to study the scaling limits of LLMs in complex non-monotonic reasoning.\n- The study reveals a significant performance decline in LLMs as puzzle complexity increases, a phenomenon termed the \"curse of complexity\", which persists even with larger model sizes and enhanced training data. \n- Scaling test-time compute through Best-of-N sampling and increasing the number of reasoning tokens offers some improvement in performance.\n- The paper finds that OpenAI's o1 models generate significantly more reasoning tokens than other LLMs, scaling them with puzzle complexity, and that backtracking mechanisms are crucial for complex reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/spaces/WildEval/ZebraLogic"
+        ],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Improved Training Technique for Latent Consistency Models",
+        "authors": "Dimitris Metaxas, Di Liu, Khanh Doan, trungleuc, quandao10",
+        "link": "https://arxiv.org/abs/2502.01441",
+        "github_repo": "https://github.com/quandao10/sLCT/",
+        "summary": "- This paper introduces an improved training technique for latent consistency models, a new family of generative models capable of producing high-quality samples in one or multiple steps.\n- The key improvements include replacing Pseudo-Huber losses with Cauchy losses to mitigate the impact of impulsive outliers often found in latent data, introducing a diffusion loss at early timesteps, and employing optimal transport (OT) coupling for enhanced performance.\n- An adaptive scaling-c scheduler and Non-scaling LayerNorm are also introduced for robust training and improved handling of feature statistics. \n- The proposed techniques significantly boost latent consistency model performance, achieving FID scores of 7.27, 8.87, and 8.29 on CelebA-HQ, LSUN Church, and FFHQ datasets, respectively, for 1-step sampling, and outperforming the baseline iCT framework.\n- These results demonstrate that this technique narrows the performance gap between latent consistency and diffusion models.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/quandao10/sLCT/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/stabilityai/sd-vae-ft-ema"
+        ],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Lifelong Sequential Knowledge Editing without Model Degradation",
+        "authors": "Thomas Hartvigsen, Ahmed Alaa, Maochuan Lu, Phudish Prateepamornkul, akshat57",
+        "link": "https://arxiv.org/abs/2502.01636",
+        "github_repo": null,
+        "summary": "- This paper introduces ENCORE, a novel method for large-scale sequential knowledge editing in LLMs that mitigates model degradation.\n- ENCORE employs two key strategies: Most-Probable Early Stopping (MPES) to prevent overfitting on edited facts and a Frobenius-norm constraint to control disproportionate norm growth of the edited weight matrix.\n- The paper provides insights into the mechanics of locate-then-edit methods, revealing that they implicitly leverage norm growth to give edited layers more influence on the model's output, termed \"importance hacking.\"\n- ENCORE successfully performs up to 10,000 sequential edits without significant performance degradation on downstream tasks, outperforming prior methods like ROME, MEMIT, and AlphaEdit.\n- Additionally, ENCORE exhibits improved efficiency, being 61% faster than MEMIT and 64% faster than AlphaEdit on Llama3-8B.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/scalable-model-editing/encore"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Scaling Embedding Layers in Language Models",
+        "authors": "Pritish Kamath, Yangsibo Huang, Badih Ghazi, Edith Cohen, Da Yu",
+        "link": "https://arxiv.org/abs/2502.01637",
+        "github_repo": null,
+        "summary": "- SCONE (Scalable, Contextualized, Offloaded, N-gram Embedding) is introduced as a method to extend input embedding layers, enhancing language model performance as layer size increases.\n- SCONE introduces embeddings for frequent n-grams (f-grams) alongside the original vocabulary, which provides contextualized representations during input embedding computation without affecting output embedding costs. \n- These f-gram embeddings are learned using a separate model during training and precomputed for inference, minimizing latency impact by being stored in off-accelerator memory.\n- SCONE allows two scaling strategies: expanding the number of cached f-gram embeddings and increasing the f-gram model size, both while maintaining fixed inference FLOPS.\n- A 1B parameter model using SCONE outperforms a 1.9B parameter baseline with only half the inference FLOPS, demonstrating its efficiency across various corpora.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Improving Transformer World Models for Data-Efficient RL",
+        "authors": "Wolfgang Lehrach, Carter Wendelken, Xinghua Lou, Joseph Ortiz, Antoine Dedieu",
+        "link": "https://arxiv.org/abs/2502.01591",
+        "github_repo": null,
+        "summary": "- This paper introduces a model-based reinforcement learning (MBRL) method that uses a transformer world model with several enhancements for improved data efficiency.\n- The approach incorporates Dyna with warmup for training on real and imagined data, a patch nearest-neighbor tokenizer for processing images into tokens, and block teacher forcing for training the world model.\n- On the Craftax-classic benchmark, the MBRL algorithm reaches 67.42% reward after 1M environment steps, exceeding human performance (65.0%) and significantly outperforming DreamerV3 (53.2%).\n- The proposed method also achieves a new state-of-the-art score of 27.91%, surpassing the previous best of 19.4%.\n- A novel, more efficient model-free reinforcement learning (MFRL) agent, based on CNNs and RNNs, is also presented, achieving 55.49% reward and surpassing several existing MBRL methods.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "PhD Knowledge Not Required: A Reasoning Challenge for Large Language Models",
+        "authors": "Molly Q Feldman, Federico Cassano, Aleksander Boruch-Gruszecki, Joydeep Biswas, Carolyn Jane Anderson",
+        "link": "https://arxiv.org/abs/2502.01584",
+        "github_repo": null,
+        "summary": "- This paper introduces a new benchmark for reasoning models based on the NPR Sunday Puzzle Challenge, which requires general knowledge rather than specialized expertise.\n- The benchmark is challenging for both humans and current LLMs, with OpenAI's o1 model achieving the highest accuracy at 59%.\n- The puzzles are designed to have easily verifiable solutions and clear mistakes in model outputs, facilitating analysis.\n- Novel failure modes, including \"giving up\" and \"thinking forever,\" are observed in certain reasoning models.\n- The research provides insights into the effective reasoning length for models like DeepSeek R1 and Gemini Thinking, proposing optimal token budgets for reasoning processes.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "Current Pathology Foundation Models are unrobust to Medical Center Differences",
+        "authors": "Jonas Teuwen, Eric Marcus, EdwinDdeJong",
+        "link": "https://arxiv.org/abs/2501.18055",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel robustness metric called the Robustness Index to evaluate the degree to which biological features dominate confounding features (like medical center signatures due to staining procedures) in pathology foundation models (FMs).\n- Evaluated ten publicly available pathology FMs and found that they are significantly influenced by medical center differences and vary widely in their robustness; only one model has a robustness index slightly greater than one, indicating biological features dominate.\n- Introduced a quantitative approach to measure the impact of unrobustness on the classification performance of downstream models, finding that errors are attributable to same-center confounders (images of different classes from the same medical center).\n- Visualized FM embedding spaces and observed stronger organization by medical centers than biological factors, resulting in more accurate medical center prediction than tissue source or cancer type prediction.\n- The robustness index is proposed to improve the development of robust and reliable pathology FMs for clinical use.",
+        "classification": [
+            "Image Feature Extraction",
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
+    },
+    {
+        "title": "A Study on the Performance of U-Net Modifications in Retroperitoneal Tumor Segmentation",
+        "authors": "Rebecca Scalabrino, Daniel Hsu, Alexander Manzella, Ehsan Khodapanah Aghdam, Moein Heidari",
+        "link": "https://arxiv.org/abs/2502.00314",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel CT dataset of retroperitoneal tumors, comprising 82 cases with expert-annotated segmentation maps.\n- The study evaluates state-of-the-art segmentation methods, including U-Net and its variants incorporating Transformers and Mamba modifications.\n- The authors propose ViLU-Net, a U-Net-based architecture integrating Vision x-LSTM (ViL) blocks for capturing spatial and temporal dependencies.\n- ViLU-Net achieves superior performance compared to other models, demonstrating higher Dice Similarity Coefficient (DSC), Normalized Surface Distance (NSD), Intersection over Union (IoU), and lower Hausdorff Distance (HD) on both an abdominal organ dataset and the new retroperitoneal tumor dataset.\n- The code is not publicly available.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-04"
     }
 ]

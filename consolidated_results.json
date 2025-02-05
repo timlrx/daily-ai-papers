@@ -17203,5 +17203,108 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-02-04"
+    },
+    {
+        "title": "Inverse Bridge Matching Distillation",
+        "authors": "akorotin, dbaranchuk, apryc1, kekchpek, ngushchin",
+        "link": "https://arxiv.org/abs/2502.01362",
+        "github_repo": null,
+        "summary": "- This paper introduces Inverse Bridge Matching Distillation (IBMD), a novel distillation technique for accelerating Diffusion Bridge Models (DBMs).\n- IBMD addresses limitations of existing DBM distillation methods by handling both conditional and unconditional DBMs, distilling models into one-step generators, and using only corrupted images for training.\n- The method is evaluated on various image-to-image translation tasks, demonstrating significant inference speedups (4x to 100x) and in some cases improved generation quality compared to teacher models.\n- IBMD's universality makes it applicable to a broader range of DBMs, addressing a key challenge in efficient DBM deployment.\n- The authors support their findings through extensive experiments, showcasing IBMD's effectiveness across multiple image processing tasks.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
+    },
+    {
+        "title": "VideoJAM: Joint Appearance-Motion Representations for Enhanced Motion Generation in Video Models",
+        "authors": "Adam Polyak, Yuval Kirstain, Amit Zohar, Uriel Singer, Hila",
+        "link": "https://arxiv.org/abs/2502.02492",
+        "github_repo": null,
+        "summary": "- This paper introduces VideoJAM, a novel framework that enhances motion coherence in video generation models by encouraging the model to learn a joint appearance-motion representation.\n- VideoJAM consists of two units: a training unit that extends the objective function to predict both generated pixels and their corresponding motion and an inference unit (Inner-Guidance) that steers generation towards coherent motion using the model's own evolving motion prediction.\n- The framework is applicable to various video models with minimal adaptations, requiring no modifications to training data or model scaling.\n- VideoJAM achieves state-of-the-art performance in motion coherence, surpassing competitive models while improving visual quality.\n- Experimental results on benchmark datasets demonstrate the effectiveness of VideoJAM in generating videos with enhanced motion coherence and visual quality.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://hila-chefer.github.io/videojam-paper.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
+    },
+    {
+        "title": "ACECODER: Acing Coder RL via Automated Test-Case Synthesis",
+        "authors": "Xiaotong Chen, Haozhe Wang, Huaye Zeng, pingnieuk, DongfuJiang",
+        "link": "https://arxiv.org/abs/2502.01718",
+        "github_repo": null,
+        "summary": "- This paper introduces ACECODER, a novel approach to improve code generation models using reinforcement learning (RL) and automated test-case synthesis.\n- ACECODER synthesizes a large-scale dataset (ACECODE-89K) of coding questions and test cases, enabling effective RL training.\n- The method utilizes a Bradley-Terry loss function to train reward models based on pass rates of generated programs over the synthesized test cases.\n- Experiments show that ACECODER consistently improves the performance of various code generation models across multiple benchmarks. Notably, it improves the model's performance on HumanEval-plus by over 25% and MBPP-plus by 6% with only 80 optimization steps.\n- The authors believe that ACECODER highlights the significant potential of RL in improving code generation models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://tiger-ai-lab.github.io/AceCoder"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
+    },
+    {
+        "title": "QLASS: Boosting Language Agent Inference via Q-Guided Stepwise Search",
+        "authors": "Ziniu Hu, Da Yin, Xingcheng Yao, Yao Tang, Zongyu Lin",
+        "link": "https://arxiv.org/abs/2502.02584",
+        "github_repo": null,
+        "summary": "- This paper introduces QLASS, a novel method to enhance language agent inference by using Q-guided stepwise search.\n- QLASS automatically generates annotations by estimating Q-values in a stepwise manner, providing effective intermediate guidance for each step.\n- The model uses an exploration tree to capture potential generation steps, which reduces reliance on extensive human annotations.\n- QLASS outperforms existing methods on complex agent tasks (WebShop, ALFWorld, SciWorld) and shows strong performance even with limited annotated data.\n- Empirical results demonstrate that QLASS leads to more effective decision-making in complex interactive agent tasks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Rafa-zy/QLASS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
+    },
+    {
+        "title": "Can LLMs Maintain Fundamental Abilities under KV Cache Compression?",
+        "authors": "Zeyu Li, Peijie Dong, Hong Chen, Zhenheng Tang, Dominic789654",
+        "link": "https://arxiv.org/abs/2502.01941",
+        "github_repo": null,
+        "summary": "\n- This paper introduces ShotKV, a novel KV cache compression method that distinctly manages prefill and decoding phases to maintain shot-level semantic coherence, improving performance on long-context tasks.\n- The study reveals that arithmetic reasoning tasks are particularly sensitive to aggressive compression, while multi-step reasoning LLMs exhibit more robust compression tolerance.\n-  Empirical results demonstrate that ShotKV achieves performance improvements of 9%-18% on long-context generation tasks under aggressive compression.\n- The authors analyze attention patterns and cross-task compression performance to identify key factors influencing compression sensitivity, including model training dynamics, prompt length, and task-specific requirements.\n- The findings provide valuable insights into the relationship between KV cache compression methods and LLMs' fundamental abilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
+    },
+    {
+        "title": "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+        "authors": "Zhenfang Chen, Zhang-Wei Hong, Zhenting Qi, Guangtao Zeng, maohaos2",
+        "link": "https://arxiv.org/abs/2502.02508",
+        "github_repo": null,
+        "summary": "This paper introduces Satori, a 7B parameter LLM enhanced with a Chain-of-Action-Thought (COAT) reasoning mechanism and a two-stage training paradigm (format tuning and self-improvement via reinforcement learning).  Satori achieves state-of-the-art performance on mathematical reasoning benchmarks and exhibits strong generalization to out-of-domain tasks.  The COAT mechanism allows for self-reflection and exploration of alternative solutions, improving reasoning capabilities.  The two-stage training paradigm effectively leverages a small-scale imitation learning stage for format tuning followed by a large-scale reinforcement learning stage for self-improvement.  Experimental results demonstrate Satori's superiority over existing methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://satori-reasoning.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
+    },
+    {
+        "title": "Generating Multi-Image Synthetic Data for Text-to-Image Customization",
+        "authors": "Samaneh Azadi, Ishan Misra, Jun-Yan Zhu, Xi Yin, Nupur Kumari",
+        "link": "https://arxiv.org/abs/2502.01720",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for generating multi-image synthetic data to improve the customization of text-to-image models.\n- The proposed method uses a pipeline that leverages existing text-to-image models and 3D datasets to create high-quality synthetic data, with multiple images of the same object under varying conditions.\n- A new encoder architecture based on shared attention mechanisms is proposed to better incorporate fine-grained visual details from input images, along with a new inference technique to mitigate overexposure issues.\n- The proposed method outperforms existing tuning-free methods on standard customization benchmarks, demonstrating its effectiveness in generating high-quality images while preserving object identity.\n- The code and data are not available on a public website, but it is mentioned to be made available at a later time.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-05"
     }
 ]

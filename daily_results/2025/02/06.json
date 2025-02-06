@@ -1,0 +1,164 @@
+[
+    {
+        "title": "SmolLM2: When Smol Goes Big -- Data-Centric Training of a Small Language Model",
+        "authors": "Gabriel Mart\u00edn Bl\u00e1zquez, Elie Bakouch, Anton Lozhkov, Loubna Ben Allal, lvwerra",
+        "link": "https://arxiv.org/abs/2502.02737",
+        "github_repo": null,
+        "summary": "- This paper introduces SmolLM2, a 1.7 billion parameter language model trained on 11 trillion tokens using a multi-stage, data-centric approach.\n- The model utilizes a Llama2 architecture and is trained with a combination of web text, specialized math, code, and instruction-following data.\n- New specialized datasets (Fine-Math, Stack-Edu, and SmolTalk) were created to address limitations in existing public datasets.\n- SmolLM2 outperforms other recent small language models, including Qwen2.5-1.5B and Llama3.2-1B, on various benchmarks including HellaSwag, ARC, and MMLU-Pro.\n- Both the base and instruction-tuned versions of SmolLM2 are released, along with the new specialized datasets, to facilitate future research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9",
+            "https://huggingface.co/datasets/HuggingFaceTB/finemath",
+            "https://huggingface.co/datasets/HuggingFaceTB/smoltalk"
+        ],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "TwinMarket: A Scalable Behavioral and Social Simulation for Financial Markets",
+        "authors": "Yunmiao Zhang, Kaidi Zhang, Minghao Wu, Yifei Zhang, Yuzhe Yang",
+        "link": "https://arxiv.org/abs/2502.01506",
+        "github_repo": null,
+        "summary": "- TwinMarket is a novel multi-agent framework leveraging Large Language Models (LLMs) to simulate socio-economic systems, specifically focusing on financial markets.\n- It models individual investor behaviors, including rational decision-making, technical analysis, and behavioral biases (herding, overconfidence), within a dynamic market environment and social media interaction.\n- The framework uses a Belief-Desire-Intention (BDI) structure to model agent cognition and decision-making, allowing for realistic simulation of investor actions.\n- Experiments show that TwinMarket effectively reproduces stylized facts of financial markets, such as fat-tailed return distributions and volatility clustering, and simulates emergent phenomena like financial bubbles, driven by interactions and feedback mechanisms.\n- The framework scales to larger agent populations, enabling investigation of how group size and interaction complexity influence emergent social and economic dynamics.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/TobyYang7/TwinMarket"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "Demystifying Long Chain-of-Thought Reasoning in LLMs",
+        "authors": "Xiang Yue, Graham Neubig, Morry Niu, Yuxuan Tong, Edward Yeo",
+        "link": "https://arxiv.org/abs/2502.03373",
+        "github_repo": "https://github.com/eddycmu/demystify-long-cot",
+        "summary": "- This paper investigates the mechanics of long chain-of-thought (CoT) reasoning in large language models (LLMs), identifying key factors that enable the generation of extended reasoning trajectories.\n- Through supervised fine-tuning (SFT) and reinforcement learning (RL) experiments, the study finds that while SFT simplifies training, scaling verifiable reward signals is crucial for RL, and core abilities like error correction are present in base models but require significant compute for complex tasks.\n- The authors introduce a cosine length-scaling reward with a repetition penalty to stabilize CoT length growth and encourage emergent reasoning behaviors.\n- Leveraging noisy, web-extracted solutions with filtering shows promise, especially for out-of-distribution reasoning tasks.\n- The research provides practical guidance for optimizing training strategies to enhance long CoT reasoning in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/eddycmu/demystify-long-cot"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "LIMO: Less is More for Reasoning",
+        "authors": "Shijie Xia, Ethan Chern, Yang Xiao, Zhen Huang, Yixin Ye",
+        "link": "https://arxiv.org/abs/2502.03387",
+        "github_repo": "https://github.com/GAIR-NLP/LIMO",
+        "summary": "- This paper introduces LIMO, a novel approach to mathematical reasoning in large language models (LLMs) that challenges the conventional wisdom that complex reasoning requires massive datasets.\n- LIMO achieves state-of-the-art performance on several mathematical reasoning benchmarks using only 817 training samples, significantly outperforming models trained on datasets 100 times larger.\n- The core finding is that sophisticated reasoning capabilities can be elicited with minimal data if the model has a strong pre-trained knowledge foundation and the training data provides effective demonstrations of cognitive processes.\n- The authors propose the Less-Is-More Reasoning Hypothesis, which posits that the efficiency of eliciting complex reasoning depends on two factors: completeness of pre-trained knowledge and the effectiveness of cognitive templates in the training data.\n- The study provides empirical evidence and contributes towards a more data-efficient approach to developing advanced reasoning capabilities in LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/GAIR-NLP/LIMO"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/GAIR"
+        ],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "Boosting Multimodal Reasoning with MCTS-Automated Structured Thinking",
+        "authors": "Feihu Che, Ruihan Jin, Shuai Zhang, Mingkuan Feng, Jinyang Wu",
+        "link": "https://arxiv.org/abs/2502.02339",
+        "github_repo": null,
+        "summary": "- This paper introduces AStar, a novel automated structured thinking framework designed to boost multimodal reasoning capabilities in large language models (LLMs) by leveraging Monte Carlo Tree Search (MCTS).\n- AStar automates the derivation of cognitive reasoning patterns from a small seed dataset (500 samples) using MCTS-powered hierarchical structures.\n- A unified reasoning framework integrates both internal and external reasoning abilities, enabling efficient inference with minimal tree iterations, and outperforms GPT-40 (50.2%) on the MathVerse benchmark, achieving a 54.0% accuracy score with a 7B backbone.\n- AStar improves efficiency by reducing inference overhead by 6.4x compared to other tree-based methods and achieves comparable results to training-based methods with 520x less training data.\n- It demonstrates robustness across different languages and tasks, exhibiting strong generalization capabilities in both in-distribution and out-of-distribution settings.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/RLHFlow/Llama3.1-8B-ORM-Mistral-Data"
+        ],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "Jailbreaking with Universal Multi-Prompts",
+        "authors": "Shang-Tse Chen, Hsuan Su, Yu-Ling Hsu",
+        "link": "https://arxiv.org/abs/2502.01154",
+        "github_repo": null,
+        "summary": "- This paper introduces JUMP, a prompt-based method that uses universal multi-prompts to jailbreak LLMs.\n- JUMP optimizes universal multi-prompts, outperforming existing techniques in experimental results.\n- The method also generalizes to defense scenarios, which is called DUMP.\n- JUMP++ is the enhanced version of JUMP, which significantly outperforms JUMP* and current state-of-the-art methods.\n- The code is publicly available on Github.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/ntuaislab/JUMP"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Meta-Llama-Guard-2-8B",
+            "https://huggingface.co/openai-community/gpt2-large"
+        ],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "LayerTracer: Cognitive-Aligned Layered SVG Synthesis via Diffusion Transformer",
+        "authors": "Danze Chen, Yiren Song, mikeshou",
+        "link": "https://arxiv.org/abs/2502.01105",
+        "github_repo": null,
+        "summary": "- LayerTracer is a novel diffusion transformer-based framework that generates cognitive-aligned layered SVGs from text prompts or images.\n- It addresses the challenges of existing methods by modeling designers' layered SVG creation processes through a novel dataset of sequential design operations and a dual-phase generation pipeline.\n- The model consists of a text-conditioned diffusion transformer that generates multi-phase rasterized construction blueprints and a layer-wise vectorization module with path deduplication that produces clean, editable SVGs.\n- Extensive experiments demonstrate LayerTracer's superior performance in generation quality and editability compared to optimization-based and neural baselines.\n- LayerTracer's cognitive alignment with human design workflows allows for high-quality, editable layered SVGs, bridging the gap between existing methods and professional design requirements.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/LayerTracer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "A Probabilistic Inference Approach to Inference-Time Scaling of LLMs using Particle-Based Monte Carlo Methods",
+        "authors": "Akash Srivastava, Kai Xu, Guangxuan Xu, Shivchander Sudalairaj, ishapuri-mit",
+        "link": "https://arxiv.org/abs/2502.01618",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel inference-time scaling approach for large language models (LLMs) that frames the task as probabilistic inference rather than a search problem. \n- The proposed method uses particle-based Monte Carlo methods, specifically particle filtering, to estimate the typical set of the state distribution, which is more robust to approximation errors in reward models compared to search-based methods. \n- Empirical evaluations demonstrate that the proposed method achieves a 4-16x better scaling rate than deterministic search counterparts on challenging mathematical reasoning tasks. \n-  The method allows smaller models to surpass the accuracy of larger models, for instance Qwen2.5-Math-1.5B-Instruct surpassing GPT-4 accuracy in only 4 rollouts. \n- This approach not only provides an effective method for inference-time scaling but also connects probabilistic inference with LLM inference-time scaling.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://probabilistic-inference-scaling.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning",
+        "authors": "Yuandong Tian, Jiantao Jiao, Yingchen Xu, Hanlin Zhu, DiJia Su",
+        "link": "https://arxiv.org/abs/2502.03275",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel hybrid representation for language model reasoning that mixes latent and text tokens, aiming to improve efficiency and performance.\n- The method uses a VQ-VAE to generate latent tokens representing reasoning steps, reducing the length of reasoning traces.\n- Experiments on various benchmarks (including Math, GSM8K, and Keys-Finding Maze) show consistent improvements in accuracy compared to baseline methods, with an average reduction of 17% in reasoning trace length.\n- A simple training procedure that randomly mixes latent and text tokens allows for quick adaptation to new latent tokens, improving the training efficiency.\n- The approach is effective for both logical and mathematical reasoning tasks across different model sizes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-06"
+    },
+    {
+        "title": "On Teacher Hacking in Language Model Distillation",
+        "authors": "Nino Vieillard, Sarah Perrin, Johan Ferret, Daniele Calandriello, Daniil Tiapkin",
+        "link": "https://arxiv.org/abs/2502.02671",
+        "github_repo": null,
+        "summary": "- This paper introduces the concept of \"teacher hacking\" in language model distillation, where the student model over-optimizes the teacher model instead of the true data distribution.\n- A novel controlled experimental setup involving an oracle model, teacher model, and student model is proposed to study teacher hacking.\n- Experiments show that teacher hacking occurs when using a fixed offline dataset for distillation, and that this can be detected by deviations from polynomial convergence laws.\n- Online data generation techniques effectively mitigate teacher hacking, highlighting data diversity as a key factor.\n- The findings offer insights into the benefits and limitations of distillation for building robust and efficient language models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-06"
+    }
+]

@@ -1,0 +1,309 @@
+[
+    {
+        "title": "Analyze Feature Flow to Enhance Interpretation and Steering in Language Models",
+        "authors": "Yaroslav Aksenov, kefirski, elephantmipt, dlaptev",
+        "link": "https://arxiv.org/abs/2502.03032",
+        "github_repo": null,
+        "summary": "- The paper introduces a novel approach to map features discovered by sparse autoencoders across layers of large language models (LLMs).  This approach uses a data-free cosine similarity technique to generate granular flow graphs of feature evolution.\n- It demonstrates how these cross-layer feature maps enable direct steering of model behavior by amplifying or suppressing specific features, leading to targeted thematic control in text generation.\n- The method helps to discover the lifespan of SAE features, understand their evolution across layers, and shed light on how they might form computational circuits.\n- Experiments validate the single-layer analysis patterns and demonstrate causal relationships between target features and their matched predecessors using a deactivation method.\n- The research presents a novel multi-layer model steering technique leveraging these cross-layer feature maps, enabling more precise control over LLM behavior.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "UltraIF: Advancing Instruction Following from the Wild",
+        "authors": "Ning Ding, Li Sheng, ssz1111, ganqu, kkk-an",
+        "link": "https://arxiv.org/abs/2502.04153",
+        "github_repo": "https://github.com/kkk-an/UltraIF",
+        "summary": "- This paper introduces ULTRAIF, a novel approach for enhancing instruction-following capabilities in large language models (LLMs) using open-source data.\n- ULTRAIF decomposes complex instructions into simpler queries, constraints, and evaluation questions, subsequently training a composer model to synthesize diverse and complex instructions.\n- The proposed approach demonstrates superior performance on various instruction-following benchmarks, surpassing existing methods in multiple metrics.\n- ULTRAIF achieves a notable milestone, aligning a base LLaMA-3.1-8B model to match its instruct counterpart in instruction-following ability, highlighting its efficacy.\n- The authors explore the potential of self-alignment through further optimization of LLaMA-3.1-8B-Instruct, showcasing the method's versatility and applicability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/kkk-an/UltraIF"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "DynVFX: Augmenting Real Videos with Dynamic Content",
+        "authors": "talidekel, omerbartal, RafailFridman, DanahY",
+        "link": "https://arxiv.org/abs/2502.03621",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for augmenting real-world videos with dynamically generated content based on a simple text description provided by the user.\n- The method utilizes a pre-trained text-to-video diffusion transformer and a pre-trained vision-language model to synthesize new dynamic objects or scene effects.\n- A zero-shot training-free framework is employed, enabling accurate localization and seamless integration of the new content while preserving the integrity of the original scene.\n- The proposed approach shows state-of-the-art results on a range of video edits, demonstrating its effectiveness in various scenarios involving diverse objects and camera motion.\n- The framework introduces a novel attention mechanism and iterative residual update to achieve high fidelity to the original video and high-quality visual effects.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://dynvfx.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Ola: Pushing the Frontiers of Omni-Modal Language Model with Progressive Modality Alignment",
+        "authors": "jiwenlu, WinstonHu, liuziwei7, THUdyh, Zuyan",
+        "link": "https://arxiv.org/abs/2502.04328",
+        "github_repo": "https://github.com/Ola-Omni/Ola",
+        "summary": "- The paper introduces Ola, a novel 7B parameter omni-modal language model that leverages a progressive modality alignment strategy for training.- Ola's architecture incorporates modality-specific encoders (visual, audio, text) and a joint alignment module to fuse multi-modal inputs for processing by a large language model.- The progressive training strategy starts with image and text, then adds video and finally audio, enabling efficient training with smaller datasets compared to existing methods.- Ola outperforms state-of-the-art open-source omni-modal LLMs and achieves highly competitive performance against specialized models across image, video, and audio benchmarks. -  The model supports user-friendly real-time streaming decoding for text and speech.",
+        "classification": [
+            "Multimodal",
+            "Any-to-Any",
+            "Automatic Speech Recognition",
+            "Text-to-Speech",
+            "Text-to-Audio",
+            "Image-to-Text",
+            "Video-Text-to-Text",
+            "Video Classification",
+            "Audio Classification"
+        ],
+        "github_urls": [
+            "https://github.com/Ola-Omni/Ola"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "MotionLab: Unified Human Motion Generation and Editing via the Motion-Condition-Motion Paradigm",
+        "authors": "De Wen Soh, Na Zhao, zeyuhu, ZiyanGuo",
+        "link": "https://arxiv.org/abs/2502.02358",
+        "github_repo": null,
+        "summary": "- The paper introduces MotionLab, a novel framework for unified human motion generation and editing, based on the Motion-Condition-Motion paradigm.\n- MotionLab uses a MotionFlow Transformer with rectified flows to learn mappings between source and target motions, guided by specified conditions.\n- The model incorporates Aligned Rotational Position Encoding to ensure temporal synchronization and Task Instruction Modulation for effective multi-task learning.\n- A Motion Curriculum Learning strategy is employed for hierarchical training, facilitating knowledge sharing and mitigating catastrophic forgetting.\n- Experiments demonstrate MotionLab's superior versatility, performance, and efficiency compared to existing methods on multiple benchmarks.",
+        "classification": [
+            "Text-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Great Models Think Alike and this Undermines AI Oversight",
+        "authors": "AmeyaPrabhu, douwekiela, iaa01, Klingspor, shash42",
+        "link": "https://arxiv.org/abs/2502.04313",
+        "github_repo": null,
+        "summary": "This paper introduces CAPA, a novel metric for measuring language model (LM) similarity based on the overlap in model mistakes.  It demonstrates that LM-as-a-judge scores are biased towards models similar to the judge, and that gains from training on LM annotations are higher when the models are dissimilar. The study also reveals a concerning trend of increasing model similarity with increasing capabilities, highlighting risks associated with correlated failures in AI oversight. The authors propose using CAPA as a crucial component in reporting and mitigating model similarity effects in AI evaluation and training.  Finally, they suggest that sample-wise model predictions should be publicly released for improved analysis.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/model-similarity/lm-similarity"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/shash42/lm-similarity"
+        ],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Gold-medalist Performance in Solving Olympiad Geometry with AlphaGeometry2",
+        "authors": "Miroslav Ol\u0161\u00e1k, Trieu H. Trinh, Yuri Chervonyi, lmthang, mmenegali",
+        "link": "https://arxiv.org/abs/2502.03544",
+        "github_repo": null,
+        "summary": "- AlphaGeometry2 is presented, a significantly improved version of AlphaGeometry that surpasses the average gold medalist performance in solving IMO geometry problems.\n- The model achieves an 84% solve rate on all geometry problems from the last 25 years, compared to 54% previously.\n- Improvements include an expanded domain language covering locus theorems, linear equations, and non-constructive problem statements.\n- A stronger and faster symbolic engine, improved search algorithm utilizing Gemini architecture and knowledge sharing, and a better language model are also incorporated.\n- The system is making progress towards automating the process of solving geometry problems directly from natural language input.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "ScoreFlow: Mastering LLM Agent Workflows via Score-based Preference Optimization",
+        "authors": "Bryon Aragam, Ling Yang, Edify-Kd2024, lightaime, yinjiewang",
+        "link": "https://arxiv.org/abs/2502.04306",
+        "github_repo": "https://github.com/Gen-Verse/ScoreFlow",
+        "summary": "- ScoreFlow is a novel framework for automated multi-agent workflow generation and optimization that uses score-based preference optimization.\n- It addresses the limitations of existing methods by leveraging efficient gradient-based optimization in a continuous space, improving flexibility, adaptability, and scalability.\n- ScoreFlow incorporates Score-DPO, a novel variant of direct preference optimization, which incorporates quantitative feedback to improve reliability and convergence speed.\n- Experiments on six benchmark datasets show an 8.2% improvement over existing baselines across question answering, coding, and mathematical reasoning tasks.\n- ScoreFlow enables smaller models to outperform larger models at lower inference costs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/ScoreFlow"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis",
+        "authors": "Xinsheng Wang, Chi-Min Chan, Xinfa Zhu, HKUST-Audio, ZhenYe234",
+        "link": "https://arxiv.org/abs/2502.04128",
+        "github_repo": null,
+        "summary": "- This paper introduces Llasa, a single Transformer-based Text-to-Speech (TTS) model initialized from Llama and trained with a new speech tokenizer, X-codec2, to align TTS with standard large language model architectures.\n- Scaling the training compute through increased model size and data consistently improves synthesized speech naturalness and prosody.\n- Scaling inference-time compute by incorporating speech understanding models as verifiers enhances emotional expressiveness, timbre consistency, and content accuracy.\n- X-codec2, a modification of X-codec with a single vector quantizer, achieves best performance on most metrics at a token rate of 50 and produces a UTMOS score close to ground truth.\n- Evaluation on Seed-TTS-Eval, LibriSpeech, and ESD datasets show state-of-the-art results for Llasa, highlighting improvements in zero-shot TTS and the effectiveness of inference-time scaling.",
+        "classification": [
+            "Text-to-Speech",
+            "Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/facebook/hubert-large-1s960-ft",
+            "https://huggingface.co/emotion2vec/emotion2vec_plus_large"
+        ],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "MotionCanvas: Cinematic Shot Design with Controllable Image-to-Video Generation",
+        "authors": "ttwong, aniruddha26398, heiwang1997, cusuh, Doubiiu",
+        "link": "https://arxiv.org/abs/2502.04299",
+        "github_repo": null,
+        "summary": "- MotionCanvas is a novel method for controllable image-to-video generation that allows users to design cinematic video shots by meticulously planning both camera and object movements.\n- It addresses the challenges of effectively capturing user intentions on motion design and representing motion information for video diffusion models by integrating user-driven controls into I2V generation models.\n- MotionCanvas achieves 3D-aware motion control in I2V synthesis without requiring costly 3D-related training data, translating scene-space motion intentions into spatiotemporal motion-conditioning signals.\n- The method demonstrates effectiveness on various real-world image content and shot-design scenarios, highlighting its potential to enhance creative workflows in digital content creation.\n- Experiments show that MotionCanvas outperforms existing baselines in terms of motion adherence, motion quality, and frame fidelity, producing higher-quality videos that faithfully reflect user motion intent.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "ChartCitor: Multi-Agent Framework for Fine-Grained Chart Visual Attribution",
+        "authors": "Kanika Goswami, Franck-Dernoncourt, ryanrossi, puneetm",
+        "link": "https://arxiv.org/abs/2502.00989",
+        "github_repo": null,
+        "summary": "- ChartCitor is a novel multi-agent framework designed to address the challenge of hallucination in Large Language Models (LLMs) for chart question answering by providing fine-grained bounding box citations.\n- The framework consists of six LLM agents that work together to extract structured data from charts, reformulate answers, generate contextual descriptions, retrieve evidence, and localize selected cells in the chart image.\n- ChartCitor outperforms existing baselines across various chart types, as demonstrated by its improved Intersection over Union (IoU) scores and qualitative user studies.\n- Qualitative user studies show that ChartCitor increases user trust in generative AI and improves user productivity by providing reliable and logically explained citations.\n-  The model uses GPT-4V for chart-to-table extraction and leverages RankGPT for re-ranking to identify the most relevant table cells.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "BOLT: Bootstrap Long Chain-of-Thought in Language Models without Distillation",
+        "authors": "cxiong, yingbozhou, jcxu, hendrydong, bpucla",
+        "link": "https://arxiv.org/abs/2502.03860",
+        "github_repo": null,
+        "summary": "- BOLT bootstraps Long Chain-of-Thought (LongCoT) capabilities in Large Language Models (LLMs) without relying on knowledge distillation or extensive human annotation.\n- It involves three stages: LongCoT data bootstrapping via in-context learning with a ShortCoT LLM, LongCoT supervised finetuning, and LongCoT online training using Direct Preference Optimization (DPO).\n- BOLT was tested on various model scales (7B, 8B, and 70B) and achieved significant performance improvements across multiple benchmarks, including Arena-Hard, MT-Bench, WildBench, ZebraLogic, and MATH500, outperforming initial ShortCoT models.\n- The bootstrapping stage requires minimal human effort, with only 10 in-context examples used in the experiments. \n-  BOLT represents a practical and efficient approach for enhancing reasoning skills in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "PlotGen: Multi-Agent LLM-based Scientific Data Visualization via Multimodal Feedback",
+        "authors": "Ryan Rossi, Puneet Mathur, Kanika Goswami, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2502.00988",
+        "github_repo": null,
+        "summary": "- PlotGen is a novel multi-agent framework that leverages multimodal LLMs to automate the creation of accurate scientific data visualizations.\n- The framework orchestrates multiple LLM-based agents, including a Query Planning Agent, a Code Generation Agent, and three feedback agents (Numeric, Lexical, and Visual) that iteratively refine the visualization.\n- Extensive experiments on the MatPlotBench dataset demonstrate that PlotGen outperforms strong baselines, achieving a 4-6% improvement in accuracy.\n- The use of multimodal feedback agents enhances user trust in LLM-generated visualizations and improves novice productivity by reducing debugging time.\n- PlotGen addresses the challenges faced by novice users in creating accurate and informative scientific visualizations from raw data.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Enhancing Code Generation for Low-Resource Languages: No Silver Bullet",
+        "authors": "gbavota, AML14, Devy1",
+        "link": "https://arxiv.org/abs/2501.19085",
+        "github_repo": null,
+        "summary": "- This paper investigates techniques to enhance code generation for low-resource programming languages using Large Language Models (LLMs).\n- The study explores several approaches, including fine-tuning, in-context learning with crafted prompts, and a pre-training objective for code translation.\n- Experiments are conducted on six LLMs with varying architectures and sizes, using two low-resource languages (R and Racket) and a benchmark dataset.\n- Findings suggest that fine-tuning is effective for smaller LLMs, while in-context learning becomes more useful for larger models.\n- The study concludes that in-context learning, particularly with translation examples, is a safe and effective approach for improving code generation on low-resource languages.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "MAGA: MAssive Genre-Audience Reformulation to Pretraining Corpus Expansion",
+        "authors": "Chenggang Li, Ke Shen, haoxintong",
+        "link": "https://arxiv.org/abs/2502.04235",
+        "github_repo": null,
+        "summary": "- This paper introduces MAGA, a method for expanding pre-training corpora by reformulating existing text data to generate diverse, contextually-rich synthetic data.\n- MAGA uses a two-stage synthesis process, generating genre-audience pairs and then reformulating documents to create new training instances.\n- The resulting MAGACorpus contains 770 billion tokens and demonstrates consistent performance improvements across various model sizes (134M-13B) compared to baselines using data repetition or upsampling.\n- The authors analyze the impact of prompt engineering on synthetic data quality, showing that careful prompt design can help mitigate issues such as training collapse.\n- This work suggests that MAGA offers a reliable path for scaling language models beyond existing data limitations.",
+        "classification": [
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/bytedance-research/MAGACorpus"
+        ],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Beyond Prompt Content: Enhancing LLM Performance via Content-Format Integrated Prompt Optimization",
+        "authors": "Xuan Feng, Qi Chen, Yuanye Liu, lynazhang, Jiahang",
+        "link": "https://arxiv.org/abs/2502.04295",
+        "github_repo": "https://github.com/HenryLau7/CFPO",
+        "summary": "- This paper introduces Content-Format Integrated Prompt Optimization (CFPO), a novel method that jointly optimizes both prompt content and format for enhanced Large Language Model (LLM) performance.\n- CFPO leverages natural language mutations to explore content variations and employs a dynamic format exploration strategy to systematically evaluate diverse format options.\n- Experiments across multiple tasks and open-source LLMs demonstrate that CFPO achieves measurable performance improvements compared to existing content-only optimization methods.\n- The proposed method highlights the importance of integrating content and format optimization and offers a practical, model-agnostic approach.\n- CFPO's effectiveness is validated through extensive evaluations on various benchmark datasets, showcasing consistent and significant performance gains across different LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/HenryLau7/CFPO"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+        "authors": "Marzyeh Ghassemi, Yik Siu Chan, YuxinXiao, narutatsuri",
+        "link": "https://arxiv.org/abs/2502.04322",
+        "github_repo": null,
+        "summary": " - This paper introduces SPEAK EASY, a novel framework for eliciting harmful jailbreaks from LLMs through simple, multi-step, multilingual interactions. \n- It demonstrates that simple interactions can effectively elicit harmful responses, which are both actionable and informative, more effectively than existing methods. \n- The authors propose HARMSCORE, a new metric that measures the harmfulness of LLM responses, aligning more closely with human judgments than existing metrics.\n- SPEAK EASY significantly improves the attack success rate and HARMSCORE across various LLMs and benchmarks. \n- The findings highlight the importance of considering realistic human-LLM interactions when evaluating LLM safety.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/yiksiu-chan/SpeakEasy"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "PILAF: Optimal Human Preference Sampling for Reward Modeling",
+        "authors": "duanyq, Knykny, Kunhao, RedTachyon, Coolfyz",
+        "link": "https://arxiv.org/abs/2502.04270",
+        "github_repo": null,
+        "summary": " - This paper introduces PILAF, a novel sampling method for aligning reward modeling with value optimization in reinforcement learning from human feedback (RLHF).\n - PILAF generates responses by interpolating between the current policy and a reference policy, balancing exploration and exploitation.\n - Theoretical analysis demonstrates that PILAF aligns the parameter gradient with the steepest direction for maximizing human values, achieving more favorable convergence.\n - Empirical evaluations show PILAF outperforms existing methods in iterative and online RLHF settings, significantly reducing annotation and computational costs.\n - PILAF is theoretically grounded, demonstrating optimality from both optimization and a statistical perspective.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Towards Physical Understanding in Video Generation: A 3D Point Regularization Approach",
+        "authors": "ZanyRumata, vidit98, anilkagak2, jlcao2, yunuoch",
+        "link": "https://arxiv.org/abs/2502.03639",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel video generation framework that integrates 3D geometry and dynamic awareness to enhance the quality and physical plausibility of generated videos.\n- The framework leverages a 3D-aware video dataset, PointVid, which augments 2D videos with 3D point trajectories to enable the model to track 2D objects with 3D Cartesian coordinates.\n- A novel regularization strategy is proposed to guide the point cloud diffusion process, ensuring the generated videos have consistent 3D shapes and motion.\n- The model significantly improves the quality of generated videos, especially in scenarios involving complex interactions and contact of objects, outperforming existing baselines such as SVD, I2VGen-XL, and DynamiCrafter in multiple quantitative metrics.\n- The effectiveness of the proposed method is demonstrated through both qualitative and quantitative evaluations, showing improvements in motion smoothness, subject consistency, background consistency, and physical commonsense.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    },
+    {
+        "title": "Learning Real-World Action-Video Dynamics with Heterogeneous Masked Autoregression",
+        "authors": "Kevin Zhao, endernewton, chaoqi-liu, liruiw",
+        "link": "https://arxiv.org/abs/2502.04296",
+        "github_repo": null,
+        "summary": "- This paper introduces Heterogeneous Masked Autoregression (HMA), a novel model for generating high-quality action-video data for robotics research.\n- HMA uses a masked autoregressive approach, which enables efficient and high-fidelity video prediction, outperforming previous methods by a factor of 15 in real-world speed.\n- The model architecture is designed to handle the heterogeneity of robotic actions by using separate encoders and decoders for different robot embodiments.\n- HMA achieves superior visual fidelity and controllability compared to existing robotic video generation models.\n- The generated data is shown to improve the performance of robot learning algorithms and to evaluate policies.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://liruiw.github.io/hma"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-07"
+    }
+]

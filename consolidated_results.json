@@ -17775,5 +17775,322 @@
         ],
         "huggingface_urls": [],
         "date": "2025-02-07"
+    },
+    {
+        "title": "VideoRoPE: What Makes for Good Video Rotary Position Embedding?",
+        "authors": "Pan Zhang, Xiaoyi Dong, Xilin Wei, yuhangzang, LiuXR",
+        "link": "https://arxiv.org/abs/2502.05173",
+        "github_repo": "https://github.com/Wiselnn570/VideoRoPE",
+        "summary": "- VideoRoPE, a novel video position embedding strategy designed for video large language models (LLMs), is introduced, improving the encoding of spatiotemporal information in videos.\n- It addresses four key properties for effective video position encoding: 2D/3D structure, frequency allocation, spatial symmetry, and temporal index scaling.\n- VideoRoPE utilizes a low-frequency temporal allocation to mitigate periodic oscillation issues, diagonal layout to preserve spatial symmetry, and adjustable temporal spacing to decouple temporal and spatial indexing.\n- It surpasses existing RoPE variants on tasks like long video retrieval (+12.4 on V-NIAH, +12.4 on V-NIAH-D), video understanding (+2.9 on LongVideoBench, +4.5 on MLVU, +1.7 on Video-MME), and video hallucination (+11.9 on VideoHallucer).\n- A new challenging benchmark, V-NIAH-D (Visual Needle-In-A-Haystack with Distractors), is introduced to evaluate the robustness of position embedding designs against distractors.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Video Classification",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Wiselnn570/VideoROPE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Fast Video Generation with Sliding Tile Attention",
+        "authors": "Ion Stoica, Hangliang Ding, Runlong Su, Peiyuan Zhang, BrianChen1129",
+        "link": "https://arxiv.org/abs/2502.04507",
+        "github_repo": null,
+        "summary": "- This paper introduces Sliding Tile Attention (STA), a hardware-aware attention mechanism for fast video generation that addresses the computational bottleneck of 3D full attention in Diffusion Transformers (DiTs).\n- STA leverages the observation of localized 3D attention patterns in pre-trained video diffusion models and operates tile-by-tile within local spatial-temporal regions, eliminating redundancy from full attention.\n- With kernel-level optimizations, STA achieves a high Memory Fusion Utilization (MFU) of 58.79% and accelerates attention by 2.8-17x over FlashAttention-2 and 1.6-10x over FlashAttention-3.\n- Applied to HunyuanVideo, a leading video DiT, STA reduces end-to-end latency from 945s to 685s without quality degradation, requiring no training, and further reduces latency to 268s with only a 0.09% VBench drop after fine-tuning.\n- STA offers a significant improvement in quality-efficiency tradeoff compared to alternative acceleration methods like caching.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "AuraFusion360: Augmented Unseen Region Alignment for Reference-based 360\u00b0 Unbounded Scene Inpainting",
+        "authors": "Jie-Ying Lee, Ying-Huan Chen, Yang-Jung Chen, Chung-Ho Wu, cmhungsteve",
+        "link": "https://arxiv.org/abs/2502.05176",
+        "github_repo": null,
+        "summary": "- AuraFusion360, a novel reference-based 360\u00b0 unbounded scene inpainting method for object removal and hole-filling in 3D scenes represented by Gaussian Splatting.\n- Introduces depth-aware unseen mask generation, Adaptive Guided Depth Diffusion for initial point placement, and SDEdit-based detail enhancement for multi-view coherence.\n- Proposes a novel approach for generating unseen masks in 360\u00b0 unbounded 3D scene inpainting by leveraging multi-view information to enhance inpainting accuracy.\n- Employs accurate reference view unprojection and SDEdit to produce consistent guided RGBs across viewpoints for fine-tuning and enhancement.\n- Outperforms existing state-of-the-art methods on a new dataset called 360-USID, achieving superior perceptual quality and geometric accuracy across dramatic viewpoint changes.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Goku: Flow Based Video Generative Foundation Models",
+        "authors": "Fengda Zhu, Yida Zhang, Yuqi Zhang, Chongjian Ge, ShoufaChen",
+        "link": "https://arxiv.org/abs/2502.04896",
+        "github_repo": null,
+        "summary": "- This paper introduces Goku, a family of transformer-based models for joint image and video generation leveraging rectified flows.\n- The Goku models utilize a 3D joint image-video variational autoencoder (VAE) to compress image and video inputs into a shared latent space and employ a full-attention mechanism for seamless joint training.\n- The authors claim that Goku achieves state-of-the-art performance, scoring 0.76 on GenEval and 83.65 on DPG-Bench for text-to-image generation, and 84.85 on VBench for text-to-video tasks.\n- A robust infrastructure designed for large-scale model training incorporates advanced parallelism strategies and fault tolerance mechanisms.\n- A data processing pipeline is employed to ensure high-quality training datasets, utilizing MLLMs and LLMs to refine video and image captions.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "QuEST: Stable Training of LLMs with 1-Bit Weights and Activations",
+        "authors": "Jiale Chen, d-alistarh, mnikdan97, soroushtabesh, BlackSamorez",
+        "link": "https://arxiv.org/abs/2502.05003",
+        "github_repo": "https://github.com/IST-DASLab/QuEST",
+        "summary": "- QuEST, a new quantization-aware training (QAT) method, achieves stable training of large language models (LLMs) with weights and activations quantized down to 1-bit.\n- QuEST improves upon existing QAT methods by using Hadamard normalization and MSE-optimal fitting for accurate and fast quantization, and a new trust gradient estimator for minimizing the error between quantized and full-precision gradients.\n- When data and compute are scaled proportionally to model size, QuEST trains models with 4-bit weights and activations that achieve superior accuracy compared to BF16 models almost 4x larger.\n- The method demonstrates stable scaling laws across a range of hardware-supported precisions and model sizes, and can be extended to sparse representations.\n- GPU kernel support shows that QuEST-trained models can be executed efficiently on commodity hardware.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/IST-DASLab/QUEST"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "DuoGuard: A Two-Player RL-Driven Framework for Multilingual LLM Guardrails",
+        "authors": "Bo Li, Wei Wang, Junkai Zhang, Yu Yang, ydeng9",
+        "link": "https://arxiv.org/abs/2502.05163",
+        "github_repo": "https://github.com/yihedeng9/DuoGuard",
+        "summary": "- DuoGuard, a novel two-player Reinforcement Learning framework, is proposed for training multilingual Large Language Model (LLM) guardrails to enhance safety, particularly for under-resourced languages.\n- A generator and guardrail classifier co-evolve adversarially within the framework to produce synthetic training data, guided by theoretical analysis proving convergence to a Nash equilibrium.\n- Empirical evaluations demonstrate DuoGuard's superior performance, achieving a 10% improvement over the 8B parameter LlamaGuard3 model on English benchmarks while being 4.5x faster at inference with a smaller 0.5B model.\n- DuoGuard also addresses the language imbalance issue by generating synthetic data for lower-resource languages, showing substantial advancements in multilingual safety tasks and outperforming existing guardrails by over 20% on average for similarly sized models.\n- Ablation studies confirm the significant role of synthetic data generation in bridging the data gap between English and other languages, promoting safer and more responsible use of LLMs across different linguistic contexts.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/yihedeng9/DuoGuard"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach",
+        "authors": "Siddharth Singh, John Kirchenbauer, Neel Jain, Sean McLeish, Jonas Geiping",
+        "link": "https://arxiv.org/abs/2502.05171",
+        "github_repo": "https://github.com/seal-rg/recurrent-pretraining",
+        "summary": "- This paper introduces a novel language model architecture that scales test-time computation through latent reasoning using a recurrent block, enabling arbitrary depth at test time.\n- The model, trained on a massive dataset of 800 billion tokens with 3.5 billion parameters, iteratively refines its understanding in a latent space, contrasting with chain-of-thought prompting which scales by generating more tokens.\n- Results demonstrate improved performance on reasoning benchmarks compared to open-source models with similar training data and more parameters, reaching computational loads comparable to a 50 billion parameter model.\n- This recurrent depth approach naturally enables features like adaptive compute, speculative decoding, and KV-cache sharing at inference time.\n- Analysis of token trajectories in latent space reveal emergent computational behaviors, such as orbiting patterns for numerical reasoning, suggesting the model learns to use its latent space in novel ways.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/seal-rg/recurrent-pretraining"
+        ],
+        "huggingface_urls": [
+            "huggingface.co/tomg-group-umd/huginn-0125"
+        ],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Agency Is Frame-Dependent",
+        "authors": "Shi Dong, Will Dabney, Michael Bowling, Andr\u00e9 Barreto, David Abel",
+        "link": "https://arxiv.org/abs/2502.04403",
+        "github_repo": null,
+        "summary": "- This paper argues that agency, a system's capacity to steer outcomes toward a goal, is frame-dependent in reinforcement learning.\n- It challenges the traditional view of agency as an inherent property of a system by demonstrating that assessing agency depends on external commitments, like defining meaningful goals and adaptation.\n- The authors support their claim by analyzing the four key properties of agency: individuality, source of action, normativity, and adaptivity.\n- They show how each property's measurement relies on arbitrary choices, such as boundary selection, causal variable selection, and goal definition.\n- The paper concludes that any scientific study of agency necessitates acknowledging frame-dependence, with implications for reinforcement learning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "FlashVideo:Flowing Fidelity to Detail for Efficient High-Resolution Video Generation",
+        "authors": "Peize Sun, Chongjian Ge, Wenbo Li, Shilong Zhang, ShoufaChen",
+        "link": "https://arxiv.org/abs/2502.05179",
+        "github_repo": "https://github.com/FoundationVision/FlashVideo",
+        "summary": "- FlashVideo is a two-stage text-to-video generation framework using Diffusion Transformer (DiT) models, designed for efficient high-resolution video generation by optimizing prompt fidelity and visual quality separately.\n- Stage I utilizes a large, 5-billion parameter DiT at low resolution (270p) with sufficient denoising steps to prioritize prompt adherence, while Stage II employs a smaller, 2-billion parameter DiT at high resolution (1080p) with flow matching for detail enhancement and computational efficiency.\n- Flow matching in Stage II directly transitions from the low-resolution output to the high-resolution video through nearly straight ODE trajectories, requiring only four function evaluations, unlike traditional cascade models.\n- FlashVideo achieves state-of-the-art results on VBench-Long with a score of 82.99, demonstrating superior computational efficiency compared to other leading methods while producing higher resolution outputs (1080p).\n- The two-stage design provides a low-resolution preview in 30 seconds, allowing users to assess prompt fidelity before committing to the full high-resolution generation, thus reducing overall computational cost and wait times.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/FoundationVision/FlashVideo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Linear Correlation in LM's Compositional Generalization and Hallucination",
+        "authors": "Chengyu Dong, Shibo Hao, Chenyang An, Letian Peng, shangjingbo",
+        "link": "https://arxiv.org/abs/2502.04520",
+        "github_repo": null,
+        "summary": "- This paper uncovers the phenomenon of linear correlations in next-token prediction (NTP) logits from language models (LMs) during knowledge composition, showing that related knowledge pairs (e.g., \"X lives in the city of\" and \"X lives in the country of\") exhibit linear transformations in their logits.\n- The study finds that this linear transformation is resilient to large-scale fine-tuning and generalizes updated knowledge when aligned with real-world relationships but causes hallucinations when deviated.\n- Empirical results suggest linear correlation can serve as a potential identifier of LM generalization.\n- A simple feedforward network with pre-trained vocabulary representations can learn these linear correlations, indicating LM generalization heavily relies on these representations.\n- This paper investigates the generalization mechanism behind LMs and how it relates to knowledge composition, offering insights into compositional generalization and hallucination.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/KomeijiForce/LinCorr"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "On-device Sora: Enabling Diffusion-Based Text-to-Video Generation for Mobile Devices",
+        "authors": "Yeojin Lee, Jungmin Cheon, Isu Jeong, Kyuhwan Lee, Bosung Kim",
+        "link": "https://arxiv.org/abs/2502.04363",
+        "github_repo": "https://github.com/eai-lab/On-device-Sora",
+        "summary": "- On-device Sora is introduced, a novel framework enabling diffusion-based text-to-video generation directly on smartphones, leveraging and optimizing Open-Sora for resource-constrained environments.\n- Three techniques are proposed: Linear Proportional Leap (LPL) for reducing denoising steps, Temporal Dimension Token Merging (TDTM) for minimizing token processing computation, and Concurrent Inference with Dynamic Loading (CI-DL) for efficient memory management.\n- Implemented on iPhone 15 Pro, On-device Sora generates videos comparable to Open-Sora on high-end GPUs, showing significant efficiency gains despite limited hardware.\n- Evaluations using VBench on diverse video categories demonstrate comparable quality with slight frame-level quality differences and improved dynamic degree.\n- This work democratizes access to advanced video generation, ensuring user privacy, and reducing reliance on cloud infrastructure.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/eai-lab/On-device-Sora"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Generating Symbolic World Models via Test-time Scaling of Large Language Models",
+        "authors": "Fuxiang Frank Xia, Tim Z. Xiao, Yuhuan Yuan, Zhouliang Yu, zhangysk",
+        "link": "https://arxiv.org/abs/2502.04728",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel test-time scaling approach for generating Planning Domain Definition Language (PDDL) world models using Large Language Models (LLMs), enhancing their planning capabilities without requiring model fine-tuning.\n- The method employs a two-stage process: Best-of-N (BoN) sampling to generate diverse initial PDDL solutions and instance Verbalized Machine Learning (iVML) to iteratively refine these solutions based on critiques from an optimizer LLM.\n- This approach achieves state-of-the-art performance on PDDL domain generation tasks, surpassing OpenAI's models, with an 85.2% success rate on NL2Domain and 71.4% on Prob2Domain using Qwen2.5-Coder-7B.\n- By using PDDL as an intermediate abstraction, the method enables more robust planning and mitigates LLM hallucinations, successfully handling complex planning scenarios where direct LLM-based planners fail.\n- The combination of BoN and iVML balances exploration and exploitation, enabling faster convergence and higher-quality PDDL domain generation compared to using either method alone.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "CMoE: Fast Carving of Mixture-of-Experts for Efficient LLM Inference",
+        "authors": "Wulong Liu, Xianzhi Yu, Hui-Ling Zhen, Lancheng Zou, Eleven-P",
+        "link": "https://arxiv.org/abs/2502.04416",
+        "github_repo": "https://github.com/JarvisPei/CMoE",
+        "summary": "- CMoE is a novel framework designed to transform pre-trained dense Large Language Models (LLMs) into Mixture-of-Experts (MoE) models, enhancing inference efficiency without extensive retraining or resource demands.\n- This is achieved by \"carving\" experts from the dense model's Feed-Forward Network (FFN) layers, categorizing neurons into shared (always-on) and routed (conditionally activated) based on activation patterns.\n- CMoE's routing mechanism is analytically derived from activation statistics rather than trained, and incorporates load balancing and differentiability for performance. \n- Using a 7B parameter dense model, CMoE creates a usable MoE model in approximately five minutes, and achieves recovery of dense model performance through lightweight fine-tuning within one hour using a modest dataset (2048 samples).\n- Experimental results demonstrate that CMoE maintains comparable perplexity to the original dense models, achieving a perplexity as low as 12.73 on WikiText-2 and 32.37 on C4 after fine-tuning with a sparsity of 75% and outperforms the baseline method LLaMA-MoE on various downstream tasks both with and without fine-tuning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/JarvisPei/CMoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Step Back to Leap Forward: Self-Backtracking for Boosting Reasoning of Language Models",
+        "authors": "Jie-Jing Shao, Ding-Chu Zhang, Wen-Da Wei, Xuan-Yi Zhu, yangxw",
+        "link": "https://arxiv.org/abs/2502.04404",
+        "github_repo": null,
+        "summary": "- This paper introduces Self-Backtracking, a novel technique to enhance the reasoning capabilities of Large Language Models (LLMs) by enabling them to learn when and where to backtrack during both training and inference.\n- The method addresses limitations of existing slow-thinking models, such as inefficient overthinking and over-reliance on external reward models, by internalizing the search process within the LLM.\n- Self-Backtracking facilitates dynamic search and expert iteration for self-improvement, transforming slow-thinking processes into fast thinking.\n- Empirical evaluations on the Countdown task demonstrate a performance improvement of over 40% compared to the optimal-path supervised fine-tuning method.\n- The proposed technique enhances reasoning flexibility and exhibits test-time scaling capabilities, contributing to the development of more advanced and robust reasoning LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LAMDASZ-ML/Self-Backtracking"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "YINYANG-ALIGN: Benchmarking Contradictory Objectives and Proposing Multi-Objective Optimization based DPO for Text-to-Image Alignment",
+        "authors": "Vinija Jain, Gurpreet Singh, Yaswanth Narsupalli, Amitava Das, amanchadha",
+        "link": "https://arxiv.org/abs/2502.03512",
+        "github_repo": null,
+        "summary": "- Introduces YinYangAlign, a benchmark for evaluating Text-to-Image (T2I) alignment across six contradictory objectives: Faithfulness to Prompt vs. Artistic Freedom, Emotional Impact vs. Neutrality, Visual Realism vs. Artistic Freedom, Originality vs. Referentiality, Verifiability vs. Artistic Freedom, and Cultural Sensitivity vs. Artistic Freedom.\n- Proposes Contradictory Alignment Optimization (CAO), an extension of Direct Preference Optimization (DPO), to address the limitations of single-objective optimization by incorporating a synergy-driven multi-objective loss function that balances competing objectives.\n- CAO utilizes a per-axiom loss design, dynamic weighting, Pareto optimality principles, and a novel synergy Jacobian to manage gradient interactions and achieve balanced optimization across diverse alignment paradigms.\n- Empirically demonstrates that optimizing for single axioms with DPO negatively impacts other alignment objectives, whereas CAO achieves more balanced and controlled trade-offs, improving performance across all six contradictory alignment objectives.\n- The YinYangAlign benchmark and CAO framework offer valuable resources and tools for advancing research in T2I alignment, emphasizing the importance of balancing competing objectives for robust, reliable, and ethical image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "QLIP: Text-Aligned Visual Tokenization Unifies Auto-Regressive Multimodal Understanding and Generation",
+        "authors": "Yuke Zhu, Linxi Fan, Scott Reed, Fuzhao Xue, zhaoyue-zephyrus",
+        "link": "https://arxiv.org/abs/2502.05178",
+        "github_repo": null,
+        "summary": "- QLIP (Quantized Language-Image Pre-training) introduces a novel visual tokenization method combining high-quality reconstruction with strong zero-shot image understanding by training a Binary Spherical Quantization (BSQ)-based autoencoder with both reconstruction and language-image alignment objectives.\n- A two-stage training approach addresses the conflicting demands of large-batch contrastive learning and memory-intensive reconstruction, first prioritizing semantic representation learning and then refining visual quality.\n- QLIP achieves competitive reconstruction quality compared to other state-of-the-art visual tokenizers, while maintaining comparable zero-shot image classification accuracy to CLIP.\n- QLIP's visual tokens can be integrated with LLMs for visual question answering, achieving performance comparable to CLIP-based methods, and also used for high-quality text-conditioned image generation with improved FID scores compared to other visual tokenizers.\n- QLIP further enables UM\u00b3, a unified mixed-modality auto-regressive model, capable of handling language-only, image-to-text, and text-to-image tasks within a single model.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering",
+            "Zero-Shot Image Classification",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/guangyil/laion-coco-aesthetic"
+        ],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance",
+        "authors": "Chuchu Fan, Yang Zhang, Yueying Liu, Yilun Hao, Yongchao Chen",
+        "link": "https://arxiv.org/abs/2502.04350",
+        "github_repo": "https://github.com/yongchao98/CodeSteer-v1.0",
+        "summary": "- CodeSteer, a novel framework to augment Large Language Models (LLMs) with symbolic computing capabilities by effectively guiding code/text generation.\n- Introduces SymBench, a comprehensive benchmark with 37 symbolic tasks of varying complexity, along with 12k multi-round guidance/generation trajectories and 5.5k guidance comparison pairs.\n- Employs a fine-tuned Llama-3-8B model as an assistant (CodeSteerLLM) to steer larger models like GPT-40 through multiple rounds of interaction using newly designed multi-round Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO).\n- Incorporates symbolic and self-answer checkers to improve code quality and answer verification.\n- Demonstrates significant performance improvements on SymBench, boosting GPT-40's score from 53.3 to 86.4, outperforming leading models like OpenAI 01 (82.7) and DeepSeek R1 (76.8), with strong generalizability to other LLMs like Claude, Mistral, and GPT-3.5.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yongchao98/CodeSteer-v1.0"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "ARR: Question Answering with Large Language Models via Analyzing, Retrieving, and Reasoning",
+        "authors": "Giuseppe Carenini, yuweiyin",
+        "link": "https://arxiv.org/abs/2502.04689",
+        "github_repo": null,
+        "summary": "- This paper introduces ARR, a novel zero-shot prompting method designed to enhance the question-answering capabilities of Large Language Models (LLMs).\n- ARR guides LLMs through three key stages: analyzing the question's intent, retrieving pertinent information, and conducting step-by-step reasoning.\n- Through comprehensive evaluations across ten diverse multiple-choice question-answering datasets, ARR consistently demonstrates superior performance compared to baseline methods and existing Chain-of-Thought (CoT) prompting techniques.\n- Ablation studies confirm that each component of ARR contributes positively, with intent analysis notably enhancing performance.\n- Further experiments validate the generalizability of ARR across various model sizes, LLM architectures, generation settings, and few-shot learning scenarios, showcasing its robustness and adaptability.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/YuweiYin/ARR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "Scaling Laws in Patchification: An Image Is Worth 50,176 Tokens And More",
+        "authors": "Yuyin Zhou, Wei Shao, Guoyizhe Wei, Yaodong Yu, Feng Wang",
+        "link": "https://arxiv.org/abs/2502.03738",
+        "github_repo": "https://github.com/wangf3014/Patch_Scaling",
+        "summary": "- This paper investigates the impact of patch size on the performance of vision transformers (ViTs) and introduces a new scaling law for patchification.\n- It finds that decreasing patch size consistently improves performance across various vision tasks (classification, segmentation, detection) until reaching pixel-level tokenization (1x1 patches).\n- This challenges the conventional compressive encoding paradigm of patchification and suggests that \"a pixel is worth a token.\"\n- With smaller patches, the necessity of task-specific decoder heads diminishes, especially in dense prediction tasks like segmentation.\n- The study successfully trains a base-sized model with an unprecedented visual sequence length of 50,176 tokens, achieving 84.6% accuracy on ImageNet-1k.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Image Segmentation",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/wangf3014/Patch_Scaling"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
+    },
+    {
+        "title": "MEETING DELEGATE: Benchmarking LLMs on Attending Meetings on Our Behalf",
+        "authors": "Qingwei Lin, Jue Zhang, Xiaoting Qin, Shurun Yuan, Lingxiang Hu",
+        "link": "https://arxiv.org/abs/2502.04376",
+        "github_repo": null,
+        "summary": "- This paper introduces an LLM-powered meeting delegate system designed to represent users in meetings, generating relevant spoken content based on real-time meeting transcripts.\n- A prototype system was developed, focusing on the role of a participant rather than a facilitator, addressing challenges like navigating context-rich conversations and handling ambiguities in human speech.\n- A new benchmark dataset was created from real meeting transcripts, covering common scenarios like explicit cues, implicit cues, chiming in, and remaining silent.\n- Popular LLMs were evaluated on the benchmark, revealing that GPT-4/40 maintained balanced performance, Gemini 1.5 Pro was cautious, and Gemini 1.5 Flash and Llama3-8B/70B were more active. \n- Overall, approximately 60% of generated responses included at least one key point from the ground truth, demonstrating potential but also highlighting the need for improvements in handling transcription errors and reducing irrelevant content.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-10"
     }
 ]

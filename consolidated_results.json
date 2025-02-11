@@ -18092,5 +18092,337 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-02-10"
+    },
+    {
+        "title": "SynthDetoxM: Modern LLMs are Few-Shot Parallel Detoxification Data Annotators",
+        "authors": "Alexander Panchenko, tlenusik, memyprokotow, chameleon-lizard, etomoscow",
+        "link": "https://arxiv.org/abs/2502.06394",
+        "github_repo": null,
+        "summary": "- This paper introduces SynthDetoxM, a large-scale multilingual synthetic parallel dataset for text detoxification comprising 16,000 sentence pairs across German, French, Spanish, and Russian.\n- The dataset was created using few-shot prompting of nine different open-source large language models (LLMs) and a novel selection criteria based on toxicity and similarity metrics.\n- Experiments demonstrate that models trained on SynthDetoxM outperform those trained on the human-annotated MultiParaDetox dataset, even in data-limited settings and various LLMs in few-shot setting.\n- The authors also propose a framework for generating synthetic parallel multilingual detoxification data using few-shot prompting and quality filtering with LLMs.\n- The dataset and code are publicly released to facilitate further research in multilingual text detoxification.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "github.com/s-nlp/synthdetoxm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Exploring the Limit of Outcome Reward for Learning Mathematical Reasoning",
+        "authors": "Yuzhe Gu, Songyang Gao, Chengqi Lyu, zsytony, ZwwWayne",
+        "link": "https://arxiv.org/abs/2502.06781",
+        "github_repo": "https://github.com/InternLM/OREAL",
+        "summary": "- This paper introduces OREAL, a novel Reinforcement Learning (RL) framework designed to enhance mathematical reasoning capabilities of Large Language Models (LLMs) by focusing on outcome-based rewards.\n- The framework leverages behavior cloning on positive trajectories obtained through Best-of-N sampling and employs reward shaping for negative samples to ensure gradient consistency during training.\n- A token-level reward model is also integrated to address the challenge of sparse rewards in long reasoning chains.\n- Experimental results demonstrate that OREAL achieves state-of-the-art performance on MATH-500, surpassing existing 7B and 32B models trained through distillation or RL.\n- Notably, OREAL-7B achieves a pass@1 accuracy of 91.0 on MATH-500 using RL, and OREAL-32B further pushes the limit to 95.0.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/InternLM/OREAL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling",
+        "authors": "Xiu Li, Jian Zhao, Junqi Gao, iseesaw, RyanLiu112",
+        "link": "https://arxiv.org/abs/2502.06703",
+        "github_repo": null,
+        "summary": "- This paper investigates compute-optimal Test-Time Scaling (TTS) for Large Language Models (LLMs) focusing on how policy models, Process Reward Models (PRMs), and problem difficulty influence TTS effectiveness.\n- The authors propose a reward-aware compute-optimal TTS strategy, demonstrating that smaller models (e.g., 1B) can outperform significantly larger models (e.g., 405B) and even state-of-the-art reasoning models like Google's o1 and DeepSeek-R1 on challenging mathematical reasoning tasks (MATH-500 and AIME24).\n- Through experiments, they show that compute-optimal TTS strategies depend heavily on the chosen policy model, PRM, and problem difficulty and that the absolute problem difficulty criteria performs better than difficulty quantiles.\n- The findings highlight the importance of aligning TTS strategies with task and model characteristics, suggesting TTS as a potent approach to enhance LLM reasoning capabilities.\n-  A 3B LLM surpasses a 405B LLM on certain tasks using their proposed TTS strategy.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/AI-MO/aimo-validation-aime",
+            "https://huggingface.co/spaces/HuggingFaceH4/blogpost-scaling-test-time-compute",
+            "https://huggingface.co/datasets/RLHFlow/Mistral-PRM-Data",
+            "https://huggingface.co/datasets/RLHFlow/Deepseek-PRM-Data",
+            "https://huggingface.co/Skywork"
+        ],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Lossless Acceleration of Large Language Models with Hierarchical Drafting based on Temporal Locality in Speculative Decoding",
+        "authors": "Soyeong Jeong, Jeongyeon Seo, Sangjin Choi, doubleyyh, zomss",
+        "link": "https://arxiv.org/abs/2502.05609",
+        "github_repo": null,
+        "summary": "- This research introduces Hierarchy Drafting (HD), a novel lossless drafting approach for accelerating Large Language Model (LLM) inference, addressing the limitations of current speculative decoding methods by eliminating the need for parameter updates and ensuring consistent acceleration.\n- HD organizes various token sources into a hierarchical framework of multiple databases based on temporal locality, prioritizing tokens with higher locality to enhance drafting accuracy and minimize overhead from latency.\n- Experiments on Spec-Bench using LLMs with 7B and 13B parameters show that HD outperforms current lossless drafting methods, demonstrating robust inference speedups across model sizes, tasks, and temperatures, achieving over 1.5x faster inference speed in the greedy decoding setting and maintaining consistent improvement in sampling strategy.\n- The hierarchical framework in HD effectively leverages the varying temporal locality of tokens throughout the generation process, enhancing drafting accuracy and optimizing latency by accessing databases sequentially based on their scale and locality.\n- Analysis shows that HD successfully balances accuracy with reduced latency, leading to significant acceleration gains and demonstrating its potential as a practical alternative to computationally expensive model retraining methods for real-world LLM serving scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zomss/Hierarchy_Drafting"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Show-o Turbo: Towards Accelerated Unified Multimodal Understanding and Generation",
+        "authors": "Yishun Li, Zhenyi Liao, zhijie3, asunalove, UnhurriedDawn",
+        "link": "https://arxiv.org/abs/2502.05415",
+        "github_repo": "https://github.com/zhijie-group/Show-o-Turbo",
+        "summary": "- Show-o Turbo is a new multimodal model that accelerates the Show-o model for unified understanding and generation by shortening the denoising trajectories of both image and text tokens.\n- It leverages a unified denoising perspective for both modalities based on parallel decoding of text tokens and extends consistency distillation to multimodal denoising trajectories.\n- A trajectory segmentation strategy and curriculum learning are employed to improve training convergence.\n- In text-to-image generation, Show-o Turbo achieves a GenEval score of 0.625 at 4 sampling steps without classifier-free guidance, outperforming the original Show-o with 8 steps and CFG.\n- In image-to-text generation, it demonstrates a 1.5x speedup without a significant drop in performance.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/zhijie-group/Show-o-Turbo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Training Language Models for Social Deduction with Multi-Agent Reinforcement Learning",
+        "authors": "Dorsa Sadigh, C. Karen Liu, Warren Xia, bidiptas",
+        "link": "https://arxiv.org/abs/2502.06060",
+        "github_repo": null,
+        "summary": "- This paper introduces a technique to improve the discussion abilities of Large Language Models (LLMs) within social deduction games, focusing on the game Among Us.\n- The approach enhances communication by training LLMs to both \"listen\" effectively, by predicting imposter identity based on observations and discussions, and \"speak\" effectively, by rewarding messages that influence other agents' beliefs about the imposter.\n- Using multi-agent reinforcement learning and an iterated self-play algorithm, the trained crewmates achieve a two times higher win rate compared to standard RL and demonstrate robust communication strategies against adaptive imposters.\n- The method leverages dense reward signals derived from the agents' goal of identifying the imposter, which surpasses the performance of larger base models by a significant margin (over three times higher win rates) without relying on human demonstration data.\n- The emergent behaviors observed in the trained agents include accusing suspects, providing evidence, and sometimes employing deceptive strategies, mirroring human-like interactions in Among Us.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://socialdeductionllm.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "ReasonFlux: Hierarchical LLM Reasoning via Scaling Thought Templates",
+        "authors": "Mengdi Wang, Bin Cui, Zhaochen Yu, Ling Yang",
+        "link": "https://arxiv.org/abs/2502.06772",
+        "github_repo": "https://github.com/Gen-Verse/ReasonFlux",
+        "summary": "- ReasonFlux, a novel hierarchical LLM reasoning framework, is introduced, which leverages scaled thought templates to enhance reasoning capabilities, outperforming models like OpenAI o1-preview and DeepSeek V3 on complex mathematical tasks.\n- The framework incorporates a structured library of approximately 500 thought templates, hierarchical reinforcement learning to optimize template trajectories, and a dynamic inference scaling system.\n- ReasonFlux-32B achieves 91.2% accuracy on the MATH benchmark, surpassing o1-preview by 6.7%, and solves 56.7% of problems on the AIME benchmark, outperforming o1-preview and DeepSeek-V3 by 27% and 45%, respectively.\n- The model demonstrates robust generalization across various mathematical reasoning benchmarks, including OlympiadBench and Gaokao, showcasing the effectiveness of the template-driven approach.\n- A better exploration-exploitation trade-off in navigating the reasoning space is exhibited by the model compared to Best-of-N and MCTS methods, as evidenced by a consistently lower and more stable exploration cost across different problem difficulty levels.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/ReasonFlux"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models via Visual Information Steering",
+        "authors": "Zhenting Wang, Di Liu, Yunhe Gao, Haizhou Shi, Zhuowei Li",
+        "link": "https://arxiv.org/abs/2502.03628",
+        "github_repo": null,
+        "summary": "- This paper introduces VISTA (Visual Information Steering with Token-logit Augmentation), a training-free method to reduce hallucination in Large Vision-Language Models (LVLMs) by reinforcing visual information and leveraging early-layer activations.\n- The authors identify three key patterns in LVLMs token processing: Gradual visual information loss, early excitation of semantically meaningful tokens, and hidden genuine information.\n- VISTA employs two modules: Visual Steering Vector (VSV) to counteract visual information loss and Self-Logits Augmentation (SLA) to utilize early excitation.\n- Extensive experiments on four LVLMs (LLaVA, Shikra, MiniGPT-4, InstructBLIP) across three decoding strategies and four benchmarks show significant hallucination reduction (up to ~40%) compared to existing methods.\n- VISTA excels in stochastic sampling settings and consistently improves performance on both object hallucination and general-purpose benchmarks, demonstrating enhanced visual grounding and overall model behavior.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LzVv123456/VISTA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Matryoshka Quantization",
+        "authors": "Aditya Kusupati, Prateek Jain, Jeff Dean, Puranjay Datta, Pranav Nair",
+        "link": "https://arxiv.org/abs/2502.06786",
+        "github_repo": null,
+        "summary": "- Matryoshka Quantization (MatQuant), a novel multi-scale quantization training technique, leverages the nested structure of integer data types (int8, int4, int2) to train a single model that can be served at different precision levels.\n- MatQuant achieves comparable accuracy to independently trained baselines for int8 and int4, and significantly outperforms them for int2, showing up to a 10% improvement with co-distillation techniques.\n- MatQuant exhibits strong interpolative behavior, allowing extraction of int3 and int6 models without explicit training, and enables layer-wise Mix'n'Match for optimal accuracy-cost trade-offs.\n- The technique is general-purpose and compatible with learning-based quantization methods like QAT and OmniQuant, demonstrating effectiveness across various large language models (LLMs).\n- Single Precision MatQuant, discovered through the research, enhances standard low-bit quantization and outperforms existing int2 quantization methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "EVEv2: Improved Baselines for Encoder-Free Vision-Language Models",
+        "authors": "Yueze Wang, Yufeng Cui, Xiaotong Li, Haiwen Diao, PhyscalX",
+        "link": "https://arxiv.org/abs/2502.06788",
+        "github_repo": "https://github.com/baaivision/EVE",
+        "summary": "- Introduces EVEv2.0, a new family of encoder-free vision-language models (VLMs) built upon a decoder-only architecture, designed for enhanced efficiency and seamless integration with large language models.\n- Employs a divide-and-conquer strategy, incorporating modality-specific weights for attention, normalization, and feed-forward layers to mitigate interference and improve cross-modal alignment.\n- Utilizes a minimalist patch embedding layer trained from scratch, minimizing inductive biases from pre-trained vision encoders and enabling flexible processing of arbitrary-resolution and aspect-ratio images.\n- Presents a new caption engine named DenseFusion++ to generate higher-quality captions, leading to improved VLM performance.\n- Demonstrates superior performance against existing encoder-free models and approaches the capabilities of encoder-based counterparts across multiple vision-language benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/baaivision/EVE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "LM2: Large Memory Models",
+        "authors": "Fraser Greenlee, Alex J. Chan, Filippos Christianos, Wenqi Wu, Jikun Kang",
+        "link": "https://arxiv.org/abs/2502.06049",
+        "github_repo": null,
+        "summary": "- This paper introduces LM2, a Large Memory Model, which is a decoder-only Transformer architecture enhanced with an auxiliary memory module to address limitations of standard Transformers in multi-step reasoning with long contexts.\n- LM2 incorporates a memory module acting as a contextual representation repository, interacting with input tokens via cross attention and updating through gating mechanisms.\n- On the BABILong benchmark, LM2 outperforms the memory-augmented RMT model by 37.1% and the baseline Llama-3.2 model by 86.3% on average across tasks, demonstrating exceptional capabilities in multi-hop inference and large-context question-answering.\n- On the MMLU dataset, LM2 shows a 5.0% improvement over a pre-trained vanilla model, indicating that the memory module does not hinder general task performance.\n- An analysis explores memory interpretability, effectiveness, and test-time behavior, emphasizing the role of explicit memory in enhancing Transformer architectures.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/convergence-ai/lm2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Lumina-Video: Efficient and Flexible Video Generation with Multi-scale Next-DiT",
+        "authors": "Kai Wang, Zhen Li, Yutong Liu, Shicheng Li, Dongyang Liu",
+        "link": "https://arxiv.org/abs/2502.06782",
+        "github_repo": "https://www.github.com/Alpha-VLLM/Lumina-Video",
+        "summary": "- Lumina-Video introduces a novel framework for efficient and flexible video generation leveraging a multi-scale Next-DiT architecture.\n- The Multi-scale Next-DiT architecture jointly trains multiple patch sizes within a shared DiT backbone, enabling dynamic adjustment of computational cost during inference while preserving quality.\n- Lumina-Video incorporates motion scores as explicit conditioning input, providing direct control over the dynamic degree of generated videos by manipulating CFG samples.\n- Lumina-Video achieves state-of-the-art performance on VBench, outperforming open-source models and demonstrating competitiveness with proprietary models.\n- Additionally, Lumina-V2A, a Next-DiT-based video-to-audio model, is introduced to create synchronized audio for generated videos.",
+        "classification": [
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://www.github.com/Alpha-VLLM/Lumina-Video"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "History-Guided Video Diffusion",
+        "authors": "Russ Tedrake, Yilun Du, Max Simchowitz, Boyuan Chen, Kiwhan Song",
+        "link": "https://arxiv.org/abs/2502.06764",
+        "github_repo": null,
+        "summary": "- This paper introduces History Guidance (HG), a family of history-conditioned guidance techniques for video generation and the Diffusion Forcing Transformer (DFoT) a video diffusion framework that enables sampling-time conditioning using any portion of history.\n- DFoT unifies history and generated frames as parts of the same input and facilitates training with independent noise levels per frame, enabling more flexible conditioning.\n- History guidance significantly enhances video generation quality, improves motion dynamics, enables compositional generalization to out-of-distribution history, and unlocks the capability to generate extremely long videos.\n- DFoT, even without guidance, outperforms existing diffusion models on Kinetics-600 and achieves comparable results to resource-intensive industry models.\n- Ablation studies reveal that DFoT with history guidance achieves state-of-the-art performance, generating higher quality videos with enhanced consistency and dynamics.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "CustomVideoX: 3D Reference Attention Driven Dynamic Adaptation for Zero-Shot Customized Video Diffusion Transformers",
+        "authors": "Zhen Yang, Jin Wang, Jingxuan Pang, Mushui Liu, D. She",
+        "link": "https://arxiv.org/abs/2502.06527",
+        "github_repo": null,
+        "summary": "- CustomVideoX is a novel framework for zero-shot personalized video generation leveraging a video diffusion transformer (VDiT) architecture and trained using a new 2M video dataset.\n- The model employs 3D Reference Attention for direct interaction between reference image features and video frames, and Time-Aware Attention Bias (TAB) to dynamically adjust reference influence during denoising, improving temporal coherence.\n- An Entity Region-Aware Enhancement (ERAE) module refines focus on key entities, enhancing personalized content generation.\n- A new benchmark, VideoBench (50 objects, 100 prompts), was created to evaluate personalized video generation.\n- Experimental results show CustomVideoX significantly outperforms existing methods in video quality and temporal coherence on both existing and proposed benchmarks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+        "authors": "Beidi Chen, Tianqi Chen, Hanyuezhuohua",
+        "link": "https://arxiv.org/abs/2502.05431",
+        "github_repo": null,
+        "summary": "- The paper introduces Adaptive Parallel Encoding (APE), a technique to improve the efficiency and performance of context-augmented generation (CAG) tasks like retrieval-augmented generation (RAG) and in-context learning (ICL).\n- APE addresses the performance drop seen in traditional parallel encoding methods by aligning the attention distribution of parallel encoding with sequential encoding through three steps: shared prefix, attention temperature adjustment, and scaling factor.\n- On RAG tasks, APE maintains 98% of sequential encoding accuracy while achieving a 3.3% performance improvement on LongBench by using more and longer contexts. \n- On ICL tasks, APE outperforms parallel encoding by 7.9% on average across three tasks and retains 93% of full-shot sequential encoding performance with similar context length.\n- APE also demonstrates effective scaling for many-shot CAG, processing hundreds of texts in parallel, and achieves up to 4.5x faster inference for a 128k context.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Infini-AI-Lab/APE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Efficient-vDiT: Efficient Video Diffusion Transformers With Attention Tile",
+        "authors": "Peiyuan Zhang, Runlong Su, Dacheng Li, zhijie3, foreverpiano",
+        "link": "https://arxiv.org/abs/2502.06155",
+        "github_repo": null,
+        "summary": "- This paper introduces Efficient-vDiT, a framework to accelerate the inference of 3D Diffusion Transformers (DiTs) for video generation.\n- Efficient-vDiT prunes the computationally expensive 3D full attention based on identified redundancies in video data, termed \"Attention Tile,\" which exhibits repetitive patterns.\n- This allows for a family of sparse 3D attention mechanisms with linear complexity regarding the number of video frames.\n- Efficient-vDiT shortens the sampling process using existing multi-step consistency distillation, dividing the sampling trajectory into segments for efficient generation.\n- Evaluation on Open-Sora-Plan 1.2 models shows 7.4x-7.8x speedup with marginal performance trade-offs on VBench for 29 and 93-frame 720p video generation and compatibility with distributed inference, achieving an additional 3.91x speedup on 4 GPUs.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "MetaChain: A Fully-Automated and Zero-Code Framework for LLM Agents",
+        "authors": "Chao Huang, Tianyu Fan, Jiabin Tang",
+        "link": "https://arxiv.org/abs/2502.05957",
+        "github_repo": "https://github.com/HKUDS/MetaChain",
+        "summary": "- MetaChain is a novel framework for developing Large Language Model (LLM) agents that requires no coding, enabling anyone to build custom agents using natural language.\n- It operates as an autonomous Agent Operating System, with Agentic System Utilities, an LLM-powered Actionable Engine, a Self-Managing File System, and a Self-Play Agent Customization module.\n- Evaluation on the GAIA benchmark shows MetaChain achieving second place, surpassing all other open-source solutions and nearing closed-source performance.\n- In Retrieval-Augmented Generation (RAG) tasks, MetaChain outperforms existing methods, including LangChain's agentic RAG, by dynamically orchestrating workflows.\n- Case studies demonstrate MetaChain's ability to handle tasks ranging from single-agent image generation to multi-agent financial analysis and automated workflow creation for tasks like majority voting across multiple LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/HKUDS/MetaChain"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Steel-LLM:From Scratch to Open Source -- A Personal Journey in Building a Chinese-Centric LLM",
+        "authors": "Zhaoxiang Zhang, Shu Li, Qingshui Gu, aaabiao",
+        "link": "https://arxiv.org/abs/2502.06635",
+        "github_repo": "https://github.com/zhanshijinwat/Steel-LLM",
+        "summary": "- Steel-LLM is a 1-billion parameter, open-source, Chinese-centric large language model (LLM) trained on a large-scale dataset with a focus on transparency and resource efficiency.\n- The model architecture incorporates Soft Mixture of Experts (Soft MOE) and an enhanced Feed-Forward Network, trained on 8 GPUs.\n- Steel-LLM demonstrates competitive performance against established benchmarks such as CEVAL (41.90%) and CMMLU (36.08%), outperforming similarly sized models and approaching the performance of some larger models.\n- Key features include resource-efficient training, complete transparency with open-sourced code and data, and practical guidance for smaller research teams.\n- The project aims to improve accessibility and foster further research in Chinese and multilingual LLM development.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zhanshijinwat/Steel-LLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "The Curse of Depth in Large Language Models",
+        "authors": "Yefeng Zheng, Lu Yin, Xinyuan Song, Wenfang Sun, pengxiang",
+        "link": "https://arxiv.org/abs/2502.05795",
+        "github_repo": null,
+        "summary": "- This paper introduces \"LayerNorm Scaling\", a technique to mitigate the Curse of Depth (CoD) in Large Language Models (LLMs), where deeper layers contribute less effectively than expected.\n- The paper identifies the root cause of CoD as Pre-Layer Normalization (Pre-LN), which leads to exponential growth of output variance with depth, causing gradients in deeper layers to approach an identity matrix.\n- LayerNorm Scaling mitigates this by scaling the output of layer normalization inversely by the square root of the layer's depth, thus controlling variance and improving the contribution of deeper layers.\n- Experimental results on LLaMA models (130M to 1B parameters) show that LayerNorm Scaling improves pre-training perplexity and downstream task performance in supervised fine-tuning compared to Pre-LN and other normalization techniques.\n- The improvement is attributed to the enhanced contribution of deeper layers enabled by LayerNorm Scaling, which results in better representation learning and improved generalization.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "DreamDPO: Aligning Text-to-3D Generation with Human Preferences via Direct Preference Optimization",
+        "authors": "Yi Yang, Hehe Fan, Fan Ma, Xiaobo Xia, Zhenglin Zhou",
+        "link": "https://arxiv.org/abs/2502.04370",
+        "github_repo": null,
+        "summary": "- DreamDPO, an optimization-based text-to-3D generation framework, is introduced, which integrates human preferences through direct preference optimization using reward or large multimodal models (LMMs).\n- DreamDPO follows a three-step iterative process involving the construction of pairwise examples by applying noise to 3D representations, comparing the alignment of these examples using a ranking model, and updating the 3D representation based on a preference-driven loss function.\n- This method reduces reliance on precise pointwise evaluations by leveraging pairwise comparisons and enhances controllability by employing instructions from LMMs.\n- Experimental results on GPTEval3D benchmark, with 110 prompts from GPT-4, using ImageReward and Elo rating demonstrate state-of-the-art performance across various metrics including text-asset alignment, 3D plausibility, texture details, and geometry details.\n- DreamDPO demonstrates effective text alignment, generation stability, and detailed geometry and texture generation. It also supports controllability through the use of Large Multi-Modal Models.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
+    },
+    {
+        "title": "Dual Caption Preference Optimization for Diffusion Models",
+        "authors": "Bimsara Pathiraja, Shamanthak Hegde, Agneet Chatterjee, Yiran Luo, sahsaeedi",
+        "link": "https://arxiv.org/abs/2502.06023",
+        "github_repo": null,
+        "summary": "- This paper introduces Dual Caption Preference Optimization (DCPO), a novel technique for aligning text-to-image diffusion models with human preferences by utilizing two distinct captions for preferred and less preferred images.\n- DCPO addresses the *conflict distribution* challenge, where preferred and less preferred images share similar distributions for a given prompt, and the *irrelevant prompt* issue, where prompts contain information irrelevant to less preferred images, hindering optimization.\n- The authors propose three caption generation strategies: *captioning*, *perturbation*, and a *hybrid* approach, which combines the strengths of both.\n- Results demonstrate that DCPO significantly improves image quality and relevance across multiple metrics, including Pickscore (+0.21), HPSv2.1 (+0.45), and normalized ImageReward (+1.8), outperforming existing methods like Stable Diffusion 2.1, SFTChosen, Diffusion-DPO, and MaPO.\n- A new dataset, Pick-Double Caption, a modified version of Pick-a-Pic v2 with separate captions for preferred and less preferred images, is introduced to support DCPO.",
+        "classification": [
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-11"
     }
 ]

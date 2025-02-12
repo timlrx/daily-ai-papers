@@ -18424,5 +18424,286 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-02-11"
+    },
+    {
+        "title": "Competitive Programming with Large Reasoning Models",
+        "authors": "Borys Minaev, Andre Saraiva, Alexander Wei, Ahmed El-Kishky, OpenAI",
+        "link": "https://arxiv.org/abs/2502.06807",
+        "github_repo": null,
+        "summary": "- This research demonstrates that reinforcement learning significantly improves the performance of large language models (LLMs) on complex coding tasks, especially in competitive programming.\n- The study compares three OpenAI models: o1, a general-purpose reasoning model; o1-ioi, a specialized version fine-tuned for the International Olympiad in Informatics (IOI); and an early version of o3, a more advanced reasoning model.\n- o1-ioi achieved a gold medal at IOI 2024 using handcrafted test-time strategies, showcasing the benefit of specialized training and inference techniques.\n- Notably, o3 surpassed o1-ioi's performance without relying on specialized strategies, achieving a CODEFORCES rating comparable to elite human competitors.\n- This indicates that scaling general-purpose reinforcement learning is a promising direction for developing AI capable of state-of-the-art performance in reasoning domains.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction",
+        "authors": "Yu Wu, Runxin Xu, Dejian Yang, Daya Guo, Junlong Li",
+        "link": "https://arxiv.org/abs/2502.07316",
+        "github_repo": "https://github.com/hkust-nlp/CodeIO",
+        "summary": "- CODEI/O is a novel approach that enhances the reasoning capabilities of Large Language Models (LLMs) by transforming code into a code input-output prediction format and training the models to predict inputs or outputs given the code.\n- By training models to predict inputs/outputs given code and test cases entirely in natural language as Chain-of-Thought (CoT) rationales, they are exposed to universal reasoning primitives, decoupling structured reasoning from code-specific syntax while preserving procedural rigor.\n- The model is trained in two stages: a code input-output prediction training stage followed by a general instruction-tuning stage, which improves average scores across reasoning benchmarks including DROP, WinoGrande, GSM8K, MATH, MMLU-STEM, BBH, GPQA, CruxEval, ZebraGrid, KorBench, and LiveBench. \n- CODEI/O outperforms other strong datasets like OpenMathInstruct2, OpenCoder-SFT-Stage1, WebInstruct, and PythonEdu. \n-  Further improvements were observed with CODEI/O++ using multi-turn revisions based on execution feedback, boosting performance without trade-offs across models with parameter sizes ranging from 7B to 30B.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/hkust-nlp/CodeIO"
+        ],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Magic 1-For-1: Generating One Minute Video Clips within One Minute",
+        "authors": "Qingyu Yin, Jiantong Zhao, Shitong Shao, Hongwei Yi, Owen777",
+        "link": "https://arxiv.org/abs/2502.07701",
+        "github_repo": "https://github.com/DA-Group-PKU/Magic-1-For-1",
+        "summary": "- Magic141 is an efficient video generation model that factorizes text-to-video generation into two tasks: text-to-image and image-to-video generation to optimize memory and inference speed.\n- It uses diffusion step distillation and incorporates multi-modal inputs, augmenting text encoders with visual inputs for better convergence.\n- Quantization techniques reduce memory consumption, and the model generates 5-second clips in 3 seconds, extending to minute-long videos with a sliding window approach.\n- Experimental results on VBench demonstrate Magic141's superior performance and efficiency compared to other open-source TI2V models.\n- The model achieves a strong trade-off between computational cost and video quality during diffusion step distillation.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/DA-Group-PKU/Magic-1-For-1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Teaching Language Models to Critique via Reinforcement Learning",
+        "authors": "Jingjing Xu, Weichao Mao, Liyu Chen, Jie chen, Zhihui",
+        "link": "https://arxiv.org/abs/2502.03492",
+        "github_repo": null,
+        "summary": "- CTRL, a novel framework, is introduced to train Large Language Model (LLM) critics for code generation and refinement through reinforcement learning.\n- The framework decouples the critic model from the task-performing model and trains it to generate feedback that maximizes the generator's correction performance without human supervision.\n- Evaluation on diverse benchmarks like CodeContests, LiveCodeBench, MBPP+, and JudgeBench demonstrates that critics trained with CTRL enhance pass rates and mitigate errors across various generator models, showing substantial improvements compared to self-critique methods and those using stronger critic models.\n- The critic demonstrates an effective weak-to-strong generalization capability by using weaker critic models to improve solutions generated by stronger LLM models such as GPT-40.\n- CTRL\u2019s critic enables effective test-time scaling by providing targeted feedback and significantly reducing the number of required revision iterations, as shown by up to 106.1% relative improvements across challenging code generation benchmarks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Expect the Unexpected: FailSafe Long Context QA for Finance",
+        "authors": "Mateusz Russak, Dmytro Mozolevskyi, Melisa Russak, muayad, kiranr",
+        "link": "https://arxiv.org/abs/2502.06329",
+        "github_repo": null,
+        "summary": "- This paper introduces FailSafeQA, a new long-context financial benchmark designed to evaluate the robustness and context-awareness of Large Language Models (LLMs) in question-answering systems.\n- The benchmark focuses on two scenarios: Query Failure, where the input query is perturbed with spelling errors, incompleteness, and out-of-domain phrasing, and Context Failure, where the input document is degraded, irrelevant, or missing.\n- It employs an LLM-as-a-Judge methodology using Qwen2.5-72B-Instruct and evaluates 24 off-the-shelf LLMs based on Robustness, Context Grounding, and Compliance scores.\n- Initial findings reveal a trade-off between robustness and context grounding, with even high-performing models struggling to maintain accuracy under perturbed conditions; for instance, the most robust model, OpenAI 03-mini, fabricates information in 41% of cases.\n- FailSafeQA serves as a valuable tool for improving LLM dependability in financial applications, where reliable information processing is critical, especially in long-context scenarios.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Writer/FailSafeQA"
+        ],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Scaling Pre-training to One Hundred Billion Data for Vision Language Models",
+        "authors": "Keran Rong, Zhe Li, Daniel Salz, Ibrahim Alabdulmohsin, Xiao Wang",
+        "link": "https://arxiv.org/abs/2502.07617",
+        "github_repo": null,
+        "summary": "- This paper investigates the impact of scaling pre-training data to 100 billion image-text pairs on vision-language models (VLMs).\n- While traditional benchmarks show performance saturation, significant gains are observed in cultural diversity tasks and low-resource language performance, demonstrating the importance of scale for building inclusive models.\n- Quality filtering, while improving performance on Western-centric tasks, is shown to negatively impact cultural diversity.\n- The paper introduces WebLI-100B, a novel dataset with 100 billion image-text pairs, and trains SigLIP models with varying sizes on different data scales.\n- It also shows that rebalancing low-resource languages in the dataset leads to improved performance on corresponding benchmarks and overall multilingual performance.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Zero-Shot Image Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "LLMs Can Easily Learn to Reason from Demonstrations Structure, not content, is what matters!",
+        "authors": "Xiangxi Mo, Shu Liu, Tyler Griggs, Shiyi Cao, Dacheng Li",
+        "link": "https://arxiv.org/abs/2502.07374",
+        "github_repo": "https://github.com/NovaSky-AI/SkyThought",
+        "summary": "- This paper demonstrates that Large Language Models (LLMs) can effectively learn long chain-of-thought (Long CoT) reasoning through data-efficient supervised fine-tuning (SFT) and parameter-efficient low-rank adaptation (LoRA).\n- Using only 17k training samples, the Qwen2.5-32B-Instruct model achieves significant improvements on various math and coding benchmarks, including a 40% improvement on AIME 2024 and 8.1% on Live-CodeBench, making it competitive with proprietary models.\n- The structure of Long CoT reasoning is crucial for effective learning, while the specific content is less important; the model exhibits robustness to incorrect answers or perturbed numerical values in training, yet structural changes such as shuffling reasoning steps significantly impact accuracy.\n- Through controlled experiments modifying reasoning structures and contents, the model demonstrates its sensitivity to the logical flow of the reasoning process.\n- This research highlights the potential of distilling reasoning abilities in LLMs efficiently and emphasizes key factors for training future reasoning models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/NovaSky-AI/SkyThought"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/bespokelabs/Bespoke-Stratos-17k",
+            "https://huggingface.co/datasets/AI-MO/aimo-validation-aime",
+            "https://huggingface.co/datasets/AI-MO/aimo-validation-amc"
+        ],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "\u00c9clair -- Extracting Content and Layout with Integrated Reading Order for Documents",
+        "authors": "Lukas Voegtle, Ilia Karmanov, jseppanen, katerynaCh, amalad",
+        "link": "https://arxiv.org/abs/2502.04223",
+        "github_repo": null,
+        "summary": "- \u00c9CLAIR, a multimodal large language model (MLLM) with a ViT-like encoder and autoregressive decoder, extracts formatted text, bounding boxes with semantic classes, and reading order from documents.\n- It addresses limitations of existing models like Kosmos-2.5 and GOT by predicting spatial information, semantic classes, and handling complex layouts.\n- A novel data generation pipeline was created to construct arXiv-5M, a dataset with maximum-information labels, and the model is fine-tuned on diverse datasets like DocLayNet, SynthTabNet, and a human-labeled Common Crawl subset.\n- \u00c9CLAIR achieves state-of-the-art accuracy on the new benchmark DROBS and shows competitive results on existing benchmarks for general OCR, layout understanding, and LLM training data extraction.\n- Multi-token inference significantly improves \u00c9CLAIR's inference speed while maintaining or enhancing accuracy compared to single-token decoding.",
+        "classification": [
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+        "authors": "Jiang Bian, Qi Liu, Yu Yuan, ShizhaoSun",
+        "link": "https://arxiv.org/abs/2502.03997",
+        "github_repo": null,
+        "summary": "- CAD-Editor is the first framework for text-based CAD editing, allowing users to modify existing CAD models using textual instructions.\n- It utilizes a sequence-to-sequence approach, representing both instructions and CAD models as text sequences.\n- To overcome the lack of training data, CAD-Editor employs an automated data synthesis pipeline, combining design variation models with Large Vision-Language Models (LVLMs).\n- It features a locate-then-infill framework, where Large Language Models (LLMs) first identify regions needing modification and then generate appropriate edits, effectively handling the composite nature of the task.\n- Experimental results demonstrate that CAD-Editor achieves superior performance over baselines in terms of generated CAD model validity, alignment with editing instructions, and overall quality.",
+        "classification": [
+            "Text2Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Enhance-A-Video: Better Generated Video for Free",
+        "authors": "Wenqi Shao, Kaipeng Zhang, Mengzhao Chen, Xuanlei Zhao, Yang Luo",
+        "link": "https://arxiv.org/abs/2502.07508",
+        "github_repo": null,
+        "summary": "- Enhance-A-Video is a training-free, plug-and-play method for enhancing the quality of diffusion transformer (DiT)-based generated videos.\n- It leverages cross-frame information within the temporal attention mechanism by introducing a cross-frame intensity and an enhance temperature parameter.\n- The core idea is to strengthen cross-frame correlations, which leads to improved temporal consistency and preserves fine visual details.\n- Experimental results on various DiT-based video generation models show that Enhance-A-Video effectively reduces temporal inconsistencies and refines visual fidelity without any retraining or fine-tuning.\n- The method demonstrates improved performance in both user studies and quantitative metrics, particularly in temporal consistency, prompt-video consistency, and overall visual quality.",
+        "classification": [
+            "Text-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/NUS-HPC-AI-Lab/Enhance-A-Video"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "NatureLM: Deciphering the Language of Nature for Scientific Discovery",
+        "authors": "Chuan Cao, Liang He, Shufang Xie, Peiran Jin, Yingce Xia",
+        "link": "https://arxiv.org/abs/2502.07527",
+        "github_repo": null,
+        "summary": "- NatureLM is a sequence-based science foundation model designed for scientific discovery, trained on 143 billion tokens from various scientific domains using a transformer decoder architecture.\n- NatureLM excels at generating and optimizing molecules, proteins, RNA, and materials using text instructions; performing cross-domain generation (e.g., protein-to-molecule); and achieving state-of-the-art performance on tasks like retrosynthesis and SMILES-to-IUPAC translation.\n- Evaluation across 22 task categories reveals that larger NatureLM models generally outperform smaller ones, with the 46.7 billion parameter 8x7B model showing the best performance in most cases.\n- NatureLM demonstrates the potential of large foundation models for scientific discovery by integrating knowledge from multiple domains.\n- The researchers plan to further enhance the model's language capabilities and few-shot learning skills in future iterations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+        "authors": "Kewei Cheng, Xin Liu, Haoming Jiang, Jingfeng Yang, yczhuang",
+        "link": "https://arxiv.org/abs/2502.06589",
+        "github_repo": null,
+        "summary": "- This paper introduces Hephaestus, a continual pre-trained large language model (LLM) designed to improve the fundamental agent capabilities of LLMs, including API function calling, intrinsic reasoning and planning, and adaptation to environmental feedback.\n- It also introduces Hephaestus-Forge, a large-scale pre-training corpus created to enhance the abilities of LLM agents by combining diverse data sources like tool documentation, function-calling trajectories, and code examples.\n- The training process includes two stages of continual pre-training followed by instruction fine-tuning.\n- The paper uses scaling law experiments to determine the optimal data mixing ratio among agent, text, and code data, finding a 1:1:1 ratio to be most effective.\n- The authors claim Hephaestus-8B outperforms open-source LLMs and rivals commercial LLMs across several agent benchmarks, suggesting effectiveness at enhancing fundamental agent capabilities and generalizability.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Forget What You Know about LLMs Evaluations - LLMs are Like a Chameleon",
+        "authors": "Seffi Cohen, Lior Rokach, Bracha Shapira, Yehonatan Elisha, Nurit Cohen-Inger",
+        "link": "https://arxiv.org/abs/2502.07445",
+        "github_repo": null,
+        "summary": "- This paper introduces the Chameleon Benchmark Overfit Detector (C-BOD), a meta-evaluation framework to assess the overfitting of Large Language Models (LLMs) to benchmark datasets.\n- C-BOD systematically distorts evaluation prompts while preserving semantic content and labels using a distortion parameter (\u00b5), and compares model performance on original and perturbed versions to detect overfitting.\n- Evaluated on MMLU benchmark with 26 LLMs, C-BOD revealed average performance degradation of 2.15% under modest perturbation (\u03bc = 1.0), with 20 of 26 models showing statistically significant performance drops.\n- Models with higher baseline accuracy and larger LLMs were more sensitive to rephrasing, suggesting overreliance on prompt patterns.\n- This method provides a dataset and model-agnostic tool to detect and mitigate overfitting for more robust language understanding evaluation.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/SeffiCohen/CBOD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "VidCRAFT3: Camera, Object, and Lighting Control for Image-to-Video Generation",
+        "authors": "Hang Xu, Yi Zhu, Yanpeng Zhou, Zimian Peng, Sixiao Zheng",
+        "link": "https://arxiv.org/abs/2502.07531",
+        "github_repo": null,
+        "summary": "- VidCRAFT3 is a novel image-to-video generation model that allows for simultaneous control over camera motion, object motion, and lighting direction.\n- The model architecture consists of three main components: Image2Cloud for camera motion control, ObjMotionNet for encoding object motion trajectories, and a Spatial Triple-Attention Transformer for integrating lighting, text, and image information.\n- A three-stage training strategy is employed, focusing on camera motion control, then dense object trajectories and lighting, and finally sparse object trajectories and lighting, eliminating the need for joint multi-element annotations.\n-  VidCRAFT3 outperforms state-of-the-art methods in control precision and visual realism across various datasets, including RealEstate10K and WebVid-10M, as demonstrated by superior FID, FVD, CamMC, and ObjMC scores.\n- A new synthetic video dataset, VideoLightingDirection (VLD), is introduced to facilitate training and evaluation of lighting control in video generation.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "FocalCodec: Low-Bitrate Speech Coding via Focal Modulation Networks",
+        "authors": "Mirco Ravanelli, Cem Subakan, Francesco Paissan, lucadellalib",
+        "link": "https://arxiv.org/abs/2502.04465",
+        "github_repo": null,
+        "summary": "- FocalCodec, a novel low-bitrate hybrid speech codec based on focal modulation, compresses speech into a single binary codebook using a compressor-quantizer-decompressor architecture.\n- It operates at ultra-low bitrates (0.16 to 0.65 kbps), outperforming current state-of-the-art models in terms of reconstruction quality, voice conversion, and multilingual and noisy speech handling.\n- Evaluation on various downstream tasks showed that FocalCodec preserves sufficient semantic and acoustic information while being suitable for generative modeling.\n- Notably, it achieved the lowest differential word error rate (dWER) in both clean and noisy speech resynthesis benchmarks, surpassing state-of-the-art models like BigCodec.\n- FocalCodec demonstrated effective disentanglement of content and speaker information for voice conversion even with a single codebook design.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech",
+            "Audio-to-Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/microsoft/wavlm-base-sv",
+            "https://huggingface.co/openai/whisper-small"
+        ],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Auditing Prompt Caching in Language Model APIs",
+        "authors": "Percy Liang, Rohith Kuditipudi, Xiang Lisa Li, Chenchen Gu, thashim",
+        "link": "https://arxiv.org/abs/2502.07776",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel auditing technique to detect prompt caching in Large Language Model (LLM) APIs by analyzing data-dependent timing variations.\n- Cached prompts are processed faster (cache hits) than non-cached prompts (cache misses), creating timing differences exploitable by attackers to infer information about other users' prompts if the cache is shared.\n- The audit employs statistical hypothesis testing with procedures designed to generate cache hits and misses, comparing the resulting time distributions.\n- Audits conducted on 17 real-world LLM API providers, including OpenAI, revealed global cache sharing across users in 7 providers, raising privacy concerns.\n- The study also demonstrates the potential leakage of model architecture information, specifically finding evidence that OpenAI's text-embedding-3-small model has a decoder-only Transformer architecture.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/chenchenygu/auditing-prompt-caching"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More",
+        "authors": "Li Shen, Zhenyu Zhang, Jianjin Li, Zhikai Jia, Xialie Zhuang",
+        "link": "https://arxiv.org/abs/2502.07490",
+        "github_repo": null,
+        "summary": "- This paper introduces Mask-Enhanced Autoregressive Prediction (MEAP), a novel training paradigm for Large Language Models (LLMs) that integrates Masked Language Modeling (MLM) into Next-Token Prediction (NTP).\n- MEAP randomly masks a fraction of input tokens before applying standard next-token prediction using a decoder-only transformer, eliminating the need for bidirectional attention or encoder-decoder architectures.\n- Experimental results demonstrate that MEAP significantly outperforms NTP on key information retrieval and long-context reasoning tasks, showing a 33% improvement on Needle in a Haystack and up to 27.2 percentage points improvement on Multi-Document Question Answering. It also excels in the Lost-In-The-Middle Question Answering setting. \n- Analysis suggests that MEAP's effectiveness comes from its ability to promote more distinguishable attention scores by concentrating on fewer tokens, leading to better focus on task-relevant signals.\n- MEAP retains the scaling efficiency of decoder-only LLMs and is compatible with existing LLM pipelines and hardware.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
+    },
+    {
+        "title": "Skill Expansion and Composition in Parameter Space",
+        "authors": "Yixing Lan, Haoyi Niu, Yinan Zheng, Jianxiong Li, LTL07",
+        "link": "https://arxiv.org/abs/2502.05932",
+        "github_repo": null,
+        "summary": "- PSEC, a novel framework for efficient skill learning and composition in autonomous agents, is introduced.\n- PSEC maintains a skill library of primitives as Low-Rank Adaptation (LoRA) modules, allowing efficient expansion of new skills and compositions by merging modules in parameter space.\n- A context-aware module dynamically activates different skills based on the agent's context for optimal performance.\n- Experimental results on D4RL, DSRL, and DeepMind Control Suite show PSEC's superior ability to leverage prior knowledge, efficiently tackle new challenges, and continually evolve its skill library.\n- PSEC outperforms previous continual learning and composition methods in sample efficiency, training speed, and overall performance, especially in complex tasks like multi-objective composition and dynamic shifts.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-12"
     }
 ]

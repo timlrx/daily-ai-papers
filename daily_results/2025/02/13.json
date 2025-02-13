@@ -1,0 +1,317 @@
+[
+    {
+        "title": "TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation",
+        "authors": "Zhuobai Dong, Weiming Han, Jiawei Zhang, Dongxing Mao, Alex Jinpeng Wang",
+        "link": "https://arxiv.org/abs/2502.07870",
+        "github_repo": null,
+        "summary": "- This paper introduces TextAtlas5M, a large-scale dataset of 5 million text-image pairs designed for long-text image generation.\n- The dataset includes synthetic data with varying complexity levels and real-world images sourced from diverse domains like PowerPoint presentations and academic papers.\n- A new benchmark, TextAtlasEval consisting of 3000 human-improved samples is introduced for evaluating long-text generation, posing significant challenges to even state-of-the-art models like GPT40 with DallE-3. \n- Evaluation results show that existing models struggle with generating long and dense text within images, highlighting the need for improved models and training datasets in this area. \n- The dataset and benchmark aim to facilitate research in generating more complex and textually rich images.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Light-A-Video: Training-free Video Relighting via Progressive Light Fusion",
+        "authors": "Pan Zhang, Pengyang Ling, Jiazi Bu, Yujie Zhou, yuhangzang",
+        "link": "https://arxiv.org/abs/2502.08590",
+        "github_repo": null,
+        "summary": "- Light-A-Video is a training-free approach for video relighting that leverages pre-trained image relighting models and video diffusion models.\n- It introduces two key techniques: Consistent Light Attention (CLA) to enhance cross-frame interaction for stable light source generation and Progressive Light Fusion (PLF) to blend source and relighted appearances for smooth temporal transitions.\n- Light-A-Video improves temporal consistency of video relighting without training or optimization.\n- It is compatible with various video diffusion backbones such as UNet-based and DiT-based models.\n- Experiments show Light-A-Video generates higher quality and temporally more consistent videos compared to baselines.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "BenchMAX: A Comprehensive Multilingual Evaluation Suite for Large Language Models",
+        "authors": "Lei Li, Conghui He, Hanxu Hu, Wenhao Zhu, ggdcr",
+        "link": "https://arxiv.org/abs/2502.07346",
+        "github_repo": null,
+        "summary": "- BenchMAX, a multilingual benchmark encompassing 10 tasks across 17 languages, evaluates six core capabilities of LLMs: instruction following, reasoning, code generation, long context modeling, tool use, and translation.\n- The benchmark emphasizes diversity in language families and script systems, addressing a broader range of advanced LLM capabilities compared to previous benchmarks.\n- A rigorous dataset construction pipeline incorporates machine translation, human post-editing by native speakers, and LLM-based selection of final versions, ensuring high quality and reliability.\n- Evaluations reveal varying effectiveness across languages for these advanced LLM capabilities, highlighting persistent performance gaps between English and other languages that are not always bridged by scaling model size.\n- A novel domain translation task derived from the dataset construction process poses further challenges for LLMs, requiring new evaluation metrics beyond traditional translation assessment.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/CONE-MT/BenchMAX.git"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/LLAMAX/benchmax-674d7a815a57baf97b5539f4"
+        ],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "CineMaster: A 3D-Aware and Controllable Framework for Cinematic Text-to-Video Generation",
+        "authors": "Huchuan Lu, Xu Jia, Xiaoyu Shi, Yawen Luo, Qinghe Wang",
+        "link": "https://arxiv.org/abs/2502.08639",
+        "github_repo": null,
+        "summary": "- CineMaster is a novel framework for 3D-aware and controllable text-to-video generation that allows users to manipulate objects and cameras in 3D space, providing precise control over video content.\n- It employs a two-stage process: an interactive 3D scene setup where users define object placement and camera movements, followed by a text-to-video diffusion model guided by rendered depth maps, camera trajectories, and object labels.\n- To address the lack of 3D-labeled video data, an automated pipeline extracts 3D bounding boxes and camera trajectories from large-scale datasets.\n- The framework facilitates intuitive layout control over each rendered frame and overcomes limitations of existing methods that rely on pre-existing videos for conditional maps or offer only 2D object control.\n- Experimental results show that CineMaster excels in controllability metrics and video quality compared to state-of-the-art baselines, demonstrating its ability to generate user-intended videos with fine-grained 3D object and camera manipulation.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://cinemaster-dev.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "WorldGUI: Dynamic Testing for Comprehensive Desktop GUI Automation",
+        "authors": "Mike Zheng Shou, Difei Gao, Henry Hengyuan Zhao",
+        "link": "https://arxiv.org/abs/2502.08047",
+        "github_repo": null,
+        "summary": "- WorldGUI, a novel GUI benchmark, is introduced, which evaluates GUI agents' ability to handle dynamic tasks with diverse initial states across various desktop applications.\n- GUI-Thinker, a comprehensive GUI agent framework, is proposed. It leverages critical thinking principles with modules for post-planning critique, pre-execution validation, and post-action evaluation.\n- GUI-Thinker significantly outperforms Claude-3.5 (Computer Use) by 14.9% in success rate on WorldGUI, demonstrating the efficacy of the critical-thinking approach.\n- WorldGUI spans 315 tasks across 10 popular software applications, including Microsoft Office suite, VSCode, and Adobe Acrobat, incorporating varying initial states via pre-actions to simulate real-world user interactions.\n- Experimental results highlight the effectiveness of GUI-Thinker's critical modules, particularly the Actor-Critic, and the challenges posed by dynamic GUI automation tasks, including the difficulty in accurately perceiving screen elements and generating correct action code.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "LASP-2: Rethinking Sequence Parallelism for Linear Attention and Its Hybrid",
+        "authors": "Yu Cheng, Xiaoye Qu, Yiran Zhong, landisen, weigao266",
+        "link": "https://arxiv.org/abs/2502.07563",
+        "github_repo": "https://github.com/OpenSparseLLMs/Linear-MoE",
+        "summary": "- LASP-2 is a new sequence parallelism (SP) method designed for linear attention and hybrid models, aiming to improve training efficiency by enhancing communication and computation parallelism.\n- LASP-2 rethinks the minimal communication design for linear attention in sequence parallelism by reorganizing the computation-communication workflow and employing a single AllGather collective communication operation on intermediate memory states independent of sequence length.\n- LASP-2H extends the principle to hybrid architectures, integrating linear and standard attention layers, to improve long-context capabilities.\n- Experimental results on a Linear-Llama3 model, a modified Llama3 with linear attention, show that LASP-2 achieves up to 36.6% throughput improvement over Ring Attention and 15.2% over LASP (LASP-1) with a sequence length of 2048K across 64 GPUs.\n- LASP-2 demonstrates efficient scaling with increasing sequence length and number of GPUs, maintaining constant memory usage per GPU while achieving higher throughput.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/OpenSparseLLMs/Linear-MoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "TransMLA: Multi-head Latent Attention Is All You Need",
+        "authors": "Muhan Zhang, Zengwei Yao, fxmeng",
+        "link": "https://arxiv.org/abs/2502.07864",
+        "github_repo": "https://github.com/fxmeng/TransMLA",
+        "summary": "- Introduces Multi-head Latent Attention (MLA), a new attention mechanism for Large Language Models (LLMs) that addresses communication bottlenecks by using low-rank matrices in key-value layers, enabling caching of compressed latent key-value (KV) states.\n- Shows that MLA offers greater expressive power than Group Query Attention (GQA) for the same KV cache overhead and introduces TransMLA, a post-training method to convert GQA-based models to MLA.\n- Demonstrates through experiments that TransMLA-converted models, after fine-tuning, outperform original GQA models on downstream tasks, particularly in math and coding.\n- Proposes further development of MLA-specific inference acceleration and DeepSeek R1 distillation to further optimize the converted models.\n- Claims that switching to MLA can reduce resource consumption and carbon emissions.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/fxmeng/TransMLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Fino1: On the Transferability of Reasoning Enhanced LLMs to Finance",
+        "authors": "Yan Wang, Weipeng Zhou, Lingfei Qian, QianqianXie1994, jiminHuang",
+        "link": "https://arxiv.org/abs/2502.08127",
+        "github_repo": null,
+        "summary": "- This paper introduces Fino1, a new reasoning-enhanced large language model (LLM) specialized for financial tasks, built upon Llama-3.1-8B-Instruct and fine-tuned using Chain-of-Thought and Reinforcement Learning with domain-specific reasoning paths generated by GPT-40.\n- Fino1 demonstrates a consistent 10% performance improvement across diverse financial reasoning tasks, outperforming all other 8B models and even surpassing Llama3-70B-Instruct and Llama3.1-70B-Instruct on average.\n- The paper analyzes the performance of 16 state-of-the-art LLMs across three financial datasets (FinQA, DM-Simplong, XBRL-Math), revealing that general reasoning enhancements do not consistently improve financial reasoning and model scaling does not guarantee better results in the finance domain.\n- The study concludes that domain-specific adaptations are essential for effective financial reasoning with LLMs, and it highlights key areas for future research, including multi-table reasoning, long-context processing, and domain-specific terminology comprehension.\n- All datasets and code used in the study are publicly available, and a leaderboard for future research is introduced.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Table Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/The-FinAI/Fino1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/TheFinAI",
+            "https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard"
+        ],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Distillation Scaling Laws",
+        "authors": "Etai Littwin, Jason Ramapuram, Floris Weers, Amitis Shidani, Dan Busbridge",
+        "link": "https://arxiv.org/abs/2502.08606",
+        "github_repo": null,
+        "summary": "- This paper introduces a distillation scaling law that predicts the performance of a student language model based on the compute budget and its allocation between the student and teacher models.\n- The scaling law reveals that in certain cases, specifically when a teacher model already exists or will be used for multiple distillations, distillation outperforms supervised pretraining up to a certain compute threshold, which can be determined using the scaling law.\n- The study shows that compute allocation can be optimized for both teacher and student models to maximize student performance and provides insights into the capacity gap phenomenon, where overly capable teachers may hinder student performance.\n- The paper also explores compute-optimal distillation scenarios, offering recipes for scenarios like pre-trained teacher availability or cases where teacher training is required, and compares them to supervised learning scenarios.\n- The findings demonstrate that while supervised learning matches distillation at high compute budgets, distillation can be more efficient for specific cases, potentially aiding in building smaller, more performant language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "SARChat-Bench-2M: A Multi-Task Vision-Language Benchmark for SAR Image Interpretation",
+        "authors": "HaiPeng Wang, Peidong Wang, Sihao Dong, Xiayang Xiao, JimmyMa99",
+        "link": "https://arxiv.org/abs/2502.08168",
+        "github_repo": "https://github.com/JimmyMa99/SARChat",
+        "summary": "- This paper introduces SARChat-2M, a large-scale, multi-task, vision-language benchmark for SAR (Synthetic Aperture Radar) image interpretation. \n- SARChat-2M contains approximately 2 million image-text pairs and covers diverse scenarios with detailed target annotations, supporting tasks like visual understanding, object detection, and image captioning. \n-  A comprehensive benchmark, SARChat-Bench, is established with six core tasks: classification, description, counting, localization, recognition, and referring. \n- Evaluation of 16 mainstream VLMs demonstrates the effectiveness of the dataset and benchmark, revealing performance variations across different models and tasks. \n-  This work aims to promote the development of SAR-oriented visual language models and provides insights into building datasets for other remote sensing domains.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/JimmyMa99/SARChat"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Ignore the KL Penalty! Boosting Exploration on Critical Tokens to Enhance RL Fine-Tuning",
+        "authors": "lecraquito, Nbeau, supertardigrade",
+        "link": "https://arxiv.org/abs/2502.06533",
+        "github_repo": null,
+        "summary": "- This paper introduces a modified Kullback-Leibler (KL) penalty for reinforcement learning (RL) fine-tuning of language models, prioritizing exploration on critical tokens.\n- Critical tokens are identified as decisive points in the generation process where the pre-trained model exhibits high uncertainty and significantly impacts the final outcome.\n- The modified KL penalty weights the divergence based on the pre-trained model's confidence, encouraging exploration in uncertain areas while preserving learned capabilities.\n- Experiments on a simple arithmetic task demonstrate that this method enhances exploration efficiency and leads to better performance compared to standard RL fine-tuning.\n- The paper suggests that balancing exploration and exploitation, particularly on critical tokens, can significantly improve the effectiveness of RL for fine-tuning language models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/jvasso/llm-rl-arithmetic"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "LLM Pretraining with Continuous Concepts",
+        "authors": "Andrew Cohen, Jane Yu, Jack Lanchantin, Jihoon Tack, xlxxl",
+        "link": "https://arxiv.org/abs/2502.08524",
+        "github_repo": null,
+        "summary": "- CoCoMix, a novel pretraining framework for LLMs, combines discrete next-token prediction with continuous concepts learned from a pretrained sparse autoencoder.\n- CoCoMix predicts continuous concepts and mixes them into the model's hidden state by interleaving with token hidden representations.\n- Evaluations on multiple benchmarks show CoCoMix is more sample-efficient and outperforms standard next-token prediction and knowledge distillation, achieving comparable performance with 21.5% fewer training tokens on a 1.38B parameter model.\n- Combining concept learning and interleaving is crucial for the performance gains, and CoCoMix also enhances interpretability and steerability by allowing inspection and modification of predicted concepts.\n- CoCoMix demonstrates substantial improvements in weak-to-strong supervision scenarios, where concepts from a small model can supervise a larger model's training.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/RAM/tree/main/projects/cocomix"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Animate Anyone 2: High-Fidelity Character Image Animation with Environment Affordance",
+        "authors": "Dechao Meng, Xin Gao, Zhen Shen, Guangyuan Wang, Hookszdp",
+        "link": "https://arxiv.org/abs/2502.06145",
+        "github_repo": null,
+        "summary": "- Animate Anyone 2 is a novel framework for character image animation that incorporates environment affordance, allowing characters to interact realistically with their surroundings.\n- It extends the Stable Diffusion framework and utilizes a 3D UNet architecture for temporal modeling, incorporating environment and object representations as conditional inputs alongside motion signals.\n- A shape-agnostic mask strategy disrupts the correspondence between mask regions and character outlines during training, promoting better integration and preventing shape leakage.\n- An object guider extracts interactive object features, which are then injected into the generation process via spatial blending, enhancing the fidelity of object interactions.\n- Depth-wise pose modulation with structured depth information improves the representation of inter-limb spatial relationships, resulting in more accurate and robust character poses. It outperforms state-of-the-art methods on the TikTok benchmark and a custom dataset.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+        "authors": "Ryan A. Rossi, Trung Bui, Hanieh Deilamsalehy, Franck-Dernoncourt, amodaresi",
+        "link": "https://arxiv.org/abs/2502.05167",
+        "github_repo": null,
+        "summary": "- This paper introduces NOLIMA, a new benchmark designed to evaluate the latent reasoning capabilities of Large Language Models (LLMs) in long-context scenarios.\n- Unlike existing benchmarks like NIAH which often rely on literal matches between questions and answers, NOLIMA minimizes such overlaps, pushing models to infer latent connections.\n- The benchmark features a needle set with minimal lexical overlap between question and needle. The question and needle keywords are related through associative links, such as real-world knowledge.\n- Evaluations on 12 LLMs reveal that performance degrades significantly with increasing context length. Most models perform well on short contexts but poorly on those larger than 2K tokens. For instance, 10 models score at below 50% of their short-context performance on 32K tokens.\n- The study conducts ablation analysis, chain-of-thought prompting and tests across different complexity levels in latent hops to understand LLM\u2019s failures in generalizing over long contexts when literal matches are absent.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Mediator: Memory-efficient LLM Merging with Less Parameter Conflicts and Uncertainty Based Routing",
+        "authors": "Peijie Dong, Xinglin Pan, Zhenheng Tang, Kunfeng Lai, Dominic789654",
+        "link": "https://arxiv.org/abs/2502.04411",
+        "github_repo": null,
+        "summary": "- Mediator, an adaptive model merging framework, enhances Large Language Model (LLM) merging by addressing parameter conflicts and minimizing system costs.\n- It leverages layer-wise analysis of parameter conflicts, averaging layers with minimal conflict and routing those with significant conflicts using a novel task-level expert routing mechanism.\n- To further reduce storage, Mediator decomposes fine-tuned experts into dense and sparse components, enabling dynamic expert selection based on input task uncertainty.\n- Experiments on LLaMA and Qwen across various scales and real-world reasoning tasks show consistent and significant performance gains over existing methods.\n- Mediator achieves comparable performance to a 7B x 4 LLM ensemble on a single RTX 4090 GPU, improving accessibility in resource-constrained environments.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Towards Trustworthy Retrieval Augmented Generation for Large Language Models: A Survey",
+        "authors": "Yongjia Lei, Leyao Wang, Zheyuan Liu, Bo Ni, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2502.06872",
+        "github_repo": null,
+        "summary": "- This survey paper provides a comprehensive overview of Retrieval Augmented Generation (RAG) for Large Language Models (LLMs) through the lens of trustworthiness, focusing on six key areas: reliability, privacy, safety, fairness, explainability, and accountability.\n- The paper categorizes existing work, identifies key challenges, and offers potential solutions for building more trustworthy RAG systems.\n- The survey also emphasizes the importance of robust evaluation metrics and benchmarks to assess the efficacy of different approaches for trustworthy RAG.\n- The survey concludes with a discussion on applying trustworthy RAG in high-stakes domains like healthcare, law, and education, emphasizing the unique trustworthiness considerations and challenges in these areas.\n- Finally, it suggests promising research directions, including developing unified frameworks for retrieval and generation watermarking, dynamic watermarking for adaptive AI, and better integration of governance and ethical considerations.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Arstanley/Awesome-Trustworthy-Retrieval-Augmented-Generation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "Next Block Prediction: Video Generation via Semi-Autoregressive Modeling",
+        "authors": "Furu Wei, Xu Sun, Shuming Ma, Shuhuai Ren",
+        "link": "https://arxiv.org/abs/2502.07737",
+        "github_repo": null,
+        "summary": "- This paper introduces Next-Block Prediction (NBP), a semi-autoregressive framework for video generation that predicts video blocks (rows or frames) instead of individual tokens, allowing for parallel token prediction and bidirectional attention within each block to capture spatial dependencies.\n- NBP outperforms the vanilla Next-Token Prediction (NTP) model by an average of 4.4 FVD points on UCF101 and K600 datasets, achieving scores of 103.3 and 25.5, respectively, with a 700M parameter model.\n- The model also demonstrates an 11x speedup in inference compared to NTP, generating 8.89 frames per second (128x128 resolution).\n- Scaling experiments show improved generation quality with larger models (up to 3B parameters), demonstrating the scalability of the NBP approach.\n- The framework's ability to handle different block sizes and shapes is explored, with a 1x1x16 block size (row-by-row generation) found to be optimal for balancing quality and efficiency.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "DPO-Shift: Shifting the Distribution of Direct Preference Optimization",
+        "authors": "Xiao Li, Lei Zhao, Qianen Zhang, Feng Jiang, Xiliang Yang",
+        "link": "https://arxiv.org/abs/2502.07599",
+        "github_repo": "https://github.com/Meaquadddd/DPO-Shift",
+        "summary": "- This paper introduces DPO-Shift, a novel technique to address the likelihood displacement issue in Direct Preference Optimization (DPO) for aligning language models with human preferences.\n- DPO-Shift modifies the DPO objective function by adding a parameter function \\(f(x)\\) applied to the reward of rejected responses, controllably shifting the chosen probability distribution, which is supported by theoretical analysis showing a trade-off between improved chosen probability and reduced reward margin.\n- Ablation studies on Llama 3-8B and Qwen 2-7B models trained on the UltraFeedback and Capybara-preferences datasets demonstrate that the method effectively mitigates likelihood displacement and controls the trade-off through different choices of \\(f(x)\\).\n- In downstream MT-Bench and win rate experiments, DPO-Shift consistently outperforms DPO. \n- Overall, DPO-Shift is a simple yet effective method grounded in theory for improving DPO's performance through a controllable shift of the chosen probability distribution.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Meaquadddd/DPO-Shift"
+        ],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "LLM Modules: Knowledge Transfer from a Large to a Small Model using Enhanced Cross-Attention",
+        "authors": "kkolomeitsev",
+        "link": "https://arxiv.org/abs/2502.08213",
+        "github_repo": null,
+        "summary": "- This paper proposes LLM Modules, a novel architecture for transferring knowledge from a large pre-trained language model (e.g., Qwen2-1.5B) to a smaller one (e.g., GPT-Neo-125M) using an Enhanced Cross-Attention mechanism.\n- The architecture freezes the large model and uses its representations as external input to the smaller model, which is trained on limited resources. \n- The Enhanced Cross-Attention mechanism consists of linear projections, an adapter block, and a gating mechanism to effectively integrate the knowledge from the large model into the smaller model.\n- Experimental results on the Bespoke-Stratos-17k dataset show that the combined model generates responses comparable in quality to distilled models after only 15 epochs of training and exhibits improved reasoning capabilities.\n- The modular approach offers advantages in terms of reduced computational costs and adaptability to specific tasks by training on smaller datasets.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/kkolomeitsev/ll"
+        ],
+        "date": "2025-02-13"
+    },
+    {
+        "title": "MetaSC: Test-Time Safety Specification Optimization for Language Models",
+        "authors": "vicgalle",
+        "link": "https://arxiv.org/abs/2502.07985",
+        "github_repo": "https://github.com/vicgalle/meta-self-critique.git",
+        "summary": "- MetaSC, a novel dynamic safety framework, optimizes language model safety reasoning at inference time without modifying model weights, by iteratively updating safety prompts (specifications) to adaptively drive the critique and revision process.\n- This test-time optimization enhances performance against adversarial jailbreak requests and in general safety tasks, such as avoiding moral harm or pursuing honest responses.\n- Evaluations demonstrate that dynamically optimized safety prompts yield significantly higher safety scores compared to fixed system prompts and static self-critique defenses.\n- The meta-critique mechanism is presented as a discrete optimization problem, searching over textual specifications using a meta-critic language model.\n- Experiments using diverse language models and the BiGGen benchmark show substantial improvements in safety across various tasks, including jailbreak defense and general safety criteria.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/vicgalle/meta-self-critique"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-13"
+    }
+]

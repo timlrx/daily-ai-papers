@@ -1,0 +1,292 @@
+[
+    {
+        "title": "InfiniteHiP: Extending Language Model Context Up to 3 Million Tokens on a Single GPU",
+        "authors": "Sung Ju Hwang, Losif63, geonp, gmlwns5176",
+        "link": "https://arxiv.org/abs/2502.08910",
+        "github_repo": null,
+        "summary": "- InfiniteHiP is a novel framework for long-context Language Model (LLM) inference that extends context length up to 3 million tokens on a single 48GB GPU by dynamically pruning irrelevant context and offloading key-value cache to host memory.\n- It employs a modular, hierarchical token pruning algorithm to accelerate processing by discarding less relevant tokens and utilizes various Rotary Positional Embeddings (RoPE) adjustments to generalize to sequences longer than the LLM's training length.\n- InfiniteHiP achieves an 18.95x speedup on attention decoding with a 1-million token context on a single GPU without requiring any additional training compared to standard attention.\n- Evaluation on LongBench and \u221eBench benchmarks shows improved performance over state-of-the-art efficient long-context methods such as InfLLM, especially with longer contexts and on short-context LLMs tested on extended contexts.\n- The framework is implemented within the SGLang LLM serving framework, demonstrating its practicality for real-world use cases, and uses a specialized LRU-based cache policy.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "Skrr: Skip and Re-use Text Encoder Layers for Memory Efficient Text-to-Image Generation",
+        "authors": "Se Young Chun, Jae-sun Seo, Wongi Jeong, Agorium",
+        "link": "https://arxiv.org/abs/2502.08690",
+        "github_repo": null,
+        "summary": "- Skrr, a novel blockwise pruning method for text encoders in text-to-image (T2I) diffusion models, reduces memory overhead while preserving image quality and text alignment.\n- It employs a two-stage process: \"Skip,\" which identifies and prunes less important transformer sub-blocks using a T2I diffusion-tailored discrepancy metric and beam search, and \"Re-use,\" which recycles remaining layers to mitigate performance degradation.\n- Skrr outperforms existing autoregressive large language model (LLM)-targeted pruning methods, improving GenEval scores by up to 20.4% at high sparsity levels (>40%).\n- It maintains performance comparable to dense models across various sparsity levels and different diffusion models, including Stable Diffusion 3 and FLUX.\n- Theoretical analysis supports the efficacy of the Re-use phase in achieving tighter error bounds compared to Skip alone.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+        "authors": "Hu Xu, Shannon Zejiang Shen, ZhaofengWu, bencw, voidism",
+        "link": "https://arxiv.org/abs/2502.09604",
+        "github_repo": "https://github.com/voidism/SelfCite",
+        "summary": "- SelfCite, a novel self-supervised framework, enhances the quality of citations in large language models (LLMs) without human annotations.\n- It leverages a reward system based on context ablation, calculating necessity (probability drop when cited text is removed) and sufficiency (probability hold when only cited text is retained) scores.\n- SelfCite employs best-of-N sampling and preference optimization with SimPO for improved citation quality, boosting F1 scores by up to 5.3 points on LongBench-Cite across various long-form question answering tasks, surpassing previous state-of-the-art and proprietary model prompting.\n- The method excels in producing shorter yet more precise citations, addressing the challenge of hallucination in LLMs by linking generated text to specific evidence.\n- Length balancing is applied during training to prevent models from simply generating longer citations as a shortcut, and further iterative SimPO training has been studied with improved performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/voidism/SelfCite"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "Exploring the Potential of Encoder-free Architectures in 3D LMMs",
+        "authors": "delinqu, Tavish9, zhuhaow, Purple1288, IvanTang",
+        "link": "https://arxiv.org/abs/2502.09620",
+        "github_repo": "https://github.com/Ivan-Tang-3D/ENEL",
+        "summary": "- This paper introduces ENEL, an encoder-free 3D Large Multimodal Model (LMM) that addresses the limitations of encoder-based 3D LMMs, such as fixed point cloud resolution and mismatched semantic embedding with Large Language Models (LLMs).\n- ENEL utilizes an LLM-embedded Semantic Encoding strategy with a Hybrid Semantic Loss during pre-training to enable the LLM to learn high-level 3D semantics directly from point cloud tokens.\n- It employs a Hierarchical Geometry Aggregation strategy during instruction tuning to enhance the LLM's perception of 3D geometric structures.\n- The 7B ENEL model achieves state-of-the-art performance on the Objaverse 3D captioning benchmark with a GPT-4 score of 50.92% and competitive results on classification and VQA tasks, rivaling or exceeding the performance of larger, encoder-based models like ShapeLLM-13B.\n- This demonstrates the potential of encoder-free architectures for efficient and scalable 3D LMMs.",
+        "classification": [
+            "Multimodal",
+            "Text-to-3D",
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Ivan-Tang-3D/ENEL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "An Open Recipe: Adapting Language-Specific LLMs to a Reasoning Model in One Day via Model Merging",
+        "authors": "Kasima Tharnpipitchai, Potsawee Manakul, Kunat Pipatanakul, pittawat",
+        "link": "https://arxiv.org/abs/2502.09056",
+        "github_repo": null,
+        "summary": "- This paper introduces a method for enhancing the reasoning capabilities of language-specific Large Language Models (LLMs) by merging them with a reasoning-focused LLM (DeepSeek R1 70B Distill).\n- The method involves a two-stage process: (1) representation alignment via supervised fine-tuning (SFT) on a combined dataset of translated reasoning traces and general instructions; (2) ability-aware model merging, where the merging ratio is optimized based on layer depth, giving higher weight to DeepSeek R1 in earlier layers and to the language-specific LLM in later layers.\n- Applying this method to a 70B Thai LLM (Typhoon2 70B Instruct) with Deepseek R1 70B and a budget of $120 demonstrates performance comparable to DeepSeek R1 on reasoning tasks while maintaining strong performance on Thai language tasks, with an average score of 76.5/100.\n- Experiments also validate that merging alone and sft alone performs worse than merging with sft.\n- Results show that merging model improved overall average metric by 41.6% over Typhoon2 70B Instruct and 12.8% over DeepSeek R1 70B Distill.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/ThaiLLM-Leaderboard/leaderboard",
+            "https://huggingface.co/datasets/scb10x/ifeval-th",
+            "https://huggingface.co/datasets/HuggingFaceH4/aime_2024",
+            "https://huggingface.co/datasets/Suraponn/thai_instruction_sft",
+            "https://huggingface.co/datasets/LDJnr/Capybara",
+            "https://huggingface.co/datasets/ThaiLLM-Leaderboard/mt-bench-thai",
+            "https://huggingface.co/datasets/airesearch/WangchanThaiInstruct",
+            "https://huggingface.co/aisingapore/llama3.1-70b-cpt-sea-lionv3-instruct"
+        ],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "Can this Model Also Recognize Dogs? Zero-Shot Model Search from Weights",
+        "authors": "Yedid Hoshen, Or Nathan, Jonathan Kahana, Eliahu",
+        "link": "https://arxiv.org/abs/2502.09619",
+        "github_repo": null,
+        "summary": "- This paper introduces ProbeLog, a method for retrieving classification models that can recognize a target concept (e.g., \"Dog\") without access to model metadata or training data.\n- ProbeLog computes a descriptor for each output logit of a model by observing its responses on a fixed set of input probes and normalizing the response vector. \n- It supports both logit-based retrieval (\"find more logits like this\") and zero-shot, text-based retrieval (\"find all logits corresponding to dogs\") using text alignment with probes. \n- A collaborative filtering method is introduced to reduce the cost of encoding repositories by probing models with fewer samples and imputing missing data. \n- Experiments show ProbeLog achieves high retrieval accuracy on real-world and fine-grained search tasks, outperforming model-level baselines and generalizing to real-world models from Hugging Face.",
+        "classification": [
+            "Zero-Shot Classification",
+            "Multimodal",
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles",
+        "authors": "Rui Xu, Xinfeng Yuan, Yifei Zhang, Heng Wang, Xintao Wang",
+        "link": "https://arxiv.org/abs/2502.09082",
+        "github_repo": null,
+        "summary": "- Introduces COSER, a dataset, model, and evaluation framework for role-playing language agents (RPLAs) focused on established characters from literature.\n- The COSER dataset includes nearly 30,000 authentic multi-character conversations from 771 books, along with character profiles, plot summaries, and internal thoughts.\n- CoSER 8B and CoSER 70B are open role-playing LLMs trained on the COSER dataset and based on LLaMA-3.1.\n- Given-circumstance acting (GCA) is used for training and evaluation, where LLMs simulate conversations with defined characters and contexts.\n- COSER 70B shows state-of-the-art performance on the InCharacter and LifeChoice benchmarks and achieves or surpasses GPT-40 on other RPLA benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/allenai/tulu-3-sft-mixture/tree/main/data"
+        ],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "TripoSG: High-Fidelity 3D Shape Synthesis using Large-Scale Rectified Flow Models",
+        "authors": "Yuan Liang, Dehu Wang, Zexiang Liu, Zi-Xin Zou, Yangguang Li",
+        "link": "https://arxiv.org/abs/2502.06608",
+        "github_repo": null,
+        "summary": "- TripoSG, a novel image-to-3D generation model, leverages a rectified flow transformer trained on a large-scale, curated dataset of 2 million 3D samples.\n- The model architecture incorporates skip-connections, RMSNorm, and a Mixture-of-Experts (MoE) mechanism within a DiT framework, scaling up to 4 billion parameters and a latent resolution of 4096 tokens.\n- A hybrid supervised training strategy for the 3D VAE combines SDF, normal, and eikonal losses, improving 3D reconstruction quality and enabling precise geometry encoding.\n- TripoSG achieves state-of-the-art performance in 3D shape generation, demonstrated by finer details, superior input condition alignment, and strong generalization across diverse image styles and content.\n- Comprehensive experiments validate the effectiveness of each component, showcasing TripoSG's superior capabilities in generating high-fidelity 3D models from single images.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+        "authors": "Cheng Qian, Mark Zhao, Junyu Zhang, Rui Yang, Hanyang81",
+        "link": "https://arxiv.org/abs/2502.09560",
+        "github_repo": null,
+        "summary": "- Introduces EMBODIEDBENCH, a comprehensive benchmark for evaluating vision-driven embodied agents powered by Multimodal Large Language Models (MLLMs).\n- The benchmark includes 1,128 testing tasks across four environments: EB-ALFRED, EB-Habitat, EB-Navigation, and EB-Manipulation, encompassing both high-level and low-level tasks.\n- Evaluates 13 leading MLLMs and finds that they excel in high-level tasks but struggle with low-level manipulation, with the best model, GPT-4, achieving only a 28.9% success rate on average.\n- Proposes a novel capability-oriented evaluation across six subsets: basic task solving, common sense reasoning, complex instruction understanding, spatial awareness, visual perception, and long-term planning.\n- Demonstrates the importance of vision for embodied agents, particularly in low-level tasks, with performance significantly degrading when vision is removed.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "Logical Reasoning in Large Language Models: A Survey",
+        "authors": "Chaoli Zhang, Mengru Ding, Hanmeng Liu, ruoxining, HarryFu",
+        "link": "https://arxiv.org/abs/2502.09100",
+        "github_repo": null,
+        "summary": "- This survey paper explores the advancements and challenges in integrating logical reasoning capabilities into Large Language Models (LLMs).\n- The paper categorizes logical reasoning into four paradigms: deductive, inductive, abductive, and analogical, analyzing existing benchmarks and evaluation methods for each.\n- Several state-of-the-art techniques for enhancing logical reasoning in LLMs are discussed, including data-centric approaches, model-centric approaches, external knowledge utilization, and neuro-symbolic methods.\n- The paper highlights unresolved tensions in the field, such as the trade-off between robustness and generalization, the balance between interpretability and performance, and the need for more rigorous evaluation metrics.\n- Future research directions are proposed, emphasizing the need for hybrid architectures, robust evaluation frameworks, and exploration of multimodal reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+        "authors": "Yu Qi, Yanwei Li, Ziyu Guo, Renrui Zhang, CaraJ",
+        "link": "https://arxiv.org/abs/2502.09621",
+        "github_repo": null,
+        "summary": "- Introduces MME-CoT, a benchmark designed to evaluate Chain-of-Thought (CoT) reasoning in Large Multimodal Models (LMMs) across six diverse domains (math, science, OCR, logic, space-time, general scenes).\n- Proposes a novel evaluation suite encompassing three key aspects of CoT: quality (recall and precision of reasoning steps), robustness (impact of CoT on perception vs. reasoning tasks), and efficiency (relevance of generated content and effectiveness of reflection steps).\n- Leverages curated high-quality data with fine-grained annotations of key reasoning steps and image captions.\n- Through analysis of state-of-the-art LMMs, finds that reflection mechanisms enhance CoT quality, CoT can negatively impact performance on perception-heavy tasks, and existing LMMs exhibit inefficiencies in long CoT and reflection processes, like Kimi k1.5 outperforming GPT-4 in CoT quality.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "Typhoon T1: An Open Thai Reasoning Model",
+        "authors": "Kunat Pipatanakul, Kasima Tharnpipitchai, Potsawee Manakul, pittawat",
+        "link": "https://arxiv.org/abs/2502.09042",
+        "github_repo": null,
+        "summary": "- This research introduces Typhoon T1, an open-source Thai reasoning model based on a supervised fine-tuning approach using synthetic data. \n- The model outperforms standard fine-tuning and zero-shot prompting on several benchmarks including GSM8K, HumanEval+, and IFEval. \n- The paper introduces a novel \"structured thinking\" format using XML tags to guide the model's reasoning process and shows that it improves performance. \n- The authors release their datasets, data pipeline, training configurations, and model weights to support further research and development of reasoning models. \n- Additional findings include the effects of data quantity and mixture on reasoning model performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "CoT-Valve: Length-Compressible Chain-of-Thought Tuning",
+        "authors": "Xinchao Wang, Gongfan Fang, Runpeng Yu, Guangnian Wan, Xinyin Ma",
+        "link": "https://arxiv.org/abs/2502.09601",
+        "github_repo": "https://github.com/horseee/CoT-Valve",
+        "summary": "- This paper introduces CoT-Valve, a novel method for controlling the length of Chain-of-Thought (CoT) reasoning paths generated by Large Language Models (LLMs). \n- CoT-Valve identifies a direction in the parameter space that allows for increasing or decreasing the length of generated CoT, using LoRA to implement this controllable direction, enabling flexible length manipulation during inference.\n- It introduces MixChain, a dataset with paired long and short reasoning chains, used to refine the direction for precise tuning and progressively compress reasoning paths.\n- Experiments on various LLMs show CoT-Valve achieves better control and compression of CoT compared to prompt-based methods and other baselines. \n- The results also indicate that shorter reasoning paths can sometimes outperform longer ones on simpler tasks, highlighting the potential of CoT-Valve for enhancing model efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/horseee/CoT-Valve"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "SQuARE: Sequential Question Answering Reasoning Engine for Enhanced Chain-of-Thought in Large Language Models",
+        "authors": "Moshe Wasserblat, Gad Markovits, Moshe Berchansky, danf",
+        "link": "https://arxiv.org/abs/2502.09390",
+        "github_repo": "https://github.com/IntelLabs/RAG-FiT/tree/square",
+        "summary": "- This paper introduces SQuARE (Sequential Question Answering Reasoning Engine), a novel prompting technique designed to enhance chain-of-thought reasoning in Large Language Models (LLMs).\n- SQuARE prompts LLMs to generate and answer a series of sub-questions before addressing the main query, fostering a more thorough exploration of various aspects of a topic.\n- Evaluations were conducted with Llama 3 (3B and 8B) and GPT-4o on TriviaQA, HotpotQA, and ASQA datasets.\n- SQuARE consistently outperforms traditional Chain-of-Thought (CoT) prompting and existing rephrase-and-respond methods, especially with smaller LLMs.\n- The results suggest that systematically decomposing queries through self-interrogation improves reasoning capabilities in LLMs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/IntelLabs/RAG-FiT/tree/square"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Data",
+        "authors": "Ziliang Zhao, Yutao Zhu, Nan Yang, Liang Wang, Haon-Chen",
+        "link": "https://arxiv.org/abs/2502.08468",
+        "github_repo": "https://github.com/haon-chen/mmE5",
+        "summary": "- This paper introduces mmE5, a multimodal multilingual embedding model trained on synthetic data generated using an MLLM (Multimodal Large Language Model).\n- The synthetic data generation framework focuses on three criteria: broad scope (covering diverse tasks, modalities, and languages), robust cross-modal alignment (achieved via a deep thinking process within the MLLM), and high fidelity (using real images and a refinement process).\n- mmE5 achieves state-of-the-art zero-shot performance on the MMEB benchmark with significantly less data than previous methods and shows superior multilingual performance on the XTD benchmark.\n- mmE5 demonstrates strong generalization capabilities across different tasks (classification, visual question answering, retrieval) and modalities.\n- The authors also analyzed the scaling effect of the synthetic data size and other hyperparameters, such as LORA rank, training batch size, and temperature.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Visual Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/haon-chen/mmE5"
+        ],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "The Stochastic Parrot on LLM's Shoulder: A Summative Assessment of Physical Concept Understanding",
+        "authors": "Shunchi Zhang, Tsz Ting Chung, Junjie Wu, Lemao Liu, Mo Yu",
+        "link": "https://arxiv.org/abs/2502.08946",
+        "github_repo": null,
+        "summary": "- This research paper introduces PHYSICO, a new benchmark designed to assess the depth of understanding in Large Language Models (LLMs), particularly in the realm of physical concepts.\n- PHYSICO employs a summative assessment approach, presenting tasks in both natural language and abstract grid formats to evaluate LLMs' comprehension beyond memorization.\n- Experimental results demonstrate that state-of-the-art LLMs, including GPT-40 and Gemini 2.0, significantly lag behind human performance on PHYSICO's high-level understanding subtasks.\n- This performance disparity between low-level (definition-based) and high-level (abstract reasoning) tasks provides quantitative evidence for the \"stochastic parrot\" phenomenon, where LLMs excel at mimicking patterns but struggle with genuine comprehension.\n- Further analysis reveals that the challenge stems from the intrinsic difficulty of understanding these concepts rather than unfamiliar format, as fine-tuning and in-context learning provide minimal benefit, indicating a need for deeper comprehension capabilities in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://physico-benchmark.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "DexTrack: Towards Generalizable Neural Tracking Control for Dexterous Manipulation from Human References",
+        "authors": "Li Yi, Yuzhe Qin, Qianwei Han, Jianibieke Adalibieke, Xueyi Liu",
+        "link": "https://arxiv.org/abs/2502.09614",
+        "github_repo": "https://github.com/Meowuu7/DexTrack/",
+        "summary": "- DexTrack, a novel neural tracking controller, enables dexterous robotic manipulation by learning from human kinematic references, demonstrating robust generalization to new tasks and objects.\n- The controller improves iteratively by mining and incorporating high-quality tracking demonstrations, utilizing a synergistic combination of reinforcement and imitation learning.\n- A homotopy optimization scheme, akin to chain-of-thought, facilitates diverse and high-quality demonstration mining by simplifying and progressively solving complex tracking problems.\n- Evaluated on challenging manipulation tracking tasks in simulation and real-world scenarios using GRAB and TACO datasets, DexTrack achieves a 10% improvement in success rates over existing methods.\n- The controller shows robustness to noisy references and generalizes to intricate in-hand manipulations and interactions with thin objects, showcasing its potential for real-world applications.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Meowuu7/DexTrack/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    },
+    {
+        "title": "3CAD: A Large-Scale Real-World 3C Product Dataset for Unsupervised Anomaly",
+        "authors": "Yuanwei Ma, Wenbo Guo, Hanyang Sun, Peng Xing, enquan2022",
+        "link": "https://arxiv.org/abs/2502.05761",
+        "github_repo": "https://github.com/EnquanYang2022/3CAD",
+        "summary": "- Introduces 3CAD, a large-scale real-world dataset for unsupervised anomaly detection in 3C product manufacturing, containing 27,039 high-resolution labeled images of eight different product types with varying defect morphologies and distributions.\n- Proposes a Coarse-to-Fine detection paradigm with Recovery Guidance (CFRG) framework to address the challenges posed by 3CAD, utilizing heterogeneous knowledge distillation for coarse localization, a recovery network for normal pattern guidance, and a segmentation network for fine-grained anomaly localization.\n- CFRG surpasses other embedding-based, synthesis-based, reconstruction-based, and unified anomaly detection methods on 3CAD, improving P-AUROC by 1.1% over RD, I-AUROC by 4.9% over RD++, and AP by 8.8% compared to other methods.\n- 3CAD's diverse real-world defect types and distributions present a more significant challenge to existing anomaly detection methods compared to the MVTec AD dataset, with most methods experiencing a performance drop of over 10% on 3CAD.\n- Ablation studies demonstrate the contribution of the key components and design choices of CFRG, such as the recovery branch, segmentation module, distillation paradigm, and heterogeneous architecture.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/EnquanYang2022/3CAD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-14"
+    }
+]

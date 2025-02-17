@@ -19310,5 +19310,231 @@
         ],
         "huggingface_urls": [],
         "date": "2025-02-14"
+    },
+    {
+        "title": "Region-Adaptive Sampling for Diffusion Transformers",
+        "authors": "Lili Qiu, Yiqi Zhang, Chengruidong Zhang, Yifan Yang, Ziming Liu",
+        "link": "https://arxiv.org/abs/2502.10389",
+        "github_repo": null,
+        "summary": "- This paper introduces Region-Adaptive Sampling (RAS), a training-free method to accelerate diffusion models, specifically Diffusion Transformers (DiTs).\n- RAS dynamically allocates different sampling steps to image regions based on the model's attention, reducing computations for less critical areas while maintaining focus on regions needing more refinement.\n- Exploiting DiTs' flexibility, RAS updates only high-attention areas while reusing previous noise outputs for others and dynamically updating these regions based on the previous step's noise, prioritizing semantically meaningful regions.\n- Evaluations on Stable Diffusion 3 and Lumina-Next-T2I show speedups up to 2.51x with minimal quality degradation, and a user study confirms comparable quality with a 1.6x speedup, outperforming uniform sampling.\n- This method improves the efficiency of DiT inference through regional sampling variations, leveraging attention continuity to enhance speed and quality.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/RAS"
+        ],
+        "huggingface_urls": [
+            "https://aka.ms/ras-dit"
+        ],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "Step-Video-T2V Technical Report: The Practice, Challenges, and Future of Video Foundation Model",
+        "authors": "Nan Duan, Liangyu Chen, Kun Yan, Haoyang Huang, Guoqing Ma",
+        "link": "https://arxiv.org/abs/2502.10248",
+        "github_repo": "https://github.com/stepfun-ai/Step-Video-T2V",
+        "summary": "- Step-Video-T2V, a 30B parameter text-to-video diffusion transformer model, generates high-quality videos up to 204 frames long from text prompts in both English and Chinese.\n- The model incorporates a novel deep compression Video-VAE that achieves 16x16 spatial and 8x temporal compression, a cascaded training pipeline with text-to-image and text-to-video pre-training, supervised fine-tuning, and direct preference optimization (DPO), and two bilingual text encoders.\n- Step-Video-T2V outperforms open-source models on a novel benchmark, Step-Video-T2V-Eval, and achieves comparable results to commercial engines, especially in generating videos with complex motion dynamics. \n- Despite its strong performance, Step-Video-T2V, like other diffusion-based models, faces limitations in generating videos requiring complex action sequences or adherence to physical laws. \n- The authors also release Step-Video-T2V-Eval to facilitate community research and development in video foundation models.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/stepfun-ai/Step-Video-T2V"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "ZeroBench: An Impossible Visual Benchmark for Contemporary Large Multimodal Models",
+        "authors": "Samuel Roberts, Akash Gupta, Ansh Sharma, Mohammad Reza Taesiri, Jonathan Roberts",
+        "link": "https://arxiv.org/abs/2502.09696",
+        "github_repo": null,
+        "summary": "- Introduces ZeroBench, a challenging visual reasoning benchmark designed to be impossible for current large multimodal models (LMMs).\n- Contains 100 manually created questions and 334 subquestions, focusing on complex multi-step reasoning with diverse natural and synthetic images.\n- Evaluates 20 prominent LMMs, including those with test-time compute scaling, all achieving 0% accuracy on the primary questions.\n- Error analysis reveals that models struggle primarily with visual interpretation rather than logical reasoning.\n- Public release of ZeroBench aims to encourage progress in visual understanding by providing an extremely difficult benchmark with maximum headroom.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "Large Language Diffusion Models",
+        "authors": "Jingyang Ou, Xiaolu Zhang, Zebin You, Fengqi Zhu, Shen Nie",
+        "link": "https://arxiv.org/abs/2502.09992",
+        "github_repo": null,
+        "summary": "- This paper introduces LLaDA, a large language diffusion model trained from scratch using a masked diffusion approach, challenging the dominance of autoregressive models in natural language processing.\n- LLaDA uses a vanilla Transformer architecture to predict masked tokens, optimizing a likelihood bound for probabilistic inference, enabling bidirectional dependencies.\n- Across various benchmarks, LLaDA 8B demonstrates strong scalability and competes with LLaMA3 8B in in-context learning and instruction-following after supervised fine-tuning.\n- LLaDA addresses the reversal curse, outperforming GPT-4 in a reversal poem completion task, showing its ability for bidirectional context processing.\n- These findings establish diffusion models as a viable alternative to autoregressive models for LLMs, suggesting that key LLM capabilities aren't inherently tied to autoregression.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+        "authors": "Peiyan Li, Chaoyou Fu, Haochen Tian, Tao Yu, Yi-Fan Zhang",
+        "link": "https://arxiv.org/abs/2502.10391",
+        "github_repo": null,
+        "summary": "- Introduces MM-RLHF, a 120k human-annotated multimodal dataset designed for aligning large language models with human preferences, focusing on improved quality, diversity, granularity, and interpretability over existing datasets.\n- Proposes a Critique-Based Reward Model that generates critiques of model outputs before scoring, enabling fine-grained evaluation and outperforming other 7B-scale models on various reward model benchmarks.\n- Presents Dynamic Reward Scaling, which optimizes the Direct Preference Optimization (DPO) framework by adjusting sample loss weights according to reward signal strength.\n- Evaluates on 27 benchmarks across 10 dimensions, demonstrating substantial improvements \u2013 19.5% increase in conversational abilities and 60% enhancement in safety for LLaVA-ov-7B when fine-tuned with MM-RLHF.\n- Argues that well-designed alignment using MM-RLHF and the proposed methods comprehensively boosts MLLM capabilities in various tasks, including visual perception, reasoning, dialogue, and trustworthiness.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/lmms-lab/LLaVA-OneVision-Data",
+            "https://huggingface.co/datasets/Yirany/UniMM-Chat",
+            "https://huggingface.co/openai/clip-vit-base-patch32"
+        ],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "Precise Parameter Localization for Textual Generation in Diffusion Models",
+        "authors": "Adam Dziedzic, Kamil Deja, Franziska Boenisch, Bartosz Cywi\u0144ski, \u0141ukasz Staniszewski",
+        "link": "https://arxiv.org/abs/2502.09935",
+        "github_repo": null,
+        "summary": "- This paper introduces a method for localizing a small subset of cross and joint attention layers within diffusion models that are responsible for generating text within images. \n- The method involves \"patching\" the activations of these layers with the activations generated from a target prompt, which allows for precise modification of the generated text without affecting other visual attributes. \n- Through experiments on Stable Diffusion XL, DeepFloyd IF, and Stable Diffusion 3, it demonstrates that less than 1% of the model parameters are responsible for text generation, and that the localized layers are highly specialized to textual content. \n-  Fine-tuning only these localized layers with LoRA improves the quality of the generated text without affecting the overall generation capabilities and diversity. \n- The localization method is also applied to text editing within synthetic images and prevention of toxic text generation, outperforming prior techniques.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "Diverse Inference and Verification for Advanced Reasoning",
+        "authors": "Yuke Zhang, Seunghwan Hyun, Mao Mao, Gaston Longhitano, Iddo Drori",
+        "link": "https://arxiv.org/abs/2502.09955",
+        "github_repo": null,
+        "summary": "- This research introduces a diverse inference approach that combines multiple models and methods during test time to tackle advanced reasoning tasks such as International Mathematical Olympiad (IMO) combinatorics problems, Abstraction and Reasoning Corpus (ARC) puzzles, and Humanity's Last Exam (HLE) questions.\n- The approach utilizes perfect verifiers (Lean for IMO and code execution for ARC) and imperfect verifiers (best-of-N for HLE) to increase accuracy and validate solutions.\n- Test-time simulations and reinforcement learning generate problem-specific information, improving generalization by adapting agent graph representations and varying prompts, code, and datasets.\n- Meta-learning is employed to trace pipeline runs, generate A/B tests, and adaptively modify the agent graph structure.\n- The proposed approach increases accuracy on IMO combinatorics problems to 77.8%, HLE question accuracy to 37%, solves 80% of human-failed ARC puzzles, and 26.5% of puzzles unsolved by high-compute OpenAI models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "We Can't Understand AI Using our Existing Vocabulary",
+        "authors": "Been Kim, Robert Geirhos, John Hewitt",
+        "link": "https://arxiv.org/abs/2502.07586",
+        "github_repo": null,
+        "summary": "- This paper introduces a new framework for understanding and controlling AI systems, arguing that progress in interpretability can be improved by defining and using neologisms (new words) corresponding to human concepts that we want to teach machines or machine concepts that we need to learn.\n- The paper posits that humans and machines conceptualize the world differently, leading to mismatches and a communication problem where bridging these differences is best achieved by forming new words.\n- It proposes \"neologism embedding learning\" as a proof of concept, where new word embeddings are learned via preference-based losses to understand and control model behavior; experiments include a length neologism to control LLM response length, and a diversity neologism to control the variability of responses.\n- Results show that using a \"length neologism\" enables controlling LLM response length to within a specified range more effectively than baseline prompting techniques.\n- Another experiment demonstrates that utilizing a \"diversity neologism\" promotes response diversity, aiding in tasks requiring exploration of variations, such as guessing a hidden number.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "AdaPTS: Adapting Univariate Foundation Models to Probabilistic Multivariate Time Series Forecasting",
+        "authors": "Maurizio Filippone, Albert Thomas, Giuseppe Paolo, Vasilii Feofanov, abenechehab",
+        "link": "https://arxiv.org/abs/2502.10235",
+        "github_repo": "https://github.com/abenechehab/AdaPTS",
+        "summary": "- AdaPTS, a novel framework, adapts pre-trained univariate time series Foundation Models (FMs) for probabilistic multivariate forecasting by introducing adapters \u2013 stochastic feature-space transformations.\n- Adapters project multivariate inputs into a latent space where a frozen univariate FM is applied independently to each dimension before transforming predictions back to the original feature space.\n- Inspired by representation learning and partially stochastic Bayesian neural networks, AdaPTS presents various adapter types and optimization/inference strategies.\n- Experiments demonstrate that AdaPTS enhances forecasting accuracy and uncertainty quantification over baseline methods on synthetic and real-world datasets.\n- AdaPTS offers a modular, scalable, and effective approach to leverage time series FMs in multivariate contexts, promoting broader application.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/abenechehab/AdaPTS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "FoNE: Precise Single-Token Number Embeddings via Fourier Features",
+        "authors": "Vatsal Sharan, Robin Jia, Mahdi Soltanolkotabi, Deqing Fu, Tianyi Zhou",
+        "link": "https://arxiv.org/abs/2502.09741",
+        "github_repo": null,
+        "summary": "- This research proposes **Fourier Number Embedding (FoNE)**, a novel method designed to enhance the representation and processing of numerical data within Large Language Models (LLMs).\n- FoNE directly maps numbers to their Fourier representations, encoding each digit using sine and cosine functions with different periods. This approach facilitates precise representation and efficient handling of numbers within LLMs.\n- On a 6-digit decimal addition task, FoNE achieves 99% accuracy with 64 times less training data than standard tokenization methods, while using significantly fewer tokens. Moreover, it reaches perfect accuracy with a larger training set.\n- FoNE not only accelerates training and inference but also facilitates perfect accuracy on various numerical tasks, including subtraction and multiplication, outperforming existing methods.\n- The method's efficiency and precision address a fundamental limitation in current LLMs, paving the way for improved performance on number-related tasks and broader applications in fields involving numerical reasoning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "Jailbreaking to Jailbreak",
+        "authors": "Bijan Varjavand, Robert Vacareanu, Vaughn Robinson, Jeremy Kritz, ZifanScale",
+        "link": "https://arxiv.org/abs/2502.09638",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach to red teaming Large Language Models (LLMs) called \"jailbreaking-to-jailbreak\" (J2), where a human jailbreaks an LLM (J2 attacker) to make it willing to jailbreak itself or other LLMs.\n- J2 attackers can systematically evaluate target models using various red teaming strategies and improve their performance via in-context learning from previous failures.\n- Experiments demonstrate that Sonnet-3.5 and Gemini-1.5-pro outperform other LLMs as J2 attackers, achieving high attack success rates against GPT-40 and other capable LLMs on Harmbench.\n- This approach not only offers a scalable way for strategic red teaming but also highlights an overlooked failure mode of LLM safeguards: LLMs can bypass their own safeguards by employing a jailbroken version of themselves.\n- The methodology is publicly shared, while specific prompting details are kept private to prevent misuse.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "STMA: A Spatio-Temporal Memory Agent for Long-Horizon Embodied Task Planning",
+        "authors": "Shuguang Cui, Zhixin Mai, Ge Wang, Yiming Zhao, Mingcong Lei",
+        "link": "https://arxiv.org/abs/2502.10177",
+        "github_repo": null,
+        "summary": "- Introduces Spatio-Temporal Memory Agent (STMA), a novel framework enhancing embodied task planning and decision-making through integrated spatio-temporal memory, dynamic knowledge graph, and planner-critic mechanism.\n- STMA leverages a dynamic Knowledge Graph (KG) for spatial memory, updating in real-time to reflect environmental changes for improved spatial reasoning and adaptability in complex scenarios. \n- Employs a planner-critic closed-loop architecture combining proactive multi-step planning with real-time feedback for robust decision-making in dynamic environments.\n- Achieves 31.25% higher success rate and 24.7% higher average score compared to state-of-the-art models in the TextWorld environment, demonstrating effectiveness in long-horizon tasks. \n- Demonstrates competitive performance using open-source models without fine-tuning, emphasizing the efficacy of the spatio-temporal memory design in conjunction with a planner-critic framework.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "MRS: A Fast Sampler for Mean Reverting Diffusion based on ODE and SDE Solvers",
+        "authors": "Ge Yang, Le Lu, Hongbo Zhao, Wei Fang, Ao Li",
+        "link": "https://arxiv.org/abs/2502.07856",
+        "github_repo": null,
+        "summary": "- This paper introduces MR Sampler, a fast sampling algorithm for Mean Reverting (MR) Diffusion, which addresses the computational bottleneck of MR Diffusion by solving the reverse-time stochastic differential equation (SDE) and probability flow ordinary differential equation (PF-ODE).\n- MR Sampler derives a semi-analytical solution, combining an analytical function and a neural network-parameterized integral, and supports various parameterizations, including noise prediction, data prediction, and velocity prediction.\n- The algorithm accelerates MR Diffusion sampling by a factor of 10 to 20 across various image restoration tasks, achieving comparable sampling quality in 5 to 10 NFEs (number of function evaluations) compared to hundreds required by original MR Diffusion. \n- Data prediction demonstrates superior numerical stability over noise prediction due to its ability to maintain output within the [-1, 1] bounds, as opposed to noise prediction's susceptibility to producing unbounded Gaussian noise outputs.\n- Experiments show data prediction converges stably across NFEs and solver types, unlike noise prediction's tendency to collapse at low NFEs, making data prediction the more effective and numerically stable parameterization.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "V2V-LLM: Vehicle-to-Vehicle Cooperative Autonomous Driving with Multi-Modal Large Language Models",
+        "authors": "Yu-Chiang Frank Wang, Stephen F. Smith, Chien-Yi Wang, Ryo Hachiuma, Hsu-kuang Chiu",
+        "link": "https://arxiv.org/abs/2502.09980",
+        "github_repo": null,
+        "summary": "- This paper introduces V2V-LLM, a new multimodal large language model (MLLM) for cooperative autonomous driving that fuses perception information from multiple connected autonomous vehicles (CAVs) to improve driving safety.\n- V2V-LLM uses a centralized LLM computing node that receives individual perception features (scene-level feature maps and object-level feature vectors) from each CAV, answers driving related questions in natural language based on fused information.\n-  A new dataset and benchmark called Vehicle-to-Vehicle Question-Answering (V2V-QA) is created based on V2V4Real dataset to support the development and evaluation of LLM-based cooperative autonomous driving.\n- V2V-QA includes question-answer pairs about grounding, notable object identification, and planning.\n- Experimental results show that V2V-LLM outperforms other baseline fusion methods, especially in the notable object identification and planning tasks, important for overall driving safety.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Object Detection",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-17"
+    },
+    {
+        "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model",
+        "authors": "Markus J. Buehler, Bo Ni",
+        "link": "https://arxiv.org/abs/2502.10173",
+        "github_repo": null,
+        "summary": "- This paper introduces VibeGen, a generative AI framework for end-to-end de novo protein design conditioned on normal mode vibrations, enabling the design of proteins with tailored dynamic properties.\n- VibeGen employs a dual-model architecture with a protein designer (PD) generating sequence candidates based on specified vibrational modes and a protein predictor (PP) evaluating their dynamic accuracy.\n- The designed proteins accurately reproduce prescribed normal mode amplitudes while adopting diverse stable, functionally relevant structures, often de novo, thereby expanding the protein space beyond evolutionary constraints.\n- The framework establishes a bidirectional link between sequence and vibrational behavior, which holds implications for designing flexible enzymes, dynamic scaffolds, and biomaterials.\n- The two-player framework outperforms single-model approaches by collaboratively boosting the strength of end-to-end models, improving accuracy and diversity of protein designs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/lamm-mit/ModeShapeDiffusionDesign"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/lamm-mit/VibeGen"
+        ],
+        "date": "2025-02-17"
     }
 ]

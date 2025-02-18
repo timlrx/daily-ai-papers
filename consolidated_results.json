@@ -19536,5 +19536,396 @@
             "https://huggingface.co/lamm-mit/VibeGen"
         ],
         "date": "2025-02-17"
+    },
+    {
+        "title": "Learning Getting-Up Policies for Real-World Humanoid Robots",
+        "authors": "Saurabh Gupta, Zixuan Chen, Xialin He, RunpeiDong",
+        "link": "https://arxiv.org/abs/2502.12152",
+        "github_repo": null,
+        "summary": "- This paper introduces HUMANUP, a two-stage reinforcement learning framework for training robust getting-up policies for real-world humanoid robots.\n- The first stage focuses on discovering effective getting-up and rolling-over motions with minimal constraints, while the second stage refines these motions for real-world deployment by incorporating control regularization and variations in initial poses and terrains.\n- This approach enables a Unitree G1 robot to successfully get up from both supine and prone positions on diverse terrains like grass, snow, and slopes, outperforming the default controller and demonstrating robustness and generalizability.\n- HUMANUP employs a curriculum learning strategy, progressing from simplified collision meshes and canonical poses in Stage I to full meshes, randomized poses, and varied terrains in Stage II, along with increasing control regularization.\n- The method is evaluated in both simulation and real-world experiments, showcasing a significant improvement in success rates and efficiency compared to existing solutions, including a hand-crafted controller.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://humanoid-getup.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+        "authors": "Liang Zhao, Junyu Luo, Damai Dai, Huazuo Gao, Jingyang Yuan",
+        "link": "https://arxiv.org/abs/2502.11089",
+        "github_repo": null,
+        "summary": "- This paper introduces NSA, a novel sparse attention mechanism designed for efficient long-context modeling.\n- NSA employs a dynamic hierarchical sparse strategy that combines coarse-grained token compression with fine-grained token selection, preserving both global context and local precision.\n- The model's architecture is hardware-aligned, featuring arithmetic intensity-balanced algorithm design and implementation optimizations for modern hardware.\n- NSA enables end-to-end training, achieving comparable or superior performance to full attention models across various benchmarks while exhibiting substantial speedups on decoding, forward propagation, and backward propagation.\n- Experiments demonstrate that NSA maintains or exceeds full attention models' performance on general benchmarks, long-context tasks, and instruction-based reasoning, validating its efficiency throughout the model lifecycle.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "ReLearn: Unlearning via Learning for Large Language Models",
+        "authors": "Sendong Zhao, Liming Yang, Ningyuan Zhao, Haoming Xu, Ningyu",
+        "link": "https://arxiv.org/abs/2502.11190",
+        "github_repo": "https://github.com/zjunlp/unlearn",
+        "summary": "- This paper introduces ReLearn, a novel unlearning pipeline for large language models (LLMs) that uses data augmentation and positive optimization to remove unauthorized knowledge while preserving model capabilities.\n- ReLearn addresses the limitations of existing reverse optimization methods, which disrupt subsequent token prediction and degrade linguistic coherence. \n- The proposed framework includes new metrics (Knowledge Forgetting Rate, Knowledge Retention Rate, and Linguistic Score) for a more comprehensive evaluation of unlearning performance.\n- Experimental results demonstrate that ReLearn effectively achieves targeted forgetting while maintaining high-quality outputs, outperforming existing methods in balancing forgetting and retention.\n- Mechanistic analysis reveals how ReLearn preserves coherent text generation, unlike reverse optimization methods that disrupt this crucial capability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/unlearn"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?",
+        "authors": "Johannes Heidecke, Tejal Patwardhan, Michele Wang, Samuel Miserendino",
+        "link": "https://arxiv.org/abs/2502.12115",
+        "github_repo": "https://github.com/openai/SWELancer-Benchmark",
+        "summary": "- SWE-Lancer, a benchmark comprising 1,400 real-world freelance software engineering tasks from Upwork valued at $1 million, is introduced to evaluate the economic impact of AI in software development.\n- The benchmark includes two task types: individual contributor (IC) tasks graded by end-to-end tests, and managerial tasks evaluating proposal selection.\n- Unlike existing benchmarks, SWE-Lancer uses real-world payouts to reflect market-driven task difficulty, employs end-to-end tests created and validated by experienced software engineers, and encompasses full-stack engineering with diverse task categories.\n- Evaluation results reveal that state-of-the-art models, such as Claude 3.5 Sonnet, achieve limited success, solving 26.2% of IC SWE tasks and earning $208,050 in the Diamond set.\n- The open-sourced Diamond set and Docker image aim to facilitate research into automated software engineering, agent safety, and the economic impacts of automated coding models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/openai/SWELancer-Benchmark"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "HermesFlow: Seamlessly Closing the Gap in Multimodal Understanding and Generation",
+        "authors": "Minghao Xu, Chenming Shang, Ye Tian, Ling Yang, comin",
+        "link": "https://arxiv.org/abs/2502.12148",
+        "github_repo": "https://github.com/Gen-Verse/HermesFlow",
+        "summary": "- HermesFlow is a novel framework designed to bridge the performance gap between multimodal understanding and generation tasks in Multimodal Large Language Models (MLLMs).\n- It leverages homologous data (image-caption pairs) to curate paired preference data for both understanding (caption generation and BERT similarity comparison) and generation (image generation and self-VQA scoring).\n- The framework employs Pair-DPO, a novel training strategy, to align multimodal understanding and generation using the curated homologous preference data.\n- Through self-play iterative optimization, HermesFlow enables continuous self-improvement of the MLLM without requiring external high-quality training data.\n- Experimental results demonstrate the superiority of HermesFlow over existing state-of-the-art models in narrowing the performance gap between understanding and generation, showing improvements in both qualitative image generation and quantitative metrics across multiple benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/HermesFlow"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+        "authors": "Runtao Liu, Hanrong Ye, Guocheng Qian, Kuan-Chieh Wang, Mifucius",
+        "link": "https://arxiv.org/abs/2502.10458",
+        "github_repo": null,
+        "summary": "- ThinkDiff, a novel alignment paradigm, empowers text-to-image diffusion models with multimodal in-context understanding and reasoning by integrating the strengths of vision-language models (VLMs).\n- Instead of directly aligning VLMs with diffusion decoders, ThinkDiff employs a proxy task that aligns VLMs with large language model (LLM) decoders using vision-language training on readily available image-caption datasets.\n- This proxy task is based on the shared encoder of LLMs and diffusion models creating a shared input feature space for LLM and diffusion decoders. \n- This simplified approach effectively transfers the multimodal in-context reasoning abilities of VLMs to diffusion models without complex training procedures or specialized reasoning datasets.\n- Experiments show that ThinkDiff significantly improves the state-of-the-art accuracy from 19.2% to 46.3% on the CoBSAT benchmark for multimodal in-context reasoning generation with just 5 hours of training on 4 A100 GPUs.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "How Do LLMs Acquire New Knowledge? A Knowledge Circuits Perspective on Continual Pre-Training",
+        "authors": "Jiacheng Sun, Hui Jin, Yunzhi Yao, Yixin Ou, Ningyu",
+        "link": "https://arxiv.org/abs/2502.11196",
+        "github_repo": "https://github.com/zjunlp/DynamicKnowledgeCircuits",
+        "summary": "This paper investigates the mechanism of new knowledge acquisition in LLMs using a knowledge circuit perspective. - It analyzes the evolution of knowledge circuits throughout continual pre-training, identifying three key findings: (1) new knowledge acquisition is influenced by its relevance to pre-existing knowledge, (2) knowledge circuit evolution exhibits a phase shift from formation to optimization, (3) the evolution follows a deep-to-shallow pattern. - The findings provide insights into the mechanisms of knowledge acquisition in LLMs and have implications for improving continual pre-training strategies. - The study uses three series of decoder-only LLMs (GPT-2, Llama, and Phi) and synthetic data for controlled experiments. - The analysis is performed from three perspectives: performance, topology, and components, using graph-theoretical metrics and mechanistic interpretability techniques.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/DynamicKnowledgeCircuits"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "SURGE: On the Potential of Large Language Models as General-Purpose Surrogate Code Executors",
+        "authors": "Siqiao Huang, zcliang22, Bohan22",
+        "link": "https://arxiv.org/abs/2502.11167",
+        "github_repo": "https://github.com/Imbernoulli/SURGE",
+        "summary": "- This paper introduces SURGE, a benchmark designed to evaluate the capabilities of Large Language Models (LLMs) as general-purpose surrogate code executors. \n- SURGE covers diverse aspects such as competition-level programming, high-cost scientific computing, and formal mathematical proof verification.\n- An evaluation of various open-source and proprietary LLMs on SURGE reveals that existing LLMs perform moderately. \n- A scaling law study with models of varying sizes and data of different scales also reveals that performance consistently improves with model size and training data.\n- The results suggest that while LLMs can predict execution outcomes for simple programs, they struggle with more complex, real-world scenarios and exhibit limitations in general-purpose surrogate execution.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Imbernoulli/SURGE"
+        ],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Diffusion-Sharpening: Fine-tuning Diffusion Models with Denoising Trajectory Sharpening",
+        "authors": "Mengdi Wang, Yunhai Tong, Ling Yang, Ye Tian, comin",
+        "link": "https://arxiv.org/abs/2502.12146",
+        "github_repo": "https://github.com/Gen-Verse/Diffusion-Sharpening",
+        "summary": "- Diffusion-Sharpening is a novel fine-tuning approach that optimizes diffusion model performance by refining sampling trajectories, enabling alignment with arbitrary reward models.\n- The method introduces two variants: SFT-Diffusion-Sharpening, which uses supervised fine-tuning, and RLHF-Diffusion-Sharpening, which uses online optimization and eliminates the need for curated datasets.\n- Diffusion-Sharpening demonstrates superior training and inference efficiency compared to RL-based fine-tuning and sampling trajectory optimization methods.\n- The approach achieves state-of-the-art performance across various metrics, including text alignment, compositional capabilities, and human preferences, as shown in Table 1.\n- By amortizing the high inference costs associated with trajectory optimization, Diffusion-Sharpening offers a scalable and efficient solution for diffusion model fine-tuning.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/Diffusion-Sharpening"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "SAFE-SQL: Self-Augmented In-Context Learning with Fine-grained Example Selection for Text-to-SQL",
+        "authors": "Hwanhee Lee, Byeongjeong Kim, Ingeol Baek, Jimin Lee",
+        "link": "https://arxiv.org/abs/2502.11438",
+        "github_repo": null,
+        "summary": "- SAFE-SQL, a novel framework, enhances Text-to-SQL generation by creating and filtering self-augmented examples using LLMs.\n- It employs a structured filtering mechanism to select high-quality question-SQL pairs based on similarity metrics and reasoning path validity.\n- This approach eliminates the need for additional training and improves robustness, particularly in complex scenarios where traditional methods struggle.\n- SAFE-SQL surpasses previous zero-shot and few-shot methods, showing substantial performance gains in challenging cases.\n- The method dynamically adapts examples using schema-linked information for enhanced SQL generation in unseen scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "CRANE: Reasoning with constrained LLM generation",
+        "authors": "Gagandeep Singh, Sasa Misailovic, Shubham Ugare, Tarun Suresh, Debangshu Banerjee",
+        "link": "https://arxiv.org/abs/2502.09061",
+        "github_repo": null,
+        "summary": "- CRANE, a reasoning-augmented constrained decoding algorithm, is proposed to balance the correctness of constrained generation with the flexibility of unconstrained generation for LLMs.\n- The paper theoretically demonstrates that constraining LLM outputs to restrictive grammars reduces their reasoning capabilities by limiting the problem-solving complexity class accessible under constrained decoding to TC\u2070.\n- It further shows that augmenting the grammar with additional rules for reasoning steps allows the LLM to retain expressivity while ensuring the final output adheres to the required format.\n- CRANE alternates between unconstrained generation for reasoning and constrained generation for producing structurally correct outputs, guided by delimiter symbols in the output grammar.\n- In experiments on GSM-symbolic and FOLIO datasets, CRANE outperforms constrained and unconstrained decoding baselines, showing up to a 10% improvement in accuracy on challenging symbolic reasoning tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Intuitive physics understanding emerges from self-supervised pretraining on natural videos",
+        "authors": "Laurent Najman, Adrien Bardes, Mahmoud Assran, Nicolas Ballas, Quentin Garrido",
+        "link": "https://arxiv.org/abs/2502.11831",
+        "github_repo": null,
+        "summary": "- This paper introduces V-JEPA, a video prediction model that learns an intuitive understanding of physics from self-supervised pretraining on natural videos.\n- The model uses a learned representation space to predict masked regions in videos, demonstrating an understanding of properties like object permanence and shape consistency.\n- V-JEPA outperforms state-of-the-art video prediction models trained in pixel space and multimodal large language models, achieving above-chance performance on intuitive physics benchmarks.\n- Ablation studies show that video prediction in a learned representation space is sufficient for acquiring an understanding of intuitive physics, challenging the idea of hardwired core knowledge.\n- The findings suggest that intuitive physics understanding can emerge from general-purpose learning mechanisms, without requiring task-specific training or hard-coded abstractions.",
+        "classification": [
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/jepa-intuitive-physics"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Cuckoo: An IE Free Rider Hatched by Massive Nutrition in LLM's Nest",
+        "authors": "Jingbo Shang, Feng Yao, Zilong Wang, Letian Peng",
+        "link": "https://arxiv.org/abs/2502.11275",
+        "github_repo": null,
+        "summary": "- This paper introduces Cuckoo, a novel information extraction (IE) model that leverages the massive datasets used for training large language models (LLMs).\n- Cuckoo recasts next-token prediction into a token extraction framework, enabling efficient IE model training using existing LLM data.\n- The proposed model outperforms existing pre-trained IE models on various IE tasks, particularly in few-shot scenarios and instruction-following settings.\n- Cuckoo demonstrates strong adaptability by evolving with advancements in LLM data preparation, without needing additional manual annotation efforts.\n- The study reveals that Cuckoo exhibits in-context learning capabilities, similar to those observed in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/KomeijiForce/Cuckoo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Dyve: Thinking Fast and Slow for Dynamic Process Verification",
+        "authors": "Qiang Xu, Xiangyu Wen, Zhijian Xu, Zeju Li, Jianyuan1",
+        "link": "https://arxiv.org/abs/2502.11157",
+        "github_repo": null,
+        "summary": "- This paper introduces Dyve, a dynamic process verifier that improves reasoning error detection in LLMs by incorporating fast and slow thinking.\n- Dyve uses a novel step-wise consensus-filtered process supervision technique, combining Monte Carlo estimation, LLM-as-a-Judge, and specialized reasoning models to generate high-quality supervision signals.\n- The model adaptively applies immediate token-level confirmation (System 1) for straightforward steps and comprehensive analysis (System 2) for complex ones.\n- Experimental results on ProcessBench and MATH datasets demonstrate that Dyve significantly outperforms existing process-based verifiers and enhances performance in Best-of-N settings.\n- Dyve's code, data, and model are publicly available.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/staymylove/Dyve"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "PhysReason: A Comprehensive Benchmark towards Physics-Based Reasoning",
+        "authors": "Jiaxing Huang, Yanrui Wu, Yuxuan Dong, Xinyu Zhang, ChengyouJia",
+        "link": "https://arxiv.org/abs/2502.12054",
+        "github_repo": null,
+        "summary": "- This paper introduces PhysReason, a new benchmark for evaluating physics-based reasoning in large language models (LLMs).\n- PhysReason contains 1200 problems, categorized into knowledge-based and reasoning-based problems with varying difficulty levels.\n- The benchmark incorporates multi-modal data (text and diagrams), requiring an average of 8.1 solution steps per problem.\n- A novel evaluation framework, Physics Solution Auto Scoring (PSAS), is proposed to assess both answer and step-level accuracy.\n- Experimental results on various LLMs reveal that existing models struggle with complex physics reasoning, particularly on hard problems.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://dxzxy12138.github.io/PhysReason/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "System Message Generation for User Preferences using Open-Source Models",
+        "authors": "Teakgyu Hong, Dawoon Jung, Minsoo Khang, Jungho Cho, Minbyul Jeong",
+        "link": "https://arxiv.org/abs/2502.11330",
+        "github_repo": null,
+        "summary": "- This paper introduces SYSGEN, a novel pipeline for generating system messages tailored to user preferences using open-source language models.\n- SYSGEN addresses the limitations of existing datasets by automatically generating diverse system messages, thus avoiding license constraints and manual labeling costs.\n- Experiments across various open-source models demonstrate that training on SYSGEN data significantly improves the alignment of model responses with system messages and user instructions.\n- The proposed method achieves substantial improvements on the Multifacet benchmark while maintaining performance on other benchmarks like the Open LLM Leaderboard.\n- Qualitative analysis highlights the importance of diverse system messages for better adaptability across different contexts.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "video-SALMONN-o1: Reasoning-enhanced Audio-visual Large Language Model",
+        "authors": "Yixuan Li, Changli Tang, Jimin Zhuang, Yudong Yang, Guangzhi Sun",
+        "link": "https://arxiv.org/abs/2502.11775",
+        "github_repo": null,
+        "summary": "- This paper introduces video-SALMONN-01, the first open-source reasoning-enhanced audio-visual large language model (LLM) for general video understanding.\n- It proposes process direct preference optimization (pDPO), a contrastive step selection approach for efficient step-level reward modeling tailored for multimodal inputs.\n- A new reasoning-intensive video understanding benchmark, RivaBench, is introduced containing over 4,000 high-quality question-answer pairs.\n- Video-SALMONN-01 outperforms the LLaVA-OneVision baseline across different video reasoning benchmarks by 3-8% accuracy and achieves 6-8% improvement over supervised fine-tuning on RivaBench using pDPO.\n- The model demonstrates zero-shot synthetic video detection capabilities.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/BriansIDP/video-SALMONN-01"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Building A Proof-Oriented Programmer That Is 64% Better Than GPT-4o Under Data Scarsity",
+        "authors": "Tianran Sun, Justin Wang, Dylan Zhang",
+        "link": "https://arxiv.org/abs/2502.11901",
+        "github_repo": null,
+        "summary": "- This paper introduces PoPilot, a 14B parameter language model fine-tuned for proof-oriented programming in the F* language, outperforming GPT-40 by 64% under data scarcity.\n- PoPilot addresses data scarcity through synthetic data augmentation, generating basic proof-oriented programming problems and incorporating diverse coding data for reasoning capability elicitation.\n- The model effectively synthesizes and repairs proofs at both the function and repository levels.\n- Experiments demonstrate that PoPilot significantly improves upon existing models in project-level proof-oriented programming, achieving a 64% relative margin over GPT-40 and a 54% improvement when repairing GPT-40's outputs.\n- The research contributes a novel data-centric post-training recipe for enhancing LLMs' performance in proof-oriented programming, particularly addressing the challenges posed by data scarcity.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "MagicArticulate: Make Your 3D Models Articulation-Ready",
+        "authors": "Yiwen Chen, Fan Yang, Xiu Li, Jianfeng Zhang, chaoyue7",
+        "link": "https://arxiv.org/abs/2502.12135",
+        "github_repo": null,
+        "summary": "- This paper introduces MagicArticulate, a novel framework that automatically converts static 3D models into articulation-ready assets.\n- The framework consists of two stages: an autoregressive transformer for skeleton generation and a functional diffusion process for skinning weight prediction.\n- It introduces Articulation-XL, a large-scale benchmark containing over 33k 3D models with high-quality articulation annotations.\n- MagicArticulate significantly outperforms existing methods across diverse object categories, achieving high-quality articulation that enables realistic animation.\n- The autoregressive transformer naturally handles varying numbers of bones and joints within skeletons and their inherent dependencies across different 3D models.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/chaoyue7/Articulation-XL2.0"
+        ],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Talk Structurally, Act Hierarchically: A Collaborative Framework for LLM Multi-Agent Systems",
+        "authors": "Shingo Takamatsu, Briti Gangopadhyay, Wei-Yao Wang, Sota Moriyama, Zhao Wang",
+        "link": "https://arxiv.org/abs/2502.11098",
+        "github_repo": "https://github.com/sony/talkhier",
+        "summary": "- TalkHier is a novel collaborative LLM-MA framework that uses a structured communication protocol and hierarchical refinement system to improve communication and refinement process during collaboration on complex tasks.\n- The structured communication protocol organizes agent communication by incorporating messages, intermediate outputs, and background information, and hierarchical refinement allows agents to act hierarchically which mitigates biases and balances opinions or feedback.\n- TalkHier surpasses state-of-the-art performance on various tasks, including open-domain question answering, domain-specific selective questioning, and practical advertisement text generation, as demonstrated by achieving 88.38% accuracy on MMLU benchmark and exceeding the best baseline on WikiQA by +5.32% ROUGE-1 and +3.30% BERTScore. \n- Experimental results across different benchmarks and ablation studies further validate the effectiveness of the framework's key components.\n- TalkHier's improved performance makes it a suitable framework for more efficient, adaptable, and collaborative multi-agent frameworks",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/sony/talkhier"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "One Example Shown, Many Concepts Known! Counterexample-Driven Conceptual Reasoning in Mathematical LLMs",
+        "authors": "Xinnian Liang, Zhikun Xu, Haojing Huang, Jiayi Kuang, Yinghui Li",
+        "link": "https://arxiv.org/abs/2502.10454",
+        "github_repo": null,
+        "summary": "- This paper introduces COUNTERMATH, a new counterexample-based mathematical reasoning benchmark designed to evaluate the conceptual reasoning abilities of Large Language Models (LLMs) in advanced mathematics.\n- COUNTERMATH consists of 1,216 statement-rationale pairs extracted from university-level math textbooks, focusing on disproving statements under specific conditions using counterexamples.\n- Experimental results demonstrate that current LLMs, including OpenAI models, exhibit limited performance on COUNTERMATH, indicating a need for improved higher-level mathematical conceptual reasoning.\n- A fine-tuned model trained on a small dataset (1,025 samples) of counterexample-based proofs outperforms baseline models, showcasing the effectiveness of incorporating counterexample reasoning in LLMs for enhancing mathematical proficiency.\n- The study's findings highlight the limitations of drill-based learning in LLMs and underscore the importance of focusing on conceptual understanding in mathematics education for both humans and machines.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Better Embeddings with Coupled Adam",
+        "authors": "Tobias Stollenwerk, flxst",
+        "link": "https://arxiv.org/abs/2502.08441",
+        "github_repo": null,
+        "summary": "- This paper proposes Coupled Adam, a modification to the Adam optimizer, designed to improve the quality of word embeddings in Large Language Models (LLMs) by mitigating anisotropy.\n- The authors argue that the second moment in Adam is a root cause of anisotropic embeddings and Coupled Adam addresses this by averaging the second moment across the vocabulary.\n- Experiments demonstrate that Coupled Adam significantly enhances the quality of word embeddings and leads to improved upstream and downstream performance on sufficiently large datasets.\n- Coupled Adam shows improvements in isotropy, reduced mean embedding shift, and better condition numbers compared to standard Adam.\n- The paper provides both theoretical analysis and experimental validation to support the effectiveness of Coupled Adam.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/flxst/coupled-adam"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Show Me the Work: Fact-Checkers' Requirements for Explainable Automated Fact-Checking",
+        "authors": "Isabelle Augenstein, Irina Shklovski, gretawarren",
+        "link": "https://arxiv.org/abs/2502.09083",
+        "github_repo": null,
+        "summary": "- This paper investigates fact-checkers' requirements for explainable automated fact-checking through interviews with 10 professionals from five continents.\n- The study identifies a gap between the current state of automated fact-checking and the practical needs of fact-checkers, particularly in how explanations should align with their decision-making process.\n- The findings highlight unmet needs for explanations that trace the model's reasoning, reference specific evidence, and highlight uncertainty and information gaps.\n- Fact-checkers prioritize primary sources, nuanced verdicts, and replicable processes, which contrasts with the current focus on secondary sources, binary verdicts, and veracity prediction in automated fact-checking research.\n- The paper offers design recommendations for automated fact-checking tools, emphasizing the importance of primary sources, nuanced verdicts, and replicable processes.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Towards Data-Efficient Pretraining for Atomic Property Prediction",
+        "authors": "Bernard Ghanem, Yasir Ghunaim, hammh0a",
+        "link": "https://arxiv.org/abs/2502.11085",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework for computationally efficient pretraining of molecular machine learning models, demonstrating that strategic data selection can match or outperform models trained on much larger datasets.\n- It proposes a new metric, the Chemical Similarity Index (CSI), for assessing the similarity between upstream and downstream molecular datasets, enabling effective dataset selection.\n- The experiments show that models pretrained on a smaller, carefully selected dataset consistently outperform those pretrained on massive, mixed datasets, using as little as 1/24th of the computational cost.\n- Counterintuitively, it also finds that indiscriminately adding more data can degrade model performance when the additional data poorly aligns with the task at hand.\n- The findings highlight that quality often outperforms quantity in pretraining for atomic property prediction.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "github.com/Yasir-Ghunaim/efficient-atom"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Large Language Models and Mathematical Reasoning Failures",
+        "authors": "birgermoell, jboye",
+        "link": "https://arxiv.org/abs/2502.11574",
+        "github_repo": null,
+        "summary": "- This research paper evaluates the mathematical reasoning abilities of eight large language models (LLMs), including Mixtral, Llama, Gemini, GPT-40, and OpenAI's o1 variants, using 50 newly designed high-school-level word problems.\n- Unlike previous studies that focused only on answer correctness, this study analyzes both final answers and solution steps to pinpoint reasoning failures in LLMs.\n- While newer models demonstrate improved accuracy, all models exhibit errors in spatial reasoning, strategic planning, and arithmetic, sometimes producing correct answers through faulty logic.\n- Common failure modes include unwarranted assumptions, over-reliance on numerical patterns, and difficulty translating physical intuition into mathematical steps.\n- The study stresses the importance of evaluating reasoning processes in addition to answers, highlighting the need for targeted enhancements in structured reasoning and constraint handling for LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/jboye12/llm-probs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
+    },
+    {
+        "title": "Language Complexity Measurement as a Noisy Zero-Shot Proxy for Evaluating LLM Performance",
+        "authors": "jboye, birgermoell",
+        "link": "https://arxiv.org/abs/2502.11578",
+        "github_repo": null,
+        "summary": "- This paper investigates the use of language complexity metrics, LIX and Average Dependency Distance (ADD), as noisy zero-shot proxies for evaluating the performance of Large Language Models (LLMs).\n- Using Swedish high school and university essays, the study evaluates six LLMs: Gemini-1.5-Pro, Gemini-2.0-flash, Llama 70b, Llama70b 3.3, GPT40-mini, and ChatGPT-01-mini.\n- The results show that ChatGPT-01-mini performs most consistently across LIX and ADD computation and that there's a significant negative correlation between LIX computation accuracy and overall performance on the MMLU benchmark (r=-0.875, p=0.026).\n- This suggests that a model's ability to measure language complexity can indicate its general capabilities, potentially offering a simpler evaluation method.\n- The paper notes limitations, including the single-run nature of the evaluations, the scope being limited to Swedish text, the reliance on proprietary models, and the dependence on tokenization processes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-18"
     }
 ]

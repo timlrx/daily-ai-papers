@@ -1,0 +1,412 @@
+[
+    {
+        "title": "Soundwave: Less is More for Speech-Text Alignment in LLMs",
+        "authors": "Benyou, PhoenixAxis, FanBuCUHK, puccho, Yoohao",
+        "link": "https://arxiv.org/abs/2502.12900",
+        "github_repo": "https://github.com/FreedomIntelligence/Soundwave",
+        "summary": " - This paper introduces Soundwave, a novel two-stage training framework for speech-text alignment in LLMs that addresses the representation space gap and sequence length inconsistency issues.\n- Soundwave employs an efficient training strategy using an alignment adapter and a shrinking adapter to bridge the gap between speech and text representations.\n- Experimental results on speech translation and AIR-Bench speech tasks demonstrate that Soundwave outperforms the advanced Qwen2-Audio model while using significantly less training data (one-fiftieth).\n- Further analysis reveals that Soundwave maintains its conversational intelligence.\n- The project's code is available on GitHub.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Audio Classification"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/Soundwave"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Phantom: Subject-consistent video generation via cross-modal alignment",
+        "authors": "Jiawei Liu, ZhuoweiChen, lbc402, Grayson111, liulj13",
+        "link": "https://arxiv.org/abs/2502.11079",
+        "github_repo": null,
+        "summary": "- This paper introduces Phantom, a novel framework for subject-consistent video generation that leverages cross-modal alignment between text and image inputs.\n- The model architecture integrates a redesigned joint text-image injection model and learns cross-modal alignment using text-image-video triplet data.\n- Phantom addresses the challenge of subject consistency in video generation by emphasizing the alignment of both text and visual content simultaneously.\n- Experimental results demonstrate that Phantom outperforms existing methods in subject consistency, particularly in multi-subject scenarios and achieves competitive performance on video quality metrics.\n- The approach balances the diversity and controllability offered by both text-to-video and image-to-video methods, improving upon the limitations of existing approaches.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://phantom-video.github.io/Phantom/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Continuous Diffusion Model for Language Modeling",
+        "authors": "Sung Ju Hwang, harryjo97",
+        "link": "https://arxiv.org/abs/2502.11564",
+        "github_repo": "https://github.com/harryjo97/RDLM",
+        "summary": "- This paper proposes Riemannian Diffusion Language Model (RDLM), a continuous diffusion model for language modeling that leverages the geometry of the underlying categorical distribution.\n- The model establishes a connection between discrete diffusion and continuous flow on the statistical manifold, and introduces a simple design for the diffusion process that generalizes previous discrete diffusion models.\n- It also proposes a simulation-free training framework based on radial symmetry and a simple technique to address the high dimensionality of the manifold.\n- Experimental results on language modeling benchmarks (Text8 and One Billion Words Dataset), image modeling (CIFAR-10) and biological sequence design show that RDLM outperforms existing discrete diffusion models and approaches the performance of autoregressive models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/harryjo97/RDLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Cramming 1568 Tokens into a Single Vector and Back Again: Exploring the Limits of Embedding Space Capacity",
+        "authors": "Aydar Bulatov, Mikhail Arkhipov, mbur, yurakuratov",
+        "link": "https://arxiv.org/abs/2502.13063",
+        "github_repo": null,
+        "summary": "- This paper explores the capacity of input embeddings in Large Language Models (LLMs) to compress and reconstruct long text sequences.\n- The authors introduce a method to compress text into trainable \"memory\" vectors using a per-sample optimization procedure, demonstrating compression ratios up to x1500, significantly exceeding previous methods.\n- They establish a connection between the latent capacity of input vectors and text cross-entropy, providing a quantifiable measure of information encoding.\n- The study shows that capacity limits are consistent across various text lengths and domains, including natural and random text, suggesting the capacity is inherent to the model rather than memorization.\n- Results indicate that capacity scales almost linearly with the number of trainable vectors, showcasing potential for efficient long-context processing and integration with memory-augmented architectures.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "SafeRoute: Adaptive Model Selection for Efficient and Accurate Safety Guardrails in Large Language Models",
+        "authors": "Minki Kang, Dong Bok Lee, hbseong, dwgnr, Seanie-lee",
+        "link": "https://arxiv.org/abs/2502.12464",
+        "github_repo": null,
+        "summary": "- SafeRoute, a binary router, is proposed to enhance the efficiency and accuracy of safety guardrails in Large Language Models (LLMs).\n- SafeRoute selectively applies a larger safety guard model only to complex inputs identified by the router, while using a smaller model for simpler inputs.\n- This method improves the trade-off between computational cost and safety performance, outperforming baseline methods.\n- Experiments conducted on multiple benchmark datasets show that SafeRoute significantly improves F1 scores compared to individual use of smaller or larger models.\n- It reduces the computational overhead by only using the larger model on a small subset of the inputs while maximizing accuracy.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-Guard-3-1B",
+            "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+            "https://huggingface.co/meta-llama/Llama-Guard-3-8B",
+            "https://huggingface.co/ibm-granite/granite-guardian-3.0-8b",
+            "https://huggingface.co/answerdotai/ModernBERT-large"
+        ],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Rethinking Diverse Human Preference Learning through Principal Component Analysis",
+        "authors": "Hao Sun, Feng Luo, huanzhang12, CharlesDDDD, Ray2333",
+        "link": "https://arxiv.org/abs/2502.13131",
+        "github_repo": null,
+        "summary": "- This paper introduces Decomposed Reward Models (DRMs), a novel approach for extracting diverse human preferences from binary comparisons, eliminating the need for fine-grained annotations.\n- DRMs represent preferences as vectors and utilize Principal Component Analysis (PCA) to identify orthogonal basis vectors capturing distinct preference aspects.\n- These basis vectors form reward models, linearly combined using test-time adaptation to align with individual user preferences.\n- Experiments on RewardBench and RPR datasets demonstrate DRMs' superior performance compared to single-head, ensemble-head, and random-head baselines in test-time preference adaptation.\n- DRMs effectively capture diverse preference attributes, offering interpretable representations and adapting well to user preferences without additional training.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/weqweasdas/preference_dataset_mixture2_and_safe_pku"
+        ],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "SoFar: Language-Grounded Orientation Bridges Spatial Reasoning and Object Manipulation",
+        "authors": "codered010, RunpeiDong, YufeiD, WenyaoZhang, qizekun",
+        "link": "https://arxiv.org/abs/2502.13143",
+        "github_repo": null,
+        "summary": " * This paper introduces SOFAR, a system that incorporates object orientation into spatial reasoning and robotic manipulation.  \n* The key contribution is the introduction of 'Semantic Orientation', which uses natural language to describe object orientations. \n* To support this, the authors created OrienText300K, a large-scale dataset of object-text-orientation pairs.\n* SOFAR outperforms existing methods on Open6DOR and SIMPLER benchmarks. \n* The model architecture uses a 3D transformer (PointSO) for semantic orientation prediction and integrates with other foundation models for 6-DoF object understanding.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://qizekun.github.io/sofar"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Multimodal Mamba: Decoder-only Multimodal State Space Model via Quadratic to Linear Distillation",
+        "authors": "Qian Zhang, wenyuliu, wondervictor, HongyuanTao, LegendBC",
+        "link": "https://arxiv.org/abs/2502.13145",
+        "github_repo": "https://github.com/hustvl/mmMamba",
+        "summary": "- This paper introduces mmMamba, a framework for developing linear-complexity native multimodal state space models.\n- It achieves this through progressive distillation from existing Multimodal Large Language Models (MLLMs).\n- mmMamba offers two architectures: mmMamba-linear, with full linear complexity, and mmMamba-hybrid, which strategically transforms fixed intervals of Transformer layers into Mamba-2 layers for a balance between efficiency and performance.\n- By distilling from HoVLE, a Transformer-based decoder-only VLM, mmMamba-linear achieves competitive performance against other linear/quadratic-complexity VLMs while using 2x fewer parameters than EVE-7B.\n- At 103K tokens, mmMamba-linear shows a 20.6x speedup and 75.8% GPU memory reduction compared to HoVLE, while mmMamba-hybrid has a 13.5x speedup and 60.2% memory savings.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hustvl/mmMamba"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "FLAG-Trader: Fusion LLM-Agent with Gradient-based Reinforcement Learning for Financial Trading",
+        "authors": "ShirleyY, Acatsama, YupengCao, zdeng10, xionggj001",
+        "link": "https://arxiv.org/abs/2502.11433",
+        "github_repo": null,
+        "summary": "- FLAG-TRADER, a novel framework fusing Large Language Models (LLMs) with Reinforcement Learning (RL), is introduced for financial trading.\n- A partially fine-tuned LLM acts as the policy network, processing market data via textual state representations, leveraging pre-trained knowledge while adapting to the financial domain through parameter-efficient fine-tuning.\n- A hybrid RL component integrates external environment reward gradients for policy optimization, aligning with trading performance metrics.\n- Empirical results on stock and cryptocurrency trading tasks demonstrate FLAG-TRADER's superior performance over buy-and-hold and LLM-agentic baselines, achieving higher cumulative returns and Sharpe ratios.\n- Notably, FLAG-TRADER enables a small-scale (135M parameter) open-source LLM to outperform significantly larger proprietary models, highlighting the effectiveness of RL fine-tuning.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "You Do Not Fully Utilize Transformer's Representation Capacity",
+        "authors": "kefirski, ummagumm-a, elephantmipt, yaraksen, gudleifrr",
+        "link": "https://arxiv.org/abs/2502.09245",
+        "github_repo": null,
+        "summary": "- This paper introduces Layer-Integrated Memory (LIMe), a novel mechanism designed to enhance the representational capacity of Transformer decoders by mitigating representation collapse.\n- LIMe modifies the attention mechanism to allow each head to access representations from all preceding layers via a learnable routing mechanism, rather than relying solely on the immediately prior layer. \n- Through experiments on language modeling tasks, LIMe demonstrates consistent performance improvements over standard Transformer baselines and other state-of-the-art modifications, achieving lower perplexity and better results on one-shot benchmarks. \n- Analysis reveals that LIMe successfully counteracts representation collapse by preserving higher entropy in deeper layers, increasing the separability of related tokens, and improving overall representational diversity. \n- LIMe also exhibits superior scaling behavior with increasing model depth, suggesting potential for deeper and more robust Transformer architectures.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/corl-team/lime"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Magma: A Foundation Model for Multimodal AI Agents",
+        "authors": "cheryyunl, Baolin, rzheng12, qianhuiwu, tanreuben",
+        "link": "https://arxiv.org/abs/2502.13130",
+        "github_repo": null,
+        "summary": " - Magma is a multimodal foundation model for AI agents capable of understanding and grounding multimodal inputs within its environment. It bridges verbal and spatial intelligence to navigate complex tasks.\n - The model architecture is a significant extension of Vision-Language models, incorporating spatial-temporal intelligence for action planning and execution.\n - Magma achieves state-of-the-art results on UI navigation and robotic manipulation tasks, outperforming previous models.\n - The model is pretrained on heterogeneous datasets including images, videos, and robotics data, using Set-of-Mark (SoM) and Trace-of-Mark (ToM) for action grounding and planning.\n - Magma's code and model are publicly available for reproducibility.",
+        "classification": [
+            "Multimodal",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://microsoft.github.io/Magma"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "RealSyn: An Effective and Scalable Multimodal Interleaved Document Transformation Paradigm",
+        "authors": "Kaicheng Yang, JiankangDeng, SeriousBro, Nina0607, GaryGuuu",
+        "link": "https://arxiv.org/abs/2502.12513",
+        "github_repo": "https://github.com/deepglint/RealSyn",
+        "summary": "- This paper introduces RealSyn, a large-scale multimodal dataset designed for vision-language representation learning, addressing the underutilization of non-paired multimodal interleaved documents.\n- RealSyn integrates realistic and synthetic texts, overcoming limitations of existing datasets by employing hierarchical retrieval and an image semantic augmented generation module to create image-text pairs.\n- The dataset is available in three sizes (15M, 30M, and 100M), demonstrating scalability and strong performance on downstream tasks.\n- Extensive experiments show that pre-trained models on RealSyn achieve state-of-the-art performance on various downstream tasks, outperforming existing methods.\n- The RealSyn dataset and pre-trained model weights are publicly available to facilitate further research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/deepglint/RealSyn"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "PAFT: Prompt-Agnostic Fine-Tuning",
+        "authors": "Fei Richard Yu, Ying Tiffany He, Mingwen Ou, Yao Shu, kittttttt",
+        "link": "https://arxiv.org/abs/2502.12859",
+        "github_repo": null,
+        "summary": "- PAFT dynamically adjusts prompts during fine-tuning, encouraging the model to learn underlying task principles rather than overfitting to specific prompt formulations.\n- It operates in two stages: constructing a diverse set of synthetic candidate prompts and randomly sampling from this set during fine-tuning.\n- Experiments across diverse datasets and LLMs show that PAFT-trained models exhibit strong robustness and generalization across various prompts, including unseen ones.\n- This enhanced robustness leads to improved model performance and inference speed while maintaining training efficiency.\n- PAFT achieves higher accuracy and lower variance across different reasoning and reading comprehension tasks compared to baseline models and other prompt engineering methods, demonstrating its effectiveness in improving prompt robustness.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+        "authors": "Xingyuan Yuan, Da Xiao, lishengping, Hilbertmeng",
+        "link": "https://arxiv.org/abs/2502.12170",
+        "github_repo": "https://github.com/Caiyun-AI/MUDDFormer",
+        "summary": "- MUDDFormer introduces Multiway Dynamic Dense (MUDD) connections, dynamically generating connection weights based on hidden states and input streams (query, key, value, residual) within a Transformer block.\n- Unlike static or shared-weight dense connections, MUDD enhances cross-layer information flow, mitigating limitations of residual connections in deep transformers.\n- MUDDFormer consistently outperforms standard Transformers across various architectures and scales in language modeling, achieving performance comparable to models trained with ~1.8x-2.4x more compute.\n- MUDDPythia-2.8B matches Pythia-6.9B in pretraining perplexity and downstream tasks, even rivaling Pythia-12B in few-shot settings with minimal added parameters (0.23%) and computation (0.4%).\n- Analysis reveals MUDD connections improve depth utilization, reduce representation collapse, and vitalize attention heads, especially in deeper layers, thereby enhancing in-context learning abilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Caiyun-AI/MUDDFormer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Revisiting the Test-Time Scaling of o1-like Models: Do they Truly Possess Test-Time Scaling Capabilities?",
+        "authors": "Yunhua Zhou, Qinyuan Cheng, Zhiyuan Zeng, xpqiu, yinzhangyue",
+        "link": "https://arxiv.org/abs/2502.12215",
+        "github_repo": null,
+        "summary": "- This paper investigates the test-time scaling capabilities of large language models (LLMs) like QwQ, Deepseek-R1 (R1), and LIMO, which are similar to OpenAI's o1 series.\n- The study reveals that increasing the chain-of-thought (CoT) length does not consistently improve accuracy, and correct solutions often have shorter lengths than incorrect ones.\n- The authors attribute this phenomenon to the limited self-revision capabilities of these models, finding that longer CoTs contain more self-revisions which often lead to performance degradation.\n- A comparison of sequential and parallel scaling strategies shows that parallel scaling achieves better coverage and scalability.\n- Based on these findings, the paper introduces \"Shortest Majority Vote,\" a method combining parallel scaling with CoT length characteristics to prioritize shorter solutions, significantly improving test-time scalability compared to conventional majority voting.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "OctoTools: An Agentic Framework with Extensible Tools for Complex Reasoning",
+        "authors": "Joseph Boen, Rahul Thapa, Sheng Liu, Bowen Chen, lupantech",
+        "link": "https://arxiv.org/abs/2502.11271",
+        "github_repo": null,
+        "summary": "This paper introduces OctoTools, a training-free, user-friendly, and extensible framework for complex reasoning.  OctoTools utilizes standardized tool cards to integrate diverse tools, a planner for high-level and low-level planning, and an executor to manage tool usage. Experiments on 16 diverse benchmarks demonstrate OctoTools's superiority over existing methods, showing substantial accuracy gains.  OctoTools demonstrates advantages in task planning, effective tool usage, and multi-step problem-solving. The framework is designed to be easily extensible with new tools.",
+        "classification": [
+            "Any-to-Any",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://octotools.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Crowd Comparative Reasoning: Unlocking Comprehensive Evaluations for LLM-as-a-Judge",
+        "authors": "zhangsan5421, lifengshang, horiz94, YuxinJiang, DonJoey",
+        "link": "https://arxiv.org/abs/2502.12501",
+        "github_repo": null,
+        "summary": "- This paper introduces Crowd-based Comparative Evaluation (CCE), a novel method for enhancing the reliability of LLM-as-a-Judge auto-evaluation.\n- CCE introduces additional crowd responses to compare with candidate responses, exposing deeper details and improving the comprehensiveness of CoT judgments.\n- Experiments across five benchmarks show that CCE improves accuracy by an average of 6.7% and produces higher-quality CoTs.\n- CCE is also applied to judge distillation and crowd rejection sampling for supervised fine-tuning (SFT), demonstrating its effectiveness.\n- The analysis reveals that CCE-generated CoTs are more comprehensive, and evaluation accuracy improves as inference scales.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation",
+        "authors": "Binhe Yu, Yuqian Yuan, Sijing Li, Wenqiao Zhang, Tianwei Lin",
+        "link": "https://arxiv.org/abs/2502.09838",
+        "github_repo": "https://github.com/DCDmllm/HealthGPT",
+        "summary": "- HealthGPT is a medical Large Vision-Language Model (Med-LVLM) that integrates medical visual comprehension and generation within a unified autoregressive paradigm.\n- It uses a novel Heterogeneous Low-Rank Adaptation (H-LORA) technique for parameter-efficient fine-tuning and a hierarchical visual perception approach to effectively learn from heterogeneous medical data.\n- HealthGPT outperforms both state-of-the-art unified visual models and medical-specific models on various comprehension and generation tasks, highlighting its superior capability in complex healthcare applications.\n- A comprehensive medical domain-specific comprehension and generation dataset, called VL-Health, was created to train HealthGPT.\n- HealthGPT achieves performance comparable to or better than state-of-the-art models on several medical multi-modal tasks in data-constrained scenarios.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Image",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/DCDmllm/HealthGPT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "HeadInfer: Memory-Efficient LLM Inference by Head-wise Offloading",
+        "authors": "beidic, junjiehu, jinqixiao, ZefanCai, wdlctc",
+        "link": "https://arxiv.org/abs/2502.12574",
+        "github_repo": null,
+        "summary": " - HEADINFER is a novel inference framework that significantly reduces the GPU memory footprint required for large language model (LLM) inference by employing a head-wise offloading strategy. \n- It offloads the key-value (KV) cache to the CPU RAM while avoiding the need to fully store the KV cache for any transformer layer on the GPU. \n- This is achieved by maintaining only selective attention heads' KV cache on the GPU and computing attention output dynamically. \n- Experimental results demonstrate that HEADINFER achieves a 92% reduction in GPU memory footprint and enables 4-million-token inference with an 8B model on a single consumer GPU with 24GB memory. \n- The approach is evaluated on various LLMs (Llama, Qwen, Mistral, and Gemma) and outperforms existing methods in terms of context length extension.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/wdlctc/headinfer"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Injecting Domain-Specific Knowledge into Large Language Models: A Comprehensive Survey",
+        "authors": "Mingzhe Li, Miao Fang, Yuhan Liu, Bin Yan, Ziruibest",
+        "link": "https://arxiv.org/abs/2502.10708",
+        "github_repo": "https://github.com/abilliyb/Knowledge_Injection_Survey_Papers",
+        "summary": "- This paper provides a comprehensive survey of methods for injecting domain-specific knowledge into large language models (LLMs).\n- The authors categorize these methods into four key approaches: dynamic knowledge injection, static knowledge embedding, modular adapters, and prompt optimization.\n- Each approach is discussed in detail, highlighting its advantages, disadvantages, and trade-offs.\n- The authors also compare domain-specific LLMs against general-purpose LLMs and discuss the challenges and opportunities in this field.\n- Finally, they provide a summary of commonly used datasets and benchmarks for researchers interested in delving deeper into this area.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/abilliyb/Knowledge_Injection_Survey_Papers"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Eager Updates For Overlapped Communication and Computation in DiLoCo",
+        "authors": "Yanislav Donchev, Arthur Douillard, Satyen Kale",
+        "link": "https://arxiv.org/abs/2502.12996",
+        "github_repo": null,
+        "summary": "- This paper introduces \"eager updates,\" a technique to improve the efficiency of distributed training for large language models (LLMs) using the DiLoCo method.\n- Eager updates mitigate communication bottlenecks by overlapping the communication of outer gradients with the computation of the next inner optimization phase.\n- A naive implementation of this approach leads to reduced convergence speed. Thus, the authors propose an \"eager\" version that utilizes local outer gradients as a proxy during the overlap, improving convergence compared to the naive version.\n- Experiments demonstrate that eager updates reduce bandwidth requirements significantly, approaching 95% compute utilization for 1B, 10B, and 100B parameter models with bandwidths between 1 and 5 Gbit/s.\n- Evaluating on C4 and HellaSwag datasets reveals competitive performance compared to standard DiLoCo and significant improvements over naive delayed outer gradient updates, particularly under low bandwidth conditions.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Atom of Thoughts for Markov LLM Test-Time Scaling",
+        "authors": "Chenglin Wu, Jiayi Zhang, Quan Shi, Zhaoyang Yu, leavendough",
+        "link": "https://arxiv.org/abs/2502.12018",
+        "github_repo": "https://github.com/qixucen/atom",
+        "summary": "- This paper introduces Atom of Thoughts (AOT), a novel reasoning framework designed to enhance the test-time scaling capabilities of Large Language Models (LLMs).\n- AOT employs a Markov-style reasoning process, decomposing complex questions into a dependency-based directed acyclic graph (DAG) and contracting subquestions into independent atomic question states.\n- This iterative decomposition-contraction process simplifies the reasoning process, eliminating the need for maintaining extensive historical information, and thus improving computational efficiency.\n- AOT can be used as a standalone framework or integrated with existing test-time scaling methods as a plug-in enhancement.\n- Experimental results across six benchmarks demonstrate that AOT significantly improves LLM performance, notably achieving an 80.6% F1 score on HotpotQA with gpt-4-o-mini, surpassing 03-mini by 3.4% and DeepSeek-R1 by 10.6%.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/qixucen/atom"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "FinMTEB: Finance Massive Text Embedding Benchmark",
+        "authors": "Yi Yang, yixuantt",
+        "link": "https://arxiv.org/abs/2502.10990",
+        "github_repo": "https://github.com/yixuantt/FinMTEB",
+        "summary": "- This paper introduces FinMTEB, a comprehensive benchmark designed for evaluating financial text embedding models.\n- FinMTEB consists of 64 datasets across seven tasks, including semantic textual similarity, retrieval, classification, clustering, reranking, pair classification, and summarization, covering both Chinese and English financial texts.\n- The authors also develop Fin-E5, a finance-adapted embedding model based on e5-Mistral-7B-Instruct, trained using a persona-based data synthesis method to cover diverse financial embedding tasks.\n- Experimental results demonstrate that domain-adapted models like Fin-E5 outperform general-purpose models, achieving state-of-the-art performance on FinMTEB.\n- Surprisingly, a simple Bag-of-Words (BoW) approach surpasses sophisticated dense embeddings in financial Semantic Textual Similarity tasks, indicating limitations in current dense embedding techniques for handling complex financial texts.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction",
+            "Sentence Similarity"
+        ],
+        "github_urls": [
+            "https://github.com/yixuantt/FinMTEB"
+        ],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Perovskite-LLM: Knowledge-Enhanced Large Language Models for Perovskite Solar Cell Research",
+        "authors": "Shuyan Chen, wenxinsiju, yongqi2023, sunpenglei, Dominic789654",
+        "link": "https://arxiv.org/abs/2502.12669",
+        "github_repo": null,
+        "summary": "- This research introduces a comprehensive knowledge-enhanced system specifically designed for perovskite solar cell research, improving researchers\u2019 access to relevant information and reasoning abilities.\n- The system comprises a domain-specific knowledge graph (Perovskite-KG) containing 23,789 entities and 22,272 relationships extracted from 1,517 research papers; two specialized datasets (Perovskite-Chat with 55,101 question-answer pairs and Perovskite-Reasoning with 2,217 materials science problems); and two specialized large language models (Perovskite-Chat-LLM and Perovskite-Reasoning-LLM).\n- Experimental results demonstrate that the system outperforms current models in both domain-specific knowledge retrieval and scientific reasoning tasks.\n- Perovskite-Chat-LLM achieved a Rouge-L score of 41.25 and an LLM-Judge score of 2.97 on the Perovskite QA dataset, surpassing other baseline models like LLaMA and GPT variants.\n- Perovskite-Reasoning-LLM achieved state-of-the-art performance on GPQA and Minerva benchmarks within the 7B model category, achieving a score of 43.95 and 44.49 respectively with high data efficiency.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
+        "authors": "trevordarrell, zitengj0618, gbiamby, yuvansharma, NdtSoCool",
+        "link": "https://arxiv.org/abs/2502.13142",
+        "github_repo": null,
+        "summary": "- This paper introduces ARM4R (Auto-regressive Robotic Model with 4D Representations), a new model for robot learning that leverages pre-training on human video data.\n- ARM4R uses 4D representations, derived by lifting 2D features from videos into 3D space using monocular depth estimation and tracking these 3D points across time, enabling it to capture properties of the physical world from readily available human videos.\n- The model is trained in three stages: pre-training on human videos for 3D point tracking, fine-tuning on a smaller set of robot videos for the same tracking task, and finally, fine-tuning for robotic control.\n- Experimental results show that ARM4R outperforms several baselines on simulated and real-world robotic manipulation tasks, exceeding methods like PerAct in simulation and OpenVLA on real robot tasks.\n- Notably, ARM4R achieves this performance by training primarily on freely-available human data, offering a more scalable and cost-effective approach to pre-training in robotics.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    },
+    {
+        "title": "Multilingual Encoder Knows more than You Realize: Shared Weights Pretraining for Extremely Low-Resource Languages",
+        "authors": "XU Han, Jianing Liu, Guixian Xu, Ziyin Zhang, Zeli Su",
+        "link": "https://arxiv.org/abs/2502.10852",
+        "github_repo": null,
+        "summary": "- This paper introduces XLM-SWCM, a novel framework for adapting multilingual encoders to text generation in extremely low-resource languages by reusing weights between the encoder and decoder.\n- The model architecture consists of a pre-trained encoder (CINO, a variant of XLM-R) and a decoder with two layer types: NormalDecoderLayer (randomly initialized) and CustomDecoderLayer (initialized with encoder weights).\n-  A weight-sharing mechanism is introduced to initialize and reuse weights between the encoder and decoder, maximizing the utilization of pre-trained encoder features.\n-  XLM-SWCM is pre-trained on a combined corpus of Simplified Chinese news articles (THUCNews), minority language data (MC2), and machine-translated parallel sentences.\n-  Experimental results show that XLM-SWCM significantly outperforms baselines like mBART and MC2-LLaMA-13B in text summarization, reading comprehension, and machine translation tasks, even exceeding much larger models in cross-lingual transfer settings.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation",
+            "Summarization",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-19"
+    }
+]

@@ -1,0 +1,315 @@
+[
+    {
+        "title": "Qwen2.5-VL Technical Report",
+        "authors": "Keqin Chen, Shuai Bai, xhyandwyy, darkpromise, ayumiymk",
+        "link": "https://arxiv.org/abs/2502.13923",
+        "github_repo": null,
+        "summary": "- Qwen2.5-VL is a new vision-language model series demonstrating advancements in visual recognition, object localization, document parsing, and long-video comprehension.\n- It utilizes a redesigned Vision Transformer (ViT) architecture with window attention, dynamic FPS sampling, and absolute time encoding to enhance efficiency and handle diverse inputs.\n- A Multimodal Rotary Position Embedding (MROPE) aligned to absolute time enhances temporal understanding.\n- Qwen2.5-VL outperforms existing open-source models and matches or surpasses top-tier closed-source models like GPT-40 and Claude 3.5 Sonnet on benchmarks such as MMMU, MathVista, MMBench, and MME-RealWorld, particularly excelling in document and diagram understanding.\n- The model is available in three sizes (72B, 7B, and 3B) to cater to various computational resource constraints.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering",
+            "Video-Text-to-Text",
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/Qwen2.5-VL"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen"
+        ],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "RAD: Training an End-to-End Driving Policy via Large-Scale 3DGS-based Reinforcement Learning",
+        "authors": "Yiang Shi, Bencheng Liao, Bo Jiang, Shaoyu Chen, Hao605",
+        "link": "https://arxiv.org/abs/2502.13144",
+        "github_repo": null,
+        "summary": "- RAD introduces a novel paradigm for end-to-end autonomous driving using large-scale 3D Gaussian Splatting (3DGS)-based reinforcement learning (RL).\n- The model architecture involves a perception head (encoding sensor data), a planning head (outputting action distributions), and specialized rewards to enhance safety and causal understanding. \n- Imitation learning (IL) is incorporated as a regularization term during RL training to maintain human-like driving behaviors.\n- RAD demonstrates superior performance compared to IL-based methods, notably a 3x lower collision rate, in closed-loop evaluations within unseen 3DGS environments.\n- The action space is decoupled and discretized to optimize RL training, and auxiliary objectives are utilized to handle sparse reward issues.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://hgao-cv.github.io/RAD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "SongGen: A Single Stage Auto-regressive Transformer for Text-to-Song Generation",
+        "authors": "Pan Zhang, Xiaoyi Dong, Zhixiong Zhang, Shuangrui Ding, Zihan Liu",
+        "link": "https://arxiv.org/abs/2502.13128",
+        "github_repo": "https://github.com/LiuZH-19/SongGen",
+        "summary": "- SongGen is a single-stage auto-regressive transformer model for generating songs from text descriptions, lyrics, and an optional reference voice for cloning.\n- It utilizes a unified framework with two generation modes: mixed mode (generating vocals and accompaniment together) and dual-track mode (generating them separately).\n- The model incorporates diverse musical controls like instrumentation, genre, mood, and timbre through modal-specific encoders and cross-attention mechanisms.\n- Experiments on the MusicCaps dataset show that SongGen achieves competitive performance with state-of-the-art models and even surpasses commercial products in certain aspects like text relevance and vocal control.\n- The automated data preprocessing pipeline and open-source release of the model contribute significantly to the field of text-to-song generation by addressing data scarcity and promoting further research.",
+        "classification": [
+            "Text-to-Audio",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/LiuZH-19/SongGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "MoM: Linear Sequence Modeling with Mixture-of-Memories",
+        "authors": "Yu Cheng, Jiaxi Hu, Disen Lan, Jusen Du, weigao266",
+        "link": "https://arxiv.org/abs/2502.13685",
+        "github_repo": "https://github.com/OpenSparseLLMs/MoM",
+        "summary": "- This paper introduces Mixture-of-Memories (MoM), a novel architecture for linear sequence modeling inspired by the brain's memory mechanisms.\n- MoM utilizes multiple independent memory states and a router network to direct input tokens to specific memory states, enhancing memory capacity and mitigating interference.\n- MoM maintains linear complexity during training and constant complexity during inference.\n- Experimental results demonstrate that MoM outperforms other linear sequence models on various language tasks, especially recall-intensive tasks.\n- MoM even achieves performance comparable to Transformer models, bridging the gap between linear and quadratic complexity models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/OpenSparseLLMs/MoM",
+            "https://github.com/OpenSparseLLMs/Linear-MoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Craw4LLM: Efficient Web Crawling for LLM Pretraining",
+        "authors": "Chenyan Xiong, Zhiyuan Liu, yushi",
+        "link": "https://arxiv.org/abs/2502.13347",
+        "github_repo": "https://github.com/cxcscmu/Crawl4LLM",
+        "summary": "- CRAW4LLM, a novel web crawling method, prioritizes webpages based on their influence on Large Language Model (LLM) pretraining, rather than traditional graph connectivity metrics.\n- This method uses a pretraining influence scorer, derived from data filtering pipelines, to rank URLs and guide the crawling process.\n- Experiments on a 900 million webpage dataset demonstrate that CRAW4LLM achieves comparable downstream performance to traditional methods while crawling only 21% of the data.\n- This efficiency significantly reduces crawling waste and server load on websites.\n- CRAW4LLM also exhibits a faster discovery rate of high-quality pretraining documents compared to baseline crawlers.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/cxcscmu/Crawl4LLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+        "authors": "Lidong Bing, Michael Qizhe Shieh, Xin Li, Guanzheng Chen",
+        "link": "https://arxiv.org/abs/2502.13922",
+        "github_repo": null,
+        "summary": "- LongPO is a novel long-context alignment method that allows large language models (LLMs) to self-evolve their short-context capabilities to excel in long-context tasks without external data annotation.\n- It leverages short-to-long preference data, consisting of paired responses generated for identical instructions with long and compressed short contexts, respectively, to capture intrinsic model knowledge.\n- A short-to-long KL constraint is incorporated to maintain short-context performance during long-context alignment.\n- Applied to Mistral-7B and Qwen2.5-7B, LongPO significantly outperforms naive SFT and DPO in both long and short-context tasks, improving by 10-20+ points, while retaining original short-context performance.\n- LongPO-trained models achieve long-context benchmark results comparable or superior to larger models like GPT-4-128K, despite requiring less training data.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/DAMO-NLP-SG/LongPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Small Models Struggle to Learn from Strong Reasoners",
+        "authors": "Luyao Niu, Fengqing Jiang, Xiang Yue, Yuetai Li, flydust",
+        "link": "https://arxiv.org/abs/2502.12143",
+        "github_repo": null,
+        "summary": "- This paper introduces Mix Distillation, a novel technique to enhance the reasoning capabilities of small language models (LLMs).\n- Mix Distillation addresses the \"Small Model Learnability Gap,\" where small LLMs struggle to learn from complex reasoning data generated by stronger, larger models.\n- The technique involves combining diverse types of reasoning data during fine-tuning. Mix-Long blends long and short chain-of-thought (CoT) examples, and Mix-Large mixes responses from both larger and smaller teacher models.\n- Experimental results demonstrate that Mix Distillation significantly improves small model reasoning performance compared to traditional distillation methods. For instance, Qwen2.5-3B-Instruct sees an improvement of over 8 points on MATH and AMC datasets with Mix-Long, and over 7 points with Mix-Large.\n- These findings emphasize the importance of balancing reasoning complexity when transferring knowledge to smaller LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Autellix: An Efficient Serving Engine for LLM Agents as General Programs",
+        "authors": "Tianjun Zhang, Colin Cai, Xiaoxiang Shi, Michael Luo, Chrisyichuan",
+        "link": "https://arxiv.org/abs/2502.13965",
+        "github_repo": null,
+        "summary": "- Autellix, an LLM serving system, is introduced to minimize end-to-end latency for LLM agents acting as general programs by prioritizing program completion rather than individual LLM calls.\n- Unlike existing LLM serving systems, Autellix intercepts and enriches program-level context for LLM calls to create an execution graph and two scheduling algorithms: PLAS for single-threaded programs and ATLAS for distributed programs.\n- These algorithms prioritize calls from programs with less cumulative execution time and dynamically preempt long calls, reducing call and program-level head-of-line blocking. \n- Across various LLMs and agent workloads, Autellix exhibits a 4-15x throughput improvement compared to state-of-the-art systems like vLLM at the same latency.\n- Autellix also improves throughput up to 1.5x over standard load balancers when routing calls across multiple engines by accounting for program-level data locality.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered"
+        ],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Why Safeguarded Ships Run Aground? Aligned Large Language Models' Safety Mechanisms Tend to Be Anchored in The Template Region",
+        "authors": "Wenjie Li, Jian Wang, Qingyu Yin, Chak Tou Leong",
+        "link": "https://arxiv.org/abs/2502.13946",
+        "github_repo": null,
+        "summary": "- This paper investigates a phenomenon called Template-Anchored Safety Alignment (TASA) in large language models (LLMs), where safety mechanisms overly rely on the template region between user instruction and model output.\n- The study confirms TASA's presence across various aligned LLMs through experiments showing attention shifts from instruction to template regions when processing harmful requests, and interventions in the template region significantly influence safety decisions.\n- A strong link is established between TASA and LLM vulnerabilities, as manipulating template information during response generation allows harmful requests to bypass safeguards, and common attacks disrupt the processing of harmfulness features within this region.\n- Detaching the safety mechanism from the template by transferring harmfulness probes and injecting them during generation, effectively mitigates these vulnerabilities and improves model robustness.\n- The findings highlight the need for more sophisticated safety alignment methods that avoid over-reliance on shortcuts like template information.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "SearchRAG: Can Search Engines Be Helpful for LLM-based Medical Question Answering?",
+        "authors": "Tianming Liu, Quanzheng Li, Canyu Chen, Tianze Yang, YuchengShi",
+        "link": "https://arxiv.org/abs/2502.13233",
+        "github_repo": null,
+        "summary": "- SearchRAG, a novel framework, enhances LLM performance in medical question answering by leveraging real-time search engines.\n- It uses synthetic query generation to transform complex medical questions into search-engine-friendly queries and uncertainty-based knowledge selection to incorporate relevant information into LLMs' input.\n- SearchRAG consistently outperforms baseline approaches, conventional RAG, and iterative RAG on MedMCQA, MMLU_Med, and MedQA datasets using LLaMA 8B, showing an average 12.61% improvement in answer accuracy.\n- The uncertainty-based filtering is effective across different model scales, improving LLaMA 8B by 4-7% and providing benefits even to larger models like LLaMA 70B.\n- Scaling the number of generated synthetic queries up to 32 further boosts performance, demonstrating the effectiveness of diverse query generation in capturing relevant information from search results.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Presumed Cultural Identity: How Names Shape LLM Responses",
+        "authors": "Lucie-Aim\u00e9e Kaffee, Arnav Arora, Siddhesh Pawar, IAugenstein",
+        "link": "https://arxiv.org/abs/2502.11995",
+        "github_repo": null,
+        "summary": "- This paper investigates how names influence the responses of Large Language Models (LLMs), focusing on cultural biases.\n- By analyzing responses to information-seeking questions containing names from various cultures, the study finds that LLMs make strong cultural assumptions based on names, particularly for East Asian and Russian names.\n- The study utilizes a dataset of 900 names across 30 cultures, prompting 4 different LLMs with and without names in the prompts, and compares cultural presumptions in responses using LLM-as-a-judge and assertion based approaches using the CANDLE knowledge graph.\n- The paper also reveals that some names introduce significantly more bias than others, affecting the diversity of LLM-generated suggestions, particularly related to clothing and traditions.\n- This has implications for designing personalized systems, as biases emerging from names could reinforce stereotypes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Thinking Preference Optimization",
+        "authors": "Xiaotian Han, Vipin Chaudhary, Jingfeng Yang, Hongye Jin, Wang Yang",
+        "link": "https://arxiv.org/abs/2502.13173",
+        "github_repo": null,
+        "summary": "- This paper introduces Thinking Preference Optimization (ThinkPO), a post-Supervised Fine-Tuning (SFT) method to enhance long chain-of-thought (CoT) reasoning in Large Language Models (LLMs).\n- ThinkPO leverages readily available short CoT reasoning responses as rejected answers and long CoT responses as chosen answers, applying direct preference optimization to encourage longer reasoning outputs and thereby improve reasoning without new data acquisition.\n- Experiments demonstrated that ThinkPO improves the reasoning performance of SFT-ed models, increasing math reasoning accuracy by 8.6% and output length by 25.9%.\n- Notably, ThinkPO continually boosts the performance of publicly available distilled SFT models, such as DeepSeek-R1-Distill-Qwen-7B, improving from 87.4% to 91.2% accuracy on MATH500.\n- The results show that ThinkPO addresses performance bottlenecks in multi-epoch SFT with fixed, limited long-reasoning datasets, avoiding costly data acquisition.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/uservan/ThinkPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Is That Your Final Answer? Test-Time Scaling Improves Selective Question Answering",
+        "authors": "Benjamin Van Durme, Jeffrey Cheng, wjurayj",
+        "link": "https://arxiv.org/abs/2502.13962",
+        "github_repo": null,
+        "summary": "- This paper investigates the impact of test-time scaling on selective question answering, where models can abstain from answering if uncertain.\n- It evaluates how increasing compute budgets affects both answer accuracy and confidence scores for large language models (LLMs).\n- Findings reveal that test-time scaling not only improves accuracy but also enhances confidence in correct answers.\n- It introduces a new evaluation methodology that penalizes incorrect answers and rewards abstentions, reflecting real-world scenarios with varying risk levels.\n- The study recommends reporting performance under \"Jeopardy Odds\" to incentivize confidence calibration and calls for future research to focus on efficient compute allocation for meeting confidence demands.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "AdaptiveStep: Automatically Dividing Reasoning Step through Model Confidence",
+        "authors": "Jason Klein Liu, Chaofeng Qu, Zhaoling Chen, Junjie Lu, Yuliang Liu",
+        "link": "https://arxiv.org/abs/2502.13943",
+        "github_repo": null,
+        "summary": "- The paper introduces AdaptiveStep, a method that automatically divides reasoning steps in Large Language Model (LLM) responses based on model confidence, addressing the limitations of rule-based and manual step division methods.\n- The resulting Process Reward Model (PRM), called ASPRM, achieves state-of-the-art Best-of-N performance in mathematical reasoning (GSM8k and MATH500) and code generation tasks (LeetCodeDataset), outperforming greedy search with token-level value-guided decoding and reducing construction costs compared to existing PRMs.\n- TVD using ASPRM consistently outperforms greedy decoding by 3.15% on GSM8k and 14.4% on MATH500 in mathematical reasoning, and by 6.54% and 3.70% on LeetCodeDataset and LiveCodeBench in code generation.\n- ASPRM demonstrates transferability, in-domain, and cross-domain generalization capabilities, showing its robustness and wider applicability.\n- Analysis of step division features reveals that ASPRM effectively identifies critical decision points, offering valuable insights into LLM reasoning processes.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "NExT-Mol: 3D Diffusion Meets 1D Language Modeling for 3D Molecule Generation",
+        "authors": "Enzhi Zhang, Han Huang, Yanchen Luo, Zhiyuan Liu, xiangwang1223",
+        "link": "https://arxiv.org/abs/2502.12638",
+        "github_repo": "https://github.com/acharkq/NExT-Mol",
+        "summary": "- NExT-Mol is a novel foundation model for generating 3D molecules, integrating a large language model (MoLlama) for 1D molecule generation and a diffusion model (DMT) for 3D conformer prediction.\n- MoLlama is pretrained on 1.8 billion SELFIES, linear string representations of molecules, and DMT employs Relational Multi-Head Self-Attention to capture 2D graph information for accurate 3D conformer prediction.\n- Transfer learning between MoLlama's 1D representations and DMT significantly enhances 3D conformer prediction and de novo 3D molecule generation.\n- NExT-Mol achieves state-of-the-art results on GEOM-DRUGS, GEOM-QM9, and QM9-2014, demonstrating its superior performance in generating valid, stable, and diverse 3D molecules.\n- Notably, NExT-Mol demonstrates a 26% relative improvement in 3D FCD for de novo generation and a 13% average relative gain for conditional generation.",
+        "classification": [
+            "Text-to-3D",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/acharkq/NEXT-Mol"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "ActionPiece: Contextually Tokenizing Action Sequences for Generative Recommendation",
+        "authors": "Wang-Cheng Kang, Noveen Sachdeva, Zhankui He, Jianmo Ni, hyp1231",
+        "link": "https://arxiv.org/abs/2502.13581",
+        "github_repo": null,
+        "summary": "- ActionPiece, a novel contextually aware method for tokenizing action sequences in generative recommendation, is introduced.\n- Unlike existing methods that tokenize each action independently, ActionPiece considers the surrounding context, allowing identical actions to be tokenized differently based on their context.\n- It uses a vocabulary construction process that merges feature patterns into new tokens based on their co-occurrence frequency within and across adjacent action sets, and a segmentation process using set permutation regularization to produce multiple semantically equivalent token sequences of an action sequence.\n- The authors performed experiments across three datasets from the Amazon Reviews dataset demonstrating that ActionPiece outperforms baseline models by 6.00% to 12.82% on NDCG@10.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+        "authors": "Ke Chen, Lidan Shou, Huan Li, Jue Wang, junzhang98",
+        "link": "https://arxiv.org/abs/2502.13533",
+        "github_repo": null,
+        "summary": "- LORAM, a memory-efficient training method for Large Language Models (LLMs) using Low-Rank Adaptation (LoRA), is introduced.\n- LORAM trains on a smaller, pruned version of the model and recovers the low-rank matrices for inference with the full-sized model, reducing memory usage during training.\n- It includes continual pre-training on a small dataset to address knowledge discrepancies between the pruned and original models.\n- QLORAM, a combination of LORAM with structured pruning and 4-bit quantization, reduces memory costs for LLaMA-2-70B parameters by 8.21x while improving performance compared to both the original and LoRA-trained smaller models.\n- Experiments show QLORAM's effectiveness across different pruning algorithms, model sizes, and tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/junzhang-zj/LORAM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "GIMMICK -- Globally Inclusive Multimodal Multitask Cultural Knowledge Benchmarking",
+        "authors": "Anne Lauscher, Chris Biemann, Carolin Holtermann, floschne",
+        "link": "https://arxiv.org/abs/2502.13766",
+        "github_repo": null,
+        "summary": "- Introduces GIMMICK, a multimodal benchmark designed to evaluate cultural knowledge in LLMs and LVLMs across diverse countries and regions.\n- The benchmark includes six tasks built on three datasets spanning various cultural facets, including Visual Question Answering on images and videos, Cultural Origin Question Answering, and Cultural Knowledge Question Answering (naming and describing).\n- Evaluates 31 models, including proprietary and open-weight LLMs and LVLMs with sizes ranging from 500M to 78B parameters, across multiple model families.\n- Reveals performance biases toward Western cultures, correlations between model size and performance, and the effectiveness of multimodal input and external geographic cues.\n- Demonstrates that while models understand broad cultural categories, they struggle with nuanced understanding and intangible cultural aspects.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/floschne/gimmick"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "InfiR : Crafting Effective Small Language Models and Multimodal Small Language Models in Reasoning",
+        "authors": "Zhijie Sang, Pengxiang Li, Wenjun Wang, Shuo Cai, Congkai Xie",
+        "link": "https://arxiv.org/abs/2502.11573",
+        "github_repo": null,
+        "summary": "- This paper introduces InfiR, a training pipeline for developing efficient Small Language Models (SLMs) and Multimodal Small Language Models (MSLMs) with competitive reasoning capabilities.\n- InfiR employs a novel pre-and post-training pipeline, focusing on high-quality data curation and filtering, achieving state-of-the-art performance in under 6000 GPU hours.\n- InfiR-1B models outperform Llama3.2-1B models by significant margins on reasoning benchmarks, including a 2.26x improvement on GSM8K and 1.33x on Llama3.2-1B-Instruct.\n- The InfiR-VL-1.6B model demonstrates state-of-the-art performance in the Android World scenario with a 28% accuracy increment compared to other small models.\n- The research aims to improve reasoning, reduce adoption barriers, and address privacy concerns through smaller model sizes, facilitating deployment on edge devices.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing",
+            "Question Answering",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Reallm-Labs/InfiR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    },
+    {
+        "title": "Noise May Contain Transferable Knowledge: Understanding Semi-supervised Heterogeneous Domain Adaptation from an Empirical Perspective",
+        "authors": "Qiang Yang, Jian Jin, Yu Zhang, Xiaopu Zhang, yyyaoyuan",
+        "link": "https://arxiv.org/abs/2502.13573",
+        "github_repo": "https://github.com/yyyaoyuan/SHDA",
+        "summary": "- This paper investigates transferable knowledge in semi-supervised heterogeneous domain adaptation (SHDA), where source and target domains have different feature representations and distributions.\n- Through extensive experiments, the authors surprisingly found that both category and feature information from source samples do not significantly affect target domain performance, and even noise can contain transferable knowledge.\n- They design a Knowledge Transfer Framework (KTF) for SHDA and conduct large-scale experiments with synthetic noise domains.\n- They find that transferable knowledge primarily comes from the transferability and discriminability of the source domain itself.\n-  Regardless of source sample origins, ensuring source domain transferability and discriminability enhances SHDA knowledge transfer effectiveness.",
+        "classification": [
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/yyyaoyuan/SHDA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-20"
+    }
+]

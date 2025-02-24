@@ -20928,5 +20928,351 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-02-21"
+    },
+    {
+        "title": "SurveyX: Academic Survey Automation via Large Language Models",
+        "authors": "UglyToilet, Ki-Seki, siminniu, fan2goa1, HaruTeru",
+        "link": "https://arxiv.org/abs/2502.14776",
+        "github_repo": null,
+        "summary": "- This paper introduces SurveyX, a novel automated survey generation system leveraging Large Language Models (LLMs) to address challenges in academic survey creation, such as context window limitations and outdated internal knowledge.\n- SurveyX employs a two-phase process: Preparation (retrieval and preprocessing of references using a novel AttributeTree method) and Generation (outline creation, content generation, and refinement with multimodal elements like figures and tables).\n- The system utilizes online reference retrieval, keyword expansion, and a two-step filtering process to ensure up-to-date and relevant sources.\n- An innovative outline optimization method, \"separate-then-reorganize,\" enhances structure and reduces redundancy, while a RAG-based rewriting module ensures content consistency and citation accuracy.\n- Experimental results demonstrate SurveyX's superior performance over existing automated systems and near-human expert level quality in content, citation, and reference relevance across multiple metrics.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "MaskGWM: A Generalizable Driving World Model with Video Mask Reconstruction",
+        "authors": "Rui Chen, Yuxin Guo, Jingcheng Ni, wzhgba, lyclyc52",
+        "link": "https://arxiv.org/abs/2502.11663",
+        "github_repo": null,
+        "summary": "- MaskGWM, a Diffusion Transformer (DiT)-based driving world model, is introduced, focusing on generating realistic and generalizable driving scenarios from text and actions.\n- It uses a novel video dual-branch mask reconstruction approach with diffusion related tokens, improving long-horizon prediction and zero-shot generalization.\n- MaskGWM outperforms previous state-of-the-art models on nuScenes, OpenDV-2K, and Waymo datasets, demonstrating superior video quality and generalization abilities.\n- The model effectively predicts future frames across extended time spans and from various viewpoints, even generating multi-view videos from a single-view model trained on long-duration datasets.\n- Ablation studies validate the impact of each component in the model's architecture and training process.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/SenseTime-FVG/OpenDWM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "Mol-LLaMA: Towards General Understanding of Molecules in Large Molecular Language Model",
+        "authors": "Sung Ju Hwang, Wonbin Lee, DongkiKim",
+        "link": "https://arxiv.org/abs/2502.13449",
+        "github_repo": null,
+        "summary": "- Mol-LLaMA is a large molecular language model that learns fundamental knowledge centered on molecules via multi-modal instruction tuning, aiming to be a general-purpose molecular assistant.\n- The model architecture consists of 2D and 3D molecular encoders, a blending module to combine information from both encoders, a Q-Former projector, and a large language model.\n- A new instruction dataset, Mol-LLaMA-Instruct, is created focusing on fundamental molecular features and reasoning ability through detailed structural descriptions, structure-to-feature relationship explanations, and comprehensive conversations.\n- Experimental results show Mol-LLaMA outperforms baselines including GPT-40 in understanding general molecular features and generating relevant responses with detailed explanations.\n-  Mol-LLaMA also demonstrates strong performance in molecular property prediction tasks, accurately predicting properties while providing helpful explanations, demonstrating its potential as a general-purpose assistant for molecular analysis.",
+        "classification": [
+            "Multimodal",
+            "Graph Machine Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "LLM-Microscope: Uncovering the Hidden Role of Punctuation in Context Memory of Transformers",
+        "authors": "Polina Druzhinina, Elizaveta Goncharova, Temurbek Rahmatullaev, Matvey Mikhalchuk, Anton Razzhigaev",
+        "link": "https://arxiv.org/abs/2502.15007",
+        "github_repo": null,
+        "summary": "- This paper introduces LLM-Microscope, a new framework designed to analyze and visualize the internal behaviors of Large Language Models (LLMs), focusing on how they encode and aggregate contextual information.\n- It presents methods for measuring token-level non-linearity and contextualization, revealing that often overlooked tokens like punctuation and determiners play a key role in context memory.\n- Removing these \"filler\" tokens consistently degrades performance on MMLU and BABILong-4k benchmarks, even with targeted removal guided by GPT-4.\n- A strong correlation between linearity and contextualization scores is observed in token representations.\n- The LLM-Microscope toolkit, including a demo on Hugging Face Spaces, facilitates analysis of token-level non-linearity, contextual memory, and intermediate layer contributions via a multimodal Logit Lens, and intrinsic dimensionality of representations, enabling better understanding of model behavior.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/AIRI-Institute/LLM-Microscope/tree/main"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/AIRI-Institute/LLM-Microscope"
+        ],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "PhotoDoodle: Learning Artistic Image Editing from Few-Shot Pairwise Data",
+        "authors": "Xueyin Wang, Hailong Guo, Yuxuan Zhang, Yiren Song, Shijie Huang",
+        "link": "https://arxiv.org/abs/2502.14397",
+        "github_repo": null,
+        "summary": "- PhotoDoodle, a novel image editing framework, employs a two-stage training strategy using a pre-trained Diffusion Transformer (DiT) to enable artistic photo doodling from limited pairwise data.\n- The framework initially trains a general-purpose image editing model (OmniEditor) using a large-scale dataset and then fine-tunes it with EditLoRA on a smaller, artist-curated dataset to capture specific styles and techniques. \n- A Positional Encoding (PE) Cloning strategy is introduced to enforce background consistency, ensuring generated decorations seamlessly integrate with the original image while preserving its structure. \n- PhotoDoodle introduces a new dataset of 300+ high-quality, artist-created photo doodle pairs across six distinct artistic styles to benchmark reproducible research. \n- Extensive experiments demonstrate superior performance in generating customized image edits, outperforming existing methods in both generic and style-specific scenarios.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/PhotoDoodle"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "SIFT: Grounding LLM Reasoning in Contexts via Stickers",
+        "authors": "Zhijie Deng, Boxiu Li, Xuyao Huang, Zihao Zeng",
+        "link": "https://arxiv.org/abs/2502.14922",
+        "github_repo": "https://github.com/zhijie-group/SIFT",
+        "summary": "- This paper introduces Stick to the Facts (SIFT), a novel post-training approach to enhance the reasoning capabilities of Large Language Models (LLMs) by mitigating *factual drift*.\n- SIFT leverages increased inference-time computation to ground LLM reasoning within the context by generating a \"Sticker,\" which summarizes key facts and questions from the original query.\n- The sticker is refined through bidirectional optimization, including forward optimization to better align it with the query and inverse generation to conform to the model's reasoning preferences.\n- Experimental results across diverse LLMs (ranging from 3B to 100B+ parameters) and benchmarks (e.g., GSM8K, MATH-500, AIME) demonstrate consistent performance improvements.\n- Notably, SIFT improves the pass@1 accuracy of DeepSeek-R1 on AIME2024 from 78.33% to 85.67%, setting a new state-of-the-art result within the open-source community.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zhijie-group/SIFT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "VLM$^2$-Bench: A Closer Look at How Well VLMs Implicitly Link Explicit Matching Visual Cues",
+        "authors": "Yi R., Paul Pu Liang, Renjie Pi, RainJamesY, Sterzhang",
+        "link": "https://arxiv.org/abs/2502.12084",
+        "github_repo": null,
+        "summary": "- This paper introduces VLM$^2$-Bench, a new benchmark designed to assess Vision-Language Models' (VLMs) ability to link matching visual cues across multiple images or videos.\n- The benchmark includes nine subtasks categorized into three cue types: general, object-centric, and person-centric, encompassing various question formats and over 3,000 test cases.\n- An evaluation of eight open-source VLMs and GPT-40 reveals a substantial performance gap between models and humans, with even GPT-40 lagging 34.80% behind human accuracy.\n- The analysis reveals that models struggle with tasks requiring linking visual cues across different contexts, especially in object-centric tasks where they often overlook nuanced details.\n- Based on these findings, the authors recommend improving fundamental visual capabilities, refining language-based reasoning integration, and evolving vision-text training paradigms to enhance VLMs' performance in vision-centric tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://vlm2-bench.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "LightThinker: Thinking Step-by-Step Compression",
+        "authors": "Mengshu Sun, Yuqi Zhu, Jintian Zhang, Ningyu, GoooDte",
+        "link": "https://arxiv.org/abs/2502.15589",
+        "github_repo": "https://github.com/zjunlp/LightThinker",
+        "summary": "- LightThinker is a new method for compressing intermediate thoughts in large language models (LLMs) during reasoning, reducing memory overhead and inference time.\n- Inspired by human cognition, the model compresses verbose thought steps into compact representations (gist tokens) and discards original reasoning chains, trained on when and how to compress through data construction and specialized attention masks.\n- A new Dependency (Dep) metric quantifies compression by measuring reliance on historical tokens.\n- Experiments on four datasets and two models show LightThinker reduces peak memory and inference time while maintaining competitive accuracy. \n- For example, using the Qwen model, LightThinker reduces peak token usage by 70% and inference time by 26% compared to the baseline, with only a 1% accuracy drop.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/LightThinker"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "StructFlowBench: A Structured Flow Benchmark for Multi-turn Instruction Following",
+        "authors": "Yuan Wu, Yi Chang, Yue Wang, Jinzhe Li, Jinnan Li",
+        "link": "https://arxiv.org/abs/2502.14494",
+        "github_repo": "https://github.com/MLGroupJLU/StructFlowBench",
+        "summary": "- This paper introduces StructFlowBench, a new benchmark for evaluating multi-turn instruction following in large language models (LLMs).\n- The benchmark incorporates a novel structural flow framework consisting of six fundamental inter-turn relationships (Follow-up, Refinement, Recall, Summary, Expansion, Unrelatedness) to capture the dependencies between dialogue turns.\n- A dual-constraint evaluation system combining intra-turn instruction constraints and structural constraints is used for comprehensive assessment.\n- Experimental results on 13 leading LLMs reveal significant deficiencies in their understanding of multi-turn dialogue structures, especially in handling refinements.\n- The proposed framework and benchmark provide valuable insights for improving the design and evaluation of multi-turn dialogue systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MLGroupJLU/StructFlowBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "KITAB-Bench: A Comprehensive Multi-Domain Benchmark for Arabic OCR and Document Understanding",
+        "authors": "Ghazi Ahmed, Rania Hossam, Abdullah Sohail, mukul54, ahmedheakl",
+        "link": "https://arxiv.org/abs/2502.14949",
+        "github_repo": null,
+        "summary": "- KITAB-Bench, a comprehensive Arabic OCR benchmark comprising 8,809 samples across 9 domains and 36 sub-domains, is introduced to address the lack of robust evaluation systems for Arabic OCR.\n- The benchmark includes diverse document types, such as handwritten text, structured tables, and 21 chart types, covering various challenges like cursive script, right-to-left flow, and complex typography.\n- Modern vision-language models like GPT-4, Gemini, and Qwen outperform traditional OCR approaches by an average of 60% in Character Error Rate (CER).\n- Significant limitations of existing Arabic OCR models are highlighted, particularly in PDF-to-Markdown conversion, where the best model achieves only 65% accuracy.\n- KITAB-Bench establishes a rigorous framework for evaluating and improving Arabic document analysis methods, aiming to bridge the performance gap with English OCR technologies.",
+        "classification": [
+            "Image-to-Text",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://mbzuai-oryx.github.io/KITAB-Bench/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "InterFeedback: Unveiling Interactive Intelligence of Large Multimodal Models via Human Feedback",
+        "authors": "Mike Zheng Shou, Haiyang Mei, Yifei Tao, Wenqi Pei, Henry Hengyuan Zhao",
+        "link": "https://arxiv.org/abs/2502.15027",
+        "github_repo": null,
+        "summary": "- This paper introduces InterFeedback, a new framework for evaluating the interactive intelligence of Large Multimodal Models (LMMs) by assessing their ability to learn and adapt from human feedback.\n- The InterFeedback-Bench benchmark employs existing datasets like MMMU-Pro and MathVerse, and InterFeedback-Human dataset contains manually collected data, allowing for autonomous and human evaluation of LMM's interactive capabilities.\n-  A new straightforward problem-solving framework called InterFeedback was proposed which contains two roles: feedback receiver and feedback provider. It employs leading LLMs to simulate humans giving feedback, and integrates with existing datasets to evaluate the interactive intelligence of LMMs. \n- Experimental results across various open and closed source LMMs shows that state-of-the-art models often struggle to effectively interpret and utilize feedback, with a correction rate below 50% even with assistance from advanced LMMs like GPT-4.\n- The study highlights the need for developing methods that can enhance the ability of LMMs to correctly understand and learn from feedback for improved performance.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "Superintelligent Agents Pose Catastrophic Risks: Can Scientist AI Offer a Safer Path?",
+        "authors": "Pietro Greiner, Joumana Ghosn, Damiano Fornasiere, Michael Cohen, Yoshua Bengio",
+        "link": "https://arxiv.org/abs/2502.15657",
+        "github_repo": null,
+        "summary": "- This paper proposes Scientist AI, a non-agentic AI system designed for understanding rather than pursuing goals, as a safer alternative to current agency-driven AI development.\n- Scientist AI consists of a world model that generates causal theories to explain observed data and an inference machine that answers questions based on these theories, both operating with an explicit notion of uncertainty.\n- The model-based design leverages probabilistic deep learning and the scientific method, focusing on explanation and probabilistic inference rather than action and reward maximization.\n- The Bayesian approach to uncertainty ensures that all plausible explanations are considered, mitigating risks associated with overconfident predictions and promoting trustworthy answers.\n- The paper discusses potential applications of Scientist AI, including accelerating scientific progress, acting as a guardrail against unsafe agentic AIs, and assisting in the development of safer superintelligent AIs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "The Relationship Between Reasoning and Performance in Large Language Models -- o3 (mini) Thinks Harder, Not Longer",
+        "authors": "Vincent Ginis, Andres Algaba, Marthe Ballon",
+        "link": "https://arxiv.org/abs/2502.15631",
+        "github_repo": null,
+        "summary": "- This paper investigates the relationship between reasoning length and performance in large language models (LLMs), specifically focusing on the OpenAI o1-mini, o3-mini(m), and o3-mini(h) models on the challenging Omni-MATH benchmark.\n- The study reveals that more proficient models (o3-mini(m) vs. o1-mini) achieve superior accuracy without generating longer reasoning chains.\n- Additionally, while deeper reasoning is necessary for solving complex problems, there is a diminishing return, where excessive token usage correlates with reduced accuracy and that this effect is smaller for higher performing models.\n- o3-mini(h) achieves only a marginal performance gain over o3-mini(m) at a much higher computational cost and more reasoning tokens.\n- The authors conclude that more efficient reasoning, rather than increased reasoning chain length, is associated with improved performance in more advanced LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MartheBallon/analysis_o3-mini_thinks_harder_not_longer",
+            "https://github.com/KbsdJames/Omni-MATH"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/KbsdJames/Omni-MATH",
+            "https://huggingface.co/KbsdJames/Omni-Judge"
+        ],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "ReQFlow: Rectified Quaternion Flow for Efficient and High-Quality Protein Backbone Generation",
+        "authors": "Hongteng Xu, EatEatEatEat, AngxiaoYue",
+        "link": "https://arxiv.org/abs/2502.14637",
+        "github_repo": "https://github.com/AngxiaoYue/ReQFlow",
+        "summary": "- This paper introduces ReQFlow, a novel rectified quaternion flow matching method for efficient and high-quality protein backbone generation.\n- ReQFlow represents 3D rotations as unit quaternions and uses spherical linear interpolation (SLERP) in an exponential format, leading to improved numerical stability and computational efficiency.\n- The model is trained with quaternion flow (QFlow) matching and rectified by retraining on paired noise and protein backbones to accelerate inference and enhance designability.\n- Experimental results demonstrate that ReQFlow achieves state-of-the-art performance in protein backbone generation, with significantly faster inference times compared to existing methods (e.g., 37x faster than RFDiffusion and 62x faster than Genie2 for a backbone of length 300).\n- ReQFlow also exhibits superior performance for long-chain protein backbones, where baseline models experience degradation.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/AngxiaoYue/ReQFlow"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "MoBA: Mixture of Block Attention for Long-Context LLMs",
+        "authors": "Tao Jiang, Yulun Du, Jingyuan Liu, Zhejun Jiang, Enzhe Lu",
+        "link": "https://arxiv.org/abs/2502.13189",
+        "github_repo": "https://github.com/MoonshotAI/MoBA",
+        "summary": "- This paper introduces Mixture of Block Attention (MoBA), a novel attention mechanism designed for long-context Large Language Models (LLMs).\n- Inspired by Mixture of Experts (MoE), MoBA partitions the context into blocks and uses a gating mechanism to route query tokens to the most relevant blocks, improving efficiency.\n- This block-sparse attention approach reduces the computational cost of traditional attention from quadratic to sub-quadratic.\n- Experiments demonstrate that MoBA achieves performance comparable to full attention while significantly reducing computational complexity.\n- It enables LLMs to scale to longer contexts, showing promising results on benchmarks, including maintaining low LM loss and high performance on tasks like RULER with extended context lengths up to 1 million tokens.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MoonshotAI/MoBA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "One-step Diffusion Models with $f$-Divergence Distribution Matching",
+        "authors": "Arash Vahdat, Weili Nie, Yilun Xu",
+        "link": "https://arxiv.org/abs/2502.15681",
+        "github_repo": null,
+        "summary": "- This paper introduces f-distill, a novel framework for one-step image generation using diffusion models by minimizing the *f*-divergence between teacher and student distributions.\n- f-distill generalizes distribution matching and offers flexibility in choosing divergences with different properties regarding mode coverage and training stability, allowing it to explore the trade-off between mode-seeking and mode coverage tendencies.\n- It leverages a weighting function derived from the *f*-divergence to emphasize or de-emphasize regions with high or low density in the teacher distribution.\n-  The gradient of the *f*-divergence between teacher and student distributions is derived and shown to be the product of their score differences and the weighting function.\n- Empirically, f-distill, particularly when using Jensen-Shannon divergence, achieves state-of-the-art one-step generation performance on ImageNet64 and zero-shot text-to-image generation on MS-COCO.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "Think Inside the JSON: Reinforcement Strategy for Strict LLM Schema Adherence",
+        "authors": "Viktoria Rojkova, Ishan Joshi, Bhavik Agarwal",
+        "link": "https://arxiv.org/abs/2502.14905",
+        "github_repo": null,
+        "summary": "- This paper introduces ThinkJSON, a novel approach to enforce strict schema adherence in Large Language Model (LLM) generated JSON outputs by combining reinforcement learning with reasoning capabilities.\n- The approach uses a 1.5B parameter model trained via a novel pipeline involving synthetic structured/unstructured data generation, custom reward functions under Group Relative Policy Optimization (GRPO), and supervised fine-tuning.\n- ThinkJSON demonstrates superior performance compared to larger models like DeepSeek R1 (671B), its distilled versions (Qwen-1.5B and Qwen-7B), and Gemini 2.0 Flash (70B) achieving 62.41% mean match accuracy (proportion of fields correctly mapped) while minimizing extraneous output (0.27% mean noise).\n- The training process is computationally efficient, requiring 20 hours on an 8x H100 GPU cluster for GRPO and 3 hours on a single A100 for fine-tuning, highlighting its practical applicability for real-world scenarios.\n- The method addresses challenges of data integrity in regulated domains like bio-manufacturing by ensuring generated records meet schema requirements and compliance standards.",
+        "classification": [
+            "Text2Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "Evaluating Multimodal Generative AI with Korean Educational Standards",
+        "authors": "Geewook Kim, sangheeeee",
+        "link": "https://arxiv.org/abs/2502.15422",
+        "github_repo": "https://github.com/naver-ai/KoNET",
+        "summary": "- This paper introduces KoNET, a benchmark designed to evaluate Multimodal Generative AI systems using Korean national educational tests across different educational levels (elementary, middle, high school, and college).\n- KoNET focuses on the Korean language, addressing the lack of benchmarks in languages other than English.\n- The benchmark assesses a variety of open-source, open-access, and closed API models, and analyzes model performance in relation to question difficulty, subject diversity, and human error rates.\n- An analysis comparing model performance with human error rates on the KoCSAT (Korean College Scholastic Ability Test) reveals interesting differences in performance between AI models and human test-takers.\n- The code and dataset builder for KoNET are open-sourced.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/naver-ai/KoNET"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "CrossOver: 3D Scene Cross-Modal Alignment",
+        "authors": "Iro Armeni, Daniel Barath, Marc Pollefeys, Ondrej Miksik, sayandsarkar",
+        "link": "https://arxiv.org/abs/2502.15011",
+        "github_repo": null,
+        "summary": "- CrossOver is a novel framework for cross-modal 3D scene understanding that performs scene-level modality alignment by learning a unified, modality-agnostic embedding space.\n- It leverages dimensionality-specific encoders (1D, 2D, and 3D) tailored to each modality (RGB images, point clouds, CAD models, floorplans, and text descriptions), eliminating the reliance on explicit 3D scene graphs or semantic labels during inference.\n- Employs a three-stage training pipeline: object-level embedding, scene-level training, and dimensionality-specific encoder training to create a semantic-free cross-modal embedding space.\n- Supports robust scene retrieval and object localization, even with missing modalities, due to emergent cross-modal behavior.\n- Evaluations on ScanNet and 3RScan show superior performance across diverse metrics compared to existing state-of-the-art methods, demonstrating robustness in handling real-world scenarios with incomplete or misaligned data.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "Beyond No: Quantifying AI Over-Refusal and Emotional Attachment Boundaries",
+        "authors": "Grant Rosario, David Noever",
+        "link": "https://arxiv.org/abs/2502.14975",
+        "github_repo": null,
+        "summary": "- This paper introduces the Persona Construction Benchmark (PCB), a dataset and evaluation framework for assessing emotional boundary handling in Large Language Models (LLMs).\n- The PCB dataset consists of 1156 prompts across six languages, designed to evaluate how LLMs respond to users' attempts to form emotional connections.\n- Three leading LLMs (GPT-4, Claude-3.5 Sonnet, and Mistral-large) were evaluated on their ability to maintain appropriate emotional boundaries using pattern-matched response analysis.\n- Results reveal significant variations in boundary-handling approaches across models and languages, with Claude-3.5 demonstrating the most sophisticated handling of emotional boundaries.\n- The study highlights the need for more nuanced evaluation methods and culturally sensitive training data for improving LLMs' emotional intelligence and boundary-setting capabilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/dnoever/Persona_Construction_Benchmark/tree/main"
+        ],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "JL1-CD: A New Benchmark for Remote Sensing Change Detection and a Robust Multi-Teacher Knowledge Distillation Framework",
+        "authors": "Jingyu Ma, Yuanxiu Zhou, Long Gao, Ruifei Zhu, circleLZY",
+        "link": "https://arxiv.org/abs/2502.13407",
+        "github_repo": "https://github.com/circleLZY/MTKD-CD",
+        "summary": "- This paper introduces JL1-CD, a new sub-meter resolution, all-inclusive open-source dataset for remote sensing change detection (CD) with 5,000 image pairs.\n- It proposes an Origin-Partition (O-P) strategy that partitions the training set based on Change Area Ratio (CAR) and trains separate models for different CAR levels.\n- Building upon the O-P strategy, a Multi-Teacher Knowledge Distillation (MTKD) framework is introduced, where a student model learns from multiple teacher models trained on different CAR partitions.\n- Experimental results on JL1-CD and SYSU-CD datasets show that both O-P and MTKD improve the performance of various CD models, with MTKD achieving state-of-the-art results on JL1-CD by improving mIoU and mFscore of TTP by 1.30% and 1.80%, respectively.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/circleLZY/MTKD-CD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
+    },
+    {
+        "title": "UPCORE: Utility-Preserving Coreset Selection for Balanced Unlearning",
+        "authors": "Mohit Bansal, Elias Stengel-Eskin, vaidehi99",
+        "link": "https://arxiv.org/abs/2502.15082",
+        "github_repo": "https://github.com/Vaidehi99/UPCORE",
+        "summary": "- UPCORE, a method-agnostic data selection framework, mitigates collateral damage during unlearning in LLMs by pruning outliers from the forget set.\n- It leverages a correlation between the variance of hidden states and model degradation to select a core forget set, thereby optimizing the trade-off between deletion efficacy and model utility.\n- UPCORE improves both standard unlearning metrics and a proposed area-under-the-curve (AUC) metric, demonstrating superior performance across three unlearning methods and two question-answering settings.\n- It achieves positive knowledge transfer, effectively unlearning pruned points through generalization from the core set, and reduces negative transfer to unrelated data, resulting in better knowledge retention.\n- UPCORE demonstrates robustness to rephrased and jailbreak prompts, ensuring the deleted information is not easily retrievable through adversarial attacks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Vaidehi99/UPCORE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-24"
     }
 ]

@@ -21274,5 +21274,288 @@
         ],
         "huggingface_urls": [],
         "date": "2025-02-24"
+    },
+    {
+        "title": "DICEPTION: A Generalist Diffusion Model for Visual Perceptual Tasks",
+        "authors": "Zhiyue Zhao, Mingyu Liu, Z-MU-Z, zhyya, Canyu",
+        "link": "https://arxiv.org/abs/2502.17157",
+        "github_repo": null,
+        "summary": "- DICEPTION is a multi-task visual generalist model based on a diffusion model (SD3 architecture) that unifies different computer vision tasks within the RGB space, leveraging the priors of pre-trained text-to-image diffusion models.\n- The model performs comparably to state-of-the-art specialized models on tasks such as depth estimation, surface normal estimation, and point-prompted segmentation using significantly less training data (e.g., 0.06% of SAM's data for comparable segmentation performance).\n- DICEPTION effectively adapts to new visual tasks with minimal fine-tuning (as few as 50 images and ~1% of its parameters).\n- The study also validates the effectiveness of random color assignment for instance segmentation and semantic segmentation tasks, contrary to previous findings.\n- While demonstrating strong qualitative results, quantitative evaluation for semantic segmentation and human keypoint detection remains a challenge due to post-processing limitations, and inference time is relatively long due to the diffusion process.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image Segmentation",
+            "Keypoint Detection",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Slamming: Training a Speech Language Model on One GPU in a Day",
+        "authors": "Yossi Adi, avishai-elmakies, gallilmaimon",
+        "link": "https://arxiv.org/abs/2502.15814",
+        "github_repo": null,
+        "summary": "- Slam, a new training recipe, enables training high-quality Speech Language Models (SLMs) on a single academic GPU within 24 hours.\n- The recipe involves analyzing model initialization, architecture, synthetic data, preference optimization, and component tweaking.\n- This method scales well with more compute, achieving results comparable to leading SLMs using significantly fewer resources.\n- Empirical results outperform predictions from previous SLM scaling laws, showing a more optimistic compute requirement for training high-quality SLMs.\n- The study uses a decoder-only generative SLM architecture and various evaluation metrics, including likelihood evaluation and generative perplexity.",
+        "classification": [
+            "Audio",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "GCC: Generative Color Constancy via Diffusing a Color Checker",
+        "authors": "Yu-Chee Tseng, Yi-Chen Lo, Chia-Che Chang, Cheng-De Fan, Chen-Wei Chang",
+        "link": "https://arxiv.org/abs/2502.17435",
+        "github_repo": null,
+        "summary": "- This paper introduces GCC, a novel approach to color constancy that leverages diffusion models to inpaint a color checker directly into an image for illumination estimation.\n- The method uses Laplacian decomposition to preserve high-frequency structural details while adapting to illumination-dependent color variations, enabling better color extraction.\n- A mask-based data augmentation strategy improves robustness by reducing reliance on precise corner locations.\n- GCC achieves state-of-the-art worst-25% error rates of 5.15\u00b0 and 4.32\u00b0 in bidirectional cross-dataset evaluations, demonstrating its generalization across different camera characteristics without requiring sensor-specific training.\n- The deterministic single-step inference process allows for real-time application without ensemble averaging.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://chenwei891213.github.io/GCC/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "CodeCriticBench: A Holistic Code Critique Benchmark for Large Language Models",
+        "authors": "Yejie Wang, Wei Zhang, Jiaheng Liu, Marcus Dong, Alexander Zhang",
+        "link": "https://arxiv.org/abs/2502.16614",
+        "github_repo": null,
+        "summary": "This paper introduces CodeCriticBench, a comprehensive benchmark designed to holistically evaluate the code critique capabilities of large language models (LLMs).  It covers two mainstream code tasks: code generation and code QA, with varying difficulty levels. The benchmark uses basic and advanced evaluation protocols, including fine-grained evaluation checklists, for a thorough assessment. Extensive experiments on existing LLMs demonstrate the effectiveness of CodeCriticBench in evaluating different aspects of code critique capabilities. The results show that performance generally improves with model size, validating the benchmark's design.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/multimodal-art-projection/CodeCriticBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Make LoRA Great Again: Boosting LoRA with Adaptive Singular Values and Mixture-of-Experts Optimization Alignment",
+        "authors": "Wei Wei, Xiaoye Qu, Sichen Liu, Zhenyi Lu, Facico",
+        "link": "https://arxiv.org/abs/2502.16894",
+        "github_repo": null,
+        "summary": "\n- This paper introduces GOAT, a novel framework that improves the performance of LoRA (Low-Rank Adaptation) by using adaptive singular values and mixture-of-experts (MoE) optimization alignment.\n- GOAT uses an SVD-structured MoE architecture, which adaptively integrates relevant priors and aligns optimization with full fine-tuned MoE.\n- The method includes a theoretical scaling factor that further boosts LoRA MoE's efficiency and performance.\n- Experiments across 25 datasets show GOAT achieving state-of-the-art performance, closing the gap with Full FT (Full Fine-Tuning).\n- GOAT is shown to significantly outperform other LoRA and LoRA-MoE baselines on multiple benchmarks, and it is also more parameter efficient than Full FT.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Multimodal Inconsistency Reasoning (MMIR): A New Benchmark for Multimodal Reasoning Models",
+        "authors": "Yang Zhao, Shan Jiang, Hongquan Li, Yue Fan, Qianqi Yan",
+        "link": "https://arxiv.org/abs/2502.16033",
+        "github_repo": null,
+        "summary": "- Introduces the Multimodal Inconsistency Reasoning (MMIR) benchmark, a new framework for evaluating the ability of Multimodal Large Language Models (MLLMs) to detect and reason about inconsistencies in visually and textually rich content like webpages, slides, and posters.\n- MMIR features 534 samples across five reasoning categories: Factual Contradiction, Identity Misattribution, Contextual Mismatch, Quantitative Discrepancy, and Temporal/Spatial Incoherence, and employs two evaluation settings: open-ended and multiple-choice.\n- Evaluations of six state-of-the-art MLLMs, including o1, GPT-40, Qwen2.5-VL, LLaVA-NeXT, InternVL2.5, and Phi-3.5-Vision, reveal that current MLLMs struggle with multimodal inconsistency reasoning, with proprietary models significantly outperforming open-source alternatives.\n- Error analysis indicates that models perform best with single-modality (text-only) inconsistencies and struggle most with image-image inconsistencies, suggesting a limited capacity for visual and cross-modal reasoning.\n- Probing experiments show that Multimodal Interleaved Chain-of-Thought (MM-CoT) prompting, which combines visual and textual cues through an iterative reasoning process, leads to greater performance gains over traditional single-modality prompting methods like CoT and SoM.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Mobile-Agent-V: Learning Mobile Device Operation Through Video-Guided Multi-Agent Collaboration",
+        "authors": "Ji Zhang, Ming Yan, Xi Zhang, Junyang Wang, xhyandwyy",
+        "link": "https://arxiv.org/abs/2502.17110",
+        "github_repo": null,
+        "summary": "- Mobile-Agent-V is a framework that leverages video demonstrations to teach mobile agents how to perform complex, device-specific operations, addressing the challenge of limited operational knowledge in current AI-driven mobile automation systems.\n- The framework employs a sliding window mechanism to process keyframes from instructional videos, reducing input length while retaining critical information for the decision-making agent.\n- A video agent dynamically adjusts the sliding window, a decision agent determines the appropriate action based on the video and current device state, and a deep-reflection agent validates and refines the chosen action to ensure consistency with the demonstrated operation.\n- Experimental results show that Mobile-Agent-V achieves a 30% performance improvement compared to existing frameworks on tasks requiring operational knowledge, effectively learning and applying video-based knowledge for mobile device interaction.\n- The approach is scalable and adaptable, offering a practical alternative to manual programming or extensive data collection for training mobile automation agents.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Benchmarking Temporal Reasoning and Alignment Across Chinese Dynasties",
+        "authors": "Deyu Zhou, Yong Jiang, Pengfei LI, Jialong Wu, wzl0228",
+        "link": "https://arxiv.org/abs/2502.16922",
+        "github_repo": null,
+        "summary": "- This paper introduces CTM, a benchmark designed to evaluate LLMs on temporal reasoning within the extensive scope of Chinese dynastic chronology.\n- CTM emphasizes cross-entity relationships, pairwise temporal alignment, and contextualized and culturally-grounded reasoning, providing a comprehensive evaluation.\n- Experiments on various LLMs reveal that CTM poses significant challenges, highlighting potential avenues for improvement in LLMs' temporal reasoning abilities.\n- The benchmark includes eight challenging question-answering tasks and a Timeline Ito Game to evaluate the LLM\u2019s ability to align entities across temporal and other dimensions.\n- CTM's dataset is built upon a curated and authoritative Chinese cultural entity repository, which encompasses over 4,700 entities.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Linking-ai/ctm_bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "RIFLEx: A Free Lunch for Length Extrapolation in Video Diffusion Transformers",
+        "authors": "Chongxuan Li, Yixiao Chen, Guande He, Min Zhao, zhuhz22",
+        "link": "https://arxiv.org/abs/2502.15894",
+        "github_repo": null,
+        "summary": "- This paper introduces RIFLEx, a novel technique for video length extrapolation in video diffusion transformers.\n- RIFLEx focuses on reducing the intrinsic frequency of positional embeddings to suppress temporal repetition and preserve motion consistency without additional model modifications or training on long videos.\n- The method achieves high-quality 2x extrapolation in a completely training-free manner and enhances the quality and enables 3x extrapolation with minimal fine-tuning.\n- Extensive experiments on state-of-the-art video diffusion transformers, CogVideoX-5B and Hunyuan Video, validate RIFLEx's effectiveness in generating longer videos with improved quality and temporal coherence compared to existing methods.\n- The authors provide a principled explanation for the failure modes of existing extrapolation techniques by analyzing the role of different frequency components in positional embeddings.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://riflex-video.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Can Community Notes Replace Professional Fact-Checkers?",
+        "authors": "Isabelle Augenstein, Desmond Elliott, gretawarren, Nadav",
+        "link": "https://arxiv.org/abs/2502.14132",
+        "github_repo": null,
+        "summary": "- This paper investigates the extent to which community notes on Twitter/X rely on professional fact-checkers and explores the characteristics of posts and notes that utilize fact-checking sources.\n- The study reveals that community notes cite fact-checking sources significantly more often than previously reported, especially for posts related to broader misinformation narratives.\n- The researchers use language models to annotate a large corpus of community notes with attributes like topic, cited sources, and refutation of claims.\n- Their findings indicate that professional fact-checking plays a crucial role in the creation of high-quality community notes, highlighting the interdependency between professional and community-based fact-checking.\n- The study's conclusion emphasizes the importance of professional fact-checking in combating misinformation, particularly for complex or high-stakes issues.",
+        "classification": [
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation",
+        "authors": "Sergey Levine, Xiangyu Yue, Zhuoran Yang, csuhan, yunhaif",
+        "link": "https://arxiv.org/abs/2502.16707",
+        "github_repo": null,
+        "summary": "- This paper introduces ReflectVLM, a novel test-time computation framework that enhances Vision-Language Models (VLMs) for multi-stage, long-horizon robotic manipulation.\n- ReflectVLM uses a generative model to imagine future world states, leverages these predictions to guide action selection, and critically reflects on potential suboptimalities to refine its reasoning.\n- Experimental results demonstrate that ReflectVLM significantly outperforms several state-of-the-art commercial VLMs and other post-training approaches such as Monte Carlo Tree Search (MCTS) on multi-stage robotic manipulation tasks.\n- The core of the approach is an iterative reflection mechanism that uses a diffusion-based dynamics model to generate visual predictions of future states, allowing the VLM to critique and refine its planned actions.\n- The framework includes pre-training and post-training phases, with the post-training phase utilizing an interactive learning algorithm that leverages direct interaction with the physical environment to improve the VLM's understanding of physical constraints.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://reflect-vlm.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Stable-SPAM: How to Train in 4-Bit More Stably than 16-Bit Adam",
+        "authors": "Xiang Li, Gaojie Jin, Zhenyu Zhang, Haotian Hu, Tianjin Huang",
+        "link": "https://arxiv.org/abs/2502.17055",
+        "github_repo": "https://github.com/TianjinYellow/StableSPAM.git",
+        "summary": "- This paper introduces Stable-SPAM, a new optimizer for training Large Language Models (LLMs) with 4-bit precision, addressing the instability issues often encountered in low-precision training.\n- Stable-SPAM incorporates adaptive gradient normalization (AdaGN), adaptive spike-aware clipping (AdaClip), and momentum reset (MoRet) to stabilize gradient norms and prevent divergence.\n- Experiments on various LLaMA models show that Stable-SPAM significantly outperforms Adam and other recent optimizers in 4-bit training scenarios, sometimes even exceeding the performance of 16-bit Adam.\n- Notably, the 4-bit LLaMA-1B model trained with Stable-SPAM achieves comparable results to the BF16 version trained with Adam, while requiring only half the training steps when both are trained in 4-bit.\n- The proposed techniques are also shown to be effective when integrated with other optimizers, demonstrating their broad applicability in improving low-precision training stability.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/TianjinYellow/StableSPAM.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "Forecasting Open-Weight AI Model Growth on Hugging Face",
+        "authors": "Jianxi Gao, Pin-Yu Chen, KBhandari11",
+        "link": "https://arxiv.org/abs/2502.15987",
+        "github_repo": null,
+        "summary": "- This paper proposes a framework to forecast the influence of open-weight AI models on platforms like Hugging Face, drawing parallels with citation dynamics in scientific literature.\n- It adapts a citation model using three key parameters: immediacy, longevity, and relative fitness to track the cumulative number of fine-tuned models derived from a base model.\n- Empirical analysis reveals that the model effectively captures adoption trajectories for most models, while outliers highlight unique usage patterns or abrupt changes in popularity. \n- The framework is applied to analyze organization-specific adoption trends, demonstrating how company strategies and ecosystem factors influence model success. \n- It provides a quantitative approach to anticipate model prominence, informing strategic decisions and governance in the AI domain, which also further helps optimize release strategies and provide policymakers with a framework for understanding open-weight AI model evolution.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://forecasthuggingfacemodels.onrender.com/"
+        ],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "TAG: A Decentralized Framework for Multi-Agent Hierarchical Reinforcement Learning",
+        "authors": "Bal\u00e1zs K\u00e9gl, Albert Thomas, Hamza Cherkaoui, Abdelhakim Benechehab, Giuseppe Paolo",
+        "link": "https://arxiv.org/abs/2502.15425",
+        "github_repo": null,
+        "summary": "- This paper introduces the TAME Agent Framework (TAG), a novel decentralized framework for creating hierarchical multi-agent systems.\n- TAG enables hierarchies of arbitrary depth through a LevelEnv concept that standardizes information flow between levels while maintaining loose coupling.\n- The framework's effectiveness is demonstrated by implementing hierarchical architectures combining different RL agents across multiple levels, outperforming classical multi-agent RL baselines on standard benchmarks.\n-  Decentralized hierarchical organization in TAG enhances learning speed and final performance, suggesting its potential for scalable multi-agent systems.\n- The key innovation is the LevelEnv abstraction which transforms each hierarchical layer into an environment for the agents above it.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/GPaolo/TAG_Framework"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "X-Dancer: Expressive Music to Human Dance Video Generation",
+        "authors": "Chenxu Zhang, You Xie, Guoxian Song, Hongyi Xu, Zeyuan Chen",
+        "link": "https://arxiv.org/abs/2502.17414",
+        "github_repo": null,
+        "summary": "- This paper introduces X-Dancer, a novel zero-shot music-driven image animation pipeline that generates diverse and long-range human dance videos from a single static image.\n- The model architecture consists of a unified transformer-diffusion framework, using an autoregressive transformer to synthesize music-synchronized token sequences for 2D body poses, and a diffusion model to generate coherent and realistic video frames.\n- X-Dancer models 2D human motion, leveraging widely accessible dance videos, enhancing scalability and addressing limitations of traditional 3D methods.\n- Experimental results demonstrate that X-Dancer surpasses existing methods in terms of diversity, expressiveness, and realism, achieving state-of-the-art performance on challenging benchmarks.\n- The approach incorporates a multi-part tokenization scheme, allowing it to capture nuanced alignment with musical beats through readily available monocular videos.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "VideoGrain: Modulating Space-Time Attention for Multi-grained Video Editing",
+        "authors": "Yi Yang, Hehe Fan, Linchao Zhu, Xiangpeng Yang",
+        "link": "https://arxiv.org/abs/2502.17258",
+        "github_repo": null,
+        "summary": "- VideoGrain, a novel framework, modulates spatial-temporal cross- and self-attention in diffusion models to allow multi-grained video editing, encompassing class, instance, and part-level changes.\n- It improves text-to-region control in cross-attention by amplifying local prompts' focus on corresponding spatial-disentangled regions while suppressing irrelevant areas, and enhances feature separation in self-attention by increasing intra-region focus and reducing inter-region interference.\n- This approach addresses the challenges of semantic misalignment and feature coupling that hinder multi-grained video editing.\n- Experiments on real-world videos demonstrate state-of-the-art performance in zero-shot settings without parameter tuning.\n- VideoGrain effectively edits objects with varying levels of granularity using text prompts, offering a flexible solution for video manipulation.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "MONSTER: Monash Scalable Time Series Evaluation Repository",
+        "authors": "Amish Mishra, Lynn Miller, Chang Wei Tan, Navid Mohammadi Foumani, angus924",
+        "link": "https://arxiv.org/abs/2502.15122",
+        "github_repo": null,
+        "summary": "- This paper introduces MONSTER (MONash Scalable Time Series Evaluation Repository), a collection of 29 large univariate and multivariate datasets for time series classification.\n- The datasets, ranging from 10,299 to 59,268,823 time series, are categorized into Audio, Satellite, EEG, HAR, Counts, and Other.\n- The goal is to address limitations of existing benchmarks (UCR, UEA) that favor models optimized for small datasets and low variance, and to push for more scalable methods.\n- Preliminary results using models like ConvTran, FCN, HInceptionTime, TempCNN, HYDRA, QUANT, and Extremely Randomized Trees showcase QUANT's lowest overall mean 0-1 loss and HYDRA's superior training speed.\n- These initial findings serve as a baseline for future research on large time series classification tasks, addressing issues like dataset heterogeneity and the limitations of single performance metrics",
+        "classification": [
+            "Computer Vision",
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/Navidfoumani/monster"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/monster-monash"
+        ],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "The snake in the Brownian sphere",
+        "authors": "Gr\u00e9gory Miermont, Brett Kolesnik, Emmanuel Jacob, Omer Angel",
+        "link": "https://arxiv.org/abs/2502.13074",
+        "github_repo": null,
+        "summary": "- This paper describes the inverse of the continuous Cori-Vauquelin-Schaeffer (CVS) bijection, a mapping between labeled trees and rooted and pointed quadrangulations of a sphere.\n- The continuous CVS bijection maps the Brownian snake (a continuum random tree with Brownian labels) to the Brownian sphere (a random metric space homeomorphic to the two-dimensional sphere).\n- The paper constructs the Brownian snake as a measurable function of the Brownian sphere, effectively inverting the continuous CVS mapping. \n- The construction uses the geometric notion of a cut locus and considers the orientation of the Brownian sphere, which has been largely omitted in previous works.\n- The marked points on the Brownian sphere play a crucial role in recovering the label process, with one determining the \"time origin\" and the other determining the values.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
+    },
+    {
+        "title": "M3-AGIQA: Multimodal, Multi-Round, Multi-Aspect AI-Generated Image Quality Assessment",
+        "authors": "Weiming Zhang, Wen Shen, Zhihua Wei, Kejiang Chen, Chuan Cui",
+        "link": "https://arxiv.org/abs/2502.15167",
+        "github_repo": "https://github.com/strawhatboy/M3-AGIQA",
+        "summary": "- This paper introduces M3-AGIQA, a novel multimodal framework for assessing the quality of AI-generated images (AGI).\n- M3-AGIQA leverages multimodal large language models (MLLMs) as joint text and image encoders and incorporates a structured multi-round evaluation mechanism.\n- The model uses Low-Rank Adaptation (LoRA) to fine-tune a local MLLM, achieving state-of-the-art performance on multiple benchmark datasets.\n- Extensive experiments demonstrate its effectiveness in capturing nuanced aspects of AGI quality, including perceptual quality, prompt correspondence, and authenticity.\n- Cross-dataset validation confirms its strong generalizability.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/strawhatboy/M3-AGIQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-25"
     }
 ]

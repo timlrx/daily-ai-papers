@@ -1,0 +1,210 @@
+[
+    {
+        "title": "OmniAlign-V: Towards Enhanced Alignment of MLLMs with Human Preference",
+        "authors": "Jiaqiwang, Weiyun1025, UniverseCA, ChrisDing1105, PhoenixZ",
+        "link": "https://arxiv.org/abs/2502.18411",
+        "github_repo": "https://github.com/PhoenixZ810/OmniAlign-V",
+        "summary": "- This paper introduces OmniAlign-V, a 200K sample dataset designed to improve the alignment of Multimodal Large Language Models (MLLMs) with human preferences. \n- The dataset features diverse images, complex questions, and varied response formats, including natural images, infographics, and questions covering knowledge, inference, and creative tasks.\n- A novel image selection pipeline is used to ensure semantically rich images, and a post-refinement process enhances the quality and diversity of question-answer pairs.\n- Experiments demonstrate that fine-tuning MLLMs with OmniAlign-V, using Supervised Fine-Tuning (SFT) or Direct Preference Optimization (DPO), significantly improves human preference alignment while maintaining or enhancing performance on standard VQA benchmarks.\n-  A new human-evaluated benchmark, MM-AlignBench, is also introduced to assess MLLM alignment with human values.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/PhoenixZ810/OmniAlign-V"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "SpargeAttn: Accurate Sparse Attention Accelerating Any Model Inference",
+        "authors": "Haofeng Huang, surfingtomchen, hxi0408, Xiang-cd, jt-zhang",
+        "link": "https://arxiv.org/abs/2502.18137",
+        "github_repo": "https://github.com/thu-ml/SpargeAttn",
+        "summary": "- SpargeAttn is a new, training-free, sparse attention method designed to accelerate inference across various models, including language, image, and video generation, without sacrificing performance.\n- It uses a two-stage online filtering approach to identify and skip less important computations in the attention mechanism, first by predicting sparse blocks and then using a softmax-aware filter.\n- Experiments on models like Llama 3.1, CogVideoX, Mochi, Flux, and Stable Diffusion demonstrate that SpargeAttn achieves 2.5x to 5x speedup compared to existing dense and sparse attention models.\n- It consistently outperforms baseline sparse attention techniques in terms of both speed and the preservation of end-to-end performance metrics, like perplexity and video quality scores.\n- SpargeAttn also integrates with 8-bit quantization techniques (SageAttention) for further performance gains.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text-to-Video",
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/thu-ml/SpargeAttn"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "KV-Edit: Training-Free Image Editing for Precise Background Preservation",
+        "authors": "Yansong Tang, jewelshaw, shiyi0408, xilluill",
+        "link": "https://arxiv.org/abs/2502.17363",
+        "github_repo": null,
+        "summary": "- KV-Edit is a novel, training-free image editing method that leverages the key-value (KV) cache mechanism within Diffusion Transformers (DiTs) to maintain precise background consistency during image editing.\n- By preserving background tokens in the KV cache during the inversion process and only reconstructing the editing region during denoising, KV-Edit eliminates the need for complex training or extensive hyperparameter tuning.\n- The method introduces optional enhancements such as mask-guided inversion and reinitialization strategies to address residual information and further improve editing capabilities in object removal, and an inversion-free approach for memory efficiency.\n- Quantitative and qualitative evaluations on the PIE-Bench dataset demonstrate that KV-Edit outperforms existing training-free and even some training-based methods in background preservation while maintaining high image quality and text alignment.\n- User studies confirm that KV-Edit's accurate background preservation significantly contributes to overall user satisfaction.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/xilluill/KV-Edit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "ART: Anonymous Region Transformer for Variable Multi-Layer Transparent Image Generation",
+        "authors": "JianminBao, DongChen06, 131131yhx, 2JZ, yifanpu001",
+        "link": "https://arxiv.org/abs/2502.18364",
+        "github_repo": null,
+        "summary": "- This paper introduces the Anonymous Region Transformer (ART), a novel model for generating variable multi-layer transparent images from a global text prompt and an anonymous region layout.\n- ART employs a layer-wise region crop mechanism to reduce computational costs, enabling efficient generation of images with numerous layers, outperforming full attention approaches in speed and coherence.\n- Inspired by Schema theory, the anonymous region layout allows the model to autonomously determine visual token and text token alignment, unlike conventional semantic layouts, reducing manual labor.\n- ART incorporates a high-quality multi-layer transparent image autoencoder for joint encoding and decoding of transparency in variable multi-layer images.\n- User studies demonstrate ART's superior performance compared to LayerDiffuse and COLE in photorealistic and graphic design domains, respectively, showcasing improved quality and layer generation capabilities.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution",
+        "authors": "RishabhSingh021, gsynnaeve, lingming, JadeCopet, yuxiang630",
+        "link": "https://arxiv.org/abs/2502.18449",
+        "github_repo": null,
+        "summary": "- SWE-RL, a novel Reinforcement Learning (RL) approach, enhances Large Language Models (LLMs) for software engineering tasks by leveraging open-source software evolution data (e.g., pull requests) and a lightweight rule-based reward system.\n- The model Llama3-SWE-RL-70B, based on Llama 3 and trained with SWE-RL, achieves a 41.0% solve rate on the human-verified SWE-bench dataset, outperforming other medium-sized LLMs (<100B parameters) and demonstrating performance comparable to proprietary models like GPT-4.\n- The training process involves a novel data curation strategy that aggregates pull request data, predicts relevant files, and utilizes a specialized prompt template.\n- Evaluation reveals that SWE-RL significantly improves the model's reasoning capabilities for software engineering tasks, even generalizing to out-of-domain tasks like code reasoning, mathematics, and general language understanding.\n- This work establishes RL as a promising new direction to boost the performance of LLMs on real-world SE tasks by learning from massive software engineering data.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/swe-rl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "Unveiling Downstream Performance Scaling of LLMs: A Clustering-Based Perspective",
+        "authors": "Chenggang Li, Xiao Li, shenke18, Lucky2022, JerryXu98",
+        "link": "https://arxiv.org/abs/2502.17262",
+        "github_repo": null,
+        "summary": "- This paper introduces a Clustering-On-Difficulty (COD) framework for predicting the downstream performance of Large Language Models (LLMs).\n- COD addresses the challenges of emergent abilities and uneven task difficulty distributions by clustering tasks based on difficulty features and extrapolating performance on clusters exhibiting consistent scaling patterns.\n- A new performance scaling law, derived from the existing loss scaling law, is proposed for cluster-wise performance prediction.\n- COD maps subset accuracy predictions to full evaluation set performance using a calibrated mapping function.\n- Experimental results on eight benchmarks demonstrate that COD achieves state-of-the-art prediction accuracy, with an average error of 1.36% on a 70B parameter LLM.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "Scale-Distribution Decoupling: Enabling Stable and Effective Training of Large Language Models",
+        "authors": "Ya Wang, LLIXQ, xunzhou, Taoer, BryceZhuo",
+        "link": "https://arxiv.org/abs/2502.15499",
+        "github_repo": "https://github.com/kaihemo/SDD",
+        "summary": "- This paper proposes Scale-Distribution Decoupling (SDD), a novel technique for stabilizing the training of Large Language Models (LLMs), particularly Post-Norm Transformers, by decoupling the scale and distribution of weight matrices in fully-connected layers.\n- SDD normalizes activations and uses a learnable scaling vector to maintain well-conditioned gradients, preventing gradient explosion and dissipation.\n- Experiments on 1B parameter dense and 3.4B parameter MoE models show SDD improves training stability, convergence speed, and downstream performance across various benchmarks compared to Pre-Norm, Post-Norm, and DeepNorm.\n- SDD stabilizes training dynamics, achieves lower losses, and enhances generalization on tasks like MMLU, HellaSwag, and ARC-Challenge.\n- The method is lightweight, compatible with existing frameworks, and demonstrates improved robustness against hyperparameter perturbations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/kaihemo/SDD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "K-LoRA: Unlocking Training-Free Fusion of Any Subject and Style LoRAs",
+        "authors": "Qibin Hou, Zhen Li, oyzh2005",
+        "link": "https://arxiv.org/abs/2502.18461",
+        "github_repo": null,
+        "summary": "- K-LoRA, a training-free LoRA fusion approach, is proposed to combine subject and style LoRAs, improving personalized image generation by preserving style details and object characteristics.\n- K-LORA selectively merges LoRA layers using a Top-K selection process within each attention layer's forward pass, capturing the most influential style and content features.\n- A scaling factor is employed to prioritize object reconstruction in initial diffusion steps and style refinement in later steps, effectively balancing their contributions.\n- The proposed approach eliminates the need for retraining or manual hyperparameter tuning, offering user-friendly and efficient image stylization.\n- Experimental results demonstrate K-LORA's superior performance in preserving both style and content fidelity compared to existing methods like ZipLoRA and B-LoRA, confirmed through user studies and GPT-40 evaluations.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "WebGames: Challenging General-Purpose Web-Browsing AI Agents",
+        "authors": "Fraser, semitable, BiggieW, XanderJC, georgethomas",
+        "link": "https://arxiv.org/abs/2502.18356",
+        "github_repo": null,
+        "summary": "- Introduces WebGames, a benchmark suite with 50+ interactive challenges designed to evaluate general-purpose web-browsing AI agents.\n- Challenges range from fundamental browser interactions to cognitive tasks, workflow automation, and interactive entertainment, aiming to systematically test the limitations of current AI systems.\n- Eliminates external dependencies through a hermetic testing environment for reproducible evaluation with verifiable ground-truth solutions and uses a Set-of-Marks approach to allow models to interact with the webpage.\n- Evaluates leading vision-language models (GPT-4, Claude Computer-Use, Gemini-1.5-Pro, Qwen2-VL) against human performance, revealing a substantial capability gap (best AI system at 41.2% success vs. human 95.7%).\n- Publicly available at webgames.convergence.ai with a lightweight, client-side implementation and modular architecture.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/convergence-ai/webgames"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/convergence-ai/webgames"
+        ],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "Introducing Visual Perception Token into Multimodal Large Language Model",
+        "authors": "wxcTest, horseee, rp-yu",
+        "link": "https://arxiv.org/abs/2502.17425",
+        "github_repo": "https://github.com/yu-rp/VisualPerceptionToken",
+        "summary": "- This paper introduces the concept of Visual Perception Tokens, empowering Multimodal Large Language Models (MLLMs) to control their visual perception processes, addressing the limitations of current MLLMs' reliance on fixed perception pipelines.\n- Two types of tokens are proposed: Region Selection Tokens, which prompt the MLLM to re-encode cropped image regions relevant to a query, and Vision Re-Encoding Tokens, which use additional vision encoders (like DINO or SAM) and hidden states to refine visual features.\n- These tokens are integrated into the MLLM's vocabulary and generated through next-token prediction, enabling seamless integration with the standard training process.\n- Experimental results demonstrate that a 2B parameter model with Visual Perception Tokens outperforms a 7B model without these tokens by 20% on average across various VQA tasks, showcasing their effectiveness in handling spatial reasoning and fine-grained understanding.\n- Introducing these tokens to a 2B model led to an average performance improvement of 30.9%.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/yu-rp/VisualPerceptionToken"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "The Lottery LLM Hypothesis, Rethinking What Abilities Should LLM Compression Preserve?",
+        "authors": "Peijie Dong, Qian Wang, Xiang Liu, wenxinsiju, coolzhtang",
+        "link": "https://arxiv.org/abs/2502.17535",
+        "github_repo": null,
+        "summary": "- This blog post proposes the \"Lottery LLM Hypothesis,\" which suggests that a smaller \"lottery\" LLM can achieve performance comparable to a larger LLM when augmented with multi-step reasoning and external tools like knowledge retrieval and function calls.\n- The hypothesis challenges the current focus of LLM compression methods on preserving performance on simple tasks and perplexity, arguing that they overlook crucial abilities like long-context understanding, retrieval-augmented generation, and tool utilization.\n- The authors review recent advancements in LLMs and propose a recursive, divide-and-conquer reasoning algorithm that utilizes external knowledge, tools, and memory, enabling smaller LLMs to potentially achieve Turing completeness.\n- The blog post emphasizes the importance of preserving abilities such as retrieval from prompts, identification of required external resources, planning and scheduling, precise approximation of fundamental operations, and long-context reasoning in compressed LLMs.\n- The Lottery LLM Hypothesis offers a new perspective on LLM compression, suggesting that focusing on these essential abilities could lead to more efficient and capable compressed models that maintain performance on complex tasks with the assistance of external resources and multi-step reasoning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "AAD-LLM: Neural Attention-Driven Auditory Scene Understanding",
+        "authors": "Ashesh Mehta, Stephan Bickel, vchoudhari, susameddin, xi-j",
+        "link": "https://arxiv.org/abs/2502.16794",
+        "github_repo": null,
+        "summary": "- This paper introduces AAD-LLM (Auditory Attention-Driven LLM), a multimodal model integrating brain signals with an auditory LLM (Qwen2-Audio) to improve auditory scene understanding by aligning responses with listener perception.\n- AAD-LLM decodes listener attention from intracranial EEG (iEEG) to identify the attended speaker and uses this information to prioritize relevant speech during response generation using x-vector centroids and chain-of-thought prompting, as well as incorporating a speech separator based on Mamba-TasNet.\n- Objective metrics and subjective ratings on speaker description, speech transcription, summarization, and question answering demonstrate that AAD-LLM generates responses that are better aligned with human perception compared to existing auditory LLMs.\n- AAD-LLM with decoded attention performs close to the oracle attention setting (where the target speaker is known), showing the efficacy of the neural decoding process and the improvement stemming primarily from its attentional state.\n- The model's attentional capabilities generalize to untrained tasks, like speech translation, indicating broader applicability beyond the tasks used in training.",
+        "classification": [
+            "Multimodal",
+            "Audio",
+            "Automatic Speech Recognition",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://aad-llm.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct",
+            "https://huggingface.co/speechbrain/spkrec-xvect-voxceleb",
+            "https://huggingface.co/openai/whisper-large-v3",
+            "https://huggingface.co/microsoft/wavlm-base-plus-sv",
+            "https://huggingface.co/hexgrad/Kokoro-82M"
+        ],
+        "date": "2025-02-26"
+    },
+    {
+        "title": "Shakti-VLMs: Scalable Vision-Language Models for Enterprise AI",
+        "authors": "KartikAngadi, kruthika, SyedAbdul",
+        "link": "https://arxiv.org/abs/2502.17092",
+        "github_repo": null,
+        "summary": "- Introduces Shakti-VLM, a family of 1B and 4B parameter vision-language models designed for data efficiency in multimodal learning.\n- Leverages architectural innovations like QK-Normalization for attention stability, hybrid normalization, and enhanced positional encoding to achieve competitive results with fewer tokens than other large VLMs.\n- Employs a three-stage training process: decoder pretraining on extended text data, vision-language alignment with a frozen decoder, and full model fine-tuning with instruction tuning and RLHF.\n- Excels in document understanding, visual reasoning, OCR, and general multimodal reasoning, outperforming larger models like SmolVLM-2.25B on some tasks and demonstrating comparable performance to models with significantly more parameters.\n- Achieves strong benchmark performance despite using significantly fewer training tokens (487B for 1B model, 782B for 4B model) compared to other VLMs, making it an efficient solution for enterprise-scale multimodal applications.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-26"
+    }
+]

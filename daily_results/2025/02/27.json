@@ -1,0 +1,282 @@
+[
+    {
+        "title": "Kanana: Compute-efficient Bilingual Language Models",
+        "authors": "seopbo, Doohae, daniel-rl2, jiyeonham, bzantium",
+        "link": "https://arxiv.org/abs/2502.18934",
+        "github_repo": null,
+        "summary": "- This paper introduces Kanana, a series of bilingual (Korean and English) language models trained with a focus on computational efficiency.\n- The models range from 2.1B to 32.5B parameters and utilize techniques like staged pre-training, depth up-scaling, and pruning and distillation to reduce training costs.\n- Kanana models achieve state-of-the-art performance on Korean benchmarks (KMMLU, HAE-RAE) while maintaining competitive results on English benchmarks (MMLU).\n- Post-training methods like supervised fine-tuning and preference optimization enhance instruction following and user interaction capabilities.\n- The models are adapted for various downstream tasks like embedding generation, retrieval-augmented generation, and function calling, demonstrating their versatility.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/kakao/kanana"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/kakaocorp"
+        ],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "GHOST 2.0: generative high-fidelity one shot transfer of heads",
+        "authors": "Andrey Kuznetsov, Denis Dimitrov, Pavel Paramonov, Alexander Groshev, nastasia-y",
+        "link": "https://arxiv.org/abs/2502.18417",
+        "github_repo": "https://github.com/ai-forever/ghost-2.0",
+        "summary": "- GHOST 2.0 is a two-stage, one-shot, high-fidelity framework for head swapping in unconstrained images, consisting of an Aligner module for head reenactment and a Blender module for seamless integration.\n- The Aligner utilizes multiple encoders to extract source identity and target motion information at different scales, which is then fused and used to condition a StyleGAN-based generator for synthesizing a reenacted head.\n- The Blender module generates references for head color transfer and background inpainting to seamlessly stitch the generated head into the target background using a blending UNet.\n- This method surpasses existing head swapping techniques in quantitative metrics such as LPIPS, PSNR, and SSIM and qualitative user studies measuring identity preservation, motion transfer, and overall quality.\n- The model is trained on the VoxCeleb2 dataset and demonstrates robust handling of extreme poses and hair style differences between source and target images.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ai-forever/ghost-2.0"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "TheoremExplainAgent: Towards Multimodal Explanations for LLM Theorem Understanding",
+        "authors": "Jonathan Leung, AlvinYuVotee, KrishKrosh, chongcht, vinesmsuic",
+        "link": "https://arxiv.org/abs/2502.19400",
+        "github_repo": null,
+        "summary": "- This paper introduces TheoremExplainAgent, a novel agentic approach for generating multimodal theorem explanation videos that integrate symbolic derivations with structured motion graphics and voiceover narration.\n- The agent consists of a planner that creates a high-level video plan and a coding agent that generates Python animation scripts using Manim.\n- A new benchmark called TheoremExplainBench consisting of 240 theorems across multiple STEM disciplines is also proposed along with five automated evaluation metrics which are used to evaluate the generated videos.\n- Experimental results show that the 03-mini model achieves the highest success rate (93.8%) and overall score (0.77) on TheoremExplainBench, and agent-based approaches can generate videos up to 10 minutes long, outperforming agentless methods.\n- However, limitations persist in visual element layout and retrieval-augmented generation performance, suggesting areas for improvement in spatial reasoning and refinement of AI-generated animations.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://tiger-ai-lab.github.io/TheoremExplainAgent/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Can Large Language Models Detect Errors in Long Chain-of-Thought Reasoning?",
+        "authors": "Weixun Wang, Jiaheng Liu, Shilong Li, Yancheng He, zhangysk",
+        "link": "https://arxiv.org/abs/2502.19361",
+        "github_repo": null,
+        "summary": "- Introduces DeltaBench, a dataset designed to evaluate the ability of large language models (LLMs) to detect errors in long chain-of-thought (CoT) reasoning.\n- DeltaBench includes long CoTs generated by various models across diverse reasoning tasks, annotated with section-level labels for error analysis.\n- The study reveals that existing LLMs and process reward models struggle to effectively identify errors in long CoTs, with the best-performing model achieving an F1-score of only 40.8%.\n- Chain-of-thought prompting methods do not significantly improve error detection performance compared to other models.\n- The research highlights the limitations of existing models in critiquing long CoT reasoning and emphasizes the need for further research in this area.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/OpenStellarTeam/DeltaBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Agentic Reward Modeling: Integrating Human Preferences with Verifiable Correctness Signals for Reliable Reward Systems",
+        "authors": "Bin Xu, Zijun Yao, Xiaozhi Wang, Yunjia Qi, Hao Peng",
+        "link": "https://arxiv.org/abs/2502.19328",
+        "github_repo": "https://github.com/THU-KEG/Agentic-Reward-Modeling",
+        "summary": "- This paper proposes agentic reward modeling, a novel reward system that integrates human preferences with verifiable correctness signals to enhance the reliability of reward models for large language models (LLMs).\n- The authors introduce REWARDAGENT, a reward agent that combines human preference rewards from existing reward models with two key verifiable signals: factuality and instruction-following.\n- REWARDAGENT employs a router to select appropriate verification agents, verification agents to assess different aspects of response correctness, and a judger to integrate verification scores and human preferences.\n- Experimental results on reward model benchmarks and real-world downstream tasks demonstrate that REWARDAGENT significantly outperforms existing reward models and LLMs used as reward models.\n- The authors further show that LLMs trained with DPO using REWARDAGENT-constructed preference pairs achieve superior performance on various NLP benchmarks compared to those trained with conventional reward models.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THU-KEG/Agentic-Reward-Modeling"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Language Models' Factuality Depends on the Language of Inquiry",
+        "authors": "Hamid Palangi, Kumar Ayush, Kumar Tanmay, ayush1801, AggarwalTushar",
+        "link": "https://arxiv.org/abs/2502.17955",
+        "github_repo": null,
+        "summary": "- This research paper introduces a new benchmark dataset and evaluation framework to assess the factual consistency and cross-lingual knowledge transferability of multilingual language models (LLMs).\n- The benchmark comprises 10,000 country-related facts across 13 languages, encompassing high-, medium-, and low-resource languages, and evaluates LMs on factual recall, in-context recall, and counter-factual context adherence.\n- Three novel metrics\u2014Factual Recall Score (FRS), Knowledge Transferability Score (KTS), and Cross-Lingual Factual Knowledge Transferability (X-FaKT) Score\u2014are proposed to quantify factual recall and knowledge transferability across different languages.\n- Experimental results reveal that LLMs struggle to transfer factual knowledge across languages, often exhibiting inconsistent performance sensitive to the language of inquiry, with larger model sizes and higher-resource languages generally correlating with better performance.\n- The findings highlight the need for LMs to recognize language-specific factual reliability and leverage the most trustworthy information across languages for improved cross-lingual generalization.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Can Language Models Falsify? Evaluating Algorithmic Reasoning with Counterexample Creation",
+        "authors": "Matthias Bethge, Jonas Geiping, Ponnurangam Kumaraguru, Shashwat Goel, Shiven Sinha",
+        "link": "https://arxiv.org/abs/2502.19414",
+        "github_repo": null,
+        "summary": "- This paper introduces REFUTE, a benchmark designed to evaluate the ability of Language Models (LMs) to generate counterexamples, focusing on algorithmic problem-solving.\n- REFUTE consists of problems and incorrect solutions from programming competitions where human experts have successfully crafted counterexamples. \n- The benchmark dynamically updates with recent problems to minimize data leakage, and employs an automated pipeline to filter out samples where finding counterexamples is trivial. \n- Experiments reveal that even state-of-the-art reasoning LMs struggle to create valid counterexamples, achieving less than 9% success rate, significantly lagging behind their solution generation abilities.\n- This work highlights the gap between solving algorithmic problems and verifying the correctness of solutions, and emphasizes the need for benchmarks focused on testing the falsification abilities of LMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Towards an AI co-scientist",
+        "authors": "Anil Palepu, Tao Tu, Alexander Daryin, Wei-Hung Weng, Juraj Gottweis",
+        "link": "https://arxiv.org/abs/2502.18864",
+        "github_repo": null,
+        "summary": " - This paper introduces an AI co-scientist, a multi-agent system built on Google's Gemini 2.0, designed to assist scientists in generating novel research hypotheses and proposals. \n- The system employs a generate, debate, and evolve approach, inspired by the scientific method and accelerated by scaling test-time compute. \n- The AI co-scientist's performance was validated across three biomedical areas: drug repurposing, novel target discovery, and explaining mechanisms of bacterial evolution. \n- Automated evaluations and a small-scale evaluation with domain experts demonstrate the effectiveness of test-time compute in enhancing hypothesis quality and the overall system's ability to generate high-quality hypotheses, and produce novel results. \n- End-to-end validation of the co-scientist-generated hypotheses across three biomedical topics suggests the potential of the AI co-scientist to augment biomedical and scientific discovery.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "VEM: Environment-Free Exploration for Training GUI Agent with Value Environment Model",
+        "authors": "Lingrui Mei, Lu Wang, Jiani Zheng, vyokky, keanudicap",
+        "link": "https://arxiv.org/abs/2502.18906",
+        "github_repo": null,
+        "summary": "- The paper introduces VEM (Value Environment Model), an environment-free reinforcement learning framework for training GUI agents.\n- VEM predicts state-action values directly from offline data using a pretrained model, avoiding costly environment interactions and enhancing resilience to UI changes.\n- The framework operates in two stages: pretraining VEM to estimate action utilities and guiding policy exploration with frozen VEM signals.\n- Experiments on Android-in-the-Wild benchmarks demonstrate that VEM achieves state-of-the-art performance, outperforming environment-free baselines and matching environment-based approaches without interaction costs.\n- The method enhances sample efficiency and stability in training GUI agents by decoupling value estimation from policy optimization.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/GUI-Agent-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Plutus: Benchmarking Large Language Models in Low-Resource Greek Finance",
+        "authors": "Polydoros Giannouris, Efstathia Soufleri, Triantafillos Papadopoulos, Xueqing Peng, jiminHuang",
+        "link": "https://arxiv.org/abs/2502.18772",
+        "github_repo": null,
+        "summary": "- This paper introduces Plutus-ben, the first Greek financial evaluation benchmark, and Plutus-8B, a pioneering Greek financial large language model (LLM).\n- Plutus-ben covers five key financial NLP tasks: numeric and textual named entity recognition (NER), question answering, abstractive summarization, and topic classification, supported by three new datasets (GRFinNUM, GRFinNER, GRFinQA) annotated by expert native Greek speakers and augmented with two existing resources.\n- Plutus-8B, based on Llama-Krikri-8B and fine-tuned with a novel instruction dataset (Plutus-instruction), demonstrates state-of-the-art performance on Plutus-ben, outperforming existing LLMs, including GPT-4, by 15.38%.\n- The evaluation reveals that Greek financial NLP remains challenging due to linguistic complexities and domain-specific terminology, highlighting the need for language and domain-specific adaptation.\n- All benchmark data, code, and model are publicly released to foster reproducible research and advance Greek financial NLP, promoting broader multilingual inclusivity in finance.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Token Classification",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/TheFinAI/plutus-benchmarking-greek-financial-llms-67bc718fb8d897c65f1e87db",
+            "https://huggingface.co/spaces/TheFinAI/plutus-8B-instruct",
+            "https://huggingface.co/spaces/TheFinAI/open_greek_finance_llm_leaderboard"
+        ],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Distill Any Depth: Distillation Creates a Stronger Monocular Depth Estimator",
+        "authors": "Ying Cui, Ruibo Li, Hongji Li, Dongyan Guo, Xiankang He",
+        "link": "https://arxiv.org/abs/2502.19204",
+        "github_repo": null,
+        "summary": "- This paper introduces Cross-Context Distillation, a novel framework to improve pseudo-label distillation for zero-shot monocular depth estimation (MDE).\n- The method addresses limitations of global normalization in pseudo-label distillation by combining local and global depth cues using a hybrid local-global approach.\n- It leverages a multi-teacher distillation framework, incorporating predictions from models trained on diverse datasets and architectures like GenPercept and DepthAnythingv2, to enhance the quality and robustness of pseudo-labels.\n- Experimental results on benchmark datasets like NYUv2, KITTI, ETH3D, ScanNet, and DIODE demonstrate state-of-the-art performance in zero-shot MDE.\n- Qualitative results show the model's ability to generate fine-grained details and preserve accurate relative depth relationships, producing detailed and reliable depth predictions.",
+        "classification": [
+            "Depth Estimation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://distill-any-depth-official.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "AISafetyLab: A Comprehensive Framework for AI Safety Evaluation and Improvement",
+        "authors": "Xijie Huang, Junxiao Yang, Leqi Lei, Zhexin Zhang, LLLeo612",
+        "link": "https://arxiv.org/abs/2502.16776",
+        "github_repo": "https://github.com/thu-coai/AISafetyLab",
+        "summary": "- AISafetyLab is introduced as a unified framework and toolkit designed for evaluating and improving the safety of AI models, particularly Large Language Models (LLMs).\n- It integrates various attack, defense, and evaluation methodologies, featuring 13 attack methods, 16 defense strategies (including training-based and inference-time techniques), and multiple evaluation metrics.\n- The framework offers a modular design, extensive model support (local and API-based), and great extensibility for future development and integration of new methods.\n- Empirical studies conducted on Vicuna using AISafetyLab provide insights into the comparative effectiveness of different attack and defense strategies, revealing both strengths and limitations of current methods. \n- The open-source availability of AISafetyLab aims to foster community contributions and advancements in AI safety research.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/thu-coai/AISafetyLab"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/thu-coai/AISafetyLab_Datasets"
+        ],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "Project Alexandria: Towards Freeing Scientific Knowledge from Copyright Burdens via LLMs",
+        "authors": "Andreas Hochlehnert, Tawsif Ahmed, Ameya Prabhu, Gollam Rabby, Christoph Schuhmann",
+        "link": "https://arxiv.org/abs/2502.19413",
+        "github_repo": null,
+        "summary": " - This paper introduces Project Alexandria, a new initiative to democratize access to scientific knowledge by extracting factual information from copyrighted research papers using LLMs.\n- The core contribution is the development of Knowledge Units (KUs), a structured data format representing scientific facts, entities, and relationships without stylistic content.\n- Legal defensibility is ensured through compliance with German copyright law and US Fair Use doctrine, focusing on extracting factual information only.\n- Experimental evidence demonstrates that KUs preserve approximately 95% of factual knowledge, as measured by MCQ performance across four research domains.\n- Open-source tools are provided to facilitate the creation and use of KUs, supporting the vision of an open and inclusive global scientific ecosystem.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/open-psi/project-alexandria"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "BIG-Bench Extra Hard",
+        "authors": "Chrysovalantis Anastasiou, John Palowitch, Hritik Bansal, Mehran Kazemi, baharefatemi",
+        "link": "https://arxiv.org/abs/2502.19187",
+        "github_repo": "https://github.com/google-deepmind/bbeh",
+        "summary": "- This paper introduces BIG-Bench Extra Hard (BBEH), a new benchmark designed to evaluate advanced reasoning capabilities in LLMs.\n- BBEH builds upon the existing BIG-Bench Hard (BBH) benchmark by replacing each of its 23 tasks with a novel, more challenging counterpart, probing similar reasoning skills but with increased difficulty.\n- The benchmark tasks cover a diverse range of reasoning skills, from many-hop reasoning, error identification, and long-context processing, to going against strong priors and causal understanding.\n- Initial evaluations on several state-of-the-art LLMs, including general-purpose and specialized reasoning models, reveals that BBEH presents a significant challenge, with the best models achieving only 9.8% and 44.8% harmonic mean accuracy, respectively. \n- This highlights the substantial room for improvement in robust general reasoning capabilities of LLMs.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/google-deepmind/bbeh"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "CritiQ: Mining Data Quality Criteria from Human Preferences",
+        "authors": "Zhiheng Xi, Tianyi Liang, Qipeng Guo, Kai Lv, KYLN24",
+        "link": "https://arxiv.org/abs/2502.19279",
+        "github_repo": null,
+        "summary": "- CritiQ, a novel data selection method, automatically mines criteria from human preferences for data quality with only ~30 human-annotated pairs and performs efficient data selection.\n- CritiQ Flow, the main component, employs a manager agent to evolve quality criteria and worker agents to make pairwise judgments.\n- A knowledge base extracts quality criteria from previous work to boost CritiQ Flow.\n- CritiQ Scorer is trained to give quality scores and perform data selection.\n- Continual pretraining experiments with Llama 3.1 models show improved performance on downstream tasks compared to uniform sampling.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/KYLN24/CritiQ"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets"
+        ],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "MolSpectra: Pre-training 3D Molecular Representation with Multi-modal Energy Spectra",
+        "authors": "Qiang Liu, Deli Zhao, Yu Rong, Shaozhen Liu, AzureLeon1",
+        "link": "https://arxiv.org/abs/2502.16284",
+        "github_repo": null,
+        "summary": "- MolSpectra, a new framework for pre-training 3D molecular representations, leverages multi-modal energy spectra, incorporating quantum mechanics knowledge into molecular representations.\n- It introduces SpecFormer, a multi-spectrum Transformer encoder trained with a masked patch reconstruction objective to capture intra- and inter-spectrum correlations.\n- A contrastive objective aligns 3D structure and spectra representations, enhancing the 3D encoder's understanding of spectral features without requiring spectral data during downstream tasks.\n- Evaluation on public benchmarks shows MolSpectra surpasses existing methods in molecular property prediction and dynamics modeling, achieving state-of-the-art performance in 8 out of 12 properties on QM9 and outperforming existing denoising methods on MD17.\n- This approach shows the effectiveness of incorporating molecular spectra into pre-training, going beyond the limitations of classical mechanics descriptions in previous work.",
+        "classification": [
+            "Graph Machine Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/AzureLeon1/MolSpectra"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-27"
+    },
+    {
+        "title": "PosterSum: A Multimodal Benchmark for Scientific Poster Summarization",
+        "authors": "Frank Keller, Pasquale Minervini, rohitsaxena",
+        "link": "https://arxiv.org/abs/2502.17540",
+        "github_repo": null,
+        "summary": "- Introduced POSTERSUM, a new benchmark dataset with 16,305 scientific poster images and corresponding research paper abstracts, designed for evaluating multimodal scientific poster summarization.\n- Benchmarked state-of-the-art Multimodal Large Language Models (MLLMs) on POSTERSUM, demonstrating their limitations on complex scientific posters.\n- Proposed SEGMENT & SUMMARIZE, a hierarchical method that first segments the poster image into coherent regions, generates localized summaries for each region using an MLLM, and then combines them with a text-based LLM to create a final summary.\n- Achieved state-of-the-art performance on POSTERSUM, surpassing closed and open-source MLLMs by a significant margin, with a 3.14% improvement in ROUGE-L score, demonstrating the effectiveness of the hierarchical approach.\n- Released the dataset and code to promote research in multimodal scientific poster understanding and encourage the development of robust models capable of summarizing complex, information-dense scientific content.",
+        "classification": [
+            "Multimodal",
+            "Summarization",
+            "Computer Vision",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "rohitsaxena/PosterSum"
+        ],
+        "date": "2025-02-27"
+    }
+]

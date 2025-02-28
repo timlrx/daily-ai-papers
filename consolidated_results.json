@@ -22045,5 +22045,260 @@
             "rohitsaxena/PosterSum"
         ],
         "date": "2025-02-27"
+    },
+    {
+        "title": "Self-rewarding correction for mathematical reasoning",
+        "authors": "Nan Jiang, Lichang Chen, Chenlu Ye, Hanning Zhang, Wei Xiong",
+        "link": "https://arxiv.org/abs/2502.19613",
+        "github_repo": null,
+        "summary": "- This paper introduces a self-rewarding reasoning framework for Large Language Models (LLMs) that enables autonomous error detection and self-correction in mathematical reasoning without external reward models.\n- The two-stage framework employs sequential rejection sampling to create synthetic training data containing self-rewarding and self-correction examples, which is used in the instruction fine-tuning phase.\n- It then refines these behaviors using reinforcement learning with a rule-based reward signal during the reinforcement learning phase.\n- Experiments on Llama-3 and Qwen-2.5 demonstrate superior performance over intrinsic self-correction methods and comparable results to systems with external reward models.\n- Results show that self-rewarding correction improves final accuracy and efficiency in test-time compute scaling compared to other baselines.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/RLHFlow/Self-rewarding-reasoning-LLM"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/AI-MO/NuminaMath-7B-COT"
+        ],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "MedVLM-R1: Incentivizing Medical Reasoning Capability of Vision-Language Models (VLMs) via Reinforcement Learning",
+        "authors": "Jiayuan Zhu, Fenglin Liu, Junde Wu, Jiazhen Pan, che111",
+        "link": "https://arxiv.org/abs/2502.19634",
+        "github_repo": null,
+        "summary": "- MedVLM-R1, a novel 2B parameter medical Vision-Language Model (VLM), is introduced, designed for enhanced reasoning capabilities in radiological Visual Question Answering (VQA) tasks by leveraging Group Relative Policy Optimization (GRPO).\n- Unlike conventional Supervised Fine-Tuning (SFT) methods, MedVLM-R1 employs reinforcement learning, incentivizing the model to generate natural language reasoning alongside final answers, thus improving transparency and trustworthiness.\n- Demonstrating superior generalization, MedVLM-R1 achieves robust performance on out-of-distribution data (MRI \u2192 CT/X-ray), surpassing larger models like Qwen2VL-72B and Huatuo-GPT-Vision-7B trained on significantly more data.\n- Trained on only 600 samples, MedVLM-R1 boosts accuracy from 55.11% to 78.22% across MRI, CT, and X-ray benchmarks, outperforming significantly larger models trained on over a million samples.\n- By combining medical image analysis with explicit reasoning generation, MedVLM-R1 marks a significant advancement towards trustworthy and interpretable AI in clinical settings.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+        "authors": "Tianyi Zhou, Ziyue Li, Zhongyang Li",
+        "link": "https://arxiv.org/abs/2502.20395",
+        "github_repo": null,
+        "summary": "- This paper introduces R2-T2 (Re-Routing in Test-Time), a novel test-time optimization method for Multimodal Mixture-of-Experts (MoE) models that dynamically adjusts routing weights without requiring additional training.\n- R2-T2 addresses the suboptimality of pre-trained routers by leveraging information from similar samples in a reference set to refine the routing weights for test samples, thereby enhancing expert selection.\n- Three strategies for implementing R2-T2 are proposed including neighborhood gradient descent, kernel regression and mode finding.\n- Extensive experiments across various benchmarks demonstrate substantial improvements over strong baselines including larger VLM models.\n- Analysis shows that R2-T2 effectively refines routing, boosting correct predictions and mitigating the original router's over-reliance on a single expert.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/R2-T2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+        "authors": "Gilsinia Lopez, Gaokai Zhang, Siyuan Wang, Li Lyna Zhang, Ning Shang",
+        "link": "https://arxiv.org/abs/2502.20082",
+        "github_repo": "https://github.com/microsoft/LongRoPE",
+        "summary": "- LongRoPE2 is a novel approach that extends the effective context window of pre-trained large language models (LLMs) while preserving performance on the original shorter context window.\n- It achieves this through three contributions: (1) identifying insufficient training in higher RoPE dimensions as a key contributor to out-of-distribution (OOD) issues, (2) developing an effective RoPE rescaling algorithm using evolutionary search guided by \"needle-driven\" perplexity, and (3) employing mixed context window training to adapt model weights to rescaled RoPE for long sequences while maintaining short-context performance with original RoPE.\n- LongRoPE2 extends LLaMA3-8B to a 128K effective context length while retaining over 98.5% of short-context performance using only 10B training tokens \u2014 80x fewer than Meta's approach, which fails to achieve the same effective context length.\n- It outperforms existing methods like YaRN, NTK, and LongRoPE on long context benchmarks like RULER and real-world datasets like LOFT, InfiniteBench, and LongBench.\n- Additionally, LongRoPE2 maintains strong performance on standard short-context benchmarks, minimizing the performance drop often observed in context window extension methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/LongRoPE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "FINEREASON: Evaluating and Improving LLMs' Deliberate Reasoning through Reflective Puzzle Solving",
+        "authors": "Chaoqun Liu, Hou Pong Chan, Hao Zhang, Weiwen Xu, Guizhen Chen",
+        "link": "https://arxiv.org/abs/2502.20238",
+        "github_repo": null,
+        "summary": "- Introduces FINEREASON, a logic-puzzle benchmark designed for granular evaluation of Large Language Models' (LLMs) reasoning capabilities, focusing on intermediate steps rather than just final-answer accuracy.\n- Proposes two evaluation tasks: *state checking*, predicting the solvability of a given state, and *state transition*, determining the next valid move in the puzzle-solving process.\n- Employs a tree-based decomposition of logic puzzles into atomic steps, allowing rigorous validation of the intermediate states and transitions.\n- Demonstrates that models trained on FINEREASON's state-checking and transition tasks show improved performance on mathematical reasoning benchmarks by up to 5.1% on GSM8K.\n- Reveals that reasoning-oriented models (OpenAI-o1 and Gemini-2.0-Flash-Thinking) significantly outperform general-purpose models on FINEREASON, but even leading reasoning models have substantial limitations in deep reasoning tasks, particularly in state transition accuracy.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/DAMO-NLP-SG/FineReason"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "CODESYNC: Synchronizing Large Language Models with Dynamic Code Evolution at Scale",
+        "authors": "Kaiyue Qiu, Zhaoyang Chu, Chenlong Wang, yxy0807, zx10086",
+        "link": "https://arxiv.org/abs/2502.16645",
+        "github_repo": "https://github.com/Lucky-voyage/Code-Sync",
+        "summary": "- This paper introduces CODESYNC, a data engine for identifying outdated code patterns and collecting real-time code knowledge updates from Python third-party libraries.\n- Based on CODESYNC, the authors develop CODESYNCBENCH, a benchmark for assessing LLMs' ability to stay synchronized with code evolution, covering real-world updates for 220 APIs from six Python libraries.\n- The benchmark includes 3,300 test cases across three evaluation tasks (code completion, error correction, and multiple-choice questions) and an update-aware instruction tuning dataset with 2,200 training examples.\n- Experimental results on 14 state-of-the-art LLMs show that they struggle with dynamic code evolution, even with advanced knowledge updating methods.\n- The benchmark and dataset aim to facilitate the development of real-time code knowledge updating in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Lucky-voyage/Code-Sync"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "Lean and Mean: Decoupled Value Policy Optimization with Global Value Guidance",
+        "authors": "Zhixu Li, Pu Zhao, Lu Wang, Chenghua Huang, keanudicap",
+        "link": "https://arxiv.org/abs/2502.16944",
+        "github_repo": null,
+        "summary": "- This paper introduces Decoupled Value Policy Optimization (DVPO), a new framework for Reinforcement Learning from Human Feedback (RLHF) that replaces traditional reward modeling with a pre-trained global value model (GVM).\n- The GVM in DVPO predicts token-level return-to-go estimates and guides policy optimization, decoupling value and policy training to reduce computational complexity and instability.\n- DVPO reduces GPU memory usage by 40% and training time by 35% compared to conventional RLHF, while maintaining performance comparable to state-of-the-art methods like PPO.\n- Experiments on benchmarks such as MT-Bench, Alpaca-Eval, and Arena-Hard show DVPO outperforms efficient RLHF methods (e.g., DPO) and matches or exceeds PPO performance across different model sizes.\n- Theoretical analysis demonstrates that pretraining a reward model and a global value model are functionally interchangeable in offline RLHF where no new ground-truth rewards are available.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+            "https://huggingface.co/meta-llama/Llama-3.2-3B",
+            "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+            "https://huggingface.co/openbmb/UltraRM-13b",
+            "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+            "https://huggingface.co/ziniuli/Mistral-7B-ReMax-v0.1"
+        ],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "UniTok: A Unified Tokenizer for Visual Generation and Understanding",
+        "authors": "Xin Yu, Jihan Yang, Junfeng Wu, Yi Jiang, Chuofan Ma",
+        "link": "https://arxiv.org/abs/2502.20321",
+        "github_repo": "https://github.com/FoundationVision/UniTok",
+        "summary": "- UniTok, a novel discrete visual tokenizer, is introduced to bridge the gap between visual generation and understanding tasks by encoding fine-grained details for generation while capturing high-level semantics for understanding.\n- The paper argues that the performance bottleneck of existing unified tokenizers stems from the limited representational capacity of discrete tokens rather than conflicting learning objectives.\n- To address this limitation, UniTok employs multi-codebook quantization, which divides vector quantization with independent sub-codebooks, effectively scaling the latent code space and enhancing representation expressiveness.\n- UniTok incorporates attention factorization using multi-head attention modules to preserve richer semantics during token factorization.\n- Experimental results demonstrate that UniTok achieves state-of-the-art performance in both generation and understanding tasks, as evidenced by a 0.38 rFID on ImageNet reconstruction and 78.6% zero-shot accuracy, exceeding existing unified tokenizers and even outperforming some domain-specific models.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Visual Question Answering",
+            "Image Feature Extraction",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/FoundationVision/UniTok"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "FlexiDiT: Your Diffusion Transformer Can Easily Generate High-Quality Samples with Less Compute",
+        "authors": "Markos Georgopoulos, Jonas Kohler, Yeongmin Kim, Gregor Bachmann, Sotiris Anagnostidis",
+        "link": "https://arxiv.org/abs/2502.20126",
+        "github_repo": null,
+        "summary": "- FlexiDiT, a novel framework, allows Diffusion Transformers (DiTs) to generate images and videos using less compute by dynamically adjusting the patch size during the denoising process.\n- By processing samples as different token sequences, FlexiDiT controls the compute budget per denoising step.\n- FlexiDiT reduces FLOPs by over 40% for image generation and up to 75% for video generation without compromising quality.\n- The framework is adaptable across different modalities (images, videos, and potentially audio and 3D models) and conditioning methods (class-conditioned and text-conditioned).\n- Experiments show that strategically allocating less compute to certain steps, based on image characteristics at different denoising stages, yields computational savings without affecting performance.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Unconditional Image Generation",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "Multimodal Representation Alignment for Image Generation: Text-Image Interleaved Control Is Easier Than You Think",
+        "authors": "Haozhe Zhao, Weichu Xie, Wenhao Chai, Shuai Bai, Liang Chen",
+        "link": "https://arxiv.org/abs/2502.20172",
+        "github_repo": "https://github.com/chenllliang/DreamEngine",
+        "summary": "- DREAM ENGINE, a novel framework for multimodal image generation with text-image interleaved control, is introduced, which leverages Large Multimodal Models (LMMs) like QwenVL and a Diffusion Transformer (DiT) backbone like Stable Diffusion v3.5.\n- The architecture replaces traditional text encoders with an LMM and a lightweight projector layer for encoding text-image interleaved controls, employing a two-stage training process involving joint text-image alignment and multimodal instruction tuning.\n- It effectively generates images from complex, interwoven text and image instructions, including merging concepts from different images and handling object-driven compositional tasks. \n- Evaluation on the GenEval benchmark shows a competitive overall score of 0.69, matching state-of-the-art models like SDv3.5 (0.71) and surpassing FLUX.1 Dev (0.66) and showing superior image reconstruction performance.\n- The model exhibits emergent capabilities, like synthesizing concepts from different input images, highlighting the potential of LMMs as unified multimodal instruction encoders.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/chenllliang/DreamEngine"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "NeoBERT: A Next-Generation BERT",
+        "authors": "Sarath Chandar, Mariam El Mezouar, Quentin Fournier, Lola Le Breton",
+        "link": "https://arxiv.org/abs/2502.19587",
+        "github_repo": null,
+        "summary": "- This paper introduces NeoBERT, a next-generation bidirectional encoder model for Natural Language Processing (NLP) tasks.\n- NeoBERT integrates state-of-the-art advancements in architecture (optimal depth-to-width ratio, RoPE positional embeddings, SwiGLU activation, RMSNorm), data (RefinedWeb), and pre-training methodologies (extended context length of 4096 tokens, two-stage pre-training).\n- With a compact size of 250 million parameters, NeoBERT achieves state-of-the-art results on the MTEB benchmark, outperforming larger models such as BERTlarge and ROBERTalarge, under identical fine-tuning conditions.\n- It also demonstrates superior performance on the GLUE benchmark, comparable to existing large models while being significantly smaller.\n- The authors release all code, data, checkpoints, and training scripts to facilitate further research and adoption.",
+        "classification": [
+            "Natural Language Processing",
+            "Sentence Similarity",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/chandar-lab/NeoBERT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/chandar-lab/NeoBERT"
+        ],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "Mobius: Text to Seamless Looping Video Generation via Latent Shift",
+        "authors": "Xiaodong Cun, Yong Zhang, Bo Liu, Jianfei Yuan, Xiuli Bi",
+        "link": "https://arxiv.org/abs/2502.20307",
+        "github_repo": "https://github.com/YisuiTT/Mobius",
+        "summary": "- Mobius is a novel method for generating seamlessly looping videos from text descriptions without any training or user annotations.\n- It leverages a pre-trained latent video diffusion model (CogVideoX) and introduces a latent shift strategy, where a latent cycle is constructed and shifted during each denoising step for maintaining temporal consistency.\n- A frame-invariant decoding method and Rotary Position Embedding (RoPE) interpolation are also proposed to improve visual quality and longer video generation.\n- Experimental results demonstrate that Mobius outperforms existing frame interpolation methods and a latent mixing baseline, achieving better visual quality, text-video alignment, and motion dynamics.\n- The method also shows promising results for longer video generation tasks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/YisuiTT/Mobius"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+        "authors": "Yanzhen Zou, Xiangxin Meng, Pengfei Gao, Chao Peng, mizersy",
+        "link": "https://arxiv.org/abs/2502.20127",
+        "github_repo": null,
+        "summary": "- This paper introduces SoRFT (Subtask-oriented Reinforced Fine-Tuning), a novel training approach to enhance the issue-resolving capability of Large Language Models (LLMs).\n- SoRFT decomposes issue resolving into structured subtasks: file localization, function localization, line localization, and code edit generation, and uses a two-stage training process.\n- The first stage involves rejection-sampled supervised fine-tuning using Chain of Thought (CoT) data filtered with ground truth.\n- The second stage employs rule-based reinforcement learning leveraging Proximal Policy Optimization (PPO) with ground-truth-based rewards.\n- Experimental results on SWE-Bench Verified and SWE-Bench Lite show SoRFT-trained LLMs achieve state-of-the-art performance among open-source models, resolving 21.4% of issues on SWE-Bench Verified with SoRFT-Qwen-7B.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenDevin/CodeQwen1.5-7B-OpenDevin"
+        ],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting",
+        "authors": "Song-Chun Zhu, Junfeng Ni, Ruijie Lu, Baoxiong Jia, Yu Liu",
+        "link": "https://arxiv.org/abs/2502.19459",
+        "github_repo": null,
+        "summary": "- ArtGS, a novel method for reconstructing interactable replicas of complex articulated objects from two-state multi-view images, leverages 3D Gaussians and introduces techniques for state alignment and part dynamics modeling.\n- It employs canonical Gaussians with coarse-to-fine initialization and a skinning-inspired part dynamics modeling module, improving part-mesh reconstruction and articulation learning.\n- ArtGS achieves state-of-the-art performance in joint parameter estimation and part mesh reconstruction on synthetic and real-world datasets, including a new benchmark for complex multi-part objects.\n- The approach significantly improves reconstruction quality and efficiency, particularly for multi-part articulated objects, and offers comprehensive analysis of design choices.\n- ArtGS addresses limitations of existing methods by connecting two input joint states through canonical Gaussian modeling, enabling mutually improved mesh reconstruction even in low-visibility states.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://articulate-gs.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
+    },
+    {
+        "title": "R1-T1: Fully Incentivizing Translation Capability in LLMs via Reasoning Learning",
+        "authors": "Hongyong Zeng, Yuanchang Luo, Shimin Tao, Yilun Liu, boommmmm",
+        "link": "https://arxiv.org/abs/2502.19735",
+        "github_repo": null,
+        "summary": "- R1-Translator (R1-T1) is a novel framework that uses reinforcement learning (RL) with human-aligned Chain-of-Thoughts (CoTs) to improve inference-time reasoning for general machine translation (MT).\n- The framework incorporates six common CoT patterns observed in human translation workflows, extending reasoning-based MT beyond specialized sub-tasks to diverse tasks and six languages.\n- R1-T1 uses a KL-constrained RL process to facilitate the discovery of new CoT trajectories and enable anti-forgetting adaptation for unseen translation scenarios.\n- Experimental results on the Flores-101 test set across 21 languages and 80 translation directions demonstrate consistent improvement, particularly in 15 languages unseen during training, while preserving general multilingual capabilities compared to plain supervised fine-tuning (SFT).\n- The approach addresses the limitations of existing methods by aligning CoTs with human strategies, enabling adaptability to new domains, and mitigating catastrophic forgetting.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-02-28"
     }
 ]

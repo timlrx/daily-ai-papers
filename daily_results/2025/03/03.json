@@ -1,0 +1,131 @@
+[
+    {
+        "title": "DeepSolution: Boosting Complex Engineering Solution Design via Tree-based Exploration and Bi-point Thinking",
+        "authors": "luyaojie, sanmusunrise, xuanang, yhycai, lzq2021",
+        "link": "https://arxiv.org/abs/2502.20730",
+        "github_repo": null,
+        "summary": "- This paper introduces SolutionRAG, a novel system designed for complex engineering solution design, addressing the gap in existing RAG research for this task.\n- SolutionRAG leverages a tree-based exploration approach, allowing for flexible improvement of solutions, moving from suboptimal to reliable designs by exploring different improvement directions through branching.\n- It employs a bi-point thinking mechanism, alternating between solution design and review during tree growth to ensure generated solutions meet all real-world constraints specified in the requirements.\n- A node evaluation and pruning mechanism is incorporated into SolutionRAG to enhance inference efficiency by prioritizing promising solution paths and helpful review comments.\n- Experimental results on the SolutionBench demonstrate that SolutionRAG achieves state-of-the-art performance, significantly outperforming deep reasoning models and existing RAG approaches.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Li-Z-Q/DeepSolution"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "Chain of Draft: Thinking Faster by Writing Less",
+        "authors": "Lingxiao Zhao, Wenhao Xie, DeBERTa, sileixu",
+        "link": "https://arxiv.org/abs/2502.18600",
+        "github_repo": null,
+        "summary": "- This paper introduces Chain of Draft (CoD), a new prompting strategy for Large Language Models (LLMs) that prioritizes concise and efficient reasoning.\n- Inspired by how humans use drafts to capture key ideas, CoD encourages LLMs to generate minimal intermediate reasoning outputs, contrasting with the verbose nature of Chain-of-Thought (CoT) prompting.\n- Experiments across arithmetic, common sense, and symbolic reasoning tasks demonstrate that CoD achieves comparable or better accuracy than CoT while significantly reducing token usage and latency.\n- In GSM8K, CoD achieved 91% accuracy with only 40 tokens, an 80% reduction compared to CoT's 200 tokens and a 76% latency decrease.\n- This suggests that CoD can make LLMs more practical for real-world applications by improving efficiency without compromising performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents",
+        "authors": "xpjandy, shihang, vickywu, lovesnowbest, autumncc",
+        "link": "https://arxiv.org/abs/2502.18017",
+        "github_repo": null,
+        "summary": "- Introduced ViDoSeek, a new benchmark dataset for visual document retrieval-augmented generation focusing on complex reasoning.\n- Proposed ViDoRAG, a multi-agent RAG framework incorporating iterative reasoning with seeker, inspector, and answer agents.\n- Employed a Gaussian Mixture Model (GMM)-based hybrid strategy for multimodal retrieval, combining visual and textual features.\n- Demonstrated state-of-the-art performance on ViDoSeek, outperforming baselines by over 10%.\n- Showed effectiveness in handling complex reasoning and diverse content types within visually rich documents.",
+        "classification": [
+            "Multimodal",
+            "Document Question Answering",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/ViDoRAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "SoS1: O1 and R1-Like Reasoning LLMs are Sum-of-Square Solvers",
+        "authors": "Coralia Cartis, Wenqi Zhu, Kechen Li, Shiweiliuiiiiiii, jitianbo",
+        "link": "https://arxiv.org/abs/2502.20545",
+        "github_repo": null,
+        "summary": "- This paper introduces SoS-1K, a dataset of approximately 1,000 polynomials designed to evaluate the reasoning capabilities of LLMs in solving Sum-of-Squares (SoS) problems, a computationally intractable mathematical problem related to Hilbert's 17th problem.\n- The authors also present SoS-specialized reasoning instructions based on five progressively challenging criteria to guide LLMs in solving SoS problems. \n- Their evaluation shows that providing high-quality reasoning instructions significantly improves the accuracy of state-of-the-art LLMs in solving SoS problems, boosting performance by up to 21%.\n- Fine-tuning a 7B model (SoS-7B) on SoS-1K for 4 hours resulted in an accuracy of 70%, outperforming larger models like DeepSeek-V3 (671B) and GPT-40-mini while requiring significantly less computation time. \n- Further analysis suggests that while LLMs demonstrate an understanding of underlying mathematical concepts, they benefit from structured guidance and may exhibit shortcut behavior when tackling complex problems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Joe-2002/SoS1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids",
+        "authors": "Yuke Zhu, Linxi Fan, Kartik Sachdev, Toru Lin, jitendra1995",
+        "link": "https://arxiv.org/abs/2502.20396",
+        "github_repo": null,
+        "summary": "- This paper introduces a sim-to-real reinforcement learning approach for dexterous manipulation tasks on humanoid robots, using vision-based perception.\n- The approach utilizes a combination of techniques, including an automated real-to-sim tuning module for environment modeling, a generalized reward design scheme for contact-rich tasks, a divide-and-conquer distillation process for sample-efficient policy learning, and a mixture of sparse and dense object representations for bridging the sim-to-real perception gap.\n- The method is evaluated on a Fourier GR1 humanoid robot with multi-fingered hands, demonstrating successful sim-to-real transfer on tasks such as grasping, box lifting, and bimanual handover.\n- The learned policies exhibit generalization to unseen objects and robustness against force disturbances.\n- Ablation studies validate the effectiveness of each proposed technique.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://toruowo.github.io/recipe"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+        "authors": "kasikci, kojimano, jungok, kamahori",
+        "link": "https://arxiv.org/abs/2502.20583",
+        "github_repo": "https://github.com/efeslab/LiteASR",
+        "summary": "- LITEASR, a novel low-rank compression method for Automatic Speech Recognition (ASR) encoders, is introduced, which leverages low-rank properties of intermediate activations during inference.\n- The method uses Principal Component Analysis (PCA) with a small calibration dataset to approximate linear transformations by a chain of low-rank matrix multiplications and optimizes self-attention to operate in the reduced dimension.\n- Evaluated on Whisper large-v3, LITEASR reduces encoder size by ~40%, leading to a 1.4x speedup with minimal accuracy loss. \n- In other configurations, the encoder size is reduced by over 50%, matching Whisper medium's size but achieving better transcription accuracy. \n- The approach achieves Pareto-optimal balance between speed and accuracy, which paves the way for efficient ASR deployment.",
+        "classification": [
+            "Automatic Speech Recognition",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/efeslab/LiteASR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "Tell me why: Visual foundation models as self-explainable classifiers",
+        "authors": "Christian Lovis, Gianmarco Mengaldo, Mina Bjelogrlic, hturbe",
+        "link": "https://arxiv.org/abs/2502.19577",
+        "github_repo": "https://github.com/hturbe/proto-fm",
+        "summary": "- This paper introduces ProtoFM, a novel self-explainable image classification architecture that leverages frozen Visual Foundation Models (VFMs) and a lightweight, trainable head (approximately 1M parameters).\n- ProtoFM employs a prototypical architecture with specialized training objectives, including alignment and contrastive losses, to improve the quality and faithfulness of explanations.\n- The model achieves state-of-the-art classification performance on CUB and CARS datasets, outperforming existing prototypical methods and in some cases even surpassing the frozen VFM backbone with linear probing.\n- Evaluations demonstrate ProtoFM's superior interpretability across several metrics derived from the literature, addressing issues like spatial misalignment and semantic gaps often found in self-explainable models.\n- The efficient training process and ability to leverage powerful, pre-trained VFMs make ProtoFM a promising approach for interpretable image analysis in diverse domains, including specialized tasks like medical image classification.",
+        "classification": [
+            "Image Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/hturbe/proto-fm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-03"
+    },
+    {
+        "title": "HAIC: Improving Human Action Understanding and Generation with Better Captions for Multi-modal Large Language Models",
+        "authors": "Fuzheng Zhang, Yuanxing Zhang, Jingyun Hua, Xiao Wang, lwher1996",
+        "link": "https://arxiv.org/abs/2502.20811",
+        "github_repo": null,
+        "summary": "- This paper introduces a two-stage data annotation pipeline and two associated datasets (HAICTrain and HAICBench) to improve human action understanding and generation for Multi-modal Large Language Models (MLLMs).\n- The pipeline improves on existing video captioning methods by focusing on fine-grained details of human actions, including attributes to distinguish individuals, body movements, and interactions.\n- HAICTrain consists of 126K video-caption pairs, and HAICBench contains 500 human-annotated video-caption pairs and 1400 QA pairs.\n- Experimental results show that training with HAICTrain significantly improves human action understanding across four benchmarks.\n- Additionally, the refined captions also show improvements in text-to-video generation on MovieGenBench.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/KuaishouHAIC/HAIC"
+        ],
+        "date": "2025-03-03"
+    }
+]

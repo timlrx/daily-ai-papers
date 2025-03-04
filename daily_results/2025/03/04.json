@@ -1,0 +1,358 @@
+[
+    {
+        "title": "Visual-RFT: Visual Reinforcement Fine-Tuning",
+        "authors": "yhcao, sweetFruit, yuhangzang, Zery, ziyuliu",
+        "link": "https://arxiv.org/abs/2503.01785",
+        "github_repo": "https://github.com/Liuziyu77/Visual-RFT",
+        "summary": "- Introduces Visual Reinforcement Fine-Tuning (Visual-RFT), a novel approach for enhancing the visual perception and reasoning capabilities of Large Vision-Language Models (LVLMs) using reinforcement learning with verifiable rewards.\n- Visual-RFT employs a policy optimization algorithm, such as Group Relative Policy Optimization (GRPO), guided by task-specific, rule-based verifiable reward functions (e.g., Intersection over Union (IoU) for object detection).\n- Demonstrates superior performance compared to Supervised Fine-tuning (SFT) across diverse visual tasks, including few-shot image classification, open-vocabulary object detection, and reasoning grounding, especially in data-scarce scenarios.\n- Achieves significant improvements in few-shot learning, boosting accuracy by 24.3% in one-shot fine-grained image classification with limited samples, and exceeding SFT baselines in few-shot object detection on COCO and LVIS datasets.\n- Showcases advanced generalization ability by successfully transferring knowledge to novel and rare categories in open-vocabulary object detection, improving mAP by substantial margins on both COCO and LVIS benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Reinforcement Learning",
+            "Image Classification",
+            "Object Detection",
+            "Zero-Shot Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/Liuziyu77/Visual-RFT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Difix3D+: Improving 3D Reconstructions with Single-Step Diffusion Models",
+        "authors": "zgojcic, AnalMom, xrenaa, hturki, jayw",
+        "link": "https://arxiv.org/abs/2503.01774",
+        "github_repo": null,
+        "summary": "- DIFIX3D+ enhances 3D reconstruction and novel view synthesis using single-step diffusion models, improving quality in underconstrained areas.\n- The core is DIFIX, a fine-tuned single-step image diffusion model, acting as a neural enhancer during optimization and inference, fixing artifacts from NeRF/3DGS renderings.\n- It uses a progressive 3D update pipeline, refining the 3D model by iteratively distilling enhanced novel views back into the representation.\n- DIFIX3D+ achieves a 2x average improvement in FID score over baselines while preserving 3D consistency, demonstrating enhanced perceptual quality.\n- The real-time post-processing with DIFIX is over 10x faster than standard diffusion models, allowing efficient artifact removal during rendering.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs",
+        "authors": "vishravmsft, martincai, alonbenhaim, jianmin-ustc, atabakashfaqMSFT",
+        "link": "https://arxiv.org/abs/2503.01743",
+        "github_repo": null,
+        "summary": "- Phi-4-Mini and Phi-4-Multimodal are compact language and multimodal models, respectively, trained on curated web and synthetic data.\n- Phi-4-Mini, a 3.8B parameter model, outperforms similarly sized open-source models and matches larger models on complex reasoning tasks, utilizing a 200K token vocabulary and group query attention.\n- Phi-4-Multimodal integrates text, vision, and speech/audio using LoRA adapters and modality-specific routers, achieving state-of-the-art performance in multiple inference modes.\n- This \"Mixture of LoRAs\" approach allows flexible modality combinations without interference, exemplified by its top ranking on the OpenASR leaderboard with a compact speech/audio LoRA.\n- A reasoning-enhanced version of Phi-4-Mini rivals larger models like DeepSeek-R1-Distill-Qwen-7B and DeepSeek-R1-Distill-Llama-8B in reasoning tasks.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering",
+            "Automatic Speech Recognition",
+            "Translation",
+            "Summarization",
+            "Question Answering",
+            "Text2Text Generation",
+            "Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "OneRec: Unifying Retrieve and Rank with Generative Recommender and Iterative Preference Alignment",
+        "authors": "GuoruiZhou, DingWF, caikuo, oneself, OrpheusBetter",
+        "link": "https://arxiv.org/abs/2502.18965",
+        "github_repo": null,
+        "summary": "- OneRec, a unified end-to-end generative framework, is proposed for single-stage recommendation, surpassing traditional cascaded ranking systems.\n- OneRec uses an encoder-decoder structure with sparse Mixture-of-Experts (MoE) to handle user behavior sequences and generate videos of interest efficiently.\n- It employs a session-wise list generation approach, considering context and order within a session, unlike point-by-point next-item prediction.\n- An Iterative Preference Alignment (IPA) module with Direct Preference Optimization (DPO) enhances generated results by learning from self-hard rejected samples ranked by a reward model.\n- Deployed in Kuaishou, a short-video platform, OneRec achieved a 1.6% increase in watch-time, demonstrating substantial improvement.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Liger: Linearizing Large Language Models to Gated Recurrent Structures",
+        "authors": "Yu Cheng, JusenK, Jiaxihu2, weigao266, landisen",
+        "link": "https://arxiv.org/abs/2503.01496",
+        "github_repo": "https://github.com/OpenSparseLLMs/Linearization",
+        "summary": "- Liger is a novel method for linearizing large language models (LLMs), converting pre-trained Transformer-based LLMs into gated linear recurrent models without introducing additional parameters, enabling efficient deployment.\n- It repurposes the pre-trained key matrix weights to construct diverse gating mechanisms, facilitating various gated recurrent structures.\n- Using Low-Rank Adaptation (LoRA), Liger restores the linearized model's performance to match the original LLMs with minimal linearization cost.\n- Liger introduces a hybrid attention mechanism, combining sliding window softmax attention and linear recurrent modeling, accelerating linearization and maintaining LLM capabilities with linear-time inference.\n- Experimental results on models ranging from 1B to 8B parameters show that Liger outperforms existing linearization methods, achieving competitive results across benchmarks with limited training tokens.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/OpenSparseLLMs/Linearization"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "When an LLM is apprehensive about its answers -- and when its uncertainty is justified",
+        "authors": "Alexey Zaytsev, Edvard Khalafyan, DanielVyazhev, aigoncharov, sspetya",
+        "link": "https://arxiv.org/abs/2503.01688",
+        "github_repo": null,
+        "summary": "- This paper investigates the effectiveness of different uncertainty estimation methods for multiple-choice question-answering tasks using Large Language Models (LLMs).\n- The study focuses on token-wise entropy and model-as-judge (MASJ) estimates across various question topics and LLM sizes (Phi-4, Mistral, and Qwen).\n- Results indicate that response entropy effectively predicts model errors in knowledge-dependent domains and correlates with question difficulty (e.g., 0.73 ROC AUC for biology).\n- However, this correlation weakens in reasoning-dependent domains (e.g., 0.55 ROC AUC for math), suggesting the need to integrate data-related uncertainty within entropy frameworks.\n- The study also reveals biases in the MMLU-Pro dataset regarding reasoning requirements across different topics, calling for more balanced datasets for fair LLM evaluation.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/LabARSS/question-complextiy-estimation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "DiffRhythm: Blazingly Fast and Embarrassingly Simple End-to-End Full-Length Song Generation with Latent Diffusion",
+        "authors": "Guobin Ma, Chunbo Hao, Yuepeng Jiang, Huakang Chen, Ziqian Ning",
+        "link": "https://arxiv.org/abs/2503.01183",
+        "github_repo": null,
+        "summary": "- DiffRhythm is a novel diffusion-based model for generating full-length songs (up to 4m45s) with both vocals and accompaniment, conditioned on lyrics and a style prompt.\n- It utilizes a Variational Autoencoder (VAE) trained on a large music dataset (60,000 hours) for high-fidelity music reconstruction, demonstrating robustness against MP3 compression artifacts and sharing the same latent space with Stable Audio VAE.\n- A Diffusion Transformer (DiT) operates in the VAE's latent space, generating songs through iterative denoising, guided by style prompts, timesteps, and lyrics processed through a sentence-level alignment mechanism for improved vocal intelligibility.\n- Evaluations show DiffRhythm outperforms SongLM in quality and intelligibility while achieving a ~50x speedup in generation time, with an RTF below 0.04.\n- It addresses the limitations of existing autoregressive models by enabling faster generation, improving scalability, and maintaining consistency over longer sequences.",
+        "classification": [
+            "Text-to-Audio",
+            "Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/stabilityai/stable-audio-tools",
+            "https://huggingface.co/transformers"
+        ],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Cognitive Behaviors that Enable Self-Improving Reasoners, or, Four Habits of Highly Effective STaRs",
+        "authors": "ngoodman, nlile, Asap7772, ayushchakravarthy, obiwan96",
+        "link": "https://arxiv.org/abs/2503.01307",
+        "github_repo": null,
+        "summary": "- This paper investigates why some large language models (LLMs) improve significantly with reinforcement learning (RL) while others plateau, focusing on the presence of key cognitive behaviors in base LLMs.\n- It introduces a framework analyzing four cognitive behaviors: verification, backtracking, subgoal setting, and backward chaining, finding Qwen exhibits these more than Llama.\n- Priming Llama with examples demonstrating these behaviors, even incorrect solutions with correct reasoning patterns, substantially improved its RL performance, matching Qwen.\n- The study suggests the presence of these cognitive behaviors in the initial policy is crucial for effectively utilizing increased test-time compute through extended reasoning sequences.\n- Modifying pre-training data to emphasize these behaviors enabled Llama to achieve comparable self-improvement to Qwen, highlighting the importance of initial reasoning behaviors in enabling self-improvement through RL.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/kanishkg/cognitive-behaviors"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Speculative Ad-hoc Querying",
+        "authors": "Venkat Arun, Aditya Akella, Maria Angels de Luis Balaguer, Srikanth Kandula, Haoyu0529",
+        "link": "https://arxiv.org/abs/2503.00714",
+        "github_repo": null,
+        "summary": "- SpeQL, a system for speculative ad-hoc querying, is introduced to reduce query latency by predicting and pre-executing queries while the user is still typing.\n- It leverages LLMs to predict query structure and precompute temporary tables containing the likely needed information and continuously displays results for speculated queries.\n- A user study shows SpeQL improved task completion time and aided in discovering data patterns more quickly.\n- Using TPC-DS queries and Amazon Redshift, SpeQL reduced planning, compilation, and execution latency by 94.42%, 99.99%, and 87.23%, respectively, with a P90 overhead of 7.72 seconds.\n- Open-sourced as a VS Code plugin and demonstrates potential for integration into database management systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Table Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/lihy0529/SpeQL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "DuoDecoding: Hardware-aware Heterogeneous Speculative Decoding with Dynamic Multi-Sequence Drafting",
+        "authors": "xpqiu, QipengGuo, KYLN24, KaiLv",
+        "link": "https://arxiv.org/abs/2503.00784",
+        "github_repo": "https://github.com/KaiLv69/DuoDecoding",
+        "summary": "- DuoDecoding is a novel hardware-aware heterogeneous speculative decoding method with dynamic multi-sequence drafting designed to accelerate large language model (LLM) text generation.\n- It strategically deploys the draft model on CPU and the target model on GPU, enabling parallel decoding and reducing draft model overhead.\n- A hardware-aware optimal draft budget minimizes idle times on both CPU and GPU.\n- Dynamic multi-sequence drafting enhances the quality of draft outputs based on uncertainty.\n- Experiments show up to a 2.61x speedup in generation latency compared to conventional autoregressive decoding and 17% reduction in time to first token compared to traditional speculative decoding.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/KaiLv69/DuoDecoding"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Qilin: A Multimodal Information Retrieval Dataset with APP-level User Sessions",
+        "authors": "Xiaohui He, Jia Chen, aiqy, haitaoli, qian",
+        "link": "https://arxiv.org/abs/2503.00501",
+        "github_repo": null,
+        "summary": "- This paper introduces Qilin, a multimodal information retrieval dataset collected from Xiaohongshu, a popular social platform with diverse content including image-text notes, video notes, commercial notes, and direct answers.\n- Qilin includes comprehensive user sessions with heterogeneous results, along with APP-level contextual signals and genuine user feedback, which facilitates advanced multimodal neural retrieval model development.\n- It contains user-favored answers and their referred results for search requests triggering the Deep Query Answering (DQA) module, which supports training and evaluation of Retrieval-augmented Generation (RAG) pipelines and analysis of module influence on user search behavior.\n- Preliminary experiments on search, recommendation and DQA tasks using baselines like BM25, BERT, DCN-V2, and VLM demonstrate the value of incorporating multimodal features and contextual signals.\n- DCN-V2 excels in search ranking by leveraging user history, features, and embeddings, while VLM demonstrates the effectiveness of visual information in both user modeling and note representation.",
+        "classification": [
+            "Multimodal",
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/RED-Search/Qilin"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Kiss3DGen: Repurposing Image Diffusion Models for 3D Asset Generation",
+        "authors": "yingcongchen, Xxlbigbrother, StarYDY, MeixiChen, LTT",
+        "link": "https://arxiv.org/abs/2503.01370",
+        "github_repo": null,
+        "summary": "- Kiss3DGen is a novel framework that repurposes pretrained 2D image diffusion models for efficient 3D asset generation, enhancement, and editing.\n- The model fine-tunes a diffusion transformer model to generate \"3D Bundle Images,\" which are tiled representations of multi-view RGB images and normal maps, enabling text-to-3D and image-to-3D generation via existing mesh reconstruction techniques.\n- Kiss3DGen integrates seamlessly with ControlNet, allowing for advanced features like 3D model editing, mesh and texture enhancement, and image-guided 3D generation.\n- Quantitative and qualitative evaluations across different tasks demonstrate state-of-the-art performance compared to existing methods, showcasing its ability to generate high-quality 3D models effectively.\n- Notably, Kiss3DGen demonstrates data efficiency, achieving competitive results even with limited training data, as shown by training on a reduced 50k subset compared to a 147k full training set.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Word Form Matters: LLMs' Semantic Reconstruction under Typoglycemia",
+        "authors": "Lang Gao, Zhongyu Wei, Ziruibest, Carol0110, Aurora-cx",
+        "link": "https://arxiv.org/abs/2503.01714",
+        "github_repo": "https://github.com/Aurora-cx/TypoLLM",
+        "summary": "- This paper investigates how Large Language Models (LLMs) reconstruct the semantics of words with scrambled internal characters (Typoglycemia) by introducing a novel metric, SemRecScore.\n- SemRecScore quantifies semantic reconstruction by comparing the representation of the original word token with the final subword token of the scrambled word at each layer of the LLM. \n- Through experiments on LLaMA models, the study reveals that word form is the primary factor in semantic reconstruction, with contextual information having minimal impact.\n- LLMs rely on specialized attention heads to process word form information, with this mechanism remaining stable across varying scrambling levels.\n-  The study identifies a divergence between LLMs' fixed attention on word form and humans' adaptive strategy of balancing word form and context.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Aurora-cx/TypoLLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "SampleMix: A Sample-wise Pre-training Data Mixing Strategey by Coordinating Data Quality and Diversity",
+        "authors": "bitwjg, WeiWang, WQYC, DeyangKong, xixy",
+        "link": "https://arxiv.org/abs/2503.01506",
+        "github_repo": null,
+        "summary": "- This paper introduces SampleMix, a novel sample-wise pre-training data mixing strategy for Large Language Models (LLMs) that prioritizes both data quality and diversity.\n- Unlike traditional domain-wise methods, SampleMix employs a bottom-up approach, performing global sampling based on individual sample evaluations, dynamically determining optimal domain proportions, and adapting to varying token budgets.\n- SampleMix leverages a quality evaluator trained on GPT-40 annotations to assess data based on seven criteria and employs clustering analysis to gauge sample diversity, combining these metrics to create sample weights for dataset construction.\n- Experimental results on various downstream tasks and perplexity evaluations demonstrate SampleMix's superior performance compared to existing domain-based methods.\n- Notably, SampleMix achieves comparable accuracy with significantly fewer training steps, showcasing its training efficiency and its potential for optimizing pre-training data utilization.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "From Hours to Minutes: Lossless Acceleration of Ultra Long Sequence Generation up to 100K Tokens",
+        "authors": "Yuxuan Wang, zlzheng, vickyandkekey, JunzheS, TongWu",
+        "link": "https://arxiv.org/abs/2502.18890",
+        "github_repo": "https://github.com/bigai-nlco/TokenSwift",
+        "summary": "- TOKENSWIFT, a novel framework, accelerates ultra-long sequence generation (up to 100K tokens) with Large Language Models (LLMs) while maintaining the target model's quality.\n- It addresses three key challenges: frequent model reloading, dynamic key-value (KV) cache management, and repetitive generation, using techniques like multi-token generation, dynamic KV cache updates, and contextual penalties.\n- Experimental results demonstrate a 3x speedup across various model scales (1.5B, 7B, 8B, 14B) and architectures (MHA, GQA), translating to hours of time savings.\n- The acceleration becomes more pronounced with longer sequence lengths and larger model sizes, showing up to 5.54 hours saved for a 14B model generating 100K tokens.\n- TOKENSWIFT exhibits robust performance across varying prefix lengths and sampling methods, showcasing its versatility and applicability to diverse generation tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/bigai-nlco/TokenSwift"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Unposed Sparse Views Room Layout Reconstruction in the Age of Pretrain Model",
+        "authors": "Jianan Wang, Xili Dai, xyyue, qixianbiao, yxuan",
+        "link": "https://arxiv.org/abs/2502.16779",
+        "github_repo": "https://github.com/justacar/Plane-DUSt3R",
+        "summary": "- This paper introduces Plane-DUSt3R, a novel method for 3D room layout estimation from multiple unposed perspective images, addressing the underexplored area of sparse-view room layout reconstruction.\n- The approach leverages the DUSt3R 3D foundation model, modifying it to focus on structural planes (walls, floor, and ceiling) by retraining on an occlusion-free dataset.\n- A three-stage pipeline is employed: 2D plane detection, 3D information prediction and correspondence establishment using Plane-DUSt3R, and post-processing for plane merging and adjacency relationship inference.\n- Experiments on Structure3D dataset demonstrate state-of-the-art performance, with a 5.27% and 5.33% improvement in RRA and mAA metrics respectively, outperforming baselines and showing robustness to different image styles like cartoon.\n- Furthermore, its generalization capabilities extend to in-the-wild and out-of-domain datasets such as RealEstate10K and CAD-Estate, showcasing broader applicability.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/justacar/Plane-DUSt3R"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "CodeArena: A Collective Evaluation Platform for LLM Code Generation",
+        "authors": "terryyz, DongHuang-ebay, bobxwu, anhtuanluu36, Elfsong",
+        "link": "https://arxiv.org/abs/2503.01295",
+        "github_repo": null,
+        "summary": "- CodeArena, an online evaluation framework for Large Language Model (LLM) code generation is introduced to address limitations like benchmark leakage, data dissipation, and limited accessibility in existing evaluation methods.\n- The framework features a dynamic evaluation system that recalibrates individual model scores based on the holistic performance of all participating models, mitigating score biases caused by benchmark leakage.\n- An open repository of solutions and test cases promotes transparency and facilitates research in LLM code generation, and automation-friendly APIs streamline the evaluation process.\n- Initial benchmarks using APPS and Mercury datasets demonstrate the platform's capability to assess LLM code generation performance.\n- CodeArena actively encourages community contribution to diversify the problem set and aims to establish a collaborative platform for evaluating and advancing code generation LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/"
+        ],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "VideoUFO: A Million-Scale User-Focused Dataset for Text-to-Video Generation",
+        "authors": "Yi Yang, WenhaoWang",
+        "link": "https://arxiv.org/abs/2503.01739",
+        "github_repo": null,
+        "summary": "- VideoUFO, a new million-scale video dataset curated specifically for text-to-video generation, focuses on real-world user interests and preferences.\n- Unlike existing video datasets sourced from open domains, VideoUFO is built by analyzing user-provided text prompts, clustering these prompts to identify focused topics, and then retrieving corresponding videos from YouTube using its official API under the Creative Commons license.\n- The dataset includes 1.09 million video clips spanning 1,291 user-focused topics, each paired with both a brief and a detailed caption and video quality scores.\n- Experimental results demonstrate that current text-to-video models struggle with certain user-focused topics where VideoUFO shows improvements.\n- A simple model trained on VideoUFO outperforms other models on worst-performing topics while maintaining performance on best-performing ones.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Large-Scale Data Selection for Instruction Tuning",
+        "authors": "pradeepd, pangwei, faezeb, nanami, hamishivi",
+        "link": "https://arxiv.org/abs/2503.01807",
+        "github_repo": "https://github.com/hamishivi/automated-instruction-selection",
+        "summary": "- This paper investigates the effectiveness of automated data selection methods for large-scale instruction tuning of language models.\n- The authors find that a variant of Representation-based Data Selection (RDS+), which uses weighted mean pooling of pre-trained LM hidden states, consistently outperforms other methods.\n- RDS+ improves performance with larger data pools, unlike other methods that decline or match random selection.\n- In multi-task settings, RDS+ outperforms baselines and human-curated mixtures like the TULU 2 dataset.\n- The study emphasizes the importance of evaluating data selection methods at scale to reveal their true potential for improving instruction-tuned language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/hamishivi/automated-instruction-selection"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "Direct Discriminative Optimization: Your Likelihood-Based Visual Generative Model is Secretly a GAN Discriminator",
+        "authors": "mingyuliutw, gdhe17, HuayuChen, Ema11, worstcoder",
+        "link": "https://arxiv.org/abs/2503.01103",
+        "github_repo": null,
+        "summary": "- Introduces Direct Discriminative Optimization (DDO), a novel framework that enhances likelihood-based visual generative models, including diffusion and autoregressive models, by integrating principles from Generative Adversarial Networks (GANs).\n- DDO bypasses the mode-covering limitations of Maximum Likelihood Estimation (MLE) by implicitly parameterizing a discriminator using the likelihood ratio between a learnable target model and a fixed reference model.\n- This method enables direct finetuning of pretrained models without architectural modifications or altered inference procedures and facilitates iterative refinement through a self-play mechanism.\n- Experiments show significant performance gains, achieving record FID scores of 1.30/0.97 on CIFAR-10/ImageNet-64 for diffusion models and enhancing guidance-free and CFG-enhanced FIDs for visual autoregressive models on ImageNet 256x256.\n- Notably, DDO improves FID by 30-40% on EDM and EDM2 and reduces the FID of VAR from 1.92 to 1.73 without sampling tricks, while even outperforming the CFG-enhanced pretrained guidance-free model by reaching 1.79 FID.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "AI-Invented Tonal Languages: Preventing a Machine Lingua Franca Beyond Human Understanding",
+        "authors": "dnoever",
+        "link": "https://arxiv.org/abs/2503.01063",
+        "github_repo": null,
+        "summary": "- This paper proposes a tonal language system for machine-to-machine (M2M) communication, inspired by human cryptophasia and tonal languages like Mandarin.\n- The system maps ASCII characters to unique frequencies using a logarithmic scale based on musical semitones, spanning a range that includes ultrasonic frequencies beyond human hearing.\n- A software prototype demonstrates the encoding through visualization, auditory playback, and ABC musical notation, showing potential for information density exceeding human speech.\n- The work explores the potential for AI systems to develop private languages and provides a technical foundation for understanding and governing such communication.\n- By encoding messages in both audible and ultrasonic frequencies, the system offers a potential model for both human-interpretable and machine-private M2M communication.",
+        "classification": [
+            "Audio",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/reveondivad/cryptophasia"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    },
+    {
+        "title": "CLEA: Closed-Loop Embodied Agent for Enhancing Task Execution in Dynamic Environments",
+        "authors": "Qing Zhao, Zhixin Mai, Yiming Zhao, Ge Wang, SP4595",
+        "link": "https://arxiv.org/abs/2503.00729",
+        "github_repo": null,
+        "summary": "- CLEA, a closed-loop embodied agent framework, is proposed for enhancing task execution in dynamic environments by incorporating four specialized open-source LLMs with functional decoupling for closed-loop task management.\n- The framework features two core innovations: an interactive task planner that generates executable subtasks dynamically based on environmental memory, and a multimodal execution critic employing an evaluation framework for probabilistic assessment of action feasibility, which triggers hierarchical re-planning when environmental perturbations exceed predefined thresholds.\n- Experimental results in a real environment with two heterogeneous robots for object search, object manipulation, and search-manipulation integration tasks demonstrate CLEA's effectiveness.\n- Across 12 task trials, CLEA outperforms the baseline model, achieving a 67.3% improvement in success rate and a 52.8% increase in task completion rate.\n- CLEA enhances the robustness of task planning and execution in dynamic environments by enabling adaptive decision-making through real-time environmental feedback and closed-loop perception-reasoning-execution.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://sp4595.github.io/CLEA/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-04"
+    }
+]

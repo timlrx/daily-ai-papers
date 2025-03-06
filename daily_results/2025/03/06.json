@@ -1,0 +1,260 @@
+[
+    {
+        "title": "Babel: Open Multilingual Large Language Models Serving Over 90% of Global Speakers",
+        "authors": "LidongBing, maljunied, jhying, lukecq, Yiran0924",
+        "link": "https://arxiv.org/abs/2503.00865",
+        "github_repo": null,
+        "summary": "- Babel, a new open-source multilingual large language model (LLM), supports the top 25 languages by speaker count, covering over 90% of the global population and addressing the scarcity of open-source multilingual LLMs.\n- Babel uses a layer extension technique, adding new layers identical to the original architecture, to increase its parameter space and improve performance, rather than traditional continue pretraining methods.\n- Two variants are introduced: Babel-9B for efficient inference and fine-tuning, and Babel-83B, which sets a new standard for open multilingual LLMs by outperforming other open LLMs of comparable size on multilingual tasks.\n- Babel chat models, trained using open-source supervised fine-tuning datasets, demonstrate strong task-solving capabilities, with Babel-9B-Chat leading among 10B-sized LLMs and Babel-83B-Chat achieving state-of-the-art performance, comparable to commercial models like GPT-40.\n- The model's effectiveness in understanding, reasoning, and translation across multiple languages is highlighted through comprehensive evaluations on various multilingual datasets.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/mistralai/Mistral-Nemo-Base-2407"
+        ],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "ABC: Achieving Better Control of Multimodal Embeddings using VLMs",
+        "authors": "Florian Kerschbaum, Benjamin Schneider, wenhu",
+        "link": "https://arxiv.org/abs/2503.00329",
+        "github_repo": null,
+        "summary": "- Introduces ABC, a new open-source multimodal embedding model that leverages a vision-language model (VLM) backbone to integrate image features and natural language instructions, enabling better user control over representations.\n- Employs a two-stage training process involving contrastive pretraining with mined negatives and instruction fine-tuning with synthetic instructions.\n- Achieves state-of-the-art performance on MSCOCO image-to-text retrieval, outperforming CLIP-based models with up to 8 billion parameters, and excels in classification and VQA tasks on the Massive Multimodal Embedding Benchmark (MMEB), surpassing all other models in zero-shot settings.\n- Introduces CtrlBench, a new benchmark to evaluate the model's ability to control retrieval using natural language, demonstrating ABC's capacity to resolve ambiguous visual retrieval problems by interleaving textual instructions with image content.\n- Advances multimodal embeddings by offering high-quality representations combined with flexible natural language control.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Zero-Shot Classification",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://tiger-ai-lab.github.io/ABC/"
+        ],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Enhancing Abnormality Grounding for Vision Language Models with Knowledge Descriptions",
+        "authors": "Cosmin I. Bercea, Rossella Arcucci, Wenjia Bai, Jun Li, che111",
+        "link": "https://arxiv.org/abs/2503.03278",
+        "github_repo": null,
+        "summary": "- This paper introduces a knowledge-enhanced approach for abnormality grounding in medical images using Vision Language Models (VLMs).\n- The approach leverages decomposed medical knowledge descriptions, focusing on visual attributes like shape, density, and location, to improve the alignment between textual descriptions and visual features.\n- This method achieves comparable performance to significantly larger medical VLMs while using only 1.5% of the training data.\n- Evaluation on VinDr-CXR and PadChest-GR datasets shows competitive results, demonstrating the effectiveness of the proposed approach in both known and unseen abnormalities.\n- The smaller model size and strong generalization capabilities make this approach suitable for real-world medical applications with limited data.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://lijunrio.github.io/AG-KD/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "GEN3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control",
+        "authors": "Yifan Lu, Huan Ling, Jiahui Huang, Tianchang Shen, xrenaa",
+        "link": "https://arxiv.org/abs/2503.03751",
+        "github_repo": null,
+        "summary": "- GEN3C, a generative video model with precise camera control and 3D consistency, is introduced, leveraging a 3D cache (point cloud) built from estimated depth of input images or video frames and rendered according to user-defined camera trajectories to condition video generation.\n- This 3D guidance improves consistency and enables NVS in sparse-view settings, outperforming previous methods in single/multi-view novel view synthesis tasks on RE10K, Tanks and Temples, Waymo Open Dataset, and Kubric4D.\n- GEN3C's explicit 3D cache also allows for scene manipulation, such as object removal and editing, showcasing its potential in driving simulations and dynamic video generation from single images/videos.\n- By separating 3D reasoning from video generation, GEN3C leverages pre-trained video diffusion models and minimizes training overhead while achieving state-of-the-art results, showing flexibility in integrating with advanced video models like Cosmos.\n- Experimental results validate GEN3C\u2019s robustness to noisy depth estimations and ability to handle challenging scenarios with inconsistent lighting and misaligned depth across viewpoints.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "KodCode: A Diverse, Challenging, and Verifiable Synthetic Dataset for Coding",
+        "authors": "Radha Poovendran, mingyuanzhou, yyqoni, nlpyang, flydust",
+        "link": "https://arxiv.org/abs/2503.02951",
+        "github_repo": null,
+        "summary": "- KODCODE is a synthetic dataset of 447k coding question-solution-test triplets for training large language models (LLMs) for coding tasks.\n- It addresses challenges of data quality and verifiability by using a self-verification procedure and generating responses from a reasoning model (DeepSeek R1) under test-based reject sampling.\n- The dataset creation pipeline involves question synthesis from diverse sources, solution and test generation with self-verification, and post-training data synthesis including style conversion and CoT response generation.\n- KODCODE-tuned models achieved state-of-the-art performance on coding benchmarks like HumanEval(+), MBPP(+), BigCodeBench, and LiveCodeBench, outperforming models like Qwen2.5-Coder-32B-Instruct and DeepSeek-R1-Distill-Llama-70B.\n- Statistical analysis demonstrates KODCODE's minimal contamination with existing benchmarks and the effectiveness of the self-verification and challenging question inclusion mechanisms.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://kodcode-ai.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/KodCode"
+        ],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "CrowdSelect: Synthetic Instruction Data Selection with Multi-LLM Wisdom",
+        "authors": "Pan Zhou, Wenxuan Shen, Lingfeng Yang, shuaishuaicdp, yisenL",
+        "link": "https://arxiv.org/abs/2503.01836",
+        "github_repo": "https://github.com/listentm/crowdselect",
+        "summary": "- CROWDSELECT, a new framework for selecting synthetic instruction-tuning data, leverages \"Multi-LLM Wisdom\" by incorporating responses and reward scores from multiple LLMs as diverse reflections of instruction quality.\n- Three foundational metrics\u2014Difficulty, Separability, and Stability\u2014are introduced to assess instruction-response pair characteristics, capturing the challenges, model differentiation potential, and alignment consistency of each sample.\n- CROWDSELECT integrates these metrics with a clustering approach for response diversity preservation, maximizing the effectiveness of LLM collaboration for identifying a compact yet high-impact subset of training data.\n- Experiments show CROWDSELECT achieves state-of-the-art performance on both MT-bench and Arena-Hard, improving Llama-3.2-3b-instruct scores by 4.81% and 11.1% respectively, demonstrating its efficiency and generalizability across four models and two benchmarks.\n- The proposed method effectively bridges the gap between pre-trained knowledge and real-world user scenarios by selecting high-quality instruction data, enhancing the model's instruction-following capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/listentm/crowdselect"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "QE4PE: Word-level Quality Estimation for Human Post-Editing",
+        "authors": "Malvina Nissim, Ana Guerberof-Arenas, Grzegorz Chrupa\u0142a, Vil\u00e9m Zouhar, gsarti",
+        "link": "https://arxiv.org/abs/2503.03044",
+        "github_repo": "https://github.com/gsarti/qe4pe",
+        "summary": "- This paper presents QE4PE, a study investigating the impact of word-level Quality Estimation (QE) on human post-editing of machine translation (MT).\n- The study involves 42 professional post-editors across English-Italian and English-Dutch translations using a state-of-the-art NLLB 3.3B MT model.\n- Four highlight modalities (supervised, unsupervised, oracle, and no-highlight baseline) are compared for identifying errors.\n- The study analyzes post-editing effort, quality improvement, and the usability of different highlight methods based on behavioral logs, human annotations, and questionnaires.\n- Results show that domain, language, and individual editing speed significantly influence highlight effectiveness, with modest accuracy-usability trade-offs observed.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/gsarti/qe4pe"
+        ],
+        "huggingface_urls": [
+            "https://grote-app.hf.spaces"
+        ],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Exploring Rewriting Approaches for Different Conversational Tasks",
+        "authors": "Xiang Chen, Mike Rimer, Ryan A. Rossi, Md Mehrab Tanjim, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2502.18860",
+        "github_repo": null,
+        "summary": "- This paper investigates two query rewriting approaches\u2014rewriting and fusion\u2014for conversational assistants.\n- Rewriting uses previous queries and responses as context, while fusion recursively combines previous rewritten queries.\n- Evaluated on text-based Q&A and text-to-visualization tasks using cosine similarity and BERT F1 score.\n- Query rewriting outperforms fusion in conversational Q&A by 3.9% and 9.8% for each metric.\n- Fusion surpasses rewriting for data analysis tasks by 7.6% and 5.2% for each metric by effectively summarizing conversations and user intent.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Fine-Tuning Small Language Models for Domain-Specific AI: An Edge AI Perspective",
+        "authors": "KartikAngadi, kruthika, SyedAbdul, RakshitAralimatti",
+        "link": "https://arxiv.org/abs/2503.01933",
+        "github_repo": null,
+        "summary": "- This research introduces the Shakti series of small language models (SLMs), including Shakti-100M, Shakti-250M, and Shakti-500M, designed for efficient and adaptable language modeling under edge constraints by combining efficient architectures, quantization techniques, and responsible AI principles.\n- These models incorporate techniques like variable grouped query attention (GQA), Block Sparse Attention, Rotary Positional Embeddings (ROPE), SiLU activation, and Sliding Window mechanism, along with quantization.\n- The Shakti series undergoes structured training including pre-training on diverse text corpora, Supervised Fine-Tuning (SFT) on task-specific datasets, and preference alignment via Reinforcement Learning from Human Feedback (RLHF) for Shakti-500M and Direct Preference Optimization (DPO) for Shakti-250M and Shakti-100M.\n- Evaluation shows that Shakti models achieve strong benchmark performance, competing effectively against larger models on standard NLP tasks and specialized domain tasks such as healthcare QA, finance analytics, and legal contract analysis, especially in resource-constrained settings.\n- These models offer quantized versions (int8, int5, int4) to minimize memory usage and increase tokens-per-second (TPS) throughput, suitable for deployment on resource-constrained hardware such as Raspberry Pi boards or entry-level GPUs.",
+        "classification": [
+            "Natural Language Processing",
+            "Summarization",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Mixture of Structural-and-Textual Retrieval over Text-rich Graph Knowledge Bases",
+        "authors": "Ryan A. Rossi, Haoyu Han, Yongjia Lei, mhalappa, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2502.20317",
+        "github_repo": "https://github.com/Yoega/MoR",
+        "summary": "- This paper introduces Mixture of Structural-and-Textual Retrieval (MoR), a novel framework designed to retrieve both textual and structural knowledge from Text-rich Graph Knowledge Bases (TG-KBs) for question answering.\n- MoR employs a Planning-Reasoning-Organizing approach, starting with generating textual planning graphs that outline the query logic, followed by interweaving structural traversal and textual matching to retrieve candidate entities, and finally reranking these candidates using structural trajectory features.\n- Experimental results across diverse TG-KBs demonstrate MoR's superior performance compared to existing textual, structural, and hybrid retrieval methods.\n- The ablation studies further confirm the effectiveness of the individual modules and features, especially the structure-aware reranker.\n- This work offers insights into the interplay between textual and structural knowledge, uneven retrieval performance across query logics, and the value of integrating structural trajectories for candidate reranking.",
+        "classification": [
+            "Question Answering",
+            "Graph Machine Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Yoega/MoR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models",
+        "authors": "Shuaiqiang Wang, Pengjie Ren, Lingyong Yan, Yuhan Wang, Zhengliang Shi",
+        "link": "https://arxiv.org/abs/2503.01763",
+        "github_repo": null,
+        "summary": "- This paper introduces TOOLRET, a benchmark for evaluating tool retrieval capabilities of information retrieval (IR) models designed to augment large language models (LLMs) for tool-use tasks.\n- TOOLRET comprises 7.6k diverse retrieval tasks and a corpus of 43k tools sourced from existing datasets and benchmarks, encompassing web APIs, code functions, and customized applications.\n- Evaluation results reveal that even state-of-the-art IR models, including those excelling in standard benchmarks like MTEB, struggle significantly on TOOLRET, achieving less than 35% Completeness@10.\n- The authors attribute this performance gap to the low lexical overlap between queries and relevant tools in TOOLRET, demanding more advanced reasoning capabilities from retrieval models compared to conventional IR tasks.\n- To address this, the paper contributes TOOLRET-train, a large-scale training dataset with over 200k instructional retrieval tasks, leading to substantially improved retrieval performance and higher end-to-end task pass rates for tool-use LLMs when combined with trained IR models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co",
+            "https://github.com"
+        ],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "FLAME: A Federated Learning Benchmark for Robotic Manipulation",
+        "authors": "Danica Kragic, Yuchong Zhang, Miguel Vasco, Alberta Longhini, Santiago Bou Betran",
+        "link": "https://arxiv.org/abs/2503.01729",
+        "github_repo": null,
+        "summary": "- Introduces FLAME, a novel benchmark designed for federated learning in robotic manipulation tasks, addressing scalability, adaptability, and data privacy concerns.\n- FLAME comprises a dataset of over 160,000 expert demonstrations across various simulated environments and manipulation tasks, along with a training and evaluation framework for robotic policy learning in a federated setting.\n- It builds upon the Colosseum benchmark, extending it with a structured indexing method for environment variations and integrating a federated learning framework, enabling systematic evaluation of FL algorithms.\n- Evaluation across diverse tasks and FL baselines shows the potential of FL for distributed policy learning while highlighting the need for research into FL approaches tailored for robotic manipulation training in distributed settings.\n- The benchmark facilitates large-scale, privacy-preserving training and evaluation by enabling distributed training across varied environments and aggregating model updates without centralizing sensitive data.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Benchmarking Large Language Models for Multi-Language Software Vulnerability Detection",
+        "authors": "Hung Nguyen, Martin Weyssow, Yindu Su, Chengran Yang, Ting Zhang",
+        "link": "https://arxiv.org/abs/2503.01449",
+        "github_repo": null,
+        "summary": "- This paper presents a comprehensive empirical study evaluating the performance of Large Language Models (LLMs) on Software Vulnerability Detection (SVD) across multiple programming languages (Python, Java, and JavaScript).\n- The study evaluates five open-source LLMs using prompt engineering, instruction tuning, and sequence classification fine-tuning, and benchmarks them against fine-tuned small language models (SLMs) and static application security testing (SAST) tools.\n- The researchers find that LLM effectiveness varies across programming languages, with better performance observed on JavaScript compared to Python and Java. Fine-tuning improves LLM effectiveness in JavaScript but not in Python or Java, while prompt engineering methods tend to improve LLM performance on Python and Java.\n- The study further explored improving SVD by training LLMs with downsampled balanced datasets which showed performance improvement but mostly when original data is imbalanced.  Ensemble methods did not yield substantial improvements in the time-aware split setting used. \n- The results suggest that data characteristics and the choice of LLM adaptation strategy play crucial roles in SVD.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "CognitiveDrone: A VLA Model and Evaluation Benchmark for Real-Time Cognitive Task Solving and Reasoning in UAVs",
+        "authors": "Artyom Myshlyaev, Oleg Sautenkov, Muhammad Haris Khan, Valerii Serpiva, Artem Lykov",
+        "link": "https://arxiv.org/abs/2503.01378",
+        "github_repo": null,
+        "summary": "- This paper introduces CognitiveDrone, a Vision-Language-Action (VLA) model for complex Unmanned Aerial Vehicles (UAVs) tasks requiring advanced cognitive abilities. \n- The model processes first-person visual inputs and textual instructions to generate real-time 4D action commands and is trained on a dataset of over 8,000 simulated flight trajectories across three categories: Human Recognition, Symbol Understanding, and Reasoning.\n- An enhanced model, CognitiveDrone-R1, integrates a Vision-Language Model (VLM) reasoning module to refine task directives before high-frequency control. \n- Evaluations on the CognitiveDroneBench benchmark show that CognitiveDrone achieves a 59.6% overall success rate, significantly outperforming the racing-oriented RaceVLA model (31.3%). \n- CognitiveDrone-R1 further improves performance to 77.2%, demonstrating the effectiveness of integrating reasoning capabilities into UAV control systems.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "Interact, Instruct to Improve: A LLM-Driven Parallel Actor-Reasoner Framework for Enhancing Autonomous Vehicle Interactions",
+        "authors": "Peng Hang, Chen Lv, Chengkai Xu, Jiaqi Liu, FanGShiYuu",
+        "link": "https://arxiv.org/abs/2503.00502",
+        "github_repo": "https://github.com/FanGShiYuu/Actor-Reasoner",
+        "summary": "- This paper introduces a novel Actor-Reasoner framework for enhancing autonomous vehicle (AV) interactions with human-driven vehicles (HVs), leveraging a large language model (LLM).\n- The framework employs a parallel architecture inspired by the dual-system model of behavioral science, combining a fast, memory-retrieval based Actor and a slow, LLM-driven Reasoner that utilizes Chain-of-Thought (CoT) reasoning.\n- The Actor rapidly retrieves decisions from a memory database populated during training interactions with diverse simulated HVs, while the Reasoner infers HV driving styles and generates external Human-Machine Interface (eHMI) displays.\n- Ablation studies and comparisons demonstrate that the framework significantly improves both safety and efficiency metrics compared to baseline methods.\n- Field tests in a real-world environment validate the framework's effectiveness and generalizability across various interaction scenarios.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/FanGShiYuu/Actor-Reasoner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-06"
+    },
+    {
+        "title": "SwiLTra-Bench: The Swiss Legal Translation Benchmark",
+        "authors": "Yingqiang Gao, Sina Ahmadi, Luka Nenadic, Jakob Merane, Joel Niklaus",
+        "link": "https://arxiv.org/abs/2503.01372",
+        "github_repo": null,
+        "summary": "- This paper introduces SwiLTra-Bench, a multilingual benchmark for Swiss legal text translation, containing over 180,000 aligned pairs across five languages.\n- The benchmark evaluates various Large Language Models (LLMs), including frontier models like Claude and Llama, specialized translation models like MADLAD-400, and fine-tuned open-source LLMs.\n- Evaluation results demonstrate that frontier models perform best overall, outperforming even specialized translation models, while fine-tuning significantly improves open-source LLM performance.\n- The study also presents SwiLTra-Judge, an LLM-based evaluation system, which shows better alignment with human expert assessments than traditional metrics.\n- This benchmark aims to facilitate research in legal text translation, particularly for multilingual countries like Switzerland.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/joelniklaus/swiltra-bench-67c569a2ada47e4549733deb"
+        ],
+        "date": "2025-03-06"
+    }
+]

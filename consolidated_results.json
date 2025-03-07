@@ -23304,5 +23304,285 @@
             "https://huggingface.co/collections/joelniklaus/swiltra-bench-67c569a2ada47e4549733deb"
         ],
         "date": "2025-03-06"
+    },
+    {
+        "title": "START: Self-taught Reasoner with Tools",
+        "authors": "BeichenZhang, jx-yang, Zhenru, mingfengxue, ChengpengLi",
+        "link": "https://arxiv.org/abs/2503.04625",
+        "github_repo": null,
+        "summary": "- START, a novel tool-integrated long Chain-of-Thought (CoT) reasoning Large Language Model (LLM), enhances reasoning capabilities by leveraging external tools, such as Python code execution, for complex computations, self-checking, method exploration, and self-debugging.\n- The core innovation of START lies in its self-learning framework, comprising Hint-infer and Hint Rejection Sampling Fine-Tuning (Hint-RFT), stimulating the LLM's tool utilization abilities without demonstration data, improving sequential test-time scaling, and refining tool-integrated reasoning trajectories.\n- START achieves state-of-the-art performance on PhD-level science QA (GPQA), competition-level math benchmarks (AMC23, AIME24, AIME25), and code benchmark (LiveCodeBench), with accuracy rates of 63.6%, 95.0%, 66.7%, 47.1%, and 47.3%, respectively, surpassing existing tool-integrated and long CoT models, including QwQ, 01-mini, and 01-preview in MATH benchmarks.\n- Hint-infer strategically inserts hints during LLM inference to encourage tool use, while Hint-RFT refines these interactions through a scoring, filtering, and modification process followed by fine-tuning, enabling self-aware tool usage.\n- START is the first open-source tool-integrated long CoT reasoning model, setting a new standard for LLM performance in complex reasoning domains by combining the strengths of long CoT and external tool integration.",
+        "classification": [
+            "Question Answering",
+            "Text2Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "LLM as a Broken Telephone: Iterative Generation Distorts Information",
+        "authors": "Michalis Vazirgiannis, guokan-shang, mgeng, amr-mohamed",
+        "link": "https://arxiv.org/abs/2502.20258",
+        "github_repo": null,
+        "summary": "- This paper investigates how Large Language Models (LLMs) distort information through iterative generation, similar to the \"broken telephone\" game.\n- The study uses translation-based experiments, where a document is iteratively translated between English and other languages.\n- The results reveal that distortion accumulates over time and is influenced by language choice and chain complexity.\n- While degradation is inevitable, it can be mitigated through temperature control and constrained prompting techniques.\n- This work raises concerns about the reliability of LLM-generated content in iterative workflows.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/amr-mohamedd/LLM-as-a-Broken-Telephone"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "EgoLife: Towards Egocentric Life Assistant",
+        "authors": "Zzitang, Alarak, fesvhtr, THUdyh, Jingkang",
+        "link": "https://arxiv.org/abs/2503.03803",
+        "github_repo": "https://github.com/EvolvingLMMs-Lab/EgoLife",
+        "summary": "- This paper introduces EgoLife, a project focused on developing an egocentric life assistant using AI-powered wearable glasses.\n- A new 300-hour egocentric, interpersonal, multiview, and multimodal daily life dataset called EgoLife Dataset is collected, featuring six participants living together for a week and wearing Meta Aria glasses.\n- It also introduces a new question answering benchmark called EgoLifeQA which is based on the dataset that features five types of questions.\n- An agent system called EgoButler comprising two models, EgoGPT and EgoRAG are introduced to address the EgoLifeQA benchmark.\n- Experimental results demonstrate that EgoButler outperforms other models on the EgoLifeQA benchmark, showcasing its effectiveness in long-context question answering and multimodal understanding in egocentric scenarios.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/EvolvingLMMs-Lab/EgoLife"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "LINGOLY-TOO: Disentangling Memorisation from Reasoning with Linguistic Templatisation and Orthographic Obfuscation",
+        "authors": "Vlad Neacs, Lingyi Yang, Simi Hellsten, Karolina Korgul, Jude Khouja",
+        "link": "https://arxiv.org/abs/2503.02972",
+        "github_repo": null,
+        "summary": "- This paper introduces LINGOLY-TOO, a new benchmark for evaluating linguistic reasoning in Large Language Models (LLMs) designed to mitigate the impact of memorization by using orthographically obfuscated versions of linguistic problems.\n- The obfuscation process alters the writing systems of problems while preserving the underlying reasoning steps needed for solutions.\n- Experiments demonstrate that state-of-the-art LLMs, including Claude 3.7 Sonnet and other frontier models struggle with the benchmark's obfuscated problems indicating a gap in genuine reasoning capabilities.\n- The paper also introduces a framework for creating obfuscated evaluation datasets for other reasoning tasks and provides insights on the effects of data exposure and tokenization on LLMs' performance.\n- Results of an RCT with 172 participants suggest that obfuscation increases the perceived difficulty for humans, but does not significantly change underlying reasoning process indicating its viability as an evaluation method.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/jkhouja/lingoly-too"
+        ],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "HybridNorm: Towards Stable and Efficient Transformer Training via Hybrid Normalization",
+        "authors": "Ya Wang, Breeze0417, LLIXQ, Taoer, BryceZhuo",
+        "link": "https://arxiv.org/abs/2503.04598",
+        "github_repo": "https://github.com/BryceZhuo/HybridNorm",
+        "summary": "- This paper introduces HybridNorm, a novel hybrid normalization strategy for training deep transformer models that combines the strengths of Pre-Norm and Post-Norm.\n- HybridNorm applies QKV normalization within the attention mechanism and Post-Norm in the feed-forward network (FFN) of each transformer block. \n- This design stabilizes training and improves performance, particularly in Large Language Models (LLMs).\n- Experimental results across various benchmarks, including dense and Mixture-of-Experts (MoE) models, demonstrate that HybridNorm consistently outperforms both Pre-Norm and Post-Norm, showing improved training stability and achieving state-of-the-art performance on downstream tasks.\n- A variant, HybridNorm*, with a specially-treated first transformer block, further improves training stability and downstream task performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/BryceZhuo/HybridNorm"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/allenai/OLMOE-mix-0924"
+        ],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Pok\u00e9Champ: an Expert-level Minimax Language Agent",
+        "authors": "Andy Luu Nguyen, chijin, milkkarten",
+        "link": "https://arxiv.org/abs/2503.04094",
+        "github_repo": null,
+        "summary": "- This paper introduces Pok\u00e9Champ, a novel minimax agent that integrates Large Language Models (LLMs) into the search process of a game by replacing player action sampling, opponent modeling, and value function estimation with LLM-based generations.\n- It combines game-theoretic algorithms with LLMs for enhanced decision-making in the complex, partially observable environment of Pok\u00e9mon battles.\n- Notably, Pok\u00e9Champ requires no task-specific LLM training or fine-tuning, reducing the need for extensive data collection and model adaptation efforts. \n- Evaluating on the Pok\u00e9mon Showdown platform against established bots and online ladder against real human players, Pok\u00e9Champ achieves state-of-the-art performance by outperforming rule-based bots and other LLM-based agents, attaining a projected Elo of 1300\u20131500, among the top 30%-10% of players.\n- In addition, the research introduces the largest Pok\u00e9mon battle dataset to date, featuring over 3 million games and also develops benchmarks and puzzles evaluating specific battling skills.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "FuseChat-3.0: Preference Optimization Meets Heterogeneous Model Fusion",
+        "authors": "passerqxj, OnewayLab, GGLS, Wanfq, AALF",
+        "link": "https://arxiv.org/abs/2503.04222",
+        "github_repo": "https://github.com/SLIT-AI/FuseChat-3.0",
+        "summary": "- FuseChat-3.0 is a suite of large language models (LLMs) created by fusing heterogeneous source LLMs into more compact target LLMs using implicit model fusion (IMF).\n- The training process involves Supervised Fine-tuning (SFT) using high-reward responses from source models, followed by Direct Preference Optimization (DPO) using preference pairs from the same source model, eliminating reward bias and variance from heterogeneous sources.\n- Evaluation across 14 benchmarks shows FuseChat-3.0 significantly outperforming its corresponding target LLMs across diverse tasks including instruction following, general knowledge, mathematics, and coding.\n- Using Llama-3.1-8B-Instruct as the target model, FuseChat-3.0 achieved a 6.8 point average improvement and state-of-the-art performance gains of 37.1 and 30.1 points on instruction following benchmarks AlpacaEval-2 and Arena-Hard respectively.\n- The results demonstrate FuseChat-3.0's effectiveness as a scalable framework for enhancing LLM performance through implicit knowledge fusion without requiring architectural modifications or massive computational resources.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SLIT-AI/FuseChat-3.0"
+        ],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Token-Efficient Long Video Understanding for Multimodal LLMs",
+        "authors": "zhiqilinv, MuyangLI, zhijianliu, xiuyul, jdps",
+        "link": "https://arxiv.org/abs/2503.04130",
+        "github_repo": null,
+        "summary": "- This paper introduces STORM (Spatiotemporal Token Reduction for Multimodal LLMs), a novel architecture for enhancing long-video understanding in multimodal large language models (LLMs).\n- STORM incorporates a dedicated temporal encoder, based on the Mamba State Space Model, between the image encoder and the LLM to integrate temporal information into image tokens, improving video reasoning and enabling token reduction strategies.\n- The Mamba layer compresses historical frame information, allowing for temporal and spatial pooling (or test time sampling) for efficient token reduction without discarding crucial details.\n- Evaluation across various video understanding benchmarks demonstrates state-of-the-art results, with over 5% improvement on MLVU and LongVideoBench, while also reducing computational costs by up to 8\u00d7 and decoding latency by 2.4-2.9\u00d7.\n- Qualitative analysis reveals that STORM effectively retains crucial visual information despite significant token compression, enabling robust comprehension of complex long-video content.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "The Best of Both Worlds: Integrating Language Models and Diffusion Models for Video Generation",
+        "authors": "Xu Tan, Kai Shen, Aoxiong Yin, JunchengLi, ustcscallion",
+        "link": "https://arxiv.org/abs/2503.04606",
+        "github_repo": null,
+        "summary": "- LanDiff, a novel text-to-video generation framework, integrates the strengths of autoregressive language models and diffusion models through a coarse-to-fine generation process.\n- The architecture includes a semantic tokenizer to compress visual features into compact discrete representations, a language model to generate semantic tokens, and a streaming diffusion model to refine coarse semantics into high-fidelity videos.\n- LanDiff achieves a score of 85.43 on the VBench T2V benchmark, surpassing state-of-the-art open-source models like Hunyuan Video (13B) and commercial models such as Sora, Keling, and Hailuo.\n- The model also achieves state-of-the-art performance in long video generation, outperforming other open-source models in this area.\n- The superior performance demonstrates LanDiff's effectiveness in combining the advantages of both autoregressive and diffusion models for high-quality video generation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://landiff.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/THUDM/CogVideoX-2b"
+        ],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "IFIR: A Comprehensive Benchmark for Evaluating Instruction-Following in Expert-Domain Information Retrieval",
+        "authors": "Mingsheng Shang, yilunzhao, guo9, songtingyu",
+        "link": "https://arxiv.org/abs/2503.04644",
+        "github_repo": null,
+        "summary": "- IFIR is a new benchmark designed for evaluating instruction-following information retrieval in specialized domains such as finance, law, healthcare, and science literature.\n- The benchmark consists of 2,426 instruction-following queries across four expert domains with an average of 6.14 ground-truth passages per query.\n- A novel LLM-based evaluation metric, INSTFOL, is introduced to measure a retriever\u2019s instruction-following ability. \n- Experimental results on 15 state-of-the-art information retrievers reveal that existing models face significant challenges in complex, domain-specific instructions following and LLM-based retrievers show better potential in handling complex retrieval tasks.\n- The benchmark also confirms that lexical search is a promising method for complex instructions retrieval in specific domains.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/SighingSnow/IFIR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+        "authors": "manocha, rafaelvalle, firecomputer, ZhifengKong, SreyanG-NVIDIA",
+        "link": "https://arxiv.org/abs/2503.03983",
+        "github_repo": null,
+        "summary": "- This paper introduces Audio Flamingo 2 (AF2), an Audio-Language Model (ALM) designed for enhanced audio understanding and reasoning, particularly with long audio segments (30 seconds to 5 minutes).\n- AF2 leverages a custom CLAP model trained on a large audio-caption dataset with a novel contrastive loss, synthetic Audio Question Answering (AQA) data (AudioSkills) targeting seven specific reasoning skills, and a 3-stage curriculum learning strategy.\n- It also introduces LongAudio, a dataset with 263k AQA pairs and 80k audio segments up to 5 minutes long, and LongAudioBench, an expert-validated benchmark derived from LongAudio for evaluating long-audio understanding.\n- AF2 achieves state-of-the-art performance on over 20 benchmarks, outperforming larger, open-source, and proprietary models despite using only a 3B parameter language model, surpassing even advanced models like Gemini 1.5 Pro in expert-level audio reasoning tasks.\n- Ablation studies validate the effectiveness of AF2's components, especially the AudioSkills dataset for improving reasoning abilities and the novel contrastive loss for AF-CLAP which shows that quality data plays a more significant role compared to model size.",
+        "classification": [
+            "Audio",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Identifying Sensitive Weights via Post-quantization Integral",
+        "authors": "Weiyu Huang, surfingtomchen, jt-zhang, zcliang22, yuezhouhu",
+        "link": "https://arxiv.org/abs/2503.01901",
+        "github_repo": null,
+        "summary": "- This paper proposes Post-quantization Integral (PQI), a novel sensitivity metric to accurately estimate the influence of each quantized weight in Large Language Models (LLMs), addressing the inaccuracy of existing gradient and Hessian-based metrics.\n- PQI leverages local continuity and considers both original and quantized weights to calculate sensitivity, enabling fine-grained prediction of quantization's impact on loss function.\n- The paper introduces ReQuant, a framework utilizing PQI for Dense-and-Sparse decomposition, enhancing quantized model quality via self-adaptive outlier selection and step-wise significant weights detach.\n- ReQuant improves state-of-the-art post-training quantization methods, showing a 2.66 perplexity gain on Llama 3.2 1B with QTIP and nearly 3% improvement on MATH few-shot accuracy.\n- Experimental results demonstrate the effectiveness of ReQuant on various quantization methods like AWQ, SqueezeLLM, and QTIP with Llama 3.2 1B and 3B models, enhancing both perplexity and few-shot performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "L$^2$M: Mutual Information Scaling Law for Long-Context Language Modeling",
+        "authors": "Marin Solja\u010di\u0107, Di Luo, Zhuotao Jin, oriolmayne, zhuoc3",
+        "link": "https://arxiv.org/abs/2503.04725",
+        "github_repo": null,
+        "summary": "- This paper introduces a bipartite mutual information scaling law, distinct from traditional two-point mutual information, to govern long-range dependencies in natural language and understand long-context language modeling.\n- It formulates the Long-context Language Modeling (L2M) condition, linking a model's effective long context length modeling capacity to its latent state size scaling for storing past information.\n- The bipartite mutual information scaling law is validated across different natural language datasets and LLMs (LLaMA, DeepSeek) showing consistent power-law growth.\n- The L2M condition is empirically verified with transformer and state space models trained on varying sequence lengths.\n- The study provides a theoretical foundation for improving LLM architecture design for longer context lengths and more effective applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/LSquaredM/mutual_info_scaling_law"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Dedicated Feedback and Edit Models Empower Inference-Time Scaling for Open-Ended General-Domain Tasks",
+        "authors": "Ellie Evans, Daniel Egert, Jiaqi Zeng, Zhilin Wang, odelalleau",
+        "link": "https://arxiv.org/abs/2503.04378",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel Feedback-Edit system for enhancing the performance of large language models (LLMs) on open-ended, general-domain tasks, addressing the limitations of existing inference-time scaling techniques that rely on verifiable answers.\n- The system employs three dedicated models: one generates initial responses, a second provides detailed textual feedback on these responses, and a third edits the responses based on the feedback. \n- It leverages a new dataset curated from over 7,000 annotators providing both feedback and edits for diverse prompts, sourced from ShareGPT and WildChat. \n- The Feedback and Edit models are trained with supervised fine-tuning and reinforcement learning.\n- Evaluation on Arena Hard, a challenging benchmark, shows that an optimized Feedback-Edit system using 70B Llama 3 models achieves state-of-the-art performance of 92.7, surpassing OpenAI's ol-preview-2024-09-12 and DeepSeek R1.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Union of Experts: Adapting Hierarchical Routing to Equivalently Decomposed Transformer",
+        "authors": "Linhui Li, Jing Lian, yjyangwork",
+        "link": "https://arxiv.org/abs/2503.02495",
+        "github_repo": "https://github.com/YujiaoYang-work/UoE",
+        "summary": "- The paper introduces Union-of-Experts (UoE), a novel Mixture-of-Experts (MoE) architecture that decomposes transformers into equivalent expert groups, enabling selective routing on both input data and experts.\n- UoE enhances expert collaboration through mechanisms like patch-wise data selection and expert selection for improved performance and efficiency.\n- The architecture consists of Selective Multi-Head Attention (SMHA) for diverse representation learning and Union-of-MLP-Experts (UoME) for dense model integration of activated experts. \n- Parallel implementation and hardware optimization further boost efficiency, reducing FLOPs by at least 30% and achieving a speedup of over 2x. \n- Experimental results across language modeling, long-range sequence modeling, and image classification tasks demonstrate UoE's superior performance compared to existing state-of-the-art MoEs and efficient transformers.",
+        "classification": [
+            "Natural Language Processing",
+            "Image Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/YujiaoYang-work/UoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Lost in Literalism: How Supervised Training Shapes Translationese in LLMs",
+        "authors": "Leyang Cui, Huajian Zhang, Zhilin Wang, Ronghao Zhang, yaful",
+        "link": "https://arxiv.org/abs/2503.04369",
+        "github_repo": "https://github.com/yafuly/LLM_Translationese",
+        "summary": "- This paper investigates the phenomenon of \"translationese\" in Large Language Model (LLM) based machine translation, where translations are overly literal and unnatural despite LLMs being trained on vast amounts of text data.\n- The authors conduct a systematic study involving human evaluation of LLM translations across different domains and language pairs, finding that a significant portion of the translations exhibit translationese.\n- They analyze translationese prevalence in supervised fine-tuning datasets and find a substantial number of training samples with translationese characteristics, suggesting that supervised training biases LLMs towards literal translation.\n- Two mitigation strategies are introduced: refining the golden training references using LLMs and filtering out unnatural training instances based on perplexity scores.\n- Experimental results demonstrate that these strategies significantly reduce translationese and improve translation naturalness, as validated by human evaluations and automatic metrics across multiple LLMs and additional languages.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yafuly/LLM_Translationese"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Combining Flow Matching and Transformers for Efficient Solution of Bayesian Inverse Problems",
+        "authors": "Ekaterina Muravleva, oseledets, dsherki",
+        "link": "https://arxiv.org/abs/2503.01375",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for solving Bayesian inverse problems by combining Conditional Flow Matching (CFM) with a transformer-based architecture (CFM-Tr).\n- CFM-Tr learns a conditional probability distribution from samples, enabling efficient sampling from complex posterior distributions.\n- The transformer architecture allows the model to handle varying numbers of observations, addressing a limitation of previous deep learning approaches.\n- The method is evaluated on several inverse problems, including a simple nonlinear model, an SEIR disease model, and a permeability field inversion problem. \n- CFM-Tr demonstrates superior performance compared to traditional MCMC methods, achieving higher accuracy with significantly reduced computational cost.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
+    },
+    {
+        "title": "Understanding and Predicting Derailment in Toxic Conversations on GitHub",
+        "authors": "Rebekah Copeland, Robert Zita, kdamevski, rahat-rizvi, imranraad",
+        "link": "https://arxiv.org/abs/2503.02191",
+        "github_repo": null,
+        "summary": "- This research introduces a novel approach to proactively moderate online discussions on GitHub by predicting conversational derailment, which is when a conversation shifts from productive discourse to negativity and potential toxicity.\n- The authors curated a dataset of 202 toxic GitHub conversations with annotated derailment points and 696 non-toxic conversations, identifying linguistic and conversational dynamics features unique to toxic conversations.\n- Leveraging these features and a Least-to-Most (LtM) prompting technique, they developed an approach that generates Summaries of Conversation Dynamics (SCD) to predict if a conversation will derail into toxicity.\n- This LLM-powered approach, utilizing a two-step prompting process with a large language model (LLaMA-3.1-70B), achieves a 0.69 F1-score and 0.76 precision, significantly outperforming baseline methods like CRAFT and a generic SCD approach.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://anonymous.4open.science/r/derailment-oss-replication-C8B1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-07"
     }
 ]

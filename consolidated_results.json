@@ -23584,5 +23584,291 @@
         ],
         "huggingface_urls": [],
         "date": "2025-03-07"
+    },
+    {
+        "title": "Unified Reward Model for Multimodal Understanding and Generation",
+        "authors": "Cheng Jin, Hao Li, Jiaqiwang, yuhangzang, CodeGoat24",
+        "link": "https://arxiv.org/abs/2503.05236",
+        "github_repo": null,
+        "summary": "- This paper introduces UNIFIEDREWARD, a unified reward model for assessing both multimodal understanding and generation tasks, including image and video modalities.\n- UNIFIEDREWARD leverages a large-scale human preference dataset covering various visual tasks and is trained to perform both pairwise ranking and pointwise scoring of model outputs.\n- A three-stage pipeline is proposed, involving (1) training UNIFIEDREWARD, (2) constructing preference data using the trained reward model via pair ranking and point sifting, and (3) aligning vision models (VLMs and diffusion models) with human preferences using Direct Preference Optimization (DPO).\n- Experimental results demonstrate that joint learning across diverse visual tasks leads to synergistic improvements, with UNIFIEDREWARD-based DPO outperforming existing methods on various benchmarks for image and video understanding and generation.\n- The paper highlights the benefits of a unified reward model for more adaptable, generalizable, and effective preference learning across visual applications.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Text",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "EuroBERT: Scaling Multilingual Encoders for European Languages",
+        "authors": "caiocorro, ayoubhammal, DuarteMRAlves, hgissbkh, Nicolas-BZRD",
+        "link": "https://arxiv.org/abs/2503.05500",
+        "github_repo": null,
+        "summary": "- This paper introduces EuroBERT, a family of multilingual encoder models based on the Llama 3 architecture, but adapted for bidirectional encoding.\n- These models incorporate architectural advances like grouped query attention, swish gated linear units, and rotary position embeddings, and are trained on a 5T token multilingual dataset covering European and global languages, mathematics, and code.\n- EuroBERT outperforms existing models like XLM-ROBERTa and mGTE-MLM-base on various tasks including multilingual retrieval, classification, regression, mathematics, and coding, while natively supporting sequences up to 8,192 tokens.\n- The models are available in three sizes (210m, 610m, and 2.1B parameters) and trained with a two-phase approach (pre-training and annealing) using masked language modeling.\n- The study also shows that EuroBERT maintains performance at longer context lengths compared to XLM-ROBERTa.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Feature Extraction",
+            "Sentence Similarity",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/EuroBERT"
+        ],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching",
+        "authors": "Sung Ju Hwang, jinheon, saytes",
+        "link": "https://arxiv.org/abs/2503.05179",
+        "github_repo": "https://www.github.com/SimonAytes/SoT",
+        "summary": "- Sketch-of-Thought (SoT) is introduced as a novel prompting framework designed to enhance the efficiency of large language models (LLMs) in reasoning tasks by minimizing token usage without significant accuracy loss.\n- SoT incorporates three cognitive-inspired reasoning paradigms \u2014 Conceptual Chaining, Chunked Symbolism, and Expert Lexicons \u2014 each tailored to different types of reasoning tasks and selected dynamically by a lightweight router model based on query characteristics, and implemented through prompt engineering.\n- Evaluations across 15 reasoning datasets demonstrate SoT achieving a 76% reduction in token usage compared to Chain-of-Thought (CoT) prompting, while maintaining or even improving accuracy in some tasks.\n- SoT is also shown to be effective in both multilingual and multimodal scenarios, maintaining high efficiency with minimal accuracy trade-offs.\n- The study argues that concise, structured reasoning as promoted by SoT can be as effective as (and sometimes superior to) the verbose explanations typical of traditional prompting methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/SimonAytes/SoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "Forgetting Transformer: Softmax Attention with a Forget Gate",
+        "authors": "Aaron Courville, littleowen, nikishin, zhixuan-lin",
+        "link": "https://arxiv.org/abs/2503.02130",
+        "github_repo": "https://github.com/zhixuan-lin/forgetting-transformer",
+        "summary": "- This paper introduces the Forgetting Transformer (FoX), a Transformer variant incorporating a forget gate mechanism within the softmax attention, enabling data-dependent down-weighting of past information.\n- FoX integrates the forget gate by down-weighting unnormalized attention scores, enhancing performance on long-context language modeling, length extrapolation, and short-context downstream tasks while maintaining comparable performance to standard Transformers on long-context downstream tasks.\n-  It eliminates the need for positional embeddings and is compatible with FlashAttention. \n- FoX also demonstrates superior long-context capabilities compared to recurrent sequence models like Mamba-2, HGRN2, and DeltaNet, achieving near-perfect accuracy in the needle-in-the-haystack test.\n- A \"Pro\" block design further improves FoX and Transformer performance by integrating architectural components from recurrent sequence models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zhixuan-lin/forgetting-transformer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "VideoPainter: Any-length Video Inpainting and Editing with Plug-and-Play Context Control",
+        "authors": "Zhaoyang Zhang, yshan2u, Ljzycmd, juxuan27, BianYx",
+        "link": "https://arxiv.org/abs/2503.05639",
+        "github_repo": null,
+        "summary": "- VideoPainter is a novel dual-branch video inpainting and editing framework leveraging a lightweight context encoder with any pre-trained Diffusion Transformer (DiT).\n- It introduces a mask-selective feature integration method and inpainting region ID resampling for enhanced background preservation, foreground generation, and ID consistency in any length videos.\n- VideoPainter supports plug-and-play background controls and user customization through text prompts.\n- Evaluation on the largest video inpainting dataset (VPData) and benchmark (VPBench), comprising over 390K clips with precise segmentation masks, demonstrates state-of-the-art performance across 8 metrics.\n- VideoPainter excels in various video editing tasks, including adding, removing, changing attributes, and swapping objects, showing promising potential in downstream applications.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning",
+        "authors": "jrwen, TimothyCzp, EliverQ, Boru, XXsongLALA",
+        "link": "https://arxiv.org/abs/2503.05592",
+        "github_repo": null,
+        "summary": "- R1-Searcher, a novel framework, enhances the Retrieval Augmented Generation (RAG) capabilities of Large Language Models (LLMs) using a two-stage reinforcement learning (RL) approach.\n- This method allows LLMs to learn to use external search engines during reasoning, improving knowledge access and reducing hallucinations for complex questions.\n- R1-Searcher outperforms strong baselines, including GPT-40-mini, by up to 48.22% on HotpotQA and 21.72% on 2Wiki using Qwen-2.5-7B-Base as the LLM backbone.\n- The model generalizes well to out-of-domain datasets like Bamboogle, showing an 11.4% improvement over Search-01 with 32B parameters using online search.\n- The training relies solely on outcome-based RL, eliminating the need for distillation or cold starts with supervised fine-tuning, improving training efficiency and adaptability for various LLM backbones.",
+        "classification": [
+            "Question Answering",
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/SsmallSong/R1-Searcher"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "R1-Omni: Explainable Omni-Multimodal Emotion Recognition with Reinforcing Learning",
+        "authors": "Xihan Wei, Liefeng, StarJiaxing",
+        "link": "https://arxiv.org/abs/2503.05379",
+        "github_repo": null,
+        "summary": "- R1-Omni is introduced, an innovative application of Reinforcement Learning with Verifiable Reward (RLVR) to an Omni-multimodal large language model, specifically designed for enhanced emotion recognition by leveraging both visual and audio modalities.\n- RLVR optimizes the model, leading to significant improvements in reasoning capabilities, emotion recognition accuracy, and generalization, particularly on out-of-distribution datasets.  R1-Omni provides insights into the contributions of visual and audio information during emotion recognition.\n- The model is first pre-trained using a cold-start strategy on EMER (Explainable Multimodal Emotion Reasoning) and a manually annotated HumanOmni dataset.\n- The RLVR training process utilizes a reward function comprising accuracy and formatting components, drawing inspiration from DeepSeek R1.\n- Experimental results demonstrate R1-Omni's superior performance compared to baseline models on MAFW, DFEW, and RAVDESS datasets, showcasing improved reasoning, understanding, and generalization capabilities.",
+        "classification": [
+            "Multimodal",
+            "Video Classification",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/HumanMLLM/R1-Omni"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "TrajectoryCrafter: Redirecting Camera Trajectory for Monocular Videos via Diffusion Models",
+        "authors": "Mark YU, yshan2u, Doubiiu, wbhu-tc",
+        "link": "https://arxiv.org/abs/2503.05638",
+        "github_repo": null,
+        "summary": "- TrajectoryCrafter is a novel framework that redirects camera trajectories for monocular videos, generating high-fidelity videos with user-defined camera paths from single video inputs.\n- It employs a dual-stream conditional video diffusion model, integrating point cloud renders for precise view transformations and source videos for coherent 4D content generation.\n- A hybrid training dataset combines web-scale monocular videos with static multi-view data using a double-reprojection strategy, enhancing generalization.\n- Evaluations on multi-view and large-scale monocular video datasets demonstrate superior performance over existing reconstruction-based and generative methods, achieving higher fidelity, 4D consistency, and accurate trajectory control.\n- The dual-stream conditioning and hybrid training data strategy are validated through ablation studies, showing their significant contribution to performance improvements.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities",
+        "authors": "Ruohan Zhang, jiajunwu, cgokmen, yjze, yunfanj",
+        "link": "https://arxiv.org/abs/2503.05652",
+        "github_repo": null,
+        "summary": "- This paper introduces BEHAVIOR ROBOT SUITE (BRS), a framework for whole-body manipulation in diverse household tasks, featuring a novel teleoperation interface (JoyLo) and a learning algorithm (WB-VIMA).\n- JoyLo uses low-cost, kinematic-twin arms with joystick controllers to enable intuitive and efficient whole-body teleoperation of a wheeled, dual-arm robot with a flexible torso.\n- WB-VIMA, a transformer-based imitation learning algorithm, leverages the robot's kinematic hierarchy and multi-modal sensory input (egocentric point clouds and robot joint positions) to predict coordinated whole-body actions.\n- WB-VIMA outperforms baseline methods on five challenging real-world household tasks, achieving an average success rate of 58% and a peak of 93%, compared to a maximum of 20% for baselines.\n- JoyLo demonstrates superior efficiency and user-friendliness in a user study compared to VR controller and Apple Vision Pro interfaces, and its collected data leads to significantly higher replay success rates in policy learning.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "TinyR1-32B-Preview: Boosting Accuracy with Branch-Merge Distillation",
+        "authors": "lwher1996, yuhanwuuu, xiaoqijiang, zhaoguangxiang, lincharliesun",
+        "link": "https://arxiv.org/abs/2503.04872",
+        "github_repo": null,
+        "summary": "- This paper introduces TinyR1-32B-Preview, a new 32B parameter language model trained using a novel Branch-Merge distillation approach.\n- The Branch-Merge approach first trains specialized student models on domain-specific data (math, coding, science) and then merges them to enhance cross-domain knowledge transfer and generalization.\n- This model outperforms DeepSeek-R1-Distill-Qwen-32B and DeepSeek-R1-Distill-Llama-70B on benchmarks like AIME 2024 (Math), LiveCodeBench (Coding), and GPQA-Diamond (Science), and achieves near-equal performance to the larger DeepSeek-R1 model (67B parameters).\n- The merging method employed, Arcee Fusion, significantly reduces the computational cost compared to traditional data mixture methods, requiring only 0.5% of the overhead.\n- The model and training data, code, and logs will be open-sourced.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "ProReflow: Progressive Reflow with Decomposed Velocity",
+        "authors": "Yu Li, Xuefei Ning, Haohang Xu, Lei Ke, Ringo1110",
+        "link": "https://arxiv.org/abs/2503.04824",
+        "github_repo": null,
+        "summary": "- ProReflow, a novel training technique for flow-based diffusion models, enhances text-to-image generation by rectifying the diffusion trajectory through progressive reflow and aligned velocity prediction.\n- Progressive reflow employs a curriculum learning strategy, gradually simplifying the trajectory approximation by reducing the number of time windows over multiple training stages.\n- Aligned v-prediction prioritizes directional alignment over magnitude matching in velocity prediction, thereby improving generation quality and optimization stability.\n- Experiments on COCO-2017 and COCO-2014 datasets using Stable Diffusion and SDXL models demonstrate ProReflow's superiority over existing flow-based acceleration methods, achieving better FID and CLIP scores with fewer sampling steps.\n- Notably, ProReflow-II achieves an FID of 10.70 on COCO-2014 with only four sampling steps on SDv1.5, which is close to the teacher model (32 DDIM steps, FID = 10.05)",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "Linear-MoE: Linear Sequence Modeling Meets Mixture-of-Experts",
+        "authors": "Yu Cheng, Tong Zhu, Xiaoye08, landisen, weigao266",
+        "link": "https://arxiv.org/abs/2503.05447",
+        "github_repo": "https://github.com/OpenSparseLLMs/Linear-MoE",
+        "summary": "- Linear-MoE is a production-level system for large language models that combines Linear Sequence Modeling (LSM) with Mixture-of-Experts (MoE).\n- It offers a unified framework for various LSM methods, including linear attention, state space models, and linear RNNs, along with efficient training techniques using advanced parallelism.\n- Linear-MoE models demonstrated competitive performance on various benchmarks while achieving efficiency gains, especially with long input sequences, compared to standard attention models.\n- The system also explores hybrid models combining Linear-MoE and standard Transformer-MoE layers for enhanced flexibility and performance on recall-intensive tasks.\n- The system facilitates seamless integration with existing ecosystems such as Megatron-Core and HuggingFace.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/OpenSparseLLMs/Linear-MoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "An Empirical Study on Eliciting and Improving R1-like Reasoning Models",
+        "authors": "daixuancheng, Boru, ToheartZhang, EliverQ, TimothyCzp",
+        "link": "https://arxiv.org/abs/2503.04548",
+        "github_repo": "https://github.com/RUCAIBox/Slow_Thinking_with_LLMs",
+        "summary": "- This paper explores scaling reinforcement learning (RL) training for large reasoning models (LRMs), also known as slow-thinking models, to enhance their complex reasoning capabilities.\n- The research systematically investigates the impact of various RL training settings, including hyperparameters, backbone models, and prompt design, on both base and fine-tuned LLMs.\n- Key findings indicate that on-policy learning and appropriate rollout parameter settings are crucial for effective RL training, while detailed prompts improve reasoning efficiency.\n- The study demonstrates that direct RL training on base models, exemplified by STILL-3-ZERO-32B, enhances both response length and test accuracy.\n- Furthermore, RL training combined with tool manipulation, particularly using a code interpreter, significantly improves the reasoning performance of fine-tuned models, with STILL-3-TOOL-32B achieving 86.67% accuracy on AIME 2024 with greedy search.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/RUCAIBox/Slow_Thinking_with_LLMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "SAGE: A Framework of Precise Retrieval for RAG",
+        "authors": "Jinyang Su, Guoliang Li, jt-zhang",
+        "link": "https://arxiv.org/abs/2503.01713",
+        "github_repo": null,
+        "summary": "- SAGE, a Retrieval-Augmented Generation (RAG) framework, enhances precise retrieval by incorporating semantic segmentation, gradient-based chunk selection, and LLM self-feedback. \n- A lightweight model segments the corpus into semantically complete chunks, dynamic chunk selection prioritizes relevant chunks based on decreasing relevance scores, and LLM self-feedback adjusts the number of chunks for accurate QA.\n- Experiments demonstrate SAGE surpasses baselines by 61.25% in QA quality on average, and 49.41% in cost efficiency on average by lowering token consumption.\n- SAGE is evaluated with four LLMs (GPT3.5 turbo, GPT4, GPT4-o-mini, and UnifiedQA-3B) on three QA datasets (QuALITY, QASPER, and NarrativeQA). \n- SAGE improves the performance of various retrievers (SBERT, BM25, DPR, and OpenAI Embedding) in RAG systems by a significant margin.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "Learning from Failures in Multi-Attempt Reinforcement Learning",
+        "authors": "Jie Fu, Stephen Chung, wydu",
+        "link": "https://arxiv.org/abs/2503.04808",
+        "github_repo": "https://github.com/DualityRL/multi-attempt",
+        "summary": "- This paper introduces a multi-attempt reinforcement learning approach for large language models (LLMs), enabling them to learn from failures and refine their responses over multiple attempts.\n- The model is trained using a simple question-answering task, where feedback is provided after each incorrect response.\n- Experimental results on math benchmarks demonstrate that this approach leads to significant improvements in accuracy with increasing attempts, from 45.6% with one attempt to 52.5% with two attempts.\n- In contrast, models trained with standard single-turn tasks show only marginal improvements, suggesting that multi-attempt training allows LLMs to better leverage feedback for self-refinement.\n- The approach enables LLMs to learn self-refinement capabilities, which are shown to be especially effective in multi-attempt settings.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/DualityRL/multi-attempt"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "LoRACode: LoRA Adapters for Code Embeddings",
+        "authors": "bindsch, amanchadha, shollercoaster",
+        "link": "https://arxiv.org/abs/2503.05315",
+        "github_repo": null,
+        "summary": "- LoRACode, a novel parameter-efficient fine-tuning method using Low-Rank Adaptation (LoRA), enhances code embeddings for semantic code search by creating task-specific and language-specific adapters for retrieving code snippets.\n- This approach reduces the number of trainable parameters, enabling efficient fine-tuning of large language models on extensive code corpora (e.g., 2 million samples in 25 minutes on two H100 GPUs) while using only 1.83%-1.85% of the base model parameters for fine-tuning.\n- Experiments demonstrate improvements of up to 9.1% in Mean Reciprocal Rank (MRR) for Code2Code search and up to 86.69% for Text2Code search across multiple programming languages.\n- Language-specific adapters outperform task-specific adapters, especially for Text2Code retrieval due to better handling of language-specific syntax and semantics.\n- Evaluating the approach with various datasets, tasks, and languages reveals that language-specific fine-tuning leads to more effective code retrieval compared to a generalized, multilingual approach.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "R1-Zero's \"Aha Moment\" in Visual Reasoning on a 2B Non-SFT Model",
+        "authors": "Minhao Cheng, Ruochen Wang, zhoutianyi, AIcell, Dolphin42",
+        "link": "https://arxiv.org/abs/2503.05132",
+        "github_repo": "https://github.com/turningpoint-ai/VisualThinker-R1-Zero",
+        "summary": "- This paper introduces VisualThinker-R1-Zero, a novel approach for enhancing visual reasoning capabilities in multimodal models by directly applying reinforcement learning (RL) to a non-supervised fine-tuned (non-SFT) 2B parameter model.\n- The model is trained using the Qwen2-VL-2B architecture and GRPO algorithm on the SAT dataset, focusing on spatial reasoning tasks.\n- This method successfully replicates the \"aha moment\" phenomenon observed in DeepSeek-R1, characterized by emergent self-reflection and increased response length during training, indicating the development of advanced reasoning strategies.\n- VisualThinker-R1-Zero achieves 59.47% accuracy on CVBench, outperforming the base Qwen2-VL-2B model by ~30% and its supervised fine-tuned (SFT) counterpart by ~2%, demonstrating significant improvement in visual reasoning abilities.\n- The study also highlights the challenges of applying RL to SFT models, revealing a tendency towards trivial reasoning patterns rather than genuine problem-solving strategies, suggesting that direct RL on non-SFT models may be a more effective approach for inducing complex reasoning capabilities.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/turningpoint-ai/VisualThinker-R1-Zero"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
+    },
+    {
+        "title": "AnyAnomaly: Zero-Shot Customizable Video Anomaly Detection with LVLM",
+        "authors": "Inpyo Hong, Sein Kwon, Kijung Lee, jyy1551, SkiddieAhn",
+        "link": "https://arxiv.org/abs/2503.04504",
+        "github_repo": "http://github.com/SkiddieAhn/Paper-AnyAnomaly",
+        "summary": "- This paper introduces AnyAnomaly, a zero-shot customizable video anomaly detection (C-VAD) model using large vision language models (LVLMs).\n- AnyAnomaly employs a segment-level approach with a key frame selection module and incorporates position and temporal context for enhanced visual question answering (VQA).\n- The model achieves state-of-the-art results on the UBnormal dataset and demonstrates superior generalization across various VAD datasets.\n- AnyAnomaly facilitates user-defined anomaly detection, outperforming traditional one-class classification methods that struggle with diverse environments.\n- The approach eliminates the need for retraining or developing separate AI models for new environments, enhancing the practical usability of VAD.",
+        "classification": [
+            "Computer Vision",
+            "Video Classification",
+            "Visual Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/SkiddieAhn/Paper-AnyAnomaly"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-10"
     }
 ]

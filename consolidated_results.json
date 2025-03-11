@@ -23870,5 +23870,598 @@
         ],
         "huggingface_urls": [],
         "date": "2025-03-10"
+    },
+    {
+        "title": "Feature-Level Insights into Artificial Text Detection with Sparse\n  Autoencoders",
+        "authors": "Kristian Kuznetsov, natriistorm, razzant, plina2polina, Kushnareva",
+        "link": "https://arxiv.org/abs/2503.03601",
+        "github_repo": null,
+        "summary": "- This paper investigates the interpretability of Artificial Text Detection (ATD) using Sparse Autoencoders (SAEs) applied to the residual stream of the Gemma-2-2b model.\n- The study introduces a categorization of extracted features into discourse, noise, and style features, offering valuable insights into how machine-generated text differs from human-written content.\n- The authors analyze the semantics and relevance of these features through domain- and model-specific statistics, a steering approach, and manual or LLM-based interpretation.\n- The results demonstrate that SAE-derived features effectively detect artificial text, sometimes outperforming existing methods, with certain features showing strong generalizability across domains and models, while others exhibit domain- or model-specific performance.\n- The analysis reveals that modern LLMs have distinct writing styles, particularly in information-dense domains, making their text detectable, but adversarial techniques using less formal prompts can make generated text more human-like and harder to detect.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://mgtsaevis.github.io/\nmgt-sae-visualization/"
+        ],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "MM-Eureka: Exploring Visual Aha Moment with Rule-based Large-scale\n  Reinforcement Learning",
+        "authors": "wangwhcore, friskit, hflqf88888, Cierra0506, FanqingM",
+        "link": "https://arxiv.org/abs/2503.07365",
+        "github_repo": "https://github.com/ModalMinds/MM-EUREKA",
+        "summary": "- The paper introduces MM-Eureka, a multimodal reasoning model that extends large-scale rule-based reinforcement learning to multimodal reasoning tasks.\n- MM-Eureka successfully reproduces key characteristics of text-based RL systems in the multimodal space, including steady increases in accuracy, reward, and response length.\n- The model demonstrates strong multimodal reasoning capabilities through rule-based RL without supervised fine-tuning, showcasing superior data efficiency compared to alternative approaches.\n- MM-Eureka exhibits \"visual aha moments\", where the model re-examines intermediate steps using visual information to improve accuracy.\n- The authors open-source their complete pipeline, including code, models, and data, to facilitate further research in this area.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ModalMinds/MM-EUREKA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "SEAP: Training-free Sparse Expert Activation Pruning Unlock the\n  Brainpower of Large Language Models",
+        "authors": "Xun Liang, BO1022, Ki-Seki, siminniu, UglyToilet",
+        "link": "https://arxiv.org/abs/2503.07605",
+        "github_repo": null,
+        "summary": "- This paper introduces Sparse Expert Activation Pruning (SEAP), a training-free pruning method for Large Language Models (LLMs) that selectively retains task-relevant parameters to reduce inference overhead.\n- Inspired by the clustering patterns of hidden states and activations in LLMs, SEAP identifies task-specific expert activation patterns and prunes the model accordingly.\n- SEAP dynamically adjusts sparsity based on task type, leading to improved efficiency and preserved performance. \n- Experimental results show that SEAP significantly reduces computational overhead while maintaining accuracy comparable to the dense model, outperforming existing baselines like WandA and FLAP by over 20% at 50% pruning and incurring only a 2.2% performance drop at 20% pruning.\n- The method involves constructing task-specific knowledge corpora, analyzing activation patterns, computing neuron importance scores, dynamically distributing sparsity, and applying task-specific pruning strategies.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/IAAR-Shanghai/SEAP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Taking Notes Brings Focus? Towards Multi-Turn Multimodal Dialogue\n  Learning",
+        "authors": "Zongqing Lu, Jiazheng Liu, tellarin, sipeng9527",
+        "link": "https://arxiv.org/abs/2503.07002",
+        "github_repo": null,
+        "summary": "- Introduces MMDiag, a multi-turn multimodal dialogue dataset with strong correlations between questions, images, and image regions, generated using rules and GPT assistance.\n- Presents DiagNote, an MLLM with multimodal grounding and reasoning capabilities, using Deliberate and Gaze modules for Chain-of-Thought and annotation, respectively.\n- DiagNote demonstrates improved grounding and joint reasoning with vision and language information compared to existing MLLMs.\n- MMDiag serves as a challenging benchmark for multi-turn multimodal dialogue learning, focusing on saliency tracking and recall.\n- Empirical results show DiagNote's advantages in handling complex multi-turn dialogues and reasoning tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Automated Movie Generation via Multi-Agent CoT Planning",
+        "authors": "Zeyu Zhu, AnalMom, weijiawu",
+        "link": "https://arxiv.org/abs/2503.07314",
+        "github_repo": "https://github.com/showlab/MovieAgent",
+        "summary": "- MovieAgent, a novel framework for automated movie generation, leverages multi-agent Chain of Thought (CoT) planning to automate the creation of multi-scene, multi-shot videos from a script synopsis and character bank.\n- This hierarchical framework utilizes specialized LLM agents, simulating roles like director, screenwriter, and storyboard artist, to handle high-level narrative structuring and low-level cinematography, ensuring narrative coherence, character consistency, and synchronized subtitles.\n- MovieAgent introduces a hierarchical CoT reasoning process for automated scene structuring, camera settings, and cinematography, significantly reducing manual effort compared to traditional filmmaking and existing video generation methods.\n- Experimental results on the MoviePrompts dataset demonstrate MovieAgent's state-of-the-art performance in automated storytelling and movie generation, excelling in narrative coherence and character consistency.\n- The framework provides new insights into fully automated movie generation and offers a scalable solution for AI-driven storytelling.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/MovieAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "FedRand: Enhancing Privacy in Federated Learning with Randomized LoRA\n  Subparameter Updates",
+        "authors": "Sung Ju Hwang, matbambbang, Seanie-lee, Sangsang",
+        "link": "https://arxiv.org/abs/2503.07216",
+        "github_repo": null,
+        "summary": "- FedRand is a privacy-enhanced federated learning framework for vision-language models (VLMs) that involves randomly selecting and updating a subset of LoRA parameters, while keeping the remaining parameters private on the client-side.\n- It addresses the vulnerability of VLMs to membership inference attacks in federated learning settings by reducing the exposure of client model parameters.\n- FedRand achieves comparable performance to FedAvg, the oracle method, on several benchmark datasets (ScienceQA, MSCOCO, and NoCaps) for visual question answering and image captioning tasks.\n- It improves robustness against membership inference attacks compared to other baselines like FedPer and FedPara, which employ partial parameter sharing.\n- The method reduces communication costs by approximately 25% compared to FedAvg by transmitting only a subset of updated parameters back to the server.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation\n  for Feature Implementation",
+        "authors": "Wei Li, lisijia0504, yangyu90, dawnmsg, CharonBony",
+        "link": "https://arxiv.org/abs/2503.06680",
+        "github_repo": null,
+        "summary": "- FEA-Bench, a benchmark designed to assess Large Language Models' (LLMs) ability to perform incremental development of new features within existing code repositories.\n- It comprises of 1401 task instances derived from pull requests across 83 GitHub repositories, focusing specifically on adding new components.\n-  Each task instance includes a feature request, definitions of new components, environment setup details, a patch describing code changes, and corresponding unit test files for verification.\n- The benchmark tasks involve a significant amount of code modification, with an average of 128.5 lines changed per instance, making it more complex than existing benchmarks.\n-  Experimental results show that current LLMs struggle with these complex, repository-level tasks, with even the best model, DeepSeek-R1 only achieving a success rate of 9.92%.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/FEA-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "EasyControl: Adding Efficient and Flexible Control for Diffusion\n  Transformer",
+        "authors": "Jiaming Liu, Yirui Yuan, wanghaofan, yiren98, zzyx",
+        "link": "https://arxiv.org/abs/2503.07027",
+        "github_repo": null,
+        "summary": "- EasyControl is a novel framework designed to unify condition-guided diffusion transformers with high efficiency and flexibility, built upon a lightweight Condition Injection LORA Module, a Position-Aware Training Paradigm, and a Causal Attention Mechanism.\n- The Condition Injection LORA Module processes conditional signals in isolation, ensuring compatibility with customized models and flexible injection of diverse conditions, also enabling zero-shot multi-condition generalization.\n- The Position-Aware Training Paradigm standardizes input conditions to fixed resolutions, enabling arbitrary aspect ratios and flexible resolutions while optimizing computational efficiency.\n- The Causal Attention Mechanism combined with the KV Cache technique reduces latency for image synthesis, improving the framework's overall efficiency.\n- Experimental results demonstrate EasyControl's exceptional performance across various application scenarios, making it efficient, flexible, and suitable for a wide range of tasks.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Xiaojiu-z/EasyControl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "AlphaDrive: Unleashing the Power of VLMs in Autonomous Driving via\n  Reinforcement Learning and Reasoning",
+        "authors": "Qian Zhang, xinggangw, wenyuliu, Atan-0221, rb93dett",
+        "link": "https://arxiv.org/abs/2503.07608",
+        "github_repo": "https://github.com/hustvl/AlphaDrive",
+        "summary": "- AlphaDrive, a vision-language model (VLM) designed for high-level planning in autonomous driving, is introduced, integrating Group Relative Policy Optimization (GRPO)-based reinforcement learning (RL) with planning reasoning.\n- The model utilizes four novel GRPO rewards tailored for planning: planning accuracy, action-weighted, planning diversity, and planning format rewards. \n- A two-stage training strategy is employed, combining supervised fine-tuning (SFT) for knowledge distillation from larger models with subsequent RL for planning exploration.\n- On the MetaAD driving dataset, AlphaDrive demonstrates a substantial improvement in planning accuracy, outperforming the SFT-trained model by 25.52% overall and by 35.31% with only 20% of the training data.\n-  Following RL training, AlphaDrive exhibits emergent multimodal planning capabilities, generating multiple feasible driving plans in complex scenarios, which holds significant potential for enhancing driving safety and efficiency.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/hustvl/AlphaDrive"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "DreamRelation: Relation-Centric Video Customization",
+        "authors": "Shiwei Zhang, Shuaishuai0219, lloong, JacobYuan, weilllllls",
+        "link": "https://arxiv.org/abs/2503.07602",
+        "github_repo": null,
+        "summary": "- DreamRelation is a novel text-to-video generation model for customizing relations between subjects in videos, leveraging a modified MM-DiT architecture.\n- It introduces a relation LoRA triplet and a hybrid mask training strategy to decouple relation and subject appearances, enhancing generalization across diverse relationships.\n- A space-time relational contrastive loss is proposed to prioritize relational dynamics learning while mitigating reliance on detailed subject appearances.\n- The analysis on roles of query, key, and value features in MM-DiT\u2019s full attention provides interpretability to the proposed architecture.\n- Experimental results show DreamRelation surpasses baseline models in relation accuracy, text alignment, and video quality in customizing relations and generalizing to new subjects, as measured by Relation Accuracy, CLIP-T, and FVD metrics, respectively.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://dreamrelation.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Agent models: Internalizing Chain-of-Action Generation into Reasoning\n  models",
+        "authors": "Jitao Sang, Xinyan Wen, Jiangming Shu, tzteyang, TokerZ",
+        "link": "https://arxiv.org/abs/2503.06580",
+        "github_repo": "https://github.com/ADaM-BJTU/AutoCoA",
+        "summary": "- This paper introduces AutoCoA, a framework for training Large Agent Models (LAMs) that internalize Chain-of-Action (CoA) generation, allowing them to autonomously decide when and how to use tools.\n- AutoCoA combines supervised fine-tuning (SFT) and reinforcement learning (RL) to train LAMs to generate CoA by interleaving reasoning and actions, managing environment interactions efficiently.\n- The framework incorporates step-level action triggering, trajectory-level CoA optimization, and an internal world model to minimize real-world interaction costs.\n- Evaluations on open-domain QA tasks demonstrate that AutoCoA-trained agent models outperform ReAct-based workflows, especially in tasks requiring long-term reasoning and multiple actions, as evidenced by higher task completion rates.\n- The paper focuses on smaller reasoning models with search as a testbed, with future research planned for scaling to larger models, integrating more tools, and evaluating on open-ended tasks.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ADAM-BJTU/AutoCoA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "WritingBench: A Comprehensive Benchmark for Generative Writing",
+        "authors": "SHaopeng Lai, Chenliang Li, Ming Yan, Jiahao Mei, AQuarterMile",
+        "link": "https://arxiv.org/abs/2503.05244",
+        "github_repo": null,
+        "summary": "- WritingBench, a comprehensive benchmark designed to evaluate LLMs across 6 core writing domains and 100 subdomains, encompassing creative, persuasive, informative, and technical writing.\n- Proposes a query-dependent evaluation framework that empowers LLMs to dynamically generate instance-specific assessment criteria.\n- Complemented by a fine-tuned critic model for criteria-aware scoring, enabling evaluations in style, format, and length.\n- Framework's validity is demonstrated by its data curation capability, enabling 7B-parameter models to approach state-of-the-art (SOTA) performance.\n- Open-sourced the benchmark, along with evaluation tools and modular framework components.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/X-PLUG/WritingBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Vision-R1: Incentivizing Reasoning Capability in Multimodal Large\n  Language Models",
+        "authors": "Zheyu Ye, Shaosheng Cao, Zijie Zhai, Bohan Jia, Wenxuan Huang",
+        "link": "https://arxiv.org/abs/2503.06749",
+        "github_repo": "https://github.com/Osilly/Vision-R1",
+        "summary": "- This paper introduces Vision-R1, a novel Multimodal Large Language Model (MLLM) designed to enhance reasoning capabilities in visual question answering by integrating cold-start initialization with reinforcement learning.\n- Vision-R1 leverages a two-stage training process: cold-start initialization using a 200K multimodal Chain-of-Thought (CoT) dataset generated via modality bridging and data filtering, followed by reinforcement learning using Group Relative Policy Optimization (GRPO) and Progressive Thinking Suppression Training (PTST).\n- PTST progressively loosens context length restrictions during training, enabling Vision-R1 to acquire increasingly complex reasoning processes.\n- Vision-R1-7B achieves 73.5% accuracy on MathVista, outperforming existing MLLMs with 10x more parameters and approaching OpenAI O1's performance.\n- The authors also demonstrate the effectiveness of their approach by achieving state-of-the-art results on other math reasoning benchmarks (MathVerse, MM-Math) and general multimodal benchmarks (MM-Star, ChartQA, MME, HallBench).",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Osilly/Vision-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "SurveyForge: On the Outline Heuristics, Memory-Driven Generation, and\n  Multi-dimensional Evaluation for Automated Survey Writing",
+        "authors": "Bin Wang, Renqiu Xia, Jiakang Yuan, Shiyang Feng, Xiangchao Yan",
+        "link": "https://arxiv.org/abs/2503.04629",
+        "github_repo": "https://github.com/Alpha-Innovator/SurveyForge",
+        "summary": "- SURVEYFORGE is an automated framework for generating survey papers that leverages LLMs, addressing the limitations of existing methods in outline quality and citation accuracy.\n- It employs a two-stage process: outline generation using heuristic learning from human-written surveys and topic-relevant literature, followed by content generation driven by a memory-driven scholar navigation agent.\n- The agent retrieves high-quality literature using a temporal-aware reranking engine, combining and refining content into a coherent survey.\n- A new benchmark, SurveyBench, featuring 100 human-written surveys and multi-dimensional evaluation metrics (reference, outline, and content quality), facilitates systematic assessment of generated surveys.\n- Experimental results show SURVEYFORGE outperforms the baseline AutoSurvey across all evaluation dimensions, demonstrating improvements in outline structure, reference quality, and content coherence.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Alpha-Innovator/SurveyForge"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/U4R/SurveyBench"
+        ],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "LLaVE: Large Language and Vision Embedding Models with Hardness-Weighted\n  Contrastive Learning",
+        "authors": "Jinsong Su, Jie Zhou, Fandong Meng, lqniu, zhibinlan",
+        "link": "https://arxiv.org/abs/2503.04812",
+        "github_repo": null,
+        "summary": "- LLaVE, a new framework for training large language and vision embedding models, addresses the challenge of overlapping similarity distributions between positive and negative pairs in existing LMM-based embedding models.\n- This framework utilizes hardness-weighted contrastive learning, assigning larger weights to harder negative pairs, and employs a cross-device negative sample gathering strategy to increase the number of negative pairs without substantial memory overhead.\n- LLaVE models, trained in various sizes (0.5B, 2B, and 7B), achieve state-of-the-art results on the MMEB benchmark across multiple tasks, including retrieval, visual question answering, and classification.\n- LLaVE-7B surpasses the previous best model by 6.2 points on the MMEB benchmark, demonstrating strong scalability and efficiency.\n- Despite being trained solely on image-text data, LLaVE generalizes well to zero-shot text-video retrieval tasks.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "MedAgentsBench: Benchmarking Thinking Models and Agent Frameworks for\n  Complex Medical Reasoning",
+        "authors": "Jiapeng Chen, Jiwoong Sohn, Daniel Shao, wshi83, RTT1",
+        "link": "https://arxiv.org/abs/2503.07459",
+        "github_repo": "https://github.com/gersteinlab/medagents-benchmark",
+        "summary": "- This paper introduces MEDAGENTSBENCH, a new benchmark designed to evaluate complex medical reasoning capabilities of large language models (LLMs) and agent frameworks, focusing on challenging questions requiring multi-step reasoning and diagnosis formulation.\n- The benchmark addresses limitations of existing evaluations by using adversarially filtered questions from seven established medical datasets, ensuring diversity, and incorporating human annotations to verify reasoning depth.\n- Experiments reveal that thinking models like DEEPSEEK R1 and OPENAI 03 outperform traditional approaches by 15-25% on complex questions.\n- Advanced search-based agent methods, like AFLOW, offer the best performance-to-cost ratios compared to traditional approaches, approaching the accuracy of thinking models with fewer computational resources.\n- Open-source models show competitive performance at lower costs, with DEEPSEEK-R1 demonstrating comparable or superior accuracy to several closed-source alternatives at a fraction of the computational cost.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/gersteinlab/medagents-benchmark"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "PE3R: Perception-Efficient 3D Reconstruction",
+        "authors": "Xinchao Wang, Shizun Wang, Jie Hu",
+        "link": "https://arxiv.org/abs/2503.07507",
+        "github_repo": "https://github.com/hujiecpp/PE3R",
+        "summary": "- PE3R is a novel feed-forward framework for 2D-to-3D semantic reconstruction designed to enhance both the accuracy and efficiency of 3D scene understanding. \n- It uses three key modules, pixel embedding disambiguation, semantic field reconstruction, and global view perception and efficiently operates without relying on explicit 3D data like camera parameters or depth information. \n- Experiments on Mipnerf360, Replica, and ScanNet++ show PE3R outperforms state-of-the-art methods in open-vocabulary segmentation, achieving higher mIoU, mPA, and mP. \n- PE3R also shows a substantial gain in speed, achieving a 9x speedup over other existing methods. \n- Additional experiemnts demonstrates the robustness of PE3R for multi-view depth estimation where it outperforms previous feed-forward architecures such as DUSt3R and MASt3R.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision",
+            "Depth Estimation",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/hujiecpp/PE3R"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Effective and Efficient Masked Image Generation Models",
+        "authors": "Jun Zhou, Jun Hu, Xiaolu Zhang, Jingyang Ou, yyyou",
+        "link": "https://arxiv.org/abs/2503.07197",
+        "github_repo": null,
+        "summary": "- Proposed eMIGM, a unified framework for masked image generation, integrating masked image modeling and masked diffusion models, which uses a transformer-based encoder-decoder architecture (MAE).\n- Introduced a time interval strategy for classifier-free guidance, improving performance and reducing sampling time by applying guidance only in later stages.\n- Achieved state-of-the-art results on ImageNet 512x512, surpassing EDM2 with only 60% of the number of function evaluations (NFEs).\n- Demonstrated scaling properties, with larger models showing improved efficiency and sample quality.\n- On ImageNet 256x256, eMIGM outperformed VAR with similar NFEs and parameters, and achieved comparable performance to state-of-the-art diffusion models with increased NFEs and model size.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Seg-Zero: Reasoning-Chain Guided Segmentation via Cognitive\n  Reinforcement",
+        "authors": "Fanbin Lu, Zihao Yue, Zhisheng Zhong, Bohao Peng, Yuqi Liu",
+        "link": "https://arxiv.org/abs/2503.06520",
+        "github_repo": "https://github.com/dvlab-research/Seg-Zero",
+        "summary": "- Seg-Zero, a novel framework for reasoning segmentation, is introduced, demonstrating emergent test-time reasoning abilities through a pure reinforcement learning (RL) strategy.\n- Seg-Zero uses a decoupled architecture with a reasoning model (Qwen2.5-VL) and a segmentation model (SAM2), where the reasoning model generates a reasoning chain and positional prompts (bounding box and points) for the segmentation model to produce pixel-level masks.\n- The model is trained using GRPO with a sophisticated reward mechanism that integrates format and accuracy rewards to enhance the reasoning process and regulate outputs.\n- Seg-Zero achieves robust zero-shot generalization and exhibits emergent test-time reasoning capabilities, surpassing the previous LISA-7B by 18% on ReasonSeg, achieving 57.5% zero-shot.\n- This improvement highlights Seg-Zero's ability to generalize across domains while presenting explicit reasoning.",
+        "classification": [
+            "Image Segmentation",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/dvlab-research/Seg-Zero"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "BlackGoose Rimer: Harnessing RWKV-7 as a Simple yet Superior Replacement\n  for Transformers in Large-Scale Time Series Modeling",
+        "authors": "xiaol, Alic-Li",
+        "link": "https://arxiv.org/abs/2503.06121",
+        "github_repo": "https://github.com/Alic-Li/BlackGoose_Rimer",
+        "summary": "- This paper introduces Rimer, a novel time series model that leverages RWKV-7, a recurrent neural network architecture with meta-learning capabilities in its state update mechanism, as a replacement for transformers in large-scale time series modeling.\n- Rimer integrates the time mix and channel mix components of RWKV-7 into the transformer-based time series model Timer.\n- The paper demonstrates a substantial performance improvement, achieving approximately 1.13x to 43.3x improvement and a 4.5x reduction in training time compared to Timer, while using only 1/23 of the parameters.\n- Experiments were conducted on four datasets (ELC, ETTH, Traffic, and Weather) using metrics such as RMSE, MAE, MAPE, and R2, demonstrating Rimer's superior performance and efficiency.\n- Rimer's lightweight architecture and compatibility with various hardware platforms make it suitable for large-scale time series applications.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/Alic-Li/BlackGoose_Rimer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Efficient Distillation of Classifier-Free Guidance using Adapters",
+        "authors": "msadat97, cristianpjensen",
+        "link": "https://arxiv.org/abs/2503.07274",
+        "github_repo": null,
+        "summary": "- Introduces Adapter Guidance Distillation (AGD), a novel approach to improve the speed of classifier-free guidance (CFG) in diffusion models by training small adapters to mimic CFG behavior.\n- Doubles sampling speed compared to standard CFG while maintaining or improving image quality by requiring only a single forward pass during inference.\n- More resource-efficient during training than existing methods, enabling distillation of large models (~2.6B parameters) on a single consumer-grade GPU by keeping the base model frozen and training only ~2% additional adapter parameters.\n- Addresses the training-inference mismatch of previous distillation methods by training on CFG-guided trajectories, and outperforms existing guidance distillation methods in FID scores while using fewer parameters.\n- Preserves the original model weights and maintains compatibility with checkpoints from the same base model, such as IP-adapters.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "This Is Your Doge, If It Please You: Exploring Deception and Robustness\n  in Mixture of LLMs",
+        "authors": "Ilija Bogunovic, Sangwoong Yoon, Llwo",
+        "link": "https://arxiv.org/abs/2503.05856",
+        "github_repo": null,
+        "summary": "- This paper investigates the robustness of Mixture of LLM Agents (MoA) architectures to deceptive agents providing misleading responses.\n- The study uses the AlpacaEval 2.0 question answering benchmark and the QUALITY multiple-choice comprehension task to uncover vulnerabilities.\n- Results show that even a single malicious agent can significantly degrade performance, negating the gains of using MoA and dropping accuracy to near-baseline levels.\n- Various factors influencing vulnerability, such as the number and location of deceptive agents, aggregator model size, and information access, are examined.\n- Inspired by the Doge of Venice voting system, several unsupervised defense mechanisms are proposed to mitigate the impact of deceptive agents and recover performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/lorenzflow/robust-moa"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "State-offset Tuning: State-based Parameter-Efficient Fine-Tuning for\n  State Space Models",
+        "authors": "Hyung Il Koo, Minjae Lee, Yuchen Zeng, Kevin Galim, Wonjun Kang",
+        "link": "https://arxiv.org/abs/2503.03499",
+        "github_repo": "https://github.com/furiosa-ai/ssm-state-tuning",
+        "summary": "- This paper introduces state-based Parameter-Efficient Fine-Tuning (PEFT) methods for State Space Models (SSMs), proposing a new method called State-offset Tuning.\n- State-offset Tuning directly adjusts state-related features within the SSM at each time step, offering a more effective adaptation strategy compared to prompt-based methods that rely on external virtual tokens and suffer from diminishing influence over time.\n- State-offset Tuning inserts a constant, learnable state-offset to the hidden state before output generation, mitigating the inconsistent effects of the time-varying coefficients present in existing methods like Initial State Tuning. \n- The paper demonstrates State-offset Tuning's effectiveness through extensive experiments on various NLU and NLG datasets, including GLUE, SAMSum, Spider, and DART, using pre-trained Mamba and Mamba-2 models.\n- Experimental results show that State-offset Tuning consistently outperforms other PEFT methods, including prompt-based and parameter-based approaches, achieving performance comparable to full fine-tuning while using significantly fewer parameters.",
+        "classification": [
+            "Natural Language Processing",
+            "Summarization",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/furiosa-ai/ssm-state-tuning"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/nyu-mll/glue",
+            "https://huggingface.co/datasets/Samsung/samsum",
+            "https://huggingface.co/datasets/xlangai/spider",
+            "https://huggingface.co/datasets/Yale-LILY/dart",
+            "https://huggingface.co/state-spaces/mamba-{130m,1.4b,2.8b}",
+            "https://huggingface.co/state-spaces/mamba2-{130m,1.3b}"
+        ],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Should VLMs be Pre-trained with Image Data?",
+        "authors": "Igor Vasiljevic, Kushal Arora, Samir Yitzhak Gadre, Jean Mercat, Sedrick Keh",
+        "link": "https://arxiv.org/abs/2503.07603",
+        "github_repo": null,
+        "summary": "- This paper investigates the impact of incorporating image data during pre-training of Vision-Language Models (VLMs), challenging the conventional two-stage training approach.\n- The authors train a suite of 300 models with varying scales, datasets, image-text ratios, and pre-training lengths, finding that introducing visual data during the \"cooldown\" phase of text pre-training, specifically at 80% completion, yields superior performance on vision-language tasks compared to adding images after full text pre-training.\n- An optimal image-to-text ratio of 10-20% is identified for 1B parameter models during the image-text pre-training phase, with varying optimums depending on the scale of the model.\n- Fine-tuning on instruction data further improves performance, with 2-4 epochs achieving a balance between vision and text task performance.\n- On a suite of six diverse tasks, introducing visual tokens at 80% of pre-training for a 1B model leads to a 2% average improvement compared to adding visual tokens after full pre-training, demonstrating the benefit of the proposed integrated approach.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-Text-to-Text",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/TRI-ML/vlm-evaluation/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/TRI-ML/DCLM-1B",
+            "https://huggingface.co/meta-llama/Llama-3.2-1B",
+            "https://huggingface.co/apple/DCLM-7B"
+        ],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "ProBench: Judging Multimodal Foundation Models on Open-ended\n  Multi-domain Expert Tasks",
+        "authors": "Liu Liu, Bei Chen, Haoning Wu, dxli1, HelloKKMe",
+        "link": "https://arxiv.org/abs/2503.06885",
+        "github_repo": null,
+        "summary": "- ProBench, a new benchmark designed to evaluate Multimodal Large Language Models (MLLMs) on open-ended, expert-level tasks requiring professional knowledge and reasoning.\n- It contains 4,000 expert-designed samples spanning 10 professional fields and 56 sub-fields, supporting 17 languages and conversations with up to 13 turns.\n- Evaluations of 24 leading MLLMs using ProBench and an MLLM-as-a-Judge reveal significant challenges in visual perception, textual understanding, domain knowledge, and advanced reasoning.\n- The best open-source models show competitive performance with proprietary models, highlighting the progress and remaining challenges in multimodal AI research.\n- A distilled version of Llama-vision is provided for efficient local evaluation of MLLMs.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Zero-AVSR: Zero-Shot Audio-Visual Speech Recognition with LLMs by\n  Learning Language-Agnostic Speech Representations",
+        "authors": "Yong Man Ro, Stavros Petridis, Chae Won Kim, Minsu Kim, JeongHun0716",
+        "link": "https://arxiv.org/abs/2503.06273",
+        "github_repo": null,
+        "summary": "- This paper introduces Zero-AVSR, a zero-shot audio-visual speech recognition (AVSR) framework capable of recognizing speech in languages it hasn't been explicitly trained on.\n- Zero-AVSR leverages an Audio-Visual Speech Romanizer (AV-Romanizer) which predicts language-agnostic pronunciations (Roman text) from audio-visual speech, and a Large Language Model (LLM) to convert the Roman text into language-specific graphemes.\n- The authors introduce a Multilingual Audio-Visual Romanized Corpus (MARC) of 2,916 hours of data across 82 languages including both language-specific and romanized transcriptions to train the system.\n- Experiments demonstrate the effectiveness of Zero-AVSR on unseen languages, outperforming a baseline zero-shot model and achieving competitive performance with existing multilingual models on seen languages.\n- It is also shown that Zero-AVSR improves noise robustness compared to audio-only approaches and demonstrates the ability to process data from language families unseen during training.",
+        "classification": [
+            "Automatic Speech Recognition",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Words or Vision: Do Vision-Language Models Have Blind Faith in Text?",
+        "authors": "Bryan Hooi, Tri Cao, Ailin Deng, ryanchen42",
+        "link": "https://arxiv.org/abs/2503.02199",
+        "github_repo": null,
+        "summary": "- This paper investigates the modality preference of Vision-Language Models (VLMs) when faced with inconsistencies between visual and textual data in vision-centric tasks.\n- The study reveals a \"blind faith in text\" phenomenon, where VLMs disproportionately trust textual information even when it contradicts visual evidence, leading to significant performance degradation under corrupted text.\n- Analysis of ten VLMs across four vision-centric tasks reveals that instruction prompts and language model size have limited impact on mitigating text bias, while text relevance and token order can exacerbate it.\n- Supervised fine-tuning with text augmentation is shown to effectively reduce text bias.\n- A theoretical analysis suggests the \"blind faith in text\" may stem from an imbalance of pure text and multi-modal data during VLM training.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/d-ailin/blind-faith-in-text"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Detection Avoidance Techniques for Large Language Models",
+        "authors": "Gabi Dreo Rodosek, Joao A. G. Schneider, Florian Steuber, SinclairSchneider",
+        "link": "https://arxiv.org/abs/2503.07595",
+        "github_repo": null,
+        "summary": "- This paper explores techniques to evade detection by large language model (LLM) classifiers, including shallow detectors, transformer-based detectors, and zero-shot detectors.\n- The authors investigate the effects of temperature, sampling methods, and model size on detection rates using a Naive Bayes classifier with Bag-of-Words features.\n- Reinforcement learning with constraints is employed to guide LLMs in generating text that evades transformer-based detectors while maintaining linguistic quality and coherence.\n- A novel paraphrasing model, trained on a dataset of masked and permuted LLM-generated text, is introduced to minimize detectability while maximizing content similarity to the original text. The model outperforms general-purpose paraphrasing models in detection evasion tasks.\n- The study highlights the potential for malicious actors to circumvent LLM detection and calls for further research into robust detection mechanisms and the ethical implications of undetectable LLM-generated text.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Hello-SimpleAI/HC3",
+            "https://huggingface.co/datasets/google-research-datasets/natural_questions",
+            "https://huggingface.co/kalpeshk2011/dipper-paraphraser-xxl",
+            "https://huggingface.co/Qwen/Qwen1.5-4B"
+        ],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "WISE: A World Knowledge-Informed Semantic Evaluation for Text-to-Image\n  Generation",
+        "authors": "Peng Jin, Bin Lin, Mengren Zheng, Munan Ning, Yuwei Niu",
+        "link": "https://arxiv.org/abs/2503.07265",
+        "github_repo": "https://github.com/PKU-YuanGroup/WISE",
+        "summary": "- Introduces WISE, a new benchmark for evaluating world knowledge integration in text-to-image generation models.\n- WISE features 1000 prompts spanning 25 sub-domains across three categories: cultural common sense, spatio-temporal reasoning, and natural science.\n- A novel evaluation metric, WiScore, is proposed to assess knowledge-image alignment based on consistency, realism, and aesthetic quality.\n- Evaluation of 20 models (10 dedicated T2I and 10 unified multimodal) revealed significant limitations in world knowledge integration, with dedicated models generally outperforming unified models.\n- The results suggest a need for improved methods to effectively incorporate and apply world knowledge during image generation in future T2I models.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/PKU-YuanGroup/WISE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Novel Object 6D Pose Estimation with a Single Reference View",
+        "authors": "Hui Yang, Jin Zheng, Kai Zeng, Wei Sun, JianLiu99",
+        "link": "https://arxiv.org/abs/2503.05578",
+        "github_repo": "https://github.com/CNJianLiu/SinRef-6D",
+        "summary": "- SinRef-6D, a novel object 6D pose estimation method, accurately predicts 3D rotation and translation using a single reference view, eliminating the need for CAD models or multiple views.\n- The model iteratively refines point-wise alignment in the camera coordinate system to handle large pose discrepancies and utilizes State Space Models (SSMs) to capture spatial information and long-range dependencies.\n- SinRef-6D achieves comparable performance to CAD-based and dense-view methods on six benchmark datasets and real-world robotic scenarios without retraining or a CAD model. \n- SinRef-6D consists of four main modules: RGB-D input segmentation and point cloud back-projection, focalization into camera coordinates, RGB & Points SSM-based feature extraction, and iterative point-wise alignment and pose solving. \n- Experimental results showcase its efficacy and efficiency for novel object pose estimation in various scenes and its strong generalization to real-world scenarios.",
+        "classification": [
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/CNJianLiu/SinRef-6D"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Beyond RAG: Task-Aware KV Cache Compression for Comprehensive Knowledge\n  Reasoning",
+        "authors": "Fabio Petroni, Orion Weller, papotti, giulio98",
+        "link": "https://arxiv.org/abs/2503.04973",
+        "github_repo": null,
+        "summary": "- This paper proposes task-aware key-value (KV) cache compression, a novel technique to enhance large language models (LLMs) ability to perform knowledge reasoning by compressing external knowledge into a compact representation suitable for zero- or few-shot learning.\n- The approach outperforms both Retrieval-Augmented Generation (RAG) and task-agnostic compression methods, achieving up to 7 point improvement in accuracy on LongBench v2 with a 30x compression rate while also reducing inference latency.\n- Unlike query-aware compression which requires recompression per query, the task-aware compression precomputes a cache for a wider task context, enabling efficient and reusable caching.\n- On a synthetic dataset and Longbench v2, task-aware compression is shown to excel in tasks requiring broad knowledge synthesis where RAG struggles. \n- This technique demonstrates the potential of KV cache compression for scaling LLM reasoning beyond traditional retrieval-based methods.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "YOLOE: Real-Time Seeing Anything",
+        "authors": "Jungong Han, Zijia Lin, Hui Chen, Lihao Liu, Ao Wang",
+        "link": "https://arxiv.org/abs/2503.07465",
+        "github_repo": "https://github.com/THU-MIG/yoloe",
+        "summary": "- YOLOE is a real-time, unified, and open object detection and segmentation model that supports diverse open prompt mechanisms, such as texts, visual cues, or without prompts.\n- For text prompts, YOLOE employs Reparameterizable Region-Text Alignment (RepRTA) to enhance visual-semantic alignment with zero inference and transfer overhead.\n- For visual prompts, YOLOE proposes Semantic-Activated Visual Prompt Encoder (SAVPE) to encode visual cues efficiently.\n- For the prompt-free scenario, YOLOE introduces Lazy Region-Prompt Contrast (LRPC) for cost-effective category retrieval.\n- YOLOE achieves state-of-the-art zero-shot performance on LVIS, outperforming YOLO-Worldv2-S by 3.5 AP with 3x less training cost and 1.4x inference speedup.",
+        "classification": [
+            "Zero-Shot Object Detection",
+            "Object Detection",
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/THU-MIG/yoloe"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "RePO: ReLU-based Preference Optimization",
+        "authors": "Jinyang Gao, Xue Wang, Kexin Huang, Junkang Wu, xiangwang1223",
+        "link": "https://arxiv.org/abs/2503.07426",
+        "github_repo": null,
+        "summary": "- This paper introduces ReLU-based Preference Optimization (RePO), a streamlined algorithm for aligning Large Language Models (LLMs) with human preferences using offline data.\n- RePO simplifies existing methods like DPO and SimPO by eliminating the hyperparameter \u03b2 and using a ReLU-based max-margin loss, requiring only a single hyperparameter (\u03b3) for tuning. \n- It retains the reference-free reward margins of SimPO while using a ReLU activation for these margins. \n-  Evaluations on AlpacaEval 2 and Arena-Hard across multiple LLMs show RePO matches or outperforms DPO and SimPO, demonstrating competitive performance with reduced complexity.\n- The ReLU-based max-margin loss in RePO acts as the convex envelope of the 0-1 loss which enables tractable gradient-based optimization while preserving the properties of global optimality.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/junkangwu/REPO"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/princeton-nlp/llama3-ultrafeedback-armorm",
+            "https://huggingface.co/datasets/princeton-nlp/gemma2-ultrafeedback-armorm"
+        ],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Adaptive Audio-Visual Speech Recognition via Matryoshka-Based Multimodal\n  LLMs",
+        "authors": "Stavros Petridis, Minsu Kim, Umberto Cappellazzo",
+        "link": "https://arxiv.org/abs/2503.06362",
+        "github_repo": null,
+        "summary": "- This paper introduces Llama-MTSK, a Matryoshka-based Multimodal Large Language Model (MLLM) for Audio-Visual Speech Recognition (AVSR).\n- Llama-MTSK encodes audio-visual representations at multiple granularities within a single model, eliminating the need to train separate models for different compression levels and enabling flexible adaptation of audio-visual token allocation based on specific computational constraints. \n- Three LoRA-based Matryoshka strategies using global and scale-specific LoRA modules are introduced for efficient fine-tuning of the LLM.\n- Evaluations on the LRS2 and LRS3 datasets show that Llama-MTSK achieves state-of-the-art results, matching or surpassing models trained independently at fixed compression levels for ASR, VSR, and AVSR tasks.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "Escaping Plato's Cave: Towards the Alignment of 3D and Text Latent\n  Spaces",
+        "authors": "Qixing Huang, Diego Gomez, Luca Moschella, Souhail Hadgi, teelinsan",
+        "link": "https://arxiv.org/abs/2503.05283",
+        "github_repo": null,
+        "summary": "- This paper investigates aligning the latent spaces of pre-trained 3D and text encoders without joint training, a task not previously explored in depth.\n- It reveals that unimodal 3D encoders, when trained independently, exhibit weak alignment with text representations compared to image-text counterparts.\n- The paper introduces a novel approach combining Canonical Correlation Analysis (CCA) for subspace selection and existing alignment methods (affine transformation and local Centered Kernel Alignment) in the reduced space to align 3D and text feature spaces. \n- Experimental results demonstrate significant improvements in matching and retrieval tasks by projecting representations onto these shared subspaces, outperforming existing alignment methods applied directly to the full latent spaces.\n- Further analysis reveals a complementary structure between the subspaces and original feature spaces, suggesting a division between geometric and semantic information within the learned representations.",
+        "classification": [
+            "Multimodal",
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
+    },
+    {
+        "title": "NeuGrasp: Generalizable Neural Surface Reconstruction with Background\n  Priors for Material-Agnostic Object Grasp Detection",
+        "authors": "Xudong Zheng, Wenzhe He, Chao Li, Yinghao Cai, KianYale",
+        "link": "https://arxiv.org/abs/2503.03511",
+        "github_repo": null,
+        "summary": "- NeuGrasp is a novel, generalizable neural surface reconstruction method designed for material-agnostic 6-DoF robotic grasp detection, particularly effective with transparent and specular objects in cluttered scenes.\n- It leverages background priors within a neural implicit surface framework, combining transformer architectures with global prior volumes to aggregate multi-view features and spatial encodings, enabling robust surface reconstruction even under narrow fields of view and sparse viewing conditions.\n- A residual feature enhancement module improves attention on foreground objects, while an occupancy-prior volume refines spatial perception, especially for challenging transparent and specular surfaces.\n- Experimental results demonstrate NeuGrasp significantly outperforms state-of-the-art methods in grasping tasks, maintaining comparable reconstruction quality without explicit geometric supervision. \n- Fine-tuning on a small real-world dataset (NeuGrasp-RA) further enhances performance, showcasing its potential for real-world applications.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://neugrasp.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-11"
     }
 ]

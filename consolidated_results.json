@@ -24463,5 +24463,480 @@
         ],
         "huggingface_urls": [],
         "date": "2025-03-11"
+    },
+    {
+        "title": "Crowdsource, Crawl, or Generate? Creating SEA-VL, a Multicultural\n  Vision-Language Dataset for Southeast Asia",
+        "authors": "davidanugraha, rifqifarhansyah, tackhwa, holylovenia, samuelcahyawijaya",
+        "link": "https://arxiv.org/abs/2503.07920",
+        "github_repo": null,
+        "summary": "- SEA-VL is a new open-source initiative focused on developing high-quality, culturally relevant vision-language datasets for Southeast Asian languages, addressing the underrepresentation of these languages in AI research.\n- This initiative involves three image collection strategies: crowdsourcing from individuals within SEA, crawling existing online image sources, and generating synthetic images using AI models.\n- SEA-VL analyzed the trade-offs between manual and automated data collection methods and found that image crawling offered a good balance of cultural relevance (~85%) and efficiency.\n- While crowdsourcing yielded the most culturally relevant data, it was the most time-consuming and resource-intensive method. Image generation proved inadequate for capturing the cultural nuances of SEA. \n- The resulting SEA-VL dataset is the largest of its kind for the region, exceeding existing datasets by more than 50 times and aiming to facilitate more culturally aware and inclusive AI systems.",
+        "classification": [
+            "Image-to-Text",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/SEACrowd/sea-vl-experiments"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/SEACrowd/sea-vl-multicultural-vl-dataset-for-southeast-asia-67cf223d0c341d4ba2b236e7"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "LMM-R1: Empowering 3B LMMs with Strong Reasoning Abilities Through\n  Two-Stage Rule-Based RL",
+        "authors": "Jie Liu, Zhiyuan You, Miaosen Zhang, Gongrui Zhang, Yingzhe Peng",
+        "link": "https://arxiv.org/abs/2503.07536",
+        "github_repo": null,
+        "summary": "- LMM-R1 is a two-stage framework designed to improve the multimodal reasoning capabilities of Large Multimodal Models (LMMs), especially those with limited parameters (e.g., 3B), using rule-based reinforcement learning (RL).\n- The first stage, Foundational Reasoning Enhancement (FRE), uses text-only data with rule-based RL to bolster the model's core reasoning skills.\n- The second stage, Multimodal Generalization Training (MGT), generalizes this enhanced reasoning to multimodal tasks. \n- Experiments on the 3B parameter Qwen2.5-VL-Instruct model show average improvements of 4.5% and 4.83% on text-only and multimodal benchmarks, respectively, demonstrating the framework's effectiveness.\n- Notably, LMM-R1 achieves a 3.63% performance gain on complex Football Game tasks, further showcasing its ability to improve real-world applicable reasoning skills.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/TideDra/lmm-r1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "YuE: Scaling Open Foundation Models for Long-Form Music Generation",
+        "authors": "HKUST-Audio, Liam-Liu, dododododo, zhangysk, a43992899",
+        "link": "https://arxiv.org/abs/2503.08638",
+        "github_repo": "https://github.com/multimodal-art-projection/YuE",
+        "summary": "- YuE is a family of open-source foundation models based on LLaMA2 for generating high-quality, long-form (up to 5 minutes) music from lyrics and control signals.\n- It uses a track-decoupled next-token prediction strategy, modeling vocal and accompaniment tracks separately, and structural progressive conditioning to handle long lyrical sequences, addressing coherence and alignment challenges.\n- A novel in-context learning framework allows versatile style transfer, voice cloning, and bidirectional content creation.\n- Human evaluations show YuE matches or surpasses some commercial systems in musicality and controllability, particularly excelling in vocal agility and duration.\n- YuE achieves state-of-the-art performance on the GS key recognition task within the MARBLE benchmark and shows competitive results in other music understanding tasks, demonstrating the quality of its learned representations.",
+        "classification": [
+            "Text-to-Audio",
+            "Audio"
+        ],
+        "github_urls": [
+            "https://github.com/multimodal-art-projection/YuE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "UniF^2ace: Fine-grained Face Understanding and Generation\n  with Unified Multimodal Models",
+        "authors": "Liya Guo, Linrui Xu, Xuerui Qiu, delinqu, tulvgengenr",
+        "link": "https://arxiv.org/abs/2503.08120",
+        "github_repo": null,
+        "summary": "- UniF^2ace is a unified multimodal model (UMM) designed for fine-grained face understanding and generation, addressing limitations of existing models that handle coarse facial attributes or treat understanding and generation as separate tasks.\n- It leverages a novel dual discrete diffusion (D3Diff) training strategy, connecting score matching and masked generative models, and a multi-level grouped Mixture-of-Experts (MoE) architecture for fine-grained facial feature processing.\n- A new dataset, UniF^2ace-130K, containing 130K facial image-text pairs and one million visual question-answering (VQA) pairs spanning 46 attributes, is introduced to support the model's training and evaluation.\n- Experimental results on UniF^2ace-130K show that UniF^2ace outperforms existing UMMs and generative models on various metrics for both understanding and generation, achieving state-of-the-art performance for models of similar size.\n- Qualitative analysis demonstrates UniF^2ace's ability to capture fine-grained facial details from text, generating more realistic face images and providing accurate descriptions for complex facial attributes.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "MagicInfinite: Generating Infinite Talking Videos with Your Words and\n  Voice",
+        "authors": "Jiantong Zhao, Xuancheng Yang, Shitong Shao, Hongwei Yi, Owen777",
+        "link": "https://arxiv.org/abs/2503.05978",
+        "github_repo": null,
+        "summary": "- MagicInfinite is a novel diffusion Transformer (DiT) framework for generating high-fidelity, temporally coherent talking head videos from a single portrait image, text prompt, and audio input.\n- The model uses 3D full-attention mechanisms with a sliding window denoising strategy for infinite video generation and a two-stage curriculum learning scheme to integrate audio for lip-sync, text for expressions, and the reference image for identity preservation.\n- Region-specific masks and adaptive loss functions balance global textual control and local audio guidance for speaker-specific animations.\n- Unified step and CFG distillation techniques result in a 20x inference speed boost, generating a 10-second 540x540p video in 10 seconds on 8 H100 GPUs.\n- Evaluations on a custom benchmark show MagicInfinite's superior performance in audio-lip synchronization, identity preservation, and motion naturalness compared to existing state-of-the-art methods.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "SegAgent: Exploring Pixel Understanding Capabilities in MLLMs by\n  Imitating Human Annotator Trajectories",
+        "authors": "Qingpei Guo, Chunluan Zhou, Hao Chen, Yuzhuo Tian, Z-MU-Z",
+        "link": "https://arxiv.org/abs/2503.08625",
+        "github_repo": "https://github.com/aim-uofa/SegAgent",
+        "summary": "- This paper introduces SegAgent, a new approach for image segmentation that leverages Multimodal Large Language Models (MLLMs) by mimicking human annotators using interactive segmentation tools.\n- The proposed method models the segmentation task as a multi-step Markov Decision Process, enabling MLLMs to iteratively generate text-based click points to refine segmentation masks.\n- SegAgent achieves performance comparable to state-of-the-art methods on referring segmentation datasets and also supports additional tasks like mask refinement and annotation filtering.\n- A new dataset, High-quality Referring Expression Segmentation (HRES), is also introduced in this work, to evaluate the decision making capabilities of MLLMs on more complex dataset.\n- The paper further explores enhancement techniques like policy improvement with StaR+ and tree search with process reward modeling (PRM), which further improve SegAgent's performance, especially in complex segmentation scenarios.",
+        "classification": [
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/aim-uofa/SegAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Seedream 2.0: A Native Chinese-English Bilingual Image Generation\n  Foundation Model",
+        "authors": "Liang Li, Fanshi Li, Xiaoxia Hou, Lixue Gong, wujie10",
+        "link": "https://arxiv.org/abs/2503.07703",
+        "github_repo": null,
+        "summary": "- Seedream 2.0 is a native Chinese-English bilingual image generation foundation model excelling in diverse aspects, including bilingual image generation and text rendering.\n- The model architecture consists of a Diffusion Transformer with a self-developed Variational Auto-Encoder (VAE), a bilingual Large Language Model (LLM) text encoder, a Glyph-aligned ByT5 character-level text encoder, and Scaled ROPE for resolution generalization.\n- Seedream 2.0 achieves state-of-the-art performance in prompt-following, aesthetics, text rendering, and structural correctness, outperforming models like Flux, SD3.5, and Midjourney in both English and Chinese evaluations, as demonstrated by human evaluation with ELO scoring and automatic evaluations like EvalMuse and VQAScore.\n- The model's strength lies in its robust text rendering ability, particularly for Chinese, and a deep understanding of Chinese cultural characteristics due to the LLM text encoder trained on massive Chinese data.\n- Multi-phase post-training with Continuing Training, Supervised Fine-Tuning, and RLHF further enhances the model's capability, aligning it with human preferences and enabling adaptation to instruction-based image editing with strong editing capability like SeedEdit.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Gemini Embedding: Generalizable Embeddings from Gemini",
+        "authors": "Madhuri Shanbhogue, Daniel Cer, Sahil Dua, Feiyang Chen, Jinhyuk Lee",
+        "link": "https://arxiv.org/abs/2503.07891",
+        "github_repo": null,
+        "summary": "- This paper introduces Gemini Embedding, a new embedding model initialized from Google's Gemini large language model and trained on a diverse set of embedding tasks.\n- Gemini Embedding leverages Gemini's multilingual and code understanding capabilities to generate generalizable embeddings for various text modalities and over 100 languages.\n- It outperforms state-of-the-art models on the Massive Multilingual Text Embedding Benchmark (MMTEB), achieving a score of 68.32, a +5.09 improvement over the second-best model.\n- It also demonstrates exceptional performance on other benchmarks like XOR-Retrieve for cross-lingual retrieval.\n- The model uses a contrastive learning objective and incorporates task prompts and a pre-finetuning stage to enhance performance and is made available publicly via an API.",
+        "classification": [
+            "Natural Language Processing",
+            "Sentence Similarity",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/mteb/leaderboard"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Tuning-Free Multi-Event Long Video Generation via Synchronized Coupled\n  Sampling",
+        "authors": "Jinwoo Shin, Joon-Young Lee, Jui-Hsien Wang, Seoung Wug Oh, Subin Kim",
+        "link": "https://arxiv.org/abs/2503.08605",
+        "github_repo": null,
+        "summary": "- This paper introduces Synchronized Coupled Sampling (SynCoS), a novel inference framework that extends existing text-to-video (T2V) diffusion models for multi-event long video generation without requiring any additional training or fine-tuning.\n- SynCoS combines two complementary sampling strategies: denoising diffusion implicit models (DDIM) for smooth local transitions and collaborative score distillation (CSD) for global coherence across video chunks. \n- It introduces a \"grounded timestep\" and \"fixed baseline noise\" to synchronize these two sampling methods, aligning their denoising trajectories and preventing unintended content or style drift.\n-  A structured prompt, consisting of a global prompt for overall coherence and local prompts for event-specific variations, is used to guide the generation process, ensuring prompt fidelity and enabling complex multi-event scenarios.\n- Experimental results on various benchmarks and in comparison with other state-of-the-art models (Gen-L-Video and FIFO-Diffusion) demonstrate that SynCoS achieves superior performance in generating long, coherent, and dynamic videos with high prompt fidelity.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://syncos2025.github.io/"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Implicit Reasoning in Transformers is Reasoning through Shortcuts",
+        "authors": "Deqing Yang, Siyu Yuan, Tianhe Lin, hsaest",
+        "link": "https://arxiv.org/abs/2503.07604",
+        "github_repo": null,
+        "summary": "- This paper investigates the implicit reasoning mechanism in Transformers, revealing that they rely on shortcuts, especially when trained on fixed-pattern data.\n- These shortcuts are effective for in-domain and out-of-domain generalization when the premise order is fixed, achieving near-perfect accuracy.\n- However, when trained on data with unfixed premise order, the model overfits to shortcut patterns, failing to generalize and exhibiting poor performance, specifically struggling with \"Variable as Subtrahend Plight.\"\n- The paper suggests that current LLMs' implicit reasoning capability is limited by their reliance on shortcuts rather than true step-by-step reasoning.\n- This limitation is observed in state-of-the-art large language models (LLMs) as well, emphasizing the need for future research to develop methods that encourage true reasoning capabilities in LMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "LightGen: Efficient Image Generation through Knowledge Distillation and\n  Direct Preference Optimization",
+        "authors": "Yexin Liu, Harold Haodong Chen, Haoze Zheng, Yajing Bai, Xianfeng Wu",
+        "link": "https://arxiv.org/abs/2503.08619",
+        "github_repo": "https://github.com/XianfengWu01/LightGen",
+        "summary": "- LightGen, a novel text-to-image generation model based on a Masked Autoregressive (MAR) architecture with knowledge distillation (KD) and Direct Preference Optimization (DPO), is introduced.\n- It uses a compact 0.7B parameter model and a small, synthetic 2M image dataset generated by SOTA models from diverse captions, prioritizing data diversity over volume.\n- DPO is employed to refine generated image details and address synthetic data limitations like poor high-frequency details and positional inaccuracies.\n- The model achieves comparable image generation quality to state-of-the-art models while requiring fewer computational resources on the GenEval benchmark.\n- LightGen demonstrates efficiency in data usage, parameter size, and training time, increasing accessibility for resource-constrained environments.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/XianfengWu01/LightGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "OmniMamba: Efficient and Unified Multimodal Understanding and Generation\n  via State Space Models",
+        "authors": "Xinggang Wang, Wenyu Liu, Qian Zhang, Bencheng Liao, Jialv Zou",
+        "link": "https://arxiv.org/abs/2503.08686",
+        "github_repo": "https://github.com/hustvl/OmniMamba",
+        "summary": "- OmniMamba is a unified multimodal model based on a linear state-space model (Mamba-2), enabling both understanding and generation tasks (including text-to-image) with a single model.\n- It uses decoupled encoders, vocabularies, and task-specific LoRA modules for parameter-efficient adaptation to different modalities and tasks.\n- Trained on only 2M image-text pairs, OmniMamba achieves competitive performance with JanusFlow and surpasses Show-o on various multimodal benchmarks, using 1000x less training data than Show-o.\n- Notably, OmniMamba demonstrates exceptional inference speed, achieving up to a 119.2x speedup and a 63% GPU memory reduction for long sequences compared to Transformer-based models.\n- On MS-COCO, it achieves state-of-the-art visual generation results (FID 5.50) compared to other unified and generation-specific models.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hustvl/OmniMamba"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning",
+        "authors": "Edward Emanuel Beeching, Lewis Tunstall, Amrith Setlur, Matthew Y. R. Yang, CohenQu",
+        "link": "https://arxiv.org/abs/2503.07572",
+        "github_repo": null,
+        "summary": "- This paper introduces Meta Reinforcement Fine-Tuning (MRT), a new method for optimizing large language models (LLMs) to efficiently utilize test-time compute for improved reasoning.\n- MRT frames the optimization problem as a meta-reinforcement learning problem, where the LLM's output stream is segmented into episodes, enabling a principled perspective on resource allocation.\n- By minimizing cumulative regret, a measure of the difference between the LLM's performance and an optimal comparator, MRT balances exploration and exploitation in the output token sequence, leading to efficient progress.\n-  MRT prescribes a dense reward bonus during training, quantifying progress by the change in likelihood of eventual success after each generated episode.\n- Experiments on math reasoning tasks using DeepScaleR, DeepSeek, and Llama models demonstrate that MRT achieves 2-3x relative performance gains and 1.5-1.7x improvements in token efficiency compared to standard outcome-reward RL fine-tuning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Video Action Differencing",
+        "authors": "Alejandro Lozano, Anita Rau, Yuhui Zhang, nicholswang, jmhb",
+        "link": "https://arxiv.org/abs/2503.07860",
+        "github_repo": null,
+        "summary": "- This paper introduces Video Action Differencing (VidDiff), a novel task involving identifying subtle yet significant differences between two videos depicting the same action, such as coaching and skill assessment. \n- A new benchmark dataset, VidDiffBench, featuring 549 video pairs with 4,469 difference annotations and 2,075 localization timestamps is constructed. \n- It leverages large multimodal models (LMMs) across a three-stage workflow, incorporating a difference proposer (LLM), frame localizer (CLIP), and action differencer (VLM), enhancing fine-grained video comparison.\n- Experiments reveal that VidDiff outperforms baseline LMMs in closed-set evaluation and achieves competitive results in open-set evaluation. \n- The authors also demonstrate the potential and limitations of the existing models through ablation and error analyses focusing on each of the 3 stages.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/jmhb0/viddiff"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/jmhb/VidDiffBench"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "BiasEdit: Debiasing Stereotyped Language Models via Model Editing",
+        "authors": "Julian McAuley, Ningyu Zhang, Wei Xu, XinXuNLPer",
+        "link": "https://arxiv.org/abs/2503.08588",
+        "github_repo": null,
+        "summary": "- BIASEDIT, a novel model editing method, is proposed to mitigate stereotypical biases in language models by using lightweight editor networks to generate parameter updates, focusing on local edits of partial parameters. \n- The architecture employs a debiasing loss to guide these edits, along with a retention loss to preserve general language modeling capabilities.\n- Experiments on StereoSet and Crows-Pairs demonstrate that BIASEDIT outperforms existing debiasing methods by achieving lower Stereotype Scores (SS) while minimizing impact on Language Modeling Scores (LMS). \n- BIASEDIT exhibits robustness to gender reversal and semantic generality, indicating broader applicability. \n- Further analysis shows that edits to upper model blocks have fewer negative impacts on modeling abilities compared to edits on lower blocks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/BiasEdit"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/openai-community/gpt2-medium",
+            "https://huggingface.co/google/gemma-2b",
+            "https://huggingface.co/mistralai/Mistral-7B-v0.3",
+            "https://huggingface.co/meta-llama/Meta-Llama-3-8B"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "^RFLAV: Rolling Flow matching for infinite Audio Video generation",
+        "authors": "Claudio Ferrari, Tomaso Fontanini, Filippo Botti, Giuseppe Gabriele Tarollo, MaverickAlex",
+        "link": "https://arxiv.org/abs/2503.08307",
+        "github_repo": "https://github.com/ErgastiAlex/R-FLAV",
+        "summary": "- RFLAV, a transformer-based model for generating infinite-length audio-video (AV) sequences, is introduced, addressing key challenges in AV generation such as quality, synchronization, and temporal coherence.\n- The model uses a rolling flow matching framework and novel cross-modality interaction modules to align audio and video during training.\n- It bypasses the need for audio/video encoders, enabling variable-length video generation and avoiding restrictions imposed by fixed encoder output sizes.\n- Experimental results show that RFLAV outperforms existing state-of-the-art models on standard AV generation benchmarks like AIST++ and Landscape.\n- Further analysis demonstrates RFLAV's ability to maintain quality and avoid repetitive loops in extended video sequences, making it a significant advancement in the field of infinite AV generation.",
+        "classification": [
+            "Text-to-Video",
+            "Audio",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ErgastiAlex/R-FLAV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "QuoTA: Query-oriented Token Assignment via CoT Query Decouple for Long\n  Video Comprehension",
+        "authors": "Shukang Yin, Weizhong Huang, Xiawu Zheng, Wang Chen, Yongdong Luo",
+        "link": "https://arxiv.org/abs/2503.08689",
+        "github_repo": "https://github.com/MAC-AutoML/QuoTA",
+        "summary": "- QuoTA, a training-free modular extension for Large Video-Language Models (LVLMs), enhances long video comprehension through query-oriented visual token assignment.\n- QuoTA strategically assesses frame-level importance based on query relevance using a lightweight scoring LVLM, enabling efficient token allocation before cross-modal interactions.\n- Using Chain-of-Thoughts reasoning, QuoTA decouples complex queries into more interpretable questions for enhanced frame scoring precision by the scoring LVLM. \n- QuoTA with LLaVA-Video-7B achieves an average 3.2% performance improvement across six benchmarks, including Video-MME and MLVU, while maintaining the same token budget as the baseline. \n- QuoTA also consistently outperforms recent state-of-the-art token reduction methods (AIM and FrameFusion) across various token budget configurations.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/MAC-AutoML/QuoTA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "\"Principal Components\" Enable A New Language of Images",
+        "authors": "Xiaojuan Qi, Jiankang Deng, Ismail Elezi, tennant, xwen99",
+        "link": "https://arxiv.org/abs/2503.08685",
+        "github_repo": null,
+        "summary": "- This paper introduces SEMANTICIST, a novel visual tokenization framework that embeds a provable PCA-like structure into the latent token space, enabling a coarse-to-fine token hierarchy.\n- It leverages a dynamic nested classifier-free guidance strategy during training and a diffusion-based decoder to disentangle semantic content from low-level spectral details, addressing the semantic-spectrum coupling issue.\n- SEMANTICIST achieves state-of-the-art reconstruction FID scores on ImageNet, outperforming previous SOTA tokenizers by almost 10%.\n- Using an auto-regressive model trained on SEMANTICIST tokens can achieve comparable generative performance using only 32 tokens.\n- Linear probing in the latent space shows up to 63.5% top-1 classification accuracy, indicating rich semantic information within the tokens.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "RayFlow: Instance-Aware Diffusion Acceleration via Adaptive Flow\n  Trajectories",
+        "authors": "Xing Wang, Yuxi Ren, Yuhong Yang, Xin Xia, Huiyang Shao",
+        "link": "https://arxiv.org/abs/2503.07699",
+        "github_repo": null,
+        "summary": "- RayFlow, a novel diffusion framework, accelerates image generation while preserving quality and diversity by guiding each sample along a unique path toward an instance-specific target distribution, calculated from pre-trained models, minimizing path overlaps, and ensuring optimal sampling stability.\n- It introduces \"Time Sampler,\" an importance sampling method utilizing Stochastic Stein Discrepancies (SSD) and neural networks, to enhance training efficiency by identifying crucial timesteps and reducing computational redundancy.\n- RayFlow offers enhanced control over the generative process and provides both standard iterative denoising and a faster one-step sampling variant.\n- Experiments on various architectures including Stable Diffusion, SDXL, and PixArt, show RayFlow outperforms existing acceleration methods in FID and aesthetic scores across multiple sampling steps, demonstrating superior efficiency.\n- LoRA-based RayFlow implementation also excels in image reward during distillation, and visualizations showcase high-quality image generation capabilities in diverse scenarios.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Perplexity Trap: PLM-Based Retrievers Overrate Low Perplexity Documents",
+        "authors": "Xiao Zhang, Liang Pang, Haiyuan Zhao, Sunhao Dai, Haoyu Wang",
+        "link": "https://arxiv.org/abs/2503.08684",
+        "github_repo": "https://github.com/WhyDwelledOnAi/Perplexity-Trap",
+        "summary": "- This paper introduces Causal Diagnosis and Correction (CDC), a novel debiasing method for Pretrained Language Model (PLM)-based retrievers to address source bias, which is the tendency of these retrievers to favor LLM-generated content due to its lower perplexity.\n- The study identifies perplexity as a causal factor contributing to source bias, confirmed through intervention experiments and two-stage least squares regression analysis demonstrating that lower perplexity leads to higher relevance scores, irrespective of semantic quality.\n- A theoretical analysis of Masked Language Modeling (MLM) and retrieval tasks reveals a positive correlation in their gradients, indicating that retrievers inadvertently incorporate perplexity during relevance estimation.\n- This positive correlation explains the observed trade-off between retrieval performance and source bias, where higher performance correlates with increased bias due to greater sensitivity to perplexity.\n- CDC operates at inference time, calibrating relevance scores by separating the biased influence of perplexity and shows robust debiasing effectiveness across diverse datasets and LLMs without requiring retriever retraining.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/WhyDwelledOnAi/Perplexity-Trap"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Benchmarking AI Models in Software Engineering: A Review, Search Tool,\n  and Enhancement Protocol",
+        "authors": "Maliheh Izadi, philippedebekker, RohamKoohestani",
+        "link": "https://arxiv.org/abs/2503.05860",
+        "github_repo": null,
+        "summary": "- This paper introduces BenchFrame, a unified method to enhance benchmark quality for AI4SE models, along with BenchScout, a semantic search tool to find relevant benchmarks.\n- The researchers conducted a systematic review of 173 studies, identifying 204 AI4SE benchmarks, classifying them, and analyzing their limitations.\n- A user study with 22 participants demonstrated BenchScout's usability, effectiveness, and intuitiveness, with average scores of 4.5, 4.0, and 4.1 out of 5, respectively.\n- Applying BenchFrame to HumanEval resulted in HumanEvalNext, addressing limitations such as errors, language conversion, test coverage, and difficulty.\n- Evaluating ten state-of-the-art code language models showed a pass@1 score reduction of 31.22% and 19.94% on HumanEvalNext compared to HumanEval and HumanEvalPlus.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Summarization",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/AISE-TUDelft/AI4SE-benchmarks"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/openai/openai_humaneval",
+            "https://huggingface.co/datasets/codeparrot/instructhumaneval"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Evaluating Intelligence via Trial and Error",
+        "authors": "Bo Zhang, Yiqun Liu, Jiayu Li, Jiahao Zhao, jingtao",
+        "link": "https://arxiv.org/abs/2502.18858",
+        "github_repo": null,
+        "summary": "- This paper introduces \"Survival Game\", a framework inspired by Natural Selection to evaluate intelligence based on the number of failed attempts in a trial-and-error process.\n- The framework categorizes intelligence into three levels: Limited, Capable, and Autonomous, based on the convergence of the expectation and variance of failure counts.\n- Through comprehensive evaluation of existing AI systems on various tasks including vision, search, recommendation, and language, the study finds that while AI reaches the Autonomous Level in simple tasks, it falls short in complex ones, often remaining at the Limited Level.\n- The paper projects that achieving Autonomous Level for general tasks would require an astronomical 10^26 parameters, highlighting the gap between current AI and human intelligence.\n- A theoretical analysis suggests that human tasks possess \"criticality,\" demanding deep understanding of underlying mechanisms, which current AI systems, relying on superficial mimicry, lack, thus explaining the difficulty in achieving Autonomous Level.",
+        "classification": [
+            "Computer Vision",
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/jingtaozhan/IntelligenceTest"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Referring to Any Person",
+        "authors": "Yuda Xiong, Tianhe Ren, Zhaoyang Zeng, Lin Wu, Qing Jiang",
+        "link": "https://arxiv.org/abs/2503.08507",
+        "github_repo": "https://github.com/IDEA-Research/RexSeek",
+        "summary": "- This paper introduces RexSeek, a novel detection-oriented multimodal large language model for the task of \"referring to any person,\" which involves detecting all individuals in an image matching a given natural language description.\n- RexSeek integrates a person detector for robust perception and Qwen2.5 as the large language model (LLM) for enhanced language comprehension.\n- The model is trained using a four-stage approach, including image-captioning, detection-oriented data, multimodal data, and finally, the HumanRef dataset.\n- Experimental results on the HumanRef benchmark show that RexSeek outperforms existing state-of-the-art models, particularly in multi-instance referring scenarios where multiple individuals match the description.\n- RexSeek also demonstrates generalization capabilities for referring to arbitrary objects beyond human-centric tasks, highlighting its potential for broader applications in vision-language tasks.",
+        "classification": [
+            "Object Detection",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/IDEA-Research/RexSeek"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "AnyMoLe: Any Character Motion In-betweening Leveraging Video Diffusion\n  Models",
+        "authors": "Junyong Noh, Chaelin Kim, Seokhyeon Hong, kwanY",
+        "link": "https://arxiv.org/abs/2503.08417",
+        "github_repo": null,
+        "summary": "- AnyMoLe is a novel motion in-betweening method that leverages video diffusion models to generate intermediate frames for arbitrary characters without requiring character-specific training data.\n- It employs a two-stage frame generation process, first generating sparse frames to establish motion structure and then generating dense frames to fill in details, enhancing contextual understanding.\n- To bridge the domain gap between real-world and rendered animations, AnyMoLe introduces ICAdapt, a fine-tuning technique for video diffusion models using a short context motion segment.\n- A \"motion-video mimicking\" optimization technique, combined with a scene-specific joint estimator, allows for seamless motion generation even for characters with complex joint structures by utilizing 2D and 3D-aware features.\n- Experimental results demonstrate AnyMoLe's superior performance compared to existing methods, generating smooth and realistic transitions for various characters and outperforming baselines in quantitative metrics and a user study.",
+        "classification": [
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "AI-native Memory 2.0: Second Me",
+        "authors": "Jingbo Shang, Felix Tao, Tao Gao, Xiang Ying, Jiale Wei",
+        "link": "https://arxiv.org/abs/2503.08102",
+        "github_repo": "https://github.com/Mindverse/Second-Me",
+        "summary": "- SECOND ME is introduced as an AI-native, persistent memory offload system designed to enhance human-computer interaction by reducing redundant information exchange.\n- SECOND ME leverages LLM-based memory parameterization for structured organization, contextual reasoning, and adaptive knowledge retrieval, acting as a personalized intermediary.\n- The system employs supervised fine-tuning (SFT) and direct preference optimization (DPO) to improve LLM performance on tasks such as memory-based Q&A, context completion, and context critique.\n- An automated data synthesis strategy integrates local and global data perspectives using a multi-agent framework and Chain-of-Thought (CoT) reasoning for enhanced performance.\n- Experimental results demonstrate that diverse data sources with strong CoT normalization and DPO lead to significant performance improvements in automated evaluations, with human case studies suggesting even greater real-world effectiveness.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Mindverse/Second-Me"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Mixture of Experts Made Intrinsically Interpretable",
+        "authors": "Puneet K. Dokania, Christian Schroeder de Witt, Ashkan Khakzar, Constantin Venhoff, Xingyi Yang",
+        "link": "https://arxiv.org/abs/2503.07639",
+        "github_repo": null,
+        "summary": "- This paper introduces MoE-X, a Mixture-of-Experts (MoE) language model designed for intrinsic interpretability by leveraging sparsity and width in the model architecture.\n- MoE-X consists of ReLU experts and employs sparsity-aware routing, ensuring only the most relevant and interpretable experts are activated during inference.\n- Evaluating MoE-X on chess and natural language tasks demonstrates that it maintains performance comparable to dense models while enhancing interpretability.\n- Notably, MoE-X surpasses the interpretability of sparse autoencoder (SAE) methods without sacrificing performance and achieves perplexity better than GPT-2 on language modeling tasks.\n- MoE-X successfully disentangles polysemantic features and clusters related concepts within individual experts, offering a more transparent and interpretable model.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/adamkarvonen/chess_games",
+            "https://github.com/EleutherAI/sae-auto-interp"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "NullFace: Training-Free Localized Face Anonymization",
+        "authors": "Nicu Sebe, Terence Sim, Tuomas Varanka, hkung",
+        "link": "https://arxiv.org/abs/2503.08478",
+        "github_repo": "https://github.com/hanweikung/nullface",
+        "summary": "- NullFace is a training-free, localized face anonymization method leveraging pre-trained text-to-image diffusion models and identity embeddings.\n- It uses DDPM inversion to recover the initial noise of an input image and then denoises it with a modified identity embedding to create an anonymized version.\n- It offers control over the anonymization process and preserves non-identity features like gaze, expressions, and head pose by combining conditional and unconditional denoising paths with a guidance scale parameter.\n- The method supports localized anonymization using segmentation masks to keep or obscure specific facial regions.\n- Evaluations on CelebA-HQ and FFHQ datasets demonstrate its superior performance in balancing anonymization with feature preservation and image quality compared to existing methods.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/hanweikung/nullface"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "Beyond Decoder-only: Large Language Models Can be Good Encoders for\n  Machine Translation",
+        "authors": "Qinghong Zhang, Bei Li, Yongyu Mu, Tong Zheng, luoyingfeng",
+        "link": "https://arxiv.org/abs/2503.06594",
+        "github_repo": null,
+        "summary": "- This paper introduces LaMaTE (Large Language Models as Machine Translation Encoders), a novel architecture for machine translation that utilizes LLMs as encoders coupled with a lightweight NMT decoder.\n- LaMaTE incorporates an adaptor module to bridge the gap between the LLM encoder and the NMT decoder, enhancing representation alignment and facilitating training.\n- A two-stage training process is proposed, where the adaptor and decoder are pre-trained initially, followed by fine-tuning of all model parameters, enabling efficient learning and knowledge retention.\n- A new comprehensive benchmark dataset, ComMT, is introduced to evaluate machine translation models across various tasks, including general translation, document-level translation, domain-specific translation, terminology-constrained translation, and automatic post-editing.\n- Experimental results demonstrate that LaMaTE achieves state-of-the-art performance on the ComMT benchmark, showing significant improvements in both translation quality and efficiency, with 2.4x to 6.5x faster decoding speeds and a 75% reduction in KV cache memory compared to traditional LLM-based methods.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/NiuTrans/LaMaTE"
+        ],
+        "date": "2025-03-12"
+    },
+    {
+        "title": "VisualSimpleQA: A Benchmark for Decoupled Evaluation of Large\n  Vision-Language Models in Fact-Seeking Question Answering",
+        "authors": "Lixin Liu, Shasha Guo, Xiaodong Chen, Yihan Zhao, WYLing",
+        "link": "https://arxiv.org/abs/2503.06492",
+        "github_repo": null,
+        "summary": "- This paper introduces VisualSimpleQA, a multimodal fact-seeking question answering benchmark designed for decoupled evaluation of visual and linguistic modules in large vision-language models (LVLMs).\n- The benchmark facilitates detailed analysis of LVLMs by including text-only questions paired with multimodal questions derived from images, and rationales and difficulty criteria for improved evaluation.\n- The authors evaluate 15 state-of-the-art LVLMs and show that even top-performing models like GPT-40 achieve only around 60% accuracy on VisualSimpleQA and 30% on a harder subset (VisualSimpleQA-hard), indicating significant room for improvement. \n- The decoupled evaluation process reveals substantial performance differences across LVLMs, particularly in their visual recognition capabilities.\n- VisualSimpleQA aims to promote research and development in the field of LVLMs to enhance factuality in multimodal question answering.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/WYLing/VisualSimpleQA"
+        ],
+        "date": "2025-03-12"
     }
 ]

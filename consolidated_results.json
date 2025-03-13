@@ -24938,5 +24938,294 @@
             "https://huggingface.co/datasets/WYLing/VisualSimpleQA"
         ],
         "date": "2025-03-12"
+    },
+    {
+        "title": "TPDiff: Temporal Pyramid Video Diffusion Model",
+        "authors": "Mike Zheng Shou, Lingmin Ran",
+        "link": "https://arxiv.org/abs/2503.09566",
+        "github_repo": null,
+        "summary": "- TPDiff, a novel temporal pyramid video diffusion model framework, is introduced to improve the efficiency of video generation by leveraging the inherent redundancy in videos and progressively increasing frame rates during the denoising diffusion process.\n- The framework divides the diffusion process into several stages with different frame rates and employs a single model to handle all frame rates, with only the last stage operating at the full frame rate. \n- TPDiff utilizes a dedicated training strategy, called stage-wise diffusion, involving aligning the noise and data and solving a decomposed probability flow ODE for training a unified multi-stage model.\n- Experimental results demonstrate that TPDiff achieves a 2x speedup in training and a 1.5x speedup in inference compared to vanilla diffusion models without compromising performance.\n- Furthermore, TPDiff exhibits improved video generation quality as measured by quantitative metrics and qualitative examples, indicating its effective handling of temporal redundancy and motion dynamics in videos.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/runwayml/stable-diffusion-v1-5"
+        ],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Reangle-A-Video: 4D Video Generation as Video-to-Video Translation",
+        "authors": "Jong Chul Ye, Suhyeon Lee, hyeonho-jeong-video",
+        "link": "https://arxiv.org/abs/2503.09151",
+        "github_repo": null,
+        "summary": "- Reangle-A-Video is a unified framework that generates synchronized multi-view videos from a single monocular video without relying on pre-existing multi-view generative priors.\n- It reframes the task as video-to-videos translation and leverages publicly available image and video diffusion priors using a two-stage approach: Multi-View Motion Learning and Multi-View Consistent Image-to-Images Translation.\n- In Multi-View Motion Learning, an image-to-video diffusion transformer is fine-tuned on warped and original video data to capture view-invariant motion.\n- In Multi-View Consistent Image-to-Images Translation, the first frame of the input video is warped using depth maps and inpainted using an image diffusion prior guided by an off-the-shelf multi-view stereo reconstruction network.\n- Experiments on various real-world scenes demonstrate that Reangle-A-Video produces higher-quality and more consistent multi-view videos compared to existing methods for static view transport and dynamic camera control tasks, as supported by quantitative metrics and human evaluation.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Block Diffusion: Interpolating Between Autoregressive and Diffusion\n  Language Models",
+        "authors": "Zhixuan Qi, Zhihan Yang, Justin T Chiu, Aaron Gokaslan, Marianne Arriola",
+        "link": "https://arxiv.org/abs/2503.09573",
+        "github_repo": "https://github.com/kuleshov-group/bd3lms",
+        "summary": "- This paper introduces Block Discrete Denoising Diffusion Language Models (BD3-LMs), a new class of language models that interpolate between autoregressive and diffusion models.\n- BD3-LMs address limitations of both approaches by generating blocks of text autoregressively, while using diffusion models within each block, which supports variable-length generation, KV caching, and parallel sampling.\n- The authors propose a recipe for training BD3-LMs, including efficient training algorithms, estimators of gradient variance, and data-driven noise schedules designed to minimize this variance and improve training stability.\n- Experiments on language modeling benchmarks show BD3-LMs achieve state-of-the-art perplexity among diffusion models and match autoregressive models in perplexity given appropriate noise schedules.\n- BD3-LMs generate arbitrary length sequences, outperforming other diffusion models on this task.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/kuleshov-group/bd3lms"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "RewardSDS: Aligning Score Distillation via Reward-Weighted Sampling",
+        "authors": "Sagie Benaim, Guy Yariv, Itay Chachy",
+        "link": "https://arxiv.org/abs/2503.09601",
+        "github_repo": null,
+        "summary": "- RewardSDS, a novel score distillation approach, improves alignment with user intent in tasks like text-to-3D and text-to-image generation by weighting noise samples based on scores from a reward model. \n- RewardSDS prioritizes gradients from high-reward noise samples during training, leading to outputs better aligned with the specified reward model. \n- The approach enhances both Variational Score Distillation (VSD) and Score Distillation Sampling (SDS), resulting in RewardVSD and RewardSDS respectively. \n- Evaluations on text-to-image, 2D image editing, and text-to-3D tasks show substantial improvements compared to baselines using several metrics, including CLIPScore, Aesthetic Score, ImageReward, and an LLM-based grader. \n-  RewardSDS is broadly applicable and can integrate with various SDS extensions and pre-trained reward models, showcasing state-of-the-art performance on various tasks.",
+        "classification": [
+            "Text-to-3D",
+            "Text-to-Image",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "GTR: Guided Thought Reinforcement Prevents Thought Collapse in RL-based\n  VLM Agent Training",
+        "authors": "Zongqing Lu, Yuanchun Shi, Junliang Xing, Yijun Yang, Tong Wei",
+        "link": "https://arxiv.org/abs/2503.08525",
+        "github_repo": null,
+        "summary": "- Proposed Guided Thought Reinforcement (GTR), a framework to prevent thought collapse in RL-based VLM agent training by introducing automated thought correction.\n- GTR leverages an off-the-shelf VLM as a corrector model, which first evaluates the agent's thought and then corrects inconsistencies or errors based on the agent's outputs.\n- Integrates a simple SFT loss over the thought tokens to align the agent's reasoning with the corrected trajectories.\n- Addresses the distribution shift issue in thought cloning by employing Dataset Aggregation (DAgger), which continuously expands the dataset for thought cloning.\n- Achieved a 3x-5x increase in success rate and higher returns on the Points24 task compared to existing models, demonstrating the importance of process guidance in RL training.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "More Documents, Same Length: Isolating the Challenge of Multiple\n  Documents in RAG",
+        "authors": "Gabriel Stanovsky, Michael Hassid, Nir Mazor, Shahar Levy, LihiShalmon",
+        "link": "https://arxiv.org/abs/2503.04388",
+        "github_repo": "https://github.com/shaharl6000/MoreDocsSameLen",
+        "summary": "- This paper investigates the impact of the number of retrieved documents on the performance of Retrieval-Augmented Generation (RAG) models while controlling for context length.\n- The study uses a custom dataset derived from a multi-hop QA task, where the context length and relevant information position are kept constant while varying the number of documents.\n- Results indicate that increasing the number of documents in RAG poses significant challenges for LLMs, even with a fixed context window, with performance drops of up to 10% observed.\n- This suggests that processing multiple documents is a distinct challenge from handling long contexts, likely due to factors such as redundancy, conflicting information, and implicit inter-document relationships.\n- The authors make their datasets and code publicly available to facilitate further research in multi-document retrieval.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/shaharl6000/MoreDocsSameLen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Motion Anything: Any to Motion Generation",
+        "authors": "Rui Zhao, Danning Li, Wei Mao, Yiran Wang, SteveZeyuZhang",
+        "link": "https://arxiv.org/abs/2503.06955",
+        "github_repo": null,
+        "summary": "- Motion Anything is a multimodal motion generation framework using an Attention-based Mask Modeling approach for fine-grained spatial and temporal control over generated human motion.\n- The model architecture includes Temporal and Spatial Adaptive Transformers to align motion sequences with text, music, or both, enabling controllable generation under multimodal conditions. \n- A new dataset, Text-Music-Dance (TMD), containing 2,153 text, music, and dance pairs, is introduced to facilitate research in multi-conditional motion generation. \n- Experiments on HumanML3D, KIT-ML, AIST++, and TMD demonstrate a 15% FID improvement on HumanML3D and consistent gains on other benchmarks, outperforming state-of-the-art methods.\n- The framework excels in generating diverse and high-quality motion while aligning well with given text, music, and multimodal conditions, exceeding the performance of existing single or multi-task models.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Quantizing Large Language Models for Code Generation: A Differentiated\n  Replication",
+        "authors": "Gabriele Bavota, Saima Afrin, Antonio Mastropaolo, mdiipenta, Devy1",
+        "link": "https://arxiv.org/abs/2503.07103",
+        "github_repo": null,
+        "summary": "- This paper investigates the impact of low-bit quantization using Additive Quantization with Learned Multi-Codebooks (AQLM) on the performance of large language models (LLMs) for code generation in Python and Java.\n- The authors quantize CodeLlama (7B, 13B, 34B) and DeepSeek Coder (1B, 7B, 33B) to 8, 4, 3, and 2 bits per parameter and evaluate their performance on MultiPL-E and McEval benchmarks.\n- They find that 4-bit quantization is a \"safe bet\", reducing memory footprint by 70% without significant performance loss, and that code-specific calibration datasets improve performance at extreme quantization levels (3 and 2 bits).\n- Larger models exhibit greater resilience to information loss during extreme quantization.\n- Post-quantization fine-tuning improves the performance of 2-bit quantized models, particularly smaller ones.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/codellama",
+            "https://huggingface.co/datasets/togethercomputer/RedPajama-Data-1T"
+        ],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "WildIFEval: Instruction Following in the Wild",
+        "authors": "Liat Ein-Dor, Ariel Gera, Asaf Yehudai, Gili Lior",
+        "link": "https://arxiv.org/abs/2503.06573",
+        "github_repo": null,
+        "summary": "- This paper introduces WILDIFEVAL, a new dataset of 12K real-world user instructions focusing on multi-constraint text generation tasks.\n- The dataset allows for fine-grained analysis of LLM performance on complex instructions and diverse constraint types.\n- The paper analyzes the dataset and benchmarks 14 different large language models (LLMs) using a novel evaluation method focusing on relative constraint fulfillment.\n- The results show that all tested LLMs struggle with length-based constraints and experience performance degradation as the number of constraints increases.\n- This work highlights the limitations of current state-of-the-art LLMs and provides a valuable resource for advancing research in constrained text generation.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/gililior/wild-if-eval-code"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/gililior/wild-if-eval"
+        ],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "VLog: Video-Language Models by Generative Retrieval of Narration\n  Vocabulary",
+        "authors": "Mike Zheng Shou, KevinQHLin",
+        "link": "https://arxiv.org/abs/2503.09402",
+        "github_repo": "https://github.com/showlab/VLog",
+        "summary": "- VLog is a novel video understanding framework that generates concise video narrations using a generative retrieval model, offering a new perspective on video understanding.\n- It leverages a narration vocabulary, contrasting with subword vocabularies in existing generative video-language models, enabling faster decoding times (up to 20x) when processing videos.\n- This framework uses a novel generative retrieval architecture, combines language model's reasoning capabilities with contrastive retrieval's efficient similarity search, and employs hierarchical vocabulary indexing for efficiency.\n-  A vocabulary update strategy is also introduced to handle novel events during inference.\n- Experiments on VidCab-Eval, EgoSchema, COIN, and HiREST demonstrate that VLog can generate concise, contextually accurate, and efficient narrations, outperforming baselines on casual retrieval tasks while being significantly faster than generative models.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/VLog"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Cost-Optimal Grouped-Query Attention for Long-Context LLMs",
+        "authors": "Maosong Sun, Zhiyuan Liu, Xu Han, Yutong Wu, chen-yingfa",
+        "link": "https://arxiv.org/abs/2503.09579",
+        "github_repo": null,
+        "summary": "- This paper introduces a cost-optimal Grouped-Query Attention (GQA) method for long-context Large Language Models (LLMs), decoupling the number of attention heads from the model's hidden dimension, enabling flexible compute allocation to the attention operator.\n- The authors modify existing scaling laws to account for context length and attention head configuration, modeling language modeling quality as a function of compute and memory costs.\n- They establish that loss is a power-plus-constant function of attention heads, enabling loss prediction before training.\n- Experiments show that commonly used GQA configurations can be suboptimal. For instance, with Llama-3.2-1B at 128K context length, using fewer attention heads and a larger model can reduce training and inference FLOPs and memory by almost 50% without increasing loss.\n- This work provides insights into developing practical LLMs, especially in long-context scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+        ],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Alias-Free Latent Diffusion Models:Improving Fractional Shift\n  Equivariance of Diffusion Latent Space",
+        "authors": "Xingang Pan, Shuai Yang, Zeqi Xiao, SingleZombie",
+        "link": "https://arxiv.org/abs/2503.09419",
+        "github_repo": "https://github.com/SingleZombie/AFLDM",
+        "summary": "- This paper introduces Alias-Free Latent Diffusion Models (AF-LDM), a novel framework designed to improve the stability and consistency of Latent Diffusion Models (LDMs) by enhancing their shift-equivariance.\n- AF-LDM addresses aliasing amplification during VAE training and U-Net inferences through an equivariance loss, and employs shift-equivariant attention modules with consistent reference keys and values.\n- The proposed model demonstrates improved performance in various applications, including video editing, super-resolution, and normal estimation, where consistent outputs are crucial.\n- The method consists of improving the fractional shift equivariance of Stable Diffusion by introducing a continuous latent representation with limited frequency bandwidth and Equivariant Attention.\n- Experiments show that AF-LDM surpasses existing LDMs in shift consistency and generates high-quality results, even with irregular pixel shifts.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/SingleZombie/AFLDM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Self-Taught Self-Correction for Small Language Models",
+        "authors": "Irina Nikishina, Chris Biemann, VityaVitalich",
+        "link": "https://arxiv.org/abs/2503.08681",
+        "github_repo": "https://github.com/VityaVitalich/STASC",
+        "summary": "- This paper introduces Self-Taught Self-Correction (STaSC), a novel algorithm enabling small language models (SLMs) to self-correct using only self-generated data, eliminating the need for external tools or large models.\n- STaSC iteratively refines model outputs through answer sampling, correction generation, filtering of successful corrections, and fine-tuning on these corrections, thereby improving initial answer quality.\n- Experiments on the Natural Questions dataset demonstrate that STaSC significantly improves SLMs' self-correction capabilities, even boosting initial answer quality despite training solely on corrections.\n- The authors provide and analyze the impact of various STaSC design choices, including initial answer exploration, correction filtering, and fine-tuning strategies.\n- Open-source code and lightweight models are released to foster further research on self-correction in SLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/VityaVitalich/STASC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "MoC: Mixtures of Text Chunking Learners for Retrieval-Augmented\n  Generation System",
+        "authors": "Simin Niu, Hanyu Wang, Zhaoxin Fan, Zhiyuan Ji, Robot2050",
+        "link": "https://arxiv.org/abs/2503.09600",
+        "github_repo": null,
+        "summary": "- This paper introduces MoC (Mixture-of-Chunkers), a framework designed to improve the chunking process within Retrieval-Augmented Generation (RAG) systems.\n- MoC addresses the limitations of traditional and semantic chunking methods by incorporating a three-stage process involving a multi-granularity-aware router, specialized meta-chunkers, and a post-processing algorithm.\n- The router dynamically selects the appropriate chunker based on input text granularity, while meta-chunkers generate regular expressions for chunk extraction, optimizing computational efficiency.\n- An edit distance recovery algorithm refines the generated content, ensuring accurate chunk extraction.\n- Experimental results across multiple QA datasets demonstrate that MoC enhances chunking quality and improves RAG system performance compared to baseline methods and state-of-the-art LLM-based approaches.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Multimodal Language Modeling for High-Accuracy Single Cell\n  Transcriptomics Analysis and Generation",
+        "authors": "Xiang Wang, Junfeng Fang, Sihang Li, Jiaqi Yang, Yaorui Shi",
+        "link": "https://arxiv.org/abs/2503.09427",
+        "github_repo": null,
+        "summary": "- This paper introduces scMMGPT, a novel multimodal pre-trained transformer for analyzing and generating single-cell transcriptomics data.\n- scMMGPT integrates a cell-based PLM (scGPT) with a text-based PLM (Llama-2) using cross-modal projectors to facilitate information exchange.\n- Pre-trained on 27 million cells, scMMGPT excels in cell description generation with an 84% improvement in textual discrepancy and a 97% reduction in Earth Mover's Distance over baselines.\n- It also achieves state-of-the-art performance in text-conditioned pseudo-cell generation with a 4% k-NN accuracy improvement, and a 20.5% higher accuracy for cell type annotation.\n- Ablation studies validate the contribution of key components, especially the importance of integrating both cellular and textual data through the unified framework.",
+        "classification": [
+            "Multimodal",
+            "Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/syr-cn/SCMMGPT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "When Large Vision-Language Model Meets Large Remote Sensing Imagery:\n  Coarse-to-Fine Text-Guided Token Pruning",
+        "authors": "Qi Zhu, Kang Wu, Xue Yang, Yingying Zhang, Junwei Luo",
+        "link": "https://arxiv.org/abs/2503.07588",
+        "github_repo": "https://github.com/VisionXLab/LRS-VQA",
+        "summary": "- This paper proposes a novel text-guided token pruning method for efficient vision-language understanding of large Remote Sensing Images (RSIs), addressing the challenge of information loss and high computational cost with traditional grid-based methods.\n- The method introduces a Region Focus Module (RFM) to identify text-relevant key vision tokens and a Dynamic Image Pyramid (DIP) for coarse-to-fine image tile selection and token pruning.\n- A new benchmark, LRS-VQA, featuring 7,333 question-answer pairs across 8 categories with image lengths up to 27,328 pixels, is also introduced to reflect the challenges of large RSIs perception. \n- The proposed method demonstrates performance improvements and efficiency gains compared to existing high-resolution strategies and token reduction methods on various datasets, including achieving higher accuracy on all four LRS-VQA subsets compared to adapted general LVLMs like EarthDial and GeoPixel, as well as improved accuracy and FPS on MME-RealWorld-RS compared to other token pruning methods.\n- The method is architecture-agnostic, and ablation studies validate the effectiveness of its core components: dynamic tile selection with DIP, text-guided key region localization with RFM, and token pruning strategy.",
+        "classification": [
+            "Computer Vision",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/VisionXLab/LRS-VQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Multi Agent based Medical Assistant for Edge Devices",
+        "authors": "Pragya Sahu, Jagdish Samant, Chinmay Kulkarni, Shivam Akhouri, Sakharam Gawade",
+        "link": "https://arxiv.org/abs/2503.05397",
+        "github_repo": null,
+        "summary": "- This research introduces an on-device, multi-agent healthcare assistant that addresses privacy, latency, and internet dependency challenges posed by traditional cloud-based Large Action Models (LAMs) in healthcare applications.\n- The system utilizes smaller, task-specific agents like Planner and Caller, powered by the Qwen Code Instruct 2.5 7B model, optimized for resource allocation and on-device execution.\n- These agents achieve average RougeL scores of 85.5 for planning and 96.5 for calling and handle tasks such as intelligent diagnosis and appointment scheduling, emergency SOS, vitals tracking, and daily health reporting.\n- The multi-agent architecture enables modular collaboration, with each agent functioning independently while working harmoniously for complex workflows, and facilitates system scaling through additional agents.\n- A user-friendly application integrates the multi-agent system with smartwatches, enhancing personalized data retrieval and agent capabilities through retrieval augmented generation.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct"
+        ],
+        "date": "2025-03-13"
+    },
+    {
+        "title": "Monte Carlo Diffusion for Generalizable Learning-Based RANSAC",
+        "authors": "Tong Zhang, Wei Ke, Chen Zhao, Jiale Wang",
+        "link": "https://arxiv.org/abs/2503.09410",
+        "github_repo": null,
+        "summary": "- This paper introduces Monte Carlo Diffusion, a novel training paradigm to enhance the generalizability of learning-based RANSAC methods for robust parametric model estimation from noisy data with outliers.\n- The approach decouples training from specific data generation methods by progressively injecting noise into ground-truth data through a diffusion process, simulating diverse noisy conditions.\n- A multi-stage randomization mechanism injects randomness at multiple stages of the diffusion module to further enhance data diversity.\n- In evaluations on feature matching using ScanNet and MegaDepth datasets, models trained with Monte Carlo Diffusion exhibit significantly improved generalization to out-of-distribution data compared to models trained on specific matchers (e.g., SIFT or LoFTR).\n- The method also shows competitive performance on in-distribution scenarios, and ablation studies confirm the compatibility with other learning-based RANSAC variants and the effectiveness of key components.",
+        "classification": [
+            "Computer Vision",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-13"
     }
 ]

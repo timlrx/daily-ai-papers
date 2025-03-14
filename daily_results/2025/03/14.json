@@ -1,0 +1,436 @@
+[
+    {
+        "title": "CoSTAast: Cost-Sensitive Toolpath Agent for Multi-turn Image Editing",
+        "authors": "Dang Nguyen, zhoutianyi, nandakiran09, advaitgupta",
+        "link": "https://arxiv.org/abs/2503.10613",
+        "github_repo": null,
+        "summary": "- CoSTA*, a cost-sensitive toolpath agent, is introduced for multi-turn image editing, combining LLMs for subtask planning and A* search for efficient tool selection.\n- This hierarchical approach leverages an LLM to generate a subtask tree, which is then used to construct a Tool Subgraph (TS) based on tool dependencies.\n- A* search on the TS determines the optimal toolpath by balancing computational cost and output quality using a cost function that incorporates a trade-off parameter.\n- Experimental results on a novel benchmark dataset demonstrates CoSTA*'s superiority over existing baselines in complex multimodal tasks, pushing the Pareto frontier of cost-quality trade-offs.\n- CoSTA* effectively handles intricate workflows, dynamic feedback and retry mechanisms, along with support for a broader range of tasks, making it adaptable for complex image and text-in-image editing.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/CoSTAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "World Modeling Makes a Better Planner: Dual Preference Optimization for\n  Embodied Task Planning",
+        "authors": "xpqiu, Jinlan, CyberDJ, ngc7293, sinwang",
+        "link": "https://arxiv.org/abs/2503.10480",
+        "github_repo": null,
+        "summary": "- Introduces Dual Preference Optimization (D2PO), a framework jointly optimizing state prediction and action selection for embodied task planning using preference learning, allowing Large Vision-Language Models (LVLMs) to better understand environment dynamics.\n- Presents a tree search mechanism to automatically collect trajectories and preference data without human annotation, facilitating extensive exploration via trial-and-error.\n- Evaluates on VoTa-Bench, a vision-enhanced extension of LoTa-Bench, demonstrating D2PO's significant improvement over existing methods and GPT-40 across multiple LVLMs (Qwen2-VL 7B, LLaVA-1.6 7B, LLaMA-3.2 11B).\n- Shows superior task success rates and more efficient planning with the 7B parameter model outperforming GPT-40, highlighting the approach's effectiveness.\n- Addresses limitations like the sim-to-real gap and data collection efficiency, while suggesting future work on more complex error patterns.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Silent Branding Attack: Trigger-free Data Poisoning Attack on\n  Text-to-Image Diffusion Models",
+        "authors": "Sung Ju Hwang, kiminle2, harryjo97, wchoi403, agwmon",
+        "link": "https://arxiv.org/abs/2503.09669",
+        "github_repo": null,
+        "summary": "- This paper introduces the Silent Branding Attack, a novel data poisoning method that manipulates text-to-image diffusion models to generate images containing specific brand logos or symbols *without any explicit text triggers*.\n- The attack involves subtly inserting logos into training images, causing the model to learn and reproduce these visual patterns even when not mentioned in the prompt.\n- An automated algorithm personalizes the model to the target logo, generates masks to identify suitable insertion locations, and performs inpainting and refinement for seamless integration, maintaining image quality and text alignment.\n- Experiments on large-scale, high-quality image datasets and style personalization datasets demonstrate high success rates in embedding logos without specific text triggers, validated by human evaluation and logo detection metrics.\n- This attack raises significant ethical and safety concerns regarding the potential for embedding unwanted or harmful content into generated images.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://silent-branding.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Charting and Navigating Hugging Face's Model Atlas",
+        "authors": "yedid, LielAmar, jonkahana, nitzankur, Eliahu",
+        "link": "https://arxiv.org/abs/2503.10633",
+        "github_repo": null,
+        "summary": "- This paper introduces a method for charting and navigating large model repositories, focusing on Hugging Face, to improve model discovery, reuse, and analysis of machine learning trends.\n- The proposed method addresses the challenge of incomplete model documentation by leveraging structural patterns in real-world model training practices, such as quantizations, near-duplicates, and merges, to accurately predict model relationships and attributes.\n- The method constructs a directed acyclic graph (DAG) representing the model relationships (e.g., fine-tuning, merging) and demonstrates its utility for various applications, including trend analysis, model attribute prediction, and measuring model impact.\n- Experimental results on Hugging Face datasets show that this approach significantly outperforms baseline methods in atlas recovery accuracy and allows for better model impact measurement and more robust IP tracking than simple download counts.\n- The atlas and dataset are publicly released to enable more effective model exploration and research.",
+        "classification": [
+            "Graph Machine Learning",
+            "Computer Vision",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://horwitz.ai/model-atlas",
+            "https://huggingface.co/datasets/cfahlgrenl/hub-stats"
+        ],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "GoT: Unleashing Reasoning Capability of Multimodal Large Language Model\n  for Visual Generation and Editing",
+        "authors": "zengxingyu, shilinyan, LjHuang, gogoduan, LucasFang",
+        "link": "https://arxiv.org/abs/2503.10639",
+        "github_repo": "https://github.com/rongyaofang/GoT",
+        "summary": "- The paper introduces Generation Chain-of-Thought (GoT), a novel paradigm that integrates multimodal large language model (MLLM) reasoning capabilities into visual generation and editing through explicit semantic-spatial reasoning chains.\n- GoT transforms visual generation from direct mapping to a reasoning-guided process with precise spatial control over object layout, relationships, and attributes.\n- The proposed framework leverages a semantic-spatial aware MLLM to generate structured reasoning chains and a multi-guided diffusion model with a Semantic-Spatial Guidance Module (SSGM).\n- The SSGM integrates semantic understanding, spatial awareness, and reference knowledge to ensure generated images accurately reflect the reasoning process.\n- Experimental results demonstrate state-of-the-art performance on text-to-image generation and editing benchmarks while enabling interactive control through modifiable reasoning chains.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/rongyaofang/GoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Transformers without Normalization",
+        "authors": "Zhuang Liu, Kaiming He, ylecun, endernewton, JiachenZhu",
+        "link": "https://arxiv.org/abs/2503.10622",
+        "github_repo": null,
+        "summary": "- This paper introduces Dynamic Tanh (DyT), a simple element-wise operation, as a replacement for normalization layers in Transformers.\n- DyT is defined as DyT(x) = tanh(ax), where 'a' is a learnable parameter, aiming to mimic the input-output mapping of Layer Normalization (LN).\n- Experiments across various tasks, including image classification, self-supervised learning, diffusion models, and large language models, show that Transformers with DyT achieve comparable or better performance than their LN counterparts, often without hyperparameter tuning.\n- The paper challenges the conventional wisdom that normalization layers are indispensable in modern neural networks.\n- The findings offer insights into the role of normalization by demonstrating its similarity to a scaled tanh function.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Natural Language Processing",
+            "Text Generation",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "GroundingSuite: Measuring Complex Multi-Granular Pixel Grounding",
+        "authors": "wenyuliu, steelozazala, wondervictor, LianghuiZhu, RuiHu",
+        "link": "https://arxiv.org/abs/2503.10596",
+        "github_repo": "https://github.com/hustvl/GroundingSuite",
+        "summary": "- This paper introduces GroundingSuite, a comprehensive suite for evaluating pixel grounding, including an automated annotation framework (GSSculpt), a large-scale training dataset (GSTrain-10M with 9.56 million image-text pairs), and a curated evaluation benchmark (GSEval with 3800 images).\n- GSSculpt leverages Vision-Language Models for generating and refining pixel masks and descriptions and employs a noise filtering process, enhancing the quality and efficiency of automatic annotation compared to existing methods.\n- GSTrain-10M and GSEval address limitations in previous datasets by encompassing stuff-class, part-level, and multi-object segmentation with diverse and detailed textual descriptions.\n- Models trained on GroundingSuite achieve state-of-the-art results, demonstrating its effectiveness; for example, reaching a cIoU of 68.9 on gRefCOCO and gIoU of 55.3 on RefCOCOm.\n- This benchmark evaluates models in zero-shot settings and covers fine-grained and complex scene understanding scenarios.",
+        "classification": [
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/hustvl/GroundingSuite"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "New Trends for Modern Machine Translation with Large Reasoning Models",
+        "authors": "acecamel1977, longyuewang, minghaowu, ChenyangLyu, SNF",
+        "link": "https://arxiv.org/abs/2503.10351",
+        "github_repo": null,
+        "summary": "- This paper explores the transformative potential of Large Reasoning Models (LRMs) in redefining Machine Translation (MT) by showcasing how they reframe translation as a reasoning task, going beyond traditional text-to-text mapping.\n- LRMs exhibit self-reflection and auto-pivot translation capabilities, which are new characteristics introduced to MT.\n- The authors present three fundamental shifts brought about by LRMs: 1) contextual coherence 2) cultural intentionality 3) self-reflection.\n- By leveraging Chain-of-Thought (CoT) reasoning, LRMs address challenges in stylized translation, document-level translation, and multimodal translation.\n- The paper also identifies critical challenges such as over-localization, inference efficiency, and limitations in handling complex ciphers and specialized multimodal inputs, presenting opportunities for future research.",
+        "classification": [
+            "Translation",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Shifting Long-Context LLMs Research from Input to Output",
+        "authors": "mingshan, tsq2000, Zhiqiang007, bys0318, mozhu",
+        "link": "https://arxiv.org/abs/2503.04723",
+        "github_repo": null,
+        "summary": "- This paper argues for a shift in Natural Language Processing (NLP) research from focusing on long-input Large Language Models (LLMs) to developing long-output LLMs.\n- It highlights the increasing demand for generating extended, coherent, and contextually rich text in various real-world applications, such as novel writing, long-term planning, and complex reasoning, which require outputs exceeding 4,000 tokens.\n- The paper identifies key challenges hindering progress in long-output generation, including data limitations, task execution complexities, and computational cost constraints.\n- It defines long-output LLMs as models specifically designed to excel at long-output tasks, requiring capabilities in handling extensive contexts and generating high-quality, logically consistent text.\n- The paper explores the current state of long-output LLMs, discussing existing datasets, benchmarks, and models, and analyzes their limitations and potential.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web\n  Search",
+        "authors": "Bo Li, Xiang Yue, wenhu, jiachenli-ucsb, jymmmmm",
+        "link": "https://arxiv.org/abs/2503.10582",
+        "github_repo": null,
+        "summary": "- This paper introduces VisualWebInstruct, a new dataset for visual question answering (VQA) focused on complex reasoning, created by leveraging web search and automated data curation.\n- Starting with 30,000 seed images, they use Google Image Search to find similar images and related web pages, extracting about 900K question-answer pairs from over 700K unique URLs with around 40% being visual QA pairs and others as text QA pairs.\n- The dataset creation pipeline involves HTML processing, content extraction using an LLM, answer synthesis using GPT-4, and a consistency filtering process to ensure high-quality and diversity of the collected data.\n- Fine-tuning existing VLMs on VisualWebInstruct shows significant performance gains, with improvements ranging from 5-20% on several reasoning benchmarks including MMMU, MathVista, and DynaMath.\n- Their best model, MAmmoTH-VL2 (7B parameter), achieves state-of-the-art performance in its size category on MMMU-Pro-std (40.7%), MathVerse (42.6%), and DynaMath (55.7%).",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "DiT-Air: Revisiting the Efficiency of Diffusion Model Architecture\n  Design in Text to Image Generation",
+        "authors": "Rui Qian, Chen Chen, yinfeiy, tsujuifu, wenzehu",
+        "link": "https://arxiv.org/abs/2503.10618",
+        "github_repo": null,
+        "summary": "- Introduces DiT-Air, a family of Diffusion Transformer (DiT) models for text-to-image generation, focusing on efficiency and performance.\n- Employs a simplified architecture compared to existing DiTs, directly processing concatenated text and noise inputs and sharing AdaLN parameters, leading to a 66% reduction in model size compared to MMDiT.\n- Leverages both full block-sharing and attention-only sharing strategies in DiT-Air-Lite, a more parameter-efficient variant of DiT-Air.\n- Includes an analysis of text conditioning strategies (CLIP, LLMs, T5) and variational autoencoders (VAEs), introducing a refined VAE and demonstrating the benefits of bidirectional CLIP.\n- Achieves state-of-the-art performance on GenEval and T2I CompBench with DiT-Air and demonstrates high competitiveness with DiT-Air-Lite despite its compact size.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/apple/axlearn"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Open-Sora 2.0: Training a Commercial-Level Video Generation Model in\n  $200k",
+        "authors": "Xinying Guo, Tom Young, Chenhui Shen, Zangwei Zheng, Xiangyu Peng",
+        "link": "https://arxiv.org/abs/2503.09642",
+        "github_repo": "https://github.com/hpcaitech/Open-Sora",
+        "summary": "- Open-Sora 2.0 is a commercial-level text-to-video and image-to-video generation model trained for $200k, 5-10 times cheaper than comparable models.\n- It uses a novel Video DC-AE autoencoder with deep compression and a DiT (Diffusion Transformer) architecture incorporating 3D Rotary Position Embedding (ROPE) for enhanced motion representation.\n- Trained using a three-stage process involving low and high resolution videos, it leverages open-source image models (Flux) and hierarchical data filtering for efficiency.\n- Evaluations with VBench show that Open-Sora 2.0 outperforms open-source models like CogVideo and HunyuanVideo, closing the performance gap with OpenAI's Sora to 0.69%.\n- Supports resolutions up to 768x768 pixels and video lengths up to 5 seconds at 24 FPS.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/hpcaitech/Open-Sora"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Long Context Tuning for Video Generation",
+        "authors": "lindahua, zhenheny, Ikuinen, Brightmzb, ziyany",
+        "link": "https://arxiv.org/abs/2503.10589",
+        "github_repo": null,
+        "summary": "- This paper introduces Long Context Tuning (LCT), a novel training paradigm designed to enhance the context window of pre-trained single-shot video diffusion models, enabling them to generate multi-shot videos with both visual and dynamic consistency.\n- LCT employs three key mechanisms: expanding full attention to encompass all shots in a scene, utilizing interleaved 3D Rotary Positional Embedding (ROPE) for precise shot positioning, and implementing an asynchronous noise strategy to manage individual shot dependencies.\n- After training with scene-level video data, the model with bidirectional attention can be further fine-tuned to context-causal attention for efficient autoregressive video generation. \n- Experimental results demonstrate the model's superior performance in generating coherent multi-shot scenes, surpassing baseline models in semantic alignment while offering additional capabilities such as compositional generation (combining character and environment images) and interactive shot extension (both with and without shot cuts).\n- This approach provides a more practical solution for visual content creation by overcoming the limitations of current single-shot video generation models and facilitating interactive video generation workflows.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "4D LangSplat: 4D Language Gaussian Splatting via Multimodal Large\n  Language Models",
+        "authors": "hpfister, Qmh, wrencanfly, rpzhou, EthanTaylor",
+        "link": "https://arxiv.org/abs/2503.10437",
+        "github_repo": null,
+        "summary": "- 4D LangSplat, a novel framework for building dynamic 4D language fields, enabling time-sensitive and time-agnostic open-vocabulary queries in dynamic scenes, is introduced.\n- It leverages a multimodal object-wise video prompting method, combining visual and textual prompts with a Multimodal Large Language Model (MLLM) and a Large Language Model (LLM), to generate and encode object-specific video captions into pixel-aligned features for training the 4D language field.\n- To capture evolving object semantics, 4D LangSplat incorporates a status deformable network, modeling smooth transitions between limited semantic states.\n- Experimental results on HyperNeRF and Neu3D datasets show state-of-the-art performance in both time-agnostic and time-sensitive querying, significantly outperforming baseline methods by substantial margins in accuracy and intersection-over-union scores.\n- The approach effectively handles dynamic object transformations and temporal semantics, enabling precise spatiotemporal querying in complex 4D scenes.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Do I look like a `cat.n.01` to you? A Taxonomy Image Generation\n  Benchmark",
+        "authors": "Ekaterina Neminova, Alina Lobanova, lilaspourpre, apanc, VityaVitalich",
+        "link": "https://arxiv.org/abs/2503.10357",
+        "github_repo": null,
+        "summary": "- This paper introduces a comprehensive benchmark for Taxonomy Image Generation, evaluating the ability of text-to-image models to generate relevant images for taxonomy concepts.\n- The benchmark uses WordNet concepts and includes nine novel taxonomy-related metrics, incorporating human and automatic evaluation, along with a Bradley-Terry model ranking.\n- Twelve publicly available text-to-image models were evaluated, and pairwise preference evaluations with GPT-4 were conducted. \n- Experimental results revealed that Playground-v2 and FLUX consistently outperformed other models, while retrieval-based approaches performed poorly, and model rankings differed from standard text-to-image tasks. \n- A new dataset of images generated by the top-performing model, covering WordNet 3.0 and extending ImageNet, has been released.",
+        "classification": [
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/VityaVitalich/generated-image-wordnet-67d2c868ff1414ec2f8e0d3d"
+        ],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency\n  Distillation",
+        "authors": "Yuyang Zhao, Shuchen Xue, Junsong Chen, xieenze, sayakpaul",
+        "link": "https://arxiv.org/abs/2503.09641",
+        "github_repo": null,
+        "summary": "- SANA-Sprint is a novel, efficient diffusion model designed for rapid text-to-image generation, leveraging a hybrid distillation approach that integrates continuous-time consistency models (sCM) with latent adversarial distillation (LADD).\n- This model reduces the required inference steps from a typical 20 down to 1-4, while maintaining competitive image quality. It outperforms the existing state-of-the-art method FLUX-schnell by achieving a FID score of 7.59 and a GenEval score of 0.74 in just one step, compared to FLUX-schnell's 7.94 FID and 0.71 GenEval in four steps.\n- SANA-Sprint integrates seamlessly with ControlNet, allowing real-time interactive image editing and generation with a latency of 0.25s on an H100 GPU. It also achieves impressive speeds, generating 1024x1024 images in 0.1s on an H100 and 0.31s on an RTX 4090.\n- The training process involves a novel training-free approach, transforming pre-trained flow-matching models for continuous-time consistency distillation and QK normalization alongside dense time embeddings in self- and cross-attention mechanisms to stabilize the distillation. \n- By combining these efficiency enhancements with quality-preserving distillation techniques, SANA-Sprint establishes a new benchmark for fast, high-quality text-to-image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "UniGoal: Towards Universal Zero-shot Goal-oriented Navigation",
+        "authors": "Ziwei Wang, Lingqing Zhao, jiwenlu, xuxw98, hangyin",
+        "link": "https://arxiv.org/abs/2503.10630",
+        "github_repo": null,
+        "summary": "- UniGoal is a universal zero-shot goal-oriented navigation framework that handles object-goal, instance-image-goal, and text-goal navigation without training or finetuning.\n- It employs a uniform graph representation for both the agent's observations (scene graph) and the goal (goal graph), which minimizes information loss and facilitates explicit graph-based reasoning by an LLM.\n- A multi-stage exploration policy guides navigation based on graph matching scores: zero matching triggers subgraph searching, partial matching initiates coordinate projection and anchor pair alignment, and perfect matching leads to graph correction and goal verification.\n- A blacklist mechanism avoids repeated exploration of unsuccessful areas and enables robust switching between stages.\n- UniGoal achieves state-of-the-art zero-shot performance on various benchmarks, exceeding task-specific and supervised universal methods.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Light-R1: Curriculum SFT, DPO and RL for Long COT from Scratch and\n  Beyond",
+        "authors": "tanglifu, JunchenLiu, yyy99, duan901010, cizhenshi",
+        "link": "https://arxiv.org/abs/2503.10460",
+        "github_repo": "https://github.com/Qihoo360/Light-R1",
+        "summary": "- The Light-R1 series introduces a new approach for training long chain-of-thought (COT) reasoning models, focusing on efficiency and effectiveness for resource-constrained environments.\n- The approach employs a curriculum training strategy involving two-stage Supervised Fine-tuning (SFT) and semi-on-policy Direct Preference Optimization (DPO), validated by training Light-R1-32B from Qwen2.5-32B-Instruct, outperforming DeepSeek-R1-Distill-Qwen-32B on math tasks.\n- A 3k dataset curated for the second SFT stage significantly boosts performance across other models, resulting in state-of-the-art (SOTA) results for 7B and 14B models, and competitive performance for the 32B model (Light-R1-32B-DS) compared to QwQ-32B and DeepSeek-R1.\n- Applying Generalized Reinforcement Learning from Preference Optimization (GRPO) on long-COT models, specifically Light-R1-14B-DS, yields SOTA results for 14B models in math, exceeding many 32B models and DeepSeek-R1-Distill-Llama-70B on AIME benchmarks, with simultaneous improvement in response length and reward scores.\n- The Light-R1 series releases all models, data, and code, showing that long-COT models can be effectively trained from scratch and demonstrating SOTA performance improvements on long-COT and RL training of 14B models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Qihoo360/Light-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "CINEMA: Coherent Multi-Subject Video Generation via MLLM-Based Guidance",
+        "authors": "brotherhuang, u302117, BestWishYsh, angtian, dyf",
+        "link": "https://arxiv.org/abs/2503.10391",
+        "github_repo": null,
+        "summary": "- CINEMA is a novel framework for generating coherent multi-subject videos, guided by a Multimodal Large Language Model (MLLM), which enhances coherence and contextual alignment.\n- The framework utilizes MM-DiT for video generation, integrating multimodal information through a multimodal large language model, semantic alignment network (AlignerNet), and visual entity encoding.\n- AlignerNet bridges the representation gap between the MLLM and the text encoder of the base video generation model, ensuring compatibility.\n- Visual entity encoding extracts detailed visual features from reference images using a VAE, ensuring subject consistency.\n- Experimental results demonstrate that CINEMA effectively preserves subject identity, adheres to text prompts, and maintains temporal coherence in generated videos, outperforming baseline models in visual quality and subject consistency.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Quantization for OpenAI's Whisper Models: A Comparative Analysis",
+        "authors": "allisonandreyev",
+        "link": "https://arxiv.org/abs/2503.09905",
+        "github_repo": "https://github.com/allisonandreyev/WhisperQuantization.git",
+        "summary": "- This paper analyzes the impact of quantization on OpenAI's Whisper ASR models, including two variants: Whisper_Streaming and whisper-timestamped.\n- It quantizes the base Whisper model using INT4, INT5, and INT8 methods and evaluates their performance on the LibriSpeech dataset.\n- The study finds that quantization reduces model size by up to 45% and latency by 19% while preserving transcription accuracy.\n- This makes Whisper deployment feasible on resource-constrained devices like smartphones and IoT systems.\n- The paper also qualitatively compares the three Whisper variants, highlighting their strengths and limitations for different applications.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "https://github.com/allisonandreyev/WhisperQuantization"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Distilling Diversity and Control in Diffusion Models",
+        "authors": "David Bau, RohitGandikota",
+        "link": "https://arxiv.org/abs/2503.10637",
+        "github_repo": null,
+        "summary": "- This paper introduces \"diversity distillation,\" a technique to improve sample diversity in distilled diffusion models, which often suffer from mode collapse (reduced diversity).\n- The technique involves using the base model for the initial timestep(s) of the generation process and then switching to the distilled model for the remaining steps, taking advantage of the speed of distilled models while leveraging the diversity of the base model in critical early timesteps.\n- The researchers introduce Diffusion Target (DT) Visualization, a method to analyze what a diffusion model \"thinks\" the final image will be at any given timestep, which helped identify the importance of initial timesteps for diversity.\n- Experiments demonstrate that this hybrid approach not only recovers diversity lost during distillation but can even exceed the diversity of the original base model.\n- The paper also shows that control mechanisms trained on base diffusion models can be seamlessly transferred to distilled versions, demonstrating the preservation of internal concept representations during distillation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/rohitgandikota/sliderspace"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "R1-Onevision: Advancing Generalized Multimodal Reasoning through\n  Cross-Modal Formalization",
+        "authors": "Xiaoxuan He, Yi Yang, twilightsnow, dcyin, Emilia515",
+        "link": "https://arxiv.org/abs/2503.10615",
+        "github_repo": "https://github.com/Fancy-MLLM/R1-onevision",
+        "summary": "- Introduces R1-Onevision, a multimodal reasoning model employing a cross-modal reasoning pipeline that transforms images into formal textual representations for enhanced language-based reasoning.\n- Presents a new dataset, R1-Onevision, containing detailed step-by-step multimodal reasoning annotations across various domains, created using a role-playing strategy.\n- Develops a two-stage post-training strategy involving supervised fine-tuning and reinforcement learning to enhance reasoning abilities and generalization of the model.\n- Introduces R1-Onevision-Bench, a comprehensive benchmark designed to assess grade-level multimodal reasoning skills across different educational levels and scientific domains.\n- Achieves state-of-the-art performance, surpassing models such as GPT-40 and Qwen2.5-VL on various multimodal reasoning benchmarks, including significant improvements on MathVerse and MathVision.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Fancy-MLLM/R1-onevision"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "Autoregressive Image Generation with Randomized Parallel Decoding",
+        "authors": "Huan Wang, Guoqi Li, Jinyue Yang, hp-l33",
+        "link": "https://arxiv.org/abs/2503.10568",
+        "github_repo": null,
+        "summary": "- ARPG, a novel visual autoregressive model, introduces Randomized Parallel Generation, addressing limitations of traditional raster-order approaches by decoupling positional guidance and content representation using a \"guided decoding\" framework.\n- This framework utilizes learnable target-aware queries with shifted positional embeddings and data-dependent key-value pairs in a two-pass decoder architecture, allowing for parallel decoding and random-order generation with causal attention, thereby maintaining efficiency through KV cache utilization.\n- On ImageNet-1K 256x256, ARPG achieves an FID of 1.94 with 64 sampling steps, demonstrating competitive quality while exceeding raster-order baselines in throughput (20x faster than LlamaGen) and memory efficiency (75% less than VAR).\n- ARPG also supports zero-shot tasks like inpainting and outpainting, exhibiting strong generalization capabilities.\n- Additionally, ARPG demonstrates state-of-the-art performance in controllable image generation conditioned on canny edges and depth maps.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/hp-133/ARPG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "The Curse of Conditions: Analyzing and Improving Optimal Transport for\n  Conditional Flow-Based Generation",
+        "authors": "Alexander Schwing, hkchengrex",
+        "link": "https://arxiv.org/abs/2503.10636",
+        "github_repo": null,
+        "summary": "- This paper proposes Conditional Optimal Transport Flow Matching (C2OT), a new method for training conditional flow-based generative models.\n- C2OT introduces a conditional weighting term in the cost matrix used for optimal transport coupling, addressing the issue of skewed prior distributions during training.\n- The method straightens flow paths, leading to more efficient inference at test time by reducing the number of integration steps required by the ODE solver. \n- Experiments on CIFAR-10, ImageNet-32x32, and ImageNet-256x256 datasets demonstrate that C2OT outperforms existing baselines, achieving better overall performance across different inference computation budgets.\n-  The results showcase C2OT's ability to generate high-quality samples with both discrete and continuous conditions.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "hkchengrex.github.io/C2OT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "VisualPRM: An Effective Process Reward Model for Multimodal Reasoning",
+        "authors": "Einsiedler, Yeshenglong, Decaux, chenlj22, Weiyun1025",
+        "link": "https://arxiv.org/abs/2503.10291",
+        "github_repo": null,
+        "summary": "- This paper introduces VisualPRM, an 8B parameter multimodal Process Reward Model (PRM) designed to improve the reasoning capabilities of Multimodal Large Language Models (MLLMs).\n- VisualPRM enhances MLLM performance across various model scales and families by using Best-of-N (BoN) evaluation strategies, achieving a 5.9-point improvement with InternVL2.5-78B across seven benchmarks.\n- To train VisualPRM, the authors created a 400K sample multimodal process supervision dataset, VisualPRM400K, using an automated data pipeline to annotate step-wise correctness.\n- A new benchmark, VisualProcess-Bench, with 2,866 human-annotated samples, was also developed for evaluating multimodal PRMs and MLLMs' ability to detect erroneous reasoning steps.\n- Experimental results demonstrate that VisualPRM consistently outperforms Outcome Reward Models and Self-Consistency in BoN evaluations, establishing its effectiveness as a critic model for enhancing MLLM reasoning.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "\"Silent Is Not Actually Silent\": An Investigation of Toxicity on Bug\n  Report Discussion",
+        "authors": "Jaydeb Sarker, imranraad",
+        "link": "https://arxiv.org/abs/2503.10072",
+        "github_repo": null,
+        "summary": "- This study investigates toxicity in GitHub bug report discussions, a critical aspect of open-source software development often overlooked in previous research.\n- Through qualitative analysis of 203 bug threads (81 toxic), the research identifies key factors contributing to toxicity, such as misaligned perceptions of bug severity and maintainers' prioritization, unresolved frustrations with tools, and lapses in professional communication.\n- Findings reveal that external participants and bug reporters themselves are more prone to initiating toxic comments. Toxic threads have lower resolution rates and are less likely to be linked to pull requests, hindering collaboration and bug resolution. \n- The study also highlights the detrimental impact of toxicity on project discussions and offers actionable recommendations for improving bug resolution by mitigating toxicity.\n- Recommendations for future work include developing more robust and context-aware automated systems for toxicity detection in software engineering discussions and conducting large-scale empirical studies to gain deeper insights into this phenomenon.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "PerCoV2: Improved Ultra-Low Bit-Rate Perceptual Image Compression with\n  Implicit Hierarchical Masked Image Modeling",
+        "authors": "Daniel Mueller-Gritschneder, Sascha Hauke, HerrSiebert, edukrom, Nikolai10",
+        "link": "https://arxiv.org/abs/2503.09368",
+        "github_repo": "https://github.com/Nikolai10/PerCoV2",
+        "summary": "- PerCoV2 is an open ultra-low bit-rate perceptual image compression model based on Stable Diffusion 3, extending the PerCo framework.\n- It enhances entropy coding efficiency by explicitly modeling the discrete hyper-latent image distribution using an implicit hierarchical masked image model.\n- PerCoV2 outperforms previous state-of-the-art models in image fidelity at lower bit-rates while maintaining competitive perceptual quality on benchmarks like MSCOCO-30k and Kodak, particularly excelling in the 0.003-0.03 bpp range. \n- It introduces a hybrid generation mode for further bit-rate savings, utilizing a combination of local and global features for image reconstruction.\n- All components of PerCoV2 are based on publicly available resources, unlike its predecessors.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Nikolai10/PerCoV2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    },
+    {
+        "title": "On the Limitations of Vision-Language Models in Understanding Image\n  Transforms",
+        "authors": "Saquib Sarfraz, Hasnain Ali, Ahmad Mustafa Anis",
+        "link": "https://arxiv.org/abs/2503.09837",
+        "github_repo": null,
+        "summary": "- This research paper investigates the limitations of Vision-Language Models (VLMs), particularly CLIP and SigLIP, in understanding basic image transformations such as rotations, flips, color adjustments, and distortions.\n- The study reveals that while VLMs excel in semantic understanding, they struggle with comprehending and reasoning about image-level augmentations, impacting their performance in downstream tasks like image editing.\n- An augmented version of the Flickr8k dataset is created, pairing each image with detailed descriptions of applied transformations, to evaluate VLM performance on understanding augmented descriptions, matching augmented images with descriptions, and classifying transformations.\n- Experiments show that VLMs have difficulty associating augmented descriptions with corresponding images and struggle to correctly classify image transformations.\n- The findings highlight a crucial gap in current VLMs' spatial understanding, emphasizing the need for new training paradigms that balance invariance with explicit transformation awareness for improved performance in image editing and related tasks.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-14"
+    }
+]

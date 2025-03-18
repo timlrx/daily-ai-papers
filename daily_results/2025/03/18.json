@@ -1,0 +1,319 @@
+[
+    {
+        "title": "DropletVideo: A Dataset and Approach to Explore Integral Spatio-Temporal\n  Consistent Video Generation",
+        "authors": "Runze Zhang, NeilXu, EllenAP, lixiaochuan, georgedu",
+        "link": "https://arxiv.org/abs/2503.06053",
+        "github_repo": null,
+        "summary": "- This paper introduces DropletVideo, a novel text-to-video model trained on a new dataset called DropletVideo-10M, which contains 10 million videos with dynamic camera motion and object actions, each accompanied by detailed captions averaging 206 words describing camera movements and plot developments.\n- The DropletVideo model focuses on maintaining *integral spatio-temporal consistency*, considering the interplay between plot progression and camera techniques, and the influence of prior content on subsequent generation, enabling generation of complex multi-plot narratives.\n- DropletVideo-10M is significantly larger than existing open-source datasets addressing spatio-temporal consistency and includes richer textual descriptions than comparable datasets like Panda-70M.\n- It leverages a 3D causal Variational Autoencoder and a Multi-Modal Diffusion Transformer for encoding video and text, and employs a motion adaptive generation strategy to control the motion speed in generated videos. \n- Qualitative results demonstrate that DropletVideo effectively preserves content consistency and generates realistic camera movements, outperforming or matching other state-of-the-art models on several qualitative metrics.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://dropletx.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Being-0: A Humanoid Robotic Agent with Vision-Language Models and\n  Modular Skills",
+        "authors": "tellarin, SherryXu, takenpeanut, fuyh, Yaya041",
+        "link": "https://arxiv.org/abs/2503.12533",
+        "github_repo": null,
+        "summary": "- Being-0 is a hierarchical agent framework designed to effectively control a full-sized humanoid robot to perform complex, long-horizon tasks in real-world environments.\n- The framework integrates a Foundation Model (FM) for high-level reasoning, a lightweight Vision-Language Model (VLM) called Connector for bridging the gap between high-level plans and low-level skills, and a Modular Skill Library for robust locomotion and manipulation.\n- The Connector enhances the FM's embodied capabilities by translating language-based plans into actionable skill commands, dynamically coordinating locomotion and manipulation, and adjusting the robot's pose for optimal skill execution.\n- Experimental results on a Unitree H1-2 humanoid robot show an average completion rate of 84.4% on challenging long-horizon tasks, demonstrating the framework's efficiency and robustness.\n- Being-0 leverages an active camera and dexterous hands, and deploys all modules onboard, except the FM, enabling efficient and real-time performance.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "DreamRenderer: Taming Multi-Instance Attribute Control in Large-Scale\n  Text-to-Image Models",
+        "authors": "Yi Yang, z-x-yang, aiJojosh, limuloo1999",
+        "link": "https://arxiv.org/abs/2503.12885",
+        "github_repo": null,
+        "summary": "- DreamRenderer is a training-free, plug-and-play controller built upon the FLUX model that allows users to exert fine-grained control over the content of multiple instances (or regions) within generated images using bounding boxes or masks, addressing the issue of attribute leakage common in existing models.\n- It introduces two key innovations: Bridge Image Tokens for Hard Text Attribute Binding, which ensures text embeddings accurately capture visual attributes, and Hard Image Attribute Binding applied selectively to vital layers, balancing precise control with overall visual harmony.\n- Evaluations on COCO-POS and COCO-MIG show DreamRenderer significantly improves the Image Success Ratio (ISR) by 17.7% over FLUX and enhances performance of other layout-to-image models like GLIGEN and 3DIS by up to 26.8%.\n- On COCO-POS, DreamRenderer achieves 62.50% SR, 94.51% ISR, and 84.36% MIoU in depth-guided generation and comparable results in the canny-guided setting, surpassing existing methods without compromising image quality.\n- Its ability to accurately control individual regions and instances improves as the number of instances increases, demonstrating the effectiveness of the Hard Text Attribute Binding algorithm.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Edit Transfer: Learning Image Editing via Vision In-Context Relations",
+        "authors": "Qi Mao, AnalMom, guyuchao, Orannue",
+        "link": "https://arxiv.org/abs/2503.13327",
+        "github_repo": null,
+        "summary": "- This paper introduces Edit Transfer, a novel image editing framework that learns transformations from a single source-target example and applies them to new images.\n- It leverages a visual relation in-context learning paradigm, adapting a Diffusion Transformer (DiT)-based text-to-image model with a small dataset (42 images).\n- Edit Transfer excels at transferring both single and compositional non-rigid edits, outperforming state-of-the-art text-based image editing (TIE) and reference-based image editing (RIE) methods in various scenarios.\n- This method excels in handling complex spatial transformations and composite editing tasks, surpassing current methods in challenging situations.\n- Only 21 editing types, each with two examples, are sufficient for effective editing, and the model exhibits impressive compositional generalization.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Personalize Anything for Free with Diffusion Transformer",
+        "authors": "Lu Sheng, Lin Li, Haoran Feng, lvhairong, huanngzh",
+        "link": "https://arxiv.org/abs/2503.12590",
+        "github_repo": null,
+        "summary": "- Personalize Anything is a training-free framework for personalized image generation using Diffusion Transformers (DiTs).\n- The framework leverages a novel timestep-adaptive token replacement strategy, injecting reference subject tokens in early denoising stages for identity consistency and transitioning to multi-modal attention for semantic fusion with text prompts in later stages.\n- Patch perturbation techniques, including local token shuffling and mask augmentation, enhance structural and textural diversity while preventing identity overfitting.\n- Evaluations on DreamBench and other datasets demonstrate state-of-the-art performance in identity preservation and versatility across single-subject personalization, multi-subject composition, and layout-guided generation, outperforming existing training-based and training-free methods.\n- The framework seamlessly extends to applications like inpainting and outpainting, offering a practical and efficient paradigm for personalized image generation without training or fine-tuning.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "WideRange4D: Enabling High-Quality 4D Reconstruction with Wide-Range\n  Movements and Scenes",
+        "authors": "mingbao, zbhpku, Juanxi, czkk566, Lingaaaaaaa",
+        "link": "https://arxiv.org/abs/2503.13435",
+        "github_repo": "https://github.com/Gen-Verse/WideRange4D",
+        "summary": "- This paper introduces WideRange4D, a new 4D reconstruction benchmark with diverse scenes and wide-range spatial movements, addressing the limitations of existing datasets that focus on localized motions.\n- It proposes Progress4D, a novel 4D reconstruction method that divides the generation process into two stages: high-quality 3D scene reconstruction and progressive fitting of 4D dynamics to enhance stability and quality.\n- Progress4D outperforms existing state-of-the-art methods on WideRange4D, demonstrating its effectiveness in handling complex scenarios with significant foreground object movement.\n- Quantitative results show Progress4D achieves superior performance on L1, PSNR, SSIM, and LPIPS metrics, indicating better reconstruction quality and realism.\n- Qualitative comparisons further highlight Progress4D's ability to generate clearer, more consistent, and realistic 4D scenes compared to baseline methods.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/WideRange4D"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "BlobCtrl: A Unified and Flexible Framework for Element-level Image\n  Generation and Editing",
+        "authors": "HongxiangLi, daoyuan98, ZyZcuhk, l-li, Yw22",
+        "link": "https://arxiv.org/abs/2503.13434",
+        "github_repo": null,
+        "summary": "- BlobCtrl is a novel unified framework for element-level image generation and editing that leverages a probabilistic blob-based representation.\n- The framework uses a dual-branch diffusion model architecture with hierarchical feature fusion, enabling precise control over both visual appearance and spatial layout of individual elements within an image.\n- A self-supervised training paradigm with data augmentation and a tailored score function enhances generalization and identity preservation.\n- Controllable dropout strategies during inference balance fidelity and diversity of generated outputs.\n- Experimental results demonstrate BlobCtrl's superior performance compared to existing state-of-the-art methods on the BlobBench dataset in terms of both quantitative metrics and qualitative visual comparisons across various element-level manipulation tasks.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "reWordBench: Benchmarking and Improving the Robustness of Reward Models\n  with Transformed Inputs",
+        "authors": "Yoon Kim, Andrew Cohen, mghazvininejad, michiyasunaga, ZhaofengWu",
+        "link": "https://arxiv.org/abs/2503.11751",
+        "github_repo": null,
+        "summary": "- This paper introduces reWordBench, a new benchmark designed to evaluate the robustness of reward models (RMs) used in natural language processing.\n- reWordBench consists of transformed inputs from the original RewardBench, using meaning- or ranking-preserving transformations to assess how RMs handle slight input alterations.\n- The authors find that state-of-the-art RMs are brittle, exhibiting significant performance degradation even with minor transformations.\n- To address this, they propose a regularization method that trains RMs to assign similar scores to paraphrased inputs, improving robustness across different transformation types.\n- This regularization method also enhances the utility of RMs in alignment tasks, leading to higher-quality outputs in downstream applications.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "MicroVQA: A Multimodal Reasoning Benchmark for Microscopy-Based\n  Scientific Research",
+        "authors": "lundbergemma, chadliu, shcohen, suyc21, jmhb",
+        "link": "https://arxiv.org/abs/2503.13399",
+        "github_repo": null,
+        "summary": "- MicroVQA, a novel visual question answering (VQA) benchmark, is introduced to evaluate multimodal reasoning within the context of microscopy-based biological research.\n- The benchmark consists of 1,042 multiple-choice questions spanning three key research tasks: expert image understanding, hypothesis generation, and experiment proposal.\n- A two-stage process is employed for generating these questions, starting with expert-created samples and then refining them using an agent-based system ('RefineBot') to minimize language shortcuts.\n- State-of-the-art multimodal large language models (MLLMs) achieve a peak performance of 53% on MicroVQA, demonstrating its challenge and utility in assessing research-level reasoning.\n- An expert error analysis reveals that perception errors pose the most significant challenge, emphasizing the need for improved visual understanding capabilities in MLLMs, while specialized training on biomedical data shows performance improvements.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/jmhb0/microvqa"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/jmhb/microvqa"
+        ],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey",
+        "authors": "Yuecheng Zhang, scofield7419, liuziwei7, ChocoWu, Gh0stAR",
+        "link": "https://arxiv.org/abs/2503.12605",
+        "github_repo": "https://github.com/yaotingwangofficial/Awesome-MCoT;",
+        "summary": "- This survey paper provides a comprehensive overview of Multimodal Chain-of-Thought (MCOT) reasoning, a technique that enhances multimodal reasoning by enabling large language models (LLMs) to decompose complex tasks into a series of intermediate steps.\n- The authors categorize MCoT methodologies based on rationale construction, structure, information enhancement, objective granularity, multimodal rationale integration, and test-time scaling.\n- They also present a timeline of key milestones in MCoT research, discuss relevant applications in various domains like robotics, healthcare, and autonomous driving, and provide a curated list of available datasets and benchmarks.\n- The paper identifies key challenges in MCoT research, such as computational sustainability, the limitations of reasoning in general scenarios, error propagation in extended reasoning chains, the symbolic-neural integration gap, and hallucination prevention.\n- Finally, it proposes promising future research directions, including dynamic environment adaptation, adaptive chain length, and integration with cognitive science, to address these challenges and further advance the development of MCoT.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yaotingwangofficial/Awesome-MCOT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Free-form language-based robotic reasoning and grasping",
+        "authors": "Matteo Bortolon, Alice Fasoli, Runyu Jiao, SPovoli, FGiuliari",
+        "link": "https://arxiv.org/abs/2503.13082",
+        "github_repo": null,
+        "summary": "- This research introduces FreeGrasp, a novel method for robotic grasping that interprets free-form language instructions and reasons about spatial relationships between objects, leveraging pre-trained Vision-Language Models (VLMs).\n- The method detects objects as keypoints, annotates them on images for improved VLM spatial reasoning, and determines the grasping sequence for a target object, even if obstructed.\n- Using a new synthetic dataset, FreeGraspData, based on MetaGraspNetV2, and real-world robotic experiments, FreeGrasp demonstrated superior performance in grasp reasoning and execution compared to ThinkGrasp, particularly in cluttered scenes with ambiguous object descriptions.\n- FreeGrasp's robust performance is attributed to its mark-based visual prompting and contextualized reasoning, which addresses the limitations of VLMs in visual-spatial reasoning tasks.\n- Despite improvements, limitations persist in handling complex object occlusion and adapting to scene changes. Future work is needed to explore memory mechanisms and adaptive instructions in these scenarios.",
+        "classification": [
+            "Robotics",
+            "Computer Vision",
+            "Object Detection",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "R1-VL: Learning to Reason with Multimodal Large Language Models via\n  Step-wise Group Relative Policy Optimization",
+        "authors": "Jingyi Zhang, Xikun, liushunyu, HuanjinYao, huangjiaxing",
+        "link": "https://arxiv.org/abs/2503.12937",
+        "github_repo": null,
+        "summary": "- This paper introduces R1-VL, a series of Multimodal Large Language Models (MLLMs) enhanced for step-by-step reasoning using a novel reinforcement learning approach.\n- The key contribution is Step-wise Group Relative Policy Optimization (StepGRPO), which addresses the sparse reward issue in MLLM reasoning by incorporating dense step-wise reasoning rewards.\n- StepGRPO employs two rule-based reward mechanisms: Step-wise Reasoning Accuracy Reward (StepRAR) to encourage the inclusion of necessary intermediate steps and Step-wise Reasoning Validity Reward (StepRVR) to promote well-structured, logically consistent reasoning.\n- Experimental results across 8 benchmarks demonstrate that R1-VL significantly outperforms baseline MLLMs and achieves state-of-the-art performance on multiple reasoning tasks, exhibiting improvements of 4.6% and 3.8% over Qwen2-VL-2B and Qwen2-VL-7B respectively. \n- R1-VL's competitive results against both closed and open-source models like GPT-40 and Mulberry-7B illustrate the effectiveness of StepGRPO in advancing MLLM reasoning capabilities.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "V-STaR: Benchmarking Video-LLMs on Video Spatio-Temporal Reasoning",
+        "authors": "Wei Li, Ziquan Liu, ChenyangSi, lwpyh, Cade921",
+        "link": "https://arxiv.org/abs/2503.11495",
+        "github_repo": null,
+        "summary": "- Introduces V-STaR, a benchmark designed to evaluate the spatio-temporal reasoning abilities of Video Large Language Models (Video-LLMs).\n- Proposes a Reverse Spatio-Temporal Reasoning (RSTR) task that decomposes video understanding into identifying \"what\" objects are present, \"when\" events occur, and \"where\" they are located.\n- Constructs a dataset with coarse-to-fine Chain-of-Thought (CoT) questions generated by a semi-automated GPT-4 pipeline, mimicking human cognitive processes for sequential reasoning.\n- Introduces the Logarithmic Geometric Mean (LGM) to comprehensively assess spatio-temporal reasoning by combining model scores at each step of the reasoning chain.\n- Experiments on 14 Video-LLMs reveal performance gaps, especially in grounding answers temporally and spatially, highlighting the need for more robust spatio-temporal reasoning in Video-LLMs.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://V-STaR-Bench.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "VideoMind: A Chain-of-LoRA Agent for Long Video Reasoning",
+        "authors": "Chang Wen Chen, Ye Liu, AnalMom, KevinQHLin",
+        "link": "https://arxiv.org/abs/2503.13444",
+        "github_repo": null,
+        "summary": "- VideoMind, a novel video-language agent designed for temporal-grounded video understanding, is introduced, incorporating a role-based agentic workflow (Planner, Grounder, Verifier, and Answerer) and a Chain-of-LoRA strategy for efficient role-switching.\n- The Chain-of-LoRA strategy, built upon a single base Multimodal Large Language Model (MLLM), enables seamless transitions between roles using lightweight LoRA adaptors, balancing efficiency and flexibility by avoiding the overhead of multiple models.\n- VideoMind achieves state-of-the-art performance on 14 public benchmarks across diverse video understanding tasks, including grounded video question-answering, video temporal grounding, and general video question-answering.\n- On the challenging CG-Bench with long videos (average duration: 27 minutes), VideoMind's 2B model outperforms all open-source models and most closed-source models, while the 7B model surpasses even GPT-40.\n- Ablation studies confirm the effectiveness and efficiency of the proposed design choices, especially the Chain-of-LoRA mechanism for enhanced performance and computational efficiency.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Rewards Are Enough for Fast Photo-Realistic Text-to-image Generation",
+        "authors": "Jing Tang, Kenji Kawaguchi, Weijian Luo, whatlegequ, Luo-Yihong",
+        "link": "https://arxiv.org/abs/2503.13070",
+        "github_repo": "https://github.com/Luo-Yihong/R0",
+        "summary": "- Introduced R0, a novel approach for fast photo-realistic text-to-image generation that relies solely on reward maximization with regularization, eliminating the need for computationally expensive diffusion distillation losses.\n- R0 treats image generation as an optimization problem in the image domain, searching for points where multiple reward functions are maximized, effectively leveraging strong conditions and implicit human preferences in generation.\n- Employs innovative generator parameterization and regularization techniques, including weight regularization, random \u03b7-sampling, and gradient normalization, to avoid reward hacking and achieve state-of-the-art few-step generation quality.\n- Demonstrates superior performance in 4-step text-to-image generation on SD-v1.5 and SD3-medium backbones, outperforming previous distillation-based reward maximization methods in both visual quality and machine metrics like HPS, FID, and CLIP score.\n- Presents R0+, an enhanced version with intermediate supervision, further improving the convergence speed and generation quality, and proposes implicit high-resolution guidance to enhance fine-grained details in high-resolution image synthesis.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Luo-Yihong/R0"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "MTV-Inpaint: Multi-Task Long Video Inpainting",
+        "authors": "CeciliaJL, XiaodongChen, magicwpf, lianghou, GuZheng",
+        "link": "https://arxiv.org/abs/2503.11412",
+        "github_repo": null,
+        "summary": "- MTV-Inpaint is a novel multi-task video inpainting framework built upon a text-to-video (T2V) diffusion model that supports both object insertion and scene completion, as well as derived tasks like object removal and editing.\n- It utilizes a dual-branch spatial attention mechanism within the T2V diffusion U-Net, where one branch focuses on object insertion and the other on scene completion, while sharing temporal attention layers to ensure consistency.\n- For enhanced controllability, MTV-Inpaint integrates an image-to-video (I2V) inpainting mode, leveraging existing image inpainting models with diverse input conditions like text, exemplar images, and more.\n- To handle long videos, it introduces a two-stage pipeline comprising keyframe inpainting using T2V/I2V modes, followed by in-between frame inpainting using a keyframe-to-video (K2V) approach. \n- Experimental results demonstrate state-of-the-art performance in object insertion and scene completion, as supported by quantitative metrics and user studies.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Error Analyses of Auto-Regressive Video Diffusion Models: A Unified\n  Framework",
+        "authors": "duchao, TIanyupang, xiaolili, Fengzhuo, k-nick",
+        "link": "https://arxiv.org/abs/2503.10704",
+        "github_repo": null,
+        "summary": "- This paper introduces Meta-ARVDM, a unified framework for Auto-Regressive Video Diffusion Models (ARVDMs) that encompasses various existing methods.\n- The analysis of this framework reveals two key issues in ARVDMs: error accumulation in generated short clips and memory bottleneck in long videos, where later frames lose scene consistency with earlier ones due to limited access to past information.  An information-theoretic lower bound demonstrates that the memory bottleneck is unavoidable in ARVDMs.\n- To address the memory bottleneck, the authors propose network modifications including prepending past frames and channel concatenation, combined with compression techniques to balance performance and inference cost.\n- Experimental results on DMLab and Minecraft show that the proposed methods successfully mitigate the memory bottleneck, achieving a better trade-off between successful scene retrieval (DMLab) or higher SSIM scores (Minecraft) across different memory lengths, and inference cost via compression.\n- A correlation between reduced error accumulation and increased memory bottleneck is observed, suggesting potential avenues for future research.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://sail-sg.github.io/AR-Video-Diffusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Long-Video Audio Synthesis with Multi-Agent Collaboration",
+        "authors": "Li Liu, Xiaojie Xu, yingcongchen, Xxlbigbrother, Buzz-lightyear",
+        "link": "https://arxiv.org/abs/2503.10719",
+        "github_repo": null,
+        "summary": "- This paper introduces LVAS-Agent, a multi-agent framework for synthesizing audio for long videos, addressing challenges like semantic shifts and temporal misalignment.\n- The framework uses four agents: Storyboarder (segments video), Scriptwriter (generates scripts), Designer (annotates sound effects), and Synthesizer (generates audio using VTA and TTA tools).\n- A novel discussion-correction mechanism refines scene segmentation and scripts, while a generation-retrieval loop ensures temporal-semantic alignment.\n- LVAS-Bench, a new benchmark with 207 professionally curated long videos, is introduced for evaluation.\n- Experiments on LVAS-Bench demonstrate LVAS-Agent's superior performance over baseline methods in audio-visual alignment, especially for long videos where existing methods struggle.",
+        "classification": [
+            "Text-to-Audio",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Sightation Counts: Leveraging Sighted User Feedback in Building a\n  BLV-aligned Dataset of Diagram Descriptions",
+        "authors": "Jaime-Choi, sangryul, namin0202, eunkey, soarhigh",
+        "link": "https://arxiv.org/abs/2503.13369",
+        "github_repo": null,
+        "summary": "- SIGHTATION, a new large-scale, BLV-aligned dataset of diagram descriptions, is introduced, addressing the need for accessible visual information for blind and low-vision (BLV) individuals.\n- The dataset leverages sighted user feedback through a multi-pass inference process where sighted users assess descriptions generated by vision-language models (VLMs), rather than producing the descriptions themselves, reducing bias and cost.\n- SIGHTATION includes a variety of training data for tasks such as completion, preference, retrieval, question answering, and reasoning, totaling 5k diagrams and 137k samples.\n- The effectiveness of the dataset is demonstrated through fine-tuning various sized models, with results showing a preference-tuned 2B model achieving a 1.67 increase in usefulness ratings by the BLV group and an instruction-tuned 2B model outperforming a 3B model on chart comprehension in 8 out of 11 automatic metrics.\n- A BLIP-2 model fine-tuned for retrieval on SIGHTATION achieves a 65%p improvement on Precision@1 compared to a COCO-tuned model.",
+        "classification": [
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/Sightation"
+        ],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Basic Category Usage in Vision Language Models",
+        "authors": "KyleMoore, JesseTNRoberts, HTSawyer",
+        "link": "https://arxiv.org/abs/2503.12530",
+        "github_repo": null,
+        "summary": "- This paper investigates basic level categorization in two vision-language models (VLMs): Llama 3.2 Vision Instruct (11B) and Molmo 7B-D.\n- The study uses the Ecoset dataset, containing 1.5 million images across 565 basic-level categories.\n- Results show that both VLMs prefer basic level categorization, consistent with human behavior, exceeding the estimated 50% lower bound of basic-level usage.\n- Furthermore, the models exhibit nuances consistent with human categorization, such as the biological vs. non-biological basic level effects and the expert basic level shift.\n- These findings suggest that VLMs learn cognitive categorization behaviors from human training data.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    },
+    {
+        "title": "Investigating Human-Aligned Large Language Model Uncertainty",
+        "authors": "Pamela Wisniewski, Daryl Watson, Kyle Moore, JesseTNRoberts",
+        "link": "https://arxiv.org/abs/2503.12528",
+        "github_repo": null,
+        "summary": "- This paper investigates how well different uncertainty measures in large language models (LLMs) align with human uncertainty.\n- The study uses non-factual questions from the Pew Research Center's American Trends Panel to compare human uncertainty with LLM uncertainty, focusing on agreement with the provided choices.\n- It evaluates various uncertainty measures, including Bayesian measures, entropy variations, and nucleus size, across different LLM sizes (1B to 7B parameters) and types (base and instruction-finetuned).\n- The findings indicate that top-k entropy tends to align best with human behavior, with better performance in smaller models, and a combination of multiple measures provides comparable alignment while reducing size dependency.\n- Future research directions include exploring other uncertainty measures, optimizing existing ones for better human alignment, and expanding the study to a broader range of contexts",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-18"
+    }
+]

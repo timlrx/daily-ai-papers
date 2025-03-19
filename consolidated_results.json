@@ -25978,5 +25978,348 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-03-18"
+    },
+    {
+        "title": "RWKV-7 \"Goose\" with Expressive Dynamic State Evolution",
+        "authors": "saitejautpala, Guangyu, SmerkyG, ZhangRC, BlinkDL",
+        "link": "https://arxiv.org/abs/2503.14456",
+        "github_repo": "https://github.com/RWKV/RWKV-LM",
+        "summary": "- This paper introduces RWKV-7 \"Goose,\" a novel RNN architecture for sequence modeling with linear complexity.\n- It features a generalized delta rule with vector-valued gating, in-context learning rates, and a relaxed value replacement rule, enabling state tracking and recognition of all regular languages while retaining training parallelizability.\n- RWKV-7 achieves state-of-the-art multilingual performance at the 3 billion parameter scale and matches English language performance despite fewer training tokens than comparable models.\n- Trained models ranging from 0.19B to 2.9B parameters are released alongside a new 3.1 trillion token multilingual corpus (RWKV World v3).\n- The architecture's ability to match or exceed larger transformer models' performance on various tasks, despite using dramatically fewer training tokens, supports its claim of improved downstream performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/RWKV/RWKV-LM"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/RWKV"
+        ],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Impossible Videos",
+        "authors": "Hai Ci, mikeshou, ZechenBai",
+        "link": "https://arxiv.org/abs/2503.14378",
+        "github_repo": null,
+        "summary": "- This paper introduces IPV-BENCH, a novel benchmark designed to evaluate and foster progress in impossible video understanding and generation.\n- IPV-BENCH includes a taxonomy of impossible scenes, a prompt suite (IPV-TXT) for text-to-video generation, and a curated impossible video dataset (IPV-VID).\n- The benchmark covers diverse scenes that defy physical, biological, geographical, or social norms, challenging models to generate and comprehend out-of-distribution content.\n- Evaluations reveal that current state-of-the-art models fall short on impossible video tasks, struggling with both generation quality and prompt adherence.\n- The findings highlight the need for future research in video generation and understanding models, emphasizing the importance of temporal reasoning and world knowledge.",
+        "classification": [
+            "Text-to-Video",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Creation-MMBench: Assessing Context-Aware Creative Intelligence in MLLM",
+        "authors": "Yingji Liang, Shengyuan Ding, Kai Lan, Zhijian Chen, Xinyu Fang",
+        "link": "https://arxiv.org/abs/2503.14478",
+        "github_repo": "https://github.com/open-compass/Creation-MMBench",
+        "summary": "- Creation-MMBench, a multimodal benchmark designed to evaluate the creative capabilities of Multimodal Large Language Models (MLLMs) in real-world, image-based tasks, is introduced.\n- The benchmark comprises 765 test cases spanning 51 fine-grained tasks across four categories: Literary Writing, Common Functional Writing, Professional Functional Writing, and Creative Multimodal Understanding.\n- Instance-specific evaluation criteria guide the assessment of general response quality and factual consistency with visual inputs.\n- Experimental results reveal that current open-source MLLMs underperform compared to proprietary models in creative tasks, and visual fine-tuning can negatively impact the base LLM's creative abilities.\n- Creation-MMBench provides valuable insights for advancing MLLM creativity and establishes a foundation for future research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/Creation-MMBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+        "authors": "Xiaochen Zuo, Yufeng Yuan, Ruofei Zhu, Zheng Zhang, Qiying Yu",
+        "link": "https://arxiv.org/abs/2503.14476",
+        "github_repo": null,
+        "summary": "- This paper introduces DAPO, an open-source reinforcement learning (RL) system for large language models (LLMs), along with a carefully curated and processed dataset for mathematical reasoning.\n- DAPO utilizes several key techniques, including Clip-Higher, Dynamic Sampling, Token-Level Policy Gradient Loss, and Overlong Reward Shaping, to address challenges such as entropy collapse, reward noise, and training instability in large-scale LLM RL.\n- The system achieves state-of-the-art performance on the AIME 2024 benchmark, outperforming DeepSeek-R1-Zero-Qwen-32B with a 50% reduction in training steps.\n- DAPO uses Qwen2.5-32B as the base model and includes 4 key techniques to enhance its performance for mathematical tasks.\n- The authors open-sourced their training code, which is built upon the Verl framework, and also their datasets to enhance reproducibility and further research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "DeepPerception: Advancing R1-like Cognitive Visual Perception in MLLMs\n  for Knowledge-Intensive Visual Grounding",
+        "authors": "Zonghao Guo, Zhicong Luo, carboncoo, sdudzy, MaxyLee",
+        "link": "https://arxiv.org/abs/2503.12797",
+        "github_repo": "https://github.com/thunlp/DeepPerception",
+        "summary": "- DeepPerception, an enhanced Multimodal Large Language Model (MLLM), integrates cognitive reasoning with visual perception to address the novel task of Knowledge-Intensive Visual Grounding (KVG).\n- The model employs a two-stage training framework: supervised fine-tuning with synthesized Chain-of-Thought (CoT) data for cognitive scaffolding, followed by reinforcement learning with a perception-oriented reward system for optimizing perception-cognition synergy.\n- Evaluated on KVG-Bench, a new dataset spanning 10 domains and 1.3K test cases, DeepPerception achieved a +8.08% accuracy improvement over baseline and demonstrated superior (+4.60%) cross-domain generalization compared to existing approaches.\n- Results highlight the importance of integrating cognitive processes for improved fine-grained visual discrimination, aligning with human expert behavior by leveraging domain knowledge.\n- DeepPerception's success showcases the potential of cognitive enhancement in advancing MLLMs for more nuanced and human-like visual understanding, exceeding the capabilities of simplistic zero-shot CoT prompting.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/thunlp/DeepPerception"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "CapArena: Benchmarking and Analyzing Detailed Image Captioning in the\n  LLM Era",
+        "authors": "Qiushi Sun, Zheng Ma, Jiaxin Fan, songwp, cckevinn",
+        "link": "https://arxiv.org/abs/2503.12329",
+        "github_repo": null,
+        "summary": "- This research introduces CapArena, a new benchmark platform for evaluating detailed image captioning by LLMs that contains 6000+ human-annotated pairwise comparisons of image captions.\n- It benchmarks 14 advanced VLMs and finds that, for the first time, state-of-the-art models like GPT-40 match or exceed human performance, while open-source models generally lag.\n- The study also analyzes existing automated metrics, revealing that while some show decent caption-level agreement with humans, they suffer from biases that lead to inconsistent model rankings.\n- It validates VLM-as-a-Judge as a robust automated evaluation method with reference captions, demonstrating superior performance compared to traditional metrics and recent approaches designed for detailed captioning.\n- Based on these findings, it introduces CapArena-Auto, an automated benchmark for detailed captioning using 600 samples and VLM-as-a-Judge, showing a 94.3% correlation with human rankings at a low cost.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Infinite Mobility: Scalable High-Fidelity Synthesis of Articulated\n  Objects via Procedural Generation",
+        "authors": "Li Ray Luo, Yitong Wang, Ruiming Liang, Zichao Yu, Xinyu Lian",
+        "link": "https://arxiv.org/abs/2503.13424",
+        "github_repo": "https://github.com/Intern-Nexus/Infinite-Mobility",
+        "summary": "- Infinite Mobility is a novel procedural pipeline for synthesizing large-scale articulated objects. \n- It uses a tree-growing strategy for articulation structure generation and a hybrid asset pipeline that integrates procedurally generated meshes with curated dataset assets. \n- Evaluations show that Infinite Mobility produces results that excel current state-of-the-art methods and are comparable to human-annotated datasets in both physics property and mesh quality. \n- The synthetic data generated by Infinite Mobility can be used as training data for generative models, thereby facilitating further scaling up. \n- The pipeline addresses challenges in embodied AI by providing a scalable solution for creating high-fidelity articulated objects, which are crucial for simulating realistic action chains in virtual environments for sim-to-real transfer.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/Intern-Nexus/Infinite-Mobility"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Frac-Connections: Fractional Extension of Hyper-Connections",
+        "authors": "Jundong Zhou, Hongzhi Huang, Defa Zhu, Taoer, FetchFortune",
+        "link": "https://arxiv.org/abs/2503.14125",
+        "github_repo": null,
+        "summary": "- Frac-Connections (FC), a novel approach for improving the training of deep networks, is introduced, addressing the memory access cost issues of Hyper-Connections while maintaining their benefits. \n- It involves dividing hidden states into multiple parts, implementing fractional expansion rates, and utilizing learnable or dynamically predicted connection weights. \n- Experiments conducted on large language models, including 7B parameter MoE models trained on up to 3T tokens, demonstrate that Frac-Connections enhances training stability and downstream task performance. \n- Compared to residual connections, Frac-Connections reduce training loss, achieve faster convergence, and demonstrate higher accuracy on various benchmarks. \n- The approach improves knowledge retention and generalization in Language Models and offers a practical and scalable solution for building more efficient deep learning models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Aligning Multimodal LLM with Human Preference: A Survey",
+        "authors": "Jinda Lu, Junkang Wu, Chaoyou Fu, Tao Yu, yifanzhang114",
+        "link": "https://arxiv.org/abs/2503.14504",
+        "github_repo": "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Alignment",
+        "summary": "- This paper surveys alignment algorithms for Multimodal Large Language Models (MLLMs), focusing on improving their correspondence with human preferences.\n- The survey categorizes alignment algorithms based on application scenarios (general image understanding, multi-image/video/audio, and extended multimodal applications), discusses core factors in constructing alignment datasets (data sources, model responses, and preference annotations), and reviews benchmarks used for evaluation.\n- The paper also identifies potential future directions for research in MLLM alignment, such as integrating visual information into alignment algorithms and addressing the opportunities and challenges of MLLMs as agents.\n- While no specific model architecture is introduced, the survey emphasizes the importance of alignment algorithms in addressing issues like hallucinations, safety, and reasoning abilities of MLLMs, ultimately aiming to bridge the gap between model capabilities and human expectations.\n- By providing a systematic review of existing techniques and datasets, this work aims to offer a roadmap for researchers and practitioners in the rapidly evolving field of MLLM alignment.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Alignment"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal\n  Control",
+        "authors": "Tiffany Cai, Maciej Bala, Jose Alvarez, Hassan Abu Alhaija, NVIDIA",
+        "link": "https://arxiv.org/abs/2503.14492",
+        "github_repo": "https://github.com/nvidia-cosmos/cosmos-transfer1",
+        "summary": "- Cosmos-Transfer1 is a conditional world generation model that generates simulated videos based on multiple spatial control inputs, including segmentation, depth, and edge.\n- The model employs an adaptive and customizable spatial conditional scheme, allowing different weights for various modalities at different spatial locations, built upon a diffusion-based transformer architecture (DiT) with added ControlNet branches for each input modality.\n- Evaluations demonstrate that Cosmos-Transfer1 excels in preserving scene structure while enabling fine-grained control and improving generation quality, outperforming single-modality models.\n- The model achieves real-time inference performance by using a data parallelism strategy on an NVIDIA GB200 NVL72 system, processing 5-second 720p videos in 4.2 seconds.\n- Potential applications include mitigating the sim-to-real domain gap in robotics and enriching data for autonomous vehicle training.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/nvidia-cosmos/cosmos-transferl",
+            "https://github.com/nvidia-cosmos/cosmos-transfer1"
+        ],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "MPBench: A Comprehensive Multimodal Reasoning Benchmark for Process\n  Errors Identification",
+        "authors": "Kai Wang, Wangbo Zhao, Jiaxin Ai, Pengfei Zhou, Zhaopan Xu",
+        "link": "https://arxiv.org/abs/2503.12505",
+        "github_repo": null,
+        "summary": "- Introduces MPBench, a multimodal benchmark for evaluating Process-Level Reward Models (PRMs) designed to identify errors in multi-step reasoning.\n- MPBench employs three evaluation paradigms: Step Correctness (evaluating individual step accuracy), Answer Aggregation (selecting the best solution from multiple candidates), and Reasoning Process Search (guiding the search for optimal reasoning steps).\n- Contains 9,745 fine-grained data instances across various subjects, tasks, and challenge levels, focusing on multimodal content common in real-world scenarios.\n- Experimental results with 12 Multimodal Large Language Models (MLLMs) reveal varying performance across different evaluation paradigms and highlight the challenges in effectively processing and integrating multimodal information for error detection and answer selection.\n- Demonstrates that model performance generally improves with scale, especially for Step Correctness and Reasoning Process Search, suggesting larger models are better equipped for complex reasoning tasks.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Concat-ID: Towards Universal Identity-Preserving Video Synthesis",
+        "authors": "Chongxuan Li, Xiaotao Gu, Jiayan Teng, Zhuoyi Yang, Yong Zhong",
+        "link": "https://arxiv.org/abs/2503.14151",
+        "github_repo": null,
+        "summary": "- Concat-ID, a unified framework for identity-preserving video generation, is introduced, employing Variational Autoencoders (VAEs) to extract image features and concatenating them with video latents along the sequence dimension, leveraging solely 3D self-attention mechanisms.\n- A novel cross-video pairing strategy and a multi-stage training regimen balance identity consistency and facial editability while enhancing video naturalness.\n- Concat-ID outperforms existing methods in single and multi-identity generation, demonstrating superior identity consistency and facial editability while maintaining comparable text alignment.\n- It seamlessly scales to multi-subject scenarios, including virtual try-on and background control, showcasing its versatility.\n- Quantitative metrics, qualitative assessments, and user studies validate Concat-ID's effectiveness in producing high-quality, identity-preserving videos.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Measuring AI Ability to Complete Long Tasks",
+        "authors": "Katharyn Garcia, Amy Deng, Joel Becker, Ben West, Thomas Kwa",
+        "link": "https://arxiv.org/abs/2503.14499",
+        "github_repo": null,
+        "summary": "- This research paper proposes a new metric called \"50%-task-completion time horizon\" to quantify AI capabilities in terms of human capabilities. \n- This metric represents the time humans typically take to complete tasks that AI models can complete with a 50% success rate.\n- The researchers timed humans with domain expertise on a combination of existing and novel tasks and evaluated 13 frontier AI models from 2019 to 2025.\n- They found that the 50% time horizon doubled approximately every seven months, primarily due to improvements in reliability, mistake adaptation, logical reasoning, and tool use. \n- Extrapolating this trend suggests that within five years, AI could automate many software tasks currently taking humans a month, but limitations and external validity concerns necessitate further research.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/METR/eval-analysis-public",
+            "https://github.com/METR/public-tasks",
+            "https://vivaria.metr.org/",
+            "https://github.com/poking-agents/modular-public"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Temporal Consistency for LLM Reasoning Process Error Identification",
+        "authors": "Xinzhe Juan, Kaixuan Huang, Jiahao Qiu, Yue Wu, Jiacheng Guo",
+        "link": "https://arxiv.org/abs/2503.14495",
+        "github_repo": "https://github.com/jcguo123/Temporal-Consistency",
+        "summary": "- This paper introduces Temporal Consistency, a novel method for enhancing the accuracy of Large Language Model (LLM) reasoning process error identification in mathematical problem-solving.\n- The method employs an iterative self-reflection mechanism where LLMs refine their judgments on the presence and location of errors in step-by-step solutions based on previous assessments, promoting convergence towards stable and accurate identifications.\n- Unlike traditional verification or multi-model debate methods, this approach leverages the temporal dimension by assessing consistency over multiple rounds of self-assessment.\n- Experimental results across three mathematical reasoning datasets (Mathcheck*, ProcessBench, and PRM800K) demonstrated consistent performance improvements over baseline methods, including greedy decoding, majority voting, and multi-model debate.\n- Notably, the method significantly boosts the performance of distilled 7B/8B models on ProcessBench, surpassing existing 70B/72B models and GPT-4, showcasing its efficacy in improving accuracy without relying on larger model sizes or extensive training data.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/jcguo123/Temporal-Consistency"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "PEBench: A Fictitious Dataset to Benchmark Machine Unlearning for\n  Multimodal Large Language Models",
+        "authors": "Wangbo Zhao, Jiaxin Ai, Weidong Tang, Pengfei Zhou, Zhaopan Xu",
+        "link": "https://arxiv.org/abs/2503.12545",
+        "github_repo": null,
+        "summary": "- PEBench, a synthetic multimodal dataset designed to benchmark Machine Unlearning (MU) in Multimodal Large Language Models (MLLMs), is introduced.\n- The dataset includes 200 fictitious individuals paired with 40 distinct event scenes, resulting in 8,000 images, enabling evaluation of unlearning both identities and events.\n- Six MU methods are benchmarked on PEBench, revealing performance variations across people and event unlearning, with Gradient Difference-based methods excelling in event unlearning and maintaining retain set performance.\n- The study demonstrates the importance of Scope as a key metric and highlights challenges in simultaneously unlearning multiple coupled concepts, observing performance drops or \"collapse\" with conflicting target distributions or information imbalance.\n- A balanced gradient difference (BGD) approach with multi-task loss mitigation and dynamic sampling techniques improves simultaneous unlearning performance by mitigating these observed imbalances.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://pebench.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Reflect-DiT: Inference-Time Scaling for Text-to-Image Diffusion\n  Transformers via In-Context Reflection",
+        "authors": "Yusuke Kato, Arsh Koneru, Akash Gokul, Konstantinos Kallidromitis, Shufan Li",
+        "link": "https://arxiv.org/abs/2503.12271",
+        "github_repo": null,
+        "summary": "- Reflect-DiT is a novel framework that enhances the inference-time scaling of Diffusion Transformers (DiTs) for text-to-image generation by incorporating in-context reflection.\n- Reflect-DiT employs a vision-language model (VLM) to provide feedback on generated images and then uses this feedback along with previous generations to iteratively refine subsequent image generations.\n- Unlike traditional best-of-N sampling, Reflect-DiT actively addresses specific aspects needing improvement instead of relying solely on random generation and selection.\n- On the GenEval benchmark, Reflect-DiT shows a substantial performance improvement of +0.19 using SANA-1.0-1.6B as its base model.\n- Reflect-DiT sets a new state-of-the-art score of 0.81 on GenEval with only 20 samples per prompt, surpassing the previous best of 0.80 achieved by a much larger model (SANA-1.5-4.8B) and extensive sampling (2048 samples).",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/jacklishufan/Reflect-DiT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Florenz: Scaling Laws for Systematic Generalization in Vision-Language\n  Models",
+        "authors": "Sven Behnke, Sebastian Houben, Spravil",
+        "link": "https://arxiv.org/abs/2503.09443",
+        "github_repo": null,
+        "summary": "- This paper introduces Florenz, a family of encoder-decoder vision-language models (VLMs) ranging from 0.4B to 11.2B parameters, built upon Florence-2 and Gemma-2, to investigate systematic generalization in multilingual multimodal tasks.\n- The authors explore the impact of model size and training data on systematic generalization, particularly the ability to perform image captioning in unseen languages by training only on translation tasks.\n- A novel data generation pipeline is proposed that creates a synthetic multilingual multimodal dataset from a translation dataset and an image dataset, enhancing textual context and linking parallel sentences with image context to address lexical ambiguities.\n- Experimental results demonstrate that Florenz adheres to scaling laws for cross-lingual transfer, with larger models exhibiting better generalization performance even with limited training samples.\n- Fine-tuning Florenz on downstream tasks yields competitive results and reveals promising scaling trends in multimodal machine translation, lexical disambiguation, and image captioning across various benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Pensez: Less Data, Better Reasoning -- Rethinking French LLM",
+        "authors": "HoangHa",
+        "link": "https://arxiv.org/abs/2503.13661",
+        "github_repo": null,
+        "summary": "- This paper introduces Pensez 7B, a French Language Model fine-tuned from Qwen2.5 7B Instruct, demonstrating that strategic fine-tuning on a small, high-quality bilingual dataset (2,000 examples) enhances both reasoning and French proficiency.\n- The model leverages techniques like packing inputs, Liger Kernel, DeepSpeed 3, and NEFTune Noise during training on a curated bilingual dataset, Pensez-2k, emphasizing detailed reasoning chains and balanced language representation.\n- Evaluation results show Pensez 7B achieves competitive performance in reasoning tasks and knowledge comprehension across English and French benchmarks, including AIME25, MATH Hard lv5, MMLU, and TriviaQA, often outperforming models trained on much larger datasets.\n- Analysis reveals an \"overthinking\" phenomenon in Pensez 7B, characterized by excessive self-reflection, particularly in incorrect predictions, highlighting the need for better control over reasoning termination.\n- Future work focuses on refining reasoning processes with reinforcement learning using GRPO, enhancing agentic capabilities through tool integration, and expanding to reasoning-intensive domains like medicine.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "MM-Spatial: Exploring 3D Spatial Understanding in Multimodal LLMs",
+        "authors": "Justin Lazarow, Haiming Gang, David Griffiths, Nina Wenzel, Erik Daxberger",
+        "link": "https://arxiv.org/abs/2503.13111",
+        "github_repo": null,
+        "summary": "- This paper introduces MM-Spatial, a novel multimodal large language model (MLLM) fine-tuned for 3D spatial understanding, and the Cubify Anything VQA (CA-VQA) dataset to train and evaluate the model. \n- CA-VQA covers diverse spatial tasks, including spatial relationship prediction, metric size and distance estimation, and 3D grounding, with multi-view images and sensor/monocular depth maps as input. \n- MM-Spatial, based on the MM1.5 architecture and utilizing chain-of-thought prompting or tool use for depth integration, achieves state-of-the-art performance on various 3D spatial understanding benchmarks, including CA-VQA and CV-Bench. \n- Incorporating multi-view and depth inputs significantly enhances MM-Spatial's 3D understanding, with the model exhibiting depth perception capabilities comparable to dedicated monocular depth estimation models. \n- The data-driven approach of MM-Spatial demonstrates the potential of MLLMs to implicitly learn depth information through targeted supervision.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Depth Estimation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "Hyperbolic Safety-Aware Vision-Language Models",
+        "authors": "Rita Cucchiara, Lorenzo Baraldi, Pascal Mettes, Tejaswi Kasarla, tobi1modna",
+        "link": "https://arxiv.org/abs/2503.12127",
+        "github_repo": "https://github.com/aimagelab/HySAC",
+        "summary": "- HySAC, a novel hyperbolic safety-aware CLIP model, is introduced to address unsafe content in vision-language models by shifting from unlearning to an awareness paradigm.\n- HySAC leverages the hierarchical nature of hyperbolic space and employs entailment loss functions to encode safe and unsafe content within distinct regions, establishing an interpretable structure for navigating between safe and unsafe concepts.\n- This structure enables HySAC to serve as both a multimodal unsafe classifier and a flexible content retriever, capable of redirecting unsafe queries to safer alternatives while preserving access to the original content, offering improved user agency and control.\n- Extensive experiments on the ViSU dataset demonstrate HySAC's superior performance compared to Safe-CLIP and other hyperbolic vision-language models in safety awareness and retrieval tasks involving both safe and unsafe content.\n- HySAC also exhibits competitive NSFW image classification accuracy against specialized classifiers and robust zero-shot capabilities across various datasets.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/aimagelab/HySAC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for\n  Open-Vocabulary Robotic Manipulation",
+        "authors": "Yunzhu Li, Mingtong Zhang, Zixian Liu",
+        "link": "https://arxiv.org/abs/2503.10546",
+        "github_repo": null,
+        "summary": "- KUDA, an open-vocabulary manipulation system, unifies dynamics learning and visual prompting through keypoints, integrating Vision Language Models (VLMs) with learning-based neural dynamics models.\n- Keypoint-based target specifications, generated by a VLM from language instructions and visual observations, are converted into cost functions for model-based planning with learned dynamics models, enabling manipulation across diverse object categories and dynamic scenarios.\n- A two-level closed-loop control mechanism, comprising low-level model-based planning and high-level VLM re-planning, ensures robustness and corrects for imperfect target specifications or execution errors.\n- A prompt retriever with score matching selects relevant few-shot examples from a library to enhance VLM performance without exceeding token limits.\n- Experimental results on tasks involving diverse object materials like ropes and granular objects demonstrate state-of-the-art performance, surpassing baselines like MOKA and VoxPoser in complex manipulation scenarios.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
+    },
+    {
+        "title": "RoCo-Sim: Enhancing Roadside Collaborative Perception through Foreground\n  Simulation",
+        "authors": "Junhao Ge, Yifan Lu, Zichen Chao, Anning Hu, yuwendu",
+        "link": "https://arxiv.org/abs/2503.10410",
+        "github_repo": "https://github.com/duyuwen-duen/RoCo-Sim",
+        "summary": "- RoCo-Sim is the first simulation framework for roadside collaborative perception, generating diverse and consistent simulated data from single images, enhancing 3D object detection in roadside cameras.\n- It uses dynamic foreground editing and full-scene style transfer, leveraging 3D assets and a 3D-to-2D mapping to render objects onto real backgrounds.\n- RoCo-Sim includes Camera Extrinsic Optimization, Multi-View Occlusion-Aware Sampler (MOAS), DepthSAM, and a Scalable Post-Processing Toolkit to address data issues in real-world datasets like calibration errors and sparse information.\n- Experiments on Rcooper-Intersection and TUMTraf-V2X datasets show significant performance improvements, outperforming state-of-the-art methods by up to 83.74% for AP70, surpassing even gains from algorithmic improvements alone.\n- The modular framework improves performance as simulation data volume and number of simulated vehicles increase, effectively supplementing real-world data and demonstrating potential to replace real-world data with purely simulated one.",
+        "classification": [
+            "Object Detection",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/duyuwen-duen/RoCo-Sim"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-19"
     }
 ]

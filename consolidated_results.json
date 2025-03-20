@@ -26321,5 +26321,233 @@
         ],
         "huggingface_urls": [],
         "date": "2025-03-19"
+    },
+    {
+        "title": "\u03c6-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time\n  Exploration and Exploitation",
+        "authors": "Qika, haitengzhao, changma, Meituannnnnn, xufangzhi",
+        "link": "https://arxiv.org/abs/2503.13288",
+        "github_repo": "https://github.com/xufangzhi/phi-Decoding",
+        "summary": "- Introduces \u03c6-Decoding, a novel inference-time optimization algorithm utilizing adaptive foresight sampling for enhanced exploration and exploitation during LLM inference.\n- Employs simulated future steps to estimate step values, balancing exploration and exploitation to find globally optimal reasoning paths.\n- Proposes in-width and in-depth pruning strategies for adaptive computation allocation, enhancing efficiency by prioritizing challenging steps.\n- Achieves >14% average performance improvement on LLaMA3.1-8B-Instruct over auto-regressive CoT across seven reasoning benchmarks.\n- Demonstrates consistent superiority across various LLMs (3B, 7B, 8B, and 70B) and computational budgets, matching suboptimal baseline performance with 6x efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/xufangzhi/phi-Decoding"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "DeepMesh: Auto-Regressive Artist-mesh Creation with Reinforcement\n  Learning",
+        "authors": "yikaiwang, NTU-yiwen, guangce, yejunliang23, zzzrw",
+        "link": "https://arxiv.org/abs/2503.15265",
+        "github_repo": null,
+        "summary": "- DeepMesh is an auto-regressive transformer model that generates artist-like meshes conditioned on point clouds and images, enhanced by Reinforcement Learning via Direct Preference Optimization (DPO).\n- It employs a novel tokenization algorithm achieving 72% sequence length reduction and a smaller vocabulary size for efficient high-resolution mesh generation.\n- DPO aligns model outputs with human preferences using a scoring system combining human evaluation and 3D metrics.\n- DeepMesh generates meshes with up to 30k faces at a 512 resolution, outperforming state-of-the-art methods in precision and quality, shown by qualitative comparisons and user studies.\n- The framework incorporates data curation and truncated training for improved performance and efficiency.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://zhaorw02.github.io/DeepMesh/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "TULIP: Towards Unified Language-Image Pretraining",
+        "authors": "XuDong Wang, Seun Eisape, Long Lian, yala, ZinengTang",
+        "link": "https://arxiv.org/abs/2503.15485",
+        "github_repo": null,
+        "summary": "- TULIP, a novel image-text contrastive learning model, enhances fine-grained visual feature learning while preserving language grounding capabilities.\n- It incorporates patch-level global/local multi-crop augmentations, objectives, and a reconstruction objective to preserve high-frequency visual details and spatial information.\n- It also employs generative data augmentation with diffusion models to create challenging negative examples for better semantic grounding.\n- TULIP achieves state-of-the-art zero-shot performance on ImageNet-1K and significant improvements on other benchmarks, including RxRx1, and MMVP.\n- Its ability to encode both fine-grained visual and robust textual features makes it beneficial as a visual encoder for large-scale multimodal models like LLaVA.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image Classification",
+            "Zero-Shot Image Classification",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://tulip-berkeley.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "Cube: A Roblox View of 3D Intelligence",
+        "authors": "Karun Channa, Nishchaie Khanna, Kiran Bhat, Foundation AI Team, marcelvanworkum",
+        "link": "https://arxiv.org/abs/2503.15475",
+        "github_repo": "https://github.com/Roblox/cube",
+        "summary": "- Roblox researchers introduce Cube, a new foundation model for 3D intelligence designed to support developers in creating various aspects of Roblox experiences, including 3D object and scene generation, character rigging, and behavior scripting.\n- The model leverages a novel 3D shape tokenization technique, converting 3D shapes into discrete tokens, enabling applications such as text-to-shape, shape-to-text, and text-to-scene generation. \n- This tokenizer utilizes a Perceiver-based transformer with phase-modulated positional encoding, optimal transport vector quantization, and a stochastic gradient shortcut to improve training stability and reconstruction quality.\n- The model demonstrates strong performance in shape reconstruction, outperforming existing methods like Craftsman in both surface and volumetric IoU on the Toys4K dataset. \n- The paper also presents applications showcasing text-to-shape generation and shape-to-text capabilities, along with initial steps toward text-to-scene generation by combining these models with a large language model for scene analysis and reasoning.",
+        "classification": [
+            "Text-to-3D",
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Roblox/cube"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "Efficient Personalization of Quantized Diffusion Model without\n  Backpropagation",
+        "authors": "Se Young Chun, Kyungryeol Lee, Wongi Jeong, Agorium",
+        "link": "https://arxiv.org/abs/2503.14868",
+        "github_repo": null,
+        "summary": "- ZOODiP is a novel memory-efficient approach to personalize text-to-image diffusion models on resource-constrained devices.\n- It leverages zeroth-order (ZO) optimization on quantized models, eliminating backpropagation and significantly reducing memory usage. \n- ZOODiP introduces Subspace Gradient (SG) and Partial Uniform Timestep Sampling (PUTS) to enhance efficiency and training speed. \n- Experimental results demonstrate that ZOODiP achieves performance comparable to prior arts using up to 8.2x less memory with only 2.37GB VRAM consumption during training.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ignoww/ZOODiP_project"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "Temporal Regularization Makes Your Video Generator Stronger",
+        "authors": "Yajing Bai, Yexin Liu, Xianfeng Wu, Haojian Huang, Harold328",
+        "link": "https://arxiv.org/abs/2503.15417",
+        "github_repo": null,
+        "summary": "- FLUXFLOW, a novel data augmentation technique, enhances temporal quality in video generation by introducing controlled temporal perturbations during training.\n- It operates at the data level, requiring no architectural modifications, and employs frame-level and block-level perturbations to disrupt fixed temporal order, forcing the model to learn disentangled motion dynamics.\n- Experiments on UCF-101 and VBench benchmarks demonstrate significant improvements in temporal coherence and diversity across various video generation models (U-Net, DiT, AR-based) while maintaining spatial fidelity.\n- FLUXFLOW's effectiveness is shown through quantitative metrics (FVD, Inception Score, VBench metrics) and qualitative comparisons, demonstrating more fluid motion and diverse temporal patterns.\n- This simple yet effective approach highlights the potential of temporal data augmentation in advancing video generation quality.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "STEVE: AStep Verification Pipeline for Computer-use Agent Training",
+        "authors": "Chi-Wing Fu, Shu Liu, Ziqin Wei, Zhisheng Zhong, Fanbin Lu",
+        "link": "https://arxiv.org/abs/2503.12532",
+        "github_repo": "https://github.com/FanbinLu/STEVE",
+        "summary": "- STEVE (Step Verification Pipeline) is introduced for training computer-use agents, which leverages a large language model (GPT-40) to assess the correctness of each action within a trajectory, providing dense reward signals.\n- The pipeline starts by training a vision-language model specialized in UI grounding using a dataset of web pages and desktop screenshots, and then fine-tuning this model as a computer-use agent using supervised learning with limited trajectory data.\n- The agent is then deployed to collect more trajectories, with each action evaluated by GPT-40, resulting in a step-verified trajectory dataset.\n- Kahneman & Tversky Optimization (KTO) is employed to train the agent from this dataset, enabling efficient utilization of both positive and negative actions.\n- Experiments show that STEVE outperforms supervised fine-tuning, allows training of a 7B parameter vision-language model as a high-performing agent, and achieves state-of-the-art results on the WinAgentArena benchmark.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/FanbinLu/STEVE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "LEGION: Learning to Ground and Explain for Synthetic Image Detection",
+        "authors": "Weijia Li, Junyan Ye, Siwei Wen, zichenwen, khr0516",
+        "link": "https://arxiv.org/abs/2503.15264",
+        "github_repo": null,
+        "summary": "- This paper introduces LEGION (LEarning to Ground and explain for Synthetic Image detectiON), a multimodal large language model (MLLM)-based image forgery analysis framework for fully synthetic image detection.\n- LEGION integrates artifact detection, segmentation, and explanation within a single framework.\n- The authors also introduce SynthScars, a high-quality and diverse dataset of synthetic images with fine-grained annotations, including pixel-level segmentation, textual explanations, and artifact category labels. \n- On SynthScars, LEGION surpasses the second-best traditional expert by 3.31% in mIoU and 7.75% in F1 score, demonstrating state-of-the-art performance.\n- Beyond detection, LEGION acts as a controller, guiding image refinement pipelines for enhanced realism and quality in synthetic image generation.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+            "https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2"
+        ],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "MusicInfuser: Making Video Diffusion Listen and Dance",
+        "authors": "Steven M. Seitz, Brian Curless, Ira Kemelmacher-Shlizerman, Susung Hong",
+        "link": "https://arxiv.org/abs/2503.14505",
+        "github_repo": null,
+        "summary": "- MusicInfuser adapts pre-trained text-to-video diffusion models to generate dance videos synchronized with user-provided music.\n- It uses a Zero-Initialized Cross-Attention (ZICA) adapter and a low-rank adapter (High-Rank LoRA) to condition video generation on music while preserving text-based control over style and scene elements.\n- Trained on a combined dataset of AIST dance videos and in-the-wild YouTube dance videos, MusicInfuser leverages existing knowledge of human motion and diverse dance styles without needing motion capture data.\n- Evaluations using Video-LLMs demonstrate that MusicInfuser produces higher quality and more realistic dance movements, better aligned with music than existing methods, and is generalizable to novel music and longer videos.\n- The model allows for difficulty control through prompt engineering, enabling users to customize their choreography.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "ViSpeak: Visual Instruction Feedback in Streaming Videos",
+        "authors": "Kun-Yu Lin, maybetomorrow, Lymann, PhilipC, fushh7",
+        "link": "https://arxiv.org/abs/2503.12769",
+        "github_repo": null,
+        "summary": "- Introduces ViSpeak, a novel streaming video understanding Large Multi-modal Model (LMM) designed for Visual Instruction Feedback, a new task requiring models to actively respond to visual instructions in streaming videos, enhancing real-time human-agent interaction.\n- Presents ViSpeak-Bench, a benchmark with 1,000 videos and 1,000 QA pairs across seven visual instruction subtasks, and ViSpeak-Instruct, a 34k sample training dataset, to facilitate research in this area. \n- Employs a three-stage fine-tuning approach, adapting an existing omni-modal model to streaming input, improving streaming question-answering and proactive output, and finally training on ViSpeak-Instruct for visual instruction feedback.\n- Achieves state-of-the-art (SOTA) performance on StreamingBench and OVO-Bench, comparable to GPT-40, demonstrating its strong streaming video understanding capabilities and exceeding existing open-source models on ViSpeak-Bench. \n- While showing promising results, acknowledges limitations in dataset size and diversity, context length, and degraded Automatic Speech Recognition due to audio segmentation.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/HumanMLLM/ViSpeak",
+            "https://github.com/HumanMLLM/ViSpeak-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "GKG-LLM: A Unified Framework for Generalized Knowledge Graph\n  Construction",
+        "authors": "Jun Liu, haiping Zhu, Shihao Qi, Bifan Wei, VentureZJ",
+        "link": "https://arxiv.org/abs/2503.11227",
+        "github_repo": null,
+        "summary": "- This paper proposes GKG-LLM, a unified framework for constructing Generalized Knowledge Graphs (GKGs), encompassing Knowledge Graphs (KGs), Event Knowledge Graphs (EKGs), and Commonsense Knowledge Graphs (CKGs).\n- GKG-LLM employs a three-stage curriculum learning approach to fine-tune Large Language Models (LLMs), starting with KG data, then EKG data, and finally CKG data, along with counter-task data to enhance generalization.\n- The model is evaluated on a dataset comprising 15 sub-tasks across 29 datasets, categorized into in-domain, counter-task, and out-of-distribution (OOD) data.\n- Experimental results show that GKG-LLM outperforms existing closed-source and open-source LLMs on various GKG construction tasks, demonstrating the effectiveness of the unified approach and the curriculum learning strategy.\n-  GKG-LLM achieves an average improvement of 7.49% over the strongest baseline across all GKG sub-tasks and exhibits strong performance on OOD data, indicating good generalization capability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "Mitigating Visual Forgetting via Take-along Visual Conditioning for\n  Multi-modal Long CoT Reasoning",
+        "authors": "Han-Jia Ye, Houwen Peng, Zhun Sun, Allen8",
+        "link": "https://arxiv.org/abs/2503.13360",
+        "github_repo": null,
+        "summary": "- This paper introduces Take-along Visual Conditioning (TVC), a novel method to mitigate visual forgetting in Multimodal Large Language Models (MLLMs) during long-chain reasoning.\n- TVC shifts and compresses visual tokens at critical reasoning stages through Dynamic Visual Reaffirmation (DVR) and Periodic Visual Calibration (PVC).\n- DVR injects visual content at intervals during training, and PVC reactivates visual information after token compression during inference.\n- Experiments show that TVC improves performance on average by 3.4% across five mathematical reasoning datasets compared to previous state-of-the-art models.\n- TVC's effectiveness is demonstrated through improved reasoning capabilities, especially on complex benchmarks such as MathVerse, which focuses on multimodal reasoning.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based\n  Spatiotemporal Diffusion for Audio-driven Talking Portrait",
+        "authors": "Chenru Jiang, Yuyao Yan, weiguangzhao, KaiserYaoJM, ChaolongYang",
+        "link": "https://arxiv.org/abs/2503.12963",
+        "github_repo": "https://github.com/chaolongy/KDTalker",
+        "summary": "- KDTalker is introduced, a novel framework for generating realistic talking head videos from audio and a single image using implicit keypoint-based spatiotemporal diffusion.\n- The model leverages unsupervised implicit 3D keypoints to capture detailed facial movements and head poses, adapting to varying facial feature densities for flexible motion capture. \n- It employs a custom-designed spatiotemporal attention mechanism to ensure accurate lip synchronization and temporally consistent animations.\n- Experimental results show that KDTalker achieves state-of-the-art performance in lip synchronization accuracy, head pose diversity, and execution efficiency, outperforming other methods on the HDTF dataset using metrics like LSE-C, LSE-D, FID, and CPBD. \n- The framework effectively balances coherent and naturally diverse head movements with accurate lip synchronization, offering explicit control over head poses and overcoming the limitations of latent-space methods.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/chaolongy/KDTalker"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-20"
+    },
+    {
+        "title": "ELTEX: A Framework for Domain-Driven Synthetic Data Generation",
+        "authors": "Eugene Dmitriev, Julien Capitaine, Sofia Sedlova, Kseniia Murasheva, lavriz",
+        "link": "https://arxiv.org/abs/2503.15055",
+        "github_repo": null,
+        "summary": "- ELTEX (Efficient LLM Token Extraction), a new domain-driven framework, generates high-quality synthetic training data for specialized domains by integrating domain indicator extraction with dynamic prompting.\n- This framework addresses the scarcity of domain-specific training data that limits large language models (LLMs) in specialized domains like cybersecurity.\n- The authors demonstrated ELTEX's effectiveness in blockchain-related cyberattack detection by fine-tuning Gemma-2B and achieving performance comparable to GPT-4 with fewer computational resources.\n- ELTEX-enhanced model shows competitive results across standard classification metrics and uncertainty calibration (measured by Brier score).\n- A curated synthetic dataset of social media texts for cyberattack detection in blockchain is released.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "huggingface.co"
+        ],
+        "date": "2025-03-20"
     }
 ]

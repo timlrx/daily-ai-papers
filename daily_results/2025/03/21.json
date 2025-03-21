@@ -1,0 +1,610 @@
+[
+    {
+        "title": "One-Step Residual Shifting Diffusion for Image Super-Resolution via\n  Distillation",
+        "authors": "agoxandr, skushneryuk, ngushchin, kekchpek, apryc1",
+        "link": "https://arxiv.org/abs/2503.13358",
+        "github_repo": null,
+        "summary": "- This paper introduces RSD (Residual Shifting Distillation), a novel one-step distillation method for image super-resolution, specifically designed for the ResShift model, which is a top-performing diffusion-based SR method.\n- RSD trains a student generative model by ensuring a new fake ResShift model, trained on data produced by the student generator, aligns with a pre-trained teacher ResShift model.\n- The method incorporates a tractable version of a knowledge distillation loss with LPIPS and GAN losses in the latent space of an autoencoder, improving the trade-off between fidelity, perceptual quality, and efficiency.\n- Experimental results on RealSR, RealSet65, DRealSR, ImageNet, and DIV2K datasets show that RSD surpasses both its teacher model and competing single-step distillation methods in perceptual quality, with competitive fidelity.\n- Compared to state-of-the-art T2I based models, RSD achieves comparable perceptual quality with better fidelity and a smaller model size.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Stop Overthinking: A Survey on Efficient Reasoning for Large Language\n  Models",
+        "authors": "andrewwen, HongyiLiuAI, jy-yuan, JiamuZhang, yangsui",
+        "link": "https://arxiv.org/abs/2503.16419",
+        "github_repo": "https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs",
+        "summary": "- This paper surveys efficient reasoning methods for Large Language Models (LLMs), categorizing them into model-based, reasoning output-based, and input prompts-based approaches.\n- Model-based methods optimize or train LLMs for conciseness, while output-based methods dynamically reduce reasoning steps during inference, and prompt-based methods leverage prompt properties for efficiency.\n- The paper also discusses efficient data utilization, reasoning in smaller models, and evaluation methods.\n- It introduces Sys2Bench for evaluating LLMs across various reasoning tasks and frameworks to assess \"overthinking.\" \n- The survey highlights the practical benefits of efficient reasoning across diverse domains like healthcare, autonomous driving, and embodied AI, emphasizing the importance of balancing reasoning quality with computational efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Eclipsess/Awesome-Efficient-Reasoning-LLMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Unleashing Vecset Diffusion Model for Fast Shape Generation",
+        "authors": "Huiwenshi, wangfuyun, cocacola, qikahh, ZeqiangLai",
+        "link": "https://arxiv.org/abs/2503.16302",
+        "github_repo": "https://github.com/Tencent/FlashVDM",
+        "summary": "- FlashVDM, a novel framework, transforms pre-trained Vecset Diffusion Models (VDMs) into high-speed, high-fidelity 3D generators.\n- It introduces progressive flow distillation for VDMs, improving the stability and quality of distilled models and achieving comparable results with only 5 NFEs (Number of Function Evaluations).\n- For faster VAE decoding, it employs hierarchical volume decoding, adaptive key-value selection, and an efficient decoder architecture, leading to a 45x speedup.\n- Applied to Hunyuan3D-2, FlashVDM creates Hunyuan3D-2 Turbo, a high-resolution shape generator matching its teacher's quality with a 32x speedup, generating shapes in approximately one second.\n- This makes FlashVDM a leading method for generating large-scale shapes in milliseconds.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent/FlashVDM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Survey on Evaluation of LLM-based Agents",
+        "authors": "Yilun Zhao, Guy Uziel, Lilach Eden, lihaoxin2020, Asaf-Yehudai",
+        "link": "https://arxiv.org/abs/2503.16416",
+        "github_repo": null,
+        "summary": "- This paper presents the first comprehensive survey of evaluation methodologies for Large Language Model (LLM)-based agents.\n- The survey analyzes evaluation benchmarks and frameworks across four dimensions: fundamental agent capabilities, application-specific benchmarks, generalist agent benchmarks, and agent evaluation frameworks.\n- The paper identifies emerging trends in agent evaluation, including a shift towards more realistic and challenging evaluations using continuously updated benchmarks.\n- It also highlights critical gaps in current evaluation methods, particularly in assessing cost-efficiency, safety, and robustness, and in developing fine-grained and scalable methods.\n- The survey aims to provide a comprehensive overview of the current state of agent evaluation and guide future research by suggesting several promising directions.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/galileo-ai/agent-leaderboard"
+        ],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "DiffMoE: Dynamic Token Selection for Scalable Diffusion Transformers",
+        "authors": "Mingwu Zheng, Xintao Wang, Haotian Yang, Ziyang Yuan, MingleiShi",
+        "link": "https://arxiv.org/abs/2503.14487",
+        "github_repo": null,
+        "summary": "- DiffMoE, a Mixture-of-Experts (MoE) based architecture for diffusion models, introduces a batch-level global token pool and a capacity predictor to improve performance and scalability.\n- The global token pool allows experts to access the full token distribution during training, improving expert specialization, while the capacity predictor dynamically adjusts computational resources based on noise levels.\n- DiffMoE achieves state-of-the-art performance on ImageNet, outperforming dense architectures with 3x the activated parameters and other MoE approaches while maintaining efficient scaling.\n- The model's effectiveness extends to text-to-image generation, showcasing its broad applicability.\n- Ablation studies confirm the importance of both the global token pool and the capacity predictor in achieving optimal performance.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/shiml20/DiffMoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Scale-wise Distillation of Diffusion Models",
+        "authors": "Dmitry Baranchuk, Artem Babenko, Denis Kuznedelev, Nikita Starodubcev",
+        "link": "https://arxiv.org/abs/2503.16397",
+        "github_repo": null,
+        "summary": "- This paper introduces Scale-wise Distillation of diffusion models (SWD), a novel method that performs text-to-image generation by gradually increasing the resolution of images during the diffusion process.\n- Inspired by spectral analysis of latent spaces, SWD reduces computation by operating at lower resolutions during initial high-noise diffusion steps.\n- The proposed method enriches distribution-matching distillation approaches with a patch loss for finer-grained distribution similarity, achieving significant performance gains compared to traditional diffusion distillation methods under similar computational constraints.\n- Evaluations on text-to-image generation with automated metrics and human preference studies demonstrated that SWD outperforms other state-of-the-art models under comparable computational budget.\n- SWD significantly accelerates the generation times for large text-to-image models such as SD3.5 and SDXL, demonstrating the effectiveness of SWD in improving diffusion model efficiency.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+        ],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning",
+        "authors": "Hannah Brandon, Alisson Azzolini, NVIDIA, zhuoliny, fferroni",
+        "link": "https://arxiv.org/abs/2503.15558",
+        "github_repo": "https://github.com/nvidia-cosmos/cosmos-reason1",
+        "summary": "- NVIDIA introduces Cosmos-Reason1, a multimodal large language model family (8B and 56B parameter versions) specializing in physical reasoning, trained to perceive, understand, and generate embodied decisions based on video input using a long chain-of-thought process.\n- The model architecture employs a decoder-only multimodal approach, where video input is processed by a vision encoder and aligned with text embeddings before being fed into a hybrid Mamba-MLP-Transformer LLM.\n- Training occurs in four stages: vision pre-training, general supervised fine-tuning (SFT), Physical AI SFT, and Physical AI reinforcement learning (RL), using curated datasets focusing on physical common sense and embodied reasoning, including specialized intuitive physics datasets. \n- Evaluation on new benchmarks tailored for physical common sense and embodied reasoning shows significant performance improvements over existing models, especially after Physical AI SFT and RL, with the 56B model outperforming OpenAI 01 on the common sense benchmark.\n- The authors plan to open-source the code and open-weight the models.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Reinforcement Learning",
+            "Robotics",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/nvidia-cosmos/cosmos-reason1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "MathFusion: Enhancing Mathematic Problem-solving of LLM through\n  Instruction Fusion",
+        "authors": "Honglin Lin, Yu Li, Zhuoshi Pan, Lijun Wu, Qizhi Pei",
+        "link": "https://arxiv.org/abs/2503.16212",
+        "github_repo": "https://github.com/QizhiPei/mathfusion",
+        "summary": "- MathFusion, a novel framework, enhances mathematical reasoning in Large Language Models (LLMs) by fusing different mathematical problems through instruction synthesis, focusing on leveraging the relationships between problems rather than simply modifying individual instances.\n- Three fusion strategies are introduced: sequential fusion (chaining related problems), parallel fusion (combining analogous problems), and conditional fusion (creating context-aware selective problems).\n- MathFusionQA, a new dataset, is created by applying these strategies and fine-tuning various LLMs (DeepSeekMath-7B, Mistral-7B, Llama3-8B).\n- Experimental results demonstrate substantial performance gains, boosting accuracy by 18.0 points across benchmarks using only 45K additional synthetic instructions compared to traditional single-instruction approaches.\n- MathFusion's high data efficiency is further highlighted by its superior performance when combined with the state-of-the-art DART-Math, exceeding its accuracy by 1.4 points with less data.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/QizhiPei/mathfusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "InfiniteYou: Flexible Photo Recrafting While Preserving Your Identity",
+        "authors": "Hao Kang, Zichuan Liu, Yumin Jia, Qing Yan, Liming Jiang",
+        "link": "https://arxiv.org/abs/2503.16418",
+        "github_repo": "https://github.com/bytedance/InfiniteYou",
+        "summary": "- Infinite You (InfU) is a new framework for identity-preserved image generation that leverages Diffusion Transformers (DiTs), addressing limitations of existing methods such as insufficient identity similarity and poor text-image alignment.\n- InfU introduces InfuseNet, a module that injects identity features into the DiT base model via residual connections, enhancing identity similarity while preserving generation capabilities.\n- A multi-stage training strategy with synthetic single-person-multiple-sample (SPMS) data and supervised fine-tuning (SFT) is employed to improve text-image alignment, image quality, and aesthetics.\n- Extensive experiments demonstrate that InfU achieves state-of-the-art performance, surpassing existing baselines like PuLID-FLUX and FLUX.1-dev IP-Adapters in key metrics such as ID Loss, CLIPScore, and PickScore.\n- InfU features a plug-and-play design, ensuring compatibility with various existing methods and offering value to the image generation community.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/InfiniteYou"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/InstantX/FLUX.1-dev-IP-Adapter",
+            "https://huggingface.co/XLabs-AI/flux-ip-adapter-v2"
+        ],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Plug-and-Play 1.x-Bit KV Cache Quantization for Video Large Language\n  Models",
+        "authors": "Huan Wang, Can Qin, Yang Sui, Haoxuan You, KD-TAO",
+        "link": "https://arxiv.org/abs/2503.16257",
+        "github_repo": null,
+        "summary": "- VidKV, a plug-and-play quantization method, compresses the key-value (KV) cache in Video Large Language Models (VideoLLMs) to lower than 2-bit precision without fine-tuning.\n- It employs a mixed-precision quantization strategy for the key cache, using 2-bit quantization for anomalous channels and 1-bit quantization combined with Fast Fourier Transform (FFT) for normal channels.\n- For the value cache, VidKV implements 1.58-bit quantization with an optional semantic token protection mechanism to preserve critical visual tokens at 2-bit precision.\n- Extensive experiments on six video benchmarks with LLaVA-OV-7B and Qwen2.5-VL-7B demonstrate that VidKV compresses KV cache to 1.5-bit and 1.58-bit with negligible performance drop compared to FP16.\n- The results show that per-channel quantization is more effective for the value cache in VideoLLMs, contrary to previous findings in LLMs that favor per-token quantization.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/KD-TAO/VidKV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play\n  Visual Games with Keyboards and Mouse",
+        "authors": "Yitao Liang, Xiaojian Ma, Kaichen He, Zihao Wang, Muyao Li",
+        "link": "https://arxiv.org/abs/2503.16365",
+        "github_repo": null,
+        "summary": "- Introduces JARVIS-VLA, a Vision-Language-Action (VLA) model trained with a novel Act from Visual Language Post-Training (ActVLP) paradigm. \n- JARVIS-VLA is a non-Markovian model that uses a history of observations in its prompts, and employs an action decoder to output discrete and continuous actions.\n- ActVLP enhances VLMs with visual and linguistic guidance in a self-supervised manner before imitation learning, significantly improving performance on a variety of tasks.\n- Achieves state-of-the-art performance in Minecraft, surpassing traditional imitation learning-based policies and showing a 40% improvement over baseline agents on atomic tasks like crafting, smelting, and mining.\n- Open-sourced code, models, and datasets to facilitate further research. ",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "CaKE: Circuit-aware Editing Enables Generalizable Knowledge Learners",
+        "authors": "Shumin Deng, Jia-Chen Gu, Jizhan Fang, Yunzhi Yao, Ningyu",
+        "link": "https://arxiv.org/abs/2503.16356",
+        "github_repo": "https://github.com/zjunlp/CaKE",
+        "summary": "- CaKE (Circuit-aware Knowledge Editing) is introduced, a novel method designed to improve the generalization of knowledge edits in Large Language Models (LLMs) for multi-hop reasoning tasks.\n- CaKE leverages circuit-aware training data, which explicitly requires the LLM to reason with the updated knowledge, guiding the model to construct robust reasoning circuits.\n- This approach addresses the limitations of existing KE methods that often struggle to integrate updates into the multi-hop reasoning process.\n- Experimental results on the MQUAKE dataset demonstrate that CaKE significantly improves multi-hop reasoning accuracy, achieving an average of 20% improvement compared to existing KE methods.\n- CaKE's effectiveness is shown across various LLMs, including LLAMA3-8B-Instruct, Qwen2.5-7B-Instruct, and LLAMA3-70B-Instruct, showcasing its adaptability to different model sizes.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/CaKE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Ultra-Resolution Adaptation with Ease",
+        "authors": "Xinchao Wang, Zhenxiong Tan, Songhua Liu, Ruonan Yu",
+        "link": "https://arxiv.org/abs/2503.16322",
+        "github_repo": "https://github.com/Huage001/URAE",
+        "summary": "- This research introduces URAE, a set of guidelines for adapting existing text-to-image diffusion models to generate ultra-high-resolution images (e.g., 4K) efficiently.\n- URAE focuses on data and parameter efficiency, advocating the use of synthetic training data generated by teacher models and demonstrating that tuning minor weight components is more effective than standard low-rank adaptation methods (like LoRA) when synthetic data is unavailable.\n- For models using guidance distillation (like FLUX), URAE suggests disabling classifier-free guidance during adaptation for improved performance.\n- Experiments show URAE achieves comparable 2K-resolution performance to state-of-the-art closed-source models like FLUX1.1 [Pro] Ultra using significantly fewer training samples (3K) and iterations (2K).\n- Furthermore, URAE sets new benchmarks for 4K image generation and is compatible with existing training-free high-resolution generation pipelines.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Huage001/URAE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Expert Race: A Flexible Routing Strategy for Scaling Diffusion\n  Transformer with Mixture of Experts",
+        "authors": "Xun Zhou, Defa Zhu, Ziyu Wang, FetchFortune, yyk-wew",
+        "link": "https://arxiv.org/abs/2503.16057",
+        "github_repo": null,
+        "summary": "- Introduces Race-DiT, a Mixture of Experts (MoE) model for diffusion transformers, featuring a flexible routing strategy called \"Expert Race.\"\n- Expert Race allows tokens and experts to compete and dynamically assigns experts to tokens with greater denoising demands, enabling more efficient resource allocation compared to traditional token-choice or expert-choice methods.\n- Addresses challenges in MoE training for diffusion models by introducing a per-layer regularization to aid shallow layer learning and a router similarity loss to maintain load balancing and expert diversity.\n- Demonstrates significant performance gains and improved scaling properties compared to baseline models on ImageNet, achieving better FID, CMMD, and CLIP Score and surpassing an XL-Dense model with less than half the total parameters.\n- Shows Expert Race's ability to perform complexity-aware expert allocation across diffusion timesteps by dynamically assigning more experts to tokens at timesteps requiring higher detail (lower timestep indices).",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "MagicMotion: Controllable Video Generation with Dense-to-Sparse\n  Trajectory Guidance",
+        "authors": "Qi Dai, Hui Zhang, Rui Wang, Zhen Xing, quanhaol",
+        "link": "https://arxiv.org/abs/2503.16421",
+        "github_repo": null,
+        "summary": "- MagicMotion is a novel framework for controllable video generation that uses dense-to-sparse trajectory guidance, supporting masks, bounding boxes, and sparse boxes as control signals and employing a ControlNet-like architecture to inject trajectory information into a diffusion transformer.\n- It utilizes a progressive training approach, leveraging denser trajectory data to improve performance with sparser conditions, and introduces a latent segment loss to enhance fine-grained object shape understanding.\n- MagicMotion also introduces a new dataset MagicData, a high-quality dataset created through an automated pipeline with 51K videos with trajectory annotations, and a large-scale benchmark MagicBench with 600 videos for evaluating both video quality and trajectory control accuracy.\n- MagicMotion achieves state-of-the-art results on both MagicBench and DAVIS datasets, outperforming other methods across various metrics, including FID, FVD, and trajectory IoU.\n- MagicMotion demonstrates superior performance for various object numbers compared to other methods on MagicBench.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/quanhaol/magicmotion-site"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Why Do Multi-Agent LLM Systems Fail?",
+        "authors": "Bhavya Chopra, Lakshya A. Agrawal, Shuyi Yang, Melissa Z. Pan, Mert Cemri",
+        "link": "https://arxiv.org/abs/2503.13657",
+        "github_repo": null,
+        "summary": "- This paper presents MASFT, the first comprehensive taxonomy of failure modes in Multi-Agent Large Language Model (LLM) systems.\n- The study analyzes five popular MAS frameworks across 150 tasks, using human annotations to identify 14 distinct failure modes categorized into specification and system design, inter-agent misalignment, and task verification.\n- An LLM-as-a-judge pipeline is introduced for scalable automated failure mode detection and achieves 94% accuracy and 0.77 Cohen's Kappa score against human annotations.\n- Interventions, including improved role specifications and enhanced orchestration, show a 14% improvement in one framework but don't resolve all failures, highlighting the need for more complex solutions.\n- The research emphasizes the importance of organizational understanding in MAS design and releases the dataset and LLM annotator as open-source resources.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/multi-agent-systems-failure-taxonomy/MASFT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "1000+ FPS 4D Gaussian Splatting for Dynamic Scene Rendering",
+        "authors": "Xinchao Wang, Xingyi Yang, Qiuhong Shen, nopyyh",
+        "link": "https://arxiv.org/abs/2503.16422",
+        "github_repo": null,
+        "summary": "- This paper introduces 4DGS-1K, a novel approach for dynamic scene rendering that achieves a 41x reduction in storage and 9x faster rasterization compared to vanilla 4D Gaussian Splatting (4DGS).\n- The approach addresses temporal redundancies by introducing a spatial-temporal variation score to prune short-lifespan Gaussians and a temporal filter to eliminate inactive Gaussians during rendering.\n- 4DGS-1K achieves real-time rasterization speeds exceeding 1000 FPS on modern GPUs while maintaining comparable visual quality.\n- The results on the Neural 3D Video (N3V) dataset and D-NeRF dataset demonstrate significant improvements in both compression and rendering speed compared to existing methods.\n- Notably, on the N3V dataset, 4DGS-1K is twice as fast as the current fastest model while requiring only 1% of the storage.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "M3: 3D-Spatial MultiModal Memory",
+        "authors": "Jianglong Ye, Xuanbin Peng, Ri-Zhao Qiu, Yuchen Song, Xueyan Zou",
+        "link": "https://arxiv.org/abs/2503.16413",
+        "github_repo": "https://github.com/MaureenZOU/m3-spatial",
+        "summary": "- M3, a 3D spatial multimodal memory system, is introduced, integrating 3D Gaussian Splatting with foundation models to store multimodal memories efficiently.\n- It addresses two key limitations of previous feature splatting approaches: the computational constraints of storing high-dimensional features and misalignment or information loss between distilled and original features.\n- M3 introduces principal scene components and Gaussian memory attention, enabling efficient processing and high fidelity rendering.\n- Comprehensive quantitative evaluations of feature similarity, downstream tasks, and qualitative visualizations confirm M3's superiority in memorization and downstream tasks.\n- M3 has been successfully deployed on a real-world quadruped robot for grasping tasks, showcasing its potential for real-world applications.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/MaureenZOU/m3-spatial"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "XAttention: Block Sparse Attention with Antidiagonal Scoring",
+        "authors": "Song Han, Junxian Guo, Guangxuan Xiao, Ruyi Xu, songhan",
+        "link": "https://arxiv.org/abs/2503.16428",
+        "github_repo": "https://github.com/mit-han-lab/x-attention",
+        "summary": "- XAttention is a plug-and-play framework that accelerates long-context inference in Transformer models using sparse attention by summing antidiagonal values in the attention matrix to determine block importance.\n- Unlike existing methods relying on computationally intensive solutions, XAttention uses this simple, efficient scoring method to identify and prune non-essential blocks, leading to high sparsity and accelerated inference without sacrificing accuracy.\n- Across benchmarks like RULER, LongBench, VideoMME, and VBench, XAttention achieves accuracy comparable to full attention while significantly reducing computational costs, demonstrating up to 13.5x acceleration in attention computation.\n- This method effectively balances accuracy and efficiency and unlocks the practical potential of block sparse attention.\n- XAttention paves the way for scalable and efficient deployment of Long-Context Transformer Models (LCTMs) in real-world applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Video Classification",
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Question Answering",
+            "Text Generation",
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/mit-han-lab/x-attention"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Uni-3DAR: Unified 3D Generation and Understanding via Autoregression on\n  Compressed Spatial Tokens",
+        "authors": "Zhifeng Gao, Lin Yao, Haowei Lin, Shuqi Lu, guolinke",
+        "link": "https://arxiv.org/abs/2503.16278",
+        "github_repo": "https://github.com/dptech-corp/Uni-3DAR",
+        "summary": "- Uni-3DAR is a unified framework that integrates 3D generation and understanding tasks using autoregressive prediction on compressed spatial tokens.\n- It employs a hierarchical tokenization approach, using an octree for spatial compression and an additional tokenization for fine-grained details like atom types and coordinates.\n- Two optimizations are introduced: a 2-level subtree compression that reduces octree tokens and a masked next-token prediction mechanism for dynamic token positions.\n- Experiments across various 3D tasks, including molecule, protein, crystal generation, molecular property prediction and docking, show Uni-3DAR outperforms existing methods, including surpassing state-of-the-art diffusion models by up to 256% in relative improvement with 21.8x faster inference speeds.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/dptech-corp/Uni-3DAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "CLS-RL: Image Classification with Rule-Based Reinforcement Learning",
+        "authors": "Kaipeng Zhang, Jike Zhong, Ming Li, yuxianglai117, stzhao",
+        "link": "https://arxiv.org/abs/2503.16188",
+        "github_repo": null,
+        "summary": "- CLS-RL, a novel rule-based reinforcement learning framework, is proposed for few-shot image classification fine-tuning of Multimodal Large Language Models (MLLMs), addressing the catastrophic forgetting issues encountered in supervised fine-tuning.\n- CLS-RL utilizes verifiable signals (class names) as rewards and formats rewards to encourage models to think before answering, demonstrating superior performance compared to supervised fine-tuning in most datasets across both base-to-new generalization and few-shot learning settings.\n- A \"free-lunch\" phenomenon is observed with CLS-RL, where fine-tuning on one dataset enhances performance on other distinct datasets, suggesting that RL effectively teaches models the fundamentals of image classification.\n- No-Thinking-CLS-RL, a variant minimizing the thinking process during training through an equality accuracy reward, achieves better in-domain performance and generalization capabilities than CLS-RL with less fine-tuning time.\n- The paper explores the role of the thinking process during RL fine-tuning for visual classification, finding it potentially less critical than previously assumed, and suggests that for simple visual tasks extensive thinking might be detrimental.",
+        "classification": [
+            "Image Classification",
+            "Reinforcement Learning",
+            "Multimodal",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "LHM: Large Animatable Human Reconstruction Model from a Single Image in\n  Seconds",
+        "authors": "Weichao Shen, Peihao Li, Xiaodong Gu, Lingteng Qiu, DyrusQZ",
+        "link": "https://arxiv.org/abs/2503.10625",
+        "github_repo": null,
+        "summary": "- This paper introduces LHM (Large Animatable Human Model), a feed-forward transformer model that reconstructs animatable 3D human avatars from single images in seconds. \n- The model represents avatars using 3D Gaussian Splatting and utilizes a Multimodal Body-Head Transformer (MBHT) to fuse 3D body point features with image features, enabling detailed geometry and texture preservation. \n- A Head Feature Pyramid Encoding (HFPE) scheme aggregates multi-scale features for enhanced facial detail. \n- Trained on a large-scale video dataset and synthetic 3D scans, LHM achieves state-of-the-art performance in real-world image reconstruction and animation consistency, outperforming methods like AniGS, PSHuman, and DreamGaussian. \n- LHM generates plausible animatable humans without post-processing for face and hands, demonstrating efficient and robust single-image 3D human reconstruction capabilities.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/aigc3d/LHM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Zero-1-to-A: Zero-Shot One Image to Animatable Head Avatars Using Video\n  Diffusion",
+        "authors": "Chua Tat-Seng, Fan Hehe, Ma Fan, zhenglin",
+        "link": "https://arxiv.org/abs/2503.15851",
+        "github_repo": "https://github.com/ZhenglinZhou/Zero-1-to-A",
+        "summary": "- Zero-1-to-A is a novel approach that generates animatable 4D head avatars from single images leveraging a pre-trained video diffusion model.\n- The method addresses spatial and temporal inconsistencies in video diffusion by building a dataset of consistent results with SymGEN, a framework that enhances the quality of the generated avatar and the consistency of the dataset in a mutually beneficial cycle.\n- The approach utilizes a Progressive Learning strategy that sequences learning from simple to complex scenarios, decoupling the video diffusion into Spatial Consistency Learning (fixed expressions and varying camera views) and Temporal Consistency Learning (fixed camera and varying expressions).\n- Experimental results demonstrate superior performance on fidelity, animation quality, and rendering speed compared to existing diffusion-based and head-specialized methods.\n- Zero-1-to-A effectively handles challenging cases like side views, closed eyes, and occlusions but faces limitations in modeling elements beyond the head, such as hair.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/ZhenglinZhou/Zero-1-to-A"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Towards Unified Latent Space for 3D Molecular Latent Diffusion Modeling",
+        "authors": "Kenji Kawaguchi, Sihang Li, Yi Zhao, Zhiyuan Liu, Yanchen Luo",
+        "link": "https://arxiv.org/abs/2503.15567",
+        "github_repo": null,
+        "summary": "- This paper introduces UDM-3D, a latent diffusion model for 3D molecule generation that leverages a unified latent space to integrate atom types, chemical bonds, and 3D coordinates.\n- The model uses a novel Variational Autoencoder (UAE-3D) based on a Relational Transformer to compress the multi-modal features of 3D molecules into a unified latent space with near-zero reconstruction error.\n- A Diffusion Transformer (DiT), without any molecular inductive bias, then performs the generative modeling within this latent space. \n- Experiments on QM9 and GEOM-Drugs datasets show that UDM-3D achieves state-of-the-art results in both *de novo* and conditional 3D molecule generation, significantly outperforming existing methods in terms of geometric accuracy and novelty while exhibiting improved training and sampling efficiency.\n- The unified latent space is key to UDM-3D's success, enabling the model to jointly optimize chemical and 3D geometric constraints while avoiding overfitting to common molecular patterns.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Tokenize Image as a Set",
+        "authors": "Shuyang Gu, Han Hu, Mengde Xu, Zigang Geng",
+        "link": "https://arxiv.org/abs/2503.16425",
+        "github_repo": "https://github.com/Gengzigang/TokenSet",
+        "summary": "- This paper introduces TokenSet, a novel image generation paradigm that uses set-based tokenization and distribution modeling.\n- Unlike traditional methods that serialize image tokens, TokenSet represents images as unordered token sets, allowing dynamic allocation of coding capacity based on regional complexity.\n- It uses a dual transformation mechanism converting sets into fixed-length integer sequences, and proposes Fixed-Sum Discrete Diffusion to model discrete values with fixed sequence length and summation invariance.\n- Experimental results on ImageNet show that TokenSet exhibits global contextual awareness and improved robustness against local perturbations compared to sequential tokenization methods like VQGAN and TiTok.\n- TokenSet achieves competitive image generation quality, demonstrating the potential of set-based representation for visual generation.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Gengzigang/TokenSet"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "NuiScene: Exploring Efficient Generation of Unbounded Outdoor Scenes",
+        "authors": "Angel X. Chang, Qinghong Han, rexleeppp",
+        "link": "https://arxiv.org/abs/2503.16375",
+        "github_repo": null,
+        "summary": "- NuiScene introduces an efficient approach for generating large, unbounded outdoor scenes, addressing challenges such as variations in scene height and the need for rapid generation.\n- The approach encodes scene chunks as uniform vector sets for better compression and performance compared to previous methods.\n- An explicit outpainting model is trained for unbounded generation, improving coherence and speed compared to resampling-based inpainting.\n- Trained on a curated dataset called NuiScene43, which consists of preprocessed Objaverse scenes with cleaned ground geometries and unified scales, enabling joint training of heterogeneous scenes.\n- The model demonstrates the ability to generate scenes with different styles, blending elements like castles and skyscrapers, showcasing the potential of the curation process to leverage diverse scenes for training.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://3dlg-hcvc.github.io/NuiScene/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Fin-R1: A Large Language Model for Financial Reasoning through\n  Reinforcement Learning",
+        "authors": "Jinyi Niu, Lingfeng Zeng, Fangqi Lou, Xin Guo, Zhaowei Liu",
+        "link": "https://arxiv.org/abs/2503.16252",
+        "github_repo": "https://github.com/SUFE-AIFLM-Lab/Fin-R1",
+        "summary": "- This paper introduces Fin-R1, a 7-billion parameter large language model designed for financial reasoning, addressing the challenges of fragmented data, opaque reasoning, and weak generalization in financial AI.\n- Fin-R1 leverages a two-stage training process: Supervised Fine-Tuning (SFT) on a new dataset, Fin-R1-Data, followed by Reinforcement Learning (RL) using Group Relative Policy Optimization (GRPO).\n- Fin-R1-Data consists of 60,091 Chain-of-Thought (CoT) examples derived and filtered from a combination of public and proprietary financial datasets.\n- In evaluations, Fin-R1 achieves state-of-the-art results on ConvFinQA (85.0) and FinQA (76.0), and strong performance across other financial benchmarks, outperforming larger models like DeepSeek-R1-Distill-Llama-70B.\n- The model shows promising real-world applications in financial compliance and robo-advisory.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SUFE-AIFLM-Lab/Fin-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "SALT: Singular Value Adaptation with Low-Rank Transformation",
+        "authors": "Mohammad Yaqub, Hu Wang, Mohammed Elseiagy, Abdelrahman Elsayed, Sarim-Hash",
+        "link": "https://arxiv.org/abs/2503.16055",
+        "github_repo": "https://github.com/BioMedIA-MBZUAI/SALT",
+        "summary": "- SALT (Singular Value Adaptation with Low-Rank Transformation), a novel Parameter-Efficient Fine-Tuning (PEFT) method for adapting the Segment Anything Model (SAM) to medical image segmentation, is introduced.\n- SALT selectively scales critical singular values using trainable scale and shift parameters and applies trainable low-rank transformations to the remaining subspace of the singular value matrix of the model weights.\n- Evaluated on 5 diverse medical image segmentation datasets, SALT outperforms existing PEFT methods (LoRA, SVD) by 2-5% Dice score improvement while using only 3.9% of trainable parameters.\n- The hybrid approach leverages the strengths of both LoRA and SVD, capturing dominant features while adapting efficiently to domain-specific nuances and showing robust adaptation in low-resource settings (as few as 20 training samples).\n- Ablation studies demonstrate the impact of rank selection for optimal performance and efficiency trade-off.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/BioMedIA-MBZUAI/SALT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "MotionStreamer: Streaming Motion Generation via Diffusion-based\n  Autoregressive Model in Causal Latent Space",
+        "authors": "Liang Pan, Ke Fan, Huaijin Pi, Shunlin Lu, lxxiao",
+        "link": "https://arxiv.org/abs/2503.15451",
+        "github_repo": null,
+        "summary": "- MotionStreamer, a novel framework for text-conditioned streaming motion generation, is introduced, which addresses the limitations of existing methods in handling variable-length historical motions and incoming texts for next-step human pose prediction.\n- The framework incorporates a diffusion head into an autoregressive model to predict the next motion latent in a continuous causal latent space, mitigating information loss and error accumulation common in discretized, non-causal approaches.\n- A Causal Temporal AutoEncoder enables online motion decoding by establishing temporal causal dependencies between current and historical motion latents, ensuring accurate online motion decoding.\n- Two-forward and Mixed training strategies are proposed to mitigate error accumulation and facilitate compositional semantics learning during training.\n- Experimental results demonstrate state-of-the-art performance on HumanML3D and BABEL datasets for text-to-motion and long-term motion generation, showcasing its effectiveness in various applications like online multi-round text input, long-term motion generation, and dynamic motion composition.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision",
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://zju3dv.github.io/MotionStreamer/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Make Your Training Flexible: Towards Deployment-Efficient Video Models",
+        "authors": "Yi Wang, Xiangyu Zeng, Tianxiang Jiang, Kunchang Li, Chenting Wang",
+        "link": "https://arxiv.org/abs/2503.14237",
+        "github_repo": "https://github.com/OpenGVLab/FluxViT",
+        "summary": "- This paper introduces Flux, a new data augmentation tool and training approach for video models that optimizes performance across various computational budgets and spatiotemporal resolutions.\n- Flux employs flexible sampling and token selection to maximize input information, enabling training of flexible models.\n- FluxViT, trained using Flux, achieves state-of-the-art results on standard video classification benchmarks like K400 and Something-Something V2.\n- Notably, FluxViT matches or exceeds prior state-of-the-art performance while using significantly fewer tokens (1/4 to 1/2), leading to substantial computational savings (70% to 95%).\n- It also shows robust performance on multi-modal tasks, especially in chat-centric applications including video captioning and question answering.",
+        "classification": [
+            "Computer Vision",
+            "Video Classification",
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/FluxViT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "MagicID: Hybrid Preference Optimization for ID-Consistent and\n  Dynamic-Preserved Video Customization",
+        "authors": "Hongwei Yi, Tianyang Wang, Xi Xiao, Lifan Jiang, Hengjia Li",
+        "link": "https://arxiv.org/abs/2503.12689",
+        "github_repo": null,
+        "summary": "- MagicID, a novel framework, is introduced for personalized video generation that maintains identity consistency and dynamic richness from a few reference images by employing a hybrid preference optimization strategy.\n- It addresses the limitations of current methods like identity degradation and reduced dynamics by using pairwise hybrid preference video data for training and incorporating static and dynamic videos generated by the model.\n- MagicID uses a hybrid sampling method composed of two stages, including identity-preferred and dynamic-preferred pairs.\n- First, it inflates static videos and selects video pairs from generated videos and a base dataset with significant differences in identity reward with a tolerant dynamic reward.\n- Second, it uses a frontier-based sampling method on dynamic and identity rewards, ensuring the training of both customized preferences, which effectively solves the degradation of identity and dynamic.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://echopluto.github.io/MagicID-project/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Reinforcement Learning for Reasoning in Small LLMs: What Works and What\n  Doesn't",
+        "authors": "Chris Ngo, quyanh",
+        "link": "https://arxiv.org/abs/2503.16219",
+        "github_repo": "https://github.com/knoveleng/open-rs",
+        "summary": "- This paper explores Reinforcement Learning (RL) for improving reasoning in small Large Language Models (LLMs), specifically a 1.5B parameter model (DeepSeek-R1-Distill-Qwen-1.5B), under limited resources (4 NVIDIA A40 GPUs for 24 hours).\n- The study uses a curated dataset of mathematical problems and adapts the Group Relative Policy Optimization (GRPO) algorithm for resource efficiency.\n- Results show significant improvement in reasoning performance with minimal resources: accuracy on AMC23 rose from 63% to 80%, and AIME24 reached 46.7%, outperforming larger models like o1-preview.\n- Key challenges include optimization instability, length constraints, and language drift with prolonged training, suggesting a need for more robust training strategies and potentially longer sequence lengths.\n- Code and data are released to foster further research into computationally efficient enhancement of small LLMs, promoting wider accessibility to advanced reasoning capabilities.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/knoveleng/open-rs"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/AI-MO/aimo-validation-aime",
+            "https://huggingface.co/datasets/AI-MO/aimo-validation-amc"
+        ],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Improving Autoregressive Image Generation through Coarse-to-Fine Token\n  Prediction",
+        "authors": "Michael Qizhe Shieh, Kaipeng Zhang, Ziyao Guo",
+        "link": "https://arxiv.org/abs/2503.16194",
+        "github_repo": null,
+        "summary": "- This paper introduces Coarse-to-Fine Token (CTF) prediction, a two-stage framework for autoregressive image generation that leverages the visual similarity between tokens in large codebooks.\n- In the first stage, tokens with similar codeword representations (obtained from VQ-VAE) are clustered and an autoregressive model predicts the coarse label (cluster index).\n- In the second stage, an auxiliary model predicts all fine-grained token labels (original codebook indices) simultaneously, conditioned on the predicted coarse labels.\n- Experiments on ImageNet demonstrate superior performance compared to baselines, with an average improvement of 59 points in Inception Score and faster sampling speed despite an added inference step.\n- This approach effectively addresses the vocabulary redundancy issue of large codebooks by simplifying autoregressive prediction while maintaining reconstruction quality.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/GzyAftermath/CTF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "Deceptive Humor: A Synthetic Multilingual Benchmark Dataset for Bridging\n  Fabricated Claims with Humorous Content",
+        "authors": "Sunil Saumya, Shankar Biradar, UVSKKR",
+        "link": "https://arxiv.org/abs/2503.16031",
+        "github_repo": null,
+        "summary": "- This paper introduces the Deceptive Humor Dataset (DHD), a synthetic multilingual benchmark dataset designed for studying humor derived from fabricated claims and misinformation.\n- DHD consists of humor-infused comments generated from false narratives using ChatGPT-40, labeled with satire levels and categorized into distinct humor types.\n- The dataset spans multiple languages, including English and several Indian languages, along with their code-mixed variations, addressing the gap in regional language resources for humor detection.\n- The authors established baseline results using various transformer-based models and large language models for both satire level and humor attribute classification tasks, providing a benchmark for future research.\n- Results suggest that while existing models perform well on standard humor detection or misinformation classification individually, they struggle with the combined challenge of deceptive humor, highlighting the need for new research in this direction.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting\n  Generation with Flexible Pose and Multi-View Joint Modeling",
+        "authors": "Hyungjin Chung, Byung-Hoon Kim, Hyelin Nam, Byeongjun Park, Hyojun Go",
+        "link": "https://arxiv.org/abs/2503.15855",
+        "github_repo": null,
+        "summary": "- VideoRFSplat is a novel text-to-3D model that leverages a video generation model to generate realistic 3D Gaussian Splatting (3DGS) for unbounded real-world scenes.\n- It employs a dual-stream architecture with a dedicated pose generation model alongside a pre-trained video generation model, communicating via cross-attention blocks to generate multi-view images and camera poses through separate streams.\n- VideoRFSplat introduces an asynchronous sampling strategy, denoising camera poses faster than multi-view images, allowing denoised poses to condition multi-view generation for enhanced cross-modal consistency.\n- Trained on RealEstate10K, MVImgNet, DL3DV-10K, and ACID datasets, VideoRFSplat surpasses existing text-to-3D direct generation methods that depend on post-hoc refinement via score distillation sampling.\n- It achieves superior results without such refinement.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "BigO(Bench) -- Can LLMs Generate Code with Controlled Time and Space\n  Complexity?",
+        "authors": "Gabriel Synnaeve, Benoit Sagot, Baptiste Roziere, pierrechambon",
+        "link": "https://arxiv.org/abs/2503.15242",
+        "github_repo": null,
+        "summary": "- This paper introduces BigO(Bench), a novel coding benchmark designed to evaluate the ability of Large Language Models (LLMs) to generate code that adheres to specific time and space complexity constraints.\n- The benchmark includes tooling to infer the time and space complexity of Python code, a dataset of 3,105 coding problems with inferred complexity labels and 1.2M solutions, and an evaluation framework.\n- Results from evaluating several state-of-the-art LLMs reveal that, despite their impressive performance in generating functional code, most struggle to meet specified time and space complexity constraints, hinting that they may not generalize well to tasks without specific reward at training.\n- Token-space reasoning models, while superior in code generation tasks, show limitations in complexity understanding.\n- DeepSeek R1 Llama 70B achieves the highest scores on most aspects of the benchmark (41.4% and 4.8% All@1 on complexity prediction and generation respectively), with Llama 3.1 405B excelling at space complexity prediction (10.3%).",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/bigobench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/facebook/BigOBench"
+        ],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "See-Saw Modality Balance: See Gradient, and Sew Impaired Vision-Language\n  Balance to Mitigate Dominant Modality Bias",
+        "authors": "YoungBin Kim, Juhwan Choi, Eunju Lee, MiHyeon Kim, JuneHyoung Kwon",
+        "link": "https://arxiv.org/abs/2503.13834",
+        "github_repo": null,
+        "summary": "- This paper introduces BALGRAD, a novel framework designed to mitigate dominant modality bias in vision-language (VL) models by balancing gradients between modalities and ensuring stable convergence and balanced learning.\n- BALGRAD employs two key components: inter-modality gradient reweighting, which adjusts the gradient magnitude of the KL divergence term based on each modality's contribution, and inter-task gradient projection, which prevents conflicts between gradients that can hinder balanced learning.  \n- The authors theoretically demonstrate that unbalanced loss reduction can result from conflicting directions or significantly different magnitudes of the gradients between modalities.  \n- Experimental results on UPMC Food-101, Hateful Memes, and MM-IMDb datasets show that BALGRAD effectively reduces the performance gap between modalities under different impaired conditions (missing/noisy data) and avoids negative transfer. \n- BALGRAD achieves superior performance by balancing modality contributions and improving robustness, as demonstrated by achieving the highest Avg. performance and the smallest gap in experiments with impaired modalities across the datasets.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    },
+    {
+        "title": "AIMI: Leveraging Future Knowledge and Personalization in Sparse Event\n  Forecasting for Treatment Adherence",
+        "authors": "Hassan Ghasemzadeh, Diane J. Cook, ab9mamun",
+        "link": "https://arxiv.org/abs/2503.16091",
+        "github_repo": "https://github.com/ab9mamun/AIMI",
+        "summary": "- This paper proposes AIMI, a knowledge-guided adherence forecasting system using smartphone sensor data, medication history, and future knowledge (prescribed medication times) to predict the likelihood of missed medication.\n- The study uses CNN and LSTM models, finding LSTM achieves higher accuracy (0.932) and F1-score (0.936) in predicting medication adherence.\n- Ablation studies demonstrate that incorporating future knowledge significantly improves forecasting performance, even without past medication data.\n- Incremental learning is employed for resource-constrained training environments, and personalization is shown to mitigate performance degradation due to parameter forgetting when training on new data.\n- A user study with 27 participants managing cardiovascular diseases validates AIMI's effectiveness.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/ab9mamun/AIMI"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-21"
+    }
+]

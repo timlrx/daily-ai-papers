@@ -1,0 +1,431 @@
+[
+    {
+        "title": "I Have Covered All the Bases Here: Interpreting Reasoning Features in\n  Large Language Models via Sparse Autoencoders",
+        "authors": "Polina Druzhinina, Andrey Galichin, tlenusik, razzant, therem",
+        "link": "https://arxiv.org/abs/2503.18878",
+        "github_repo": "https://github.com/AIRI-Institute/SAE-Reasoning",
+        "summary": "- This paper introduces a methodology for identifying reasoning-specific features within Large Language Models (LLMs) using Sparse Autoencoders (SAEs).\n- The authors propose ReasonScore, a metric designed to pinpoint SAE features associated with reasoning by analyzing their activation patterns on a curated vocabulary of introspective terms.\n- Through empirical analysis, an automatic interpretability pipeline, and controlled feature steering experiments, they demonstrate a direct correlation between the identified features and the model's reasoning capabilities.\n- Notably, amplifying these features leads to enhanced reasoning performance on benchmarks like AIME 2024, MATH-500, and GPQA Diamond, providing mechanistic evidence for the role of specific LLM components in complex cognitive behaviors.\n- The results show that steering certain features systematically enhances structured reasoning in model outputs, offering an initial mechanistic explanation of reasoning in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/AIRI-Institute/SAE-Reasoning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Position: Interactive Generative Video as Next-Generation Game Engine",
+        "authors": "XihuiLiu, dizhang, Xintao, chehx, VictorYuki",
+        "link": "https://arxiv.org/abs/2503.17359",
+        "github_repo": null,
+        "summary": "- This paper proposes Interactive Generative Video (IGV) as the core technology for a next-generation Generative Game Engine (GGE).\n- IGV enhances video generation with user control, physics awareness, and causal reasoning, enabling the dynamic creation of game content, physics, and logic.\n- The proposed GGE framework includes Generation, Control, Memory, Dynamics, Intelligence, and Gameplay modules to facilitate the creation of immersive and interactive game experiences.\n- A five-level maturity model (L0-L4) is introduced to guide development and evaluate progress, ranging from traditional manual game development to self-evolving ecosystems driven by advanced AI.\n- The authors argue that IGV and GGE will revolutionize game creation by lowering costs, reducing entry barriers for individual developers, and enabling unlimited, dynamic game content.",
+        "classification": [
+            "Text-to-Video",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Video-T1: Test-Time Scaling for Video Generation",
+        "authors": "Hanyang Wang, duanyueqi, xhangzhan, iseesaw, Liuff23",
+        "link": "https://arxiv.org/abs/2503.18942",
+        "github_repo": null,
+        "summary": "- The paper introduces Video-T1, a novel framework for Test-Time Scaling (TTS) in video generation, which reinterprets TTS as a search problem to find better video trajectories from Gaussian noise space.\n- The search space in Video-T1 is built with test-time verifiers to provide feedback and uses heuristic algorithms like random linear search and a more efficient Tree-of-Frames (ToF) search to guide the search process. \n- ToF adaptively expands and prunes video branches in an autoregressive manner, balancing compute cost and video quality.\n- Extensive experiments demonstrate that scaling the search space boosts the performance of various video generation models across different metrics.\n- Specifically, increasing test-time compute consistently leads to significant improvements in the quality of videos generated, as measured by VBench benchmarks, sometimes even outperforming larger models with less compute.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Aether: Geometric-Aware Unified World Modeling",
+        "authors": "Junyichen, lizizun, AmberHeart, ZhouTimeMachine, HaoyiZhu",
+        "link": "https://arxiv.org/abs/2503.18945",
+        "github_repo": null,
+        "summary": "- AETHER is a unified framework that enables geometry-aware reasoning by jointly optimizing 4D dynamic reconstruction, action-conditioned video prediction, and goal-conditioned visual planning.\n- It leverages pre-trained video generation models and is refined via post-training with synthetic 4D data, utilizing camera pose trajectories as the action representation.\n- AETHER achieves zero-shot generalization in both action following and reconstruction tasks and performs comparably to or better than state-of-the-art reconstruction methods.\n- It enables effective autonomous trajectory planning by translating predictions into actions through a geometry-informed action space.\n- Evaluations demonstrate robust zero-shot transfer to real-world tasks, highlighting the potential of synergistic 4D modeling for enhancing spatial intelligence.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Video-Text-to-Text",
+            "Text-to-Video",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "SimpleRL-Zoo: Investigating and Taming Zero Reinforcement Learning for\n  Open Base Models in the Wild",
+        "authors": "jxhe, HelicHe, SivilTaram, yuzhen17, AndrewZeng",
+        "link": "https://arxiv.org/abs/2503.18892",
+        "github_repo": null,
+        "summary": "- This paper investigates zero reinforcement learning (RL) training, a technique where RL is applied directly to pre-trained language models without prior supervised fine-tuning, across ten diverse base models.\n- The study reveals that increasing response length during training does not always indicate improved reasoning abilities and that different base models exhibit distinct learning patterns during zero RL training.\n- Notably, the research observes the emergence of complex cognitive behaviors like verification in smaller models outside the Qwen family for the first time.\n- Key factors for successful zero RL training are identified, including avoiding over-reliance on format rewards, aligning training data difficulty with the model's capabilities, and starting RL directly from the base model rather than after supervised fine-tuning.\n- The authors open-source their code, models, and analysis tools to facilitate further research in this area.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/hkust-nlp/simpleRL-reason"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "OmnimatteZero: Training-free Real-time Omnimatte with Pre-trained Video\n  Diffusion Models",
+        "authors": "Nir Darshan, ramiben, galchechik, m98levy, Dvir",
+        "link": "https://arxiv.org/abs/2503.18033",
+        "github_repo": null,
+        "summary": "- OmnimatteZero is the first training-free, real-time generative approach for omnimatte, leveraging pre-trained video diffusion models to remove objects, extract layers with associated effects, and seamlessly compose these onto new backgrounds.\n- It adapts zero-shot image inpainting techniques to video object removal and utilizes self-attention maps to inpaint object effects, producing clean background reconstruction and layer isolation via latent arithmetic.\n- Evaluation shows superior performance compared to existing inpainting and omnimatte techniques across all benchmarks in background reconstruction and object layer extraction.\n- OmnimatteZero using LTXVideo sets a new record for the fastest omnimatte approach, achieving real-time performance (0.04 sec/frame on A100 GPU) with minimal runtime per frame.\n- The method uses a simple approach that leverages spatio-temporal coherence within a video and does not require any optimization nor training.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "LEMMA: Learning from Errors for MatheMatical Advancement in LLMs",
+        "authors": "mingchenlin2025, Word2Li, QizhiPei, LHL3341, panzs",
+        "link": "https://arxiv.org/abs/2503.17439",
+        "github_repo": null,
+        "summary": "- LEMMA, a novel method to enhance LLMs' reflective reasoning by constructing and learning from error-corrective trajectories, is proposed.\n- LEMMA systematically analyzes model-generated error types and introduces an error-type grounded mistake augmentation method to collect diverse and representative errors.\n- The model is fine-tuned on error-corrective trajectories, enabling it to self-correct errors within the generation process without relying on external critique models.\n- Experimental results on mathematical reasoning benchmarks show LEMMA achieves state-of-the-art performance, outperforming standard SFT baselines and prior error-aware methods.\n- LEMMA-trained models also exhibit strong generalization ability on out-of-distribution benchmarks and can consistently reduce the occurrence of representative error types.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/pzs19/LEMMA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Training-free Diffusion Acceleration with Bottleneck Sampling",
+        "authors": "lazybone128, Lingaaaaaaa, xiaoxuefeng, renyuxi, tyfeld",
+        "link": "https://arxiv.org/abs/2503.18940",
+        "github_repo": "https://github.com/tyfeld/Bottleneck-Sampling",
+        "summary": "- Introduces Bottleneck Sampling, a training-free diffusion acceleration method leveraging low-resolution pre-trained priors to reduce computational overhead without sacrificing output quality.\n- Employs a high-low-high denoising workflow, operating at lower resolutions for intermediate denoising steps and full resolution for initial and final stages.\n- Addresses aliasing and blurring artifacts by refining resolution transition points and adaptively shifting denoising timesteps at each stage.\n- Evaluated on image and video generation tasks, achieving up to 3x and 2.5x inference speedups, respectively, while maintaining quality comparable to full-resolution sampling across various metrics.\n- Demonstrates effectiveness as a plug-and-play acceleration for DiT-based models like FLUX.1-dev and Hunyuan Video without requiring retraining or architectural changes.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/tyfeld/Bottleneck-Sampling"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Judge Anything: MLLM as a Judge Across Any Modality",
+        "authors": "shuang72, Frywind, NiuniuWang, yuhangchen, fjchendp",
+        "link": "https://arxiv.org/abs/2503.17489",
+        "github_repo": null,
+        "summary": "- This paper introduces two benchmarks, TASKANYTHING and JUDGEANYTHING, for evaluating and assessing the capabilities of Multimodal Large Language Models (MLLMs) as judges across various modalities (image, text, audio, video) in understanding and generation tasks.\n- TASKANYTHING is a benchmark consisting of 1,500 open-ended queries across 15 any-to-any modality categories, accompanied by human annotations and model-generated responses.\n- JUDGEANYTHING evaluates MLLMs' judging ability across the same modalities using pair comparison and score evaluation settings against human judgments and detailed checklists.\n- Experiments with advanced MLLMs like GPT-40 and Gemini show promising results in assessing multimodal understanding tasks but significant challenges in assessing generation tasks, revealing cross-modality biases and hallucination issues.\n- The authors also present OMNIARENA, an automated evaluation platform for omni-models and multimodal reward models based on these benchmarks to further improve any-to-any multimodal models.",
+        "classification": [
+            "Any-to-Any",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://urrealhero.github.io/judgeanythingweb/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Equivariant Image Modeling",
+        "authors": "Li Li, Zigang Geng, hanhu2, Mendel192, dongruixiao",
+        "link": "https://arxiv.org/abs/2503.18948",
+        "github_repo": "https://github.com/drx-code/EquivariantModeling",
+        "summary": "- This paper introduces a novel equivariant image modeling framework designed to minimize conflicts between subtasks in generative models by leveraging the translation invariance of visual signals.\n- The model uses column-wise tokenization to enhance translational symmetry and windowed causal attention for consistent contextual relationships across positions, promoting alignment between optimization targets across subtasks.\n- Evaluated on class-conditioned ImageNet generation at 256x256 resolution, the approach achieves performance comparable to state-of-the-art autoregressive models with fewer computational resources.\n- The enhanced equivariance improves parameter sharing efficiency and zero-shot generalization, particularly for generating unbounded natural scenes, exceeding the performance on datasets with spatial inductive bias.\n- The model also allows for interactive, token-wise feedback from users by establishing a visual connection between each token and a specific area of the generated image.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/drx-code/EquivariantModeling"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "FFN Fusion: Rethinking Sequential Computation in Large Language Models",
+        "authors": "geifmany, AmnonGeifman, omripuny, mdabbah-nvidia, abercovich",
+        "link": "https://arxiv.org/abs/2503.18908",
+        "github_repo": null,
+        "summary": "- This paper introduces FFN Fusion, a novel architectural optimization designed to reduce sequential computation in large language models (LLMs) by parallelizing Feed-Forward Network (FFN) layers.\n- The key insight is that consecutive FFN layers, especially those prevalent after attention pruning, can be fused into a single, wider layer, facilitating parallel execution and minimizing synchronization overhead.\n- This method is evaluated on Llama-3.1-405B-Instruct, resulting in a new model called Llama-Nemotron-Ultra-253B-Base, which achieves a 1.71x speedup and 35x lower per-token cost while maintaining comparable performance.\n- Experiments across various model sizes (49B to 253B parameters) demonstrate that FFN Fusion's effectiveness increases with scale and complements existing techniques like quantization and pruning.\n- The paper also presents preliminary findings suggesting that full transformer blocks (including both attention and FFN layers) can sometimes be parallelized, which opens new avenues for LLM architecture design.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "CFG-Zero*: Improved Classifier-Free Guidance for Flow Matching Models",
+        "authors": "Ziwei Liu, Raymond A. Yeh, Amber Yijia Zheng, weepiess2383",
+        "link": "https://arxiv.org/abs/2503.18886",
+        "github_repo": "http://github.com/WeichenFan/CFG-Zero-star",
+        "summary": "- CFG-Zero*, an enhanced classifier-free guidance method for flow-matching diffusion models, improves image and video generation quality and controllability.\n- It introduces two key improvements: an *optimized scale* to correct inaccuracies in estimated velocity and a *zero-init* technique to stabilize early sampling by zeroing out initial ODE solver steps.\n- Experiments on text-to-image and text-to-video generation show CFG-Zero* consistently outperforms standard CFG, resulting in higher aesthetic scores, better text alignment, and fewer artifacts.\n- It achieves state-of-the-art performance across different models like Lumina-Next, Stable Diffusion 3/3.5, Flux, and Wan-2.1, demonstrating its efficacy.\n- CFG-Zero* enhances detail preservation, color consistency, and overall image quality, as validated by both quantitative metrics and user studies.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Image",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "github.com/WeichenFan/CFG-Zero-star"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Video SimpleQA: Towards Factuality Evaluation in Large Video Language\n  Models",
+        "authors": "Pengfei Hu, zhangysk, Drexubery, grejioh, mengcao",
+        "link": "https://arxiv.org/abs/2503.18923",
+        "github_repo": null,
+        "summary": "- This paper introduces Video SimpleQA, a novel benchmark designed to evaluate the factual grounding capabilities of Large Video Language Models (LVLMs).\n- Video SimpleQA consists of short, fact-seeking questions paired with definitive short-form answers and corresponding video clips, focusing on knowledge integration.\n- Unlike existing video benchmarks, Video SimpleQA necessitates external knowledge integration, promoting factual grounding rather than mere video content analysis. \n- Experimental results on 41 state-of-the-art LVLMs reveal significant performance gaps, with top models reaching an F-score of only 54.4%, highlighting substantial room for improvement in video-grounded factual understanding.\n- The benchmark further explores test-time compute strategies and retrieval-augmented generation, revealing limitations and trade-offs in enhancing LVLMs factuality.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "AgentRxiv: Towards Collaborative Autonomous Research",
+        "authors": "Samuel Schmidgall, mdmoor",
+        "link": "https://arxiv.org/abs/2503.18102",
+        "github_repo": null,
+        "summary": "- Introduces AgentRxiv, a framework for collaborative autonomous research among Large Language Model (LLM) agents, enabling them to iteratively build upon prior research findings via a shared preprint server.\n- Demonstrates that agents with access to past research through AgentRxiv achieve higher performance improvements (11.4% relative improvement over baseline on MATH-500) compared to isolated agents, and the best performing strategies generalize to other benchmark domains (average 3.3% improvement).\n- Shows that multiple agent laboratories using AgentRxiv collaborate effectively and achieve faster progress, reaching higher overall accuracy (13.7% relative improvement over baseline on MATH-500) compared to isolated labs.\n- Presents a parallelized mode for AgentRxiv, allowing concurrent research and faster discovery (+6.0% improvement on MATH-500 with 3 labs) but with a trade-off between speed and computational cost.\n- Discusses the discovered reasoning technique, Simultaneous Divergence Averaging (SDA), which yields the highest accuracy on MATH-500 (78.2%) and shows generalization across diverse benchmarks and language models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "MagicComp: Training-free Dual-Phase Refinement for Compositional Video\n  Generation",
+        "authors": "Hongyu Zhang, ClownRat, Pengjin, BestWishYsh, dyf",
+        "link": "https://arxiv.org/abs/2503.14428",
+        "github_repo": null,
+        "summary": "- MagicComp is a training-free method for enhancing compositional text-to-video (T2V) generation through a dual-phase refinement process.\n- It uses Semantic Anchor Disambiguation (SAD) during conditioning to resolve ambiguity between subjects by encoding subjects independently and integrating directional vectors into text embeddings.\n- During denoising, Dynamic Layout Fusion Attention (DLFA) binds subjects to attributes and locations by combining LLM prior layout masks with model-adaptive perception masks.\n- Experiments on T2V-CompBench and VBench show MagicComp outperforms state-of-the-art methods, demonstrating improvements across metrics like consistent attribute binding, motion binding, and spatial relations.\n- It is model-agnostic and integrates seamlessly with existing T2V architectures like CogVideoX and VideoCrafter2 without requiring additional training.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Vision-R1: Evolving Human-Free Alignment in Large Vision-Language Models\n  via Vision-Guided Reinforcement Learning",
+        "authors": "Fan Yang, Hongyin Zhao, Shurong Zheng, Yousong Zhu, Yufei Zhan",
+        "link": "https://arxiv.org/abs/2503.18013",
+        "github_repo": "https://github.com/jefferyZhan/Griffon/tree/master/Vision-R1",
+        "summary": "- This paper introduces Vision-R1, a novel vision-guided reinforcement learning algorithm designed to improve the object localization capabilities of Large Vision-Language Models (LVLMs).\n- Vision-R1 uses a criterion-driven reward function based on visual feedback, eliminating the need for human-annotated preference data and specialized reward models.\n- It incorporates a progressive rule refinement strategy, dynamically adjusting reward criteria during training to ensure continuous model improvement and mitigate reward hacking.\n- Experiments on various object localization benchmarks, including in-domain and out-of-domain datasets, show that Vision-R1 significantly enhances performance, even surpassing the state-of-the-art Qwen2.5-VL-72B model on ODINW-13 by 2.5 mAP with a 10x smaller model size.\n- Furthermore, Vision-R1 maintains strong generalized question answering capabilities, unlike supervised fine-tuning which shows a decline in performance.",
+        "classification": [
+            "Multimodal",
+            "Object Detection",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/jefferyZhan/Griffon/tree/master/Vision-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Reasoning to Learn from Latent Thoughts",
+        "authors": "Tatsunori Hashimoto, cmaddis, nband, ryoungj",
+        "link": "https://arxiv.org/abs/2503.18866",
+        "github_repo": null,
+        "summary": "- This paper proposes \"reasoning to learn,\" a novel approach to improve data efficiency in language model (LM) pretraining by explicitly modeling and inferring latent thoughts underlying text generation.\n- This approach treats web text as the outcome of a compressed thought process and posits that latent thoughts have contextual knowledge important for data-efficient learning.\n- The authors demonstrate the effectiveness of their approach by continually pretraining a 1.1B TinyLlama model on a limited amount of data from FineMath, a reasoning-intensive web corpus, augmented with latent thoughts generated by GPT-40-mini.\n- Results show substantial improvements in downstream task performance compared to baselines trained on raw data and synthetic Chain-of-Thought paraphrases.\n- The introduced BoLT algorithm enables iterative improvement of the latent thought generator, showing gains for at least three iterations without task-specific data.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ryoungj/BOLT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Defeating Prompt Injections by Design",
+        "authors": "Tianqi Fan, ftramer, carlini, iliashum, dedeswim",
+        "link": "https://arxiv.org/abs/2503.18813",
+        "github_repo": null,
+        "summary": "- This paper introduces CaMeL, a new defense against prompt injection attacks in Large Language Model (LLM) agents.\n- CaMeL creates a protective system layer around the LLM that extracts control and data flows from trusted queries, ensuring that retrieved untrusted data does not influence program flow.\n- The system utilizes a custom Python interpreter to track data provenance and enforce security policies based on capabilities (metadata) attached to individual data values, enabling granular control over data and control flows.\n- CaMeL's effectiveness is demonstrated in AgentDojo, where it successfully completes 67% of tasks with provable security guarantees, mitigating prompt injection risks and preventing unintended data exfiltration without modifying the underlying LLM.\n- This approach mirrors established software security practices and offers a more robust solution compared to relying solely on LLM training or prompting for security.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Typed-RAG: Type-aware Multi-Aspect Decomposition for Non-Factoid\n  Question Answering",
+        "authors": "Yunho Maeng, Hyeonseo Nam, Ahjeong Park, keirahrlee, oneonlee",
+        "link": "https://arxiv.org/abs/2503.15879",
+        "github_repo": "https://github.com/TeamNLP/Typed-RAG",
+        "summary": "- Typed-RAG, a novel type-aware multi-aspect decomposition framework within the RAG paradigm, is introduced to enhance Non-Factoid Question Answering (NFQA).\n- Typed-RAG refines retrieval and generation strategies for different NFQ types by incorporating a pre-trained question type classifier and decomposing questions into single-aspect sub-queries.\n- It addresses the diverse intent and answer perspective limitations in current RAG systems by classifying NFQs into distinct types such as debate, experience, and comparison.\n- Experimental results on Wiki-NFQA, a new benchmark dataset for NFQA, show that Typed-RAG surpasses baseline models.\n- Typed-RAG demonstrates the significance of type-aware decomposition for effective retrieval and generation in NFQA by outperforming LLMs and standard RAG in capturing NFQ complexity.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/TeamNLP/Typed-RAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "AlphaSpace: Enabling Robotic Actions through Semantic Tokenization and\n  Symbolic Reasoning",
+        "authors": "Bui Quang Huy, Dinh Bach Vu, alandao",
+        "link": "https://arxiv.org/abs/2503.18769",
+        "github_repo": null,
+        "summary": "- AlphaSpace is a novel methodology designed to improve the spatial reasoning capabilities of Large Language Models (LLMs) for robotic manipulation in 3D space.\n- The methodology utilizes a hierarchical, semantics-based tokenization strategy that encodes both coarse and fine-grained spatial data, including height information represented by z-coordinates.\n- It incorporates symbolic reasoning and synthetic data to train a decoder-only LLM architecture to understand spatial relationships and perform actions like picking, placing, and stacking objects within a simulated tabletop environment.\n- On the EmbodiedBench Manipulation Subtask, AlphaSpace achieves 66.67% accuracy, surpassing GPT-40 (37.5%) and Claude 3.5 Sonnet (29.17%).\n- The enhanced spatial tokenization method expands upon previous 2D approaches by incorporating z-axis height information, leading to more effective 3D object manipulation.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "AMD-Hummingbird: Towards an Efficient Text-to-Video Model",
+        "authors": "Dong Zhou, He Cui, Takashi Isobe, ebarsoum, gemengmeng",
+        "link": "https://arxiv.org/abs/2503.18559",
+        "github_repo": "https://github.com/AMD-AIG-AIMA/AMD-Hummingbird-T2V",
+        "summary": "- This paper introduces Hummingbird, a lightweight Text-to-Video (T2V) framework based on a pruned U-Net model, designed for efficient video generation.\n- The approach reduces the U-Net size from 1.4 billion to 0.7 billion parameters, achieving a 31x speedup compared to VideoCrafter2 and the highest overall score on VBench.\n- Hummingbird incorporates visual feedback learning to enhance visual quality and a novel data processing pipeline leveraging Large Language Models (LLMs) and Video Quality Assessment (VQA) models for improved training data.\n- The model supports generating videos up to 26 frames long and is trained on the WebVid-10M dataset using four AMD Instinct MI250 GPUs.\n- The training code and data processing pipeline are publicly released to facilitate user-driven training and style customization.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/AMD-AIG-AIMA/AMD-Hummingbird-T2V"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Lost in Cultural Translation: Do LLMs Struggle with Math Across Cultural\n  Contexts?",
+        "authors": "Jaswinder Singh, Bhoomika Lohana, Aabid Karim, 55mv, Abdul084",
+        "link": "https://arxiv.org/abs/2503.18018",
+        "github_repo": "https://github.com/akarim23131/Lost_in_Cultural_Translation",
+        "summary": "- This research explores the impact of cultural context on the mathematical reasoning abilities of Large Language Models (LLMs).\n- Six culturally adapted versions of the GSM8K dataset were created, maintaining the original mathematical logic while changing cultural elements like names and food.\n- Evaluation across 14 LLMs revealed a performance drop on culturally adapted problems compared to the original GSM8K, with smaller models showing larger drops.\n- Interestingly, models familiar with specific cultures sometimes outperformed larger, mathematically proficient models on culturally relevant problems.\n- This highlights the need for more diverse training data to improve LLM robustness in real-world applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/akarim23131/Lost_in_Cultural_Translation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "V-Seek: Accelerating LLM Reasoning on Open-hardware Server-class RISC-V\n  Platforms",
+        "authors": "Luca Benini, Daniele Jahier Pagliari, Alessio Burrello, Mohamed Amine Ahmdi, Javier J. Poveda Rodrigo",
+        "link": "https://arxiv.org/abs/2503.17422",
+        "github_repo": null,
+        "summary": "- This paper presents V-Seek, a method for optimizing Large Language Model (LLM) inference on the Sophon SG2042, a RISC-V CPU with vector processing capabilities.\n- The authors develop optimized and quantized kernels for key LLM layers, targeting the specific hardware features of the SG2042, including vectorization and memory infrastructure.\n- The work explores different compiler options (GCC and Clang) and NUMA optimization strategies to maximize performance.\n- Results on DeepSeek R1 Distill Llama 8B/QWEN 14B and vanilla Llama 7B demonstrate speedups of up to 3.0x and 2.8x in token generation and prompt processing, respectively, compared to baseline llama.cpp.\n- The optimized system achieves throughputs up to 13.07/6.54/3.68 token/s for the evaluated LLMs, showing competitive performance against incumbent x86 architecture and improvements over previous work on the SG2042.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "MetaSpatial: Reinforcing 3D Spatial Reasoning in VLMs for the Metaverse",
+        "authors": "Han Liu, zhenyupan",
+        "link": "https://arxiv.org/abs/2503.18470",
+        "github_repo": "https://github.com/PzySeere/MetaSpatial",
+        "summary": "- MetaSpatial, a novel reinforcement learning (RL)-based framework, enhances 3D spatial reasoning in vision-language models (VLMs) for generating coherent and realistic 3D scenes.\n- It addresses the limitations of supervised fine-tuning by employing a multi-turn refinement strategy with a hybrid reward system combining format, physics, and rendering-based evaluations.\n- This approach uses Group Relative Policy Optimization (GRPO) to optimize the model across multiple refinement trajectories, promoting adaptable and generalizable spatial understanding.\n- Experimental results demonstrate that MetaSpatial significantly improves scene quality, increasing format accuracy, reducing physical violations, and enhancing perceptual realism as judged by GPT-4o.\n- The qualitative analysis shows more structured and realistic object placements after training, validating RL's effectiveness in 3D spatial reasoning for applications like AR/VR and metaverse design.",
+        "classification": [
+            "Text-to-3D",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/PzySeere/MetaSpatial"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Diffusion-4K: Ultra-High-Resolution Image Synthesis with Latent\n  Diffusion Models",
+        "authors": "Junjie Liu, Jinjin Zhang, dihuang, xiefan-guo, qiuyuhuang",
+        "link": "https://arxiv.org/abs/2503.18352",
+        "github_repo": null,
+        "summary": "- Diffusion-4K is a novel framework for synthesizing ultra-high-resolution images using text-to-image latent diffusion models, particularly at 4K resolution.\n- It introduces Aesthetic-4K, a benchmark dataset comprised of high-quality 4K images and precise captions generated by GPT-40, along with novel evaluation metrics such as GLCM Score and Compression Ratio for assessing fine details.\n- The framework incorporates a Wavelet-based Fine-tuning (WLF) method, enhancing high-frequency components for detailed 4K images while preserving low-frequency approximations, and a Partitioned VAE for memory efficiency at high resolutions.\n- Experiments with large-scale diffusion models like SD3-2B and Flux-12B demonstrate Diffusion-4K's superior performance in high-quality 4K image synthesis.\n- Diffusion-4K excels in capturing fine details and adhering to text prompts, exceeding the performance of existing models like PixArt-\u03a3 and Sana.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/zhang0jhon/diffusion-4k"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "RDTF: Resource-efficient Dual-mask Training Framework for Multi-frame\n  Animated Sticker Generation",
+        "authors": "Yeshuang Zhu, Jiapei Zhang, Ying Deng, Ting Zhang, Zhiqiang Yuan",
+        "link": "https://arxiv.org/abs/2503.17735",
+        "github_repo": null,
+        "summary": "- This paper introduces RDTF, a resource-efficient dual-mask training framework for generating multi-frame animated stickers. \n- RDTF employs a discrete frame generation network with a spatial-temporal interaction layer to model the discreteness between frames. \n- A dual-mask strategy, consisting of condition and loss masks, is used to enhance data utilization and diversity. \n- A difficulty-adaptive curriculum learning method is incorporated to improve convergence by decomposing sample entropy into static and adaptive components. \n- Experimental results demonstrate that RDTF outperforms parameter-efficient tuning methods like I2V-Adapter and SimDA on animated sticker generation tasks under constrained resources, achieving state-of-the-art results.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Optimized Minimal 3D Gaussian Splatting",
+        "authors": "Jong Hwan Ko, epark, maincold2",
+        "link": "https://arxiv.org/abs/2503.16924",
+        "github_repo": null,
+        "summary": "- This paper introduces Optimized Minimal Gaussians (OMG), a novel framework for compressing and rendering 3D scenes using Gaussian Splatting.\n- OMG minimizes storage requirements while using a minimal number of Gaussian primitives by introducing a novel importance metric, a compact per-Gaussian attribute representation, and sub-vector quantization.\n- The approach integrates a space feature from Gaussian centers with other per-Gaussian features to represent attributes, enabling more efficient encoding of local continuity and irregularity of sparse Gaussians.\n- Experiments on the Mip-NeRF 360 dataset show OMG achieves up to 49% storage reduction compared to state-of-the-art while maintaining high rendering quality (comparable PSNR/SSIM) and enabling faster rendering at 600+ FPS with fewer Gaussians.\n- Additional evaluations show substantial improvements across Tanks & Temples and Deep Blending datasets, with notable gains in rendering speed due to fewer primitives and a compact network architecture.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://maincold2.github.io/omg/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    },
+    {
+        "title": "Verbal Process Supervision Elicits Better Coding Agents",
+        "authors": "Jui-Ming Yao, Cheng-Pong Huang, MarkChenX",
+        "link": "https://arxiv.org/abs/2503.18494",
+        "github_repo": null,
+        "summary": "- This paper introduces CURA (Code Understanding and Reasoning Agent), a novel code generation framework enhanced with Verbal Process Supervision (VPS).\n- VPS guides language models to generate step-level reward signals for improved code generation outcomes. \n- CURA with VPS improves performance by 3.65% over baseline models on BigCodeBench. \n- Paired with o3-mini and VPS, CURA achieves state-of-the-art performance, indicating the effectiveness of iterative verbal process supervision in enhancing agentic reasoning. \n- Deterministic decoding (temperature 0) leads to better results in code generation compared to stochastic decoding (temperature 1), as shown by Mistral Large Latest and GPT-40-mini on BigCodeBench.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-25"
+    }
+]

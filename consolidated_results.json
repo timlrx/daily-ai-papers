@@ -27880,5 +27880,281 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-03-25"
+    },
+    {
+        "title": "Long-Context Autoregressive Video Modeling with Next-Frame Prediction",
+        "authors": "Mike Zheng Shou, Weijia Mao, Yuchao Gu",
+        "link": "https://arxiv.org/abs/2503.19325",
+        "github_repo": null,
+        "summary": "- This research introduces Frame AutoRegressive (FAR), a novel autoregressive model for video generation that leverages causal dependencies between continuous frames, unlike previous Token-AR models that rely on discretized tokens.\n- FAR employs a hybrid AR-Diffusion approach, using stochastic clean context during training to address the discrepancy between training and inference contexts observed in such models, leading to better convergence compared to video diffusion transformers like Latte.\n- To enhance long-context video modeling, FlexRoPE is introduced, adding flexible temporal decay to existing RoPE embeddings, allowing for improved test-time temporal extrapolation to up to 16x longer contexts.\n- For efficient training on long video sequences, a long short-term context modeling strategy is proposed, balancing high-resolution short-term context for temporal consistency and aggressively patchified long-term context for capturing long-range information without excessive computational cost.\n- Experimental results demonstrate state-of-the-art performance on both short and long video generation tasks, including UCF-101, BAIR, Minecraft, and DMLab datasets, showing the effectiveness of FAR in various video modeling scenarios.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://farlongctx.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "CoMP: Continual Multimodal Pre-training for Vision Foundation Models",
+        "authors": "Yu-Gang Jiang, Zuxuan Wu, Wujian Peng, Lingchen Meng, Row11n",
+        "link": "https://arxiv.org/abs/2503.18931",
+        "github_repo": "https://github.com/SliMM-X/CoMP-MM",
+        "summary": "- COMP, a continual multimodal pre-training framework, enhances pre-trained Vision Foundation Models (VFMs) by enabling them to process native resolution images and aligning visual features with the text embedding space of Large Language Models (LLMs).\n- It introduces C-ROPE, which combines learned absolute position embeddings with Rotary Position Embedding, allowing VFMs to handle arbitrary image sizes without resizing and preserving pre-trained knowledge.\n- It employs an Alignment Loss, a cross-entropy loss based on language prototypes, to align representations between VFMs and LLMs.\n- This three-stage continual pre-training method combines a vision-language adapter warm-up, native resolution adaptation, and optional instruction tuning.\n- Experimental results show that COMP-enhanced VFMs achieve superior performance not only in multimodal understanding tasks like ChartQA and DocVQA but also maintain competitive results in image classification and segmentation tasks like ImageNet-1K and ADE20K.",
+        "classification": [
+            "Multimodal",
+            "Image Classification",
+            "Image Segmentation",
+            "Visual Question Answering",
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/SliMM-X/CoMP-MM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Exploring Hallucination of Large Multimodal Models in Video\n  Understanding: Benchmark, Analysis and Mitigation",
+        "authors": "Yue Liu, Baolong Bi, Jingyi Tang, Jiashu Qu, Hongcheng Gao",
+        "link": "https://arxiv.org/abs/2503.19622",
+        "github_repo": "https://github.com/Hongcheng-Gao/HAVEN",
+        "summary": "- This paper introduces HAVEN, a benchmark for evaluating hallucinations in video understanding for Large Multimodal Models (LMMs), focusing on object, scene, and event hallucinations arising from prior knowledge conflicts, in-context conflicts, and inherent model limitations.\n- The benchmark includes 6,497 questions across various formats, evaluating 16 LMMs and revealing that Valley-Eagle-7B and GPT40-mini exhibit the lowest hallucination rates.\n- The study analyzes the impact of video duration, frame count, question length, and model size on hallucination, finding that performance initially improves with longer videos and more frames but degrades beyond a certain point, while longer questions consistently decrease performance and larger models tend to hallucinate less.\n- A novel training strategy combining Supervised Reasoning Fine-tuning (SRFT) and Thinking-based Direct Preference Optimization (TDPO) is proposed to mitigate hallucinations by enhancing reasoning and grounding the thinking process.\n- Applying this strategy to LLaVA-NEXT-Video-DPO-7B shows a 7.65% improvement in accuracy on HAVEN and a 4.5% reduction in bias score, demonstrating the effectiveness of the proposed approach in reducing hallucinations and enhancing response consistency.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Hongcheng-Gao/HAVEN"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Inference-Time Scaling for Flow Models via Stochastic Generation and\n  Rollover Budget Forcing",
+        "authors": "Minhyuk Sung, Jisung Hwang, Taehoon Yoon, Jaihoon Kim",
+        "link": "https://arxiv.org/abs/2503.19385",
+        "github_repo": null,
+        "summary": "- This paper proposes an inference-time scaling approach for pre-trained flow models to generate images that align precisely with user preferences.\n- Three key ideas are introduced: SDE-based generation for particle sampling, interpolant conversion for enhanced sample diversity, and Rollover Budget Forcing (RBF) for adaptive resource allocation.\n- Experiments demonstrate that variance-preserving (VP) interpolant-based generation with RBF significantly improves performance on compositional and quantity-aware image generation tasks.\n- Notably, RBF optimizes budget utilization by adaptively allocating function evaluations (NFEs) across timesteps.\n- The proposed method outperforms existing inference-time scaling approaches and even surpasses diffusion models with five times fewer NFEs on certain tasks.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Spot the Fake: Large Multimodal Model-Based Synthetic Image Detection\n  with Artifact Explanation",
+        "authors": "Zichen Wen, Hengrui Kang, Peilin Feng, Junyan Ye, Siwei Wen",
+        "link": "https://arxiv.org/abs/2503.14905",
+        "github_repo": "https://github.com/opendatalab/FakeVLM",
+        "summary": "- Introduces FakeVLM, a large multimodal model for synthetic image detection and artifact explanation, based on the LLaVA architecture and trained to provide natural language explanations for image artifacts.\n- Presents FakeClue, a dataset of over 100,000 real and synthetic images across seven categories with fine-grained artifact annotations generated using a multi-LMM strategy.\n- Achieves comparable performance to expert models in authenticity classification without requiring additional classifiers, demonstrated through extensive evaluations on multiple datasets including FakeClue and LOKI.\n- Outperforms existing general-purpose large models in both synthetic detection and artifact explanation tasks on FakeClue and LOKI, showing significant improvements in accuracy and F1 scores.\n- Provides more human-interpretable explanations for synthetic detection results compared to traditional methods that rely on probability thresholds, as showcased in qualitative examples across various image categories.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/opendatalab/FakeVLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Scaling Vision Pre-Training to 4K Resolution",
+        "authors": "Sifei Liu, Yao Lu, Han Cai, Boyi Li, Baifeng Shi",
+        "link": "https://arxiv.org/abs/2503.19903",
+        "github_repo": null,
+        "summary": "The paper introduces PS3, a new method for scaling CLIP-style vision pre-training to 4K resolution with near-constant cost.  Instead of contrastive learning on global image representations, PS3 selectively processes local regions and contrasts them with local detailed captions.  When integrated into a multimodal large language model (MLLM), the resulting model (VILA-HD) significantly improves high-resolution visual perception, outperforming previous MLLMs on multiple benchmarks and achieving better efficiency than existing token pruning approaches. The authors introduce a new benchmark, 4KPro, demonstrating VILA-HD's superior performance on image QA at 4K resolution.  PS3 unlocks appealing scaling properties, including free resolution scaling and test-time compute trading for better performance.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://nvlabs.github.io/PS3"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Think Twice: Enhancing LLM Reasoning by Scaling Multi-round Test-time\n  Thinking",
+        "authors": "Yunjie Ji, Shuaiting Chen, Haotian Wang, Sitong Zhao, Xiaoyu Tian",
+        "link": "https://arxiv.org/abs/2503.19855",
+        "github_repo": null,
+        "summary": "- This paper introduces \"Multi-round Thinking,\" a test-time scaling method for Large Language Models (LLMs) that enhances reasoning abilities through iterative answer refinement.\n- The method leverages previous answers as prompts for subsequent reasoning rounds, encouraging independent re-evaluation and error correction, mimicking human cognitive processes.\n- Experiments across multiple models and benchmarks (AIME 2024, MATH-500, GPQA-diamond, LiveCodeBench) demonstrate performance improvements with this approach. For example, QwQ-32B's accuracy on AIME 2024 increased from 80.3% to 82.1% and DeepSeek-R1 from 79.7% to 82.0% using just two rounds.\n- Analysis shows a correlation between improved performance and shorter response lengths with increasing rounds, suggesting enhanced conciseness and confidence in reasoning.\n- A preliminary exploration of combining Multi-round Thinking with supervised fine-tuning opens promising directions for future research into further enhancing LLM reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "CoLLM: A Large Language Model for Composed Image Retrieval",
+        "authors": "Son Tran, Mubarak Shah, Ashish Tawari, Jinyu Yang, Chuong Huynh",
+        "link": "https://arxiv.org/abs/2503.19910",
+        "github_repo": null,
+        "summary": "This paper introduces CoLLM, a novel framework for composed image retrieval (CIR). CoLLM leverages large language models (LLMs) to generate joint embeddings of reference images and modification texts, enabling supervised training without manual annotation. It addresses limitations of existing methods by generating triplets on-the-fly from image-caption pairs and introducing a new large-scale dataset, MTCIR.  CoLLM achieves state-of-the-art performance on various CIR benchmarks, showing significant improvements of up to 15% compared to existing methods.  The refined benchmarks contribute towards more reliable evaluation metrics for future CIR research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/collm-cvpr25"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "MDocAgent: A Multi-Modal Multi-Agent Framework for Document\n  Understanding",
+        "authors": "Yun Li, Tong Sun, Ruiyi Zhang, Peng Xia, Siwei Han",
+        "link": "https://arxiv.org/abs/2503.13964",
+        "github_repo": "https://github.com/aiming-lab/MDocAgent",
+        "summary": "- MDocAgent is a novel Retrieval Augmented Generation (RAG) framework employing a multi-agent system with specialized agents for document understanding.\n- It leverages both text and image modalities, using ColBERTv2 and ColPali for context retrieval, and employs five specialized agents: general, critical, text, image, and summarizing agents.\n- MDocAgent outperforms existing LVLMs and RAG-based methods on five benchmarks (MMLongBench, LongDocURL, PaperTab, PaperText, and FetaTab), achieving an average improvement of 12.1%.\n- Ablation studies validate the importance of each agent and the synergistic benefit of combining textual and visual modalities.\n- A case study highlights the framework's ability to accurately synthesize information from multiple modalities within a document, even with imperfect retrieval.",
+        "classification": [
+            "Document Question Answering",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/aiming-lab/MDocAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Latent Space Super-Resolution for Higher-Resolution Image Generation\n  with Diffusion Models",
+        "authors": "Seon Joo Kim, Jinwoo Kim, Sangmin Han, Jinho Jeong",
+        "link": "https://arxiv.org/abs/2503.18446",
+        "github_repo": "https://github.com/3587jjh/LSRNA",
+        "summary": "- This research introduces LSRNA, a novel framework for generating high-resolution (exceeding 1K) images using diffusion models by enhancing super-resolution in the latent space. \n- LSRNA consists of two modules: Latent Space Super-Resolution (LSR) maps a low-resolution latent to a higher-resolution manifold, and Region-wise Noise Addition (RNA) injects noise to specific regions to improve detail. \n- Experiments demonstrate that LSRNA outperforms existing methods across various resolutions and metrics, highlighting the importance of latent space upsampling for preserving detail and sharpness. \n- LSRNA improves the quality of both latent and RGB upsampling methods such as DemoFusion and Pixelsmith by achieving faster generation speeds and higher resolution outputs.\n- Ablation studies demonstrate that LSRNA remains stable with reduced denoising steps and the region-adaptiveness of RNA is crucial for preserving low-frequency areas and enhancing fine details.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/3587jjh/LSRNA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "ReSearch: Learning to Reason with Search for LLMs via Reinforcement\n  Learning",
+        "authors": "Chenzheng Zhu, Yijie Zhou, Haoze Sun, Tianpeng Li, Mingyang Chen",
+        "link": "https://arxiv.org/abs/2503.19470",
+        "github_repo": null,
+        "summary": "- ReSearch, a novel framework, trains LLMs to reason with search via reinforcement learning, eliminating the need for supervised data on reasoning steps.\n- The framework integrates search operations as part of the reasoning chain, where text-based thinking guides search execution, and search results influence subsequent reasoning.\n- Trained on Qwen2.5 models, ReSearch demonstrates significant improvements (8.9% to 22.4%) over baselines on multi-hop question answering benchmarks.\n- The model exhibits strong generalizability, performing well on various benchmarks despite training on a single dataset (MuSiQue).\n- Analysis reveals ReSearch's ability to elicit advanced reasoning capabilities like reflection and self-correction during training.",
+        "classification": [
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Agent-RL/ReSearch"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "LookAhead Tuning: Safer Language Models via Partial Answer Previews",
+        "authors": "Mengshu Sun, Lin Yuan, Yujie Luo, Mengru Wang, Kangwei Liu",
+        "link": "https://arxiv.org/abs/2503.19041",
+        "github_repo": "https://github.com/zjunlp/LookAheadTuning",
+        "summary": "- LookAhead Tuning, a novel method for mitigating safety degradation in large language models (LLMs) during fine-tuning, is introduced, which involves modifying training data by previewing partial answer prefixes to preserve inherent safety mechanisms.\n- Two variants of LookAhead Tuning are presented: the Real Answer approach incorporates actual initial tokens for explicit guidance, while the Virtual Answer approach uses a generic prefix to avoid revealing answer content, both aiming to minimize perturbations to initial token distributions and maintain safety.\n- Experimental results on LLaMA2-7B-Chat, fine-tuned on GSM8K and SAMSum datasets and evaluated for safety with HEx-PHI, demonstrate that LookAhead Tuning effectively maintains model safety without sacrificing downstream task performance compared to Vanilla Fine-tuning, SDFT, and Constrained SFT.\n- Further analysis confirms that fine-tuning safety correlates with reduced KL divergence of early tokens, validating the theoretical framework and showing that previewing more tokens increases safety at a potential cost to downstream performance, and virtual prefix variations demonstrate robustness.\n- LookAhead Tuning offers a simple, resource-efficient (only 1.65% and 2.56% more computational time for real and virtual methods, respectively), and effective solution for safe and effective LLM adaptation, applicable in practical deployments due to unchanged inference data and greedy decoding.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/LookAheadTuning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Frequency Dynamic Convolution for Dense Image Prediction",
+        "authors": "Ying Fu, Chenggang Yan, Liang Li, Lin Gu, CharlesChen2023",
+        "link": "https://arxiv.org/abs/2503.18783",
+        "github_repo": "https://github.com/Linwei-Chen/FDConv",
+        "summary": "- This paper introduces Frequency Dynamic Convolution (FDConv), a novel dynamic convolution approach for dense image prediction that addresses the limitations of existing methods, such as limited frequency diversity and high parameter costs.\n- FDConv constructs kernels by learning spectral coefficients in the Fourier domain and divides them into frequency-based groups with disjoint Fourier indices, enabling the construction of frequency-diverse weights without increasing the parameter cost.\n- It incorporates Kernel Spatial Modulation (KSM) to adjust the frequency response of each filter and Frequency Band Modulation (FBM) to enable spatially variant frequency modulation.\n- Applied to ResNet-50, FDConv outperforms previous methods with a modest parameter increase (+3.6M), surpassing alternatives like CondConv (+90M) and KW (+76.5M) on object detection and instance segmentation tasks.\n- FDConv seamlessly integrates into various architectures, including ConvNeXt and Swin Transformer, offering a flexible and efficient solution for modern vision tasks.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/Linwei-Chen/FDConv"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "LPOSS: Label Propagation Over Patches and Pixels for Open-vocabulary\n  Semantic Segmentation",
+        "authors": "Giorgos Tolias, Ji\u0159\u00ed Matas, Yannis Kalantidis, Vladan Stojni\u0107",
+        "link": "https://arxiv.org/abs/2503.19777",
+        "github_repo": "https://github.com/vladan-stojnic/LPOSS",
+        "summary": "- LPOSS and LPOSS+ are training-free methods for open-vocabulary semantic segmentation that leverage Vision-and-Language Models (VLMs) and Vision Models (VMs), such as DINO.\n- They refine initial per-patch predictions from VLMs using label propagation, which incorporates patch-to-patch relationships based on VM features.\n- LPOSS+ addresses the limitations of patch-level predictions by applying a second label propagation step at the pixel level, improving accuracy near class boundaries.\n- The method performs predictions jointly across the entire image, capturing contextual interactions across all patches, unlike existing sliding window approaches.\n- LPOSS+ achieves state-of-the-art results on various datasets, outperforming training-free methods on eight benchmark datasets.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/vladan-stojnic/LPOSS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Strong Baseline: Multi-UAV Tracking via YOLOv12 with BoT-SORT-ReID",
+        "authors": "wish44165",
+        "link": "https://arxiv.org/abs/2503.17237",
+        "github_repo": "https://github.com/wish44165/YOLOv12-BoT-SORT-ReID",
+        "summary": "- This paper introduces a novel approach for multi-UAV tracking in thermal infrared videos, utilizing the recently released YOLOv12 object detection model and the BoT-SORT tracking algorithm, enhanced with a tailored training and inference strategy.\n- The proposed method achieves competitive performance on the 4th Anti-UAV Challenge without relying on techniques like contrast enhancement or temporal information fusion, establishing it as a strong baseline for future research.\n- Evaluation results across three competition tracks demonstrate substantial improvement over baseline scores, with a two-fold increase in Tracks 1 and 3, and a near five-fold increase in Track 2.\n- Analysis reveals key factors influencing tracking accuracy, including model size, track buffer length, image resolution, and the choice of ReID module, with larger input image sizes having the most significant impact. \n- Further enhancing image quality and incorporating temporal data during model training can further push the performance closer to the leading scores in the competition.",
+        "classification": [
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/wish44165/YOLOv12-BoT-SORT-REID"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "When Words Outperform Vision: VLMs Can Self-Improve Via Text-Only\n  Training For Human-Centered Decision Making",
+        "authors": "Yu Yin, Jing Li, Zhe Hu",
+        "link": "https://arxiv.org/abs/2503.16965",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel text-only training approach for enhancing Visual Language Models (VLMs) in human-centered decision-making tasks.\n- The study reveals that Large Language Models (LLMs) often outperform their VLM counterparts in such scenarios, suggesting that visual processing may hinder decision-making capabilities.\n- By leveraging text-only training data generated by GPT-4, the proposed method strengthens the language components of VLMs, leading to significant performance gains.\n- Furthermore, the research demonstrates that VLMs can achieve self-improvement by using training data generated by smaller LLMs, offering a more efficient and scalable alternative to traditional training methods.\n- Experimental results on the VIVA benchmark show that text-only training improves the accuracy of various VLMs, with Qwen2-VL achieving the highest improvement from 80.32% to 83.15%.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
+    },
+    {
+        "title": "Towards a Unified Copernicus Foundation Model for Earth Vision",
+        "authors": "Thomas Dujardin, Adam J. Stewart, Chenying Liu, Zhitong Xiong, Yi Wang",
+        "link": "https://arxiv.org/abs/2503.11849",
+        "github_repo": "https://github.com/zhu-xlab/Copernicus-FM",
+        "summary": " - This paper introduces Copernicus-FM, a unified foundation model for Earth vision, which integrates data from multiple Copernicus Sentinel missions, covering both surface and atmospheric features.\n - The model architecture utilizes dynamic hypernetworks to handle various sensor modalities and metadata encoding, enhancing flexibility and scalability.\n - A comprehensive benchmark, Copernicus-Bench, is presented, including 15 hierarchical tasks assessing performance across different Sentinel missions and data types.\n - The authors demonstrate that their model outperforms existing methods on multiple downstream tasks, particularly in processing lower-resolution sensors and atmospheric data.\n - The work also explores using grid embeddings derived from Copernicus-FM to connect EO and climate research, indicating promising results in climate prediction tasks.",
+        "classification": [
+            "Image Classification",
+            "Image Segmentation",
+            "Image Feature Extraction",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/zhu-xlab/Copernicus-FM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-26"
     }
 ]

@@ -1,0 +1,338 @@
+[
+    {
+        "title": "Dita: Scaling Diffusion Transformer for Generalist\n  Vision-Language-Action Policy",
+        "authors": "TTTTTony, MIASANMIA, robot-haonan, TianyiZhang0213, zhihou",
+        "link": "https://arxiv.org/abs/2503.19757",
+        "github_repo": null,
+        "summary": "- Dita, a novel Diffusion Transformer (DiT) policy for generalist robotic learning, leverages a Transformer architecture to denoise continuous action sequences via a unified multimodal diffusion process.\n- Unlike previous methods that condition denoising on fused embeddings, Dita uses in-context conditioning, aligning actions with raw visual and language instruction tokens.\n- This approach allows Dita to explicitly model action deltas and environmental nuances, resulting in state-of-the-art or competitive performance on multiple simulation benchmarks.\n- Dita also demonstrates robust real-world 10-shot adaptation to complex, long-horizon tasks in novel environments, handling object arrangements and lighting variations with third-person camera input.\n- Its simple 334M parameter architecture offers a lightweight, versatile, and open-source baseline for generalist robot policy learning.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://robodita.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Qwen2.5-Omni Technical Report",
+        "authors": "JialinWang, chenkq, bluelike, jinzheng-he, ZhifangGuo",
+        "link": "https://arxiv.org/abs/2503.20215",
+        "github_repo": null,
+        "summary": "- Qwen2.5-Omni is an end-to-end multimodal model based on the Thinker-Talker architecture, where the Thinker processes multimodal inputs (text, image, audio, and video) and generates text, while the Talker utilizes these representations to generate streaming speech and text.\n- It introduces Time-aligned Multimodal RoPE (TMRoPE), a novel positional embedding approach to synchronize timestamps of video and audio inputs and leverages a block-wise streaming processing method to enable streaming multimodal information input.\n- It utilizes a sliding-window DiT model to stream audio output and reduce latency.\n- Qwen2.5-Omni achieves comparable performance with single-modality models like Qwen2.5-VL and Qwen2-Audio and state-of-the-art results on multimodal benchmarks such as OmniBench and AV-Odyssey.\n- Its end-to-end speech instruction following capabilities are on par with its text input performance, and the streaming Talker outperforms alternatives in speech generation robustness and naturalness.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Speech",
+            "Text-to-Audio",
+            "Automatic Speech Recognition",
+            "Image-to-Text",
+            "Video-Text-to-Text",
+            "Any-to-Any"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/Qwen2.5-Omni"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen"
+        ],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "LEGO-Puzzles: How Good Are MLLMs at Multi-Step Spatial Reasoning?",
+        "authors": "Leoxing, KennyUTC, zengyh1900, favourisnotyou, KexianTang",
+        "link": "https://arxiv.org/abs/2503.19990",
+        "github_repo": null,
+        "summary": "- Introduced LEGO-Puzzles, a novel benchmark to evaluate the multi-step spatial reasoning capabilities of Multimodal Large Language Models (MLLMs).\n- LEGO-Puzzles consists of 1,100 curated visual question-answering (VQA) samples across 11 distinct tasks related to spatial understanding and sequential reasoning, inspired by LEGO construction.\n- Evaluations on 20 state-of-the-art MLLMs reveal significant performance gaps compared to humans, especially in multi-step reasoning and spatially coherent visual output generation.\n- Even the most advanced MLLMs struggle with complex spatial relationships, highlighting the need for further research in multimodal spatial reasoning.\n- The benchmark also includes an image generation component, demonstrating the difficulty of generating spatially coherent and instruction-following image outputs even for top-performing MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+        "authors": "HermanZ, chenweix7, chaojiemao, baoleai, ang-annng",
+        "link": "https://arxiv.org/abs/2503.20314",
+        "github_repo": "https://github.com/Wan-Video/Wan2.1",
+        "summary": "- This paper introduces Wan, a suite of open-source, large-scale video foundation models based on the diffusion transformer architecture.\n- Wan incorporates a novel spatio-temporal variational autoencoder (VAE), scalable pre-training strategies, large-scale data curation, and automated evaluation metrics.\n- The 14B parameter model demonstrates state-of-the-art performance across multiple benchmarks, outperforming existing open-source models and commercial solutions like RunwayML, Hunyuan Video, and CogVideoX.\n- Wan offers multiple capabilities, including text-to-video and image-to-video generation, video editing, visual text generation in both English and Chinese, and real-time video generation using an efficient 1.3B parameter model. \n- Both the code and model weights for the entire Wan series are open-sourced to facilitate community growth and advancement in video generation technology.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Wan-Video/Wan2.1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Unconditional Priors Matter! Improving Conditional Generation of\n  Fine-Tuned Diffusion Models",
+        "authors": "Jaihoon Kim, Minhyuk, phillipinseoul, prinphunya",
+        "link": "https://arxiv.org/abs/2503.20240",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel training-free method to improve the quality of conditional generation of fine-tuned diffusion models by replacing the unconditional noise predictions of fine-tuned models with those from pre-trained base models during sampling.\n- It demonstrates that current fine-tuning methods using classifier-free guidance (CFG) degrade the quality of the unconditional priors, thus negatively affecting the conditional generation.\n- The proposed method leverages the readily available richer unconditional priors from the base model to improve the generation quality without any additional training or model modifications.\n- This method is shown to be effective across various conditional diffusion models including, Zero-1-to-3, Versatile Diffusion, DiT, DynamiCrafter, and InstructPix2Pix for different conditional generation tasks, improving metrics such as LPIPS, PSNR, SSIM, FID and CLIP.\n- Furthermore, it shows that the unconditional noise does not necessarily need to come from the base model used for fine-tuning and other pre-trained diffusion models can be utilized for further improvement.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Open Deep Search: Democratizing Search with Open-source Reasoning Agents",
+        "authors": "speedyarda, ljirwin, pchiniya, cabxyz, salzubi401",
+        "link": "https://arxiv.org/abs/2503.20201",
+        "github_repo": null,
+        "summary": "- This paper introduces Open Deep Search (ODS), an open-source framework designed to democratize access to advanced search AI capabilities.\n- ODS enhances open-source Large Language Models (LLMs) with reasoning agents and a novel web search tool, enabling them to answer complex queries by leveraging real-time information retrieval.\n- ODS outperforms existing state-of-the-art closed-source solutions such as Perplexity AI and OpenAI's GPT-40 Search Preview on benchmarks like SimpleQA and FRAMES.\n- For example, ODS-v2 achieves 75.3% accuracy on FRAMES, a 9.7% improvement over GPT-40 Search Preview.\n- The framework consists of Open Search Tool for context retrieval and Open Reasoning Agent to orchestrate tools, including search and calculator, showcasing its effectiveness in complex reasoning tasks.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/sentient-agi/OpenDeepSearch"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "GenHancer: Imperfect Generative Models are Secretly Strong\n  Vision-Centric Enhancers",
+        "authors": "yshan2u, yxgeee, aether25, tttoaster, msj9817",
+        "link": "https://arxiv.org/abs/2503.19480",
+        "github_repo": null,
+        "summary": "- GenHancer, a two-stage post-training method, enhances the fine-grained visual representations of discriminative models like CLIP by leveraging lightweight, randomly initialized generative models.\n- This method uses visual features, specifically the [CLS] token, as conditions for self-supervised reconstruction with the generative model, transferring fine-grained knowledge to the discriminative model.\n- Experiments show that perfect generation is not essential for representation enhancement, and a two-stage training approach effectively mitigates irrelevant information transfer.\n- GenHancer consistently outperforms previous methods on the MMVP-VLM benchmark, achieving a 6.0% improvement on OpenAICLIP and demonstrating its effectiveness across various CLIP backbones.\n- The enhanced CLIP model can be seamlessly integrated into multimodal large language models for improved vision-centric performance, without negatively impacting global semantic understanding.",
+        "classification": [
+            "Image Feature Extraction",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "BizGen: Advancing Article-level Visual Text Rendering for Infographics\n  Generation",
+        "authors": "YuanYuhui, kevinlin311tw, bohanChen, Marseclipse, wukeming11",
+        "link": "https://arxiv.org/abs/2503.20672",
+        "github_repo": null,
+        "summary": "- BizGen is a novel framework for generating business content like infographics and slides from article-length text prompts and ultra-dense layouts, addressing the challenges of long context lengths and data scarcity.\n- It uses a two-stage approach: 1) Building a scalable dataset (INFOGRAPHICS-650K) of high-quality infographics with dense layouts and captions through layered retrieval augmentation. 2) Implementing a layout-guided cross-attention mechanism in Glyph-SDXL-v2 that refines subsections using layout conditional CFG.\n- BizGen significantly outperforms DALL-E3, SD3 Large, and FLUX in visual text spelling accuracy and prompt following on the BizEVAL benchmark, particularly with complex layouts exceeding 20 layers.\n- It introduces layout conditional classifier-free guidance to further refine layer artifacts.\n- BizGen also supports multilingual generation across ten languages, achieving approximately 90% visual text spelling precision.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Gemini Robotics: Bringing AI into the Physical World",
+        "authors": "abalakrishna123, TravisAStrong, montse90, jalayrac, saminda",
+        "link": "https://arxiv.org/abs/2503.20020",
+        "github_repo": null,
+        "summary": "- Introduces Gemini Robotics, a family of AI models designed for robotics, built upon Gemini 2.0, featuring a Vision-Language-Action (VLA) model and an Embodied Reasoning (ER) model.\n- Gemini Robotics controls robots directly to perform complex manipulation tasks, showing robustness and generalization to unseen environments and open-vocabulary instructions.\n- Gemini Robotics-ER extends Gemini's multimodal reasoning to the physical world, enabling object detection, pointing, trajectory and grasp prediction, and 3D understanding.\n- Demonstrates specialization of Gemini Robotics to long-horizon dexterous tasks like origami and card playing, adapting to novel robot embodiments, and few-shot learning.\n- Addresses safety considerations for large robotics models like Gemini Robotics.",
+        "classification": [
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "MCTS-RAG: Enhancing Retrieval-Augmented Generation with Monte Carlo Tree\n  Search",
+        "authors": "armanc, chenzhao, yilunzhao, AlexCCtop",
+        "link": "https://arxiv.org/abs/2503.20757",
+        "github_repo": null,
+        "summary": "- MCTS-RAG is introduced, a novel approach that combines Monte Carlo Tree Search (MCTS) with Retrieval-Augmented Generation (RAG) to enhance reasoning capabilities in small language models.\n- Unlike standard RAG or MCTS methods, MCTS-RAG dynamically integrates retrieval and reasoning, enabling adaptive retrieval strategies and improved knowledge integration.\n- Experimental results on ComplexWebQA, GPQA, and FoolMeTwice show significant performance improvements, exceeding 20% on some datasets with smaller language models, and demonstrating competitive performance with larger models like GPT-40.\n- MCTS-RAG effectively scales inference-time compute, refining both retrieval and reasoning through a search-based process to achieve higher accuracy.\n- The iterative refinement of queries and integration of retrieved information leads to enhanced decision-making and reduced hallucinations in knowledge-intensive tasks.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/MCTS-RAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "AccVideo: Accelerating Video Diffusion Model with Synthetic Dataset",
+        "authors": "Yunhong Wang, XihuiLiu, YaohuiW, AriaChen, aejion",
+        "link": "https://arxiv.org/abs/2503.19462",
+        "github_repo": null,
+        "summary": "- AccVideo is a novel efficient distillation method to accelerate video diffusion models using a synthetic dataset, which contains 110K denoising trajectories and videos generated by pre-trained video diffusion models with fine-grained text descriptions.\n- AccVideo introduces a trajectory-based few-step guidance by selecting a few data points from each denoising trajectory to construct a shorter noise-to-video mapping path and enable the student model to generate videos in fewer steps.\n- AccVideo introduces an adversarial training strategy to align the output distribution of student model with that of synthetic dataset, thereby enhancing the video quality.\n- Compared to the teacher model (HunyuanVideo [23]), AccVideo greatly improves the inference speed by 7.7-8.5x times while maintaining comparable performance.\n- Compared to other baseline models at the same resolution level, AccVideo shows exceptional performance in terms of color and spatial relationship.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent/HunyuanVideo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "ViLBench: A Suite for Vision-Language Process Reward Modeling",
+        "authors": "cihangxie, xianft, alihiker, Helicopt, PahaII",
+        "link": "https://arxiv.org/abs/2503.20271",
+        "github_repo": null,
+        "summary": "- This paper introduces VILBENCH, a new benchmark designed to evaluate vision-language process reward models (PRMs), which provide step-wise feedback during reasoning processes, unlike output reward models (ORMs) that only evaluate final answers.\n- The researchers benchmark seven Vision-Language Large Language Models (VLLMs) across five existing datasets and find that better VLLMs don't always correlate with superior reward capabilities, and neither ORMs or PRMs consistently outperforms the other.\n- They construct VILBENCH, a new benchmark with 600 examples that emphasizes the necessity of step-wise feedback and demonstrate that OpenAI's GPT-40 with Chain-of-Thought only achieves 27.3% accuracy, while benefiting 3.0% more from PRM than ORM.\n- This paper also introduces ViLReward-73k, a 73.6k step-wise vision-language reward dataset, enabling the training of a specialized 3B parameter vision-language PRM (ViLPRM).\n- ViLPRM improves the average evaluation accuracy by 3.3% over standard CoT methods and up to 2.5% over its untrained counterpart on VILBENCH.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://ucsc-vlaa.github.io/ViLBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "LogQuant: Log-Distributed 2-Bit Quantization of KV Cache with Superior\n  Accuracy Preservation",
+        "authors": "Pingyi Luo, Bingsheng He, deciding, Zicong99, Concyclics",
+        "link": "https://arxiv.org/abs/2503.19950",
+        "github_repo": "https://github.com/Concyclics/LogQuantKV",
+        "summary": "- LogQuant, a novel 2-bit quantization technique for KV Cache in large language model (LLM) inference, is introduced, delivering substantial memory savings while preserving performance.\n- LogQuant employs a log-based filtering mechanism to selectively compress the KV Cache across the entire context, outperforming existing methods that prioritize recent tokens or predict important tokens based on past attention patterns.\n- Benchmark tests show LogQuant improves throughput by 25%, increases batch size by 60% without raising memory consumption, and boosts accuracy on challenging tasks like Math and Code Completion by 40% to 200% compared to similar compression ratio techniques.\n- LogQuant's position-agnostic approach to attention calculation maintains accuracy while improving efficiency.\n- The technique integrates seamlessly with popular inference frameworks like Python's transformers library.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Concyclics/LogQuantKV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "ADS-Edit: A Multimodal Knowledge Editing Dataset for Autonomous Driving\n  Systems",
+        "authors": "xzwnlp, bozhong, xiangchen-dvi, JizhanFang, Chenxiwang",
+        "link": "https://arxiv.org/abs/2503.20756",
+        "github_repo": "https://github.com/zjunlp/EasyEdit",
+        "summary": "- This paper introduces ADS-Edit, a multimodal knowledge editing dataset for autonomous driving systems. \n- The dataset addresses challenges such as traffic knowledge misunderstanding, complex road conditions, and diverse vehicle states in autonomous driving. \n- ADS-Edit includes various real-world scenarios, multiple data types (video, multi-view images, single image), and comprehensive evaluation metrics (reliability, generality, and locality). \n- The authors evaluate four knowledge editing baselines (Prompt, AdaLora, GRACE, and WISE) under single and lifelong editing scenarios. \n- Experimental results demonstrate the effectiveness of memory-based editing methods (GRACE and WISE) in modifying LMM behavior for autonomous driving tasks, with GRACE achieving a 100% modification rate.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/EasyEdit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Beyond Words: Advancing Long-Text Image Generation via Multimodal\n  Autoregressive Models",
+        "authors": "Min Li, Lijuan, zyang39, linjieli222, Awiny",
+        "link": "https://arxiv.org/abs/2503.20198",
+        "github_repo": null,
+        "summary": "- This paper introduces LongTextAR, a novel multimodal autoregressive model specifically designed for generating images containing long text sequences, such as paragraphs or multi-sentence descriptions.\n- LongTextAR addresses limitations in existing text-to-image models that struggle with extended text inputs by introducing TextBinarizer, a specialized text-focused tokenizer that enhances text preservation in generated images.\n- LongTextAR combines TextBinarizer with a Llama 2-based autoregressive decoder and employs a hybrid tokenization strategy incorporating both visual and textual tokens for coherent image generation.\n- Extensive experiments demonstrate that LongTextAR outperforms current state-of-the-art models like Stable Diffusion 3.5 and GPT-40 with DALL-E 3 in generating long text accurately and consistently, especially on interleaved document and PowerPoint generation tasks.\n- The model also offers robust controllability over text properties such as font style, size, color, and alignment, enabling customization of generated text within images.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://fingerrec.github.io/longtextar"
+        ],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Attention IoU: Examining Biases in CelebA using Attention Maps",
+        "authors": "Vikram V. Ramaswamy, Olga Russakovsky, tyleryzhu, serianni",
+        "link": "https://arxiv.org/abs/2503.19846",
+        "github_repo": "https://github.com/aaronserianni/attention-iou",
+        "summary": "- This paper introduces Attention-IoU, a metric for quantifying bias in image classification models using attention maps.\n- It leverages attention maps to identify spurious correlations between target attributes and confounding attributes within a dataset by comparing the attention maps for different attributes.\n- Attention-IoU is validated on the Waterbirds dataset, demonstrating its ability to accurately reflect bias.\n- Analysis on CelebA reveals that Attention-IoU can uncover biases beyond accuracy disparities, highlighting specific ways the *Male* attribute influences other attributes.\n- By subsampling the CelebA training set, the authors show that Attention-IoU can reveal potential confounding variables not present in the dataset labels.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/aaronserianni/attention-iou"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Self-Supervised Learning of Motion Concepts by Optimizing\n  Counterfactuals",
+        "authors": "Kevin Feigelis, Rahul Venkatesh, Seungwoo Kim, Stefan Stojanov, kmeisthax",
+        "link": "https://arxiv.org/abs/2503.19953",
+        "github_repo": null,
+        "summary": "- Opt-CWM, a self-supervised learning model, estimates optical flow and occlusions from videos by optimizing counterfactual probes in a pre-trained next-frame prediction model.\n- The model replaces fixed heuristics with a learned perturbation generator, specialized for local image appearance, trained via an asymmetric masking approach.\n- Opt-CWM achieves state-of-the-art results on real-world video benchmarks (TAP-Vid), outperforming both supervised and unsupervised existing methods, especially in complex scenarios with large frame gaps or intricate movements.\n- The model's success is attributed to the optimization of context-specific counterfactual perturbations and its ability to leverage a general-purpose predictive model rather than relying on synthetic data or hand-designed heuristics.\n- This novel approach offers a promising direction for extracting diverse visual properties through optimized counterfactual analysis.",
+        "classification": [
+            "Computer Vision",
+            "Keypoint Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Sparse Logit Sampling: Accelerating Knowledge Distillation in LLMs",
+        "authors": "kw1jjang, Rock222, AndrewAhn, ya-mehdi, Anshumann",
+        "link": "https://arxiv.org/abs/2503.16870",
+        "github_repo": null,
+        "summary": "- This paper introduces Random Sampling Knowledge Distillation (RS-KD), an importance-sampling based method to accelerate knowledge distillation in Large Language Models (LLMs) by efficiently storing sparse logits.\n- RS-KD addresses the biases and limitations of existing sparse knowledge distillation approaches like Top-K caching by providing unbiased estimates of the teacher's probability distribution and preserving the gradient in expectation.\n- Using significantly less storage (only 12 tokens in experiments), RS-KD achieves performance comparable to full distillation, maintaining model performance while using only 0.01% of pre-computed teacher logits and significantly reducing training time overhead to under 10%.\n- The method demonstrates consistent improvements over cross-entropy training as student model size increases and remains effective across various model sizes, training tokens, and evaluation metrics, from 300M to 3B parameter models trained on up to 100B tokens.\n-  Further combining RS-KD with techniques like adaptive learning rates based on token confidence allows it to even surpass the performance of full knowledge distillation.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "DINeMo: Learning Neural Mesh Models with no 3D Annotations",
+        "authors": "Alan Yuille, Weijie Guo, wufeim, guofeng1123",
+        "link": "https://arxiv.org/abs/2503.20220",
+        "github_repo": null,
+        "summary": "- DINeMo, a novel neural mesh model, is introduced for 3D pose estimation, trained without 3D annotations by leveraging pseudo-correspondence from large visual foundation models like DINOv2.\n- A bidirectional pseudo-correspondence generation method refines keypoint matching by combining local appearance features and global 3D object orientation.\n- Evaluation on car datasets shows DINeMo outperforms previous zero- and few-shot 3D pose estimation methods, significantly reducing the gap with fully-supervised methods (by 67.3%).\n- The approach also excels in semantic correspondence on SPair71k, surpassing existing methods.\n- Demonstrating scalability, DINeMo's performance improves efficiently with increasing amounts of unlabeled training data, showcasing advantages over supervised methods reliant on 3D annotations.",
+        "classification": [
+            "Image-to-3D",
+            "Keypoint Detection",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "Image as an IMU: Estimating Camera Motion from a Single Motion-Blurred\n  Image",
+        "authors": "r0nn13, jerredchen",
+        "link": "https://arxiv.org/abs/2503.17358",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method to estimate camera motion from a single motion-blurred image, effectively using the blur as an IMU-like measurement.\n- The model predicts a dense motion flow field and a monocular depth map from the blurred image, then recovers instantaneous camera velocity by solving a linear least squares system.\n- A new synthetic dataset with realistic motion blur is created from ScanNet++v2 to train the model, and further refinement is done using real-world motion-blurred images.\n- Evaluations on real-world benchmarks show the method achieves state-of-the-art angular and translational velocity estimates, outperforming methods like MASt3R and COLMAP, particularly in challenging scenarios with aggressive camera motion.\n- This method enables real-time performance at 30 FPS and offers a robust and efficient alternative to traditional multi-image or IMU-based motion estimation techniques.",
+        "classification": [
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    },
+    {
+        "title": "PathoHR: Breast Cancer Survival Prediction on High-Resolution\n  Pathological Images",
+        "authors": "Rundong Xue, Jiaxuan Xiao, Jun Liu, Shiru Wang, Yang Luo",
+        "link": "https://arxiv.org/abs/2503.17970",
+        "github_repo": "https://github.com/AIGeeksGroup/PathoHR",
+        "summary": "- PathoHR, a novel pipeline for breast cancer survival prediction, enhances pathological image analysis through efficient multi-resolution processing and advanced feature representation learning.\n- It introduces a plug-and-play high-resolution Vision Transformer (ViT) for flexible patch-wise Whole Slide Image (WSI) enhancement, enabling detailed feature extraction.\n- The pipeline systematically evaluates multiple advanced similarity metrics for contrastive learning, optimizing representation learning to capture tumor characteristics.\n- It demonstrates that smaller enhanced image patches achieve equivalent or superior prediction accuracy compared to raw larger patches while reducing computational overhead.\n- Experimental results show that PathoHR offers a promising way to integrate enhanced image resolution with optimized feature learning, improving accuracy and efficiency in breast cancer survival prediction.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/AlGeeksGroup/PathoHR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-27"
+    }
+]

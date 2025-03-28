@@ -28492,5 +28492,326 @@
         ],
         "huggingface_urls": [],
         "date": "2025-03-27"
+    },
+    {
+        "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+        "authors": "Potentialts, guozonghao96, BreakLee, kxgong, KaituoFeng",
+        "link": "https://arxiv.org/abs/2503.21776",
+        "github_repo": "https://github.com/tulerfeng/Video-R1",
+        "summary": "- Video-R1, a novel framework leveraging reinforcement learning (RL) to enhance video reasoning capabilities in multimodal large language models (MLLMs), is introduced.\n- The model utilizes a novel Temporal Group Relative Policy Optimization (T-GRPO) algorithm, which encourages temporal reasoning by contrasting performance on ordered and shuffled video frames, and addresses the lack of temporal modeling in existing RL methods.\n- Two new datasets, Video-R1-COT-165k for supervised fine-tuning and Video-R1-260k for reinforcement learning, comprised of image and video data, are introduced to address the scarcity of high-quality video reasoning data.\n- Video-R1-7B achieves state-of-the-art performance on the VSI-Bench video spatial reasoning benchmark with 35.8% accuracy, outperforming the commercial proprietary model GPT-4.\n- Significant performance improvements are also observed across other video reasoning and general video benchmarks like VideoMMMU, MMVU, MVBench, and TempCompass.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/tulerfeng/Video-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "UI-R1: Enhancing Action Prediction of GUI Agents by Reinforcement\n  Learning",
+        "authors": "Xi Yin, hsli-cuhk, guoyaxuan0106, Yuxiang007, LZXzju",
+        "link": "https://arxiv.org/abs/2503.21620",
+        "github_repo": null,
+        "summary": "- UI-R1, a novel framework, leverages reinforcement learning with a rule-based reward function to enhance the reasoning capabilities of Multimodal Large Language Models (MLLMs) for Graphic User Interface (GUI) action prediction.\n- The model is trained on a small, curated dataset of 136 mobile GUI tasks with a unified rule-based action reward, incorporating action type, argument, and format rewards.\n- Evaluated on in-domain (ANDROIDCONTROL) and out-of-domain (ScreenSpot-Pro) benchmarks, UI-R1-3B demonstrates substantial improvements over the base model (Qwen2.5-VL-3B) and achieves competitive performance with larger SFT models trained on considerably more data.\n- UI-R1-3B significantly improves action type prediction accuracy by 15% and grounding accuracy by 10.3% on ANDROIDCONTROL, while on ScreenSpot-Pro it surpasses the base model by 6% and performs on par with larger models like OS-Atlas-7B.\n- The results demonstrate the efficacy and data efficiency of rule-based reinforcement learning for enhancing GUI understanding and control in MLLMs.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Challenging the Boundaries of Reasoning: An Olympiad-Level Math\n  Benchmark for Large Language Models",
+        "authors": "Wayne Xin Zhao, jrwen, TimothyCzp, EliverQ, CoderBak",
+        "link": "https://arxiv.org/abs/2503.21380",
+        "github_repo": "https://github.com/RUCAIBox/Slow_Thinking_with_LLMs",
+        "summary": "- This paper introduces OlymMATH, a challenging bilingual (English and Chinese) benchmark dataset designed for evaluating the mathematical reasoning capabilities of Large Language Models (LLMs), especially those using slow-thinking methods.\n- The dataset consists of 200 Olympiad-level math problems, divided into easy (AIME-level) and hard subsets, covering algebra, geometry, number theory, and combinatorics.\n- Experimental results demonstrate that even state-of-the-art LLMs like DeepSeek-R1 and OpenAI's 03-mini struggle with the benchmark, particularly the hard subset, achieving accuracies of only 21.2% and 30.3%, respectively.\n- Analysis reveals that some LLMs resort to empirical guessing or shortcut solutions rather than rigorous reasoning, indicating a need for process-level evaluation to better assess true reasoning capabilities.\n- The benchmark aims to promote the development of more robust and powerful reasoning models by providing a rigorous and challenging evaluation platform.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/RUCAIBox/Slow_Thinking_with_LLMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic\n  Faithfulness",
+        "authors": "mimihe, yinanhe, jackyhate, HongboLiu, Ziqi",
+        "link": "https://arxiv.org/abs/2503.21755",
+        "github_repo": "https://github.com/Vchitect/VBench",
+        "summary": "- VBench-2.0 is a new benchmark suite designed to evaluate the intrinsic faithfulness of video generation models, going beyond superficial aspects like pixel fidelity and prompt adherence.\n- It assesses five key dimensions: Human Fidelity, Controllability, Creativity, Physics, and Commonsense, each broken down into fine-grained capabilities, using a combination of state-of-the-art VLMs, LLMs, and specialized detectors.\n- An extensive human preference annotation study validates the alignment of VBench-2.0's automated evaluation with human judgment.\n- The evaluation of four recent SOTA models (Kling 1.6, Sora-480p, HunyuanVideo, and CogVideoX-1.5) reveals emerging capabilities in some areas but also significant limitations in generating complex plots, handling dynamic object changes, and maintaining commonsense reasoning.\n- VBench-2.0 complements existing benchmarks like VBench by focusing on intrinsic faithfulness and aims to guide the development of more realistic and sophisticated video generation models.",
+        "classification": [
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Vchitect/VBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "LeX-Art: Rethinking Text Generation via Scalable High-Quality Data\n  Synthesis",
+        "authors": "Dakerqi, afdsafas, Xxxy13, QJerry, stzhao",
+        "link": "https://arxiv.org/abs/2503.21749",
+        "github_repo": null,
+        "summary": "- LeX-Art is a comprehensive suite for high-quality text-image synthesis that bridges the gap between prompt expressiveness and text rendering fidelity by following a data-centric paradigm.\n- A 10K high-resolution, aesthetically refined 1024x1024 text-image dataset, LeX-10K, is constructed, along with robust prompt enrichment model LeX-Enhancer and two text-to-image models, LeX-FLUX and LeX-Lumina.\n-  LeX-Bench, a new benchmark that assesses the fidelity, aesthetics, and alignment of generated text images, and Pairwise Normalized Edit Distance (PNED), a new metric robust text accuracy evaluation are proposed.\n- LeX-Lumina demonstrates significant improvement with a 79.81% PNED gain on CreateBench.\n- LeX-FLUX shows improved performance over baselines in color (+3.18%), positional (+4.45%), and font accuracy (+3.81%).",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://zhaoshitian.github.io/lexart/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Large Language Model Agent: A Survey on Methodology, Applications and\n  Challenges",
+        "authors": "qqlong, joeyleo, evan-gyy, yszhao, luojunyu",
+        "link": "https://arxiv.org/abs/2503.21460",
+        "github_repo": "https://github.com/luo-junyu/Awesome-Agent-Papers",
+        "summary": "- This survey paper systematically deconstructs Large Language Model (LLM) agent systems, providing a methodology-centered taxonomy that connects architectural foundations, collaboration mechanisms, and evolutionary pathways.\n- The paper examines how LLM agents are constructed (profile definition, memory, planning, action execution), how they collaborate (centralized, decentralized, hybrid), and how they evolve (self-learning, co-evolution, external resources).\n- It also addresses evaluation methods, available tools, real-world challenges (security, privacy, social impact), and diverse applications of LLM agents.\n- By offering a unified architectural perspective and surveying recent developments, this work provides a structured framework for understanding LLM agents and identifies promising future research directions.\n- The authors make their collection of LLM agent papers available on GitHub.",
+        "classification": [
+            "Natural Language Processing",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/luo-junyu/Awesome-Agent-Papers"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Lumina-Image 2.0: A Unified and Efficient Image Generative Framework",
+        "authors": "luyiting, Paper99, RuoyiDu, JackyZhuo, Dakerqi",
+        "link": "https://arxiv.org/abs/2503.21758",
+        "github_repo": "https://github.com/Alpha-VLLM/Lumina-Image-2.0",
+        "summary": "- Lumina-Image 2.0 is a unified and efficient text-to-image generation framework built upon a unified architecture (Unified Next-DiT) that processes text and image tokens jointly, enabling natural cross-modal interactions.\n- It introduces a unified captioning system, UniCap, to generate high-quality, multi-granularity, multi-lingual, and multi-perspective captions, which are then used to train the Unified Next-DiT model.\n- The framework incorporates multi-stage progressive training, hierarchical high-quality data, multi-domain system prompts, and an auxiliary loss for efficient training.\n- For efficient inference, it leverages advanced sampling techniques like CFG-Renormalization and CFG-Truncation, Flow-DPM-Solver, and TeaCache.\n- Lumina-Image 2.0 demonstrates significant improvements over previous models, Lumina-Next, on benchmarks including DPG, GenEval, and T2I-CompBench, as well as online text-to-image arenas evaluated by humans.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Alpha-VLLM/Lumina-Image-2.0"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "ReaRAG: Knowledge-guided Reasoning Enhances Factuality of Large\n  Reasoning Models with Iterative Retrieval Augmented Generation",
+        "authors": "chenyn66, liuweichuan, NeoZ123, caoshulin, ZhiCheng0326",
+        "link": "https://arxiv.org/abs/2503.21729",
+        "github_repo": null,
+        "summary": "- ReaRAG, a factuality-enhanced reasoning model for Retrieval-Augmented Generation (RAG), iteratively constructs knowledge-guided reasoning chains to improve LRM factuality.\n- The model selects actions from a predefined action space (Search and Finish) based on deliberate thinking generated by an LRM. If Search is selected, a query is executed, and the result guides subsequent reasoning. This process repeats until Finish is chosen.\n- ReaRAG outperforms other baselines on multi-hop question answering, demonstrating improvements of 14.5%, 6.5%, and 2.25% ACCL on MuSiQue, HotpotQA, and IIRC, respectively.\n- The proposed method enhances the factuality of LRMs by effectively integrating robust reasoning with external knowledge sources. \n- ReaRAG showcases a strong reflective ability by recognizing errors and refining reasoning trajectories through external knowledge and deliberate thinking.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Embodied-Reasoner: Synergizing Visual Search, Reasoning, and Action for\n  Embodied Interactive Tasks",
+        "authors": "Guiyang1001, tricktreat, yijiang, Gangao, zwq2018",
+        "link": "https://arxiv.org/abs/2503.21696",
+        "github_repo": "https://github.com/zwq2018/embodied_reasoner",
+        "summary": "- This paper introduces Embodied-Reasoner, a novel model for embodied interactive tasks that combines visual search, reasoning, and action. \n- It extends deep-thinking capabilities to embodied scenarios by generating diverse thinking processes such as analysis, planning, and reflection. \n-  Embodied-Reasoner is trained with a three-stage pipeline: imitation learning, rejection sampling tuning for exploration, and reflection tuning for self-correction. \n- Evaluated on AI2-THOR simulator tasks including Search, Manipulation, Transportation, and Composite, it significantly outperforms state-of-the-art VLMs and visual reasoning models, exceeding OpenAI models and Claude by a large margin (+9% to +24%).\n- Notably, Embodied-Reasoner demonstrates superior performance on complex, long-horizon tasks and exhibits more consistent reasoning and fewer repeated searches. ",
+        "classification": [
+            "Robotics",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zwq2018/embodied_reasoner"
+        ],
+        "huggingface_urls": [
+            "https://embodied-reasoner.github.io/"
+        ],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "ResearchBench: Benchmarking LLMs in Scientific Discovery via\n  Inspiration-Based Task Decomposition",
+        "authors": "yuqiangli, bgao22182, jinjieni, ZonglinY, yujieliu",
+        "link": "https://arxiv.org/abs/2503.21248",
+        "github_repo": null,
+        "summary": "- Introduced ResearchBench, the first large-scale benchmark for evaluating LLMs in scientific discovery, focusing on inspiration retrieval, hypothesis composition, and hypothesis ranking.\n- Developed an automated framework to extract research questions, background surveys, inspirations, and hypotheses from scientific papers across 12 disciplines, ensuring benchmark scalability and preventing data contamination.\n- Evaluated popular LLMs on the benchmark and found that they perform surprisingly well in retrieving inspirations, an out-of-distribution task, suggesting their ability to uncover novel knowledge associations.\n- Showed LLMs also possess moderate capabilities in hypothesis composition and ranking, with performance improving with model scale and advanced training strategies, indicating potential for growth.\n- Identified inspiration retrieval as a key bottleneck and posit LLMs as \"research hypothesis mines,\" capable of automating scientific discovery by generating and ranking hypotheses with minimal human intervention, pending further development to address current limitations.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Optimal Stepsize for Diffusion Sampling",
+        "authors": "Han Hu, Jianning Pei, cientgu",
+        "link": "https://arxiv.org/abs/2503.21774",
+        "github_repo": "https://github.com/bebebe666/OptimalSteps",
+        "summary": "- This paper proposes Optimal Stepsize Distillation, a dynamic programming framework to determine optimal stepsize schedules for diffusion models, addressing the computational bottleneck of sub-optimal step discretization during sampling.\n- By viewing the stepsize search as a knowledge distillation problem from a many-step \"teacher\" to a few-step \"student\", the framework leverages recursive substructure to find globally optimal schedules, maximizing the student's proximity to the teacher's continuous trajectory.\n- The distilled stepsizes demonstrate robustness to architecture, ODE solvers, and noise schedules, achieving up to 10x acceleration in text-to-image generation and text-to-video generation, while preserving 99.4% of teacher performance on GenEval.\n- It introduces per-step amplitude calibration to address systematic amplitude deviation in few-step sampling.\n- The method offers a plug-and-play integration capability with existing solvers and direction optimization techniques through velocity prediction unification using Flow Matching.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/bebebe666/OptimalSteps"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Exploring the Evolution of Physics Cognition in Video Generation: A\n  Survey",
+        "authors": "huangsiteng, wangcunxiang, huangsiteng, yishanwang, minnielin",
+        "link": "https://arxiv.org/abs/2503.21765",
+        "github_repo": "https://github.com/minnie-lin/Awesome-Physics-Cognition-based-Video-Generation",
+        "summary": "- This survey paper explores the integration of physics cognition into video generation models, aiming to enhance the physical realism and controllability of generated videos.\n- It proposes a three-tier taxonomy for categorizing physical cognition in video generation: 1) Basic schema perception, 2) Passive cognition of physical knowledge, and 3) Active cognition for world simulation.\n- The survey reviews state-of-the-art methods within each category, covering techniques like motion-guided generation, physics-inspired regularization, physics simulation-based generation, and world models.\n- It also discusses current benchmarks and evaluation metrics used to assess the physical plausibility of generated video content.\n- Finally, the survey identifies key challenges and potential future research directions, such as developing large physics foundation models and improving the efficiency of physical simulations.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/minnie-lin/Awesome-Physics-Cognition-based-Video-Generation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "ChatAnyone: Stylized Real-time Portrait Video Generation with\n  Hierarchical Motion Diffusion Model",
+        "authors": "Peng Zhang, Chaonan Ji, Jinwei Qi, Liefeng, shengxu97",
+        "link": "https://arxiv.org/abs/2503.21144",
+        "github_repo": null,
+        "summary": "- ChatAnyone is a novel framework for stylized real-time portrait video generation from a single image and audio, utilizing a two-stage approach.\n- The first stage employs a hierarchical motion diffusion model that generates facial and upper-body motion representations from audio input, incorporating style control and transfer through AdaLN and reference motion sequences.\n- The second stage uses a hybrid control fusion generative model, combining explicit and implicit motion representations to warp appearance features and generate portrait video frames, enhanced by a facial refinement module for added realism.\n- Explicit hand control signals derived from a MANO template are injected into the generator to improve hand gesture quality.\n- Experimental results demonstrate state-of-the-art performance in upper-body video generation and talking-head animation with high fidelity and expressiveness at 30fps on a 4090 GPU.",
+        "classification": [
+            "Text-to-Video",
+            "Audio-to-Audio",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "ZJUKLAB at SemEval-2025 Task 4: Unlearning via Model Merging",
+        "authors": "Ziyan Jiang, Yi Zhong, Yanqiu Zhao, Saberlve, HaomingXu",
+        "link": "https://arxiv.org/abs/2503.21088",
+        "github_repo": "https://github.com/zjunlp/unlearn/tree/main/semeval25",
+        "summary": "- This paper introduces a novel unlearning system leveraging Model Merging, specifically TIES-Merging, for SemEval-2025 Task 4: Unlearning Sensitive Content from Large Language Models.\n- The system merges two specialized models, one over-forgetting and one under-forgetting, to achieve a balanced unlearned model.\n- The ZJUKLAB team achieved second place in the competition, with their 7B model achieving a Task Aggregate Score of 0.944 and an Aggregate Score of 0.487.\n- Local experiments demonstrate the effectiveness of the merging technique, achieving near-perfect MIA scores (0.501) and high Task Aggregate scores (0.939) while maintaining comparable MMLU scores.\n- Analyses of performance trajectories, loss dynamics, and parameter changes provide insights into the effectiveness of the model merging strategy.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/unlearn/tree/main/semeval25"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "FinAudio: A Benchmark for Audio Large Language Models in Financial\n  Applications",
+        "authors": "Yueru1, Shashidhar, ShirleyY, Acatsama, YupengCao",
+        "link": "https://arxiv.org/abs/2503.20990",
+        "github_repo": null,
+        "summary": "- FINAUDIO, a benchmark designed to evaluate Audio Large Language Models (AudioLLMs) in the financial domain, is introduced, focusing on tasks relevant to financial analysis and investment decisions.\n- The benchmark includes three tasks: Automatic Speech Recognition (ASR) for short financial audio clips, ASR for long financial audio recordings, and summarization of long financial audio, using five datasets, including a newly created dataset for financial summarization.\n- Seven prominent AudioLLMs were evaluated on FINAUDIO, revealing performance variations based on audio length and task type, with open-source models like Whisper-v3 demonstrating strong performance in ASR.\n- The evaluation highlighted the limitations of current AudioLLMs in handling long financial audio and their sensitivity to prompt variations, suggesting areas for future research and development in instruction tuning and domain-specific knowledge.\n- The study emphasizes the need for more robust AudioLLMs in finance and the potential for using open-source models for financial applications.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Summarization",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Feature4X: Bridging Any Monocular Video to 4D Agentic AI with Versatile\n  Gaussian Feature Fields",
+        "authors": "Hui Ren, Fanzhiwen, ir1d, ShuwangZhang00, shijiezhou",
+        "link": "https://arxiv.org/abs/2503.20776",
+        "github_repo": null,
+        "summary": "- Feature4X introduces a novel framework to lift 2D vision foundation models into dynamic 4D feature fields using Gaussian Splatting, enabling interaction with monocular videos.\n- It employs a compact representation by attaching base features to Motion Scaffold nodes and interpolating per-Gaussian features, reducing computational costs and ensuring smooth features.\n- The unified feature field supports diverse vision tasks like segmentation, editing, and VQA across 2D, 3D, and 4D, integrating seamlessly with LLMs for high-level language or direct user interaction.\n- Experiments showcase novel view segment anything, geometric and appearance editing, and free-form VQA across all timesteps, empowered by LLMs in feedback loops.\n- Feature4X provides a foundation for scalable and contextually aware systems for immersive dynamic 4D scene interaction, achieving high performance with less memory usage.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://feature4x.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Synthetic Video Enhances Physical Fidelity in Video Synthesis",
+        "authors": "Ziyan Yang, Ziyu Wang, Qi Zhao, fengcheng1, Univstar",
+        "link": "https://arxiv.org/abs/2503.20822",
+        "github_repo": null,
+        "summary": "- This paper introduces a method to enhance the physical fidelity of text-to-video generation models using synthetic data generated via computer graphics (CGI) pipelines like Blender and Unreal Engine.\n- The approach involves curating synthetic videos, crafting specialized captions, and a novel training strategy called SimDrop, which uses a reference model trained on synthetic data to guide a generation model trained on a mix of real and synthetic data.\n- Experiments on challenging tasks like large human motion generation, wide-angle camera rotation, and video layer decomposition show that the method significantly improves physical realism, reducing artifacts like limb collapse and distortions.\n- Evaluation metrics include human pose estimation confidence, 3D reconstruction error, and human evaluation, all showing improvements over baseline and state-of-the-art commercial models. \n- While the generated videos demonstrate improved physical consistency, the authors acknowledge that the model still lacks a deep understanding of physics, leaving room for future work.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "Unified Multimodal Discrete Diffusion",
+        "authors": "Katerina Fragkiadaki, Deepak765, Sid1275, mihirpd, aswerdlow",
+        "link": "https://arxiv.org/abs/2503.20853",
+        "github_repo": null,
+        "summary": "- UniDisc, a unified multimodal discrete diffusion model, jointly processes and generates text and images using a shared vocabulary and full self-attention transformer.\n- UniDisc outperforms autoregressive (AR) models in FID and CLIP scores for conditional generation, exhibits strong joint image-text inpainting abilities, and offers better inference efficiency and controllability.\n- It uses discrete noise (random masking) and learns to map masked tokens into multimodal tokens during inference, offering advantages over continuous diffusion for discrete data.\n- UniDisc demonstrates enhanced controllability, editability, inpainting, and a flexible trade-off between inference time and generation quality.\n- A scaled-up 1.4B parameter UniDisc model trained on web-scale image-text data showcases further advancements in capabilities.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://unidisc.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "LOCATEdit: Graph Laplacian Optimized Cross Attention for Localized\n  Text-Guided Image Editing",
+        "authors": "Sirisha Rambhatla, Meet Soni, Achint Soni",
+        "link": "https://arxiv.org/abs/2503.21541",
+        "github_repo": "https://github.com/LOCATEdit/LOCATEdit/",
+        "summary": "- LOCATEdit, a novel text-guided image editing technique, refines cross-attention maps using graph Laplacian regularization for spatially consistent and localized modifications.\n- It leverages a dual-branch editing paradigm, injecting source branch cross-attention maps into the target branch while incorporating an IP-Adapter for enhanced semantic guidance and a selective pruning operator for noise suppression in text embeddings.\n- The method constructs a CASA (Cross and Self-Attention) graph, where nodes represent image patches and edges capture patch relationships from self-attention, ensuring smooth transitions and preventing over-editing.\n- Evaluated on the PIE-Bench dataset, LOCATEdit demonstrates superior spatial consistency and semantic alignment compared to state-of-the-art methods, preserving structural integrity and background fidelity while achieving precise, localized edits.\n- Experimental results show improvements across multiple metrics, including structure consistency, background preservation (PSNR, LPIPS, MSE, SSIM), and target prompt-image alignment (CLIP similarity).",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/LOCATEdit/LOCATEdit/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-28"
+    },
+    {
+        "title": "LLPut: Investigating Large Language Models for Bug Report-Based Input\n  Generation",
+        "authors": "Tarannum Shaila Zaman, imranraad, Subarna10, alifalhasan",
+        "link": "https://arxiv.org/abs/2503.20578",
+        "github_repo": null,
+        "summary": "- This paper introduces LLPut, a technique to evaluate Large Language Models (LLMs) for extracting failure-inducing inputs from bug reports, which are essential for reproducing and diagnosing software bugs.\n- The study evaluates three open-source LLMs: LLaMA, Qwen, and Qwen-Coder, on a dataset of 206 annotated bug reports from the Linux coreutils project.\n- Using a one-shot prompting approach and the BLEU score as an evaluation metric, the study shows that generative LLMs outperform BERT-based NLP model in extracting inputs.\n- Qwen achieves the highest performance, with 62.62% of generated outputs achieving a BLEU-2 score of 0.5 or greater, demonstrating the potential of LLMs for automating input extraction.\n- The authors also discuss the observed error categories, such as variation in wording, failed extractions, and annotation subjectivity, highlighting potential areas for future research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/imranraad/LLPut"
+        ],
+        "huggingface_urls": [
+            "https://zenodo.org/record/15092886"
+        ],
+        "date": "2025-03-28"
     }
 ]

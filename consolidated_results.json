@@ -28813,5 +28813,320 @@
             "https://zenodo.org/record/15092886"
         ],
         "date": "2025-03-28"
+    },
+    {
+        "title": "AdaptiVocab: Enhancing LLM Efficiency in Focused Domains through\n  Lightweight Vocabulary Adaptation",
+        "authors": "Roi Reichart, ehoffer, eyalbd, nitay, itaynakash",
+        "link": "https://arxiv.org/abs/2503.19693",
+        "github_repo": null,
+        "summary": "- AdaptiVocab, a novel end-to-end approach, adapts LLM vocabularies to enhance efficiency in domain-specific, low-resource settings by replacing general tokens with domain-specific n-grams.\n- It involves a vocabulary modification algorithm, a tokenization patching algorithm, an embedding initialization technique using exponential weighting, and a lightweight fine-tuning strategy focusing on the embedding and outer layers.\n- AdaptiVocab reduced token usage by over 25% in two 7B LLMs across three niche domains without compromising performance on automatic generation quality metrics or human evaluations.\n- Lightweight fine-tuning proved crucial, boosting domain-specific question-answering performance even for off-the-shelf LLMs, whereas other fine-tuning techniques like LoRA underperformed.\n- The method is tokenizer and architecture agnostic, making it widely applicable with minimal adaptation overhead.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "github.com/itay-nakash/AdaptiVocab"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Exploring Data Scaling Trends and Effects in Reinforcement Learning from\n  Human Feedback",
+        "authors": "amusingchao, qingping95, zhengwu07, glnbyte, Swtheking",
+        "link": "https://arxiv.org/abs/2503.22230",
+        "github_repo": null,
+        "summary": "- This paper explores data scaling in Reinforcement Learning from Human Feedback (RLHF) for Large Language Models (LLMs), identifying reward hacking and decreasing response diversity as key bottlenecks.\n- It introduces a hybrid reward system combining Reasoning Task Verifiers (RTV) and a Generative Reward Model (GenRM) to mitigate reward hacking, and a prompt selection method (Pre-PPO) to improve response diversity.\n- Prioritizing mathematical and coding tasks in early RLHF training is found to boost performance due to their inherent fine-grained distinctions and clear ground truths.\n- Experiments across two model sizes show that RTV exhibits the strongest resistance to reward hacking, and Pre-PPO enhances model performance and generalization, especially on challenging tasks.\n- The work highlights the importance of careful data construction and provides practical methods for overcoming critical performance barriers in RLHF, demonstrating improved effectiveness and scalability.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Think Before Recommend: Unleashing the Latent Reasoning Power for\n  Sequential Recommendation",
+        "authors": "Xu Chen, Jun Xu, TengShi, KID-22, TangJiakai5704",
+        "link": "https://arxiv.org/abs/2503.22675",
+        "github_repo": null,
+        "summary": "- ReaRec, a novel reasoning-enhanced sequential recommendation framework, is proposed to improve user representation learning by incorporating multi-step implicit reasoning during inference.\n- ReaRec leverages reasoning chains before making final predictions, enabling increased computational depth for better capturing evolving user preference and long-tail item understanding.\n- Two learning strategies, Ensemble Reasoning Learning (ERL) and Progressive Reasoning Learning (PRL), are introduced to address optimization challenges and mitigate reasoning degradation in ReaRec.\n- ERL uses ensemble learning to aggregate diverse reasoning results, while PRL employs progressive temperature annealing and contrastive learning for refined reasoning.\n- ReaRec consistently outperforms existing ID-based and text-based sequential recommendation models, enhancing performance by up to 50% on five real-world datasets via optimal reasoning step selection.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Summarization",
+            "Feature Extraction",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/TangJiakai/ReaRec"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "A Survey of Efficient Reasoning for Large Reasoning Models: Language,\n  Multimodality, and Beyond",
+        "authors": "Elliott, weigao266, Warrieryes, yaful, Xiaoye08",
+        "link": "https://arxiv.org/abs/2503.21614",
+        "github_repo": null,
+        "summary": "- This paper surveys recent efforts to improve the reasoning efficiency of Large Reasoning Models (LRMs), focusing on reducing the tendency of these models to produce excessively long and often redundant reasoning traces.\n- The authors categorize common patterns of inefficiency, such as redundant content, overthinking simple questions, and incoherent reasoning, and discuss the challenges unique to optimizing reasoning efficiency in LRMs, including quantifying reasoning utility, controlling thinking length, architectural limitations, and cross-task generalization.\n- The survey organizes methods for improving reasoning efficiency across the LRM lifecycle, covering pretraining techniques like latent space pretraining and subquadratic attention, supervised fine-tuning strategies like reasoning chain compression and latent-space SFT, reinforcement learning methods with and without length rewards, and inference-time techniques like length budgeting, system switching, model switching, and parallel search.\n-  The paper further explores potential future research directions, including efficient multimodal and video reasoning, efficient test-time scaling and infinity thinking, efficient and trustworthy reasoning, and building efficient reasoning applications.\n- The authors aim to provide a comprehensive overview of the current state and future trends in efficient reasoning for LRMs, serving as a valuable resource for researchers in this rapidly evolving field.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "ORIGEN: Zero-Shot 3D Orientation Grounding in Text-to-Image Generation",
+        "authors": "Jihyun Lee, Minhyuk, 32V, daehyeonchoi, myhong",
+        "link": "https://arxiv.org/abs/2503.22194",
+        "github_repo": null,
+        "summary": "- ORIGEN is a zero-shot, reward-guided sampling method for 3D orientation grounding in text-to-image generation, enabling control over the 3D orientation of multiple objects within generated images.\n- The method leverages a pre-trained one-step text-to-image generative flow model and a reward function based on OrientAnything, a 3D orientation estimation model.\n- A novel sampling approach based on Langevin dynamics improves exploration of the latent space, balancing reward maximization with adherence to the prior latent distribution and avoiding local optima.\n- Reward-adaptive time rescaling further accelerates convergence by adjusting step sizes based on reward values.\n- Experiments on MS-COCO benchmarks and user studies demonstrate that ORIGEN outperforms existing orientation-conditioned and text-to-image generation models in 3D orientation grounding while maintaining image quality and text alignment.",
+        "classification": [
+            "Text-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Free4D: Tuning-free 4D Scene Generation with Spatial-Temporal\n  Consistency",
+        "authors": "skhu101, GuangcongWang, FrozenBurning, Inso, tqliu",
+        "link": "https://arxiv.org/abs/2503.20785",
+        "github_repo": "https://github.com/TQTQliu/Free4D",
+        "summary": "- Free4D is a novel tuning-free framework for generating 4D scenes from single images or text prompts, focusing on spatial-temporal consistency. \n- It initializes a 4D geometric structure from an input image animated into a short video using an image-to-video generator and dynamic reconstruction. \n- A point-conditioned diffusion model then produces a multi-view video guided by this structure, incorporating Adaptive Classifier-Free Guidance, Point Cloud Guided Denoising, and Reference Latent Replacement for enhanced spatial-temporal consistency.\n- Finally, a modulation-based refinement optimizes a consistent 4D representation from the multi-view video, enabling real-time and controllable rendering. \n- Experimental results on VBench and a user study show Free4D outperforms state-of-the-art methods in generating high-quality, coherent 4D scenes without training.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/TQTQliu/Free4D"
+        ],
+        "huggingface_urls": [
+            "https://free4d.github.io/"
+        ],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Perceptually Accurate 3D Talking Head Generation: New Definitions,\n  Speech-Mesh Representation, and Evaluation Metrics",
+        "authors": "taehyunoh, akasha9890, backryun, Han-EunGi, Chae-Yeon",
+        "link": "https://arxiv.org/abs/2503.20308",
+        "github_repo": null,
+        "summary": "- This paper introduces a new approach for generating perceptually accurate 3D talking heads from speech, focusing on lip synchronization.\n- The authors define three key criteria for perceptual accuracy: Temporal Synchronization, Lip Readability, and Expressiveness, and propose corresponding evaluation metrics.\n- A novel two-stage training method is employed to learn a speech-mesh synchronized representation, using a transformer-based architecture that maps speech and 3D face mesh inputs to a shared representation space.\n- This representation is then used as a perceptual loss to improve the quality of lip movements generated by existing 3D talking head models.\n- Experiments demonstrate significant improvements in all three aspects of lip synchronization across various metrics and human evaluations.",
+        "classification": [
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://perceptual-3d-talking-head.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "PHYSICS: Benchmarking Foundation Models on University-Level Physics\n  Problem Solving",
+        "authors": "armanc, jsous, henryL7, yilunzhao, Carrie777",
+        "link": "https://arxiv.org/abs/2503.21821",
+        "github_repo": null,
+        "summary": "- PHYSICS, a benchmark dataset comprising 1,297 university-level physics problems across six core domains (classical mechanics, quantum mechanics, thermodynamics and statistical mechanics, electromagnetism, atomic physics, and optics), is introduced to assess the problem-solving skills of foundation models.\n- A robust automated evaluation system using SymPy and GPT-40 is implemented to standardize mathematical expressions, verify numerical content, and ensure the logical correctness of solutions.\n- Evaluation across 33 foundation models reveals that even the best-performing model (o3-mini) achieves only 59.9% accuracy, highlighting the significant challenges physics problem-solving presents for current models.\n- Key areas for improvement are identified through comprehensive error analysis and diverse prompting strategies, and retrieval-augmented generation (RAG) is shown to improve performance across top models.\n- The benchmark and analysis provide guidance for developing more advanced AI models capable of handling complex reasoning tasks in scientific domains.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/Physics"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Segment Any Motion in Videos",
+        "authors": "Nan Huang, qianqian68, akanazawa, kurtkeutzer, chenfengx",
+        "link": "https://arxiv.org/abs/2503.22268",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach for Moving Object Segmentation (MOS) that combines long-range trajectory motion cues with DINO-based semantic features, leveraging SAM2 for pixel-level mask densification through an iterative prompting strategy.\n- The model incorporates two specialized modules: Spatio-Temporal Trajectory Attention, to capture relationships between and within trajectories, and Motion-Semantic Decoupled Embedding, to prioritize motion patterns while using semantic features as secondary support.\n- The method is trained on a combination of synthetic and real-world datasets and demonstrates state-of-the-art performance on benchmarks such as DAVIS17-Moving, DAVIS16-Moving, FBMS-59, and SegTrackv2.\n- It excels in challenging scenarios involving complex deformations, rapid or transient movements, and drastic camera motions.\n- The approach is particularly effective in fine-grained segmentation of multiple objects, outperforming baseline methods by a significant margin in per-object mask generation.",
+        "classification": [
+            "Video Classification",
+            "Image Segmentation",
+            "Mask Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Hi3DGen: High-fidelity 3D Geometry Generation from Images via Normal\n  Bridging",
+        "authors": "Xiaoyang Guo, Jiahao Chang, Yushuang Wu, Chongjie Ye, LUZITENG",
+        "link": "https://arxiv.org/abs/2503.22236",
+        "github_repo": null,
+        "summary": "- Hi3DGen, a novel framework, generates high-fidelity 3D models from 2D images using normal maps as an intermediate representation, bridging the gap between the two domains and enhancing geometric detail.\n- The framework comprises three components: (1) NiRNE, an image-to-normal estimator using a noise-injected regressive network with dual-stream training for sharp and stable normal estimation; (2) NoRLD, a normal-to-geometry learning approach employing normal-regularized latent diffusion to improve generation fidelity; and (3) DetailVerse, a synthesized dataset of high-quality 3D assets to support training.\n- Evaluations demonstrate Hi3DGen's superiority over state-of-the-art methods in generating rich geometric details, as evidenced by quantitative metrics (lower normal angle error) and qualitative comparisons.\n- User studies further confirm Hi3DGen's superior generation quality, preferred by both amateur and professional 3D users over existing leading methods.\n- Ablation studies validate the effectiveness of each component, highlighting the importance of normal bridging, the DetailVerse dataset, and the specific architecture of NiRNE.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "OThink-MR1: Stimulating multimodal generalized reasoning capabilities\n  via dynamic reinforcement learning",
+        "authors": "Changwang Zhang, Feng Liu, Yuting Zhang, Zhiyuan Liu, jwanglux",
+        "link": "https://arxiv.org/abs/2503.16081",
+        "github_repo": null,
+        "summary": "- This paper introduces OThink-MR1, a Multimodal Large Language Model (MLLM) enhanced with a dynamic reinforcement learning approach called Group Relative Policy Optimization with Dynamic KL divergence (GRPO-D) for improved generalized reasoning across diverse multimodal tasks.\n- GRPO-D addresses limitations of standard reinforcement learning and supervised fine-tuning by dynamically balancing exploration and exploitation during training, leading to better performance in both same-task and cross-task evaluations.\n- Experiments on visual counting and geometry reasoning tasks demonstrate that OThink-MR1 with GRPO-D achieves relative improvements exceeding 5.72% over supervised fine-tuning and 13.59% over standard GRPO in same-task settings, and over 61.63% improvement in cross-task generalization.\n- The proposed dynamic KL divergence strategy in GRPO-D enhances the model's ability to transfer knowledge effectively across different multimodal tasks by balancing exploration and exploitation, showing stronger generalized reasoning capabilities compared to traditional methods.\n- The paper also highlights the effectiveness of GRPO-D with smaller models like Qwen2-VL-2B-Instruct, where strategic exploration-exploitation balance compensates for limited model capacity and outperforms larger models trained with less efficient post-training methods.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/leonardPKU/GEOQA_R1V_Train_8K",
+            "https://huggingface.co/datasets/leonardPKU/clevr_cogen_a_train",
+            "https://huggingface.co/datasets/leonardPKU/superclevr/tree/main"
+        ],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Your ViT is Secretly an Image Segmentation Model",
+        "authors": "Giuseppe Averta, Narges Norouzi, Alexander Hermans, Niccol\u00f2 Cavagnero, Tommie Kerssies",
+        "link": "https://arxiv.org/abs/2503.19108",
+        "github_repo": null,
+        "summary": "- This paper introduces the Encoder-only Mask Transformer (EoMT), a simplified and efficient model for image segmentation that repurposes the standard Vision Transformer (ViT) architecture.\n- EoMT removes the need for task-specific components like adapters, pixel decoders, and Transformer decoders, which are commonly used in existing ViT-based segmentation models. \n- With large-scale pre-training, EoMT achieves comparable accuracy to state-of-the-art models while being significantly faster, e.g., up to 4x faster with a ViT-L backbone. \n- This efficiency improvement is attributed to EoMT\u2019s ability to leverage the highly optimized architecture of the ViT and a proposed mask annealing strategy, which eliminates the need for masked attention during inference. \n- This work also shows that scaling model size and pre-training are important factors in increasing performance.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "4D-Bench: Benchmarking Multi-modal Large Language Models for 4D Object\n  Understanding",
+        "authors": "mhelhoseiny, ajhamdi, TonNew, bing-li-ai, vxuanz",
+        "link": "https://arxiv.org/abs/2503.17827",
+        "github_repo": null,
+        "summary": "- This paper introduces 4D-Bench, the first benchmark designed to evaluate the capabilities of Multimodal Large Language Models (MLLMs) in understanding 4D objects (3D objects with temporal evolution).\n- The benchmark features two tasks: 4D object question answering (with five subtasks related to different understanding dimensions) and 4D object captioning, both requiring the model to analyze multi-view videos of dynamic 3D objects.\n- The authors evaluate several open-source and closed-source MLLMs on 4D-Bench and find that even state-of-the-art MLLMs like GPT-4 perform significantly worse than humans, especially in object counting, action recognition and temporal reasoning.\n- Experimental results from 4D object caption generation reveal that current MLLMs are better at understanding object appearance than motion.\n- The benchmark and the experimental findings highlight a significant performance gap in 4D object understanding and offer valuable insights for improving future MLLMs in this critical direction.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/KAUST-AILab/4D-Bench"
+        ],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "A Refined Analysis of Massive Activations in LLMs",
+        "authors": "Fabian G\u00fcra, akanyaani, nilabhra, louisowen6",
+        "link": "https://arxiv.org/abs/2503.22329",
+        "github_repo": "https://github.com/bluorion-com/refine_massive_activations",
+        "summary": "- This paper analyzes \"massive activations\" in LLMs, finding that suppressing them isn't always detrimental to performance and that mitigation strategies like Attention KV bias are model-specific.\n- The study investigates novel hybrid mitigation strategies, pairing Target Variance Rescaling (TVR) with Attention KV bias or Dynamic Tanh (DyT), which successfully balances mitigation with preserved downstream performance.\n- The analysis challenges prior assumptions about the detrimental nature of massive activations and proposes architecture-agnostic strategies for managing them.\n- The study uses perplexity and downstream task performance, including commonsense reasoning, question answering, and multi-step reasoning, on datasets like WikiText, C4, PG-19, HellaSwag, PIQA, SIQA, WinoGrande, TriviaQA, and ARC, with a wide range of LLMs like GPT-2, Falcon, OPT, LLaMA, Gemma, OLMo, Phi, and Mistral.\n- For LLaMA-1B, TVR and hybrid strategies improve downstream task accuracy by up to 2.2% compared to the baseline and outperform single mitigation strategies like KV Bias and DyT.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/bluorion-com/refine_massive_activations"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "SparseFlex: High-Resolution and Arbitrary-Topology 3D Shape Modeling",
+        "authors": "Lp256, pookiefoof, bennyguo, zouzx, XianglongHe",
+        "link": "https://arxiv.org/abs/2503.21732",
+        "github_repo": null,
+        "summary": "- Introduces SparseFlex, a sparse-structured isosurface representation enabling high-resolution, differentiable 3D mesh reconstruction and generation from point clouds using rendering supervision, effectively handling open surfaces and complex interiors.\n- Presents frustum-aware sectional voxel training, which significantly reduces memory consumption by activating only relevant voxels, further enabling the reconstruction of mesh interiors using rendering losses alone.\n- Develops a complete shape modeling pipeline by integrating SparseFlex within a Variational Autoencoder (VAE) and a rectified flow transformer for high-quality 3D shape generation, demonstrating state-of-the-art reconstruction quality with an ~82% reduction in Chamfer Distance and an ~88% increase in F-score compared to existing methods.\n- Showcases the generation of high-resolution, detailed 3D shapes with arbitrary topologies from both single images and text prompts, advancing capabilities in 3D shape representation and modeling.\n- Exhibits limitations in handling open surface boundary artifacts at low resolutions, high computational cost for high-resolution generation, and control over interior structure details.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "ReFeed: Multi-dimensional Summarization Refinement with Reflective\n  Reasoning on Feedback",
+        "authors": "jasoncai, hwany-j, Myyhlee, hyang0503, hamzzi",
+        "link": "https://arxiv.org/abs/2503.21332",
+        "github_repo": null,
+        "summary": "- ReFeed is a novel multi-dimensional summarization refinement pipeline that leverages reflective reasoning on feedback to enhance faithfulness, completeness, and conciseness.\n- It addresses challenges like trade-offs between dimensions, ordering bias from feedback presentation, and inaccuracies within feedback itself by using backtracking, simultaneous reasoning, and noise filtering.\n- A new dataset, SumFeed-CoT, is introduced, comprising long chain-of-thought (Long-CoT) reasoning examples on feedback for training ReFeed, along with data shuffling across dimensions for mitigating ordering bias.\n- Experiments demonstrate ReFeed's superior performance compared to sequential and single-dimension baselines, and its comparable performance to a larger teacher model with significantly faster inference.\n- ReFeed also exhibits robustness to varying feedback quality, unlike other pipelines, showcasing its ability to process and validate information effectively.",
+        "classification": [
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "MedAgent-Pro: Towards Multi-modal Evidence-based Medical Diagnosis via\n  Reasoning Agentic Workflow",
+        "authors": "Yueming Jin, Chang Han Low, morson, ZiyueWang",
+        "link": "https://arxiv.org/abs/2503.18968",
+        "github_repo": "https://github.com/jinlab-imvr/MedAgent-Pro",
+        "summary": "- MedAgent-Pro, a novel reasoning agentic workflow for evidence-based multi-modal medical diagnosis, is proposed. \n- The model leverages a hierarchical structure with task-level reasoning for formulating unified diagnostic plans using retrieved clinical criteria and case-level diagnosis utilizing specialized vision models as tools for detailed analysis. \n- Experimental results on glaucoma and heart disease diagnosis datasets demonstrate that MedAgent-Pro surpasses both general Multi-modal Large Language Models (MLLMs) and task-specific solutions, improving mean Average Classification Accuracy (mACC) by up to 32.3% and F1 scores by up to 55.1%.\n- Ablation studies confirm that using multiple indicators and the Mixture of Experts (MOE) decider contributes to better diagnostic performance. \n- The interpretability of the system through visual evidence and clinical guidelines enhances reliability and transparency in medical decision-making.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/jinlab-imvr/MedAgent-Pro"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "X^{2}-Gaussian: 4D Radiative Gaussian Splatting for Continuous-time\n  Tomographic Reconstruction",
+        "authors": "yixuanyuan, XGGNet, Fanzhiwen, CaiYuanhao, vortex778",
+        "link": "https://arxiv.org/abs/2503.21779",
+        "github_repo": null,
+        "summary": "- X\n2-Gaussian is a novel framework for continuous-time 4D computed tomography (CT) reconstruction, eliminating the limitations of traditional phase-binning methods.\n- The model integrates dynamic radiative Gaussian splatting with a self-supervised respiratory motion learning scheme, enabling continuous motion modeling and removing reliance on external gating devices.\n- A spatiotemporal encoder-decoder architecture predicts time-varying Gaussian deformations, while a physiology-driven periodic consistency loss learns patient-specific breathing cycles from projection data.\n- Experimental results demonstrate superior performance with a 9.93 dB PSNR gain over traditional methods and 2.25 dB improvement over prior Gaussian splatting techniques.\n- X\n2-Gaussian allows accurate modeling of dynamic regions like diaphragmatic motion and airway deformation, enhancing the accuracy of motion analysis and treatment planning in radiotherapy.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "On Large Multimodal Models as Open-World Image Classifiers",
+        "authors": "Yiming Wang, Enrico Fini, paolorota, massimilianom, altndrr",
+        "link": "https://arxiv.org/abs/2503.21851",
+        "github_repo": "https://github.com/altndrr/lmms-owc",
+        "summary": "- This paper evaluates the performance of Large Multimodal Models (LMMs) in open-world image classification, where the categories are not predefined.\n- The authors introduce a comprehensive evaluation protocol with four metrics: text inclusion, Llama inclusion, semantic similarity, and concept similarity to analyze different aspects of model predictions.\n- Evaluating 13 LMMs across 10 image classification benchmarks, this study shows that LMMs outperform contrastive methods in open-world settings but lag behind closed-world models.\n- The paper identifies challenges related to granularity and fine-grained classification, providing insights into the types of errors LMMs make.\n- It is shown that these errors can be reduced through tailored prompting and reasoning strategies.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Zero-Shot Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/altndrr/lmms-owc"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
+    },
+    {
+        "title": "Reconstructing Humans with a Biomechanically Accurate Skeleton",
+        "authors": "Qixing Huang, Etienne Vouga, Xiaowei Zhou, geopavlakos, IsshikiHugh",
+        "link": "https://arxiv.org/abs/2503.21751",
+        "github_repo": null,
+        "summary": "- HSMR, a transformer-based model, reconstructs 3D humans from single images using the biomechanically accurate SKEL model, addressing limitations of traditional methods that rely on less accurate anatomical representations.\n- Due to the lack of paired image-SKEL datasets, a pipeline generates pseudo-ground truth SKEL parameters, refined iteratively during training to enhance accuracy and reliability.\n- HSMR matches state-of-the-art methods on standard 2D/3D joint accuracy benchmarks and significantly outperforms them on datasets featuring extreme poses and viewpoints, demonstrating the benefits of a biomechanically sound skeleton for pose regularization.\n- Unlike SMPL-based methods that often predict unnatural joint rotations, HSMR produces biomechanically plausible results by leveraging the realistic degrees of freedom offered by the SKEL model.\n- The approach bridges the gap between computer vision and biomechanics by enabling more realistic 3D human reconstructions applicable to biomechanical analysis and simulation.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision",
+            "Keypoint Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-03-31"
     }
 ]

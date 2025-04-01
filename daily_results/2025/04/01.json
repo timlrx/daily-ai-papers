@@ -1,0 +1,309 @@
+[
+    {
+        "title": "TextCrafter: Accurately Rendering Multiple Texts in Complex Visual\n  Scenes",
+        "authors": "Nikai Du, yingtai, jzzzzk, Chenzzzzzz, zhen-nan",
+        "link": "https://arxiv.org/abs/2503.23461",
+        "github_repo": null,
+        "summary": "- TextCrafter is a novel training-free framework for rendering multiple texts in complex visual scenes, addressing challenges like text distortion, omission, and blurriness common in current text-to-image models.\n- It employs a progressive strategy with three stages: Instance Fusion strengthens the link between visual text and its carrier; Region Insulation separates and denoises text prompts in different regions, leveraging positional priors of a pre-trained DiT model; and Text Focus enhances attention maps of visual text, refining fidelity.\n- A new benchmark dataset, CVTG-2K, is introduced with 2,000 prompts containing complex visual texts, varying in position, quantity, length, and attributes, to rigorously evaluate models on CVTG tasks.\n- Quantitative experiments on CVTG-2K show TextCrafter significantly outperforms state-of-the-art models in OCR accuracy (Word Accuracy and NED) and prompt adherence (CLIPScore), improving OCR accuracy by over 45% compared to the baseline FLUX model.\n- Qualitative results further demonstrate TextCrafter's ability to generate harmonious images with accurate and clear multiple visual texts, even in complex scenarios, while other models struggle with omissions, confusion, and background information loss.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "MoCha: Towards Movie-Grade Talking Character Synthesis",
+        "authors": "Luczzz, daixl1992, FelixXu, haoyum1997, lim142857",
+        "link": "https://arxiv.org/abs/2503.23307",
+        "github_repo": null,
+        "summary": "- MoCha is a novel diffusion transformer (DiT) model for generating talking character animations from speech and text input, focusing on full-body motions and expressions beyond just the face.\n- It introduces a speech-video window attention mechanism for aligning video and speech, a joint training strategy that leverages both speech and text data to improve data efficiency,\n- and supports multi-character conversations by using character tags in prompts.\n- Human evaluations and automatic metrics on MoCha-Bench, a new benchmark tailored for this task, demonstrate MoCha's superior performance over existing methods on lip-sync quality, facial expressions, action naturalness, text alignment, and visual quality.\n- MoCha represents a significant advancement in AI-driven cinematic storytelling, setting a new standard for talking character video generation.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "What, How, Where, and How Well? A Survey on Test-Time Scaling in Large\n  Language Models",
+        "authors": "nancy-zwx, demolei, RubinSun, silentspring2, DonJoey",
+        "link": "https://arxiv.org/abs/2503.24235",
+        "github_repo": null,
+        "summary": "- This paper surveys Test-Time Scaling (TTS), a technique to improve Large Language Model (LLM) performance by allocating additional computation during inference.\n- It introduces a four-dimensional framework for analyzing TTS methods: what to scale (e.g., CoT length, samples), how to scale (e.g., SFT, RL, search), where to scale (tasks and datasets), and how well to scale (evaluation metrics).\n- It systematically reviews existing TTS methods, mapping them to the framework's dimensions and providing hands-on guidelines for practical implementation.\n- The paper identifies key trends, open challenges, and promising research directions in TTS, including improving scalability, clarifying the essence of techniques, and broadening generalization across domains.\n- It highlights the shift towards AI systems that dynamically scale their intelligence at inference, adapting to complex and evolving tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Open-Reasoner-Zero: An Open Source Approach to Scaling Up Reinforcement\n  Learning on the Base Model",
+        "authors": "Xiangyu Zhang, Qi Han, djiang, YinminZhang, reign12",
+        "link": "https://arxiv.org/abs/2503.24290",
+        "github_repo": null,
+        "summary": "- Open-Reasoner-Zero (ORZ) is introduced, an open-source implementation of large-scale reasoning-oriented reinforcement learning (RL) focusing on training directly from a base language model (LLM).\n- ORZ employs a minimalist approach, vanilla PPO with GAE (\u03bb = 1, y = 1), and straightforward rule-based rewards without KL regularization.\n- Using Qwen-32B as the base model, ORZ achieves better performance on benchmarks like AIME2024, MATH500, and GPQA Diamond compared to DeepSeek-R1-Zero while using only a tenth of the training steps.\n- The paper provides a detailed description of the training strategy and shares insights into overcoming common challenges.\n- ORZ's stable scaling highlights the effectiveness of scaling data, model size, and training iterations for performance improvement.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Open-Reasoner-Zero/Open-Reasoner-Zero"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Open-Reasoner-Zero"
+        ],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "RIG: Synergizing Reasoning and Imagination in End-to-End Generalist\n  Policy",
+        "authors": "Haian Huang, Zhonghan Zhao, GaoangWang, pppppM, ZwwWayne",
+        "link": "https://arxiv.org/abs/2503.24388",
+        "github_repo": null,
+        "summary": "- This paper introduces RIG, an end-to-end generalist Transformer-based policy that synergizes reasoning and imagination for embodied agents in open-world environments.\n- RIG integrates textual reasoning, low-level action control, and image generation within a unified sequence-to-sequence model, enabling it to reason about actions, predict their consequences, and review imagined outcomes before execution.\n- Trained with a progressive data collection strategy, RIG achieves state-of-the-art results on embodied tasks, image generation, and reasoning benchmarks, showing significant improvements over existing methods.\n- RIG demonstrates higher sample efficiency, requiring only 111 hours of training data compared to thousands of hours used by other methods, while also achieving 3.29x, 2.42x, and 1.33\u00d7 improvements on embodied tasks, image generation, and reasoning benchmarks respectively.\n- The model also supports test-time scaling, allowing for dynamic lookahead reasoning to improve action robustness and reduce trial-and-error during inference.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Effectively Controlling Reasoning Models through Thinking Intervention",
+        "authors": "Prateek Mittal, Jiachen T. Wang, cxiang, tongwu2020",
+        "link": "https://arxiv.org/abs/2503.24370",
+        "github_repo": null,
+        "summary": "- This paper introduces \"Thinking Intervention,\" a novel method for controlling reasoning-enhanced large language models (LLMs) by strategically inserting or modifying specific thinking tokens within the LLM's reasoning process.\n- This method requires no model training and can be integrated with existing techniques like prompt engineering. \n- The authors demonstrate that Thinking Intervention improves performance across tasks including instruction following, handling instruction hierarchies, and safety alignment. \n- Evaluating on IFEval, SEP, XSTEST, and SORRY-BENCH datasets using DeepSeek R1 and QwQ models, Thinking Intervention shows significant improvements over baseline prompting methods. \n- Results demonstrate gains up to 6.7% in instruction following accuracy, 15.4% for hierarchy tasks and 40% higher refusal rates for unsafe prompts, enhancing LLM control without extra training.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Query and Conquer: Execution-Guided SQL Generation",
+        "authors": "sfc-mwydmuch, Borchmann",
+        "link": "https://arxiv.org/abs/2503.24364",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach called \"execution-guided SQL generation\" for enhancing the accuracy of text-to-SQL tasks.\n- The method leverages execution results to select the most semantically consistent query from multiple generated candidates, enabling smaller, cost-effective models to outperform computationally intensive reasoning methods like OpenAI's o1, o3-mini, and DeepSeek R1.\n- By comparing query outputs based on exact and approximate execution similarity, the proposed approach overcomes limitations of traditional self-consistency methods that rely on structural comparisons, which are ineffective when queries are structurally different yet semantically equivalent.\n- Empirical results on the BIRD-SQL dataset demonstrate significant accuracy improvements across various model sizes, notably matching the performance of larger models with a 30-fold reduction in inference cost.\n- Further enhancements include leveraging partial executability in SQL dialects like PipeSQL to incrementally apply self-consistency during intermediate generation stages, leading to more robust refinement of complex queries.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "TeleAntiFraud-28k: A Audio-Text Slow-Thinking Dataset for Telecom Fraud\n  Detection",
+        "authors": "Kai Wu, Jingpeng Wang, HuangMinhua, WDong, JimmyMa99",
+        "link": "https://arxiv.org/abs/2503.24115",
+        "github_repo": "https://github.com/JimmyMa99/TeleAntiFraud",
+        "summary": "- This paper introduces TeleAntiFraud-28k, the first open-source audio-text slow-thinking dataset for automated telecom fraud analysis, integrating audio signals with reasoning-oriented textual analysis.\n- The dataset was constructed using three strategies: privacy-preserved text-truth sample generation with ASR and TTS, semantic enhancement via LLM-based self-instruction sampling, and multi-agent adversarial synthesis to simulate diverse fraud tactics.\n- TeleAntiFraud-28k contains 28,511 speech-text pairs with detailed annotations for fraud reasoning, divided into tasks for scenario classification, fraud detection, and fraud type classification.\n- A standardized evaluation benchmark, TeleAntiFraud-Bench, and a production-optimized SFT model trained on hybrid real/synthetic data are also provided.\n- Evaluations show that fine-tuning a large audio language model (LALM) like Qwen2Audio with this dataset significantly improves performance on telecom fraud detection tasks, outperforming other models and highlighting the importance of data synthesis, modality fusion, and slow-thinking training.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/JimmyMa99/TeleAntiFraud"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Efficient Inference for Large Reasoning Models: A Survey",
+        "authors": "jiaheng233, Bibaolong, HongyuChen, HongchengGao, yueliu1999",
+        "link": "https://arxiv.org/abs/2503.23077",
+        "github_repo": "https://github.com/yueliu1999/Awesome-Efficient-Inference-for-LRMs",
+        "summary": "- This paper surveys efficient inference methods for Large Reasoning Models (LRMs), focusing on mitigating token inefficiency while preserving reasoning quality.\n- The paper introduces a taxonomy categorizing methods into explicit compact Chain-of-Thought (CoT) and implicit latent CoT.\n- Empirical analyses are conducted on existing methods, comparing performance and efficiency.\n- Open challenges are presented, including human-centric controllable reasoning and ensuring safety.\n- The paper suggests key insights for enhancing LRMs' inference efficiency via model merging, new architectures, and agent routers.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/yueliu1999/Awesome-Efficient-Inference-for-LRMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Classical Planning with LLM-Generated Heuristics: Challenging the State\n  of the Art with Python Code",
+        "authors": "jendrikseipp, andregrahl, abcorrea",
+        "link": "https://arxiv.org/abs/2503.18809",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach to classical planning using Large Language Models (LLMs) to automatically generate domain-dependent heuristic functions, written in Python code, for greedy best-first search.\n- The pipeline prompts an LLM multiple times with domain descriptions, training tasks, and examples of heuristics to obtain a pool of candidate heuristic functions.\n- The best-performing heuristic is selected based on its performance on a training set and then used to solve unseen test tasks.\n-  Experimental results on the International Planning Competition (IPC) 2023 domains show that these LLM-generated heuristics outperform state-of-the-art domain-independent heuristics and are competitive with leading learning algorithms for domain-dependent heuristics, even when implemented within an unoptimized Python planner (Pyperplan) competing against highly optimized C++ planners.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Expanding RL with Verifiable Rewards Across Diverse Domains",
+        "authors": "zptu, haitaominlp, douvleplus, freesunshine0316, yudian",
+        "link": "https://arxiv.org/abs/2503.23829",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach to Reinforcement Learning with Verifiable Rewards (RLVR) that extends its application beyond structured domains like mathematics and coding to diverse fields such as medicine, chemistry, and economics.\n- The approach incorporates model-based soft reward scores in RLVR, leveraging the probability of a single token representing the verifier's final judgement.\n- A distilled 7B generative reward model is trained on a dataset combining math and multi-subject question-answer pairs, demonstrating comparable performance to larger models like Qwen2.5-72B-Instruct while being more efficient. \n- The proposed method outperforms strong open-source LLMs, including Qwen2.5-72B-Instruct and DeepSeek-R1-Distill-Qwen-32B, by up to 8.0% in accuracy across various domains in free-form answer settings.\n-  The study also highlights the scalability and robustness of model-based soft rewards compared to rule-based rewards, especially with unstructured reference answers.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/virtuoussy/rlvr-67ea349b086e3511f86d1c1f"
+        ],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Progressive Rendering Distillation: Adapting Stable Diffusion for\n  Instant Text-to-Mesh Generation without 3D Data",
+        "authors": "Zhen Lei, Xiangyu Zhu, Rongyuan Wu, DarklordLeto, ZhiyuanthePony",
+        "link": "https://arxiv.org/abs/2503.21694",
+        "github_repo": "https://github.com/theEricMa/TriplaneTurbo",
+        "summary": "This paper introduces Progressive Rendering Distillation (PRD), a novel training method that adapts Stable Diffusion for instant text-to-mesh generation without using 3D data.  PRD leverages multi-view diffusion models to distill textures and geometries into 3D outputs.  A new model, TriplaneTurbo, is presented, which adds only 2.5% trainable parameters to the pre-trained Stable Diffusion model.  TriplaneTurbo generates high-fidelity textured meshes in 1.2 seconds and outperforms existing methods on both quality and speed.  The method is also shown to scale effectively with larger datasets.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/theEricMa/TriplaneTurbo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through\n  Task Tokenization",
+        "authors": "BoDai, WenjiaWang, frankzydou, Zeshi209, lianganimation",
+        "link": "https://arxiv.org/abs/2503.19901",
+        "github_repo": null,
+        "summary": "TokenHSI is a unified transformer-based model for synthesizing diverse human-scene interactions.  It uses task tokenization to integrate multiple foundational skills into a single network, enabling flexible adaptation to novel scenarios.  Experimental results demonstrate that TokenHSI significantly outperforms existing methods in terms of versatility, adaptability, and extensibility across various tasks, including skill composition, object/terrain shape variation, and long-horizon task completion.  The model's architecture consists of multiple tokenizers, a transformer encoder, and an action head, which are trained using a combination of pre-training and policy adaptation. The model's ability to adapt to new tasks makes it suitable for various robotics applications.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://liangpan99.github.io/TokenHSI"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "KOFFVQA: An Objectively Evaluated Free-form VQA Benchmark for Large\n  Vision-Language Models in the Korean Language",
+        "authors": "lastdefiance20, yoonshik1205",
+        "link": "https://arxiv.org/abs/2503.23730",
+        "github_repo": "https://github.com/maum-ai/KOFFVQA",
+        "summary": "- This paper introduces KOFFVQA, a new free-form visual question answering (VQA) benchmark for evaluating large vision-language models (VLMs) in the Korean language.\n- KOFFVQA addresses limitations of existing VQA benchmarks by using pre-defined objective grading criteria to evaluate open-ended responses, avoiding subjective human judgment.\n- The benchmark consists of 275 image-question pairs with detailed grading criteria covering 10 aspects of VLM performance.\n- Experiments on 47 existing VLMs demonstrate that model size does not always correlate with performance, and that models excel in specific subcategories.\n- The authors experimentally verify that using pre-defined grading criteria is more reliable than existing methods for VLM evaluation.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/maum-ai/KOFFVQA"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/maum-ai/KOFFVQA-Leaderboard"
+        ],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "UPME: An Unsupervised Peer Review Framework for Multimodal Large\n  Language Model Evaluation",
+        "authors": "Zheyuan Liu, Yibing, yuehuang, MunanNing, 77Hui",
+        "link": "https://arxiv.org/abs/2503.14941",
+        "github_repo": null,
+        "summary": "- This paper introduces UPME, an unsupervised peer review framework for evaluating multimodal large language models (MLLMs).\n- UPME uses only image data, allowing models to automatically generate questions and conduct peer reviews of answers from other models, reducing reliance on human annotations.\n- A vision-language scoring system is introduced to mitigate biases, focusing on response correctness, visual understanding and reasoning, and image-text correlation.\n- Experimental results on the MMStar and ScienceQA datasets demonstrate that UPME achieves high Pearson and Spearman correlations with human evaluations, showing strong alignment with human preferences.\n- The framework addresses limitations of existing MLLM evaluation methods by reducing human workload and mitigating biases such as self-preference and verbosity.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Easi3R: Estimating Disentangled Motion from DUSt3R Without Training",
+        "authors": "Anpei Chen, Andreas Geiger, Yuliang Xiu, faneggg, rover-xingyu",
+        "link": "https://arxiv.org/abs/2503.24391",
+        "github_repo": "https://github.com/Inception3D/Easi3R",
+        "summary": "- Easi3R is a training-free method for dynamic object segmentation, camera pose estimation, and point cloud reconstruction from videos.\n- The method leverages attention maps from pre-trained DUSt3R models to decompose motions and disentangle object dynamics.\n- It applies attention adaptation during inference, eliminating the need for fine-tuning or pre-training on dynamic datasets.\n- Experimental results show that Easi3R outperforms concurrent methods trained on dynamic datasets.\n- Extensive qualitative results demonstrate its capabilities in disentangling object and camera motion and reconstructing dynamic scenes.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/Inception3D/Easi3R"
+        ],
+        "huggingface_urls": [
+            "easi3r.github.io"
+        ],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "MeshCraft: Exploring Efficient and Controllable Mesh Generation with\n  Flow-based DiTs",
+        "authors": "Xiaoshui Huang, Zexiang Liu, Di Huang, Junyi Chen, Xianglong He",
+        "link": "https://arxiv.org/abs/2503.23022",
+        "github_repo": null,
+        "summary": "- MeshCraft is a novel framework for efficient and controllable mesh generation that leverages continuous spatial diffusion to generate discrete triangle faces.\n- It consists of a transformer-based VAE that encodes raw meshes into continuous face-level tokens and decodes them back, and a flow-based diffusion transformer conditioned on the number of faces. \n- On ShapeNet, MeshCraft achieves state-of-the-art generation results while being 35x faster than MeshGPT with a 9x reduction in token numbers.\n- Experiments on Objaverse demonstrate MeshCraft's potential for diverse generation capabilities across various face numbers conditioned on a single image. \n- It seamlessly integrates with existing conditional guidance strategies, further enhancing control and generation quality.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Bridging Evolutionary Multiobjective Optimization and GPU Acceleration\n  via Tensorization",
+        "authors": "Ran Cheng, Kebin Sun, Naiwei Yu, Hao Li, ZhenyuLiang",
+        "link": "https://arxiv.org/abs/2503.20286",
+        "github_repo": "https://github.com/EMI-Group/evomo",
+        "summary": "This paper introduces a novel tensorization methodology to accelerate evolutionary multiobjective optimization (EMO) algorithms on GPUs.  Three representative EMO algorithms (NSGA-III, MOEA/D, and HypE) were tensorized and showed speedups of up to 1113x compared to their CPU-based counterparts. A new multiobjective robot control benchmark (MoRobtrol) was introduced to evaluate the algorithms on complex, computationally intensive tasks.  The tensorized EMO algorithms demonstrated efficient performance on these real-world problems, producing high-quality and diverse solutions. The source code is available on GitHub.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/EMI-Group/evomo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Decoupling Angles and Strength in Low-rank Adaptation",
+        "authors": "Zeynep Akata, Leander Girrbach, Massimo Bini",
+        "link": "https://arxiv.org/abs/2503.18225",
+        "github_repo": "https://github.com/ExplainableML/DeLoRA",
+        "summary": "- This paper introduces DeLoRA, a novel parameter-efficient fine-tuning method that enhances the robustness of low-rank adaptation by decoupling angular learning from adaptation strength.\n- DeLoRA achieves this by normalizing and scaling learnable low-rank matrices, effectively controlling the magnitude of weight updates while maintaining expressiveness.\n- The method is derived from and improves upon both LoRA and ETHER, combining their respective strengths and mitigating their limitations.\n- Evaluations on image generation, natural language understanding, and instruction tuning tasks demonstrate that DeLoRA matches or surpasses the performance of competing methods while exhibiting improved robustness.\n- Ablation studies validate the design choices of DeLoRA and highlight its advantages in terms of hyperparameter sensitivity and resistance to performance degradation during extended training.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ExplainableML/DeLoRA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    },
+    {
+        "title": "Entropy-Based Adaptive Weighting for Self-Training",
+        "authors": "Wei Wang, Mingyu Derek Ma, Yihe Deng, Xiaoxuan Wang",
+        "link": "https://arxiv.org/abs/2503.23913",
+        "github_repo": null,
+        "summary": "- This paper introduces Entropy-Based Adaptive Weighting for Self-Training (EAST), a novel method for improving the mathematical reasoning capabilities of large language models (LLMs).\n- EAST employs an adaptive weighting strategy that prioritizes uncertain data during self-training by assigning higher weights to data points where the model exhibits higher uncertainty, as measured by the entropy of the model's sample distribution.\n- This approach encourages the model to focus on more informative and challenging examples, thereby enhancing its reasoning ability.\n- Experimental results on GSM8K and MATH benchmarks demonstrate that EAST consistently outperforms baseline methods, achieving a 1% gain over the backbone model on MATH and a further 1-2% performance boost on GSM8K compared to the vanilla self-training method.\n- EAST effectively addresses the limitation of existing self-training methodologies that treat all generated training data uniformly, regardless of the model's confidence level.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/mandyyyyii/east"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-01"
+    }
+]

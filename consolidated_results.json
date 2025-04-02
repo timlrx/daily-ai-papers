@@ -29435,5 +29435,326 @@
         ],
         "huggingface_urls": [],
         "date": "2025-04-01"
+    },
+    {
+        "title": "Exploring the Effect of Reinforcement Learning on Video Understanding:\n  Insights from SEED-Bench-R1",
+        "authors": "yshan2u, yxgeee, ruiwang, tttoaster, ChenYi99",
+        "link": "https://arxiv.org/abs/2503.24376",
+        "github_repo": "https://github.com/TencentARC/SEED-Bench-R1",
+        "summary": "- This paper introduces SEED-Bench-R1, a new benchmark for evaluating post-training methods for Multimodal Large Language Models (MLLMs) on video understanding tasks requiring both perception and reasoning.\n- The benchmark features egocentric videos, multiple-choice questions, and a hierarchical three-level validation set for assessing generalization across in-distribution, cross-environment, and cross-environment-task scenarios.\n- Using Qwen2-VL-Instruct-7B as a base model, the authors compare Reinforcement Learning (RL) with Supervised Fine-tuning (SFT) and find that RL, specifically GRPO, significantly improves performance on both in-distribution and out-of-distribution tasks, outperforming SFT even with simple outcome-based rewards.\n- Analysis reveals that RL enhances the model's visual attention but may produce less logically coherent reasoning chains.\n- The paper suggests future directions such as strengthening the base model's reasoning ability pre-RL and improving reward modeling and RL robustness.",
+        "classification": [
+            "Reinforcement Learning",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/SEED-Bench-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "CodeARC: Benchmarking Reasoning Capabilities of LLM Agents for Inductive\n  Program Synthesis",
+        "authors": "Naveen Kannan, Jiannan Cao, kaiyan289, tarsur909, anjiangwei",
+        "link": "https://arxiv.org/abs/2503.23145",
+        "github_repo": null,
+        "summary": "- CodeARC, a new framework for evaluating Large Language Models (LLMs) on inductive program synthesis, is introduced, focusing on interactive input generation and self-correction through queries to a ground truth function and feedback from a differential testing oracle.\n- A comprehensive dataset of 1114 diverse, general-purpose Python functions with corresponding input-output examples is created to facilitate the evaluation, targeting general programming tasks and employing differential testing tools for accurate assessment.\n- The experiments demonstrate that CodeARC presents a significant challenge for LLM-based program synthesis, with even the best-performing model (OpenAI 03-mini) achieving only a 52.7% success rate among 18 evaluated models.\n- Fine-tuning LLaMA-3.1-8B-Instruct on curated synthesis traces that capture both function invocations and reasoning steps yields up to a 31% relative improvement in performance.\n- The interactive evaluation protocol in CodeARC, where agents can actively generate inputs and revise their solutions based on feedback, offers a more realistic and robust alternative to prior static evaluation methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "JudgeLRM: Large Reasoning Models as a Judge",
+        "authors": "Jiaying Wu, Nuo Chen, bhooi, qingyunzou, zhiyuanhucs",
+        "link": "https://arxiv.org/abs/2504.00050",
+        "github_repo": null,
+        "summary": "- This paper introduces JudgeLRM, a family of large language models (LLMs) trained using reinforcement learning (RL) with judge-wise, outcome-driven rewards to improve performance on complex reasoning tasks for evaluation.\n- JudgeLRM models leverage a reward function that combines structural and content-based components, ensuring well-formatted reasoning and aligning model judgments with ground-truth preferences.\n- Empirical results demonstrate that JudgeLRM-3B surpasses GPT-4 on judgment tasks, and JudgeLRM-7B outperforms DeepSeek-R1 by 2.79% in F1 score, showing particular strength in tasks requiring deep reasoning.\n- Analysis reveals a negative correlation between standard supervised fine-tuning (SFT) performance gains and the proportion of reasoning-demanding samples, highlighting the limitations of SFT in such scenarios and the advantage of using RL.\n- Further investigation reveals that effective judgment involves complex reasoning patterns like verification, sub-goal setting, and justification, emphasizing the importance of structured reasoning in evaluation tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/NuoJohnChen/JudgeLRM"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/nuojohnchen/JudgeLRM-7B",
+            "https://huggingface.co/spaces/nuojohnchen/JudgeLRMDemo"
+        ],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "GeometryCrafter: Consistent Geometry Estimation for Open-world Videos\n  with Diffusion Priors",
+        "authors": "Xiaoyu Li, yshan2u, wbhu-tc, xiangjun0211, slothfulxtx",
+        "link": "https://arxiv.org/abs/2504.01016",
+        "github_repo": null,
+        "summary": "- GeometryCrafter is a novel framework that leverages video diffusion models to estimate temporally consistent and high-fidelity point maps from open-world videos.\n- It introduces a point map VAE with a dual-encoder architecture to effectively encode and decode unbounded 3D coordinates, preserving the latent space analogous to the inherited video VAE for robust zero-shot generalization.\n- The VAE training incorporates a disentangled point map representation, multi-scale depth loss, and a regularization term to ensure latent space consistency.\n- GeometryCrafter achieves state-of-the-art 3D accuracy and temporal consistency across diverse datasets, outperforming existing depth estimation methods on most benchmarks.\n- It facilitates downstream applications like 3D/4D reconstruction and depth-conditioned video generation.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Agent S2: A Compositional Generalist-Specialist Framework for Computer\n  Use Agents",
+        "authors": "Vincent Tu, Kyle Wong, xw-eric, jc-y42, saa1605",
+        "link": "https://arxiv.org/abs/2504.00906",
+        "github_repo": "https://github.com/simular-ai/Agent-S",
+        "summary": "- Introduces Agent S2, a novel compositional framework that combines generalist and specialist models to enhance computer use agent performance by delegating cognitive tasks like planning, execution, and grounding.\n- Proposes a Mixture-of-Grounding technique to improve GUI element localization by routing actions to specialized grounding experts based on the nature of the subgoal.\n- Introduces Proactive Hierarchical Planning, which dynamically refines action plans at multiple temporal scales in response to evolving observations.\n- Achieves state-of-the-art performance on the OSWorld (27.0% and 34.5% on 15- and 50-step evaluations), WindowsAgentArena (29.8%), and AndroidWorld (54.3%) benchmarks.\n- Demonstrates that composing generalist and specialist models can surpass the best monolithic models even if individual models are suboptimal.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/simular-ai/Agent-S"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Z1: Efficient Test-time Scaling with Code",
+        "authors": "Xiao-Ping Zhang, armanc, yilunzhao, yh1567, zjy2001",
+        "link": "https://arxiv.org/abs/2504.00810",
+        "github_repo": null,
+        "summary": "- This paper introduces Z1, an efficient test-time scaling method for Large Language Models (LLMs) focusing on reducing excess thinking tokens while maintaining performance on complex problem-solving.\n- Z1 employs a novel Shifted Thinking Window, eliminating delimiting tags and capping reasoning tokens, to adjust its reasoning level based on problem complexity and prevent overthinking.\n- Trained on a new dataset, Z1-Code-Reasoning-107K, which consists of coding problems paired with short and long solution trajectories, Z1-7B achieves comparable performance to larger models while requiring significantly fewer thinking tokens, matching R1-Distill-Qwen-7B with approximately 30% of its average thinking tokens.\n- The model demonstrates efficient test-time scaling across various reasoning tasks including LiveCodeBench, MATH500, and GPQA Diamond, showing generalization ability to domains beyond code.\n- Further data ablation studies reveal the importance of mean trajectory length and training dataset size in code-related reasoning datasets for efficient test-time scaling.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/efficientscaling/Z1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "MixerMDM: Learnable Composition of Human Motion Diffusion Models",
+        "authors": "Jos\u00e9 Garc\u00eda-Rodr\u00edguez, Sergio Escalera, Cristina Palmero, Germs96, pabloruizponce",
+        "link": "https://arxiv.org/abs/2504.01019",
+        "github_repo": null,
+        "summary": "- MixerMDM, a novel learnable model composition technique, dynamically combines pre-trained text-conditioned human motion diffusion models, enhancing control over individual and interaction dynamics.\n- Unlike prior methods with fixed mixing strategies, MixerMDM employs an adversarial training approach with a lightweight Mixer module, enabling it to learn dynamic mixing weights based on motion characteristics, conditions, and denoising timesteps.\n- This dynamic mixing strategy allows MixerMDM to generate diverse and nuanced interactions, merging the strengths of single-person and interaction-focused models, resulting in improved individual control within interactions and overall interaction quality.\n- A new evaluation procedure assesses both interaction and individual motion quality by measuring alignment with input conditions and the model's adaptability in adjusting mixing weights across the denoising process.\n- Experimental results demonstrate that MixerMDM consistently generates higher-quality mixed motions compared to previous techniques, outperforming existing methods and offering greater control over individual dynamics within interactions.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Open-Qwen2VL: Compute-Efficient Pre-Training of Fully-Open Multimodal\n  LLMs on Academic Resources",
+        "authors": "Heng Wang, Yu Tian, windwest, yanglj55, weizhiwang",
+        "link": "https://arxiv.org/abs/2504.00595",
+        "github_repo": null,
+        "summary": "- Open-Qwen2VL is a 2-billion parameter open-source multimodal large language model (MLLM) pre-trained on 29 million image-text pairs using only 442 A100-40G GPU hours.\n- It utilizes a low-to-high dynamic image resolution strategy and multimodal sequence packing, improving training efficiency.\n- The model employs both MLLM and CLIP based filtering methods to ensure high-quality data within the training set.\n- Open-Qwen2VL outperforms the closed-source 2B parameter Qwen2-VL-2B on several multimodal benchmarks including MMBench, SEEDBench, MMStar, and MathVista, demonstrating its effectiveness and training efficiency.\n- All aspects of the training process and the model are open-sourced including training data, filtering methods, pre-training code, and model weights.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Victorwz/Open-Qwen2VL"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/weizhiwang/Open-Qwen2vl",
+            "https://huggingface.co/datasets/weizhiwang/Open-Qwen2VL-Data"
+        ],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "OmniMMI: A Comprehensive Multi-modal Interaction Benchmark in Streaming\n  Video Contexts",
+        "authors": "Tong Wu, Bo Chen, Yueqian Wang, zlzheng, ColorfulAI",
+        "link": "https://arxiv.org/abs/2503.22952",
+        "github_repo": null,
+        "summary": "- This paper introduces OmniMMI, a benchmark designed to evaluate the interactive capabilities of Omni Large Language Models (OmniLLMs) in streaming video contexts.\n- The benchmark includes over 1,121 videos and 2,290 questions and covers six subtasks related to streaming video understanding and proactive reasoning.\n- A novel framework called Multi-modal Multiplexing Modeling (M4) is also proposed, using inspiration from duplexing modeling of auditory models.\n- M4 is designed to enable inference-efficient streaming by allowing models to see and listen while generating responses and includes proactive generation and interruption.\n- Experimental results show that existing MLLMs struggle with interactive streaming video understanding, particularly with proactive tasks and multi-turn queries.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://omnimmi.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Recitation over Reasoning: How Cutting-Edge Language Models Can Fail on\n  Elementary School-Level Reasoning Problems?",
+        "authors": "Xuesong Yao, xmerge123, ALEXoDu, yfxu, kaiyan289",
+        "link": "https://arxiv.org/abs/2504.00509",
+        "github_repo": null,
+        "summary": "- This paper introduces RoR-Bench, a novel multimodal Chinese benchmark designed to evaluate the reasoning capabilities of Large Language Models (LLMs) on elementary school-level problems.\n- The benchmark consists of pairs of problems, with subtle but crucial condition shifts, to test if LLMs truly reason or simply recite solutions.\n- Experimental results on 23 LLMs reveal a significant performance drop (often >60%) on modified problems compared to original ones, indicating a strong tendency towards recitation rather than genuine reasoning.\n- Initial solutions like adding prompts and few-shot learning show limited improvement.\n- The authors propose further research into robust reasoning mechanisms less reliant on user clarifications and less sensitive to minor input changes.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/kaiyan289/RoR-Bench/tree/main"
+        ],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "AdaMMS: Model Merging for Heterogeneous Multimodal Large Language Models\n  with Unsupervised Coefficient Optimization",
+        "authors": "Yiru Wang, Jiabo Ye, Xiaochen Wang, Yiyang Du, carboncoo",
+        "link": "https://arxiv.org/abs/2503.23733",
+        "github_repo": null,
+        "summary": "- AdaMMS, a novel model merging method designed for heterogeneous Multimodal Large Language Models (MLLMs), is introduced to address the challenges of merging models with different architectures and parameter space asymmetry.\n- The method employs a three-step process: mapping parameters between models with different architectures, merging the mapped parameters using adaptive linear interpolation, and searching for the optimal interpolation coefficient using an unsupervised hyperparameter selection method based on response consistency.\n- AdaMMS is the first model merging method capable of merging heterogeneous MLLMs without labeled data.\n- Experimental results on various model combinations and vision-language benchmarks demonstrate that AdaMMS outperforms existing model merging methods.\n- The unsupervised hyperparameter selection method effectively selects near-optimal interpolation coefficient and requires minimal data.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/THUNLP-MT/AdaMMS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "When To Solve, When To Verify: Compute-Optimal Problem Solving and\n  Generative Verification for LLM Reasoning",
+        "authors": "anna-rohrbach, kaiweichang, adityagrover, arianhosseini, hbXNov",
+        "link": "https://arxiv.org/abs/2504.01005",
+        "github_repo": "https://github.com/nishadsinghi/sc-genrm-scaling",
+        "summary": "- This paper investigates compute-optimal strategies for Large Language Model (LLM) reasoning, comparing Self-Consistency (SC) with Generative Reward Models (GenRM).\n- Under a fixed inference budget, SC is found to be more compute-efficient than GenRM for most practical budgets, with GenRM requiring up to 8x more compute to match SC's performance and significantly more to outperform it.\n- The study derives inference scaling laws for GenRM, showing that compute-optimal inference favors scaling solution generation more aggressively than scaling the number of verifications.\n- Experiments across various model families, sizes, thinking models, and reasoning tasks confirm these findings.\n- These results provide practical guidelines for optimizing test-time scaling by balancing solution generation and verification under constrained budgets.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/nishadsinghi/sc-genrm-scaling"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Multi-Token Attention",
+        "authors": "sainbar, spermwhale, Tianlu, Golovneva",
+        "link": "https://arxiv.org/abs/2504.00927",
+        "github_repo": null,
+        "summary": "- This paper introduces Multi-Token Attention (MTA), a novel attention mechanism for LLMs that overcomes the limitations of standard \"single token attention\" by allowing attention weights to be conditioned on multiple query and key vectors simultaneously.\n- MTA achieves this by applying convolution operations over queries, keys, and attention heads, enabling nearby tokens and different heads to influence each other's attention for more precise context localization.\n- The authors demonstrate that MTA enhances performance on various benchmarks, including standard language modeling and long-context tasks such as Needle-in-the-Haystack and BabiLong, where its ability to leverage richer information is particularly advantageous.\n- MTA outperforms Transformer baselines on language modeling tasks, showing improvements in validation perplexity and benchmark results, while only minimally increasing parameter count.\n- The paper provides a motivating toy task that highlights the shortcomings of standard attention and showcases MTA's ability to effectively combine information from multiple tokens to identify target blocks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/cerebras/SlimPajama-627B"
+        ],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Efficient LLaMA-3.2-Vision by Trimming Cross-attended Visual Features",
+        "authors": "Jaeyeon Kim, Donguk Lim, Seungmin Yang, Ki-Ung Song, Jewon Lee",
+        "link": "https://arxiv.org/abs/2504.00557",
+        "github_repo": null,
+        "summary": "- This paper introduces Trimmed Llama, a training-free inference optimization method for cross-attention based Large Vision Language Models (LVLMs).\n- The method leverages a novel visual token pruning technique by exploiting the sparsity and inter-layer resemblance of cross-attention patterns, reducing key-value cache demands and computational overhead.\n- By trimming redundant visual features, often achieving 50% reduction, Trimmed Llama reduces inference latency and memory usage while maintaining benchmark parity with the original model.\n- Experimental results on datasets like MMVP, MME, SEED-Bench and LLaVA-Bench demonstrates the consistent efficacy of the proposed method.\n- It surpasses alternative pruning strategies such as random and spatial sampling, particularly in complex task-driven and open-ended generative tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        ],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Discovering Knowledge Deficiencies of Language Models on Massive\n  Knowledge Base",
+        "authors": "Ryotaro Shimizu, Jieyu Zhang, Xuwei Ding, MaksimSTW, linxinso",
+        "link": "https://arxiv.org/abs/2503.23361",
+        "github_repo": null,
+        "summary": "- This paper introduces Stochastic Error Ascent (SEA), a framework designed to identify knowledge gaps in closed-weight Large Language Models (LLMs).\n- SEA uses a query budget to efficiently probe a massive knowledge base, iteratively selecting subsets likely to reveal errors by considering semantic similarity to previous mistakes.\n- This approach incorporates hierarchical retrieval at document and paragraph levels, constructing a relation-directed acyclic graph to track error dependencies and prune less informative nodes.\n- Experimental results show that SEA significantly outperforms baseline methods like Automated Capability Discovery (ACD) and AutoBencher in error discovery while also reducing the cost-per-error.\n- Human evaluations confirm the high quality of questions from SEA, and ablation studies validate each component's contribution.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/uscnlp-lime/SEA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "m1: Unleash the Potential of Test-Time Scaling for Medical Reasoning\n  with Large Language Models",
+        "authors": "Yuyin Zhou, Xianfeng Tang, Hui Liu, Juncheng Wu, Xiaoke Huang",
+        "link": "https://arxiv.org/abs/2504.00869",
+        "github_repo": "https://github.com/UCSC-VLAA/m1",
+        "summary": "- This paper introduces m1, a novel methodology employing test-time scaling to enhance medical reasoning capabilities in Large Language Models (LLMs).\n- By increasing the \"thinking\" token budget during inference, m1 allows models to generate more extensive reasoning chains, leading to improved accuracy on various medical question-answering benchmarks.\n- Notably, the m1-7B-23K model achieves state-of-the-art accuracy of 60.32% on in-domain and out-of-domain medical exam datasets, outperforming larger, more computationally intensive models like HuatuoGPT-01-7B/8B and UltraMedical-8B.\n- Additionally, m1-32B-1K demonstrates comparable performance to 70B scale medical LLMs, highlighting the efficiency of this approach.\n- The study's findings underscore that enriched medical knowledge, rather than increased reasoning depth alone, is essential for fully realizing the benefits of test-time scaling in LLMs.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/UCSC-VLAA/m1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "Towards Trustworthy GUI Agents: A Survey",
+        "authors": "Ninghao Liu, Wenhu Chen, Wenlin Yao, Wenhao Yu, Yucheng Shi",
+        "link": "https://arxiv.org/abs/2503.23434",
+        "github_repo": null,
+        "summary": "- This survey paper examines the trustworthiness of GUI agents, which are powered by large language and multimodal models and interact with digital interfaces like websites and mobile apps.\n- The paper categorizes trustworthiness into five key areas: security, reliability, explainability, ethical alignment, and evaluation methodologies and discusses existing research and challenges within each area, such as vulnerabilities to adversarial attacks and the need for robust evaluation benchmarks.\n- The authors highlight the shift in focus from task success to holistic trustworthiness and identify open problems like balancing real-time performance with safety and mitigating hallucination errors.\n-  The survey also discusses the broader social implications of using GUI agents, emphasizing the importance of responsible development practices to address security, ethical, and privacy risks.\n- The paper concludes by suggesting future research directions, including developing smarter defense tools and promoting user-controlled privacy mechanisms for more secure and reliable GUI agent deployment.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "DiET-GS: Diffusion Prior and Event Stream-Assisted Motion Deblurring 3D\n  Gaussian Splatting",
+        "authors": "Gim Hee Lee, onandon",
+        "link": "https://arxiv.org/abs/2503.24210",
+        "github_repo": null,
+        "summary": "- DiET-GS, a two-stage framework, reconstructs sharp 3D representations from blurry multi-view images using event streams and a pre-trained diffusion prior.\n- Stage 1 (DiET-GS) leverages event double integral (EDI) for accurate color, fine-grained details, and regularization, jointly with a denoising diffusion probabilistic model (DDPM) prior via renoised score distillation (RSD).\n- Stage 2 (DiET-GS++) enhances edge details by adding learnable parameters to the 3D Gaussians and rendering latent residuals guided by the diffusion prior, maximizing the diffusion prior effect.\n- Quantitative and qualitative results on synthetic and real-world datasets demonstrate DiET-GS++ outperforms existing methods in visual quality.\n- DiET-GS achieves real-time rendering due to the explicit representation of 3DGS.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "ManipTrans: Efficient Dexterous Bimanual Manipulation Transfer via\n  Residual Learning",
+        "authors": "Siyuan Huang, Yuyang Li, Tengyu Liu, Puhao Li, Kailin Li",
+        "link": "https://arxiv.org/abs/2503.21860",
+        "github_repo": null,
+        "summary": "- MANIPTRANS is a two-stage framework for transferring human bimanual manipulation skills to dexterous robotic hands in simulation, featuring a pre-trained hand trajectory imitator and a residual module fine-tuned under interaction constraints.\n- It surpasses existing methods in success rate, motion fidelity, and transfer efficiency, demonstrated through quantitative comparisons on a range of complex single and bimanual tasks.\n- Using MANIPTRANS, the authors created DEXMANIPNET, a dataset with 3.3K episodes of robotic manipulation featuring complex tasks like pen capping and bottle unscrewing, transferred from multiple hand-object datasets.\n- MANIPTRANS demonstrates cross-embodiment generalization across various dexterous hand configurations and shows feasibility for real-world deployment on physical robotic hands.\n- The residual learning approach allows MANIPTRANS to correct noisy motion capture data into physically plausible motions and achieve higher efficiency compared to optimization-based approaches.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
+    },
+    {
+        "title": "MB-ORES: A Multi-Branch Object Reasoner for Visual Grounding in Remote\n  Sensing",
+        "authors": "Mustapha lebbah, Hanane Azzag, rdkarim",
+        "link": "https://arxiv.org/abs/2503.24219",
+        "github_repo": "https://github.com/rd20karim/MB-ORES",
+        "summary": "- This paper introduces MB-ORES, a two-stage framework that unifies object detection and visual grounding for remote sensing imagery.\n- In the first stage, MB-ORES fine-tunes an open-set object detector with referring expression data, which serves as a partially supervised object detection task.\n- Then, MB-ORES constructs a graph representation of each image, which is then processed by a multi-branch network that integrates visual, spatial, and categorical features to generate task-aware object proposals.\n- Lastly, an object reasoning network assigns probabilities to these proposals, followed by a soft selection mechanism and regression head for precise referred object localization.\n- MB-ORES achieves state-of-the-art performance on the OPT-RSVG and DIOR-RSVG datasets, demonstrating improvements over existing methods while retaining conventional object detection capabilities.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/rd20karim/MB-ORES"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-02"
     }
 ]

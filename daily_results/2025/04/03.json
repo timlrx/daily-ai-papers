@@ -1,0 +1,271 @@
+[
+    {
+        "title": "MergeVQ: A Unified Framework for Visual Generation and Representation\n  with Disentangled Token Merging and Quantization",
+        "authors": "Cheng Tan, Juanxi, ZedongWangAI, LuyuanZhang01, Lupin1998",
+        "link": "https://arxiv.org/abs/2504.00999",
+        "github_repo": null,
+        "summary": "- MergeVQ, a unified framework, excels in visual representation learning and autoregressive image generation by decoupling high-level semantics from fine-grained details during training and recovering them during reconstruction using token merging and Look-up Free Quantization (LFQ).\n- MergeVQ features a two-stage design: the first stage employs a hybrid encoder (CNN followed by a Transformer with token merging) and trains a source recovery module; the second stage utilizes MergeAR, a novel KV Cache compression technique for efficient raster-order generation, and existing random-order AR generators enhanced by the source recovery module. \n- MergeVQ (R), focusing on representation learning, achieves state-of-the-art results with only 36 tokens, outperforming models like DINOv2 with significantly fewer tokens.\n- Experiments on ImageNet-1K show that MergeVQ achieves competitive performance compared to other AR models in class-conditional image generation with fewer tokens.\n- MergeVQ effectively balances reconstruction quality and token efficiency, highlighting its potential for real-world applications demanding both image quality and computational resources.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Improved Visual-Spatial Reasoning via R1-Zero-Like Training",
+        "authors": "Zijian Kong, Yanhao Zhang, Qingsong Xie, Zhenyi Liao, zhijie3",
+        "link": "https://arxiv.org/abs/2504.00883",
+        "github_repo": null,
+        "summary": "- This paper introduces a new method for improving the visual-spatial reasoning of Multimodal Large Language Models (MLLMs) using R1-Zero-like training.\n- The authors found that Chain of Thought (CoT) prompting is ineffective for activating visual-spatial reasoning in small- to medium-sized Qwen2-VL models.\n- They created a 100k sample video-based question answering dataset called VSI-100k based on ScanNet and used it for Group Relative Policy Optimization (GRPO) training.\n- Their vsGRPO-2B model, fine-tuned from Qwen2-VL-2B, outperforms the base model by 12.1% on VSI-bench and surpasses GPT-40. \n- The vsGRPO-7B model achieves performance comparable to LLaVA-NeXT-Video-72B.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zhijie-group/R1-Zero-VSI"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "AnimeGamer: Infinite Anime Life Simulation with Next Game State\n  Prediction",
+        "authors": "Ying Shan, Jing Liao, Yixiao Ge, Yuying Ge, Howe666",
+        "link": "https://arxiv.org/abs/2504.01014",
+        "github_repo": "https://github.com/TencentARC/AnimeGamer",
+        "summary": "- AnimeGamer is a novel framework for infinite anime life simulation, leveraging Multimodal Large Language Models (MLLMs) to generate dynamic animation shots and update character states based on user instructions.\n- It introduces action-aware multimodal representations for animation shots, decoded into video clips using a video diffusion model, ensuring contextual consistency and dynamic movements.\n- AnimeGamer uses historical multimodal representations and character states to predict subsequent game states, resulting in a coherent and immersive gaming experience.\n- Evaluations using automated metrics and human assessments show that AnimeGamer outperforms existing methods in instruction following, contextual consistency, and overall gaming experience.\n-  A data collection pipeline from anime films is also proposed, enabling customized model training for diverse character experiences.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/AnimeGamer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "VideoScene: Distilling Video Diffusion Model to Generate 3D Scenes in\n  One Step",
+        "authors": "Yueqi Duan, Jiawei Chi, Fangfu Liu, hanyang-21",
+        "link": "https://arxiv.org/abs/2504.01956",
+        "github_repo": null,
+        "summary": "- VideoScene is a novel video distillation framework that optimizes video diffusion models for efficient, one-step 3D scene generation.\n- It leverages a 3D-aware leap flow distillation strategy, which uses a fast feed-forward sparse-view 3DGS model to generate a coarse 3D scene, rendering frames that establish a strong prior to guide subsequent diffusion steps and leap over redundant information like dynamic motions and object interactions.\n- A dynamic denoising policy network (DDPNet) is developed that learns to adaptively select the optimal leap timestep during inference.\n- Experimental results demonstrate that VideoScene outperforms state-of-the-art methods in terms of both speed and visual quality, achieving comparable results to 50-step diffusion in just one step.\n- It also shows strong generalization capabilities in cross-dataset evaluations, effectively handling novel and out-of-distribution scenes.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+        "authors": "Tianyu Pang, Wenjun Li, QPHutu, Cameron-Chen, lkevinzc",
+        "link": "https://arxiv.org/abs/2503.20783",
+        "github_repo": "https://github.com/sail-sg/understand-r1-zero",
+        "summary": "- This paper analyzes R1-Zero-like training, focusing on base models and reinforcement learning (RL) components, and introduces Dr. GRPO, an unbiased optimization method to improve token efficiency.\n- The authors investigate various base models, including DeepSeek-V3-Base and Qwen2.5, to understand how pretraining influences RL performance and reveal potential biases such as Qwen2.5's potential pretraining on question-answer pairs.\n- The paper identifies an optimization bias in Group Relative Policy Optimization (GRPO) that artificially inflates response length, especially in incorrect outputs, and proposes Dr. GRPO as a solution to improve token efficiency without sacrificing reasoning performance.\n- A minimalist R1-Zero recipe, employing Dr. GRPO, Qwen2.5-Math-7B, and a math dataset, achieves state-of-the-art 43.3% accuracy on AIME 2024 with a 7B model using limited compute.\n- The study's findings on base models and RL aim to enhance future research in LLM post-training and online alignment through code and model releases.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/sail-sg/understand-r1-zero",
+            "https://github.com/sail-sg/oat"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/HuggingFaceTB/FineMath-Llama-3B",
+            "https://huggingface.co/AI-MO/NuminaMath-1.5"
+        ],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "DreamActor-M1: Holistic, Expressive and Robust Human Image Animation\n  with Hybrid Guidance",
+        "authors": "Tianshu Hu, Longhao Zhang, Lizhen Wang, Zhengkun Rong, Yuxuan Luo",
+        "link": "https://arxiv.org/abs/2504.01724",
+        "github_repo": null,
+        "summary": "- DreamActor-M1, a diffusion transformer (DiT) based framework with hybrid guidance, is proposed for human image animation, addressing fine-grained holistic controllability, multi-scale adaptability, and long-term temporal coherence.\n- The model uses hybrid control signals, including implicit facial representations, 3D head spheres, and 3D body skeletons, for robust control of facial expressions and body movements while preserving identity.\n- A progressive training strategy with diverse datasets at different scales, like portraits and full-body views, enables multi-scale adaptation.\n- Complementary appearance guidance from multi-frame references ensures long-term temporal coherence for complex movements, filling missing information gaps in unseen regions.\n- Experimental results demonstrate that DreamActor-M1 outperforms state-of-the-art methods in body and portrait animation, achieving superior performance in metrics such as FID, SSIM, LPIPS, PSNR, and FVD.",
+        "classification": [
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "PaperBench: Evaluating AI's Ability to Replicate AI Research",
+        "authors": "Jun Shern Chan, James Aung, Dane Sherburn, Oliver Jaffe, Giulio Starace",
+        "link": "https://arxiv.org/abs/2504.01848",
+        "github_repo": "https://github.com/openai/preparedness",
+        "summary": "- PaperBench is a benchmark for evaluating AI agents' abilities to replicate AI research.\n- It contains 20 ICML 2024 Spotlight and Oral papers and associated rubrics.\n- Agents are evaluated on understanding paper contributions, code development, and successful experiment execution.\n- An LLM-based judge is used for automated grading.\n- The benchmark also includes a human baseline from ML PhDs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/openai/preparedness"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "ScholarCopilot: Training Large Language Models for Academic Writing with\n  Accurate Citations",
+        "authors": "Zhiheng Lyu, Huaye Zeng, Ping Nie, Xueguang Ma, Yubo Wang",
+        "link": "https://arxiv.org/abs/2504.00824",
+        "github_repo": null,
+        "summary": "- ScholarCopilot, a new framework designed to enhance existing large language models (LLMs) for generating professional academic articles with accurate and contextually relevant citations, is introduced.\n- It dynamically determines when to retrieve scholarly references by generating a retrieval token ([RET]), which is then used to look up relevant citations from a database. \n- Trained on 500K papers from arXiv, ScholarCopilot achieves a top-1 retrieval accuracy of 40.1% on the evaluation dataset, outperforming baselines such as E5-Mistral-7B-Instruct (15.0%) and BM25 (9.8%).\n- In terms of generation quality, using LLM-as-judge, ScholarCopilot scores 16.2/25 on a 1000 samples dataset across five dimensions, outperforming larger models such as Qwen-2.5-72B-Instruct (15.8). \n- Human studies confirm ScholarCopilot's superior performance in citation recall, writing efficiency, and overall user experience.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "ILLUME+: Illuminating Unified MLLM with Dual Visual Tokenization and\n  Diffusion Refinement",
+        "authors": "Yunlong Yuan, Guansong Lu, Junwei Yang, Chunwei Wang, Runhui Huang",
+        "link": "https://arxiv.org/abs/2504.01934",
+        "github_repo": null,
+        "summary": "- ILLUME+ is a unified multimodal large language model (MLLM) that integrates understanding, generation, and editing using dual visual tokenization and a diffusion decoder.\n- It employs DualViTok, a dual-branch vision tokenizer, to preserve both semantic and fine-grained texture information for robust image representation.\n- A diffusion model is used as the image detokenizer, improving generation quality and enabling efficient super-resolution.\n- ILLUME+ utilizes a continuous-input, discrete-output scheme within the MLLM and adopts a progressive training procedure supporting dynamic resolution across components.\n- The model achieves competitive performance on various multimodal benchmarks, showing strong results in understanding, high-resolution generation (up to 1024x1024), and improved texture preservation in editing compared to its predecessor, ILLUME.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Towards Physically Plausible Video Generation via VLM Planning",
+        "authors": "Lei Bai, Zhenfei Yin, Yiming Zhang, Baolu Li, Xindi Yang",
+        "link": "https://arxiv.org/abs/2503.23368",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel two-stage framework for generating physically plausible videos, addressing the limitations of current Video Diffusion Models (VDMs) in accurately depicting real-world physics.\n- In the first stage, a Vision Language Model (VLM) acts as a coarse motion planner, leveraging chain-of-thought reasoning and physical context to predict rough motion trajectories.\n- The second stage uses these trajectories to guide a motion-controllable image-to-video diffusion model, which synthesizes fine-grained details and ensures physical plausibility.\n- Structured noise derived from synthetic motion videos based on VLM output is injected into the diffusion model, with additional noise added to allow flexibility in motion generation.\n- Experimental results on PhyGenBench and Physics-IQ benchmarks demonstrate superior performance compared to existing text-to-video and image-to-video generation models, with a notable average improvement of 15.3% and 11.1%, respectively, on PhyGenBench over the best competitors.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Articulated Kinematics Distillation from Video Diffusion Models",
+        "authors": "Chenfanfu Jiang, Yongxin Chen, Tsung-Yi Lin, Qianli Ma, Xuan Li",
+        "link": "https://arxiv.org/abs/2504.01204",
+        "github_repo": null,
+        "summary": "- Articulated Kinematics Distillation (AKD) generates character animations by combining skeleton-based animation and generative models, using Score Distillation Sampling (SDS) with pretrained video diffusion models.\n- AKD reduces Degrees of Freedom (DoFs) by focusing on joint-level control, improving efficiency and consistency, and addresses shape preservation challenges in 4D neural deformation fields.\n- The method incorporates non-uniform ground renderings to enhance physical interaction and is compatible with physics-based simulations.\n- Experiments show AKD achieves superior 3D consistency and motion quality compared to existing text-to-4D methods.\n- AKD generated motion can be used in physics-based motion tracking with differentiable physics for enhanced realism.",
+        "classification": [
+            "Text-to-Video",
+            "Text-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Safeguarding Vision-Language Models: Mitigating Vulnerabilities to\n  Gaussian Noise in Perturbation-based Attacks",
+        "authors": "Zhendong Liu, Yushen Zuo, sofyc, AllenChai, Jarvis1111",
+        "link": "https://arxiv.org/abs/2504.01308",
+        "github_repo": "https://github.com/JarvisUSTC/DiffPure-RobustVLM",
+        "summary": "- This paper introduces Robust-VLGuard, a multimodal safety dataset with aligned and misaligned image-text pairs, combined with noise-augmented fine-tuning to mitigate vulnerabilities of Vision-Language Models (VLMs) to Gaussian noise in perturbation-based attacks.\n- It also proposes DiffPure-VLM, a defense pipeline integrating diffusion models with Gaussian-noise-tolerant VLMs, leveraging the distribution-shifting property of diffusion models to transform adversarial perturbations into Gaussian-like noise.\n- Experiments demonstrate that DiffPure-VLM effectively mitigates adversarial perturbations across varying intensities, significantly improving VLM robustness against Gaussian noise and other optimization-based attacks.\n- The authors systematically evaluate the robustness of three mainstream VLMs (InternVL2-8B, LLaVA-v1.5-7B, and MiniGPT-4-13B) against Gaussian noise and find significant performance degradation in both helpfulness and safety.\n- The Robust-VLGuard dataset addresses limitations of existing datasets like VLGuard by including image-text misalignment scenarios and detailed responses generated by GPT-4V, which improved helpfulness and safety of the tested VLMs.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/JarvisUSTC/DiffPure-RobustVLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Boost Your Own Human Image Generation Model via Direct Preference\n  Optimization with AI Feedback",
+        "authors": "Hyunjoon Lee, Yonggyu Kim, sanghyeonna",
+        "link": "https://arxiv.org/abs/2405.20216",
+        "github_repo": null,
+        "summary": "- HG-DPO, an enhanced Direct Preference Optimization (DPO) method, improves human image generation by using real images as winning images and generated images as losing images, effectively integrating the training mechanism of GANs into diffusion models.\n- A novel three-stage curriculum learning framework (easy, normal, hard) progressively refines the model, bridging the domain gap between real and generated images by using increasingly realistic winning image datasets in each stage.\n- Unlike existing DPO methods, HG-DPO constructs DPO datasets without human feedback, utilizing an AI preference estimator and stochastic differential reconstruction of real images.\n- HG-DPO adapts effectively to personalized text-to-image tasks, generating higher-quality, identity-specific images without additional training.\n- Quantitative and qualitative results demonstrate HG-DPO's superiority over existing methods in generating realistic and detailed human images, including improved composition, pose, anatomy, and fine details, as shown by FID, CI-Q, CI-S, and ATHEC scores.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "DASH: Detection and Assessment of Systematic Hallucinations of VLMs",
+        "authors": "Matthias Hein, Maximilian Augustin, YanNeu",
+        "link": "https://arxiv.org/abs/2503.23573",
+        "github_repo": null,
+        "summary": "- This research introduces DASH (Detection and Assessment of Systematic Hallucinations), an automated, large-scale pipeline for identifying systematic object hallucinations in Vision-Language Models (VLMs).\n- DASH employs two methods: DASH-LLM, using text-based retrieval with LLM-generated queries, and DASH-OPT, which optimizes a latent diffusion model to generate images that trigger VLM hallucinations while having low object detector confidence.\n- Applied to PaliGemma and LLaVA-NeXT models on 380 object classes, DASH identified over 19,000 hallucination clusters encompassing 950,000 images.\n- These hallucinations transferred to other VLMs, including top-performing models like QwenV2-72B. \n- Fine-tuning PaliGemma with DASH-generated images demonstrated a reduction in object hallucinations.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://YanNeu.github.io/DASH"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "LSNet: See Large, Focus Small",
+        "authors": "Guiguang Ding, Jungong Han, Zijia Lin, Hui Chen, jameslahm",
+        "link": "https://arxiv.org/abs/2503.23135",
+        "github_repo": "https://github.com/jameslahm/lsnet",
+        "summary": "- LSNet, a new family of lightweight vision networks, is introduced, integrating a \"See Large, Focus Small\" strategy inspired by the human vision system.\n- LSNet incorporates LS convolution, a novel operation combining large-kernel perception and small-kernel aggregation for efficient and accurate visual information processing.\n- Extensive experiments demonstrate LSNet's superior performance and efficiency compared to existing state-of-the-art lightweight models across various vision tasks, including image classification, object detection, instance segmentation, and semantic segmentation.\n- LSNet-B achieves 80.3% top-1 accuracy on ImageNet-1K, outperforming AFFNet by 0.5% with a nearly 3x faster inference speed.\n- LSNet also demonstrates strong robustness and generalization capabilities on ImageNet-C, ImageNet-A, ImageNet-R, and ImageNet-Sketch benchmarks.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Object Detection",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/jameslahm/lsnet"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "VerifiAgent: a Unified Verification Agent in Language Model Reasoning",
+        "authors": "Ehsan Shareghi, Wray Buntine, Jiuzhou Han",
+        "link": "https://arxiv.org/abs/2504.00406",
+        "github_repo": "https://github.com/Jiuzhouh/VerifiAgent",
+        "summary": "- VerifiAgent, a novel verification framework, enhances the reliability of Large Language Models (LLMs) by verifying and improving their outputs across diverse reasoning tasks, including mathematical, logical, commonsense, and hybrid reasoning.\n- This two-layer verification agent employs both meta-verification, assessing completeness and consistency, and tool-based adaptive verification, selecting appropriate external tools like Python interpreters or symbolic solvers for enhanced accuracy.\n- Experimental results demonstrate VerifiAgent's superior performance compared to existing baselines such as deductive and backward verifiers, achieving higher accuracy while maintaining competitive precision and recall.\n- Additionally, VerifiAgent effectively integrates with inference scaling methods, improving accuracy with fewer samples and lower cost than traditional Process Reward Models (PRMs).\n- This framework benefits from the capabilities of its backbone LLM, scaling its verification effectiveness alongside improvements in the underlying language model.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Jiuzhouh/VerifiAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    },
+    {
+        "title": "Enhanced OoD Detection through Cross-Modal Alignment of Multi-Modal\n  Representations",
+        "authors": "Sangheum Hwang, mawjdgus",
+        "link": "https://arxiv.org/abs/2503.18817",
+        "github_repo": null,
+        "summary": "- This paper introduces Cross-Modal Alignment (CMA), a novel multi-modal fine-tuning method for Vision-Language Models (VLMs) designed to enhance Out-of-Distribution (OoD) detection.\n- CMA addresses the modality gap in embedding space by aligning image and text embeddings of in-distribution data, improving the utilization of pretrained textual knowledge, especially negative concept labels, for OoD detection.\n- The method achieves state-of-the-art performance on OoD detection benchmarks such as MOS and OpenOOD v1.5, surpassing existing zero-shot, prompt learning, and other multi-modal fine-tuning approaches.\n- On the MOS benchmark, CMA achieves a 19.93% FPR95 and a 95.13% AUROC, significantly outperforming other methods.\n- CMA also demonstrates strong performance in In-Distribution (ID) classification tasks, indicating its efficacy in enhancing both OoD detection and ID classification accuracy.",
+        "classification": [
+            "Computer Vision",
+            "Zero-Shot Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ma-kjh/CMA-OoDD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-03"
+    }
+]

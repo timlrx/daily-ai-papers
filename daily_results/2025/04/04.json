@@ -1,0 +1,271 @@
+[
+    {
+        "title": "Advances and Challenges in Foundation Agents: From Brain-Inspired\n  Intelligence to Evolutionary, Collaborative, and Safe Systems",
+        "authors": "KaitaoSong, JinlinW, Peiyan, xinfeng1i, Bang-UdeM-Mila",
+        "link": "https://arxiv.org/abs/2504.01990",
+        "github_repo": null,
+        "summary": "- This survey explores the intersection of Large Language Models (LLMs) and intelligent agents and maps human brain functionalities with corresponding modules in agentic architectures.\n- The paper offers a modular framework for building advanced agents, incorporating key elements like memory, world modeling, emotions, goals, and reward systems.\n- It discusses self-enhancement mechanisms in AI agents that leverage adaptive learning and self-reflection for continuous improvement, along with collaboration and evolution in multi-agent systems.\n- The survey also covers critical safety and security concerns in LLM-based agents, including threats like jailbreaking, data poisoning, and misalignment, while suggesting potential defense mechanisms.\n- Lastly, it discusses the concept of \u201csuperalignment\u201d and the \u201cscaling law of AI safety,\u201d focusing on enhancing the safety and reliability of agents as their capabilities expand.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/FoundationAgents/awesome-foundation-agents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual\n  Editing",
+        "authors": "Rethinker, GTZhai, KexianTang, zpy777, PhoenixZ",
+        "link": "https://arxiv.org/abs/2504.02826",
+        "github_repo": "https://github.com/PhoenixZ810/RISEBench",
+        "summary": "- This paper introduces RISEBench, a new benchmark designed to evaluate the Reasoning-Informed Visual Editing (RISE) capabilities of large multimodal models (LMMs).\n- RISEBench focuses on four key reasoning categories: temporal, causal, spatial, and logical, and uses a combination of human evaluation and an LMM-as-a-judge approach for assessment.\n- The benchmark evaluates models on instruction reasoning, appearance consistency, and visual plausibility.\n- Experimental results demonstrate that while state-of-the-art LMMs like GPT-40-Native show promising results in some categories, they still struggle with logical reasoning tasks.\n- The authors plan to expand and refine RISEBench to support more comprehensive evaluations in the future.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/PhoenixZ810/RISEBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "GPT-ImgEval: A Comprehensive Benchmark for Diagnosing GPT4o in Image\n  Generation",
+        "authors": "shawnxyh, BestWishYsh, SereinH, liweijia, Yejy53",
+        "link": "https://arxiv.org/abs/2504.02782",
+        "github_repo": "https://github.com/PicoTrex/GPT-ImgEval",
+        "summary": "- This research paper introduces GPT-ImgEval, a benchmark designed to evaluate the image generation capabilities of GPT-40 across generation quality, editing proficiency, and world knowledge.\n- GPT-40's performance is quantitatively and qualitatively assessed through the GenEval, Reason-Edit, and WISE datasets. \n- Across all tasks, GPT-40 demonstrates strong performance, outperforming existing methods. \n- The paper also investigates the potential architecture of GPT-40 using a classification-model-based approach, with results suggesting a diffusion-based image decoding mechanism.\n- An analysis of GPT-40's limitations, safety implications, and multi-round editing capabilities is also provided.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/PicoTrex/GPT-ImgEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Rethinking RL Scaling for Vision Language Models: A Transparent,\n  From-Scratch Framework and Comprehensive Evaluation Scheme",
+        "authors": "Pengfei, IanZhong, Ryan1122, steffichern, ManTle",
+        "link": "https://arxiv.org/abs/2504.02587",
+        "github_repo": "https://github.com/GAIR-NLP/MAYE",
+        "summary": "- This paper introduces MAYE, a transparent, from-scratch framework for Reinforcement Learning (RL) applied to Vision Language Models (VLMs), focusing on improving reasoning capabilities.\n- The framework uses a four-step process\u2014data flow, response collection, trajectory generation, and policy update\u2014and is validated across multiple VLMs and datasets, including Qwen-VL and mm_math5k/geometry3k.\n- A standardized evaluation scheme is also proposed, emphasizing training dynamics and reflective behaviors to ensure robust and reproducible benchmarks.\n- Experimental results demonstrate that RL consistently outperforms Supervised Fine-Tuning (SFT) in generalization across multiple visual reasoning tasks, even with high-quality SFT data.\n- Analysis reveals a strong correlation between response length and reflective behavior, and RL effectively leverages this to enhance performance.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/GAIR-NLP/MAYE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "SkyReels-A2: Compose Anything in Video Diffusion Transformers",
+        "authors": "raul678, ruiwang, diqiu7, Debang, onion",
+        "link": "https://arxiv.org/abs/2504.02436",
+        "github_repo": null,
+        "summary": "- SkyReels-A2 is a controllable video generation framework based on diffusion transformers that assembles visual elements like characters, objects, and backgrounds into videos based on text prompts and reference images.\n- It uses a two-stream architecture, one for encoding semantic features using a CLIP image encoder and another for encoding spatial features using a 3D VAE.\n- These features are integrated into a diffusion transformer model via cross-attention and concatenation.\n- A new benchmark, A2-Bench, was introduced to evaluate elements-to-video generation and shows SkyReels-A2 performing comparably to closed-source commercial models.\n- SkyReels-A2 is open-source and excels at subject character consistency and natural motion, and offers high editability and identity fidelity.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/SkyworkAI/SkyReels-A2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Scaling Analysis of Interleaved Speech-Text Language Models",
+        "authors": "adiyoss, MajoRoth, hassid, gallilmaimon",
+        "link": "https://arxiv.org/abs/2504.02398",
+        "github_repo": null,
+        "summary": "- This paper conducts a scaling analysis of interleaved speech-text language models (SLMs), demonstrating that they scale more efficiently with compute compared to textless SLMs.\n- The analysis involves training dozens of interleaved SLMs with varying sizes, compute budgets, and model families, leading to practical insights for optimizing SLM performance. \n- The study finds that allocating more compute budget towards increasing model size than training tokens results in better performance.\n- It also investigates the role of synthetic data and TextLM model families, suggesting that scaled-up interleaved SLMs achieve comparable performance to leading models on speech semantic metrics with less compute and data.\n-  All trained models and code are open-sourced to encourage further community exploration.",
+        "classification": [
+            "Audio",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/slp-rl/slamkit"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/hexgrad/Kokoro-82M"
+        ],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "ShortV: Efficient Multimodal Large Language Models by Freezing Visual\n  Tokens in Ineffective Layers",
+        "authors": "xphan, sanmusunrise, luyaojie, chenjiawei-icip, yuanqianhao",
+        "link": "https://arxiv.org/abs/2504.00502",
+        "github_repo": "https://github.com/icip-cas/ShortV",
+        "summary": "- ShortV is a training-free method for optimizing Multimodal Large Language Models (MLLMs) by identifying and freezing visual token computations in ineffective layers, thereby reducing computational costs.\n- It introduces a novel metric called Layer Contribution (LC) to quantify the impact of a layer's transformations on visual and text tokens, identifying layers with minimal contribution to the model's output.\n- ShortV freezes visual tokens by replacing standard layers with sparse ShortV layers where only text tokens are processed.\n- Experiments across various benchmarks (MME, MMBench, MMMU, MMStar, SEED-Bench, GQA, Flickr30K) demonstrate that ShortV can freeze visual tokens in approximately 60% of MLLM layers, achieving a 50% reduction in FLOPs on LLaVA-NeXT-13B while maintaining performance.\n- ShortV is orthogonal to and compatible with visual token pruning methods like FastV, allowing combined use for further efficiency gains.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/icip-cas/ShortV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Audio-visual Controlled Video Diffusion with Masked Selective State\n  Spaces Modeling for Natural Talking Head Generation",
+        "authors": "Jun Zhou, Zixiang Zhou, danxuhk, xuzn, HarlanHong",
+        "link": "https://arxiv.org/abs/2504.02542",
+        "github_repo": null,
+        "summary": "- ACTalker, a novel end-to-end video diffusion framework, generates realistic talking head videos using audio and fine-grained facial motion signals, addressing the limitations of single-modality control in existing methods.\n- The model incorporates a parallel-control mamba (PCM) layer with a mask-drop strategy to integrate multiple driving modalities without conflicts, ensuring each signal manipulates designated facial regions.\n- A gate mechanism within the PCM layer allows flexible control during inference, enabling generation driven by single or multiple signals.\n- Experimental results on datasets like CelebV-HQ and VFHQ demonstrate ACTalker's superior performance in audio-visual synchronization, visual quality, and facial motion accuracy compared to state-of-the-art methods, achieving the best Sync-C and Sync-D scores (5.317 and 7.869 respectively) and a significantly lower FVD-Inc score (232.374).\n- Ablation studies validate the effectiveness of the mamba structure, mask-drop strategy, and identity embedding in enhancing video quality, resolving control conflicts, and preserving identity.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "ZClip: Adaptive Spike Mitigation for LLM Pre-Training",
+        "authors": "gueraf, nilabhra, louisowen6, akanyaani",
+        "link": "https://arxiv.org/abs/2504.02507",
+        "github_repo": "https://github.com/bluorion-com/ZClip",
+        "summary": "- This paper introduces ZClip, a novel adaptive gradient clipping algorithm designed to mitigate loss spikes during large language model (LLM) pre-training.\n- ZClip dynamically adjusts the clipping threshold based on the running mean and standard deviation of gradient norms, using a z-score based anomaly detection mechanism. \n- Unlike traditional methods with fixed thresholds, ZClip adapts to evolving training dynamics and avoids over-clipping. \n- Experimental results on a 1B parameter LLaMA model demonstrate that ZClip stabilizes training at high learning rates, leading to faster convergence without compromising performance. \n- At lower learning rates, ZClip effectively handles minor fluctuations and improves downstream task performance on HellaSwag and Winogrande benchmarks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/bluorion-com/ZClip"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Inference-Time Scaling for Generalist Reward Modeling",
+        "authors": "Chong Ruan, Shirong Ma, Runxin Xu, Peiyi Wang, Zijun Liu",
+        "link": "https://arxiv.org/abs/2504.02495",
+        "github_repo": null,
+        "summary": "- This paper introduces Self-Principled Critique Tuning (SPCT), a novel learning method to improve the inference-time scalability of generalist reward modeling (RM) for large language models (LLMs).\n- SPCT enables pointwise generative reward models (GRMs) to generate principles and critiques adaptively through online reinforcement learning, resulting in higher quality reward signals and better performance-compute scaling.\n- DeepSeek-GRM, a 27B parameter model trained with SPCT, outperforms existing methods and models on various RM benchmarks.\n- Inference-time scaling with parallel sampling and a meta RM further improves the performance of DeepSeek-GRM, exceeding the performance gains from training-time scaling with larger model sizes.\n- The proposed method addresses the challenge of generating accurate and robust rewards for general queries in diverse domains, crucial for broader applications of LLMs.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Efficient Model Selection for Time Series Forecasting via LLMs",
+        "authors": "Hongjie Chen, Franck-Dernoncourt, ryanrossi, tiankaiy, wwdd7718",
+        "link": "https://arxiv.org/abs/2504.02119",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel method for time series forecasting model selection using Large Language Models (LLMs).\n- The method bypasses the need for a computationally expensive performance matrix by leveraging the inherent knowledge and reasoning capabilities of LLMs.\n- Through zero-shot prompting with various LLMs (Llama, GPT, and Gemini), the proposed approach outperforms traditional meta-learning techniques and heuristic baselines on a benchmark dataset of 321 time series.\n- The LLM-based selection demonstrates significant computational efficiency by eliminating the need for training and evaluating numerous forecasting models, achieving up to 89x faster inference compared to exhaustive model evaluation.\n- An ablation study reveals that incorporating meta-features improves model selection performance for certain LLMs, while Chain-of-Thought prompting does not necessarily enhance and sometimes degrades performance.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Instruction-Guided Autoregressive Neural Network Parameter Generation",
+        "authors": "Sung Ju Hwang, Song Chong, Bruno Andreis, bedio",
+        "link": "https://arxiv.org/abs/2504.02012",
+        "github_repo": null,
+        "summary": "- This paper introduces Instruction-Guided Parameter Generation (IGPG), a novel framework that leverages a Vector Quantized Variational Autoencoder (VQ-VAE) and an autoregressive model (transformer) to generate neural network parameters conditioned on task instructions, dataset, and architecture details.\n- IGPG addresses the limitations of existing methods, such as limited scalability and rigidity in handling diverse architectures, by autoregressively generating neural network weights' tokens, ensuring inter-layer coherence, and enabling efficient adaptation across models and datasets.\n- The method operates at the token level, effectively capturing complex parameter distributions aggregated from a broad spectrum of pretrained models.\n- Experimental results on multiple vision datasets show that IGPG achieves competitive or superior performance compared to state-of-the-art methods, especially regarding scalability and efficiency with large architectures.\n- The authors claim IGPG's potential as a powerful tool for pretrained weight retrieval, model selection, and rapid task-specific fine-tuning.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/chenyaofo/pytorch-cifar-models"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/"
+        ],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Interpreting Emergent Planning in Model-Free Reinforcement Learning",
+        "authors": "David Krueger, Usman Anwar, Stephen Chung, agaralon, tuphs",
+        "link": "https://arxiv.org/abs/2504.01871",
+        "github_repo": null,
+        "summary": "- This paper investigates the emergence of planning in model-free reinforcement learning agents, specifically Deep Repeated ConvLSTM (DRC) agents.\n- Using concept-based interpretability, the research demonstrates that DRC agents learn to plan by forming internal representations of concepts that predict long-term action effects and influence action selection.\n- The methodology involves probing for planning concepts, analyzing plan formation, and verifying causal effects of these plans via intervention.\n- Evidence shows that these agents employ parallelized bidirectional search and that the emergence of planning coincides with increased benefit from test-time compute.\n- The findings provide first non-behavioral evidence of learned planning in model-free RL and suggest emergent planning in RL agents is related to learned world models.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "GenPRM: Scaling Test-Time Compute of Process Reward Models via\n  Generative Reasoning",
+        "authors": "Saputello, dmux, ChetKao, iseesaw, RyanLiu112",
+        "link": "https://arxiv.org/abs/2504.00891",
+        "github_repo": null,
+        "summary": "- Introduced GenPRM, a generative process reward model that enhances the reasoning capabilities of Large Language Models (LLMs) by performing explicit Chain-of-Thought (CoT) reasoning with code verification for each step.\n- Proposed Relative Progress Estimation (RPE) and a novel rationale data synthesis framework involving code verification to generate high-quality supervision labels.\n- Demonstrated significant performance improvements over previous PRMs on ProcessBench and mathematical reasoning tasks, using only 23K training data from the MATH dataset.\n- Showed that smaller GenPRM models can outperform much larger PRMs (e.g., 1.5B GenPRM outperforms GPT-40, and 7B GenPRM surpasses Qwen2.5-Math-PRM-72B) through test-time scaling.\n- Presented GenPRM's potential as a critic model for refining policy model outputs and its effectiveness in test-time scaling for enhanced process supervision capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://ryanliu112.github.io/GenPRM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Scaling Laws in Scientific Discovery with AI and Robot Scientists",
+        "authors": "Zhenting Wang, Renjun Xu, Huazhe Xu, Heng Zhang, universea",
+        "link": "https://arxiv.org/abs/2503.22444",
+        "github_repo": null,
+        "summary": "- This research paper proposes an Autonomous Generalist Scientist (AGS) framework, integrating AI agents with embodied robots, to automate the scientific research process, from literature review to manuscript preparation.\n- The AGS utilizes multimodal capabilities, combining virtual data processing and analysis with physical robot manipulations.\n- By dynamically interacting with virtual and physical environments, the system accelerates research by reducing the need for specialized expertise, enhancing research idea quality, promoting cross-disciplinary applications, improving reproducibility.\n- This framework envisions a future with new scaling laws for scientific discovery driven by the collaboration of AI and robot scientists, with the potential to accelerate advancements in scientific fields ranging from medicine to space exploration and beyond.\n- This paper introduces a novel tiered framework to categorize the level of automation in scientific discovery based on AI integration, further outlining the potential impact and challenges of developing fully autonomous research systems.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Sparse Autoencoders Learn Monosemantic Features in Vision-Language\n  Models",
+        "authors": "Zeynep Akata, Serge Belongie, Quentin Bouniot, Shyamgopal Karthik, Mateusz Pach",
+        "link": "https://arxiv.org/abs/2504.02821",
+        "github_repo": "https://github.com/ExplainableML/sae-for-vlm",
+        "summary": "- This paper introduces a framework for enhancing the interpretability and control of Vision-Language Models (VLMs) using Sparse Autoencoders (SAEs).\n- The authors propose a Monosemanticity Score (MS) to quantify the similarity of images activating a given neuron, demonstrating that SAE training significantly improves neuron monosemanticity in VLMs like CLIP.\n- The Matryoshka SAE architecture is shown to further enhance monosemanticity and reveal concept hierarchies that align with expert-defined structures.\n- The study demonstrates the ability to steer Multimodal Large Language Models (MLLMs), such as LLaVA, by intervening on SAE activations in the vision encoder without modifying the underlying LLM.\n- This method enables controlled manipulation of MLLM outputs towards specific concepts discovered by the SAE, showcasing the potential of SAEs for enhancing both understanding and control of VLMs.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/ExplainableML/sae-for-vlm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-04"
+    },
+    {
+        "title": "Whisper-LM: Improving ASR Models with Language Models for Low-Resource\n  Languages",
+        "authors": "Ibon Saratxaga, Eva Navas, inmahernaez, zuazo",
+        "link": "https://arxiv.org/abs/2503.23542",
+        "github_repo": "http://www.github.com/hitz-zentroa/whisper-lm",
+        "summary": "- This paper introduces Whisper-LM, a method for enhancing Automatic Speech Recognition (ASR) performance, especially in low-resource languages, by integrating traditional (n-gram) and novel (large language models - LLMs) language models with fine-tuned Whisper models.\n- Whisper-LM leverages a structured fine-tuning process for Whisper models across various sizes (Tiny to Large-V3) using the Common Voice dataset and integrates language models at inference time.\n- Results demonstrate improvements up to 51% for in-distribution datasets and 34% for out-of-distribution sentences using statistical Language Models, while LLMs yield more moderate but robust gains and enhance model robustness.\n- A detailed analysis of sentence-level overlap confirms minimal leakage in evaluation datasets, ensuring the observed improvements are not due to memorization.\n- An ablation study reveals the substantial impact of evaluation parameters, particularly language specification and beam search, on performance, emphasizing the need for careful consideration of settings.",
+        "classification": [
+            "Automatic Speech Recognition",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "http://www.github.com/hitz-zentroa/whisper-lm"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/openai"
+        ],
+        "date": "2025-04-04"
+    }
+]

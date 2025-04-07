@@ -30294,5 +30294,218 @@
             "https://huggingface.co/openai"
         ],
         "date": "2025-04-04"
+    },
+    {
+        "title": "Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving",
+        "authors": "Linhao Zhang, Hanwu Chen, Wei Liu, Zhirong Huang, Daoguang Zan",
+        "link": "https://arxiv.org/abs/2504.02605",
+        "github_repo": null,
+        "summary": "- This paper introduces Multi-SWE-bench, a multilingual benchmark for issue resolving comprising 1,632 human-validated issues across seven programming languages (Java, TypeScript, JavaScript, Go, Rust, C, and C++).\n- It also launches Multi-SWE-RL, an open-source community and dataset with 4,723 instances for building reinforcement learning environments for issue resolution.\n-  The authors evaluate nine state-of-the-art large language models (LLMs) across three representative methods (Agentless, SWE-agent, and OpenHands), demonstrating limited generalization of current LLMs beyond Python.\n- Analysis reveals that model performance is sensitive to issue difficulty, description length, and the complexity of fix patches, with shorter, single-file patches generally being easier to resolve.\n- The benchmark and community aim to catalyze the development of more robust, adaptable, and scalable multilingual code agents, fostering progress toward automated issue resolution in diverse software ecosystems.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text2Text Generation",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/multi-swe-bench/multi-swe-bench"
+        ],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "Agentic Knowledgeable Self-awareness",
+        "authors": "Xiangyuan Ru, Xiaobin Wang, Baochang Ren, Zhisong Qiu, Shuofei Qiao",
+        "link": "https://arxiv.org/abs/2504.03553",
+        "github_repo": "https://github.com/zjunlp/KnowSelf",
+        "summary": "- KnowSelf, a novel data-centric approach, equips Large Language Model (LLM)-based agents with agentic knowledgeable self-awareness, enabling them to dynamically regulate knowledge use during decision-making.\n- It uses a heuristic criterion to mark agent's self-explored trajectories for collecting training data according to three situation types: fast thinking, slow thinking, and knowledgeable thinking.\n- A two-stage training process is employed, involving supervised fine-tuning and an RPO loss, to instill self-awareness in the agent.\n- KnowSelf outperforms strong baselines on agent planning tasks with minimal external knowledge and reflection steps, demonstrating its effectiveness and efficiency.\n- Further analysis reveals KnowSelf effectively mitigates planning pattern overfitting, demonstrates better generalization in agent planning and performance scales with model and data size.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/KnowSelf"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "MegaMath: Pushing the Limits of Open Math Corpora",
+        "authors": "Liping Tang, Zhoujun Cheng, Nikhil Ranjan, Zengzhi Wang, Fan Zhou",
+        "link": "https://arxiv.org/abs/2504.02807",
+        "github_repo": null,
+        "summary": "- MegaMath, a new open-source English math corpus totaling 371.6B tokens, pushes the boundaries of existing open math corpora in terms of scale and quality.\n- It incorporates diverse sources, including 279B tokens of web data, 28.1B of code, and 64.5B of synthetic data generated through optimized pipelines that ensure high-quality mathematical content and diversity. \n- A premium subset, MegaMath-Web-Pro, utilizes LLM-based filtering and refining to provide an even higher-quality data source ideal for advanced training. \n- Through ablation studies and benchmark evaluations, MegaMath demonstrates its effectiveness, significantly improving the mathematical reasoning capabilities of state-of-the-art large language models like the Llama-3 series by 15%-20% on tasks such as GSM8K and MATH. \n- Its versatile data variants and open-source nature make MegaMath a valuable resource for research and development in the field of mathematical reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LLM360/MegaMath"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/datasets/LLM360/MegaMath"
+        ],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "SynWorld: Virtual Scenario Synthesis for Agentic Action Knowledge\n  Refinement",
+        "authors": "Jialong Wu, Shuofei Qiao, Yuan Liang, Xiaobin Wang, Runnan Fang",
+        "link": "https://arxiv.org/abs/2504.03561",
+        "github_repo": "https://github.com/zjunlp/SynWorld",
+        "summary": "- SynWorld, a novel framework, assists Large Language Model (LLM)-based agents in learning unfamiliar actions within new environments by synthesizing virtual scenarios involving multiple coordinated actions.\n- Through iterative Monte Carlo Tree Search (MCTS) optimization within these virtual scenarios, SynWorld refines the action descriptions and workflow patterns, ensuring better alignment with environmental constraints.\n- This framework addresses the limitations of existing methods that rely on single-action synthetic scenarios and linear iterative optimization processes which are prone to stagnation.\n- Experimental results on ToolBench and HotpotQA datasets demonstrate SynWorld\u2019s effectiveness in refining action knowledge in virtual environments.\n- It also improves the agent's ability to generalize this knowledge to real-world scenarios, outperforming other iterative optimization methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/SynWorld"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "MME-Unify: A Comprehensive Benchmark for Unified Multimodal\n  Understanding and Generation Models",
+        "authors": "Bingyan Nie, Yang Shi, Chaoyou Fu, Yi-Fan Zhang, Wulin Xie",
+        "link": "https://arxiv.org/abs/2504.03641",
+        "github_repo": null,
+        "summary": "- Introduces MME-Unify (MME-U), a benchmark designed to comprehensively evaluate unified multimodal large language models (U-MLLMs) on understanding, generation, and mixed-modality generation tasks.\n- Curates a diverse set of tasks from existing datasets, standardizing formats and metrics for consistent evaluation across 12 U-MLLMs including Janus-Pro, EMU3, and Gemini2-Flash.\n- Designs five novel subtasks specifically for assessing mixed-modality generation, evaluating how well models' understanding and generation capabilities enhance each other.\n- Reveals a significant performance gap between current U-MLLMs and specialized models in both understanding and generation, highlighting areas for improvement such as instruction following and image generation quality.\n- Finds a substantial variance in performance across models and a notable struggle with mixed-modality generation tasks, even among leading U-MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Text-to-Image",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "VARGPT-v1.1: Improve Visual Autoregressive Large Unified Model via\n  Iterative Instruction Tuning and Reinforcement Learning",
+        "authors": "Liming Liang, Dongchao Yang, Yufan Deng, Yuxin Xie, Xianwei Zhuang",
+        "link": "https://arxiv.org/abs/2504.02949",
+        "github_repo": "https://github.com/VARGPT-family/VARGPT-v1.1",
+        "summary": "- VARGPT-v1.1 is a visual autoregressive large unified model that improves upon its predecessor, VARGPT, by incorporating iterative visual instruction tuning with reinforcement learning through Direct Preference Optimization (DPO), an expanded training corpus, and an upgraded language model backbone using Qwen2.\n- The model architecture consists of an LLM (Qwen2-7B-Instruct), a visual encoder, a visual decoder, and projectors for both understanding and generation, employing causal attention in the LLM and block causal attention in the decoder.\n- It achieves state-of-the-art performance in multimodal understanding and text-to-image instruction-following tasks, outperforming comparable unified MLLMs and demonstrating significant improvements in both comprehension and generation metrics as shown in Figure 2.\n- The model supports text-and-image instructions and outputs text-and-image mixed modal data simultaneously.\n- It also exhibits flexible image-editing capabilities without architectural modifications.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/VARGPT-family/VARGPT-v1.1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated\n  Agent-Human Interplay",
+        "authors": "Ming Zhu, Jianguo Zhang, Weiran Yao, Zuxin Liu, Akshara Prabhakar",
+        "link": "https://arxiv.org/abs/2504.03601",
+        "github_repo": null,
+        "summary": "- APIGen-MT is a two-phase framework for generating verifiable and diverse multi-turn agent data. \n- The first phase involves an agentic pipeline that generates task blueprints with ground-truth actions using LLM reviewers and feedback loops. \n- These blueprints are then transformed into interaction trajectories through simulated human-agent interplay in the second phase.\n- The xLAM-2-fc-r models, trained on this synthetic data, outperform models like GPT-40 and Claude 3.5 on T-bench and BFCL, especially in multi-turn settings, with smaller models often exceeding larger counterparts.\n- Both the synthetic data and trained xLAM-2-fc-r models are open-sourced.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://apigen-mt.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Salesforce/xLAM-2"
+        ],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "HumanDreamer-X: Photorealistic Single-image Human Avatars Reconstruction\n  via Gaussian Restoration",
+        "authors": "Guosheng Zhao, Xiaofeng Wang, Runqi Ouyang, Boyuan Wang, ZhengZhu",
+        "link": "https://arxiv.org/abs/2504.03536",
+        "github_repo": null,
+        "summary": "- HumanDreamer-X is a novel framework that reconstructs photorealistic, animatable 3D human avatars from a single image by integrating multi-view human generation and 3D reconstruction into a unified pipeline, leveraging 3D Gaussian Splatting (3DGS).\n- The pipeline starts with initial 3DGS reconstruction to provide geometric and appearance priors, followed by a HumanFixer model, built upon a pre-trained video diffusion model, to refine and restore details in the initially rendered multi-view images. \n- An attention modulation strategy enhances geometric detail and identity consistency across multiple views, addressing blurriness common in multi-view video generation.\n- Experimental results on CustomHumans and THuman2.1 datasets demonstrate significant improvements over state-of-the-art methods, with a PSNR increase of 16.45% for generation and 12.65% for reconstruction, achieving up to 25.62dB.\n- The framework shows strong generalization capabilities on in-the-wild data and adaptability to various human reconstruction backbone models.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "TransMamba: Flexibly Switching between Transformer and Mamba",
+        "authors": "Shuaipeng Li, Xingwu Sun, Ruobing Xie, andyyang, Yixinglee",
+        "link": "https://arxiv.org/abs/2503.24067",
+        "github_repo": null,
+        "summary": "- TransMamba is a novel framework that merges Transformer and Mamba models for sequence modeling, enabling dynamic switching between attention and state-space mechanisms based on token length and layer.\n- It employs shared parameter matrices (QKV and CBx) for both Transformer and Mamba and introduces a Memory Converter to bridge the two mechanisms by transforming attention outputs into SSM-compatible states.\n- TransMamba incorporates a flexible TransPoint scheduling strategy to optimize the switching points between the two models, enhancing training efficiency.\n- Experimental results demonstrate that TransMamba achieves superior training efficiency and performance compared to standalone Transformer, Mamba2, and hybrid models.\n- The study validates the underlying consistency between Transformer and Mamba paradigms, offering a scalable solution for next-generation sequence modeling, particularly for long-sequence processing.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "Comprehensive Relighting: Generalizable and Consistent Monocular Human\n  Relighting and Harmonization",
+        "authors": "Zhixin Shu, Krishna Kumar Singh, Xin Sun, Jingyuan Liu, Junying Wang",
+        "link": "https://arxiv.org/abs/2504.03011",
+        "github_repo": null,
+        "summary": "- Introduces Comprehensive Relighting, a novel coarse-to-fine framework that uses a diffusion model to perform human relighting and background harmonization from a single image or video.\n- The framework leverages pre-trained diffusion models to generate high-quality, temporally consistent relighting results.\n- It introduces an unsupervised temporal lighting module trained on real videos to enforce temporal coherence in video relighting without relying on ground truth data.\n- A guided refinement module helps preserve high-frequency details during image generation. \n- Demonstrates superior performance compared to existing methods, achieving strong generalizability across various body parts, poses, and scenes, and exhibiting high temporal coherence in videos.",
+        "classification": [
+            "Image-to-Image",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "EvMic: Event-based Non-contact sound recovery from effective\n  spatial-temporal modeling",
+        "authors": "Lu Zhang, Xudong XU, Xu Jia, Shi Guo, yyzqy",
+        "link": "https://arxiv.org/abs/2504.02402",
+        "github_repo": null,
+        "summary": "- EvMic, a novel learning-based pipeline for event-based non-contact sound recovery, leverages the high temporal resolution and large field of view of event cameras.\n- It uses a network with sparse convolutions for feature extraction, a multi-head self-attention spatial aggregation block, and a Mamba-based temporal modeling module to process event data and reconstruct sound.\n- A new synthetic dataset, EvMic, was created using Blender and an event simulator to train the model, along with a speckle-based data augmentation technique and real world data for improved generalization.\n- Experimental results on synthetic and real-world data demonstrated superior performance compared to existing event-based and frame-based methods, achieving higher SNR and STOI scores.\n-  A custom-designed imaging system with a laser matrix was used to amplify surface gradients and capture subtle vibrations in real-world scenarios.",
+        "classification": [
+            "Audio",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "MedSAM2: Segment Anything in 3D Medical Images and Videos",
+        "authors": "Mohammed Baharoon, Bihui Chen, Sumin Kim, Zongxin Yang, Jun Ma",
+        "link": "https://arxiv.org/abs/2504.03600",
+        "github_repo": null,
+        "summary": "- MedSAM2 is a promptable segmentation foundation model for 3D medical image and video segmentation, adapted from the Segment Anything Model 2 (SAM2) and trained on a large medical dataset (455,000 3D image-mask pairs and 76,000 video frames).\n- It leverages an image encoder, memory attention module, prompt encoder, and mask decoder for processing both volumetric medical scans and video frames.\n- The model outperforms previous state-of-the-art models across various 3D medical image modalities (CT, MRI, PET) and video data (ultrasound, endoscopy), demonstrating improved performance with a smaller model size.\n- It includes a human-in-the-loop annotation pipeline that significantly reduces manual annotation time for 3D lesion segmentation in CT and MRI by up to 92% and video annotation in cardiac ultrasound by up to 92%, enabling efficient creation of large datasets. \n- MedSAM2 is integrated into various platforms, including 3D Slicer, terminal, JupyterLab, Google Colab, and Gradio, for versatile deployment across different user needs and computational resources.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/bowang-lab/MedSAM2",
+            "https://github.com/bowang-lab/MedSAMSlicer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-07"
+    },
+    {
+        "title": "BEATS: Bias Evaluation and Assessment Test Suite for Large Language\n  Models",
+        "authors": "Lisa Erickson, tbandopa, alokabhishek",
+        "link": "https://arxiv.org/abs/2503.24310",
+        "github_repo": null,
+        "summary": "- This research paper introduces BEATS (Bias Evaluation and Assessment Test Suite), a novel framework for evaluating bias, ethics, fairness, and factuality (BEFF) in Large Language Models (LLMs).\n- The framework utilizes a curated dataset of evaluation questions that measure performance across 29 distinct metrics spanning demographic, cognitive, and social biases, as well as ethical reasoning, group fairness, and factuality.\n- A consortium of LLMs acts as judges to evaluate model responses, enabling a statistically rigorous and scalable bias assessment methodology.\n- Empirical results reveal that 37.65% of outputs from industry-leading LLMs contain some form of bias, highlighting the risk of using these models in critical decision-making systems.\n- The BEATS framework provides a methodology for benchmarking LLMs, diagnosing sources of bias, and developing mitigation strategies to promote more responsible and ethical AI development.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/SocialGrep/one-million-reddit-questions"
+        ],
+        "date": "2025-04-07"
     }
 ]

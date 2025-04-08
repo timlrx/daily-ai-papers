@@ -1,0 +1,226 @@
+[
+    {
+        "title": "One-Minute Video Generation with Test-Time Training",
+        "authors": "guestrin, zhaoyue-zephyrus, GashonHussein, koceja, karansdalal",
+        "link": "https://arxiv.org/abs/2504.05298",
+        "github_repo": null,
+        "summary": "- This paper introduces a new approach to generate one-minute videos from text storyboards using Test-Time Training (TTT) layers within a pre-trained Diffusion Transformer model.\n- TTT layers, whose hidden states are neural networks, offer increased expressiveness compared to traditional RNN layers with fixed-size hidden states, enabling the model to capture complex, multi-scene stories with dynamic motion.\n- The authors curate a text-to-video dataset based on Tom and Jerry cartoons to demonstrate the effectiveness of their approach, focusing on complex narratives and dynamic motion.\n- In human evaluations, the proposed method with TTT layers outperforms baselines like Mamba 2, Gated DeltaNet, and sliding-window attention by a significant margin (34 Elo points), demonstrating superior coherence and motion naturalness in generated videos.\n- Despite the promising results, the generated videos still contain some artifacts, and improving the efficiency of the TTT-MLP kernel is identified as future work.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "SmolVLM: Redefining small and efficient multimodal models",
+        "authors": "eliebak, mervenoyan, mfarre, orrzohar, andito",
+        "link": "https://arxiv.org/abs/2504.05299",
+        "github_repo": null,
+        "summary": "- SmolVLM, a family of compact, multimodal models designed for resource-efficient inference, are introduced, demonstrating strong performance on image and video tasks with minimal memory footprints.\n- Architectural configurations, tokenization strategies, and data curation are systematically explored for low computational overhead.\n- SmolVLM-256M uses <1GB GPU memory during inference and outperforms the much larger Idefics-80B. \n- The largest model, SmolVLM-2.2B, rivals state-of-the-art VLMs while using half the GPU Memory.\n- Strategic architectural optimizations, aggressive tokenization, and curated training data significantly enhance performance, enabling practical deployments at smaller scales.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "spaces/smolvlm2",
+            "spaces/smolvlm-webgpu",
+            "apple/huggingsnap",
+            "community/smol-research"
+        ],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "URECA: Unique Region Caption Anything",
+        "authors": "Heeji Yoon, seungryong, crepejung00, junwann, SammyLim",
+        "link": "https://arxiv.org/abs/2504.05305",
+        "github_repo": "https://github.com/cvlab-kaist/URECA",
+        "summary": "- This paper introduces URECA, a new region-level captioning model designed to generate unique captions for multi-granularity regions.\n- The model leverages a mask encoder network and dynamic mask modeling to preserve essential region properties such as position and shape, addressing the challenge of generating distinguishable captions for visually similar regions.\n- The authors also present a novel dataset, URECA dataset, specifically curated for unique captioning of multi-granularity regions using a stage-wise data pipeline with Multimodal Large Language Models (MLLMs).\n- URECA achieves state-of-the-art performance on the URECA dataset and demonstrates strong generalization on benchmark datasets like Visual Genome and RefCOCOg.\n- Experimental results show that fine-tuning existing captioning models on URECA dataset enhances their multi-granularity captioning capabilities.",
+        "classification": [
+            "Image-to-Text",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/cvlab-kaist/URECA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "Concept Lancet: Image Editing with Compositional Representation\n  Transplant",
+        "authors": "Hancheng Min, Tianjiao Ding, CCB, ryanckh, peterljq",
+        "link": "https://arxiv.org/abs/2504.02828",
+        "github_repo": null,
+        "summary": "- Concept Lancet (CoLan) is a zero-shot, plug-and-play framework for diffusion-based image editing that interprets and manipulates sparse representations of concepts.\n- CoLan creates a conceptual representation dataset (CoLan-150K) with diverse descriptions and scenarios of visual terms and phrases for a latent dictionary. \n- At inference, CoLan decomposes the source input in the latent space as a sparse linear combination of the representations of visual concepts. \n- Based on the user's editing requests (replace/add/remove), CoLan performs a customized concept transplant process to impose the corresponding editing direction.\n- Experiments on multiple diffusion-based image editing baselines show CoLan achieves state-of-the-art performance in editing effectiveness and consistency preservation.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "LiveVQA: Live Visual Knowledge Seeking",
+        "authors": "Yao Wan, Mingyang Fu, shuaishuaicdp, Tim666, Ayiirep",
+        "link": "https://arxiv.org/abs/2504.05288",
+        "github_repo": null,
+        "summary": "- LIVEVQA, a new dataset designed to assess AI systems' ability to answer questions requiring up-to-date visual knowledge.\n- It consists of 3,602 visual questions from 6 news websites and 14 categories, pairing images with basic comprehension questions and two multi-hop reasoning questions requiring news context.\n- Evaluation across 15 Multimodal Large Language Models (MLLMs) shows that while larger models perform better, challenges persist in handling multi-hop visual questions demanding real-world knowledge. \n- Integrating GUI-based multimodal search substantially improves performance, especially on complex questions, with Gemini-2.0-Flash achieving 29% accuracy. \n- Despite strong textual skills, search engine-equipped models struggle with visual questions needing recent visual information, indicating areas for further research.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "Are You Getting What You Pay For? Auditing Model Substitution in LLM\n  APIs",
+        "authors": "Tianneng Shi, Will Cai, dawnsong, Xuandong",
+        "link": "https://arxiv.org/abs/2504.04715",
+        "github_repo": "https://github.com/sunblaze-ucb/llm-api-audit",
+        "summary": "- This paper explores the challenge of Large Language Model (LLM) substitution within black-box APIs where providers might substitute advertised models with cheaper alternatives.\n- The authors investigate the effectiveness of several detection methods, including output-based statistical tests, benchmark evaluations, log probability analysis, and identity prompting.\n- Results reveal the limitations of methods relying solely on text outputs, particularly against attacks such as model quantization and randomized substitution.  \n- The study finds that log probability analysis provides more reliable verification but depends on API access.\n- The authors also propose using Trusted Execution Environments (TEEs) for hardware-based model integrity verification. ",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/sunblaze-ucb/llm-api-audit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "Gaussian Mixture Flow Matching Models",
+        "authors": "saibi, wetzste1, luanfujun, zexiangxu, Lakonik",
+        "link": "https://arxiv.org/abs/2504.05304",
+        "github_repo": "https://github.com/Lakonik/GMFlow",
+        "summary": "- Introduces Gaussian Mixture Flow Matching (GMFlow), a generative model that predicts dynamic Gaussian mixture parameters, capturing multi-modal flow velocity distributions and generalizing previous diffusion and flow-matching models.\n- GMFlow leverages a KL divergence loss for training and incorporates novel SDE/ODE solvers with analytic denoising distributions for efficient few-step sampling.\n- It introduces a probabilistic guidance scheme to mitigate over-saturation issues in classifier-free guidance, thereby improving image generation quality.\n- Extensive experiments on ImageNet 256x256 demonstrate GMFlow's superior performance over flow-matching baselines, achieving high precision with fewer sampling steps (0.942 precision with 6 steps).\n- GMFlow achieves state-of-the-art precision of 0.950 with 32 sampling steps on ImageNet 256x256.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Lakonik/GMFlow"
+        ],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "DiaTool-DPO: Multi-Turn Direct Preference Optimization for\n  Tool-Augmented Large Language Models",
+        "authors": "Donghun Lee, dsindex, junrae, gaeunseo, hash2430",
+        "link": "https://arxiv.org/abs/2504.02882",
+        "github_repo": null,
+        "summary": "- DiaTool-DPO, a novel method to enhance the conversational abilities of Tool-Augmented Large Language Models (TA-LLMs) by using Direct Preference Optimization (DPO) is introduced.\n- The approach models TA-LLM interactions as a Markov Decision Process (MDP) and introduces a specialized objective loss that contrasts preferred and rejected dialogue trajectories to control conversation flow.\n- The method constructs paired trajectory datasets automatically and improves on existing techniques by addressing challenges in handling incomplete queries and out-of-scope requests.\n- The proposed method approaches GPT-40's performance achieving 94.8% in information gathering and 91% in tool call rejection.\n- The presented approach substantially improves baseline performance which only achieved 44% and 9.6% respectively for the same tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "Mamba as a Bridge: Where Vision Foundation Models Meet Vision Language\n  Models for Domain-Generalized Semantic Segmentation",
+        "authors": "robbytan, XinNUS",
+        "link": "https://arxiv.org/abs/2504.03193",
+        "github_repo": "https://github.com/devinxzhang/MFuser",
+        "summary": "- MFuser, a novel Mamba-based fusion framework, efficiently combines Vision Foundation Models (VFMs) and Vision Language Models (VLMs) for Domain-Generalized Semantic Segmentation (DGSS), addressing the limitations of using either model exclusively.\n- MFuser incorporates MVFuser, a co-adapter that jointly fine-tunes VFMs and VLMs, and MTEnhancer, which refines text embeddings using image priors for enhanced cross-modal consistency.\n- This approach achieves fine-grained feature locality and robust text alignment without significant computational overhead due to Mamba's linear scalability with sequence length. \n- Extensive experiments demonstrate that MFuser surpasses state-of-the-art DGSS methods, achieving 68.20 mIoU on synthetic-to-real and 71.87 mIoU on real-to-real benchmarks.\n- The method's adaptability is showcased through consistent superior performance across various VFM and VLM combinations.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/devinxzhang/MFuser"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "BOP Challenge 2024 on Model-Based and Model-Free 6D Object Pose\n  Estimation",
+        "authors": "taeyeop, anas-gouda, mfourmy, swtyree, nv-nguyen",
+        "link": "https://arxiv.org/abs/2504.02812",
+        "github_repo": null,
+        "summary": "- The BOP Challenge 2024 introduced new model-free tasks for 6D object pose estimation, where methods onboard objects solely from reference videos without access to 3D models.\n- A new, more practical 6D object detection task was introduced, where object identities are not provided as input.\n- New BOP-H3 datasets recorded with high-resolution sensors and AR/VR headsets were introduced, resembling real-world scenarios and including 3D models and onboarding videos.\n- The top-performing method for model-based 6D localization of unseen objects, FreeZeV2.1, achieved 22% higher accuracy on BOP-Classic-Core than the previous best and is only 4% behind the best for seen objects.\n- The best method for model-based 2D detection of unseen objects, MUSE, achieved a 21% relative improvement compared to the previous best method but the current accuracy on unseen objects remains significantly lower than for seen objects.",
+        "classification": [
+            "Zero-Shot Object Detection",
+            "Object Detection",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/thodan/bop_toolkit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "VAPO: Efficient and Reliable Reinforcement Learning for Advanced\n  Reasoning Tasks",
+        "authors": "Ruofei Zhu, Xiaochen Zuo, Qiying Yu, Yufeng Yuan, YuYue",
+        "link": "https://arxiv.org/abs/2504.05118",
+        "github_repo": null,
+        "summary": "- VAPO, a Value-based Augmented Proximal Policy Optimization framework, is introduced for enhancing reasoning models within the value-based paradigm.\n- When evaluated on the AIME 2024 dataset, VAPO, utilizing the Qwen 32B pre-trained model, achieves a state-of-the-art score of 60.4, outperforming DeepSeek-R1-Zero-Qwen-32B and DAPO by over 10 points under identical settings.\n- The framework addresses three key challenges in value-based methods for long chain-of-thought (long-CoT) reasoning: value model bias, heterogeneous sequence lengths, and reward signal sparsity.\n- VAPO incorporates Value-Pretraining, Length-adaptive GAE, and a combination of Clip-Higher, Positive Example LM Loss, and Group-Sampling techniques to overcome these challenges.\n- VAPO is shown to not only outperform but uses fewer training steps than previous methods, showcasing stable and efficient training without crashes across multiple independent runs.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "Clinical ModernBERT: An efficient and long context encoder for\n  biomedical text",
+        "authors": "Jeffrey N. Chiang, Anthony Wu, Simonlee711",
+        "link": "https://arxiv.org/abs/2504.03964",
+        "github_repo": null,
+        "summary": "- This paper introduces Clinical ModernBERT, a transformer-based encoder pre-trained on a large-scale biomedical corpus of literature, clinical notes, and medical ontologies, including PubMed abstracts, MIMIC-IV clinical data, and medical codes with textual descriptions.\n- Building upon ModernBERT, it incorporates architectural upgrades such as rotary positional embeddings (RoPE), Flash Attention, and an extended context length of up to 8,192 tokens.\n- Clinical ModernBERT excels at generating semantically rich representations specifically tailored for long-context medical tasks, outperforming domain baselines in benchmarks such as named entity recognition (NER), retrieval, and classification tasks, including achieving state-of-the-art performance on long-context tasks like i2b2 concept extraction.\n- The model's weights and tokenizer are publicly available.\n- Latent space visualizations demonstrate improved alignment with clinical ontologies, showing its ability to internalize medical taxonomies.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/Simonlee711/Clinical_ModernBERT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Simonlee711/Clinical_ModernBERT"
+        ],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "JailDAM: Jailbreak Detection with Adaptive Memory for Vision-Language\n  Model",
+        "authors": "Li Li, Yi Nian, yuehanqi, yuehanqi, Chouoftears",
+        "link": "https://arxiv.org/abs/2504.03770",
+        "github_repo": null,
+        "summary": "- JAILDAM, a memory-centered test-time adaptive framework, is introduced for detecting jailbreak attempts in vision-language models (VLMs).\n- It uses a memory bank of unsafe concepts generated by GPT-40 based on safety guidelines.\n- Multimodal safe inputs are encoded using CLIP and compared to the memory bank through attention mechanism to generate attention features which is then feed into an autoencoder.\n- During inference, if an input's similarity to the memory is low, and the reconstruction error is high, the input is considered harmful, and the least-used concept in memory is updated with a residual representation of the input, enabling adaptation to new attacks.\n- Experimental results show that JAILDAM outperforms existing methods in jailbreak detection accuracy and speed.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ShenzheZhu/JailDAM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    },
+    {
+        "title": "GlotEval: A Test Suite for Massively Multilingual Evaluation of Large\n  Language Models",
+        "authors": "Ona de Gibert, Sawal Devkota, Joseph Attieh, Zihao Li, zuenmin",
+        "link": "https://arxiv.org/abs/2504.04155",
+        "github_repo": null,
+        "summary": "- GlotEval is a lightweight framework designed for massively multilingual evaluation of large language models (LLMs), supporting seven key tasks across dozens to hundreds of languages.\n- It features consistent multilingual benchmarking by standardizing language codes, language-specific prompt templates for diverse linguistic settings, and non-English-centric machine translation evaluation.\n- GlotEval integrates 20+ existing multilingual benchmarks and supports customizable prompts for each language, along with automated translation of prompt templates to 130+ languages.\n- A case study comparing EMMA-500 and Llama-2-7B on multilingual translation tasks demonstrates the framework's ability to reveal performance differences under various prompting strategies and language-centric settings.\n- The framework promotes more inclusive LLM evaluation by focusing on both widely spoken and underrepresented languages.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Text Classification",
+            "Summarization"
+        ],
+        "github_urls": [
+            "github.com/MaLA-LM/GlotEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-08"
+    }
+]

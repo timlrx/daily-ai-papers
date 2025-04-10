@@ -1,0 +1,234 @@
+[
+    {
+        "title": "DDT: Decoupled Diffusion Transformer",
+        "authors": "Weilin Huang, Zhi Tian, lmwang, wangsssssss",
+        "link": "https://arxiv.org/abs/2504.05741",
+        "github_repo": null,
+        "summary": "- Introduces Decoupled Diffusion Transformer (DDT), an encoder-decoder architecture for image generation that decouples low-frequency semantic encoding and high-frequency detail decoding.\n- DDT addresses the optimization dilemma in traditional diffusion transformers by using a dedicated condition encoder for semantic extraction and a velocity decoder for high-frequency velocity regression.\n- Employs representation alignment and direct supervision to maintain local consistency of self-conditioned features across timesteps, enabling efficient inference through feature sharing.\n- Achieves state-of-the-art performance of 1.31 FID on ImageNet 256x256 with 256 epochs (4x faster convergence) and 1.28 FID on ImageNet 512x512.\n- The decoupled architecture improves inference speed by enabling shared self-conditions between adjacent denoising steps with a dynamic programming approach to minimize performance drop.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MCG-NJU/DDT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/stabilityai/sd-vae-ft-ema"
+        ],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "GenDoP: Auto-regressive Camera Trajectory Generation as a Director of\n  Photography",
+        "authors": "lindahua, wetzste1, liuziwei7, jingtan, Dubhe-zmc",
+        "link": "https://arxiv.org/abs/2504.07083",
+        "github_repo": null,
+        "summary": "- This paper introduces GenDoP, a novel auto-regressive transformer model for generating camera trajectories from text descriptions and optionally initial frame RGBD input.\n- GenDoP treats camera parameters as discrete tokens, allowing it to model temporal and spatial dependencies, leading to high-quality and coherent trajectories.\n- The authors also present DataDoP, a new dataset with 29K real-world artistic film shots, depth maps, and text captions describing camera motion, scene interaction, and directorial intent.\n- Experimental results on DataDoP demonstrate GenDoP's superior performance compared to diffusion-based methods in text alignment, trajectory quality, and complexity, with enhanced robustness.\n- GenDoP offers better controllability and finer-grained trajectory adjustments than existing approaches.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video",
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://kszpxxzmc.github.io/GenDoP/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training\n  Tokens",
+        "authors": "Yensung, sewon, yanaiela, taylorb, liujch1998",
+        "link": "https://arxiv.org/abs/2504.07096",
+        "github_repo": null,
+        "summary": "- OLMOTRACE is a system that traces the output of large language models (LLMs) back to their original training data, which consists of trillions of tokens.\n- It identifies verbatim matches between segments of the LLM's output and documents within its training corpora.\n- Uses an extended version of infini-gram, allowing for real-time tracing results within seconds.\n- Aims to enhance user understanding of LLM behavior by revealing potential sources of information or learned sequences within the training data.\n- OLMOTRACE is publicly available and open-source.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/allenai/infinigram-api"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct"
+        ],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+        "authors": "Yiyu Wang, Longyue Wang, Xue Yang, Jifang Wang, imryanxu",
+        "link": "https://arxiv.org/abs/2504.07046",
+        "github_repo": "https://github.com/HITsz-TMG/Agentic-CIGEval",
+        "summary": "- This paper introduces CIGEVAL, a unified agentic framework for evaluating conditional image generation tasks using large multimodal models (LMMs) like GPT-40 and open-source 7B models.\n- CIGEVAL integrates a multi-functional toolbox for nuanced analysis, including grounding, difference, highlighting, and scene graph tools, and uses a divide-and-conquer approach for fine-grained evaluation of multiple conditions like text prompts, subject images, and control signals.\n-  It synthesizes evaluation trajectories for fine-tuning, enabling smaller LMMs to autonomously select appropriate tools and conduct nuanced analyses based on tool outputs.\n- Experiments on ImagenHub across seven tasks show CIGEVAL (GPT-40 version) achieves a high correlation of 0.4625 with human assessments, closely matching the inter-annotator correlation of 0.47 and surpassing previous state-of-the-art methods.\n-  Fine-tuning with just 2.3K trajectories allows 7B open-source LMMs to exceed the prior GPT-40-based state-of-the-art.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/HITsz-TMG/Agentic-CIGEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "Missing Premise exacerbates Overthinking: Are Reasoning Models losing\n  Critical Thinking Skill?",
+        "authors": "Ming Li, zhoutianyi, sunlichao137, Fcr09",
+        "link": "https://arxiv.org/abs/2504.06514",
+        "github_repo": null,
+        "summary": "- This paper introduces the concept of \"Overthinking under Missing Premise (MiP-Overthinking)\", a phenomenon where reasoning Large Language Models (LLMs) generate excessively long responses to ill-posed questions with missing premises.\n- The authors curate four MiP datasets across varying difficulty levels, employing three distinct generation strategies: Rule-Based Generation, Body-Question Swapping, and Essential-Premise Removal.\n- Experimental results on a diverse set of LLMs demonstrate that reasoning models produce significantly longer responses (2x-4x more tokens) for MiP questions compared to well-defined questions and non-reasoning models.\n- Despite the extended reasoning, these models exhibit low abstain rates on MiP questions, indicating a lack of genuine critical thinking skills, contradicting test-time scaling law.\n- Further analysis reveals that reasoning models often detect the missing premise early in the reasoning process but continue to generate redundant content, while non-reasoning models efficiently identify and abstain from such questions.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/MiP-Overthinking"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "FantasyTalking: Realistic Talking Portrait Generation via Coherent\n  Motion Synthesis",
+        "authors": "Yunpeng Zhang, Yaqi Fan, Mengchao Wang, fanjiang, wangqiang9",
+        "link": "https://arxiv.org/abs/2504.04842",
+        "github_repo": null,
+        "summary": "- FantasyTalking is a novel framework that leverages a pretrained video diffusion transformer model to generate realistic and coherent talking portraits with controllable motion dynamics from a single portrait image, voice, and text.\n- It employs a dual-stage audio-visual alignment strategy, utilizing clip-level training for global motion coherence and frame-level training for precise lip synchronization.\n- Instead of a reference network, it uses a facial-focused cross-attention module to maintain facial identity.\n- A motion intensity modulation module allows control over expression and body motion intensity.\n- Experimental results on tame and wild talking head datasets demonstrate superior performance compared to existing state-of-the-art methods in video quality, temporal consistency, and motion diversity.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "OmniCaptioner: One Captioner to Rule Them All",
+        "authors": "Cxxs, Wayne-lc, Dakerqi, JiakangYuan, yeeeeeyy",
+        "link": "https://arxiv.org/abs/2504.07089",
+        "github_repo": "https://github.com/Alpha-Innovator/OmniCaptioner",
+        "summary": "- OmniCaptioner is a versatile visual captioning framework generating fine-grained textual descriptions across diverse visual domains, including natural images, visual text, and structured visuals.\n- Unlike existing methods limited to specific image types, OmniCaptioner provides a unified solution, bridging the gap between visual and textual modalities by converting pixel information into semantic textual representations.\n- It outperforms existing models in visual reasoning tasks when integrated with LLMs, enhances image generation by providing more accurate descriptions, and allows for a more efficient supervised fine-tuning (SFT) process due to its diverse pretraining dataset.\n- The framework consists of Seed-Caption Generation for precise pixel-to-word mapping using GPT-40 and Caption Extension to enrich styles and incorporate reasoning knowledge using Qwen2.5-32B.\n- Evaluation across visual reasoning, image generation, and SFT benchmarks demonstrates OmniCaptioner's superior performance and versatility in bridging visual and language modalities.",
+        "classification": [
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Alpha-Innovator/OmniCaptioner"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/U4R/OmniCaptioner"
+        ],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "Are We Done with Object-Centric Learning?",
+        "authors": "Matthias Bethge, coallaoh, AmeyaPrabhu, arubique",
+        "link": "https://arxiv.org/abs/2504.07092",
+        "github_repo": "https://github.com/AlexanderRubinstein/OCCAM",
+        "summary": "- This paper challenges the emphasis on developing mechanisms for separating objects in representation space as the primary focus of Object-Centric Learning (OCL).\n- It demonstrates that sample-efficient, class-agnostic segmentation models, such as High-Quality Entity Segmentation (HQES), achieve superior zero-shot object discovery compared to existing slot-centric OCL methods.\n- The paper introduces Object-Centric Classification with Applied Masks (OCCAM), a training-free probe that leverages object masks to achieve robust zero-shot image classification in the presence of spurious background correlations.\n- OCCAM involves generating object-centric representations by masking and encoding objects independently, followed by classifying images using representations of the foreground object. \n- Empirical results show that segmentation-based encoding with HQES significantly outperforms slot-based OCL methods in obtaining object-centric representations and OCCAM yields state-of-the-art results on several robust classification benchmarks.",
+        "classification": [
+            "Zero-Shot Classification",
+            "Image Segmentation",
+            "Object Detection",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/AlexanderRubinstein/OCCAM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "RuOpinionNE-2024: Extraction of Opinion Tuples from Russian News Texts",
+        "authors": "Anna Lapanitsyna, Natalia Tkachenko, Natalia Loukachevitch, nicolay-r, RefalMachine",
+        "link": "https://arxiv.org/abs/2504.06947",
+        "github_repo": null,
+        "summary": "- This paper introduces RuOpinionNE-2024, a shared task focused on extracting structured opinion tuples from Russian news text.\n- The task involves identifying sentiment holders, targets, expressions, and polarity within sentences, contributing to a deeper understanding of sentiment dynamics in news.\n- The competition saw over 100 submissions, primarily employing large language models (LLMs) in zero-shot, few-shot, and fine-tuning settings.\n- Fine-tuning a large language model yielded the best performance on the test set.\n- A comparison of 30 prompts and 11 open-source LLMs with varying parameter sizes (3-32 billion) in 1-shot and 10-shot learning revealed optimal model and prompt configurations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "Masked Scene Modeling: Narrowing the Gap Between Supervised and\n  Self-Supervised Learning in 3D Scene Understanding",
+        "authors": "Leon Sick, Christian Stippel, phermosilla",
+        "link": "https://arxiv.org/abs/2504.06719",
+        "github_repo": "https://github.com/phermosilla/msm",
+        "summary": "- This paper introduces Masked Scene Modeling (MSM), a hierarchical self-supervised learning framework for 3D scene understanding using a Hybrid UNet (HUNet) architecture.\n- MSM employs a novel bottom-up masking approach where the encoder receives a masked sparse voxelization, reconstructing deep features of masked patches during decoding using a teacher model.\n- Evaluated on ScanNet, ScanNet200, and S3DIS datasets for semantic and instance segmentation, and ScanRefer for 3D visual grounding, MSM achieves comparable or better performance than supervised methods and significantly outperforms other self-supervised methods.\n-  For instance, on ScanNet, MSM achieves 68.7 mIoU for semantic segmentation with linear probing, exceeding existing self-supervised models by over +30 points and approaching supervised performance (77.0 mIoU with HUNet).\n-  The paper also introduces a hierarchical evaluation protocol for 3D self-supervised methods which improved performance compared to existing single-layered approaches.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Object Detection",
+            "Image Feature Extraction",
+            "Text-to-3D",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/phermosilla/msm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "DiTaiListener: Controllable High Fidelity Listener Video Generation with\n  Diffusion",
+        "authors": "chaubeyG, hongkung, minhtran, Boese0601, havent-invented",
+        "link": "https://arxiv.org/abs/2504.04010",
+        "github_repo": null,
+        "summary": "- DiTaiListener is a novel diffusion-based model for generating high-fidelity listener response videos from speaker audio and facial motion inputs, also incorporating text-based control for customized responses.\n- It uses a Causal Temporal Multimodal Adapter (CTM-Adapter) within a Diffusion Transformer (DiT) architecture to process multimodal inputs and generate realistic facial expressions directly in pixel space, rather than relying on intermediate 3DMM representations and rendering.\n- For long video generation, DiTaiListener-Edit refines transitions between independently generated segments, ensuring smooth and coherent motions.\n- On benchmark datasets like RealTalk and VICO, DiTaiListener achieves state-of-the-art performance in both photorealism (+73.8% FID on RealTalk) and motion representation (+6.1% FD metric on VICO).\n- User studies confirm DiTaiListener's superior performance regarding feedback, diversity, and smoothness.",
+        "classification": [
+            "Text-to-Video",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement\n  Fine-Tuning",
+        "authors": "Lanxingxuan, donglu, desenmeng, Aurorana, xinhaoli",
+        "link": "https://arxiv.org/abs/2504.06958",
+        "github_repo": null,
+        "summary": "- This paper introduces VideoChat-R1, a video multimodal large language model (MLLM) enhanced for spatio-temporal perception using Reinforcement Fine-Tuning (RFT) with Group Relative Policy Optimization (GRPO).\n- RFT is shown to be highly data-efficient, improving performance on specific tasks without impacting general capabilities or chat abilities. \n- VideoChat-R1 achieves state-of-the-art results on spatio-temporal perception tasks such as temporal grounding (+31.8 compared to Qwen2.5-VL-7B) and object tracking (+31.2), and it also shows improvements on general video QA benchmarks.\n- The paper suggests that training on spatio-temporal perception tasks can strengthen a model's spatio-temporal reasoning ability. \n- The authors provide comprehensive analysis and ablation studies demonstrating the efficacy of RFT for Video MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/VideoChat-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments",
+        "authors": "Songyou Peng, Marc Pollefeys, Valentin Bieri, Zihan Zhu, Jianhao Zheng",
+        "link": "https://arxiv.org/abs/2504.03886",
+        "github_repo": null,
+        "summary": "- WildGS-SLAM, a novel monocular RGB SLAM system, robustly reconstructs static 3D scenes in dynamic environments using a 3D Gaussian Splatting (3DGS) representation and uncertainty-aware geometric mapping.\n- It employs a shallow multi-layer perceptron (MLP) trained on DINOv2 features to predict per-pixel uncertainty, guiding dynamic object removal during tracking and mapping, enhancing dense bundle adjustment and Gaussian map optimization.\n- Evaluated on multiple datasets including a newly introduced Wild-SLAM Dataset with challenging indoor and outdoor scenes, WildGS-SLAM demonstrates superior performance compared to state-of-the-art methods.\n- It achieves high-fidelity novel view synthesis and artifact-free rendering, robustly removing dynamic distractors without requiring explicit depth or semantic labels.\n- This uncertainty-aware approach to tracking and mapping significantly improves performance in dynamic environments over traditional and other learning-based methods, as shown by quantitative and qualitative analysis on benchmark datasets.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    },
+    {
+        "title": "RobustDexGrasp: Robust Dexterous Grasping of General Objects from\n  Single-view Perception",
+        "authors": "Jie Song, Sammy Christen, Linyi Huang, Zijian Wu, ethHuiZhang",
+        "link": "https://arxiv.org/abs/2504.05287",
+        "github_repo": null,
+        "summary": "- This paper introduces a new reinforcement learning framework for robust, zero-shot dexterous grasping of diverse unseen objects from single-view point clouds, also enabling real-time adaptation to disturbances like object movement and external forces.\n- The method utilizes a hand-centric object representation based on dynamic distance vectors between finger joints and object surfaces, which is robust to shape variations and viewpoint limitations. \n- A mixed curriculum learning strategy is employed, starting with imitation learning from a privileged visual-tactile teacher policy and transitioning to reinforcement learning for disturbance adaptation.\n- Experiments demonstrate a 97.0% success rate on 247,786 simulated objects and 94.6% on 512 real-world objects, outperforming existing grasping methods in both simulation and hardware under various disturbance settings.\n- The system exhibits strong generalization and robustness due to its focus on local interaction shapes, the mixed curriculum, and domain randomization",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-10"
+    }
+]

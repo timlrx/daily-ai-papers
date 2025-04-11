@@ -31128,5 +31128,223 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-04-10"
+    },
+    {
+        "title": "Kimi-VL Technical Report",
+        "authors": "dongliangwang, congcongwang, DuChenZhuang, tzzcl, xingbowei",
+        "link": "https://arxiv.org/abs/2504.07491",
+        "github_repo": "https://github.com/MoonshotAI/Kimi-VL",
+        "summary": "- Kimi-VL is an open-source Mixture-of-Experts (MoE) vision-language model with advanced multimodal reasoning, long-context understanding, and agent capabilities.\n- It consists of a 2.8B parameter MoE language decoder (Kimi-VL-A3B) paired with a 400M native-resolution MoonViT vision encoder.\n- It outperforms other efficient vision-language models like DeepSeek-VL2 and Qwen2.5-VL-7B on various benchmarks, including college-level image and video comprehension, OCR, and mathematical reasoning.\n- Kimi-VL-Thinking, a long-thinking variant fine-tuned with long chain-of-thought (CoT) and reinforcement learning, further improves the performance on complex multimodal reasoning tasks, achieving scores of 61.7 on MMMU, 36.8 on MathVision and 71.3 on MathVista.\n- Kimi-VL also excels in processing long contexts with a 128K extended context window and high-resolution visual inputs.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Text",
+            "Document Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/MoonshotAI/Kimi-VL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "VCR-Bench: A Comprehensive Evaluation Framework for Video\n  Chain-of-Thought Reasoning",
+        "authors": "lovesnowbest, Lin-Chen, Osilly, ChthollyTree, yukunqi",
+        "link": "https://arxiv.org/abs/2504.07956",
+        "github_repo": null,
+        "summary": "- VCR-Bench, a novel benchmark designed to comprehensively evaluate Large Vision-Language Models' (LVLMs) video Chain-of-Thought (CoT) reasoning capabilities.\n- It consists of 859 videos with diverse content, along with 1,034 question-answer pairs, each manually annotated with stepwise CoT rationales.\n- Introduces CoT score by categorizing CoT steps into visual perception and logical reasoning and evaluates them across various task dimensions (recall, precision).\n- Exposes limitations of current LVLMs, with even top-performing models showing subpar CoT scores, particularly in perception tasks involving temporal-spatial information extraction.\n- Validates framework's effectiveness through a strong positive correlation between CoT scores and accuracy, indicating its crucial role in complex video reasoning.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Question Answering",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://vlm-reasoning.github.io/VCR-Bench/"
+        ],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "VisualCloze: A Universal Image Generation Framework via Visual\n  In-Context Learning",
+        "authors": "mingming8688, cosumosu25, JonsonYan, RuoyiDu, lzyhha",
+        "link": "https://arxiv.org/abs/2504.07960",
+        "github_repo": null,
+        "summary": "- VisualCloze, a novel universal image generation framework, leverages visual in-context learning, enabling it to perform diverse image generation tasks within a single model.\n- The framework utilizes a new graph-structured dataset, Graph200K, which connects images with various task annotations, fostering a denser task space and promoting the learning of transferable knowledge.\n- The model is built upon a pre-trained image infilling model and fine-tuned using the Graph200K dataset; its unified formulation aligns with image infilling, enabling the model to generate images by filling in the target area based on the provided visual context and achieving strong generation capability with minimal training.\n- Experiments show VisualCloze supports a wide range of in-domain tasks, generalizes to unseen tasks like multi-subject image generation and the fusion of sub-tasks, and performs reverse generation.\n- VisualCloze demonstrates a notable improvement in visual quality and text consistency over existing universal models, especially in depth-to-image generation and image deblurring, while maintaining comparable controllability.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "MM-IFEngine: Towards Multimodal Instruction Following",
+        "authors": "yhcao, sweetFruit, KennyUTC, yuhangzang, ChrisDing1105",
+        "link": "https://arxiv.org/abs/2504.07957",
+        "github_repo": "https://github.com/SYuan03/MM-IFEngine",
+        "summary": "- This paper introduces MM-IFEngine, a new pipeline for generating high-quality image-instruction pairs for multimodal instruction following.\n- It also presents MM-IFEval, a challenging benchmark for multimodal instruction following with diverse constraints and a hybrid evaluation approach.\n- The authors create two datasets using the pipeline: MM-IFInstruct-23k for supervised fine-tuning and MM-IFDPO-23k for direct preference optimization.\n- Experiments show that fine-tuning MLLMs on these datasets significantly improves performance on various instruction following benchmarks, including MM-IFEval, MIA, and IFEval.\n- The models fine-tuned on these datasets maintains comparable performance on other visual question answering benchmarks.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/SYuan03/MM-IFEngine"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "DeepSeek-R1 Thoughtology: Let's <think> about LLM Reasoning",
+        "authors": "parishadbehnam, miladink, vaibhavad, arkilpatel, spaidartaigar",
+        "link": "https://arxiv.org/abs/2504.07128",
+        "github_repo": null,
+        "summary": "- This paper introduces a taxonomy for analyzing the reasoning chains of Large Reasoning Models (LRMs), focusing on DeepSeek-R1.\n- The study finds that DeepSeek-R1's reasoning chains follow a consistent structure, starting with problem definition, followed by decomposition ('Bloom cycle'), and iterative reconstruction cycles ('rumination').\n- The research reveals a 'sweet spot' for reasoning length, beyond which performance declines, and that DeepSeek-R1 struggles to adhere to specified token budgets.\n- The analysis also shows DeepSeek-R1 prioritizes context over parametric knowledge, exhibits safety vulnerabilities compared to its non-reasoning counterpart, and displays cultural biases in moral reasoning.\n- It highlights correlations between model reasoning chains and human processing of challenging sentences, while also noting limitations in the model's iterative refinement and world modeling capabilities during visual reasoning tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "HoloPart: Generative 3D Part Amodal Segmentation",
+        "authors": "Lp256, zouzx, KevinHuang, bennyguo, yhyang-myron",
+        "link": "https://arxiv.org/abs/2504.07943",
+        "github_repo": null,
+        "summary": "- Introduces 3D part amodal segmentation, a new task that decomposes a 3D shape into complete semantic parts, even those occluded, addressing limitations of existing 3D part segmentation methods that only identify visible surface patches.\n- Proposes a two-stage approach: initial part segmentation using existing methods like SAMPart3D, followed by 3D part shape completion using HoloPart, a novel diffusion-based model.\n- HoloPart utilizes a specialized architecture with local and global shape context attention mechanisms to capture fine-grained details and ensure overall shape consistency, respectively.\n- Leverages a learned 3D generative prior from large-scale datasets like Objaverse to overcome training data limitations.\n- Demonstrates significant performance improvements over existing shape completion methods on new benchmarks based on ABO and PartObjaverse-Tiny datasets, achieving superior results in 3D part amodal segmentation",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Computer Vision",
+            "Image Segmentation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "C3PO: Critical-Layer, Core-Expert, Collaborative Pathway Optimization\n  for Test-Time Expert Re-Mixing",
+        "authors": "Ziyue Li, zhoutianyi, Lzy01241010",
+        "link": "https://arxiv.org/abs/2504.07964",
+        "github_repo": null,
+        "summary": "- C3PO, Critical-Layer, Core-Expert, Collaborative Pathway Optimization, is a novel test-time optimization method for Mixture-of-Experts (MoE) Large Language Models (LLMs) that improves expert pathway selection.\n- It addresses the sub-optimality of expert pathways generated by pre-trained routers by jointly optimizing the core experts' mixing weights in critical layers for each test sample based on similar, successful samples from a reference set. \n- C3PO employs three surrogate objectives and algorithms: mode-finding, kernel regression, and average loss of similar samples, and leverages gradient-free or gradient-based optimization depending on the objective.\n- Experiments on two MoE LLMs (OLMOE and DeepSeekMoE) across six benchmarks demonstrate a consistent 7-15% accuracy improvement over base models, outperforming existing test-time learning methods like in-context learning and prompt tuning.\n- Notably, C3PO enables MoE LLMs with 1-3B active parameters to outperform larger 7-9B parameter LLMs, highlighting its efficiency benefits.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/C3P\u041e"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "MOSAIC: Modeling Social AI for Content Dissemination and Regulation in\n  Multi-Agent Simulations",
+        "authors": "Marzyeh Ghassemi, saadia, elisakreiss, salmannyu, genglinliu",
+        "link": "https://arxiv.org/abs/2504.07830",
+        "github_repo": null,
+        "summary": "- MOSAIC, a novel open-source multi-agent social network simulation framework, uses generative language agents (LLMs) to model user behaviors like liking, sharing, and flagging content, combined with a directed social graph, to analyze emergent deception behaviors and how users assess online content veracity.\n- MOSAIC constructs user representations from diverse, fine-grained personas, enabling multi-agent simulations to model content dissemination and engagement dynamics at scale, and evaluating three content moderation strategies (community-based, third-party, and hybrid fact-checking) with simulated misinformation.\n- The simulations demonstrate that these strategies not only mitigate the spread of misinformation but also increase user engagement, unlike human social media behavior.\n- The study explores content popularity trajectories, finding that agents' articulated reasoning for interactions doesn't always align with collective engagement patterns, and observed that misinformation didn't spread faster than real news with LLM-based agents.\n- The framework is open-sourced to promote research in AI and social science, enabling controlled experiments for studying online behavior and content moderation strategies.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/genglinliu/MOSAIC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "SoTA with Less: MCTS-Guided Sample Selection for Data-Efficient Visual\n  Reasoning Self-Improvement",
+        "authors": "furongh-lab, kevinlin311tw, linjieli222, zyang39, russwang",
+        "link": "https://arxiv.org/abs/2504.07934",
+        "github_repo": "https://github.com/si0wang/ThinkLite-VL",
+        "summary": "- This paper introduces ThinkLite-VL, a novel approach for enhancing the visual reasoning abilities of Vision-Language Models (VLMs) using a data-efficient training method that relies on self-improvement without knowledge distillation.\n- The key contribution is an MCTS-guided sample selection mechanism, which quantifies the difficulty of training examples based on the number of MCTS iterations required by the base VLM to solve each problem.\n- Using only 11k training samples, the resulting ThinkLite-VL-7B model demonstrates state-of-the-art performance on eight visual reasoning benchmarks, outperforming other 7B-level reasoning VLMs.\n- Notably, ThinkLite-VL-7B achieves 75.1% accuracy on MathVista, surpassing larger open-sourced models, GPT-40, and O1.\n- Ablation studies confirm the importance of MCTS-based sample selection by revealing that training exclusively on easy samples does not improve model reasoning ability, and that unsolved samples identified by MCTS pose significant challenges and contribute substantially to enhancing the model's reasoning capabilities during reinforcement learning.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/si0wang/ThinkLite-VL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "Scaling Laws for Native Multimodal Models Scaling Laws for Native\n  Multimodal Models",
+        "authors": "Joshua Susskind, Matthieu Cord, Victor Guilherme Turrisi da Costa, Enrico Fini, Mustafa Shukor",
+        "link": "https://arxiv.org/abs/2504.07951",
+        "github_repo": null,
+        "summary": "- This paper investigates the scaling properties of native multimodal models (NMMs), which are trained from scratch on multimodal data, without relying on pre-trained components.\n- The study conducts extensive experiments on early and late fusion architectures, training 457 models with different architectures and training mixtures, and finds that early fusion models exhibit stronger performance at lower parameter counts and are more efficient to train.\n- The research derives scaling laws for NMMs and demonstrates that they follow similar trends as LLMs, albeit with slight variations in scaling coefficients, suggesting model parameters and training tokens should be scaled roughly equally for optimal performance.\n- It explores the benefits of incorporating Mixture of Experts (MoEs) into NMMs and observes significant performance improvements, with scaling laws indicating that scaling training tokens is more crucial than scaling parameters for MoEs.\n- Analysis reveals that experts in MoE models tend to specialize in different modalities, particularly in the early and last layers, demonstrating the potential for multimodal specialization within a unified architecture.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "Towards Visual Text Grounding of Multimodal Large Language Model",
+        "authors": "Franck-Dernoncourt, YfZ, JoshuaGu, zhangry868, MingLiiii",
+        "link": "https://arxiv.org/abs/2504.04974",
+        "github_repo": null,
+        "summary": "- This paper introduces TRIG, a novel Text-Rich Image Grounding task and benchmark for evaluating and improving the visual text grounding capabilities of Multimodal Large Language Models (MLLMs) in document question-answering.\n- A new dataset, TRIG-Bench, consisting of 800 manually annotated question-answer pairs from DocVQA, ChartQA, InfographicsVQA, and TRINS, along with a 90k synthetic training dataset generated using an OCR-LLM-human pipeline is also presented.\n- Two methods are proposed: an instruction-tuning method and an embedding-based method; evaluation shows that both outperform current MLLMs on the benchmark, with the embedding method being more efficient.\n- Existing MLLMs struggle with visual text grounding on text-rich document images, often failing to follow customized instructions requiring spatial understanding.\n- The authors suggest that this task is under-explored and needs more attention from the community, emphasizing the need for MLLMs to better handle complex document layouts and understand instructions requiring deep spatial reasoning.",
+        "classification": [
+            "Multimodal",
+            "Document Question Answering",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "MonoPlace3D: Learning 3D-Aware Object Placement for 3D Monocular\n  Detection",
+        "authors": "R. Venkatesh Babu, Jogendra Kundu, Sarthak Vora, Srinjay Sarkar, RishubhPar",
+        "link": "https://arxiv.org/abs/2504.06801",
+        "github_repo": null,
+        "summary": "- MonoPlace3D, a novel scene-aware augmentation method, is introduced to enhance the performance of 3D monocular object detectors by addressing the limitations of existing real-world datasets through realistic scene-aware data augmentation.\n- The method involves a two-stage process: training a 3D Scene-Aware Placement Network (SA-PlaceNet) to map scene images to plausible 3D bounding box distributions, and rendering realistic objects according to sampled locations using synthetic assets and an image-to-image translation model.\n- Evaluation on KITTI and NuScenes datasets shows MonoPlace3D significantly improves the accuracy of multiple 3D detectors and achieves state-of-the-art performance with increased data efficiency.\n- Notably, using only 40% of real training data with MonoPlace3D's augmentation surpasses the performance of a model trained on the full dataset without augmentation.\n- The method also improves performance on less frequent object categories (cyclists, pedestrians) and generalizes to other tasks like 2D object detection and indoor 3D detection.",
+        "classification": [
+            "Object Detection",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "Compass Control: Multi Object Orientation Control for Text-to-Image\n  Generation",
+        "authors": "R. Venkatesh Babu, Vaibhav Agrawal, sachi1, RishubhPar",
+        "link": "https://arxiv.org/abs/2504.06752",
+        "github_repo": null,
+        "summary": "- Compass Control is a novel method for controlling the orientation of multiple objects in text-to-image generation using diffusion models by conditioning the model with orientation-aware compass tokens, one for each object, along with text tokens.\n- These compass tokens are predicted by a lightweight encoder network, taking object orientation as input, and are integrated into the text prompt to guide the diffusion process.\n- The method introduces Coupled Attention Localization (CALL) to constrain the cross-attention maps of compass tokens and corresponding object tokens within 2D bounding boxes, ensuring precise object-centric orientation control and disentanglement.\n- Trained on a synthetic dataset of procedurally generated scenes, Compass Control generalizes to complex, unseen objects and multi-object scenes, demonstrating precise orientation control without explicit 3D representations.\n- Combined with personalization methods like DreamBooth, the model can control the orientation of novel, real-world objects in diverse contexts, achieving state-of-the-art orientation control and text alignment as measured by quantitative evaluations and a user study.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
+    },
+    {
+        "title": "TAPNext: Tracking Any Point (TAP) as Next Token Prediction",
+        "authors": "Viorica Patraucean, Skanda Koppula, Yi Yang, Carl Doersch, Artem Zholus",
+        "link": "https://arxiv.org/abs/2504.05579",
+        "github_repo": null,
+        "summary": "- TAPNext is a novel point tracking model that casts Tracking Any Point (TAP) as a sequential masked token decoding problem, using a causal architecture with minimal tracking-specific inductive biases.\n- The model leverages a TRecViT architecture, combining State-Space Model (SSM) blocks for temporal processing and Vision Transformer (ViT) blocks for spatial processing, applied to a joint input of video and point tokens.\n- TAPNext achieves state-of-the-art performance on the TAP-Vid benchmark, outperforming other online and offline trackers in most metrics, demonstrating superior tracking across various scenarios, including long-term occlusions and fast motion.\n- Through qualitative analysis, the study reveals that TAPNext implicitly learns tracking heuristics like cost-volume attention, coordinate-based readout, and motion-cluster-based readout, despite not being explicitly programmed with these biases.\n- The model's efficiency and scalability are highlighted by its ability to process long videos without increased complexity and its per-frame online operation.",
+        "classification": [
+            "Computer Vision",
+            "Keypoint Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-11"
     }
 ]

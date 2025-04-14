@@ -1,0 +1,187 @@
+[
+    {
+        "title": "Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model",
+        "authors": "Zhijie Lin, Ceyuan Yang, Team Seawead, zhenheny, lingff",
+        "link": "https://arxiv.org/abs/2504.08685",
+        "github_repo": null,
+        "summary": "- This paper introduces Seaweed-7B, a 7-billion parameter diffusion transformer model for video generation trained using 665,000 H100 GPU hours, demonstrating cost-effectiveness compared to larger models.\n- Key design choices include a novel Variational Autoencoder (VAE) architecture for high reconstruction quality, a hybrid-stream diffusion transformer for faster convergence, and a multi-stage, multi-task training strategy.\n- Seaweed-7B achieves competitive performance compared to larger models on text-to-video and image-to-video generation tasks, ranking second in an Elo rating system for image-to-video.\n- The model demonstrates strong generalization ability across various downstream video applications such as video transitions, long-video generation, and audio-visual joint generation, often with lightweight fine-tuning or continued training.\n- An efficient inference process with only 12 neural function evaluations enables the model to operate significantly faster than the baseline while maintaining competitive generation quality.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for\n  Autoregressive Image Generation",
+        "authors": "Jiashi Feng, Zilong Huang, Jun Hao Liew, XihuiLiu, YuuTennYi",
+        "link": "https://arxiv.org/abs/2504.08736",
+        "github_repo": null,
+        "summary": "- GigaTok is a new visual tokenizer scaled to 3 billion parameters for autoregressive image generation, utilizing semantic regularization to align tokenizer features with a pre-trained visual encoder (DINOv2).\n- It addresses the reconstruction vs. generation dilemma, where scaling tokenizers typically improves reconstruction but degrades generation quality, by constraining the latent space complexity.\n- Key scaling practices include using 1D tokenizers with hybrid CNN-Transformer architectures, prioritizing decoder scaling, and employing entropy loss for billion-scale models.\n- GigaTok achieves state-of-the-art performance in reconstruction, downstream autoregressive generation, and downstream representation quality on ImageNet.\n- AR Probing is introduced as an efficient proxy to evaluate tokenizers for downstream generation performance using smaller AR models",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/stabilityai/sd-vae-ft-ema"
+        ],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "MineWorld: a Real-Time and Open-Source Interactive World Model on\n  Minecraft",
+        "authors": "Yushu Jiang, Haoyu Wu, Tianyu He, Yang Ye, Junliang Guo",
+        "link": "https://arxiv.org/abs/2504.08388",
+        "github_repo": null,
+        "summary": "- MineWorld is a real-time interactive world model for Minecraft built upon an autoregressive Transformer that takes visual game scenes and actions as input, and generates consequent new scenes. \n- It utilizes visual and action tokenizers to transform game scenes and actions into discrete token ids, which are concatenated and fed into the Transformer decoder.\n- A novel parallel decoding algorithm is introduced to accelerate the generation process, enabling real-time interactions with game players, generating 4-7 frames per second.\n- New evaluation metrics based on an Inverse Dynamics Model (IDM) are proposed to assess controllability, the ability of the generated game states to align with the provided actions, in addition to traditional video quality metrics. \n- Comprehensive evaluation shows that MineWorld significantly outperforms existing open-sourced diffusion-based world models on both video quality and controllability.",
+        "classification": [
+            "Text-to-Video",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "PixelFlow: Pixel-Space Generative Models with Flow",
+        "authors": "Ping Luo, Peize Sun, Shilong Zhang, Chongjian Ge, Shoufa Chen",
+        "link": "https://arxiv.org/abs/2504.07963",
+        "github_repo": "https://github.com/ShoufaChen/PixelFlow",
+        "summary": "- PixelFlow, a family of image generation models, operates directly in pixel space, eliminating the need for a pre-trained Variational Autoencoder (VAE) and enabling end-to-end training.\n- It uses a unified set of parameters to model multi-scale samples across cascading resolutions via Flow Matching, progressively increasing resolution during generation.\n- On ImageNet 256x256 class-conditional image generation, PixelFlow achieves an FID of 1.98, demonstrating competitive performance.\n- Qualitative results show PixelFlow excels in image quality, artistry, and semantic control for text-to-image generation.\n- PixelFlow offers a simple yet effective framework for high-quality image generation directly in pixel space.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ShoufaChen/PixelFlow"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "SQL-R1: Training Natural Language to SQL Reasoning Model By\n  Reinforcement Learning",
+        "authors": "Ran Chen, Xuhui Jiang, Chengjin Xu, Peixian Ma, ZhuangXialie",
+        "link": "https://arxiv.org/abs/2504.08600",
+        "github_repo": null,
+        "summary": "- This paper introduces SQL-R1, a novel Natural Language to SQL (NL2SQL) reasoning model trained using reinforcement learning (RL).\n- SQL-R1 focuses on improving inference performance in complex scenarios with multi-table joins and nested queries, which are challenging for traditional supervised fine-tuning methods.\n- The model uses a specialized RL reward function to guide SQL generation and addresses the cold-start problem for effective training.\n- Experiments on Spider and BIRD benchmarks show SQL-R1 achieves competitive accuracy of 88.7% and 66.6%, respectively, using only a 7B base model.\n- The paper also explores data engineering for RL and emphasizes the model's ability to produce an explicit reasoning process, enhancing interpretability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "FlexIP: Dynamic Control of Preservation and Personality for Customized\n  Image Generation",
+        "authors": "Kaiwen Xiao, Yanning Zhou, Haonan Lin, DevLinyan",
+        "link": "https://arxiv.org/abs/2504.07405",
+        "github_repo": null,
+        "summary": "- FlexIP is a novel framework for personalized image generation that decouples identity preservation and personalized editing into independently controllable dimensions using a dual-adapter architecture.\n- The preservation adapter captures identity details by retrieving high-level semantic concepts and low-level spatial details, while the personalization adapter interacts with text instructions and high-level semantic concepts, ensuring both editing flexibility and identity coherence.\n- A dynamic weight gating mechanism allows users to adjust adapter contributions, enabling a smooth transition between identity preservation and personalization.\n- Experimental results on DreamBench+ and MSBench datasets demonstrate that FlexIP outperforms state-of-the-art methods in terms of identity preservation accuracy and editing fidelity.\n- FlexIP effectively transforms the binary preservation-edit trade-off into a continuous parametric control, which benefits various applications like image retouching and subject transmutation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "In-2-4D: Inbetweening from Two Single-View Images to 4D Generation",
+        "authors": "Ali Mahdavi-Amiri, Hao Zhang, Daniel Cohen-Or, Sauradip Nag",
+        "link": "https://arxiv.org/abs/2504.08366",
+        "github_repo": null,
+        "summary": "- In-2-4D is a novel method for generating 4D (3D + motion) content from two single-view images of an object in different motion states, addressing the challenge of creating smooth and believable transitions between distant motion states.\n- It uses a hierarchical approach with video interpolation and keyframe identification to break down complex motions into smaller, manageable fragments, generating intermediate frames to avoid large motion jumps and reduce artifacts.\n- For each fragment, the method constructs a static 3D Gaussian Splatting (3DGS) model from the keyframe and then applies a deformation field, guided by the temporal frames and refined by multi-view diffusion, to create dynamic 4D representations.\n- The independent 3D motion segments are merged using interpolated and optimized boundary deformation fields, ensuring smooth and consistent transitions, further enhanced by cascaded trajectory smoothing of Gaussian rotations and scaling.\n- Quantitative and qualitative evaluations on a new benchmark, I4D-15, demonstrate superior performance in generating higher-quality, more consistent 4D motions compared to baselines across various motion types and object categories, supported by a user study indicating preference for the method's generated 4D motion quality.",
+        "classification": [
+            "Text-to-3D",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "ModernBERT or DeBERTaV3? Examining Architecture and Data Influence on\n  Transformer Encoder Models Performance",
+        "authors": "Djam\u00e9 Seddah, Beno\u00eet Sagot, Wissam Antoun",
+        "link": "https://arxiv.org/abs/2504.08716",
+        "github_repo": null,
+        "summary": "- This paper investigates the performance of ModernBERT, a transformer-encoder model designed for efficiency, against DeBERTaV3 and RoBERTa models by pretraining them on the same French dataset (CamemBERTaV2's dataset) to control for data variations.\n- The results reveal that DeBERTaV3 surpasses ModernBERT in benchmark performance and training sample efficiency, attributing this to its superior architecture and training objective optimization.\n- ModernBERT, however, demonstrates significantly faster training and inference speeds due to its efficiency-focused design, making it practically advantageous.\n- Additionally, the study finds that training on a higher-quality, filtered dataset enhances convergence speed but does not substantially improve final performance, suggesting a potential saturation of current NLP benchmarks.\n- The authors release their pretrained French ModernBERT models and training scripts publicly to facilitate reproducibility and further research.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Classification",
+            "Token Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/almanach/moderncamembert-67f7e6d85ede5f7cfc1ce012"
+        ],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "Pangu Ultra: Pushing the Limits of Dense Large Language Models on Ascend\n  NPUs",
+        "authors": "Xueyu Wu, Yehui Tang, Kaikai Song, Wenyong Huang, Yichun Yin",
+        "link": "https://arxiv.org/abs/2504.07866",
+        "github_repo": null,
+        "summary": "- This paper introduces Pangu Ultra, a 135 billion parameter, 94-layer dense Large Language Model (LLM) trained on Huawei's Ascend NPUs.\n- The model utilizes novel techniques like depth-scaled sandwich normalization and tiny initialization to stabilize training and prevent loss spikes, which are common in deep LLMs.\n- Trained on 13.2 trillion tokens and incorporating techniques for long context extension (up to 128K tokens), Pangu Ultra performs competitively with state-of-the-art LLMs, including sparse models with significantly more parameters like DeepSeek-R1, and outperforms other dense LLMs like Llama 405B and Mistral Large 2 on various benchmarks.\n- System-level optimizations like kernel fusion, context parallelism, and optimized attention mechanisms allow for efficient training on 8,192 Ascend NPUs, achieving over 52% Model FLOPs Utilization (MFU).\n- The enhanced reasoning capabilities of Pangu Ultra are demonstrated through its superior performance on specialized benchmarks like AIME 2024, MATH-500, GPQA Diamond, and LiveCodeBench.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "CoRAG: Collaborative Retrieval-Augmented Generation",
+        "authors": "Virginia Smith, Mona Diab, Aashiq Muhamed",
+        "link": "https://arxiv.org/abs/2504.01883",
+        "github_repo": null,
+        "summary": "- Introduces CoRAG, a framework for collaborative Retrieval-Augmented Generation (RAG) where multiple clients jointly train a shared model using a collaborative passage store, but use their local passage stores during inference.\n- Proposes CRAB, a homogeneous open-domain question answering benchmark for evaluating CoRAG and exploring the impact of passage composition within the collaborative store. \n- Demonstrates through experiments on CRAB that CoRAG consistently outperforms parametric collaborative learning methods and locally trained RAG models, especially in few-shot settings, achieving up to a 33.8% improvement over local RAG in 16-shot scenarios.\n- Reveals that relevant passages are critical for generalization, surprisingly irrelevant passages can be beneficial, while hard negatives negatively impact performance.\n- Identifies a key challenge in CoRAG, where clients must balance the advantages of an enriched store with the risk of incorporating detrimental passages from others, and introduces mechanisms for encouraging participation.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/aashiqmuhamed/CORAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "Do PhD-level LLMs Truly Grasp Elementary Addition? Probing Rule Learning\n  vs. Memorization in Large Language Models",
+        "authors": "Zhenzhong Lan, Renjun Xu, Yu Lu, Yang Yan",
+        "link": "https://arxiv.org/abs/2504.05262",
+        "github_repo": null,
+        "summary": "- This paper investigates whether Large Language Models (LLMs) genuinely understand mathematical principles or rely on memorization by evaluating their performance on elementary two-integer addition.\n- The study probes two core properties: commutativity (A + B = B + A) and compositional generalization using symbolic mappings (e.g., 7 \u2192 Y).\n- Despite high accuracy on numerical addition, LLMs' performance collapses under symbolic mapping and exhibits non-monotonic scaling with digit count, along with frequent commutativity violations.\n- Providing explicit addition rules degrades performance, while self-explanation maintains baseline accuracy, suggesting misalignment between LLM arithmetic processing and human-defined principles.\n- The findings indicate current LLMs rely on memory patterns over rule learning, highlighting limitations and the need for new approaches for genuine mathematical reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    },
+    {
+        "title": "InteractVLM: 3D Interaction Reasoning from 2D Foundational Models",
+        "authors": "Cordelia Schmid, Omid Taheri, Shashank Tripathi, Dimitrije Anti\u0107, saidwivedi",
+        "link": "https://arxiv.org/abs/2504.05303",
+        "github_repo": null,
+        "summary": "- InteractVLM estimates 3D contact points on humans and objects from single in-the-wild images, facilitating 3D human-object interaction reconstruction. \n- It leverages Vision-Language Models (VLMs), fine-tuned with limited 3D contact data, and introduces a \"Render-Localize-Lift\" module to overcome the challenge of VLMs reasoning in 2D while contact is inherently 3D.\n-  It proposes \"Semantic Human Contact\" estimation, predicting contact points based on object semantics.\n- InteractVLM outperforms previous methods in contact estimation and improves 3D reconstruction from in-the-wild images. \n- Evaluation shows significant improvements on benchmarks like DAMON and PIAD for human and object contact, respectively, and perceptual studies confirm more realistic 3D reconstructions.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-14"
+    }
+]

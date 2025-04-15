@@ -31531,5 +31531,377 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-04-14"
+    },
+    {
+        "title": "InternVL3: Exploring Advanced Training and Test-Time Recipes for\n  Open-Source Multimodal Models",
+        "authors": "jackroos, duanyuchen, gulixin0922, Yeshenglong, Weiyun1025",
+        "link": "https://arxiv.org/abs/2504.10479",
+        "github_repo": null,
+        "summary": "- InternVL3 is a multimodal large language model (MLLM) that uses a native multimodal pre-training paradigm, jointly learning from text and multimodal data.\n- It incorporates variable visual position encoding (V2PE), supervised fine-tuning (SFT), mixed preference optimization (MPO), and test-time scaling strategies.\n- InternVL3-78B achieves a 72.2 score on the MMMU benchmark, outperforming other open-source MLLMs and demonstrating comparable capabilities to proprietary models such as ChatGPT-40, Claude 3.5 Sonnet, and Gemini 2.5 Pro.\n- The model shows improvements in various tasks, including tool usage, GUI agent interaction, industrial image analysis, and spatial reasoning, as well as strong language capabilities comparable to other advanced LLMs of a similar scale.\n- Both training data and model weights will be publicly released to support further MLLM research.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Document Question Answering",
+            "Video-Text-to-Text",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/InternVL"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenGVLab/InternVL3-78B",
+            "https://huggingface.co/datasets/OpenGVLab/InternVL-Data"
+        ],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "PRIMA.CPP: Speeding Up 70B-Scale LLM Inference on Low-Resource Everyday\n  Home Clusters",
+        "authors": "Hongfang Yu, Mohsen Guizani, NeuronNomad, LiPhilip, LIKirin",
+        "link": "https://arxiv.org/abs/2504.08791",
+        "github_repo": "https://github.com/Lizonghang/prima.cpp",
+        "summary": "- Prima.cpp is a distributed inference system designed for low-resource home clusters, enabling the execution of 70B-scale large language models (LLMs) on devices with limited resources like CPUs/GPUs, low RAM/VRAM, and using Wi-Fi.\n- It introduces piped-ring parallelism with prefetching to efficiently manage model weights and reduce token latency by overlapping disk loading with computation.\n- The system models heterogeneity in computation, communication, disk, memory, and OS to optimally assign model layers to each device's CPU and GPU using an algorithm called Halda, and minimizes token latency by modeling delays in computation, memory access, disk loading, and communication, while optimizing the use of RAM and VRAM.\n- Evaluation on a real-world home cluster demonstrates that prima.cpp achieves a 15x speed improvement compared to llama.cpp on 70B models, maintaining memory pressure below 6% per device. It also outperforms other distributed alternatives like exo and dllama in terms of speed and memory efficiency for models ranging from 7B to 72B.\n- It achieves ~600 milliseconds per token and a time-to-first-token (TTFT) below 2 seconds for a 70B model on a small heterogeneous home cluster.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Lizonghang/prima.cpp"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "FUSION: Fully Integration of Vision-Language Representations for Deep\n  Cross-Modal Understanding",
+        "authors": "Jingzhou Chen, conghui, jingwei-xu-00, Balalauuoo, starriver030515",
+        "link": "https://arxiv.org/abs/2504.09925",
+        "github_repo": "https://github.com/starriver030515/FUSION",
+        "summary": "- Introduces FUSION, a family of Multimodal Large Language Models (MLLMs) that integrate vision and language throughout the processing pipeline, unlike existing methods that primarily focus on late-stage fusion.\n- Proposes Text-Guided Unified Vision Encoding, which incorporates text information during vision encoding, Context-Aware Recursive Alignment Decoding for dynamic aggregation of visual features, and Dual-Supervised Semantic Mapping Loss to ensure robust cross-modal consistency.\n- Presents a synthesized Language-Driven Question-Answer (QA) dataset generation method that prioritizes textual richness to guide image generation and diverse QA pair construction.\n- Evaluated on 22 benchmarks and demonstrates state-of-the-art performance with significantly fewer vision tokens, outperforming models like Cambrian-1 and Florence-VL, and achieving comparable results to top-tier models like InternVL2 and Qwen2VL.\n- Shows robustness even with reduced vision tokens and highlights the effectiveness of each component through ablation studies.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/starriver030515/FUSION"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "VL-Rethinker: Incentivizing Self-Reflection of Vision-Language Models\n  with Reinforcement Learning",
+        "authors": "Wei Chu, Chao Qu, wenhu, zuminghuang, JasperHaozhe",
+        "link": "https://arxiv.org/abs/2504.08837",
+        "github_repo": null,
+        "summary": "- VL-RETHINKER, a new vision-language model, enhances multimodal reasoning through reinforcement learning and a novel \"forced rethinking\" technique.\n- The model utilizes Group Relative Policy Optimization (GRPO) with Selective Sample Replay (SSR) to address the vanishing advantages problem in reinforcement learning.\n- Forced Rethinking encourages self-reflection by appending rethinking triggers to initial responses during training.\n- VL-RETHINKER achieves state-of-the-art results on MathVista (80.3%), MathVerse (61.7%), and MathVision (43.9%), outperforming existing models like GPT-01.\n- It also sets a new open-source state-of-the-art on MMMU-Pro, EMMA, and MEGA-Bench, closing the gap with GPT-01.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "Iterative Self-Training for Code Generation via Reinforced Re-Ranking",
+        "authors": "Valentin Malykh, Ivan Sedykh, Nikita Sorokin",
+        "link": "https://arxiv.org/abs/2504.09643",
+        "github_repo": null,
+        "summary": "- This research proposes RewardRanker, a new iterative self-training approach for enhancing code generation by refining reward model optimization using Proximal Policy Optimization (PPO).\n- This approach uses both correct and hard negative examples during training with PPO in order to optimize code generation by leveraging multiple sampled solutions.\n- The RewardRanker model iteratively refines the training dataset by re-evaluating generated code outputs, incorporating high-scoring negative examples into the training data.\n- Evaluation results on the MultiPL-E dataset demonstrates that a 13.4B parameter RewardRanker model outperforms larger models including a 33B parameter model and achieves performance comparable to GPT-4 and surpasses GPT-4 for C++.\n- This method does not require predefined tests during the inference stage, only during training.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "Mavors: Multi-granularity Video Representation for Multimodal Large\n  Language Model",
+        "authors": "kugwzk, zhenhuawu, UnnamedWatcher, CheeryLJH, DogNeverSleep",
+        "link": "https://arxiv.org/abs/2504.10068",
+        "github_repo": null,
+        "summary": "- Mavors is a novel framework for long-context video understanding in Multimodal Large Language Models (MLLMs) that introduces a multi-granularity video representation.\n- The architecture consists of two main components: an Intra-chunk Vision Encoder (IVE) that uses 3D convolutions and Vision Transformers to extract high-resolution spatial features, and an Inter-chunk Feature Aggregator (IFA) that models temporal dependencies across chunks using a transformer with chunk-level rotary position encodings.\n- Mavors also unifies image and video understanding by treating images as single-frame videos and incorporates a multi-stage training process.\n- Experimental results across various video benchmarks demonstrate Mavors' superior performance in tasks requiring fine-grained spatio-temporal reasoning.\n- Specifically, Mavors-7B shows strong performance compared to other 7B MLLMs on DREAM-1K video captioning, improving from around 30 to 39.4 in Video-MME score.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://mavors-mllm.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "S1-Bench: A Simple Benchmark for Evaluating System 1 Thinking Capability\n  of Large Reasoning Models",
+        "authors": "Tingwen Liu, Xinghua Zhang, Starrrrrry, ShuaiyiNie, WYRipple",
+        "link": "https://arxiv.org/abs/2504.10368",
+        "github_repo": null,
+        "summary": "- Introduced S1-Bench, a benchmark designed to evaluate Large Reasoning Models' (LRMs) ability to perform simple, intuitive (System 1) thinking, as opposed to deliberative (System 2) reasoning.\n- S1-Bench consists of simple, diverse, and naturally clear questions across multiple domains and languages.\n- Evaluation of 22 LRMs revealed lower efficiency, with outputs averaging 15.5 times longer than traditional small LLMs.\n- LRMs often identify correct answers early but continue unnecessary deliberation, sometimes leading to errors.\n- Findings highlight the rigid reasoning patterns of current LRMs and the need for balanced dual-system thinking capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/WYRipple/S1_Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "AgentRewardBench: Evaluating Automatic Evaluations of Web Agent\n  Trajectories",
+        "authors": "dongchans, arkilpatel, ncmeade, kazemnejad, xhluca",
+        "link": "https://arxiv.org/abs/2504.08942",
+        "github_repo": null,
+        "summary": "- AGENTREWARDBENCH, a benchmark designed to evaluate the efficacy of Large Language Model (LLM) judges in assessing web agent trajectories, is introduced.\n- The benchmark comprises 1302 trajectories across five distinct web environments, generated by four different LLMs, and annotated by expert reviewers for success, side effects, and repetition cycles.\n- Evaluation of 12 LLM judges using AGENTREWARDBENCH reveals that no single LLM judge excels across all benchmarks and that existing judges frequently misclassify trajectories as successful, limiting their utility in downstream applications like reinforcement learning.\n- Rule-based evaluation methods commonly used in web agent benchmarks are found to underestimate agent success rates compared to expert annotations, highlighting a need for more flexible evaluation strategies.\n- Analysis of LLM judge errors identifies grounding mismatch, misleading agent reasoning, and missed instruction details as key failure modes.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://agent-reward-bench.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "Have we unified image generation and understanding yet? An empirical\n  study of GPT-4o's image generation ability",
+        "authors": "Ning Li, cuijiaxing, zhangjingran",
+        "link": "https://arxiv.org/abs/2504.08003",
+        "github_repo": null,
+        "summary": "- This paper presents an empirical study of GPT-40's image generation capabilities, focusing on its ability to integrate world knowledge, contextual reasoning, and instruction adherence.\n- The study evaluates GPT-40 across three dimensions: Global Instruction Adherence, Fine-Grained Editing Precision, and Post-Generation Reasoning, using specifically designed prompts to test these capabilities.\n- The experiments reveal that GPT-40 often defaults to literal interpretations of instructions, struggles with applying knowledge constraints consistently, and exhibits limitations in conditional reasoning tasks within image generation.\n- These findings challenge the assumption of unified understanding and generation in multimodal LLMs like GPT-40.\n- The paper concludes by highlighting the need for more robust benchmarks and training strategies that emphasize knowledge-guided synthesis and contextual generalization in multimodal generation.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "DUMP: Automated Distribution-Level Curriculum Learning for RL-based LLM\n  Post-training",
+        "authors": "zwt123home123, timecuriosity, gfcui, ztwang",
+        "link": "https://arxiv.org/abs/2504.09710",
+        "github_repo": "https://github.com/ZhentingWang/DUMP",
+        "summary": "- DUMP, a novel distribution-level curriculum learning framework, is introduced for Reinforcement Learning (RL)-based Large Language Model (LLM) post-training, addressing the challenge of training on data from diverse distributions by dynamically adjusting the sampling probabilities based on the learnability of distributions.\n- The framework leverages the magnitude of policy advantages as a proxy for distribution-level learnability, with high advantages on specific data distributions indicating underfitting and high potential for improvement.\n- It uses a Upper Confidence Bound (UCB)-based strategy to balance exploration and exploitation, prioritizing training on distributions with high average advantage or low sample counts, and normalizing the scores via softmax to create sampling weights for different distributions during batch generation.\n- Instantiated with Group Relative Policy Optimization (GRPO) as the underlying RL algorithm, DUMP is evaluated on logic reasoning datasets with multiple difficulties and sources.\n- Experimental results show significant improvements in convergence speed and final performance compared to uniform sampling, highlighting the importance of distribution-aware training in RL-based LLM post-training.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ZhentingWang/DUMP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "SocioVerse: A World Model for Social Simulation Powered by LLM Agents\n  and A Pool of 10 Million Real-World Users",
+        "authors": "milesz7777, tangshiping, SimingChen, libo-ca, Lishi0905",
+        "link": "https://arxiv.org/abs/2504.10157",
+        "github_repo": null,
+        "summary": "- SocioVerse, an LLM-agent-driven world model for social simulation, is introduced, leveraging a pool of 10 million real-world user profiles.\n- The framework addresses alignment challenges between simulated and real-world environments, users, interaction mechanisms, and behavioral patterns through four key components: Social Environment, User Engine, Scenario Engine, and Behavior Engine.\n- Large-scale simulations across political, news, and economic domains demonstrate SocioVerse\u2019s ability to reflect real-world population dynamics with diversity, credibility, and representativeness.\n- A user pool of 10 million individuals, constructed from real-world social media data, powers the simulations, offering a large-scale and diverse dataset for realistic agent behavior modeling.\n- The simulations accurately predict US presidential election results, reproduce consistent public feedback to breaking news, and provide reliable outputs for national economic surveys.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/FudanDISC/SocioVerse"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "Breaking the Data Barrier -- Building GUI Agents Through Task\n  Generalization",
+        "authors": "jxhe, QiushiSun, changma, heroding77, leoozy",
+        "link": "https://arxiv.org/abs/2504.10127",
+        "github_repo": "https://github.com/hkust-nlp/GUIMid",
+        "summary": "- This paper proposes a mid-training approach to enhance the performance of vision-language models on graphical user interface (GUI) agent tasks by leveraging data and knowledge from non-GUI domains.\n- It investigates the effectiveness of 11 mid-training tasks on both mobile and web GUI benchmarks and finds that mathematical reasoning tasks, surprisingly, even text-only ones, yield the largest performance gains due to cross-domain knowledge transfer.\n- In contrast to prior work, visual GUI perception datasets show limited benefits, likely due to the pre-existing visual capabilities of current VLMs.\n- The paper introduces GUIMid, a 300k dataset combining four top-performing domains and achieves state-of-the-art results on AndroidWorld in visual-only settings, and improves Qwen2-VL to GPT4 level performance on WebArena.\n- The code, data, and models related to this work are open-sourced to support future research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/hkust-nlp/GUIMid"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning",
+        "authors": "Lei Huang, Wenjun Wu, wenzz1, Zhang199",
+        "link": "https://arxiv.org/abs/2504.09641",
+        "github_repo": "https://github.com/ZhangXJ199/TinyLLaVA-Video-R1",
+        "summary": "- This paper introduces TinyLLaVA-Video-R1, a small-scale video reasoning model based on TinyLLaVA-Video, enhanced with reinforcement learning for improved reasoning abilities on general Video-QA datasets.\n- The model leverages the GRPO algorithm on the NextQA dataset and incorporates modifications to reward rules, including a continuous length reward and penalties for incorrect answers, leading to emergent \"aha moments\" during reasoning.\n- Unlike previous research focusing on large-scale models and reasoning-intensive datasets, this work emphasizes the value of exploring small-scale models for researchers with limited resources and enabling models to explain reasoning processes on general QA datasets.\n- Experimental results demonstrate significant improvements in reasoning and thinking abilities compared to the baseline TinyLLaVA-Video-SFT across benchmarks like MVBench, Video-MME, MLVU, and MMVU.\n- Ablation studies validate the effectiveness of the modifications to the GRPO algorithm and the importance of cold-start data for stabilizing training and improving reasoning performance in smaller models.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ZhangXJ199/TinyLLAVA-Video-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "LLM-SRBench: A New Benchmark for Scientific Equation Discovery with\n  Large Language Models",
+        "authors": "Khoa D Doan, Amir Barati Farimani, Ngoc-Hieu Nguyen, mkmeidani, parshinsh",
+        "link": "https://arxiv.org/abs/2504.10415",
+        "github_repo": "https://github.com/deep-symbolic-mathematics/llm-srbench",
+        "summary": "- This paper introduces LLM-SRBench, a new benchmark designed to evaluate the capabilities of large language models (LLMs) for scientific equation discovery.\n- The benchmark comprises 239 challenging problems across four scientific domains (chemistry, biology, physics, and material science) and is structured around two categories: LSR-Transform (transforming common equations into less common mathematical representations) and LSR-Synth (synthetic, discovery-driven problems).\n- LLM-SRBench aims to address the limitations of existing benchmarks that are susceptible to memorization by LLMs by focusing on problems that require reasoning and discovery.\n- The authors evaluated several state-of-the-art LLM-based scientific equation discovery methods with different LLM backbones and found that the best-performing system achieved only 31.5% symbolic accuracy on LSR-Transform and 28.1% on LSR-Synth.\n- These findings underscore the challenges of scientific equation discovery and the need for more robust evaluation methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/deep-symbolic-mathematics/llm-srbench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "EmoAgent: Assessing and Safeguarding Human-AI Interaction for Mental\n  Health Safety",
+        "authors": "Edify-Kd2024, yaozixin, YimingWang, ChrisJuan, yinghuihe",
+        "link": "https://arxiv.org/abs/2504.09689",
+        "github_repo": "https://github.com/1akaman/EmoAgent",
+        "summary": "- EmoAgent, a multi-agent AI framework, is introduced to evaluate and mitigate mental health risks in human-AI interactions, particularly within character-based chatbots.\n- EmoAgent comprises two key components: EmoEval, which simulates virtual users with varying mental health profiles to assess changes after interaction with AI characters using standardized psychological tests (PHQ-9, PDI, PANSS), and EmoGuard, which acts as a real-time safeguard by monitoring user mental state and providing feedback to the AI.\n- Experiments conducted on popular character-based chatbots reveal that emotionally engaging dialogues can lead to a deterioration in mental state for vulnerable users, observed in over 34.4% of simulations.\n- EmoGuard demonstrates a significant reduction in these deterioration rates by offering corrective feedback and interventions, thereby improving the safety of human-AI interactions.\n- The study highlights the potential risks of character-based AI for mental health and provides a framework for developing safer interactive AI systems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/1akaman/EmoAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via\n  Agentic Tree Search",
+        "authors": "Chris Lu, Shengran Hu, Robert Tjarko Lange, conglu, yyamada",
+        "link": "https://arxiv.org/abs/2504.08066",
+        "github_repo": "https://github.com/SakanaAI/AI-Scientist-v2",
+        "summary": "- This paper introduces AI Scientist V2, an end-to-end system for automated scientific paper generation.\n- It iteratively formulates hypotheses, designs and executes experiments, analyzes data, and authors manuscripts using an agentic tree-search approach and language models.\n- Unlike its predecessor, it eliminates the need for human-coded templates and generalizes across machine-learning domains.\n- Notably, one AI-generated manuscript was accepted at a peer-reviewed ICLR workshop after exceeding the average human acceptance threshold.\n- The authors open-sourced the code and data to encourage further development in autonomous scientific discovery.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SakanaAI/AI-Scientist-v2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "Executable Functional Abstractions: Inferring Generative Programs for\n  Advanced Math Problems",
+        "authors": "Zaid Khan, mohitbansal, j-min, archiki, esteng",
+        "link": "https://arxiv.org/abs/2504.09763",
+        "github_repo": null,
+        "summary": "- This paper introduces Executable Functional Abstractions (EFAs), a new method for generating diverse math problem variants.\n- EFAs are parameterized programs that encapsulate the logic of a math problem, allowing for the automated generation of new problem instances.\n- EFAGen, a framework for automatically constructing EFAs from static math problems is also presented.\n- EFAGen uses a large language model (LLM) to generate candidate EFA implementations, filtering them with unit tests to ensure validity.\n- Experiments demonstrate that EFAGen can construct faithful and learnable EFAs across multiple sources of math problems, with applications to data augmentation and stress-testing of models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zaidkhan/EFAGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "How new data permeates LLM knowledge and how to dilute it",
+        "authors": "Nolan Andrew Miller, Andrey Zhmoginov, Chen Sun, gozzo87, mendor",
+        "link": "https://arxiv.org/abs/2504.09522",
+        "github_repo": null,
+        "summary": "- This paper investigates the \"priming\" effect in LLMs, where learning a new fact can cause its inappropriate application in unrelated contexts.\n- It introduces \"Outlandish,\" a dataset of 1320 text samples to study knowledge permeation in LLMs, finding that the degree of priming can be predicted by the pre-learning token probability of key words.\n- The study reveals that priming and memorization are coupled during learning in some models (like PALM-2) but not others (Llama and Gemma).\n- The paper introduces a \"stepping-stone\" text augmentation strategy and an \"ignore-k\" update pruning method to mitigate priming effects, improving knowledge insertion specificity.\n- These techniques reduce priming by 50-95% while maintaining the model's learning ability, offering insights into LLM learning and tools for controlled knowledge insertion.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://sunchipsster1.github.io/projects/outlandish/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "VisuoThink: Empowering LVLM Reasoning with Multimodal Tree Search",
+        "authors": "QipengGuo, alphadl, ngc7293, sinwang, LibraTree",
+        "link": "https://arxiv.org/abs/2504.09130",
+        "github_repo": null,
+        "summary": "- VisuoThink, a novel multimodal tree search framework, is introduced to enhance the reasoning capabilities of Large Vision-Language Models (LVLMs) by dynamically integrating visual and textual information during the inference process.\n- It employs a step-by-step vision-text interleaved reasoning framework that utilizes multi-step visual aids from tool uses and a look-ahead tree search algorithm with a predictive rollout mechanism to explore multiple reasoning paths.\n- This framework enables test-time scaling by simulating the likely outcomes of different reasoning states, prioritizing promising paths, and optimizing reasoning dynamically during inference.\n- Experimental results show that VisuoThink significantly outperforms existing methods on various reasoning tasks, especially in geometry (improving accuracy by up to 21.8% on Geomverse) and spatial reasoning.\n- The improvements are attributed to the effective integration of multi-step visual cues, predictive rollout search, and tool interactions, mitigating the limitations of relying solely on text-based reasoning chains or single-step visual assistance in existing LVLMs.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ekonwang/VisuoThink"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "M1: Towards Scalable Test-Time Compute with Mamba Reasoning Models",
+        "authors": "Daniele Paliotta, tridao, voidptr74, xu3kev, JunxiongWang",
+        "link": "https://arxiv.org/abs/2504.10449",
+        "github_repo": "https://github.com/jxiw/M1",
+        "summary": "- This paper introduces M1, a new hybrid linear RNN reasoning model built upon the Mamba architecture, designed for enhanced scalability in test-time computation.\n- M1 leverages a distillation process from existing reasoning models, followed by supervised fine-tuning on math datasets and reinforcement learning using the GRPO algorithm.\n- The model achieves comparable performance to DeepSeek-R1-Distill-Qwen-1.5B on benchmarks like MATH500, AIME25, AIME24, and OlympiadBench.\n- Notably, M1 demonstrates a 3x speedup compared to transformers of the same size when served using vLLM at large batch sizes, allowing for higher accuracy under fixed generation time budgets through self-consistency voting.\n- The increased efficiency makes resource-intensive test-time compute strategies, such as self-consistency, more practical, making M1 a strong alternative for reasoning tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/jxiw/M1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "LLM Can be a Dangerous Persuader: Empirical Study of Persuasion Safety\n  in Large Language Models",
+        "authors": "Xinyi Zhang, sarvech123, aneverfull, Zhiyang03, mqliu",
+        "link": "https://arxiv.org/abs/2504.10430",
+        "github_repo": null,
+        "summary": "- This paper introduces PERSUSAFETY, a novel framework for evaluating the safety of Large Language Models (LLMs) in persuasive dialogues, focusing on their potential for unethical behavior.\n- PERSUSAFETY involves three stages: creating diverse persuasion tasks, simulating multi-turn conversations between LLM persuaders and persuadees, and assessing safety through refusal rates and the use of unethical strategies.\n- Experiments across eight LLMs revealed significant safety concerns, with most failing to consistently refuse harmful tasks and often employing unethical strategies, even when aware of persuadee vulnerabilities or under pressure.\n- Claude-3.5-Sonnet, while best at refusing unethical requests, exhibited a high usage of unethical strategies during persuasion, highlighting a gap in current safety alignment methods.\n- The study underscores the need for better safety alignment techniques to ensure ethical and responsible use of LLMs in goal-driven conversations.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/PLUM-Lab/PersuSafety"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "DeepSeek vs. o3-mini: How Well can Reasoning LLMs Evaluate MT and\n  Summarization?",
+        "authors": "Christoph Leiter, Yanran Chen, Ran Zhang, Sotaro Takeshita, Daniil Larionov",
+        "link": "https://arxiv.org/abs/2504.08120",
+        "github_repo": null,
+        "summary": "- This paper explores the effectiveness of reasoning Large Language Models (LLMs) for evaluating machine translation (MT) and text summarization (TS) by comparing eight models with and without reasoning capabilities, across three architectural categories: state-of-the-art reasoning models, their distilled variants, and conventional LLMs.\n- The experiments, conducted on WMT23 and SummEval benchmarks, reveal that the benefits of reasoning are model- and task-dependent: OpenAI 03-mini models demonstrate consistent performance improvement with increased reasoning intensity, while DeepSeek-R1 generally underperforms compared to its non-reasoning variant.\n- Correlation analysis indicates a positive relationship between increased reasoning token usage and evaluation quality, specifically within the 03-mini models.\n- The study finds that distillation of reasoning capabilities can be effectively maintained in medium-sized models (32B parameters) but significantly degrades in smaller variants (8B parameters).\n- This research provides a comprehensive assessment of reasoning LLMs for natural language generation evaluation, offering valuable insights for practical applications and suggesting that the mere presence of reasoning capabilities isn't sufficient; their successful integration and alignment with specific evaluation requirements are crucial.",
+        "classification": [
+            "Natural Language Processing",
+            "Summarization",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
+    },
+    {
+        "title": "MDK12-Bench: A Multi-Discipline Benchmark for Evaluating Reasoning in\n  Multimodal Large Language Models",
+        "authors": "Jiaxin Ai, Zhaopan Xu, Xiaopeng Peng, Fanrui Zhang, Pengfei Zhou",
+        "link": "https://arxiv.org/abs/2504.05782",
+        "github_repo": "https://github.com/LanceZPF/MDK12",
+        "summary": "- This paper introduces MDK12-Bench, a large-scale, multi-disciplinary benchmark for evaluating the multimodal reasoning capabilities of Multimodal Large Language Models (MLLMs).\n- The benchmark comprises 140K reasoning questions spanning six K-12 subjects (math, physics, chemistry, biology, geography, and information science) with varying difficulty levels, detailed answer explanations, and fine-grained knowledge point annotations.\n- A novel dynamic evaluation framework is proposed to mitigate data contamination by transforming question form, type, and image style during testing.\n- Experimental results on various MLLMs demonstrate the benchmark's ability to reveal limitations in existing models' multimodal reasoning capabilities.\n- The research contributes a valuable resource for advancing MLLM development by offering a more challenging and comprehensive assessment of real-world reasoning skills in diverse academic contexts.",
+        "classification": [
+            "Multimodal",
+            "Question Answering",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LanceZPF/MDK12"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-15"
     }
 ]

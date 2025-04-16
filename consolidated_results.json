@@ -31903,5 +31903,376 @@
         ],
         "huggingface_urls": [],
         "date": "2025-04-15"
+    },
+    {
+        "title": "Genius: A Generalizable and Purely Unsupervised Self-Training Framework\n  For Advanced Reasoning",
+        "authors": "Haiteng Zhao, Chang Ma, Hang Yan, QiushiSun, xufangzhi",
+        "link": "https://arxiv.org/abs/2504.08672",
+        "github_repo": "https://github.com/xufangzhi/Genius",
+        "summary": "- Genius, a generalizable and purely unsupervised self-training framework, is proposed to enhance the reasoning capabilities of Large Language Models (LLMs) without external supervision or reward models.\n- It uses a stepwise foresight re-sampling strategy, which involves simulating future outcomes to estimate step values and create high-quality preference pairs for training.\n- To ensure robust optimization, Genius introduces an advantage-calibrated optimization (ACO) loss function which mitigates inconsistencies between foresight scores and step advantages.\n- Experimental results on seven reasoning benchmarks demonstrate that Genius significantly improves the reasoning performance of LLaMA 3.1 by >7% with only 25K unsupervised general queries.\n- Further analysis reveals that Genius holds potential for scalability, as indicated by the consistent improvement observed with increasing training steps.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/xufangzhi/Genius"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "xVerify: Efficient Answer Verifier for Reasoning Model Evaluations",
+        "authors": "Bo Tang, Wentao Zhang, Pengyuan Wang, Duguce, Hush-cd",
+        "link": "https://arxiv.org/abs/2504.10481",
+        "github_repo": null,
+        "summary": "- This paper introduces xVerify, an efficient answer verifier designed for evaluating responses from reasoning models on objective questions, addressing the limitations of existing methods in handling complex reasoning traces and equivalence checking.\n- It supports robust equivalence checking, including symbol conversion, mathematical expression matching, and semantic alignment, and is tolerant of formatting errors, making it applicable to a wide range of question types.\n- A new dataset, Verify Answer for Reasoning (VAR), is constructed, containing responses from 19 LLMs across 24 reasoning benchmarks, with labels verified through GPT-40 and human review.\n- xVerify models of different sizes are trained on VAR and achieve state-of-the-art performance, outperforming existing evaluation methods and judge models on both test and generalization sets.\n- Notably, even the smallest variant, xVerify-0.5B-I, surpasses most existing methods, while larger variants achieve F1 scores and accuracy exceeding 95%.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/IAAR-Shanghai/xVerify"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/IAAR-Shanghai/xverify"
+        ],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Pixel-SAIL: Single Transformer For Pixel-Grounded Understanding",
+        "authors": "Weixian Lei, Yanwei Li, Zilong Huang, Tao Zhang, LXT",
+        "link": "https://arxiv.org/abs/2504.10465",
+        "github_repo": "https://github.com/magic-research/Sa2VA",
+        "summary": "- Pixel-SAIL, a simplified Multimodal Large Language Model (MLLM) designed for pixel-level understanding tasks like referring segmentation and visual prompt understanding, uses a single transformer, eliminating the need for extra components like vision encoders or segmentation experts.\n- Pixel-SAIL incorporates a learnable upsampling module to refine low-resolution visual tokens, a novel visual prompt injection method for better visual prompt understanding, and a dense feature distillation strategy from pre-trained segmentation experts to enhance fine-grained feature extraction.\n- Evaluated on RefCOCO, RefCOCOg, RefCOCO+, and gRefCOCO, Pixel-SAIL-0.5B outperforms similarly sized models and even some larger 7B models with vision experts.  Pixel-SAIL-3B achieves state-of-the-art results on these datasets, outperforming larger models like Sa2VA-4B. \n- On the new PerBench, which includes detailed object captions, visual prompt multiple-choice questions, and visual-text referring segmentation, Pixel-SAIL-3B achieves an overall score of 42.2, surpassing Sa2VA-4B's 39.0 and GLaMM-7B's 15.3.",
+        "classification": [
+            "Image Segmentation",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/magic-research/Sa2VA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Heimdall: test-time scaling on the generative verification",
+        "authors": "Xing Jin, WesleyShi",
+        "link": "https://arxiv.org/abs/2504.10337",
+        "github_repo": null,
+        "summary": "- Heimdall, a long chain-of-thought (CoT) verification large language model (LLM), is proposed, which accurately judges the correctness of solutions, boosting verification accuracy on competitive math problems from 62.5% to 97.5% using reinforcement learning and repeated sampling.\n- Heimdall demonstrates strong generalization capabilities by successfully detecting issues in challenging math proofs not seen during training and is extended to improve problem-solving through Pessimistic Verification, which selects the most likely correct solution by judging multiple solutions from a solver model.\n- Using DeepSeek-R1-Distill-Qwen-32B as the solver, Pessimistic Verification with Heimdall improves solution accuracy on AIME2025 from 54.2% to 83.3% and reaches 93% with Gemini 2.5 Pro, matching state-of-the-art performance.\n- An automatic knowledge discovery system is prototyped using NuminaMath for data synthesis, with Heimdall verifying solutions, effectively identifying nearly half of the synthetic data as flawed, consistent with findings from NuminaMath's own study.\n- The work highlights the importance of verification in AI systems for knowledge creation and maintenance, showing the potential of long CoT LLMs for accurate verification and improved problem-solving.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Seedream 3.0 Technical Report",
+        "authors": "Zhichao Lai, Xiaoxia Hou, Qiushan Guo, Lixue Gong, Yu Gao",
+        "link": "https://arxiv.org/abs/2504.11346",
+        "github_repo": null,
+        "summary": "- Seedream 3.0 is a high-performance Chinese-English bilingual image generation model built on the MMDiT architecture.\n- The model incorporates several technical improvements over its predecessor, Seedream 2.0, including a defect-aware training paradigm, a dual-axis collaborative data-sampling framework, mixed-resolution training, cross-modality RoPE, and a VLM-based reward model.\n- It achieves state-of-the-art performance on the Artificial Analysis Text to Image Model Leaderboard, outperforming other models such as GPT-40, Imagen 3, and Midjourney v6.1.\n- Seedream 3.0 excels in fine-grained typography generation, particularly for complex Chinese characters and small-size text, and generates high-resolution images up to 2K.\n- The model also features a novel acceleration paradigm that achieves a 4x-8x speedup while maintaining high image quality.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "How Instruction and Reasoning Data shape Post-Training: Data Quality\n  through the Lens of Layer-wise Gradients",
+        "authors": "Ziyue Li, Yanhong Li, Ming Li, zhoutianyi",
+        "link": "https://arxiv.org/abs/2504.10766",
+        "github_repo": null,
+        "summary": "- This paper presents a spectral analysis of layer-wise gradients in Large Language Models (LLMs) during post-training with instruction/reasoning data of varying quality.\n- The analysis reveals that established data quality metrics can be unified and explained by the spectral properties of gradients obtained through singular value decomposition (SVD).\n- Higher-quality data correlates with lower nuclear norms and higher effective ranks of gradients, with effective rank demonstrating finer-grained resolution in discerning data quality compared to nuclear norms.\n- The study shows that reasoning data elicits richer gradient structures (higher effective ranks) than instruction-following data, indicating greater complexity in parameter updates for reasoning tasks.\n- Models within the same family exhibit similar gradient dynamics irrespective of model size, but variations are significant across different model families.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/MingLiiii/Gradient_Unified"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "TextArena",
+        "authors": "Leshem Choshen, Benjamin-eecs, simonycl, bobbycxy, LeonGuertler",
+        "link": "https://arxiv.org/abs/2504.11442",
+        "github_repo": "https://github.com/LeonGuertler/TextArena",
+        "summary": "- TextArena is an open-source collection of 57+ competitive text-based games for training and evaluating Large Language Models (LLMs), focusing on agentic behavior and dynamic social skills.\n- The framework offers single-player, two-player, and multi-player environments, enabling assessment of negotiation, theory of mind, deception, and other capabilities often overlooked in traditional benchmarks. \n- TextArena provides an online play system with a real-time TrueSkill leaderboard for comparing models against each other and human players.\n- Designed for research and community contribution, TextArena is easily extensible, allowing researchers to add new games and adapt the framework.\n- Preliminary model rankings demonstrate TextArena's ability to distinguish model capabilities across various skills, offering insights beyond aggregate scores, and promoting continuous evaluation as models evolve.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/LeonGuertler/TextArena"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "The Scalability of Simplicity: Empirical Analysis of Vision-Language\n  Learning with a Single Transformer",
+        "authors": "Jun Hao Liew, Haochen Wang, Jiacong Wang, Weixian Lei, LXT",
+        "link": "https://arxiv.org/abs/2504.10462",
+        "github_repo": "https://github.com/bytedance/SAIL",
+        "summary": "- This paper introduces SAIL, a Single Transformer unified Multimodal Large Language Model (MLLM) that integrates raw pixel encoding and language decoding within a single architecture, eliminating the need for a separate vision encoder.\n- SAIL leverages mixed attention mechanisms (bidirectional for image patches, causal for text) and multimodal positional encodings to align visual and textual modalities.\n- Through model and data scaling, SAIL achieves performance comparable to modular MLLMs on vision-language benchmarks and functions as a high-performing vision backbone.\n- Notably, SAIL demonstrates superior data scaling properties compared to modular MLLMs, achieving near-comparable performance with significantly less pretraining data when scaled to 512M image-text pairs.\n- SAIL also exhibits strong visual representation capabilities, achieving results on par with ViT-22B in vision tasks such as semantic segmentation.",
+        "classification": [
+            "Multimodal",
+            "Image Classification",
+            "Image Segmentation",
+            "Visual Question Answering",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/SAIL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Efficient Process Reward Model Training via Active Learning",
+        "authors": "Tianyu Pang, Xin Mao, Zichen Liu, Keyu Duan, dreamerdeo",
+        "link": "https://arxiv.org/abs/2504.10559",
+        "github_repo": null,
+        "summary": "- This paper introduces ACTPRM, an active learning approach for training Process Reward Models (PRMs) that significantly reduces annotation costs by proactively selecting uncertain samples for labeling.\n- ACTPRM uses an ensemble of PRMs to estimate uncertainty during training, which is used in the pool-based setting to retain only highly uncertain data that subsequently gets labelled by a reasoning model.\n- The paper demonstrates that ACTPRM achieves comparable or better performance to full-data tuning while using only 50% of the annotation budget.\n- It also presents a one-shot active learning setting where ACTPRM filters over 1M math reasoning trajectories, reaching a new state-of-the-art performance of 75.0% on ProcessBench and 65.5% on PRMBench with significantly reduced costs compared to previous SOTA methods.\n- The code and models are open-sourced to facilitate community adoption and further research.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/sail-sg/ActivePRM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Efficient Generative Model Training via Embedded Representation Warmup",
+        "authors": "Tao Lin, Xufeng Li, Peng Sun, SempraETY",
+        "link": "https://arxiv.org/abs/2504.10188",
+        "github_repo": "https://github.com/LINs-lab/ERW",
+        "summary": "- This paper introduces Embedded Representation Warmup (ERW), a two-phase training framework for diffusion models that significantly improves training efficiency and generation quality.\n- ERW decouples the learning of semantic features from generative denoising by initializing early layers of the diffusion model with weights from a pretrained self-supervised model (such as DINOv2) in a dedicated warmup phase. \n- The subsequent training phase utilizes a combined objective of the standard diffusion loss and a decaying representation alignment loss.\n- Empirically, ERW demonstrates up to a 40x speedup in training convergence while maintaining or exceeding state-of-the-art generation quality, as measured by FID scores on ImageNet 256x256.\n- This improvement is attributed to efficient semantic feature integration, enabling the model to focus its capacity on generative refinement rather than learning representations from scratch.",
+        "classification": [
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/LINs-lab/ERW"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "NormalCrafter: Learning Temporally Consistent Normals from Video\n  Diffusion Priors",
+        "authors": "Bing Wang, Xinya Chen, Haoyuan Wang, Yanrui Bin, wbhu-tc",
+        "link": "https://arxiv.org/abs/2504.11427",
+        "github_repo": null,
+        "summary": "- NormalCrafter, a novel video normal estimation model, generates temporally consistent normal sequences with fine-grained details from open-world videos using video diffusion models.\n- It introduces Semantic Feature Regularization (SFR), aligning diffusion features with semantic cues for enhanced detail and accuracy.\n- A two-stage training protocol is employed, leveraging latent space for temporal context and pixel space for spatial accuracy.\n- NormalCrafter achieves state-of-the-art performance in open-world video normal estimation, outperforming existing methods on various datasets.\n- It surpasses the second-best method on the Sintel dataset in all metrics, showing significant improvements in mean and median angular error, and the proportion of pixels with low angular errors.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "A Minimalist Approach to LLM Reasoning: from Rejection Sampling to\n  Reinforce",
+        "authors": "Lei Wang, Bo Pang, Yuhui Xu, Jiarui Yao, Wei Xiong",
+        "link": "https://arxiv.org/abs/2504.11343",
+        "github_repo": null,
+        "summary": "- This paper investigates Reinforcement Learning (RL) algorithms for fine-tuning Large Language Models (LLMs) on mathematical reasoning tasks.\n- The authors find that a simple rejection sampling baseline, RAFT, performs competitively with more complex RL methods like GRPO and PPO.\n- Ablation studies reveal that GRPO's success primarily stems from discarding prompts with entirely incorrect responses rather than its reward normalization mechanism. \n- Based on this, the authors propose Reinforce-Rej, a simplified policy gradient method that filters both entirely correct and incorrect samples, showing improved KL efficiency and stability. \n- The paper advocates for RAFT and Reinforce-Rej as robust and interpretable baselines for future research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/RLHFlow/Minimal-RL"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/AI-MO/NuminaMath-7B-CoT",
+            "https://huggingface.co/snorkelai/Snorkel-Mistral-PairRM-DPO"
+        ],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and\n  Verifiable Mathematical Dataset for Advancing Reasoning",
+        "authors": "Xingyu Chen, Qiuzhi Liu, Jiahao Xu, Tian Liang, Zhiwei He",
+        "link": "https://arxiv.org/abs/2504.11456",
+        "github_repo": "https://github.com/zwhe99/DeepMath",
+        "summary": "- This paper introduces DeepMath-103K, a large-scale dataset of 103K challenging mathematical problems designed for training advanced reasoning models via reinforcement learning.\n- DeepMath-103K is more challenging and diverse than existing datasets, with problems spanning difficulty levels 3-10 and covering a wide range of mathematical topics. \n- Each problem includes a verifiable final answer and three distinct AI-generated solutions, supporting various training paradigms like supervised fine-tuning, model distillation, and reinforcement learning.\n- Models trained on DeepMath-103K demonstrate significant performance improvements on multiple challenging mathematical reasoning benchmarks, especially using RL-Zero techniques.\n- The dataset's rigorous decontamination process ensures the integrity of evaluations, facilitating the development of robust AI reasoning systems by removing overlap with common evaluation benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zwhe99/DeepMath"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Diffusion Distillation With Direct Preference Optimization For Efficient\n  3D LiDAR Scene Completion",
+        "authors": "Jiale Wu, Zejian Li, Ling Yang, Shengyuan Zhang, An Zhaol",
+        "link": "https://arxiv.org/abs/2504.11447",
+        "github_repo": "https://github.com/happyw1nd/DistillationDPO",
+        "summary": "- This paper introduces Distillation-DPO, a novel framework for distilling 3D LiDAR scene completion diffusion models using preference-labeled data pairs to improve efficiency and completion quality.\n- Distillation-DPO generates paired completion scenes using a student model with varied initial noise levels, then leverages LiDAR scene evaluation metrics to construct win-lose preference pairs and optimizes the student model using score function differences between teacher and student models on these pairs.\n- Experiments demonstrate that Distillation-DPO significantly accelerates completion speed (more than 5 times faster) and achieves higher quality results compared to state-of-the-art LiDAR scene completion diffusion models.\n- Notably, it sets a new state-of-the-art performance on the SemanticKITTI dataset by improving over LiDiff by 6% and 7% in Chamfer Distance (CD) and Jensen-Shannon Divergence (JSD) respectively while being over 5 times faster.\n- This approach marks the first exploration of incorporating preference learning in distillation for LiDAR scene completion.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/happywlnd/DistillationDPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "PVUW 2025 Challenge Report: Advances in Pixel-level Understanding of\n  Complex Videos in the Wild",
+        "authors": "Shuting He, Nikhila Ravi, Chang Liu, LXT, HenghuiDing",
+        "link": "https://arxiv.org/abs/2504.11326",
+        "github_repo": null,
+        "summary": "- This report summarizes the 4th Pixel-level Video Understanding in the Wild (PVUW) Challenge held at CVPR 2025, focusing on complex video object segmentation.\n- The challenge featured two tracks: MOSE for complex scene video object segmentation and MeViS for motion-guided, language-based video segmentation. \n- Both tracks introduced new, challenging datasets designed to reflect real-world scenarios.\n- The top-performing methods on MOSE leveraged large-scale pre-trained models like SAM2 combined with techniques like adaptive pseudo-labels and mask confidence control.\n- MeViS top solutions utilized multimodal large language models (LLMs) to understand motion-centric expressions and guide segmentation, demonstrating the growing potential of LLMs in video understanding.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "ReZero: Enhancing LLM search ability by trying one-more-time",
+        "authors": "Thinh Le, alandao",
+        "link": "https://arxiv.org/abs/2504.11001",
+        "github_repo": null,
+        "summary": "- ReZero, a novel Reinforcement Learning (RL) framework, is introduced to enhance the search capabilities of Large Language Models (LLMs) in Retrieval-Augmented Generation (RAG) by explicitly rewarding the act of retrying a search query after an initial unsuccessful attempt.\n- It uses a modified reward function within a standard RL loop (state, action, reward, policy) to incentivize the model to explore different querying strategies and persist in information seeking rather than prematurely halting.\n- ReZero was evaluated on the Apollo 3 mission dataset using Llama2-3B-Instruct and achieved a peak accuracy of 46.88%, nearly double the 25% accuracy of a baseline model trained without the retry incentive.\n- The reward_retry component encourages more effective utilization of the search tool to arrive at correct answers, particularly in challenging scenarios where initial queries may be insufficient.\n- The results demonstrate that explicitly rewarding retry attempts in a RAG system significantly improves LLM robustness in information retrieval, suggesting the model learns effective search strategies faster. Further research focusing on the training dynamics, generalizing ReZero's performance, using other datasets and integrating it with related methods are suggested as future directions.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "AI-University: An LLM-based platform for instructional alignment to\n  scientific classrooms",
+        "authors": "Rahul Gulati, Mostafa Faghih Shojaei, garikipati, Dinzhenzhenzhu, simocimolato",
+        "link": "https://arxiv.org/abs/2504.08846",
+        "github_repo": null,
+        "summary": "- AI-University (AI-U) is an LLM-based platform for instructional alignment to scientific classrooms by using retrieval-augmented generation (RAG) to fine-tune LLMs with course materials such as lecture videos, notes, and textbooks.\n- The AI-U framework fine-tunes a large language model (LLM) with retrieval-augmented generation (RAG) to create instructor-aligned responses, mirroring the instructor's style and approach.\n- A prototype web application allows users to input queries and receive AI-generated responses with links to relevant course materials and timestamps in corresponding video lectures.\n- Evaluation results showed that the fine-tuned LLM, LLaMA-TOMMI-1.0, achieves a higher cosine similarity with reference answers and outperforms the base Llama 3.2 model in alignment with course style.\n- The framework offers a scalable approach to AI-assisted education with a focus on adaptability and personalized learning, and can be extended to broader research content in science.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/my-ai-university/finite-element-method"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/my-ai-university"
+        ],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Adaptive Computation Pruning for the Forgetting Transformer",
+        "authors": "Aaron Courville, Johan Obando-Ceron, Zhixuan Lin, littleowen",
+        "link": "https://arxiv.org/abs/2504.06949",
+        "github_repo": "https://github.com/zhixuan-lin/arctic-fox",
+        "summary": "- This paper introduces Adaptive Computation Pruning (ACP) for the Forgetting Transformer (FoX), a method to dynamically prune computations in attention based on a forget gate and a threshold.\n- ACP identifies and skips computations related to input-output dependencies significantly weakened by the forget gate, reducing FLOPs without impacting performance.\n- Applied to language model pretraining with FoX, ACP reduces FLOPs in softmax attention by ~70% and improves training throughput by 10-35% across various model sizes and context lengths, with longer contexts yielding greater savings.\n- Analysis reveals a bimodal distribution of attention heads, categorized into \"local\" heads (primarily focused on local context) and \"global\" heads, with the majority being local, aligning with the observed FLOP reduction.\n- The paper also explores the impact of a hyperparameter controlling pruning aggressiveness and demonstrates its robustness, showing minimal performance impact even with a less conservative setting.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zhixuan-lin/arctic-fox",
+            "https://github.com/zhixuan-lin/forgetting-transformer"
+        ],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Multimodal Long Video Modeling Based on Temporal Dynamic Context",
+        "authors": "Xiangyu Yue, Yiyuan Zhang, Jiaming Han, Hoar012",
+        "link": "https://arxiv.org/abs/2504.10443",
+        "github_repo": "https://github.com/Hoar012/TDC-Video",
+        "summary": "- This paper introduces Temporal Dynamic Context (TDC), a novel multimodal long-video modeling framework that leverages both static visual features and dynamic multimodal context within each scene.\n- TDC employs a query-based Transformer to compress video, audio, and instruction text tokens into a limited set of temporal context tokens, enabling effective token compression while preserving crucial information.\n- To handle extremely long videos, the paper proposes a training-free Long Video Chain-of-Thought (LVCoT) strategy, which processes the video segment by segment and then integrates the segment information for a final answer.\n- Extensive experiments on various video and audio-video understanding benchmarks demonstrate that TDC achieves state-of-the-art performance, outperforming existing methods such as VideoLLaMA2 and LongVU on MLVU by 15.6% and 7.4%, respectively.\n- Results on VideoMME, with and without subtitles, further validates TDC's effectiveness in long video understanding.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Audio"
+        ],
+        "github_urls": [
+            "https://github.com/Hoar012/TDC-Video"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Summarization of Multimodal Presentations with Vision-Language Models:\n  Study of the Effect of Modalities and Structure",
+        "authors": "Fr\u00e9d\u00e9ric Dufaux, Camille Guinaudeau, gigant",
+        "link": "https://arxiv.org/abs/2504.10049",
+        "github_repo": null,
+        "summary": "- This paper benchmarks open-weight Vision-Language Models (VLMs) for summarizing multimodal presentations, specifically focusing on the impact of input representation.\n- It introduces a structured, interleaved representation of slides and transcripts, demonstrating superior performance compared to unstructured or single-modality inputs.\n- With Qwen2-VL, the study conducts a fine-grained analysis across various visual token budgets and input structures, revealing that visual information becomes crucial with higher budgets while structure is key at lower budgets. \n- The paper further examines the scaling of model size and its interaction with visual token budget. \n- Through a qualitative evaluation, the paper illustrates how multimodal input leads to more comprehensive summaries with improved accuracy and contextual information, while also observing an unintended \"bullet point\" generation tendency.",
+        "classification": [
+            "Multimodal",
+            "Summarization",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/gigant/tib-bench",
+            "https://huggingface.co/spaces/gigant/slide-presentation-viz"
+        ],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "D^2iT: Dynamic Diffusion Transformer for Accurate Image Generation",
+        "authors": "Zhendong Mao, Lei Zhang, Nan Chen, Mengqi Huang, Weinan Jia",
+        "link": "https://arxiv.org/abs/2504.09454",
+        "github_repo": "https://github.com/jiawn-creator/Dynamic-DiT",
+        "summary": "- D\u00b2iT, a novel two-stage framework for image generation, dynamically compresses different image regions based on their information density using a Dynamic VAE (DVAE) and a Dynamic Diffusion Transformer (D2iT).\n- DVAE employs a hierarchical encoder with varying downsampling rates to generate more accurate latent codes, while D2iT predicts multi-grained noise using Dynamic Grain and Content Transformers.\n- This approach unifies global consistency and local realism by combining rough noise prediction with detailed region correction.\n- Experiments show D\u00b2iT-XL achieves a 23.8% quality improvement (FID of 1.73) over DiT on ImageNet with only 57.1% of the training resources.\n- D\u00b2iT-L achieves an FID-10K score of 4.47 on FFHQ, a 28.6% improvement over DiT-L.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/jiawn-creator/Dynamic-DiT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "Change State Space Models for Remote Sensing Change Detection",
+        "authors": "Erchan Aptoula, ElmanGhazaei",
+        "link": "https://arxiv.org/abs/2504.11080",
+        "github_repo": "https://github.com/Elman295/CSSM",
+        "summary": "- This paper introduces the Change State Space Model (CSSM), a novel architecture based on Mamba for remote sensing change detection.\n- CSSM integrates a lightweight CNN encoder, CSSM blocks, and a lightweight decoder. The CSSM blocks incorporate an L1 distance-based selection mechanism with two distinct selection parameters to exclusively extract features corresponding to changed areas, thereby discarding irrelevant information.\n- This targeted selection process enables CSSM to achieve state-of-the-art performance with significantly reduced computational complexity compared to existing methods, using 5x to 21.25x fewer parameters than MambaBCD.\n- Experimental results on three benchmark datasets (LEVIR-CD+, WHU-CD, and SYSU-CD) show that CSSM outperforms various CNN-based, Transformer-based, and Mamba-based methods in terms of accuracy and robustness.\n- The ablation study demonstrated the effectiveness of the proposed selection mechanism.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/Elman295/CSSM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
+    },
+    {
+        "title": "LazyReview A Dataset for Uncovering Lazy Thinking in NLP Peer Reviews",
+        "authors": "Iryna Gurevych, Lizhen Qu, Anne Lauscher, Zhuang Li, sukannya",
+        "link": "https://arxiv.org/abs/2504.11042",
+        "github_repo": "https://github.com/UKPLab/arxiv2025-lazy-review",
+        "summary": "- Introduces LAZYREVIEW, a dataset of peer review sentences annotated with fine-grained lazy thinking categories.\n- Reveals that Large Language Models (LLMs) struggle to detect lazy thinking instances in a zero-shot setting but improve significantly with instruction-based fine-tuning.\n- Demonstrates through a controlled experiment that reviews revised with lazy thinking feedback are more comprehensive and actionable.\n- Releases the dataset and enhanced guidelines to aid in training junior reviewers.\n- Presents analysis and experimental results on effectiveness of instruction tuning and positive examples in identifying lazy thinking.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/UKPLab/arxiv2025-lazy-review"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-16"
     }
 ]

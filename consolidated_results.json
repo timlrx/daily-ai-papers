@@ -32274,5 +32274,164 @@
         ],
         "huggingface_urls": [],
         "date": "2025-04-16"
+    },
+    {
+        "title": "ColorBench: Can VLMs See and Understand the Colorful World? A\n  Comprehensive Benchmark for Color Perception, Reasoning, and Robustness",
+        "authors": "zhoutianyi, jiuhai, shweta12, kweCobi, Fcr09",
+        "link": "https://arxiv.org/abs/2504.10514",
+        "github_repo": "https://github.com/tianyi-lab/ColorBench",
+        "summary": "- This paper introduces COLORBENCH, a new benchmark designed to evaluate the color perception, reasoning, and robustness of Vision-Language Models (VLMs).\n- COLORBENCH includes 11 tasks covering various real-world applications, such as identifying colors in paintings, reading test kits, interpreting satellite images, and recognizing camouflaged objects.\n- An evaluation of 32 VLMs reveals that larger models generally perform better, but the absolute performance across all models is relatively low, suggesting that color understanding is a current weakness of VLMs.\n- Chain-of-Thought (CoT) reasoning improves color understanding accuracy and robustness, highlighting the importance of reasoning abilities in these tasks.\n- Color clues are helpful for most COLORBENCH tasks but can mislead VLMs in tasks involving illusions or mimicry.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/ColorBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "BitNet b1.58 2B4T Technical Report",
+        "authors": "thegenerality, THU-CHUNXIA, buaahsh, hongyuw, shumingma",
+        "link": "https://arxiv.org/abs/2504.12285",
+        "github_repo": null,
+        "summary": "- BitNet b1.58 2B4T is a 2-billion parameter, native 1-bit Large Language Model (LLM) trained on 4 trillion tokens, using a modified transformer architecture with custom BitLinear layers incorporating weight quantization (1.58 bits), activation quantization (8 bits), and subln normalization.\n- It achieves performance comparable to leading open-weight, full-precision LLMs of similar size across various tasks including language understanding, reasoning, coding, and conversation.\n- This model offers substantial efficiency benefits, with significant reductions in memory footprint, energy consumption, and decoding latency compared to full-precision counterparts.\n- Open-source implementations optimized for both GPU (custom CUDA kernels) and CPU (bitnet.cpp) are provided to encourage wider adoption and research.\n- BitNet b1.58 2B4T advances the state-of-the-art in 1-bit LLMs, demonstrating the potential of extreme quantization for deploying powerful language models in resource-constrained environments.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/LMOps"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/microsoft/bitnet-b1.58-2B-4T"
+        ],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "Cobra: Efficient Line Art COlorization with BRoAder References",
+        "authors": "Zhaoyang Zhang, yshan2u, juxuan27, l-li, JunhaoZhuang",
+        "link": "https://arxiv.org/abs/2504.12240",
+        "github_repo": null,
+        "summary": "- Cobra is a novel long-context framework for line art colorization that leverages a rich set of reference images to improve colorization accuracy and preserve fine-grained identity details.\n- It utilizes a Causal Sparse DiT architecture, Localized Reusable Position Encoding, and a Line Art Guider.\n- The Causal Sparse DiT enhances efficiency by optimizing attention mechanisms, reducing computational complexity while maintaining color information.\n- Localized Reusable Position Encoding allows for the integration of an arbitrary number of reference images without modifying the 2D positional encodings.\n- Evaluations show Cobra outperforms existing methods in terms of both image quality and color ID accuracy, especially with richer contextual information, and also supports color hints for enhanced user control.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/zhuang2002/Cobra"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "AlayaDB: The Data Foundation for Efficient and Effective Long-context\n  LLM Inference",
+        "authors": "FeTieTer, YuanPeiqi, Qilong00, BenjaminXIANG, YangshenDeng",
+        "link": "https://arxiv.org/abs/2504.10326",
+        "github_repo": null,
+        "summary": "- AlayaDB, a new vector database system, is designed specifically for efficient and effective long-context Large Language Model (LLM) inference.\n- It decouples key-value (KV) cache and attention computation from the LLM inference engine, encapsulating them within the database system. \n- A novel dynamic inner product range (DIPR) query is introduced to enhance sparse attention by dynamically selecting critical tokens. \n- AlayaDB employs a query optimizer and various optimizations, including a novel vector file system and a data-centric attention engine, to minimize resource consumption and improve performance. \n- Experimental results on LLM inference benchmarks demonstrate AlayaDB's ability to reduce resource consumption and improve generation quality while adhering to service level objectives (SLOs).",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "SIFT-50M: A Large-Scale Multilingual Dataset for Speech Instruction\n  Fine-Tuning",
+        "authors": "Jian Xie, Rupak Vignesh Swaminathan, svinxz, vijaygirish2001, panprabh",
+        "link": "https://arxiv.org/abs/2504.09081",
+        "github_repo": null,
+        "summary": "- The paper introduces SIFT-50M, a 50 million example multilingual dataset for instruction fine-tuning and pre-training of speech-text large language models (LLMs).\n- The dataset covers five languages and focuses on diverse speech understanding and controllable speech generation instructions, generated using LLMs and expert models.\n- The authors also introduce EvalSIFT, a benchmark dataset to evaluate speech-text LLMs and  SIFT-LLM, a speech-text LLM trained on SIFT-50M.\n- SIFT-LLM outperforms existing speech-text LLMs on instruction following benchmarks while remaining competitive on foundational speech tasks according to Table 3.\n- The model also shows promising results for controllable speech generation, with synthesized speech exhibiting characteristics specified in the instructions as seen in Table 6.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Text-to-Speech",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/amazon-agi/SIFT-50M"
+        ],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "ReTool: Reinforcement Learning for Strategic Tool Use in LLMs",
+        "authors": "chijx, imjcqt, YujiaHi, zhangysk, JoeYing",
+        "link": "https://arxiv.org/abs/2504.11536",
+        "github_repo": null,
+        "summary": "- ReTool, a reinforcement learning framework, enhances LLMs' ability to use external tools, like code interpreters, for complex problem-solving, such as mathematical reasoning.\n- It combines dynamic interleaving of real-time code execution within natural language reasoning and automated RL for training tool invocation strategies based on outcome feedback.\n- On the AIME math benchmark, ReTool-32B achieves 67% accuracy with 400 training steps, outperforming a text-based RL baseline (40% accuracy, 1080 steps) and surpasses OpenAI's model by 27.9% in extended settings (72.5% accuracy).\n- Analysis reveals emergent behaviors like code self-correction, indicating autonomous mastery of adaptive tool use.\n- ReTool highlights the potential of outcome-driven tool integration for complex problem-solving and provides insights into hybrid neuro-symbolic systems.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "REPA-E: Unlocking VAE for End-to-End Tuning with Latent Diffusion\n  Transformers",
+        "authors": "liangzheng06, sainx, Zhenchang, yunzhong-hou, xingjianleng",
+        "link": "https://arxiv.org/abs/2504.10483",
+        "github_repo": null,
+        "summary": "- REPA-E, a novel end-to-end training recipe for Latent Diffusion Models (LDMs), jointly tunes both the Variational Autoencoder (VAE) and the diffusion model using a representation alignment loss.\n- This method significantly accelerates training, achieving 17x and 45x speedups compared to existing REPA and vanilla training methods, respectively.\n- REPA-E also enhances the VAE's latent space structure, leading to improved downstream generation quality.\n- Notably, REPA-E achieves state-of-the-art generation performance, with an FID score of 1.26 and 1.83 with and without classifier-free guidance on ImageNet 256x256.\n- The enhanced VAE can also be used independently as a drop-in replacement for other VAEs, improving their performance.",
+        "classification": [
+            "Text-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/stabilityai/sd-vae-ft-mse"
+        ],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "Robust and Fine-Grained Detection of AI Generated Texts",
+        "authors": "ashay-sriv, jebish7, DrishtiSharma, Siddartha10, 1024m",
+        "link": "https://arxiv.org/abs/2504.11952",
+        "github_repo": null,
+        "summary": "- This paper introduces a new dataset of 2.4M human-machine co-authored texts in 23 languages generated using popular LLMs, including GPT-4, Gemini, and Claude.\n- It proposes a set of multilingual transformer models with a CRF layer for token classification, trained to distinguish writing styles within a text.\n- These models achieve better performance over texts with unseen features (domain, generator, adversarial inputs, non-native speakers) compared to binary classification approaches.\n- The models effectively separate human-authored from machine-generated portions in co-authored texts. The findings of the paper are based on tests conducted on various benchmarks and datasets, including Mgtd-bench and Raid-bench. Additional findings include a comparison of performance against various adversarial methods and the characteristics of generated text compared to human-authored text.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "Vivid4D: Improving 4D Reconstruction from Monocular Video by Video\n  Inpainting",
+        "authors": "Yiyi Liao, BangBnag Yang, yuewenma, shengmiao, JaceyH919",
+        "link": "https://arxiv.org/abs/2504.11092",
+        "github_repo": null,
+        "summary": "- Vivid4D, a novel approach, enhances 4D monocular video reconstruction by augmenting observation views and leveraging both geometric and generative priors.\n- It reformulates view augmentation as video inpainting: warping observed views to new viewpoints based on monocular depth and then using a diffusion model to fill missing regions.\n- An iterative view expansion strategy progressively generates augmented views, increasing scene coverage and compensating for inaccuracies in monocular depth.\n- A robust reconstruction loss, IV RGB, improves resilience to misalignments.\n- Experiments show Vivid4D outperforms existing methods in novel view synthesis quality on dynamic scenes, improving reconstruction and completion.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video",
+            "Image-to-3D",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
+    },
+    {
+        "title": "Syzygy of Thoughts: Improving LLM CoT with the Minimal Free Resolution",
+        "authors": "Qigan Sun, Jiaquan Zhang, Yi Lu, Chaoning Zhang, Chenghao Li",
+        "link": "https://arxiv.org/abs/2504.09566",
+        "github_repo": "https://github.com/dlMARiA/Syzygy-of-thoughts",
+        "summary": "- This paper introduces Syzygy of Thoughts (SoT), a novel reasoning framework that enhances Chain-of-Thought (CoT) prompting for Large Language Models (LLMs) by incorporating principles of Minimal Free Resolution (MFR) from algebraic geometry.\n- SoT decomposes complex problems into interconnected reasoning paths, capturing deeper logical dependencies and improving structured problem-solving by introducing concepts like \"Module\", \"Freeness\", and \"Mapping\".\n- Experimental results on datasets like GSM8K and MATH demonstrate that SoT achieves comparable or superior performance to other CoT methods across various LLMs (GPT40-mini, Qwen2.5).\n- SoT's structured approach reduces redundant computations and logical inconsistencies, leading to more efficient and transparent reasoning.\n- The framework shows improved inference accuracy and scalability, addressing CoT limitations in high-dimensional and complex logical problem-solving, particularly in mathematical reasoning tasks, where it approaches the performance of larger models like GPT-4 on lightweight models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/dIMARiA/Syzygy-of-thoughts"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-17"
     }
 ]

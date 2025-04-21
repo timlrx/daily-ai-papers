@@ -1,0 +1,139 @@
+[
+    {
+        "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in\n  LLMs Beyond the Base Model?",
+        "authors": "Zhaokai Wang, Andrew Zhao, Rui Lu, Zhiqi Chen, Yang Yue",
+        "link": "https://arxiv.org/abs/2504.13837",
+        "github_repo": null,
+        "summary": "- This paper challenges the assumption that Reinforcement Learning with Verifiable Rewards (RLVR) enables Large Language Models (LLMs) to develop novel reasoning abilities beyond the capabilities of the base model.\n- Through experiments across math, code, and visual reasoning tasks, using various model families and RL algorithms, the study reveals that RLVR primarily improves the sampling efficiency of existing reasoning paths present in the base model, rather than introducing new ones.\n- By measuring the pass@k metric, where k represents the number of samples, the authors found that base models can often outperform RL-trained models when k is large, indicating a broader reasoning coverage in base models.\n-  Perplexity analysis revealed that RL model's reasoning paths are already present in base model's output distribution.\n- The study concludes that RLVR, in its current form, has limitations in expanding the reasoning boundary of LLMs and suggests the need for new paradigms to advance LLM reasoning abilities.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://limit-of-RLVR.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "MIG: Automatic Data Selection for Instruction Tuning by Maximizing\n  Information Gain in Semantic Space",
+        "authors": "Haochen Ye, Zerun Ma, Kai Hu, Yining Li, Yicheng Chen",
+        "link": "https://arxiv.org/abs/2504.13835",
+        "github_repo": null,
+        "summary": "- This paper introduces MIG (Maximize Information Gain), a novel data selection method for instruction tuning of Large Language Models (LLMs).\n- MIG quantifies dataset quality and diversity by modeling the semantic space as a label graph, where nodes represent labels and edges capture semantic relationships.\n- Information gain is maximized during data selection by iteratively selecting samples that contribute the most to the overall information content of the dataset as measured by the label graph.\n- Experiments on diverse datasets (Tulu3, OpenHermes 2.5, X sota) and LLMs (Llama 3.1-8b, Mistral-7B, Qwen2.5-7B) demonstrate that MIG consistently outperforms state-of-the-art data selection methods.\n- Notably, a model fine-tuned with only 5% of the Tulu3 data selected by MIG achieved comparable performance to the model trained on the full dataset, showcasing significant efficiency gains.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "Could Thinking Multilingually Empower LLM Reasoning?",
+        "authors": "Lei Li, Shujian Huang, Wenhao Zhu, Xu Huang, Changjiang Gao",
+        "link": "https://arxiv.org/abs/2504.11833",
+        "github_repo": null,
+        "summary": "- This paper explores the potential of multilingualism in enhancing reasoning capabilities of Large Language Models (LLMs).\n- The study quantifies the potential gain from multilingual thinking by aggregating model responses to translated parallel inputs on reasoning-specific tasks like GPQA and MGSM.\n- Results demonstrate that multilingual thinking can significantly improve accuracy compared to English-only reasoning or paraphrased inputs, and a combination of just a few (\u22654) languages is sufficient for substantial improvement.\n- The study finds that common answer selection methods, like majority voting, prompt-based selection, and LLM-as-a-judge selection, struggle to fully realize the potential of multilingualism due to issues like bias toward specific languages and sensitivity to answer selection criteria.\n- The paper suggests that different languages may be better suited for different difficulty levels of questions, and the presence of \"key advantageous languages\" can compensate for errors in other languages, yet a robust solution is not fully realized yet.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/CONE-MT/multilingual_reasoning"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+            "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+            "https://huggingface.co/Qwen/Qwen-2.5-72B-Chat"
+        ],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "AerialMegaDepth: Learning Aerial-Ground Reconstruction and View\n  Synthesis",
+        "authors": "Shubham Tulsiani, Srinivasa Narasimhan, Deva Ramanan, Anurag Ghosh, kvuong2711",
+        "link": "https://arxiv.org/abs/2504.13157",
+        "github_repo": null,
+        "summary": "- This paper introduces AerialMegaDepth, a novel dataset for aerial-ground 3D reconstruction.\n- The dataset combines pseudo-synthetic renderings from 3D city meshes (like Google Earth) with real, ground-level images, to improve visual fidelity and bridge the domain gap.\n- The authors also propose a method to curate multi-view ground images by leveraging aerial view as context.\n- Fine-tuning state-of-the-art models on this dataset showed significant improvements in camera pose estimation from mixed altitude imagery, improving registration success rate from 5% to 56%.\n- AerialMegaDepth also improves the performance of models on novel-view synthesis in challenging aerial-ground scenarios.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D",
+            "Depth Estimation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "HiScene: Creating Hierarchical 3D Scenes with Isometric View Generation",
+        "authors": "Tao Hu, Yuan Li, Zesong Yang, Bangbang Yang, Wenqi Dong",
+        "link": "https://arxiv.org/abs/2504.13072",
+        "github_repo": null,
+        "summary": "- HiScene is a novel hierarchical framework that generates compositional 3D scenes from text, featuring realistic layouts, diverse object categories, and editable object instances.\n- It leverages isometric views, treating scenes as hierarchical \"objects\" composed of manipulatable items, bridging the gap between 2D image generation and 3D object generation.\n- A video-diffusion-based amodal completion technique addresses object occlusions and shadows, and shape prior injection ensures spatial alignment between refined objects and the original scene context.\n- Experimental results show HiScene produces more natural object arrangements, complete instances, and higher-quality scenes compared to existing methods, especially for interactive applications.\n- HiScene outperforms state-of-the-art methods in scene quality and amodal completion, enabling efficient generation of interactive 3D scenes with physical plausibility.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "NodeRAG: Structuring Graph-based RAG with Heterogeneous Nodes",
+        "authors": "Yixin Liu, Haoxiang Chen, Chengze Li, Haojie Zheng, Tianyang Xu",
+        "link": "https://arxiv.org/abs/2504.11544",
+        "github_repo": "https://github.com/Terry-Xu-666/NodeRAG",
+        "summary": "- NodeRAG, a novel graph-based Retrieval-Augmented Generation (RAG) framework, is introduced, which enhances RAG performance through optimized graph structure indexing for more effective and fine-grained retrieval.\n- NodeRAG constructs a heterogenous graph with functionally distinct nodes, balancing fine-grained understanding with a global perspective of the knowledge corpus, addressing limitations of previous graph-based RAG methods.\n- The heterograph integrates various node types, including entities, relationships, text chunks, events, and summaries, enabling precise hierarchical retrieval while minimizing irrelevant information.\n- Experimental results show that NodeRAG outperforms current methods (GraphRAG, LightRAG) in multi-hop benchmarks and open-ended evaluations with fewer retrieval tokens, demonstrating enhanced efficiency.\n- The framework offers system-level efficiency advantages with improvements in indexing time, query time, and storage efficiency due to the fine-grained graph structure and retrieval process.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Terry-Xu-666/NodeRAG"
+        ],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "Tokenize Image Patches: Global Context Fusion for Effective Haze Removal\n  in Large Images",
+        "authors": "Kaiqi Li, Qizhi Xu, Jiuchen Chen, fengyanzi",
+        "link": "https://arxiv.org/abs/2504.09621",
+        "github_repo": "https://github.com/CastleChen339/DehazeXL",
+        "summary": "- DehazeXL, an end-to-end dehazing model, effectively removes haze from large images by leveraging global context and local feature extraction.\n- The model uses a novel architecture that divides the image into patches, encodes them into tokens, and then uses a transformer block to integrate global context.\n- This approach allows for efficient processing of large images on standard GPUs without significant memory overhead.\n- Experimental results demonstrate state-of-the-art performance on an 8K resolution dehazing dataset (8KDehaze) and existing datasets such as 4KID and O-HAZE.\n- A novel visual attribution method, Dehazing Attribution Map (DAM), is introduced to understand feature importance in haze removal tasks.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/CastleChen339/DehazeXL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "Thought Manipulation: External Thought Can Be Efficient for Large\n  Reasoning Models",
+        "authors": "Wenhan Dong, Zifan Peng, Zhen Sun, Jingyi Zheng, Yule Liu",
+        "link": "https://arxiv.org/abs/2504.13626",
+        "github_repo": null,
+        "summary": "- This paper introduces ThoughtMani, a training-free method to enhance the efficiency of Large Reasoning Models (LRMs) by mitigating the \"overthinking\" problem, where models generate redundant reasoning steps.\n- ThoughtMani leverages smaller CoT generator models to provide external thoughts inserted into the reasoning process of the LRM, reducing internal thought generation and computational cost.\n- Experimental results on various datasets like GSM-8k, MATH-500, AIME-2024, and LiveBench/Code demonstrate that ThoughtMani reduces output token counts while maintaining or even improving reasoning accuracy and safety alignment.\n- For instance, using ThoughtMani with a smaller Qwen-2.5-7B-Instruct CoT generator for QwQ-32B on LiveBench/Code decreases output tokens by approximately 30% without performance degradation.\n- The method also reveals a distinct behavior in RL-based and distillation-based LRMs in handling external CoTs, offering insights into their reasoning processes.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    },
+    {
+        "title": "It's All Connected: A Journey Through Test-Time Memorization,\n  Attentional Bias, Retention, and Online Optimization",
+        "authors": "Vahab Mirrokni, Peilin Zhong, Meisam Razaviyayn, Ali Behrouz",
+        "link": "https://arxiv.org/abs/2504.13173",
+        "github_repo": null,
+        "summary": "- This paper introduces MIRAS, a novel framework for designing sequence models based on associative memory principles, inspired by the cognitive phenomenon of attentional bias.\n- MIRAS framework considers four design choices: memory architecture, attentional bias objective, retention gate, and memory learning algorithm, offering flexibility in model design.\n- Three new sequence models\u2014MONETA, YAAD, and MEMORA\u2014are presented as variants of MIRAS, employing distinct attentional biases and retention mechanisms.\n- Experimental results demonstrate that these MIRAS variants outperform Transformer++ and other linear RNNs across language modeling, commonsense reasoning, and needle-in-haystack tasks.\n- The authors attribute the superior performance of MIRAS models to their expressive memory architectures and robust learning mechanisms, especially in long-context scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-21"
+    }
+]

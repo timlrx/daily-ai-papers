@@ -1,0 +1,335 @@
+[
+    {
+        "title": "Kuwain 1.5B: An Arabic SLM via Language Injection",
+        "authors": "Omar Hadid, Sara Chrouf, ZeinaD, Moatasem444, Hennara",
+        "link": "https://arxiv.org/abs/2504.15120",
+        "github_repo": null,
+        "summary": "- This paper introduces Kuwain 1.5B, a compact multilingual Arabic-English language model trained by injecting Arabic into the English-centric TinyLlama 1.1B model, adding 8 new layers and expanding the vocabulary with 26K Arabic tokens.\n- This method reduces training costs by 70% compared to training a new model from scratch and improves Arabic language performance by 8% while maintaining original English proficiency with only 20% of the original English training data and 1% improvement compared to the base TinyLlama model.\n- The approach involves freezing the original model's layers and training only the new layers, achieving stability by keeping the final encoder layer trainable. \n- Evaluation on Arabic benchmarks shows competitive performance against larger models, demonstrating efficient language model expansion.\n- A fine-tuned version, Lahajawi, achieves impressive results in Arabic cross-dialect translation, showcasing the method's potential for diverse language tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Translation",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/misraj-ai/Kuwain-Arabic-cleaner"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/OALL/Open-Arabic-LLM-Leaderboard"
+        ],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "TTRL: Test-Time Reinforcement Learning",
+        "authors": "Xuekai Zhu, Li Sheng, Shang Qu, Yuxin Zuo, iseesaw",
+        "link": "https://arxiv.org/abs/2504.16084",
+        "github_repo": "https://github.com/PRIME-RL/TTRL",
+        "summary": "- This paper introduces Test-Time Reinforcement Learning (TTRL), a novel method for training Large Language Models (LLMs) using reinforcement learning on unlabeled data, addressing the challenge of reward estimation during inference without ground-truth labels.\n- TTRL leverages majority voting from multiple sampled outputs as a proxy for optimal actions, generating rule-based rewards to drive policy optimization and enable self-evolution of LLMs.\n- Experiments demonstrate that TTRL consistently improves performance across various tasks and models, notably boosting Qwen-2.5-Math-7B's performance on AIME 2024 by 159% with only unlabeled test data and achieving an average gain of 84% across three mathematical reasoning benchmarks.\n- TTRL's performance approaches that of models trained directly on labeled test data, suggesting its efficacy in self-improvement and generalization.\n- Results also show that TTRL scales with model size and generalizes well to out-of-distribution tasks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/PRIME-RL/TTRL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "The Bitter Lesson Learned from 2,000+ Multilingual Benchmarks",
+        "authors": "Huifeng Yin, Sinuo Liu, Weixuan Wang, Minghao Wu, ChenyangLyu",
+        "link": "https://arxiv.org/abs/2504.15521",
+        "github_repo": null,
+        "summary": "- This paper examines over 2,000 non-English multilingual benchmarks from 148 countries, published between 2021 and 2024, to evaluate past, present, and future practices in multilingual benchmarking.\n- The findings reveal that English remains significantly overrepresented in these benchmarks, most benchmarks rely on original language content rather than translations, and the majority of content is sourced from high-resource countries.\n- A comparison of benchmark performance with human judgments highlights notable disparities, with STEM-related tasks exhibiting stronger correlations than traditional NLP tasks.\n- The study finds that translating English benchmarks into other languages is insufficient, as localized benchmarks show significantly higher alignment with local human judgments.\n- The paper identifies six key limitations in current multilingual evaluation practices, proposes guiding principles for effective multilingual benchmarking, and outlines five critical research directions, including addressing imbalance in Natural Language Generation tasks and improving representation for low-resource languages.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "Describe Anything: Detailed Localized Image and Video Captioning",
+        "authors": "Yifan Ding, richardaecn, yala, Boyiliee, longlian",
+        "link": "https://arxiv.org/abs/2504.16072",
+        "github_repo": null,
+        "summary": "- This paper introduces the Describe Anything Model (DAM) for detailed localized image and video captioning. \n- DAM uses a focal prompt for high-resolution encoding of target regions and a localized vision backbone to integrate precise localization with broader context. \n- It also introduces a semi-supervised learning data pipeline (DLC-SDP) to address data scarcity and DLC-Bench, a benchmark to evaluate detailed localized captioning without reference captions. \n- DAM achieves state-of-the-art performance on seven benchmarks, including keyword, phrase, and detailed multi-sentence localized captioning for images and videos. \n- The model surpasses strong API-only baselines like GPT-40 and o1.",
+        "classification": [
+            "Image-to-Text",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/richardaecn/describe-anything"
+        ],
+        "huggingface_urls": [
+            "describe-anything.github.io"
+        ],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "Learning Adaptive Parallel Reasoning with Language Models",
+        "authors": "Charlie Snell, Long Lian, Jiayi Pan, yala, xiuyul",
+        "link": "https://arxiv.org/abs/2504.15466",
+        "github_repo": "https://github.com/Parallel-Reasoning/APR",
+        "summary": "- This paper introduces Adaptive Parallel Reasoning (APR), a novel framework that allows language models to dynamically switch between serial and parallel computation during inference, improving reasoning capabilities.\n- APR utilizes a parent-child threading mechanism where parent threads can spawn child threads to explore different reasoning paths concurrently, returning results via a join operation, and it is optimized using reinforcement learning.\n- Experiments on the Countdown reasoning task show APR achieves higher accuracy within the same context window (83.4% vs. 60.0% at 4k context), better scalability with increased compute (80.1% vs. 66.6% at 20k tokens), and improved accuracy at equivalent latency (75.2% vs. 57.3% at ~5000ms) compared to serial methods.\n- APR's reinforcement learning focuses on optimizing when and how to parallelize, improving performance by increasing both sequence length and the number of child threads rather than just deepening the search.\n- The efficiency improvements stem from APR's ability to distribute reasoning across multiple threads, reducing the pressure on context window limitations and enabling exploration of more complex solutions.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Parallel-Reasoning/APR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "IV-Bench: A Benchmark for Image-Grounded Video Perception and Reasoning\n  in Multimodal LLMs",
+        "authors": "Yifan Yao, Jarvis Guo, Yuanxing Zhang, JinChengRen, mdh98",
+        "link": "https://arxiv.org/abs/2504.15415",
+        "github_repo": "https://github.com/multimodal-art-projection/IV-Bench",
+        "summary": "- IV-Bench is introduced as the first comprehensive benchmark designed for evaluating image-grounded video perception and reasoning capabilities of Multimodal Large Language Models (MLLMs).\n- The benchmark comprises 967 videos and 2,585 image-text queries across 13 tasks, categorized into perception and reasoning, and spanning five representative video categories.\n- Evaluations conducted on 27 state-of-the-art MLLMs, including both open and closed-source models, reveal that existing models struggle with these tasks, achieving a maximum accuracy of only 28.9%.\n- Larger models demonstrate moderate performance gains compared to smaller models, and factors like the number of frames and video resolution are shown to impact model performance.\n- A simple data synthesis approach is also proposed, suggesting that data format is not the sole challenge of IV-Bench tasks.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/multimodal-art-projection/IV-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "BookWorld: From Novels to Interactive Agent Societies for Creative Story\n  Generation",
+        "authors": "Yanghua Xiao, Jiaqing Liang, Tian Qiu, Xintao Wang, Yiting Ran",
+        "link": "https://arxiv.org/abs/2504.14538",
+        "github_repo": null,
+        "summary": "- BookWorld is introduced, a novel system designed for constructing and simulating book-based multi-agent societies for creative story generation.\n- The system extracts character data and background knowledge from source books, constructs a multi-agent system where characters interact within a simulated world, and uses LLMs to weave the simulation's events into novel-style narratives.\n- BookWorld incorporates a specialized method for extracting worldview details from source books and a dynamic attribute updating mechanism enabling characters to evolve while maintaining fidelity to their original traits.\n- Experimental results demonstrate that BookWorld generates high-quality, creative stories while maintaining fidelity to the source material, outperforming direct generation and a previous story generation method (HoLLMwood) in 75.36% of cases.\n- The system offers diverse applications, including interactive story generation and social simulation within fictional worlds, opening new possibilities for creative exploration and enjoyment of beloved literary works.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "Efficient Pretraining Length Scaling",
+        "authors": "Jianqiao Lu, Sijun Zhang, Shen Yan, Taoer, bongbohong",
+        "link": "https://arxiv.org/abs/2504.14992",
+        "github_repo": null,
+        "summary": "- The paper introduces PHD-Transformer, a novel framework for efficient length scaling during pre-training of large language models (LLMs) while preserving inference efficiency.\n- PHD-Transformer employs a KV cache management strategy that differentiates between original and hidden decoding tokens, retaining only the KV cache of original tokens for long-range dependencies.\n- The paper introduces two optimized variants: PHD-SWA uses sliding window attention to maintain local dependencies, and PHD-CSWA implements chunk-wise sliding window attention to reduce pre-filling time.\n- Experiments demonstrate consistent improvements across benchmarks like ARC, HellaSwag, PIQA, Winogrande, MMLU, and CommonsenseQA.\n- PHD-CSWA-3-16-32 shows an average 2.0% accuracy improvement and 0.034 decrease in training loss compared to the baseline 1.2B model.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "CheXWorld: Exploring Image World Modeling for Radiograph Representation\n  Learning",
+        "authors": "Shiji Song, Pan Liu, Chenxin Tao, Yulin Wang, yueyang2000",
+        "link": "https://arxiv.org/abs/2504.13820",
+        "github_repo": "https://github.com/LeapLabTHU/CheXWorld",
+        "summary": "- CheXWorld is a self-supervised model for radiograph representation learning based on image world modeling using a Vision Transformer (ViT) architecture.\n- The model integrates three world modeling tasks: local anatomical structure modeling, global anatomical layout modeling, and domain variation modeling to capture different facets of medical knowledge.\n- It outperforms existing self-supervised learning methods and large-scale medical foundation models on eight medical image classification and segmentation benchmarks including VinDr-CXR, ShenZhen-CXR, NIH ChestX-ray14, CheXpert, MedFMC-ChestDR, SIIM-ACR Pneumothorax, and RSNA Pneumonia.\n- Qualitative analysis, including visualizations of predictor outputs and domain variation sensitivity tests demonstrate CheXWorld's ability to model anatomical structures, layouts, and domain shifts effectively.\n- The model shows high sample efficiency by achieving comparable performance to baselines trained with the full dataset using only 10% of the training data.",
+        "classification": [
+            "Image Classification",
+            "Image Segmentation",
+            "Computer Vision",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/LeapLabTHU/CheXWorld"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "Personalized Text-to-Image Generation with Auto-Regressive Models",
+        "authors": "Xihui Liu, Yao Teng, Xian Liu, Kaiyue Sun",
+        "link": "https://arxiv.org/abs/2504.13162",
+        "github_repo": "https://github.com/KaiyueSun98/T2I-Personalization-with-AR",
+        "summary": "- This paper proposes a novel two-stage training strategy for personalized text-to-image generation using auto-regressive models, involving the optimization of text embeddings and fine-tuning of transformer layers.\n- Leveraging the Lumina-mGPT 7B model, the proposed method achieves comparable subject fidelity and prompt following to diffusion-based personalization methods like DreamBooth, outperforming techniques like Textual Inversion.\n- The two-stage training strategy involves optimizing a unique text embedding associated with a specific subject and subsequently fine-tuning the transformer layers to enhance subject fidelity.\n- Experiments on Dreambench demonstrate the method's effectiveness in various personalization scenarios like re-contextualization and property modification.\n- While effective, the method is computationally intensive and requires further research to address limitations in complex scenarios demanding extensive prior knowledge or deep integration of multiple concepts.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/KaiyueSun98/T2I-Personalization-with-AR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale",
+        "authors": "Zejun Ma, Wei Li, Yiqi Lin, Ziyun Zeng, Joya Chen",
+        "link": "https://arxiv.org/abs/2504.16030",
+        "github_repo": null,
+        "summary": "- This paper introduces LiveCC, a novel Video Large Language Model (Video LLM) trained on a large-scale dataset of ASR transcripts, focusing on real-time video commentary.\n- A streaming training approach densely interleaves ASR words and video frames according to their timestamps, enabling fine-grained temporal modeling.\n- LiveCC-7B-Instruct outperforms existing 72B parameter models in commentary quality and achieves SOTA on video QA benchmarks.\n- A new benchmark, LiveSports-3K, is introduced for evaluating real-time video commentary using LLM-as-a-judge.\n- The proposed model showcases low-latency commentary generation capabilities and broad generalizability in video understanding tasks.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "showlab.github.io/livecc"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "Vidi: Large Multimodal Models for Video Understanding and Editing",
+        "authors": "Fan Chen, Chia-Wen Kuo, Celong Liu, Vidi Team, daviddousa",
+        "link": "https://arxiv.org/abs/2504.15681",
+        "github_repo": null,
+        "summary": "- Vidi is a family of Large Multimodal Models (LMMs) designed for video understanding and editing tasks, specializing in temporal retrieval.\n- The model identifies time ranges in videos corresponding to given text queries, handling hour-long videos and multiple modalities (vision, audio, text).\n- Vidi utilizes a Decomposed Attention (D-Attn) architecture, enabling efficient processing of long videos and facilitating multimodal alignment.\n- It is trained in three stages: adapter training on image/audio captions, synthetic data training for temporal alignment, and real video training with dense captions and subtitles.\n- Evaluation on the VUE-TR benchmark demonstrates that Vidi surpasses leading proprietary models, showcasing its efficacy in temporal retrieval tasks.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "From Reflection to Perfection: Scaling Inference-Time Optimization for\n  Text-to-Image Diffusion Models via Reflection Tuning",
+        "authors": "Renrui Zhang, Yue Liao, Sayak Paul, Liangbing Zhao, Le Zhuo",
+        "link": "https://arxiv.org/abs/2504.16080",
+        "github_repo": null,
+        "summary": "- This paper introduces ReflectionFlow, a new framework for enhancing text-to-image generation using iterative refinement, enabling diffusion models to reflect on and improve their outputs.\n- ReflectionFlow introduces three scaling axes: noise-level scaling, prompt-level scaling, and reflection-level scaling.\n- To facilitate this, the authors created GenRef, a dataset of 1 million image-reflection triplets used to fine-tune a diffusion transformer model (FLUX.1-dev).\n- Experimental results on the GenEval benchmark show that ReflectionFlow significantly outperforms baseline methods, achieving a score of 0.91 compared to 0.67 for the baseline FLUX.1-dev and surpasses alternative inference-time scaling techniques.\n- ReflectionFlow shows particular strength on more challenging prompts, indicating effective reflection and self-correction capabilities.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+        ],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making\n  Abilities",
+        "authors": "Razvan Pascanu, Markus Wulfmeier, Jordi Grau-Moya, J\u00f6rg Bornschein, Thomas Schmied",
+        "link": "https://arxiv.org/abs/2504.16078",
+        "github_repo": null,
+        "summary": "- This paper investigates why Large Language Models (LLMs) often exhibit suboptimal performance in decision-making scenarios, focusing on greediness, frequency bias, and the knowing-doing gap as key failure modes.\n- It proposes Reinforcement Learning Fine-Tuning (RLFT) on self-generated Chain-of-Thought (CoT) rationales to mitigate these shortcomings, demonstrating improved decision-making abilities in multi-armed bandits, contextual bandits, and Tic-tac-toe environments.\n- The study shows that RLFT enhances exploration and narrows the knowing-doing gap, but also explores classic and LLM-specific exploration mechanisms to further improve RLFT effectiveness.\n- Experiments with different model sizes (2B, 9B, 27B) reveal that RLFT consistently improves performance across various tasks and scales, indicating its potential for enhancing LLM agents.\n- Ablation studies highlight the importance of CoT reasoning, expert data, and providing sufficient \"thinking\" tokens for achieving optimal performance.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "WALL-E 2.0: World Alignment by NeuroSymbolic Learning improves World\n  Model-based LLM Agents",
+        "authors": "Deheng Ye, Guodong Long, Yijun Yang, Siyu Zhou, zhoutianyi",
+        "link": "https://arxiv.org/abs/2504.15785",
+        "github_repo": "https://github.com/elated-sawyer/WALL-E",
+        "summary": "- WALL-E 2.0 is a training-free \"world alignment\" method that enhances the performance of Large Language Models (LLMs) as world models for embodied agents by learning environment-specific symbolic knowledge (action rules, knowledge graphs, and scene graphs).\n- This symbolic knowledge, extracted by LLMs from exploration trajectories and encoded into executable code rules, regulates the LLM agent's policies, creating a neurosymbolic world model.\n- An RL-free, model-based agent uses model-predictive control (MPC) with an LLM as a look-ahead optimizer to plan future actions, guided by the aligned neurosymbolic world model.\n- In Minecraft-like Mars and embodied indoor ALFWorld environments, WALL-E 2.0 significantly outperforms existing methods, surpassing baselines by 16.1%-51.6% in Mars success rates and by at least 61.7% in score, and achieving a record 98% success rate in ALFWorld after 4 iterations.\n- The approach demonstrates that symbolic knowledge alignment with environment dynamics substantially improves LLM-based world model accuracy and agent performance in complex environments.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/elated-sawyer/WALL-E"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "MR. Video: \"MapReduce\" is the Principle for Long Video Understanding",
+        "authors": "Yu-Xiong Wang, Ziqi Pang",
+        "link": "https://arxiv.org/abs/2504.16082",
+        "github_repo": "https://github.com/ziqipang/MR-Video",
+        "summary": "- MR. Video is a new framework for long video understanding based on the MapReduce principle: independently perceiving short video clips (Map) and jointly aggregating information (Reduce).\n- It addresses limitations of sequence-to-sequence Vision-Language Models (VLMs) and video agents, strategically performing detailed short video perception without context length constraints and enabling sequence-parallel perception with comprehensive context aggregation.\n- Employs two MapReduce stages: (A) Captioning: generates short video captions and standardizes repeated elements; (B) Analysis: analyzes information from individual videos for each question and integrates them into a final answer.\n- Leverages Large Language Models (LLMs), specifically Gemini-Flash for vision and GPT-4 for text, achieving over 10% accuracy improvement on LVBench compared to state-of-the-art VLMs and video agents.\n- Demonstrates the effectiveness of MapReduce for long video understanding, suggesting a simple yet powerful approach for processing lengthy video content.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ziqipang/MR-Video"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "Progent: Programmable Privilege Control for LLM Agents",
+        "authors": "Hongwei Li, Linyu Wu, Zhun Wang, Jingxuan He, stneng",
+        "link": "https://arxiv.org/abs/2504.11703",
+        "github_repo": null,
+        "summary": "- Progent, a new privilege control framework for Large Language Model (LLM) agents, is introduced to mitigate security risks associated with these agents interacting with external environments.\n- Progent employs a domain-specific language (DSL) based on JSON Schema, enabling developers to define fine-grained access control policies, specifying permissible tool calls and their conditions, along with fallback actions for disallowed calls.\n- These policies are enforced during agent execution, dynamically updated based on agent feedback and new information, and managed either manually or through automated policy generation and updates using LLMs familiar with JSON.\n- Evaluation across various scenarios, including AgentDojo, ASB, and AgentPoison benchmarks, demonstrates Progent's effectiveness in drastically reducing attack success rates (e.g., from 41.2% to 2.2% on AgentDojo) with minimal impact on agent utility, and even enhancing it in some cases.\n- Further analysis reveals Progent's modular design, enabling easy integration with minimal code changes, and showcases its resilience against adaptive attacks targeting policy generation LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/sunblaze-ucb/progent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "RealisDance-DiT: Simple yet Strong Baseline towards Controllable\n  Character Animation in the Wild",
+        "authors": "Chao Fan, Min Wei, Shikai Li, Yifan Wu, Jingkai Zhou",
+        "link": "https://arxiv.org/abs/2504.14977",
+        "github_repo": null,
+        "summary": "- RealisDance-DiT is a simple yet powerful baseline model for controllable character animation in the wild, built upon the Wan-2.1 video foundation model with minimal modifications, including adding condition input layers and modifying the ROPE position encoding.\n- The paper introduces two novel fine-tuning strategies: low-noise warmup (dynamic timestep sampling distribution during training) and \"large batches and small iterations,\" to accelerate convergence while preserving model priors.\n-  A new test dataset, RealisDance-Val, featuring diverse and challenging scenarios (rare poses, stylized characters, dynamic scenes, complex lighting, character-object interactions) is introduced to evaluate open-scene performance.\n- RealisDance-DiT outperforms existing open-source methods (MooreAA, Animate-X, ControlNeXt, MimicMotion, MusePose) by a large margin on standard metrics (FID, FVD) on datasets like TikTok and UBC fashion video dataset, as well as achieving state-of-the-art results on the RealisDance-Val dataset.\n- The model effectively handles complex scenarios like character-object interactions, complex lighting, and stylized characters, showcasing its robustness and generalization capabilities.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "IPBench: Benchmarking the Knowledge of Large Language Models in\n  Intellectual Property",
+        "authors": "Minghui Zhu, Huaren Liu, Hongbo Wang, Guhong Chen, QiYao-Wang",
+        "link": "https://arxiv.org/abs/2504.15524",
+        "github_repo": null,
+        "summary": "- Introduces IPBench, a benchmark designed to evaluate the knowledge and capabilities of Large Language Models (LLMs) in intellectual property applications.\n- Covers 8 IP mechanisms and 20 tasks, including information processing, logical reasoning, discriminant evaluation, and creative generation.\n- A benchmark of 16 LLMs showed that even the best-performing model only reached 75.8% accuracy, demonstrating substantial room for improvement.\n- Open-source IP and law-oriented models lag behind closed-source general-purpose models.\n- IPBench data and code are publicly available, and it will be updated in the future.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/IPBench/IPBench"
+        ],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "CAPTURe: Evaluating Spatial Reasoning in Vision Language Models via\n  Occluded Object Counting",
+        "authors": "Mohit Bansal, Jaemin Cho, Elias Stengel-Eskin, Atin Pothiraj",
+        "link": "https://arxiv.org/abs/2504.15485",
+        "github_repo": "https://github.com/atinpothiraj/CAPTURe",
+        "summary": "- This paper introduces CAPTURE (Counting Amodally for Patterns Through Unseen REgions), a novel benchmark designed to evaluate the spatial reasoning and world modeling capabilities of Vision Language Models (VLMs) in the presence of occlusions.\n- CAPTURE involves presenting VLMs with images of objects arranged in patterns, where some objects are occluded, and requires the models to count the total number of objects by inferring the continuation of the pattern behind the occluder.\n- The benchmark includes two datasets: CAPTUREreal, consisting of real-world images, and CAPTUREsynthetic, a controlled set of generated images to isolate specific factors influencing performance.\n- Experiments with strong VLMs like GPT-40 reveal that these models struggle with amodal counting, performing worse on occluded compared to unoccluded images, while humans achieve near-perfect accuracy on the task. \n- Providing auxiliary information, such as object coordinates or inpainted occluded regions, significantly improves VLM performance, indicating a weakness in visual world modeling and integrating visual and textual information rather than counting itself.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/atinpothiraj/CAPTURE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    },
+    {
+        "title": "DiffVox: A Differentiable Model for Capturing and Analysing Professional\n  Effects Distributions",
+        "authors": "Wei-Hsiang Liao, Ben Hayes, Junghyun Koo, Marco A. Mart\u00ednez-Ram\u00edrez, yoyolicoris",
+        "link": "https://arxiv.org/abs/2504.14735",
+        "github_repo": "https://github.com/SonyResearch/diffvox",
+        "summary": "- This paper introduces DiffVox, a differentiable model for capturing and analyzing professional vocal effects distributions in music production. \n- DiffVox integrates parametric equalization, dynamic range control, delay, and reverb with efficient differentiable implementations, enabling gradient-based optimization for parameter estimation.\n- Analysis of parameter correlations from two datasets (MedleyDB and a private collection) reveals relationships between effects and parameters, such as delay time correlating with intensity and high-pass/low-shelf filters shaping low-end frequencies.\n- Principal component analysis connects these correlations to McAdams' timbre dimensions, highlighting the influence of spaciousness and spectral brightness.\n- The study confirms the non-Gaussian nature of parameter distributions, setting the foundation for future research in vocal effects modeling and automatic mixing.",
+        "classification": [
+            "Audio",
+            "Audio-to-Audio"
+        ],
+        "github_urls": [
+            "https://github.com/SonyResearch/diffvox"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-23"
+    }
+]

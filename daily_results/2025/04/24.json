@@ -1,0 +1,237 @@
+[
+    {
+        "title": "VisuLogic: A Benchmark for Evaluating Visual Reasoning in Multi-modal\n  Large Language Models",
+        "authors": "Einsiedler, luotto, Weiyun1025, GenuineWWD, wilye",
+        "link": "https://arxiv.org/abs/2504.15279",
+        "github_repo": null,
+        "summary": "- This research introduces VisuLogic, a new benchmark designed for evaluating visual reasoning abilities in multimodal large language models (MLLMs).\n- VisuLogic contains 1,000 human-verified visual reasoning problems across six categories, focusing on pure visual reasoning, unlike existing benchmarks that permit shortcuts through text descriptions. \n- Evaluations revealed that SOTA MLLMs performed poorly, scoring below 30% accuracy, significantly lower than human performance (51.4%).\n- A supplementary training dataset and reinforcement learning baseline were developed and showed improved performance compared to open-source and closed-source MLLMs, showcasing RL's potential in enhancing visual reasoning. \n- All code and data are publicly available to support further research.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://visulogic-benchmark.github.io/VisuLogic"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "DreamID: High-Fidelity and Fast diffusion-based Face Swapping via\n  Triplet ID Group Learning",
+        "authors": "heqian, giruhc9gj, Crayon-Shinchan, miaohua, Alon77777",
+        "link": "https://arxiv.org/abs/2504.14509",
+        "github_repo": null,
+        "summary": "- DreamID, a novel diffusion-based face swapping model, is introduced, which leverages Triplet ID Group Learning for explicit supervision, leading to enhanced ID similarity and attribute preservation.\n- The model architecture comprises SwapNet (a modified SD Turbo Unet), FaceNet for pixel-level ID feature extraction, and an ID Adapter for semantic-level ID feature extraction.\n- This architecture, coupled with single-step inference, facilitates efficient end-to-end training with image-space loss functions like ID loss and reconstruction loss.\n- Evaluations on FFHQ show DreamID outperforms state-of-the-art methods in FID, ID similarity, pose, and expression preservation, achieving high-fidelity 512x512 results in 0.6 seconds.\n- The framework's flexibility allows training models with diverse characteristics by modifying the Triplet ID Groups, exemplified by DreamID-High Similarity, DreamID-High Attribute Preservation, and DreamID-Stylization.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://superhero-7.github.io/DreamID/"
+        ],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Trillion 7B Technical Report",
+        "authors": "Suyeong An, hist0613, kyudolski, scottsuk0306, sungjunhan-trl",
+        "link": "https://arxiv.org/abs/2504.15431",
+        "github_repo": null,
+        "summary": "- Introduces Trillion-7B, a Korean-centric multilingual large language model (LLM) that uses a novel Cross-lingual Document Attention (XLDA) mechanism for efficient knowledge transfer from English to other languages.\n- The model architecture is based on a Transformer decoder with ROPE, SwiGLU, and RMSNorm, consisting of 32 layers with a hidden size of 4096 and a feedforward dimension of 11008.\n- Achieves competitive multilingual performance using only 10% of its 2 trillion training tokens for multilingual data, trained with a cost of $148K.\n- Evaluations across 27 benchmarks in four languages demonstrate the model's robust multilingual performance and cross-lingual consistency, particularly in Korean and instruction following.\n- Demonstrates zero-shot cross-lingual transfer to vision modalities with Trillion-LLaVA, which outperforms other vision-language models on Korean benchmarks despite being trained only on English vision-language data.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Pre-DPO: Improving Data Utilization in Direct Preference Optimization\n  Using a Guiding Reference Model",
+        "authors": "Yue Zhang, Qiji Zhou, Shulin Huang, Junshu Pan, Swtheking",
+        "link": "https://arxiv.org/abs/2504.15843",
+        "github_repo": null,
+        "summary": "- This paper introduces Pre-DPO, a novel training paradigm for Direct Preference Optimization (DPO) that leverages a \"guiding reference model\" to enhance data utilization and improve performance in aligning large language models (LLMs).\n- Pre-DPO initializes training with a standard preference optimization method like DPO or SimPO, then re-optimizes the policy using the initial optimized model as a guiding reference, leading to adaptive data reweighting.\n- The guiding reference model assigns higher weights to more suitable training samples and lower weights to less suitable or conflicting samples, effectively transforming the role of the reference model from a static constraint to a dynamic guide.\n- Experiments on the Llama3.2, Qwen2.5 models, and AlpacaEval 2 and Arena-Hard benchmarks show that Pre-DPO consistently improves performance of both DPO and SimPO without external models or additional data.\n- Pre-DPO addresses the limitations of conventional reference models by utilizing the optimized policy as the reference, providing foresight and improving data reweighting during training.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/DtYXs/Pre-DPO"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k",
+            "https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized"
+        ],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "I-Con: A Unifying Framework for Representation Learning",
+        "authors": "John Hershey, Shaden Alshammari, mhamilton723, mrpuppt, axelf",
+        "link": "https://arxiv.org/abs/2504.16929",
+        "github_repo": null,
+        "summary": "- Introduces I-Con, a unifying information-theoretic framework that generalizes various representation learning methods, including clustering, spectral methods, dimensionality reduction, contrastive learning, and supervised learning, under a single integrated KL divergence objective.\n- Provides theoretical proofs demonstrating how 23 distinct algorithms emerge as special cases of I-Con by choosing different conditional probability distributions over data point neighbors.\n- Leverages I-Con to develop new unsupervised loss functions with a debiasing strategy that improves image classification accuracy on ImageNet-1K by 8% over the prior state-of-the-art, with further gains on CIFAR-100 and STL-10.\n- Demonstrates the potential of I-Con for creating new loss functions and transferring techniques across different learning domains, leading to improvements in unsupervised image classifiers and debiasing methods for contrastive learners.\n- Unifies a broad spectrum of representation learning approaches under a single framework, exposing a shared underlying structure and facilitating cross-pollination of ideas between traditionally distinct domains.",
+        "classification": [
+            "Image Classification",
+            "Image Feature Extraction",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Decoupled Global-Local Alignment for Improving Compositional\n  Understanding",
+        "authors": "Ziyong Feng, Jun Wang, haoranxu, Kaichengalex, xiaoxing2001",
+        "link": "https://arxiv.org/abs/2504.16801",
+        "github_repo": "https://github.com/xiaoxing2001/DeGLA",
+        "summary": "- This paper introduces Decoupled Global-Local Alignment (DeGLA), a framework designed to enhance the compositional understanding of Contrastive Language-Image Pre-training (CLIP) models while mitigating the loss of general capabilities often observed in existing methods.\n- DeGLA incorporates a self-distillation mechanism during global alignment, using a frozen teacher model derived from an exponential moving average to guide the learning of a student model, thus preserving pre-trained knowledge.\n- For local alignment, the framework leverages in-context learning capabilities of Large Language Models (LLMs) to construct a dataset of approximately 2 million high-quality negative captions.\n- It then introduces Image-Grounded Contrast (IGC) and Text-Grounded Contrast (TGC) losses to further refine compositional understanding by attracting and repelling image and text embeddings based on their alignment.\n- Experimental results show that DeGLA achieves state-of-the-art performance on compositional reasoning benchmarks (VALSE, SugarCrepe, and ARO) while improving zero-shot classification accuracy by an average of 13% across 11 datasets compared to previous state-of-the-art methods.",
+        "classification": [
+            "Multimodal",
+            "Zero-Shot Classification",
+            "Zero-Shot Image Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/xiaoxing2001/DeGLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "DreamO: A Unified Framework for Image Customization",
+        "authors": "LemonSky1995, Crayon-Shinchan, shiwenzh, Zinan123212, yanze",
+        "link": "https://arxiv.org/abs/2504.16915",
+        "github_repo": null,
+        "summary": "- DreamO is a unified framework for image customization based on a pre-trained Diffusion Transformer (DiT) model, enabling adaptation to various tasks (identity, subject, style, try-on) with minimal additional parameters.\n- It introduces a feature routing constraint within the DiT architecture to improve consistency and disentanglement of different conditions, along with a placeholder strategy to link text descriptions with condition images.\n- DreamO utilizes a progressive training strategy, starting with simpler tasks and gradually incorporating more complex ones, combined with a quality alignment stage to mitigate the impact of low-quality data.\n- Experiments show DreamO effectively handles various image customization tasks, including complex multi-condition scenarios, achieving high-quality results.\n- The lightweight LoRA-based design of DreamO facilitates efficient deployment.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Tina: Tiny Reasoning Models via LoRA",
+        "authors": "Ollie Liu, Enes Burak Bilgin, \u00d6mer Faruk Akg\u00fcl, Julian Asilis, upup-ashton-wang",
+        "link": "https://arxiv.org/abs/2504.15777",
+        "github_repo": null,
+        "summary": "- Tina, a family of tiny reasoning models, demonstrates substantial reasoning performance can be achieved with minimal resources by applying parameter-efficient updates during reinforcement learning (RL) using low-rank adaptation (LoRA) to a small 1.5B parameter base model.\n- The best Tina model achieves a >20% reasoning performance increase and 43.33% Pass@1 accuracy on AIME24 at only $9 USD post-training and evaluation cost, an estimated 260x cost reduction compared to existing SOTA models.\n- The authors hypothesize LoRA's effectiveness stems from rapidly adapting the model to the structural format of reasoning rewarded by RL, while preserving the base model's underlying knowledge.\n- This \"rapid reasoning format adaptation\" hypothesis is supported by observations of a training phase transition where format-related metrics peak or destabilize just before optimal performance is reached, while accuracy rewards show more gradual trends.\n- All code, training logs, model weights, and checkpoints are open-sourced to promote accessibility and reproducibility.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/shangshang-wang/Tina"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Tina-Yi"
+        ],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training\n  and Deployment",
+        "authors": "Guibin Zhang, Kun Wang, Ningyu, Atarogic, Fred456",
+        "link": "https://arxiv.org/abs/2504.15585",
+        "github_repo": null,
+        "summary": "- This paper presents a comprehensive survey of Large Language Model (LLM) safety, introducing the concept of \"full-stack\" safety, encompassing the entire LLM lifecycle from data preparation to commercialization and usage.\n- The survey analyzes safety and security risks across different stages, including data poisoning, privacy leakage, misalignment, jailbreak attacks, and vulnerabilities in LLM-based agent systems.\n- The research is based on an extensive review of 800+ papers and offers insights into mitigation strategies, defense mechanisms, and evaluation metrics.\n- The paper identifies promising research directions like data generation safety, alignment techniques, and robust prompt engineering.\n- It also provides roadmaps and perspectives for each LLM lifecycle stage, aiming to offer a holistic understanding and guide future research in LLM safety.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/bingreeky/full-stack-llm-safety"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "RePOPE: Impact of Annotation Errors on the POPE Benchmark",
+        "authors": "Matthias Hein, YanNeu",
+        "link": "https://arxiv.org/abs/2504.15707",
+        "github_repo": "https://github.com/YanNeu/RePOPE",
+        "summary": "- This paper assesses the impact of label errors in the MSCOCO dataset on the POPE benchmark, a standard for evaluating object hallucinations in vision-language models (VLMs).\n- The authors re-annotate the POPE benchmark images and create RePOPE, a corrected version of the dataset, finding an imbalance in annotation errors across different subsets.\n- Evaluating multiple VLM models on RePOPE reveals notable shifts in model rankings compared to the original POPE, highlighting the significant impact of label quality.\n- The paper observes a much higher error rate in the original POPE labels for questions with \"yes\" answers (9.3%) compared to \"no\" answers (1.7%).\n- This biased error distribution significantly affects the F1 scores and rankings of models on the benchmark, calling into question the reliability of some POPE subsets for measuring object hallucination.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/YanNeu/REPOPE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Rethinking the Generation of High-Quality CoT Data from the Perspective\n  of LLM-Adaptive Question Difficulty Grading",
+        "authors": "Keyu Wu, Kunlinliu2, MeiManlin, zcs1234, USTCYu",
+        "link": "https://arxiv.org/abs/2504.11919",
+        "github_repo": null,
+        "summary": "- This paper introduces a method for generating high-quality Chain-of-Thought (CoT) data by adapting question difficulty to the capabilities of Large Language Models (LLMs).\n- The approach involves grading question difficulty based on LLM performance and constructing an adaptive question database.\n- Questions are sampled from this database based on a difficulty distribution and DeepSeek-R1 (671B) is used to generate corresponding CoT data.\n- This LLM-adaptive CoT data is then used for fine-tuning smaller LLMs, improving their reasoning abilities.\n- Experiments demonstrate the effectiveness of this method, with models trained on 2k LLM-adaptive CoT data outperforming larger baseline models on mathematical and code generation tasks.",
+        "classification": [
+            "Question Answering",
+            "Text2Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/open-r1/codeforces",
+            "https://huggingface.co/AI-MO/NuminaMath-CoT"
+        ],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "CRUST-Bench: A Comprehensive Benchmark for C-to-safe-Rust Transpilation",
+        "authors": "Ziteng Wang, Jia Pan, Robert Zhang, gregdurrett, anirudhkhatry",
+        "link": "https://arxiv.org/abs/2504.15254",
+        "github_repo": "https://github.com/anirudhkhatry/CRUST-bench",
+        "summary": "- This paper introduces CRUST-Bench, a new benchmark for evaluating C-to-safe-Rust transpilation, comprising 100 C repositories with manually-written Rust interfaces and test cases.\n- CRUST-Bench focuses on evaluating the ability of systems to transpile entire C repositories into safe and idiomatic Rust code, addressing the limitations of previous benchmarks that primarily focus on isolated functions.\n- The authors evaluate several state-of-the-art large language models (LLMs) on CRUST-Bench and find that safe and idiomatic Rust generation remains challenging, with the best model (OpenAI o1) solving only 15% of tasks in a single-shot setting.\n- Applying iterative self-repair techniques, such as incorporating compiler error messages and failing test cases, improves performance, achieving up to 37% success rate.\n- The benchmark and analysis highlight the need for further research in automated code migration and the importance of considering realistic, multi-file scenarios.",
+        "classification": [
+            "Text2Text Generation",
+            "Translation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/anirudhkhatry/CRUST-bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Unchecked and Overlooked: Addressing the Checkbox Blind Spot in Large\n  Language Models with CheckboxQA",
+        "authors": "Borchmann, sf-mchilinski, mturski",
+        "link": "https://arxiv.org/abs/2504.10419",
+        "github_repo": "https://github.com/Snowflake-Labs/CheckboxQA",
+        "summary": "- This paper introduces CheckboxQA, a new dataset designed to evaluate and improve large language models' (LLMs) ability to interpret checkboxes in visually rich documents.\n- CheckboxQA contains diverse documents with annotated question-answer pairs related to checkbox interpretation, addressing a gap in existing benchmarks that often overlook this critical element.\n- Current LLMs struggle with checkbox interpretation due to challenges such as the small size and visual subtlety of checkboxes, their context-dependent significance, and limited training data capturing checked vs. unchecked states.\n- Experiments demonstrate that models trained on data that includes checkbox annotations gain a distinct advantage in this task, highlighting the importance of dedicated resources like CheckboxQA. \n- Although improvements are observed, all models still fall short of human performance, highlighting the need for further research in accurately identifying and interpreting checkmarks.",
+        "classification": [
+            "Document Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Snowflake-Labs/CheckboxQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    },
+    {
+        "title": "Progressive Language-guided Visual Learning for Multi-Task Visual\n  Grounding",
+        "authors": "Dingjiang Huang, Kunhua Ji, Wenlong Zhang, Hong Wang, jcwang0602",
+        "link": "https://arxiv.org/abs/2504.16145",
+        "github_repo": "https://github.com/jcwang0602/PLVL",
+        "summary": "- This paper introduces PLVL, a Progressive Language-guided Visual Learning framework for Multi-Task Visual Grounding (MTVG) which includes Referring Expression Comprehension (REC) and Referring Expression Segmentation (RES).\n- PLVL progressively injects language information into the visual backbone using a cross-attention mechanism within a local-global group architecture, eliminating the need for an extra cross-modal fusion module.\n- A collaborative multi-task head based on convolutional layers is used to jointly predict outputs for REC and RES, leveraging the shared central position of identified objects.\n- The model outperforms state-of-the-art methods on RefCOCO, RefCOCO+, and RefCOCOg benchmarks in both REC and RES tasks under traditional and pre-trained settings.\n- Experimental results demonstrate improvements, such as 8% reduced time overhead per image compared to EEVG.",
+        "classification": [
+            "Multimodal",
+            "Object Detection",
+            "Image Segmentation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/jcwang0602/PLVL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-24"
+    }
+]

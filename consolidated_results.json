@@ -33719,5 +33719,255 @@
         ],
         "huggingface_urls": [],
         "date": "2025-04-24"
+    },
+    {
+        "title": "Step1X-Edit: A Practical Framework for General Image Editing",
+        "authors": "Peng Xing, Yucheng Han, Shiyu Liu, skicy, wchengad",
+        "link": "https://arxiv.org/abs/2504.17761",
+        "github_repo": "https://github.com/stepfun-ai/Step1X-Edit",
+        "summary": "- Step1X-Edit is an open-source, general-purpose image editing model that leverages a Multimodal Large Language Model (MLLM) and a Diffusion in Transformer (DiT) architecture.\n- The MLLM processes the image and text instruction, generating editing tokens that guide the DiT to produce the edited image. \n- A novel dataset generation pipeline and a new benchmark called GEdit-Bench support training and evaluation. \n- Experimental results on GEdit-Bench show Step1X-Edit substantially outperforming existing open-source methods and achieving comparable performance to closed-source models like GPT-40 and Gemini.\n- Step1X-Edit combines the advantages of both MLLMs and DiTs, enabling general image edits based on complex instructions while maintaining image fidelity.",
+        "classification": [
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/stepfun-ai/Step1X-Edit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "RefVNLI: Towards Scalable Evaluation of Subject-driven Text-to-image\n  Generation",
+        "authors": "Michal Sokolik, Brian Gordon, Yonatan Bitton, Hagai Taitelbaum, lovodkin93",
+        "link": "https://arxiv.org/abs/2504.17502",
+        "github_repo": null,
+        "summary": "- This paper introduces REFVNLI, a cost-effective, fine-tuned auto-rater for evaluating subject-driven text-to-image generation.\n- REFVNLI assesses both textual alignment and subject consistency using a single prediction, addressing the limitations of existing methods that focus on only one aspect or rely on expensive API calls.\n- Trained on a large-scale dataset derived from video-reasoning benchmarks and image perturbations, REFVNLI outperforms existing baselines on multiple benchmarks across diverse subject categories, achieving up to 6.4-point gains in textual alignment and 8.5-point gains in subject consistency.\n- It also excels with lesser-known concepts, aligning with human preferences at over 87% accuracy.\n- The model architecture involves fine-tuning a 3B Vision-Language Model (VLM) called PaliGemma, adapted for multi-image inputs, on 1.2 million instances of  <reference image, prompt, target image> triplets, labeled with textual alignment and subject preservation scores.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/google/paligemma-3b-ft-nlvr2-448"
+        ],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Paper2Code: Automating Code Generation from Scientific Papers in Machine\n  Learning",
+        "authors": "Sung Ju Hwang, Seongyun Lee, jinheon, iaminju",
+        "link": "https://arxiv.org/abs/2504.17192",
+        "github_repo": null,
+        "summary": "- Paper2Code is a multi-agent LLM framework that transforms machine learning papers into functional code repositories, addressing the reproducibility challenge in ML research by automating code generation directly from research papers.\n- The framework operates in three stages: planning (creating a roadmap, system architecture, and configuration files), analysis (interpreting implementation details), and generation (producing modular code).\n- Each stage utilizes specialized LLM agents designed for effective collaboration, enabling the system to emulate the typical workflow of human developers.\n- Evaluation on a Paper2Code benchmark of papers from top-tier venues and the PaperBench benchmark shows PaperCoder significantly outperforms baselines in generating valid and faithful code.\n- Human evaluations by original paper authors show 77% rate PaperCoder as best, with 85% finding the generated repositories helpful, and analysis indicates high executability with minor modifications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Breaking the Modality Barrier: Universal Embedding Learning with\n  Multimodal LLMs",
+        "authors": "Yanzhao Zhang, Xingjun Wang, Ziyong Feng, Tiancheng Gu, Kaichengalex",
+        "link": "https://arxiv.org/abs/2504.17432",
+        "github_repo": null,
+        "summary": "- UniME, a two-stage framework, leverages Multimodal Large Language Models (MLLMs) to learn universal representations for various vision-language tasks.\n- The first stage, Textual Discriminative Knowledge Distillation, uses a powerful LLM-based teacher model to enhance the MLLM's language component's embedding capabilities.\n- The second stage, Hard Negative Enhanced Instruction Tuning, improves discriminative representation learning by filtering false negatives and using hard negative sampling.\n- Evaluations on the MMEB benchmark and multiple retrieval tasks show UniME achieves state-of-the-art performance, demonstrating strong discriminative and compositional understanding.\n- UniME surpasses existing models like E5-V and VLM2Vec on tasks such as short & long caption retrieval and compositional retrieval, showcasing its robust representation learning capabilities.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Perspective-Aware Reasoning in Vision-Language Models via Mental Imagery\n  Simulation",
+        "authors": "Leonidas Guibas, Mikaela Angelina Uy, Chanho Park, Jihyeon Je, Phillip Y. Lee",
+        "link": "https://arxiv.org/abs/2504.17207",
+        "github_repo": null,
+        "summary": "- This paper introduces Abstract Perspective Change (APC), a framework for enhancing perspective-aware spatial reasoning in Vision-Language Models (VLMs).\n- APC simulates the mental imagery process by constructing a 3D scene abstraction from an input image and question, using vision foundation models for object detection, segmentation, and orientation estimation.\n- The framework then transforms the scene abstraction to align with the perspective of a designated reference object in the image, converting the allocentric reasoning task into an egocentric one.\n- This transformed scene is then presented to the VLM as either a textual prompt with 3D coordinates or a rendered visual prompt depicting the scene from the new perspective.\n- Experiments on synthetic and real-world datasets show APC significantly outperforms existing VLMs and spatial reasoning models, demonstrating its effectiveness in handling alternative viewpoints.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://apc-vlm.github.io/"
+        ],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "QuaDMix: Quality-Diversity Balanced Data Selection for Efficient LLM\n  Pretraining",
+        "authors": "Yifan Zhang, Zhimiao Yu, Binbin Liu, Weidong Zhou, Fengze Liu",
+        "link": "https://arxiv.org/abs/2504.16511",
+        "github_repo": null,
+        "summary": "- QuaDMix, a novel data selection framework, jointly optimizes data quality and diversity for Large Language Model (LLM) pretraining, addressing the trade-off between these two crucial aspects.\n- The framework employs multiple quality scorers and domain classification to label the pretraining data, and then utilizes a parameterized sampling function to determine the sampling frequency of each data point based on its quality and domain.\n- QuaDMix uses simulated experiments with smaller models and a LightGBM regressor to efficiently search for optimal parameters within the framework, reducing the computational cost of large-scale training.\n- Experiments on diverse models and datasets show that QuaDMix achieves an average performance improvement of 7.2% across multiple benchmarks, outperforming methods that focus solely on quality or diversity.\n- The results highlight QuaDMix's ability to effectively balance data quality and diversity for enhanced LLM pretraining.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Token-Shuffle: Towards High-Resolution Image Generation with\n  Autoregressive Models",
+        "authors": "Chih-Yao Ma, Hao Tang, Haoyu Ma, Peize Sun, Xu Ma",
+        "link": "https://arxiv.org/abs/2504.17789",
+        "github_repo": null,
+        "summary": "- Token-Shuffle, a novel method reduces the number of image tokens in Transformers, enabling efficient high-resolution image generation within Multimodal Large Language Models (MLLMs).\n- It leverages the dimensional redundancy of visual vocabularies in MLLMs by merging spatially local tokens along the channel dimension (token-shuffle) and restoring the spatial arrangement after processing (token-unshuffle).\n- This approach allows for the generation of images up to 2048x2048 resolution using a unified next-token prediction framework, maintaining efficient training and inference.\n- The 2.7B model achieves a 0.77 overall score on hard prompts in the GenAI-benchmark, outperforming other autoregressive and diffusion models.\n- Large-scale human evaluations further demonstrate its superior capabilities in text-alignment, visual flaw handling, and overall visual appearance.",
+        "classification": [
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Distilling semantically aware orders for autoregressive image generation",
+        "authors": "David Vazquez, Masih Aminbeidokhti, Juan A. Rodriguez, Antoine Poupon, rishavpramanik",
+        "link": "https://arxiv.org/abs/2504.17069",
+        "github_repo": null,
+        "summary": "- This paper introduces Ordered Autoregressive (OAR) Image Generation, a novel approach that enhances autoregressive image generation by learning an optimal patch generation order.\n- OAR modifies the standard autoregressive model to include the position of the next token as input, enabling it to learn content and location simultaneously.\n- The model is first trained to generate in any given order, then it distills this knowledge to re-label training sample orders, and finally, it's fine-tuned using these refined orders.\n- Experiments on Fashion Product and Multimodal CelebA-HQ datasets demonstrate that OAR achieves improved FID scores compared to traditional raster-scan and random-order AR models.\n- The learned orders exhibit a structured generation pattern, prioritizing easily predictable regions and progressing to more intricate details, leading to enhanced image quality.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "DyMU: Dynamic Merging and Virtual Unmerging for Efficient VLMs",
+        "authors": "Heng Ji, Silvio Savarese, Caiming Xiong, Senthil Purushwalkam, Zhenhailong Wang",
+        "link": "https://arxiv.org/abs/2504.17040",
+        "github_repo": null,
+        "summary": "- DyMU is a training-free framework that dynamically reduces the computational burden of Vision-Language Models (VLMs) by decreasing the number of visual tokens based on image complexity.\n- Dynamic Token Merging (DToMe) component merges similar visual tokens based on image complexity, and Virtual Token Unmerging (VTU) reconstructs the attention dynamics of a full token sequence for the language model.\n- Experiments on image and video understanding tasks show DyMU reduces visual tokens by 32-85% while maintaining comparable performance to full-length models, across diverse VLM architectures.\n- This method is training-free and readily applicable to any VLM architecture.\n- The approach provides greater control over computational cost and allows combination of visual reasoning tools and DYMU to further improve efficiency while maintaining performance.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://mikewangwzhl.github.io/dymu"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "IberBench: LLM Evaluation on Iberian Languages",
+        "authors": "Areg Mikael Sarvazyan, \u00c1lvaro Romo Herrero, Ian Borrego Obrador, Jos\u00e9 \u00c1ngel Gonz\u00e1lez, mchinea",
+        "link": "https://arxiv.org/abs/2504.16921",
+        "github_repo": null,
+        "summary": "- IberBench, a comprehensive benchmark designed to evaluate Large Language Models (LLMs) on both fundamental and industry-relevant Natural Language Processing (NLP) tasks in Iberian languages.\n- The benchmark includes 101 datasets from evaluation campaigns and recent benchmarks, covering 22 task categories such as sentiment analysis, toxicity detection, and summarization.\n- Addresses limitations in current evaluation practices, such as lack of linguistic diversity and static evaluation by enabling continuous updates and community submissions.\n- Evaluates 23 LLMs ranging from 100 million to 14 billion parameters, finding that LLMs perform better in fundamental tasks than in industry-relevant tasks and Galician and Basque present greater challenges.\n- Offers open-source implementations for the entire evaluation pipeline, including dataset normalization and hosting, incremental evaluation of LLMs, and a publicly accessible leaderboard.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Classification",
+            "Token Classification",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/IberBench/iberbench-evaluation"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/iberbench/leaderboard"
+        ],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Boosting Generative Image Modeling via Joint Image-Feature Synthesis",
+        "authors": "Nikos Komodakis, Spyros Gidaris, Ioannis Kakogeorgiou, Efstathios Karypidis, Theodoros Kouzelis",
+        "link": "https://arxiv.org/abs/2504.16064",
+        "github_repo": null,
+        "summary": "- ReDi, a novel generative image modeling framework, jointly models low-level image latents and high-level semantic features using a diffusion model, bridging the gap between generative modeling and representation learning.\n- By generating coherent image-feature pairs from noise, ReDi enhances generative quality and training efficiency without complex distillation objectives, using architectures like Diffusion Transformer (DiT) and Flow Matching (SiT).\n- A new inference strategy, Representation Guidance, leverages learned semantics for image refinement.\n- Experiments show substantial improvements in image quality and training convergence speed compared to baselines and REPA, accelerating DiT-XL/2 and SiT-XL/2 convergence by \u00d723 and \u00d76 respectively.\n- ReDi achieves superior FID scores, demonstrating its effectiveness in representation-aware generative modeling.",
+        "classification": [
+            "Unconditional Image Generation",
+            "Image Feature Extraction",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/zelaki/ReDi"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "ViSMaP: Unsupervised Hour-long Video Summarisation by Meta-Prompting",
+        "authors": "Mariano Beguerisse-Diaz, Shaogang Gong, Dimitrios Korkinof, Jian Hu",
+        "link": "https://arxiv.org/abs/2504.15921",
+        "github_repo": null,
+        "summary": "- ViSMaP (Video Summarisation by Meta-Prompting) is introduced for unsupervised hour-long video summarization, leveraging a three-stage approach involving short-form video learning, pseudo-summary generation with LLMs, and hour-long video adaptation.\n- The model employs TimeSformer as a feature encoder, DistilBERT for visual-language alignment, and GPT2 as a text decoder, utilizing cross-entropy and contrastive loss during training and symmetric cross-entropy loss during adaptation.\n- ViSMaP utilizes a novel iterative meta-prompting process to generate and refine pseudo-summaries for long videos, utilizing GPT-3.5 as optimizer and generator, and Gemini as evaluator to select key information from short video descriptions.\n- Experimental results on Ego4D-HCap show performance comparable to state-of-the-art supervised methods, outperforming zero-shot models and unsupervised baselines.\n- Further evaluations on MSRVTT, MSVD, and YouCook2 demonstrate generalization capabilities across diverse video captioning datasets, achieving results comparable to or exceeding supervised models.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Summarization",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "3DV-TON: Textured 3D-Guided Consistent Video Try-on via Diffusion Models",
+        "authors": "Fan Wang, Jingkai Zhou, Chaohui Yu, Min Wei",
+        "link": "https://arxiv.org/abs/2504.17414",
+        "github_repo": null,
+        "summary": "- 3DV-TON, a novel diffusion-based framework, generates high-fidelity and temporally consistent video try-on results by employing generated animatable textured 3D meshes as explicit frame-level guidance.\n- This approach uses a reconstructed and animated textured 3D mesh synchronized with original video poses, mitigating the issue of models over-focusing on appearance at the expense of motion coherence by offering direct reference to garment texture throughout video sequences.\n- A robust rectangular masking strategy mitigates artifact propagation due to information leakage during motion, and a specialized guidance feature extractor and fusion diffusion-based architecture enhance performance.\n- A new high-resolution benchmark dataset (HR-VVT) with diverse clothing and scenarios is introduced for video try-on research.\n- Both quantitative and qualitative results on HR-VVT and existing datasets demonstrate 3DV-TON\u2019s superior performance over current state-of-the-art methods.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Video",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "TimeChat-Online: 80% Visual Tokens are Naturally Redundant in Streaming\n  Videos",
+        "authors": "Shuhuai Ren, Lei Li, Yuancheng Wei, Yicheng Li, Linli Yao",
+        "link": "https://arxiv.org/abs/2504.17343",
+        "github_repo": null,
+        "summary": "- This paper introduces TimeChat-Online, an online Video Large Language Model (VideoLLM) designed for real-time interaction with streaming video content.\n- The core component is the Differential Token Drop (DTD) module, inspired by the Change Blindness phenomenon, which selectively preserves significant temporal changes in video frames while discarding redundant static visual information, achieving 82.8% token reduction.\n- TimeChat-Online maintains over 98% performance compared to full-token models on StreamingBench and shows a 5.7-point accuracy improvement on the VideoMME long set (30-60 minute videos) when integrated with Qwen2.5VL-7B.\n- It incorporates proactive responding, triggered by scene transitions detected by analyzing the token drop ratio curve, allowing the model to anticipate and answer questions related to future video content.\n- A new instruction-tuning dataset, TimeChat-Online-139K, is introduced, featuring diverse question-answer pairs specifically designed for streaming video question-answering scenarios including backward-tracing, current-time perception, and future-responding.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://timechat-online.github.io"
+        ],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Interpretable non-linear dimensionality reduction using gaussian\n  weighted linear transformation",
+        "authors": "erikbergh",
+        "link": "https://arxiv.org/abs/2504.17601",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel dimensionality reduction algorithm that combines the interpretability of linear methods with the expressiveness of non-linear transformations.\n- The algorithm constructs a non-linear mapping between high-dimensional and low-dimensional spaces using a combination of linear transformations weighted by Gaussian functions.\n- Each transformation can be analyzed independently, offering transparent insights into the transformed space.\n- Techniques for interpreting the learned transformations are presented, including methods for identifying suppressed dimensions and how the space is expanded and contracted.\n- The algorithm was applied to a 3-dimensional S-shaped dataset, achieving a reconstruction error of 0.45.",
+        "classification": [
+            "Computer Vision",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/erikbergh/interpretable_dim_reduction"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
+    },
+    {
+        "title": "Process Reward Models That Think",
+        "authors": "Hao Peng, Jaekyeom Kim, Lajanugen Logeswaran, Rishabh Agarwal, Muhammad Khalifa",
+        "link": "https://arxiv.org/abs/2504.16828",
+        "github_repo": "https://github.com/mukhal/thinkprm",
+        "summary": "- This paper introduces THINKPRM, a generative process reward model (PRM) for verifying step-by-step reasoning, trained with minimal supervision on synthetic data using chain-of-thought (CoT) reasoning.\n- THINKPRM leverages the inherent reasoning capabilities of large language models (LLMs) and is fine-tuned on significantly fewer process labels than discriminative PRMs.\n- Experimental results demonstrate that THINKPRM outperforms both discriminative PRMs and LLM-as-a-Judge baselines across various benchmarks, including ProcessBench, MATH-500, and AIME '24, using only 1% of the process labels.\n- THINKPRM also excels in out-of-domain tasks like GPQA-Diamond and LiveCodeBench, showcasing its robustness and generalization ability.\n- The work highlights the potential of generative long CoT PRMs for scaling test-time compute for verification while requiring minimal supervision for training.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/mukhal/thinkprm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-25"
     }
 ]

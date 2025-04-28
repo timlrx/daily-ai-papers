@@ -33969,5 +33969,156 @@
         ],
         "huggingface_urls": [],
         "date": "2025-04-25"
+    },
+    {
+        "title": "Towards Understanding Camera Motions in Any Video",
+        "authors": "Jay Karhade, Daniel Jiang, Stephen624, syCen, zhiqiulin",
+        "link": "https://arxiv.org/abs/2504.15376",
+        "github_repo": null,
+        "summary": "- This paper introduces CameraBench, a large-scale dataset and benchmark designed to improve camera motion understanding consisting of ~3,000 diverse internet videos, annotated with motion primitives and natural language descriptions.\n- The authors created a taxonomy of camera motion primitives in collaboration with cinematographers, capturing motion across various reference frames and using precise terminology.\n- The study found that current Structure-from-Motion (SfM) models struggle with semantic primitives and Video-Language Models (VLMs) struggle with geometric primitives.\n-  They fine-tuned a generative VLM on CameraBench, showing improvements and enabling applications like motion-augmented captioning and video question answering.\n-  A human study showed that training and experience significantly improves annotation accuracy, with experts outperforming novices, and that a proper training program effectively bridges this gap.",
+        "classification": [
+            "Computer Vision",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://linzhiqiu.github.io/papers/camerabench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "Skywork R1V2: Multimodal Hybrid Reinforcement Learning for Reasoning",
+        "authors": "Xiaokun Wang, Yi Peng, Yichen Wei, Chris, xuchensong",
+        "link": "https://arxiv.org/abs/2504.16656",
+        "github_repo": null,
+        "summary": "- Skywork R1V2 is a multimodal reasoning model employing a hybrid reinforcement learning paradigm combining Mixed Preference Optimization (MPO) and Group Relative Policy Optimization (GRPO) to balance reasoning capabilities and generalization, addressing the trade-off between specialized reasoning and maintaining general-purpose performance.\n- R1V2 utilizes a novel Selective Sample Buffer (SSB) mechanism to counteract the vanishing gradients issue in reinforcement learning, thereby improving training efficiency.\n- R1V2 leverages a reward model, Skywork-VL, and rule-based constraints for preference optimization and integrates a format reward based on DeepSeek's R1 chat template for reinforcement fine-tuning.\n- Achieving state-of-the-art results on various text and multimodal reasoning benchmarks including a score of 62.6% on OlympiadBench, 78.9% on AIME2024, 63.6% on LiveCodeBench, 73.6% on MMMU, and exceeding larger models such as Qwen2.5-VL-72B.\n- The model architecture consists of a frozen vision encoder (InternViT-6B), a reasoning-capable language model (QwQ-32B), and a lightweight MLP adapter to connect the two, enabling efficient knowledge transfer and reasoning. ",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Skywork/Skywork-R1V2-38B"
+        ],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "BitNet v2: Native 4-bit Activations with Hadamard Transformation for\n  1-bit LLMs",
+        "authors": "Furu Wei, Shuming Ma, Hongyu Wang",
+        "link": "https://arxiv.org/abs/2504.18415",
+        "github_repo": null,
+        "summary": "- BitNet v2 introduces native 4-bit activation quantization for 1-bit Large Language Models (LLMs) to enhance efficiency in batched inference.\n- The core innovation, H-BitLinear, applies an online Hadamard transformation before activation quantization, smoothing outlier-prone distributions for better 4-bit representation.\n- Trained from scratch with 8-bit activations, BitNet v2 matches BitNet b1.58 performance, then fine-tuned to native 4-bit activations with minimal degradation.\n- The Hadamard transformation reduces outliers, especially in the intermediate states of attention and FFN layers, enhancing the suitability for INT4 quantization.\n- Experiments show BitNet v2 with 4-bit activations (BitNet v2 (a4)) achieves performance comparable to BitNet a4.8 while being more computationally efficient for batched inference, exceeding post-training quantization methods like SpinQuant and QuaRot.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "VideoVista-CulturalLingo: 360^circ Horizons-Bridging Cultures,\n  Languages, and Domains in Video Comprehension",
+        "authors": "Wenhan Luo, Baotian Hu, Haoyuan Shi, Yunxin Li, Xinyu Chen",
+        "link": "https://arxiv.org/abs/2504.17821",
+        "github_repo": null,
+        "summary": "- This paper introduces VideoVista-CulturalLingo, a novel video evaluation benchmark designed to address the cultural, linguistic, and domain limitations of existing video comprehension datasets.\n- The benchmark comprises 1,389 videos and 3,134 question-answer pairs, spanning diverse cultures (China, North America, Europe), languages (Chinese, English), and domains (everyday life and scientific topics).\n- The dataset creation employed a hybrid approach combining large language models (LLMs) and human annotation for efficiency and quality.\n- Evaluation of 24 state-of-the-art large multimodal models (LMMs) revealed that existing models exhibit biases towards Western-centric content and struggle with temporal understanding, particularly in event localization tasks.\n- Gemini-2.0-Flash achieved the highest overall accuracy (76.3%), while open-source models like Qwen2.5-VL-72B showed promising results (61.3%) but lagged behind in certain tasks like video location.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/HITsz-TMG/VideoVista"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Uni-MoE/VideoVista-CulturalLingo"
+        ],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "Can Large Language Models Help Multimodal Language Analysis? MMLA: A\n  Comprehensive Benchmark",
+        "authors": "Peiwu Wang, Hua Xu, Yeshuang Zhu, Zhuohang Li, HanleiZhang",
+        "link": "https://arxiv.org/abs/2504.16427",
+        "github_repo": "https://github.com/thuiar/MMLA",
+        "summary": "- This paper introduces MMLA, a comprehensive benchmark for evaluating multimodal language analysis capabilities of large language models (LLMs) and multimodal LLMs (MLLMs), encompassing six semantic dimensions (intent, emotion, dialogue act, sentiment, speaking style, and communication behavior) across nine datasets.\n- The benchmark comprises over 61K multimodal utterances with text, video, and audio modalities, sourced from diverse scenarios and evaluated using zero-shot inference, supervised fine-tuning, and instruction tuning on various LLMs and MLLMs.\n- Experimental results indicate that MLLMs, particularly after fine-tuning, outperform LLMs, showcasing their potential to leverage non-verbal cues for comprehending complex semantics, with small-scale (7B) MLLMs showing comparable performance to larger ones (72B) after training. Instruction tuning enables foundation models to perform various tasks effectively, even exceeding human performance on specific tasks like intent recognition.\n- Despite improvements with fine-tuning, the best performing MLLM only reached 69.18% accuracy, highlighting the complexity of high-level semantic understanding in MMLA and setting a new benchmark for future research.\n- The datasets and code for MMLA are open-sourced to facilitate advancement in the field.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/thuiar/MMLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "The Sparse Frontier: Sparse Attention Trade-offs in Transformer LLMs",
+        "authors": "Kelly Marchisio, Sebastian Ruder, Renjie Huang, Robert Li, Piotr Nawrot",
+        "link": "https://arxiv.org/abs/2504.17768",
+        "github_repo": null,
+        "summary": "- This paper explores training-free sparse attention methods to improve long-context capabilities in Transformer LLMs, conducting the largest-scale empirical analysis to date across various model sizes, sequence lengths, and sparsity levels.\n- The study finds that for very long sequences, larger, highly sparse models outperform smaller, dense models under the same computational budget and that higher sparsity is tolerable during decoding than prefilling, correlating with model size.\n- There's no single best-performing sparse attention strategy across all tasks; the ideal approach varies depending on the task type and inference phase.\n- Even moderate sparsity can significantly degrade performance on some tasks, emphasizing the need for careful trade-off evaluation and task-specific customization.\n- The research introduces novel scaling laws for sparse attention, demonstrating that the findings likely generalize beyond the experimental setup, indicating potential for sparse attention to be instrumental for efficient long-sequence processing in future LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/PiotrNawrot/sparse-frontier"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "Subject-driven Video Generation via Disentangled Identity and Motion",
+        "authors": "Wonjoon Jin, Jingxu Zhang, cluo-ms, daiqi, carpedkm",
+        "link": "https://arxiv.org/abs/2504.17816",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel zero-shot subject-driven video generation method that leverages image customization datasets and unpaired video data, eliminating the need for expensive and scarce subject-specific video datasets.\n- The method factorizes the video customization training into two components: identity injection and temporal awareness preservation, using a stochastic switching strategy to prevent catastrophic forgetting during training.\n- Identity injection is achieved by fine-tuning on an image customization dataset with low-rank adaptation, preserving the pre-trained model's text and output representations.\n- Temporal awareness is maintained through image-to-video fine-tuning on a small set of unannotated videos, enhanced by random frame selection and image token dropping to prevent over-reliance on the first frame.\n- Experiments demonstrate superior performance on VBench across metrics like motion smoothness, dynamic degree, text alignment, and identity consistency, outperforming existing zero-shot video customization baselines.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "DianJin-R1: Evaluating and Enhancing Financial Reasoning in Large\n  Language Models",
+        "authors": "Lifan Guo, Junhui Li, Huaixia Dou, Qian Chen, amazingj",
+        "link": "https://arxiv.org/abs/2504.15716",
+        "github_repo": null,
+        "summary": "- DianJin-R1 is a new reasoning-enhanced framework for Large Language Models (LLMs) designed to improve financial reasoning through reasoning-augmented supervision and reinforcement learning.\n- The framework uses a new high-quality dataset, DianJin-R1-Data, constructed from CFLUE, FinQA, and a proprietary compliance corpus (Chinese Compliance Check, CCC), and fine-tunes Qwen2.5-7B/32B-Instruct using a structured output format that generates reasoning steps and final answers.\n- Group Relative Policy Optimization (GRPO) is employed with dual reward signals, one for encouraging structured outputs and another rewarding answer correctness.\n- DianJin-R1 models outperform non-reasoning counterparts on financial datasets (CFLUE, FinQA, CCC) and general reasoning benchmarks (MATH-500, GPQA-Diamond).\n- On the real-world CCC dataset, DianJin-R1 achieves performance comparable to multi-agent systems at a lower computational cost.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/aliyun/qwen-dianjin"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/DianJin"
+        ],
+        "date": "2025-04-28"
+    },
+    {
+        "title": "DC-SAM: In-Context Segment Anything in Images and Videos via Dual\n  Consistency",
+        "authors": "Lu Qi, Xiaoyang Bi, Xiangtai Li, Mengshi Qi, zaplm",
+        "link": "https://arxiv.org/abs/2504.12080",
+        "github_repo": "https://github.com/zaplm/DC-SAM",
+        "summary": "- DC-SAM, a novel prompt tuning method, adapts Segment Anything Model (SAM) and SAM2 for in-context image and video segmentation.\n- It enhances prompt generation by fusing features from SAM's encoder and the backbone network, using a dual-branch strategy with positive and negative prompts, and incorporating cyclic consistent cross-attention.\n- A new In-Context Video Object Segmentation (IC-VOS) benchmark with 369 videos and 99,549 frames across 30 classes is introduced for evaluating video in-context segmentation.\n- DC-SAM achieves state-of-the-art performance with 55.5 (+1.4) mIoU on COCO-202, 73.0 (+1.1) mIoU on PASCAL-52, and 71.52 J&F on IC-VOS, outperforming other SAM-based and few-shot segmentation models.\n- The method exhibits strong generalization capability across diverse datasets and settings, with efficient adaptation for in-context segmentation tasks.",
+        "classification": [
+            "Image Segmentation",
+            "Video Classification",
+            "Mask Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zaplm/DC-SAM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-28"
     }
 ]

@@ -1,0 +1,156 @@
+[
+    {
+        "title": "RepText: Rendering Visual Text via Replicating",
+        "authors": "Junchen Li, Yimeng Li, SNOWAI, YujiaX, wanghaofan",
+        "link": "https://arxiv.org/abs/2504.19724",
+        "github_repo": null,
+        "summary": "- RepText is a novel framework for controllable multilingual visual text rendering built upon a ControlNet-like architecture.\n- It leverages a text ControlNet conditioned on canny edge and position images to guide text rendering, enhancing accuracy and enabling multilingual support without modifying the base text encoder.\n- The model employs a text perceptual loss during training to further improve the recognizability of generated text.\n- A glyph latent replication strategy is used during inference, initializing with a noise-free glyph latent to enhance text accuracy and enable color control.\n- RepText outperforms open-source alternatives and achieves comparable results to closed-source multilingual models while maintaining controllability.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Shakker-Labs/RepText"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "LLM-Powered GUI Agents in Phone Automation: Surveying Progress and\n  Prospects",
+        "authors": "Yaxuan Guo, Guangyi Liu, Yuxiang007, melpancake, Pengxiangzhao",
+        "link": "https://arxiv.org/abs/2504.19838",
+        "github_repo": "https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents",
+        "summary": "- This paper surveys the progress and prospects of Large Language Model (LLM)-powered GUI agents for phone automation, focusing on their evolution from script-based systems to intelligent and adaptive ones.\n- The authors propose a taxonomy that organizes the field into agent frameworks (single-agent, multi-agent, and plan-then-act), modeling methods (prompt engineering and training-based), and datasets/benchmarks.\n- The paper details task-specific architectures, supervised fine-tuning, and reinforcement learning strategies that connect user intent with GUI operations.\n- This survey analyzes how LLMs improve phone automation by providing advanced language understanding, multimodal perception, and robust decision-making capabilities.\n- Finally, the authors identify open research challenges like dataset diversity, on-device efficiency, user adaptation, and security concerns in LLM-driven phone GUI agents.",
+        "classification": [
+            "Multimodal",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "CipherBank: Exploring the Boundary of LLM Reasoning Capabilities through\n  Cryptography Challenges",
+        "authors": "Chenlin Ming, Honglin Lin, Qizhi Pei, blue01223, yu0226",
+        "link": "https://arxiv.org/abs/2504.19093",
+        "github_repo": null,
+        "summary": "- CipherBank, a benchmark designed to evaluate Large Language Models (LLMs) reasoning capabilities in cryptographic decryption tasks, is introduced.\n- The benchmark consists of 2358 problems covering 262 unique plaintexts across 5 domains and 14 subdomains, focusing on real-world, privacy-sensitive scenarios.\n- It uses 3 categories of encryption: Substitution, Transposition, and custom-designed ciphers, including 9 distinct algorithms and 5 difficulty levels.\n- State-of-the-art LLMs were evaluated, revealing significant performance gaps and highlighting the need for improvement in cryptographic reasoning.\n- Detailed analysis and error investigations provide insights into model limitations and potential areas for future research in LLM cryptographic reasoning capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "Clinical knowledge in LLMs does not translate to human interactions",
+        "authors": "Juan Ciro, Hannah Rose Kirk, Guy Parsons, Rebecca Payne, Andrew M. Bean",
+        "link": "https://arxiv.org/abs/2504.18919",
+        "github_repo": null,
+        "summary": "- This paper investigates whether Large Language Models (LLMs) can effectively assist the public with medical self-assessment, focusing on identifying conditions and recommending appropriate courses of action.\n- A randomized controlled trial with 1298 participants was conducted, comparing LLM assistance (GPT-4, Llama 3, and Command R+) to a control group using their preferred methods.\n- Although LLMs achieved high accuracy on medical licensing exams and simulated scenarios, participants using LLMs performed worse than the control group in identifying conditions and no better in choosing dispositions.\n- User interaction difficulties were identified as the primary challenge, with participants providing incomplete information, misinterpreting LLM prompts, and inconsistently following recommendations.\n- Standard benchmarks and simulated user interactions did not effectively predict these real-world failures, highlighting the need for human user testing in evaluating LLM safety and reliability for medical applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/am-bean/HELPMed"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "Group Downsampling with Equivariant Anti-aliasing",
+        "authors": "Raymond A. Yeh, ashiq24",
+        "link": "https://arxiv.org/abs/2504.17258",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel uniform downsampling method for signals on finite groups with equivariant anti-aliasing, generalizing the concept from sequences to groups and enabling subsampling at a specified rate.\n- The authors propose a subgroup selection algorithm based on maximizing the number of generators and extend the sampling theorem to subgroup subsampling, introducing bandlimited-ness and anti-aliasing for groups.\n- They apply this method to group equivariant CNNs and demonstrate empirically on rotated MNIST and CIFAR-10 datasets that models with subgroup subsampling achieve comparable or better performance and equivariance with significant parameter reduction compared to full equivariant models.\n- An equivariant anti-aliasing operator is proposed, addressing the limitations of existing approaches by enabling subsampling at desired rates on groups while maintaining equivariance and preserving signal smoothness.\n- Results demonstrate that the proposed approach successfully reconstructs bandlimited signals, improves model accuracy and equivariance, and mitigates invariance errors, especially when combined with lower sampling rates.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ashiq24/Group_Sampling/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "TrustGeoGen: Scalable and Formal-Verified Data Engine for Trustworthy\n  Multi-modal Geometric Problem Solving",
+        "authors": "Yuan Feng, Qi Liu, Renqiu Xia, Zijun Chen, Daocheng Fu",
+        "link": "https://arxiv.org/abs/2504.15780",
+        "github_repo": "https://github.com/Alpha-Innovator/TrustGeoGen",
+        "summary": "- TrustGeoGen, a novel data engine, is introduced for generating large-scale, multimodal geometric problem-solving datasets with formal verification.\n- The engine comprises four components: a Constructor for creating geometric scenes, a Reasoner for building reasoning graphs, a Sampler for extracting reasoning paths, and a Translator for converting formal language to natural language.\n- A bootstrapping mechanism iteratively increases the complexity of generated problems, while GeoExplore algorithms ensure diverse solutions and self-reflective traceback data are produced. \n- Experiments on the GeoTrust-200K dataset and GeoTrust-test testset reveal that state-of-the-art models achieve only 49.17% accuracy, demonstrating the challenging nature of the generated data. \n- Training with GeoTrust data improves out-of-distribution generalization on GeoQA and reduces logical inconsistencies compared to using pseudo-labels generated by OpenAI.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Alpha-Innovator/TrustGeoGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "SPC: Evolving Self-Play Critic via Adversarial Games for LLM Reasoning",
+        "authors": "Xiaodan Liang, Peisong Wang, Ruotian Ma, Bang Zhang, judge",
+        "link": "https://arxiv.org/abs/2504.19162",
+        "github_repo": null,
+        "summary": "- This paper introduces Self-Play Critic (SPC), a novel approach for evaluating the reliability of step-by-step reasoning in Large Language Models (LLMs), particularly for tasks like Chain-of-Thought.\n- SPC uses an adversarial self-play framework where two models, a \"sneaky generator\" and a \"critic,\" are fine-tuned to compete against each other. The generator creates deliberately erroneous reasoning steps, and the critic attempts to identify them.\n- Through reinforcement learning based on game outcomes, both models iteratively improve their performance, with the winner rewarded and the loser penalized. This approach eliminates the need for manual step-level annotations.\n- Experiments show that SPC enhances error detection capabilities, surpassing strong baselines and other state-of-the-art models on three reasoning process benchmarks (ProcessBench, PRM800K, DeltaBench).\n- Applying SPC during the test-time search of diverse LLMs improves mathematical reasoning performance on MATH500 and AIME2024 datasets.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://chen-judge.github.io/SPC/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "Benchmarking Multimodal Mathematical Reasoning with Explicit Visual\n  Dependency",
+        "authors": "Xin Li, Zhiqiang Hu, Wenqi Zhang, Jiashuo Sun, cloudcatcher2",
+        "link": "https://arxiv.org/abs/2504.18589",
+        "github_repo": null,
+        "summary": "- Introduces VCBENCH, a benchmark designed to evaluate multimodal mathematical reasoning with a focus on elementary-level math problems (grades 1-6) requiring explicit visual dependencies across multiple images.\n- VCBENCH comprises 1,720 question-answer pairs and 6,697 images (averaging 3.9 images per question) across six cognitive domains (Time and Calendar, Spatial and Positional Awareness, Geometry and Shapes, Objects and Motion, Reasoning and Observation, and Organization and Patterns) and evaluates five competencies (temporal reasoning, geometric reasoning, logical reasoning, spatial reasoning, and pattern recognition).\n- Evaluation of 26 state-of-the-art LVLMs on VCBENCH reveals significant performance disparities, with the best-performing models achieving accuracy below 50%, highlighting challenges in visual-mathematical integration, especially in multi-image reasoning.\n- Unlike knowledge-centric benchmarks, VCBENCH emphasizes vision-centric assessment through perceptual reasoning tasks that prioritize understanding of mathematical images and concepts rather than specialized knowledge.\n- The benchmark's multi-image focus and diverse competency coverage provide a comprehensive evaluation of visual reasoning abilities crucial for advancing toward broader AGI capabilities.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "MMInference: Accelerating Pre-filling for Long-Context VLMs via\n  Modality-Aware Permutation Sparse Attention",
+        "authors": "Xufang Luo, Qianhui Wu, Chengruidong Zhang, Yucheng Li, iofu728",
+        "link": "https://arxiv.org/abs/2504.16083",
+        "github_repo": null,
+        "summary": "- MMInference, a dynamic sparse attention method, accelerates the pre-filling stage for long-context multi-modal inputs by leveraging modality-aware permutation and optimized GPU kernels.\n- It addresses unique sparse patterns like the Grid pattern in video inputs and handles modality boundary issues through permutation-based methods, achieving up to 8.3x speedup with a 1M-length context.\n- The method integrates seamlessly into existing VLM pipelines without modification and maintains accuracy on benchmarks like Video QA, Captioning, and Vision-NIAH with state-of-the-art VLMs (LongVila, Llava-Video, VideoChat-Flash, Qwen2.5-VL).\n- Experiments show significant acceleration while preserving accuracy, outperforming FlashAttention-2 and MInference by up to 8.3x and 1.7x, respectively, for a 1M-length context.\n- MMInference addresses the challenge of quadratic attention complexity in the pre-filling stage, enabling efficient processing of long multi-modal inputs crucial for real-world VLM deployment.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/lmms-lab/VideoDetailCaption"
+        ],
+        "date": "2025-04-29"
+    },
+    {
+        "title": "ICL CIPHERS: Quantifying \"Learning'' in In-Context Learning via\n  Substitution Ciphers",
+        "authors": "Daniel Khashabi, Anqi Liu, Muhan Gao, Aayush Mishra, FocusV857",
+        "link": "https://arxiv.org/abs/2504.19395",
+        "github_repo": null,
+        "summary": "- This paper introduces ICL CIPHERS, a novel method to quantify \"learning\" in In-Context Learning (ICL) by reformulating tasks using substitution ciphers.\n- The approach involves substituting tokens in input demonstrations with other tokens based on bijective or non-bijective mappings, making the text less interpretable but preserving task solvability.\n- The key idea is that improved performance on bijective (reversible) ciphers over non-bijective ciphers indicates the model's ability to learn and decode the cipher, thus quantifying ICL's learning component.\n- Experiments on various LLMs and datasets show consistent, albeit small, performance gains for bijective ciphers, suggesting LLMs' capacity for inference-time learning.\n- Further analysis of internal representations provides evidence of LLMs' ability to decode the ciphered inputs, supporting the hypothesis.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-29"
+    }
+]

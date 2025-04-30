@@ -1,0 +1,175 @@
+[
+    {
+        "title": "UniversalRAG: Retrieval-Augmented Generation over Multiple Corpora with\n  Diverse Modalities and Granularities",
+        "authors": "Sung Ju Hwang, Soyeong Jeong, jinheon, KangsanKim71, wgcyeo",
+        "link": "https://arxiv.org/abs/2504.20734",
+        "github_repo": null,
+        "summary": "- UniversalRAG, a novel Retrieval-Augmented Generation (RAG) framework, retrieves and integrates knowledge from diverse corpora spanning multiple modalities (text, image, and video) and granularities (paragraph, document, image, clip, and video).\n- It addresses the \"modality gap\" in unified representation spaces by employing a modality-aware routing mechanism that dynamically selects the most suitable modality-specific corpus for retrieval based on the query.\n- Within each modality, UniversalRAG further organizes corpora into multiple granularity levels, enabling fine-tuned retrieval tailored to the complexity and scope of the query.\n- Experimental results on 8 multimodal benchmarks demonstrate that UniversalRAG consistently outperforms modality-specific and unified baselines, showing robust performance and efficient resource allocation.\n- Further analyses reveal the effectiveness of trained routers, the importance of granularity in retrieval, and the framework's scalability with larger LVLMs.",
+        "classification": [
+            "Multimodal",
+            "Question Answering",
+            "Visual Question Answering",
+            "Document Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "ReasonIR: Training Retrievers for Reasoning Tasks",
+        "authors": "pangwei, sewon, Muennighoff, volpato30, rulins",
+        "link": "https://arxiv.org/abs/2504.20595",
+        "github_repo": "https://github.com/facebookresearch/ReasonIR",
+        "summary": "\u2022 The paper introduces REASONIR-8B, a novel retriever model specifically trained for general reasoning tasks, addressing the limitations of existing retrievers on such tasks.\n\u2022 REASONIR-8B utilizes a synthetic data generation pipeline to create challenging and relevant queries with hard negatives for each document, enhancing its ability to handle complex reasoning.\n\u2022 The model achieves state-of-the-art performance on the BRIGHT benchmark, a widely used reasoning-intensive IR benchmark, without and with a reranker.\n\u2022 When applied to RAG tasks, REASONIR-8B demonstrates significant performance improvements on MMLU and GPQA compared to existing baselines.\n\u2022 The code, data, and model are open-sourced to facilitate future research and development in the area of reasoning-intensive information retrieval.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/ReasonIR"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/reasonir/ReasonIR-8B"
+        ],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "Toward Evaluative Thinking: Meta Policy Optimization with Evolving\n  Reward Models",
+        "authors": "Chanwoo Park, dykang, machineteacher, zaemyung",
+        "link": "https://arxiv.org/abs/2504.20157",
+        "github_repo": null,
+        "summary": "This paper introduces Meta Policy Optimization (MPO), a novel framework that enhances reinforcement learning from human feedback by dynamically evolving the evaluation rubrics used by reward models.  MPO integrates a meta-reward model that continuously adjusts the reward model's prompt to maintain high alignment, leading to improved policy optimization and reduced reward hacking.  Experiments show that MPO outperforms baselines on various tasks including essay writing, summarization, and ethical reasoning, demonstrating its effectiveness and adaptability across diverse tasks. MPO is readily extensible to more complex alignment frameworks, providing a flexible and general solution to improving reward-based RL alignment strategies for LLMs. The models and code are available publicly.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/minnesotanlp/mpo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "TesserAct: Learning 4D Embodied World Models",
+        "authors": "Junyan Li, Hongxin Zhang, Qiao Sun, yilundu, anyeZHY",
+        "link": "https://arxiv.org/abs/2504.20995",
+        "github_repo": null,
+        "summary": "- This paper introduces TesserAct, a novel 4D embodied world model that predicts the dynamic evolution of 3D scenes from RGB-D-N videos and text instructions.\n- The model architecture extends existing video generation models by incorporating depth and normal information, enabling more accurate and detailed 4D scene reconstruction.\n- TesserAct outperforms existing video-based world models on downstream embodied tasks, demonstrating improved performance in robotic manipulation tasks.\n- The proposed model uses a novel depth optimization algorithm that incorporates normal maps to improve depth estimation accuracy and ensure spatial and temporal coherence.\n- A 4D embodied video dataset is created to train the model and overcome the lack of high-quality 4D datasets; this dataset includes both synthetic and real-world data with ground truth depth and normal information.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://TesserActWorld.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/docs/diffusers/en/using-diffusers/marigold_usage#frame-by-frame-video-processing-with-temporal-consistency"
+        ],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "YoChameleon: Personalized Vision and Language Generation",
+        "authors": "Yong Jae Lee, Trung Bui, Jing Shi, Krishna Kumar Singh, Thao Nguyen",
+        "link": "https://arxiv.org/abs/2504.20998",
+        "github_repo": null,
+        "summary": "- Yo'Chameleon, a novel approach for personalizing Large Multimodal Models (LMMs), enables tailored image and text generation for user-defined concepts using only 3-5 images.\n- The method addresses catastrophic forgetting by using \"soft-positive\" images, dynamically adjusting prompt length based on visual similarity, and introduces a self-prompting mechanism to optimize dual soft prompts for text and image generation tasks.\n- It leverages soft prompt tuning with a dynamic prompt length mechanism and a self-prompting optimization process to balance performance across both modalities.\n- Qualitative and quantitative results demonstrate Yo'Chameleon efficiently learns concepts with fewer tokens and outperforms prompting baselines in encoding visual attributes.\n- Evaluations on visual question answering, recognition accuracy, CLIP Image Similarity, and facial similarity reveal Yo'Chameleon's superior performance compared to existing baselines.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "The Leaderboard Illusion",
+        "authors": "Daniel D'Souza, Alex Wang, Yiyang Nan, Shivalika Singh, yuntian-deng",
+        "link": "https://arxiv.org/abs/2504.20879",
+        "github_repo": null,
+        "summary": "This work identifies systematic issues resulting in a distorted playing field in the Chatbot Arena, a benchmark for ranking AI systems.  The authors find that undisclosed private testing practices, selective score reporting, and biased model sampling rates lead to skewed results.  They establish that data access asymmetries exist, providing some providers unfair advantages in achieving higher rankings.  The paper concludes with actionable recommendations to reform the Chatbot Arena's evaluation framework and promote fairer, more transparent benchmarking.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/lm-sys/FastChat/blob/0e6d3e4beaab66f4d3f93db72541a4abab8af28d/fastchat/serve/monitor/monitor_md.py#L7"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard"
+        ],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "Certified Mitigation of Worst-Case LLM Copyright Infringement",
+        "authors": "Daniel Khashabi, Benjamin Van Durme, Marc Marone, Jiacan Yu, jackzhang",
+        "link": "https://arxiv.org/abs/2504.16046",
+        "github_repo": null,
+        "summary": "- This paper introduces BLOOMSCRUB, a novel inference-time method for mitigating worst-case LLM copyright infringement by eliminating long verbatim quotes from copyrighted sources.\n- BLOOMSCRUB employs Bloom filters for efficient quote detection and dynamic rewriting techniques to transform potentially infringing segments, ensuring scalability and adaptability.\n- Experimental results demonstrate that BLOOMSCRUB significantly reduces infringement risk while preserving text quality and outperforms existing methods.\n- The method offers certified risk reduction through adaptive abstention when quotes cannot be rewritten, providing a reliable safeguard against legal liabilities.\n- BLOOMSCRUB's simple yet effective design makes it a practical and robust framework for certified copyright takedown in deployed LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "ISDrama: Immersive Spatial Drama Generation through Multimodal Prompting",
+        "authors": "Tao Jin, Zhiyuan Zhu, Changhao Pan, Wenxiang Guo, AaronZ345",
+        "link": "https://arxiv.org/abs/2504.20630",
+        "github_repo": null,
+        "summary": " - This paper introduces ISDrama, a novel multimodal immersive spatial drama generation model that produces high-quality continuous multi-speaker binaural speech with dramatic prosody.\n - The model architecture comprises a Multimodal Pose Encoder, which extracts unified pose information from diverse input modalities, and an Immersive Drama Transformer, a flow-based Mamba-Transformer model with Drama-MOE.\n - ISDrama outperforms several baseline models on various objective and subjective metrics, demonstrating its ability to generate high-quality, immersive, spatial audio with dramatic prosody.\n - The study also introduces MRSDrama, a new multimodal recorded spatial drama dataset used to train and evaluate the model, consisting of binaural audios, scripts, videos, geometric poses, and textual prompts.\n - The proposed ISDrama model shows improved performance in various aspects like quality, speaker similarity, pose consistency and prosodic expressiveness due to utilizing various advanced techniques.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "X-Fusion: Introducing New Modality to Frozen Large Language Models",
+        "authors": "Yijun Li, Siddharth Srinivasan Iyer, Xun Huang, Thao Nguyen, Sicheng Mo",
+        "link": "https://arxiv.org/abs/2504.20996",
+        "github_repo": null,
+        "summary": "- X-Fusion is a novel framework that adapts pre-trained Large Language Models (LLMs) to multimodal tasks, preserving language capabilities while enabling image understanding and generation using a dual-tower architecture. \n- This dual tower processes image data with trainable vision-specific weights and language data with frozen LLM weights, which enables cross-modal interaction between different modalities. \n- X-Fusion outperforms other baseline architectures on image-to-text and text-to-image tasks, demonstrating the effectiveness of the dual-tower design. \n- The study also reveals that using clean images for image understanding improves both generation and understanding performance, and there is an asymmetric relationship where understanding data benefits generation, but not vice-versa. \n- Additionally, aligning vision features with pre-trained representations benefits smaller models but has less impact on larger ones.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://sichengmo.github.io/XFusion/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "Disentangle Identity, Cooperate Emotion: Correlation-Aware Emotional\n  Talking Portrait Generation",
+        "authors": "Xiaobin Hu, FeiFan Xu, Chuming Lin, Weipeng Tan, ChengmingX",
+        "link": "https://arxiv.org/abs/2504.18087",
+        "github_repo": null,
+        "summary": "- DICE-Talk, a novel framework for generating emotional talking head videos, disentangles speaker identity from emotional expressions using a diffusion-based model.\n- It employs a disentangled emotion embedder that models audio-visual emotional cues as identity-agnostic Gaussian distributions through cross-modal attention.\n- A correlation-enhanced emotion conditioning module with learnable emotion banks captures inter-emotion relationships, while an emotion discrimination objective enforces affective consistency.\n- Experiments on MEAD, HDTF, and out-of-domain datasets demonstrate DICE-Talk's superior emotion accuracy and competitive lip-sync performance compared to existing state-of-the-art methods.\n- Qualitative results and user studies confirm its ability to generate identity-preserving portraits with rich, correlated emotional expressions.",
+        "classification": [
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    },
+    {
+        "title": "TreeHop: Generate and Filter Next Query Embeddings Efficiently for\n  Multi-hop Question Answering",
+        "authors": "Xuming Hu, Shuliang Liu, Jinghuai Ou, Zhonghao Li, kpzhang1028",
+        "link": "https://arxiv.org/abs/2504.20114",
+        "github_repo": "https://github.com/allen-li1231/TreeHop",
+        "summary": "- TreeHop is an embedding-level framework for multi-hop question answering (MHQA) that dynamically updates query embeddings by fusing information from prior queries and retrieved documents, eliminating the need for LLMs in query refinement.\n- TreeHop replaces the traditional \"Retrieve-Rewrite-Vectorize-Retrieve\" cycle with a streamlined \"Retrieve-Embed-Retrieve\" loop, reducing computational overhead.\n- A rule-based stop criterion is introduced to prune redundant retrievals, balancing efficiency and recall.\n- Experimental results show TreeHop rivals advanced RAG methods on three open-domain MHQA datasets with only 5%-0.4% of the parameter size and 99% latency reduction.\n- TreeHop achieves this by using a gated cross-attention mechanism to extract salient information from retrieved chunks and is trained with contrastive learning.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/allen-li1231/TreeHop-RAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-04-30"
+    }
+]

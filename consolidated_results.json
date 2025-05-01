@@ -34447,5 +34447,110 @@
         ],
         "huggingface_urls": [],
         "date": "2025-04-30"
+    },
+    {
+        "title": "WebThinker: Empowering Large Reasoning Models with Deep Research\n  Capability",
+        "authors": "Yutao Zhu, Hongjin Qian, Guanting Dong, Jiajie Jin, Xiaoxi Li",
+        "link": "https://arxiv.org/abs/2504.21776",
+        "github_repo": "https://github.com/RUC-NLPIR/WebThinker",
+        "summary": "- WebThinker is a novel deep research agent that empowers Large Reasoning Models (LRMs) to conduct autonomous web searches, navigate web pages, and generate research reports within their reasoning process.\n- It integrates a Deep Web Explorer module for dynamic information gathering and an Autonomous Think-Search-and-Draft strategy for real-time report writing.\n- RL-based training with online Direct Preference Optimization (DPO) is used to refine tool utilization.\n- Experimental results on complex reasoning (GPQA, GAIA, WebWalkerQA, HLE) and report generation (Glaive) benchmarks show WebThinker significantly outperforms current methods, including proprietary systems.\n- This approach enhances LRM reliability and opens possibilities for more capable deep research systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/RUC-NLPIR/WebThinker"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-01"
+    },
+    {
+        "title": "Phi-4-reasoning Technical Report",
+        "authors": "Harkirat Behl, Vidhisha Balachandran, Ahmed Awadallah, Sahaj Agarwal, Marah Abdin",
+        "link": "https://arxiv.org/abs/2504.21318",
+        "github_repo": null,
+        "summary": "- This technical report introduces Phi-4-reasoning and Phi-4-reasoning-plus, two 14-billion parameter reasoning models fine-tuned from the Phi-4 LLM and enhanced for complex reasoning tasks.\n- Phi-4-reasoning is trained via supervised fine-tuning on curated \"teachable\" prompts with reasoning demonstrations generated using 03-mini, while Phi-4-reasoning-plus incorporates a subsequent phase of outcome-based reinforcement learning on math problems.\n- Both models demonstrate significant performance improvements over the base Phi-4 model and other larger open-weight models across a variety of reasoning benchmarks, including math, science, coding, and algorithmic problem-solving, approaching the accuracy of the larger DeepSeek-R1 model.\n- Evaluation highlights the importance of data curation and the potential of combining supervised fine-tuning with reinforcement learning for developing efficient, smaller reasoning models. \n- The report also underscores the need for more robust evaluation practices in reasoning benchmarks, emphasizing the impact of non-determinism and small dataset sizes on single-score accuracy reporting.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/lchen001/AIME1983_2024",
+            "https://huggingface.co/datasets/lchen001/AIME2025"
+        ],
+        "date": "2025-05-01"
+    },
+    {
+        "title": "Taming the Titans: A Survey of Efficient LLM Inference Serving",
+        "authors": "Tong Liu, Zhenlin Yang, Yixin Ji, Juntao Li, zenRRan",
+        "link": "https://arxiv.org/abs/2504.19720",
+        "github_repo": null,
+        "summary": "- This paper surveys methods for efficient Large Language Model (LLM) inference serving, categorizing them into instance-level optimizations, cluster-level strategies, emerging scenarios, and miscellaneous areas.\n- Instance-level methods include model placement, request scheduling, decoding length prediction, and KV cache optimization.\n- Cluster-level strategies involve GPU cluster configurations, service-oriented scheduling, and load balancing techniques to handle diverse workloads.\n- Emerging scenarios cover efficient serving strategies for long context, Retrieval-Augmented Generation (RAG), Mixture of Experts (MoE), Low-Rank Adaptation (LoRA), speculative decoding, augmented LLMs, and test-time reasoning.\n- Miscellaneous areas address critical aspects like hardware considerations, privacy concerns, the use of simulators, ensuring fairness, and managing energy consumption.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zenrran4nlp/Awesome-LLM-Inference-Serving"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-01"
+    },
+    {
+        "title": "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for\n  Scalable and Generalizable Robot Learning",
+        "authors": "Bangjun Wang, Yuyang Li, Songlin Wei, Feishi Wang, Haoran Geng",
+        "link": "https://arxiv.org/abs/2504.18904",
+        "github_repo": null,
+        "summary": "- RoboVerse is a unified framework for scalable and generalizable robot learning, comprising a simulation platform (MetaSim), a synthetic dataset, and unified benchmarks.\n- MetaSim supports multiple simulators and robotic embodiments, enabling seamless transitions between environments and cross-embodiment transfer of trajectories. \n- The synthetic dataset includes over 1,000 diverse tasks, 50 million state transitions, and 500k trajectories, created through data migration, policy rollout, and motion planning, and enhanced by data augmentation.\n- Unified benchmarks for imitation and reinforcement learning are proposed, enabling consistent evaluation and sim-to-real transfer.\n- Experiments demonstrate enhanced performance in imitation learning, reinforcement learning, and world model learning, and successful sim-to-real transfer via high-fidelity physics and rendering.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-01"
+    },
+    {
+        "title": "UniBiomed: A Universal Foundation Model for Grounded Biomedical Image\n  Interpretation",
+        "authors": "Hao Chen, Jiaxin Zhuang, Sunan He, Yuxiang Nie, Linshan Wu",
+        "link": "https://arxiv.org/abs/2504.21336",
+        "github_repo": null,
+        "summary": "- UniBiomed, a novel universal foundation model, is introduced for grounded biomedical image interpretation, unifying the generation of clinical texts and segmentation of corresponding objects using a Multi-modal Large Language Model (MLLM) and Segment Anything Model (SAM).\n- This model tackles a wide array of tasks across ten biomedical imaging modalities using a newly curated dataset of over 27 million image-annotation-text triplets.\n- Extensive validation across 84 datasets demonstrates state-of-the-art performance in segmentation, exceeding existing models like BiomedParse by an average of 10.25% Dice score.\n- UniBiomed automates end-to-end grounded interpretation, removing the need for expert pre-diagnosis and manual prompt creation required by previous methods, optimizing clinical workflow.\n- This model also excels in grounded disease recognition, region-aware diagnosis, visual question answering, and report generation across diverse imaging modalities.",
+        "classification": [
+            "Image Segmentation",
+            "Text Generation",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Luffy03/UniBiomed"
+        ],
+        "date": "2025-05-01"
+    },
+    {
+        "title": "Generative AI for Character Animation: A Comprehensive Survey of\n  Techniques, Applications, and Future Directions",
+        "authors": "Alireza Mirrokni, Hossein Behzadasl, Pardis Sadat Zahraei, Omid Ghahroodi, Mohammad Mahdi Abootorabi",
+        "link": "https://arxiv.org/abs/2504.19056",
+        "github_repo": "https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey",
+        "summary": "- This survey paper provides a comprehensive overview of Generative AI techniques for character animation, covering various aspects such as facial animation, text-to-image/video/3D, image-to-3D, image-to-image/video, and texture synthesis.\n- It reviews recent advancements in datasets, evaluation metrics, and leading models for each component of character animation, including face, expression, gesture, motion, object generation, avatar creation, and texture synthesis. \n- It also introduces fundamental concepts such as SMPL, model architectures like CNNs, GANs, VAEs, Transformers, and DDPMs, and evaluation metrics like FID and CLIP Score, equipping readers with the essential knowledge needed to explore the field. \n- It proposes a well-defined taxonomy to classify state-of-the-art models based on their contributions to character animation.\n- Finally, the survey identifies open problems, future research directions, and ethical considerations in this evolving field. ",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Image",
+            "Text-to-Video",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Image-to-Image",
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/llm-lab-org/Generative-AI-for-Character-Animation-Survey"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-01"
     }
 ]

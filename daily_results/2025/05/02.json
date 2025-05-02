@@ -1,0 +1,32 @@
+[
+    {
+        "title": "A Survey of Interactive Generative Video",
+        "authors": "Xintao Wang, Quande Liu, Haoxuan Che, Yiran Qin, Jiwen Yu",
+        "link": "https://arxiv.org/abs/2504.21853",
+        "github_repo": null,
+        "summary": "- This paper surveys Interactive Generative Video (IGV), a technology combining generative video models with interactive features for user control and feedback.\n- It defines IGV, exploring applications in gaming, embodied AI, and autonomous driving, showcasing how IGV enables interactive virtual worlds, physics-aware environment synthesis, and closed-loop simulation.\n- The paper proposes a framework for ideal IGV systems encompassing Generation, Control, Memory, Dynamics, and Intelligence modules, analyzing technical challenges and future directions in each.\n- Challenges addressed include real-time generation, open-domain control, long-term coherence, accurate physics simulation, and causal reasoning integration.\n- This survey extends previous research by broadening the application scope beyond gaming, including autonomous driving and embodied AI, offering a more comprehensive analysis of IGV and its potential across diverse domains.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-02"
+    },
+    {
+        "title": "MediAug: Exploring Visual Augmentation in Medical Imaging",
+        "authors": "Lei Zhang, Hao Zhang, Canxuan Gang, Zeyu Zhang, Xuyin Qi",
+        "link": "https://arxiv.org/abs/2504.18983",
+        "github_repo": "https://github.com/AIGeeksGroup/MediAug",
+        "summary": "- MediAug introduces a unified framework to evaluate six prominent mix-based data augmentation techniques (MixUp, YOCO, CropMix, CutMix, AugMix, and SnapMix) for medical imaging classification tasks.\n- It benchmarks these techniques with ResNet-50 and ViT-B architectures on brain tumor MRI and eye disease fundus image datasets. \n- MixUp with ResNet-50 achieves 79.19% accuracy, while SnapMix with ViT-B achieves 99.44% accuracy for brain tumor classification. \n- For eye disease classification, YOCO with ResNet-50 achieves 91.60% and CutMix with ViT-B obtains 97.94% accuracy. \n- The study demonstrates that specific augmentation strategy and architecture combinations are optimal for distinct medical imaging applications.",
+        "classification": [
+            "Image Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/AlGeeksGroup/MediAug"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-02"
+    }
+]

@@ -1,0 +1,336 @@
+[
+    {
+        "title": "Voila: Voice-Language Foundation Models for Real-Time Autonomous\n  Interaction and Voice Role-Play",
+        "authors": "Yu Shu, Yemin Shi, zhitinghu, Jaward, guangyil",
+        "link": "https://arxiv.org/abs/2505.02707",
+        "github_repo": null,
+        "summary": "- Voila, a family of large voice-language foundation models, is introduced for real-time, natural, and flexible voice interaction. \n- Voila uses a hierarchical Transformer architecture with streaming audio encoding and tokenization, a multi-scale Transformer with an LLM backbone and audio generator, and is trained end-to-end with audio-text data.\n- Voila-e2e focuses on low-latency, nuanced voice conversations, while Voila-autonomous allows continuous listening, reasoning, and responses in a full-duplex manner.\n- On the Voila benchmark, Voila outperforms SpeechGPT and Moshi, achieving 30.56% accuracy. \n- Voila also performs competitively on ASR and TTS tasks, with a WER of 2.7% and 2.8% respectively when trained with LibriSpeech data.",
+        "classification": [
+            "Multimodal",
+            "Audio",
+            "Text-to-Speech",
+            "Text-to-Audio",
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "github.com/maitrix-org/Voila"
+        ],
+        "huggingface_urls": [
+            "hf.co/spaces/maitrix-org/Voila-demo",
+            "hf.co/maitrix-org/Voila-base",
+            "hf.co/maitrix-org/Voila-chat",
+            "hf.co/maitrix-org/Voila-autonomous-preview",
+            "hf.co/maitrix-org/Voila-Tokenizer",
+            "hf.co/datasets/maitrix-org/Voila-Benchmark",
+            "hf.co/datasets/maitrix-org/Voila-million-voice"
+        ],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "RM-R1: Reward Modeling as Reasoning",
+        "authors": "Ziqi Wang, zhangdenghui123, Merlin-Hongru, gaotang, XtremSup",
+        "link": "https://arxiv.org/abs/2505.02387",
+        "github_repo": "https://github.com/RM-R1-UIUC/RM-R1",
+        "summary": "- This paper introduces Reasoning Reward Models (REASRMS), a new class of generative reward models that frame reward modeling as a reasoning task, enhancing interpretability and performance.\n- The proposed model, RM-R1, employs a two-stage training process: distillation of high-quality reasoning chains and reinforcement learning with verifiable rewards.\n- RM-R1 leverages a novel Chain-of-Rubrics (CoR) prompting framework to elicit structured reasoning, classifying tasks as reasoning or chat and generating tailored evaluations.\n- Empirical results demonstrate state-of-the-art or near state-of-the-art performance on multiple reward model benchmarks, outperforming larger open-weight and proprietary models by up to 13.8%.\n-  The enhanced performance is validated across various domains, including chat, safety, and reasoning, highlighting the effectiveness of the reasoning-based training approach.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/RM-R1-UIUC/RM-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop\n  Reasoning with Transformers",
+        "authors": "Gjergji Kasneci, Roman Abramov, fsteinbauer",
+        "link": "https://arxiv.org/abs/2504.20752",
+        "github_repo": null,
+        "summary": "- This paper explores grokking, a phenomenon where neural networks transition from memorization to generalization, in the context of real-world multi-hop reasoning using transformers.\n- It addresses the challenge of sparse real-world data by augmenting existing knowledge graphs with synthetic data to achieve the threshold ratio of inferred to atomic facts required for grokking.\n- Surprisingly, even factually incorrect synthetic data can improve reasoning circuits, possibly by encouraging reliance on relational structure over memorization.\n- The approach achieves up to 95-100% accuracy on 2WikiMultiHopQA, surpassing baselines and matching or exceeding state-of-the-art results.\n- The analysis suggests that data augmentation based on grokking can unlock implicit multi-hop reasoning capabilities in large language models, leading to more robust and interpretable factual reasoning.",
+        "classification": [
+            "Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "FormalMATH: Benchmarking Formal Mathematical Reasoning of Large Language\n  Models",
+        "authors": "ZhengYuan, yifanzhang114, Liam-Liu, prt66, zhouliang",
+        "link": "https://arxiv.org/abs/2505.02735",
+        "github_repo": null,
+        "summary": "- FormalMATH, a large-scale Lean4 benchmark with 5,560 formally verified problems ranging from high-school Olympiad challenges to undergraduate-level theorems is introduced to address limitations of existing benchmarks.\n- A human-in-the-loop autoformalization pipeline integrating LLMs for statement autoformalization, multi-LLM semantic verification, and negation-based disproof filtering is proposed to mitigate manual formalization costs, retaining 72.09% of statements while maintaining accuracy.\n- Evaluation of state-of-the-art LLM-based theorem provers revealed significant limitations, with the best model achieving only a 16.46% success rate under practical sampling budgets.\n- Existing provers exhibit domain bias (e.g., excelling in algebra but failing in calculus) and over-reliance on simplified automation tactics; counterintuitively, natural-language solution guidance is found to decrease proof success in chain-of-thought reasoning.\n- FormalMATH provides a robust benchmark for evaluating and improving formal mathematical reasoning capabilities in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "[data]"
+        ],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "ReplaceMe: Network Simplification via Layer Pruning and Linear\n  Transformations",
+        "authors": "szagoruyko121, stamatisl, madrugado, ammarali32, dimitriish",
+        "link": "https://arxiv.org/abs/2505.02819",
+        "github_repo": null,
+        "summary": "- ReplaceMe is a training-free structured pruning method for LLMs that replaces transformer blocks with linear transformations, thereby reducing computational overhead without significant performance loss.\n- Unlike other pruning methods, ReplaceMe doesn't require any retraining or fine-tuning, making it computationally efficient.\n- It estimates linear transformations using a small calibration dataset and merges them into existing model weights without introducing additional parameters.\n- Experimental results show that ReplaceMe outperforms other training-free approaches and remains competitive with state-of-the-art pruning methods that involve retraining, achieving up to 25% pruning while retaining ~90% of the original model's performance.\n- The method also generalizes to other transformer architectures like ViT, showing its effectiveness beyond text generation tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Optimizing Chain-of-Thought Reasoners via Gradient Variance Minimization\n  in Rejection Sampling and RL",
+        "authors": "nanjiang, WeiXiong, hendrydong, HanningZhang, FlippyDora",
+        "link": "https://arxiv.org/abs/2505.02391",
+        "github_repo": "https://github.com/RLHFlow/GVM",
+        "summary": "This paper introduces GVM, a dynamic sampling strategy designed to improve chain-of-thought reasoning in large language models.  GVM dynamically allocates computational resources based on prompt difficulty and gradient norms, minimizing gradient variance and leading to faster convergence. Experiments demonstrate that GVM-RAFT achieves a 2-4x speedup and significant accuracy gains over vanilla RAFT.  The approach generalizes to other reinforcement learning algorithms like GRPO, showing similar improvements. The core idea is to minimize the variance of the stochastic gradient estimation in the EM framework for CoT reasoning by allocating sampling budgets dynamically.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/RLHFlow/GVM"
+        ],
+        "huggingface_urls": [
+            "https://github.com/huggingface/Math-Verify"
+        ],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Practical Efficiency of Muon for Pretraining",
+        "authors": "cadarsh-essential, monk-essential, karlstratos, ampolloreno, ishaan-essential",
+        "link": "https://arxiv.org/abs/2505.02222",
+        "github_repo": null,
+        "summary": "- This paper introduces Muon, a novel second-order optimizer for pretraining large language models, and demonstrates its superior performance over AdamW.\n- Muon achieves greater data efficiency at large batch sizes, expanding the Pareto frontier on the compute-time tradeoff.\n- The authors propose a simple telescoping algorithm that efficiently addresses hyperparameter tuning challenges across different model sizes.\n- Extensive experiments with models up to four billion parameters validate Muon's improved performance and the effectiveness of the telescoping algorithm.\n- The work demonstrates that Muon is a practical and efficient alternative to AdamW for large-scale pretraining.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/EssentialAI"
+        ],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "R1-Reward: Training Multimodal Reward Model Through Stable Reinforcement\n  Learning",
+        "authors": "KevinTowne, KaiyuValley, bhsc24, XingyuLu, yifanzhang114",
+        "link": "https://arxiv.org/abs/2505.02835",
+        "github_repo": "https://github.com/yfzhang114/r1_reward",
+        "summary": "- This paper introduces R1-Reward, a novel multimodal reward model trained using a novel reinforcement learning algorithm called StableReinforce.\n- StableReinforce addresses instability issues in existing RL algorithms by refining the training loss, advantage estimation, and reward design.\n- R1-Reward significantly outperforms existing state-of-the-art models on three benchmark datasets: VL Reward-Bench, Multimodal Reward Bench, and MM-RLHF Reward Bench.\n- The model's performance further improves with increased inference compute, highlighting the potential of RL algorithms in optimizing MRMs.\n- The authors collected 200K preference data to facilitate MRM training, demonstrating the model's efficiency in utilizing data.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/yfzhang114/r1_reward"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "A Survey on Inference Engines for Large Language Models: Perspectives on\n  Optimization and Efficiency",
+        "authors": "Sungryeol Jeon, leejaymin, Devcow, oos2, inputsh",
+        "link": "https://arxiv.org/abs/2505.01658",
+        "github_repo": "https://github.com/sihyeong/Awesome-LLM-Inference-Engine",
+        "summary": "- This paper presents a comprehensive survey of 25 Large Language Model (LLM) inference engines, both open-source and commercial, focusing on optimization and efficiency.\n- The paper analyzes each engine based on ease-of-use, ease-of-deployment, general-purpose support, scalability, and suitability for throughput- and latency-aware computation, categorizing optimization techniques such as batching, parallelism, compression, fine-tuning, caching, attention optimization, sampling optimization, and structured outputs.\n- It further explores the design goals and supported optimization techniques of each engine, examining ecosystem maturity for open-source solutions and performance/cost policies for commercial offerings.\n- The study also assesses recent trends like reasoning-centric test-time scaling and LLM-based AI agents which require multiple inference calls, therefore requiring higher inference efficiency.\n- Finally, it outlines future research directions including support for complex LLM-based services, diverse hardware support, and enhanced security.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/sihyeong/Awesome-LLM-Inference-Engine"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Think on your Feet: Adaptive Thinking via Reinforcement Learning for\n  Social Agents",
+        "authors": "Xinghua Zhang, Haobo Wang, bingliwu, Yongbin-Li, iiiiwis",
+        "link": "https://arxiv.org/abs/2505.02156",
+        "github_repo": "https://github.com/MozerWang/AMPO",
+        "summary": "This paper introduces Adaptive Mode Learning (AML), a novel framework that dynamically adjusts reasoning depth in social agents using reinforcement learning.  AML strategically selects from four thinking modes (intuitive reaction to deep contemplation) based on real-time context. The core of AML is the Adaptive Mode Policy Optimization (AMPO) algorithm, which improves upon existing methods by incorporating multi-granular thinking modes and context-aware switching.  Experiments show that AML outperforms state-of-the-art methods by 15.6% on social intelligence tasks, achieving a 7% performance gain and 32.8% reduction in token usage compared to GRPO.  The results demonstrate AML's ability to enable more human-like adaptive reasoning.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/MozerWang/AMPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "SkillMimic-V2: Learning Robust and Generalizable Interaction Skills from\n  Sparse and Noisy Demonstrations",
+        "authors": "Hok Wai Tsui, Yinhuai Wang, cqf, Crimnos, IngridYU",
+        "link": "https://arxiv.org/abs/2505.02094",
+        "github_repo": null,
+        "summary": "- SkillMimic-V2 is a novel data augmentation and training system built upon Reinforcement Learning from Interaction Demonstrations (RLID) that significantly enhances the capability of RLID in handling imperfect demonstrations, achieving superior convergence stability, robustness to perturbations, and generalization performance.\n- The framework consists of two core components: a Stitched Trajectory Graph (STG) and a State Transition Field (STF), tackling the demonstration noise and coverage limitations.\n- STG discovers potential transitions between demonstration skills, while STF establishes unique connections for arbitrary states within the demonstration neighborhood.\n- It facilitates RLID with augmented data, by developing an Adaptive Trajectory Sampling (ATS) strategy and a history encoding mechanism for memory-dependent skill learning.\n- The method demonstrates substantial improvements over state-of-the-art approaches with extensive experiments across diverse datasets, including BallPlay-M and ParaHome.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://ingrid789.github.io/SkillMimicV2/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Agentic Reasoning and Tool Integration for LLMs via Reinforcement\n  Learning",
+        "authors": "akshaynambi, akshaynambi, Raghav2002, joykirat",
+        "link": "https://arxiv.org/abs/2505.01441",
+        "github_repo": null,
+        "summary": " - ARTIST, a novel framework, tightly couples agentic reasoning, reinforcement learning, and tool integration for LLMs.\n - It enables LLMs to autonomously decide when and which tools to use for multi-turn reasoning, leveraging outcome-based RL without step-level supervision.\n - Extensive experiments on mathematical reasoning and function calling benchmarks demonstrate that ARTIST outperforms state-of-the-art baselines, with up to 22% absolute improvement.\n - Detailed analyses show that agentic RL training leads to deeper reasoning, more effective tool use, and higher-quality solutions.\n - ARTIST establishes agentic RL with tool integration as a powerful frontier for robust, interpretable, and generalizable problem-solving in LLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "SuperEdit: Rectifying and Facilitating Supervision for Instruction-Based\n  Image Editing",
+        "authors": "Xin Gu, Zilence006, lionwen, xiaoying0505, limingcv",
+        "link": "https://arxiv.org/abs/2505.02370",
+        "github_repo": "https://github.com/bytedance/SuperEdit",
+        "summary": "- This paper introduces SuperEdit, a novel method for instruction-based image editing that focuses on improving the quality of supervision signals.\n- SuperEdit rectifies editing instructions using vision-language models (VLMs) to better align them with original-edited image pairs, and it introduces contrastive supervision signals to further enhance effectiveness.\n- Unlike previous methods, SuperEdit does not require additional VLM modules or pre-training tasks, offering a simple yet effective solution.\n- Experimental results on multiple benchmarks show that SuperEdit significantly outperforms existing state-of-the-art (SOTA) methods, achieving a 9.19% improvement on the Real-Edit benchmark with 30x less training data and a 13x smaller model size.\n- The authors make all data and models open-sourced for future research.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/SuperEdit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Low-Precision Training of Large Language Models: Methods, Challenges,\n  and Opportunities",
+        "authors": "Li Shen, Guoxia, csdvT, GGJY, Zhiwei840",
+        "link": "https://arxiv.org/abs/2505.01043",
+        "github_repo": "https://github.com/Hao840/Awesome-Low-Precision-Training",
+        "summary": "This paper surveys existing low-precision training methods for large language models (LLMs), categorizing them by numerical format (fixed-point, floating-point, and custom).  It systematically organizes the approaches and discusses quantization-aware training.  The study highlights several promising research directions such as advanced quantization methods, ultra low-precision training, and fine-grained scaling strategies.  It also emphasizes the need for unified training frameworks, standardized benchmarks, and integration with other efficient training paradigms.  A collection of papers is provided in Awesome-Low-Precision-Training.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Hao840/Awesome-Low-Precision-Training"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Ming-Lite-Uni: Advancements in Unified Architecture for Natural\n  Multimodal Interaction",
+        "authors": "bear-xxy, jianxinsun, chenjingdong, zhengdd0422, BiaoGong",
+        "link": "https://arxiv.org/abs/2505.02471",
+        "github_repo": "https://github.com/inclusionAI/Ming/tree/main/Ming-unify",
+        "summary": "- Ming-Lite-Uni is an open-source multimodal framework with a unified visual generator and a native multimodal autoregressive model, integrating MetaQueries and M2-omni framework with multi-scale learnable tokens and a multi-scale representation alignment strategy.\n- It leverages a fixed MLLM and a learnable diffusion model, enabling both text-to-image generation and instruction-based image editing, outperforming closed-source models like GPT-40 and Gemini-1.5-Pro in multimodal understanding benchmarks.\n- The framework enhances visual generation through a FlowMatching loss in the diffusion model, enabling concurrent optimization with a frozen MLLM, leading to improvements in generation quality.\n- Ming-Lite-Uni uses a multi-scale representation alignment strategy which enhances high-res reconstruction quality and boosts GenEval by 1.5%.\n- A multimodal dataset was curated for Ming-Lite-Uni exhibiting robust control fluency and contextual understanding, addressing fine-grained image editing and text-to-image QA tasks through natural language.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/Ming/tree/main/Ming-unify"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "TEMPURA: Temporal Event Masked Prediction and Understanding for\n  Reasoning in Action",
+        "authors": "vibhav-vineet, yilche, wchai, hsiangwei0903, andaba",
+        "link": "https://arxiv.org/abs/2505.01583",
+        "github_repo": null,
+        "summary": "- TEMPURA, a two-stage training framework, enhances video temporal understanding in large multimodal models (LMMs) by combining dense event segmentation with masked event prediction.\n- The model architecture involves a vision encoder and a large language model (LLM), trained first on masked event prediction for reasoning and then on video segmentation and dense captioning for fine-grained temporal grounding.\n- TEMPURA outperforms the baseline Qwen2.5-VL and other state-of-the-art models on Charades-STA (for temporal grounding) and QVHighlights (for highlight detection) benchmarks without requiring target-task fine-tuning.\n- The model achieves a 39.2 mIoU on Charades-STA, surpassing the baseline by 6.3 points, and a 51.7 HIT@1 score on QVHighlights, outperforming the baseline by 6.9 points.\n- A new large-scale dataset, VER, comprising 500K untrimmed videos with dense event captions and structured reasoning steps, is introduced to facilitate the training process.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "LLaMA-Omni2: LLM-based Real-time Spoken Chatbot with Autoregressive\n  Streaming Speech Synthesis",
+        "authors": "Yang Feng, Yan Zhou, zhangshaolei, guoshoutao, poeroz",
+        "link": "https://arxiv.org/abs/2505.02625",
+        "github_repo": "https://github.com/ictnlp/LLaMA-Omni2",
+        "summary": "- This paper introduces LLaMA-Omni 2, a series of speech language models (SpeechLMs) with sizes ranging from 0.5B to 14B parameters, designed for real-time spoken chatbot applications.\n- The model architecture consists of a Whisper encoder for speech understanding, a Qwen2.5 series LLM as the core, and an autoregressive streaming speech decoder with a text-to-speech language model and a flow matching model for speech generation.\n- Trained on 200K synthesized multi-turn speech dialogues, LLaMA-Omni 2 demonstrates superior performance in spoken question answering and speech instruction following tasks, outperforming existing SpeechLMs like GLM-4-Voice and LLaMA-Omni, even with significantly less training data (millions of hours vs. 200K samples).\n- The model achieves low latency (around 600ms) for real-time interaction and maintains high consistency between generated speech and text.\n- Ablation studies highlight the efficacy of various components, including the gate fusion module and the TTS pretraining strategy.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Speech",
+            "Text-to-Audio",
+            "Automatic Speech Recognition",
+            "Audio-to-Audio",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/ictnlp/LLaMA-Omni2"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+            "https://huggingface.co/fishaudio/",
+            "https://huggingface.co/datasets/Stanford/web_questions",
+            "https://huggingface.co/datasets/google-research-datasets/LLaMA-Test-Set",
+            "https://huggingface.co/tatsu-lab/alpaca_eval"
+        ],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "MUSAR: Exploring Multi-Subject Customization from Single-Subject Dataset\n  via Attention Routing",
+        "authors": "Chong Mou, Pengze Zhang, heqian, yanze, Zinan123212",
+        "link": "https://arxiv.org/abs/2505.02823",
+        "github_repo": "https://github.com/guozinan126/MUSAR",
+        "summary": "- MUSAR is a novel framework for multi-subject text-to-image generation trained solely on single-subject data, addressing the challenge of limited multi-subject datasets and attribute entanglement.\n- It employs de-biased diptych learning, constructing diptych training pairs from single-subject images while mitigating bias through static attention routing and dual-branch LoRA.\n- Dynamic attention routing dynamically establishes bijective mappings between image regions and corresponding subjects to prevent attribute entanglement.\n- Experimental results demonstrate that MUSAR outperforms state-of-the-art methods trained on multi-subject data in subject consistency, attribute disentanglement, and visual fidelity.\n- The model effectively handles complex multi-object customization by leveraging its innovative learning strategies and dynamic attention mechanism.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/guozinan126/MUSAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Learning Heterogeneous Mixture of Scene Experts for Large-scale Neural\n  Radiance Fields",
+        "authors": "Dan Xu, Xue Xiao, Ping Yin, Zhenxing Mi",
+        "link": "https://arxiv.org/abs/2505.02005",
+        "github_repo": "https://github.com/MiZhenxing/Switch-NeRF",
+        "summary": "- Switch-NeRF++ is a novel framework for large-scale Neural Radiance Fields that addresses the challenges of learnable decomposition, modeling scene heterogeneity, and modeling efficiency.\n- It introduces a Heterogeneous Mixture of Hash Experts (HMOHE) network, which learns heterogeneous decomposition and heterogeneous Neural Radiance Fields for large-scale scenes in an end-to-end manner.\n- A hash-based gating network learns scene decomposition and dispatches 3D points to specialized NeRF experts, enabling effective learning of heterogeneous scene representations.\n- Switch-NeRF++ achieves state-of-the-art scene rendering accuracy on large-scale datasets, showing 8x and 16x speedups in training and rendering, respectively, compared to Switch-NeRF.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/MiZhenxing/Switch-NeRF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    },
+    {
+        "title": "Unlearning Sensitive Information in Multimodal LLMs: Benchmark and\n  Attack-Defense Evaluation",
+        "authors": "Jie Peng, Peter Hase, mohitbansal, a2889184, vaidehi99",
+        "link": "https://arxiv.org/abs/2505.01456",
+        "github_repo": "https://github.com/Vaidehi99/UnLOK-VQA",
+        "summary": "- This paper introduces UNLOK-VQA, a novel benchmark designed for evaluating the targeted unlearning of sensitive information from Multimodal Large Language Models (MLLMs).\n- It proposes an \"attack-and-defense\" framework to assess the robustness of unlearning methods against various attack strategies, including white-box attacks leveraging model internals and black-box attacks employing input variations.\n- The dataset creation involves an automatic pipeline generating rephrase and neighborhood samples for nuanced evaluation of generalization and specificity, followed by manual filtering for quality control.\n- Experimental results on LLaVA-v1.5 demonstrate the effectiveness of multimodal extraction attacks and show that larger models exhibit greater resilience to attacks after unlearning.\n- The best defense mechanism, removing answer information from internal hidden states, significantly reduces attack success rates, establishing UNLOK-VQA as a valuable benchmark for future research in multimodal unlearning.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Vaidehi99/UnLOK-VQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-06"
+    }
+]

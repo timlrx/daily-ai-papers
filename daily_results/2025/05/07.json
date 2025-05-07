@@ -1,0 +1,223 @@
+[
+    {
+        "title": "Unified Multimodal Chain-of-Thought Reward Model through Reinforcement\n  Fine-Tuning",
+        "authors": "Qinglin Lu, Chunyu Wang, Zhimin Li, Yibin Wang, yuhangzang",
+        "link": "https://arxiv.org/abs/2505.03318",
+        "github_repo": null,
+        "summary": "- This paper introduces UNIFIEDREWARD-THINK, a novel unified multimodal chain-of-thought (CoT) reward model that enhances the accuracy and reliability of reward signals for both visual understanding and generation tasks.\n- The model employs an exploration-driven reinforcement fine-tuning approach involving three key stages: cold start, rejection sampling, and Group Relative Policy Optimization (GRPO) to elicit and incentivize the model's latent reasoning capabilities.\n- UNIFIEDREWARD-THINK demonstrates significant performance improvements over existing baselines across multiple vision reward tasks, outperforming existing methods in various image and video generation and understanding benchmarks.\n- The model exhibits strong implicit reasoning capabilities, surpassing baselines even without explicit reasoning traces, indicating a robust internalization of CoT reasoning.\n- The proposed three-stage training pipeline effectively enhances the model's ability to perform multi-dimensional, step-by-step long-chain reasoning, improving both the accuracy and robustness of reward signals.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
+        "authors": "Andrew Zhao, zlzheng, shenzhi-wang, Yang130, kevinwyr",
+        "link": "https://arxiv.org/abs/2505.03335",
+        "github_repo": null,
+        "summary": " - This paper introduces Absolute Zero, a novel reinforcement learning paradigm for training reasoning models without external data. \n- The Absolute Zero Reasoner (AZR) is proposed, a system that self-evolves its training curriculum and reasoning abilities by using a code executor to validate proposed code reasoning tasks and verify answers. \n- AZR achieves state-of-the-art performance on coding and mathematical reasoning tasks, outperforming existing zero-setting models that rely on tens of thousands of human-curated examples.  \n- The study demonstrates AZR's effectiveness across different model scales and compatibility with various model classes. \n- The researchers provide a comprehensive analysis of AZR's capabilities, including its ability to learn different reasoning modes and its scaling behavior.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/Absolute-Zero"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/THUDM/Absolute-Zero"
+        ],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "FlexiAct: Towards Flexible Action Control in Heterogeneous Scenarios",
+        "authors": "Yansong Tang, Ying Shan, Zhaoyang Zhang, Shiyi Zhang, JunhaoZhuang",
+        "link": "https://arxiv.org/abs/2505.03730",
+        "github_repo": null,
+        "summary": "- FlexiAct is a novel Image-to-Video (I2V) framework that enables flexible action customization in diverse scenarios by transferring actions from a reference video to an arbitrary target image without requiring alignment in layout, shape, or viewpoint.\n- The model architecture consists of two key components: RefAdapter, a lightweight image-conditioned adapter for spatial adaptation and consistency preservation; and FAE (Frequency-aware Action Extraction), which precisely extracts actions during the denoising process by dynamically adjusting attention weights to frequency components at different timesteps.\n- FlexiAct outperforms existing methods in maintaining appearance consistency and structural flexibility across diverse subjects and scenarios, as demonstrated by experiments on a benchmark dataset with various actions, subjects, and domains.\n- The method effectively transfers actions to subjects with diverse layouts, skeletons, and viewpoints.\n- The code and model weights are released to support further research.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "RADLADS: Rapid Attention Distillation to Linear Attention Decoders at\n  Scale",
+        "authors": "Eugene Cheah, Janna Lu, Eric Alcaide, SmerkyG",
+        "link": "https://arxiv.org/abs/2505.03005",
+        "github_repo": "https://github.com/recursal/RADLADS-paper",
+        "summary": "- The paper introduces RADLADS, a novel method for efficiently converting softmax attention transformers into linear attention decoder models.\n- RADLADS employs a three-step distillation process involving attention weight transfer, attention hidden state alignment, and knowledge distillation, significantly reducing the computational cost of training large language models.\n- Two new RWKV-variant architectures, RAD-RWKV6 and RAD-RWKV7, are proposed to improve conversion efficiency and inference speed.\n- The method achieves state-of-the-art performance on various benchmark tasks for linear attention models of similar size.\n- All models are made publicly available on HuggingFace under the Apache 2.0 license (except for 72B models, which are also governed by the Qwen License Agreement).",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/recursal/RADLADS-paper"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/recursal/radlads-6818ee69e99e729ba8a87102"
+        ],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "RetroInfer: A Vector-Storage Approach for Scalable Long-Context LLM\n  Inference",
+        "authors": "Chengruidong Zhang, Jinkai Zhang, Yaoqi Chen, qianxizhang, baotonglu",
+        "link": "https://arxiv.org/abs/2505.02922",
+        "github_repo": null,
+        "summary": "- RETROINFER, a novel system, is presented that improves long-context LLM inference by using a vector storage system instead of a key-value cache.\n- The core of RETROINFER is the wave index, an Attention-Aware Vector index which uses techniques like tripartite attention approximation and accuracy-bounded attention estimation to efficiently and accurately retrieve important tokens.\n- RETROINFER also uses a wave buffer to manage KV cache placement and computation across GPU and CPU, improving throughput.\n- Experiments on long-context benchmarks show RETROINFER achieves up to 4.5x speedup over full attention within GPU memory limits and up to 10.5x over sparse attention baselines when KV cache is extended to CPU memory.\n- The system maintains full-attention-level accuracy.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/RetrievalAttention"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "Decoding Open-Ended Information Seeking Goals from Eye Movements in\n  Reading",
+        "authors": "Yevgeni Berzak, Yoav Meiri, Omer Shubi, Cfir Avraham Hadar",
+        "link": "https://arxiv.org/abs/2505.02872",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel task of decoding open-ended information-seeking goals from eye movements during reading, addressing a previously understudied aspect of reading behavior.\n- Two formulations of this task are proposed: question classification and question reconstruction. The former involves identifying which of several candidate questions a reader had in mind, and the latter aims to generate the exact question.\n- The study utilizes a large-scale eye-tracking dataset with hundreds of text-specific information-seeking tasks to evaluate the performance of several discriminative and generative multimodal LLMs. \n- Experimental results demonstrate considerable success in both question classification and reconstruction, suggesting the feasibility of extracting valuable insights into readers' goals from eye movement data.\n- The findings suggest that LLMs can effectively combine eye movements and text to automatically decode readers' text-specific goals, opening new avenues for applications in education, content personalization, and text accessibility.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "An Empirical Study of Qwen3 Quantization",
+        "authors": "Xudong Ma, Yue Feng, Yuye Li, HaoranChu, Xingyu-Zheng",
+        "link": "https://arxiv.org/abs/2505.02214",
+        "github_repo": "https://github.com/Efficient-ML/Qwen3-Quantization",
+        "summary": "- This paper presents a systematic evaluation of the effectiveness of five classic post-training quantization techniques applied to the Qwen3 large language model.\n- The study assesses the impact of quantization on Qwen3's performance across various bit-widths (1-8 bits) and multiple datasets encompassing diverse language tasks.\n- Findings reveal that Qwen3 maintains competitive performance at moderate bit-widths (4-8 bits) but experiences notable degradation in linguistic tasks under ultra-low precision (1-3 bits).\n- The results underscore the need for further research to enhance quantization methods for LLMs, particularly focusing on mitigating performance loss in extreme quantization scenarios.\n- This work contributes actionable insights for advancing quantization techniques tailored to Qwen3 and future LLMs, aiming to improve their practicality without compromising accuracy.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/Qwen3"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "Multi-Agent System for Comprehensive Soccer Understanding",
+        "authors": "Yanfeng Wang, Ya Zhang, Zifeng Li, haoningwu, Homie0609",
+        "link": "https://arxiv.org/abs/2505.03735",
+        "github_repo": null,
+        "summary": "This paper introduces SoccerAgent, a multi-agent system for comprehensive soccer understanding.  SoccerAgent leverages a modular architecture and collaborative reasoning to answer diverse and challenging questions using a large-scale multimodal knowledge base (SoccerWiki) and benchmark (SoccerBench).  The system achieves state-of-the-art performance on SoccerBench across various tasks.  Furthermore, the SoccerWiki knowledge base and the SoccerBench benchmark are publicly available. The proposed framework addresses fragmented and specialized approaches for soccer understanding and offers an effective solution for holistic soccer analysis.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://jyrao.github.io/SoccerAgent/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "Geospatial Mechanistic Interpretability of Large Language Models",
+        "authors": "Kevin Roitero, Stefano Mizzaro, sdesabbata",
+        "link": "https://arxiv.org/abs/2505.03368",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework for studying the geospatial mechanistic interpretability of large language models (LLMs).\n- It uses spatial analysis to reverse-engineer how LLMs process geographical information, focusing on the internal representations generated by these models.\n- The study employs probing techniques, including spatial autocorrelation, to analyze the internal representations of LLMs and reveal spatial patterns.\n- Sparse autoencoders are utilized to disentangle polysemantic internal representations into more interpretable, monosemantic features, enhancing the understanding of how LLMs encode geographical information.\n- The findings suggest that LLMs encode geographical information in a complex, polysemantic manner but that sparse autoencoders can improve the interpretability of these representations.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/sdesabbata/geospatial-mechanistic-interpretability"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0"
+        ],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "InfoVids: Reimagining the Viewer Experience with Alternative\n  Visualization-Presenter Relationships",
+        "authors": "Kevin Hsu, Ivy Chen, Tongyu Zhou, Ji Won Chung, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2505.03164",
+        "github_repo": null,
+        "summary": "- This paper introduces InfoVids, a novel visualization-presenter paradigm that integrates visualizations and presenters within a shared 3D space, aiming to create a more human-centric viewing experience.\n- InfoVids are designed as infographic-inspired videos and are crafted to redefine the relationships between the presenter and visualizations.\n- The study uses mixed methods, comparing InfoVids against their 2D counterparts, which reveals that InfoVids reduced viewer attention splitting, shifted focus to the presenter, and fostered more engaging full-body performances.\n- Four custom-constructed InfoVids were evaluated with 30 participants, with attention being given to the viewer experience and the resulting design implications.\n- The findings indicate that designing InfoVids entails considering social expectations among the presenter, visualization, and viewer, leading to a re-imagining of traditional visualization presentation dynamics.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "VITA-Audio: Fast Interleaved Cross-Modal Token Generation for Efficient\n  Large Speech-Language Model",
+        "authors": "Lijiang Li, Heting Gao, Chaoyou Fu, Yunhang Shen, Zuwei Long",
+        "link": "https://arxiv.org/abs/2505.03739",
+        "github_repo": "https://github.com/VITA-MLLM/VITA-Audio",
+        "summary": "- VITA-Audio is a novel end-to-end large speech model that uses a lightweight Multiple Cross-modal Token Prediction (MCTP) module to generate audio and text tokens efficiently. \n- The model architecture utilizes separate efficient modules to generate multiple audio tokens in one forward pass, leading to minimal latency in real-time conversational capabilities. \n- It incorporates a four-stage progressive training strategy to accelerate model training with minimal loss in speech quality. \n- Experimental results show that VITA-Audio achieves an inference speedup of 3-5x at the 7B parameter scale while outperforming other open-source models on multiple benchmarks for ASR, TTS, and SQA. \n- The model is fully reproducible and trained using only open-source data.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech",
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "https://github.com/VITA-MLLM/VITA-Audio"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "Invoke Interfaces Only When Needed: Adaptive Invocation for Large\n  Language Models in Question Answering",
+        "authors": "Biao Qin, Chunlai Zhou, Robot2050",
+        "link": "https://arxiv.org/abs/2505.02311",
+        "github_repo": null,
+        "summary": "- This paper introduces AttenHScore, a novel metric for evaluating the invocation of large language models (LLMs) in question answering.\n- AttenHScore calculates the accumulation and propagation of hallucinations during small language model (SLM) generation, dynamically adjusting the detection threshold for more accurate LLM invocation.\n-  Uncertainty-aware knowledge reorganization assists SLMs in capturing critical information from different text chunks, improving performance even with complex queries.\n- Extensive experiments across multiple QA datasets show that AttenHScore outperforms baselines in real-time hallucination detection, eliminating the need for additional model training.\n- The method displays flexibility in adapting to various transformer-based LMs and improves overall efficiency by leveraging both LLMs and SLMs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Robot2050/AttenHScore"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "HoloTime: Taming Video Diffusion Models for Panoramic 4D Scene\n  Generation",
+        "authors": "Yonghong Tian, Xinhua Cheng, Jiawen Guan, Haiyang Zhou, Drexubery",
+        "link": "https://arxiv.org/abs/2504.21650",
+        "github_repo": null,
+        "summary": "- HoloTime is a novel framework that generates immersive 360-degree 4D scenes from a single image prompt or reference image by integrating video diffusion models.\n- It introduces Panoramic Animator, a two-stage image-to-video diffusion model that generates high-quality panoramic videos from a single image.\n- The framework also includes a 360-degree 4D scene reconstruction method that converts the generated panoramic video into 4D point clouds for a holistic representation.\n- To support the model, a new comprehensive dataset, 360World, containing panoramic videos is introduced and used to train the model.\n- Experiments show that HoloTime outperforms existing methods in both panoramic video generation and 4D scene reconstruction, showcasing its superiority in creating more engaging and realistic immersive environments.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Video Classification",
+            "Depth Estimation",
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/zhouhyocean/holotime/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    },
+    {
+        "title": "Auto-SLURP: A Benchmark Dataset for Evaluating Multi-Agent Frameworks in\n  Smart Personal Assistant",
+        "authors": "Xiaoyu Shen, lorashen",
+        "link": "https://arxiv.org/abs/2504.18373",
+        "github_repo": "https://github.com/lorashen/Auto-SLURP/",
+        "summary": "- Auto-SLURP, a benchmark dataset for evaluating multi-agent frameworks in smart personal assistants, is introduced. \n- The dataset extends the original SLURP dataset by relabeling data and integrating simulated servers and external services for comprehensive end-to-end evaluation.\n- Experiments demonstrate that Auto-SLURP presents a significant challenge for current state-of-the-art frameworks, highlighting the need for further advancements.\n- The dataset and related code are publicly available.\n- The paper analyzes the performance of several multi-agent frameworks on Auto-SLURP, showing variations in accuracy and efficiency.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/lorashen/Auto-SLURP/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-07"
+    }
+]

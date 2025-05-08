@@ -1,0 +1,212 @@
+[
+    {
+        "title": "Unified Multimodal Understanding and Generation Models: Advances,\n  Challenges, and Opportunities",
+        "authors": "Minghao Fu, Jintao Guo, Xinjie Zhang, Flourish, Suikong",
+        "link": "https://arxiv.org/abs/2505.02567",
+        "github_repo": "https://github.com/AIDC-AI/Awesome-Unified-Multimodal-Models",
+        "summary": " - This paper surveys recent advancements in unified multimodal understanding and generation models, addressing the independent evolution of autoregressive and diffusion-based approaches. \n- It categorizes existing unified models into three main architectural paradigms: diffusion-based, autoregressive-based, and hybrid approaches. \n- The survey analyzes the structural designs and innovations of each category, compiling datasets and benchmarks tailored for unified models. \n- Key challenges in this field are discussed, including tokenization strategies, cross-modal attention, and data limitations. \n- The paper aims to inspire further research and provide a valuable resource for the community by regularly updating the survey.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/AIDC-AI/Awesome-Unified-Multimodal-Models"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "ZeroSearch: Incentivize the Search Capability of LLMs without Searching",
+        "authors": "Yingyan Hou, Xuanbo Fan, Zile Qiao, Hao Sun, SpaceProduct",
+        "link": "https://arxiv.org/abs/2505.04588",
+        "github_repo": null,
+        "summary": "- This paper introduces ZEROSEARCH, a novel reinforcement learning framework that enhances the search capabilities of LLMs without needing to interact with real search engines.\n- ZEROSEARCH uses a lightweight supervised fine-tuning process to transform an LLM into a retrieval module, capable of producing both relevant and irrelevant documents to answer a query.\n- The framework employs a curriculum-based strategy that gradually decreases the quality of documents during the RL training, which helps to elicit the model's reasoning ability through increasingly challenging scenarios.\n- Experiments show that ZEROSEARCH significantly improves the search capabilities of LLMs, with a 7B retrieval module achieving performance comparable to a real search engine, and a 14B module even surpassing it.\n- The approach is shown to generalize effectively across various model sizes and RL algorithms, making it a scalable and versatile solution.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "PrimitiveAnything: Human-Crafted 3D Primitive Assembly Generation with\n  Auto-Regressive Transformer",
+        "authors": "Yiqin Zhu, Yanning Zhou, Jingwen Ye, loktarxiao, hyz317",
+        "link": "https://arxiv.org/abs/2505.04622",
+        "github_repo": null,
+        "summary": "- PrimitiveAnything is a novel framework that formulates shape abstraction as a sequence generation task, enabling human-like shape decomposition.\n- It uses a shape-conditioned decoder-only transformer architecture with an ambiguity-free parameterization scheme to generate high-quality primitive assemblies.\n- The model is trained on a large-scale human-crafted dataset and outperforms existing optimization-based and learning-based methods in terms of geometric accuracy and alignment with human perception.\n- PrimitiveAnything is extensible to new primitive types and adaptable to different primitive representations.\n- The framework enables versatile primitive-based 3D content generation, showing promise for applications such as games and interactive design.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://primitiveanything.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "HunyuanCustom: A Multimodal-Driven Architecture for Customized Video\n  Generation",
+        "authors": "Yuan Zhou, Sen Liang, Zhengguang Zhou, Zhentao Yu, Teng Hu",
+        "link": "https://arxiv.org/abs/2505.04512",
+        "github_repo": null,
+        "summary": "- The paper introduces HunyuanCustom, a novel multi-modal customized video generation framework that prioritizes subject consistency.\n- The model architecture leverages LLaVA for enhanced multi-modal understanding, an image ID enhancement module for reinforcing identity features, and modality-specific condition injection mechanisms for audio and video.\n- HunyuanCustom outperforms state-of-the-art methods in ID consistency, realism, and text-video alignment across various downstream tasks, including audio and video-driven customized video generation.\n- The model's effectiveness is validated through extensive experiments on single- and multi-subject scenarios, demonstrating its robustness across diverse input modalities.\n- The code and models are publicly available, facilitating further research and development in controllable video generation.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://hunyuancustom.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "Beyond Recognition: Evaluating Visual Perspective Taking in Vision\n  Language Models",
+        "authors": "Maciej Wo\u0142czyk, Micha\u0142 Nauman, Piotr Mi\u0142o\u015b, Alicja Ziarko, Gracjan",
+        "link": "https://arxiv.org/abs/2505.03821",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel benchmark for evaluating visual perspective-taking capabilities in vision language models (VLMs).\n- The benchmark consists of 144 unique visual tasks, each paired with seven diagnostic questions designed to assess three levels of visual cognition: scene understanding, spatial reasoning, and visual perspective taking.\n- The experimental results reveal that while state-of-the-art VLMs excel in scene understanding, their performance significantly declines on spatial reasoning and further deteriorates on perspective-taking tasks.\n- This indicates a substantial gap between surface-level object recognition and deeper spatial and perspective reasoning required for complex visual tasks.\n- The findings highlight the need for incorporating explicit geometric representations and tailored training protocols in future VLM development to improve their visual perspective-taking abilities.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "Benchmarking LLMs' Swarm intelligence",
+        "authors": "Hao Sun, Ji-Rong Wen, Mowen Huang, 6cf",
+        "link": "https://arxiv.org/abs/2505.04364",
+        "github_repo": "https://github.com/x66ccff/swarmbench",
+        "summary": "This paper introduces SwarmBench, a novel benchmark designed for evaluating the swarm intelligence capabilities of Large Language Models (LLMs) operating as decentralized agents.  The benchmark includes five core multi-agent coordination tasks within a configurable 2D grid environment.  The study evaluates several leading LLMs in a zero-shot setting and finds significant performance variations. SwarmBench is released as an open-source toolkit to foster reproducible research into LLM-based multi-agent systems coordination.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/x66ccff/swarmbench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "Beyond Theorem Proving: Formulation, Framework and Benchmark for Formal\n  Problem-Solving",
+        "authors": "Qinxiang Cao, Xingzhi Qi, Renqiu Xia, Xinhao Zheng, purewhite42",
+        "link": "https://arxiv.org/abs/2505.04528",
+        "github_repo": null,
+        "summary": "This paper introduces a novel framework for formal problem-solving that leverages formal theorem proving environments. The framework, FPS (Formal Problem-Solving), is based on a deterministic Markov decision process and is proven to be sound and complete.  A deductive version, D-FPS, is also presented, improving human alignment by decoupling solving and verification.  Three benchmarks are constructed to evaluate the framework, and results show that FPS and D-FPS outperform existing methods.  A new symbolic approach, RPE (Restricted Propositional Equivalence), is proposed to ensure that answers are faithfully and interpretably aligned with human intuition.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Purewhite2019/formal_problem_solving_main"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "OmniGIRL: A Multilingual and Multimodal Benchmark for GitHub Issue\n  Resolution",
+        "authors": "Jiachi Chen, Yanlin Wang, Runhan Jiang, Lianghong Guo, itaowe",
+        "link": "https://arxiv.org/abs/2505.04606",
+        "github_repo": null,
+        "summary": "OmniGIRL is a novel multilingual and multimodal benchmark designed for evaluating the effectiveness of Large Language Models (LLMs) in resolving GitHub issues.  It addresses the limitations of existing benchmarks by incorporating issues from four programming languages, spanning eight domains, and including multimodal information (text, images, and web links).  The benchmark consists of 959 instances and demonstrates the challenges LLMs face in this complex task, with the best-performing model achieving a resolution rate of only 8.6%.  Furthermore, the analysis reveals that current LLMs struggle with issues that involve understanding images and resolving issues requiring multi-file modifications.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/DeepSoftwareAnalytics/OmniGIRL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "OpenHelix: A Short Survey, Empirical Analysis, and Open-Source\n  Dual-System VLA Model for Robotic Manipulation",
+        "authors": "Xinyang Tong, Shuanghao Bai, Wenxuan Song, Pengxiang Ding, Can Cui",
+        "link": "https://arxiv.org/abs/2505.03912",
+        "github_repo": null,
+        "summary": "- This paper introduces OpenHelix, a novel dual-system vision-language-action (VLA) model for robotic manipulation.\n- The model architecture consists of a high-level MLLM (LLaVA) and a low-level policy (3DDA) which are integrated via an asynchronous strategy.\n-  The model utilizes prompt tuning on the MLLM to adapt to downstream tasks. \n- The method includes an auxiliary task to fully leverage the visual reasoning capabilities of the MLLM.\n- The experimental results demonstrate that the proposed model achieves state-of-the-art performance on various robotic manipulation tasks.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/OpenHelix-robot/OpenHelix/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "OSUniverse: Benchmark for Multimodal GUI-navigation AI Agents",
+        "authors": "Sin\u00e9ad Ryan, Arturo M\u00e1rquez Flores, Patrick Barker, Daniel Jeffries, mariya-davydova",
+        "link": "https://arxiv.org/abs/2505.03570",
+        "github_repo": "https://github.com/agentsea/osuniverse",
+        "summary": "- This paper introduces OSUniverse, a benchmark designed for evaluating the performance of multimodal GUI-navigation AI agents.\n- OSUniverse is comprised of complex tasks that increase in difficulty, ranging from basic clicking to multi-step actions across multiple applications, requiring advanced reasoning and dexterity.\n- The benchmark's design prioritizes ease of use, extensibility, thorough test case coverage, and automated validation, using Gemini models for automatic scoring with an average error rate below 2%.\n- The benchmark is designed to assess agent capabilities across different levels of complexity, ensuring that state-of-the-art agents achieve scores below 50% while average office workers demonstrate perfect accuracy.\n- The authors provide a detailed architecture of OSUniverse, including its test cases, checks, runners, and validators, highlighting its open-ended nature in terms of supported agents and models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/agentsea/osuniverse"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "Knowledge Augmented Complex Problem Solving with Large Language Models:\n  A Survey",
+        "authors": "Yuqi Zhu, Yuchen Tian, Junwei Su, Lun Du, Da Zheng",
+        "link": "https://arxiv.org/abs/2505.03418",
+        "github_repo": null,
+        "summary": "This paper surveys the use of large language models (LLMs) for complex problem-solving, focusing on the capabilities and limitations of LLMs in various domains.  The paper explores techniques such as chain-of-thought reasoning and knowledge augmentation.  Three key components of complex problem-solving are identified: multi-step reasoning, domain knowledge, and result verification. The fundamental limitations of current LLM solutions are analyzed, and future research directions are discussed.  The study covers various domains including software engineering, mathematics, data science, and scientific research, highlighting their specific challenges.  Finally, the work suggests approaches for enhancing LLM capabilities in addressing complex real-world problems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "R&B: Domain Regrouping and Data Mixture Balancing for Efficient\n  Foundation Model Training",
+        "authors": "Ziyi Chu, Avi Trost, John Cooper, Tzu-Heng Huang, Albert Ge",
+        "link": "https://arxiv.org/abs/2505.00358",
+        "github_repo": null,
+        "summary": "- This paper introduces R&B, a novel framework for efficient foundation model training that addresses the limitations of existing data mixing strategies by re-partitioning training data based on semantic similarity and dynamically optimizing data composition using domain gradients.\n- R&B achieves significant computational efficiency compared to existing methods, reducing compute overhead by orders of magnitude while matching or exceeding performance on diverse datasets.\n- The effectiveness of R&B is validated through theoretical analysis under standard regularity conditions and empirical evaluations on five datasets, encompassing natural language, instruction-following, reasoning, and multimodal tasks.\n- The proposed framework's ability to dynamically optimize data mixtures throughout training is shown to be crucial for achieving high performance and efficiency.\n- R&B's success is attributed to its ability to capture fine-grained semantic nuances and efficiently leverage information already computed during standard training, thereby avoiding the need for additional compute-intensive evaluations.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "Uncertainty-Weighted Image-Event Multimodal Fusion for Video Anomaly\n  Detection",
+        "authors": "Mohsen Imani, Paper9795, Eavn",
+        "link": "https://arxiv.org/abs/2505.02393",
+        "github_repo": "https://github.com/EavnJeong/IEF-VAD",
+        "summary": " - This paper introduces a novel framework called Image-Event Fusion for Video Anomaly Detection (IEF-VAD), which addresses the limitations of existing video anomaly detection methods that rely solely on RGB frames. \n - IEF-VAD synthesizes event representations directly from RGB videos and fuses them with image features through an uncertainty-aware process. \n - The model architecture incorporates a precision-weighted fusion mechanism that balances modality contributions based on uncertainty estimates using a Student's t likelihood and a Laplace approximation. \n - IEF-VAD achieves state-of-the-art results across multiple real-world anomaly detection benchmarks, demonstrating improved accuracy and robustness in video understanding across various applications. \n - The system does not require dedicated event sensors or frame-level labels, leveraging synthetic event data extracted from videos.",
+        "classification": [
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/EavnJeong/IEF-VAD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    },
+    {
+        "title": "Cognitio Emergens: Agency, Dimensions, and Dynamics in Human-AI\n  Knowledge Co-Creation",
+        "authors": "linxule",
+        "link": "https://arxiv.org/abs/2505.03105",
+        "github_repo": null,
+        "summary": "This research paper introduces the Cognitio Emergens (CE) framework, which models the co-evolutionary process of human-AI collaboration in scientific knowledge creation.  It addresses limitations in existing models by integrating three components: Agency Configurations (describing authority distribution), Epistemic Dimensions (capturing capabilities), and Partnership Dynamics (identifying forces shaping relationships).  CE offers practical implementation guidance for researchers, leaders, and policymakers. The framework provides a balanced perspective on the human-AI partnership, avoiding both uncritical celebration and undue fear of AI's evolving role.  It emphasizes the significance of maintaining human participation and epistemic integrity in the transformative scientific breakthroughs enabled by AI.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-08"
+    }
+]

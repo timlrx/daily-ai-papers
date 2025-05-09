@@ -35347,5 +35347,165 @@
         "github_urls": [],
         "huggingface_urls": [],
         "date": "2025-05-08"
+    },
+    {
+        "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal\n  Reasoning Models",
+        "authors": "imryanxu, xyidealist, TerenceL-TL, foggyforest, YunxinLi",
+        "link": "https://arxiv.org/abs/2505.04921",
+        "github_repo": "https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models",
+        "summary": " - This paper provides a comprehensive survey of large multimodal reasoning models (LMRMs).\n - It introduces a three-stage roadmap for the development of LMRMs, from modular reasoning to multimodal chain-of-thought (MCoT), and finally to long-horizon reasoning.\n - The survey also introduces and analyzes Native Large Multimodal Reasoning Models (N-LMRMs), a forward-looking paradigm where reasoning natively emerges from omnimodal perception and interaction.\n - Existing datasets and benchmarks are reorganized to clarify their categories and evaluation dimensions.\n - The paper identifies limitations of current LMRMs and outlines research directions to advance the field.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "Flow-GRPO: Training Flow Matching Models via Online RL",
+        "authors": "dizhang, Xintao, CheeryLJH, Lp256, liuhuohuo",
+        "link": "https://arxiv.org/abs/2505.05470",
+        "github_repo": "https://github.com/yifan123/flow_grpo",
+        "summary": "- Flow-GRPO is a novel method that integrates online reinforcement learning (RL) into flow matching models for text-to-image generation.\n- It uses two key strategies: an ODE-to-SDE conversion for stochastic sampling and a denoising reduction strategy to improve sampling efficiency.\n- Flow-GRPO significantly improves performance on multiple text-to-image tasks, achieving near-perfect object counts, spatial relations, and fine-grained attributes in complex compositions.\n- It demonstrates substantial gains in human preference alignment without reward hacking, maintaining stable image quality and diversity.\n- The method enhances the accuracy on GenEval benchmark from 63% to 95% and visual text rendering accuracy from 59% to 92%.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/yifan123/flow_grpo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "Sentient Agent as a Judge: Evaluating Higher-Order Social Cognition in\n  Large Language Models",
+        "authors": "Peisong Wang, Qingxuan Jiang, Bang Zhang, zptu, vvibt",
+        "link": "https://arxiv.org/abs/2505.02847",
+        "github_repo": null,
+        "summary": "- This paper introduces Sentient Agent as a Judge (SAGE), a novel automated evaluation framework for assessing higher-order social cognition in LLMs.\n- SAGE uses a Sentient Agent that simulates human-like emotional changes and inner thoughts to provide more realistic evaluation during multi-turn conversations.\n- Experiments on 100 supportive-dialogue scenarios demonstrate that the Sentient emotion score correlates strongly with established human-centric instruments, validating psychological fidelity.\n- A public Sentient Leaderboard is created, revealing substantial gaps between frontier systems and earlier baselines, which are not reflected in conventional leaderboards.\n- SAGE provides a principled, scalable, and interpretable tool for tracking progress toward genuinely empathetic and socially adept language agents.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/tencent/digitalhuman/SAGE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "Scalable Chain of Thoughts via Elastic Reasoning",
+        "authors": "cxiong, JunnanLi, doyensahoo, hendrydong, yuhuixu",
+        "link": "https://arxiv.org/abs/2505.05315",
+        "github_repo": null,
+        "summary": "- The paper introduces Elastic Reasoning, a novel framework that enhances the scalability of chain-of-thought (CoT) reasoning in large language models (LLMs) by separating the reasoning process into two phases: thinking and solution, each with independent budget allocations.\n- The proposed framework addresses the challenge of uncontrolled output lengths in CoT reasoning, which often hinders real-world deployment due to constraints on inference-time budgets.\n- A lightweight budget-constrained rollout strategy is introduced to improve the model's robustness to truncated thinking, enabling it to generalize effectively to unseen budget constraints without additional training.\n- Empirical results on mathematical and programming benchmarks demonstrate that Elastic Reasoning significantly improves reliability under tight resource constraints and produces more concise and efficient reasoning than baseline methods.\n- The method outperforms existing approaches like Long2Short and length control methods in terms of both accuracy and efficiency, particularly under strict resource constraints.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "3D Scene Generation: A Survey",
+        "authors": "Fangzhou Hong, liuziwei7, FrozenBurning, hzxie, wenbc21",
+        "link": "https://arxiv.org/abs/2505.05474",
+        "github_repo": "https://github.com/hzxie/Awesome-3D-Scene-Generation",
+        "summary": "This survey paper systematically reviews state-of-the-art 3D scene generation methods, categorizing them into four paradigms: procedural generation, neural 3D-based generation, image-based generation, and video-based generation.  It analyzes their technical foundations, strengths, weaknesses, and representative results, providing a comprehensive overview of the field. The paper also discusses commonly used datasets, evaluation protocols, and downstream applications. Finally, it identifies key challenges and promising future directions in higher-fidelity, physics-aware, and interactive generation, and unified perception-generation models.",
+        "classification": [
+            "Computer Vision",
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/hzxie/Awesome-3D-Scene-Generation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "ICon: In-Context Contribution for Automatic Data Selection",
+        "authors": "Zhifang Sui, soliz1998, yaolily, Rsy24, yyxsghx",
+        "link": "https://arxiv.org/abs/2505.05327",
+        "github_repo": null,
+        "summary": "- This paper introduces ICON, a novel gradient-free method for automatic data selection in instruction tuning that leverages in-context learning (ICL).\n- ICON measures sample contribution without gradient computation or manual indicators, offering a computationally efficient alternative to existing methods.\n- Experiments on three LLMs across 12 benchmarks demonstrate ICON's effectiveness, with models trained on 15% of ICON-selected data outperforming full datasets.\n- ICON-selected high-contribution samples exhibit diverse tasks and appropriate difficulty levels.\n- The ICON-guided selection paradigm enables scalable inference through linear-complexity calls.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://annayang2020.github.io/ICon_Data_Selection/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "LiftFeat: 3D Geometry-Aware Local Feature Matching",
+        "authors": "Jinchi Zhu, Yuxuan Xiong, Zhou Zhao, Wenpeng Lai, pengliu123",
+        "link": "https://arxiv.org/abs/2505.03422",
+        "github_repo": "https://github.com/lyp-deeplearning/LiftFeat",
+        "summary": "- This paper introduces LiftFeat, a lightweight network for 3D geometry-aware local feature matching that integrates surface normal information from depth maps to enhance 2D descriptor matching.\n- The model architecture consists of a shared feature encoding module and multiple task-specific heads for keypoints, descriptors, and surface normals.\n- LiftFeat uses a 3D Geometry-aware Feature Lifting (3D-GFL) module to fuse surface normal features with raw 2D descriptors, improving the discriminative ability of 2D features in challenging scenarios.\n- Experimental results on relative pose estimation, homography estimation, and visual localization demonstrate that LiftFeat outperforms some lightweight state-of-the-art methods.\n- The method achieves an inference latency of 7.4ms on edge devices, making it suitable for real-time robotic applications.",
+        "classification": [
+            "Computer Vision",
+            "Image Feature Extraction",
+            "Keypoint Detection",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/lyp-deeplearning/LiftFeat"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "X-Reasoner: Towards Generalizable Reasoning Across Modalities and\n  Domains",
+        "authors": "RustyArchimedes, sidkiblawi, hiaoxui, shengz, qianchu",
+        "link": "https://arxiv.org/abs/2505.03981",
+        "github_repo": null,
+        "summary": "- This paper introduces X-REASONER, a vision-language model that achieves strong generalizable reasoning capabilities across modalities and domains through general-domain text-based post-training.\n- The model is trained using a two-stage approach: supervised fine-tuning with distilled long chain-of-thoughts followed by reinforcement learning with verifiable rewards.\n- Experiments demonstrate that X-REASONER outperforms existing state-of-the-art models on various general and medical benchmarks, showcasing its ability to transfer reasoning capabilities to both multimodal and out-of-domain settings.\n- A medical-specialized variant, X-REASONER-MED, is also introduced, achieving new state-of-the-art results on numerous medical benchmarks.\n- The findings support the hypothesis that reasoning is generalizable across modalities and domains, and that general-domain text-based post-training can effectively enable strong generalizable reasoning.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/x-reasoner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language\n  Models in Chinese",
+        "authors": "Bruce Leon, HawkFaust, yeeeqichen99, MindYing, PALIN2018",
+        "link": "https://arxiv.org/abs/2504.19314",
+        "github_repo": "https://github.com/PALIN2018/BrowseComp-ZH",
+        "summary": "- This paper introduces BrowseComp-ZH, a new benchmark designed to evaluate the web browsing capabilities of Large Language Models (LLMs) specifically in Chinese.\n- The benchmark consists of 289 multi-hop questions covering 11 diverse domains, each reverse-engineered from a short, verifiable answer.\n- The dataset underwent a two-stage quality control process to ensure question difficulty and answer uniqueness.\n- Evaluation of over 20 state-of-the-art LLMs and search systems revealed that most models struggle, with accuracy rates below 10% for many.\n- The best-performing system achieved only 42.9% accuracy, highlighting the challenge of web browsing for current LLMs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/PALIN2018/BrowseComp-ZH"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
+    },
+    {
+        "title": "Chain-of-Thought Tokens are Computer Program Variables",
+        "authors": "Zhifang Sui, peiyiwang89, soliz1998",
+        "link": "https://arxiv.org/abs/2505.04955",
+        "github_repo": "https://github.com/solitaryzero/CoTs_are_Variables",
+        "summary": "- This paper explores the role of chain-of-thought (CoT) tokens in large language models (LLMs), proposing the hypothesis that they function like computer program variables.\n- The authors conduct empirical studies on multi-digit multiplication and dynamic programming tasks, demonstrating that CoT tokens primarily store intermediate results.\n- Their experiments reveal that models can maintain comparable performance even when non-result tokens are removed or intermediate results are represented in latent forms.\n- Randomly intervening values in CoT tokens causes corresponding changes in subsequent tokens and the final answer, further supporting the variable-like behavior of CoT tokens.\n- The findings suggest a potential limit to computation complexity between CoT tokens, influencing model performance on complex tasks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/solitaryzero/CoTs_are_Variables"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-09"
     }
 ]

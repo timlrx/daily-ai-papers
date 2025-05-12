@@ -1,0 +1,119 @@
+[
+    {
+        "title": "Bielik v3 Small: Technical Report",
+        "authors": "Adrian Gwo\u017adziej, \u0141ukasz Flis, djstrong, Remek, chrisociepa",
+        "link": "https://arxiv.org/abs/2505.02550",
+        "github_repo": null,
+        "summary": "This paper introduces Bielik v3, a series of parameter-efficient generative text models (1.5B and 4.5B parameters) optimized for Polish language processing.  The models utilize a custom Polish tokenizer (APT4) and Adaptive Learning Rate for improved efficiency.  Bielik v3 models achieve performance comparable to much larger models on various benchmarks including the Open PL LLM Leaderboard and the Complex Polish Text Understanding Benchmark.  This demonstrates the effectiveness of the proposed techniques for resource-efficient language modeling in less-resourced languages. The models were trained on a large, high-quality Polish corpus of 292 billion tokens and achieve state-of-the-art results on several Polish NLP benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/SpeakLeash"
+        ],
+        "date": "2025-05-12"
+    },
+    {
+        "title": "Bielik 11B v2 Technical Report",
+        "authors": "Adrian Gwo\u017adziej, \u0141ukasz Flis, Remek, djstrong, chrisociepa",
+        "link": "https://arxiv.org/abs/2505.02410",
+        "github_repo": null,
+        "summary": "\n- This paper introduces Bielik 11B v2, a state-of-the-art language model optimized for Polish text processing, built on the Mistral 7B v0.2 architecture and scaled to 11B parameters using depth up-scaling.\n- Two key technical innovations are introduced: Weighted Instruction Cross-Entropy Loss and Adaptive Learning Rate, enhancing performance and efficiency.\n- Bielik 11B v2 outperforms many larger models across Polish language benchmarks while maintaining cross-lingual capabilities.\n- The model demonstrates parameter efficiency and offers various quantization options enabling deployment on diverse hardware configurations.\n- Extensive evaluation across multiple benchmarks establishes new benchmarks for resource-efficient language modeling in under-resourced languages.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/speakleash/open_pl_llm_leaderboard",
+            "https://huggingface.co/spaces/speakleash/cptu_bench",
+            "https://huggingface.co/spaces/eduagarcia/open_pt_llm_leaderboard"
+        ],
+        "date": "2025-05-12"
+    },
+    {
+        "title": "Healthy LLMs? Benchmarking LLM Knowledge of UK Government Public Health\n  Information",
+        "authors": "Toby Nonnenmacher, Timothy Laurence, Felix Feldman, Fan Grayson, Joshua-Harris",
+        "link": "https://arxiv.org/abs/2505.06046",
+        "github_repo": null,
+        "summary": "This paper introduces PubHealthBench, a new benchmark containing over 8000 questions for evaluating LLMs' knowledge of UK government public health information.  It includes both multiple-choice questions and free-form response sections.  The benchmark is grounded in a new dataset of extracted UK government public health guidance documents.  Results show that the latest private LLMs outperform humans in the multiple-choice setup but perform less well in the free-form response section, highlighting the need for additional safeguards when using LLMs for public health information.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Joshua-Harris/PubHealthBench-documents",
+            "https://huggingface.co/datasets/Joshua-Harris/PubHealthBench"
+        ],
+        "date": "2025-05-12"
+    },
+    {
+        "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+        "authors": "Shenyuan Gao, Jisong Cai, Yanting Yang, Qingwen Bu, sundrops",
+        "link": "https://arxiv.org/abs/2505.06111",
+        "github_repo": "https://github.com/OpenDriveLab/UniVLA",
+        "summary": "- This paper introduces UniVLA, a unified vision-language-action (VLA) framework for learning cross-embodiment robotic policies.\n- UniVLA uses a latent action model to derive task-centric action representations from videos in an unsupervised manner, enabling the use of extensive data from various embodiments and perspectives.\n- The model achieves state-of-the-art results on multiple manipulation and navigation benchmarks, outperforming existing methods such as OpenVLA by a significant margin while requiring substantially less pretraining compute and downstream data.\n- UniVLA demonstrates superior generalization capabilities across diverse scenarios, including unseen tasks, embodiments, and environmental variations.\n- The framework's efficiency, scalability, and generalizability highlight its potential to facilitate scalable and efficient robot policy learning.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/OpenDriveLab/UniVLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-12"
+    },
+    {
+        "title": "G-FOCUS: Towards a Robust Method for Assessing UI Design Persuasiveness",
+        "authors": "Yejin Choi, Sumin Shim, Min Soo Kim, Jang Han Yoon, jeochris",
+        "link": "https://arxiv.org/abs/2505.05026",
+        "github_repo": null,
+        "summary": "- This paper introduces WISERUI-BENCH, a benchmark dataset for pairwise UI design persuasiveness assessment, comprising 300 real-world UI image pairs labeled with A/B test results and expert rationales.\n- It proposes G-FOCUS, a novel inference-time reasoning strategy that enhances VLM-based persuasiveness assessment by mitigating position bias and improving accuracy.\n- G-FOCUS surpasses existing inference strategies in terms of consistency and accuracy for pairwise UI evaluation, as demonstrated by experimental results.\n- The study uses various VLMs (e.g., GPT-40, Claude 3.5, LLaMA 3.2) for evaluation and analysis.\n- The contributions include a new benchmark dataset and a novel inference-time reasoning strategy for VLM-based UI design persuasiveness assessment.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Image-to-Image",
+            "Visual Question Answering",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-12"
+    },
+    {
+        "title": "Sailing AI by the Stars: A Survey of Learning from Rewards in\n  Post-Training and Test-Time Scaling of Large Language Models",
+        "authors": "Xiaobao Wu",
+        "link": "https://arxiv.org/abs/2505.02686",
+        "github_repo": "https://github.com/bobxwu/learning-from-rewards-llm-papers",
+        "summary": " - This survey paper provides a comprehensive overview of the learning from rewards paradigm in post-training and test-time scaling of large language models (LLMs).\n- The authors categorize and analyze the learning from rewards strategies across different stages: training, inference, and post-inference, and discuss the applications and benchmarks for reward models.\n- The unified conceptual framework of learning from rewards for LLMs is introduced, abstracting the key components and interactions involved.\n- The paper explores the taxonomy of learning from rewards for LLMs, categorizing existing works with a unified conceptual framework regarding reward model design and learning strategies.\n- Finally, the authors highlight the challenges and promising future directions in this field.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/bobxwu/learning-from-rewards-llm-papers"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-12"
+    },
+    {
+        "title": "A Preliminary Study for GPT-4o on Image Restoration",
+        "authors": "Liyuan Pan, Ruikun Zhang, Yan Yang, Hao Yang",
+        "link": "https://arxiv.org/abs/2505.05621",
+        "github_repo": null,
+        "summary": "- This paper presents the first systematic evaluation of GPT-40 for image restoration tasks.\n- The authors find that while GPT-40 produces visually appealing results, it often suffers from pixel-level structural fidelity issues such as variations in image proportions, object positions, and viewpoints.\n- To address this, they propose a baseline approach using GPT-40 outputs as visual priors to enhance existing dehazing networks.\n- Their experiments show that this approach significantly improves the performance of existing dehazing networks, demonstrating the potential of GPT-40 as a powerful visual prior for image restoration.\n- The authors release GPT-40-restored images from over 10 widely used image restoration datasets to facilitate further research.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/noxsine/GPT_Restoration"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-12"
+    }
+]

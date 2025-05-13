@@ -35624,5 +35624,316 @@
         ],
         "huggingface_urls": [],
         "date": "2025-05-12"
+    },
+    {
+        "title": "Seed1.5-VL Technical Report",
+        "authors": "kuma-zhao, yuanlp, 0nejiawei, chb1997, anyuzx",
+        "link": "https://arxiv.org/abs/2505.07062",
+        "github_repo": null,
+        "summary": "This paper introduces Seed1.5-VL, a vision-language multimodal model with a 532M parameter vision encoder and a 20B parameter Mixture-of-Experts (MoE) LLM.  Seed1.5-VL achieves state-of-the-art performance on 38 out of 60 public benchmarks. The model demonstrates strong reasoning abilities in various tasks like GUI control and visual puzzles, surpassing existing multimodal models.  Its development involved novel data synthesis strategies and hybrid parallelism training techniques.  The model is now accessible through Volcano Engine.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "MiMo: Unlocking the Reasoning Potential of Language Model -- From\n  Pretraining to Posttraining",
+        "authors": "whatseeker, Prestonprom, HugoZHL, dwzhu, xiabingquan",
+        "link": "https://arxiv.org/abs/2505.07608",
+        "github_repo": "https://github.com/xiaomimimo/MiMo",
+        "summary": "- MiMo-7B is a large language model designed for reasoning tasks, optimized across pre-training and post-training stages.\n- The model architecture uses a decoder-only Transformer with Grouped-Query Attention, SwiGLU activation, and Rotary Positional Embedding, incorporating Multi-Token Prediction for enhanced performance and speed.\n- Post-training involves reinforcement learning on a dataset of 130K verifiable math and programming problems, using a test-difficulty-driven code-reward scheme and data resampling.\n- MiMo-7B-RL outperforms larger 32B models on mathematics, code, and general reasoning benchmarks, surpassing OpenAI 01-mini.\n- Model checkpoints are available at the provided GitHub URL.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/xiaomimimo/MiMo"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Step1X-3D: Towards High-Fidelity and Controllable Generation of Textured\n  3D Assets",
+        "authors": "PanJianxiong, flybirdtian, shian7, wchengad, xuanyangz",
+        "link": "https://arxiv.org/abs/2505.07747",
+        "github_repo": null,
+        "summary": "- This paper introduces Step1X-3D, an open-source framework for high-fidelity and controllable textured 3D asset generation.\n- Step1X-3D employs a two-stage architecture: a hybrid VAE-DiT geometry generator and a diffusion-based texture synthesis module.  The geometry generator uses a perceiver-based latent encoding with sharp edge sampling, while the texture module ensures cross-view consistency through geometric conditioning and latent-space synchronization.\n- The framework bridges 2D and 3D generation paradigms, allowing for the direct transfer of 2D control techniques (e.g., LoRA) to 3D synthesis.\n- Benchmark results show that Step1X-3D outperforms existing open-source methods and achieves competitive quality with proprietary solutions.\n- Step1X-3D's open-source release includes models, training code, and adaptation modules, promoting reproducibility and further research in 3D asset generation.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/stepfun-ai/Step1X-3D"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/docs/diffusers/index"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Learning from Peers in Reasoning Models",
+        "authors": "Benyou, tangzhy, Jiaxi0775, wydu, Zeno-Luo",
+        "link": "https://arxiv.org/abs/2505.07787",
+        "github_repo": null,
+        "summary": "This paper introduces LeaP, a novel approach to enhance the reasoning capabilities of Large Reasoning Models (LRMs). LeaP addresses the \"Prefix Dominance Trap,\" where LRMs struggle to recover from poor initial reasoning paths, by enabling cross-path interaction during parallel inference.  Experimental results across several benchmarks demonstrate substantial improvements, with QwQ-32B with LeaP achieving nearly 5 absolute points higher than the baseline.  A fine-tuned version, LeaP-T, further enhances the performance of smaller models.  LeaP's robust error correction and strong handling of varied task difficulty showcase the effectiveness of collaboration during reasoning.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://learning-from-peers.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Unified Continuous Generative Models",
+        "authors": "Yi Jiang, tlin-taolin, sp12138sp",
+        "link": "https://arxiv.org/abs/2505.07447",
+        "github_repo": "https://github.com/LINs-lab/UCGM",
+        "summary": " - This paper introduces a unified framework, UCGM, for training and sampling continuous generative models, encompassing multi-step (diffusion, flow-matching) and few-step (consistency) methods. \n- UCGM-T, the unified trainer, uses a single training objective parameterized by a consistency ratio (\u03bb), allowing flexible generation of both few-step and multi-step models. \n- UCGM-S, the unified sampler, works seamlessly with models trained via UCGM-T and enhances sampling efficiency from pre-trained models using self-boosting techniques. \n- Experiments on ImageNet show that UCGM achieves state-of-the-art results (FID: 1.30 in 20 sampling steps for a multi-step model and 1.42 FID in 2 steps for a few-step model), outperforming existing methods. \n- Code is publicly available, showcasing the versatility and efficiency of the unified framework in both multi-step and few-step generative models.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/LINs-lab/UCGM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "REFINE-AF: A Task-Agnostic Framework to Align Language Models via\n  Self-Generated Instructions using Reinforcement Learning from Automated\n  Feedback",
+        "authors": "Pawan Goyal, Somak Aditya, Aniruddha Roy, abhi1nandy2, Pretam",
+        "link": "https://arxiv.org/abs/2505.06548",
+        "github_repo": null,
+        "summary": "- This paper introduces REFINE-AF, a task-agnostic framework for aligning language models using self-generated instructions and reinforcement learning from automated feedback.\n- REFINE-AF utilizes small, open-source LLMs (LLaMA 2-7B, LLaMA 2-13B, and Mistral 7B) to generate instructions, reducing the need for expensive and time-consuming human annotation.\n- The framework incorporates reinforcement learning to improve the quality of generated instruction-input-output triplets.\n- Experiments demonstrate that REFINE-AF achieves significant improvements (63-66%) across various tasks compared to previous approaches.\n- A large synthetic dataset of 45K instructions generated by REFINE-AF is released to facilitate further research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "DanceGRPO: Unleashing GRPO on Visual Generation",
+        "authors": "appleluo, ChenMnZ, ltzhu, wujie10, xzyhku",
+        "link": "https://arxiv.org/abs/2505.07818",
+        "github_repo": null,
+        "summary": "- DanceGRPO is a novel unified framework that adapts Group Relative Policy Optimization (GRPO) to visual generation tasks, achieving seamless integration across various generative paradigms and tasks.\n- The framework handles diffusion models and rectified flows, supporting text-to-image, text-to-video, and image-to-video generation tasks, demonstrating consistent and substantial improvements over existing methods.\n- DanceGRPO exhibits significant performance gains, outperforming baselines by up to 181% on benchmark datasets, showcasing effectiveness and scalability.\n- This unified approach addresses critical limitations of existing RL-based methods, including incompatibility with ODE-based sampling, instability in large-scale training, and lack of validation for video generation.\n- The code will be released, fostering further research and development in reinforcement learning for visual synthesis.",
+        "classification": [
+            "Reinforcement Learning",
+            "Text-to-Image",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://dancegrpo.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "AttentionInfluence: Adopting Attention Head Influence for Weak-to-Strong\n  Pretraining Data Selection",
+        "authors": "Steven Wu, Kai Hua, shenke18, zhangysk",
+        "link": "https://arxiv.org/abs/2505.07293",
+        "github_repo": null,
+        "summary": " - AttentionInfluence is proposed as a novel, training-free method for pretraining data selection that leverages the intrinsic attention head mechanisms of LLMs. \n -  The approach identifies retrieval heads and computes loss differences when masking these heads, using a small pretrained language model as a data selector. \n - The method demonstrates a weak-to-strong scaling property, meaning small models can significantly improve the performance of larger models. \n - Experimental results on multiple benchmarks show improvements ranging from 1.4pp to 3.5pp, showcasing AttentionInfluence's effectiveness. \n - The study highlights AttentionInfluence's ability to select high-quality, well-distributed data that enhances the reasoning capabilities of downstream models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional\n  Websites from Scratch",
+        "authors": "shiwk20, hht1113, Houxing, Yqy6, luzimu",
+        "link": "https://arxiv.org/abs/2505.03733",
+        "github_repo": null,
+        "summary": "This paper introduces WebGen-Bench, a new benchmark designed to evaluate Large Language Models' (LLMs) ability to generate functional websites from scratch.  WebGen-Bench includes diverse website generation instructions and corresponding test cases for thorough evaluation.  Experiments using multiple code-agent frameworks showed that the best-performing model achieves only 27.8% accuracy, highlighting the benchmark's difficulty.  A training set, WebGen-Instruct, was also created and used to fine-tune a model which reached 38.2% accuracy, surpassing existing proprietary models. The datasets and code are publicly available.",
+        "classification": [
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/mnluzimu/WebGen-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Learning Dynamics in Continual Pre-Training for Large Language Models",
+        "authors": "Daniel Dajun Zeng, Lu Wang, Xingjin Wang, linjinglian, Howe77",
+        "link": "https://arxiv.org/abs/2505.07796",
+        "github_repo": null,
+        "summary": "*- This paper introduces a novel CPT scaling law that accurately predicts loss at any training step in continual pre-training, considering both distribution shift and learning rate annealing.\n- The scaling law integrates various factors impacting CPT performance, including loss potential, peak learning rate, training steps, and replay ratio.\n- Extensive experiments demonstrate the law's accuracy across different datasets, training hyperparameters, and model sizes.\n- The scaling law helps optimize hyperparameters for diverse CPT goals, such as balancing general and domain-specific performance.\n- The study provides deeper insights into the learning dynamics of LLMs, facilitating better adaptation to downstream tasks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Skywork-VL Reward: An Effective Reward Model for Multimodal\n  Understanding and Reasoning",
+        "authors": "Yi Peng, Wei Shen, Jiangbo Pei, OrlandoHugBot, shawn0wang",
+        "link": "https://arxiv.org/abs/2505.07263",
+        "github_repo": null,
+        "summary": "- This paper introduces Skywork-VL Reward, a novel multimodal reward model designed for both multimodal understanding and reasoning tasks.\n- The model architecture is based on Qwen2.5-VL-7B-Instruct, incorporating a reward head and utilizing a multi-stage fine-tuning process with pairwise ranking loss.\n- Experimental results demonstrate that Skywork-VL Reward achieves state-of-the-art performance on the VL-RewardBench benchmark and shows competitive results on RewardBench.\n- The preference data generated by Skywork-VL Reward is highly effective for training Mixed Preference Optimization (MPO), leading to significant improvements in multimodal reasoning capabilities.\n- The model has been publicly released to ensure transparency and reproducibility.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Skywork/Skywork-VL-Reward-7B"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Reinforced Internal-External Knowledge Synergistic Reasoning for\n  Efficient Adaptive Search Agent",
+        "authors": "Kang Liu, Jun Zhao, Yiming Ju, Xiaowei Yuan, hzy",
+        "link": "https://arxiv.org/abs/2505.07596",
+        "github_repo": null,
+        "summary": "- This paper introduces IKEA, a novel reinforcement learning-based adaptive search agent designed to synergistically integrate internal and external knowledge for efficient question answering.\n- IKEA utilizes a knowledge-boundary aware reward function and training dataset to incentivize the model to prioritize internal knowledge and only resort to external retrieval when necessary, thereby reducing retrieval redundancy and latency.\n- The proposed agent demonstrates robust generalization capabilities and significantly outperforms baseline methods across multiple knowledge-intensive reasoning tasks.\n- Evaluations show that IKEA effectively minimizes unnecessary retrievals while maintaining high accuracy compared to existing search agents.\n- The authors demonstrate the effectiveness of their approach through comprehensive evaluations on multiple datasets, showcasing improved performance and reduced retrieval frequency.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hzy312/knowledge-r1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "H^{3}DP: Triply-Hierarchical Diffusion Policy for Visuomotor\n  Learning",
+        "authors": "Pu Hua, Zhecheng Yuan, Yufeng Tian, binaryXwizard, Lyy0725",
+        "link": "https://arxiv.org/abs/2505.07819",
+        "github_repo": null,
+        "summary": "- This paper introduces H\u00b3DP, a novel visuomotor learning framework that leverages a triply-hierarchical structure for improved robotic manipulation.\n- H\u00b3DP incorporates three levels of hierarchy: depth-aware input layering, multi-scale visual representations, and a hierarchically conditioned diffusion process for action generation.\n- Extensive experiments demonstrate that H\u00b3DP outperforms state-of-the-art methods by +27.5% on 44 simulation tasks and achieves superior performance in challenging real-world scenarios.\n- Ablation studies show that each hierarchical component contributes to improved performance.\n- The proposed method is demonstrated in 4 challenging bimanual real-world manipulation tasks, achieving a +32.3% performance improvement over baselines.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://lyy-iiis.github.io/h3dp/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Continuous Visual Autoregressive Generation via Score Maximization",
+        "authors": "Jie Zhou, Fandong Meng, cccczshao",
+        "link": "https://arxiv.org/abs/2505.07812",
+        "github_repo": "https://github.com/shaochenze/EAR",
+        "summary": "- This paper introduces a novel Continuous Visual Autoregressive (VAR) framework for direct visual autoregressive generation without vector quantization, addressing information loss in existing methods.\n- The framework leverages strictly proper scoring rules, primarily exploring the energy score as a likelihood-free training objective.\n- An Energy-based Autoregressive (EAR) model is developed, which uses a Transformer architecture with an MLP generator replacing the softmax layer for continuous token prediction.\n- Experimental results on the ImageNet 256x256 benchmark demonstrate that EAR achieves superior visual generation quality compared to traditional autoregressive Transformers using discrete tokenizers and diffusion-based methods while exhibiting substantially higher inference efficiency.\n- The EAR model achieves stronger visual generation quality than traditional autoregressive Transformers and exhibits substantially higher inference efficiency compared to diffusion-based methods.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/shaochenze/EAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Overflow Prevention Enhances Long-Context Recurrent LLMs",
+        "authors": "rgiryes, leokarlin, OmegaLittleBob, ItamarZ, assafbk",
+        "link": "https://arxiv.org/abs/2505.07793",
+        "github_repo": null,
+        "summary": "The paper introduces OPRM, a chunk-based inference strategy for enhancing long-context recurrent LLMs.  OPRM mitigates memory overflow issues by processing only the most relevant portion of the input, improving performance on several long-context tasks.  The method achieves state-of-the-art results on LongBench v2, surpassing comparable Transformer models.  Results are shown across multiple benchmarks and demonstrate consistent improvements in long-context tasks.  The work also challenges the assumption that recurrent models genuinely utilize long-range dependencies.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/assafbk/OPRM"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/tiiuae/falcon-mamba-7b-instruct",
+            "https://huggingface.co/tiiuae/Falcon3-Mamba-7B-Instruct",
+            "https://huggingface.co/google/recurrentgemma-9b-it",
+            "https://huggingface.co/RWKV/v6-Finch-7B-HF",
+            "https://huggingface.co/state-spaces/mamba-1.4b",
+            "https://huggingface.co/state-spaces/mamba-130m",
+            "https://huggingface.co/assafbk/decimamba-130m-niah",
+            "https://huggingface.co/assafbk/mamba-130m-niah"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "UMoE: Unifying Attention and FFN with Shared Experts",
+        "authors": "Jing Li, Chaozheng Wang, ysngkil",
+        "link": "https://arxiv.org/abs/2505.07260",
+        "github_repo": null,
+        "summary": "- This paper introduces UMoE, a novel unified Mixture-of-Experts (MoE) architecture that combines both attention and feed-forward network (FFN) layers with shared experts.\n- UMoE achieves this unification by reformulating the attention mechanism to reveal an underlying FFN-like structure, enabling efficient parameter sharing between the two components.\n- The model demonstrates superior performance compared to existing attention-based and FFN-based MoE approaches, achieving this result in both language modeling pretraining and zero-shot evaluation tasks.\n- UMoE's effectiveness stems from its unified design and efficient parameter sharing, which allows for improved performance with the same number of parameters.\n- The authors conduct extensive experiments on large-scale language models across various datasets and tasks, showing consistent superiority in performance and efficiency.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ysngki/UMoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Document Attribution: Examining Citation Relationships using Large\n  Language Models",
+        "authors": "Nedim Lipka, Vipula Rawte, Franck-Dernoncourt, ryanrossi",
+        "link": "https://arxiv.org/abs/2505.06324",
+        "github_repo": null,
+        "summary": "- This paper introduces two novel techniques for addressing the challenge of attribution in large language models (LLMs), focusing on tracing generated outputs back to their source documents.\n- The first technique is a zero-shot approach that frames attribution as a textual entailment task, demonstrating improvements of 0.27% and 2.4% over baseline methods on the AttributionBench dataset for in-distribution and out-of-distribution sets respectively.\n- The second technique explores the role of the attention mechanism in improving attribution accuracy, showing that a smaller LLM outperforms the baseline across multiple layers.\n- Experiments were conducted using AttributionBench, evaluating performance using F1 score, false positives, and false negatives.\n- The findings highlight the effectiveness of both zero-shot textual entailment and attention mechanisms for enhancing LLM attribution, advancing the interpretability and reliability of these models.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Physics-Assisted and Topology-Informed Deep Learning for Weather\n  Prediction",
+        "authors": "Yerong Feng, Qing Ling, Yumenomae",
+        "link": "https://arxiv.org/abs/2505.04918",
+        "github_repo": "https://github.com/Yumenomae/PASSAT_5p625",
+        "summary": "- PASSAT, a novel Physics-ASSisted And Topology-informed deep learning model for weather prediction, is proposed.\n- The model architecture incorporates the advection equation, Navier-Stokes equation, and a spherical graph neural network to capture Earth-atmosphere interactions.\n- PASSAT outperforms state-of-the-art deep learning models and the operational numerical weather prediction model IFS T42 on the ERA5 dataset.\n- Ablation studies demonstrate the importance of both physics and topology information in improving prediction accuracy.\n- The model addresses the limitations of existing methods by explicitly incorporating physical constraints and the Earth's spherical topology.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/Yumenomae/PASSAT_5p625"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-05-13"
+    },
+    {
+        "title": "Multi-Objective-Guided Discrete Flow Matching for Controllable\n  Biological Sequence Design",
+        "authors": "Tong Chen, pranamanam, sophtang, yinuozhang",
+        "link": "https://arxiv.org/abs/2505.07086",
+        "github_repo": null,
+        "summary": "- This paper introduces Multi-Objective-Guided Discrete Flow Matching (MOG-DFM), a novel framework for designing biological sequences that satisfy multiple, often conflicting objectives.\n- The framework uses a hybrid rank-directional scoring method and adaptive hypercone filtering to steer a pretrained discrete flow matching model towards Pareto-efficient trade-offs.\n- Two unconditional discrete flow matching models (PepDFM and EnhancerDFM) were trained for peptide and enhancer DNA generation, respectively, showing promising results on diversity and biological plausibility.\n- MOG-DFM demonstrates effectiveness in generating peptide binders optimized across five properties (hemolysis, non-fouling, solubility, half-life, and binding affinity) and in designing DNA sequences with specific enhancer classes and DNA shapes.\n- Experimental results show that MOG-DFM outperforms existing multi-objective optimization algorithms, achieving better trade-offs between conflicting objectives.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/ChatterjeeLab/MOG-DFM"
+        ],
+        "date": "2025-05-13"
     }
 ]

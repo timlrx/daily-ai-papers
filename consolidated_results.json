@@ -35935,5 +35935,94 @@
             "https://huggingface.co/ChatterjeeLab/MOG-DFM"
         ],
         "date": "2025-05-13"
+    },
+    {
+        "title": "MiniMax-Speech: Intrinsic Zero-Shot Text-to-Speech with a Learnable\n  Speaker Encoder",
+        "authors": "Congchao Guo, Bowen Zhang, ymzhang0519, mqyang1s, JunjieYan",
+        "link": "https://arxiv.org/abs/2505.07916",
+        "github_repo": null,
+        "summary": "- This paper introduces MiniMax-Speech, a novel autoregressive Transformer-based Text-to-Speech (TTS) model featuring a learnable speaker encoder. \n- The model architecture includes a tokenizer, autoregressive Transformer, and a latent flow matching model with Flow-VAE. \n- MiniMax-Speech achieves state-of-the-art (SOTA) results on objective voice cloning metrics (Word Error Rate and Speaker Similarity) and secured top position on the public TTS Arena leaderboard. \n- The model supports zero-shot and one-shot voice cloning and demonstrates strong performance across 32 languages. \n- Ablation studies show the effectiveness of the learnable speaker encoder and Flow-VAE in improving audio quality and speaker similarity.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://minimax-ai.github.io/tts_tech_report"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/MiniMaxAI/TTS-Multilingual-Test-Set"
+        ],
+        "date": "2025-05-14"
+    },
+    {
+        "title": "A Multi-Dimensional Constraint Framework for Evaluating and Improving\n  Instruction Following in Large Language Models",
+        "authors": "xjhuang, sean-xl-y, wuyilong, avonfwj, Junjie-Ye",
+        "link": "https://arxiv.org/abs/2505.07591",
+        "github_repo": "https://github.com/Junjie-Ye/MulDimIF",
+        "summary": "This paper introduces a novel multi-dimensional constraint framework for evaluating and enhancing instruction following in large language models.  The framework is utilized to construct a benchmark dataset of 1200 instruction-following test samples with code-verifiable constraints.  Experiments on 19 LLMs across seven model families reveal substantial performance variations across diverse constraint forms.  Finally, the authors demonstrate that reinforcement learning utilizing their generated dataset significantly improves instruction following, primarily by modifying attention module parameters.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Junjie-Ye/MulDimIF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-14"
+    },
+    {
+        "title": "Measuring General Intelligence with Generated Games",
+        "authors": "William Chen, David Huang, nickatomlin, danjklein, vivekverma",
+        "link": "https://arxiv.org/abs/2505.07215",
+        "github_repo": null,
+        "summary": "- This paper introduces gg-bench, a novel benchmark for evaluating general reasoning capabilities in language models using synthetically generated games.\n- The benchmark leverages LLMs to generate natural language descriptions of games, implement them in code, and train reinforcement learning agents via self-play.\n- Language models are evaluated based on their win rates against these RL agents, prompting the models with game descriptions, current board states, and valid moves.\n- gg-bench presents a challenge for state-of-the-art LLMs, with win rates between 7-9% observed using in-context learning, while reasoning models achieve 31-36% win rates.\n- The generated games, data generation process, and evaluation code are publicly released to support further research and benchmark expansion.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/vivek3141/gg-bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-14"
+    },
+    {
+        "title": "SkillFormer: Unified Multi-View Video Understanding for Proficiency\n  Estimation",
+        "authors": "ucaclio, EdBianchi",
+        "link": "https://arxiv.org/abs/2505.08665",
+        "github_repo": null,
+        "summary": "- This paper introduces SkillFormer, a novel parameter-efficient architecture for unified multi-view proficiency estimation from egocentric and exocentric videos.\n- SkillFormer uses a TimeSformer backbone enhanced with a CrossViewFusion module that effectively fuses view-specific features using multi-head cross-attention and learnable gating.\n- The model incorporates Low-Rank Adaptation (LoRA) for efficient fine-tuning, significantly reducing training costs and improving computational efficiency.\n- Compared to state-of-the-art benchmarks on the EgoExo4D dataset, SkillFormer achieves state-of-the-art accuracy in multi-view settings, outperforming baselines by a significant margin.\n- SkillFormer excels in multiple structured tasks, confirming the value of multi-view integration for fine-grained skill assessment.",
+        "classification": [
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-14"
+    },
+    {
+        "title": "NavDP: Learning Sim-to-Real Navigation Diffusion Policy with Privileged\n  Information Guidance",
+        "authors": "Yujian Zhang, Jiaqi Peng, Jiangmiao, fulifuli666, WadeCai",
+        "link": "https://arxiv.org/abs/2505.08712",
+        "github_repo": null,
+        "summary": "- This paper introduces NavDP, a novel end-to-end framework for learning sim-to-real navigation policies that leverages diffusion models and privileged information.\n- NavDP combines diffusion-based trajectory generation and a critic function for trajectory selection, conditioned on local observations from a shared policy transformer.\n- The model is trained on a large-scale simulation dataset (363.2km trajectories across 1244 scenes), generated efficiently using global information, significantly outperforming real-world data collection methods.\n- NavDP achieves state-of-the-art performance and strong generalization across diverse embodiments (quadruped, wheeled, humanoid robots) and environments (indoor and outdoor).\n- Real-to-sim fine-tuning with Gaussian Splatting further bridges the sim-to-real gap, improving success rates by 30% without harming generalization.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-14"
+    },
+    {
+        "title": "ViMRHP: A Vietnamese Benchmark Dataset for Multimodal Review Helpfulness\n  Prediction via Human-AI Collaborative Annotation",
+        "authors": "Kiet Van Nguyen, Dat Minh Nguyen, sonlam1102, trucnguyen28",
+        "link": "https://arxiv.org/abs/2505.07416",
+        "github_repo": "https://github.com/trng28/ViMRHP",
+        "summary": "- This paper introduces ViMRHP, a new Vietnamese benchmark dataset for multimodal review helpfulness prediction (MRHP).\n- ViMRHP contains 46K reviews across four domains, with AI assistance significantly reducing annotation time and cost.\n- A human-AI collaborative annotation framework was used, resulting in a high-quality dataset.\n- Baseline models were evaluated on both AI-generated and human-verified annotations; human verification improved performance.\n- The dataset is publicly available and contributes to the advancement of MRHP research in low-resource languages.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/trng28/ViMRHP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-14"
     }
 ]

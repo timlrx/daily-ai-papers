@@ -1,0 +1,141 @@
+[
+    {
+        "title": "DeCLIP: Decoupled Learning for Open-Vocabulary Dense Perception",
+        "authors": "Yichi Chen, Bin Kang, Yulin Li, Bin Chen, xiaomoguhzz",
+        "link": "https://arxiv.org/abs/2505.04410",
+        "github_repo": "https://github.com/xiaomoguhz/DeCLIP",
+        "summary": " - DeCLIP is a novel framework that enhances CLIP by decoupling its self-attention module into \"content\" and \"context\" features.\n- The \"content\" features are aligned with image crop representations to improve local discriminability, while \"context\" features learn to retain spatial correlations.\n- DeCLIP outperforms existing methods across multiple open-vocabulary dense prediction tasks, including object detection and semantic segmentation.\n- The model's performance is extensively validated on multiple open-vocabulary benchmarks, showcasing significant improvements over existing state-of-the-art methods.\n- The code for DeCLIP is publicly available on GitHub.",
+        "classification": [
+            "Object Detection",
+            "Image Segmentation",
+            "Zero-Shot Object Detection",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/xiaomoguhz/DeCLIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "BLIP3-o: A Family of Fully Open Unified Multimodal Models-Architecture,\n  Training and Dataset",
+        "authors": "Zhiyang Xu, Jiuhai Chen, xurantju, zhoutianyi, xcpan",
+        "link": "https://arxiv.org/abs/2505.09568",
+        "github_repo": null,
+        "summary": "- This paper introduces BLIP3-0, a family of fully open unified multimodal models that excel in both image understanding and generation tasks.\n- The model architecture employs a diffusion transformer to generate semantically rich CLIP image features, enhancing training efficiency and improving generation quality.\n- BLIP3-0 utilizes a sequential pretraining strategy, initially focusing on image understanding and subsequently on image generation, effectively preserving image understanding capabilities while developing robust image generation abilities.\n- A high-quality instruction-tuning dataset, BLIP3-0-60k, is introduced, which is carefully curated using GPT-4 to enhance model alignment with human preferences.\n- BLIP3-0 outperforms existing state-of-the-art unified multimodal models across various benchmark tasks, demonstrating its superior performance in both image understanding and generation.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/JiuhaiChen/BLIP30"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/BLIP30/BLIP30-Model",
+            "https://huggingface.co/datasets/BLIP30/BLIP30-Pretrain",
+            "https://huggingface.co/datasets/BLIP30/BLIP30-60k"
+        ],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "Insights into DeepSeek-V3: Scaling Challenges and Reflections on\n  Hardware for AI Architectures",
+        "authors": "Huazuo Gao, Damai Dai, Chong Ruan, Chengqi Deng, Chenggang Zhao",
+        "link": "https://arxiv.org/abs/2505.09343",
+        "github_repo": null,
+        "summary": "- The paper presents DeepSeek-V3, a large language model (LLM) trained on 2048 NVIDIA H800 GPUs, showcasing cost-efficient training and inference at scale through hardware-aware model co-design.\n- Key architectural innovations include Multi-head Latent Attention (MLA) for memory efficiency, Mixture of Experts (MoE) for optimized computation-communication trade-offs, and FP8 mixed-precision training to leverage hardware capabilities.\n- DeepSeek-V3 achieves state-of-the-art performance while using significantly fewer computational resources than comparable dense models, demonstrating the efficacy of MoE architectures in cost-effective training.\n- The paper analyzes hardware bottlenecks encountered during DeepSeek-V3's development and proposes potential future hardware directions, such as precise low-precision computation units and innovations in low-latency communication fabrics.\n- This work offers a practical blueprint for innovation in next-generation AI systems by highlighting the critical role of hardware and model co-design in meeting the escalating demands of AI workloads.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/deepseek-ai/3FS",
+            "https://github.com/deepseek-ai/dualpipe",
+            "https://github.com/deepseek-ai/DeepGEMM",
+            "https://github.com/deepseek-ai/DeepEP",
+            "https://github.com/deepseek-ai/profile-data"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "Marigold: Affordable Adaptation of Diffusion-Based Image Generators for\n  Image Analysis",
+        "authors": "Nando Metzger, Tianfu Wang, Kevin Qu, Bingxin Ke, konradschindler",
+        "link": "https://arxiv.org/abs/2505.09358",
+        "github_repo": null,
+        "summary": " - The paper introduces Marigold, a fine-tuning protocol for adapting pretrained latent diffusion models (LDMs) for various image analysis tasks such as depth estimation, surface normal prediction, and intrinsic image decomposition. \n- The method involves encoding both the input image and the target modality (depth, surface normal, etc.) into a latent space using a pre-trained VAE, and then fine-tuning a U-Net to model the conditional distribution of the target given the image. \n- Marigold uses minimal modifications to the architecture of the pre-trained model and trains with small synthetic datasets, achieving state-of-the-art zero-shot generalization across diverse datasets.\n- Experimental results show Marigold achieves state-of-the-art performance on several benchmarks, outperforming other methods that require substantially more data for training. \n- The authors also introduce Latent Consistency Models (LCMs) and High-Resolution (HR) techniques to improve the speed and resolution of Marigold, while maintaining competitive performance.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/prs-eth/Marigold"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/docs/diffusers/api/pipelines/marigold"
+        ],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "SweRank: Software Issue Localization with Code Ranking",
+        "authors": "Xuan Phi Nguyen, Ye Liu, JaeHyeok Doo, Tarun Suresh, Revanth Gangi Reddy",
+        "link": "https://arxiv.org/abs/2505.07849",
+        "github_repo": null,
+        "summary": "- This paper introduces SWERANK, a novel two-stage retrieve-and-rerank framework for software issue localization that significantly outperforms existing agent-based and code-ranking methods.\n- SWERANK consists of a bi-encoder embedding model (SWERANKEMBED) for retrieval and an instruction-tuned LLM (SWERANKLLM) for reranking.\n- The model achieves state-of-the-art performance on SWE-Bench-Lite and LocBench datasets, demonstrating its effectiveness in localizing code relevant to issue descriptions.\n- To train SWERANK, the authors created SWELOC, a new large-scale dataset curated from public GitHub repositories, which contains real-world issue descriptions paired with the corresponding code modifications.\n- SWERANK shows a considerably better performance-to-cost ratio compared to agent-based approaches that rely on closed-source LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://gangiswag.github.io/swerank"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "VCRBench: Exploring Long-form Causal Reasoning Capabilities of Large\n  Video Language Models",
+        "authors": "Ali Etemad, pritamqu",
+        "link": "https://arxiv.org/abs/2505.08455",
+        "github_repo": null,
+        "summary": "- This paper introduces VCRBench, a novel benchmark designed to evaluate the long-form causal reasoning capabilities of Large Video Language Models (LVLMs).\n- VCRBench uses procedural videos of simple everyday activities, where the steps are deliberately shuffled, to test if LVLMs can correctly sequence events to achieve a specific goal.\n- The evaluation of state-of-the-art LVLMs on VCRBench shows that these models struggle with video-based long-form causal reasoning due to difficulty in modeling long-range dependencies.\n- To improve LVLMs' performance, the authors propose a Recognition-Reasoning Decomposition (RRD) approach that separates video recognition and causal reasoning, enhancing accuracy by up to 25.2%.\n- The thorough analysis of the results reveals interesting insights into the reasoning capabilities of LVLMs, indicating that they primarily rely on language knowledge when tackling complex video-based long-form causal reasoning tasks.",
+        "classification": [
+            "Video Classification",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "Omni-R1: Do You Really Need Audio to Fine-Tune Your Audio LLM?",
+        "authors": "Hilde Kuehne, Samuel Thomas, Edson Araujo, Saurabhchand Bhati, h9LtLSb",
+        "link": "https://arxiv.org/abs/2505.09439",
+        "github_repo": null,
+        "summary": "- The paper introduces Omni-R1, a new state-of-the-art model for audio question answering, which fine-tunes the Qwen2.5-Omni multi-modal LLM using the reinforcement learning method GRPO.\n- Omni-R1 achieves the highest accuracy on the MMAU benchmark across various categories, outperforming existing methods.\n- The authors propose a method for automatically generating audio question answering datasets, further improving the model's performance.\n- A key finding is that text-only fine-tuning can significantly improve audio-based performance, suggesting that enhanced text reasoning contributes substantially to the model's success.\n- The code, models, and datasets will be publicly released.",
+        "classification": [
+            "Audio Classification",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-15"
+    },
+    {
+        "title": "DetReIDX: A Stress-Test Dataset for Real-World UAV-Based Person\n  Recognition",
+        "authors": "Carolina Fernandes, Satish Mekewad, Pavan Kumar MP, Nzakiese Mbongo, Kailash A. Hambarde",
+        "link": "https://arxiv.org/abs/2505.04793",
+        "github_repo": null,
+        "summary": "- This paper introduces DetReIDX, a large-scale aerial-ground person dataset designed to stress-test person re-identification (ReID) under real-world conditions. \n- DetReIDX includes over 13 million bounding boxes from 509 identities, collected across three continents with drone altitudes ranging from 5.8 to 120 meters. \n- A key novelty of DetReIDX is that subjects were recorded in at least two sessions on different days, with changes in clothing, daylight, and location, enabling evaluation of long-term person ReID. \n- The dataset also features annotations for 16 soft biometric attributes and multitask labels for detection, tracking, ReID, and action recognition. \n- Experiments demonstrate that state-of-the-art methods experience catastrophic performance degradation when tested on DetReIDX, highlighting the need for more robust and generalized models for real-world UAV-based person recognition.",
+        "classification": [
+            "Object Detection",
+            "Computer Vision",
+            "Image Feature Extraction",
+            "Keypoint Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-15"
+    }
+]

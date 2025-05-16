@@ -1,0 +1,355 @@
+[
+    {
+        "title": "Beyond 'Aha!': Toward Systematic Meta-Abilities Alignment in Large\n  Reasoning Models",
+        "authors": "cxiong, amritasaha87, yuhuixu, hendrydong, zhiyuanhucs",
+        "link": "https://arxiv.org/abs/2505.10554",
+        "github_repo": "https://github.com/zhiyuanhubj/Meta-Ability-Alignment",
+        "summary": "- This paper introduces a novel approach to enhance the reasoning capabilities of large reasoning models (LRMs) by explicitly aligning them with three meta-abilities: deduction, induction, and abduction.\n-  The proposed method uses automatically generated, self-verifiable tasks to train the models on each meta-ability individually, followed by merging the parameter spaces of the trained models and further fine-tuning with domain-specific reinforcement learning.\n- Experiments demonstrate that this three-stage pipeline (individual alignment, parameter-space merging, and domain-specific reinforcement learning) improves performance by over 10% compared to instruction-tuned baselines.\n- The study also shows that resuming domain-specific reinforcement learning from the aligned checkpoint yields an additional 2% average gain in performance across various benchmarks, highlighting the scalability and dependability of the proposed method.\n- The authors' code is publicly available on GitHub, making their approach reproducible and facilitating further research in the field.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zhiyuanhubj/Meta-Ability-Alignment"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "System Prompt Optimization with Meta-Learning",
+        "authors": "Sung Ju Hwang, jinheon, YuminChoi",
+        "link": "https://arxiv.org/abs/2505.09666",
+        "github_repo": null,
+        "summary": "This paper introduces a novel bilevel system prompt optimization problem for Large Language Models (LLMs).  The proposed MetaSPO framework meta-learns a robust system prompt that generalizes effectively to unseen tasks and diverse user prompts. Experiments on fourteen datasets across five domains demonstrate MetaSPO's superior performance compared to baseline methods in both unseen generalization and test-time adaptation scenarios. The optimized system prompts enable rapid adaptation to unseen tasks, requiring fewer optimization steps while achieving improved performance.  MetaSPO's iterative optimization process ensures synergy between system and user prompts.  The framework is flexible and compatible with various prompt optimization techniques.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Dozi01/MetaSPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "EnerVerse-AC: Envisioning Embodied Environments with Action Condition",
+        "authors": "hsli-cuhk, pathcn, thuhsy, Shengcong, YuxinJiang",
+        "link": "https://arxiv.org/abs/2505.09723",
+        "github_repo": null,
+        "summary": "- This paper introduces EnerVerse-AC (EVAC), an action-conditional world model for generating future visual observations based on predicted agent actions.\n- EVAC employs a multi-level action-conditioning mechanism and ray map encoding for dynamic multi-view image generation and uses diverse failure trajectories to improve generalization.\n- The model serves as both a data engine, augmenting human-collected trajectories into diverse datasets, and an evaluator, generating action-conditioned video observations for policy testing without the need for physical robots or complex simulations.\n- Experiments demonstrate the effectiveness of EVAC in generating high-fidelity video observations and reducing the need for extensive physical interaction, ultimately reducing the costs involved in robotic manipulation evaluation.\n- The results show that the model can be used to improve policy learning and accurately assess the performance of trained policies.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/annaj2178/EnerverseAC.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "The CoT Encyclopedia: Analyzing, Predicting, and Controlling how a\n  Reasoning Model will Think",
+        "authors": "hbin0701, dreamgonfly, Minju2136, seungone, Seongyun",
+        "link": "https://arxiv.org/abs/2505.10185",
+        "github_repo": null,
+        "summary": "The CoT Encyclopedia is a novel bottom-up framework for analyzing and controlling long chain-of-thought (CoT) reasoning in large language models.  It automatically extracts diverse reasoning criteria from model-generated CoTs and clusters them into representative categories. Human evaluations demonstrate that the framework is more interpretable than existing methods and enables performance gains.  The study reveals that training data format has a greater impact on reasoning behavior than data domain. Finally, it provides insights into the controllability of reasoning strategies via model merging.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "EWMBench: Evaluating Scene, Motion, and Semantic Quality in Embodied\n  World Models",
+        "authors": "sundrops, AutobotZero, pathcn, Shengcong, thuhsy",
+        "link": "https://arxiv.org/abs/2505.09694",
+        "github_repo": "https://github.com/AgibotTech/EWMBench",
+        "summary": "- This paper introduces EWMBENCH, a novel benchmark for evaluating embodied world models (EWMs) that goes beyond general perceptual metrics.\n- EWMBENCH assesses EWMs based on three key aspects: visual scene consistency, motion correctness, and semantic alignment, using a meticulously curated dataset and a comprehensive multi-dimensional evaluation toolkit.\n- The benchmark identifies limitations of existing video generation models in handling embodied tasks and provides valuable insights to guide future advancements.\n- EWMBENCH is publicly available, facilitating the evaluation and comparison of various EWMs.\n- Experimental results demonstrate that domain-adapted models outperform general video generation models on embodied generation tasks, highlighting the unique requirements of EWMs.",
+        "classification": [
+            "Robotics",
+            "Text-to-Video",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/AgibotTech/EWMBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "End-to-End Vision Tokenizer Tuning",
+        "authors": "RobertLuo1, Paranioar, YufengCui, ryanzhangfan, gilnore",
+        "link": "https://arxiv.org/abs/2505.10562",
+        "github_repo": null,
+        "summary": "- This paper introduces ETT, an end-to-end vision tokenizer tuning approach that jointly optimizes vision tokenization and target autoregressive tasks.  Unlike previous methods that use only discrete indices from a frozen vision tokenizer, ETT leverages visual embeddings and optimizes the vision tokenizer end-to-end. \n- ETT significantly improves performance on multimodal understanding and visual generation tasks (2-6% gains compared to baselines) while maintaining original reconstruction capabilities. \n- The method is simple to implement and integrate without requiring adjustments to the original codebooks or architectures of large language models. \n- Extensive experiments demonstrate the effectiveness of ETT across various benchmarks, showcasing consistent performance improvements over existing state-of-the-art approaches. \n- This method empowers multimodal foundation models beyond image generation and understanding.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "MLE-Dojo: Interactive Environments for Empowering LLM Agents in Machine\n  Learning Engineering",
+        "authors": "percyliang, Solute, yinghaoli-yh, yczhuang, Jerrycool",
+        "link": "https://arxiv.org/abs/2505.07782",
+        "github_repo": null,
+        "summary": "This paper introduces MLE-Dojo, a new benchmark and environment designed to evaluate and improve large language models (LLMs) for machine learning engineering (MLE) tasks.  The benchmark features 200+ real-world Kaggle challenges covering diverse MLE tasks.  MLE-Dojo provides an interactive environment, enabling agents to experiment and refine solutions iteratively.  Extensive evaluations across eight frontier LLMs demonstrate that current models show limitations, but iterative improvements are meaningful.  The framework's modular and extensible design promotes reproducibility and fosters community-driven innovation.",
+        "classification": [
+            "Reinforcement Learning",
+            "Tabular",
+            "Tabular Classification",
+            "Tabular Regression",
+            "Time Series Forecasting",
+            "Natural Language Processing",
+            "Text Classification",
+            "Computer Vision",
+            "Image Classification",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/MLE-Dojo/MLE-Dojo"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/MLE-Dojo/Leaderboard"
+        ],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "WorldPM: Scaling Human Preference Modeling",
+        "authors": "Zhenru Zhang, Le Yu, Keming Lu, Runji Lin, Binghai Wang",
+        "link": "https://arxiv.org/abs/2505.10527",
+        "github_repo": null,
+        "summary": " - This paper introduces WorldPM, a novel approach to human preference modeling that leverages scaling laws similar to those observed in language modeling.\n - WorldPM uses a large-scale dataset of 15 million preference samples collected from public forums, trained across models with 1.5B to 72B parameters.\n - Evaluation across diverse benchmarks reveals distinct scaling patterns: adversarial metrics show consistent improvement, objective metrics exhibit emergent behavior in larger models, while subjective metrics show no clear scaling trends.\n - Experiments demonstrate that WorldPM enhances the generalization performance of preference fine-tuning across datasets of varying sizes, improving performance by more than 5% on many key subtasks. \n - Integrating WorldPM into an RLHF pipeline yields significant performance gains in both in-house and public evaluations.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/WorldPM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Achieving Tokenizer Flexibility in Language Models through Heuristic\n  Adaptation and Supertoken Learning",
+        "authors": "Vinayak Pahalwan, Shaurya Sharthak, adarshxs, adi-kmt",
+        "link": "https://arxiv.org/abs/2505.09738",
+        "github_repo": null,
+        "summary": "- This paper introduces TokenAdapt, a novel framework for achieving tokenizer flexibility in large language models (LLMs).\n- TokenAdapt employs a hybrid heuristic initialization strategy that combines local and global estimates to effectively transplant tokenizers.\n- The framework also introduces supertoken learning to improve compression and reduce fragmentation.\n- Empirical results demonstrate that TokenAdapt consistently outperforms existing methods such as ReTok and TransTokenizer, achieving up to a 2-fold improvement in perplexity.\n- The authors conclude that TokenAdapt offers a practical and computationally efficient method for adapting LLMs to new tokenization schemes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "None"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Style Customization of Text-to-Vector Generation with Image Diffusion\n  Priors",
+        "authors": "Jing Liao, CHERRY-Z, intchous",
+        "link": "https://arxiv.org/abs/2505.10558",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel two-stage style customization pipeline for generating Scalable Vector Graphics (SVGs) from text prompts.\n- Stage one trains a path-level text-to-vector (T2V) diffusion model to ensure structural regularity and diverse expressive capabilities of SVGs.  This model utilizes a transformer architecture based on DiT.\n- Stage two customizes the T2V model by distilling customized text-to-image (T2I) models to generate diverse customized images, which serve as augmented data for training the T2V model.\n- The proposed method outperforms existing optimization-based and feed-forward T2V methods in terms of vector-level, image-level, and text-level metrics, producing high-quality and diverse SVGs with consistent visual appearances.\n- The approach demonstrates the ability to generate SVGs in custom styles with minimal exemplar SVGs, addressing the challenge of limited training data and maintaining SVG structure.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://customsvg.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "J1: Incentivizing Thinking in LLM-as-a-Judge via Reinforcement Learning",
+        "authors": "Xian Li, Ping Yu, Tianlu Wang, Chenxi Whitehouse, swarna92",
+        "link": "https://arxiv.org/abs/2505.10320",
+        "github_repo": null,
+        "summary": "- This paper introduces J1, a novel reinforcement learning approach for training LLMs to perform better judgment tasks.\n- J1 converts both verifiable and non-verifiable prompts into judgment tasks with verifiable rewards that incentivize stronger chain-of-thought reasoning.\n- The proposed method outperforms existing 8B and 70B LLMs, including models distilled from DeepSeek-R1, on various benchmarks.\n- J1's improved judgment ability stems from its learning to outline evaluation criteria, comparing against self-generated answers, and re-evaluating responses.\n- The authors provide comprehensive analysis and ablations on the model's performance, including comparisons between Pairwise-J1 and Pointwise-J1 models, offline vs. online training, reward strategies, and variations in thought content.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "PointArena: Probing Multimodal Grounding Through Language-Guided\n  Pointing",
+        "authors": "Boyang Li, Haoquan Fang, Yi Ru Wang, Jiafei Duan, Long Cheng",
+        "link": "https://arxiv.org/abs/2505.09990",
+        "github_repo": null,
+        "summary": "- PointArena is a comprehensive platform for evaluating multimodal pointing across diverse reasoning scenarios, comprising Point-Bench (a curated dataset), Point-Battle (an interactive arena for model comparison), and Point-Act (a real-world robotic manipulation system).\n- PointArena's Point-Bench dataset contains approximately 1,000 pointing tasks across five reasoning categories, enabling a more thorough evaluation of multimodal pointing capabilities compared to existing benchmarks that focus primarily on object localization.\n- Extensive evaluations on PointArena demonstrate that Molmo-72B consistently outperforms other models, although proprietary models are increasingly demonstrating comparable performance, and that supervised training specifically targeting pointing tasks significantly enhances model performance.\n- PointArena's multi-stage evaluation pipeline reveals strong correlations, underscoring the critical role of precise pointing capabilities in enabling multimodal models to effectively bridge abstract reasoning with concrete, real-world actions.\n- The platform facilitates blind, pairwise model comparisons through user voting in Point-Battle and real-world robotic manipulation evaluation in Point-Act.",
+        "classification": [
+            "Multimodal",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://pointarena.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Depth Anything with Any Prior",
+        "authors": "Ziang Zhang, Jialei Wang, Lihe Yang, Siyu Chen, sleetwang6",
+        "link": "https://arxiv.org/abs/2505.10565",
+        "github_repo": null,
+        "summary": "- This paper introduces Prior Depth Anything, a novel framework that integrates incomplete but precise metric depth information with complete but relative geometric structures from depth prediction to generate accurate, dense, and detailed metric depth maps for any scene.\n- The framework employs a coarse-to-fine pipeline that first performs pixel-level metric alignment and distance-aware weighting to pre-fill diverse metric priors using depth prediction, effectively narrowing the domain gap between prior patterns and improving generalization.\n- Subsequently, a conditioned monocular depth estimation (MDE) model refines inherent noise in depth priors by conditioning on the pre-filled prior and prediction, implicitly merging the two complementary depth sources.\n- The model demonstrates impressive zero-shot generalization across depth completion, super-resolution, and inpainting tasks, matching or surpassing previous task-specific methods on 7 real-world datasets.\n- Notably, the method effectively handles challenging, unseen mixed priors and allows test-time improvements by switching prediction models, offering flexible accuracy-efficiency trade-offs.",
+        "classification": [
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://prior-depth-anything.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "OpenThinkIMG: Learning to Think with Images via Visual Tool\n  Reinforcement Learning",
+        "authors": "Zhengyuan Yang, Yunzhuo Hao, Mingyang Song, Linjie Li, Zhaochen Su",
+        "link": "https://arxiv.org/abs/2505.08617",
+        "github_repo": null,
+        "summary": "- This paper introduces OPENTHINKIMG, an open-source framework for tool-augmented large vision-language models (LVLMs).\n- It proposes a novel reinforcement learning framework, V-TOOLRL, to enable LVLMs to learn adaptive policies for invoking external vision tools.\n- V-TOOLRL significantly outperforms its supervised fine-tuning counterpart and surpasses established supervised tool-learning baselines on chart reasoning tasks.\n- The framework features standardized vision tool interfaces, scalable trajectory generation, and a flexible training environment to address the challenges of integrating diverse tools and training robust agents.\n- OPENTHINKIMG aims to advance dynamic, tool-augmented visual reasoning and provides a foundational framework for developing AI agents that can genuinely \"think with images\".",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zhaochen0110/OpenThinkIMG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "AdaptCLIP: Adapting CLIP for Universal Visual Anomaly Detection",
+        "authors": "Weixi Zhang, Yuezhi Cai, Jiangtao Yan, Yue Zhu, Bin-Bin Gao",
+        "link": "https://arxiv.org/abs/2505.09926",
+        "github_repo": "https://github.com/gaobb/AdaptCLIP",
+        "summary": "AdaptCLIP is a novel method for universal visual anomaly detection that adapts CLIP, a pre-trained vision-language model, using three simple adapters: visual adapter, textual adapter, and prompt-query adapter.  It leverages the insight of learning adaptive visual and textual representations alternately and integrating contextual and aligned residual features for comparative learning. AdaptCLIP achieves state-of-the-art results on 12 benchmark datasets spanning industrial and medical domains, surpassing existing competitive methods in both zero-shot and few-shot settings. The model is training-free on target domains, requiring only a base dataset for training. AdaptCLIP demonstrates strong generalization across diverse domains without additional fine-tuning.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/gaobb/AdaptCLIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "ReSurgSAM2: Referring Segment Anything in Surgical Video via Credible\n  Long-term Tracking",
+        "authors": "Guanyi Qin, Ziyue Wang, Xuxiao Luo, Mingqi Gao, HeverLaw",
+        "link": "https://arxiv.org/abs/2505.08581",
+        "github_repo": "https://github.com/jinlab-imvr/ReSurgSAM2",
+        "summary": "- This paper introduces ReSurgSAM2, a two-stage framework for referring surgical segmentation in videos that uses Segment Anything Model 2 (SAM2).\n- ReSurgSAM2 first performs text-referred target detection using a Cross-Modal Spatial-Temporal Mamba and then performs tracking with a Diversity-Driven Long-term Memory.\n- The model achieves real-time performance at 61.2 FPS and outperforms existing methods on benchmark datasets.\n- The proposed method addresses the limitations of existing methods by improving efficiency and long-term tracking capabilities.\n- ReSurgSAM2 is evaluated on Ref-EndoVis17 and Ref-EndoVis18 datasets, demonstrating significant performance improvements over other state-of-the-art methods.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Image Segmentation",
+            "Multimodal",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/jinlab-imvr/ReSurgSAM2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "QuXAI: Explainers for Hybrid Quantum Machine Learning Models",
+        "authors": "Rafiul Islam, Md Jafor Sadek, Shehenaz Khaled, imostafizur, AlignAI",
+        "link": "https://arxiv.org/abs/2505.10167",
+        "github_repo": null,
+        "summary": "- This paper introduces QuXAI, a framework for training and explaining hybrid quantum-classical machine learning (HQML) models.\n- QuXAI uses Q-MEDLEY, a novel explainer that combines Drop-Column Importance (DCI) and Permutation Importance (PI) to provide global feature importance scores, accounting for quantum encoding effects.\n- Q-MEDLEY outperforms established XAI techniques in classical validation settings, as demonstrated by ablation studies and comparisons with other explainers such as TreeSHAP.\n- The framework is designed for HQML models that use quantum feature maps to encode classical input data into quantum states, which are then processed by classical machine learning algorithms.\n- QuXAI's visualizations facilitate easy evaluation of feature significance, enabling enhanced transparency and trustworthiness of HQML models.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Exploring the Deep Fusion of Large Language Models and Diffusion\n  Transformers for Text-to-Image Synthesis",
+        "authors": "Saining Xie, Sayak Paul, Xichen Pan, Boyang Zheng, Bingda Tang",
+        "link": "https://arxiv.org/abs/2505.10046",
+        "github_repo": null,
+        "summary": "- This paper explores the design space of deeply fusing large language models (LLMs) and diffusion transformers (DiTs) for text-to-image synthesis, focusing on detailed comparisons and design choices rather than just overall performance.\n- A deep fusion approach is presented, where a frozen decoder-only LLM and a trainable DiT are integrated using layer-wise shared self-attention, enabling rich cross-modal interactions.\n- Controlled comparisons are conducted with baseline methods (shallow fusion), showcasing the superiority of the deep fusion approach in terms of image-text alignment.\n- A scalable and reproducible training recipe is provided, achieving competitive performance on established benchmarks.\n- Key design choices are analyzed, such as timestep conditioning and positional encoding strategies, offering practical guidelines for future research.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/tang-bd/fuse-dit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Parallel Scaling Law for Language Models",
+        "authors": "Dayiheng Liu, Jiaxi Yang, Zeyu Cui, Binyuan Hui, Mouxiang Chen",
+        "link": "https://arxiv.org/abs/2505.10475",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel scaling paradigm for language models called Parallel Scaling (PARSCALE), which increases the model's parallel computation during training and inference.\n - PARSCALE applies diverse and learnable transformations to the input, executes forward passes in parallel, and aggregates the outputs dynamically, improving inference efficiency without significantly increasing memory or latency.\n - The authors propose a new scaling law showing that PARSCALE with P parallel streams is similar to scaling parameters by O(log P), offering superior inference efficiency compared to parameter scaling that achieves the same performance improvement.\n - Experiments on large-scale pre-training and various downstream tasks validate the proposed scaling law and demonstrate PARSCALE's effectiveness.\n - A two-stage training strategy is presented to reduce the training cost of PARSCALE and the method is demonstrated on an off-the-shelf pre-trained model, showing its versatility and applicability.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/ParScale"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/ParScale"
+        ],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "MetaUAS: Universal Anomaly Segmentation with One-Prompt Meta-Learning",
+        "authors": "csgaobb",
+        "link": "https://arxiv.org/abs/2505.09265",
+        "github_repo": "https://github.com/gaobb/MetaUAS",
+        "summary": "- This paper introduces MetaUAS, a novel one-prompt meta-learning framework for universal anomaly segmentation that unifies anomaly segmentation into change segmentation.\n- The model architecture consists of an encoder, a feature alignment module, and a decoder, trained on a synthesized dataset of image pairs with object-level and local region changes.\n- MetaUAS effectively segments anomalies using only one normal image prompt without requiring special anomaly detection datasets or pre-trained visual-language models.\n- The soft feature alignment module handles geometrical variations between prompt and query images, bridging paired-image change perception and single-image semantic segmentation.\n- Experimental results demonstrate that MetaUAS significantly outperforms previous zero-shot, few-shot, and even full-shot anomaly segmentation methods on three industrial anomaly benchmarks.",
+        "classification": [
+            "Image Segmentation",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/gaobb/MetaUAS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Learning to Detect Multi-class Anomalies with Just One Normal Image\n  Prompt",
+        "authors": "csgaobb",
+        "link": "https://arxiv.org/abs/2505.09264",
+        "github_repo": "https://github.com/gaobb/OneNIP",
+        "summary": "- The paper introduces OneNIP, a novel unified anomaly detection framework that uses a single normal image as a prompt to guide feature reconstruction and restoration.\n- OneNIP employs a bidirectional decoder to dynamically update prompt and target features, enhancing the interaction between them and improving reconstruction accuracy.\n- An unsupervised restoration stream is included to further enhance the guidance of the normal image prompt and improve anomaly segmentation.\n- The OneNIP model significantly improves pixel-level anomaly segmentation and outperforms other methods on three industry benchmarks (MVTec, BTAD, and VisA).\n- The model achieves state-of-the-art performance with a unified setting, demonstrating robustness and generalization capability.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Zero-Shot Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/gaobb/OneNIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    },
+    {
+        "title": "Few-Shot Anomaly-Driven Generation for Anomaly Classification and\n  Segmentation",
+        "authors": "Yunsheng Wu, Chengjie Wang, Jun Liu, Guan Gui, csgaobb",
+        "link": "https://arxiv.org/abs/2505.09263",
+        "github_repo": "https://github.com/gaobb/AnoGen",
+        "summary": "- This paper introduces AnoGen, a novel few-shot anomaly-driven generation method that leverages a pre-trained diffusion model to generate realistic and diverse anomalies using only a few real-world anomaly examples.\n- AnoGen consists of three stages: learning an anomaly embedding, guiding image generation using bounding boxes, and training a weakly-supervised anomaly detection model.\n- The generated anomalies effectively improve the performance of both anomaly classification and segmentation tasks on the MVTec dataset, showing improvements of 5.8% and 1.5% in AU-PR metric on the segmentation task for DRAEM and DeSTSeg respectively.\n- The method addresses the challenge of limited anomaly data in industrial applications and demonstrates the effectiveness of few-shot learning in generating high-quality synthetic anomalies.\n- The generated anomalies are semantically consistent with real-world anomalies, reducing the semantic gap often present in synthetic methods.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/gaobb/AnoGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-16"
+    }
+]

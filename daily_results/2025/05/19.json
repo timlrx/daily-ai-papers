@@ -1,0 +1,205 @@
+[
+    {
+        "title": "Qwen3 Technical Report",
+        "authors": "huybery, BeichenZhang, Baosong, laf070810, yangapku",
+        "link": "https://arxiv.org/abs/2505.09388",
+        "github_repo": null,
+        "summary": " - This paper introduces Qwen3, a series of large language models (LLMs) with parameter scales ranging from 0.6B to 235B, designed to improve performance, efficiency, and multilingual capabilities.  \n- Qwen3 integrates a thinking mode and a non-thinking mode within a unified framework, enabling dynamic mode switching based on user queries.  \n- The models achieve state-of-the-art results across diverse benchmarks, outperforming previous models and some leading open-source models.\n- Qwen3 expands multilingual support from 29 to 119 languages and dialects, enhancing global accessibility. \n-  All Qwen3 models are publicly accessible under Apache 2.0 to promote research and development.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/Qwen3"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen"
+        ],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "MMLongBench: Benchmarking Long-Context Vision-Language Models\n  Effectively and Thoroughly",
+        "authors": "Yu Zhao, Jipeng Zhang, Xiyu Ren, Wenhao Yu, Zhaowei Wang",
+        "link": "https://arxiv.org/abs/2505.10610",
+        "github_repo": null,
+        "summary": " - This paper introduces MMLONGBENCH, a benchmark for evaluating long-context vision-language models (LCVLMs).\n- MMLONGBENCH includes 13,331 examples across five diverse downstream tasks and various image types to thoroughly evaluate LCVLMs. \n- The benchmark uses a cross-modal tokenization scheme that combines vision patches and text tokens, delivering examples at five standardized input lengths (8K-128K tokens).\n- Through benchmarking 46 LCVLMs, the authors found that single-task performance is a weak proxy for overall LCVLM capability, closed-source and open-source models face challenges in long-context vision-language tasks, and models with strong reasoning ability tend to perform better.\n- MMLONGBENCH provides a foundation for diagnosing and improving LCVLMs.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/EdinburghNLP/MMLongBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "GuardReasoner-VL: Safeguarding VLMs via Reinforced Reasoning",
+        "authors": "Tri Cao, Yulin Chen, Mingzhe Du, Shengfang Zhai, Yue Liu",
+        "link": "https://arxiv.org/abs/2505.11049",
+        "github_repo": "https://github.com/yueliu1999/GuardReasoner-VL/",
+        "summary": "- This paper introduces GuardReasoner-VL, a novel reasoning-based VLM guard model that uses online reinforcement learning (RL) to encourage deliberative reasoning before making moderation decisions.\n- GuardReasoner-VLTrain, a reasoning corpus with 123K samples and 631K reasoning steps, is constructed to enhance the model's reasoning capabilities.\n- The model is cold-started using supervised fine-tuning (SFT) and further improved through online RL, which incorporates rejection sampling, safety-aware data concatenation, a dynamic clipping parameter, and a length-aware safety reward.\n- Extensive experiments show that GuardReasoner-VL surpasses the runner-up by 19.27% F1 score on average across multiple multimodal guardrail benchmarks.\n- The data, code, and model weights (3B/7B) are publicly available.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/yueliu1999/GuardReasoner-VL/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Visual Planning: Let's Think Only with Images",
+        "authors": "ivulic, akorhonen, caiqizh, masonxw, hzhouml",
+        "link": "https://arxiv.org/abs/2505.11409",
+        "github_repo": null,
+        "summary": "- This paper introduces Visual Planning, a novel paradigm that enables planning through purely visual representations, independent of language.\n- It proposes Visual Planning via Reinforcement Learning (VPRL), a novel reinforcement learning framework that utilizes Group Relative Policy Optimization (GRPO) to generate sequential images that encode planning steps.\n- VPRL demonstrates substantial performance improvements over existing language-based planning methods on various visual navigation tasks like FROZENLAKE, MAZE, and MINIBEHAVIOR.\n- The experimental results show that visual planning significantly outperforms text-based planning and exhibits stronger generalization capabilities.\n- Visual Planning is established as a promising alternative to traditional language-based reasoning for tasks involving visual and geometric information.",
+        "classification": [
+            "Reinforcement Learning",
+            "Image-to-Image",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/yix8/VisualPlanning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Simple Semi-supervised Knowledge Distillation from Vision-Language\n  Models via texttt{D}ual-texttt{H}ead\n  texttt{O}ptimization",
+        "authors": "Sung Ju Hwang, Hyungjoon Jang, Seongjae Kang, dongboklee",
+        "link": "https://arxiv.org/abs/2505.07675",
+        "github_repo": null,
+        "summary": " * This paper introduces Dual-Head Optimization (DHO), a novel semi-supervised knowledge distillation framework for vision-language models (VLMs).\n * DHO uses two prediction heads which learn independently from labeled data and teacher predictions, mitigating gradient conflicts between supervised and distillation signals.\n * Extensive experiments on ImageNet and eleven other datasets demonstrate that DHO consistently improves accuracy across multiple domains and fine-grained datasets.\n * The findings show that DHO achieves state-of-the-art performance on ImageNet, improving accuracy by up to 3% with only 1% labeled data and 0.1% with 10% labeled data.\n * The framework's simplicity and effectiveness make it a promising approach for deploying large-scale VLMs in resource-constrained environments.",
+        "classification": [
+            "Image Classification",
+            "Image Feature Extraction",
+            "Zero-Shot Image Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Group Think: Multiple Concurrent Reasoning Agents Collaborating at Token\n  Level Granularity",
+        "authors": "Yi-Chang Chen, Feng-Ting Liao, Jamie McGowan, Davide Buffelli, Splend1dchan",
+        "link": "https://arxiv.org/abs/2505.11107",
+        "github_repo": null,
+        "summary": "- The paper introduces GroupThink, a novel approach for collaborative reasoning in LLMs that enables multiple reasoning agents to collaborate concurrently at the token level. \n- Unlike traditional turn-based methods, GroupThink allows agents to adapt dynamically to one another's progress mid-sentence, reducing redundancy and improving reasoning quality.\n- The proposed method is shown to significantly reduce latency compared to existing methods for various tasks (enumeration, divide-and-conquer, programming) without sacrificing accuracy.\n- GroupThink is implemented as a simple modification to any existing LLM, making it easily deployable on resource-constrained devices such as edge devices.\n- Experimental results demonstrate that GroupThink achieves significant latency improvements on multiple benchmarks, even when using LLMs not specifically trained for this collaborative paradigm.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Mergenetic: a Simple Evolutionary Model Merging Library",
+        "authors": "erodola, crisostomi, teelinsan, tmencatt, adrianrob",
+        "link": "https://arxiv.org/abs/2505.11427",
+        "github_repo": "https://github.com/tommasomncttn/mergenetic",
+        "summary": "- Mergenetic, an open-source library for evolutionary model merging, is introduced to facilitate flexible experimentation with evolutionary algorithms and merging methods in language models.\n- It offers comprehensive support for various merging methods and evolutionary algorithms, including lightweight fitness estimators to reduce evaluation costs.\n- Mergenetic demonstrates competitive results across tasks and languages using modest hardware, showcasing its efficiency and accessibility.\n- The library provides a Python API, CLI, and GUI for easy usage and customization, catering to both power users and those with limited coding experience.\n-  Future work will focus on extending Mergenetic's capabilities to handle extremely low-resource languages or domains where fine-tuned models may be unavailable.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/tommasomncttn/mergenetic"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "MPS-Prover: Advancing Stepwise Theorem Proving by Multi-Perspective\n  Search and Data Curation",
+        "authors": "Tao Yang, Yang Li, haitaominlp, freesunshine0316, invokerliang",
+        "link": "https://arxiv.org/abs/2505.10962",
+        "github_repo": null,
+        "summary": "- This paper introduces MPS-Prover, a novel stepwise automated theorem proving system that utilizes a multi-perspective search strategy and post-training data curation.\n- MPS-Prover incorporates a learned critic model with strategically designed heuristic rules to diversify tactic selection, enhancing search robustness and preventing unproductive states.\n- The post-training data curation strategy effectively eliminates redundant training data, improving model performance without sacrificing efficiency.\n- Extensive evaluations demonstrate that MPS-Prover achieves state-of-the-art performance on multiple challenging benchmarks, outperforming existing 7B parameter models.\n- MPS-Prover generates significantly shorter and more diverse proofs compared to existing stepwise and whole-proof methods, highlighting its efficiency and efficacy.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Multi-Token Prediction Needs Registers",
+        "authors": "Nikos Komodakis, Spyros Gidaris, nasos10",
+        "link": "https://arxiv.org/abs/2505.10518",
+        "github_repo": "https://github.com/nasosger/MuToR",
+        "summary": "- MuToR, a novel multi-token prediction method, is introduced, which interleaves learnable register tokens into the input sequence to predict future tokens.\n- Compared to existing methods, MuToR introduces minimal additional parameters, requires no architectural changes, and is well-suited for supervised fine-tuning and parameter-efficient fine-tuning (PEFT).\n- The effectiveness and versatility of MuToR are demonstrated across a range of use cases, including supervised fine-tuning, PEFT, and pre-training, on challenging generative tasks in both language and vision domains.\n- MuToR consistently outperforms baselines (Next-Token and Multi-Token) in mathematical reasoning and summarization tasks, achieving superior results with negligible parameter overhead.\n- The 2D extension of MuToR adapts seamlessly to autoregressive image generation, showcasing its broader applicability and potential across diverse domains and training settings.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/nasosger/MuToR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Learning Dense Hand Contact Estimation from Imbalanced Data",
+        "authors": "kyoungmu, dqj5182",
+        "link": "https://arxiv.org/abs/2505.11152",
+        "github_repo": null,
+        "summary": "- This paper introduces HACO, a novel framework for dense hand contact estimation that addresses the challenges of class and spatial imbalance in existing datasets.\n- The model architecture utilizes a Vision Transformer (ViT) backbone to encode image features, incorporates a contact token for hand contact estimation, and employs multiple layers of self-attention and cross-attention Transformers to produce a dense contact prediction.\n- To address class imbalance, the paper proposes a Balanced Contact Sampling (BCS) strategy that constructs multiple sampling groups to fairly represent contact statistics.\n- A Vertex-Level Class-Balanced (VCB) loss is introduced to address spatial imbalance by incorporating spatially varying contact distributions and separately re-weighting loss contributions of each vertex.\n- HACO outperforms existing state-of-the-art methods across diverse hand contact scenarios, including hand-object, hand-hand, hand-scene, and hand-body interactions.",
+        "classification": [
+            "Computer Vision",
+            "Keypoint Detection",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Scaling Reasoning can Improve Factuality in Large Language Models",
+        "authors": "rubis, bjerva, jjzha",
+        "link": "https://arxiv.org/abs/2505.11140",
+        "github_repo": null,
+        "summary": "- This paper introduces fs1, a new dataset containing 6K knowledge-graph enhanced reasoning traces designed to improve the factual accuracy of LLMs in open-domain question answering.\n- The authors fine-tune six variants of the Qwen2.5 architecture on both original and KG-enhanced reasoning traces and evaluate them across six benchmarks, encompassing over 22.6K questions.\n- Their findings indicate that smaller instruction-tuned models achieve noticeable improvements in factual accuracy compared to their original instruction-tuned counterparts when using KG-enhanced reasoning traces.\n- Furthermore, test-time scaling consistently improves factual accuracy by 2-8%, demonstrating that longer reasoning chains enhance factual accuracy in open-domain QA.\n- All experimental artifacts, including reasoning traces and models, are publicly available for further research.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/jjzha/fs1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/jjzha/fs1"
+        ],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "Humans expect rationality and cooperation from LLM opponents in\n  strategic games",
+        "authors": "Miguel Costa-Gomes, Darija Barak",
+        "link": "https://arxiv.org/abs/2505.11011",
+        "github_repo": null,
+        "summary": "- This paper presents the first controlled experiment investigating human behavior in multiplayer p-beauty contests against LLMs.\n- The study uses a within-subject design to compare human behavior when playing against humans and LLMs.\n- Results indicate that humans choose significantly lower numbers when playing against LLMs, driven by increased use of zero Nash-equilibrium choices.\n- This shift is more pronounced among subjects with high strategic reasoning ability, who justify their strategies based on perceived LLM rationality and cooperation.\n- The findings highlight the importance of considering human beliefs and expectations about LLM behavior when designing mixed human-LLM systems.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    },
+    {
+        "title": "MatTools: Benchmarking Large Language Models for Materials Science Tools",
+        "authors": "David J. Srolovitz, Bo Hu, Beilin Ye, Jiamin Xu, SiyuLiu",
+        "link": "https://arxiv.org/abs/2505.10852",
+        "github_repo": null,
+        "summary": "This paper introduces MatTools, a novel benchmark designed to evaluate the proficiency of Large Language Models (LLMs) in handling materials science tasks. MatTools comprises two key components: a QA benchmark and a real-world tool-usage benchmark. The QA benchmark assesses an LLM's understanding of materials science tools using 69,225 question-answer pairs from the pymatgen codebase.  The real-world benchmark challenges LLMs to generate functional Python code for materials property calculations, comprising 49 tasks with 138 subtasks. Experiments revealed that general-purpose LLMs significantly outperformed specialized models, with LLM-generated documentation proving superior as a retrieval source in Retrieval-Augmented Generation (RAG) systems.  A self-reflection LLM-doc RAG approach demonstrated state-of-the-art performance in real-world tool-usage tasks.",
+        "classification": [
+            "Document Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Grenzlinie/MatTools"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-19"
+    }
+]

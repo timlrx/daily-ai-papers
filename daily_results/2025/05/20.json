@@ -1,0 +1,511 @@
+[
+    {
+        "title": "Chain-of-Model Learning for Language Model",
+        "authors": "tricktreat, Chengruidong, iofu728, xutan, KaitaoSong",
+        "link": "https://arxiv.org/abs/2505.11820",
+        "github_repo": "https://github.com/microsoft/CoLM",
+        "summary": " * The paper introduces a novel learning paradigm called \"Chain-of-Model\" (CoM) which incorporates causal relationships into hidden states, improving scaling efficiency and inference flexibility.  \n* CoM formulates hidden states at each layer as a combination of sub-representations (chains) at the hidden dimension level, allowing progressive model scaling by increasing chains.  \n* The proposed Chain-of-Language-Model (CoLM) integrates CoM into each Transformer layer, offering multiple sub-models at varying sizes for elastic inference.  \n* CoLM-Air introduces a KV sharing mechanism, further enhancing extensibility with seamless LM switching and prefilling acceleration. \n* Experimental results show that CoLM achieves comparable performance to standard Transformers while offering greater flexibility and efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/CoLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "AdaptThink: Reasoning Models Can Learn When to Think",
+        "authors": "Ling Feng, Lei Hou, juanli, linny2002, NeoZ123",
+        "link": "https://arxiv.org/abs/2505.13417",
+        "github_repo": "https://github.com/THU-KEG/AdaptThink",
+        "summary": "- This paper introduces AdaptThink, a novel reinforcement learning algorithm that enables reasoning models to adaptively choose between \"Thinking\" (lengthy reasoning process) and \"NoThinking\" (direct answer generation) modes based on problem difficulty.\n- AdaptThink consists of a constrained optimization objective that encourages NoThinking while maintaining performance and an importance sampling strategy to balance both modes during training.\n- Experimental results on three math datasets (GSM8K, MATH500, and AIME2024) show that AdaptThink significantly reduces average response length (by 53%) while improving accuracy (by 2.4%) compared to the baseline model.\n- The method also demonstrates effectiveness on out-of-distribution datasets, further highlighting its adaptability and efficiency.\n- AdaptThink offers a promising approach to optimize the balance between reasoning quality and efficiency by leveraging adaptive thinking-mode selection.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/THU-KEG/AdaptThink"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "AdaCoT: Pareto-Optimal Adaptive Chain-of-Thought Triggering via\n  Reinforcement Learning",
+        "authors": "Shuangzhi, qingping95, Swtheking, sunzewei2715, louchenwei",
+        "link": "https://arxiv.org/abs/2505.11896",
+        "github_repo": null,
+        "summary": "AdaCoT is a novel framework that allows LLMs to adaptively decide when to use Chain-of-Thought (CoT) prompting, addressing the inefficiency of indiscriminately using CoT for all queries.  It formulates this as a Pareto optimization problem, balancing model performance and CoT costs using reinforcement learning.  AdaCoT achieves significant reductions in CoT usage (as low as 3.18%) and tokens (69.06%), while maintaining high performance on complex tasks.  A key technical contribution is Selective Loss Masking (SLM), which prevents decision boundary collapse during training.  Experimental results show AdaCoT successfully navigates the Pareto frontier.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Delta Attention: Fast and Accurate Sparse Attention Inference by Delta\n  Correction",
+        "authors": "Sung Ju Hwang, gmlwns5176, jeffwillette",
+        "link": "https://arxiv.org/abs/2505.11254",
+        "github_repo": null,
+        "summary": "- This paper introduces Delta Attention, a novel method to improve the accuracy of sparse attention inference in transformer models.\n- Delta Attention addresses the performance degradation caused by distributional shifts in sparse attention outputs by applying a simple correction procedure.\n- Experimental results demonstrate that Delta Attention achieves an average 36 percentage point increase in accuracy across various benchmarks, recovering 88% of full quadratic attention accuracy.\n- The method maintains approximately 98.5% sparsity, resulting in a 32 times speedup compared to Flash Attention 2 on a 1 million token prefill task.\n- Delta Attention can be applied to any existing sparse attention method with minimal overhead.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Scaling Computer-Use Grounding via User Interface Decomposition and\n  Synthesis",
+        "authors": "Mayome, RadioBlue, lixiaochuan2020, MillanK, tianbaoxiexxx",
+        "link": "https://arxiv.org/abs/2505.13227",
+        "github_repo": null,
+        "summary": " - This paper introduces OSWORLD-G, a comprehensive benchmark with 564 finely annotated samples for evaluating GUI grounding models, addressing limitations of previous benchmarks.\n - It also presents JEDI, a large-scale (4 million examples) computer use grounding dataset synthesized via multi-perspective task decoupling.\n - Multi-scale models trained on JEDI outperform existing approaches on ScreenSpot-v2, ScreenSpot-Pro, and OSWORLD-G.\n - The authors demonstrate improved grounding with JEDI enhances agentic capabilities of foundation models, improving performance on complex computer tasks.\n - Ablation studies identify key factors contributing to grounding performance and show combining specialized data for different interface elements enables compositional generalization.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://osworld-grounding.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Thinkless: LLM Learns When to Think",
+        "authors": "wxcTest, horseee, Vinnnf",
+        "link": "https://arxiv.org/abs/2505.13379",
+        "github_repo": "https://github.com/VainF/Thinkless",
+        "summary": "- This paper introduces Thinkless, a novel framework that enables LLMs to adaptively select between short-form and long-form reasoning based on task complexity and model capabilities.\n- Thinkless employs two control tokens, <short> and <think>, to direct the LLM's reasoning mode and is trained using a reinforcement learning paradigm with a decoupled optimization algorithm (DeGRPO).\n- DeGRPO decomposes the learning objective into two components: control token loss and response loss, enhancing training stability and preventing mode collapse observed in vanilla GRPO.\n- Experiments on several benchmarks show that Thinkless reduces long-chain reasoning usage by 50%-90%, significantly improving efficiency without sacrificing accuracy.\n- The code for Thinkless is publicly available on GitHub.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/VainF/Thinkless"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Seek in the Dark: Reasoning via Test-Time Instance-Level Policy Gradient\n  in Latent Space",
+        "authors": "zlzheng, vickyandkekey, ColorfulAI, xuekai, henry12348",
+        "link": "https://arxiv.org/abs/2505.13308",
+        "github_repo": null,
+        "summary": "The paper introduces LATENTSEEK, a novel framework that enhances Large Language Model (LLM) reasoning capabilities through Test-Time Instance-level Adaptation (TTIA) in the latent space.  LATENTSEEK leverages policy gradients to iteratively refine latent representations, guided by self-generated reward signals.  Experimental results on various reasoning benchmarks demonstrate that LATENTSEEK consistently outperforms strong baselines, such as Chain-of-Thought prompting and fine-tuning based methods.  The method is highly efficient, converging within a few iterations for problems of average complexity and showing scalability with additional iterations.  The findings suggest LATENTSEEK is a lightweight, scalable, and effective solution for enhancing LLM reasoning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/bigai-nlco/LatentSeek"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Hybrid 3D-4D Gaussian Splatting for Fast Dynamic Scene Representation",
+        "authors": "epark, Heyjin, LeeYG, ohseungjun",
+        "link": "https://arxiv.org/abs/2505.13215",
+        "github_repo": null,
+        "summary": "- This paper introduces Hybrid 3D-4D Gaussian Splatting (3D-4DGS), a novel framework for dynamic 3D scene representation that efficiently models both static and dynamic regions using a combination of 3D and 4D Gaussian primitives.\n- 3D-4DGS improves upon existing 4D Gaussian Splatting methods by adaptively identifying and representing static regions with 3D Gaussians, thereby significantly reducing the number of parameters and computational overhead.\n- The proposed method achieves significantly faster training times compared to baseline 4D Gaussian Splatting methods while maintaining or improving the visual quality, as demonstrated by experimental results on the N3V and Technicolor datasets.\n- The 3D-4DGS framework is evaluated on the N3V and Technicolor datasets, showcasing its effectiveness in handling both short and long dynamic sequences.\n- The method shows competitive or better results in terms of PSNR and SSIM compared to other state-of-the-art methods, while significantly reducing training time and improving efficiency.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://ohsngjun.github.io/3D-4DGS/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "MM-PRM: Enhancing Multimodal Mathematical Reasoning with Scalable\n  Step-Level Supervision",
+        "authors": "wqshao126, Domingo12, SuperposedWave, FanqingM, Cierra0506",
+        "link": "https://arxiv.org/abs/2505.13427",
+        "github_repo": "https://github.com/ModalMinds/MM-PRM",
+        "summary": "- This paper introduces MM-PRM, a process reward model designed to enhance multimodal mathematical reasoning.\n- MM-PRM leverages a three-stage framework: policy model construction, process supervision data generation using Monte Carlo Tree Search (MCTS), and process reward model training.\n- The model achieves significant improvements across various benchmarks (MM-K12, OlympiadBench, MathVista, etc.), outperforming existing methods by a notable margin.\n- The effectiveness of soft labels, smaller learning rates, and path diversity in optimizing PRM performance is demonstrated.\n- The researchers release their code and data at https://github.com/ModalMinds/MM-PRM.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ModalMinds/MM-PRM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "FedSVD: Adaptive Orthogonalization for Private Federated Learning with\n  LoRA",
+        "authors": "Sangwoo Park, hbseong, dwgnr, dongboklee, Seanie-lee",
+        "link": "https://arxiv.org/abs/2505.12805",
+        "github_repo": null,
+        "summary": "- This paper introduces FedSVD, a novel method for private federated learning with LoRA that addresses noise amplification issues.\n- FedSVD uses singular value decomposition (SVD) to reparameterize the LoRA update, improving stability and performance under differential privacy (DP-SGD).\n- The proposed method avoids quadratic noise amplification by optimizing only one matrix (B) while the other matrix (A) is reinitialized using SVD.\n- FedSVD consistently outperforms baselines under both private and non-private settings across various benchmarks and privacy levels.\n- Theoretical analysis shows that the orthonormal structure of matrix A improves the condition number of the Hessian, resulting in faster convergence.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "CPGD: Toward Stable Rule-based Reinforcement Learning for Language\n  Models",
+        "authors": "wqshao126, SuperposedWave, Cierra0506, FanqingM, Zkkkai",
+        "link": "https://arxiv.org/abs/2505.12504",
+        "github_repo": "https://github.com/ModalMinds/MM-EUREKA",
+        "summary": "- This paper introduces Clipped Policy Gradient Optimization with Policy Drift (CPGD), a novel algorithm designed to stabilize rule-based reinforcement learning for Language Models.\n- CPGD addresses the training instability issues of existing RL methods (like GRPO, REINFORCE++, and RLOO) by introducing a policy drift constraint and a clip mechanism on the logarithm of the ratio to regularize policy updates.\n- The authors provide theoretical justification for CPGD and demonstrate empirically that it mitigates instability and improves performance compared to prior approaches.\n- Experiments on various multimodal reasoning benchmarks show that CPGD outperforms existing RL algorithms and baselines, achieving a +11.0% improvement over the base model across all benchmarks.\n- The code for CPGD is released at https://github.com/ModalMinds/MM-EUREKA.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ModalMinds/MM-EUREKA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Faster Video Diffusion with Trainable Sparse Attention",
+        "authors": "EricX003, hunterhector, BrianChen1129, haofeng666, PY007",
+        "link": "https://arxiv.org/abs/2505.13389",
+        "github_repo": null,
+        "summary": "- This paper introduces VSA (Video Sparse Attention), a novel trainable sparse attention mechanism designed to address the computational limitations of scaling video diffusion transformers.\n- VSA employs a two-stage hierarchical approach, comprising a lightweight coarse stage for identifying high-weight tokens and a fine stage for computing token-level attention within selected regions.\n- The method is fully differentiable and trains end-to-end without requiring post-hoc profiling, achieving significant speedups compared to full attention methods.\n- Experiments show VSA achieves a Pareto optimal point which reduces training FLOPS by 2.53x without sacrificing diffusion loss, leading to 6x faster attention time and 1.7x faster inference.\n- VSA is shown to be a scalable solution for video diffusion transformers, outperforming existing methods that rely on post-hoc sparse techniques.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Fractured Chain-of-Thought Reasoning",
+        "authors": "JunnanLi, doyensahoo, yuhuixu, hendrydong, baohao",
+        "link": "https://arxiv.org/abs/2505.12992",
+        "github_repo": null,
+        "summary": "- This paper introduces Fractured Sampling, a novel inference-time scaling technique that improves the reasoning capabilities of large language models (LLMs) by generating rich intermediate reasoning trajectories while reducing token costs.\n- Fractured Sampling operates along three orthogonal axes: the number of reasoning trajectories, the number of final solutions per trajectory, and the depth at which reasoning traces are truncated.\n- Extensive experiments on five reasoning benchmarks show that Fractured Sampling consistently achieves superior accuracy-cost trade-offs compared to traditional methods like full chain-of-thought (CoT) prompting and solution-only sampling.\n- The analysis reveals how to allocate computation across the three dimensions of Fractured Sampling to maximize performance, leading to more efficient and scalable LLM reasoning.\n- The authors demonstrate that truncated CoT, which stops reasoning before completion, often matches full CoT sampling in accuracy while using significantly fewer tokens.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "VisionReasoner: Unified Visual Perception and Reasoning via\n  Reinforcement Learning",
+        "authors": "Shu Liu, BoHao0326, zszhong, TainU, Ricky06662",
+        "link": "https://arxiv.org/abs/2505.12081",
+        "github_repo": null,
+        "summary": "- VisionReasoner is a novel unified framework for visual perception tasks that leverages reinforcement learning to enhance reasoning capabilities and solve diverse perception tasks within a shared model.\n- It outperforms existing models like Qwen2.5VL by relative margins of 29.1% on COCO (detection), 22.1% on ReasonSeg (segmentation), and 15.3% on CountBench (counting).\n- The model employs a multi-object cognitive learning strategy and reformulates tasks into three fundamental types: detection, segmentation, and counting.\n- It incorporates a reasoning module which processes the image and locates targeted objects, and a segmentation module that produces segmentation masks if needed.\n- The reward mechanism includes format rewards (thinking rewards, answer format rewards, non-repeat rewards) and accuracy rewards (multi-object IoU rewards, L1 rewards for precise localization) to strengthen multi-object cognition.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Visual Question Answering",
+            "Object Detection",
+            "Image Segmentation",
+            "Zero-Shot Object Detection"
+        ],
+        "github_urls": [
+            "https://github.com/dvlab-research/VisionReasoner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Neuro-Symbolic Query Compiler",
+        "authors": "jrwen, wuyongkang, lixiaoxi45, douzc, KeriaZhang",
+        "link": "https://arxiv.org/abs/2505.11932",
+        "github_repo": "https://github.com/YuyaoZhangQAQ/Query_Compiler",
+        "summary": "- This paper introduces QCompiler, a neuro-symbolic framework designed to enhance Retrieval-Augmented Generation (RAG) systems' ability to handle complex queries.\n- QCompiler uses a Backus-Naur Form (BNF) grammar to formalize complex queries, minimizing redundancy and ensuring completeness.\n- The framework comprises a Query Expression Translator, a Lexical Syntax Parser, and a Recursive Descent Processor to compile queries into Abstract Syntax Trees (ASTs).\n- Experiments on multiple benchmarks demonstrate that QCompiler significantly improves the accuracy and efficiency of RAG systems in addressing complex queries compared to existing methods.\n- The atomicity of sub-queries in leaf nodes of the AST ensures precise document retrieval and response generation.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/YuyaoZhangQAQ/Query_Compiler"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "ViPlan: A Benchmark for Visual Planning with Symbolic Predicates and\n  Vision-Language Models",
+        "authors": "Pietroferr, giobin, minttusofia, dainesn1, merlerm",
+        "link": "https://arxiv.org/abs/2505.13180",
+        "github_repo": null,
+        "summary": "The paper introduces ViPlan, a benchmark for visual planning using vision-language models (VLMs) with symbolic predicates.  ViPlan features two domains: a visual Blocksworld and a simulated household robotics environment, offering increasingly challenging tasks.  The benchmark compares VLM-grounded symbolic planning against direct VLM planning, finding that symbolic planning outperforms direct VLM planning in Blocksworld but the opposite is true for household robotics tasks.  Finally, the study shows that Chain-of-Thought prompting does not significantly improve performance across most models and methods. The benchmark is open-source.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/merlerm/ViPlan"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Model Merging in Pre-training of Large Language Models",
+        "authors": "Jing Liu, Chaoyi Zhang, Shen Yan, Yiyuan Ma, Yunshui Li",
+        "link": "https://arxiv.org/abs/2505.12082",
+        "github_repo": null,
+        "summary": "- This paper introduces Pre-trained Model Averaging (PMA), a novel technique for enhancing large language models (LLMs) during pre-training.\n- PMA merges checkpoints from the stable training phase, resulting in consistent performance improvements across various model sizes and architectures (dense and Mixture-of-Experts).\n- Experiments demonstrate that PMA achieves comparable or superior performance to traditional annealing methods, offering faster validation cycles and significant computational savings.\n- The optimal merging interval and number of checkpoints scale with model size, and incorporating more checkpoints generally improves performance.\n- PMA can also be used to stabilize training by initializing consecutive training (CT) and supervised fine-tuning (SFT) stages with PMA-applied checkpoints, leading to more reliable recovery from unstable trajectories.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Accelerate TarFlow Sampling with GS-Jacobi Iteration",
+        "authors": "zhenqincn, encoreus",
+        "link": "https://arxiv.org/abs/2505.12849",
+        "github_repo": "https://github.com/encoreus/GS-Jacobi_for_TarFlow",
+        "summary": "- This paper introduces a novel method to accelerate the sampling process of the TarFlow image generation model using Gauss-Seidel-Jacobi iteration.\n- The method leverages two metrics, Convergence Ranking Metric (CRM) and Initial Guessing Metric (IGM), to identify and optimize the sampling process for different blocks within the TarFlow model.\n- Experimental results show significant speed improvements (4.53x in Img128cond, 5.32x in AFHQ, 2.96x in Img64uncond, and 2.51x in Img64cond) without degrading image quality (measured by FID).\n- The proposed method transforms the TarFlow sampling process into a diagonalized nonlinear system and employs iteration-based solvers to achieve parallelization.\n- The authors provide code and checkpoints for reproducibility.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/encoreus/GS-Jacobi_for_TarFlow"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "When AI Co-Scientists Fail: SPOT-a Benchmark for Automated Verification\n  of Scientific Research",
+        "authors": "sngwon, Cartinoe5930, HazelNam, JW17, amphora",
+        "link": "https://arxiv.org/abs/2505.11855",
+        "github_repo": null,
+        "summary": "This paper introduces SPOT, a new benchmark dataset for evaluating the ability of Large Language Models (LLMs) to perform automated verification of scientific research. The dataset consists of 83 published papers paired with 91 manually-annotated errors, validated by authors and human annotators. The authors evaluate the performance of various state-of-the-art LLMs on SPOT, finding that none achieve satisfactory results, highlighting a significant gap between current LLM capabilities and the requirements for dependable AI-assisted academic verification.  The benchmark is multi-modal, containing both text and image data. The authors also present case studies and further analysis on the impact of context length and multi-modality on model performance.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/guijinSON/ai4s_r2.git"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/amphora/SPOT-MetaData"
+        ],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "ChartMuseum: Testing Visual Reasoning Capabilities of Large\n  Vision-Language Models",
+        "authors": "wadhma, PrasannSinghal, fcyin, thomlake, lytang",
+        "link": "https://arxiv.org/abs/2505.13444",
+        "github_repo": null,
+        "summary": " - The paper introduces CHARTMUSEUM, a new benchmark dataset for evaluating the visual reasoning capabilities of large vision-language models (LVLMs) in chart question answering.\n - CHARTMUSEUM contains 1162 expert-annotated questions spanning multiple reasoning types, curated from real-world charts across 184 sources.\n - The benchmark reveals a substantial gap between human and model performance, showcasing the limitations of current LVLMs in complex visual and textual reasoning.\n - Human performance on CHARTMUSEUM reaches 93%, whereas the top-performing model (Gemini-2.5-Pro) achieves only 63.0% accuracy and the best open-source model reaches only 38.5%.\n - A qualitative error analysis reveals the specific categories of visual reasoning that are challenging for current LVLMs.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://chartmuseum-leaderboard.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "MTVCrafter: 4D Motion Tokenization for Open-World Human Image Animation",
+        "authors": "Yali Wang, Zhizhi Guo, Xirui Hu, yanboding",
+        "link": "https://arxiv.org/abs/2505.10238",
+        "github_repo": "https://github.com/DINGYANB/MTVCrafter",
+        "summary": "- This paper introduces MTVCrafter, a novel framework for open-world human image animation that directly models raw 3D motion sequences (4D motion).\n- The model architecture consists of a 4D motion tokenizer (4DMoT) to quantize 3D motion sequences into 4D motion tokens and a motion-aware video diffusion transformer (MV-DiT) for controllable animation.\n- MTVCrafter outperforms existing state-of-the-art methods with an FID-VID of 6.98, surpassing the second-best by 65%.\n- The model generalizes well to diverse open-world characters (single/multiple, full/half-body) across various styles and scenarios.\n- The authors introduce unique 4D motion attention with 4D positional encodings in MV-DiT to effectively leverage motion tokens as context for vision tokens.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/DINGYANB/MTVCrafter"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "FinePhys: Fine-grained Human Action Generation by Explicitly\n  Incorporating Physical Laws for Effective Skeletal Guidance",
+        "authors": "Shengda Xu, Mingfei Shi, Dian Shao, Jason-Huang824, Harold328",
+        "link": "https://arxiv.org/abs/2505.13437",
+        "github_repo": null,
+        "summary": " - FinePhys is a novel framework for fine-grained human action video generation that incorporates physics-based motion re-estimation using Euler-Lagrange equations.\n - The model architecture consists of an online 2D pose estimator, a 2D-to-3D dimension lifting module (using in-context learning), a physics-based motion re-estimation module (PhysNet), and a diffusion model for video generation.\n - FinePhys significantly outperforms state-of-the-art baselines on three fine-grained action subsets from FineGym (FX-JUMP, FX-TURN, and FX-SALTO), demonstrating its ability to generate more natural and physically plausible fine-grained human actions.\n - The effectiveness of FinePhys is demonstrated through comprehensive qualitative and quantitative results, including user studies.\n - The use of Euler-Lagrange equations for bidirectional temporal updating of joint accelerations ensures physically realistic motion generation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "ExTrans: Multilingual Deep Reasoning Translation via Exemplar-Enhanced\n  Reinforcement Learning",
+        "authors": "Jie Zhou, fandong, Krystalan",
+        "link": "https://arxiv.org/abs/2505.12996",
+        "github_repo": null,
+        "summary": "- This paper introduces ExTrans, a novel multilingual deep reasoning translation model that leverages exemplar-enhanced reinforcement learning.\n- The model utilizes a strong large language model (DeepSeek-R1) as an exemplar to generate reward signals, enhancing the quality of translations.\n- ExTrans achieves state-of-the-art performance in English-to-Chinese literary translation, outperforming strong baselines such as OpenAI-01 and DeepSeek-R1.\n- A lightweight reward modeling method is proposed to extend ExTrans to multilingual settings (mExTrans-7B), transferring the strong MT ability from a single to multiple translation directions.\n- mExTrans-7B demonstrates impressive multilingual MT performance, achieving competitive results compared with existing strong models.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "SoftCoT++: Test-Time Scaling with Soft Chain-of-Thought Reasoning",
+        "authors": "Chunyan Miao, Xu Guo, Aver3, xuyige",
+        "link": "https://arxiv.org/abs/2505.11484",
+        "github_repo": "https://github.com/xuyige/SoftCoT",
+        "summary": "- SoftCoT++, a novel framework, extends SoftCoT for test-time scaling in the continuous latent space of the chain-of-thought reasoning process.\n- It introduces multiple specialized initial tokens and contrastive learning to generate diverse soft thought representations.\n- Experiments across five reasoning benchmarks and two LLMs demonstrate that SoftCoT++ significantly outperforms SoftCoT and other baselines.\n- SoftCoT++'s performance is consistent across different architectures and tasks, highlighting its versatility.\n- The method's effectiveness is shown by its ability to amplify the scaling effect when combined with self-consistency, indicating the orthogonality of scaling the thinking and reasoning stages.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/xuyige/SoftCoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "HISTAI: An Open-Source, Large-Scale Whole Slide Image Dataset for\n  Computational Pathology",
+        "authors": "Ekaterina Ivanova, alpchel, mgvz",
+        "link": "https://arxiv.org/abs/2505.12120",
+        "github_repo": "https://github.com/HistAI/HISTAI",
+        "summary": "- The paper introduces HISTAI, a large-scale, open-access whole slide image (WSI) dataset for computational pathology.\n- HISTAI comprises over 60,000 WSIs from various tissue types, each accompanied by extensive clinical metadata (diagnosis, demographics, pathological annotations, diagnostic coding).\n- The dataset addresses limitations of existing WSI datasets by offering greater scale, diversity, and comprehensive annotations, thereby facilitating more robust and generalizable AI models.\n- HISTAI aims to promote innovation, reproducibility, and the development of clinically relevant computational pathology solutions.\n-  The dataset is accessible via a GitHub repository and is structured into specialized subsets based on tissue types and pathology specializations.",
+        "classification": [
+            "Image Classification",
+            "Image Segmentation",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/HistAI/HISTAI"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "QVGen: Pushing the Limit of Quantized Video Generative Models",
+        "authors": "Jing Liu, HaotongQin, lvchengtao, Ruihao, Harahan",
+        "link": "https://arxiv.org/abs/2505.11497",
+        "github_repo": null,
+        "summary": "- This paper introduces QVGen, a novel quantization-aware training (QAT) framework for video diffusion models that achieves high performance with extremely low-bit quantization (4-bit or below).\n- QVGen incorporates auxiliary modules to mitigate large quantization errors and improve convergence during training, addressing a key challenge in applying quantization to video diffusion models.\n- A rank-decay strategy is employed to progressively eliminate the inference overhead of auxiliary modules, ensuring the inference efficiency of the trained models.\n- Extensive experiments demonstrate that QVGen outperforms existing methods in reaching full-precision comparable quality under 4-bit settings and significantly surpasses them in 3-bit settings across multiple state-of-the-art video diffusion models.\n- The proposed methodology is the first to achieve full-precision comparable quality under 4-bit settings for video diffusion models.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "From Grunts to Grammar: Emergent Language from Cooperative Foraging",
+        "authors": "Mingfei Sun, Wei Pan, Weicheng Tao, Rujikorn Charakorn, Maytus Piriyajitakonkij",
+        "link": "https://arxiv.org/abs/2505.12872",
+        "github_repo": null,
+        "summary": "- This paper introduces Foraging Games (FG), a novel multi-agent framework designed to investigate the emergence of language in embodied agents.\n- The FG framework incorporates ecological and cognitive constraints believed to have influenced the evolution of human language, including partial observability, bidirectional communication, and the need for agents to coordinate actions to achieve shared goals.\n- Agents in the FG framework learn both actions and communication strategies using end-to-end deep reinforcement learning, resulting in the emergence of communication protocols with several hallmark features of natural language, including arbitrariness, interchangeability, displacement, cultural transmission, and compositionality.\n- The authors quantify these properties and analyze how factors such as population size and temporal dependencies affect language development, providing insights into how language may have evolved in early humans.\n- The proposed framework serves as a valuable platform for studying the evolution of language in embodied multi-agent settings, as well as providing the basis for future studies that could test many hypotheses regarding linguistic evolution.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Tiny QA Benchmark++: Ultra-Lightweight, Synthetic Multilingual Dataset\n  Generation & Smoke-Tests for Continuous LLM Evaluation",
+        "authors": "vincentkoc",
+        "link": "https://arxiv.org/abs/2505.12058",
+        "github_repo": null,
+        "summary": "- This paper introduces Tiny QA Benchmark++ (TQB++), an ultra-lightweight evaluation suite designed for rapid LLM evaluation.\n- TQB++ consists of a small, hand-crafted English QA dataset and a Python-based synthetic data generation toolkit which creates multilingual datasets for various languages.\n- The toolkit uses LiteLLM to allow users to generate datasets using different LLMs.\n- The authors demonstrate how TQB++ helps in exposing critical failures in LLMs and detecting regressions in LLMOps workflows by using various models and datasets.\n- The dataset, generator script, and related tools are open-sourced and hosted on the Hugging Face Hub and GitHub.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/vincentkoc/tiny_qa_benchmark_pp"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/vincentkoc/tiny_qa_benchmark_pp"
+        ],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "HelpSteer3-Preference: Open Human-Annotated Preference Data across\n  Diverse Tasks and Languages",
+        "authors": "Felipe Soares, Hoo-Chang Shin, Olivier Delalleau, Jiaqi Zeng, Zhilin Wang",
+        "link": "https://arxiv.org/abs/2505.11475",
+        "github_repo": null,
+        "summary": "This paper introduces HelpSteer3-Preference, a high-quality human-annotated preference dataset with over 40,000 samples covering diverse real-world LLM applications.  It improves upon existing datasets by offering enhanced quality and diversity, encompassing STEM, coding, and multilingual scenarios. Reward models trained on this dataset achieve state-of-the-art performance on RM-Bench (82.4%) and JudgeBench (73.7%). The dataset is available under a permissive CC-BY-4.0 license.  The authors further demonstrate the dataset's applicability to training generative reward models and aligning policy models with RLHF.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/nvidia/HelpSteer3#preference"
+        ],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Learned Lightweight Smartphone ISP with Unpaired Data",
+        "authors": "Radu Timofte, AndreiArhire",
+        "link": "https://arxiv.org/abs/2505.10420",
+        "github_repo": "https://github.com/AndreiiArhire/Learned-Lightweight-Smartphone-ISP-with-Unpaired-Data",
+        "summary": "- This paper introduces a novel training method for a learnable image signal processor (ISP) that eliminates the need for paired data.\n- The proposed unpaired approach uses a multi-term loss function guided by adversarial training with multiple discriminators.\n- The method maintains content structure while learning color and texture characteristics from the target RGB dataset.\n- Experiments on the Zurich RAW to RGB and Fujifilm UltraISP datasets show that the unpaired learning strategy achieves high fidelity across multiple evaluation metrics, comparable to paired training methods.\n- The code and pre-trained models are available on GitHub.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/AndreiiArhire/Learned-Lightweight-Smartphone-ISP-with-Unpaired-Data"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "Fast, Not Fancy: Rethinking G2P with Rich Data and Rule-Based Models",
+        "authors": "Hamid R. Rabiee, Zahra Dehghanian, Mahta Fetrat Qharabagh",
+        "link": "https://arxiv.org/abs/2505.12973",
+        "github_repo": null,
+        "summary": "This paper introduces HomoRich, a new large-scale Persian homograph dataset created using a semi-automated pipeline that leverages LLMs.  The authors propose two novel G2P tools: Homo-GE2PE, a fine-tuned neural model, and HomoFast eSpeak, an enhanced rule-based system.  Experiments show Homo-GE2PE improves homograph disambiguation accuracy by 29.72% and HomoFast eSpeak shows a 30.66% improvement.  The dataset and code are publicly available.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/MahtaFetrat/Homo-GE2PE-Persian",
+            "https://github.com/MahtaFetrat/HomoFast-eSpeak-Persian",
+            "https://github.com/MahtaFetrat/Persian-G2P-Tools-Benchmark"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/MahtaFetrat/HomoRich-G2P-Persian"
+        ],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "LLM Context Conditioning and PWP Prompting for Multimodal Validation of\n  Chemical Formulas",
+        "authors": "PChemGuy",
+        "link": "https://arxiv.org/abs/2505.12257",
+        "github_repo": null,
+        "summary": "- This paper explores the use of Large Language Models (LLMs) for multimodal validation of chemical formulas in scientific documents.\n- It introduces a novel methodology that combines structured LLM context conditioning with Persistent Workflow Prompting (PWP) principles to improve the reliability of LLMs for such tasks.\n- The proposed approach is tested on a complex test paper with known textual and image-based errors, demonstrating improved accuracy in identifying errors compared to simpler prompting techniques.\n- Notably, the method enables the LLM to repeatedly identify a subtle image-based error overlooked during manual review.\n- The findings highlight the potential of PWP-informed context conditioning as a promising technique for developing more robust LLM-driven analytical workflows for scientific and technical documents.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "TechniqueRAG: Retrieval Augmented Generation for Adversarial Technique\n  Annotation in Cyber Threat Intelligence Text",
+        "authors": "mparvez, TahaSencar, utsavshukla, lekssays",
+        "link": "https://arxiv.org/abs/2505.11988",
+        "github_repo": null,
+        "summary": "- This paper introduces TECHNIQUERAG, a novel retrieval-augmented generation (RAG) framework for annotating adversarial techniques in cyber threat intelligence text.\n- TECHNIQUERAG mitigates data scarcity by fine-tuning only the generation component on limited in-domain examples, unlike resource-intensive methods.\n- It enhances retrieval quality and domain specificity through zero-shot LLM re-ranking, which aligns retrieved candidates with adversarial techniques.\n- Experiments on multiple security benchmarks show that TECHNIQUERAG achieves state-of-the-art performance without extensive task-specific optimizations or labeled data.\n- Comprehensive analysis further reveals insights into the framework's strengths and limitations.",
+        "classification": [
+            "Text Classification",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/qcri/TechniqueRAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    },
+    {
+        "title": "AI-Driven Scholarly Peer Review via Persistent Workflow Prompting,\n  Meta-Prompting, and Meta-Reasoning",
+        "authors": "PChemGuy",
+        "link": "https://arxiv.org/abs/2505.03332",
+        "github_repo": null,
+        "summary": " - This paper introduces Persistent Workflow Prompting (PWP), a novel prompt engineering methodology for guiding LLMs through complex analytical tasks such as scholarly peer review.\n - PWP employs a hierarchical prompt structure to systematically codify expert workflows and mitigate LLM input bias.\n - The authors demonstrate PWP's effectiveness through a proof-of-concept application to experimental chemistry manuscript reviews, showing that LLMs guided by PWP can reliably identify major methodological flaws.\n - A key advantage of PWP is its ability to guide complex reasoning through standard LLM chat interfaces without requiring specialized APIs or coding.\n - The paper further explores meta-prompting and meta-reasoning techniques for refining and formalizing complex prompts and workflows.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-20"
+    }
+]

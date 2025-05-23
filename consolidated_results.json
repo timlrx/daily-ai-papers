@@ -38409,5 +38409,623 @@
             "https://huggingface.co/vectorinstitute/HumaniBench"
         ],
         "date": "2025-05-22"
+    },
+    {
+        "title": "NovelSeek: When Agent Becomes the Scientist -- Building Closed-Loop\n  System from Hypothesis to Verification",
+        "authors": "Jiakang Yuan, Xiangchao Yan, Shiyang Feng, Bo Zhang, NovelSeek Team",
+        "link": "https://arxiv.org/abs/2505.16938",
+        "github_repo": null,
+        "summary": " - NOVELSEEK is a unified closed-loop multi-agent framework for conducting autonomous scientific research (ASR) across various scientific research fields. \n- It demonstrates versatility across 12 diverse scientific research tasks, exhibiting scalability and interactivity through human expert feedback and multi-agent interaction. \n- NOVELSEEK achieves significant efficiency gains compared to human efforts across multiple tasks, including reaction yield prediction, enhancer activity prediction, and 2D semantic segmentation. \n- The framework comprises four main modules: self-evolving idea generation, human-interactive feedback, idea-to-methodology construction, and multi-round experiment planning and execution. \n- The entire research pipeline has been open-sourced to ensure reproducibility.",
+        "classification": [
+            "Any-to-Any"
+        ],
+        "github_urls": [
+            "https://github.com/Alpha-Innovator/NovelSeek"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/U4R/NovelSeek"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Scaling Reasoning, Losing Control: Evaluating Instruction Following in\n  Large Reasoning Models",
+        "authors": "Yu Cheng, Xiaoye Qu, Jiawei Gu, yaful, TingchenFu",
+        "link": "https://arxiv.org/abs/2505.14810",
+        "github_repo": "https://github.com/TingchenFu/MathIF",
+        "summary": "- This paper introduces MathIF, a new benchmark for evaluating instruction following in large language models (LLMs) specifically designed for mathematical reasoning tasks.\n- The benchmark includes 420 high-quality evaluation samples with varying difficulty and constraints, allowing for a comprehensive evaluation of instruction following capabilities.\n- Empirical analysis reveals a consistent tension between scaling up reasoning capacity and maintaining controllability in LLMs, with models that reason more effectively often struggling to adhere to user instructions.\n- The authors find that models tuned on distilled long chains-of-thought or trained with reasoning-oriented reinforcement learning degrade in instruction adherence, especially when generation length increases.\n- This work highlights a fundamental tension in current LLM training paradigms and motivates the need for more instruction-aware reasoning models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/TingchenFu/MathIF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement\n  Learning",
+        "authors": "Hongjin Qian, Jiajie Jin, Xiaoxi Li, Yifei Chen, Guanting Dong",
+        "link": "https://arxiv.org/abs/2505.16410",
+        "github_repo": "https://github.com/dongguanting/Tool-Star",
+        "summary": "This paper introduces Tool-Star, a reinforcement learning framework that enables LLMs to autonomously utilize multiple external tools during reasoning.  Tool-Star incorporates six types of tools and systematic designs in data synthesis and training to address the scarcity of tool-use data.  A two-stage training framework enhances multi-tool collaborative reasoning through cold-start fine-tuning and a multi-tool self-critic RL algorithm. Experimental results on over 10 challenging reasoning benchmarks demonstrate Tool-Star's effectiveness and efficiency.  Tool-Star outperforms other TIR baselines across various reasoning tasks, showcasing strong overall reasoning performance and reliability in tool usage.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/dongguanting/Tool-Star"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "KRIS-Bench: Benchmarking Next-Level Intelligent Image Editing Models",
+        "authors": "Xianfang Zeng, Xinyu Ye, Xinting Hu, Zonghui Li, Yongliang Wu",
+        "link": "https://arxiv.org/abs/2505.16707",
+        "github_repo": null,
+        "summary": "This paper introduces KRIS-Bench, a new benchmark designed to evaluate the knowledge-based reasoning capabilities of image editing models.  KRIS-Bench categorizes editing tasks into three foundational knowledge types: Factual, Conceptual, and Procedural.  It proposes a novel Knowledge Plausibility metric, enhanced by knowledge hints and human studies.  Empirical results show significant gaps in reasoning performance across ten state-of-the-art models, highlighting the need for knowledge-centric benchmarks.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://yongliang-wu.github.io/kris_bench_project_page/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Pixel Reasoner: Incentivizing Pixel-Space Reasoning with\n  Curiosity-Driven Reinforcement Learning",
+        "authors": "Fangzhen Lin, Weimin Ren, Haozhe Wang, Alex Su, wenhu",
+        "link": "https://arxiv.org/abs/2505.15966",
+        "github_repo": null,
+        "summary": "- This paper introduces Pixel Reasoner, a novel framework that introduces the concept of reasoning in pixel space to enhance the reasoning capabilities of Vision-Language Models (VLMs).\n- Pixel Reasoner is a 7B parameter model that improves VLM performance across diverse visual reasoning benchmarks, achieving state-of-the-art results on several datasets.\n- The model is trained using a two-phase approach: instruction tuning on synthesized reasoning traces, and reinforcement learning with a curiosity-driven reward scheme.\n- The proposed method addresses the challenges of imbalanced competence and reluctance to adopt pixel-space operations in VLMs through a two-stage training process.\n- This framework highlights the importance of pixel-space reasoning and the effectiveness of the proposed training approach for improving VLM performance on visually intensive tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://tiger-ai-lab.github.io/Pixel-Reasoner/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "QuickVideo: Real-Time Long Video Understanding with System Algorithm\n  Co-Design",
+        "authors": "Wenhu Chen, Tianyu Pang, Chao Du, Dongfu Jiang, Benjamin Schneider",
+        "link": "https://arxiv.org/abs/2505.16175",
+        "github_repo": null,
+        "summary": "- QuickVideo is a novel system-algorithm co-design that significantly accelerates long video understanding, enabling real-time processing for downstream applications.\n- It achieves this through three key innovations: QuickCodec (a parallelized video decoder), QuickPrefill (a memory-efficient pre-filling method), and an overlapping scheme that combines CPU video decoding with GPU inference.\n- Experiments demonstrate that QuickVideo generalizes across various video durations and sampling rates, substantially reducing processing time (e.g., by more than 3x for a 30-minute video).\n- The efficiency gains stem from the parallelization of video decoding and memory optimization techniques during pre-filling, which are critical for handling long videos.\n- QuickVideo's approach makes real-time long video understanding feasible even with limited hardware resources.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/TIGER-AI-Lab/QuickVideo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "GoT-R1: Unleashing Reasoning Capability of MLLM for Visual Generation\n  with Reinforcement Learning",
+        "authors": "Linjiang Huang, Kun Wang, Yuqing Wang, Rongyao Fang, Chengqi Duan",
+        "link": "https://arxiv.org/abs/2505.17022",
+        "github_repo": "https://github.com/gogoduan/GoT-R1",
+        "summary": "- This paper introduces GoT-R1, a framework that uses reinforcement learning to enhance the semantic-spatial reasoning capabilities of large language models (LLMs) for visual generation.\n- GoT-R1 builds upon the Generation Chain-of-Thought approach and introduces a dual-stage, multi-dimensional reward system that assesses semantic alignment, spatial accuracy, and visual quality.\n- The model uses an autoregressive unified MLLM which takes text prompts as input and outputs the reasoning chain followed by a sequence of image tokens.\n- Experiments show that GoT-R1 achieves state-of-the-art results on the T2I-CompBench benchmark, particularly in compositional tasks involving precise spatial relationships and attribute binding.\n- The code and pre-trained models are publicly available.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/gogoduan/GoT-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "LLaDA-V: Large Language Diffusion Models with Visual Instruction Tuning",
+        "authors": "Jun Zhou, Jun Hu, Xiaolu Zhang, Shen Nie, Zebin You",
+        "link": "https://arxiv.org/abs/2505.16933",
+        "github_repo": null,
+        "summary": "- LLaDA-V is a purely diffusion-based multimodal large language model (MLLM) that integrates visual instruction tuning with masked diffusion models.\n- The model architecture incorporates a vision encoder and an MLP connector to project visual features into the language embedding space, enabling effective multimodal alignment.\n- LLaDA-V demonstrates promising multimodal performance despite its language model being weaker on purely textual tasks than counterparts.\n- When trained on the same instruction data, LLaDA-V is highly competitive with LLaMA3-V across multimodal tasks and achieves state-of-the-art performance in multimodal understanding.\n- The findings suggest that large language diffusion models show promise in multimodal contexts.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ml-gsai/LLaDA-V-demo/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Risk-Averse Reinforcement Learning with Itakura-Saito Loss",
+        "authors": "Alexander Korotin, Evgeny Burnaev, Anita Toleutaeva, Olivier Croissant, i-udovichenko",
+        "link": "https://arxiv.org/abs/2505.16925",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel loss function based on the Itakura-Saito divergence for risk-averse reinforcement learning, addressing numerical instability issues found in existing exponential utility approaches.\n- The proposed Itakura-Saito loss function is mathematically sound and numerically stable, recovering the exponential utility's Bellman equation under mild conditions.\n- Theoretical guarantees are provided demonstrating the correctness and scale invariance of the loss function.\n- Empirical validation across various benchmarks demonstrates that the Itakura-Saito loss function outperforms established alternatives such as exponential MSE loss and softplus loss.\n- The improved stability and performance make the Itakura-Saito loss function suitable for high-stakes applications where risk aversion is critical.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Scaling Diffusion Transformers Efficiently via \u03bcP",
+        "authors": "Zhi Tian, Wei Huang, Rongzhen Wang, Xinyu Zhang, ChenyuZheng",
+        "link": "https://arxiv.org/abs/2505.15270",
+        "github_repo": null,
+        "summary": "This paper introduces Maximal Update Parametrization (\u00b5P) for scaling diffusion transformers, addressing the high cost of hyperparameter tuning at large scales.  The authors generalize \u00b5P to mainstream diffusion transformers and rigorously prove its compatibility.  Large-scale experiments demonstrate DiT-\u00b5P's robust HP transferability, resulting in 2.9x faster convergence for DiT-XL-2-\u00b5P.  Scaling PixArt-a and MMDiT under \u00b5P yields superior performance with minimal tuning costs (5.5% and 3% respectively).  This research establishes \u00b5P as an efficient framework for scaling diffusion transformers.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Let LLMs Break Free from Overthinking via Self-Braking Tuning",
+        "authors": "Wenqi Zhang, Haolei Xu, Yongliang Shen, Yuchen Yan, Haoran Zhao",
+        "link": "https://arxiv.org/abs/2505.14604",
+        "github_repo": "https://github.com/ZJU-REAL/Self-Braking-Tuning",
+        "summary": "- This paper introduces Self-Braking Tuning (SBT), a novel framework that enables large language models (LLMs) to autonomously regulate their reasoning process and reduce overthinking.\n- SBT tackles overthinking by allowing the model to self-regulate, eliminating the need for external control mechanisms.\n- The proposed method uses a systematic approach to identify redundant reasoning steps, generating training signals to enhance the model's self-regulation capabilities.\n- Experiments on mathematical reasoning benchmarks show that SBT reduces token consumption by up to 60% while maintaining comparable accuracy to unconstrained models.\n- The framework includes two data construction strategies: SBT-E (Exact) and SBT-D (Dynamic), each with unique strengths to help the model learn when to stop reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ZJU-REAL/Self-Braking-Tuning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Mind the Gap: Bridging Thought Leap for Improved Chain-of-Thought Tuning",
+        "authors": "Guiyang Hou, Wenqi Zhang, Yongliang Shen, Yuchen Yan, Haolei Xu",
+        "link": "https://arxiv.org/abs/2505.14684",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method called CoT-Bridge to improve the quality of chain-of-thought (CoT) reasoning in large language models (LLMs) by addressing the issue of \"Thought Leaps\", which are missing intermediate steps in CoT datasets.\n- CoT-Bridge automatically identifies and generates the missing steps, resulting in improved completeness and coherence in the reasoning chains. This is achieved by training a model on a specialized dataset called ScaleQM+, which is constructed from the ScaleQuestMath dataset by systematically removing intermediate steps.\n- Experiments demonstrate that fine-tuning LLMs on datasets with bridged CoTs consistently outperforms those trained on the original datasets with Thought Leaps. Improvements of up to +5.87% on NuminaMath and +3.36% on MetaMathQA were observed.\n- CoT-Bridge can be integrated with other techniques such as knowledge distillation and reinforcement learning, further enhancing model performance.\n- The effectiveness of the approach is validated across various benchmarks, including both mathematical and logical reasoning tasks, highlighting the broad applicability and generalizability of the method.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://zju-real.github.io/CoT-Bridge"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Backdoor Cleaning without External Guidance in MLLM Fine-tuning",
+        "authors": "Xun Xiao, Jinhe Bi, Jian Liang, Wenke Huang, Xuankun Rong",
+        "link": "https://arxiv.org/abs/2505.16916",
+        "github_repo": null,
+        "summary": "- The paper introduces Believe Your Eyes (BYE), a novel unsupervised data filtering framework that leverages attention entropy patterns to identify and filter backdoor samples in Multimodal Large Language Models (MLLMs) without external guidance.\n- BYE operates via a three-stage pipeline: extracting attention maps, computing entropy scores and profiling sensitive layers, and performing unsupervised clustering to remove suspicious samples.\n- Unlike prior defenses, BYE requires no clean supervision, auxiliary labels, or model modifications, making it robust and generalizable.\n- Extensive experiments across various datasets, models, and trigger types demonstrate BYE's effectiveness, achieving near-zero attack success rates while maintaining clean-task performance.\n- The code is publicly available at the provided GitHub URL.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/XuankunRong/BYE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Dimple: Discrete Diffusion Multimodal Large Language Model with Parallel\n  Decoding",
+        "authors": "Xinchao Wang, Xinyin Ma, Runpeng Yu",
+        "link": "https://arxiv.org/abs/2505.16990",
+        "github_repo": "https://github.com/yu-rp/Dimple",
+        "summary": "- Dimple, the first Discrete Diffusion Multimodal Large Language Model (DMLLM), is proposed, combining a vision encoder with a discrete diffusion language model.\n- A novel training paradigm combines an initial autoregressive phase with a subsequent diffusion phase, addressing training instability and length bias issues.\n- Dimple-7B surpasses LLaVA-NEXT by 3.9% in performance, demonstrating the effectiveness of the proposed approach.\n- Confident decoding dynamically adjusts the number of tokens generated per step, significantly improving inference efficiency.\n- Structure priors allow fine-grained control over the response structure, a capability difficult to achieve in autoregressive models.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yu-rp/Dimple"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/rp-yu/Dimple-7B",
+            "https://huggingface.co/spaces/rp-yu/Dimple-7B"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "VideoGameQA-Bench: Evaluating Vision-Language Models for Video Game\n  Quality Assurance",
+        "authors": "Nabajeet Barman, Saman Zadtootaghaj, Abhijay Ghildyal, corpaul, taesiri",
+        "link": "https://arxiv.org/abs/2505.15952",
+        "github_repo": null,
+        "summary": " - This paper introduces VideoGameQA-Bench, a comprehensive benchmark dataset for evaluating vision-language models (VLMs) on video game quality assurance (QA) tasks. \n - The benchmark includes a wide range of QA activities such as visual unit testing, visual regression testing, glitch detection, and bug report generation, covering both images and videos. \n - The dataset comprises samples from over 800 games and synthetic game scenes, ensuring diversity and real-world applicability. \n - Experiments show that while VLMs perform well on some tasks, they struggle with fine-grained details and certain types of glitches. \n - This work highlights the need for standardized benchmarks to evaluate VLM performance in the video game QA domain.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://asgaardlab.github.io/videogameqa-bench/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Training-Free Efficient Video Generation via Dynamic Token Carving",
+        "authors": "Bohao Peng, Shaoteng Liu, Bin Xia, Jinbo Xing, Yuechen Zhang",
+        "link": "https://arxiv.org/abs/2505.16864",
+        "github_repo": "https://github.com/dvlab-research/Jenga",
+        "summary": " - Jenga is a novel training-free inference pipeline that significantly accelerates video generation in Diffusion Transformer (DiT) models.\n - It achieves this through two key optimizations: Dynamic Block-wise Attention Carving and Progressive Resolution.  The former reduces computational complexity by dynamically selecting relevant token interactions, while the latter generates videos in stages of increasing resolution, further reducing computational cost.\n - Jenga achieves substantial speedups across various state-of-the-art video diffusion models, with speed improvements ranging from 2.12x to 8.83x on various models without significant loss of quality. \n - It's a plug-and-play solution, meaning it can be applied to existing models without requiring any retraining, making high-quality video generation more efficient on modern hardware. \n - The method leverages insights from the diffusion process to understand the information redundancy in videos across spatial and temporal dimensions.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/dvlab-research/Jenga"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Understanding Generative AI Capabilities in Everyday Image Editing Tasks",
+        "authors": "Franck Dernoncourt, Viet Dac Lai, loganbolton, Franck-Dernoncourt, taesiri",
+        "link": "https://arxiv.org/abs/2505.16181",
+        "github_repo": null,
+        "summary": "This paper introduces PSR, a new dataset containing 83k real-world image editing requests and their corresponding 305k edits. It analyzes the characteristics of these requests and evaluates existing AI image editors, finding that they only satisfy around 33% of requests successfully. The study also compares human judgments with those from VLMs in evaluating image edits, revealing that VLMs are biased and often disagree with humans. Furthermore, it was found that AI models frequently make non-requested changes to images, enhancing aesthetics but sometimes altering identities of objects. This highlights both the strengths and weaknesses of existing AI editors in handling real-world image editing tasks.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://psrdataset.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/PSRDataset/PSR-Battle-Results"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "SophiaVL-R1: Reinforcing MLLMs Reasoning with Thinking Reward",
+        "authors": "Xiangyu Yue, Dongzhan Zhou, Haoming Lyu, Kaituo Feng, Kaixuan Fan",
+        "link": "https://arxiv.org/abs/2505.17018",
+        "github_repo": "https://github.com/kxfan2002/SophiaVL-R1",
+        "summary": "- SophiaVL-R1 is a novel multimodal large language model (MLLM) that integrates a thinking reward model to improve reasoning capabilities. \n- The model enhances the quality of the thinking process by evaluating logical soundness, consistency, and redundancy. \n- Trust-GRPO, a new training algorithm that weighs the thinking reward based on its reliability, reduces the risk of reward hacking. \n- Experimental results demonstrate that SophiaVL-R1 outperforms several state-of-the-art MLLMs on various reasoning benchmarks, including MathVista and MMMU. \n- Notably, SophiaVL-R1-7B surpasses LLaVA-OneVision-72B despite having 10 times fewer parameters.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/kxfan2002/SophiaVL-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "SpatialScore: Towards Unified Evaluation for Multimodal Spatial\n  Understanding",
+        "authors": "Yanfeng Wang, Ya Zhang, Yaohui Chen, Xiao Huang, Haoning Wu",
+        "link": "https://arxiv.org/abs/2505.17012",
+        "github_repo": null,
+        "summary": "This paper introduces SpatialScore, a comprehensive benchmark for evaluating multimodal large language models' (MLLMs) spatial understanding capabilities.  It integrates existing datasets and proposes VGBench, a specialized benchmark for visual geometry perception.  The paper also introduces SpatialAgent, a novel multi-agent system that leverages specialized tools for enhanced spatial understanding.  Extensive experiments show that SpatialAgent significantly improves the performance of various existing MLLMs on the SpatialScore benchmark.  The findings highlight that current MLLMs still face challenges in tasks involving visual geometry perception, suggesting future directions for MLLM development.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Computer Vision",
+            "Depth Estimation",
+            "Image Classification",
+            "Object Detection",
+            "Image Segmentation",
+            "Image Feature Extraction",
+            "Keypoint Detection",
+            "Natural Language Processing",
+            "Question Answering",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://haoningwu3639.github.io/SpatialScore"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "LaViDa: A Large Diffusion Language Model for Multimodal Understanding",
+        "authors": "Yusuke Kato, Akash Gokul, Hritik Bansal, Konstantinos Kallidromitis, Shufan Li",
+        "link": "https://arxiv.org/abs/2505.16839",
+        "github_repo": null,
+        "summary": "- LaViDa is a novel family of Vision-Language Models (VLMs) based on discrete diffusion models (DMs), which offer advantages such as parallel decoding for faster inference and bidirectional context for controllable generation.\n- The LaViDa architecture comprises a vision encoder (SigLIP-400M), a diffusion language model (LLaDA-8B or Dream-7B), and an MLP projection network, jointly fine-tuned for multimodal instruction following.\n- LaViDa incorporates novel techniques like complementary masking for efficient training, prefix KV cache for efficient inference, and timestep shifting for high-quality sampling, addressing challenges in adapting DMs to multimodal tasks.\n- Experiments on various benchmarks (MMMU, MathVista, ChartQA, ScienceQA) demonstrate that LaViDa achieves competitive or superior performance to existing AR VLMs, while providing unique advantages in terms of speed-quality trade-off, controllability, and bidirectional reasoning.\n- On COCO captioning, LaViDa surpasses Open-LLaVa-Next-Llama3-8B by +4.1 CIDEr with 1.92\u00d7 speedup; on bidirectional tasks, it achieves +59% improvement on Constrained Poem Completion.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/jacklishufan/LaViDa"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "TinyV: Reducing False Negatives in Verification Improves RL for LLM\n  Reasoning",
+        "authors": "Luyao Niu, Bhaskar Ramasubramanian, Fengqing Jiang, Yuetai Li, Zhangchen Xu",
+        "link": "https://arxiv.org/abs/2505.14625",
+        "github_repo": "https://github.com/uw-nsl/TinyV",
+        "summary": "The paper introduces TinyV, a lightweight LLM-based verifier designed to reduce false negatives in existing rule-based verifiers for mathematical reasoning tasks.  It addresses the issue of false negatives, where correct model outputs are wrongly rejected, which severely impairs RL training by reducing informative gradient signals.  Experiments show TinyV boosts pass rates by up to 10% and accelerates convergence across multiple benchmarks.  Theoretically, the authors demonstrate that false negatives hinder learnability, slowing convergence.  TinyV is a practical approach to improve RL-based fine-tuning of LLMs for reasoning tasks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/uw-nsl/TinyV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Training-Free Reasoning and Reflection in MLLMs",
+        "authors": "Zhenzhong Chen, Hongchen Wei",
+        "link": "https://arxiv.org/abs/2505.16151",
+        "github_repo": null,
+        "summary": "- This paper introduces FRANK, a training-free multimodal large language model (MLLM) that enhances existing MLLMs with reasoning and reflection capabilities without any gradient updates or extra supervision.\n- FRANK leverages two key insights: homologous model merging, which treats both vision and reasoning models as task-fine-tuned variants of the same base LLM, and layer-wise functional specialization, which recognizes that shallow layers in MLLMs focus on visual perception while deeper layers focus on text.\n- It uses a layer-wise Taylor-derived closed-form fusion mechanism that integrates reasoning capacity into deep decoder layers while preserving visual grounding in shallow layers.\n- Experiments demonstrate FRANK's effectiveness on challenging multimodal reasoning benchmarks, outperforming the strongest baseline InternVL2.5-38B by +5.3 on the MMMU benchmark and even surpassing the proprietary GPT-40 model.\n- FRANK is a training-free method that addresses the challenges of retraining and data scarcity associated with reinforcement learning approaches for multimodal reasoning.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "GRIT: Teaching MLLMs to Think with Images",
+        "authors": "Ching-Chen Kuo, Kaizhi Zheng, Diji Yang, Xuehai He, Yue Fan",
+        "link": "https://arxiv.org/abs/2505.15879",
+        "github_repo": null,
+        "summary": "- The paper introduces GRIT, a novel method that teaches large language models (LLMs) to perform grounded reasoning with images by generating reasoning chains that interleave natural language with explicit bounding box coordinates.\n- GRIT employs a reinforcement learning approach, GRPO-GR, with rewards focusing on answer accuracy and the format of grounded reasoning, eliminating the need for data with reasoning chain annotations.\n- The method achieves high data efficiency, requiring only 20 image-question-answer triplets for training.\n- Experiments demonstrate that GRIT effectively trains LLMs to produce coherent and visually grounded reasoning chains, showing a successful unification of reasoning and grounding abilities.\n- The results indicate that models trained with GRIT outperform baselines across various testing sets in terms of both answer accuracy and grounding quality.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://grounded-reasoning.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "AGENTIF: Benchmarking Instruction Following of Large Language Models in\n  Agentic Scenarios",
+        "authors": "Youfeng Liu, Amy Xin, Xiaozhi Wang, Hao Peng, Yunjia Qi",
+        "link": "https://arxiv.org/abs/2505.16944",
+        "github_repo": null,
+        "summary": "- This paper introduces AGENTIF, the first benchmark designed for evaluating the instruction-following capabilities of LLMs in realistic agentic scenarios.\n- AGENTIF is composed of 707 instructions derived from 50 real-world agentic applications, featuring an average length of 1723 words and 11.9 constraints per instruction.\n- The benchmark systematically evaluates existing advanced LLMs and demonstrates that current models perform poorly, particularly in handling complex constraint structures and tool specifications.\n- An error analysis reveals that challenges mainly stem from condition and tool constraints, highlighting the need for further research in these areas.\n- The code and data for AGENTIF are publicly available to facilitate future research.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/THU-KEG/AgentIF"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/THU-KEG/AgentIF"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Think or Not? Selective Reasoning via Reinforcement Learning for\n  Vision-Language Models",
+        "authors": "Mike Zheng Shou, James Cheng, Kevin Qinghong Lin, Jiaqi Wang",
+        "link": "https://arxiv.org/abs/2505.16854",
+        "github_repo": "https://github.com/kokolerk/TON",
+        "summary": "- This paper introduces TON, a two-stage training framework that enhances reasoning in vision-language models by enabling selective reasoning.\n- The first stage uses a supervised fine-tuning method with a \"thought dropout\" operation, which randomly replaces reasoning traces with empty thoughts, creating a \"think-or-not\" format for selective reasoning.\n- The second stage utilizes Group Relative Policy Optimization (GRPO) to enable the model to freely learn when to engage in reasoning, maximizing task-aware outcome rewards.\n- Experimental results demonstrate that TON reduces completion length by up to 90% compared to vanilla GRPO without sacrificing performance, and in some cases, even improving it.\n- TON consistently demonstrates improved efficiency across diverse vision-language tasks, indicating the model progressively learns to bypass unnecessary reasoning steps.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/kokolerk/TON"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "AceReason-Nemotron: Advancing Math and Code Reasoning through\n  Reinforcement Learning",
+        "authors": "Chankyu Lee, Zihan Liu, Yang Chen, wping, zhuoliny",
+        "link": "https://arxiv.org/abs/2505.16400",
+        "github_repo": null,
+        "summary": "- This paper introduces AceReason-Nemotron, a model that significantly enhances the reasoning capabilities of smaller and mid-sized models through reinforcement learning (RL).\n- The model uses a two-stage RL training process: first on math problems, then on code problems, resulting in improved performance on both domains.\n- AceReason-Nemotron outperforms existing state-of-the-art (SOTA) models on various benchmarks, including AIME and LiveCodeBench, demonstrating the effectiveness of the proposed approach.\n- The paper also details a robust data curation pipeline and key training insights, including curriculum learning and on-policy parameter updates.\n- The authors release the 14B parameter model publicly available at HuggingFace.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/nvidia/AceReason-Nemotron-14B"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "VLM-R^3: Region Recognition, Reasoning, and Refinement for Enhanced\n  Multimodal Chain-of-Thought",
+        "authors": "Haiyang Xu, Han Yang, Wei Ye, Yongrui Heng, Chaoya Jiang",
+        "link": "https://arxiv.org/abs/2505.16192",
+        "github_repo": null,
+        "summary": "- This paper introduces VLM-R\u00b3, a novel multimodal large language model (MLLM) framework that incorporates region recognition, reasoning, and refinement for improved chain-of-thought reasoning.\n- The core of VLM-R\u00b3 is Region-Conditioned Reinforcement Policy Optimization (R-GRPO), a training paradigm that rewards the model for selecting informative regions, applying appropriate transformations, and integrating visual context into reasoning steps.\n- To bootstrap the R-GRPO policy, a new Visuo-Lingual Interleaved Rationale (VLIR) dataset was created providing step-level supervision on region selection and textual justification.\n- Experiments on various benchmarks such as MathVista, ScienceQA, and others demonstrate that VLM-R\u00b3 achieves state-of-the-art results in zero-shot and few-shot settings, especially on questions requiring subtle spatial reasoning or fine-grained visual cue extraction.\n- The largest gains are observed on tasks demanding subtle spatial reasoning or fine-grained visual cue extraction.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "OViP: Online Vision-Language Preference Learning",
+        "authors": "Cheng Zeng, Jianxiang Wang, Zejun Li, Siyuan Wang, Shujun Liu",
+        "link": "https://arxiv.org/abs/2505.15963",
+        "github_repo": null,
+        "summary": "- This paper introduces OViP, an online vision-language preference learning framework that dynamically constructs contrastive training data based on the model's own hallucinated outputs.\n- OViP addresses the issue of Large Vision-Language Models (LVLMs) hallucinating by using a diffusion model to generate more relevant negative samples.\n- The framework incorporates both response-centric and image-centric preference learning to effectively reduce hallucinations while preserving core multimodal capabilities.\n- Experiments demonstrate that OViP effectively reduces hallucinations and outperforms other methods on several benchmark datasets.\n- The paper also introduces refined evaluation protocols to better capture the trade-off between hallucination suppression and expressiveness.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Reinforcement Learning Finetunes Small Subnetworks in Large Language\n  Models",
+        "authors": "Hao Peng, Dilek Hakkani-Tur, Lifan Yuan, sagnikM",
+        "link": "https://arxiv.org/abs/2505.11711",
+        "github_repo": null,
+        "summary": "- This paper explores the phenomenon of parameter update sparsity induced by reinforcement learning (RL) in large language models (LLMs).\n- The authors observe that RL finetuning updates only a small subnetwork (5%-30%) of the parameters, leaving the rest effectively unchanged, a phenomenon observed across various RL algorithms and LLMs.\n- Finetuning this small subnetwork alone recovers nearly identical test accuracy and parameter values as full finetuning, challenging the conventional assumption that full finetuning is necessary for RL.\n- The subnetworks identified are remarkably consistent across different random seeds, training data, and even RL algorithms, suggesting a partially transferable structure within the pretrained model.\n- The study suggests that training on data near the policy distribution, rather than regularization techniques like KL regularization and gradient clipping, is the primary factor contributing to update sparsity.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Let Androids Dream of Electric Sheep: A Human-like Image Implication\n  Understanding and Reasoning Framework",
+        "authors": "Yazhe Niu, Chenhao Zhang",
+        "link": "https://arxiv.org/abs/2505.17019",
+        "github_repo": "https://github.com/MING-ZCH/Let-Androids-Dream-of-Electric-Sheep",
+        "summary": "- This paper introduces LAD, a novel framework for human-like image implication understanding and reasoning, addressing the challenge of contextual gaps in existing models.\n- LAD is a three-stage framework: Perception (converting visual information into textual representations), Search (iteratively searching and integrating cross-domain knowledge), and Reasoning (generating context-aligned image implications).\n- Using the lightweight GPT-4o-mini model, LAD achieves state-of-the-art performance on English image implication benchmarks and significant improvement on Chinese benchmarks.\n- The framework outperforms other models on Multiple-Choice Questions and Open-Style Questions, demonstrating the effectiveness of its contextual alignment approach.\n- LAD provides insights into how AI can effectively interpret image implications, advancing vision-language reasoning and human-AI interaction.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/MING-ZCH/Let-Androids-Dream-of-Electric-Sheep"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+        "authors": "Aosong Feng, Jayanth Srinivasa, Gaowen Liu, Xuandong Zhao, Kaiwen Zhou",
+        "link": "https://arxiv.org/abs/2505.16186",
+        "github_repo": null,
+        "summary": "- This paper introduces SafeKey, a novel framework designed to enhance the safety of Large Reasoning Models (LRMs) by amplifying \"aha-moment\" insights during safety reasoning.\n- SafeKey incorporates two main objectives: a Dual-Path Safety Head to improve safety signals in the model's internal representations and a Query-Mask Modeling objective to focus the model's attention on query understanding.\n- Experiments across various safety benchmarks show that SafeKey significantly improves safety generalization, reducing the average harmfulness rate by 9.6% while maintaining general abilities.\n- The effectiveness of SafeKey is demonstrated through analysis of internal attention patterns and improved quality of hidden representations.\n- SafeKey addresses the limitation of supervised fine-tuned models that struggle to generalize to unseen malicious queries, a critical challenge in ensuring robust safety for LRMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://safekeylrm.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Robo2VLM: Visual Question Answering from Large-Scale In-the-Wild Robot\n  Manipulation Datasets",
+        "authors": "Ken Goldberg, Zehan Ma, Shuangyu Xie, keplerccc",
+        "link": "https://arxiv.org/abs/2505.15517",
+        "github_repo": null,
+        "summary": "- The paper introduces Robo2VLM, a novel framework for generating visual question answering (VQA) datasets from real-world robot manipulation trajectories. \n- Robo2VLM leverages multiple sensory modalities (RGB images, stereo depth, end-effector pose, gripper state, force-torque) to segment trajectories into manipulation phases and generate VQA questions based on spatial, goal-conditioned, and interaction reasoning.\n- A large-scale VQA dataset, Robo2VLM-1, is created using 176k real robot trajectories from the Open X-Embodiment dataset, containing 684,710 questions covering 463 scenes and 3,396 robotic manipulation tasks. \n- Experiments demonstrate that fine-tuning state-of-the-art VLMs on Robo2VLM-1 improves their performance on spatial and interaction reasoning tasks, with significant gains observed in some categories.\n- Comparison with human performance shows that the best performing models achieve near-human accuracy in object-centric categories but still show a considerable gap in complex reasoning tasks.",
+        "classification": [
+            "Visual Question Answering",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/keplerccc/Robo2VLM-1"
+        ],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Multi-SpatialMLLM: Multi-Frame Spatial Understanding with Multi-Modal\n  Large Language Models",
+        "authors": "Xiaodong Wang, Xingyu Chen, Hao Tang, Weiyao Wang, Runsen Xu",
+        "link": "https://arxiv.org/abs/2505.17015",
+        "github_repo": null,
+        "summary": "- This paper introduces Multi-SpatialMLLM, a novel framework that enhances multi-modal large language models (MLLMs) with robust multi-frame spatial understanding.\n- The core of this framework is the MultiSPA dataset, a large-scale collection of over 27 million samples encompassing diverse 3D and 4D scenes, along with a comprehensive benchmark for evaluating spatial reasoning tasks.\n- Multi-SpatialMLLM significantly outperforms baseline and proprietary systems on the proposed MultiSPA benchmark, demonstrating its effectiveness in various spatial tasks.\n- The model showcases multi-task learning benefits and emergent capabilities in challenging scenarios, showcasing its potential applications in robotics.\n- Additionally, the research explores the use of Multi-SpatialMLLM as a multi-frame reward annotator for robotics.",
+        "classification": [
+            "Multimodal",
+            "Robotics",
+            "Visual Question Answering",
+            "Computer Vision",
+            "Depth Estimation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Steering Large Language Models for Machine Translation Personalization",
+        "authors": "Malvina Nissim, Elisabetta Fersini, Arianna Bisazza, Daniel Scalena, gsarti",
+        "link": "https://arxiv.org/abs/2505.16612",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel contrastive SAE steering method for personalizing machine translation (MT) outputs, particularly in low-resource settings such as literary translation.\n- The proposed method utilizes sparse autoencoders (SAEs) to extract latent concepts from model activations, identifying those most relevant for personalization.\n- Experimental results demonstrate that contrastive SAE steering achieves strong personalization while preserving translation quality, outperforming baseline prompting methods.\n- The study analyzes the impact of steering on LLM representations, revealing that multi-shot prompting and the proposed method affect relevant model layers similarly, suggesting common underlying mechanisms.\n- Future work will focus on improving the interpretability of SAE latents and applying the method to larger language models for increased personalization accuracy.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/DanielSc4/steering-for-personalization"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "When Do LLMs Admit Their Mistakes? Understanding the Role of Model\n  Belief in Retraction",
+        "authors": "Robin Jia, ayyyq",
+        "link": "https://arxiv.org/abs/2505.16170",
+        "github_repo": "https://github.com/ayyyq/llm-retraction",
+        "summary": "- This paper introduces the concept of retraction in LLMs, defining it as the acknowledgement of errors in previously generated answers.\n- The authors construct model-specific datasets to evaluate the frequency and causes of retraction in LLMs.\n- They demonstrate a strong correlation between a model's internal belief and its decision to retract, showing that models are less likely to retract answers they believe to be correct.\n- Through experiments, they establish a causal link between belief and retraction, showing that manipulating the model's belief influences its retraction behavior.\n- Finally, they demonstrate that supervised fine-tuning significantly improves retraction performance by helping the model learn more accurate internal beliefs.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ayyyq/llm-retraction"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "Date Fragments: A Hidden Bottleneck of Tokenization for Temporal\n  Reasoning",
+        "authors": "Wei Zhao, Maxime Peyrard, Gagan Bhatia",
+        "link": "https://arxiv.org/abs/2505.16088",
+        "github_repo": null,
+        "summary": "- This paper introduces DATEAUGBENCH, a new benchmark dataset comprising 6,500 examples with 21 date formats, designed to evaluate the impact of date tokenization on temporal reasoning in large language models (LLMs).\n- They introduce a new metric, the date fragmentation ratio, which measures how faithfully a tokenizer preserves multi-digit date components.\n- Experiments reveal an emergent date-abstraction mechanism in LLMs, where models stitch together fragmented date components for temporal reasoning.\n- The study finds that excessive date fragmentation correlates with accuracy drops of up to 10 points on uncommon dates.\n- Analysis shows that larger models compensate for date fragmentation more effectively and quickly than smaller models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "How Do Large Vision-Language Models See Text in Image? Unveiling the\n  Distinctive Role of OCR Heads",
+        "authors": "Hwanhee Lee, Sunghyun Ryu, Hwan Chang, Ingeol Baek",
+        "link": "https://arxiv.org/abs/2505.15865",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method to identify Optical Character Recognition (OCR) heads within Large Vision-Language Models (LVLMs).\n- The proposed method leverages a scoring mechanism to distinguish OCR heads from other retrieval heads based on their activation patterns and ability to extract textual information from images.\n- The study reveals three key properties of OCR heads: reduced sparsity, qualitative distinctiveness, and static activation patterns.\n- Experiments on downstream tasks, including chain-of-thought prompting and attention masking, validate the specialized role of OCR heads in processing embedded textual information and improve performance.\n- The findings provide a deeper understanding of LVLMs' internal mechanisms for handling embedded textual information and offer insights for enhancing multimodal reasoning and reducing hallucination in OCR-centric applications.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "MUG-Eval: A Proxy Evaluation Framework for Multilingual Generation\n  Capabilities in Any Language",
+        "authors": "Jiho Jin, Eunsu Kim, Seogyeong Jeong, aliceoh, seyoungsong",
+        "link": "https://arxiv.org/abs/2505.14395",
+        "github_repo": null,
+        "summary": "MUG-Eval is a novel evaluation framework designed to assess the multilingual text generation capabilities of large language models (LLMs) across a wide range of languages, particularly those with limited resources.  It overcomes limitations of existing methods by transforming existing benchmarks into conversational tasks, thus avoiding the need for language-specific tools or LLM-as-judges.  The framework uses task success rate as a proxy for evaluating generation quality, demonstrating strong correlation with established benchmarks. MUG-Eval offers a robust and efficient solution, readily scalable to thousands of languages.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/seyoungsong/mugeval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-05-23"
+    },
+    {
+        "title": "SPhyR: Spatial-Physical Reasoning Benchmark on Material Distribution",
+        "authors": "philippds",
+        "link": "https://arxiv.org/abs/2505.16048",
+        "github_repo": null,
+        "summary": "This paper introduces a novel benchmark dataset, SPhyR, designed to evaluate the spatial and physical reasoning capabilities of Large Language Models (LLMs).  The dataset focuses on topology optimization, requiring LLMs to predict optimal material distributions given 2D boundary conditions, applied forces, and supports.  SPhyR includes a variety of tasks, ranging from filling in masked regions to predicting complete material distributions.  The authors present results from several state-of-the-art LLMs, highlighting key challenges in spatial-physical reasoning and offering a complementary perspective to traditional language and logic benchmarks.",
+        "classification": [
+            "Fill-Mask"
+        ],
+        "github_urls": [
+            "https://github.com/philippds/SPhyR"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/philippds/SPhyR"
+        ],
+        "date": "2025-05-23"
     }
 ]

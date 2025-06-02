@@ -42659,5 +42659,416 @@
         ],
         "huggingface_urls": [],
         "date": "2025-05-30"
+    },
+    {
+        "title": "ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in\n  Large Language Models",
+        "authors": "Xin Dong, Jian Hu, Ximing Lu, Shizhe Diao, Mingjie Liu",
+        "link": "https://arxiv.org/abs/2505.24864",
+        "github_repo": null,
+        "summary": "*- The paper introduces Prolonged Reinforcement Learning (ProRL), a novel training methodology that significantly improves reasoning capabilities in large language models.\n- ProRL incorporates KL divergence control, reference policy resetting, and a diverse suite of tasks to uncover novel reasoning strategies inaccessible to base models, even under extensive sampling.\n- The proposed Nemotron-Research-Reasoning-Qwen-1.5B model, trained using ProRL, outperforms existing models across various benchmarks, including tasks where base models fail entirely, demonstrating substantial performance gains.\n- ProRL's effectiveness is strongly influenced by the base model's initial capabilities, suggesting that RL is most beneficial when applied to domains where base models initially struggle.\n- The findings of the study indicate that ProRL helps models explore and populate new regions of solution space over time, leading to improvements in both pass@1 and pass@16 metrics, suggesting that reinforcement learning truly expands reasoning boundaries.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/open-thought/reasoning-gym"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/nvidia/Nemotron-Research-Reasoning-Qwen-1.5B"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+        "authors": "Haoran Geng, Xuying Ning, Han Wang, RunpeiDong, jyzhang1208",
+        "link": "https://arxiv.org/abs/2505.24863",
+        "github_repo": null,
+        "summary": " - ALPHAONE (a1) is a novel framework designed to control the reasoning process in large reasoning models (LRMs) at test time.  \n- The framework introduces an 'alpha moment' which dynamically schedules slow and fast thinking transitions, thereby improving efficiency and generalizing existing methods. \n-  a1 models the insertion of reasoning transition tokens as a Bernoulli stochastic process before the alpha moment, transitioning deterministically to fast reasoning afterwards. \n- Extensive experiments across various benchmarks (mathematical, coding, scientific) demonstrate a1's superior reasoning capability and efficiency compared to baseline methods, achieving significant improvements in accuracy and efficiency. \n- The paper analyzes various scheduling strategies for the activation of slow thinking, finding that a \"slow thinking first, then fast thinking\" approach yields better results.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://alphaone-project.github.io/"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Time Blindness: Why Video-Language Models Can't See What Humans Can?",
+        "authors": "Mohamed Elhoseiny, Zhiqiang Shen, mukul54, ujjwal9",
+        "link": "https://arxiv.org/abs/2505.24867",
+        "github_repo": null,
+        "summary": "- This paper introduces SpookyBench, a novel benchmark dataset designed to evaluate the purely temporal understanding capabilities of video-language models.\n- SpookyBench presents information exclusively through temporal sequences of noise-like frames, forcing models to derive meaning solely from changes across frames, thus eliminating reliance on spatial cues.\n- Human participants achieved over 98% accuracy on SpookyBench tasks, while state-of-the-art video-language models achieved 0% accuracy, highlighting a critical limitation in current video understanding approaches.\n- The benchmark reveals that existing models over-rely on frame-level spatial features and struggle with purely temporal reasoning, demonstrating a significant gap between human and machine video understanding.\n- The authors released SpookyBench to catalyze research in temporal pattern recognition and to bridge the gap between human and machine video understanding.",
+        "classification": [
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://timeblindness.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Don't Look Only Once: Towards Multimodal Interactive Reasoning with\n  Selective Visual Revisitation",
+        "authors": "Min Soo Kim, Jaeyoung Lee, Jiwan Chung, siyeolkim, kjunh",
+        "link": "https://arxiv.org/abs/2505.18842",
+        "github_repo": null,
+        "summary": "- This paper introduces v1, a lightweight extension to Multimodal Large Language Models (MLLMs) that allows for selective visual revisitation during inference.\n- v1 incorporates a point-and-copy mechanism that enables the model to dynamically retrieve relevant image regions throughout the reasoning process, augmenting existing architectures with minimal modifications.\n- The authors create v1g, a dataset of 300K multimodal reasoning traces with visual grounding annotations, to train this capability.\n- Experiments on three multimodal mathematical reasoning benchmarks demonstrate consistent performance improvements over comparable baselines, particularly on tasks requiring fine-grained visual reference and multi-step reasoning.\n- The results suggest that dynamic visual access is a promising direction for enhancing grounded multimodal reasoning.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Large Language Models for Data Synthesis",
+        "authors": "Lijun Sun, Menglin Kong, HYTYH",
+        "link": "https://arxiv.org/abs/2505.14752",
+        "github_repo": null,
+        "summary": "LLMSYNTHOR is a novel framework that leverages LLMs for high-fidelity data synthesis, addressing limitations of existing methods.\nIt introduces LLM Proposal Sampling for efficient generation and iteratively refines synthetic data to match real data statistics.\nEvaluation on diverse real-world datasets demonstrates high statistical fidelity and utility.\nThe framework supports various data types, including structured and unstructured formats, showing adaptability across domains.\nIt positions LLMSYNTHOR as a valuable tool for diverse research and policy applications.",
+        "classification": [
+            "Tabular"
+        ],
+        "github_urls": [
+            "https://github.com/YihongT/LLMSynthor.git"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "HardTests: Synthesizing High-Quality Test Cases for LLM Coding",
+        "authors": "Jiabao Ji, Kexun Zhang, Yee Man Choi, Zhongmou He, JuntingZhou",
+        "link": "https://arxiv.org/abs/2505.24098",
+        "github_repo": null,
+        "summary": "This paper introduces HARDTESTGEN, a pipeline for synthesizing high-quality test cases for LLM coding, and the HARDTESTS dataset containing 47k problems and their corresponding tests.  HARDTESTGEN improves the precision and recall of LLM-generated code evaluation, exceeding existing benchmarks significantly.  The high-quality tests are more effective for model training and improve downstream code generation performance.  The dataset and pipeline are open-sourced.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://leililab.github.io/HardTests/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "ViStoryBench: Comprehensive Benchmark Suite for Story Visualization",
+        "authors": "Yaoqi Hu, Jingwei Wu, Ailin Huang, Cailin Zhuang, wchengad",
+        "link": "https://arxiv.org/abs/2505.24862",
+        "github_repo": "https://github.com/vistorybench/vistorybench",
+        "summary": " - This paper introduces ViStoryBench, a comprehensive benchmark for evaluating story visualization models.\n- ViStoryBench includes a diverse dataset of 80 story segments with various story types and artistic styles, ensuring evaluation across multiple dimensions.\n- The benchmark incorporates a wide range of automated and manual evaluation metrics to assess critical aspects such as prompt adherence, character consistency, and visual quality.\n- The authors conducted extensive experiments on over 20 methods, providing insights into model characteristics and driving future advancements in the field.\n- ViStoryBench is open-sourced, enabling researchers to thoroughly evaluate and compare different models, fostering targeted improvements.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/vistorybench/vistorybench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/ViStoryBench/ViStoryBenchResult"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Open CaptchaWorld: A Comprehensive Web-based Platform for Testing and\n  Benchmarking Multimodal LLM Agents",
+        "authors": "Xiaohan Zhao, Jiacheng Liu, Zhaoyi Li, Yaxin Luo, jiachengcui888",
+        "link": "https://arxiv.org/abs/2505.24878",
+        "github_repo": "https://github.com/MetaAgentX/OpenCaptchaWorld",
+        "summary": "- The paper introduces OpenCaptchaWorld, a web-based benchmark designed to evaluate the visual reasoning and interaction capabilities of multimodal large language models (MLLMs) through diverse CAPTCHA puzzles.\n- The benchmark comprises 20 modern CAPTCHA types, totaling 225 CAPTCHAs, and is annotated with a new metric, CAPTCHA Reasoning Depth, which quantifies the number of cognitive and motor steps required to solve each puzzle.\n- Experimental results reveal that humans consistently achieve near-perfect scores, while state-of-the-art MLLM agents struggle significantly, with success rates far below human-level performance.\n- OpenCaptchaWorld serves as a vital benchmark for diagnosing the limitations of current multimodal agents and guiding the development of more robust multimodal reasoning systems.\n- The platform is designed to test generalization and reasoning depth, not memorization from massive data.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/MetaAgentX/OpenCaptchaWorld"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/OpenCaptchaWorld/platform"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Vision Language Models are Biased",
+        "authors": "Vy Tuong Dang, Khai-Nguyen Nguyen, An Vo, knguyennguyen, taesiri",
+        "link": "https://arxiv.org/abs/2505.23941",
+        "github_repo": null,
+        "summary": "This paper introduces VLMBias, a framework for automatically generating biased visual data for evaluating vision language models (VLMs). The study reveals that state-of-the-art VLMs exhibit strong biases when performing objective visual tasks like counting and identification, often relying on prior knowledge instead of image details.  Specifically, VLMs struggle to detect subtle changes in images, even when explicitly instructed to focus on visual information.  Improving VLM accuracy by only +2 points was achieved by instructing them to double-check their results or rely solely on image details. The findings highlight that even the most advanced VLMs are sensitive to bias and call for further research to address this limitation.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://vlmsarebiased.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "CLaSp: In-Context Layer Skip for Self-Speculative Decoding",
+        "authors": "Ziqiang Liu, Lu Wang, Huiming Wang, Renke Shan, Longze Chen",
+        "link": "https://arxiv.org/abs/2505.24196",
+        "github_repo": null,
+        "summary": "- This paper introduces CLaSp, a novel in-context layer-skipping strategy for self-speculative decoding that accelerates the decoding process of large language models.\n- Unlike previous methods, CLaSp does not require additional modules or training, employing a plug-and-play mechanism by skipping intermediate layers of the verify model.\n- CLaSp uses a dynamic programming algorithm to optimize the layer-skipping process, dynamically adjusting its strategy after each verification stage without pre-optimized sets of skipped layers.\n- Experimental results demonstrate that CLaSp achieves a speedup of 1.3x~1.7x on LLaMA3 series models without altering the original distribution of generated text.\n- The method's efficiency stems from its dynamic adjustment to layer skipping based on the current context, eliminating the need for pre-optimization or retraining.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "CoDA: Coordinated Diffusion Noise Optimization for Whole-Body\n  Manipulation of Articulated Objects",
+        "authors": "Taku Komura, Zhiyang Dou, Zhi Cen, Huaijin Pi",
+        "link": "https://arxiv.org/abs/2505.21437",
+        "github_repo": null,
+        "summary": "- This paper introduces CoDA, a novel framework for synthesizing whole-body manipulation of articulated objects using coordinated diffusion noise optimization.\n- CoDA employs three specialized diffusion models (for the body, left hand, and right hand) and a unified representation based on basis point sets (BPS) to capture fine-grained spatial relationships between the hands and objects.\n- The model optimizes latent noise inputs through gradient flow, which naturally emerges coordination between the different body parts.\n- Experimental results on the ARCTIC and GRAB datasets demonstrate that CoDA outperforms existing methods in terms of motion quality and physical plausibility.\n- CoDA enables several capabilities, including object pose control, simultaneous locomotion and manipulation, and whole-body motion generation from hand-only data.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "UniGeo: Taming Video Diffusion for Unified Consistent Geometry\n  Estimation",
+        "authors": "Yuan-Chen Guo, Yi-Hua Huang, Zehuan Huang, Xin Yu, Yang-Tian Sun",
+        "link": "https://arxiv.org/abs/2505.24521",
+        "github_repo": null,
+        "summary": "- UniGeo is a novel framework that leverages pre-trained video diffusion models for consistent geometry estimation, addressing the limitations of existing methods that focus on per-frame estimation.\n- It introduces a global coordinate system for geometric property representation, aligning correspondences across frames and improving consistency compared to existing camera-centric approaches.\n- The model incorporates a shared positional encoding strategy to efficiently reuse positional embeddings, transferring inter-frame consistency priors without architectural modifications, and improving alignment between RGB and geometry inputs.\n- UniGeo achieves superior performance in predicting multiple geometric attributes simultaneously, benefiting from shared correspondences and mutual reinforcement among tasks.\n- Experimental results on various datasets demonstrate that UniGeo outperforms state-of-the-art methods in terms of accuracy and consistency, exhibiting the ability to generalize to dynamic video scenes despite being trained solely on static data.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+        "authors": "Tim G. J. Rudner, Idan Szpektor, Avi Caciularu, Gal Yona, Gabrielle Kaili-May Liu",
+        "link": "https://arxiv.org/abs/2505.24858",
+        "github_repo": null,
+        "summary": "The paper introduces MetaFaith, a novel prompt-based calibration approach for Large Language Models (LLMs) that improves the alignment between a model's intrinsic uncertainty and its linguistically expressed uncertainty.  MetaFaith leverages metacognitive prompting strategies to elicit more faithful expressions of uncertainty.  Experiments across various LLMs, datasets, and prompting strategies demonstrate that MetaFaith significantly outperforms existing methods, achieving up to a 61% improvement in faithfulness.  Human evaluations further confirm the effectiveness of MetaFaith, showing an 83% win rate over baseline models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/MetaFaith"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "EasyText: Controllable Diffusion Transformer for Multilingual Text\n  Rendering",
+        "authors": "Yiren Song, Haifa Wang, Jailing Liu, Yuxuan Zhang, Runnan Lu",
+        "link": "https://arxiv.org/abs/2505.24417",
+        "github_repo": null,
+        "summary": "- EasyText is a novel multilingual text image generation framework based on Diffusion Transformers that leverages the in-context learning power of DiT to achieve high-quality multilingual text rendering.\n- It employs a two-stage training strategy: large-scale pretraining for glyph generation and spatial mapping, followed by fine-tuning for visual-text integration and aesthetic refinement.\n- The model uses Implicit Character Position Alignment (ICPA), a simple yet effective technique that achieves precise control over character positions through positional encoding interpolation and replacement, enabling both position-aware rendering and layout-free generation.\n- EasyText outperforms other state-of-the-art methods in multilingual text rendering precision, achieving superior performance on challenging scenarios such as long text, multi-text layouts, irregular regions, and unseen characters.\n- The proposed method is highly efficient, requiring only a small fine-tuning dataset, making it suitable for resource-constrained multilingual scenarios.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/songyiren725/EasyText"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Fork-Merge Decoding: Enhancing Multimodal Understanding in Audio-Visual\n  Large Language Models",
+        "authors": "Joon Son Chung, Jongmin Choi, Youngjoon Jang, Chae0",
+        "link": "https://arxiv.org/abs/2505.20873",
+        "github_repo": null,
+        "summary": "- This paper introduces Fork-Merge Decoding (FMD), a novel inference-time strategy designed to enhance multimodal understanding in audio-visual large language models (AV-LLMs) without requiring additional training or architectural modifications.\n- FMD involves a two-stage decoding process: a fork phase, where audio and video inputs are processed separately; and a merge phase, where the resulting representations are combined for joint reasoning.\n- Experiments on two AV-LLMs, VideoLLaMA2 and video-SALMONN, across three benchmark datasets (AVQA, MUSIC-AVQA, and AVHBench) demonstrate consistent performance improvements compared to existing methods.\n- The attention-guided fusion mechanism in FMD promotes balanced modality contributions, effectively mitigating modality bias and enhancing robust multimodal understanding.\n- The proposed FMD is computationally efficient and compatible with both token-wise and channel-wise fusion strategies, improving inference speed while achieving higher accuracy.",
+        "classification": [
+            "Multimodal",
+            "Video Classification",
+            "Visual Question Answering",
+            "Audio Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Harnessing Negative Signals: Reinforcement Distillation from Teacher\n  Data for LLM Reasoning",
+        "authors": "Wei Chu, Weidi Xu, Jiangxuan Long, Cheng Peng, Tim-Xu",
+        "link": "https://arxiv.org/abs/2505.24850",
+        "github_repo": "https://github.com/Tim-Siu/reinforcement-distillation",
+        "summary": " * This paper introduces Reinforcement Distillation (REDI), a novel two-stage framework for training LLMs that leverages both positive and negative reasoning traces to improve performance. \n* REDI first uses supervised fine-tuning (SFT) on positive traces and then refines the model using an asymmetric weighted objective function that incorporates negative traces, outperforming established methods like DPO and SimPO. \n* Experiments show that a 1.5B parameter model trained with REDI on 131k examples from the open Open-R1 dataset matches or surpasses the performance of a model trained on 800k proprietary data. \n* The authors also show that REDI improves the model's reasoning capabilities without harming its potential for future online reinforcement learning. \n*  Ablation studies demonstrate the effectiveness of the proposed method and its components, validating the framework's design choices.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Tim-Siu/reinforcement-distillation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Large Language Models are Locally Linear Mappings",
+        "authors": "jamesgolden1",
+        "link": "https://arxiv.org/abs/2505.24293",
+        "github_repo": null,
+        "summary": "- This paper demonstrates that the inference operations of several large language models (LLMs) can be mapped to an exactly equivalent linear system for a given input sequence.\n- The authors achieve this by strategically altering the gradient computation with respect to the input sequence, without modifying model weights or altering output predictions.\n- This approach reveals that LLMs operate in extremely low-dimensional subspaces, even with their expressive power and global nonlinearity.\n- The authors demonstrate this across multiple LLMs and show that many of the largest singular vectors decode to concepts related to the most-likely output token, providing insights into internal representations.\n- This technique enables examination of each layer's operation as nearly-exact linear systems and reveals interpretable semantic structures in next-token prediction.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/jamesgoldenl/llms-are-llms"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Point-MoE: Towards Cross-Domain Generalization in 3D Semantic\n  Segmentation via Mixture-of-Experts",
+        "authors": "Zezhou Cheng, Aruni RoyChowdhury, Wentao Zhou, Xuweiyi Chen",
+        "link": "https://arxiv.org/abs/2505.23926",
+        "github_repo": null,
+        "summary": "The paper introduces Point-MoE, a Mixture-of-Experts model for 3D semantic segmentation that improves cross-domain generalization.  Point-MoE uses a top-k routing strategy and outperforms state-of-the-art methods on multiple datasets, even without access to domain labels at inference time.  The model replaces the feed-forward layer in a Point Transformer V3 backbone with the MoE layer, enabling efficient and scalable cross-domain generalization.  Furthermore, experiments demonstrate that Point-MoE shows improved training and inference efficiency.  The model is shown to generalize well to unseen domains, highlighting a scalable path for 3D understanding.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://uva-computer-vision-lab.github.io/point-moe/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Harnessing Large Language Models for Scientific Novelty Detection",
+        "authors": "Erik Cambria, Thanh-Son Nguyen, Soujanya Poria, Yan Liu, ZonglinY",
+        "link": "https://arxiv.org/abs/2505.24615",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel method for scientific novelty detection using large language models (LLMs).\n- Two new benchmark datasets in marketing and NLP are introduced to evaluate the method.\n- The method leverages LLMs to construct datasets by extracting closure sets of papers and summarizing their main ideas.\n- A lightweight retriever is trained using knowledge distillation from LLMs to align ideas with similar conceptions.\n- Experiments demonstrate that the proposed method consistently outperforms existing methods on the benchmark datasets.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://anonymous.4open.science/r/NoveltyDetection-10FB/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "un^2CLIP: Improving CLIP's Visual Detail Capturing Ability via\n  Inverting unCLIP",
+        "authors": "Shiguang Shan, Ruibing Hou, Hong Chang, Jiahe Zhao, yinqi",
+        "link": "https://arxiv.org/abs/2505.24517",
+        "github_repo": "https://github.com/LiYinqi/un2CLIP",
+        "summary": "- This paper introduces un\u00b2CLIP, a novel method to improve CLIP's visual detail capturing ability by inverting the unCLIP model.\n- un\u00b2CLIP finetunes the CLIP image encoder using a pretrained unCLIP image generator, transferring the generator's rich visual knowledge into the encoder while preserving its alignment with the original text encoder.\n- The method is evaluated on various tasks, including the MMVP-VLM benchmark, dense prediction, and multimodal large language model tasks, showing significant improvements over the original CLIP and previous methods.\n- un\u00b2CLIP addresses the limitation of CLIP in capturing visual details without modifying the network architecture or requiring additional training data.\n- The proposed method achieves state-of-the-art results on several benchmark datasets, demonstrating its effectiveness in improving CLIP for various visual tasks.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/LiYinqi/un2CLIP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "EmergentTTS-Eval: Evaluating TTS Models on Complex Prosodic,\n  Expressiveness, and Linguistic Challenges Using Model-as-a-Judge",
+        "authors": "Alex Smola, Mu Li, Xingjian Shi, Yuzhi Tang, ruskinmanku",
+        "link": "https://arxiv.org/abs/2505.23009",
+        "github_repo": "https://github.com/boson-ai/EmergentTTS-Eval-public",
+        "summary": " - The paper introduces EmergentTTS-Eval, a comprehensive benchmark for evaluating TTS models on complex prosodic, expressiveness, and linguistic challenges. \n- It uses a model-as-a-judge approach, employing a Large Audio Language Model (LALM) to automate evaluation across multiple dimensions. \n- The benchmark includes 1,645 diverse test cases generated iteratively using LLMs, covering six challenging scenarios. \n- The model-as-a-judge approach demonstrates high correlation with human preferences and provides robust assessment of TTS systems. \n- EmergentTTS-Eval is open-sourced, allowing for easy extensibility and reproducibility.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/boson-ai/EmergentTTS-Eval-public"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/bosonai/EmergentTTS-Eval"
+        ],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Enabling Flexible Multi-LLM Integration for Scalable Knowledge\n  Aggregation",
+        "authors": "Xin Meng, Yifan Gong, Shiyue Hou, Zheng Zhan, Zhenglun Kong",
+        "link": "https://arxiv.org/abs/2505.23844",
+        "github_repo": "https://github.com/ZLKong/LLM_Integration",
+        "summary": "- This paper introduces a novel framework for integrating multiple large language models (LLMs) to enhance knowledge aggregation.\n- The framework incorporates an adaptive selection network to dynamically select the most relevant LLMs for a given task, along with a dynamic weighted fusion strategy and a feedback-driven loss function to reduce knowledge interference.\n- Experimental results demonstrate that the proposed method significantly improves performance compared to existing approaches while reducing knowledge interference by up to 50%.\n- The adaptive selection network efficiently evaluates diverse LLMs and chooses the subset that best improves the fused model's performance, mitigating the interference issues.\n- The method achieves stability and scalability without increasing the target model's parameter size or computation costs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ZLKong/LLM_Integration"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "DexUMI: Using Human Hand as the Universal Manipulation Interface for\n  Dexterous Manipulation",
+        "authors": "Linxi Fan, Zhenjia Xu, Yifan Hou, Han Zhang, mengdaxu",
+        "link": "https://arxiv.org/abs/2505.21864",
+        "github_repo": null,
+        "summary": "- DexUMI is a novel data collection and policy learning framework that leverages the human hand as a natural interface to transfer dexterous manipulation skills to various robot hands.\n- It bridges the embodiment gap between human and robot hands through hardware and software adaptations.\n- Hardware adaptation uses a wearable hand exoskeleton to minimize kinematic discrepancies and provide haptic feedback.\n- Software adaptation inpaints videos to replace human hands with high-fidelity robot hand models.\n- Experiments on two dexterous robot hands demonstrate an average task success rate of 86%, showcasing DexUMI's effectiveness in transferring human skills.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://dex-umi.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "Role-Playing Evaluation for Large Language Models",
+        "authors": "Yvan Peter, Julian Alvarez, Walter Nuninger, yelboudouri",
+        "link": "https://arxiv.org/abs/2505.13157",
+        "github_repo": "https://github.com/yelboudouri/RPEval",
+        "summary": "- This paper introduces Role-Playing Eval (RPEval), a novel benchmark designed to assess Large Language Model (LLM) role-playing capabilities across four key dimensions: emotional understanding, decision-making, moral alignment, and in-character consistency.\n- RPEval uses single-turn interactions to ensure cost efficiency and reproducibility, focusing on dimensions easily verifiable with automated methods.\n- The benchmark was constructed using a character profile generator and OpenAI's GPT-40 to create a diverse set of characters and scenarios, which were annotated through crowdsourcing.\n- Evaluation results on GPT-40, Gemini-1.5-Pro, and Llama 3.2 1B showed that Gemini-1.5-Pro achieved the highest average score, demonstrating balanced performance across dimensions.\n- RPEval's design choices, such as focusing on single-turn interactions, offer efficiency and reproducibility but limit the assessment of more nuanced, long-term role-playing attributes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yelboudouri/RPEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "GATE: General Arabic Text Embedding for Enhanced Semantic Textual\n  Similarity with Matryoshka Representation Learning and Hybrid Loss Training",
+        "authors": "Adel Ammar, Yasser Al-Habashi, Serry Sibaee, Anis Koubaa, Omer Nacar",
+        "link": "https://arxiv.org/abs/2505.24581",
+        "github_repo": null,
+        "summary": "- This paper introduces GATE, a new model for General Arabic Text Embedding (GATE) that achieves state-of-the-art performance on the Semantic Textual Similarity (STS) task.\n- The model uses Matryoshka Representation Learning, which enables efficient multi-dimensional embeddings and a hybrid loss training approach with Arabic triplet datasets for Natural Language Inference.\n- GATE outperforms larger models, including those from OpenAI, by 20-25% on STS benchmarks, effectively capturing the semantic nuances of Arabic.\n- The model incorporates a hybrid loss strategy combining cosine similarity for semantic tasks and softmax-based classification, enhancing robustness.\n- The study uses Arabic-adapted subsets from the SNLI and MultiNLI datasets, and the results show that higher-dimensional embeddings consistently achieve superior performance.",
+        "classification": [
+            "Sentence Similarity"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "LegalSearchLM: Rethinking Legal Case Retrieval as Legal Elements\n  Generation",
+        "authors": "Wonseok Hwang, Jinu Lee, Chaeeun Kim",
+        "link": "https://arxiv.org/abs/2505.23832",
+        "github_repo": null,
+        "summary": "- This paper introduces LEGAR BENCH, a large-scale Korean Legal Case Retrieval (LCR) benchmark with 1.2M cases and 411 diverse crime types in queries.\n- It proposes LEGAL SEARCHLM, a novel retrieval model that performs legal element reasoning and directly generates content grounded in target cases using constrained decoding.\n- LEGAL SEARCHLM outperforms baselines by 6-20% on LEGAR BENCH, demonstrating state-of-the-art performance and strong generalization to out-of-domain cases.\n- The model employs a first-token-aware generation strategy and self-supervised fine-tuning (SSFT), which contribute to its improved performance and generalization ability.\n- Experimental results highlight that LEGAL SEARCHLM significantly outperforms naive generative models by 15%, showcasing its robustness and superior performance in complex retrieval scenarios.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
+    },
+    {
+        "title": "More Thinking, Less Seeing? Assessing Amplified Hallucination in\n  Multimodal Reasoning Models",
+        "authors": "James Zou, Juncheng Wu, Qingyue Wei, Zhongxing Xu, Chengzhi Liu",
+        "link": "https://arxiv.org/abs/2505.21523",
+        "github_repo": null,
+        "summary": "- This paper introduces RH-AUC, a new metric to evaluate the balance between reasoning ability and hallucination in multimodal reasoning models, and RH-Bench, a diagnostic benchmark dataset.\n- The authors find that longer reasoning chains can lead to increased hallucination, as models shift focus away from visual inputs and rely more on language priors.\n- Larger models generally exhibit a better balance between reasoning and perception than smaller models.\n- The performance of the model is dependent on the types and domains of the training data rather than the volume of training data.\n- The authors investigate the impact of reasoning length on the hallucination-reasoning balance and propose methods to control reasoning length.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-02"
     }
 ]

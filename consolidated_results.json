@@ -43788,5 +43788,594 @@
             "https://huggingface.co/datasets/WhaleDolphin/MIKU-EmoBench"
         ],
         "date": "2025-06-03"
+    },
+    {
+        "title": "CSVQA: A Chinese Multimodal Benchmark for Evaluating STEM Reasoning\n  Capabilities of VLMs",
+        "authors": "xuchensong, rockman24, jiangbopei, shawn0wang, qiuwj",
+        "link": "https://arxiv.org/abs/2505.24120",
+        "github_repo": null,
+        "summary": " - CSVQA, a new multimodal benchmark in Chinese, is introduced to evaluate the scientific reasoning capabilities of Vision-Language Models (VLMs).\n - CSVQA features 1378 question-answer pairs spanning diverse STEM disciplines, each requiring domain knowledge and visual evidence analysis.\n - The benchmark includes 14 types of scientific visual modalities and focuses on real-world scientific content and complex reasoning.\n - Evaluation of 15 VLMs reveals notable performance disparities, with even the top-performing model achieving only 49.6% accuracy.\n - This highlights the pressing need for advancing scientific reasoning capabilities in VLMs and the CSVQA benchmark is released at https://huggingface.co/datasets/Skywork/CSVQA.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Skywork/CSVQA"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "UniWorld: High-Resolution Semantic Encoders for Unified Visual\n  Understanding and Generation",
+        "authors": "Yuwei Niu, Xinhua Cheng, Zongjian Li, BestWishYsh, LanguageBind",
+        "link": "https://arxiv.org/abs/2506.03147",
+        "github_repo": null,
+        "summary": "- UniWorld is a new unified generative framework for image perception and manipulation tasks, which uses high-resolution contrastive semantic encoders instead of VAEs.\n- The model architecture consists of pre-trained multi-modal large models for auto-regressive understanding and high-resolution contrastive semantic encoders for visual feature extraction.\n- UniWorld outperforms BAGEL on image editing benchmarks using only 1% of BAGEL's training data and achieves competitive performance on image understanding and generation tasks.\n- The paper also includes empirical observations on GPT-40-Image, inferring that it uses semantic encoders rather than VAEs for visual feature extraction.\n- UniWorld's code, model weights, training and evaluation scripts, and datasets are fully open-sourced.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/PKU-YuanGroup/UniWorld-V1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/LanguageBind/UniWorld-V1",
+            "https://huggingface.co/datasets/LanguageBind/UniWorld-V1"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "VS-Bench: Evaluating VLMs for Strategic Reasoning and Decision-Making in\n  Multi-Agent Environments",
+        "authors": "Xinlei Chen, Xiangmin Yi, Zhexuan Xu, HuiningYuan, zelaix",
+        "link": "https://arxiv.org/abs/2506.02387",
+        "github_repo": null,
+        "summary": "The paper introduces VS-BENCH, a new multimodal benchmark for evaluating Vision-Language Models (VLMs) in multi-agent environments.  VS-BENCH comprises eight vision-grounded environments covering cooperative, competitive, and mixed-motive interactions.  The benchmark uses two complementary evaluation dimensions: offline evaluation of strategic reasoning via next-action prediction accuracy and online evaluation of decision-making via normalized episode return. Experiments on fourteen leading VLMs reveal a significant gap between current models and optimal performance, highlighting areas for future research.  The code and data are publicly available.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://vs-bench.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/zelaix/VS-Bench"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "OmniSpatial: Towards Comprehensive Spatial Reasoning Benchmark for\n  Vision Language Models",
+        "authors": "Xinqiang Yu, Wenyao Zhang, Shaochen Zhang, Mengdi Jia, qizekun",
+        "link": "https://arxiv.org/abs/2506.03135",
+        "github_repo": null,
+        "summary": "This paper introduces OmniSpatial, a comprehensive benchmark for evaluating spatial reasoning capabilities in vision-language models.  It comprises over 1.5K question-answer pairs covering four categories: dynamic reasoning, complex spatial logic, spatial interaction, and perspective-taking. The benchmark demonstrates significant limitations of current models in comprehensive spatial understanding, especially in complex logic and perspective-taking tasks. The paper also proposes enhancing spatial reasoning by incorporating auxiliary models such as point-graph and spatial chain-of-thought. The results reveal that while large language models show promising results, there is still a significant gap compared to human-level performance.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal",
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/thu-ml/omnispatial"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Visual Embodied Brain: Let Multimodal Large Language Models See, Think,\n  and Control in Spaces",
+        "authors": "Guanzhou Chen, Gen Luo, robot-haonan, Cusyoung, ganlinyang",
+        "link": "https://arxiv.org/abs/2506.00123",
+        "github_repo": null,
+        "summary": "- This paper introduces VeBrain, a unified framework that combines multimodal understanding, visual-spatial reasoning, and robotic control capabilities into a single multimodal large language model (MLLM).\n- VeBrain reformulates robotic control as common text-based MLLM tasks in 2D visual space and uses a novel robotic adapter to translate textual control signals from the MLLM into motion policies for real robots.\n- The framework is trained on VeBrain-600k, a high-quality instruction dataset encompassing diverse capabilities, collected and annotated using multimodal chain-of-thought prompting.\n- Experiments on multimodal and spatial intelligence benchmarks demonstrate VeBrain outperforms existing MLLMs like Qwen2.5-VL, achieving substantial gains in multimodal understanding, visual-spatial reasoning, and robot control tasks.\n- VeBrain exhibits strong adaptability and compositional capabilities when deployed to legged robots and robotic arms, showcasing its effectiveness in real-world robotic control.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "SynthRL: Scaling Visual Reasoning with Verifiable Data Synthesis",
+        "authors": "Hang Yan, Zichen Liu, Xiangyan Liu, Jinjie Ni, Jakumetsu",
+        "link": "https://arxiv.org/abs/2506.02096",
+        "github_repo": null,
+        "summary": "- SynthRL is a novel method for scaling visual reasoning in reinforcement learning by synthesizing additional training data.\n- SynthRL comprises three key stages: seed question selection, targeted synthesis, and verification.\n- Experiments on the MMK12 dataset show that SynthRL synthesizes over 3.3K additional verifiable questions, leading to consistent gains across five out-of-domain visual math reasoning benchmarks.\n- Detailed analysis reveals that SynthRL is particularly effective in eliciting deeper reasoning on challenging evaluation samples.\n- The proposed approach is scalable and guarantees near-perfect correctness, making it suitable for large-scale data augmentation in visual reasoning tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "github.com/NUS-TRAIL/SynthRL"
+        ],
+        "huggingface_urls": [
+            "hf.co/collections/Jakumetsu/SynthRL"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "MotionSight: Boosting Fine-Grained Motion Understanding in Multimodal\n  LLMs",
+        "authors": "Rui Xie, Kepan Nan, Tiehan Fan, Yipeng Du, yingtai",
+        "link": "https://arxiv.org/abs/2506.01674",
+        "github_repo": null,
+        "summary": "- The paper introduces MotionSight, a novel zero-shot method that enhances fine-grained motion understanding in multimodal LLMs without requiring additional training.\n- MotionSight leverages object-centric visual spotlights and motion blur as visual prompts to improve the model's perception of object and camera motion.\n- It introduces MotionVidQA, a large-scale dataset with hierarchical annotations for fine-grained video motion understanding, surpassing existing datasets in scale and annotation granularity.\n- Experiments on MotionBench and FAVOR-Bench demonstrate that MotionSight achieves state-of-the-art performance among open-source models and is competitive with commercial models.\n- MotionSight's zero-shot approach and the new dataset contribute significantly to advancing fine-grained motion understanding in multimodal LLMs.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://nju-pcalab.github.io/projects/MotionSight"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Sparse-vDiT: Unleashing the Power of Sparse Attention to Accelerate\n  Video Diffusion Transformers",
+        "authors": "Maosen Zhao, Xianfang Zeng, skicy, wchengad, PengtaoChen",
+        "link": "https://arxiv.org/abs/2506.03065",
+        "github_repo": null,
+        "summary": "- This paper introduces Sparse-vDiT, a novel framework designed to accelerate Video Diffusion Transformers (vDiTs) by leveraging the inherent sparsity in their attention mechanisms.\n- Sparse-vDiT identifies three recurring sparsity patterns in vDiT attention maps (diagonal, multi-diagonal, and vertical-stripe) and uses these to create computationally efficient implementations.\n- An offline sparse diffusion search algorithm is used to select the optimal sparse computation strategy for each layer and head, maximizing efficiency.\n- Experiments demonstrate that Sparse-vDiT achieves significant speedups (1.76x, 1.85x, and 1.58x) on three state-of-the-art vDiT models (CogVideoX1.5, HunyuanVideo, and Wan2.1) while maintaining high visual fidelity.\n- The results show that the latent structural sparsity in vDiTs can be systematically exploited for efficient long video synthesis.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/Peyton-Chen/Sparse-vDiT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "GUI-Actor: Coordinate-Free Visual Grounding for GUI Agents",
+        "authors": "Jianwei Yang, vyokky, Ray2333, cckevinn, qianhuiwu",
+        "link": "https://arxiv.org/abs/2506.03143",
+        "github_repo": null,
+        "summary": "- GUI-Actor is a novel coordinate-free visual grounding method for visual grounding in GUI agents that uses an attention-based action head and an <ACTOR> token to identify relevant visual regions for action execution.\n- The model outperforms previous state-of-the-art methods on multiple GUI action grounding benchmarks, demonstrating improved generalization to unseen screen resolutions and layouts.\n- GUI-Actor-7B achieves scores of 40.7 with Qwen2-VL and 44.6 with Qwen2.5-VL, outperforming UI-TARS-72B (38.1) on ScreenSpot-Pro.\n- A grounding verifier is designed to evaluate and select the most plausible action region from candidates proposed for action execution, further enhancing model performance.\n- The authors demonstrate that fine-tuning only the newly introduced action head while keeping the VLM backbone frozen achieves comparable performance to previous state-of-the-art models.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Native-Resolution Image Synthesis",
+        "authors": "Yiyuan Zhang, Wanli Ouyang, Xiangyu Yue, Lei Bai, GoodEnough",
+        "link": "https://arxiv.org/abs/2506.03131",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel generative modeling paradigm called Native-resolution image synthesis, enabling the generation of images with arbitrary resolutions and aspect ratios.\n - A new diffusion Transformer model called Native-resolution diffusion Transformer (NiT) is proposed, which overcomes the limitations of conventional fixed-resolution models by explicitly modeling varying resolutions and aspect ratios within its denoising process.\n - NiT achieves state-of-the-art performance on ImageNet 256x256 and 512x512 benchmarks and demonstrates strong zero-shot generalization capabilities to unseen high resolutions (e.g., 1536x1536) and diverse aspect ratios (e.g., 16:9, 3:1).\n - The model's superior generalization is attributed to its native-resolution modeling, which avoids the need for pre-processing steps like resizing and cropping that discard crucial information.\n - The results show significant improvements in both quantitative metrics and qualitative image quality compared to existing state-of-the-art methods.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://wzdthu.github.io/NiT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "AnimeShooter: A Multi-Shot Animation Dataset for Reference-Guided Video\n  Generation",
+        "authors": "Ying Shan, Yixiao Ge, Yuying Ge, liyz, qiulu66",
+        "link": "https://arxiv.org/abs/2506.03126",
+        "github_repo": null,
+        "summary": "- AnimeShooter is a new reference-guided multi-shot animation dataset designed to facilitate research on coherent multi-shot video generation.\n- It features comprehensive hierarchical annotations, including story-level and shot-level annotations, as well as a dedicated audio subset.\n- The dataset consists of 29K videos with a total duration of 2.2M seconds, with each video comprising an average of 5.07 segments and 14.82 shots.\n- AnimeShooterGen, a reference-guided multi-shot video generation model, is introduced and leverages MLLMs and diffusion models to produce coherent and contextually relevant videos.\n- Experimental results show that AnimeShooterGen outperforms existing methods in terms of visual consistency and adherence to reference images.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://qiulu66.github.io/animeshooter/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Robot-R1: Reinforcement Learning for Enhanced Embodied Reasoning in\n  Robotics",
+        "authors": "Jaehyung Kim, Jinwoo Shin, Huiwon Jang, Sumin Park, Dongyoung Kim",
+        "link": "https://arxiv.org/abs/2506.00070",
+        "github_repo": null,
+        "summary": "- This paper introduces ROBOT-R1, a novel framework that uses reinforcement learning to enhance embodied reasoning in robotics, addressing limitations of supervised fine-tuning (SFT).\n- ROBOT-R1 predicts the next keypoint state for task completion, conditioned on the scene image and environment metadata from expert demonstrations.\n- The model is trained using a multiple-choice question-answering (MCQA) approach, which converts the continuous action space into a discrete one.\n- Experiments show that ROBOT-R1 outperforms SFT methods and even surpasses GPT-40 on embodied reasoning tasks, particularly in low-level action control.\n- The paper also introduces a new benchmark, ROBOT-R1 Bench, to rigorously evaluate the diverse embodied reasoning capabilities required for robotic tasks.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning",
+        "authors": "Mengdi Wang, Ke Shen, Ye Tian, Ling Yang, Yinjie Wang",
+        "link": "https://arxiv.org/abs/2506.03136",
+        "github_repo": "https://github.com/Gen-Verse/CURE",
+        "summary": "The paper introduces CURE, a novel reinforcement learning framework that co-evolves LLM coder and unit tester capabilities without ground-truth code supervision.  CURE uses a dedicated reward design based on interaction outcomes, enabling flexible and scalable training. The ReasonFlux-Coder models (7B and 14B) derived from this framework improve code generation accuracy and Best-of-N accuracy, outperforming existing models of similar size.  Furthermore, the framework extends to downstream tasks, showing improvements in test-time scaling and agentic coding. Finally, the trained unit tester serves as an effective reward model for reinforcement learning on base models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/CURE"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Gen-Verse/ReasonFlux-Coder"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "DINGO: Constrained Inference for Diffusion LLMs",
+        "authors": "Gagandeep Singh, Sasa Misailovic, Shubham Ugare, Debangshu Banerjee, Tarun Suresh",
+        "link": "https://arxiv.org/abs/2505.23061",
+        "github_repo": null,
+        "summary": "This paper introduces DINGO, a novel constrained decoding algorithm designed for diffusion language models.  DINGO uses dynamic programming to ensure that generated outputs adhere to user-specified regular expressions while preserving the output distribution. It achieves up to a 68% improvement over unconstrained inference on benchmark tasks like symbolic math and JSON generation. The method provably guarantees the correctness and optimality of the generated output. It addresses the challenges of applying constrained decoding to the parallel nature of diffusion LLMs, outperforming previous methods.  DINGO can handle any user-specified regular expression.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "RelationAdapter: Learning and Transferring Visual Relation with\n  Diffusion Transformers",
+        "authors": "Yin Zhang, Chenglin Li, Yicheng Li, Yiren Song, Yan Gong",
+        "link": "https://arxiv.org/abs/2506.02528",
+        "github_repo": null,
+        "summary": "- RelationAdapter, a lightweight module designed to extract visual transformations from paired images and inject them into a Diffusion Transformer (DiT) model, is introduced.\n- The model uses a dual-branch adapter to explicitly model and encode visual relationships between pre-edit and post-edit images, effectively capturing complex edits across semantic, structural, and stylistic dimensions.\n- Relation252K, a comprehensive dataset comprising 218 diverse editing tasks, is introduced to evaluate model generalization and adaptability in visual prompt-driven scenarios.\n- Experiments show that RelationAdapter significantly improves the model's ability to understand and transfer editing intent, leading to notable gains in generation quality and overall editing performance.\n- The proposed method consistently outperforms existing baselines (Edit Transfer and VisualCloze) across multiple evaluation metrics, demonstrating its effectiveness in various image editing tasks.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/gy8888/RelationAdapter"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "LumosFlow: Motion-Guided Long Video Generation",
+        "authors": "Jiazheng Xing, Jingyun Liang, Yichen Qian, Hangjie Yuan, Jiahao Chen",
+        "link": "https://arxiv.org/abs/2506.02497",
+        "github_repo": null,
+        "summary": "- LumosFlow is a novel framework for long video generation that employs motion guidance explicitly.\n- It uses a hierarchical pipeline with three stages: key frame generation, optical flow generation, and post-hoc refinement.\n- The Large Motion Text-to-Video Diffusion Model (LMTV-DM) generates key frames with larger motion intervals, ensuring content diversity.\n- The Latent Optical Flow Diffusion Model (LOF-DM) synthesizes complex optical flows, and Motion ControlNet refines the warped results.\n- Experiments show that LumosFlow achieves 15x interpolation, outperforming traditional methods and generating long videos with consistent motion and appearance.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://jiahaochen1.github.io/LumosFlow/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "FinMME: Benchmark Dataset for Financial Multi-Modal Reasoning Evaluation",
+        "authors": "Jinsheng Huang, Xiao Luo, chunfenri, alan1027, luojunyu",
+        "link": "https://arxiv.org/abs/2505.24714",
+        "github_repo": "https://github.com/luo-junyu/FinMME",
+        "summary": "- This paper introduces FINMME, a new benchmark dataset for evaluating multimodal large language models (MLLMs) in the financial domain. \n- FINMME contains over 11,000 high-quality samples covering 18 financial domains and 6 asset classes, featuring 10 major chart types and 21 subtypes. \n- A novel evaluation system, FinScore, is proposed to address challenges in financial data, such as hallucination and varying domain complexities. \n- Experiments show that state-of-the-art models like GPT-40 underperform on FINMME, highlighting its challenging nature and the need for further research in financial MLLMs. \n- The dataset and evaluation protocol are publicly available.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/luo-junyu/FinMME"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/luojunyu/FinMME"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "PCoreSet: Effective Active Learning through Knowledge Distillation from\n  Vision-Language Models",
+        "authors": "Sung Ju Hwang, Dongseop Kim, Hyungjoon Jang, Dong Bok Lee, Seongjae Kang",
+        "link": "https://arxiv.org/abs/2506.00910",
+        "github_repo": null,
+        "summary": " - This paper introduces ActiveKD, a novel framework that integrates active learning (AL) with knowledge distillation (KD) using vision-language models (VLMs).\n - ActiveKD leverages the zero- and few-shot capabilities of VLMs to overcome the limitations of traditional KD in data-scarce scenarios.\n - The framework proposes a new sample selection strategy, Probabilistic CoreSet (PCoreSet), which maximizes coverage in the probability space rather than the feature space.\n - Evaluations on 11 datasets demonstrate that ActiveKD with PCoreSet consistently outperforms existing active learning methods, achieving significant improvements in final-round accuracy.\n - This work advances the intersection of AL and KD by effectively transferring knowledge from VLMs to compact, task-specific student models.",
+        "classification": [
+            "Image Classification",
+            "Zero-Shot Image Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "FlowMo: Variance-Based Flow Guidance for Coherent Motion in Video\n  Generation",
+        "authors": "Lior Wolf, Ariel Shaulov, Hila, itayhzn",
+        "link": "https://arxiv.org/abs/2506.01144",
+        "github_repo": null,
+        "summary": "- This paper introduces FlowMo, a novel, training-free guidance method that enhances temporal coherence in text-to-video models by leveraging the model's own predictions.\n- FlowMo addresses the limitation of existing approaches that require retraining the model or introducing external constraints by extracting a latent temporal signal directly from the pre-trained model during inference.\n- The method operates by deriving an appearance-debiased temporal representation and measuring motion coherence using patch-wise variance across the temporal dimension.\n- Extensive experiments demonstrate that FlowMo significantly improves motion coherence across multiple text-to-video models without requiring additional training or conditioning signals, and without sacrificing visual quality or prompt alignment.\n- The approach is evaluated using both automatic metrics and human evaluation, consistently showing significant improvements in temporal coherence and overall video quality.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://arielshaulov.github.io/FlowMo/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "OThink-R1: Intrinsic Fast/Slow Thinking Mode Switching for\n  Over-Reasoning Mitigation",
+        "authors": "Changwang Zhang, Jiawei Chen, Junjie Wu, jwanglux, Cynthia-1628",
+        "link": "https://arxiv.org/abs/2506.02397",
+        "github_repo": "https://github.com/AgenticIR-Lab/OThink-R1",
+        "summary": "- OThink-R1 is a novel method that dynamically switches between fast and slow thinking modes to mitigate over-reasoning in large reasoning models (LRMs).\n- The model classifies reasoning trajectories as either redundant or essential, pruning redundant steps while preserving logical validity.\n- OThink-R1 reduces reasoning redundancy by approximately 23% without sacrificing accuracy, as demonstrated by experiments on mathematical and question-answering tasks.\n- A dual-reference KL-divergence loss function is used to fine-tune the LRM, further enhancing its ability to switch between fast and slow thinking modes.\n- The approach is inspired by human cognitive processes and provides practical guidelines for creating efficient and accurate reasoning models.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/AgenticIR-Lab/OThink-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Datasheets Aren't Enough: DataRubrics for Automated Quality Metrics and\n  Accountability",
+        "authors": "David Anugraha, Genta Indra Winata, cryptexcode, seungone, patrickamadeus",
+        "link": "https://arxiv.org/abs/2506.01789",
+        "github_repo": "https://github.com/datarubrics/datarubrics",
+        "summary": "This paper introduces DATARUBRICS, a structured framework for assessing the quality of datasets.  It addresses the lack of standardized, measurable metrics for evaluating data quality in existing tools like datasheets.  DATARUBRICS uses rubric-based evaluation metrics and explores cost-effective methods for synthetic data generation, including LLMs. It offers a reproducible solution for dataset quality assessment, beneficial for both authors and reviewers. The framework covers 10 dimensions of data quality, including data sources, annotations, novelty, and utility.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/datarubrics/datarubrics"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "ReFoCUS: Reinforcement-guided Frame Optimization for Contextual\n  Understanding",
+        "authors": "Yong Man Ro, Hyunjun Kim, arkimjh, lakelee",
+        "link": "https://arxiv.org/abs/2506.01274",
+        "github_repo": null,
+        "summary": "- This paper introduces ReFoCUS, a novel reinforcement learning framework for optimizing frame selection in video understanding.\n- ReFoCUS learns a frame selection policy by optimizing for visual input selection, rather than directly optimizing textual responses, and uses reward signals derived from a reference LLM.\n- It addresses the challenge of the large combinatorial frame space through an autoregressive, conditional selection architecture.\n- The proposed method improves reasoning performance across multiple video QA benchmarks without requiring explicit frame-level supervision.\n- ReFoCUS consistently outperforms other video LLMs on multiple benchmarks, demonstrating the benefits of aligning frame selection with model-internal utility.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Reflect, Retry, Reward: Self-Improving LLMs via Reinforcement Learning",
+        "authors": "Kiran Kamble, Christopher Bryant, Umar Jamil, Shelly Bensal, melisa",
+        "link": "https://arxiv.org/abs/2505.24726",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel methodology for improving large language models (LLMs) by training them to generate better self-reflections when they make mistakes.\n- The framework operates in two stages: first, upon failing a task, the model generates a self-reflective commentary; second, the model retries the task with the self-reflection in context.  If successful, the self-reflection tokens are rewarded using Group Relative Policy Optimization (GRPO).\n- The method only requires binary success/failure feedback and is effective across various model architectures, showing substantial performance gains (up to 34.7% improvement in math equation writing and 18.1% in function calling).\n- Smaller fine-tuned models (1.5 billion to 7 billion parameters) outperformed larger models (10 times larger), demonstrating efficiency gains.\n- The approach effectively reduces the need for extensive external feedback data, while also addressing the issue of catastrophic forgetting.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "ORV: 4D Occupancy-centric Robot Video Generation",
+        "authors": "Chongjie Ye, Nan Wang, Shaocong Xu, Bohan Li, gzzyyxy",
+        "link": "https://arxiv.org/abs/2506.03079",
+        "github_repo": "https://github.com/OrangeSodahub/ORV",
+        "summary": "- This paper introduces ORV, a novel 4D occupancy-centric framework for generating high-fidelity robot manipulation videos.  \n- ORV utilizes 4D semantic occupancy sequences as fine-grained representations, providing accurate semantic and geometric guidance for video generation, addressing limitations of previous methods that relied on coarse action sequences or global alignment. \n- The model architecture leverages a pre-trained CogVideoX-2b text-to-video model, incorporating action and visual conditioning from the 4D occupancy data. \n- ORV outperforms existing baselines on various datasets and sub-tasks, demonstrating superior control precision, generation quality, and generalization capabilities. \n- The paper also introduces ORV-MV for multiview video generation and ORV-S2R for seamless simulation-to-real transfer.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/OrangeSodahub/ORV"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "FuseLIP: Multimodal Embeddings via Early Fusion of Discrete Tokens",
+        "authors": "Matthias Hein, Nicolas Flammarion, Francesco Croce, chs20",
+        "link": "https://arxiv.org/abs/2506.03096",
+        "github_repo": "https://github.com/chs20/fuselip",
+        "summary": "- FuseLIP is a novel multimodal embedding model that uses early fusion of discrete image and text tokens processed by a single transformer encoder.\n- It outperforms other approaches in multimodal embedding tasks such as VQA and text-guided image transformation retrieval, while being comparable to baselines on unimodal tasks.\n- The model leverages recent progress in discrete image tokenizers, enabling interaction between modalities at each depth of encoding.\n- FuseLIP is trained with a contrastive loss and a masked multimodal modeling (MMM) loss, consistently enhancing performance across various zero-shot tasks.\n- Novel datasets for multimodal pre-training and evaluation were collected, including challenging tasks designed to assess modality interactions.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/chs20/fuselip"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Multimodal DeepResearcher: Generating Text-Chart Interleaved Reports\n  From Scratch with Agentic Framework",
+        "authors": "Xingyu Liu, Yiyao Wang, Han Wang, Bo Pan, Zhaorui Yang",
+        "link": "https://arxiv.org/abs/2506.02454",
+        "github_repo": null,
+        "summary": "This paper introduces Multimodal DeepResearcher, a novel agentic framework for generating text-chart interleaved reports from scratch.  It leverages a structured textual representation of charts (FDV) to enable LLMs to generate diverse, high-quality visualizations.  Multimodal DeepResearcher outperforms baseline methods, achieving an 82% win rate over DataNarrative using the same Claude 3.7 Sonnet model across various evaluation metrics. The framework decomposes the task into researching, exemplar report textualization, planning, and multimodal report generation.  A new benchmark, MultimodalReportBench, was developed to evaluate the generated reports.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://rickyang1114.github.io/multimodal-deepresearcher/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "One Missing Piece for Open-Source Reasoning Models: A Dataset to\n  Mitigate Cold-Starting Short CoT LLMs in RL",
+        "authors": "Sunghyun Park, Beong-woo Kwak, Jihyuk Kim, Dongjin Kang, hyungjoochae",
+        "link": "https://arxiv.org/abs/2506.02338",
+        "github_repo": null,
+        "summary": "- This paper introduces the Long CoT Collection, a new dataset designed to mitigate the cold-start problem in reinforcement learning for short chain-of-thought (CoT) large language models (LLMs).\n- The dataset contains 100,000 long CoT rationales generated using existing short CoT LLMs, guided by a smaller seed dataset of 1,000 examples from a state-of-the-art LLM (R1).\n- The authors demonstrate that training LLMs on this dataset significantly improves their reasoning capabilities, leading to 2-3x larger gains in reinforcement learning performance compared to models trained without it.\n- Experiments show the dataset achieves comparable or slightly lower quality compared to R1, demonstrating its effectiveness as a strong foundation for reinforcement learning.\n- The Long CoT Collection is made publicly available, promoting further research and development in open-source reasoning models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Accelerating Diffusion LLMs via Adaptive Parallel Decoding",
+        "authors": "Aditya Grover, Guy Van den Broeck, danielmisrael",
+        "link": "https://arxiv.org/abs/2506.00413",
+        "github_repo": null,
+        "summary": "- This paper introduces Adaptive Parallel Decoding (APD), a novel decoding method for diffusion large language models (dLLMs) that dynamically adjusts the number of tokens sampled in parallel to improve generation speed without sacrificing quality.\n- APD works by defining a multiplicative mixture between the dLLM marginal probabilities and the joint probability of sequences under a small auxiliary autoregressive model, enabling flexible trade-offs between throughput and quality.\n- The method is optimized by enabling KV caching and limiting the size of the masked input, resulting in three tunable parameters for balancing speed and quality.\n- Experiments show that APD achieves significantly higher throughput than autoregressive models and other dLLM decoding methods with minimal quality degradation.\n- The authors demonstrate that APD outperforms existing methods on several benchmark tasks, achieving a Pareto-optimal performance in terms of both speed and quality.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "None"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "R^2ec: Towards Large Recommender Models with Reasoning",
+        "authors": "Wenjie Wang, Xinyu Lin, izhx, tensorslow, dd101bb",
+        "link": "https://arxiv.org/abs/2505.16994",
+        "github_repo": "https://github.com/YRYangang/RRec",
+        "summary": "- This paper introduces R^2ec, a unified large recommender model with intrinsic reasoning capabilities, addressing limitations of decoupled reasoning modules in existing approaches.\n- The model architecture facilitates interleaved reasoning and recommendation in an autoregressive process, using two task-specific heads: a language-modeling head for reasoning generation and a recommendation head for item prediction.\n- A reinforcement learning framework, RecPO, optimizes R^2ec by simultaneously optimizing reasoning and recommendation capabilities using a fused reward scheme.\n- Experiments on three datasets demonstrate the effectiveness of R^2ec, showing relative improvements of 68.67% in Hit@5 and 45.21% in NDCG@20 compared to baselines.\n- The study observes a phenomenon similar to LLMs, where the reasoning length increases during training, highlighting an aspect of the model's learning process.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/YRYangang/RRec"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "MERIT: Multilingual Semantic Retrieval with Interleaved Multi-Condition\n  Query",
+        "authors": "Qi Xu, Xian Wang, Linfeng Li, Yuan Gao, WeiChow",
+        "link": "https://arxiv.org/abs/2506.03144",
+        "github_repo": null,
+        "summary": "This paper introduces MERIT, the first multilingual dataset for interleaved multi-condition semantic retrieval.  It identifies limitations of existing models: neglecting conditional elements while focusing on global semantics, failing to extract attributes, and misinterpreting visual content.  A novel fine-tuning framework, CORAL, adapts pre-trained MLLMs using embedding reconstruction for conditional elements and contrastive learning for global semantics.  Experiments demonstrate CORAL achieves a 45.9% performance improvement over conventional methods on MERIT and strong generalization across eight benchmarks.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "MERIT-2025.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "M^3FinMeeting: A Multilingual, Multi-Sector, and Multi-Task Financial\n  Meeting Understanding Evaluation Dataset",
+        "authors": "Lifan Guo, Xiandong Li, Yalong Wen, Junhui Li, amazingj",
+        "link": "https://arxiv.org/abs/2506.02510",
+        "github_repo": null,
+        "summary": "This research introduces M\u00b3FinMeeting, a novel multilingual, multi-sector, and multi-task dataset designed for evaluating financial meeting understanding in large language models (LLMs).  It addresses limitations of existing datasets by focusing on real-world financial meeting transcriptions across various industry sectors (defined by GICS) and three tasks: summarization, question-answer pair extraction, and question answering.  Experiments on seven popular LLMs show that even advanced models struggle with the tasks, demonstrating the effectiveness of M\u00b3FinMeeting. The dataset includes English, Chinese, and Japanese and has over 600 financial meetings.",
+        "classification": [
+            "Document Question Answering",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/aliyun/qwen-dianjin"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "QARI-OCR: High-Fidelity Arabic Text Recognition through Multimodal Large\n  Language Model Adaptation",
+        "authors": "Omar Elshehy, Mahmoud Reda, Abdelakreem Elkhateb, Omer Nacar, oddadmix",
+        "link": "https://arxiv.org/abs/2506.02295",
+        "github_repo": null,
+        "summary": "- This paper introduces QARI-OCR, a series of vision-language models for high-fidelity Arabic text recognition, progressively optimized through iterative fine-tuning on specialized synthetic datasets.\n- The leading model, QARI v0.2, achieves state-of-the-art performance with a Word Error Rate (WER) of 0.160, Character Error Rate (CER) of 0.061, and BLEU score of 0.737 on diacritically-rich texts.\n- QARI-OCR demonstrates superior handling of tashkeel, diverse fonts, and document layouts, even on low-resolution images, showcasing its robustness and accuracy.\n- The model is built upon the Qwen2-VL-2B-Instruct architecture, incorporating 4-bit quantization and LORA adapters for efficient fine-tuning.\n- All models and datasets are publicly released to foster further research and development in Arabic OCR.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/docs/trl/en/sft_trainer"
+        ],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Knowing Before Saying: LLM Representations Encode Information About\n  Chain-of-Thought Success Before Completion",
+        "authors": "Florian Matthes, yziser, galchechik, anumafzal94",
+        "link": "https://arxiv.org/abs/2505.24362",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for predicting the success of Chain-of-Thought (CoT) prompting in large language models (LLMs) before the generation process is complete.\n- The method uses a probing classifier trained on LLM internal representations to predict CoT success, outperforming a strong BERT-based baseline that relies only on generated tokens.\n- Experiments show that the classifier achieves high accuracy even before any tokens are generated, suggesting that crucial information about the reasoning process is encoded early in the LLM's internal representations.\n- Early stopping experiments demonstrate that truncating CoT reasoning can still improve performance compared to not using CoT, but there is a remaining gap compared to full reasoning.\n- The findings suggest that optimizing CoT's efficiency may be possible by leveraging the classifier's guidance to identify when early stopping is most effective.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/anum94/CoTpred"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "How Much Backtracking is Enough? Exploring the Interplay of SFT and RL\n  in Enhancing LLM Reasoning",
+        "authors": "Bhuwan Dhingra, Junlin Wang, chenyn66, jamescai20",
+        "link": "https://arxiv.org/abs/2505.24273",
+        "github_repo": null,
+        "summary": "- This paper explores the interplay between supervised fine-tuning (SFT) and reinforcement learning (RL) in enhancing large language model (LLM) reasoning abilities.\n- The main contribution is a systematic investigation of the impact of backtracking, a learned capability in RL, on reasoning improvements and the identification of optimal backtracking strategies for different tasks.\n- The researchers conducted controlled experiments on eight reasoning tasks with varying numbers of backtracking steps, revealing a positive correlation between problem difficulty and the required number of backtracks for optimal RL performance. \n- They found that longer chains of thought with backtracks generally lead to better and more stable RL training, and more challenging problems benefit from higher numbers of backtracks during SFT. \n- The findings suggest that RL prioritizes structural patterns over content correctness and provide practical insights for designing optimal training strategies to effectively scale reasoning in LLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/jchy20/how-much-backtrack"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Deep Video Discovery: Agentic Search with Tool Use for Long-form Video\n  Understanding",
+        "authors": "Bin Li, Jiahao Li, Zongyu Guo, Zhaoyang Jia, Xiaoyi Zhang",
+        "link": "https://arxiv.org/abs/2505.18079",
+        "github_repo": null,
+        "summary": "- This paper introduces Deep Video Discovery (DVD), a novel agent that uses an agentic search strategy to overcome limitations in understanding long-form videos.\n- DVD leverages a multi-granular video database and a set of search-centric tools (Global Browse, Clip Search, Frame Inspect) to efficiently retrieve relevant information.\n- The agent autonomously reasons and plans its actions using an LLM, dynamically selecting appropriate tools and parameters.\n- DVD achieves state-of-the-art performance on the LVBench dataset (74.2% accuracy), surpassing existing methods by a significant margin.\n-  The performance further improves to 76.0% with the addition of video transcripts.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Revisiting LRP: Positional Attribution as the Missing Ingredient for\n  Transformer Explainability",
+        "authors": "Lior Wolf, Hila Chefer, Itamar Zimerman, Yarden Bakish",
+        "link": "https://arxiv.org/abs/2506.02138",
+        "github_repo": null,
+        "summary": "- This paper introduces Positional-Aware Layer-wise Relevance Propagation (PA-LRP), a novel technique for improving transformer explainability by incorporating positional encoding (PE) information into the attribution process.\n- PA-LRP significantly outperforms existing LRP-based methods for transformer explainability on both NLP and vision tasks, as demonstrated by extensive experiments with fine-tuned classifiers and zero-shot foundation models.\n- The method reformulates the input space for transformer explainability to include position-token pairs, enabling the propagation of attributions across various positional encoding schemes.\n- PA-LRP introduces novel, theoretically grounded LRP rules designed to handle PE layers, including learnable, rotary, and absolute PEs.\n- The authors provide both quantitative and qualitative results that highlight the effectiveness of PA-LRP in achieving more faithful and comprehensive explanations.",
+        "classification": [
+            "Natural Language Processing",
+            "Computer Vision",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/YardenBakish/PE-AWARE-LRP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-04"
+    },
+    {
+        "title": "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural\n  Understanding and Transcreation",
+        "authors": "Wenyan Li, Shaohuan Cheng, Dongchu Xie, Lutong Yu, Li Zhou",
+        "link": "https://arxiv.org/abs/2506.01565",
+        "github_repo": null,
+        "summary": "This paper introduces Hanfu-Bench, a novel multimodal benchmark dataset focusing on cross-temporal cultural understanding and transcreation using Hanfu (traditional Chinese clothing).  The benchmark includes two core tasks: cultural visual understanding (CVU) using multiple-choice visual question answering and cultural image transcreation (CIT) which involves transforming traditional Hanfu images into modern designs.  Evaluation on both tasks reveals significant challenges for existing vision-language models, highlighting the need for further advancements in temporal cultural understanding.  The dataset and evaluation tools are publicly available on HuggingFace.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/lizhou21/Hanfu-Bench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/lizhou21/Hanfu-Bench",
+            "https://huggingface.co/lizhou21/TemporalCulture"
+        ],
+        "date": "2025-06-04"
     }
 ]

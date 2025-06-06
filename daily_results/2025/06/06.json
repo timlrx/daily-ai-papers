@@ -1,0 +1,558 @@
+[
+    {
+        "title": "RoboRefer: Towards Spatial Referring with Reasoning in Vision-Language\n  Models for Robotics",
+        "authors": "Shanyu Rong, Yi Han, Cheng Chi, Jingkun An, Zhoues",
+        "link": "https://arxiv.org/abs/2506.04308",
+        "github_repo": null,
+        "summary": " - RoboRefer, a novel 3D-aware Vision-Language Model (VLM), is introduced for precise spatial understanding and multi-step spatial reasoning. The model architecture uses separate RGB and depth encoders, a dedicated depth projector, and an LLM. \n - RoboRefer is trained using a two-stage process: Supervised Fine-tuning (SFT) followed by Reinforcement Fine-tuning (RFT). SFT improves single-step spatial understanding using RGB-D inputs and explicit reasoning. RFT enhances multi-step spatial reasoning and generalization. \n - The RefSpatial dataset, a large-scale dataset (20M QA pairs), is introduced to support SFT and RFT training. It includes 31 spatial relations and covers both single-step and multi-step reasoning tasks. \n - RoboRefer outperforms existing state-of-the-art methods on several benchmarks including single-step spatial understanding benchmarks (CV-Bench, BLINK) and multi-step spatial reasoning benchmarks (RefSpatial-Bench). \n - RoboRefer is demonstrated to control diverse robots in complex, real-world scenes, executing long-horizon dynamic tasks including manipulation and navigation.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://zhoues.github.io/RoboRefer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "SeedVR2: One-Step Video Restoration via Diffusion Adversarial\n  Post-Training",
+        "authors": "Meng Wei, Yuxi Ren, Zhijie Lin, Shanchuan Lin, Jianyi Wang",
+        "link": "https://arxiv.org/abs/2506.05301",
+        "github_repo": null,
+        "summary": "- SeedVR2 is a one-step diffusion-based video restoration model that uses adversarial post-training against real data to achieve high-resolution video restoration in a single step.\n- It introduces an adaptive window attention mechanism, where the window size dynamically adjusts to fit the output resolution, avoiding window inconsistencies observed in high-resolution video restoration.\n- SeedVR2 utilizes a proposed feature matching loss and a progressive distillation training strategy to stabilize adversarial training and improve efficiency.\n- Extensive experiments demonstrate that SeedVR2 achieves comparable or even better performance than existing VR approaches in a single step, improving speed by over 4x.\n- The proposed adaptive window attention and loss function improvements are key to the improved performance of SeedVR2.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://iceclear.github.io/projects/seedvr2/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Video World Models with Long-term Spatial Memory",
+        "authors": "Ziwei Liu, Yinghao Xu, Ryan Po, Shuai Yang, Tong Wu",
+        "link": "https://arxiv.org/abs/2506.05284",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework for enhancing long-term consistency in video world models by incorporating three distinct memory mechanisms: short-term working memory, long-term spatial memory, and long-term episodic memory.\n- The spatial memory is a geometry-grounded point cloud representation that is autoregressively generated and updated with only the static scene parts, to enable long-term spatial consistency. \n- The episodic memory is a sparse set of historical reference frames which are selected based on newly revealed areas, to remember visual details and identities for long time horizons. \n- The proposed framework is evaluated on a custom dataset which shows improved quality, consistency, and context length compared to baselines, paving the way towards long-term consistent world generation. \n- Evaluation metrics includes view recall and user studies demonstrating that the proposed model outperforms existing methods in generating consistent video world models. ",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://spmem.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "ComfyUI-Copilot: An Intelligent Assistant for Automated Workflow\n  Development",
+        "authors": "Zijiao Wu, Qingli Hu, Yiyu Wang, Xue Yang, imryanxu",
+        "link": "https://arxiv.org/abs/2506.05010",
+        "github_repo": "https://github.com/AIDC-AI/ComfyUI-Copilot",
+        "summary": "- ComfyUI-Copilot is a large language model-powered plugin for ComfyUI, an open-source platform for AI-driven art creation, designed to enhance usability and efficiency.\n- It addresses challenges such as limited documentation, model misconfigurations, and workflow complexity by offering intelligent node and model recommendations, and automated workflow construction.\n- The system uses a hierarchical multi-agent framework with a central assistant agent and specialized worker agents, supported by curated ComfyUI knowledge bases.\n- Evaluations show that ComfyUI-Copilot accurately recommends nodes and accelerates workflow development, lowering barriers for beginners and enhancing efficiency for experienced users.\n-  The system has been shown to achieve high recall rates for workflows and nodes (both exceeding 88.5%), demonstrating practical efficacy.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/AIDC-AI/ComfyUI-Copilot"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Surfer-H Meets Holo1: Cost-Efficient Web Agent Powered by Open Weights",
+        "authors": "Emilien Bir\u00e9, Breno Baldas Skuk, Mathieu Andreux, tonywu71, hamza-hcompany",
+        "link": "https://arxiv.org/abs/2506.02865",
+        "github_repo": null,
+        "summary": "- This paper introduces Surfer-H, a cost-efficient web agent that leverages Vision-Language Models (VLMs) to perform user-defined tasks on the web.  The agent integrates three modules: a policy, a localizer, and a validator.\n-  The key innovation is Holol, a new open-weight collection of VLMs trained on curated data sources, including open-access web content, synthetic examples, and self-produced data. Holol outperforms existing methods in UI benchmarks and surpasses state-of-the-art performance on WebVoyager.\n- Surfer-H achieves a 92.2% success rate on the WebVoyager benchmark, demonstrating Pareto optimality by achieving this high accuracy while being cost-efficient.\n- The researchers also introduce WebClick, a new benchmark specifically designed for web-based UI localization, to aid in evaluating the performance of similar web agents.\n- To accelerate research, the WebClick evaluation dataset and the Holol model weights are open-sourced.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/Hcompany/holo1-683dd1eece7eb077b96d0cbd",
+            "https://huggingface.co/datasets/Hcompany/WebClick"
+        ],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Diagonal Batching Unlocks Parallelism in Recurrent Memory Transformers\n  for Long Contexts",
+        "authors": "Ivan Oseledets, Yuri Kuratov, Gleb Kuzmin, Ivan Rodkin, Danil Sivtsov",
+        "link": "https://arxiv.org/abs/2506.05229",
+        "github_repo": null,
+        "summary": "- This paper introduces Diagonal Batching, a novel scheduling scheme that enhances the parallelism of Recurrent Memory Transformers (RMTs) for long-context inference.\n- Diagonal Batching reorders computations, enabling efficient GPU inference even with single long-context inputs, eliminating the need for complex batching and pipelining.\n- When applied to a LLaMA-1B ARMT model, Diagonal Batching achieves a 3.3x speedup over standard full-attention LLaMA-1B and a 1.8x speedup over the sequential RMT implementation.\n- The method preserves the exact recurrence of RMTs and requires no model retraining, making it adaptable to existing models.\n- Experimental results demonstrate reduced inference costs and latency, which makes RMTs a practical solution for real-world applications with long contexts.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/svtdanny/diagonal-batching"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "VideoREPA: Learning Physics for Video Generation through Relational\n  Alignment with Foundation Models",
+        "authors": "Xiangpeng Wan, Fanqing Meng, Shaofeng Zhang, Jiaqi Liao, aHapBean",
+        "link": "https://arxiv.org/abs/2505.23656",
+        "github_repo": null,
+        "summary": "- VideoREPA is a novel framework that improves the physics plausibility of videos generated by text-to-video (T2V) diffusion models by aligning token-level relations between video understanding foundation models and T2V models.\n- It introduces a new loss function called Token Relation Distillation (TRD) loss, which leverages spatio-temporal alignment to provide soft guidance for finetuning powerful pre-trained T2V models.\n- VideoREPA outperforms existing methods on relevant benchmarks, demonstrating a strong capacity for generating videos consistent with intuitive physics.\n- The TRD loss overcomes limitations of previous methods by handling temporal dynamics and ensuring stability during finetuning.\n- Experimental results show significant improvements in the physics commonsense of baseline methods.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Qwen3 Embedding: Advancing Text Embedding and Reranking Through\n  Foundation Models",
+        "authors": "Huan Lin, Mingxin Li, Yanzhao Zhang, izhx, thenlper",
+        "link": "https://arxiv.org/abs/2506.05176",
+        "github_repo": null,
+        "summary": "- This paper introduces the Qwen3 Embedding series, a significant advancement in text embedding and reranking capabilities built upon the Qwen3 foundation models.\n- The model architecture utilizes LLMs with causal attention for embeddings and employs LLMs for point-wise reranking.\n- A multi-stage training pipeline is used, combining large-scale unsupervised pre-training with supervised fine-tuning on high-quality datasets.\n- The Qwen3 Embedding series achieves state-of-the-art results across diverse benchmarks, excelling in multilingual evaluation and various retrieval tasks.\n- The models are publicly available under the Apache 2.0 license to facilitate reproducibility and community-driven research.",
+        "classification": [
+            "Natural Language Processing",
+            "Sentence Similarity",
+            "Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/Qwen3-Embedding"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen"
+        ],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Aligning Latent Spaces with Flow Priors",
+        "authors": "Ping Luo, Ying Shan, Yixiao Ge, Yuying Ge, liyz",
+        "link": "https://arxiv.org/abs/2506.05240",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework for aligning learnable latent spaces to arbitrary target distributions using flow-based generative models as priors.\n- The method first pre-trains a flow model on the target features to capture the underlying distribution, then uses this fixed flow model to regularize the latent space via an alignment loss.\n- The alignment loss is computationally tractable and acts as a surrogate objective for maximizing a variational lower bound on the log-likelihood of latents under the target distribution.\n- Experiments on ImageNet with diverse target distributions demonstrate the effectiveness of the approach, showing that the proposed alignment loss closely approximates the negative log-likelihood of the target distribution.\n- The framework is computationally efficient, eliminating the need for expensive likelihood evaluations and ODE solving during optimization.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Unfolding Spatial Cognition: Evaluating Multimodal Models on Visual\n  Simulations",
+        "authors": "Yinuo Yang, Zixian Ma, Mahtab Bigverdi, Linjie Li, kuvvi",
+        "link": "https://arxiv.org/abs/2506.04633",
+        "github_repo": "https://github.com/STARE-bench/STARE",
+        "summary": "This paper introduces STARE, a benchmark dataset for evaluating multimodal large language models on spatial reasoning tasks.  STARE contains approximately 4,000 tasks spanning foundational geometric transformations, integrated spatial reasoning (cube net folding and tangram puzzles), and real-world spatial reasoning (perspective and temporal reasoning).  Evaluation reveals that current models struggle with complex visual simulations, performing near random chance on 3D tasks whereas humans achieve near-perfect accuracy.  The authors highlight the importance of visual simulation capabilities for robust spatial reasoning and provide extensive analysis of model performance across various task complexities and evaluation settings.  STARE aims to advance research on multimodal spatial reasoning and inspire further development of AI models capable of human-level visual simulation.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/STARE-bench/STARE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "SparseMM: Head Sparsity Emerges from Visual Concept Responses in MLLMs",
+        "authors": "Jiwen Lu, Yongming Rao, Jiahui Wang, Zuyan",
+        "link": "https://arxiv.org/abs/2506.05344",
+        "github_repo": "https://github.com/CR400AF-A/SparseMM",
+        "summary": "- This paper introduces SparseMM, a novel KV-Cache optimization strategy that leverages the sparsity of visual heads in Multimodal Large Language Models (MLLMs) to accelerate inference.\n- SparseMM identifies visual heads through a training-free framework that quantifies head-level visual relevance using OCR.\n- The method allocates asymmetric computation budgets to heads based on their visual scores, prioritizing visual semantics during decoding.\n- Extensive evaluations demonstrate that SparseMM achieves superior accuracy-efficiency trade-offs compared to existing KV-Cache acceleration methods, delivering 1.38x real-time acceleration and 52% memory reduction.\n- SparseMM is shown to generalize across diverse LLM architectures and vision-language tasks.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/CR400AF-A/SparseMM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "AV-Reasoner: Improving and Benchmarking Clue-Grounded Audio-Visual\n  Counting for MLLMs",
+        "authors": "Tong Lu, Yicheng Liu, Zhiqi Li, cg1177, lulidong",
+        "link": "https://arxiv.org/abs/2506.05328",
+        "github_repo": null,
+        "summary": "- This paper introduces CG-AV-Counting, a new benchmark dataset for evaluating clue-grounded audio-visual counting in long videos, addressing limitations of existing benchmarks.\n- It proposes AV-Reasoner, a model trained with GRPO and curriculum learning, which outperforms existing models on multiple benchmarks, demonstrating the effectiveness of reinforcement learning.\n- AV-Reasoner achieves state-of-the-art results across multiple benchmarks in Audio-Visual Question Answering, and other related tasks.\n- Experiments reveal that reasoning in the language space does not improve performance on out-of-domain benchmarks.\n- The dataset includes 1,027 multimodal questions and 5,845 annotated clues over 497 long videos, supporting both black-box and white-box evaluation.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://av-reasoner.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Video-R1/DVD-counting"
+        ],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "StreamBP: Memory-Efficient Exact Backpropagation for Long Sequence\n  Training of LLMs",
+        "authors": "Xiao Li, Lei Zhao, Qijun Luo, Kullpar",
+        "link": "https://arxiv.org/abs/2506.03077",
+        "github_repo": "https://github.com/Ledzy/StreamBP",
+        "summary": "- StreamBP is a novel memory-efficient exact backpropagation method for training large language models (LLMs) on long sequences.\n- It linearly decomposes the chain rule along the sequence dimension, significantly reducing the memory cost of activation values and logits.\n- StreamBP is applicable to common training objectives such as supervised fine-tuning (SFT), group relative policy optimization (GRPO), and direct preference optimization (DPO).\n- Experimental results demonstrate that StreamBP scales up the maximum sequence length by 2.8-5.5 times compared to gradient checkpointing, while using comparable or even less BP time.\n- A communication-efficient distributed StreamBP is also developed to support multi-GPU training.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Ledzy/StreamBP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "MINT-CoT: Enabling Interleaved Visual Tokens in Mathematical\n  Chain-of-Thought Reasoning",
+        "authors": "Shilin Yan, Aojun Zhou, Renrui Zhang, CaraJ, xy06",
+        "link": "https://arxiv.org/abs/2506.05331",
+        "github_repo": "https://github.com/xinyan-cxy/MINT-CoT",
+        "summary": "- The paper introduces MINT-CoT, a novel method that incorporates visual tokens into the chain-of-thought (CoT) reasoning process for solving mathematical problems.- MINT-CoT utilizes an Interleave Token to dynamically select relevant visual regions within mathematical figures, addressing limitations of existing methods that rely on coarse-grained regions or external visual modifications.- The proposed method is evaluated on three benchmark datasets (MathVista, GeoQA, and MMStar), demonstrating significant improvements (+34.08% on MathVista, +28.78% on GeoQA, and +23.2% on MMStar) over baseline models.- A new dataset, MINT-CoT, is constructed containing 54K mathematical problems with token-level alignment between reasoning steps and visual regions, facilitating the training of the MINT-CoT model.-  The model is trained using a three-stage strategy combining text-only CoT, interleaved CoT supervised fine-tuning, and interleaved CoT reinforcement learning, enhancing the model's ability to effectively reason with interleaved visual information.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/xinyan-cxy/MINT-CoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "VideoMathQA: Benchmarking Mathematical Reasoning via Multimodal\n  Understanding in Videos",
+        "authors": "Ming-Hsuan Yang, Muhammad Maaz, Anqi Tang, Abdelrahman Shaker, Hanoona Rasheed",
+        "link": "https://arxiv.org/abs/2506.05349",
+        "github_repo": null,
+        "summary": "- This paper introduces VideoMathQA, a new benchmark dataset designed to evaluate multimodal mathematical reasoning capabilities in videos.\n- The dataset contains 420 manually annotated video-question pairs covering 10 diverse mathematical domains and three reasoning types: direct problem solving, conceptual transfer, and deep comprehension.\n- Each question includes fine-grained reasoning annotations, enabling in-depth analysis of model performance and failure modes.\n- Evaluation results on 30 state-of-the-art models highlight the challenges of integrating long-range multimodal information and the limitations of current approaches to video-based mathematical reasoning.\n- The dataset and evaluation code are publicly available.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://mbzuai-oryx.github.io/VideoMathQA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Inference-Time Hyper-Scaling with KV Cache Compression",
+        "authors": "Edoardo M. Ponti, Piotr Nawrot, Konrad Staniszewski, Adrian \u0141a\u0144cucki",
+        "link": "https://arxiv.org/abs/2506.05345",
+        "github_repo": null,
+        "summary": "This paper introduces Dynamic Memory Sparsification (DMS), a novel method for compressing key-value caches in Transformer LLMs during inference to improve efficiency.  DMS achieves 8x compression with only 1K training steps, outperforming training-free sparse attention methods. The method is shown to boost accuracy for comparable inference runtime and memory load across multiple families of LLMs on reasoning tasks.  Experiments show that DMS consistently outperforms baselines, particularly at higher compression ratios. The work also validates the effectiveness of efficient attention, unlocked by DMS, for inference-time scaling, improving reasoning capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Revisiting Depth Representations for Feed-Forward 3D Gaussian Splatting",
+        "authors": "Jia-Wang Bian, Zeyu Zhang, Donny Y. Chen, lhmd, dc-walker",
+        "link": "https://arxiv.org/abs/2506.05327",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel regularization loss, PM-Loss, to improve the quality of 3D Gaussian Splatting (3DGS) models by leveraging geometry priors from pointmaps predicted by a pre-trained transformer.\n- PM-Loss addresses the issue of depth discontinuities in depth-based representations which often leads to fragmented or sparse point clouds, thus degrading rendering quality.\n- The proposed method significantly improves feed-forward 3DGS across various architectures and scenes, delivering consistently better rendering results compared to existing methods.\n- The effectiveness of PM-Loss is demonstrated through extensive experiments on two large-scale benchmark datasets (RealEstate10K and DL3DV-10K) showing consistent improvements in both 3D Gaussian quality and rendered novel view quality.\n- PM-Loss is a plug-and-play method which enhances the quality of both 3D Gaussians and the rendered novel views without requiring additional network parameters or changing existing model architecture.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "EOC-Bench: Can MLLMs Identify, Recall, and Forecast Objects in an\n  Egocentric World?",
+        "authors": "Dian Jiao, Wentong Li, Long Li, Ronghao Dang, CircleRadon",
+        "link": "https://arxiv.org/abs/2506.05287",
+        "github_repo": null,
+        "summary": " - The paper introduces EOC-Bench, a novel benchmark for evaluating multimodal large language models' (MLLMs) object-centric embodied cognition in dynamic egocentric scenarios. \n- EOC-Bench features 3,277 meticulously annotated QA pairs categorized into past, present, and future temporal categories, covering 11 fine-grained evaluation dimensions and 3 visual object referencing types. \n- The benchmark is designed to systematically evaluate object-centric embodied cognition in dynamic egocentric scenarios, addressing the gap in existing benchmarks which primarily focus on static scene exploration. \n- A mixed-format human-in-the-loop annotation framework is used for comprehensive evaluation, incorporating four question types and a novel multi-scale temporal accuracy metric. \n- The comprehensive evaluation on EOC-Bench reveals clear deficiencies in object-level temporal perception for mainstream MLLMs, highlighting the challenges and importance of advancing these capabilities.",
+        "classification": [
+            "Video Classification",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Language-Image Alignment with Fixed Text Encoders",
+        "authors": "Yi Ma, Yue Zhao, robinwuzy, JingfengY",
+        "link": "https://arxiv.org/abs/2506.04209",
+        "github_repo": null,
+        "summary": "- This paper introduces LIFT, a novel framework for language-image alignment that uses a fixed, pre-trained large language model (LLM) as the text encoder and trains only the image encoder.\n- LIFT outperforms CLIP in most scenarios involving compositional understanding and long captions, demonstrating significant improvements in computational efficiency.\n- The authors conduct comprehensive benchmarking and ablation studies to evaluate LIFT's performance against CLIP, showcasing superior accuracy in several compositional understanding tasks and LLaVA downstream tasks.\n- They also investigate several design choices for LLM-based text encoders, finding that contrastive fine-tuning is necessary for optimal performance.\n- LIFT simplifies the design choices in mainstream contrastive language-image alignment approaches, enabling the use of a simpler cosine similarity loss while achieving comparable performance.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Zero-Shot Image Classification",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/Jingfeng0705/LIFT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "FlexPainter: Flexible and Multi-View Consistent Texture Generation",
+        "authors": "Luozhou Wang, Jiantao Lin, Leyi Wu, yingcongchen, StarYDY",
+        "link": "https://arxiv.org/abs/2506.02620",
+        "github_repo": null,
+        "summary": "- FlexPainter is a novel texture generation pipeline that enables flexible multi-modal conditional guidance and achieves highly consistent texture generation.\n- It leverages a shared conditional embedding space to perform flexible aggregation between different input modalities, achieving reference image-based stylization via an image-based CFG method.\n- FlexPainter generates multi-view images simultaneously using a grid representation to enhance global understanding and uses a view synchronization and adaptive weighting module during diffusion sampling to ensure local consistency.\n- A 3D-aware texture completion model combined with a texture enhancement model is used to generate seamless, high-resolution texture maps.\n- The experimental results demonstrate that FlexPainter significantly outperforms state-of-the-art methods in both flexibility and generation quality.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "The Common Pile v0.1: An 8TB Dataset of Public Domain and Openly\n  Licensed Text",
+        "authors": "Stella Biderman, Colin Raffel, Brian Lester, Nikhil Kandpal, storytracer",
+        "link": "https://arxiv.org/abs/2506.05209",
+        "github_repo": null,
+        "summary": " - The paper introduces Common Pile v0.1, an 8TB dataset of openly licensed text for large language model (LLM) pre-training.\n - It addresses the limitations of prior datasets which were too small or low quality to produce performant LLMs.\n - The dataset comprises content from 30 diverse sources, spanning research papers, code, books, encyclopedias, and more.\n - The authors validate the dataset by training two 7-billion parameter LLMs, achieving competitive performance to those trained on unlicensed text with similar computational budgets.\n -  The Common Pile v0.1, associated code, training mixture, and checkpoints for the trained LLMs are publicly released.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/commonpile/commonpile"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/commonpile/commonpile"
+        ],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Autoregressive Images Watermarking through Lexical Biasing: An Approach\n  Resistant to Regeneration Attack",
+        "authors": "Wenli Huang, Ye Deng, Sanping Zhou, Yiren Song, Siqi Hui",
+        "link": "https://arxiv.org/abs/2506.01011",
+        "github_repo": null,
+        "summary": "- This paper introduces Lexical Bias Watermarking (LBW), a novel watermarking framework for autoregressive (AR) image generation models that embeds watermarks directly into token maps by biasing token selection.\n- LBW is designed to resist regeneration attacks, which can effectively erase watermarks by perturbing diffusion latent states, a significant challenge for diffusion-based methods.\n- The proposed method achieves superior watermark robustness, especially against regeneration attacks, as demonstrated by extensive experiments.\n- LBW naturally extends to post-hoc watermarking by leveraging the VQ-VAE-based image reconstruction process.\n- To enhance security against white-box attacks, LBW uses a multi-green-list strategy, where the green list for each image is randomly sampled from a pool of green lists.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "MedAgentGym: Training LLM Agents for Code-Based Medical Reasoning at\n  Scale",
+        "authors": "Yue Yu, Yishan Zhong, Yuchen Zhuang, Ran Xu, wshi83",
+        "link": "https://arxiv.org/abs/2506.04405",
+        "github_repo": null,
+        "summary": "MedAgentGym is introduced as the first publicly available training environment designed to improve the coding-based medical reasoning capabilities of large language models (LLMs).  It contains 72,413 task instances across 129 categories from 12 real-world biomedical scenarios.  Benchmarking over 25 LLMs reveals a significant performance gap between commercial API-based models and open-source LLMs. Med-Copilot-7B achieves substantial performance gains via fine-tuning and reinforcement learning, providing a cost-effective and privacy-preserving alternative.  MedAgentGym offers a unified platform for developing LLM-based coding assistants for biomedical research and practice.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Tabular",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/wshi83/MedAgentGym"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/MedAgentGym"
+        ],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Geometry-Editable and Appearance-Preserving Object Compositon",
+        "authors": "Liang Lin, Zhijing Yang, Chunmei Qing, Haojie Li, Jianman Lin",
+        "link": "https://arxiv.org/abs/2505.20914",
+        "github_repo": null,
+        "summary": "- The paper introduces a new Disentangled Geometry-editable and Appearance-preserving Diffusion (DGAD) model for general object composition.\n- The model uses semantic embeddings to implicitly capture desired geometric transformations and a cross-attention mechanism to align fine-grained appearance features, achieving both precise geometry editing and appearance preservation.\n- DGAD outperforms existing methods on public benchmarks in terms of editability, appearance preservation, and semantic consistency.\n- The model's effectiveness is demonstrated through extensive experiments and ablation studies on public datasets.\n- The code and pre-trained models are publicly available on GitHub.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/jianmanlincjx/DGAD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "FreeTimeGS: Free Gaussians at Anytime and Anywhere for Dynamic Scene\n  Reconstruction",
+        "authors": "Zhanhua Zhang, Jiaming Sun, Zhen Xu, Peishan Yang, Yifan Wang",
+        "link": "https://arxiv.org/abs/2506.05348",
+        "github_repo": null,
+        "summary": "- This paper introduces FreeTimeGS, a novel 4D representation for reconstructing dynamic 3D scenes with complex motions.  It utilizes Gaussian primitives that can appear at arbitrary times and locations, enhancing flexibility in modeling complex scene dynamics.\n- Unlike previous methods that struggle with complex motions due to difficulty optimizing deformation fields, FreeTimeGS assigns each Gaussian primitive a motion function, reducing redundancy and improving the model's ability to represent dynamic scenes.\n- The model incorporates a regularization strategy to address the issue of local minima during optimization, which are often encountered in fast-moving regions and can lead to poor rendering quality.\n- Experiments on multiple datasets show that FreeTimeGS outperforms recent methods in terms of rendering quality and efficiency, demonstrating superior performance in handling challenging scenes with complex and fast motions.\n- The method achieves real-time rendering at 450 FPS using a single RTX 4090 GPU, and the effectiveness of the 4D representation and regularization strategy are validated through ablation studies.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Rectified Point Flow: Generic Point Cloud Pose Estimation",
+        "authors": "Iro Armeni, Shuran Song, Shengyu Huang, Liyuan Zhu, Tao Sun",
+        "link": "https://arxiv.org/abs/2506.05282",
+        "github_repo": null,
+        "summary": "- Rectified Point Flow is a novel unified parameterization that formulates pairwise point cloud registration and multi-part shape assembly as a single conditional generative problem, achieving state-of-the-art performance on six benchmarks.\n- The model learns a continuous point-wise velocity field that transports noisy points toward their target positions, from which part poses are recovered, intrinsically learning assembly symmetries without requiring symmetry labels.\n- Unlike previous methods that regress part-wise poses with ad-hoc symmetry handling, Rectified Point Flow uses a self-supervised encoder focused on overlapping points.\n- The unified formulation enables effective joint training on diverse datasets, facilitating the learning of shared geometric priors and consequently boosting accuracy.\n- The code and models are available at https://rectified-pointflow.github.io/.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://rectified-pointflow.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Evaluation is All You Need: Strategic Overclaiming of LLM Reasoning\n  Capabilities Through Evaluation Design",
+        "authors": "Xiaoqi Jian, Yongfu Zhu, Jinzhu Wu, Weihong Lin, lincharliesun",
+        "link": "https://arxiv.org/abs/2506.04734",
+        "github_repo": null,
+        "summary": "- This paper reveals that the benchmark evaluation results of reasoning models, specifically the Deepseek-R1-Distill series, are susceptible to significant fluctuations due to subtle variations in evaluation conditions.\n- The study highlights the impact of various factors, including evaluation dataset versions, instruction positions, option bias, and tensor parallelism settings, on the model's performance.\n- The authors advocate for establishing a more rigorous paradigm for model performance evaluation, emphasizing transparency and stability.\n- They propose a methodology to estimate the required number of independent inferences for stable performance evaluation.\n- This research emphasizes the importance of standardized and well-documented evaluation procedures to prevent misrepresentation of model capabilities and ensure reproducibility.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "SkyReels-Audio: Omni Audio-Conditioned Talking Portraits in Video\n  Diffusion Transformers",
+        "authors": "Youqiang Zhang, Baoxuan Gu, Hao Jiang, Zhengcong Fei, diqiu7",
+        "link": "https://arxiv.org/abs/2506.00830",
+        "github_repo": null,
+        "summary": "- This paper introduces SkyReels-Audio, a novel framework for generating and editing talking portrait videos conditioned on audio input. \n- The model utilizes pretrained video diffusion transformers and incorporates multimodal inputs (audio, text, images, and videos) for diverse and controllable conditioning. \n- SkyReels-Audio employs a hybrid curriculum learning strategy and a facial mask loss to progressively align audio with facial motion and enhance local facial coherence. \n- Benchmark evaluations demonstrate that SkyReels-Audio achieves superior performance in lip-sync accuracy, identity consistency, and realistic facial dynamics compared to existing methods.\n- The model, along with demonstration videos, will soon be made publicly available at https://www.skyreels.ai.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Contextual Integrity in LLMs via Reasoning and Reinforcement Learning",
+        "authors": "Janardhan Kulkarni, Huseyin A. Inan, wulu, sahar-abdelnabi, Eric-Lan",
+        "link": "https://arxiv.org/abs/2506.04245",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel reinforcement learning (RL) framework to enhance the contextual integrity (CI) of large language models (LLMs).\n- The framework leverages chain-of-thought (CoT) prompting to guide LLMs to reason explicitly about CI norms before generating responses.\n- A synthetic dataset of approximately 700 automatically generated examples with diverse contexts and information disclosure norms was created to train and evaluate the model.\n- The proposed method significantly reduces inappropriate information disclosure while maintaining task performance across multiple LLMs.\n- Improvements transfer from the synthetic dataset to established CI benchmarks, demonstrating the effectiveness and generalizability of the framework.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Micro-Act: Mitigate Knowledge Conflict in Question Answering via\n  Actionable Self-Reasoning",
+        "authors": "Xiaolong Li, Ge Qu, Bowen Qin, Jinyang Li, NanHUO",
+        "link": "https://arxiv.org/abs/2506.05278",
+        "github_repo": null,
+        "summary": "MICRO-ACT is a novel framework that dynamically decomposes each knowledge source in a retrieval-augmented generation (RAG) system into a sequence of fine-grained comparisons to mitigate knowledge conflicts.  It achieves significant improvements in question-answering (QA) accuracy across five benchmark datasets, outperforming state-of-the-art baselines, especially in temporal and semantic conflict scenarios.  The hierarchical action space in MICRO-ACT allows for reasoning beyond superficial context.  The framework also exhibits robust performance on non-conflict questions.  The code is available on GitHub.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Nan-Huo/Micro-Act"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "RobustSplat: Decoupling Densification and Dynamics for Transient-Free\n  3DGS",
+        "authors": "Yuan Xiong, Guanying Chen, Kunbin Yao, Yuqi Zhang, fcy99",
+        "link": "https://arxiv.org/abs/2506.02751",
+        "github_repo": null,
+        "summary": "- RobustSplat is a novel method for 3D Gaussian splatting (3DGS) optimization that addresses the issue of artifacts caused by transient objects in real-world scenes.\n- It introduces a delayed Gaussian growth strategy that prioritizes static scene reconstruction before fitting transient objects, and a scale-cascaded mask bootstrapping approach for more robust mask prediction.\n- The proposed method outperforms existing methods on multiple challenging datasets (NeRF On-the-go and RobustNeRF), demonstrating its robustness and effectiveness in generating transient-free 3D reconstructions.\n- The core idea is to decouple the densification process from the optimization of transient objects, leading to cleaner and more reliable results.\n- The method integrates a simple yet effective design, combining delayed Gaussian growth and scale-cascaded mask bootstrapping, leading to improved reconstruction quality.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://fcyycf.github.io/RobustSplat/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Diffusion-Based Generative Models for 3D Occupancy Prediction in\n  Autonomous Driving",
+        "authors": "Yingshi Liang, Yucheng Mao, Tianyuan Yuan, Yicheng Liu, Yunshen Wang",
+        "link": "https://arxiv.org/abs/2505.23115",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel approach to 3D occupancy prediction in autonomous driving using diffusion-based generative models.\n- The model learns the underlying data distribution and incorporates 3D scene priors, improving prediction consistency and robustness to noise.\n- The authors show that their method outperforms state-of-the-art discriminative approaches in various scenarios, particularly in occluded or low-visibility regions.\n- The improved occupancy predictions significantly benefit downstream planning tasks, demonstrating the practical advantages of this method for real-world autonomous driving applications.\n- The method addresses the challenges of noisy data and incomplete observations using diffusion models that exhibit robustness to noise and model the multimodal nature of occupancy predictions.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D",
+            "Depth Estimation",
+            "Object Detection",
+            "Image Segmentation",
+            "Mask Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "Rethinking Whole-Body CT Image Interpretation: An Abnormality-Centric\n  Approach",
+        "authors": "Weidi Xie, Yanfeng Wang, Ya Zhang, Lisong Dai, zzh99",
+        "link": "https://arxiv.org/abs/2506.03238",
+        "github_repo": null,
+        "summary": "This paper introduces OminiAbnorm-CT, a novel system for abnormality-centric whole-body CT image interpretation.  It includes a hierarchical classification system with 404 abnormal findings, a new dataset (OminiAbnorm-CT-14K) with over 14.5K CT images and annotations for 19K abnormalities, and a new model (OminiAbnorm-CT) that outperforms existing methods in three clinically relevant evaluation tasks. OminiAbnorm-CT's architecture leverages a multi-modal language model and a segmentation module for grounded abnormality description, enabling flexible interaction through both text and visual prompts. The model shows significant improvement over existing baselines in all three tasks.",
+        "classification": [
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/zhaoziheng/OminiAbnorm-CT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "BEVCALIB: LiDAR-Camera Calibration via Geometry-Guided Bird's-Eye View\n  Representations",
+        "authors": "Konstantinos Karydis, Divyank Shah, Justin Yue, Jerry Li, Yewandou",
+        "link": "https://arxiv.org/abs/2506.02587",
+        "github_repo": null,
+        "summary": "- This paper introduces BEVCALIB, a novel LiDAR-camera calibration model that leverages bird's-eye view (BEV) representations to fuse LiDAR and camera data.\n- The model architecture consists of separate backbones for LiDAR and camera feature extraction, followed by a feature pyramid network (FPN) BEV encoder and a geometry-guided BEV decoder (GGBD).\n- BEVCALIB outperforms existing methods on KITTI and NuScenes datasets, achieving state-of-the-art results under various noise conditions.\n- Extensive evaluations demonstrate the effectiveness of BEVCALIB in terms of both translation and rotation accuracy.\n- The code and demo results are publicly available at https://cisl.ucr.edu/BEVCalib.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://cisl.ucr.edu/BEVCalib"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "PATS: Proficiency-Aware Temporal Sampling for Multi-View Sports Skill\n  Assessment",
+        "authors": "Antonio Liotta, EdBianchi",
+        "link": "https://arxiv.org/abs/2506.04996",
+        "github_repo": null,
+        "summary": "- This paper introduces Proficiency-Aware Temporal Sampling (PATS), a novel sampling strategy for multi-view sports skill assessment that preserves complete fundamental movements within continuous temporal segments.\n- PATS adaptively segments videos to ensure each analyzed portion contains the full execution of critical performance components, maximizing information coverage while maintaining temporal coherence.\n- Evaluated on the EgoExo4D benchmark with SkillFormer, PATS outperforms the state-of-the-art accuracy across all viewing configurations (+0.65% to +3.05%) and delivers substantial gains in challenging domains.\n- Systematic analysis reveals that PATS successfully adapts to diverse activity characteristics, demonstrating its effectiveness as an adaptive approach to temporal sampling.\n- PATS enhances model accuracy without adding computational overhead, maintaining efficiency while providing an adaptive approach to temporal sampling for sports skill assessment.",
+        "classification": [
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    },
+    {
+        "title": "What do self-supervised speech models know about Dutch? Analyzing\n  advantages of language-specific pre-training",
+        "authors": "Willem Zuidema, Gaofei Shen, Charlotte Pouw, Hosein Mohebbi, Marianne de Heer Kloots",
+        "link": "https://arxiv.org/abs/2506.00981",
+        "github_repo": "https://github.com/mdhk/SSL-NL-eval",
+        "summary": "- This paper introduces a new Wav2Vec2 model, w2v2-nl, pre-trained exclusively on 960 hours of Dutch speech data.\n- The model's performance on Automatic Speech Recognition (ASR) and various phonetic and lexical analyses is compared to models trained on English and multilingual data.\n- The results show that language-specific pre-training significantly improves the representation of Dutch linguistic features.\n- The improvements are observed across various analysis methods, such as phone identity probing, ABX task, and word clustering, and reflected in the downstream ASR performance.\n- The study highlights the importance of data selection and analysis methods when evaluating language-specific effects in self-supervised speech models.",
+        "classification": [
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "https://github.com/mdhk/SSL-NL-eval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-06"
+    }
+]

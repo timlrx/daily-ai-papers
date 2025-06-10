@@ -1,0 +1,528 @@
+[
+    {
+        "title": "Reinforcement Pre-Training",
+        "authors": "Tianzhu Ye, Qingxiu Dong, frontierai, YaoTang23, unilm",
+        "link": "https://arxiv.org/abs/2506.08007",
+        "github_repo": null,
+        "summary": "- This paper introduces Reinforcement Pre-Training (RPT), a novel scaling paradigm that reframes next-token prediction as a reasoning task trained using reinforcement learning with verifiable rewards.\n- RPT offers a scalable and general-purpose method to leverage vast amounts of text data for general-purpose reinforcement learning, unlike previous approaches that relied on domain-specific annotated data.\n- Experimental results demonstrate that RPT significantly improves the accuracy of next-token prediction and provides a stronger pre-trained foundation for subsequent reinforcement fine-tuning, achieving state-of-the-art results on various downstream tasks.\n- The scaling curves show that RPT's performance improves consistently with increased training compute across different data difficulty levels.\n- This work positions RPT as a promising scaling paradigm to advance language model pre-training.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Lingshu: A Generalist Foundation Model for Unified Multimodal Medical\n  Understanding and Reasoning",
+        "authors": "26hzhang, gowitheflow, Jianyu, kenchan0226, xww033",
+        "link": "https://arxiv.org/abs/2506.07044",
+        "github_repo": null,
+        "summary": "This paper introduces LINGSHU, a new multimodal large language model (MLLM) specialized for medical applications.  LINGSHU's architecture is based on the Qwen2.5-VL model and undergoes multi-stage training, incorporating medical image-text pairs, medical texts, and general-domain data.  The model is evaluated on various benchmarks, demonstrating superior performance over existing open-source models in most cases.  Further, the authors introduce MEDEVALKIT, a unified evaluation framework for medical multimodal models. The use of reinforcement learning with verifiable rewards is also explored to improve the model's reasoning capabilities.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/lingshu-medical-mllm"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "MiniCPM4: Ultra-Efficient LLMs on End Devices",
+        "authors": "Yuxuan Li, MiniCPM Team, BigDong, guojunshaoyao, xcjthu",
+        "link": "https://arxiv.org/abs/2506.07900",
+        "github_repo": null,
+        "summary": " - This paper introduces MiniCPM4, a highly efficient large language model (LLM) designed for end-side devices. \n- MiniCPM4 achieves efficiency through innovations in model architecture (InfLLM v2, a trainable sparse attention mechanism), training data (UltraClean data filtering and UltraChat v2 fine-tuning dataset), training algorithms (ModelTunnel v2 and chunk-wise rollout for RL), and inference systems (CPM.cu).\n- MiniCPM4 outperforms similar-sized open-source models on multiple benchmarks, demonstrating significant speed improvements over Qwen3-8B for long sequences.\n- The model is available in 0.5B and 8B parameter versions, suitable for diverse on-device applications.\n- MiniCPM4 successfully powers diverse applications, showcasing its broad usability through its application in generating surveys and tool use with model context protocols.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Summarization",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/openbmb/minicpm"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/openbmb/MiniCPM4-8B",
+            "https://huggingface.co/openbmb/MiniCPM4-0.5B"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Saffron-1: Towards an Inference Scaling Paradigm for LLM Safety\n  Assurance",
+        "authors": "Hanghang Tong, Jingrui He, Tianxin Wei, Gaotang Li, Ruizhong Qiu",
+        "link": "https://arxiv.org/abs/2506.06444",
+        "github_repo": "https://github.com/q-rz/saffron",
+        "summary": "- This paper introduces SAFFRON, a novel inference scaling paradigm for enhancing the safety of LLMs.\n- SAFFRON employs a multifurcation reward model (MRM) to significantly reduce the number of reward model calls during inference, addressing the exploration-efficiency dilemma.\n- The MRM is trained using a partial supervision objective and incorporates a conservative exploration constraint to prevent out-of-distribution explorations.\n- Experiments demonstrate that SAFFRON outperforms existing advanced inference scaling methods on challenging jailbreaking attacks, achieving considerably lower attack success rates with lower computational costs.\n- The authors release the trained MRM (SAFFRON-1) and a token-level safety reward dataset (Safety4M) to promote future research in LLM safety.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/q-rz/saffron"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "OneIG-Bench: Omni-dimensional Nuanced Evaluation for Image Generation",
+        "authors": "Shuhan Wu, Peng Xing, Jingjing Chang, wchengad, fangyixiao",
+        "link": "https://arxiv.org/abs/2506.07977",
+        "github_repo": null,
+        "summary": " - OneIG-Bench, a new comprehensive benchmark framework, is introduced for the fine-grained evaluation of text-to-image (T2I) models across multiple dimensions (prompt-image alignment, text rendering, reasoning-generated content, stylization, and diversity).\n - It addresses limitations of existing benchmarks that lack holistic evaluations, enabling in-depth analysis and identification of model strengths and weaknesses.\n - OneIG-Bench offers flexible evaluation, allowing users to focus on specific dimensions and prompts.\n - Its codebase and dataset are publicly available to facilitate reproducible evaluation studies and cross-model comparisons.\n - The benchmark systematically evaluates models across various categories (General Object, Portrait, Anime and Stylization, Text Rendering, Knowledge and Reasoning, Multilingualism) using a combination of standardized metrics and qualitative assessments.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "SpatialLM: Training Large Language Models for Structured Indoor Modeling",
+        "authors": "Rui Tang, Chuan Fang, Junhao Zhong, bertjiazheng, ysmao",
+        "link": "https://arxiv.org/abs/2506.07491",
+        "github_repo": null,
+        "summary": "- This paper introduces SPATIALLM, a large language model designed for processing 3D point cloud data and generating structured 3D scene understanding outputs, including architectural elements and object bounding boxes.\n- The model uses a standard multimodal LLM architecture and is fine-tuned directly from open-source LLMs, unlike previous methods that rely on task-specific network designs.\n- SPATIALLM is trained on a large-scale, high-quality synthetic dataset of indoor scenes with 3D annotations.\n- The paper shows that SPATIALLM achieves state-of-the-art performance in layout estimation and competitive results in 3D object detection on public benchmarks.\n- The results demonstrate a feasible path for enhancing the spatial understanding capabilities of modern LLMs for augmented reality and embodied robotics.",
+        "classification": [
+            "Text-to-3D",
+            "Object Detection",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://manycore-research.github.io/SpatialLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Astra: Toward General-Purpose Mobile Robots via Hierarchical Multimodal\n  Learning",
+        "authors": "Yansheng Wang, Ziyang Liu, Jiaxin Hu, Peiyu He, sc-bd",
+        "link": "https://arxiv.org/abs/2506.06205",
+        "github_repo": null,
+        "summary": "- This paper introduces Astra, a novel dual-model architecture for mobile robot navigation that uses a multimodal large language model (MLLM) for high-level tasks and a multitask network for low-level tasks.\n- Astra-Global, the MLLM, handles goal and self-localization using a hybrid topological-semantic graph as a global map and outperforms traditional visual place recognition methods.\n- Astra-Local, the multitask network, manages local path planning and odometry estimation using a 4D spatial-temporal encoder and a novel masked ESDF loss to minimize collisions.\n- When deployed on real robots, Astra achieves a high end-to-end mission success rate across diverse indoor environments.\n- The experiments demonstrate that Astra outperforms existing methods in terms of goal and self-localization accuracy and path planning efficiency.",
+        "classification": [
+            "Robotics",
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://astra-mobility.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Rethinking Cross-Modal Interaction in Multimodal Diffusion Transformers",
+        "authors": "Wangmeng Zuo, Zhaoxi Chen, Zhengyao Lv, ChenyangSi, ldiex",
+        "link": "https://arxiv.org/abs/2506.07986",
+        "github_repo": "https://github.com/Vchitect/TACA",
+        "summary": "- This paper introduces Temperature-Adjusted Cross-modal Attention (TACA), a parameter-efficient method that dynamically rebalances cross-modal attention in multimodal diffusion transformers.\n- TACA addresses two key issues in the attention mechanism of multimodal diffusion transformers: the suppression of cross-modal attention due to token imbalance and the lack of timestep-aware attention weighting.\n- When combined with LoRA fine-tuning, TACA significantly enhances text-image alignment on the T2I-CompBench benchmark with minimal computational overhead.\n- Experiments demonstrate that TACA improves image-text alignment in terms of object appearance, attribute binding, and spatial relationships across various model architectures.\n- The code for TACA is publicly available on Github.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Vchitect/TACA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "GTR-CoT: Graph Traversal as Visual Chain of Thought for Molecular\n  Structure Recognition",
+        "authors": "Xingjian Wei, Yifan He, Jiang Wu, Hoter, jcwang0602",
+        "link": "https://arxiv.org/abs/2506.07553",
+        "github_repo": "https://github.com/opendatalab/GTR-CoT",
+        "summary": "- This paper introduces GTR-Mol-VLM, a novel visual large language model for Optical Chemical Structure Recognition (OCSR) that utilizes a Graph Traversal as Visual Chain of Thought mechanism.\n- The model achieves superior performance compared to existing specialist models, chemistry-domain VLMs, and general-purpose VLMs, particularly in scenarios with abbreviated molecular structures.\n- A new benchmark, MolRec-Bench, is introduced for fine-grained evaluation of graph-parsing accuracy in OCSR, addressing limitations of existing SMILES-based metrics.\n- A large-scale instruction-tuning dataset, GTR-CoT-1.3M, with meticulously corrected annotations is created to support model development.\n- The work significantly advances OCSR technology and its applications in cheminformatics and AI for Science.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/opendatalab/GTR-CoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Through the Valley: Path to Effective Long CoT Training for Small\n  Language Models",
+        "authors": "Wei Lu, Jiaxi Li, Albus-Chen, RogerLos",
+        "link": "https://arxiv.org/abs/2506.07712",
+        "github_repo": null,
+        "summary": "- This paper introduces the concept of \"Long CoT Degradation\", a phenomenon where small language models (SLMs) trained on extensive long chain-of-thought (CoT) data experience significant performance drops.\n- The authors demonstrate that this degradation is prevalent across various SLMs and is attributed to error accumulation in longer reasoning traces.\n- They propose two hypotheses to explain this phenomenon: early adoption of surface-level reasoning patterns leading to verbose outputs and error accumulation in longer responses.\n- Their empirical findings show that sufficiently scaled supervised fine-tuning (SFT) can alleviate Long CoT Degradation and improve the efficiency of subsequent reinforcement learning (RL).\n- The research provides practical guidance for building more effective small-scale reasoning models by carefully considering the scale of long CoT data during training.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation",
+        "authors": "Xilin Chen, Ruiping Wang, Chuyan Xiong, Hongyu Wang",
+        "link": "https://arxiv.org/abs/2506.07530",
+        "github_repo": "https://github.com/ustcwhy/BitVLA",
+        "summary": "- BitVLA is the first 1-bit vision-language-action model for robotics manipulation, where every parameter is ternary ({\u22121, 0, 1}).\n- The model architecture uses BitNet b1.58 2B4T as the LLM backbone and SigLIP-L as the vision encoder, with a two-layer MLP connector.\n- A distillation-aware training strategy compresses the full-precision vision encoder to 1.58-bit weights, using a full-precision encoder as a teacher model.\n- On the LIBERO benchmark, BitVLA achieves performance comparable to OpenVLA-OFT with 4-bit post-training quantization, while using only 29.8% of the memory.\n- The results demonstrate BitVLA's promise for deployment on memory-constrained edge devices.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/ustcwhy/BitVLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Pre-trained Large Language Models Learn Hidden Markov Models In-context",
+        "authors": "Jennifer J. Sun, Yahya Satter, Zhaolin Gao, sarahdean, DaiYijia",
+        "link": "https://arxiv.org/abs/2506.07298",
+        "github_repo": null,
+        "summary": " - This paper demonstrates that pre-trained large language models (LLMs) can effectively model data generated by hidden Markov models (HMMs) through in-context learning.\n - Using a diverse set of synthetic HMMs, LLMs achieve predictive accuracy approaching the theoretical optimum. \n - Novel scaling trends are identified, influenced by HMM properties, and theoretical conjectures are proposed to explain these trends. \n - Practical guidelines are offered for using in-context learning as a diagnostic tool, with real-world applications in animal decision-making achieving performance comparable to models built by human experts.\n - This is the first demonstration that in-context learning in LLMs can learn and predict HMM-generated sequences.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/DaiYijia02/icl-hmm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "The Illusion of Thinking: Understanding the Strengths and Limitations of\n  Reasoning Models via the Lens of Problem Complexity",
+        "authors": "Samy Bengio, Maxwell Horton, Keivan Alizadeh, Iman Mirzadeh, parshinsh",
+        "link": "https://arxiv.org/abs/2506.06941",
+        "github_repo": null,
+        "summary": "- This paper investigates the strengths and limitations of Large Reasoning Models (LRMs) using controlled puzzle environments.\n- The study reveals three performance regimes: standard LLMs outperform LRMs at low complexity, LRMs excel at moderate complexity, and both collapse at high complexity.\n- The findings show that LRMs exhibit counterintuitive scaling limits: their reasoning effort increases up to a point then declines despite having an adequate token budget.\n- The authors analyze reasoning traces in detail, finding that LRMs have limitations in exact computation: they fail to use explicit algorithms and reason inconsistently across puzzles.\n- The research highlights both strengths and limitations of existing LRMs, raising crucial questions about their true reasoning capabilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "CCI4.0: A Bilingual Pretraining Dataset for Enhancing Reasoning in Large\n  Language Models",
+        "authors": "Yang Yu, Jijie Li, Yonghua, ldwang, ZacLiu",
+        "link": "https://arxiv.org/abs/2506.07463",
+        "github_repo": null,
+        "summary": "- This paper introduces CCI4.0, a large-scale bilingual (Chinese and English) pre-training dataset designed to enhance reasoning in large language models.\n- CCI4.0 comprises two sub-datasets: CCI4.0-M2-Base (a 35TB corpus combining various web corpora, mathematical, wiki, and code data) and CCI4.0-M2-CoT (4.5 billion chain-of-thought templates).\n- A novel data processing pipeline was developed, including deduplication, quality scoring, and domain-aware fluency filtering, to ensure high data quality.\n- Experiments show CCI4.0 consistently outperforms existing datasets across various downstream tasks, especially in mathematics and code-related tasks.\n- The results highlight the importance of high-quality, diverse, and reasoning-focused data in improving LLM performance.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Well Begun is Half Done: Low-resource Preference Alignment by\n  Weak-to-Strong Decoding",
+        "authors": "Tianyu Liu, Yuxuan Fan, Wen Luo, SylvainWei, songff",
+        "link": "https://arxiv.org/abs/2506.07434",
+        "github_repo": null,
+        "summary": "- The paper introduces a novel framework called Weak-to-Strong Decoding (WSD) for low-resource preference alignment in large language models (LLMs).\n- WSD uses a small, pre-trained model to generate well-aligned response beginnings, which are then extended by a larger base LLM.\n- A new dataset, GenerAlign, was created to fine-tune the small draft model, enhancing its alignment capabilities.\n- Experiments demonstrated that WSD outperforms several baseline methods on various benchmarks without degrading performance on downstream tasks.\n- The effectiveness of WSD is further analyzed through ablation studies focusing on the impact of hyperparameters such as window size, threshold, and maximum draft length.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "GUI-Reflection: Empowering Multimodal GUI Models with Self-Reflection\n  Behavior",
+        "authors": "Lewei Lu, Jiaheng Yu, Bo Wang, Shengnan Ma, Penghao Wu",
+        "link": "https://arxiv.org/abs/2506.08012",
+        "github_repo": null,
+        "summary": "This paper introduces GUI-Reflection, a novel framework that enhances multimodal GUI models by integrating self-reflection and error correction capabilities.  GUI-Reflection leverages three dedicated training stages: GUI-specific pre-training, offline supervised fine-tuning, and online reflection tuning.  The framework incorporates a GUI-Reflection Task Suite to explicitly train reflection-oriented abilities and automatically generates reflection data from successful trajectories.  Experiments show that GUI-Reflection significantly improves the model's ability to recover from errors and adapt to challenging tasks, achieving a 34.72% success rate on level-2 tasks in online evaluation.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://penghao-wu.github.io/GUI_Reflection/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "ConfQA: Answer Only If You Are Confident",
+        "authors": "Alicia Sun, Vera Yan, Kai Sun, Yifan Ethan Xu, MaggieHuang",
+        "link": "https://arxiv.org/abs/2506.07309",
+        "github_repo": null,
+        "summary": "- This paper introduces ConfQA, a novel fine-tuning strategy for Large Language Models (LLMs) designed to reduce hallucination rates.\n- ConfQA achieves this by training the LLM to respond with the answer only when it is highly confident; otherwise, it admits uncertainty.\n- The method incorporates a dampening prompt (\"Answer only if you are confident\") and uses simple factual statements from knowledge graphs for training, leading to robust generalization.\n- Experiments demonstrate a significant reduction in hallucination rate (from 20-40% to under 5%) across multiple benchmarks.\n- ConfQA is further integrated into a Dual Neural Knowledge framework that combines internal and external knowledge sources to improve accuracy while reducing latency.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Vision Transformers Don't Need Trained Registers",
+        "authors": "Yossi Gandelsman, Alexei Efros, Amil Dravid, Nick Jiang",
+        "link": "https://arxiv.org/abs/2506.08010",
+        "github_repo": null,
+        "summary": "- This paper introduces a training-free method to add registers to vision transformers (ViTs) without retraining.\n- The method identifies a sparse set of neurons (register neurons) responsible for high-norm tokens that create noisy attention maps.\n- By manipulating the activations of these neurons, the high-norm tokens can be shifted or masked, improving downstream tasks performance.\n- The authors demonstrate the effectiveness of the proposed method on various downstream tasks, achieving comparable results to models trained with registers.\n- This test-time register approach is also applied to vision-language models, showing improvement in interpretability and robustness to adversarial attacks.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Image Segmentation",
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/nickjiang2378/test-time-registers"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/xtuner/llava-llama-3-8b"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Dreamland: Controllable World Creation with Simulator and Generative\n  Models",
+        "authors": "Honglin He, Weizhen Wang, Leon Liu, Ziyang Leng, Sicheng Mo",
+        "link": "https://arxiv.org/abs/2506.08006",
+        "github_repo": null,
+        "summary": "- Dreamland is a novel hybrid world generation framework that combines a physics-based simulator with large-scale pre-trained generative models to create realistic and controllable visual worlds.\n- It employs a layered world abstraction (LWA) to align the simulator and generative model, enabling fine-grained control and minimizing adaptation costs.\n- Dreamland outperforms existing baselines by 50.8% in image quality and 17.9% in controllability, demonstrating improved image quality and stronger controllability.\n- A new dataset, D3Sim, is introduced to facilitate the training and evaluation of hybrid generation pipelines.\n- Dreamland shows great potential in enhancing embodied agent training, as demonstrated by improvements in downstream tasks like visual question answering.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Video Classification",
+            "Computer Vision",
+            "Image Segmentation",
+            "Depth Estimation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://metadriverse.github.io/dreamland/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Cartridges: Lightweight and general-purpose long context representations\n  via self-study",
+        "authors": "Dylan Zinsley, Neel Guha, Simran Arora, Ryan Ehrlich, sabrieyuboglu",
+        "link": "https://arxiv.org/abs/2506.06266",
+        "github_repo": null,
+        "summary": "This paper introduces CARTRIDGES, a method for training smaller KV caches offline to reduce memory consumption and cost when serving queries grounded in large text corpora.  It proposes a self-study training approach that generates synthetic conversations about the corpus to train CARTRIDGES, achieving performance comparable to in-context learning.  CARTRIDGES trained with self-study offer significant memory savings (38.6x less) and increased throughput (26.4x higher) on challenging benchmarks.  Additionally, they support context length extrapolation and composability.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/HazyResearch/cartridges"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Bootstrapping World Models from Dynamics Models in Multimodal Foundation\n  Models",
+        "authors": "Shay B. Cohen, Anna Korhonen, Yftah Ziser, ducdauge, yfqiu-nlp",
+        "link": "https://arxiv.org/abs/2506.06006",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for bootstrapping world models from dynamics models in multimodal foundation models.\n- The proposed method uses two main strategies: 1) weakly supervised learning from synthetic data generated by the dynamics model and 2) inference-time verification using the dynamics model to score world model candidates.\n- The authors evaluate their approach on the AURORA-BENCH dataset, demonstrating that their best model achieves performance competitive with state-of-the-art image editing models, improving on them by a margin of 15% on real-world subsets.\n- The findings suggest that acquiring a dynamics model through supervision is significantly easier than acquiring a world model, and dynamics models can effectively bootstrap world models.\n- This work has implications for improving the capabilities of multimodal foundation models and creating more realistic and robust AI agents.",
+        "classification": [
+            "Image-to-Image",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/yfqiu-nlp/vlm-world-model"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "PolyVivid: Vivid Multi-Subject Video Generation with Cross-Modal\n  Interaction and Enhancement",
+        "authors": "Yuan Zhou, Jiangning Zhang, Zhengguang Zhou, Zhentao Yu, Teng Hu",
+        "link": "https://arxiv.org/abs/2506.07848",
+        "github_repo": null,
+        "summary": "- PolyVivid is a novel multi-subject video customization framework that addresses limitations in existing models regarding fine-grained controllability and identity consistency.\n- The model architecture incorporates a VLLM-based text-image fusion module, a 3D-RoPE-based enhancement module, and an attention-inherited identity injection module to effectively integrate text and image information.\n- PolyVivid uses a MLLM-based data pipeline to enhance subject discriminability and reduce ambiguity in downstream video generation.\n- Extensive experiments demonstrate that PolyVivid outperforms existing methods in terms of identity fidelity, video realism, and subject alignment, achieving superior performance in multi-subject video customization.\n- The proposed model is shown to achieve superior performance in identity fidelity, video realism, and subject alignment, outperforming existing methods.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Learning What Reinforcement Learning Can't: Interleaved Online\n  Fine-Tuning for Hardest Questions",
+        "authors": "Xiaochen Ma, Lexiang Tang, Meiyi Qiang, Hao Liang, RoadQAQ",
+        "link": "https://arxiv.org/abs/2506.07527",
+        "github_repo": null,
+        "summary": "- This paper introduces ReLIFT, a novel training approach that interleaves reinforcement learning (RL) with online fine-tuning (SFT) to improve the reasoning abilities of large language models (LLMs).\n- ReLIFT addresses the limitations of RL by incorporating SFT to learn what RL cannot, enabling the acquisition of new information and reasoning patterns.\n- The model is primarily trained using RL, but when it encounters challenging questions, high-quality solutions are collected for fine-tuning, and the training process alternates between RL and fine-tuning.\n- ReLIFT achieves an average improvement of over +5.2 points across five competition-level benchmarks and one out-of-distribution benchmark compared to other zero-RL models.\n- The experiments demonstrate that ReLIFT outperforms both RL and SFT while using only 13% of the detailed demonstration data, highlighting its scalability and efficiency.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/TheRoadQaQ/ReLIFT"
+        ],
+        "huggingface_urls": [
+            "https://github.com/huggingface/Math-Verify"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Overclocking LLM Reasoning: Monitoring and Controlling Thinking Path\n  Lengths in LLMs",
+        "authors": "Lior Wolf, Itamar Zimerman, royeis",
+        "link": "https://arxiv.org/abs/2506.07240",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method to monitor and control the reasoning process of large language models (LLMs) by manipulating internal progress representations.\n- The authors introduce an interactive progress bar visualization to make the reasoning process more transparent and easier for users to understand.\n- They demonstrate that manipulating these internal representations can effectively mitigate overthinking and improve answer accuracy and efficiency.\n- Their empirical results show that the proposed \"overclocking\" method outperforms baseline methods in terms of both accuracy and efficiency on several mathematical reasoning benchmarks.\n- The code for this method is publicly available on GitHub.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/royeisen/reasoning_loading_bar"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "GeometryZero: Improving Geometry Solving for LLM with Group Contrastive\n  Policy Optimization",
+        "authors": "Qipeng Guo, Zimian Peng, Dianyi Wang, Yibin Wang, LibraTree",
+        "link": "https://arxiv.org/abs/2506.07160",
+        "github_repo": null,
+        "summary": "- This paper introduces GeometryZero, a family of geometric reasoning models that utilizes Group Contrastive Policy Optimization (GCPO) to improve the performance of LLMs in solving geometry problems.\n- GCPO addresses the limitations of existing reinforcement learning methods by incorporating two key innovations: Group Contrastive Masking and Length Reward, which help to judiciously determine when to use auxiliary construction.\n- GeometryZero models consistently outperform baselines on popular geometric benchmarks (Geometry3K, MathVista), achieving an average improvement of 4.29% across all benchmarks.\n- The paper provides an in-depth ablation study demonstrating the effectiveness of each component in GCPO and detailed analysis of training dynamics.\n- The results highlight the benefits of using a conditional reward mechanism for auxiliary construction, showing that a flexible approach is crucial for effective geometric reasoning.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Robust Preference Optimization via Dynamic Target Margins",
+        "authors": "Xingyu Lu, Zhibo Zhu, Jiancan Wu, Junkang Wu, Sunshine279",
+        "link": "https://arxiv.org/abs/2506.03690",
+        "github_repo": "https://github.com/sunjie279/gammaPO",
+        "summary": "- This paper introduces \u03b3-PO, a novel dynamic target margin preference optimization algorithm that enhances the robustness of Direct Preference Optimization (DPO).\n- \u03b3-PO dynamically adjusts reward margins at the pair-wise level, prioritizing high-confidence pairs while suppressing noise from ambiguous pairs.\n- The proposed method is compatible with existing DPO variants and achieves an average 4.4% improvement over other baselines on AlpacaEval2 and Arena-Hard.\n- \u03b3-PO requires minimal code changes and has a negligible impact on training efficiency.\n- Experimental results demonstrate the effectiveness of \u03b3-PO in enhancing LLM alignment and robustness.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/sunjie279/gammaPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Play to Generalize: Learning to Reason Through Game Play",
+        "authors": "Junfei Xiao, Alan Yuille, Shiyi Lan, Yinsong Ma, Yunfei Xie",
+        "link": "https://arxiv.org/abs/2506.08011",
+        "github_repo": null,
+        "summary": "This paper introduces Visual Game Learning (ViGaL), a novel post-training paradigm that enhances multimodal large language models (MLLMs) reasoning abilities by training them to play arcade-like games using reinforcement learning. ViGaL achieves out-of-domain generalization on downstream multimodal reasoning tasks without using in-domain data during training, outperforming models trained on multimodal reasoning data. The authors demonstrate that gameplay post-training enables the capture of transferable reasoning skills, unlocking generalizable multimodal reasoning abilities in MLLMs. ViGaL's effectiveness stems from the use of simple arcade games as controllable and scalable pre-text tasks. Finally, this method preserves the base model's performance on general visual benchmarks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/yunfeixie233/ViGaL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "MegaHan97K: A Large-Scale Dataset for Mega-Category Chinese Character\n  Recognition with over 97K Categories",
+        "authors": "Yixin Zhao, Peirong Zhang, lianwen, shiyx1, ZZXF",
+        "link": "https://arxiv.org/abs/2506.04807",
+        "github_repo": "https://github.com/SCUT-DLVCLab/MegaHan97K",
+        "summary": "- This paper introduces MegaHan97K, a large-scale dataset for mega-category Chinese character recognition containing 97,455 categories.- MegaHan97K is the first dataset to fully support the latest GB18030-2022 standard and includes three distinct subsets: handwritten, historical, and synthetic.- The dataset effectively addresses the long-tail distribution problem by providing balanced samples across all categories.- Benchmarking experiments on MegaHan97K reveal new challenges in mega-category scenarios, including increased storage demands and zero-shot learning difficulties.- The dataset is available at https://github.com/SCUT-DLVCLab/MegaHan97K.",
+        "classification": [
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/SCUT-DLVCLab/MegaHan97K"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Improving large language models with concept-aware fine-tuning",
+        "authors": "Dacheng Tao, Jiaxing Huang, Xikun Zhang, michaelchenkj",
+        "link": "https://arxiv.org/abs/2506.07833",
+        "github_repo": "https://github.com/michaelchen-lab/caft-llm",
+        "summary": "- This paper introduces Concept-Aware Fine-Tuning (CAFT), a novel multi-token training method that improves large language models (LLMs) by enabling the learning of sequences spanning multiple tokens.\n- CAFT addresses the limitation of existing next-token prediction paradigms which hinder the formation of coherent, high-level concepts.\n- The method is evaluated on diverse tasks, including text summarization, code generation, and molecular design, demonstrating significant improvements over conventional next-token fine-tuning methods.\n- CAFT's effectiveness suggests that models do not sufficiently learn and plan beyond the next immediate token, and that an explicit multi-token objective is more effective.\n- The authors provide open-source code and data to facilitate broader adoption and further research in this area.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/michaelchen-lab/caft-llm"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Image Reconstruction as a Tool for Feature Analysis",
+        "authors": "Andrey Kuznetsov, Elizaveta Goncharova, Dmitrii Tarasov, combat-helicopter",
+        "link": "https://arxiv.org/abs/2506.07803",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel reconstruction-based method to evaluate the quality of features extracted from input images by reconstructing images from hidden representations.\n- It proposes a novel interpretability metric for comparing image-feature interpretability based on the visual quality of reconstructed images.\n- The study analyzes the impact of training objectives on reconstruction quality by comparing two models, SigLIP and SigLIP2, and finds that SigLIP2 produces significantly higher-fidelity reconstructions than SigLIP.\n- The method demonstrates that manipulating the feature space through orthogonal rotations yields predictable changes in reconstructed images, revealing that orthogonal rotations control color encoding.\n- The approach is applicable to various vision encoders and provides insights into the inner structure of their feature spaces.",
+        "classification": [
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://fusionbrainlab.github.io/feature_analysis/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Evaluating LLMs Robustness in Less Resourced Languages with Proxy Models",
+        "authors": "Karolina Seweryn, llmAttack, mchraba",
+        "link": "https://arxiv.org/abs/2506.07645",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework for evaluating the robustness of Large Language Models (LLMs) in less-resourced languages.\n- The framework utilizes proxy models and attribution methods to identify and perturb the most important words in a sentence, generating human-understandable perturbed examples.\n- The proposed methodology is validated on Polish, a low-resource language, demonstrating the potential vulnerabilities of LLMs to character and word-level attacks.\n- The authors find that surprisingly strong attacks can be cheaply created by altering just a few characters and words, drastically altering the predictions of different LLMs.\n- The created datasets and code are publicly released to facilitate further research in this area.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "Proactive Assistant Dialogue Generation from Streaming Egocentric Videos",
+        "authors": "Anuj Kumar, Andrea Madotto, Zhaojiang Lin, Xin Luna Dong, 594zyc",
+        "link": "https://arxiv.org/abs/2506.05904",
+        "github_repo": null,
+        "summary": "This paper introduces PROASSIST, a large-scale synthetic dialogue dataset for proactive assistant dialogue generation from streaming egocentric videos.  A novel data curation pipeline synthesizes dialogues from annotated egocentric videos spanning multiple domains.  The paper also proposes a suite of automatic evaluation metrics validated through human studies. Finally, it presents an end-to-end model that processes streaming video inputs to generate contextually appropriate responses, addressing data imbalance and long video durations.  Experimental results demonstrate the effectiveness of the proposed model and datasets.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://pro-assist.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-Guard-3-8B",
+            "https://huggingface.co/google/siglip-so400m-patch14-384",
+            "https://huggingface.co/sentence-transformers/all-mpnet-base-v2"
+        ],
+        "date": "2025-06-10"
+    },
+    {
+        "title": "EVOREFUSE: Evolutionary Prompt Optimization for Evaluation and\n  Mitigation of LLM Over-Refusal to Pseudo-Malicious Instructions",
+        "authors": "Chong Teng, Fei Li, Xin Zhang, Xiaofeng Mao, Xiaorui Wu",
+        "link": "https://arxiv.org/abs/2505.23473",
+        "github_repo": null,
+        "summary": "- This paper introduces EVOREFUSE, a novel prompt optimization algorithm that leverages evolutionary search to generate diverse pseudo-malicious instructions that consistently elicit confident refusals across various LLMs.\n- EVOREFUSE outperforms existing methods by achieving a 140.41% higher average refusal triggering rate, 34.86% greater lexical diversity, and 40.03% improved LLM response confidence scores.\n- Two novel datasets are created using EVOREFUSE: EVOREFUSE-TEST (582 pseudo-malicious instructions) and EVOREFUSE-ALIGN (3,000 instructions with responses for supervised and preference-based alignment training).\n- Fine-tuning LLAMA3.1-8B-INSTRUCT on EVOREFUSE-ALIGN achieves up to 14.31% fewer over-refusals than models trained on the second-best alignment dataset without compromising safety.\n- The analysis reveals that models trigger over-refusals by overly focusing on sensitive keywords while ignoring broader context.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-10"
+    }
+]

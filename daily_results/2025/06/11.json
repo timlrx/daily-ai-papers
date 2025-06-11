@@ -1,0 +1,272 @@
+[
+    {
+        "title": "Geopolitical biases in LLMs: what are the \"good\" and the \"bad\" countries\n  according to contemporary language models",
+        "authors": "Dmitrii Korzh, tlenusik, apanc, IvanLazichny, msalnikov",
+        "link": "https://arxiv.org/abs/2506.06751",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel dataset containing neutral event descriptions and contrasting viewpoints from different countries to evaluate geopolitical biases in LLMs.\n- The findings reveal significant geopolitical biases in LLMs, with models exhibiting preferences for specific national narratives.\n- Simple debiasing prompts show limited effectiveness in mitigating these biases.\n- Experiments manipulating participant labels demonstrate models' sensitivity to attribution, sometimes amplifying biases or highlighting inconsistencies.\n- The study offers a framework and dataset for future research into geopolitical bias in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/AIRI-Institute/geopolitical_llm_bias"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "RuleReasoner: Reinforced Rule-based Reasoning via Domain-aware Dynamic\n  Sampling",
+        "authors": "Jiaqi Li, Yang Liu, zlzheng",
+        "link": "https://arxiv.org/abs/2506.08672",
+        "github_repo": null,
+        "summary": " - This paper introduces RuleReasoner, a novel method for rule-based reasoning that uses reinforcement learning and domain-aware dynamic sampling. \n- RuleReasoner resamples each training batch by updating the sampling weights of different domains based on historical rewards, which improves both training efficiency and task performance. \n- Experiments show that RuleReasoner outperforms existing large reasoning models (LRMs) by a significant margin on both in-distribution (ID) and out-of-distribution (OOD) benchmarks. \n- The model achieves an average improvement of 4.1% on eight ID tasks and 10.4% on three OOD tasks over OpenAI-01. \n- RuleReasoner demonstrates its effectiveness and efficiency by reducing training steps while achieving comparable performance to other state-of-the-art methods.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/bigai-nlco/RuleReasoner"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/RuleReasoner"
+        ],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Solving Inequality Proofs with Large Language Models",
+        "authors": "Alex Gu, Tony Xia, Jikai Jin, Luna Lyu, Jiayi Sheng",
+        "link": "https://arxiv.org/abs/2506.07927",
+        "github_repo": null,
+        "summary": "This paper introduces INEQMATH, a new dataset of Olympiad-level inequality problems, designed to evaluate large language models' (LLMs) ability to prove inequalities.  The authors propose a novel LLM-as-judge framework for evaluation, measuring both final-answer accuracy and step-wise soundness. The experiments show a significant gap between final-answer accuracy and overall proof correctness in leading LLMs. The findings highlight promising research directions, such as theorem-guided reasoning and self-refinement. The paper also presents an informal yet verifiable task formulation for inequality proving, decomposing it into two automatically checkable subtasks.  The dataset and evaluation framework are made publicly available.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://ineqmath.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/AI4Math/IneqMath-Leaderboard"
+        ],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Self Forcing: Bridging the Train-Test Gap in Autoregressive Video\n  Diffusion",
+        "authors": "Eli Shechtman, Mingyuan Zhou, Zhengqi Li, Xun Huang, gdhe17",
+        "link": "https://arxiv.org/abs/2506.08009",
+        "github_repo": null,
+        "summary": "- This paper introduces Self Forcing, a novel training paradigm for autoregressive video diffusion models that addresses the exposure bias issue.- Self Forcing conditions each frame's generation on previously self-generated outputs during training, enabling holistic video-level loss supervision.-  The training strategy uses a few-step diffusion model and stochastic gradient truncation to maintain efficiency.- Extensive experiments demonstrate that Self Forcing achieves real-time video generation with sub-second latency, matching or exceeding the quality of slower non-causal models.- The proposed method bridges the train-test distribution gap by aligning the training process with the inference process.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://self-forcing.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Look Before You Leap: A GUI-Critic-R1 Model for Pre-Operative Error\n  Diagnosis in GUI Automation",
+        "authors": "Junyang Wang, Haowei Liu, Haiyang Xu, Xi Zhang, Yuyang Wanyan",
+        "link": "https://arxiv.org/abs/2506.04614",
+        "github_repo": null,
+        "summary": "- The paper introduces GUI-Critic-R1, a pre-operative critic model for GUI automation that uses a Suggestion-aware Group Relative Policy Optimization (S-GRPO) strategy to enhance the reliability of its feedback.\n- GUI-Critic-R1 incorporates a novel suggestion reward to improve the quality of the model's feedback, helping to prevent errors before they occur.\n- The model was evaluated on both mobile and web domains, outperforming existing MLLMs on a GUI automation benchmark.\n- A reasoning-bootstrapping based data collection pipeline was developed to create the GUI-Critic-Train and GUI-Critic-Test datasets, addressing the lack of publicly available GUI critic data.\n- Experiments demonstrated that GUI-Critic-R1 offers significant advantages in critic accuracy and operational efficiency compared to current MLLMs.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/X-PLUG/MobileAgent/tree/main/GUI-Critic-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Aligning Text, Images, and 3D Structure Token-by-Token",
+        "authors": "Georgia Gkioxari, Vansh Tibrewal, Aadarsh Sahoo",
+        "link": "https://arxiv.org/abs/2506.08002",
+        "github_repo": null,
+        "summary": " - Kyvo is a novel unified multimodal large language model that aligns text, images, and structured 3D scenes in a token-by-token manner.\n- The model architecture is a decoder-only transformer that uses a structured 3D modality representing scenes as lists of objects with attributes such as shape, type, position, pose, and size.\n- Kyvo achieves state-of-the-art performance on four core 3D tasks including rendering, recognition, instruction following, and question answering.\n- The model generalizes well to complex object shapes and real-world scenarios demonstrating effectiveness on real-world datasets.\n- Kyvo also uses a vector-quantized 3D shape representation and significantly reduces sequence length compared to text-only tokenizers.",
+        "classification": [
+            "Multimodal",
+            "Image-to-3D",
+            "Text-to-3D",
+            "Image-Text-to-Text",
+            "Visual Question Answering",
+            "Question Answering",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-Text-to-Text",
+            "Text Generation",
+            "Image-Text-to-Text",
+            "Object Detection",
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Frame Guidance: Training-Free Guidance for Frame-Level Control in Video\n  Diffusion Models",
+        "authors": "Soo Ye Kim, Jaehyeong Jo, Sangwon Jang, jaehong31, tkkitkki",
+        "link": "https://arxiv.org/abs/2506.07177",
+        "github_repo": null,
+        "summary": "- This paper introduces Frame Guidance, a training-free method for controllable video generation using frame-level signals.\n- Frame Guidance uses latent slicing and video latent optimization to guide the video generation process without retraining, and supports diverse applications, including keyframe-guided generation, stylization, and looping.\n- The method achieves high-quality results across various video diffusion models and outperforms existing training-free methods in terms of visual quality.\n- Frame Guidance is compatible with various video models, including CogVideoX and Wan, and supports diverse frame-level inputs.\n- The authors also demonstrate the effectiveness of Frame Guidance on different video generation tasks and input types.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/jovianzm/Pexels-400k",
+            "https://github.com/feizc/CogvideX-Interpolation"
+        ],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "ECoRAG: Evidentiality-guided Compression for Long Context RAG",
+        "authors": "Seung-won Hwang, Dohyeon Lee, Jinsu Kim, yeonseokjeong",
+        "link": "https://arxiv.org/abs/2506.05167",
+        "github_repo": "https://github.com/ldilab/ECoRAG",
+        "summary": "- This paper introduces ECoRAG, a novel framework for improving the performance of Large Language Models (LLMs) in open-domain question answering (ODQA) tasks by compressing retrieved documents.\n- ECoRAG achieves this by focusing on evidentiality, which determines whether a sentence in a retrieved document contributes to generating the correct answer to a given question.\n- The framework also incorporates an evidentiality reflection mechanism, which adaptively adjusts the compression ratio to find the optimal balance between minimizing token usage and preserving necessary information.\n- Experiments on various ODQA datasets show that ECoRAG outperforms existing compression methods in terms of both accuracy and efficiency. \n- This work introduces a novel approach that leverages evidentiality for document compression in RAG, leading to improved performance and reduced computational costs.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ldilab/ECoRAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "DiscoVLA: Discrepancy Reduction in Vision, Language, and Alignment for\n  Parameter-Efficient Video-Text Retrieval",
+        "authors": "Yifeng Zhang, Tao He, Tianxiang Hao, Guoqiang Gong, lunar677",
+        "link": "https://arxiv.org/abs/2506.08887",
+        "github_repo": "https://github.com/LunarShen/DsicoVLA",
+        "summary": "- DiscoVLA is a novel parameter-efficient method for video-text retrieval that addresses three key discrepancies: vision, language, and alignment. \n- The model uses Image-Video Features Fusion (IVFusion) to integrate image-level and video-level features, Pseudo Image-Level Alignment (PImgAlign) to learn fine-grained image-level alignment, and Image-to-Video Alignment Distillation (AlignDistill) to transfer image-level alignment knowledge to enhance video-level alignment. \n- Extensive experiments demonstrate that DiscoVLA outperforms previous methods by 1.5% in R@1 on the MSRVTT benchmark with CLIP (ViT-B/16), achieving a final score of 50.5% R@1. \n- DiscoVLA prioritizes parameter efficiency by using lightweight adapters and avoiding the need to update the numerous parameters of pretrained models. \n- The proposed method achieves state-of-the-art results on several benchmark datasets for video-text retrieval.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/LunarShen/DsicoVLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Squeeze3D: Your 3D Generation Model is Secretly an Extreme Neural\n  Compressor",
+        "authors": "Nandita Vijaykumar, Mohammadreza Mofayezi, Sankeerth Durvasula, Yushi Guan, rishitdagli",
+        "link": "https://arxiv.org/abs/2506.07932",
+        "github_repo": null,
+        "summary": " - Squeeze3D is a novel framework that leverages pre-trained 3D generative models to achieve extreme compression ratios for 3D data in various formats (meshes, point clouds, radiance fields).\n - The model architecture involves trainable mapping networks that bridge the latent spaces of a pre-trained encoder and a pre-trained generator, enabling compression and decompression without object-specific training.\n - Experiments demonstrate compression ratios of up to 2187x for textured meshes, 55x for point clouds, and 619x for radiance fields, while maintaining comparable visual quality to existing methods.\n - The framework is flexible, supporting different 3D formats by using existing pre-trained encoders and generators, allowing adaptation as new models evolve.\n - Squeeze3D outperforms many state-of-the-art methods, particularly in achieving significantly higher compression ratios without substantial loss in visual quality.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://squeeze3d.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/zxhezexin/OpenLRM",
+            "https://huggingface.co/spaces/TencentARC/InstantMesh",
+            "https://huggingface.co/spaces/tencent/Hunyuan3D-2",
+            "https://huggingface.co/spaces/JeffreyXiang/TRELLIS",
+            "https://huggingface.co/spaces/stabilityai/stable-point-aware-3d",
+            "https://huggingface.co/spaces/ginipick/SORA-3D"
+        ],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "MoA: Heterogeneous Mixture of Adapters for Parameter-Efficient\n  Fine-Tuning of Large Language Models",
+        "authors": "Wenqiao Zhang, Rolan Yan, Hongyang He, Tianwei Lin, cajie",
+        "link": "https://arxiv.org/abs/2506.05928",
+        "github_repo": "https://github.com/DCDmllm/MoA",
+        "summary": "- This paper introduces a novel heterogeneous Mixture-of-Adapters (MoA) method for parameter-efficient fine-tuning of large language models (LLMs).\n- The MoA architecture dynamically integrates PEFT adapter experts with diverse structures, leveraging their complementary representational capabilities to enhance knowledge transfer to downstream tasks.\n-  MoA supports two variants: Soft MoA (weighted fusion of all expert outputs) and Sparse MoA (sparsely activates experts based on contribution).\n- Experimental results demonstrate that heterogeneous MoA outperforms homogeneous MoE-LORA methods in both performance and parameter efficiency.\n- The project's code is available on GitHub.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/DCDmllm/MoA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Institutional Books 1.0: A 242B token dataset from Harvard Library's\n  collections, refined for accuracy and usability",
+        "authors": "Kristi Mukk, Jack Cushman, John Hess, Catherine Brobston, Matteo Cargnelutti",
+        "link": "https://arxiv.org/abs/2506.08300",
+        "github_repo": null,
+        "summary": "This research paper introduces Institutional Books 1.0, a 242B token dataset comprising public domain books from Harvard Library.  The dataset undergoes several processing steps, including OCR extraction, text analysis, and rights determination, and is released with comprehensive metadata.  The authors created a topic classification model (achieving 97.8% accuracy during benchmarking) to categorize the volumes into 20 high-level topics.  They also offer post-processed OCR text alongside the original.  The goal is to create a publicly available, high-quality dataset to promote further research and development in LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/instdin/institutional-books-1-pipeline",
+            "https://github.com/instdin/institutional-books-1-0"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/instdin/institutional-books-1.0",
+            "https://huggingface.co/instdin/institutional-books-topic-classifier-bert"
+        ],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Thinking vs. Doing: Agents that Reason by Scaling Test-Time Interaction",
+        "authors": "Amrith Setlur, Yifei Zhou, Lunjun Zhang, Junhong Shen, JackBAI",
+        "link": "https://arxiv.org/abs/2506.07976",
+        "github_repo": null,
+        "summary": "This paper introduces a novel approach to enhance the performance of interactive agents by scaling test-time interaction.  Unlike traditional methods that focus on extending reasoning within each step, the authors propose scaling the number of interaction steps to enable richer behaviors like exploration and backtracking.  Empirical results on web agent benchmarks demonstrate that this interaction scaling significantly improves task success rates compared to conventional test-time compute scaling methods. A curriculum-based reinforcement learning approach, TTI, is introduced to train agents to adaptively adjust their rollout lengths, balancing exploration and exploitation.  The authors show that TTI achieves state-of-the-art results on several open-source web agent benchmarks, highlighting the effectiveness of interaction scaling as a complementary axis to per-step reasoning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/test-time-interaction/TTI"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "Mathesis: Towards Formal Theorem Proving from Natural Languages",
+        "authors": "Roozbeh Yousefzadeh, Pengyi Zhai, Zijin Feng, Yu Xuejun, Jianyuan1",
+        "link": "https://arxiv.org/abs/2506.07047",
+        "github_repo": null,
+        "summary": "- This paper introduces Mathesis, a novel end-to-end theorem proving pipeline that processes informal problem statements in natural language.\n- Mathesis-Autoformalizer, a reinforcement learning-based autoformalizer, enhances the formalization ability of natural language problems and outperforms existing methods by 22% in pass rate on the Gaokao-Formal benchmark.\n- A novel LeanScorer framework provides nuanced formalization quality assessment.\n- Mathesis-Prover generates formal proofs from formalized statements, achieving state-of-the-art accuracy on MiniF2F (64%) and Gaokao-Formal (18%).\n- The Gaokao-Formal benchmark, comprising 488 complex problems from China's national college entrance exam, is introduced to evaluate the real-world applicability of the system.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "RKEFino1: A Regulation Knowledge-Enhanced Large Language Model",
+        "authors": "Jeff Zhao, Ruoyu Xiang, Yueru He, YanAdjeNole",
+        "link": "https://arxiv.org/abs/2506.05700",
+        "github_repo": null,
+        "summary": "- This paper introduces RKEFino1, a regulation knowledge-enhanced large language model built upon Fino1 and fine-tuned with domain knowledge from XBRL, CDM, and MOF.\n- The model is evaluated on three tasks: knowledge-based QA, mathematical reasoning QA, and a novel Numerical NER task covering financial entities in sentences and tables.\n- RKEFino1 significantly outperforms Fino1 across all three tasks, demonstrating the effectiveness of incorporating regulatory knowledge.\n- The improvement is particularly noticeable in tasks requiring precise answers or detailed explanations of financial regulations.\n- The authors have released their model on Hugging Face.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/YanAdjeNole/RKEFino1-14B"
+        ],
+        "date": "2025-06-11"
+    },
+    {
+        "title": "QQSUM: A Novel Task and Model of Quantitative Query-Focused\n  Summarization for Review-based Product Question Answering",
+        "authors": "Zhuang Li, Minh Ngoc Dinh, Xiuzhen Zhang, An Quang Tang",
+        "link": "https://arxiv.org/abs/2506.04020",
+        "github_repo": "https://github.com/antangrocket1312/QQSUMM",
+        "summary": "- This paper introduces a novel task, Quantitative Query-Focused Summarization (QQSUM), aiming to generate comprehensive answers to product questions by summarizing diverse customer opinions and quantifying their prevalence.\n- The proposed model, QQSUM-RAG, extends the Retrieval-Augmented Generation (RAG) framework by integrating KP-oriented retrieval and summarization, ensuring the generation of diverse and representative summaries.\n- QQSUM-RAG jointly trains a KP-oriented retriever and a KP summary generator using a co-training strategy, achieving superior performance in both textual quality and quantification accuracy compared to state-of-the-art RAG baselines.\n- The model leverages few-shot learning, addressing the challenge of limited training data for this specialized task, and utilizes a carefully curated dataset of queries with KPs and their prevalence quantification for few-shot learning.\n- Experimental results demonstrate that QQSUM-RAG significantly outperforms existing RAG baselines, showcasing improvement in textual similarity with ground-truth KPs and quantification performance over state-of-the-art systems.",
+        "classification": [
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/antangrocket1312/QQSUMM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-11"
+    }
+]

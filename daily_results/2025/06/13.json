@@ -1,0 +1,447 @@
+[
+    {
+        "title": "ReasonMed: A 370K Multi-Agent Generated Dataset for Advancing Medical\n  Reasoning",
+        "authors": "Weiwen Xu, Xingyu Qian, Swrooy, 26hzhang, YuSun-AI",
+        "link": "https://arxiv.org/abs/2506.09513",
+        "github_repo": null,
+        "summary": "- ReasonMed, a new 370K medical reasoning dataset, is introduced.  It was generated using a multi-agent system and refined through a multi-stage process.\n- The dataset includes diverse medical insights and combines detailed chain-of-thought reasoning with concise answer summaries.\n- A new benchmark, ReasonMed-7B, is presented, outperforming the previous state-of-the-art by 4.17% and exceeding LLaMA3.1-70B on PubMedQA by 4.60%.\n- The study systematically investigates best practices for training medical reasoning models and finds that combining detailed Chain-of-Thought reasoning with concise answer summaries is most effective.\n- ReasonMed is publicly released to facilitate future research in medical reasoning.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "SWE-Factory: Your Automated Factory for Issue Resolution Training Data\n  and Evaluation Benchmarks",
+        "authors": "Pengyu Yang, Caihua Li, Yanlin Wang, Lianghong Guo, itaowe",
+        "link": "https://arxiv.org/abs/2506.10954",
+        "github_repo": "https://github.com/DeepSoftwareAnalytics/swe-factory",
+        "summary": "- This paper introduces SWE-Factory, an automated pipeline for constructing GitHub issue resolution benchmarks. \n- SWE-Factory addresses the challenges of traditional benchmark creation by automating environment setup, grading, and validation. \n- The pipeline uses SWE-Builder, a multi-agent system leveraging LLMs, for efficient environment construction. \n- An exit-code-based grading system and fail2pass validation ensure accurate and reliable evaluation. \n- Experiments show SWE-Factory's effectiveness in constructing valid benchmarks with high accuracy and efficiency.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/DeepSoftwareAnalytics/swe-factory"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Text-Aware Image Restoration with Diffusion Models",
+        "authors": "Jihye Park, Jaeeun Lee, paulcho98, jinlovespho, Min-Jaewon",
+        "link": "https://arxiv.org/abs/2506.09993",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel task called Text-Aware Image Restoration (TAIR), which aims to simultaneously recover visual content and textual fidelity in degraded images.\n - A large-scale benchmark dataset called SA-Text (100K high-quality images with dense text annotations) is created to facilitate research on TAIR.\n - A multi-task diffusion model named TeReDiff is proposed. TeReDiff integrates internal features from diffusion models into a text-spotting module, allowing both components to benefit from joint training.\n - TeReDiff outperforms existing state-of-the-art restoration methods on SA-Text, achieving significant improvements in text recognition accuracy.\n - Extensive experiments demonstrate that the proposed model consistently achieves higher performance in both perceptual quality and character legibility compared to existing methods.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://cvlab-kaist.github.io/TAIR/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "VRBench: A Benchmark for Multi-Step Reasoning in Long Narrative Videos",
+        "authors": "Meng Chu, Yue Wu, LarryLee, chupei, awojustin",
+        "link": "https://arxiv.org/abs/2506.10857",
+        "github_repo": null,
+        "summary": "*- VRBench, a new benchmark dataset for evaluating multi-step reasoning in long narrative videos, is introduced.  The dataset consists of 1010 videos spanning 8 languages and 7 categories, each with 8-10 complex question-answer pairs and detailed, temporally-grounded annotations.\n- A novel multi-phase evaluation pipeline assesses both outcome and process levels, addressing limitations of existing benchmarks that focus on single-step reasoning.\n- VRBench introduces LLM-guided scoring metrics to evaluate reasoning chain quality from multiple dimensions.\n- Extensive evaluations on 12 LLMs and 16 VLMs demonstrate the effectiveness of VRBench in evaluating multi-step reasoning capabilities and highlight the strengths and weaknesses of existing models.\n- The results show that proprietary VLMs significantly outperform open-source models, particularly in the process-level evaluation, emphasizing the importance of long-context support and advanced reasoning architecture.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://VRBench.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "AniMaker: Automated Multi-Agent Animated Storytelling with MCTS-Driven\n  Clip Generation",
+        "authors": "Baotian Hu, Longyue Wang, Xinyu Chen, YunxinLi, MrSunshy",
+        "link": "https://arxiv.org/abs/2506.10540",
+        "github_repo": null,
+        "summary": "- AniMaker is a novel multi-agent framework for automated storytelling animation generation from text input, addressing the limitations of existing methods in generating long-form, coherent videos with multiple scenes and characters.\n- The framework uses a Monte Carlo Tree Search (MCTS)-based strategy (MCTS-Gen) for efficient multi-candidate clip generation and selection, optimizing resource usage and ensuring high-quality output.\n- AniMaker introduces AniEval, a comprehensive evaluation framework tailored for multi-shot animation, assessing story consistency, action completion, and animation-specific features.\n- Experimental results demonstrate that AniMaker outperforms existing methods in terms of video quality, achieving superior scores in VBench and AniEval, and showing improvements in human evaluation.\n- The multi-agent architecture of AniMaker mirrors professional production pipelines, improving efficiency and achieving production-quality storytelling videos.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture\n  without Training",
+        "authors": "Xipeng Qiu, Lu Wang, Howe77, mzzhang",
+        "link": "https://arxiv.org/abs/2506.10952",
+        "github_repo": null,
+        "summary": "\n- This paper introduces DOMAIN2VEC, a novel method that vectorizes datasets into linear combinations of meta-domains to identify optimal data mixtures for large language models (LLMs).\n- DOMAIN2VEC uses a classifier to decompose datasets into domain vectors representing distributions over meta-domains, enabling training-free identification of optimal mixtures under the Distribution Alignment Assumption (DA2).\n- The method is shown to enhance downstream task performance with minimal computational overhead; achieving the same validation loss as the original mixture using only 51.5% of the computational cost, and a 2.83% average performance improvement under equal compute budget.\n- DOMAIN2VEC seamlessly integrates with previous methods, improving efficiency and scalability by modeling the relationship between domain vectors and LLM performance.\n- Extensive experiments demonstrate that DOMAIN2VEC effectively finds data mixtures that enhance downstream task performance.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Optimus-3: Towards Generalist Multimodal Minecraft Agents with Scalable\n  Task Experts",
+        "authors": "Weili Guan, Gongwei Chen, Rui Shao, Yuquan Xie, Zaijing Li",
+        "link": "https://arxiv.org/abs/2506.10357",
+        "github_repo": null,
+        "summary": "- This paper introduces Optimus-3, a generalist multimodal agent for Minecraft that integrates perception, planning, action, grounding, and reflection capabilities.\n- Optimus-3 utilizes a Mixture-of-Experts (MoE) architecture with task-level routing to mitigate interference among heterogeneous tasks and improve scalability.\n- The model employs a Multimodal Reasoning-Augmented Reinforcement Learning approach to enhance reasoning capabilities and adapt to the visual diversity of Minecraft.\n- Experimental results demonstrate that Optimus-3 surpasses both generalist multimodal large language models and existing state-of-the-art agents across a range of Minecraft tasks.\n- The authors address the challenges of insufficient domain-specific data, task interference, and visual diversity in open-world environments through three key contributions: a knowledge-enhanced data generation pipeline, a task-level routing MoE architecture, and a multimodal reasoning-augmented reinforcement learning approach.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://cybertronagent.github.io/Optimus-3.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "AutoMind: Adaptive Knowledgeable Agent for Automated Data Science",
+        "authors": "Lanning Wei, Jingsheng Zheng, Yujie Luo, Ningyu, OE-Heart",
+        "link": "https://arxiv.org/abs/2506.10974",
+        "github_repo": "https://github.com/innovatingAI/AutoMind",
+        "summary": "- This paper introduces AUTOMIND, a novel adaptive and knowledgeable large language model (LLM) agent framework designed for automated data science.\n- AUTOMIND addresses limitations of existing frameworks by incorporating a curated expert knowledge base, an agentic knowledgeable tree search algorithm, and a self-adaptive coding strategy.\n- Evaluation on two automated data science benchmarks demonstrates AUTOMIND's superior performance over state-of-the-art baselines, showing a 13.5% improvement on the MLE-Bench leaderboard and surpassing 56.8% of human participants.\n- Additional analyses confirm AUTOMIND's favorable effectiveness, efficiency, and solution quality, highlighting its potential for fully automated data science.\n- AUTOMIND exhibits remarkable superiority on complex tasks, showcasing a 300% increase in efficiency and a 63% reduction in token costs compared to prior state-of-the-art methods.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/innovatingAI/AutoMind"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "VideoDeepResearch: Long Video Understanding With Agentic Tool Using",
+        "authors": "Zhicheng Dou, Ji-Rong Wen, Junjie Zhou, Zheng Liu, Huaying Yuan",
+        "link": "https://arxiv.org/abs/2506.10821",
+        "github_repo": null,
+        "summary": "- This paper introduces VideoDeepResearch, a novel agentic framework for long video understanding (LVU) that uses a text-only large reasoning model (LRM) with a modular multi-modal toolkit.\n- The framework challenges the common belief that LVU requires foundation models with extended context windows, strong visual perception, and domain expertise.\n- VideoDeepResearch achieves substantial improvements over existing MLLM baselines, surpassing the state-of-the-art by 9.6%, 6.6%, and 3.9% on MLVU (test), LVBench, and LongVideoBench, respectively.\n- The agentic system uses a variety of tools such as video clip retrievers, subtitle retrievers, visual perceivers, and video browsers to solve LVU problems.\n- The results highlight the promise of agentic systems in overcoming key challenges in LVU problems.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/yhy-2000/VideoDeepResearch"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "PosterCraft: Rethinking High-Quality Aesthetic Poster Generation in a\n  Unified Framework",
+        "authors": "Haoyu Chen, Tian Ye, Jialin Gao, Jianyu Lai, Ephemeral182",
+        "link": "https://arxiv.org/abs/2506.10741",
+        "github_repo": null,
+        "summary": " - PosterCraft is a unified framework for high-quality aesthetic poster generation that abandons previous modular pipelines. \n- It uses a four-stage cascaded workflow: large-scale text-rendering optimization, region-aware supervised fine-tuning, aesthetic-text reinforcement learning, and joint vision-language feedback refinement. \n- The framework is supported by newly constructed, specialized datasets for each stage, enabling robust training and facilitating future research. \n- Experiments demonstrate that PosterCraft significantly outperforms open-source baselines in rendering accuracy, layout coherence, and visual appeal, approaching the quality of commercial systems. \n- The key novelty is the unified end-to-end architecture enabling high-quality results without modularity, and the automated dataset construction pipelines tailored to each stage of training.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "ChineseHarm-Bench: A Chinese Harmful Content Detection Benchmark",
+        "authors": "Bozhong Tian, Siyuan Cheng, Kangwei Liu, Jasonchen123, Ningyu",
+        "link": "https://arxiv.org/abs/2506.10960",
+        "github_repo": "https://github.com/zjunlp/ChineseHarm-bench",
+        "summary": "- This paper introduces ChineseHarm-Bench, a new benchmark dataset for Chinese harmful content detection, addressing the scarcity of such resources.\n- The dataset comprises six categories of harmful content (gambling, pornography, abuse, fraud, illicit ads, and non-violation), with each category containing approximately 15,000 real-world examples and a total of 52,000 non-violation samples.\n-  A knowledge rule base is created during the annotation process, providing explicit expert knowledge to assist LLMs in detection and improve resource efficiency for smaller models.\n- A knowledge-augmented baseline is proposed to enhance the performance of smaller LLMs by integrating both annotated knowledge rules and implicit knowledge from large language models, achieving performance comparable to state-of-the-art LLMs.\n-  Extensive experiments demonstrate the effectiveness of the proposed approach, particularly in improving the performance of smaller models and addressing the challenges of Chinese harmful content detection.",
+        "classification": [
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/ChineseHarm-bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Magistral",
+        "authors": "Gabrielle Berrada, Andy Lo, Albert Q. Jiang, Abhinav Rastogi, Mistral-AI",
+        "link": "https://arxiv.org/abs/2506.10910",
+        "github_repo": null,
+        "summary": "- Introduced Magistral, Mistral's first reasoning model, trained using a novel reinforcement learning pipeline.\n- The pipeline does not rely on existing implementations or RL traces, instead relying solely on Mistral's own models and infrastructure.\n- Magistral Medium, trained for reasoning on top of Mistral Medium 3 with RL alone, achieved a nearly 50% boost in AIME-24 (pass@1) over the initial Mistral Medium 3 checkpoint, demonstrating the effectiveness of the approach.\n- The model maintains or improves multimodal understanding, instruction following, and function calling.\n- Magistral Small (Apache 2.0) was open-sourced, further including cold-start data from Magistral Medium.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/mistralai/Magistral-Small-2506"
+        ],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "CreatiPoster: Towards Editable and Controllable Multi-Layer Graphic\n  Design Generation",
+        "authors": "Yutao Cheng, ShiLayne, YangMaoke, hxxxl, zbrl",
+        "link": "https://arxiv.org/abs/2506.10890",
+        "github_repo": "https://github.com/graphic-design-ai/creatiposter",
+        "summary": "- CreatiPoster is a novel framework that generates editable, multi-layer graphic designs from natural language instructions or assets.\n- The model architecture consists of two main components: a protocol model that generates a JSON specification detailing each layer, and a background model that synthesizes a coherent background conditioned on the foreground.\n- CreatiPoster surpasses existing open-source approaches and commercial systems, as demonstrated by a benchmark with automated metrics.\n- To foster further research, the authors release a copyright-free corpus of 100,000 multi-layer designs.\n- The system supports diverse applications, including canvas editing, text overlay, responsive resizing, and multilingual adaptation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/graphic-design-ai/creatiposter"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Resa: Transparent Reasoning Models via SAEs",
+        "authors": "\u00d6mer Faruk Akg\u00fcl, Julian Asilis, willieneis, deqing, upup-ashton-wang",
+        "link": "https://arxiv.org/abs/2506.09967",
+        "github_repo": null,
+        "summary": "This paper introduces Resa, a family of 1.5B reasoning language models trained via a novel Sparse Autoencoder Tuning (SAE-Tuning) procedure.  SAE-Tuning first trains a sparse autoencoder (SAE) to capture reasoning abilities from a source model and then uses the trained SAE to guide standard supervised fine-tuning to elicit these abilities in a target model. Resa models achieve comparable reasoning performance to reinforcement learning (RL)-trained counterparts while reducing training costs by over 2000x and training time by over 450x.  The extracted reasoning abilities demonstrate generalizability and modularity, meaning they transfer across different datasets and models without retraining.  The SAE-Tuning method offers increased transparency into the model's reasoning process.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/shangshang-wang/Resa"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Resa-Yi"
+        ],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Ming-Omni: A Unified Multimodal Model for Perception and Generation",
+        "authors": "Chunluan Zhou, Chuanyang Zheng, Cheng Zou, Biao Gong, Inclusion AI",
+        "link": "https://arxiv.org/abs/2506.09344",
+        "github_repo": null,
+        "summary": " - Ming-Omni is a unified multimodal model that processes images, text, audio, and video, exhibiting strong performance in speech and image generation.\n- It uses a Mixture-of-Experts (MoE) architecture with modality-specific routers for efficient multimodal input processing and fusion.\n- The model supports audio and image generation via an advanced audio decoder and Ming-Lite-Uni, enabling versatile tasks like context-aware chatting and image editing.\n- Experimental results demonstrate Ming-Omni's superior performance in various tasks, matching GPT-4's modality support.\n- All code and model weights are open-sourced to encourage further research and development.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/Ming/tree/main"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Eliciting Fine-Tuned Transformer Capabilities via Inference-Time\n  Techniques",
+        "authors": "codelion",
+        "link": "https://arxiv.org/abs/2506.08060",
+        "github_repo": null,
+        "summary": "- This paper presents a novel method for approximating the capabilities of fine-tuned transformer models using inference-time techniques, without altering the model parameters.\n- The approach leverages in-context learning (ICL), where the model is prompted with a subset of the fine-tuning dataset to elicit desired behaviors.\n- The authors provide theoretical proofs demonstrating that this approach can accurately approximate fine-tuned behavior under idealized conditions, with minimal data requirements.\n- These results are extended to more realistic scenarios with finite context lengths and partial dataset access, with dataset size bounds provided for text generation and linear classification tasks.\n- The study establishes a theoretical foundation for resource-efficient deployment of large language models, bridging the gap between theory and practice through practical techniques such as retrieval-augmented generation.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Attention, Please! Revisiting Attentive Probing for Masked Image\n  Modeling",
+        "authors": "Tilemachos Aravanis, Ioannis Kakogeorgiou, Eirini Baltzi, Dionysis Christopoulos, Bill Psomas",
+        "link": "https://arxiv.org/abs/2506.10178",
+        "github_repo": "https://github.com/billpsomas/efficient-probing",
+        "summary": "- This paper introduces Efficient Probing (EP), a novel multi-query cross-attention mechanism for evaluating self-supervised learning models, particularly those trained with Masked Image Modeling (MIM).\n- EP significantly improves efficiency by eliminating redundant projections and reducing the number of trainable parameters, achieving up to a 10x speedup over existing methods while maintaining or exceeding accuracy.\n- Through extensive benchmarking across seven datasets and various pre-training paradigms, EP demonstrates superior accuracy-efficiency trade-offs compared to state-of-the-art attentive probing and pooling methods.\n- The method also produces interpretable attention maps, enhancing its utility for understanding model behavior and improving its performance in low-shot and layer-wise settings.\n- EP generalizes well beyond MIM to other pre-training paradigms, achieving strong gains even in low-data regimes.",
+        "classification": [
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/billpsomas/efficient-probing"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "UniPre3D: Unified Pre-training of 3D Point Cloud Models with Cross-Modal\n  Gaussian Splatting",
+        "authors": "Jiwen Lu, Jie Zhou, Yanran21, LavenderLA",
+        "link": "https://arxiv.org/abs/2506.09952",
+        "github_repo": "https://github.com/wangzy22/UniPre3D",
+        "summary": "- UniPre3D is a novel unified pre-training method for 3D point cloud models that can be applied to point clouds of any scale and 3D models of any architecture.\n- It uses a differentiable Gaussian splatting technique to render images from point clouds, enabling precise pixel-level supervision and end-to-end optimization.\n- UniPre3D integrates 2D features from pre-trained image models to incorporate texture knowledge and regulate the complexity of the pre-training task.\n- Extensive experiments show that UniPre3D outperforms existing methods on various object- and scene-level tasks, using diverse point cloud models as backbones.\n- The code for UniPre3D is publicly available on GitHub.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D",
+            "Object Detection",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/wangzy22/UniPre3D"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "VerIF: Verification Engineering for Reinforcement Learning in\n  Instruction Following",
+        "authors": "Lei Hou, Bin Xu, Xiaozhi Wang, Yunjia Qi, Wesleythu",
+        "link": "https://arxiv.org/abs/2506.09942",
+        "github_repo": "https://github.com/THU-KEG/VerIF",
+        "summary": "- This paper introduces VERIF, a novel verification method for reinforcement learning (RL) in instruction following that combines rule-based code verification with large language model (LLM)-based verification.\n- VERIF is applied to two models, achieving state-of-the-art performance on several instruction-following benchmarks and generalizing well to unseen constraints.\n- A high-quality instruction-following dataset, VERINSTRUCT, with approximately 22,000 instances and associated verification signals, is constructed to support the approach.\n- The results demonstrate that RL with VERIF can be integrated into existing RL recipes to enhance overall model performance without affecting general capabilities.\n- The datasets, codes, and models are released to facilitate future research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/THU-KEG/VerIF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Compound AI Systems Optimization: A Survey of Methods, Challenges, and\n  Future Directions",
+        "authors": "Guan-Bo Yang, Jui-Chao Lu, Mei-Yi Liu, Guan-Ting Yi, Yu-Ang Lee",
+        "link": "https://arxiv.org/abs/2506.08234",
+        "github_repo": "https://github.com/MiuLab/AISysOpt-Survey",
+        "summary": "- This paper surveys recent advances in optimizing compound AI systems, which are systems integrating multiple components like LLMs, simulators, and code interpreters.\n- It proposes a 2x2 taxonomy of existing optimization methods based on structural flexibility and learning signals (numerical or language-based).\n- The paper identifies four key dimensions for analyzing compound AI system optimization methods: structural flexibility, learning signals, component options, and system representations.\n- It highlights open research challenges, such as manual hyperparameter configuration, excessive computation burden, and limited experimental scope.\n- The authors suggest future directions, including developing automated optimization algorithms, reducing computational overhead, expanding experimental scope, and providing more theoretical guarantees for existing methods.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/MiuLab/AISysOpt-Survey"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "LLM Unlearning Should Be Form-Independent",
+        "authors": "Shu Wu, Mengqi Zhang, Acruxos",
+        "link": "https://arxiv.org/abs/2506.07795",
+        "github_repo": null,
+        "summary": "- This paper introduces Rank-One Concept Redirection (ROCR), a novel training-free method for LLM unlearning that addresses the issue of form-dependent bias.\n- ROCR modifies model parameters to redirect the activation of dangerous concepts to harmless ones, improving unlearning effectiveness and generalization.\n- The method is shown to significantly outperform existing unlearning methods in terms of both unlearning effectiveness and knowledge preservation across various downstream tasks.\n- Extensive experiments demonstrate ROCR's superior performance and its ability to generate highly natural outputs, showcasing its potential as a practical and robust solution for LLM unlearning.\n- A new benchmark, ORT, is introduced to systematically evaluate the robustness of unlearning methods against variations in knowledge expression, highlighting the prevalence of form-dependent bias.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "What Makes a Good Natural Language Prompt?",
+        "authors": "Nancy F. Chen, Kenji Kawaguchi, Ngoc-Hai Nguyen, Duy Dinh, Do Xuan Long",
+        "link": "https://arxiv.org/abs/2506.06950",
+        "github_repo": null,
+        "summary": "This paper introduces a novel property-and-human-centric framework for evaluating the quality of natural language prompts, identifying 21 key properties across six dimensions.  A meta-analysis of 150+ prompting-related papers reveals significant research gaps and imbalances across models and tasks.  Correlations among properties in high-quality prompts are analyzed to derive practical prompting recommendations.  Empirical exploration on reasoning tasks demonstrates that single-property enhancements often yield greater impact than multi-property enhancements, and instruction-tuning on property-enhanced prompts leads to superior reasoning models.  Finally, it introduces various open questions regarding model-specific impacts and task-specific versus universal properties.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Token Perturbation Guidance for Diffusion Models",
+        "authors": "Babak Taati, Soroush Mehraban, Javad Rajabi, msadat97",
+        "link": "https://arxiv.org/abs/2506.10036",
+        "github_repo": "https://github.com/TaatiTeam/Token-Perturbation-Guidance",
+        "summary": "- This paper introduces Token Perturbation Guidance (TPG), a novel training-free method for improving the quality of images generated by diffusion models.\n- TPG directly perturbs intermediate token representations within the diffusion network using a norm-preserving shuffling operation, without requiring architectural changes or additional training.\n- Experiments on SDXL and Stable Diffusion 2.1 show that TPG achieves nearly a 2x improvement in FID for unconditional generation and closely matches CFG in prompt alignment.\n- TPG is applicable to both conditional and unconditional image generation, making it a versatile technique.\n- The authors provide code for TPG, making it readily accessible for researchers and practitioners.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/TaatiTeam/Token-Perturbation-Guidance"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Draft-based Approximate Inference for LLMs",
+        "authors": "Hyung Il Koo, Minjae Lee, Wonjun Kang, Ethan Ewer, Kevin Galim",
+        "link": "https://arxiv.org/abs/2506.08373",
+        "github_repo": "https://github.com/furiosa-ai/draft-based-approx-llm",
+        "summary": " - This paper introduces a novel framework for approximate inference in Large Language Models (LLMs) that leverages smaller \"draft\" models to predict token and key-value pair importance more accurately than existing methods.\n- Two instantiations of this framework are presented: SpecKV, for effective KV cache dropping, and SpecPC, for prompt compression, both showing strong correlations between the draft and target models.\n- SpecKV and SpecPC consistently outperform existing baselines on long-context benchmarks, achieving higher accuracy while maintaining improvements in memory usage, latency, and throughput.\n- Theoretical analyses support the methods' effectiveness, showing a strong correlation between the attention patterns of draft and target models.\n- The proposed methods are evaluated extensively on multiple benchmarks, demonstrating consistent improvements in accuracy over existing methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/furiosa-ai/draft-based-approx-llm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "LaMP-Cap: Personalized Figure Caption Generation With Multimodal Figure\n  Profiles",
+        "authors": "Branislav Kveton, Aashish Anantha Ramakrishnan, Ting-Yao Hsu, Ho Yin 'Sam' Ng, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2506.06561",
+        "github_repo": null,
+        "summary": "- This paper introduces LAMP-CAP, a new dataset for personalized figure caption generation that uses multimodal figure profiles.\n- LAMP-CAP includes 110,828 target figures from arXiv papers, each with a multimodal source (image and figure-mentioning paragraphs) and up to three multimodal profile figures from the same paper.\n- Experiments using four LLMs demonstrate that incorporating profile information consistently improves the quality of generated captions.\n- Ablation studies reveal that captions are the most critical profile element, followed by images, and then figure-mentioning paragraphs, highlighting the advantage of multimodal profiles.\n- The dataset provides a new benchmark for personalized text generation and demonstrates the effectiveness of multimodal profiles in this task.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Crowd-AI-Lab/lamp-cap"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "MCA-Bench: A Multimodal Benchmark for Evaluating CAPTCHA Robustness\n  Against VLM-based Attacks",
+        "authors": "Yiren Song, Xin Wei, Yule Xue, Zonglin Wu",
+        "link": "https://arxiv.org/abs/2506.05982",
+        "github_repo": null,
+        "summary": "- The paper introduces MCA-Bench, a comprehensive multimodal benchmark for evaluating CAPTCHA robustness against vision-language model (VLM)-based attacks.\n- MCA-Bench integrates various CAPTCHA types into a single evaluation protocol, leveraging a shared VLM backbone to fine-tune specialized cracking agents for each CAPTCHA category.\n- Extensive experiments demonstrate that MCA-Bench effectively maps the vulnerability spectrum of modern CAPTCHA designs and provides quantitative analysis of challenge complexity, interaction depth, and model solvability.\n- Based on the experimental findings, the paper proposes three actionable design principles for next-generation CAPTCHAs to enhance security against VLM-based attacks.\n- Datasets and code are publicly available for further research and community collaboration.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/noheadwuzonglin/MCA-Bench"
+        ],
+        "huggingface_urls": [
+            "https://www.kaggle.com/datasets/luffy798/mca-benchmultimodal-captchas"
+        ],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Fine-Grained Perturbation Guidance via Attention Head Selection",
+        "authors": "Jaewon Min, Minjae Kim, Sanghyun Lee, Jiwon Kang, Donghoon Ahn",
+        "link": "https://arxiv.org/abs/2506.10978",
+        "github_repo": null,
+        "summary": "The paper introduces HeadHunter, a novel framework for fine-grained control over image generation in diffusion models.  HeadHunter achieves this by applying perturbations to individual attention heads rather than entire layers, enabling targeted manipulation of specific visual concepts. Experiments show that HeadHunter outperforms layer-level perturbation methods in both general image quality and style-specific guidance.  A supplementary method, SoftPAG, is introduced to mitigate oversmoothing issues, providing continuous control over perturbation strength.  The findings show that attention heads within diffusion models specialize in distinct visual concepts, and their outputs can be composed for more complex image synthesis.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/stabilityai/stable-diffusion-3-medium",
+            "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+        ],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "Discovering Hierarchical Latent Capabilities of Language Models via\n  Causal Representation Learning",
+        "authors": "Hanlin Zhang, Sham Kakade, Vasilis Syrgkanis, Jikai Jin",
+        "link": "https://arxiv.org/abs/2506.10378",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel causal representation learning framework for evaluating language model capabilities. \n- The framework models observed benchmark performance as a linear transformation of latent capability factors, identified as causally interrelated after controlling for base model variations. \n- Applying this approach to a large dataset of over 1500 models, the authors identify a three-node linear causal structure that reliably explains performance variations across six benchmarks from the Open LLM Leaderboard. \n- The causal structure reveals a clear causal direction from general problem-solving capabilities through instruction-following proficiency to mathematical reasoning ability. \n- This work underscores the importance of controlling for base model variations during evaluation to accurately uncover causal relationships between latent model capabilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/hlzhang109/causal-eval"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/"
+        ],
+        "date": "2025-06-13"
+    },
+    {
+        "title": "StreamSplat: Towards Online Dynamic 3D Reconstruction from Uncalibrated\n  Video Streams",
+        "authors": "Renjie Liao, Lele Wang, Xuanyu Yi, Qi Yan, Zike Wu",
+        "link": "https://arxiv.org/abs/2506.08862",
+        "github_repo": "https://github.com/nickwzk/StreamSplat",
+        "summary": "- StreamSplat is a novel fully feed-forward framework for online dynamic 3D Gaussian splatting reconstruction from uncalibrated video streams.  It addresses three key challenges: real-time processing of uncalibrated inputs, accurate dynamic scene modeling, and maintaining long-term stability.\n- The model employs two key innovations: a probabilistic sampling mechanism in the static encoder for 3DGS position prediction and a bidirectional deformation field in the dynamic decoder.\n- Extensive experiments demonstrate that StreamSplat outperforms state-of-the-art methods on static and dynamic benchmarks in terms of reconstruction quality and dynamic scene modeling while uniquely supporting online reconstruction.\n- The model is evaluated on several benchmark datasets, including CO3Dv2, RE10K, DAVIS, and YouTube-VOS, showcasing its superior performance in reconstruction quality and dynamic scene modeling compared to other state-of-the-art methods.\n- StreamSplat uniquely enables online reconstruction of arbitrarily long video streams, making it suitable for real-time applications such as AR/VR, robotics, and autonomous driving.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/nickwzk/StreamSplat"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-13"
+    }
+]

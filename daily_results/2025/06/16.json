@@ -1,0 +1,275 @@
+[
+    {
+        "title": "Aligned Novel View Image and Geometry Synthesis via Cross-modal\n  Attention Instillation",
+        "authors": "Taekyoung Kim, Dongyoon Han, Sangdoo Yun, Junho Kim, Min-Seop Kwak",
+        "link": "https://arxiv.org/abs/2506.11924",
+        "github_repo": null,
+        "summary": "- This paper introduces a diffusion-based framework for aligned novel view image and geometry generation using a warping-and-inpainting method.\n- The model uses off-the-shelf geometry predictors to predict partial geometries and formulates novel-view synthesis as an inpainting task for both image and geometry.\n- To ensure accurate alignment, cross-modal attention distillation is proposed, where attention maps from the image diffusion branch are injected into a parallel geometry diffusion branch.\n- Proximity-based mesh conditioning is introduced to integrate depth and normal cues, interpolating between point clouds and filtering erroneous geometry predictions.\n- Empirical results demonstrate high-fidelity extrapolative view synthesis and competitive reconstruction quality, producing geometrically aligned colored point clouds for comprehensive 3D completion.",
+        "classification": [
+            "Image-to-3D",
+            "Image-to-Image",
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://cvlab-kaist.github.io/MoAI/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "Effective Red-Teaming of Policy-Adherent Agents",
+        "authors": "Guy Uziel, Matan Vetzler, Koren Lazar, George Kour, Itay Nakash",
+        "link": "https://arxiv.org/abs/2506.09600",
+        "github_repo": null,
+        "summary": "- This paper introduces CRAFT, a novel multi-agent red-teaming system designed to evaluate the robustness of policy-adherent Large Language Model (LLM)-based agents against adversarial users.\n- CRAFT leverages policy-aware persuasive strategies and outperforms conventional methods such as DAN prompts in bypassing safety policies.\n- The authors introduce T-break, a complementary benchmark built upon T-bench to rigorously assess agent resilience against manipulation.\n- Several straightforward defense strategies are evaluated, highlighting the need for stronger research-driven safeguards.\n- The findings reveal critical vulnerabilities in policy-adherent agents and underscore the importance of developing robust defenses against adversarial attacks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "The Diffusion Duality",
+        "authors": "Justin Chiu, Guanghan Wang, Aaron Gokaslan, Justin Deschenaux, Subham Sekhar Sahoo",
+        "link": "https://arxiv.org/abs/2506.10892",
+        "github_repo": "https://github.com/s-sahoo/duo",
+        "summary": "This paper introduces Duo, a novel framework that leverages the duality between Gaussian and Uniform-state discrete diffusion models to improve text generation.  Duo employs curriculum learning guided by the underlying Gaussian process to accelerate training and surpass autoregressive models in zero-shot perplexity on several benchmarks.  A new distillation technique, Discrete Consistency Distillation, is introduced to enhance sampling speed, achieving a two-order magnitude improvement over previous methods.  The framework transfers advanced techniques from Gaussian diffusion to improve both training and sampling efficiency in USDMs.  The code and model checkpoints are available on the project page.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/s-sahoo/duo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive\n  Programming?",
+        "authors": "Kaiyuan Liu, Shang Zhou, Zeyu Shen, Zerui Cheng, Zihan Zheng",
+        "link": "https://arxiv.org/abs/2506.11928",
+        "github_repo": null,
+        "summary": "This paper introduces LiveCodeBench Pro, a benchmark for evaluating LLMs in competitive programming. It uses problems from Codeforces, ICPC, and IOI, annotated by Olympiad medalists.  The benchmark reveals that frontier models have significant limitations in algorithmic reasoning and complex case analysis, achieving only 53% pass@1 on medium-difficulty problems and 0% on hard problems. High performance is largely driven by implementation precision, not superior reasoning.  LiveCodeBench Pro highlights the gap between LLMs and human grandmasters, providing diagnostics to improve code-centric LLM reasoning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "pLSTM: parallelizable Linear Source Transition Mark networks",
+        "authors": "Sepp Hochreiter, Wei Lin, Thomas Schmied, Richard Freinschlag, korbip",
+        "link": "https://arxiv.org/abs/2506.11997",
+        "github_repo": "https://github.com/ml-jku/plstm_experiments",
+        "summary": "- This paper introduces pLSTM, a novel parallelizable recurrent neural network architecture designed for handling multi-dimensional data such as images and graphs.\n- pLSTM uses Source, Transition, and Mark gates operating on the line graph of a directed acyclic graph (DAG), enabling parallelization through chunkwise processing.\n- The model addresses the vanishing/exploding gradient problem via two modes: a directed propagation mode and a diffusive distribution mode.\n- Experiments on synthetic and established benchmarks demonstrate that pLSTMs generalize better to larger images and achieve strong performance on computer vision and molecular graph datasets.\n- The code and datasets used in this research are publicly available.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ml-jku/plstm_experiments"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "A High-Quality Dataset and Reliable Evaluation for Interleaved\n  Image-Text Generation",
+        "authors": "kpzhang, ZhangShenglin, fanrui00, cyrilli, finyorko",
+        "link": "https://arxiv.org/abs/2506.09427",
+        "github_repo": null,
+        "summary": " - This paper introduces InterSyn, a large-scale multimodal dataset for instruction-following, multi-turn image-text generation, and SynJudge, an automatic evaluation model assessing multimodal outputs along four dimensions.\n- The Self-Evaluation with Iterative Refinement (SEIR) method used to build InterSyn yielded substantially higher dataset quality compared to an identical process without refinement, as shown via experimental studies.\n- SynJudge, the automatic evaluation model, aligns well with human judgment and provides interpretable quantitative feedback, facilitating more effective model training.\n- LMMs trained on InterSyn demonstrated uniform performance gains across all evaluation metrics, confirming its utility for advancing multimodal systems.\n- InterSyn contains approximately 1.8 million single-turn samples and 50k multi-turn dialogues, offering a robust foundation for training unified multimodal models.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Visual Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation\n  via Skill Blending",
+        "authors": "Tan-Dzung Do, Haoran Geng, jitendra1995, AmineElhafsi, yxK",
+        "link": "https://arxiv.org/abs/2506.09366",
+        "github_repo": null,
+        "summary": "- This paper introduces SkillBlender, a hierarchical reinforcement learning framework for versatile humanoid loco-manipulation that leverages pre-trained, goal-conditioned primitive skills and dynamically blends them to accomplish complex tasks with minimal task-specific reward engineering.\n- SkillBlender first pretrains task-agnostic primitive skills (walking, reaching, squatting, stepping) and then uses a high-level controller to blend these skills to perform complex loco-manipulation tasks.\n- The paper also introduces SkillBench, a parallel, cross-embodiment, and diverse simulated benchmark to evaluate humanoid loco-manipulation, incorporating metrics for both accuracy and feasibility.\n- Experiments show that SkillBlender significantly outperforms baselines on SkillBench, achieving higher accuracy and producing more natural and feasible movements.\n- The code and benchmark for SkillBlender will be open-sourced to facilitate future research.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://usc-gvl.github.io/SkillBlender-web/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "Detecting Harmful Memes with Decoupled Understanding and Guided CoT\n  Reasoning",
+        "authors": "Anh Tuan Luu, Fengjun Pan, bobxwu",
+        "link": "https://arxiv.org/abs/2506.08477",
+        "github_repo": null,
+        "summary": "This paper introduces U-CoT+, a novel framework for harmful meme detection that addresses limitations of existing methods in resource efficiency, flexibility, and explainability.  The framework decouples meme interpretation from classification using a meme-to-text pipeline, enabling resource-efficient detection with LLMs.  Targeted, human-crafted guidelines are incorporated to guide CoT prompting, allowing easy adaptation to different criteria.  Experiments on seven benchmark datasets demonstrate U-CoT+'s effectiveness, highlighting its potential for low-resource settings and achieving comparable performance to state-of-the-art, fully supervised methods.",
+        "classification": [
+            "Zero-Shot Classification",
+            "Text Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://anonymous.4open.science/r/HMC-AF2B/README.md"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "Beyond Homogeneous Attention: Memory-Efficient LLMs via\n  Fourier-Approximated KV Cache",
+        "authors": "Yuerong Song, Ruixiao Li, Qiqi Wang, Siyang He, Xiaoran Liu",
+        "link": "https://arxiv.org/abs/2506.11886",
+        "github_repo": null,
+        "summary": "- This paper introduces FourierAttention, a novel training-free framework for memory-efficient LLMs that exploits the heterogeneous roles of transformer head dimensions.\n- FourierAttention prioritizes local context using lower dimensions and captures long-range dependencies using upper dimensions projected onto orthogonal Fourier bases, approximating their temporal evolution with fixed-length spectral coefficients.\n- Evaluation on LLaMA models demonstrates that FourierAttention achieves state-of-the-art long-context accuracy on LongBench and Needle-In-A-Haystack (NIAH).\n- The proposed method is implemented using a custom Triton kernel, FlashFourierAttention, for efficient memory management and deployment without performance compromise.\n- Experimental results show that FourierAttention outperforms existing training-free KV cache compression methods on LongBench and NIAH, achieving the best long-context accuracy while maintaining lower memory consumption.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "SwS: Self-aware Weakness-driven Problem Synthesis in Reinforcement\n  Learning for LLM Reasoning",
+        "authors": "Yang Wang, Yeyun Gong, Zhong-Zhi Li, Xiao Liang, yegong",
+        "link": "https://arxiv.org/abs/2506.08989",
+        "github_repo": null,
+        "summary": "This paper introduces a novel Self-aware Weakness-driven Problem Synthesis (SwS) framework for enhancing the reasoning capabilities of Large Language Models (LLMs) in reinforcement learning.  The SwS framework systematically identifies model weaknesses through iterative sampling during training, extracts core concepts from failure cases, and synthesizes new problems to address these weaknesses. Experiments on eight mainstream reasoning benchmarks demonstrate average performance gains of 10.0% and 7.7% on 7B and 32B models respectively, surpassing existing methods.  The SwS framework is shown to be adaptable to various settings, including Weak-to-Strong Generalization, Self-evolving, and Weakness-driven Selection.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/MasterVito/SwS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "DeepVideo-R1: Video Reinforcement Fine-Tuning via Difficulty-aware\n  Regressive GRPO",
+        "authors": "Hyunwoo J. Kim, Jinyoung Kim, Jeehye Na, Jinyoung Park",
+        "link": "https://arxiv.org/abs/2506.07464",
+        "github_repo": null,
+        "summary": "- DeepVideo-R1 is a novel video large language model that uses Regressive Group Relative Policy Optimization (Reg-GRPO) and a difficulty-aware data augmentation strategy to improve video reasoning capabilities.\n- Reg-GRPO reformulates the GRPO objective as a regression task, directly predicting the advantage, thus eliminating the need for safeguards and mitigating the vanishing advantage problem.\n- The difficulty-aware augmentation dynamically augments training samples at solvable difficulty levels, providing diverse reward signals.\n- Experiments on multiple video reasoning benchmarks demonstrate that DeepVideo-R1 significantly outperforms existing Video LLMs and GRPO-based approaches.\n- The proposed approach is shown to significantly improve video reasoning performance across multiple video reasoning benchmarks, demonstrating superior performance over several recent video LLMs.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/mlvlab/DeepVideoR1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "Configurable Preference Tuning with Rubric-Guided Synthetic Data",
+        "authors": "vicgalle",
+        "link": "https://arxiv.org/abs/2506.11702",
+        "github_repo": "https://github.com/vicgalle/configurable-preference-tuning",
+        "summary": "- This paper introduces Configurable Preference Tuning (CPT), a novel framework that allows language models to dynamically adjust their behavior based on human-interpretable directives, without retraining.\n- CPT leverages synthetically generated preference data conditioned on system prompts derived from structured, fine-grained rubrics, which define desired attributes such as writing style.\n- The model is fine-tuned using a DPO-style objective with rubric-guided preference pairs, enabling it to modulate its outputs at inference time in response to system prompts.\n- Experiments demonstrate that CPT significantly improves the models' ability to adhere to system-prompted configurations, achieving higher accuracy and stronger rank correlations compared to baseline models.\n- CPT is shown to enhance other techniques, such as Best-of-N sampling, by improving generation efficiency and quality.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/vicgalle/configurable-preference-tuning"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/vicgalle/creative-rubrics-preferences"
+        ],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "ViCrit: A Verifiable Reinforcement Learning Proxy Task for Visual\n  Perception in VLMs",
+        "authors": "Yuhang Zhou, Yongyuan Liang, Chao Feng, Zhengyuan Yang, Xiyao Wang",
+        "link": "https://arxiv.org/abs/2506.10128",
+        "github_repo": null,
+        "summary": "- ViCrit is a novel reinforcement learning proxy task designed to enhance visual perception in vision-language models (VLMs) by training them to identify subtle, synthetic visual hallucinations in image captions.\n- The task involves injecting minor visual errors into detailed image captions and training the VLM to pinpoint the erroneous span using a binary reward system, which is computationally efficient and unambiguous.\n- ViCrit training consistently improves performance on various vision-language benchmarks, including those involving abstract image reasoning and visual mathematics.\n- ViCrit-Bench, a new benchmark dataset with diverse image domains and fine-grained hallucination categories, is also introduced to evaluate and diagnose VLMs' visual perception abilities.  The results on ViCrit-Bench strongly correlate with overall VLM performance on general tasks.\n- The experiments demonstrate that ViCrit effectively enhances the fine-grained visual perception of VLMs, leading to improved performance across various downstream tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Image-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/si0wang/ViCrit"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/russwang/ViCrit",
+            "https://huggingface.co/datasets/zyang39/ViCrit-Train",
+            "https://huggingface.co/datasets/russwang/ViCrit-Bench"
+        ],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "A Self-Refining Framework for Enhancing ASR Using TTS-Synthesized Data",
+        "authors": "Hsi-Chun Cheng, Liang-Hsuan Tseng, Ho-Lam Chung, Chan-Jan Hsu, Cheng Kang Chou",
+        "link": "https://arxiv.org/abs/2506.11130",
+        "github_repo": null,
+        "summary": "- This paper introduces a self-refining framework to improve Automatic Speech Recognition (ASR) performance using only unlabeled datasets.\n- The framework involves training a high-fidelity text-to-speech (TTS) system using pseudo-labels generated by an existing ASR model on unannotated speech.\n- Synthesized speech-text pairs are then used to enhance the original ASR model, creating a closed-loop self-improvement cycle.\n- Experiments on Taiwanese Mandarin speech demonstrate a significant reduction in error rates (up to 20% on Mandarin and 50% on Mandarin-English code-switching benchmarks) compared to the baseline model.\n- The proposed framework offers a practical and scalable alternative to traditional pseudo-labeling approaches, particularly beneficial for low-resource or domain-specific settings.",
+        "classification": [
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity\n  Dilemma of Embeddings",
+        "authors": "Fandong Meng, Jiangnan Li, Mo Yu, Zhenlin Su, lxucs",
+        "link": "https://arxiv.org/abs/2506.08592",
+        "github_repo": "https://github.com/lxucs/CapRetrieval",
+        "summary": "- This paper introduces CapRetrieval, a new Chinese evaluation dataset for dense retrieval, focusing on the challenge of fine-grained semantic matching in image captions.\n- The dataset consists of image captions as passages and short phrases as queries, requiring fine-grained semantic understanding for accurate retrieval.\n- Zero-shot evaluation on CapRetrieval reveals limitations of existing text encoders in handling fine-grained details, regardless of model size or training data.\n- The authors propose data generation strategies using LLMs to enhance encoder training and address the identified granularity dilemma.\n- Finetuning with the proposed strategies improves performance on CapRetrieval, surpassing even large language models in zero-shot settings.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/lxucs/CapRetrieval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "JAFAR: Jack up Any Feature at Any Resolution",
+        "authors": "Matthieu Cord, Jean-Emmanuel Haugeard, Louis Serrano, Loick Chambon, Paul Couairon",
+        "link": "https://arxiv.org/abs/2506.11136",
+        "github_repo": "https://github.com/PaulCouairon/JAFAR",
+        "summary": "- This paper introduces JAFAR, a lightweight and flexible feature upsampler that enhances the spatial resolution of visual features from any Foundation Vision Encoder to an arbitrary target resolution.\n- JAFAR uses a cross-attention-based module designed to promote semantic alignment between high-resolution queries and semantically enriched low-resolution keys, using Spatial Feature Transform (SFT) modulation.\n- Despite not using high-resolution supervision during training, JAFAR demonstrates strong generalization capabilities to significantly higher output scales.\n- Extensive experiments show that JAFAR consistently outperforms existing feature upsampling methods across a diverse set of downstream tasks, including semantic segmentation, depth estimation, and CAM evaluation.\n- JAFAR's task-agnostic design and efficiency make it a valuable drop-in module for improving the performance of various computer vision systems.",
+        "classification": [
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/PaulCouairon/JAFAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    },
+    {
+        "title": "Inherently Faithful Attention Maps for Vision Transformers",
+        "authors": "Diego Marcos, Dino Ienco, Cassio F. Dantas, ananthu-aniraj",
+        "link": "https://arxiv.org/abs/2506.08915",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel attention-based method for vision transformers that utilizes learned binary attention masks to ensure only attended image regions influence prediction.\n- The method addresses the issue of biased representations caused by contextual cues by employing a two-stage framework: a region selector and a vision transformer-based classification model.\n- The proposed approach, iFAM, significantly improves robustness against spurious correlations and out-of-distribution backgrounds compared to existing methods on various benchmarks.\n- iFAM achieves this improvement by explicitly constraining the receptive field of the predictor to the selected image regions, ensuring faithfulness in attention maps.\n- The method also incorporates test-time interventions, such as spurious part removal and OOD token removal, to further enhance robustness.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-16"
+    }
+]

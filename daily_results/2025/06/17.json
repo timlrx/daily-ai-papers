@@ -1,0 +1,452 @@
+[
+    {
+        "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning\n  Attention",
+        "authors": "ManTle, windlx, LINMUJIE-judy, enochzhang, sheep33333",
+        "link": "https://arxiv.org/abs/2506.13585",
+        "github_repo": "https://github.com/MiniMax-AI/MiniMax-M1",
+        "summary": "- MiniMax-M1 is introduced, a novel open-weight, large-scale hybrid-attention reasoning model featuring a hybrid Mixture-of-Experts (MoE) architecture and a lightning attention mechanism. \n- The model boasts 456 billion parameters and supports a context length of 1 million tokens, outperforming existing models in terms of context size.\n-  MiniMax-M1 demonstrates superior test-time compute efficiency compared to DeepSeek R1, consuming only 25% of the FLOPs at a generation length of 100K tokens.\n- A novel reinforcement learning algorithm, CISPO, is proposed to further enhance training efficiency, enabling full RL training within three weeks on 512 H800 GPUs. \n- Experiments show MiniMax-M1 achieves competitive or superior results to other leading models across various benchmarks, particularly excelling in complex software engineering, tool utilization, and long-context tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MiniMax-AI/MiniMax-M1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Scientists' First Exam: Probing Cognitive Abilities of MLLM via\n  Perception, Understanding, and Reasoning",
+        "authors": "Ruoyao Xiao, Xuming He, Yiheng Wang, Yuhao Zhou, WilsonHwang",
+        "link": "https://arxiv.org/abs/2506.10521",
+        "github_repo": null,
+        "summary": " - This paper introduces a new benchmark, Scientists' First Exam (SFE), designed to evaluate the scientific cognitive abilities of Multimodal Large Language Models (MLLMs). \n- The benchmark comprises 830 expert-verified VQA pairs across three cognitive levels (perception, understanding, and reasoning), covering 66 multimodal tasks across five high-value disciplines. \n- Experiments show that state-of-the-art models like GPT-03 and InternVL-3 achieve low scores (34.08% and 26.52% respectively), highlighting significant room for improvement. \n- SFE categorizes scientific tasks by cognitive capacity, introducing a three-level taxonomy, and releases bilingual (English & Chinese) tasks constructed from native scientific data formats. \n- The benchmark reveals performance gaps across disciplines and model types, indicating potential shifts in MLLM capabilities from knowledge understanding to high-order reasoning.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/PrismaX/SFE"
+        ],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents",
+        "authors": "Zhendong Mao, Xiaorui Wang, Benfeng Xu, IgnoraZ, Ayanami0730",
+        "link": "https://arxiv.org/abs/2506.11763",
+        "github_repo": "https://github.com/Ayanami0730/deep_research_bench",
+        "summary": "This paper introduces DeepResearch Bench, a new benchmark for evaluating Deep Research Agents (DRAs).  The benchmark contains 100 PhD-level research tasks across 22 distinct fields.  Two novel evaluation methodologies, RACE and FACT, are proposed to assess report quality and information retrieval capabilities, respectively.  The benchmark outperforms existing methods by achieving strong alignment with human judgment through reference-based scoring and adaptive criteria.  The code and benchmark are open-sourced to foster the development of practical LLM-based agents.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/Ayanami0730/deep_research_bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "DoTA-RAG: Dynamic of Thought Aggregation RAG",
+        "authors": "Peerawat Rojratchadakorn, Natthapath Rungseesiripak, natnitaract, montholscbx, saksornr",
+        "link": "https://arxiv.org/abs/2506.12571",
+        "github_repo": null,
+        "summary": "- DoTA-RAG, a Retrieval-Augmented Generation system optimized for high throughput and large-scale web knowledge indexes, is introduced in this paper.\n- It addresses challenges of traditional RAG pipelines (high latency and limited accuracy) using a three-stage pipeline: query rewriting, dynamic routing to specialized sub-indexes, and multi-stage retrieval and ranking.\n- DoTA-RAG improves the answer correctness score from 0.752 (baseline) to 1.478 while maintaining low latency and achieves a 0.929 correctness score on the Live Challenge Day.\n- The system is evaluated using a diverse Q&A dataset of 500 questions generated via the DataMorgana setup.\n- Results demonstrate DoTA-RAG\u2019s potential for practical deployment in domains requiring fast and reliable access to large and evolving knowledge sources.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
+        "authors": "Yuhao Dong, Penghao Wu, Hongming Guo, ruiqiw, shulin16",
+        "link": "https://arxiv.org/abs/2506.13654",
+        "github_repo": null,
+        "summary": "- Ego-R1 is a novel framework for ultra-long egocentric video reasoning that uses a Chain-of-Tool-Thought (CoTT) process.- The model dynamically selects and executes specialized perception tools based on observed content and sub-questions.- Ego-R1 is trained via a two-stage process: supervised finetuning (SFT) and reinforcement learning (RL). - The model outperforms existing methods on multiple benchmarks, extending the time coverage from hours to a week.- The dynamic tool-calling mechanism enables scalable reasoning over ultra-long videos.",
+        "classification": [
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://egolife-ai.github.io/Ego-R1/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Wait, We Don't Need to \"Wait\"! Removing Thinking Tokens Improves\n  Reasoning Efficiency",
+        "authors": "Ranjay Krishna, Zhaoyang Chu, Dongping Chen, Yuanning Feng, Chenlong Wang",
+        "link": "https://arxiv.org/abs/2506.08343",
+        "github_repo": null,
+        "summary": "- This paper introduces NOWAIT, a training-free method that improves the efficiency of large reasoning models (LRMs) by suppressing self-reflection tokens like \"Wait\" and \"Hmm\" during inference.\n- NOWAIT reduces the chain-of-thought (CoT) trajectory length by 27%-51% across ten benchmarks spanning textual, visual, and video reasoning tasks without compromising model utility.\n- The method demonstrates consistent improvements across five R1-style model series and various reasoning tasks, showcasing its generalizability.\n- Experimental results show that NOWAIT outperforms existing training-free approaches such as Token-Budget while achieving comparable or even better accuracy than training-based methods like 01-Pruner.\n- The authors conclude that explicit self-reflection is not essential for advanced reasoning and that NOWAIT provides a plug-and-play solution for efficient and utility-preserving multimodal reasoning.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Discrete Diffusion in Large Language and Multimodal Models: A Survey",
+        "authors": "Xinchao Wang, Qi Li, Runpeng Yu",
+        "link": "https://arxiv.org/abs/2506.13759",
+        "github_repo": "https://github.com/LiQiiiii/DLLM-Survey",
+        "summary": "This survey paper provides a comprehensive overview of Discrete Diffusion Language Models (dLLMs) and Discrete Diffusion Multimodal Language Models (dMLLMs).  It systematically analyzes the mathematical foundations, model architectures, training strategies, and inference techniques used in this emerging field.  The authors categorize representative models, highlighting their capabilities and limitations compared to autoregressive approaches.  Finally, the paper concludes by discussing future research directions and potential applications across various domains.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/LiQiiiii/DLLM-Survey"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "TaskCraft: Automated Generation of Agentic Tasks",
+        "authors": "Weizhen Li, Weichen Sun, Qianben Chen, Jingyi Cao, Dingfeng Shi",
+        "link": "https://arxiv.org/abs/2506.10055",
+        "github_repo": null,
+        "summary": "- This paper introduces TaskCraft, an automated workflow for generating agentic tasks (tasks requiring multi-step problem-solving with autonomy, tool use, and adaptive reasoning) with execution trajectories.\n- TaskCraft addresses the limitations of existing instruction data by automatically generating difficulty-scalable, multi-tool, and verifiable tasks.\n- The workflow uses depth-based and width-based extensions to create structurally and hierarchically complex tasks, improving prompt optimization and supervised fine-tuning of agentic foundation models.\n- Experiments demonstrate that the generated tasks improve performance on various benchmarks, including HotpotQA, Musique, and Bamboogle.\n- TaskCraft provides a large-scale synthetic dataset (approximately 36,000 tasks) with varying difficulty to support future research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/OPPO-PersonalAI/TaskCraft"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "VGR: Visual Grounded Reasoning",
+        "authors": "Haiyong Jiang, Haochen Wang, Zijiang Kang, bongbohong, stormthunder",
+        "link": "https://arxiv.org/abs/2506.11991",
+        "github_repo": null,
+        "summary": "- This paper introduces VGR, a novel multimodal large language model (MLLM) designed for visual grounded reasoning.\n- VGR enhances fine-grained visual perception by first detecting relevant image regions and then incorporating them into the reasoning process using a selective visual replay mechanism.\n- The model was trained on a new large-scale dataset called VGR-SFT containing reasoning data with mixed vision grounding and language deduction.\n- Experimental results on various multimodal benchmarks demonstrate that VGR outperforms the baseline LLaVA-NeXT-7B by significant margins while using only 30% of the image tokens.\n- VGR's self-driven selective visual replay method improves both accuracy and interpretability of multi-modal reasoning.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/BytedanceDouyinContent/VGR"
+        ],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "PersonaFeedback: A Large-scale Human-annotated Benchmark For\n  Personalization",
+        "authors": "Yuchen Eleanor Jiang, Tiannan Wang, Dongyi Ding, Chenghao Zhu, Meiling Tao",
+        "link": "https://arxiv.org/abs/2506.12915",
+        "github_repo": null,
+        "summary": "- This paper introduces PERSONAFEEDBACK, a new large-scale human-annotated benchmark dataset for evaluating the personalization capabilities of large language models (LLMs).\n- The dataset consists of 8298 human-annotated test cases categorized into easy, medium, and hard tiers based on the complexity of user personas and the difficulty of distinguishing between personalized responses.\n- PERSONAFEEDBACK decouples persona inference from personalization, focusing on evaluating the model's ability to generate responses tailored to explicit personas, unlike existing benchmarks.\n- Empirical results show that even state-of-the-art LLMs struggle with the harder tasks in PERSONAFEEDBACK, highlighting the challenges in LLM personalization.\n- All benchmark data, annotation protocols, and evaluation pipeline are publicly available to facilitate future research on LLM personalization.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/PersonalAILab/PersonaFeedback"
+        ],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "From Real to Synthetic: Synthesizing Millions of Diversified and\n  Complicated User Instructions with Attributed Grounding",
+        "authors": "Zhendong Mao, Xiaorui Wang, Benfeng Xu, IgnoraZ",
+        "link": "https://arxiv.org/abs/2506.03968",
+        "github_repo": "https://github.com/Ignoramus0817/SynthQuestions",
+        "summary": "- This paper introduces a novel framework for synthesizing a large-scale dataset of diverse and complex user instructions with attributed grounding.\n- The framework utilizes a top-down attribution process, grounding real instructions to users and motivations, and a bottom-up synthesis process, leveraging web documents to generate instructions.\n- A dataset of 1 million instructions, called SYNTHQUESTIONS, is constructed using this framework.\n- Models trained on SYNTHQUESTIONS achieve state-of-the-art performance on several common benchmarks, outperforming models trained on datasets 10 times larger.\n- The improvements continually scale with the addition of more web corpora.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Ignoramus0817/SynthQuestions"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Test3R: Learning to Reconstruct 3D at Test Time",
+        "authors": "Xinchao Wang, Xingyi Yang, Shizun Wang, Yuheng Yuan, florinshum",
+        "link": "https://arxiv.org/abs/2506.13750",
+        "github_repo": "https://github.com/nopQAQ/Test3R",
+        "summary": "- Test3R is a novel test-time learning technique that significantly improves the accuracy of 3D reconstruction by maximizing cross-pair consistency between reconstructions generated from different image pairs.\n- It addresses the limitations of pairwise prediction methods by using image triplets to generate reconstructions and optimizing a self-supervised objective that enforces geometric consistency.\n- Experimental results demonstrate that Test3R significantly outperforms previous state-of-the-art methods on 3D reconstruction and multi-view depth estimation tasks.\n- Test3R is universally applicable and nearly cost-free, requiring minimal test-time training overhead and parameter footprint, making it easily adaptable to other models.\n- The technique uses prompt tuning to optimize the network at test time, making it efficient and effective.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/nopQAQ/Test3R"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "BridgeVLA: Input-Output Alignment for Efficient 3D Manipulation Learning\n  with Vision-Language Models",
+        "authors": "Xiangnan Wu, Xiao Ma, Hongtao Wu, Yixiang Chen, LPY",
+        "link": "https://arxiv.org/abs/2506.07961",
+        "github_repo": null,
+        "summary": " - BridgeVLA is a novel 3D vision-language-action model that improves the sample efficiency of 3D manipulation learning by aligning the input and output spaces within a unified 2D image space.\n - It uses a two-stage training process: first pre-training the vision-language model (VLM) to predict 2D heatmaps for object grounding, and then fine-tuning it for action prediction in 3D manipulation tasks.\n - BridgeVLA outperforms state-of-the-art baseline methods in three simulation benchmarks (RLBench, COLOSSEUM, and GemBench) and achieves a success rate of 96.8% on 10+ tasks with only 3 trajectories per task in real-robot experiments.\n - The model demonstrates strong generalization capabilities in out-of-distribution settings, including visual disturbances and unseen instructions.\n - Its efficiency is highlighted by its ability to achieve high success rates with a limited number of training trajectories.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://bridgevla.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Language Surgery in Multilingual Large Language Models",
+        "authors": "Muhammad Ilham Ghozali, samuel-cahyawijaya, tackhwa, muhammadravi251001, joanitolopo",
+        "link": "https://arxiv.org/abs/2506.12450",
+        "github_repo": null,
+        "summary": "This paper introduces Inference-Time Language Control (ITLC), a novel method for enhancing cross-lingual performance in large language models (LLMs).\nITLC leverages the naturally emerging representation alignment in the middle layers of LLMs to disentangle language-specific and language-agnostic information, enabling precise language control without semantic degradation.\nExperiments demonstrate ITLC's effectiveness in zero-shot cross-lingual language generation and mitigating language confusion.\nThe approach outperforms existing methods in both tasks, showcasing its potential for improving cross-lingual capabilities of LLMs.\nITLC is a practical solution for enhancing cross-lingual performance in LLMs and provides a better understanding of representation alignment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/SEACrowd/itlc"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "AI Agent Behavioral Science",
+        "authors": "Honglin Zhang, Haoye Chai, Yunke Zhang, Lin Chen, JJ-TMT",
+        "link": "https://arxiv.org/abs/2506.06366",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel research paradigm: AI Agent Behavioral Science, which studies how AI agents act, adapt, and interact. \n- It proposes a framework for understanding individual AI agent behavior, emphasizing intrinsic attributes, environmental constraints, and behavioral feedback.\n- The paper examines emergent behaviors in multi-agent interactions, categorizing them into cooperative, competitive, and open-ended dynamics.\n- It discusses the behavioral roles of AI agents in human-agent interaction, such as companion, catalyst, and contender in cooperative settings and manipulator in competitive settings.\n- Finally, it addresses the importance of AI Agent Behavioral Science for responsible AI and proposes six promising research directions to further this new field.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "ALE-Bench: A Benchmark for Long-Horizon Objective-Driven Algorithm\n  Engineering",
+        "authors": "Kensho Aoki, Yoichi Iwata, Kohki Horie, Yuki Imajuku, iwiwi",
+        "link": "https://arxiv.org/abs/2506.09050",
+        "github_repo": null,
+        "summary": " - The paper introduces ALE-Bench, a new benchmark for evaluating AI systems in score-based algorithmic programming contests.\n - ALE-Bench presents computationally hard optimization problems with no known exact solutions, encouraging iterative solution refinement.\n - The benchmark uses real tasks from the AtCoder Heuristic Contest, allowing for comparisons with human contestants' performance.\n - ALE-Bench provides a software framework to support interactive agent architectures leveraging test-run feedback.\n - An evaluation of frontier LLMs revealed that they still have a notable gap in consistency and long-horizon problem-solving compared to humans.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SakanaAI/ALE-Bench"
+        ],
+        "huggingface_urls": [
+            "hf.co/datasets/SakanaAI/ALE-Bench"
+        ],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "LETS Forecast: Learning Embedology for Time Series Forecasting",
+        "authors": "Yin Li, Nada Magdi Elkordi, Satya Sai Srinath Namburi GNVV, viswa-98, alphaomeaga",
+        "link": "https://arxiv.org/abs/2506.06454",
+        "github_repo": null,
+        "summary": "DeepEDM is a novel framework that integrates nonlinear dynamical systems modeling with deep neural networks for time series forecasting.\nThe model learns a latent space from time-delayed embeddings using a learned encoder and employs kernel regression with softmax attention to approximate the underlying dynamics.\nDeepEDM outperforms state-of-the-art methods in forecasting accuracy, particularly in noisy and chaotic systems. It addresses the limitations of EDM by being robust to noise, generalizing across sequences, and allowing for longer forecasting horizons.\nExtensive experiments on synthetic and real-world datasets demonstrate its effectiveness and robustness.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://abrarmajeedi.github.io/deep_edm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Supernova Event Dataset: Interpreting Large Language Model's Personality\n  through Critical Event Analysis",
+        "authors": "Ioana Ciuc\u0103, pranavAL2109",
+        "link": "https://arxiv.org/abs/2506.12189",
+        "github_repo": null,
+        "summary": " - This paper introduces the Supernova Event Dataset, a new dataset for evaluating LLMs' ability to extract and rank critical events from various text types.\n - The dataset consists of Wikipedia articles on biographies, news events, historical events, and scientific discoveries.\n - A novel framework is proposed where one LLM acts as a judge, evaluating other LLMs' personality based on their event selection and ranking.\n - The authors find distinct personality traits across different LLMs, showing how models prioritize events based on their underlying reasoning styles.\n - This work helps improve LLM interpretability and provides a valuable tool for further research on LLM personality and alignment.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Forecasting Time Series with LLMs via Patch-Based Prompting and\n  Decomposition",
+        "authors": "Anish Gupta, Sri Harsha Vardhan Prasad Jella, Anshul Vemulapalli, Mayank Bumb, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2506.12953",
+        "github_repo": null,
+        "summary": "- This paper introduces PatchInstruct, a novel prompt-based framework that leverages LLMs for precise and efficient time series forecasting without extensive retraining or complex external architectures.\n- PatchInstruct utilizes a patch-based tokenization strategy that decomposes time series data into meaningful segments to improve forecasting accuracy.\n- The method enhances forecasting by incorporating time series decomposition and similarity-based neighbor augmentation, which allows LLMs to model temporal dependencies and inter-series correlations.\n- PatchInstruct consistently outperforms baselines across small forecasting horizons and various datasets, significantly reducing the inference overhead.\n- Empirical evaluation on real-world datasets demonstrates that PatchInstruct achieves higher forecasting accuracy and efficiency compared to existing LLM-based methods.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "MS4UI: A Dataset for Multi-modal Summarization of User Interface\n  Instructional Videos",
+        "authors": "Jiuxiang Gu, Seunghyun Yoon, Hao Tan, Yuan Zang, Franck-Dernoncourt",
+        "link": "https://arxiv.org/abs/2506.12623",
+        "github_repo": null,
+        "summary": "- This paper introduces MS4UI, a new dataset for multi-modal summarization of user interface (UI) instructional videos.\n- The dataset contains 2,413 videos totaling 167 hours, manually annotated for video segmentation, text summarization, and video summarization.\n- Three core tasks are proposed: video segmentation, text summarization, and video summarization, focusing on generating concise and executable step-by-step instructions and illustrations.\n- Experiments show that existing multi-modal summarization methods struggle with UI video summarization, highlighting the need for new methods tailored to this domain.\n- The dataset includes key frame annotations to illustrate actions and ensure executability of the generated summaries.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Summarization",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Profiling News Media for Factuality and Bias Using LLMs and the\n  Fact-Checking Methodology of Human Experts",
+        "authors": "Preslav Nakov, Maha Tufail Agro, Dilshod Azizov, Zain Muhammad Mujahid",
+        "link": "https://arxiv.org/abs/2506.12552",
+        "github_repo": "https://github.com/mbzuai-nlp/llm-media-profiling",
+        "summary": "- This paper introduces a novel methodology for assessing the factuality and political bias of news media outlets using Large Language Models (LLMs).\n- The methodology leverages various prompts designed to emulate the criteria used by human fact-checkers, eliciting responses from LLMs and aggregating them to make predictions.\n- Experiments demonstrate significant improvements over strong baselines, showcasing the effectiveness of the proposed approach in predicting both factuality and political bias.\n- An in-depth error analysis reveals the impact of media popularity and region on model performance, highlighting biases towards popular and U.S.-based outlets.\n- The study also includes an ablation study to identify the crucial components of the dataset that contribute to the improved performance.",
+        "classification": [
+            "Text Classification",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/mbzuai-nlp/llm-media-profiling"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "SRLAgent: Enhancing Self-Regulated Learning Skills through Gamification\n  and LLM Assistance",
+        "authors": "Weiyang He, Haoyue Zheng, Ziyan Wang, Yuqing Sun, Owenngt",
+        "link": "https://arxiv.org/abs/2506.09968",
+        "github_repo": null,
+        "summary": "- This paper introduces SRLAgent, a system designed to enhance self-regulated learning (SRL) skills in college students using gamification and large language model (LLM) assistance.\n- SRLAgent is built on the Minecraft platform and guides students through goal-setting, strategy execution, and self-reflection using a three-phase SRL framework.\n- The system uses LLMs to provide real-time feedback and adaptive support to students, fostering independent study efforts.\n- Experiments with 59 college students showed significant improvements in SRL skills within the SRLAgent group compared to control groups, suggesting the effectiveness of integrating SRL scaffolding and real-time AI support within gamified environments.\n- The findings contribute to the fields of educational technology and human-computer interaction (HCI), offering design implications for educational technologies aiming to promote deeper learning and metacognitive skill development.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Incorporating Domain Knowledge into Materials Tokenization",
+        "authors": "SangKeun Lee, SungHo Kim, Junho Kim, Jun-Hyung Park, yerim0210",
+        "link": "https://arxiv.org/abs/2506.11115",
+        "github_repo": "https://github.com/yerimoh/MATTER",
+        "summary": "- This paper introduces MATTER, a novel tokenization framework that integrates domain knowledge into the tokenization process for materials science.\n- MATTER uses MatDetector, a material concept identifier trained on a corpus of material knowledge, to score material concepts and prioritize them during token merging.\n- Experimental results demonstrate that MATTER outperforms existing methods, achieving an average performance gain of 4% in generation tasks and 2% in classification tasks.\n- The key contributions include a novel domain-specific tokenization framework, a novel scheme for materials tokenization based on MatDetector, and a demonstration of MATTER's superior performance.\n- The results highlight the importance of incorporating domain knowledge into tokenization strategies for scientific text processing, particularly in specialized domains like materials science.",
+        "classification": [
+            "Natural Language Processing",
+            "Token Classification",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/yerimoh/MATTER"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Steering LLM Thinking with Budget Guidance",
+        "authors": "Chuang Gan, Yang Zhang, Wenshuo Zhao, Junyan Li",
+        "link": "https://arxiv.org/abs/2506.13752",
+        "github_repo": "https://github.com/UMass-Embodied-AGI/BudgetGuidance",
+        "summary": "- This paper introduces Budget Guidance, a novel method for controlling the reasoning length of LLMs without fine-tuning.\n- Budget Guidance employs a lightweight predictor that models a Gamma distribution over the remaining thinking length during token generation, guiding the LLM towards the target budget.\n- The method demonstrates significant improvements in token efficiency and accuracy on challenging math benchmarks compared to baseline methods, achieving up to a 26% accuracy gain under tight budgets.\n- Budget Guidance exhibits emergent capabilities such as estimating question difficulty and generalizes well to broader tasks.\n- The source code is available on GitHub.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/UMass-Embodied-AGI/BudgetGuidance"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Uncertainty-Aware Remaining Lifespan Prediction from Images",
+        "authors": "Barbara Hammer, Philip Kenneweg, TristanKe",
+        "link": "https://arxiv.org/abs/2506.13430",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for predicting remaining lifespan from images using pre-trained vision transformer models and robust uncertainty quantification.\n- The model achieves state-of-the-art mean absolute error (MAE) of 7.48 years on an established dataset and improves to 4.79 and 5.07 years MAE on two new, higher-quality datasets.\n- The approach models predictive uncertainty using a Gaussian distribution for each sample, demonstrating well-calibrated uncertainty estimates.\n- All code and datasets are publicly available to facilitate further research.\n- The method shows the potential of extracting medically relevant signals from images, highlighting the potential for accessible and scalable health screening.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/TKenneweg/RLPredictionWithUncertainty"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Ai-Facilitated Analysis of Abstracts and Conclusions: Flagging\n  Unsubstantiated Claims and Ambiguous Pronouns",
+        "authors": "PChemGuy",
+        "link": "https://arxiv.org/abs/2506.13172",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel methodology for using Large Language Models (LLMs) to perform high-level semantic and linguistic analysis of scholarly manuscripts.\n- The method employs structured workflow prompts to guide LLMs in identifying unsubstantiated claims and ambiguous pronoun references in abstracts and conclusions.\n- The proposed approach is evaluated on two state-of-the-art LLMs, Gemini Pro 2.5 Pro and ChatGPT Plus 03, under varied context conditions.\n- Results show significant divergence in model performance depending on the task and context, highlighting the need for rigorous, model-specific testing.\n- The findings suggest that structured prompting is a viable methodology for complex textual analysis, but model performance is highly dependent on the interplay between the model, task, and context.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "QGuard:Question-based Zero-shot Guard for Multi-modal LLM Safety",
+        "authors": "Yunho Maeng, Soo Yong Kim, Hyoungseo Cho, Jeonghwa Yoo, Taegyeong Lee",
+        "link": "https://arxiv.org/abs/2506.12299",
+        "github_repo": null,
+        "summary": "- QGuard is a novel zero-shot safety guard method for multi-modal LLMs that uses question prompting to effectively block harmful prompts.\n- The method defends against both text-based and multi-modal harmful prompts without requiring any fine-tuning, making it robust against the latest harmful prompts.\n- Experimental results show that QGuard performs competitively on both text-only and multi-modal harmful datasets, outperforming various baselines.\n- QGuard employs a white-box analysis of user inputs by analyzing the logits of question prompting, providing valuable insights into the decision-making process.\n- The proposed method is simple yet effective, making it suitable for real-world applications in mitigating security risks associated with harmful prompts.",
+        "classification": [
+            "Multimodal",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "EgoPrivacy: What Your First-Person Camera Says About You?",
+        "authors": "Xiaojun Shan, Yi Li, Jiacheng Cheng, Genpei Zhang, Yijiang Li",
+        "link": "https://arxiv.org/abs/2506.12258",
+        "github_repo": "https://github.com/williamium3000/ego-privacy",
+        "summary": "- This paper introduces EgoPrivacy, the first large-scale benchmark for evaluating privacy risks in egocentric vision, focusing on the privacy of the camera wearer.\n- EgoPrivacy defines seven tasks covering three types of privacy: demographic, individual, and situational, allowing for comprehensive evaluation of various attack models.\n- A novel attack strategy, Retrieval-Augmented Attack (RAA), is proposed, leveraging ego-to-exo retrieval to boost the effectiveness of demographic privacy attacks.\n- Extensive experiments demonstrate the high susceptibility of wearer privacy to leakage, even with zero-shot foundation models, highlighting significant privacy challenges in egocentric vision.\n- The benchmark and code are publicly available, facilitating further research in egocentric video privacy.",
+        "classification": [
+            "Computer Vision",
+            "Video Classification",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/williamium3000/ego-privacy"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    },
+    {
+        "title": "Hatevolution: What Static Benchmarks Don't Tell Us",
+        "authors": "Albert Mero\u00f1o-Pe\u00f1uela, Yulan He, Barbara McGillivray, Chiara Di Bonaventura",
+        "link": "https://arxiv.org/abs/2506.12148",
+        "github_repo": null,
+        "summary": "- This paper investigates the robustness of language models in the context of evolving hate speech.\n- The authors empirically evaluate 20 language models on two hate speech experiments that simulate the temporal dynamics of hate speech.\n- The findings reveal a significant temporal misalignment between static and time-sensitive evaluations, emphasizing the limitations of using static benchmarks for assessing language model safety.\n- The study advocates for incorporating time-sensitive linguistic benchmarks in the evaluation of hate speech models to ensure accurate and reliable assessments.\n- The paper's main contribution lies in demonstrating the limitations of static hate speech benchmarks and advocating for the development of more dynamic and time-sensitive evaluation methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ChiaraDiBonaventura/hatevolution/tree/main"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-17"
+    }
+]

@@ -1,0 +1,394 @@
+[
+    {
+        "title": "Scaling Test-time Compute for LLM Agents",
+        "authors": "Dehua Ma, Tianshun Xing, Siwei Wu, Hanhao Li, King Zhu",
+        "link": "https://arxiv.org/abs/2506.12928",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for scaling test-time compute for large language model (LLM) agents, improving their reasoning abilities.\n- The approach systematically explores various test-time scaling strategies, including parallel sampling, sequential revision, verification and merging, and rollout diversification.\n- Experimental results show significant performance improvements compared to baselines, demonstrating the effectiveness of test-time scaling for LLM agents.\n- Among the tested strategies, list-wise verification and merging methods and increasing diversified rollouts yield the best results.\n- The findings align with observations from previous test-time scaling research on LLMs, highlighting the potential for further advancements in this area.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/OPPO-PersonalAI/OAgents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "LongLLaDA: Unlocking Long Context Capabilities in Diffusion LLMs",
+        "authors": "Ziwei He, Qipeng Guo, Zengfeng Huang, Zhigeng Liu, Xiaoran Liu",
+        "link": "https://arxiv.org/abs/2506.14429",
+        "github_repo": null,
+        "summary": "- This paper introduces LongLLaDA, a training-free method for extending the context window of diffusion Large Language Models (LLMs).\n- LongLLaDA integrates LLaDA with NTK-based RoPE extrapolation to achieve this context extension, empirically validating the effectiveness of established extrapolation scaling laws for diffusion LLMs.\n- The study presents a systematic comparison of the long-context performance of diffusion LLMs and traditional autoregressive LLMs, identifying unique characteristics of diffusion LLMs such as stable perplexity during context extrapolation and a \"local perception\" phenomenon enabling successful retrieval from recent context segments.\n- LongLLaDA successfully extends context windows, showing that it maintains effective extrapolation up to a 6x extension in context length, without additional training.\n- The paper provides empirical benchmarks and theoretical insights into the long-context behavior of diffusion LLMs, crucial for future research in this area.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Reinforcement Learning with Verifiable Rewards Implicitly Incentivizes\n  Correct Reasoning in Base LLMs",
+        "authors": "Shengyu Ye, Zhijian Xu, Zihan Liu, Xumeng Wen, shun-zheng",
+        "link": "https://arxiv.org/abs/2506.14245",
+        "github_repo": null,
+        "summary": "This paper introduces a novel metric, CoT-Pass@K, for evaluating reinforcement learning with verifiable rewards (RLVR) for large language models (LLMs).  The metric addresses flaws in existing metrics by requiring both the reasoning chain of thought (CoT) and the final answer to be correct. The authors present a theoretical framework explaining how RLVR implicitly incentivizes logical integrity. Empirical results demonstrate that using CoT-Pass@K, RLVR consistently improves correct reasoning across various values of K, disproving previous hypotheses that RLVR simply re-weights reasoning paths without improving reasoning capacity. Analysis of training dynamics show that this improved reasoning emerges early in the training process and generalizes smoothly.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Stream-Omni: Simultaneous Multimodal Interactions with Large\n  Language-Vision-Speech Model",
+        "authors": "Yang Feng, Yan Zhou, Qingkai Fang, Shoutao Guo, Shaolei Zhang",
+        "link": "https://arxiv.org/abs/2506.13642",
+        "github_repo": "https://github.com/ictnlp/Stream-Omni",
+        "summary": "- This paper introduces Stream-Omni, a novel large language-vision-speech model designed for simultaneous multimodal interactions.\n- The model architecture employs an LLM backbone, aligning vision and speech modalities to text through sequence-dimension concatenation and CTC-based layer-dimension mapping respectively.\n- Stream-Omni demonstrates strong performance on various benchmarks, including visual understanding, speech interaction, and vision-grounded speech interaction tasks, often outperforming existing methods.\n- It achieves these results using only 23,000 hours of speech data, highlighting its efficient modality alignment.\n- The model simultaneously generates intermediate text outputs during speech interaction, providing a comprehensive multimodal user experience.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Speech",
+            "Automatic Speech Recognition",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ictnlp/Stream-Omni"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/ICTNLP/stream-omni-8b"
+        ],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Efficient Medical VIE via Reinforcement Learning",
+        "authors": "Chong Li, Chenglin Zhu, Lijun Liu, zhaocheng, lryyyy",
+        "link": "https://arxiv.org/abs/2506.13363",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for efficient medical visual information extraction (VIE) using reinforcement learning with verifiable rewards (RLVR).\n- The proposed RLVR framework addresses the challenges of domain-specific schemas and high annotation costs in medical VIE by using only 100 annotated samples.\n- The method incorporates a balanced precision-recall reward mechanism and innovative sampling strategies to enhance reasoning capabilities and reduce hallucinations.\n- The authors achieve state-of-the-art performance on medical VIE tasks by fine-tuning Qwen2.5-VL-7B with their RLVR method, significantly improving F1 score, precision, and recall.\n- Case studies demonstrate the effectiveness of reasoning during training and inference for VIE, highlighting the need for domain-specific optimization.",
+        "classification": [
+            "Reinforcement Learning",
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Reasoning with Exploration: An Entropy Perspective",
+        "authors": "Wayne Xin Zhao, Bo Dai, Xuekai Zhu, Shaohan Huang, daixuancheng",
+        "link": "https://arxiv.org/abs/2506.14758",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method to improve the exploration-exploitation balance in reinforcement learning for language models (LMs) by incorporating an entropy-based term into the advantage function.\n- The proposed method encourages longer and deeper reasoning chains in LMs, leading to significant performance gains on the Pass@K metric, which measures the probability of solving a problem within K attempts.\n- The approach is minimal, requiring only one line of code to integrate into existing RL training pipelines, and is compatible with various RL algorithms.\n- Experimental results on multiple benchmarks demonstrate consistent improvements in both average accuracy and Pass@K performance, even with extremely large K values.\n- The method effectively addresses the issue of performance plateaus often encountered in LMs that tend to over-optimize and converge on narrow solutions.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Xolver: Multi-Agent Reasoning with Holistic Experience Learning Just\n  Like an Olympiad Team",
+        "authors": "Md Rizwan Parvez, Md Kishor Morol, Salman Rahman, Md Tanzib Hosain",
+        "link": "https://arxiv.org/abs/2506.14234",
+        "github_repo": null,
+        "summary": "This paper introduces Xolver, a training-free multi-agent reasoning framework that enhances large language models (LLMs) by incorporating a persistent memory of holistic experiences.  Xolver integrates diverse experience modalities, including external and self-retrieval, tool use, collaborative agent interactions, agent-driven evaluation, and iterative reasoning refinement.  Empirical results demonstrate that Xolver consistently outperforms specialized reasoning agents and achieves state-of-the-art results on several benchmarks, including GSM8K, AIME'24, and LiveCodeBench.  The authors attribute Xolver's success to its holistic experience learning approach, which allows it to leverage past experiences to inform future reasoning. Xolver is open-sourced.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://kagnlp.github.io/xolver.github.io/"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "QFFT, Question-Free Fine-Tuning for Adaptive Reasoning",
+        "authors": "Ke Ji, Yukang Lin, Fei Yu, Junxiao Xu, lwl-uestc",
+        "link": "https://arxiv.org/abs/2506.12860",
+        "github_repo": null,
+        "summary": "- This paper introduces Question-Free Fine-Tuning (QFFT), a novel fine-tuning approach that removes the input question during training to enable adaptive reasoning in language models.\n- QFFT learns exclusively from Long Chain-of-Thought (CoT) responses, allowing the model to adaptively switch between Short CoT and Long CoT patterns based on the complexity of the question.\n- Experiments on mathematical datasets demonstrate that QFFT reduces the average response length by over 50% while maintaining performance comparable to Supervised Fine-Tuning (SFT).\n- QFFT exhibits superior performance compared to SFT in noisy, out-of-domain, and low-resource scenarios.\n- The QFFT method is publicly available on GitHub.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LWL-cpu/Question-Free-Fine-Tuning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Can LLMs Generate High-Quality Test Cases for Algorithm Problems?\n  TestCase-Eval: A Systematic Evaluation of Fault Coverage and Exposure",
+        "authors": "Xue Xia, Zexi Kuang, Zheyuan Yang, yilunzhao",
+        "link": "https://arxiv.org/abs/2506.12278",
+        "github_repo": null,
+        "summary": "- This paper introduces TestCase-Eval, a new benchmark for evaluating LLMs' ability to generate high-quality test cases for algorithm problems.\n- The benchmark comprises 500 algorithm problems and 100,000 human-crafted solutions from the Codeforces platform, focusing on two tasks: Fault Coverage and Fault Exposure.\n- A comprehensive evaluation of 19 state-of-the-art LLMs on TestCase-Eval reveals that even top-performing models significantly underperform compared to human experts in the Fault Exposure task (43.8% vs. 93.3%).\n- The study provides valuable insights into LLMs' strengths and limitations in generating effective test cases, highlighting the challenges in achieving human-level performance.\n- The findings underscore the inherent difficulty of generating diverse, impactful test cases that can effectively expose subtle bugs in algorithm implementations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/FlowRays/TestCase-Eval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Guaranteed Guess: A Language Modeling Approach for CISC-to-RISC\n  Transpilation with Testing Guarantees",
+        "authors": "Abdulrahman Mahmoud, Celine Lee, Chaimaa Abi, Ahmed Heakl, Sarim-Hash",
+        "link": "https://arxiv.org/abs/2506.14606",
+        "github_repo": null,
+        "summary": "- This paper introduces Guaranteed Guess (GG), a novel approach for CISC-to-RISC transpilation that leverages large language models (LLMs) and rigorous software testing.\n- GG combines the translation capabilities of pre-trained LLMs with a software testing framework to ensure high code coverage and accuracy.\n- The method achieves 99% accuracy on HumanEval programs and 49% on BringupBench programs, outperforming state-of-the-art methods.\n- GG demonstrates 1.73x faster runtime, 1.47x better energy efficiency, and 2.41x better memory usage compared to Rosetta 2.\n- The authors will open-source their code, data, models, and benchmarks to foster further research in ISA-level code translation.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [
+            "https://ahmedheakl.github.io/Guaranteed-Guess/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Align Your Flow: Scaling Continuous-Time Flow Map Distillation",
+        "authors": "Karsten Kreis, Sanja Fidler, Amirmojtaba Sabour",
+        "link": "https://arxiv.org/abs/2506.14603",
+        "github_repo": null,
+        "summary": " - This paper introduces Align Your Flow (AYF), a novel continuous-time flow map distillation method for training efficient few-step image generators.\n - AYF generalizes existing consistency models and flow matching methods and outperforms state-of-the-art methods on challenging benchmarks like ImageNet 64x64 and 512x512.\n - The method uses two new continuous-time objectives for training flow maps and incorporates autoguidance for distillation to boost performance.\n - AYF also achieves state-of-the-art performance on challenging text-to-image generation benchmarks.\n - The authors demonstrate that adversarial finetuning can further improve the quality of AYF models without sacrificing diversity.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language\n  Models in Tool-Calling Error Scenarios",
+        "authors": "Junjie Ye, Siyu Yuan, Zehui Chen, Shiting Huang, CostaliyA",
+        "link": "https://arxiv.org/abs/2506.13977",
+        "github_repo": "https://github.com/Shellorley0513/CriticTool",
+        "summary": "This paper introduces CRITICTOOL, a new benchmark designed to evaluate the self-critique capabilities of Large Language Models (LLMs) in tool-calling scenarios.  CRITICTOOL includes diverse error patterns and evaluates models from multiple perspectives, addressing limitations in existing benchmarks. The proposed evolutionary strategy for dataset construction improves the diversity and realism of the benchmark, better reflecting real-world scenarios.  Extensive experiments on CRITICTOOL reveal insights into LLMs' self-critique abilities and highlight performance differences across various models.  The code for the benchmark is publicly available.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Shellorley0513/CriticTool"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "xbench: Tracking Agents Productivity Scaling with Profession-Aligned\n  Real-World Evaluations",
+        "authors": "Haotong Tian, Xiaobo Hu, Yang Liu, Yixin Ren, Kaiyuan Chen",
+        "link": "https://arxiv.org/abs/2506.13651",
+        "github_repo": null,
+        "summary": "- This paper introduces xbench, a dynamic evaluation suite designed to assess AI agents' real-world productivity in professional settings, bridging the gap between isolated technical skills and actual economic value.\n- xbench focuses on commercially significant domains like recruitment and marketing, defining evaluation tasks based on industry professional needs and creating metrics strongly correlated with productivity.\n- The suite includes benchmarks for recruitment (evaluating company mapping, information retrieval, and talent sourcing) and marketing (assessing influencer matching abilities).\n- Initial evaluation results for contemporary agents establish a baseline for these professional domains, highlighting the performance of models like 03 which showcases strong capabilities in end-to-end reinforcement learning.\n- xbench's continuously updated evaluations are publicly available, facilitating ongoing assessment and tracking of agent progress and competition.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Taming Polysemanticity in LLMs: Provable Feature Recovery via Sparse\n  Autoencoders",
+        "authors": "Zhuoran Yang, Tianhao Wang, Xuyuan Xiong, Heejune Sheen, Siyu Chen",
+        "link": "https://arxiv.org/abs/2506.14002",
+        "github_repo": null,
+        "summary": " - A novel statistical framework is proposed to address the feature recovery problem for Large Language Models (LLMs), which models polysemantic features as sparse mixtures of underlying monosemantic features. \n- A new SAE training algorithm called Group Bias Adaptation (GBA) is introduced, which uses bias adaptation to directly control neuron activation sparsity. \n- GBA achieves superior empirical performance on LLMs with up to 1.5 billion parameters compared to existing methods, achieving the sparsity-loss frontier. \n- The proposed method provides the first provable recovery guarantee for SAE training algorithms. \n- The theoretical findings are validated through experiments on synthetic and real-world data.",
+        "classification": [
+            "Feature Extraction",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "EfficientVLA: Training-Free Acceleration and Compression for\n  Vision-Language-Action Models",
+        "authors": "Chang Zou, Luo Zhongwei, Zichen Wen, Yuhao Wang, Yantai Yang",
+        "link": "https://arxiv.org/abs/2506.10100",
+        "github_repo": null,
+        "summary": "- This paper introduces EfficientVLA, a novel training-free framework to accelerate Vision-Language-Action (VLA) models.\n- EfficientVLA integrates three key strategies: pruning redundant layers from the language module, optimizing the visual processing pathway, and alleviating temporal redundancy in the action head.\n- When applied to the CogACT model, EfficientVLA achieves a 1.93x inference speedup and reduces FLOPs to 28.9%, with only a 0.6% drop in success rate on the SIMPLER benchmark.\n- The proposed method outperforms existing acceleration techniques by holistically addressing computational and memory bottlenecks across the entire VLA pipeline.\n- EfficientVLA is a structured and training-free approach, making it readily applicable to various pre-trained VLA models without the need for retraining.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "VideoMolmo: Spatio-Temporal Grounding Meets Pointing",
+        "authors": "Zhiqiang Shen, Abdelrahman Shaker, Hanan Gani, Ghazi Shazan Ahmad, ahmedheakl",
+        "link": "https://arxiv.org/abs/2506.05336",
+        "github_repo": "https://github.com/mbzuai-oryx/VideoMolmo",
+        "summary": "- This paper introduces VIDEOMOLMO, a large multimodal model for spatio-temporal grounding that improves upon existing methods by decomposing the task into two steps: precise point localization and sequential mask fusion.\n- The model architecture incorporates a temporal module using an attention mechanism for temporal consistency and a novel temporal mask fusion pipeline using SAM2 for bidirectional point propagation.\n- VIDEOMOLMO demonstrates improved spatio-temporal reasoning in visual grounding, producing more accurate and coherent segmentation masks compared to previous approaches, as shown in Figure 1.\n- The model was trained and evaluated on a new dataset curated by the authors, including a comprehensive dataset of 72k video-caption pairs annotated with 100k object points and a challenging out-of-distribution benchmark called VPoS-Bench.\n- Results on various benchmarks (VPoS-Bench, Refer-VOS, Reason-VOS) show that VIDEOMOLMO substantially improves spatio-temporal pointing accuracy and reasoning capability compared to existing methods.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Mask Generation",
+            "Keypoint Detection"
+        ],
+        "github_urls": [
+            "https://github.com/mbzuai-oryx/VideoMolmo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Ambient Diffusion Omni: Training Good Models with Bad Data",
+        "authors": "Constantinos Daskalakis, Antonio Torralba, Adam Klivans, Giannis Daras, adrianrm",
+        "link": "https://arxiv.org/abs/2506.10038",
+        "github_repo": null,
+        "summary": "\n- This paper introduces Ambient Diffusion Omni, a novel framework that leverages low-quality, synthetic, and out-of-distribution images to improve the quality of diffusion models. \n- It utilizes two key properties of natural images: spectral power law decay and locality to train diffusion models more effectively. \n- The framework is validated through experiments on ImageNet, achieving state-of-the-art results in terms of FID and showing significant improvements in image quality and diversity. \n- A theoretical justification for the approach is also provided, analysing the trade-off between learning from biased and limited unbiased data. \n- The code and trained models are available at https://github.com/giannisdaras/ambient-omni",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/giannisdaras/ambient-omni"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Optimizing Length Compression in Large Reasoning Models",
+        "authors": "Mingyang Fu, Dongping Chen, Zhengxiang Cheng, zhoutianyi",
+        "link": "https://arxiv.org/abs/2506.14755",
+        "github_repo": "https://github.com/zxiangx/LC-R1",
+        "summary": "- This paper introduces LC-R1, a post-training method that optimizes length compression in large reasoning models by addressing the issue of \"invalid thinking.\" \n- LC-R1 employs a novel dual-reward system comprising a Length Reward for overall conciseness and a Compress Reward to remove redundant reasoning steps. \n- Experiments on multiple reasoning benchmarks demonstrate that LC-R1 achieves significant sequence length reduction (~50%) with only a marginal accuracy drop (~2%), showcasing a favorable trade-off between efficiency and efficacy. \n- Ablation studies validate the contributions of both rewards, and analysis confirms the robustness of LC-R1 across various problem difficulties. \n- This approach contributes valuable insights for developing more computationally efficient large reasoning models.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zxiangx/LC-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Ring-lite: Scalable Reasoning via C3PO-Stabilized Reinforcement Learning\n  for LLMs",
+        "authors": "Ding Liu, Deng Zhao, Cai Chen, Bin Hu, Ring Team",
+        "link": "https://arxiv.org/abs/2506.14731",
+        "github_repo": null,
+        "summary": "- This paper introduces Ring-lite, a Mixture-of-Experts (MoE)-based large language model optimized for efficient and robust reasoning capabilities.\n- The model matches the performance of state-of-the-art small-scale reasoning models on challenging benchmarks while activating only one-third of the parameters.\n- A novel approach called Constrained Contextual Computation Policy Optimization (C3PO) is introduced to enhance training stability and improve computational throughput.\n- The study demonstrates that selecting distillation checkpoints based on entropy loss yields superior performance-efficiency trade-offs.\n- Ring-lite is a fully open-source model, including the model, dataset, and code.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/Ring"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/inclusionAI/Ring-lite"
+        ],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Treasure Hunt: Real-time Targeting of the Long Tail using Training-Time\n  Markers",
+        "authors": "Sara Hooker, Ahmet \u00dcst\u00fcn, Adrien Morisot, Julia Kreutzer, Daniel D'souza",
+        "link": "https://arxiv.org/abs/2506.14702",
+        "github_repo": null,
+        "summary": "This paper introduces a novel approach to improve the performance of large language models (LLMs) on low-frequency tasks.  The method involves introducing training-time markers that capture various data characteristics. These markers allow for flexible control over generation attributes and improved performance, especially on long-tail data. The authors demonstrate substantial improvements in win rates on open-ended generation tasks, achieving an average lift of 5.7% and gains exceeding 9.1% in underrepresented domains.  Their method shows effectiveness on various tasks such as code generation and length instruction following, with relative improvements up to 14.1%. The introduced framework is flexible and optional at inference time, since the markers can be inferred accurately.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "None"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic\n  Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise\n  Pooled Representations",
+        "authors": "Utkarsh Bhatt, Danush Khanna, Chhavi Sharma, Abhilekh Borah, amanchadha",
+        "link": "https://arxiv.org/abs/2506.13901",
+        "github_repo": null,
+        "summary": " - The paper introduces a novel intrinsic metric called Alignment Quality Index (AQI) to diagnose large language model (LLM) alignment.  \n- AQI assesses alignment by analyzing the latent geometry of safe and unsafe activations, unlike existing methods that rely on behavioral proxies. \n- The method leverages layerwise pooled representations and cluster quality indices such as Davies-Bouldin and Calinski-Harabasz to detect hidden misalignments and jailbreak risks, even when outputs appear compliant. \n- The experimental evaluation on LITMUS dataset demonstrates that AQI correlates strongly with external human judgments and is robust to decoding variation and prompt paraphrasing. \n- Unlike other metrics, AQI provides insights into latent model behaviour.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "CAMS: A CityGPT-Powered Agentic Framework for Urban Human Mobility\n  Simulation",
+        "authors": "Yong Li, Jian Yuan, Yuwei Du, JJ-TMT",
+        "link": "https://arxiv.org/abs/2506.13599",
+        "github_repo": null,
+        "summary": "- This paper introduces CAMS, a novel agentic framework for simulating human mobility in urban environments using CityGPT, an urban-foundation large language model.\n- CAMS comprises three core modules: MobExtractor, GeoGenerator, and TrajEnhancer, which work synergistically to generate realistic and plausible trajectories.\n- The model integrates urban spatial knowledge into the reasoning process of LLMs, enabling more accurate and generalizable simulations of human mobility.\n- Experiments on real-world datasets demonstrate that CAMS outperforms existing methods in terms of generating more realistic trajectories while not relying on external geospatial information.\n- CAMS establishes a new paradigm that integrates agentic frameworks with urban-knowledgeable LLMs for human mobility simulation.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Mixture-of-Experts Meets In-Context Reinforcement Learning",
+        "authors": "Daoyi Dong, Zican Hu, Haoru Li, Fuhong Liu, Wenhao0",
+        "link": "https://arxiv.org/abs/2506.05426",
+        "github_repo": "https://github.com/NJU-RL/T2MIR",
+        "summary": "- This paper introduces T2MIR, a novel framework that integrates mixture-of-experts (MoE) into transformer-based decision models for in-context reinforcement learning (ICRL).\n- T2MIR addresses the challenges of multi-modality and task diversity in ICRL by using a token-wise MoE to capture distinct semantics of input tokens and a task-wise MoE to route diverse tasks to specialized experts.\n- A contrastive learning method is introduced to enhance task-wise routing by maximizing the mutual information between the task and its router representation.\n- Comprehensive experiments demonstrate that T2MIR significantly improves in-context learning capacity and outperforms various baselines across multiple benchmark environments.\n- The code for T2MIR is publicly available on GitHub.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/NJU-RL/T2MIR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "TR2M: Transferring Monocular Relative Depth to Metric Depth with\n  Language Descriptions and Scale-Oriented Contrast",
+        "authors": "Hongliang Ren, Long Bai, Yiming Huang, Beilei Cui",
+        "link": "https://arxiv.org/abs/2506.13387",
+        "github_repo": "https://github.com/BeileiCui/TR2M",
+        "summary": "- This paper introduces TR2M, a novel framework that transfers monocular relative depth to metric depth using image and text descriptions.\n- The model architecture consists of separate frozen image and text encoders, a cross-modality attention module, and two lightweight decoder heads to predict scale and shift maps for pixel-wise rescaling.\n- A scale-oriented contrastive learning strategy is used to enforce feature consistency based on depth distribution, improving scale perception.\n- TR2M outperforms other language-based methods on several datasets and exhibits superior zero-shot capabilities on unseen datasets.\n- The authors demonstrate the potential of pixel-wise relative-to-metric depth transfer with language assistance.",
+        "classification": [
+            "Depth Estimation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/BeileiCui/TR2M"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "Universal Jailbreak Suffixes Are Strong Attention Hijackers",
+        "authors": "Mahmood Sharif, Mor Geva, MatanBT",
+        "link": "https://arxiv.org/abs/2506.12880",
+        "github_repo": "http://github.com/matanbt/interp-jailbreak",
+        "summary": "- This paper introduces a novel technique to enhance and mitigate suffix-based jailbreaks against large language models (LLMs).\n- The core contribution is the identification of a shallow, critical mechanism in GCG attacks, focusing on information flow from the adversarial suffix to the chat template tokens.\n- The authors quantify the dominance of the adversarial suffix in the contextualization process and link this to the universality of the attacks.\n- Practical implications are demonstrated by enhancing GCG universality (up to 5x in some cases) and surgically mitigating attacks (at least halving attack success).\n- Code and data are released for reproducibility.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "http://github.com/matanbt/interp-jailbreak"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    },
+    {
+        "title": "EMLoC: Emulator-based Memory-efficient Fine-tuning with LoRA Correction",
+        "authors": "Yu-Chiang Frank Wang, Kai-Po Chang, Yu-Chu Yu, Hsi-Che Lin",
+        "link": "https://arxiv.org/abs/2506.12015",
+        "github_repo": null,
+        "summary": "- This paper introduces EMLoC, a novel framework for memory-efficient fine-tuning of large language models.\n- EMLoC constructs a lightweight emulator using activation-aware SVD on a small downstream calibration set, enabling fine-tuning within the same memory budget as inference.\n- A novel compensation algorithm corrects misalignment between the original model and the compressed emulator, improving final performance and transferability.\n- EMLoC outperforms existing baselines across multiple datasets and modalities, enabling fine-tuning of a 38B model on a single 24GB consumer GPU.\n- The framework supports flexible compression ratios and standard training pipelines, making it adaptable to various applications.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-18"
+    }
+]

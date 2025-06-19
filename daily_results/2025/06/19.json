@@ -1,0 +1,217 @@
+[
+    {
+        "title": "Sekai: A Video Dataset towards World Exploration",
+        "authors": "Shaoheng Lin, Xiaofeng Mao, Chuanhao Li, Zhen Li, kpzhang",
+        "link": "https://arxiv.org/abs/2506.15675",
+        "github_repo": null,
+        "summary": "- The paper introduces SEKAI, a high-quality, first-person view video dataset for world exploration, containing over 5000 hours of videos from various locations.\n- SEKAI includes rich annotations such as location, scene, weather, crowd density, captions, and camera trajectories, addressing limitations in existing datasets.\n- An efficient toolbox was developed for collecting, pre-processing, and annotating videos, improving efficiency and effectiveness.\n- A subset of SEKAI was used to train YUME, an interactive video world exploration model, demonstrating the dataset's utility.\n- The dataset's high quality and rich annotations are expected to advance video generation and world exploration research.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://lixsp11.github.io/sekai-project/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "GenRecal: Generation after Recalibration from Large to Small\n  Vision-Language Models",
+        "authors": "Yueh-Hua Wu, Yu-Chiang Frank Wang, Yong Man Ro, rhachiuma, BK-Lee",
+        "link": "https://arxiv.org/abs/2506.15681",
+        "github_repo": null,
+        "summary": "This paper introduces GenRecal, a novel general-purpose distillation framework for Vision-Language Models (VLMs).  GenRecal incorporates a recalibrator module that aligns feature representations between heterogeneous VLMs, enabling effective knowledge transfer regardless of token type differences.  Extensive experiments demonstrate that GenRecal significantly improves baseline performance, surpassing both large-scale open- and closed-source VLMs.  The recalibrator effectively bridges the gap between large and small VLMs, making knowledge transfer possible even with diverse architectures. GenRecal is shown to work for various model sizes and across many challenging benchmarks.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "ProtoReasoning: Prototypes as the Foundation for Generalizable Reasoning\n  in LLMs",
+        "authors": "Yunqi Qiu, Tingting Ma, Xinnian Liang, Zijun Chen, Feng He",
+        "link": "https://arxiv.org/abs/2506.15211",
+        "github_repo": null,
+        "summary": "- This paper introduces ProtoReasoning, a novel framework that enhances the reasoning capabilities of Large Language Models (LLMs) by leveraging scalable and verifiable prototypical representations.\n- The framework uses Prolog and PDDL as core representations for logical reasoning and planning, respectively, to transform problems into corresponding prototype representations.\n- ProtoReasoning features an automated pipeline for prototype construction and a comprehensive verification system using Prolog/PDDL interpreters, ensuring correctness and scalability.\n- Experiments demonstrate that ProtoReasoning achieves significant improvements (4.7% on Enigmata-Eval, 6.3% on planning, and 4.0% on general reasoning) over baseline models, showcasing enhanced generalization.\n- Ablation studies confirm that learning in prototype space improves generalization compared to training solely on natural language representations, supporting the hypothesis that reasoning prototypes are crucial for generalizable reasoning in LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "Embodied Web Agents: Bridging Physical-Digital Realms for Integrated\n  Agent Intelligence",
+        "authors": "Maxine Wu, Xingcheng Yao, Bingxuan Li, Rui Sun, Yining Hong",
+        "link": "https://arxiv.org/abs/2506.15677",
+        "github_repo": null,
+        "summary": "This paper introduces EMBODIED WEB AGENTS, a novel paradigm for AI agents that integrates web-scale reasoning with physical embodiment.  A new benchmark is presented with diverse tasks requiring coordinated reasoning across physical and digital domains (cooking, navigation, shopping, tourism, geolocation).  State-of-the-art LLMs are evaluated on this benchmark, revealing significant performance gaps compared to human capabilities.  The platform incorporates realistic 3D indoor and outdoor environments with functional web interfaces.  The results highlight challenges and opportunities in cross-domain intelligence.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://embodied-web-agent.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "BUT System for the MLC-SLM Challenge",
+        "authors": "Jan \u010cernock\u00fd, Samuele Cornell, Dominik Klement, Jiangyu Han, Alexander Polok",
+        "link": "https://arxiv.org/abs/2506.13414",
+        "github_repo": null,
+        "summary": "- This paper presents a two-speaker automatic speech recognition (ASR) system that combines DiCoW (a diarization-conditioned variant of Whisper) with DiariZen (a diarization pipeline built on Pyannote).\n- The system achieves a micro-average tcpWER/CER of 16.75% and ranks second in Task 2 of the MLC-SLM challenge, outperforming the official baseline.\n- DiariZen consistently outperforms the baseline Pyannote diarization model in both in-domain and out-of-domain multilingual scenarios.\n- DiCoW, despite being fine-tuned on English-only data, retains solid multilingual performance, indicating that encoder modifications preserve Whisper's multilingual capabilities.\n- The authors identify several labeling inconsistencies in the training data and propose simple mitigation strategies to address these issues and improve system robustness.",
+        "classification": [
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "https://github.com/mubingshen/MLC-SLM-Baseline",
+            "https://github.com/BUTSpeechFIT/DiariZen",
+            "https://github.com/BUTSpeechFIT/TS-ASR-Whisper",
+            "https://github.com/openai/whisper/discussions/2363"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/BUT-FIT/DiCoW_v3_MLC",
+            "https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-mlc"
+        ],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "Semantically-Aware Rewards for Open-Ended R1 Training in Free-Form\n  Generation",
+        "authors": "Zichao Liang, Xiyang Wu, Yuhang Zhou, Yapei Chang, Zongxia Li",
+        "link": "https://arxiv.org/abs/2506.15068",
+        "github_repo": "https://github.com/zli12321/long_form_rl",
+        "summary": "- This paper introduces PrefBERT, a lightweight scoring model for evaluating open-ended long-form text generation.\n- PrefBERT is trained on two response evaluation datasets with diverse long-form styles and Likert-rated quality and uses ModernBERT architecture.\n-  The model offers better semantic reward feedback for guiding the training of RL models than traditional metrics such as ROUGE-L and BERTScore.\n- Experiments using LLM-as-a-judge, human ratings, and qualitative analysis demonstrate that PrefBERT consistently aligns with human preferences.\n-  Training policy models with PrefBERT yields responses better aligned with human preferences than those trained with traditional metrics.",
+        "classification": [
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zli12321/long_form_rl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "SciVer: Evaluating Foundation Models for Multimodal Scientific Claim\n  Verification",
+        "authors": "Arman Cohan, Zexi Kuang, Yifei Shen, Chengye Wang, yilunzhao",
+        "link": "https://arxiv.org/abs/2506.15569",
+        "github_repo": null,
+        "summary": "- We introduce SCIVER, the first benchmark for evaluating multimodal scientific claim verification.\n- SCIVER consists of 3,000 expert-annotated examples across 1,113 scientific papers, covering four reasoning types.\n- We evaluate 21 state-of-the-art multimodal foundation models, revealing a substantial performance gap between models and human experts.\n- Through in-depth analysis of RAG and human-conducted error evaluations, we identify critical model limitations.\n- Our findings offer key insights for advancing models' comprehension and reasoning in multimodal scientific literature.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/chengyewang/SciVer"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/QDRhhhh/SciVer"
+        ],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "Truncated Proximal Policy Optimization",
+        "authors": "Chengyi Wang, Jiaze Chen, Yu Yue, Lingjun Liu, Tiantian Fan",
+        "link": "https://arxiv.org/abs/2506.15050",
+        "github_repo": null,
+        "summary": "- This paper introduces Truncated Proximal Policy Optimization (T-PPO), a novel extension of the Proximal Policy Optimization (PPO) algorithm designed to enhance training efficiency for reasoning Large Language Models (LLMs).\n- T-PPO improves training efficiency by streamlining policy updates and incorporating length-restricted response generation, mitigating the issue of low hardware utilization during long generation procedures.\n- The core innovation of T-PPO is Extended Generalized Advantage Estimation (EGAE), which enables advantage estimation from incomplete responses, maintaining the integrity of policy learning even with truncated trajectories.\n- Experimental results on the AIME 2024 benchmark demonstrate that T-PPO improves the training efficiency of reasoning LLMs by up to 2.5x and outperforms existing competitors in terms of both accuracy and speed.\n- The method is computationally efficient, uses a dual optimization strategy allowing simultaneous, yet independent improvement of both policy and value models through selective token screening and achieves 62 pass@1 on the AIME'24 benchmark.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "CoMemo: LVLMs Need Image Context with Image Memory",
+        "authors": "Jifeng Dai, Wenhai Wang, Xizhou Zhu, jackroos, CLLBJ16",
+        "link": "https://arxiv.org/abs/2506.06279",
+        "github_repo": null,
+        "summary": "- CoMemo, a novel dual-path framework for Large Vision-Language Models (LVLMs), is proposed to address the limitations of existing architectures in handling dynamic high-resolution images and long sequences.\n- The model employs a context path for autoregressive processing and a memory path for cross-attention, effectively alleviating visual information neglect.\n- A novel positional encoding mechanism, ROPE-DHR, is introduced to maintain 2D spatial awareness while mitigating remote decay issues.\n- Evaluations across seven benchmarks demonstrate CoMemo's superior performance compared to conventional LVLM architectures, especially in long-context comprehension and multi-image reasoning tasks.\n- The three-stage training strategy effectively balances the contributions of the two visual pathways, preventing over-reliance on either path.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://lalbj.github.io/projects/CoMemo/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "SwarmAgentic: Towards Fully Automated Agentic System Generation via\n  Swarm Intelligence",
+        "authors": "Shijie Zhou, Haokun Chen, Shijie Tang, Chenyang Lin, Yao Zhang",
+        "link": "https://arxiv.org/abs/2506.15672",
+        "github_repo": null,
+        "summary": " - SwarmAgentic is a novel framework that generates fully automated agentic systems from scratch, optimizing both agent functionality and collaboration through language-driven exploration.\n- It uses a population-based optimization scheme inspired by Particle Swarm Optimization (PSO) to efficiently search over system-level structures.\n- The framework outperforms all baselines on six real-world tasks involving high-level planning, system-level coordination, and creative reasoning, achieving a +261.8% improvement over ADAS on the TravelPlanner benchmark.\n- SwarmAgentic introduces three core capabilities: From-Scratch Agent Generation, Self-Optimizing Agent Functionality, and Self-Optimizing Agent Collaboration.\n- The code for SwarmAgentic is publicly available on GitHub.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SwarmAgentic"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "MoTE: Mixture of Ternary Experts for Memory-efficient Large Multimodal\n  Models",
+        "authors": "Yitao Zhai, Yan Feng, Ruiping Wang, Jiayu Xu, Hongyu Wang",
+        "link": "https://arxiv.org/abs/2506.14435",
+        "github_repo": null,
+        "summary": "- This paper introduces MoTE, a novel Mixture-of-Ternary-Experts (MoTE) model for memory-efficient large multimodal models.\n- The MoTE architecture uses a pre-trained full-precision feed-forward network (FFN) as a shared expert and trains ternary routed experts with parameters in {-1, 0, 1} during up-cycling.\n- Experiments demonstrate that MoTE achieves comparable performance to full-precision baseline MoE-LLaVA while offering a lower memory footprint.\n- MoTE's performance further improves when combined with post-training quantization methods, outperforming MoE-LLaVA by 4.3% average accuracy on end tasks with the same expert memory footprint.\n- The results highlight MoTE's effectiveness and potential for memory-constrained devices.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents",
+        "authors": "Zico Kolter, Francesco Croce, Hao Zhao, Agatha Duzan, Thomas Kuntz",
+        "link": "https://arxiv.org/abs/2506.14866",
+        "github_repo": "https://github.com/tml-epfl/os-harm",
+        "summary": "- This paper introduces OS-HARM, a new benchmark for evaluating the safety of computer use agents.\n- OS-HARM tests agents across three categories of harm: deliberate user misuse, prompt injection attacks, and model misbehavior.\n- The benchmark includes 150 tasks that require agents to interact with various OS applications.\n- An automated LLM judge is proposed to evaluate both accuracy and safety, achieving high agreement with human annotations.\n- The results show that current frontier models tend to directly comply with many deliberate misuse queries and are vulnerable to prompt injection attacks.",
+        "classification": [
+            "Multimodal",
+            "Any-to-Any"
+        ],
+        "github_urls": [
+            "https://github.com/tml-epfl/os-harm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "FedNano: Toward Lightweight Federated Tuning for Pretrained Multimodal\n  Large Language Models",
+        "authors": "Yunpu Ma, Weiguo Li, Haokun Chen, Hewei Gao, Yao Zhang",
+        "link": "https://arxiv.org/abs/2506.14824",
+        "github_repo": null,
+        "summary": "- FedNano is a novel federated learning framework designed for efficient adaptation of pretrained multimodal large language models (MLLMs).\n- It centralizes the LLM on a server and introduces NanoEdge, a lightweight client-side module for adaptation, significantly reducing computational and communication costs.\n- NanoEdge uses modality-specific encoders, connectors, and trainable NanoAdapters with low-rank adaptation to reduce client-side storage and communication overhead.\n- Experimental results demonstrate that FedNano outperforms existing federated learning baselines for MLLMs on various tasks and datasets.\n- The design allows for scalable and decentralized multimodal AI systems.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    },
+    {
+        "title": "ImmerseGen: Agent-Guided Immersive World Generation with Alpha-Textured\n  Proxies",
+        "authors": "Lin Ma, Panwang Pan, Keke Wang, Bangbang Yang, yjyyy",
+        "link": "https://arxiv.org/abs/2506.14315",
+        "github_repo": null,
+        "summary": "- ImmerseGen is a novel agent-guided framework for generating immersive 3D scenes from textual prompts using lightweight geometric proxies.\n- It models scenes as hierarchical compositions of simplified terrain meshes and alpha-textured billboard meshes, simplifying modeling and enabling real-time rendering on VR headsets.\n- The model uses VLMs to interpret user text prompts into immersive environments, incorporating a grid-based semantic analysis strategy to enhance spatial reasoning and accurate asset placement.\n- Experiments show that ImmerseGen achieves superior photorealism, spatial coherence, and rendering efficiency compared to existing methods.\n- The method enhances multi-modal immersion by incorporating dynamic effects and ambient audio to support multisensory immersion.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://immersegen.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-19"
+    }
+]

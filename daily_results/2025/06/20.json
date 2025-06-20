@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain\n  Perspective",
+        "authors": "Yutao Xie, Fan Zhou, Tianyang Liu, Shibo Hao, Zhoujun Cheng",
+        "link": "https://arxiv.org/abs/2506.14965",
+        "github_repo": "https://github.com/LLM360/Reasoning360",
+        "summary": "This paper introduces GURU, a large-scale, curated reinforcement learning dataset for LLM reasoning, spanning six diverse domains.  The authors systematically investigate the effectiveness of reinforcement learning across these domains, revealing a nuanced relationship between pretraining exposure and RL performance gains.  Two new models, GURU-7B and GURU-32B, achieve state-of-the-art performance on a unified evaluation suite among open models. The dataset and models are publicly available, and the code is open source.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering",
+            "Table Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LLM360/Reasoning360"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-20"
+    },
+    {
+        "title": "EmoNet-Voice: A Fine-Grained, Expert-Verified Benchmark for Speech\n  Emotion Detection",
+        "authors": "Maurice Kraus, Gollam Rabby, Robert Kaczmarczyk, felfri, ChristophSchuhmann",
+        "link": "https://arxiv.org/abs/2506.09827",
+        "github_repo": null,
+        "summary": "- This paper introduces EMONET-VOICE, a new benchmark dataset for speech emotion detection, consisting of a large-scale pre-training dataset (EMONET-VOICE BIG) and a benchmark dataset with expert annotations (EMONET-VOICE BENCH).\n- EMONET-VOICE BIG features over 4,500 hours of synthetic speech across 11 voices, 40 emotions, and 4 languages, addressing limitations in existing datasets like emotional granularity and privacy concerns.\n- EMONET-VOICE BENCH includes 12,600 audio clips annotated by psychology experts, providing a fine-grained taxonomy of 40 emotion categories with varying intensity levels, and achieving high inter-annotator agreement (Cronbach's \u03b1 = 0.14).\n- EMPATHICINSIGHT-VOICE, novel SER models trained on EMONET-VOICE, achieve state-of-the-art performance on the benchmark, outperforming other existing models in terms of correlation metrics (Spearman and Pearson r) and error metrics (MAE and RMSE).\n- The evaluation reveals that high-arousal emotions are easier to detect than low-arousal states, highlighting the challenges of fine-grained speech emotion recognition and underscoring the need for datasets like EMONET-VOICE.",
+        "classification": [
+            "Audio Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/mitermix/audiosnippets"
+        ],
+        "date": "2025-06-20"
+    },
+    {
+        "title": "SonicVerse: Multi-Task Learning for Music Feature-Informed Captioning",
+        "authors": "Dorien Herremans, Abhinaba Roy, Anuradha Chopra",
+        "link": "https://arxiv.org/abs/2506.15154",
+        "github_repo": null,
+        "summary": "- The paper introduces SonicVerse, a novel multi-task music captioning model that integrates caption generation with auxiliary music feature detection tasks.\n- SonicVerse uses a projection-based architecture that transforms audio input into language tokens while simultaneously detecting music features through dedicated auxiliary heads, improving caption quality and detail.\n- The model is trained on an extended MusicBench dataset annotated with music features using MIRFLEX, achieving state-of-the-art performance on several NLP metrics such as BLEU, ROUGE, and BERT.\n- An LLM-chaining mechanism is used to generate temporally-aware captions for longer music pieces by concatenating short segment captions.\n- The model and its weights are open-sourced to promote reproducibility and future research.",
+        "classification": [
+            "Audio Classification",
+            "Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/AMAAI-Lab/sonicverse"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/m-a-p/MERT-VO"
+        ],
+        "date": "2025-06-20"
+    },
+    {
+        "title": "Improved Iterative Refinement for Chart-to-Code Generation via\n  Structured Instruction",
+        "authors": "Weiran Huang, Lichao Sun, Yuyang Wang, Chengzhi Xu, WaltonFuture",
+        "link": "https://arxiv.org/abs/2506.14837",
+        "github_repo": null,
+        "summary": "- This paper introduces ChartIR, a training-free iterative refinement method for chart-to-code generation that uses structured instructions.\n- ChartIR distinguishes between visual understanding and code translation, using description and difference instructions to transform visual features into language representations.\n- The method decomposes chart generation into two stages: initial code generation and iterative refinement, enabling progressive enhancement.\n- Experimental results on Plot2Code and ChartMimic benchmarks show that ChartIR outperforms existing methods (METAL) and direct generation on both open-source (Qwen2-VL) and closed-source (GPT-40) models.\n- Ablation studies confirm the importance of both structured description and iterative refinement for superior performance.",
+        "classification": [
+            "Image-to-Text",
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-20"
+    }
+]

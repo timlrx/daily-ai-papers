@@ -1,0 +1,190 @@
+[
+    {
+        "title": "Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights",
+        "authors": "Xuanlei Zhao, Yuhao Zhou, Dongwen Tang, Zhiyuan Liang, VictorKai1996NUS",
+        "link": "https://arxiv.org/abs/2506.16406",
+        "github_repo": null,
+        "summary": "- This paper introduces Drag-and-Drop LLMs (DnD), a novel prompt-conditioned parameter generator that eliminates the need for per-task training in large language models (LLMs).\n- DnD maps unlabeled task prompts directly to LoRA weight updates, achieving task-specific parameter generation in seconds, significantly reducing adaptation overhead compared to traditional methods.\n- The model architecture consists of a lightweight text encoder that distills prompt batches into embeddings, and a cascaded hyper-convolutional decoder that transforms these embeddings into LoRA matrices.\n- Experiments demonstrate that DnD achieves up to 12,000\u00d7 lower overhead and average performance gains of up to 30% over the strongest training LoRAs on unseen datasets across various benchmarks.\n- DnD shows robust cross-domain generalization, highlighting the potential of prompt-conditioned parameter generation as a viable alternative to gradient-based adaptation for rapidly specializing LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://jerryliang24.github.io/DnD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and\n  Quantized Attention in Visual Generation Models",
+        "authors": "Huixia Li, Xuefeng Xiao, Xinhao Yang, Ke Hong, A-suozhang",
+        "link": "https://arxiv.org/abs/2506.16054",
+        "github_repo": null,
+        "summary": "- This paper introduces PAROAttention, a novel technique that reorders tokens to unify diverse attention patterns in visual generation models, simplifying sparsification and quantization.\n- PAROAttention achieves nearly identical generation results from full-precision baselines with lower density (20%-30%) and bitwidth (INT8/INT4), resulting in a 1.9-2.7x end-to-end latency speedup.\n- The method is evaluated on CogVideoX and Wan models for video generation and Flux model for image generation, outperforming existing sparsification and quantization methods in terms of speed and quality.\n- Through systematic analysis, the authors identify that the dispersed and irregular characteristics of visual attention patterns are the core challenges of sparsification and quantization in visual models.\n- PAROAttention is compatible with various existing sparsification and quantization techniques, demonstrating its generalizability and effectiveness.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal\n  Document Understanding",
+        "authors": "Biddwan Ahmed, Indraneel Das, Tanmay Odapally, udayallu, vishesh-t27",
+        "link": "https://arxiv.org/abs/2506.16035",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel multimodal document chunking approach that leverages Large Multimodal Models (LMMs) to process PDF documents, enhancing Retrieval Augmented Generation (RAG) systems.\n- The approach addresses limitations of traditional text-based methods by preserving semantic coherence and structural integrity across page boundaries, even when handling complex layouts, tables, figures, and visual elements.\n- It processes documents in configurable page batches with cross-batch context preservation, improving the accuracy of downstream RAG performance and achieving better quantitative results compared to traditional RAG systems.\n- The method's effectiveness is demonstrated on an internal benchmark dataset of diverse PDF documents, showing better preservation of document structure and semantic coherence.\n- The paper also contributes a new benchmark dataset and a detailed analysis of chunk quality, addressing limitations of traditional chunking approaches.",
+        "classification": [
+            "Document Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "VIKI-R: Coordinating Embodied Multi-Agent Cooperation via Reinforcement\n  Learning",
+        "authors": "Jie Yang, Yiran Qin, Heng Zhou, Xiufeng Song, FACEONG",
+        "link": "https://arxiv.org/abs/2506.09049",
+        "github_repo": null,
+        "summary": "- This paper introduces VIKI-Bench, a hierarchical benchmark designed for evaluating visual reasoning in embodied multi-agent cooperation, and VIKI-R, a two-stage framework that leverages vision-language models for this task. \n- VIKI-Bench incorporates three levels of visual reasoning tasks: agent activation, task planning, and trajectory perception, using diverse robot embodiments and multi-view observations. \n- VIKI-R utilizes a two-stage approach: first, supervised fine-tuning with Chain-of-Thought annotations; then, reinforcement learning with hierarchical reward signals. \n- Experimental results demonstrate that VIKI-R significantly outperforms baseline methods across all task levels, showing the effectiveness of the proposed approach. \n- The work highlights the emergence of compositional cooperation patterns among heterogeneous agents, which is facilitated by reinforcement learning.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://faceong.github.io/VIKI-R/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "Hunyuan-GameCraft: High-dynamic Interactive Game Video Generation with\n  Hybrid History Condition",
+        "authors": "Yuan Zhou, Longhuang Wu, Zhiyong Xu, Junshu Tang, Jiaqi Li",
+        "link": "https://arxiv.org/abs/2506.17201",
+        "github_repo": null,
+        "summary": "- This paper introduces Hunyuan-GameCraft, a novel framework for high-dynamic interactive video generation in game environments that unifies standard keyboard and mouse inputs into a shared camera representation space for fine-grained action control.\n- The model employs a hybrid history-conditioned training strategy to autoregressively extend video sequences while preserving scene information and uses model distillation to enhance inference efficiency.\n- Hunyuan-GameCraft outperforms existing models in terms of realism and playability, as demonstrated by experiments on both curated game scenes and general styles.\n- The model is trained on a large-scale dataset comprising over one million gameplay recordings across over 100 AAA games, ensuring broad coverage and diversity, and fine-tuned on a carefully annotated synthetic dataset to enhance precision and control.\n- The proposed hybrid history-conditioned training strategy and model distillation significantly improve the realism and playability of interactive game video generation.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://hunyuan-gamecraft.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "DreamCube: 3D Panorama Generation via Multi-plane Synchronization",
+        "authors": "Xihui Liu, Kaiyi Huang, Jianan Wang, Yanning Zhou, Yukun Huang",
+        "link": "https://arxiv.org/abs/2506.17206",
+        "github_repo": null,
+        "summary": "- DreamCube is a novel framework that leverages multi-plane synchronization to generate high-quality RGB-D cubemaps from a single view, addressing the limitations of existing methods that rely on equirectangular projections.\n- The model employs a multi-plane synchronization strategy, which adapts operators from 2D diffusion models to the omnidirectional domain, enabling seamless panorama generation without fine-tuning or FoV overlapping.\n- DreamCube jointly models panoramic appearance and geometry, utilizing pre-trained 2D diffusion models for efficient and diverse generation, outperforming state-of-the-art methods in both RGB panorama and depth estimation tasks as evaluated on multiple datasets.\n- The method achieves high-resolution panorama generation with minimal artifacts and preserves multi-view consistency, demonstrated through extensive experiments.\n- The generated RGB-D cubemaps can be easily lifted to 3D scenes, facilitating single-view to omnidirectional 3D scene generation.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://yukun-huang.github.io/DreamCube/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "Hunyuan3D 2.5: Towards High-Fidelity 3D Assets Generation with Ultimate\n  Details",
+        "authors": "Qingxiang Lin, Zibo Zhao, Haolin Liu, Yunfei Zhao, Zeqiang Lai",
+        "link": "https://arxiv.org/abs/2506.16504",
+        "github_repo": null,
+        "summary": "- This paper introduces Hunyuan3D 2.5, a new suite of 3D diffusion models designed for generating high-fidelity, detailed textured 3D assets.\n- The model architecture is a two-stage pipeline that first generates the shape using a new shape foundation model called LATTICE and then generates the texture using a novel multi-view architecture.\n- LATTICE, the shape foundation model, is trained with scaled high-quality datasets and achieves 10B parameters, significantly improving the quality and detail of 3D shapes compared to previous versions.\n- The texture generation is upgraded with physical-based rendering (PBR) via the novel multi-view architecture, enhancing the realism of generated textures.\n- Extensive evaluations demonstrate that Hunyuan3D 2.5 significantly outperforms previous state-of-the-art methods in both shape and end-to-end texture generation.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent/Hunyuan3D-2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "InfiniPot-V: Memory-Constrained KV Cache Compression for Streaming Video\n  Understanding",
+        "authors": "Simyung Chang, Jungwook Choi, Kyuhong Shim, Minsoo Kim",
+        "link": "https://arxiv.org/abs/2506.15745",
+        "github_repo": null,
+        "summary": " - InfiniPot-V is a novel training-free framework for compressing key-value caches in streaming video understanding models, addressing the limitation of memory scaling linearly with stream length.\n - It employs two lightweight metrics: Temporal-axis Redundancy (TaR) to remove temporally redundant tokens, and Value-Norm (VaN) to retain semantically significant tokens, achieving length-independent memory usage. \n - Across multiple open-source models and benchmarks, InfiniPot-V reduces peak GPU memory by up to 94% while maintaining real-time performance and matching or surpassing full-cache accuracy.\n - Unlike previous methods, InfiniPot-V is query-agnostic, which is crucial for streaming video understanding scenarios where future queries are unknown.\n - The results show that InfiniPot-V closes the gap for on-device streaming video assistants by addressing the key-value cache bottleneck without retraining or query knowledge.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "Hunyuan3D 2.1: From Images to High-Fidelity 3D Assets with\n  Production-Ready PBR Material",
+        "authors": "Xin Huang, Yifei Feng, Mingxin Yang, Shuhui Yang, Team Hunyuan3D",
+        "link": "https://arxiv.org/abs/2506.15442",
+        "github_repo": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+        "summary": "- This paper introduces Hunyuan3D 2.1, a novel 3D asset creation system that generates high-fidelity 3D assets with production-ready PBR materials from a single image input.\n- The system is composed of two core components: Hunyuan3D-DiT for shape generation and Hunyuan3D-Paint for texture synthesis.\n- Hunyuan3D-DiT is a flow-based diffusion model that generates high-resolution 3D shapes based on image conditions and Hunyuan3D-Paint generates high-quality PBR material maps using a multi-view UNet architecture, with various novel techniques for enhancing cross-view consistency.\n- The model's performance is rigorously evaluated against leading commercial and open-source models, demonstrating superior performance in both geometric detail preservation and texture-photo consistency.\n- The paper provides a comprehensive, step-by-step guide on processing 3D data, training a 3D generative model, and evaluating its performance, making it a valuable resource for researchers and practitioners.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "UniFork: Exploring Modality Alignment for Unified Multimodal\n  Understanding and Generation",
+        "authors": "Xizhou Zhu, Hao Li, Lirui Zhao, Quanfeng Lu, Teng Li",
+        "link": "https://arxiv.org/abs/2506.17202",
+        "github_repo": "https://github.com/tliby/UniFork",
+        "summary": "- UniFork is a novel Y-shaped architecture for unified image understanding and generation that addresses the limitations of fully shared Transformer backbones.\n- The model consists of shared shallow layers for cross-task representation learning and task-specific branches in deeper layers to avoid interference.\n- UniFork consistently outperforms conventional fully shared Transformer architectures and achieves performance on par with or better than task-specific models on various benchmarks.\n- Extensive ablation studies demonstrate the effectiveness of the proposed architecture, highlighting the importance of balancing shared learning and task specialization.\n- The analysis of modality alignment patterns reveals that understanding tasks benefit from progressively increasing alignment across network depth, while generation tasks require a rise-then-fall pattern.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/tliby/UniFork"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "Reranking-based Generation for Unbiased Perspective Summarization",
+        "authors": "Kathleen McKeown, Nicholas Deas, narutatsuri",
+        "link": "https://arxiv.org/abs/2506.15925",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel reranking-based generation method for creating unbiased perspective summaries.\n - The method is evaluated using a new test set designed for evaluating perspective summary quality and newly defined metrics, showing that reranking significantly outperforms zero-shot inference and prompting-based techniques.\n - Human evaluations and automatic evaluations using LLM-based metrics (LLM-Coverage and ALIGNSCORE) further support the superiority of the reranking method.\n - Preference tuning with synthetic data improves both coverage and faithfulness of the summaries.\n - The findings contribute to the reliable development and evaluation of perspective summarization methods.",
+        "classification": [
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/narutatsuri/Unbiased-Perspective-Summarization"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    },
+    {
+        "title": "Long-term Traffic Simulation with Interleaved Autoregressive Motion and\n  Scenario Generation",
+        "authors": "Philipp Kr\u00e4henb\u00fchl, Shuhan Tan, Xiuyu Yang",
+        "link": "https://arxiv.org/abs/2506.17213",
+        "github_repo": "https://github.com/OrangeSodahub/infgen",
+        "summary": "- This paper introduces InfGen, a novel unified autoregressive transformer model for long-term traffic simulation.\n- InfGen addresses the limitations of prior methods by performing interleaved closed-loop motion simulation and scene generation, enabling stable long-term rollout simulation.\n- The model architecture consists of interleaved token prediction, using a set of tokenizers to convert task-specific behaviors into discrete tokens, with mode-control tokens to mark task switches.\n- InfGen outperforms state-of-the-art methods in long-term (30s) simulation and achieves competitive performance in short-term (9s) simulations, demonstrating its effectiveness in handling dynamic traffic scenarios.\n- The code and model of InfGen will be released at https://orangesodahub.github.io/InfGen",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/OrangeSodahub/infgen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-23"
+    }
+]

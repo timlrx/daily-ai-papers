@@ -1,0 +1,391 @@
+[
+    {
+        "title": "Light of Normals: Unified Feature Representation for Universal\n  Photometric Stereo",
+        "authors": "Bohan Li, Zhaoxi Chen, Chongjie Ye, Houyuan Chen, Hong Li",
+        "link": "https://arxiv.org/abs/2506.18882",
+        "github_repo": null,
+        "summary": "- This paper introduces LINO-UniPS, a novel universal photometric stereo method that addresses challenges in decoupling lighting and normal features, and preserving high-frequency details.\n- The model architecture features learnable light register tokens with global cross-image attention, wavelet transform-based sampling, and a normal-gradient confidence loss to improve accuracy and detail.\n- Experiments show that LINO-UniPS outperforms state-of-the-art universal photometric stereo methods on various public benchmarks and a new synthetic dataset called PS-Verse.\n- The PS-Verse dataset is introduced to address limitations in existing synthetic datasets, featuring graduated geometric complexity and diverse lighting conditions to improve model generalization.\n- The results demonstrate that LINO-UniPS achieves state-of-the-art performance on public benchmarks, exhibits strong generalization capabilities, and achieves robust normal recovery in challenging scenarios.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "OmniGen2: Exploration to Advanced Multimodal Generation",
+        "authors": "yzwang, sienna223, Shitao, Ruiran, wcyno23",
+        "link": "https://arxiv.org/abs/2506.18871",
+        "github_repo": "https://github.com/VectorSpaceLab/OmniGen2",
+        "summary": "- OmniGen2 is a versatile, open-source multimodal generative model designed for diverse generation tasks including text-to-image, image editing, and in-context generation.\n- It features two distinct decoding pathways for text and image modalities, utilizing unshared parameters and a decoupled image tokenizer, enabling it to leverage existing multimodal understanding models without needing to re-adapt VAE inputs.\n- OmniGen2 introduces a reflection mechanism for image generation, and a new benchmark named OmniContext to evaluate in-context generation, achieving state-of-the-art performance among open-source models in terms of consistency.\n- The model is trained using a comprehensive dataset created through data construction pipelines encompassing image editing and in-context generation data.\n- The authors release the model, training code, datasets, and data construction pipeline to support future research.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/VectorSpaceLab/OmniGen2"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+            "https://huggingface.co/black-forest-labs/FLUX.1-Fill-dev"
+        ],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement\n  Learning",
+        "authors": "Juanzi Li, Roy Ka-Wei Lee, Yushi Bai, Yuhao Wu, Zhiqiang007",
+        "link": "https://arxiv.org/abs/2506.18841",
+        "github_repo": null,
+        "summary": "- LongWriter-Zero is a novel approach for ultra-long text generation in LLMs that leverages reinforcement learning (RL) without relying on synthetic data.\n- It employs specialized reward models to guide the LLM towards improved length control, writing quality, and structural formatting.\n- LongWriter-Zero, trained from Qwen2.5-32B, consistently outperforms traditional SFT methods and achieves state-of-the-art results on WritingBench and Arena-Write.\n- The model surpasses even 100B+ models like DeepSeek R1 and Qwen3-235B.\n- The data and model checkpoints are open-sourced.",
+        "classification": [
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/THU-KEG/"
+        ],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "Phantom-Data : Towards a General Subject-Consistent Video Generation\n  Dataset",
+        "authors": "Crayon-Shinchan, onion-liu, TianxiangMa, lbc402, ZhuoweiChen",
+        "link": "https://arxiv.org/abs/2506.18851",
+        "github_repo": null,
+        "summary": "- This paper introduces Phantom-Data, a new large-scale dataset for subject-consistent video generation, addressing the limitations of existing datasets that suffer from the copy-paste problem.- Phantom-Data contains approximately one million identity-consistent video-image pairs across diverse categories and contexts, enabling the training of models that generate videos with high visual quality and consistent identity, even under varying conditions.- The dataset is constructed using a three-stage pipeline: subject detection, cross-context retrieval, and prior-guided identity verification.- Experiments show that training with Phantom-Data significantly improves prompt alignment and visual quality, and reduces the copy-paste effect compared to baselines trained on existing datasets.- The authors provide comprehensive ablation studies that highlight the importance of dataset size, diversity, and the effectiveness of their proposed data construction pipeline.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://phantom-video.github.io/Phantom-Data/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "ReasonFlux-PRM: Trajectory-Aware PRMs for Long Chain-of-Thought\n  Reasoning in LLMs",
+        "authors": "Ke Shen, Jiahao Qiu, Jingwen Gu, Ling Yang, Jiaru Zou",
+        "link": "https://arxiv.org/abs/2506.18896",
+        "github_repo": "https://github.com/Gen-Verse/ReasonFlux",
+        "summary": " - ReasonFlux-PRM is a novel trajectory-aware Process Reward Model (PRM) designed to enhance long chain-of-thought reasoning in LLMs by incorporating both step-level and trajectory-level supervision. \n- It addresses the limitations of existing PRMs, which primarily focus on final responses, by explicitly evaluating intermediate reasoning steps. \n- ReasonFlux-PRM demonstrates consistent performance improvements across various downstream benchmarks (AIME, MATH500, GPQA-Diamond), surpassing existing PRMs and human-curated baselines in supervised fine-tuning, reinforcement learning, and test-time scaling. \n- The model's architecture involves a joint training objective that balances step-level and trajectory-level rewards, thereby enabling effective supervision of trajectory-response data. \n- The paper also explores offline data selection and online reward modeling applications of ReasonFlux-PRM, showcasing its versatility in diverse reasoning scenarios.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/ReasonFlux"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "RLPR: Extrapolating RLVR to General Domains without Verifiers",
+        "authors": "Zefan Wang, Shu Yao, Shouli Wang, Bo Ji, Tianyu Yu",
+        "link": "https://arxiv.org/abs/2506.18254",
+        "github_repo": "https://github.com/openbmb/RLPR",
+        "summary": "- This paper introduces RLPR, a novel verifier-free framework that extends Reinforcement Learning with Verifiable Rewards (RLVR) to general domains.\n- RLPR replaces the domain-specific verifiers in RLVR with the LLM's intrinsic probability of generating a correct answer as the reward signal.\n- Experimental results across seven benchmarks (four general-domain and three mathematical reasoning) demonstrate that RLPR consistently improves reasoning capabilities, even outperforming strong RL methods with model-based verifier rewards.\n- The proposed probability-based reward in RLPR is shown to be robust and of high quality.\n- RLPR addresses the high variance of the noisy probability reward by proposing prob-to-reward and stabilizing methods.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/openbmb/RLPR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "Vision as a Dialect: Unifying Visual Understanding and Generation via\n  Text-Aligned Representations",
+        "authors": "Qi Zhao, Yang Zhao, Hao Chen, hywang66, csuhan",
+        "link": "https://arxiv.org/abs/2506.18898",
+        "github_repo": null,
+        "summary": "- This paper introduces Tar, a multimodal large language model (MLLM) that unifies visual understanding and generation using a shared discrete semantic representation.\n- The core of Tar is the Text-Aligned Tokenizer (TA-Tok), which converts images into discrete tokens using a text-aligned codebook projected from an LLM vocabulary.\n- Tar utilizes two complementary de-tokenizers: a fast autoregressive model and a diffusion-based model, to handle diverse decoding needs and achieve high-fidelity visual outputs.\n- Experiments demonstrate that Tar matches or surpasses existing multimodal LLM methods in terms of speed and training efficiency across benchmarks for both visual understanding and generation tasks.\n- The authors also investigate advanced pre-training tasks, demonstrating improvements in both visual understanding and generation capabilities.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://tar.csuhan.com"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "OAgents: An Empirical Study of Building Effective Agents",
+        "authors": "Yeyi Guan, Heyuan Huang, He Zhu, kangz, tianyue818",
+        "link": "https://arxiv.org/abs/2506.15741",
+        "github_repo": null,
+        "summary": "- This paper introduces OAgents, a modular open-source framework for building effective language agents.\n- OAgents achieves state-of-the-art performance on the GAIA benchmark, outperforming existing open-source and closed-source methods.\n- The authors conduct a systematic empirical study on popular design choices in agent components, revealing which designs are crucial for effective agents.\n- OAgents includes a modular design for various components, enabling future research in agentic AI.\n- The framework offers a more robust evaluation protocol to stabilize comparisons and improve reproducibility.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/OPPO-PersonalAI/OAgents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed\n  View Memory",
+        "authors": "Tomas Jakab, Andrea Vedaldi, Philip Torr, Runjia Li",
+        "link": "https://arxiv.org/abs/2506.18903",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel memory mechanism called Surfel-Indexed View Memory (VMem) to enhance interactive video scene generation.\n- VMem addresses the limitations of existing methods by indexing past views geometrically based on 3D surface elements (surfels), enabling efficient retrieval of relevant views for consistent scene generation.\n- The proposed method demonstrates superior performance compared to existing methods in maintaining scene coherence and camera control, as evaluated on challenging long-term scene synthesis benchmarks.\n- VMem achieves this by focusing only on relevant past views for generation, reducing computational costs and improving efficiency.\n- The approach is evaluated on several benchmarks and demonstrates significant improvements in the quality and consistency of generated videos, particularly when revisiting previously seen areas of the scene.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "LettinGo: Explore User Profile Generation for Recommendation System",
+        "authors": "Jianfeng Liu, Pu Zhao, Fangkai Yang, Di Zhang, Lu Wang",
+        "link": "https://arxiv.org/abs/2506.18309",
+        "github_repo": null,
+        "summary": "- This paper introduces LETTINGO, a novel framework for generating diverse and adaptive user profiles for recommendation systems, which significantly enhances recommendation accuracy, flexibility, and contextual awareness.\n- LETTINGO leverages the expressive power of LLMs and incorporates direct feedback from downstream recommendation tasks, avoiding the rigid constraints of supervised fine-tuning.\n- It operates in three stages: (1) exploring diverse user profiles via multiple LLMs, (2) evaluating profile quality based on their impact in recommendation systems, and (3) aligning the profile generation through pairwise preference data derived from task performance.\n- Experimental results demonstrate that LETTINGO significantly outperforms traditional embedding-based profiles and other state-of-the-art methods.\n- The framework's flexibility allows it to capture the full diversity of user behaviors and adapt to various downstream tasks and recommendation needs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Reinforcement Learning",
+            "Summarization",
+            "Feature Extraction",
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "ReDit: Reward Dithering for Improved LLM Policy Optimization",
+        "authors": "Yao Shu, Hande Dong, Ying Tiffany He, Jiarui Yu, Chenxing Wei",
+        "link": "https://arxiv.org/abs/2506.18631",
+        "github_repo": null,
+        "summary": " - This paper introduces ReDit (Reward Dithering), a novel technique to enhance Large Language Model (LLM) policy optimization by adding noise to discrete reward signals.\n - ReDit addresses gradient anomalies and slow convergence frequently encountered in training LLMs with discrete rewards, which are common in rule-based reward systems.\n - Experimental results demonstrate that ReDit achieves comparable performance to vanilla GRPO with significantly fewer training steps, showing enhanced efficiency and effectiveness across diverse tasks and LLMs.\n - The proposed method mitigates gradient issues, improving the optimization process and leading to better overall performance.\n - Theoretical analysis validates the advantages of ReDit, demonstrating that the injected noise provides unbiased gradient estimates while introducing beneficial variance, which is crucial for navigating flat reward regions and preventing gradient instability.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "FinCoT: Grounding Chain-of-Thought in Expert Financial Reasoning",
+        "authors": "Potsawee Manakul, Panop Pitchayarthorn, Warit Sirichotedumrong, pittawat, natnitaract",
+        "link": "https://arxiv.org/abs/2506.16123",
+        "github_repo": null,
+        "summary": "- FinCoT is a novel prompting framework that integrates expert financial workflows into structured chain-of-thought prompting to improve the accuracy of large language models on financial reasoning tasks.\n- FinCoT significantly improves performance over standard prompting methods and even outperforms a domain-specific fine-tuned model (Fin-R1) on various financial reasoning benchmarks.\n- The framework incorporates Mermaid blueprints that encode expert financial workflows and enhances interpretability of LLM reasoning.\n- FinCoT achieves accuracy improvements of up to +17.3 percentage points and reduces the number of generated tokens by 8 times compared to other prompting techniques.\n- The study presents a comprehensive investigation of prompting styles in FinNLP and releases nine blueprint templates for various financial domains.",
+        "classification": [
+            "Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/SUFE-AIFLM-Lab/Fin-R1"
+        ],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "ViDAR: Video Diffusion-Aware 4D Reconstruction From Monocular Inputs",
+        "authors": "Gregory Slabaugh, Zhensong Zhang, Thomas Tanay, Sibi Catley-Chandar, Michal Nazarczuk",
+        "link": "https://arxiv.org/abs/2506.18792",
+        "github_repo": null,
+        "summary": "- This paper introduces ViDAR, a novel 4D reconstruction framework that leverages personalized diffusion models to synthesize a pseudo multi-view supervision signal for training a Gaussian splatting representation.\n- ViDAR addresses the spatio-temporal inconsistency of diffusion-based supervision by proposing a diffusion-aware loss function and a camera pose optimization strategy that aligns synthetic views with the underlying scene geometry.\n- ViDAR outperforms all state-of-the-art baselines in visual quality and geometric consistency on the DyCheck benchmark, a challenging dataset with extreme viewpoint variations.\n- The authors demonstrate that ViDAR shows strong improvements over baselines on reconstructing motion-rich parts of the scene, especially dynamic regions.\n- ViDAR introduces a new benchmark to compare performance in reconstructing motion-rich parts of the scene, improving the evaluation of monocular 4D methods.",
+        "classification": [
+            "Computer Vision",
+            "Video Classification",
+            "Image-to-Video",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Depth Estimation",
+            "Image Segmentation",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://vidar-4d.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/docs/diffusers"
+        ],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "Auto-Regressively Generating Multi-View Consistent Images",
+        "authors": "Chen Zhao, Jinbo Wu, Jialun Liu, Yuxiao Yang, JiaKui Hu",
+        "link": "https://arxiv.org/abs/2506.18527",
+        "github_repo": "https://github.com/MILab-PKU/MVAR",
+        "summary": "- The paper introduces a novel Multi-View Auto-Regressive (MV-AR) model for generating multi-view consistent images from various prompts (text, images, shapes).\n- The model utilizes an autoregressive approach, progressively generating each view conditioned on previously generated views, enhancing consistency across different viewpoints.\n- A unified model architecture is designed to handle multiple input modalities simultaneously.\n- To mitigate the issue of limited high-quality training data, a \"Shuffle View\" data augmentation technique is proposed.\n- Experimental results demonstrate that MV-AR achieves comparable or better performance compared to leading diffusion-based methods in terms of image quality and consistency.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/MILab-PKU/MVAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "SlimMoE: Structured Compression of Large MoE Models via Expert Slimming\n  and Distillation",
+        "authors": "Young Jin Kim, Ilgee Hong, Zixuan Zhang, Chen Liang, Pearush",
+        "link": "https://arxiv.org/abs/2506.18349",
+        "github_repo": null,
+        "summary": "- This paper introduces SlimMoE, a novel multi-stage compression framework designed to efficiently compress large Mixture-of-Experts (MoE) language models.\n- SlimMoE systematically reduces parameter counts by slimming experts and transferring knowledge through intermediate stages, mitigating the performance degradation often associated with one-shot pruning.\n- The framework compresses Phi-3.5-MoE (41.9B total / 6.6B activated parameters) into two smaller models: Phi-mini-MoE (7.6B total / 2.4B activated) and Phi-tiny-MoE (3.8B total / 1.1B activated) using less than 10% of the original training data.\n- The compressed models demonstrate strong performance, exceeding or matching the capabilities of models with similar sizes and remaining competitive with larger models.\n- The authors release their models on HuggingFace for broader adoption of MoE architectures across computational environments.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/microsoft/Phi-mini-MoE-instruct",
+            "https://huggingface.co/microsoft/Phi-tiny-MoE-instruct"
+        ],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "Enhancing Step-by-Step and Verifiable Medical Reasoning in MLLMs",
+        "authors": "Wenjie Li, Yujie Zhang, Wenjie Lou, Yankai Jiang, manglu3935",
+        "link": "https://arxiv.org/abs/2506.16962",
+        "github_repo": null,
+        "summary": " - This paper introduces Mentor-Intern Collaborative Search (MICS), a novel method for generating high-quality chain-of-thought (CoT) data for medical visual question answering.\n - MICS uses mentor models to initialize reasoning paths and intern models to evaluate and refine them, selecting optimal paths based on an MICS-score.\n - The paper also introduces MMRP, a multi-task medical reasoning dataset with ranked difficulty, and Chiron-01, a new medical MLLM trained using MICS and curriculum learning.\n - Experiments show that Chiron-01 achieves state-of-the-art performance on various medical visual question answering and reasoning benchmarks.\n - The code for the model will be available at the provided GitHub repository.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/manglu097/Chiron-o1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "ConsumerBench: Benchmarking Generative AI Applications on End-User\n  Devices",
+        "authors": "Yiyu Liu, Hoang Nguyen, Rohan Kadekodi, Yile Gu, kamahori",
+        "link": "https://arxiv.org/abs/2506.17538",
+        "github_repo": "https://github.com/efeslab/ConsumerBench",
+        "summary": "- This paper introduces CONSUMERBENCH, a novel benchmarking framework designed to evaluate the efficiency and response time of generative AI (GenAI) models running on end-user devices.\n- Unlike existing benchmarks that assume exclusive model access, CONSUMERBENCH simulates realistic multi-application scenarios.\n- It supports customizable workflows and captures both application-level metrics (latency, SLO attainment) and system-level metrics (CPU/GPU utilization, memory bandwidth).\n- Through experiments, CONSUMERBENCH reveals inefficiencies in resource sharing, unfair scheduling, and performance pitfalls of static model server configurations.\n- The findings highlight the value of custom kernels tailored to consumer-grade GPU architectures and SLO-aware scheduling strategies.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/efeslab/ConsumerBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+        "authors": "Tianle Cai, Talha Chafekar, Muhammad Yusuf Hassan, Yang Zhang, Junyan Li",
+        "link": "https://arxiv.org/abs/2506.18879",
+        "github_repo": "https://github.com/UMass-Embodied-AGI/CommVQ",
+        "summary": "- CommVQ, a novel method for compressing Key-Value (KV) caches in large language models (LLMs), is proposed to address the memory bottleneck caused by long context lengths.\n- CommVQ employs additive vector quantization with a lightweight encoder and codebook that is commutative with Rotary Position Embedding (RoPE), allowing efficient integration into the self-attention mechanism.\n- Experiments on LongBench, InfiniteBench, and GSM8K demonstrate that CommVQ reduces FP16 KV cache size by 87.5% with 2-bit quantization and enables 1-bit quantization with minimal accuracy loss.\n- The proposed method outperforms state-of-the-art KV cache quantization methods and allows a LLaMA-3.1 8B model to run with a 128K context length on a single RTX 4090 GPU.\n- CommVQ achieves superior trade-offs between memory savings and accuracy by combining additive quantization and RoPE-commutative codebook.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/UMass-Embodied-AGI/CommVQ"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "From Virtual Games to Real-World Play",
+        "authors": "Zilong Chen, Xi Chen, Jinjing Zhao, Fangyun Wei, Wenqiang Sun",
+        "link": "https://arxiv.org/abs/2506.18901",
+        "github_repo": null,
+        "summary": "- RealPlay, a novel neural network-based real-world game engine, is introduced that enables interactive video generation from user control signals, producing photorealistic and temporally consistent video sequences.\n- It operates using an interactive loop: users observe the generated scene, provide a control command, and receive a short video chunk.\n- Key challenges such as iterative chunk-wise prediction, temporal consistency across iterations, and precise control response are addressed to enable realistic and responsive generation.\n- RealPlay demonstrates control transfer (mapping control signals from virtual to real-world scenarios) and entity transfer (generalizing to control diverse real-world entities beyond those in training data).\n- The model is trained on labeled game data and unlabeled real-world videos without requiring real-world action annotations and outperforms various baselines in terms of control success rates and visual quality, demonstrating its effectiveness in generating realistic and responsive video chunks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "FaithfulSAE: Towards Capturing Faithful Features with Sparse\n  Autoencoders without External Dataset Dependencies",
+        "authors": "Andrew Bermingham, Luis Eduardo Rodrigues Vieira, Donghyun Lee, Harryn Oh, seonglae",
+        "link": "https://arxiv.org/abs/2506.17673",
+        "github_repo": null,
+        "summary": "- This paper introduces FaithfulSAE, a novel method for training Sparse Autoencoders (SAEs) that avoids the instability issues associated with using external datasets.\n- The proposed method trains SAEs on a synthetic dataset generated by the model itself, eliminating the reliance on external datasets which can introduce out-of-distribution (OOD) data.\n- Experimental results show that FaithfulSAEs outperform SAEs trained on web-based datasets in terms of stability across different initialization seeds and exhibit a lower Fake Feature Ratio.\n- The findings support the hypothesis that using OOD data in SAE training is the primary cause of their instability and that training on model-internal data leads to more stable and faithful feature representations.\n- This method improves the faithfulness and stability of SAEs, advancing the interpretability of large language models.",
+        "classification": [
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/seonglae/FaithfulSAE"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/seonglae/faithful-saes-67f3b25ff21a185017879b33",
+            "https://huggingface.co/collections/seonglae/faithful-dataset-67f3b21ff8fca56b87e5370f"
+        ],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "A deep learning and machine learning approach to predict neonatal death\n  in the context of S\u00e3o Paulo",
+        "authors": "Afia Anjum Tamanna, A Z M Tahmidul Kabir, Plabon Kumar Saha, Mohon Raihan, rajandasgupta",
+        "link": "https://arxiv.org/abs/2506.16929",
+        "github_repo": null,
+        "summary": "- This research paper introduces a novel approach to predict neonatal mortality using machine learning and deep learning techniques.\n- The model uses a dataset containing 1.4 million records of newborn children from S\u00e3o Paulo, Brazil.\n- Various algorithms were employed, including Logistic Regression, KNN, SVC, XGBoost, Random Forest, CNN, and LSTM.\n- The LSTM model achieved the highest accuracy (99%), outperforming other machine learning algorithms.\n- This study provides a valuable tool for early identification of at-risk newborns, enabling timely intervention and potentially reducing neonatal mortality rates.",
+        "classification": [
+            "Tabular Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "Robust Reward Modeling via Causal Rubrics",
+        "authors": "Sravanti Addepalli, Gandharv Patil, Rahul Madhavan, Harman Singh, Pragya Srivastava",
+        "link": "https://arxiv.org/abs/2506.16507",
+        "github_repo": null,
+        "summary": " - This paper introduces CROME, a novel framework for robust reward modeling that uses causal rubrics to mitigate reward hacking in large language models (LLMs).\n - CROME employs synthetic augmentations during training: causal augmentations that enforce sensitivity along each causal attribute and neutral augmentations that enforce invariance along spurious attributes.\n - The augmentations are generated without prior knowledge of spurious factors via interventions only along causal rubrics identified by an oracle LLM.\n - Experimental results show that CROME significantly outperforms standard baselines on multiple benchmarks, improving average accuracy by up to 5.4% and achieving gains of up to 13.2% and 7.2% in specific categories.\n - The robustness of CROME is further demonstrated by consistent gains obtained in a Best-of-N inference setting across increasing N, across various benchmarks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "I Know Which LLM Wrote Your Code Last Summer: LLM generated Code\n  Stylometry for Authorship Attribution",
+        "authors": "Bertalan Borsos, Nils Gruschka, Richard A. Dubniczky, Tamas Bisztray, Neo111x",
+        "link": "https://arxiv.org/abs/2506.17323",
+        "github_repo": "https://github.com/LLMauthorbench/",
+        "summary": "- This paper introduces CodeT5-Authorship, a novel model for LLM authorship attribution of C programs, which uses only the encoder layers from the original CodeT5 model.\n- The model achieves high accuracy (97.56% in binary classification and 95.40% in multi-class attribution) in distinguishing between C programs generated by different LLMs.\n- A new benchmark dataset, LLM-AuthorBench, containing 32,000 compilable C programs generated by eight state-of-the-art LLMs, is introduced to evaluate the proposed model and other methods.\n- The CodeT5-Authorship model outperforms several traditional ML classifiers and other transformer models in the authorship attribution task, demonstrating the effectiveness of the proposed approach.\n- The CodeT5-Authorship architecture, the LLM-AuthorBench benchmark, and all relevant Google Colab scripts are publicly available on GitHub.",
+        "classification": [
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/LLMauthorbench/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    },
+    {
+        "title": "SoK: Evaluating Jailbreak Guardrails for Large Language Models",
+        "authors": "Daoyuan Wu, Zongjie Li, Wenxuan Wang, Zhenlan Ji, Xunguang Wang",
+        "link": "https://arxiv.org/abs/2506.10597",
+        "github_repo": "https://github.com/xunguangwang/SoK4JailbreakGuardrails",
+        "summary": "This paper presents the first comprehensive taxonomy for categorizing jailbreak guardrails for LLMs along six key dimensions.  A novel Security-Efficiency-Utility evaluation framework is introduced to assess guardrail effectiveness.  Extensive analysis and experiments identify the strengths and limitations of existing guardrails and provide insights for optimizing defense combinations.  A leaderboard is presented, ranking guardrails based on their performance across various metrics.  The findings guide the principled advancement and deployment of robust LLM guardrails.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/xunguangwang/SoK4JailbreakGuardrails"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-24"
+    }
+]

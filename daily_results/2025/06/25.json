@@ -1,0 +1,276 @@
+[
+    {
+        "title": "AnimaX: Animating the Inanimate in 3D with Joint Video-Pose Diffusion\n  Models",
+        "authors": "lsheng2024, pookiefoof, Yang-Tian, fenghora, huanngzh",
+        "link": "https://arxiv.org/abs/2506.19851",
+        "github_repo": null,
+        "summary": "- AnimaX is a novel feed-forward 3D animation framework that leverages video diffusion models and skeleton-based animation for generating high-quality animations from articulated 3D meshes and textual descriptions.\n- The model architecture employs a joint video-pose diffusion model, which processes multi-view 2D pose maps and video frames simultaneously to effectively transfer motion knowledge from the video domain to the 3D animation domain.\n- It introduces shared positional encodings and modality-aware embeddings to ensure spatial-temporal alignment between the video and pose streams.\n- AnimaX achieves state-of-the-art results on VBench, outperforming existing methods in generalization, motion fidelity, and efficiency, as evidenced by quantitative comparisons and user studies.\n- The framework supports diverse articulated meshes with arbitrary skeletons, demonstrating significant improvements in generating high-quality animations compared to prior work that primarily focuses on fixed skeletal topologies or relies on costly optimization.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://anima-x.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Matrix-Game: Interactive World Foundation Model",
+        "authors": "Qingcheng Zhu, Puyi Wang, Boyang Wang, Chunli Peng, Vanint",
+        "link": "https://arxiv.org/abs/2506.18701",
+        "github_repo": "https://github.com/SkyworkAI/Matrix-Game",
+        "summary": "- The paper introduces Matrix-Game, a novel interactive world foundation model for controllable game world generation, trained using a two-stage pipeline.\n- Matrix-Game adopts a controllable image-to-world generation paradigm, conditioned on a reference image, motion context, and user actions.\n- The model outperforms prior open-source Minecraft world models (Oasis and MineWorld) across all metrics of the GameWorld Score benchmark, particularly in controllability and physical consistency.\n- To evaluate the model, a new benchmark called GameWorld Score is introduced, which measures visual quality, temporal quality, action controllability, and physical rule understanding.\n- The Matrix-Game model weights and the GameWorld Score benchmark will be open-sourced to facilitate future research.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/SkyworkAI/Matrix-Game"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal\n  Reasoning",
+        "authors": "Junhao Cheng, Yixiao Ge, Rui Wang, Yuying Ge, Yi Chen",
+        "link": "https://arxiv.org/abs/2506.16141",
+        "github_repo": "https://github.com/TencentARC/GRPO-CARE",
+        "summary": "- This paper introduces GRPO-CARE, a novel consistency-aware reinforcement learning framework that enhances the reasoning capabilities of multimodal large language models (MLLMs).\n- GRPO-CARE addresses the limitation of standard outcome-supervised methods by jointly optimizing for both answer correctness and reasoning coherence, improving interpretability and generalization.\n- The proposed method introduces a two-tiered reward mechanism: a base reward for accuracy and a consistency bonus based on the likelihood that a reference model reproduces the same answer given the reasoning trace.\n- Experiments on SEED-Bench-R1, a new benchmark specifically designed to evaluate post-training methods for MLLMs, demonstrate that GRPO-CARE consistently outperforms standard GRPO, achieving a 6.7% performance gain on the most challenging evaluation level and a 24.5% improvement in consistency rates.\n- The effectiveness of GRPO-CARE is further validated by its strong transferability across diverse video understanding benchmarks.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/GRPO-CARE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in\n  LLMs",
+        "authors": "Changshi Li, Yuzhen Xiao, chrisliu298, lycfight, zengliangcs",
+        "link": "https://arxiv.org/abs/2506.19290",
+        "github_repo": null,
+        "summary": "- This paper introduces Skywork-SWE, a new dataset for software engineering tasks containing 10,169 real-world Python instances from 2,531 distinct GitHub repositories.\n- The dataset includes natural language descriptions, code, and validated unit tests, addressing limitations of existing datasets.\n- They fine-tune a 32B parameter LLM, achieving state-of-the-art performance on the SWE-bench Verified benchmark (38% pass@1 accuracy without verifiers).\n- The authors empirically demonstrate a data scaling law for software engineering in LLMs, showing consistent performance improvements with increased training data size.\n- They release their model checkpoint and dataset to facilitate future research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SkyworkAI/Skywork-SWE"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Skywork/Skywork-SWE-32B"
+        ],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "ScaleCap: Inference-Time Scalable Image Captioning via Dual-Modality\n  Debiasing",
+        "authors": "Pan Zhang, Xiaoyi Dong, Long Xing, yuhangzang, shikiw",
+        "link": "https://arxiv.org/abs/2506.19848",
+        "github_repo": "https://github.com/Cooperx521/ScaleCap",
+        "summary": "- This paper introduces ScaleCap, a novel inference-time scalable image captioning strategy that addresses the inherent biases of large vision-language models (LVLMs).\n- ScaleCap employs two key components: heuristic question answering and contrastive sentence rating to generate more comprehensive and detailed image captions.\n- The heuristic question answering module generates content-specific questions based on the image and answers them progressively, injecting relevant information into the caption.\n- The contrastive sentence rating module uses offline contrastive decoding to identify and eliminate hallucinations caused by linguistic biases.\n- ScaleCap demonstrates consistent performance gains across multiple widely-used benchmarks when used for LVLMs' pre-training, showing its effectiveness and scalability.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Cooperx521/ScaleCap"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "SWE-SQL: Illuminating LLM Pathways to Solve User SQL Issues in\n  Real-World Applications",
+        "authors": "Per Jacobsson, Ge Qu, Jinyang Li, Tebmer, xia01ongLi",
+        "link": "https://arxiv.org/abs/2506.18951",
+        "github_repo": null,
+        "summary": "- This paper introduces BIRD-CRITIC, a new benchmark for SQL issue debugging, comprising 530 PostgreSQL tasks and 570 multi-dialect tasks distilled from real user issues.\n- It presents SIX-GYM, a training environment leveraging the SQL-Rewind strategy to automatically generate executable issue-solution datasets.\n- The paper proposes f-Plan Boosting, a method to extract high-level debugging plans from SQL solutions to improve training.\n- BIRD-FIXER, an open-source agent based on Qwen-2.5-Coder-14B, achieves a success rate of 38.11% on BIRD-CRITIC-PG and 29.65% on BIRD-CRITIC-MULTI, surpassing many leading proprietary models.\n- The results demonstrate the potential of open-source models for SQL issue debugging and highlight the challenges of the task.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://bird-critic.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "SRFT: A Single-Stage Method with Supervised and Reinforcement\n  Fine-Tuning for Reasoning",
+        "authors": "Xihuai Wang, Jiajun Chai, Tinghong Chen, SONGJUNTU, Yuqian-Fu",
+        "link": "https://arxiv.org/abs/2506.19767",
+        "github_repo": null,
+        "summary": "- This paper introduces SRFT, a novel single-stage method that integrates supervised fine-tuning (SFT) and reinforcement learning (RL) for enhanced reasoning capabilities in large language models (LLMs).\n- SRFT addresses limitations of sequential SFT-RL approaches by simultaneously optimizing LLM policy distributions using both demonstrations and self-exploration rollouts.\n- The method leverages entropy-aware weighting mechanisms to balance SFT's knowledge distillation and RL's policy optimization, improving both mathematical reasoning and generalization on out-of-distribution tasks.\n- Experimental results show SRFT outperforming zero-RL methods by 9.0% on mathematical reasoning benchmarks and 10.9% on out-of-distribution benchmarks.\n- The core innovation is the unified single-stage training process, achieving superior efficiency compared to sequential methods.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Yuqian-Fu/SRFT"
+        ],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "JarvisArt: Liberating Human Artistic Creativity via an Intelligent Photo\n  Retouching Agent",
+        "authors": "Panwang Pan, Jinbin Bai, Kunjie Lin, Zixu Lin, LYL1015",
+        "link": "https://arxiv.org/abs/2506.17612",
+        "github_repo": null,
+        "summary": " - This paper introduces JarvisArt, a novel intelligent photo retouching agent that leverages a multi-modal large language model (MLLM) to understand user intent and coordinate over 200 retouching tools within Adobe Lightroom.\n- JarvisArt undergoes a two-stage training process: Chain-of-Thought supervised fine-tuning and Group Relative Policy Optimization for Retouching (GRPO-R).\n- The proposed Agent-to-Lightroom Protocol facilitates seamless integration between JarvisArt and Lightroom.\n- Experiments on the MMArt-Bench, a novel benchmark, show that JarvisArt outperforms GPT-4 by 60% on average pixel-level metrics while maintaining comparable instruction-following capabilities.\n- User preference studies demonstrate that JarvisArt achieves superior performance in ease of use, consistency, efficiency, and overall satisfaction compared to existing methods.",
+        "classification": [
+            "Image-to-Image",
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "SimpleGVR: A Simple Baseline for Latent-Cascaded Video Super-Resolution",
+        "authors": "Xintao Wang, Menghan Xia, Shian Du, Yu Li, Liangbin Xie",
+        "link": "https://arxiv.org/abs/2506.19838",
+        "github_repo": null,
+        "summary": "- SimpleGVR is a novel lightweight cascaded video super-resolution model that directly enhances low-resolution latent representations from a pre-trained text-to-video model, avoiding redundant decoding and encoding steps.\n- The model architecture incorporates two degradation strategies (flow-based and model-guided) to generate training pairs that accurately mimic the characteristics of the base model, improving alignment and performance.\n- SimpleGVR utilizes a detail-aware sampler and a carefully chosen noise augmentation range during training to enhance its ability to recover fine details and correct structural errors.\n- To improve efficiency, SimpleGVR employs an interleaving temporal unit mechanism and sparse local attention, achieving efficient training and inference, particularly with long video sequences.\n- Extensive experiments demonstrate SimpleGVR's superiority over existing methods, achieving the best performance on both MUSIQ and DOVER metrics and significantly higher scores on VBench compared to other methods.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://simplegvr.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Guidance in the Frequency Domain Enables High-Fidelity Sampling at Low\n  CFG Scales",
+        "authors": "Farnood Salehi, Tobias Vontobel, RMW, msadat97",
+        "link": "https://arxiv.org/abs/2506.19713",
+        "github_repo": null,
+        "summary": "- This paper introduces Frequency-Decoupled Guidance (FDG), a novel technique that improves the quality of images generated by diffusion models at low classifier-free guidance (CFG) scales.\n- FDG decomposes CFG into low- and high-frequency components and applies separate guidance strengths to each component, addressing the limitations of using a uniform scale across all frequencies in standard CFG.\n- The authors demonstrate through extensive experiments that FDG consistently enhances sample fidelity while preserving diversity, outperforming standard CFG in terms of FID and recall across various datasets and models.\n- FDG is shown to be a plug-and-play alternative to standard CFG, requiring only minor modifications to the standard CFG sampling procedure and introducing no significant computational overhead.\n- The approach is compatible with all pretrained diffusion models and provides a deeper understanding of how CFG enhances image quality and prompt alignment by separately analyzing the roles of low- and high-frequency components in the CFG update rule.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Unified Vision-Language-Action Model",
+        "authors": "Yingyan Li, Junbo Zhang, Wenxuan Wang, Xinghang Li, Yuqi Wang",
+        "link": "https://arxiv.org/abs/2506.19850",
+        "github_repo": null,
+        "summary": "- UniVLA is a unified vision-language-action model that represents vision, language, and action as discrete tokens within a unified autoregressive framework, enabling multi-modal outputs and supporting various tasks.\n- Unlike prior approaches, UniVLA doesn't rely on an extra vision encoder; instead, it leverages a unified autoregressive transformer to model all modalities jointly.\n- The model achieves state-of-the-art results on multiple benchmarks (CALVIN, LIBERO, and SimplerEnv-Bridge), significantly surpassing existing methods in terms of average success rate.\n- UniVLA incorporates world modeling during post-training, allowing it to capture causal dynamics from videos and enhance policy learning, especially for long-horizon tasks.\n- The unified token-based design allows UniVLA to effectively leverage large-scale multimodal data, particularly video data, for scalable and generalizable learning.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://robertwyq.github.io/univla.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Why Do Open-Source LLMs Struggle with Data Analysis? A Systematic\n  Empirical Study",
+        "authors": "Ziheng Zhang, Jintian Zhang, Yi Zhong, Yuqi Zhu, Ningyu",
+        "link": "https://arxiv.org/abs/2506.19794",
+        "github_repo": null,
+        "summary": "- This paper investigates the limitations of open-source LLMs in data analysis tasks and proposes strategies to improve their performance.\n- The authors evaluate open-source LLMs across three dimensions: data understanding, code generation, and strategic planning, revealing that strategic planning is the primary determinant of model performance.\n- They find that interaction design and task complexity significantly influence reasoning capabilities, and data quality has a greater impact than diversity.\n- Based on these findings, a data synthesis methodology is developed, demonstrating significant improvements in open-source LLMs' analytical reasoning capabilities.\n- The study uses Qwen models as the foundational baseline and evaluates their performance across diverse data analysis scenarios using benchmarks like DiscoveryBench and QRData.",
+        "classification": [
+            "Table Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Lost in the Mix: Evaluating LLM Understanding of Code-Switched Text",
+        "authors": "Michalis Vazirgiannis, Yang Zhang, guokan-shang, amr-mohamed",
+        "link": "https://arxiv.org/abs/2506.14012",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel evaluation framework for assessing the comprehension capabilities of large language models (LLMs) when processing code-switched (CSW) text.\n- The framework uses a multi-step pipeline to generate linguistically grounded CSW variants of established benchmarks.\n- Experiments reveal that code-switching has a nuanced effect on LLM comprehension, with degradation evident when foreign tokens disrupt English text.\n- Fine-tuning LLMs on code-switched data provides a more stable path to mitigating comprehension degradation compared to prompt-based methods.\n- The findings highlight the importance of developing more robust and adaptable LLMs to effectively process the increasingly prevalent mixed-language data found online.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/amr-mohamedd/Lost-in-the-Mix.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Can Large Language Models Capture Human Annotator Disagreements?",
+        "authors": "Alexander Hoyle, Donya Rooein, Vil\u00e9m Zouhar, Yu Fan, JingweiNi",
+        "link": "https://arxiv.org/abs/2506.19467",
+        "github_repo": "https://github.com/EdisonNi-hku/Disagreement_Prediction",
+        "summary": "This research paper's main contribution is a comprehensive evaluation of LLMs' capacity to predict human annotator disagreements without access to repeated human labels.  The findings reveal that LLMs struggle with this task, a limitation often overlooked by majority label-based evaluations.  Interestingly, RLVR-style reasoning, which generally improves LLM performance, degrades its performance in disagreement prediction.  The authors highlight the need for improved methods for evaluating and enhancing LLMs' capabilities in this area.  The study uses various datasets and LLM architectures, examining both verbalized and sampling-based distribution expression methods.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/EdisonNi-hku/Disagreement_Prediction"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "USAD: Universal Speech and Audio Representation via Distillation",
+        "authors": "Alexander H. Liu, James Glass, saurabhati, vectominist",
+        "link": "https://arxiv.org/abs/2506.18843",
+        "github_repo": null,
+        "summary": "- This paper introduces USAD, a unified model for speech and audio representation learning that uses layer-to-layer distillation from pre-trained teacher models.\n- USAD integrates diverse audio types (speech, sound, music) into a single model, addressing the limitation of domain-specific models.\n- The model achieves near state-of-the-art results across various benchmarks (SUPERB and HEAR), demonstrating its effectiveness in both speech and audio tasks.\n- USAD employs an efficient sparse layer-to-layer distillation technique, improving computational efficiency while maintaining competitive performance.\n- Ablation studies demonstrate the effectiveness of key design choices, such as teacher model selection and distillation data.",
+        "classification": [
+            "Audio Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/MIT-SLS/USAD-Base"
+        ],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "KnowRL: Exploring Knowledgeable Reinforcement Learning for Factuality",
+        "authors": "Huajun Chen, Wenhao Yu, Shuofei Qiao, Baochang Ren, Ningyu",
+        "link": "https://arxiv.org/abs/2506.19807",
+        "github_repo": "https://github.com/zjunlp/KnowRL",
+        "summary": "- KnowRL, a novel framework that integrates a factuality reward into the reinforcement learning process to mitigate hallucinations in LLMs, is proposed.\n- KnowRL guides models to perform fact-based slow thinking by integrating a factuality reward, based on knowledge verification, into the RL training process.\n- Experimental results on three hallucination evaluation datasets and two reasoning evaluation datasets demonstrate that KnowRL effectively mitigates hallucinations in slow-thinking models while maintaining their original strong reasoning capabilities.\n- KnowRL outperforms baseline methods in mitigating hallucinations while often improving models' reasoning performance.\n- The study reveals a trade-off between factual accuracy and reasoning ability, suggesting the need for careful balancing of training steps in KnowRL.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zjunlp/KnowRL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Intelligent Operation and Maintenance and Prediction Model Optimization\n  for Improving Wind Power Generation Efficiency",
+        "authors": "Jiaqi He, Xiaobin Wu, Xun Liu, rajandasgupta",
+        "link": "https://arxiv.org/abs/2506.16095",
+        "github_repo": null,
+        "summary": "- This research explores the effectiveness of predictive maintenance models and intelligent operation and maintenance (O&M) systems in improving wind power generation efficiency.\n- Qualitative research, involving structured interviews with wind farm engineers and maintenance managers, reveals that predictive maintenance models effectively reduce downtime but struggle with detecting smaller, gradual failures.\n- Key challenges identified include false positives, sensor malfunctions, and the integration of new models with older turbines.\n- Advanced technologies like digital twins and SCADA systems enhance turbine maintenance, but require further improvements in AI refinement and real-time data integration.\n- The findings highlight the need for continued development to optimize wind turbine performance and support broader renewable energy adoption.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    },
+    {
+        "title": "Mem4Nav: Boosting Vision-and-Language Navigation in Urban Environments\n  with a Hierarchical Spatial-Cognition Long-Short Memory System",
+        "authors": "Jie Feng, Yangcheng Yu, Zhenxing Chen, Haoyu Dong, Lixuan He",
+        "link": "https://arxiv.org/abs/2506.19433",
+        "github_repo": "https://github.com/tsinghua-fib-lab/Mem4Nav",
+        "summary": "- Mem4Nav is a hierarchical spatial-cognition long-short memory system that augments any VLN backbone to improve vision-and-language navigation in urban environments.\n- The model architecture consists of a sparse octree for fine-grained voxel indexing, a semantic topology graph for high-level landmark connectivity, and trainable memory tokens embedded via a reversible Transformer, enabling both fine-grained and high-level route planning.\n- Mem4Nav achieves 7-13 percentage points improvement in Task Completion, sufficient SPD reduction, and >10 percentage points improvement in nDTW across three backbones on Touchdown and Map2Seq datasets.\n- Ablation studies confirm that both the hierarchical map and dual memory modules are indispensable to Mem4Nav's performance gains.\n- The code is open-sourced at https://github.com/tsinghua-fib-lab/Mem4Nav.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/tsinghua-fib-lab/Mem4Nav"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-25"
+    }
+]

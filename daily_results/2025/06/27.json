@@ -1,0 +1,221 @@
+[
+    {
+        "title": "MMSearch-R1: Incentivizing LMMs to Search",
+        "authors": "Bo You, Yiding Liu, Wei Li, Zihao Deng, kimingng",
+        "link": "https://arxiv.org/abs/2506.20670",
+        "github_repo": "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1",
+        "summary": "\n- This paper introduces MMSearch-R1, a novel reinforcement learning framework that enables large multimodal models (LMMs) to perform on-demand, multi-turn search in real-world internet environments.\n- MMSearch-R1 integrates both image and text search tools, allowing the model to reason about when and how to invoke them guided by an outcome-based reward with a search penalty.\n- The model outperforms RAG-based baselines of the same model size, and matches the performance of larger RAG-based models while reducing search calls by over 30% on various VQA tasks.\n-  A multimodal search VQA dataset was created with a semi-automated pipeline to support training.\n- The framework was shown to improve models' ability to recognize the boundaries of their knowledge and perform on-demand search, which enhanced their ability to utilize internal knowledge.",
+        "classification": [
+            "Visual Question Answering",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/EvolvingLMMs-Lab/multimodal-search-r1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "MADrive: Memory-Augmented Driving Scene Modeling",
+        "authors": "Maria Golitsyna, Ruslan Musaev, Kirill Struminsky, Polina Karpikova, apryc1",
+        "link": "https://arxiv.org/abs/2506.21520",
+        "github_repo": null,
+        "summary": "- This paper introduces MADrive, a memory-augmented driving scene reconstruction framework that enhances existing methods by replacing observed vehicles with similar 3D assets retrieved from an external memory bank, enabling photorealistic synthesis of substantially altered driving scenarios.\n- The framework uses a novel multi-view auto dataset called MAD-Cars, which contains approximately 70,000 360\u00b0 car videos captured in the wild, to provide high-fidelity 3D car models.\n- MADrive employs physically-based relighting and insertion techniques to ensure visual consistency of the inserted models within the scene, resulting in more realistic novel driving scene views.\n- Experimental results demonstrate that MADrive significantly outperforms existing methods in terms of tracking and segmentation metrics on a challenging dataset of driving scenes, producing more realistic renderings and exhibiting higher robustness to altered views.\n- The contribution also includes a new evaluation setting that assesses driving scene reconstruction in significantly altered views, showcasing the advantages of MADrive in more complex and dynamic environments.",
+        "classification": [
+            "Computer Vision",
+            "Image-to-3D",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://yandex-research.github.io/madrive/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "WorldVLA: Towards Autoregressive Action World Model",
+        "authors": "Siteng Huang, Yuming Jiang, Chaohui Yu, Jun Cen, JacobYuan",
+        "link": "https://arxiv.org/abs/2506.21539",
+        "github_repo": "https://github.com/alibaba-damo-academy/WorldVLA",
+        "summary": "- WorldVLA is a novel autoregressive action world model that unifies action and image understanding and generation, integrating a vision-language-action (VLA) model and a world model in a single framework.\n- The model architecture employs three separate tokenizers for images, text, and actions, with shared vocabulary to unify understanding and generation across modalities.\n- WorldVLA outperforms standalone action and world models, demonstrating mutual enhancement between the two components; this is evidenced by a 4% improvement in grasping success rate compared to the action model and 10% reduction in Fr\u00e9chet Video Distance compared to a vanilla world model.\n- To address the issue of error propagation in autoregressive action generation, an action attention masking strategy is proposed, which selectively masks prior actions, leading to significant performance improvement (4% to 23% improvement in grasping success rate).\n- The experiments are conducted on the LIBERO benchmark, demonstrating WorldVLA's superior performance in various manipulation tasks.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba-damo-academy/WorldVLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "Where to find Grokking in LLM Pretraining? Monitor\n  Memorization-to-Generalization without Test",
+        "authors": "Ziyue Li, zhoutianyi, Fcr09",
+        "link": "https://arxiv.org/abs/2506.21551",
+        "github_repo": null,
+        "summary": "- This paper introduces two novel metrics for monitoring generalization during LLM pretraining without relying on test sets or finetuning. \n- The study verifies that grokking, the phenomenon where test performance improves long after training loss converges, also occurs during the pretraining of large-scale LLMs. \n- It is shown that, unlike previous findings, grokking in LLMs is local and asynchronous across different data domains. \n- The proposed metrics quantify the complexity and similarity of routing pathways within a Mixture-of-Experts (MoE) LLM, providing mechanistic insights into the memorization-to-generalization transition. \n- The findings are grounded in a theoretical analysis showing that more structured pathways reduce model complexity and improve the generalization bound.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "Mind2Web 2: Evaluating Agentic Search with Agent-as-a-Judge",
+        "authors": "Yu Gu, Zanming Huang, yhshu, nnnyt, BoyuNLP",
+        "link": "https://arxiv.org/abs/2506.21506",
+        "github_repo": null,
+        "summary": "The paper introduces Mind2Web 2, a benchmark for evaluating agentic search systems that perform complex, time-varying web searches.  Mind2Web 2 includes 130 realistic tasks requiring real-time web browsing and information synthesis, evaluated using a novel Agent-as-a-Judge framework.  The framework assesses answer correctness and source attribution automatically. Results show that OpenAI Deep Research achieves 50-70% of human performance while being faster, highlighting the potential of agentic search but also revealing challenges in handling time-varying information.  The benchmark offers a foundation for future agentic search system development.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "SAM4D: Segment Anything in Camera and LiDAR Streams",
+        "authors": "Sheng Yang, Chunyong Hu, Ziqian Ni, Jianyun Xu, songw-zju",
+        "link": "https://arxiv.org/abs/2506.21547",
+        "github_repo": null,
+        "summary": "- SAM4D is a novel multi-modal and temporal foundation model designed for promptable segmentation across camera and LiDAR streams.\n- It utilizes Unified Multi-modal Positional Encoding (UMPE) to align camera and LiDAR features in a shared 3D space, enabling seamless cross-modal prompting and interaction.\n- Motion-aware Cross-modal Memory Attention (MCMA) enhances temporal consistency and long-horizon feature retrieval.\n- SAM4D is trained on the constructed Waymo-4DSeg dataset, which contains over 300k camera-LiDAR associated masklets.\n- Extensive experiments demonstrate SAM4D's superior performance and generalizability in promptable multi-modal segmentation.",
+        "classification": [
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/open-mmlab/mmsegmentation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "Whole-Body Conditioned Egocentric Video Prediction",
+        "authors": "Trevor Darrell, Yann LeCun, Amir Bar, dans123, Emma02",
+        "link": "https://arxiv.org/abs/2506.21552",
+        "github_repo": null,
+        "summary": "- This paper introduces PEVA, a novel model for predicting egocentric videos conditioned on detailed 3D human motion.\n- The model architecture is based on an autoregressive conditional diffusion transformer, which leverages a structured action representation that captures both global body dynamics and fine-grained joint articulations.\n- PEVA is trained on the Nymeria dataset, a large-scale dataset of real-world egocentric video and body pose capture, and includes random timeskips to handle delayed visual consequences of actions.\n- The authors conduct a comprehensive evaluation demonstrating that PEVA outperforms baseline methods in terms of video quality, semantic consistency, and action control abilities.\n- The results showcase PEVA's ability to predict long-term visual consequences and even perform planning tasks by simulating action candidates and selecting the one with highest perceptual similarity to the goal.",
+        "classification": [
+            "Image-to-Video",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "FaSTA^*: Fast-Slow Toolpath Agent with Subroutine Mining for Efficient\n  Multi-turn Image Editing",
+        "authors": "Dang Nguyen, Rishie Raj, Advait Gupta, zhoutianyi",
+        "link": "https://arxiv.org/abs/2506.20911",
+        "github_repo": null,
+        "summary": "This paper introduces FaSTA*, a neurosymbolic agent for efficient multi-turn image editing that combines large language model (LLM) planning with A* search for toolpath optimization.  FaSTA* employs inductive reasoning to mine reusable subroutines from successful toolpaths, improving efficiency by prioritizing these subroutines over expensive A* searches.  Experimental results demonstrate that FaSTA* achieves comparable image quality to CoSTA* while significantly reducing execution cost (by 49.3%).  The adaptive fast-slow planning approach balances speed and accuracy, making complex image editing tasks more efficient.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/tianyi-lab/FaSTAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "Arch-Router: Aligning LLM Routing with Human Preferences",
+        "authors": "Adil Hafeez, Co Tran, nehcgs, parachas",
+        "link": "https://arxiv.org/abs/2506.16655",
+        "github_repo": null,
+        "summary": "- This paper introduces Arch-Router, a 1.5B parameter language model for preference-aligned LLM routing.\n- Arch-Router maps queries to user-defined domains or action types to guide model selection, aligning with subjective human preferences.\n- The framework allows for adding new models without retraining or architectural changes, enhancing flexibility and adaptability.\n- Experiments show that Arch-Router outperforms existing top proprietary LLMs by 7.71% on average in matching queries with human preferences.\n- The approach captures subjective evaluation criteria and makes routing decisions more transparent and flexible.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/katanemo/Arch-Router-1.5B"
+        ],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "FairyGen: Storied Cartoon Video from a Single Child-Drawn Character",
+        "authors": "Xiaodong Cun, Jiayi Zheng",
+        "link": "https://arxiv.org/abs/2506.21272",
+        "github_repo": "https://github.com/GVCLab/FairyGen",
+        "summary": "- FairyGen is a novel framework that generates story-driven cartoon videos from a single child's drawing, preserving its unique artistic style.\n- It disentangles character modeling from background generation and incorporates cinematic shot design for coherent storytelling.\n- A multimodal large language model (MLLM) generates a structured storyboard, while a style propagation adapter ensures visual consistency by applying the character's style to the background.\n- A shot design module enhances visual diversity, and a 3D proxy of the character is used to derive physically plausible motion sequences, fine-tuned using an MMDiT-based image-to-video diffusion model.\n- Extensive experiments demonstrate that FairyGen produces stylistically faithful, narratively structured animations with smooth, natural motion.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/GVCLab/FairyGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "An Agentic System for Rare Disease Diagnosis with Traceable Reasoning",
+        "authors": "Pengcheng Qiu, Xiaoman Zhang, Yanjie Fan, Chaoyi Wu, Weike Zhao",
+        "link": "https://arxiv.org/abs/2506.20430",
+        "github_repo": null,
+        "summary": "DeepRare is an agentic system for rare disease diagnosis that uses a large language model (LLM) to process heterogeneous clinical inputs, including free text, structured data, and genomic data.  It generates ranked diagnostic hypotheses with traceable reasoning. DeepRare outperforms 15 other methods in HPO-based evaluations, achieving a Recall@1 score of 57.18%.  In multi-modal input scenarios, it achieves 70.6% Recall@1 compared to Exomiser's 53.2%. Clinical experts verified the system's reasoning chains with 95.4% agreement, indicating high reliability.  The system has been implemented as a user-friendly web application.",
+        "classification": [
+            "Natural Language Processing",
+            "Multimodal",
+            "Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "None"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Angelakeke/DeepRare"
+        ],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "HeurAgenix: Leveraging LLMs for Solving Complex Combinatorial\n  Optimization Challenges",
+        "authors": "Jiang Bian, Lei Song, Haolong Qian, Ling Zhang, VictorYXL",
+        "link": "https://arxiv.org/abs/2506.15196",
+        "github_repo": "https://github.com/microsoft/HeurAgenix",
+        "summary": " - HeurAgenix is a novel two-stage hyper-heuristic framework that leverages LLMs to solve complex combinatorial optimization problems.\n - The framework first evolves heuristics by comparing seed solutions with higher-quality ones and extracting evolution strategies from the LLM's analysis.\n - Then, it dynamically selects the most promising heuristic for each problem state using an LLM-powered selector, which can be either a state-of-the-art LLM or a lightweight model.\n - To mitigate the scarcity of reliable supervision in complex optimization problems, a dual-reward mechanism is used for fine-tuning the heuristic selector.\n - Extensive experiments demonstrate that HeurAgenix outperforms existing LLM-based hyper-heuristics and achieves competitive performance compared to specialized solvers.",
+        "classification": [
+            "Reinforcement Learning",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/HeurAgenix"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "Learning to Skip the Middle Layers of Transformers",
+        "authors": "Laurence Aitchison, tim-lawson",
+        "link": "https://arxiv.org/abs/2506.21103",
+        "github_repo": "https://github.com/tim-lawson/skip-middle",
+        "summary": "- This paper introduces a novel Transformer architecture that dynamically skips a variable number of middle layers based on a learned gating mechanism. \n- The architecture aims to improve efficiency by reducing computation for simpler tokens and potentially fostering a multi-level representational hierarchy.\n- A gated attention mechanism prevents tokens from attending to skipped positions, and adaptive regularization is used to control gate sparsity.\n- The proposed approach does not demonstrate improvements in validation cross-entropy and estimated FLOPs compared to dense baselines at the scales investigated.\n- Future research directions include scaling the model to potentially realize the benefits of the architecture.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/tim-lawson/skip-middle"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    },
+    {
+        "title": "MuseControlLite: Multifunctional Music Generation with Lightweight\n  Conditioners",
+        "authors": "Bo-Rui Chen, Sheng-Ping Yang, Weijaw Lee, Shih-Lun Wu, fundwotsai2001",
+        "link": "https://arxiv.org/abs/2506.18729",
+        "github_repo": null,
+        "summary": "- MuseControlLite is a lightweight mechanism designed to fine-tune text-to-music generation models for precise conditioning using various time-varying musical attributes and reference audio signals.\n- It utilizes positional embeddings in the decoupled cross-attention layers, which increases control accuracy while requiring fewer trainable parameters compared to existing methods.\n- The model demonstrates improved controllability over MusicGen-Large and Stable Audio Open ControlNet in musical attribute control, audio inpainting, and audio outpainting tasks.\n- Experiments show that MuseControlLite achieves superior performance in melody control, with a 4.5% improvement in melody accuracy compared to existing ControlNet-based approaches.\n- The model is efficient, using only 85M trainable parameters and demonstrating that positional embeddings are critical for time-varying conditions.",
+        "classification": [
+            "Audio-to-Audio",
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://MuseControlLite.github.io/web/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-27"
+    }
+]

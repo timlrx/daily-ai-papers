@@ -1,0 +1,231 @@
+[
+    {
+        "title": "BlenderFusion: 3D-Grounded Visual Editing and Generative Compositing",
+        "authors": "Sanghyun Woo, Saining Xie, Xuhui Jia, Ramin Mehran, cccjc",
+        "link": "https://arxiv.org/abs/2506.17450",
+        "github_repo": null,
+        "summary": "- BlenderFusion is a novel generative visual compositing framework that synthesizes new scenes by recomposing objects, camera, and background using a layering-editing-compositing pipeline.\n- It extends a pre-trained diffusion model to process both original and edited scenes in parallel, fine-tuned on video frames with two key training strategies (source masking and simulated object jittering).\n- BlenderFusion significantly outperforms prior methods in complex compositional scene editing tasks, as shown through quantitative and qualitative evaluations on three video datasets.\n- The model integrates 3D-grounded editing capabilities of Blender with the strong synthesis abilities of diffusion models, enabling flexible, disentangled, and 3D-aware manipulation of objects, camera, and background.\n- The proposed framework leverages a layering-editing-compositing process that includes object-centric layering, Blender-guided editing, and generative compositing.",
+        "classification": [
+            "Image-to-3D",
+            "Image-to-Image",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://blenderfusion.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "LLaVA-Scissor: Token Compression with Semantic Connected Components for\n  Video LLMs",
+        "authors": "Qibin Hou, Xihan Wei, Jiaxing Zhao, Boyuan Sun",
+        "link": "https://arxiv.org/abs/2506.21862",
+        "github_repo": "https://github.com/HumanMLLM/LLaVA-Scissor",
+        "summary": "- This paper introduces LLaVA-Scissor, a training-free token compression strategy for video LLMs that leverages Semantic Connected Components (SCC) to efficiently capture semantic regions and reduce token redundancy.\n- The method uses a two-step spatio-temporal compression approach, applying SCC to both spatial and temporal domains to identify unique semantic tokens, ensuring comprehensive semantic coverage.\n- Evaluations on multiple video understanding benchmarks, including video question answering, long video understanding, and multi-choice benchmarks, show that LLaVA-Scissor outperforms other token compression methods, particularly at low token retention ratios.\n- The paper highlights that attention-based approaches often fail to capture all semantic regions, leading to token redundancy, while segment-based approaches often introduce temporal redundancy.\n- LLaVA-Scissor addresses these limitations by leveraging the SCC approach, enabling more efficient video processing with superior performance at low token retention ratios.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/HumanMLLM/LLaVA-Scissor"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "XVerse: Consistent Multi-Subject Control of Identity and Semantic\n  Attributes via DiT Modulation",
+        "authors": "Xu Wang, Li Chen, Haomiao Sun, Mengyi Zhao, chenbowen",
+        "link": "https://arxiv.org/abs/2506.21416",
+        "github_repo": "https://github.com/bytedance/XVerse",
+        "summary": "- This paper introduces XVerse, a novel multi-subject controlled image generation model that addresses the challenges of attribute entanglement and artifact introduction in existing Diffusion Transformer (DiT) models.\n- XVerse achieves this by transforming reference images into offsets for token-specific text-stream modulation, enabling precise and independent control over individual subjects without disrupting image latents or features.\n- The model architecture involves a T-Mod Resampler that processes reference images and injects them into the per-token modulation adapter, supplemented by VAE-encoded image features for fine-grained detail enhancement.\n- XVerse demonstrates superior performance in generation tasks under multi-subject control, outperforming existing methods on the XVerseBench benchmark in terms of identity preservation, editing capability, and aesthetic quality.\n- The authors further demonstrate XVerse's ability to generalize and control semantic attributes such as pose, style, and lighting, showcasing its versatility and efficiency.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/XVerse"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "ShotBench: Expert-Level Cinematic Understanding in Vision-Language\n  Models",
+        "authors": "Yuhao Dong, Dian Zheng, Yi Jin, Jingwen He, Hongbo Liu",
+        "link": "https://arxiv.org/abs/2506.21356",
+        "github_repo": null,
+        "summary": "This paper introduces ShotBench, a benchmark dataset for evaluating vision-language models' (VLMs) understanding of cinematic language.  ShotBench comprises over 3.5k expert-annotated QA pairs from images and video clips across 200 films, spanning eight key cinematography dimensions.  Evaluation of 24 leading VLMs shows substantial limitations, with even the top-performing model achieving less than 60% accuracy.  To address this, a large-scale multimodal dataset called ShotQA (70k cinematic QA pairs) and ShotVL, a novel VLM significantly outperforming existing models on ShotBench are introduced. The authors make their models, data, and code open-source.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Computer Vision",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://vchitect.github.io/ShotBench-project/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "From Ideal to Real: Unified and Data-Efficient Dense Prediction for\n  Real-World Scenarios",
+        "authors": "Minnan Luo, Zhuohang Dang, Chengyou Jia, Changliang Xia",
+        "link": "https://arxiv.org/abs/2506.20279",
+        "github_repo": null,
+        "summary": "- The paper introduces DenseDiT, a novel data-efficient dense prediction model that leverages generative models' visual priors to perform diverse real-world tasks. \n- DenseDiT employs a parameter-reuse mechanism and lightweight branches (prompt and demonstration) to adapt to various scenarios, outperforming existing baselines with less than 0.1% additional parameters.\n- A new benchmark called DenseWorld is introduced, comprising 25 diverse dense prediction tasks spanning various real-world applications, which allows for unified evaluation.\n- The proposed model achieves superior results on the DenseWorld benchmark, highlighting its capability for real-world generalization and data efficiency.\n- The effectiveness of the proposed model is demonstrated through extensive experiments and qualitative results on diverse real-world scenarios.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image Segmentation",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://xcltql666.github.io/DenseDiTProj"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "MiCo: Multi-image Contrast for Reinforcement Visual Reasoning",
+        "authors": "Xiaogang Xu, Xiaoyang Wu, Shaoteng Liu, Mingkang Zhu, Xi Chen",
+        "link": "https://arxiv.org/abs/2506.22434",
+        "github_repo": null,
+        "summary": "- This paper introduces MiCo, a novel method for multi-image visual reasoning that leverages inherent image constraints as supervision, reducing reliance on manual annotations.\n- MiCo constructs image triplets comprising two augmented views of the same image and a different but similar image, prompting the model to compare them and generate a reasoning process.\n- The model is trained using rule-based reinforcement learning, optimizing its ability to attend to subtle visual changes and perform logical reasoning.\n- Experiments demonstrate MiCo's effectiveness on multi-image reasoning benchmarks, achieving significant improvements without relying on human-annotated question-answer pairs.\n- The method also shows strong performance on general vision tasks, indicating the learned reasoning ability generalizes effectively to a wide range of questions.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "Fine-Grained Preference Optimization Improves Spatial Reasoning in VLMs",
+        "authors": "Xiaofeng Zhang, Xu Cao, Jingyuan Zhu, Yuanzhe Liu, Yifan Shen",
+        "link": "https://arxiv.org/abs/2506.21656",
+        "github_repo": null,
+        "summary": " - This paper introduces SpatialReasoner-R1, a novel vision-language model designed for spatial reasoning that uses Long Chain-of-Thought (LongCoT) reasoning. \n- The model employs a novel fine-grained Direct Preference Optimization (fDPO) method which applies differentiated learning updates tailored to two semantically distinct components: descriptive grounding and logical reasoning. \n- A Multi-Model Monte Carlo Tree Search (M3CTS) method is proposed to generate high-quality supervision for spatial reasoning. \n- SpatialReasoner-R1 achieves state-of-the-art performance on the SPATIALRGPT-BENCH benchmark, outperforming the strongest baseline by 9.8% in average accuracy. \n- The fDPO method achieves an average improvement of 4.1% over standard DPO across spatial quality tasks and a 9.0% gain in spatial quantity tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://plan-lab.github.io/spatialreasoner/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "Ark: An Open-source Python-based Framework for Robot Learning",
+        "authors": "Jiacheng Qiu, Huang Helong, Sarthak Das, Christopher E. Mower, Magnus Dierking",
+        "link": "https://arxiv.org/abs/2506.21628",
+        "github_repo": null,
+        "summary": "- The paper introduces Ark, an open-source Python-first robotics framework designed to simplify robot learning.\n- Ark features a Gym-style environment interface, allowing seamless switching between simulation and physical robots and provides reusable modules for common robotics tasks (e.g. control, SLAM, motion planning).\n- The framework supports both simulated and real hardware through interchangeable drivers and identical communication interfaces.\n- Ark's modular design promotes maintainability and code reuse, and its Python-centric approach lowers the barrier to entry for researchers and developers.\n- The paper demonstrates Ark's versatility through various use-cases including imitation learning, teleoperation and deployment of learned policies on real and simulated robots.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "Pangu Pro MoE: Mixture of Grouped Experts for Efficient Sparsity",
+        "authors": "Wei Guo, Xiaosong Li, MightyCrane, Fangcheng2, tangyehui",
+        "link": "https://arxiv.org/abs/2505.21411",
+        "github_repo": null,
+        "summary": "*- The paper introduces a novel Mixture of Grouped Experts (MoGE) model architecture designed to address expert load imbalance in large language models (LLMs).\n- MoGE groups experts and constrains tokens to activate an equal number of experts within each predefined group, improving the workload balance compared to conventional MoE.\n- The paper presents Pangu Pro MoE, a 72-billion parameter LLM based on MoGE, optimized for Ascend NPUs, achieving 1148 tokens/s per card inference speed.\n- Experiments show that Pangu Pro MoE outperforms comparable dense models (32B and 72B) and other open-source models (GLM-Z1-32B and Qwen3-32B) on various benchmarks.\n- The model's efficiency stems from a hierarchical parallelism strategy and optimized inference techniques for Ascend NPUs, including fused operators and a hierarchical hybrid parallelism strategy.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://gitcode.com/ascend-tribe/pangu-pro-moe"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "Noise Consistency Training: A Native Approach for One-Step Generator in\n  Learning Additional Controls",
+        "authors": "Jing Tang, Tianyang Hu, Shuchen Xue, Yihong Luo",
+        "link": "https://arxiv.org/abs/2506.19741",
+        "github_repo": "https://github.com/Luo-Yihong/NCT",
+        "summary": "- This paper introduces Noise Consistency Training (NCT), a novel method for adding new controls to pre-trained one-step image generators without retraining the base model or accessing original training data.\n- NCT introduces an adapter module and a noise consistency loss to integrate new control signals directly into the noise space of the generator, aligning the adapted model's generation behavior across conditionally dependent noise levels.\n- The method is theoretically grounded, minimizing the distributional distance between the adapted generator and the conditional distribution induced by the new control signals, demonstrated via theoretical analysis.\n- Extensive experiments show that NCT achieves state-of-the-art controllable generation in a single forward pass, surpassing existing multi-step and distillation-based methods.\n- NCT is modular, data-efficient, and easily deployable, relying only on a pre-trained one-step generator and a control signal model.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Luo-Yihong/NCT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "The Automated LLM Speedrunning Benchmark: Reproducing NanoGPT\n  Improvements",
+        "authors": "Roberta Raileanu, Xian Li, Minqi Jiang, Despoina Magka, Bingchen Zhao",
+        "link": "https://arxiv.org/abs/2506.22419",
+        "github_repo": null,
+        "summary": "This paper introduces a novel benchmark for evaluating the reproducibility of Large Language Models (LLMs) in the context of scientific progress, specifically in the area of Large Language Model (LLM) training.  The benchmark, called the Automated LLM Speedrunning Benchmark, leverages the NanoGPT speedrun community's contributions. The benchmark assesses the ability of LLMs to reproduce previous speedrun records using various hint formats (pseudocode to mini-papers).  The results show that current LLMs struggle to reproduce even known improvements, highlighting the challenge of automated reproducibility in AI research.  This work contributes a valuable tool for measuring LLM progress in automating scientific reproduction.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/llm-speedrunner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "Gazal-R1: Achieving State-of-the-Art Medical Reasoning with\n  Parameter-Efficient Two-Stage Training",
+        "authors": "Amr Fawzy, Mostafa Samy, Ahmed M. Adly",
+        "link": "https://arxiv.org/abs/2506.21594",
+        "github_repo": null,
+        "summary": "- Gazal-R1, a 32-billion parameter language model, achieves state-of-the-art performance in medical reasoning by utilizing a two-stage training pipeline.\n- The first stage involves supervised fine-tuning on a dataset of 107,033 synthetic medical reasoning examples, enhanced by parameter-efficient techniques like DoRA and rsLORA.\n- The second stage employs reinforcement learning with GRPO, refining accuracy and reasoning quality through a multi-component reward system.\n- Gazal-R1 surpasses larger models (up to 12 times larger) on medical benchmarks like MedQA (87.1%), MMLU Pro (Medical) (81.6%), and PubMedQA (79.6%).\n- The study provides insights into the challenges of training reasoning models in specialized domains, such as reward hacking and training instability.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/TachyHealth/Gazal-R1-32B-GRPO-preview",
+            "https://huggingface.co/datasets/TachyHealth/structured_medical",
+            "https://huggingface.co/datasets/TachyHealth/medical_grpo"
+        ],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "Confucius3-Math: A Lightweight High-Performance Reasoning LLM for\n  Chinese K-12 Mathematics Learning",
+        "authors": "Yitao Duan, Jiachen Wang, Qiao Cheng, Na Cai, nomadlx",
+        "link": "https://arxiv.org/abs/2506.18330",
+        "github_repo": "https://github.com/netease-youdao/Confucius3-Math",
+        "summary": "- This paper introduces Confucius3-Math, a 14B parameter open-source large language model designed for Chinese K-12 mathematics learning.\n- The model is lightweight, achieving state-of-the-art performance on various mathematical reasoning tasks while running efficiently on a single consumer-grade GPU.\n- Three novel techniques are introduced to improve the model's performance and training stability: Targeted Entropy Regularization, Recent Sample Recovery, and Policy-Specific Hardness Weighting.\n- The model outperforms many larger models on various benchmarks, demonstrating the feasibility of building high-performance reasoning models at low cost.\n- The model's code and weights are made publicly available on GitHub.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/netease-youdao/Confucius3-Math"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    },
+    {
+        "title": "RetFiner: A Vision-Language Refinement Scheme for Retinal Foundation\n  Models",
+        "authors": "Hrvoje Bogunovi\u0107, Ursula Schmidt-Erfurth, Jos\u00e9 Morano, Ronald Fecso",
+        "link": "https://arxiv.org/abs/2506.22149",
+        "github_repo": "https://github.com/ronnief1/RetFiner",
+        "summary": "- RetFiner is a novel vision-language refinement scheme designed to enhance the representational capabilities of existing retinal foundation models (FMs).\n- The model architecture employs a Vision Transformer (ViT) vision encoder and a Transformer text encoder, utilizing cross-attention layers for multimodal encoding and generation.\n- RetFiner incorporates multiple training objectives (ITC, ITM, MLM, GM) to effectively leverage textual data for improving visual representations, leading to significant performance gains.\n- Experimental results on seven diverse OCT classification tasks demonstrate that RetFiner substantially improves the performance of three state-of-the-art retinal FMs (RETFound, UrFound, and VisionFM), achieving average gains of up to 5.8 percentage points in balanced accuracy.\n- The method is efficient, requiring less than ten epochs to refine a model and exhibits strong adaptability to specific populations, making it a practical solution for adapting retinal FMs to various applications and datasets.",
+        "classification": [
+            "Multimodal",
+            "Image Classification",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/ronnief1/RetFiner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-06-30"
+    }
+]

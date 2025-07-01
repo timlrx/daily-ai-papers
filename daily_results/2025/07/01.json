@@ -1,0 +1,281 @@
+[
+    {
+        "title": "Ovis-U1 Technical Report",
+        "authors": "Pengxin Zhan, Liangfu Cao, Xinjie Zhang, Shanshan Zhao, Flourish",
+        "link": "https://arxiv.org/abs/2506.23044",
+        "github_repo": "https://github.com/AIDC-AI/Ovis-U1",
+        "summary": "- The paper introduces Ovis-U1, a 3-billion parameter unified multimodal model that integrates multimodal understanding, text-to-image generation, and image editing capabilities.\n- Ovis-U1 uses a diffusion-based visual decoder and a bidirectional token refiner, enabling image generation and editing tasks comparable to leading models such as GPT-4.\n- The model achieves state-of-the-art results on several benchmarks, including a score of 69.6 on the OpenCompass Multi-modal Academic Benchmark, surpassing recent state-of-the-art models.\n- Ovis-U1's unified training approach, starting from a language model, yields better performance than training solely on understanding or generation tasks.\n- The model pushes the boundaries of multimodal understanding, generation, and editing, demonstrating the enhancement achieved by integrating these two tasks.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/AIDC-AI/Ovis-U1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/AIDC-AI/Ovis-U1-3B"
+        ],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "VMoBA: Mixture-of-Block Attention for Video Diffusion Models",
+        "authors": "Ye Tian, Xin Tao, Haotian Yang, Jianzong Wu, lianghou",
+        "link": "https://arxiv.org/abs/2506.23858",
+        "github_repo": "https://github.com/KwaiVGI/VMoBA",
+        "summary": "- This paper introduces Video Mixture of Block Attention (VMOBA), a novel sparse attention mechanism designed to improve the efficiency of training Video Diffusion Models (VDMs).\n- VMOBA incorporates three key modifications: a layer-wise recurrent block partition scheme, global block selection, and threshold-based block selection to dynamically adapt to diverse spatio-temporal attention patterns.\n- Experimental results demonstrate that VMOBA significantly accelerates the training of VDMs on longer sequences, achieving up to a 2.92x FLOPs and 1.48x latency speedup while maintaining comparable or superior generation quality compared to full attention.\n- In training-free inference, VMOBA demonstrates competitive performance, offering up to a 2.40x FLOPs and 1.35x latency speedup.\n- The effectiveness of VMOBA is demonstrated through ablation studies that analyse different key aspects of the model architecture.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/KwaiVGI/VMOBA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Calligrapher: Freestyle Text Image Customization",
+        "authors": "Ka Leong Cheng, Hao Ouyang, Qingyan Bai, Yue Ma, JingyeChen22",
+        "link": "https://arxiv.org/abs/2506.24123",
+        "github_repo": "https://github.com/Calligrapher2025/Calligrapher",
+        "summary": "- This paper introduces Calligrapher, a novel diffusion-based framework for freestyle text image customization.\n- Calligrapher innovatively integrates advanced text customization with artistic typography, addressing challenges of precise style control and data dependency in existing methods.\n- The framework incorporates three key contributions: a self-distillation mechanism for data generation, a localized style injection framework, and an in-context generation mechanism.\n- Extensive quantitative and qualitative evaluations demonstrate Calligrapher's superior performance in accurately reproducing intricate stylistic details and precise glyph positioning compared to existing approaches.\n- Calligrapher empowers creative practitioners in digital art, branding, and contextual typographic design by automating high-quality, visually consistent typography.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Calligrapher2025/Calligrapher"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Listener-Rewarded Thinking in VLMs for Image Preferences",
+        "authors": "Anton Gusarov, Andrey Galichin, Li Pengyi, barracuda049, alexgambashidze",
+        "link": "https://arxiv.org/abs/2506.22832",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel listener-augmented reinforcement learning framework for training vision-language models (VLMs) to reason about human visual preferences.\n- The key contribution is a listener-shaped reward mechanism that leverages an independent, frozen VLM to evaluate the reasoner's chain-of-thought, providing a dense and calibrated confidence score to shape the RL reward signal. \n- Experimental results demonstrate that the proposed method achieves state-of-the-art accuracy on the ImageReward benchmark (67.4%) and significantly improves out-of-distribution performance on a large-scale human preference dataset.\n- The method also reduces reasoning contradictions compared to strong GRPO and SFT baselines, showcasing its effectiveness in aligning VLMs with nuanced human preferences.\n- The authors will release their reasoning model on Hugging Face.",
+        "classification": [
+            "Reinforcement Learning",
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/alexgambashidze/qwen2.5vl_image_preference_reasoner"
+        ],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "SPIRAL: Self-Play on Zero-Sum Games Incentivizes Reasoning via\n  Multi-Agent Multi-Turn Reinforcement Learning",
+        "authors": "Penghui Qi, Leon Guertler, lkevinzc, simonycl, Benjamin-eecs",
+        "link": "https://arxiv.org/abs/2506.24119",
+        "github_repo": null,
+        "summary": "This paper introduces SPIRAL, a novel self-play framework for training language models to improve reasoning capabilities.  SPIRAL leverages multi-turn zero-sum games, generating an infinite curriculum of challenging problems.  The model utilizes a fully online, multi-agent reinforcement learning system and Role-conditioned Advantage Estimation (RAE) to stabilize training.  Experiments demonstrate that SPIRAL significantly outperforms existing methods on various mathematical and general reasoning benchmarks, achieving a notable improvement of 8.6% on math and 8.4% on general reasoning when training on Kuhn Poker alone.  The transfer of reasoning capabilities highlights the promising potential of self-play in autonomous reasoning development.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/spiral-rl/spiral"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+        "authors": "LidongBing, Zhiqiang007, Jianyu",
+        "link": "https://arxiv.org/abs/2506.17930",
+        "github_repo": "https://github.com/jianyu-cs/PromptQuine/",
+        "summary": "\n- This paper introduces a novel prompt design paradigm for large language models (LLMs) that involves pruning random demonstrations to improve performance.\n- It challenges the conventional wisdom of using well-crafted instructions and demonstrations for in-context learning.\n- The proposed method, PROMPTQUINE, is an evolutionary search framework that automatically discovers effective pruning strategies.\n- Experiments show that PROMPTQUINE consistently outperforms state-of-the-art automatic prompt optimization techniques across various tasks and LLMs. \n- The findings provide insights into the mechanisms of in-context learning and call for more open-ended search algorithms for improved LLM prompting.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/jianyu-cs/PromptQuine/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Consistent Time-of-Flight Depth Denoising via Graph-Informed Geometric\n  Attention",
+        "authors": "Di Qiu, Jin Zeng, Changyong He, weidawang",
+        "link": "https://arxiv.org/abs/2506.23542",
+        "github_repo": "https://github.com/davidweidawang/GIGA-ToF",
+        "summary": "- This paper introduces GIGA-ToF, a novel Time-of-Flight (ToF) depth denoising network that leverages motion-invariant graph fusion and geometric attention.\n- The model architecture incorporates an intra-frame graph modeling mechanism and a cross-frame graph fusion strategy to enhance temporal stability and spatial sharpness, even in the presence of depth shifts between frames.\n- A maximum a posteriori (MAP) framework is employed, which integrates an image smoothness prior and a data fidelity term derived from ToF noise distribution.\n- Experimental results on the DVToF and Kinectv2 datasets demonstrate that GIGA-ToF achieves state-of-the-art performance, outperforming existing methods by a significant margin in terms of accuracy and consistency.\n- The proposed approach exhibits robustness in generalization to real, unseen data, highlighting its practical applicability.",
+        "classification": [
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://github.com/davidweidawang/GIGA-ToF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Aha Moment Revisited: Are VLMs Truly Capable of Self Verification in\n  Inference-time Scaling?",
+        "authors": "Kaizhuo Yan, Jize Jiang, Jingcheng Yang, Meitang Li, Mingyuan1997",
+        "link": "https://arxiv.org/abs/2506.17417",
+        "github_repo": null,
+        "summary": "- This paper investigates whether inference-time scaling techniques, successful in LLMs, extend to VLMs, focusing on self-verification capabilities.\n- The study reveals that generation-based methods outperform verification-based methods in VLMs, indicating a deficiency in self-verification.\n- Experiments show that RL-trained VLMs do not significantly benefit from self-correction behaviors like \"aha moments\".\n- The authors found that the self-verification performance of VLMs is counterintuitively better without visual input, highlighting the models' limited use of visual information for verification.\n- This research emphasizes the need for improved self-verification capabilities in VLMs to fully leverage the potential of inference-time scaling.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "MEMFOF: High-Resolution Training for Memory-Efficient Multi-Frame\n  Optical Flow Estimation",
+        "authors": "Dmitriy Vatolin, Egor Chistov, Vladislav Bargatin, a-yakovenko",
+        "link": "https://arxiv.org/abs/2506.23151",
+        "github_repo": "https://github.com/msu-video-group/memfof",
+        "summary": "- This paper introduces MEMFOF, a memory-efficient multi-frame optical flow method designed for high-resolution (FullHD) inputs.\n- MEMFOF achieves state-of-the-art performance on multiple benchmarks, including Spring, Sintel, and KITTI.\n- The model uses a refined multi-frame RAFT-style architecture with reduced correlation volumes.\n- High-resolution training protocols are employed to overcome underfitting issues associated with upscaling.\n- Experiments demonstrate the robustness and superior performance of the model compared to existing methods.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/msu-video-group/memfof"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "SparseLoRA: Accelerating LLM Fine-Tuning with Contextual Sparsity",
+        "authors": "Ligeng Zhu, Junxian Guo, Xiuyu Li, zhijianliu, Skhaki",
+        "link": "https://arxiv.org/abs/2506.16500",
+        "github_repo": null,
+        "summary": "- This paper introduces SparseLoRA, a novel method that accelerates Large Language Model (LLM) fine-tuning through contextual sparsity.\n- SparseLoRA employs a lightweight, training-free Singular Value Decomposition (SVD) sparsity estimator to dynamically select a sparse subset of weights for computation.\n- Experimental results demonstrate that SparseLoRA reduces computational cost by up to 2.2x and achieves a speedup of up to 1.6x while maintaining accuracy across various downstream tasks.\n- The method is shown to outperform existing parameter-efficient fine-tuning methods such as LoRA and DoRA in terms of both speed and computational efficiency.\n- SparseLoRA incorporates techniques such as layer sensitivity analysis, token sensitivity analysis, and progressive sparse fine-tuning to further enhance its performance and efficiency.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "MARBLE: A Hard Benchmark for Multimodal Spatial Reasoning and Planning",
+        "authors": "Maria Brbi\u0107, Yekun Chai, mdmoor, yljblues",
+        "link": "https://arxiv.org/abs/2506.22992",
+        "github_repo": null,
+        "summary": "- This paper introduces MARBLE, a challenging multimodal spatial reasoning benchmark designed to evaluate the step-by-step reasoning abilities of Multimodal Language Models (MLLMs).\n- MARBLE consists of two tasks: M-PORTAL, which involves solving complex spatial reasoning and planning problems inspired by the game Portal 2, and M-CUBE, which requires assembling 3D cubes from six jigsaw pieces.\n- Current MLLMs perform poorly on MARBLE, achieving near-random performance on M-PORTAL and 0% accuracy on M-CUBE, highlighting the challenges of complex multimodal reasoning.\n- The benchmark emphasizes reasoning trajectories and plans, providing gold-standard rationales and mechanisms for evaluating intermediate step fidelity, unlike prior datasets that overemphasize final answer accuracy.\n- MARBLE aims to spur the development of the next generation of models with stronger capabilities in multi-step multimodal reasoning and planning.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://marble-benchmark.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Teaching a Language Model to Speak the Language of Tools",
+        "authors": "s-emanuilov",
+        "link": "https://arxiv.org/abs/2506.23394",
+        "github_repo": null,
+        "summary": "- This paper introduces TUCAN, a novel methodology for adapting existing language models to enable robust tool use in any target language, using Bulgarian as a case study.\n- The approach involves continued training of the BgGPT model series on a bilingual dataset of 10,035 function-calling examples.\n- TUCAN achieves up to 28.75% improvement in function-calling accuracy over base models while preserving core language understanding.\n- The models, evaluation framework, and dataset are released open-source to enable replication for other languages.\n- This work demonstrates a practical approach for extending tool-augmented capabilities beyond English-centric systems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/llm-bg/Tucan-Eval",
+            "https://github.com/insait-institute/lm-evaluation-harness-bg"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/llm-bg/Tucan-BG-v1.0",
+            "https://huggingface.co/datasets/llm-bg/Tucan-BG-Eval-v1.0"
+        ],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "UrbanLLaVA: A Multi-modal Large Language Model for Urban Intelligence\n  with Spatial Reasoning and Understanding",
+        "authors": "Yong Li, Yanxin Xi, Tianhui Liu, Shengyuan Wang, JJ-TMT",
+        "link": "https://arxiv.org/abs/2506.23219",
+        "github_repo": "https://github.com/tsinghua-fib-lab/UrbanLLaVA",
+        "summary": " - UrbanLLaVA is a novel multi-modal large language model designed for urban intelligence that leverages multiple modalities (e.g. images, geospatial data, text) to process various tasks.\n - It introduces a new urban instruction dataset (UData) spanning different views (location, trajectory, global) of the urban environment and a multi-stage training framework to enhance spatial reasoning and domain knowledge.\n - UrbanLLaVA outperforms existing open-source and proprietary models in single and cross-modal urban tasks across various cities, demonstrating its robustness and adaptability.\n - The model achieves superior performance on an enhanced benchmark (UBench) composed of 12 tasks related to various urban data types, showcasing its capacity for complex urban understanding.\n - The research contributes a systematic multi-view dataset, a novel training methodology, and enhanced evaluation benchmarks, thus advancing urban intelligence research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/tsinghua-fib-lab/UrbanLLaVA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs",
+        "authors": "Yifan Zao, Junyoung Park, Mukul Gagrani, Sudhanshu Agrawal, Raghavv Goel",
+        "link": "https://arxiv.org/abs/2506.22694",
+        "github_repo": null,
+        "summary": "- This paper introduces VOCABTRIM, a training-free technique to enhance the efficiency of drafter-based speculative decoding in large language models (LLMs).\n- VOCABTRIM improves speed by reducing the drafter's vocabulary size to only the most frequently used tokens, thus decreasing the inference overhead.\n- Experiments on Llama-3 models using Spec-Bench show a 16% memory-bound speed-up for Llama-3.2-3B-Instruct and a significant speed increase on other tasks with minor drops in block efficiency.\n- The method is compatible with existing SpD techniques, requiring minimal modifications.\n- VOCABTRIM offers a novel approach to optimizing the LM head of the drafter, a previously under-explored component in SpD research.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "RoboScape: Physics-informed Embodied World Model",
+        "authors": "Chen Gao, Lei Jin, Yinzhou Tang, Xin Zhang, Yu Shang",
+        "link": "https://arxiv.org/abs/2506.23135",
+        "github_repo": "https://github.com/tsinghua-fib-lab/RoboScape",
+        "summary": "- RoboScape is a novel physics-informed embodied world model that jointly learns RGB video generation and physics knowledge, addressing the limitations of existing models in contact-rich robotic scenarios.\n- The model architecture incorporates two key physics-informed training tasks: temporal depth prediction for 3D geometric consistency and keypoint dynamics learning to implicitly encode physical properties.\n- Extensive experiments demonstrate that RoboScape generates videos with superior visual fidelity and physical plausibility across diverse robotic scenarios, outperforming existing baselines.\n- RoboScape's practical utility is validated through downstream applications, including robotic policy training and evaluation using generated data.\n- The code for RoboScape is publicly available on GitHub, facilitating further research and development in embodied AI.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/tsinghua-fib-lab/RoboScape"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Degradation-Modeled Multipath Diffusion for Tunable Metalens Photography",
+        "authors": "Xiaokang Yang, Feiyu Ji, Jiayi Zhu, Jianing Zhang, XiaoyunYuan",
+        "link": "https://arxiv.org/abs/2506.22753",
+        "github_repo": null,
+        "summary": "- This paper introduces Degradation-Modeled Multipath Diffusion (DMDiff), a novel multipath diffusion model for tunable metalens photography.\n- DMDiff incorporates positive, neutral, and negative prompt paths to balance high-frequency details and structural fidelity while mitigating metalens-specific degradation, and uses a tunable decoder for controlled trade-offs between fidelity and perception.\n- The model leverages a spatially varying degradation-aware attention (SVDA) module to quantify degradation from metalens aberrations and sensor noise.\n- DMDiff is validated using a custom-built millimeter-scale MetaCamera, demonstrating superior image reconstruction quality compared to state-of-the-art methods in terms of fidelity and sharpness.\n- Extensive experimental results show that DMDiff outperforms existing state-of-the-art methods on several datasets and metrics, including PSNR, SSIM, LPIPS, and perceptual quality metrics.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "ThinkSound: Chain-of-Thought Reasoning in Multimodal Large Language\n  Models for Audio Generation and Editing",
+        "authors": "Qian Chen, Wen Wang, Kaicheng Luo, Jialei Wang, Huadai Liu",
+        "link": "https://arxiv.org/abs/2506.21448",
+        "github_repo": null,
+        "summary": "- ThinkSound is a novel framework for audio generation and editing that leverages chain-of-thought (CoT) reasoning in multimodal large language models (MLLMs).\n- The model uses a three-stage process: foundational foley generation, interactive object-centric refinement, and targeted audio editing, each guided by CoT reasoning.\n- ThinkSound incorporates a unified audio foundation model based on flow matching, enabling high-fidelity audio synthesis from various input modalities.\n- The paper introduces AudioCoT, a new dataset with structured reasoning annotations to support the training of the model.\n- Experimental results demonstrate that ThinkSound achieves state-of-the-art performance in video-to-audio generation, outperforming existing baselines on both audio and CoT metrics.",
+        "classification": [
+            "Audio",
+            "Text-to-Audio",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-01"
+    },
+    {
+        "title": "Tower+: Bridging Generality and Translation Specialization in\n  Multilingual LLMs",
+        "authors": "Pedro Teixeirinha, Jo\u00e3o Alves, Jos\u00e9 Pombal, Nuno M. Guerreiro, RicardoRei",
+        "link": "https://arxiv.org/abs/2506.17080",
+        "github_repo": null,
+        "summary": " - TOWER+, a new suite of multilingual LLMs, is introduced to address the trade-off between translation specialization and general-purpose capabilities.\n- The model achieves a Pareto frontier between translation specialization and multilingual general-purpose capabilities by using a novel training recipe comprising continued pretraining, supervised fine-tuning, preference optimization, and reinforcement learning with verifiable rewards.\n- TOWER+ models outperform larger general-purpose open-weight and proprietary LLMs (e.g., LLAMA 3.3 70B, GPT-40) on various benchmarks including translation and instruction following.\n- The findings highlight the possibility of rivaling frontier models in general capabilities while optimizing for specific business domains such as translation and localization.\n- IF-MT, a new benchmark evaluating both translation and instruction-following is introduced and the models are made available on Huggingface.",
+        "classification": [
+            "Translation",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/infly/INF-ORM-Llama3.1-70B",
+            "Huggingface"
+        ],
+        "date": "2025-07-01"
+    }
+]

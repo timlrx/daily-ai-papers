@@ -1,0 +1,166 @@
+[
+    {
+        "title": "GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable\n  Reinforcement Learning",
+        "authors": "tanghme0www, bigganbing, xgeric, iyuge2, wenyi",
+        "link": "https://arxiv.org/abs/2507.01006",
+        "github_repo": "https://github.com/THUDM/GLM-4.1V-Thinking",
+        "summary": "The paper introduces GLM-4.1V-Thinking, a vision-language model (VLM) designed for versatile multimodal reasoning.  The model architecture consists of a ViT encoder, an MLP projector, and a large language model decoder.  It utilizes Reinforcement Learning with Curriculum Sampling (RLCS) for training, achieving state-of-the-art results on 28 public benchmarks, outperforming even significantly larger models in many tasks. The model and training code are open-sourced to facilitate further research.  The authors also highlight various strategies employed for efficiency and stability during training.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/THUDM/GLM-4.1V-Thinking"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "MoCa: Modality-aware Continual Pre-training Makes Better Bidirectional\n  Multimodal Embeddings",
+        "authors": "Nan Yang, Liang Wang, roosephu, hongliu9903, Haon-Chen",
+        "link": "https://arxiv.org/abs/2506.23115",
+        "github_repo": null,
+        "summary": "- This paper introduces MoCa, a two-stage framework designed to enhance bidirectional multimodal embeddings by leveraging pre-trained Vision Language Models (VLMs).\n- The first stage, Modality-aware Continual Pre-training, introduces a joint reconstruction objective that simultaneously denoises interleaved text and image inputs, improving bidirectional context-aware reasoning.\n- The second stage, Heterogeneous Contrastive Fine-tuning, utilizes diverse multimodal data (beyond image-caption pairs) to improve generalization and alignment.\n- Experiments on MMEB and ViDoRe-v2 benchmarks demonstrate that MoCa consistently outperforms existing state-of-the-art methods, achieving new state-of-the-art results on MMEB.\n- MoCa exhibits strong scalability with both model size and training data, showcasing its effectiveness in various downstream applications.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://haon-chen.github.io/MoCa/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "SciArena: An Open Evaluation Platform for Foundation Models in\n  Scientific Literature Tasks",
+        "authors": "Ronan Le Bras, Sihong Wu, HughieHu, maxzky, yilunzhao",
+        "link": "https://arxiv.org/abs/2507.01001",
+        "github_repo": null,
+        "summary": "SciArena is an open-source platform designed to evaluate foundation models' performance on tasks related to scientific literature.  It uses a community voting system to compare models, allowing for open-ended questions and long-form responses.  The platform currently supports 23 models and has collected over 13,000 votes.  SciArena also provides a meta-evaluation benchmark, SciArena-Eval, to assess the accuracy of automated evaluation systems.  The results show that even the best-performing model achieves only 65.1% accuracy compared with human preference.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/SciArena"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/yale-nlp/SciArena"
+        ],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "Does Math Reasoning Improve General LLM Capabilities? Understanding\n  Transferability of LLM Reasoning",
+        "authors": "Seungone Kim, Xiaoyu Xu, Yuetai Li, Maggie Huan, aaabiao",
+        "link": "https://arxiv.org/abs/2507.00432",
+        "github_repo": null,
+        "summary": "\n- This paper introduces a novel metric, the Transferability Index, to evaluate the generalization capabilities of large language models (LLMs) trained on mathematical reasoning tasks.\n- The study reveals that reinforcement learning (RL)-tuned models generalize better across various reasoning and non-reasoning tasks than supervised fine-tuning (SFT)-tuned models.\n- Latent-space representation and token-space distribution shift analyses are employed to show that SFT induces significant representation and output drift, whereas RL preserves the general-domain structure.\n- Controlled experiments on Qwen3-14B models using math-only data and different tuning methods confirm that RL-tuned models generalize well across domains, while SFT-tuned models often forget general capabilities.\n- The findings suggest a need to rethink standard post-training recipes, particularly the reliance on SFT-distilled data for advancing reasoning models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ReasoningTransfer/Transferability-of-LLM-Reasoning"
+        ],
+        "huggingface_urls": [
+            "huggingface.co/ReasoningTransferability"
+        ],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "Radial Attention: O(nlog n) Sparse Attention with Energy Decay for\n  Long Video Generation",
+        "authors": "Shuo Yang, Haocheng Xi, Tianle Cai, Xingyang Li, Lmxyy",
+        "link": "https://arxiv.org/abs/2506.19852",
+        "github_repo": "https://github.com/mit-han-lab/radial-attention",
+        "summary": " - This paper introduces Radial Attention, a novel sparse attention mechanism designed for efficient long video generation.\n - The model architecture leverages the phenomenon of Spatiotemporal Energy Decay in video diffusion models, where attention scores decrease exponentially with spatial and temporal distance.\n - This method translates energy decay into a compute density decay through a static sparse attention mask, achieving O(n log n) complexity and reducing the computational cost compared to existing dense attention mechanisms.\n - The experimental results indicate that Radial Attention outperforms state-of-the-art methods on multiple benchmarks, achieving up to 1.9x speedup at default video length and 3.7x speedup for 4x longer videos, while maintaining high video quality with minimal fine-tuning.\n -  The use of Low-Rank Adaptation (LoRA) further minimizes training costs and enhances video quality in longer video generation tasks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/mit-han-lab/radial-attention"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "DiffuCoder: Understanding and Improving Masked Diffusion Models for Code\n  Generation",
+        "authors": "Navdeep Jaitly, Jiatao Gu, Huangjie Zheng, Ruixiang Zhang, Shansan Gong",
+        "link": "https://arxiv.org/abs/2506.20639",
+        "github_repo": "https://github.com/apple/ml-diffucoder",
+        "summary": "This paper introduces DiffuCoder, a 7B parameter diffusion language model (LLM) specifically designed for code generation.  The model architecture is based on masked diffusion models and is trained on a large-scale corpus of 130B code tokens.  The authors investigate the decoding behavior of DiffuCoders, revealing differences from autoregressive (AR) models, such as the ability to control the causality of generation. A novel RL training framework, coupled-GRPO, significantly improves DiffuCoder's performance, surpassing existing methods by +4.4% on EvalPlus benchmarks and demonstrating the effectiveness of RL aligned with diffusion principles.  Further experiments showcase the impact of temperature on the model's autoregressive nature, with higher temperatures leading to increased generation diversity.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/apple/ml-diffucoder"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "HumanOmniV2: From Understanding to Omni-Modal Reasoning with Context",
+        "authors": "Weixuan Chen, Shimin Yao, BBBBCHAN, fushh7, PhilipC",
+        "link": "https://arxiv.org/abs/2506.21277",
+        "github_repo": null,
+        "summary": "- HumanOmniV2 is a novel multimodal large language model designed to enhance omni-modal reasoning capabilities by focusing on global context understanding and preventing shortcut problems.\n- The model incorporates context, format, accuracy, and logical rewards, using an LLM to assess context and logical reasoning, ensuring a thorough understanding of multimodal information.\n- A new reasoning training dataset is introduced, incorporating context information across various tasks (images, videos, and audio), and a new benchmark, IntentBench, evaluates models' ability to understand complex human intentions.\n- HumanOmniV2 outperforms existing open-source omni-modal models across multiple benchmarks, demonstrating superior performance in understanding complex human intentions and emotions.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/HumanMLLM/HumanOmniV2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "Thinking Beyond Tokens: From Brain-Inspired Intelligence to Cognitive\n  Foundations for Artificial General Intelligence and its Societal Impact",
+        "authors": "Abbas Shah, Ranjan Sapkota, Rizwan Qureshi, amanchadha, shainaraza",
+        "link": "https://arxiv.org/abs/2507.00951",
+        "github_repo": null,
+        "summary": "This paper reviews the current state of artificial general intelligence (AGI) research, emphasizing the limitations of token-level prediction models and highlighting the need for architectures grounded in cognitive neuroscience and embodied understanding.  It proposes a unified framework that integrates insights from artificial intelligence, cognitive neuroscience, and psychology, with a focus on agentic reasoning and modular architectures.  The paper discusses emergent AGI-enabling methods and challenges, including generalization strategies and alignment issues. Finally, it advocates for systems that are not only intelligent but also transparent, value-aligned, and socially grounded. ",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "Data Efficacy for Language Model Training",
+        "authors": "Chong Li, Wenshan Wu, Xin Zhang, Yangyu Huang, Yalun Dai",
+        "link": "https://arxiv.org/abs/2506.21545",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel paradigm called DELT for improving the data efficacy of language model training by optimizing the organization of training data, rather than just focusing on data efficiency.\n- DELT consists of three components: Data Scoring, Data Selection, and Data Ordering, which are used to assign scores, select subsets, and organize the training data, respectively.\n- The paper proposes a new Data Scoring method called Learnability-Quality Scoring (LQS) and a new Data Ordering method called Folding Ordering (FO), which are shown to enhance LM performance.\n- Experiments demonstrate that DELT instances enhance Language Model performance without increasing the data scale and model size, and that the combination of LQS and FO achieves the most significant improvement.\n- The authors conclude that data efficacy is a promising foundational area in LM training and complements data efficiency.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "FreeLong++: Training-Free Long Video Generation via Multi-band\n  SpectralFusion",
+        "authors": "Yi Yang, Yu Lu",
+        "link": "https://arxiv.org/abs/2507.00162",
+        "github_repo": null,
+        "summary": "- This paper introduces FreeLong++, a training-free framework for generating long videos by blending global low-frequency features with local high-frequency features to improve temporal consistency and visual fidelity.\n- FreeLong++ uses a multi-branch architecture with multiple attention branches, each operating at a distinct temporal scale, enabling multi-band frequency fusion.\n- The model outperforms previous methods on longer video generation tasks (4x and 8x of native length) without any additional training.\n- FreeLong++ supports coherent multi-prompt video generation and enables controllable video generation using long depth or pose sequences.\n- The authors conduct thorough experiments and ablation studies demonstrating FreeLong++'s effectiveness on various tasks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    },
+    {
+        "title": "Peccavi: Visual Paraphrase Attack Safe and Distortion Free Image\n  Watermarking Technique for AI-Generated Images",
+        "authors": "Vasu Sharma, Shashwat Bajpai, Ashhar Aziz, Shreyas Dixit, amanchadha",
+        "link": "https://arxiv.org/abs/2506.22960",
+        "github_repo": null,
+        "summary": "- PECCAVI is a novel image watermarking technique designed to be resilient against visual paraphrase attacks, a recently introduced method for removing watermarks from AI-generated images.\n- The technique strategically embeds watermarks within Non-Melting Points (NMPs) of an image, which are regions that remain largely unaffected by paraphrasing, and leverages multi-channel frequency domain watermarking.\n- To further enhance robustness, PECCAVI incorporates noisy burnishing to counter reverse-engineering efforts focused on locating NMPs.\n- Experimental results demonstrate that PECCAVI outperforms existing methods like ZoDiac and WAM in terms of watermarking robustness against visual paraphrase attacks while maintaining high image quality.\n- The authors provide a comprehensive analysis of PECCAVI's performance under various post-processing attacks and different paraphrasing strengths.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-02"
+    }
+]

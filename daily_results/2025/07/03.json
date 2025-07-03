@@ -1,0 +1,138 @@
+[
+    {
+        "title": "Kwai Keye-VL Technical Report",
+        "authors": "huxiao09, yw95, TinaGao, hjy, caojiangxia",
+        "link": "https://arxiv.org/abs/2507.01949",
+        "github_repo": "https://github.com/Kwai-Keye/Keye",
+        "summary": " - This paper introduces Kwai Keye-VL, an 8-billion parameter multimodal foundation model designed for short-video understanding and general-purpose vision-language tasks.\n- The model architecture uses a Qwen3-8B language model with a vision encoder initialized from SigLIP, supporting native dynamic resolution and 3D ROPE for unified processing of text, image, and video information.\n- Keye-VL was trained using a four-stage pre-training process and a two-phase post-training process, achieving state-of-the-art results on public video benchmarks and remaining highly competitive on general image-based tasks.\n- The authors also introduce KC-MMBench, a new benchmark for real-world short-video scenarios, where Keye-VL shows a significant advantage.\n- The training methodology, data construction, and evaluation results are detailed in the paper, providing insights for building the next generation of MLLMs for the video era.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Kwai-Keye/Keye"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Kwai-Keye"
+        ],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "LongAnimation: Long Animation Generation with Dynamic Global-Local\n  Memory",
+        "authors": "Zhendong Mao, Yihao Meng, Mengqi Huang, CNcreator0331",
+        "link": "https://arxiv.org/abs/2507.01945",
+        "github_repo": null,
+        "summary": "- LongAnimation is a novel framework for long animation generation that uses a dynamic global-local memory (DGLM) mechanism to maintain long-term color consistency.\n- The model architecture consists of three key components: SketchDiT (extracts hybrid reference features), DGLM (dynamically compresses historical features and fuses them with current features), and a Color Consistency Reward (refines color consistency).\n- LongAnimation outperforms existing methods on both short-term (14 frames) and long-term (average 500 frames) animation colorization tasks, showing significant improvements in LPIPS, SSIM, PSNR, FVD, and FID.\n- The DGLM module effectively addresses the limitations of local paradigms in existing methods by dynamically extracting global color consistent features.\n- A color consistency fusion technique is proposed to smooth video segment transitions during inference.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "Depth Anything at Any Condition",
+        "authors": "Qibin Hou, Bowen Yin, Modi Jin, BBBBCHAN",
+        "link": "https://arxiv.org/abs/2507.01634",
+        "github_repo": "https://github.com/HVision-NKU/DepthAnythingAC",
+        "summary": "- This paper introduces DepthAnything-AC, a foundation monocular depth estimation (MDE) model designed to handle diverse environmental conditions, such as illumination variations, adverse weather, and sensor-induced distortions. \n- The model uses an unsupervised consistency regularization finetuning paradigm, requiring only a small amount of unlabeled data to address data scarcity and issues with generating high-quality pseudo-labels from corrupted images. \n- A Spatial Distance Constraint is introduced to explicitly improve the model's understanding of patch-level relative relationships, leading to enhanced accuracy and semantic boundary delineation. \n- DepthAnything-AC demonstrates impressive zero-shot performance across various benchmarks, including those focused on adverse weather, synthetic corruption, and general scenarios. \n- The experimental results show that DepthAnything-AC outperforms existing state-of-the-art approaches, exhibiting robustness in complex conditions while maintaining its general capabilities.",
+        "classification": [
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://github.com/HVision-NKU/DepthAnythingAC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "A Survey on Vision-Language-Action Models: An Action Tokenization\n  Perspective",
+        "authors": "Zhang Chen, Fengshuo Bai, Yifan Zhong, Feernnn, phython96",
+        "link": "https://arxiv.org/abs/2507.01925",
+        "github_repo": null,
+        "summary": " - This paper surveys vision-language-action (VLA) models from an action tokenization perspective. \n- A unified framework is presented, categorizing existing VLA models based on their action token formulations (language description, code, affordance, trajectory, goal state, latent representation, raw action, and reasoning). \n- The strengths and limitations of each action token type are analyzed, and key areas for improvement are identified. \n- Future research directions are outlined, including the need for more efficient reinforcement learning algorithms and the development of more robust, general-purpose VLA models. \n- The study contributes guidance for future VLA research and hopes to bring the field closer to general-purpose intelligence.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "FreeMorph: Tuning-Free Generalized Image Morphing with Diffusion Model",
+        "authors": "Ziwei Liu, Jinghao Wang, Chenyang Si, Yukang Cao",
+        "link": "https://arxiv.org/abs/2507.01953",
+        "github_repo": null,
+        "summary": "- FreeMorph is a novel tuning-free method for image morphing that integrates guidance from input images into the multi-step denoising process of a pre-trained diffusion model.\n- It introduces two key innovations: guidance-aware spherical interpolation and a step-oriented variation trend to generate smooth and realistic transitions.\n- FreeMorph outperforms existing methods by being 10~50 times faster, as demonstrated through extensive evaluations on benchmark datasets.\n- The method effectively handles images with different semantics or layouts, which is a significant improvement over existing techniques that often struggle with such diversity.\n- The model achieves high-fidelity image morphing without requiring any fine-tuning, making it efficient and readily applicable for various applications.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://yukangcao.github.io/FreeMorph/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "Locality-aware Parallel Decoding for Efficient Autoregressive Image\n  Generation",
+        "authors": "Kelly Peng, Shang Yang, Chengyue Wu, Luke J. Huang, Zhuoyang Zhang",
+        "link": "https://arxiv.org/abs/2507.01957",
+        "github_repo": null,
+        "summary": "- This paper introduces Locality-aware Parallel Decoding (LPD), a novel method to accelerate autoregressive image generation.\n- LPD uses two key techniques: Flexible Parallelized Autoregressive Modeling and Locality-aware Generation Ordering to achieve high parallelization while maintaining generation quality.\n- The Flexible Parallelized Autoregressive Modeling uses learnable position query tokens to guide generation at target positions and ensure mutual visibility among concurrently generated tokens.\n- The Locality-aware Generation Ordering forms groups of tokens to minimize intra-group dependencies and maximize contextual support.\n- Experimental results on ImageNet demonstrate that LPD significantly reduces generation steps and achieves at least 3.4x lower latency than previous parallelized autoregressive models without compromising image quality.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/mit-han-lab/lpd"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "JAM-Flow: Joint Audio-Motion Synthesis with Flow Matching",
+        "authors": "Youngjung Uh, Jaesik Park, Jaeseok Jung, Mingi Kwon, alex4727",
+        "link": "https://arxiv.org/abs/2506.23552",
+        "github_repo": null,
+        "summary": "- JAM-Flow is a novel unified framework for simultaneously synthesizing and conditioning on both facial motion and speech, addressing talking head generation and text-to-speech synthesis as a single task.\n- The model leverages flow matching and a Multi-Modal Diffusion Transformer (MM-DiT) architecture with specialized Motion-DiT and Audio-DiT modules coupled via selective joint attention layers.\n- It incorporates key architectural choices such as temporally aligned positional embeddings and localized joint attention masking for effective cross-modal interaction while preserving modality-specific strengths.\n- JAM-Flow supports various conditioning inputs, including text, reference audio, and reference motion, facilitating tasks like synchronized talking head generation from text and audio-driven animation.\n- Experimental results on HDTF and CelebV-Dub datasets demonstrate that JAM-Flow significantly outperforms existing methods on talking head generation and automated video dubbing tasks.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Speech",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Audio-to-Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "STR-Match: Matching SpatioTemporal Relevance Score for Training-Free\n  Video Editing",
+        "authors": "Bohyung Han, Junoh Kang, jslee525",
+        "link": "https://arxiv.org/abs/2506.22868",
+        "github_repo": null,
+        "summary": "- This paper introduces STR-Match, a training-free video editing algorithm that leverages a novel spatiotemporal relevance (STR) score to generate high-fidelity videos with strong temporal consistency and flexible domain transformations.\n- The STR score is calculated using self- and temporal-attention maps from a pretrained text-to-video diffusion model, without requiring computationally expensive 3D attention mechanisms.\n- STR-Match outperforms existing training-free video editing methods in terms of both visual quality and spatiotemporal coherence, particularly in challenging scenarios involving large motion and significant domain shifts.\n- The method uses latent optimization guided by the STR score, enabling flexible video manipulation while preserving key visual attributes of the source video.\n- The effectiveness of STR-Match is demonstrated through quantitative and qualitative evaluations on various video editing tasks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://jslee525.github.io/str-match"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    },
+    {
+        "title": "MARVIS: Modality Adaptive Reasoning over VISualizations",
+        "authors": "Chinmay Hegde, Oussama Elachqar, Lennart Purucker, Benjamin Feuer",
+        "link": "https://arxiv.org/abs/2507.01544",
+        "github_repo": "https://github.com/penfever/marvis",
+        "summary": "MARVIS is a training-free method that allows small vision-language models to predict any data modality with high accuracy.  It transforms latent embedding spaces into visual representations, leveraging the spatial reasoning abilities of Vision-Language Models (VLMs). MARVIS achieves competitive performance across vision, audio, biological, and tabular domains, even outperforming Gemini by 16% on average.  This is achieved using a single 3B parameter model without the need for domain-specific training or exposure to PII. The approach is efficient and modality-agnostic.",
+        "classification": [
+            "Any-to-Any"
+        ],
+        "github_urls": [
+            "https://github.com/penfever/marvis"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-03"
+    }
+]

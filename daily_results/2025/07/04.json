@@ -1,0 +1,234 @@
+[
+    {
+        "title": "LangScene-X: Reconstruct Generalizable 3D Language-Embedded Scenes with\n  TriMap Video Diffusion",
+        "authors": "Minghui Yang, Jiawei Chi, Hao Li, Fangfu Liu, hanyang-21",
+        "link": "https://arxiv.org/abs/2507.02813",
+        "github_repo": null,
+        "summary": "- LangScene-X is a novel generative framework that reconstructs generalizable 3D language-embedded scenes from sparse views (as few as two images) using a TriMap video diffusion model and a Language Quantized Compressor (LQC).\n- The TriMap video diffusion model generates 3D-consistent RGB images, normal maps, and semantic maps, while the LQC efficiently encodes language embeddings for cross-scene generalization.\n- LangScene-X unifies and generates 3D consistent multi-modality information for reconstruction and understanding, supporting open-ended language queries.\n- Experimental results demonstrate that LangScene-X outperforms state-of-the-art methods in terms of quality and generalizability on real-world datasets.\n- The model uses a progressive multi-task training strategy that integrates knowledge from diverse domains to ensure 3D consistency and high-quality generation.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://liuff19.github.io/LangScene-X/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "WebSailor: Navigating Super-human Reasoning for Web Agent",
+        "authors": "Liwen Zhang, Huifeng Yin, Zhongwang Zhang, Kuan Li, xxwu",
+        "link": "https://arxiv.org/abs/2507.02592",
+        "github_repo": null,
+        "summary": "- This paper introduces WebSailor, a post-training methodology designed to enhance the reasoning capabilities of large language models (LLMs) for complex web-based information-seeking tasks.\n- WebSailor significantly outperforms all open-source agents and matches the performance of proprietary agents on complex benchmarks like BrowseComp, by systematically reducing uncertainty when navigating vast information landscapes.\n- The approach involves generating high-uncertainty tasks through structured sampling and information obfuscation, RFT cold start, and an efficient agentic RL training algorithm called DUPO.\n- WebSailor's performance improvements stem from its training data synthesis, which generates complex, emergent structures that compel the model to develop advanced reasoning patterns.\n- The experimental results demonstrate that WebSailor significantly outperforms existing open-source models and is on par with commercial, closed-source models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/WebAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "IntFold: A Controllable Foundation Model for General and Specialized\n  Biomolecular Structure Prediction",
+        "authors": "He Yan, Wayne Bai, Leon Qiao, The IntFold Team, FuxuLiu",
+        "link": "https://arxiv.org/abs/2507.02025",
+        "github_repo": null,
+        "summary": "- IntFold is a controllable foundation model for general and specialized biomolecular structure prediction that utilizes a custom attention kernel.\n- IntFold achieves accuracy comparable to AlphaFold 3 on the FoldBench benchmark and significantly outperforms other leading methods across various biomolecular interaction tasks.\n- The model's key innovation is its controllability, which is achieved through specialized adapters that allow for precise guidance in predicting complex allosteric states, applying user-defined structural constraints, and estimating binding affinity.\n- A training-free, similarity-based method for ranking predictions further improves success rates in a model-agnostic manner.\n- IntFold's development uncovered critical challenges in large-scale training, including data processing complications, model parameterization choices, and internal model instabilities.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/IntelliGen-AI/IntFold"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Heeding the Inner Voice: Aligning ControlNet Training via Intermediate\n  Features Feedback",
+        "authors": "Aibek Alanov, Andrey Kuznetsov, Maxim Nikolaev, Nina Konovalova",
+        "link": "https://arxiv.org/abs/2507.02321",
+        "github_repo": "https://github.com/ControlGenAI/InnerControl",
+        "summary": "- The paper introduces InnerControl, a novel training strategy for improving the spatial control of text-to-image diffusion models, specifically focusing on the alignment between generated images and input control signals (e.g., edge maps, depth).\n- InnerControl enforces spatial consistency across all diffusion steps by training lightweight control prediction probes (small convolutional networks) to reconstruct input control signals from intermediate UNet features.\n- This approach enables an alignment loss that minimizes the difference between predicted and target condition throughout the entire diffusion process, addressing limitations of previous methods that focused primarily on the late stages of generation.\n- Experimental results demonstrate that InnerControl improves control alignment and fidelity of generation, outperforming existing approaches such as ControlNet++ and CTRL-U across various conditions such as depth and edge maps.\n- The code is available at https://github.com/ControlGenAI/InnerControl",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ControlGenAI/InnerControl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Skywork-Reward-V2: Scaling Preference Data Curation via Human-AI Synergy",
+        "authors": "Jiacai Liu, Jujie He, RickyShaw999, zengliangcs, chrisliu298",
+        "link": "https://arxiv.org/abs/2507.01352",
+        "github_repo": null,
+        "summary": " - This paper introduces SynPref-40M, a large-scale preference dataset containing 40 million preference pairs, and Skywork-Reward-V2, a suite of eight reward models. \n- Skywork-Reward-V2 models range in size from 0.6B to 8B parameters and were trained using a human-AI synergistic two-stage pipeline. \n- The models achieve state-of-the-art performance across seven major reward model benchmarks, surpassing previous state-of-the-art models. \n- Ablation studies confirm the effectiveness of both the data scale and the high-quality curation process. \n- The human-AI synergistic curation approach significantly improves data quality, highlighting the untapped potential of existing preference datasets.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SkyworkAI/Skywork-Reward-V2"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Skywork"
+        ],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Thinking with Images for Multimodal Reasoning: Foundations, Methods, and\n  Future Frontiers",
+        "authors": "Zhenhua Liu, Hangyu Guo, Peng Xia, Zhaochen Su, Xiaoye08",
+        "link": "https://arxiv.org/abs/2506.23918",
+        "github_repo": "https://github.com/zhaochen0110/Awesome_Think_With_Images",
+        "summary": " - This paper introduces a novel three-stage framework for multimodal reasoning which transcends the limitations of existing text-centric approaches by enabling models to \"think with images\".\n- The framework categorizes the evolution of image utilization in AI models into three stages: tool-driven visual exploration, programmatic visual manipulation, and intrinsic visual imagination.\n- Each stage is characterized by specific methodologies (prompt-based, SFT-based, RL-based) and unique challenges (computational cost, information density, architectural divide, cross-task generalization).\n- The paper provides a comprehensive review of core methods and evaluation benchmarks for each stage and identifies significant challenges and promising future directions for research.\n-  The study aims to establish foundational principles for \"Thinking with Images\", offering a clear roadmap for future research towards more powerful and human-aligned multimodal AI.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/zhaochen0110/Awesome_Think_With_Images"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Decoupled Planning and Execution: A Hierarchical Reasoning Framework for\n  Deep Search",
+        "authors": "Yutao Zhu, Yuyao Zhang, Guanting Dong, Xiaoxi Li, Jiajie Jin",
+        "link": "https://arxiv.org/abs/2507.02652",
+        "github_repo": "https://github.com/ignorejjj/HiRA",
+        "summary": "- This paper introduces HiRA, a hierarchical reasoning framework for deep search that decouples strategic planning from specialized execution to improve efficiency and scalability.\n- HiRA decomposes complex search tasks into focused subtasks, assigns them to domain-specific agents with external tools, and coordinates results through a structured mechanism.\n- Experiments on four complex, cross-modal deep search benchmarks show that HiRA significantly outperforms state-of-the-art RAG and agent-based systems in both answer quality and system efficiency.\n- The separation of planning and execution in HiRA prevents execution details from disrupting high-level reasoning, enabling the system to leverage specialized expertise for different types of information processing.\n- HiRA's modular design allows for easy integration of new tools and capabilities, improving extensibility and adaptability to diverse search scenarios.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ignorejjj/HiRA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Fast and Simplex: 2-Simplicial Attention in Triton",
+        "authors": "Jiecao Yu, Sijia Chen, Sai Surya Duvvuri, Timothy Chou, Aurko Roy",
+        "link": "https://arxiv.org/abs/2507.02754",
+        "github_repo": null,
+        "summary": "- This paper introduces the 2-simplicial Transformer, an architecture that generalizes standard dot-product attention to trilinear functions using an efficient Triton kernel.\n- The 2-simplicial Transformer achieves better token efficiency than standard Transformers; for a fixed token budget, similarly sized models outperform their dot-product counterparts on tasks involving mathematics, coding, reasoning, and logic.\n- The authors demonstrate that 2-simplicial attention changes the exponent in the scaling laws for knowledge and reasoning tasks compared to dot product attention.\n- The paper includes a detailed description of the 2-simplicial attention mechanism, including its implementation in Triton, and an analysis of its computational complexity.\n- Experimental results show that the 2-simplicial Transformer achieves significant improvements in downstream performance on reasoning-heavy tasks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Can LLMs Identify Critical Limitations within Scientific Research? A\n  Systematic Evaluation on AI Research Papers",
+        "authors": "Arman Cohan, Lovekesh Vig, Manasi Patwardhan, Yilun Zhao, Zhijian Xu",
+        "link": "https://arxiv.org/abs/2507.02694",
+        "github_repo": null,
+        "summary": "This paper introduces LIMITGEN, a novel benchmark dataset designed to evaluate Large Language Models' (LLMs) ability to identify critical limitations within scientific research papers. The dataset is categorized into two subsets, one synthetic and one human-generated. The model uses a retrieval augmented generation (RAG) technique to ground LLM limitation generation and improve feedback quality. The study found that LLMs struggle to identify limitations, but RAG consistently improves performance. The researchers propose a taxonomy of limitation types, focusing on AI research, to guide evaluations.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/LimitGen"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/yale-nlp/LimitGen"
+        ],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Bourbaki: Self-Generated and Goal-Conditioned MDPs for Theorem Proving",
+        "authors": "Jun Wang, Anthony Bordg, Rasul Tutunov, Xiaotong Ji, Matthieu Zimmer",
+        "link": "https://arxiv.org/abs/2507.02726",
+        "github_repo": null,
+        "summary": "- The paper introduces a novel framework for automated theorem proving using self-generated goal-conditioned Markov Decision Processes (sG-MDPs).\n- The sG-MDP framework allows agents to dynamically generate subgoals based on the evolving proof state, addressing the challenge of sparse rewards in theorem proving.\n- The proposed Bourbaki system, which ensembles multiple 7B LLMs for subgoal generation and tactic synthesis, achieves state-of-the-art results on the PutnamBench benchmark, solving 26 problems.\n- Bourbaki outperforms other strong 7B-scale baselines, demonstrating the effectiveness of the sG-MDP framework in enhancing deductive reasoning.\n- The results highlight the potential of sG-MDPs for improving automated theorem proving and enhancing deductive reasoning in formal mathematical problem-solving.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Energy-Based Transformers are Scalable Learners and Thinkers",
+        "authors": "Peixuan Han, Md Mofijul Islam, Ganesh Nanduru, Alexi Gladstone, amanchadha",
+        "link": "https://arxiv.org/abs/2507.02092",
+        "github_repo": null,
+        "summary": "This paper introduces Energy-Based Transformers (EBTs), a new class of energy-based models that leverage a dynamic allocation of computation to improve model performance.  The EBT model architecture uses Transformers to enable efficient EBM training, outperforming the Transformer++ approach in scaling and demonstrating improvements with System 2 Thinking, or improved reasoning capabilities through additional computation.  Experiments across discrete and continuous modalities show EBTs scaling faster and achieving higher performance than Transformer++ and Diffusion Transformers on a variety of downstream tasks. EBTs also exhibit improved generalization to out-of-distribution data.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Computer Vision",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/alexiglad/EBT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Selecting and Merging: Towards Adaptable and Scalable Named Entity\n  Recognition with Large Language Models",
+        "authors": "Wei Wei, Zhuojun Ding, Facico",
+        "link": "https://arxiv.org/abs/2506.22813",
+        "github_repo": null,
+        "summary": "- This paper introduces the SaM framework, a novel model merging strategy for Named Entity Recognition (NER) that dynamically selects and merges expert models at inference time.\n- SaM improves generalization across various domains without extra training by dynamically merging beneficial expert models, enhancing adaptability and scalability.\n- Extensive experiments demonstrate SaM's effectiveness, outperforming unified models by an average of 10% across multiple benchmarks and up to 20% in specific domains.\n- The framework's scalability is highlighted by the ability to conveniently add or remove experts, adapting to evolving needs.\n- SaM addresses the limitations of existing methods which struggle with adaptation and scalability due to the cost of data annotation and training domain-specific models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Ding-ZJ/SaM"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        ],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "Self-Correction Bench: Revealing and Addressing the Self-Correction\n  Blind Spot in LLMs",
+        "authors": "Ken Tsui",
+        "link": "https://arxiv.org/abs/2507.02778",
+        "github_repo": null,
+        "summary": " - This paper introduces Self-Correction Bench, a novel framework designed to systematically evaluate the self-correction capabilities of large language models (LLMs).\n- The framework injects controlled errors into LLM outputs, and it measures their ability to identify and correct these errors across three complexity levels.\n- Through experiments involving 14 models, it is observed that LLMs exhibit a significant \"self-correction blind spot,\" failing to correct identical errors in their own outputs while succeeding on similar errors in user inputs.\n- This blind spot is linked to the composition of training data, where error-free responses are predominantly presented compared to error-correction sequences.\n-  A simple intervention, appending \"Wait,\" remarkably improves self-correction performance, suggesting that the capability is present but underutilized.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "ZeCO: Zero Communication Overhead Sequence Parallelism for Linear\n  Attention",
+        "authors": "Tianjian Li, Xinyi Wan, Ruijie Zhu, Zehao Liu, Yuhong Chou",
+        "link": "https://arxiv.org/abs/2507.01004",
+        "github_repo": null,
+        "summary": "- ZeCO is a novel sequence parallelism method for linear attention models that reformulates sequence parallelism by leveraging an All-Scan collective communication primitive, achieving the theoretically minimum communication volume. \n- ZeCO's integrated approach enables efficient overlap of communication and computation, resulting in minimal extra computational and I/O overhead. \n- Theoretical optimality of ZeCO is proven by showing that its time cost is minimal compared to other methods. \n- Empirical results show that ZeCO achieves up to a 3.9x communication speedup and a 9.3x overall speedup compared to SOTA methods, demonstrating near-linear scalability from 8 to 256 devices. \n- The method establishes a clear path towards efficiently training next-generation LLMs on previously intractable sequence lengths.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    },
+    {
+        "title": "AsyncFlow: An Asynchronous Streaming RL Framework for Efficient LLM\n  Post-Training",
+        "authors": "Guang Yang, Kui Luo, Haibo Wang, Ansheng You, Zhenyu Han",
+        "link": "https://arxiv.org/abs/2507.01663",
+        "github_repo": null,
+        "summary": "- AsyncFlow is a novel asynchronous streaming reinforcement learning (RL) framework designed for efficient post-training of large language models (LLMs).\n- It introduces a distributed data storage and transfer module (TransferQueue) enabling a fully streamed dataflow and fine-grained scheduling of RL tasks.\n- AsyncFlow utilizes a producer-consumer-based asynchronous workflow with dynamic load balancing and pipeline overlapping, resulting in minimized computational idleness.\n- The framework is decoupled from underlying training and inference engines via service-oriented interfaces, offering flexibility and modularity.\n- Experiments show AsyncFlow achieves an average 1.59x throughput improvement compared with the state-of-the-art baseline, demonstrating superior efficiency and scalability.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://gitee.com/ascend/MindSpeed-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-04"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Eka-Eval : A Comprehensive Evaluation Framework for Large Language\n  Models in Indian Languages",
+        "authors": "Mayank Singh, Abhishek Upperwal, Samridhi Raj Sinha, RajveeSheth",
+        "link": "https://arxiv.org/abs/2507.01853",
+        "github_repo": "https://github.com/lingo-iitgn/",
+        "summary": "- This paper introduces EKA-EVAL, a comprehensive and production-ready evaluation framework for large language models (LLMs) in Indian languages.\n- EKA-EVAL integrates over 35 benchmarks, including 10 Indic-specific datasets, covering various categories like reasoning, mathematics, tool use, and long-context understanding.\n- Compared to existing tools, EKA-EVAL offers broader benchmark coverage and built-in support for distributed inference, quantization, and multi-GPU usage.\n- The framework is open-source and publicly available, significantly lowering the barrier to multilingual benchmarking.\n- EKA-EVAL is designed to be modular, easy to configure, and compatible with HuggingFace and proprietary models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/lingo-iitgn/eka-eval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-07"
+    },
+    {
+        "title": "How Well Does GPT-4o Understand Vision? Evaluating Multimodal Foundation\n  Models on Standard Computer Vision Tasks",
+        "authors": "O\u011fuzhan Fatih Kar, Andrei Atanov, Roman Bachmann, Ali Garjani, Rahul Ramachandran",
+        "link": "https://arxiv.org/abs/2507.01955",
+        "github_repo": null,
+        "summary": "This paper introduces a novel benchmark for evaluating multimodal foundation models' vision capabilities.  The benchmark focuses on established computer vision tasks such as object detection, segmentation, and depth estimation. The authors address the challenge of evaluating models that primarily output text by devising prompt-chaining techniques.  They find that while the models are not state-of-the-art on individual tasks, they perform respectably as generalists and exhibit better performance on semantic tasks compared to geometric tasks.  Finally, GPT-40 demonstrates the best overall performance among the models evaluated.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Depth Estimation",
+            "Image Classification",
+            "Object Detection",
+            "Image Segmentation",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/EPFL-VILAB/fm-vision-evals"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-07"
+    }
+]

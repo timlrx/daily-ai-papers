@@ -1,0 +1,354 @@
+[
+    {
+        "title": "A Survey on Latent Reasoning",
+        "authors": "Tianhao Peng, jeshragh, chujiezheng, Jinfa, ridger",
+        "link": "https://arxiv.org/abs/2507.06203",
+        "github_repo": "https://github.com/multimodal-art-projection/LatentCoT-Horizon/",
+        "summary": "- This survey paper provides a comprehensive overview of latent reasoning in large language models (LLMs), focusing on how these models can perform complex reasoning tasks without explicitly generating intermediate reasoning steps.\n- It introduces a novel taxonomy for categorizing different latent reasoning approaches, including vertical and horizontal methods, and discusses the trade-offs between these approaches.\n- The authors analyze existing latent reasoning models and highlight key architectural design choices and training strategies.\n- They also explore the mechanistic interpretability of latent reasoning, investigating the role of different layers in the model's reasoning process.\n- Finally, the paper looks ahead to the future of latent reasoning, discussing the potential for infinite-depth reasoning and the development of more efficient and powerful reasoning systems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/multimodal-art-projection/LatentCoT-Horizon/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "SingLoRA: Low Rank Adaptation Using a Single Matrix",
+        "authors": "Ron Kimmel, Daniel Bensa\u00efd, David Bensa\u00efd, royve, noamrot",
+        "link": "https://arxiv.org/abs/2507.05566",
+        "github_repo": null,
+        "summary": "- SingLoRA is a novel parameter-efficient fine-tuning method that reformulates low-rank adaptation using a single matrix instead of two, addressing the scale disparity issues that cause unstable training in existing methods like LoRA.\n- Unlike LoRA, SingLoRA inherently removes inter-matrix scale conflicts, ensuring stable optimization and roughly halving the parameter count.\n- Experiments on common sense reasoning (MNLI) show SingLoRA outperforming LoRA and LoRA+ while using only 60% of their parameter budget, and in image generation (DreamBooth), SingLoRA significantly improves image fidelity.\n- Theoretical analysis within the infinite-width neural network framework demonstrates that SingLoRA guarantees stable feature learning by construction.\n- The method is extended to non-square matrices and validated through comprehensive experiments across multiple modalities.",
+        "classification": [
+            "Natural Language Processing",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "OmniPart: Part-Aware 3D Generation with Semantic Decoupling and\n  Structural Cohesion",
+        "authors": "Yukun Huang, Zi-Xin Zou, Yuan-Chen Guo, Yufan Zhou, Yunhan Yang",
+        "link": "https://arxiv.org/abs/2507.06165",
+        "github_repo": null,
+        "summary": "- OmniPart is a novel two-stage framework for part-aware 3D object generation that decouples structure planning from detailed part synthesis, achieving superior controllability and quality.\n- The first stage, Controllable Structure Planning, uses an autoregressive model to generate a sequence of 3D bounding boxes representing object parts, conditioned on flexible 2D part masks for intuitive control.\n- The second stage, Spatially-Conditioned Part Synthesis, adapts a pre-trained holistic 3D generator to synthesize all parts simultaneously and consistently within the planned layout, using a novel Part Coverage Loss and voxel discarding mechanism.\n- Extensive experiments demonstrate that OmniPart outperforms state-of-the-art methods in part-aware 3D generation, achieving superior performance on various metrics such as Chamfer Distance and F1-score.\n- The framework supports several downstream applications, including compositional editing, material assignment, and animation, showcasing its versatility and practical utility.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "CriticLean: Critic-Guided Reinforcement Learning for Mathematical\n  Formalization",
+        "authors": "Yifan Yao, Zhongyuan Peng, zhangysk, zhouliang, yifAI",
+        "link": "https://arxiv.org/abs/2507.06181",
+        "github_repo": null,
+        "summary": "CriticLean is a novel critic-guided reinforcement learning framework for translating natural language mathematical statements into formal, executable code.  It introduces CriticLeanGPT, a model trained to assess the semantic fidelity of Lean 4 formalizations, and CriticLeanBench, a benchmark to measure models' ability to distinguish semantically correct from incorrect formalizations.  CriticLean significantly outperforms existing baselines on CriticLeanBench.  Furthermore, it constructs FineLeanCorpus, a dataset of over 285K problems exhibiting rich domain diversity and difficulty coverage.  The results highlight that optimizing the critic phase is essential for reliable formalization.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/multimodal-art-projection/CriticLean"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context\n  Modeling",
+        "authors": "Yuqiang Yang, Tai Wang, Xiqian Yu, Meng Wei, cywan",
+        "link": "https://arxiv.org/abs/2507.05240",
+        "github_repo": null,
+        "summary": "- StreamVLN is a novel streaming vision-and-language navigation framework that uses a hybrid slow-fast context modeling strategy to handle continuous video streams and language instructions efficiently.\n- The model architecture combines a fast-streaming dialogue context (using a sliding window mechanism) and a slow-updating memory context (using a 3D-aware token pruning strategy) to balance responsiveness and long-term context management.\n- Experiments on VLN-CE benchmarks demonstrate that StreamVLN achieves state-of-the-art performance with low latency, outperforming existing methods on both R2R and RxR datasets.\n- The model's efficiency and scalability are highlighted as key advantages, making it suitable for real-world deployment.\n- Ablation studies confirm the effectiveness of the slow-fast context modeling approach and the 3D-aware token pruning strategy in improving performance and efficiency.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://streamvln.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "RLVER: Reinforcement Learning with Verifiable Emotion Rewards for\n  Empathetic Agents",
+        "authors": "Zhiwei He, Xingyu Chen, Bang Zhang, vvibt, CedarWang",
+        "link": "https://arxiv.org/abs/2507.03112",
+        "github_repo": "https://github.com/Tencent/DigitalHuman/tree/main/RLVER",
+        "summary": "This paper introduces RLVER, a novel reinforcement learning framework designed to cultivate higher-order empathetic abilities in large language models (LLMs).  RLVER leverages verifiable emotion rewards generated by self-consistent affective simulated users to guide the LLM's learning process. The framework improves multiple dialogue capabilities and shows a significant boost in the Sentient-Benchmark score from 13.3 to 79.2, while largely preserving mathematical and coding abilities.  The study also explores different training strategies and algorithms, revealing distinct trends between 'thinking' and 'non-thinking' models. RLVER demonstrates that employing verifiable emotion rewards is a practical path toward creating emotionally intelligent and capable language agents.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent/DigitalHuman/tree/main/RLVER"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "MedGen: Unlocking Medical Video Generation by Scaling\n  Granularly-annotated Medical Videos",
+        "authors": "Shunian Chen, Zhenyang Cai, Ke Ji, Junying Chen, wangrongsheng",
+        "link": "https://arxiv.org/abs/2507.05675",
+        "github_repo": "https://github.com/FreedomIntelligence/MedGen",
+        "summary": "- This paper introduces MedVideoCap-55K, a large-scale dataset of 55,000 granularly-annotated medical videos with detailed captions, designed for medical video generation.\n- They propose MedGen, a novel medical video generation model trained on MedVideoCap-55K, which achieves state-of-the-art performance among open-source models and rivals commercial systems.\n- MedGen significantly outperforms existing open-source models on multiple benchmarks, demonstrating superior visual quality and medical accuracy.\n- The authors propose new evaluation metrics tailored for medical video generation, addressing limitations in existing benchmarks.\n- MedGen is showcased as a valuable tool for data augmentation, medical simulation, science popularization, and user simulation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/MedGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "Is Diversity All You Need for Scalable Robotic Manipulation?",
+        "authors": "Jin Chen, Li Chen, sundrops, yxlu0, ModiShi",
+        "link": "https://arxiv.org/abs/2507.06219",
+        "github_repo": "https://github.com/OpenDriveLab/AgiBot-World",
+        "summary": "- This paper investigates the impact of data diversity on the scalability of robotic manipulation, challenging the conventional wisdom that 'more diversity is better'.\n- It introduces a distribution debiasing method to address the confounding effects of expert diversity, resulting in a 15% performance gain equivalent to using 2.5 times the pre-training data.\n- The study reveals that task diversity is crucial for downstream transfer learning, exhibiting a power-law scaling relationship between data and performance.  \n- Multi-embodiment pre-training is found to be optional; models trained on high-quality single-embodiment data can efficiently transfer to new platforms and show better scaling during finetuning than multi-embodiment pre-trained models.\n- The paper empirically validates these findings through extensive experiments on various robot platforms and real-world scenarios.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/OpenDriveLab/AgiBot-World"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "Coding Triangle: How Does Large Language Model Understand Code?",
+        "authors": "Songyang Zhang, Maosong Cao, Taolin Zhang, jnanliu, MichaelErchi",
+        "link": "https://arxiv.org/abs/2507.06138",
+        "github_repo": null,
+        "summary": "- This paper introduces the \"Code Triangle\" framework, a novel approach to evaluating Large Language Models (LLMs) in code generation.\n- The framework assesses LLMs across three fundamental dimensions: editorial analysis, code implementation, and test case generation, revealing inconsistencies in LLM cognition.\n- Experiments on competitive programming benchmarks show that while LLMs can form self-consistent systems, their solutions lack diversity and robustness compared to human programmers.\n- The study identifies a significant distribution shift between model cognition and human expertise, highlighting the impact of training data biases.\n- Incorporating human-generated data and leveraging model mixtures are shown to significantly enhance both performance and robustness.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "GTA1: GUI Test-time Scaling Agent",
+        "authors": "Yuhao Yang, Yutong Dai, Dongxu Li, Yan Yang, Ziyang",
+        "link": "https://arxiv.org/abs/2507.05791",
+        "github_repo": null,
+        "summary": "- This paper introduces GTA1, a novel GUI Test-time Scaling Agent that addresses the challenges of ambiguity in task planning and accurate grounding of actions in complex interfaces.\n- GTA1 employs a test-time scaling method where multiple candidate action proposals are sampled at each step, and a judge model selects the most appropriate one.\n- The agent also uses a grounding model that predicts interaction coordinates directly, without relying on explicit reasoning.\n- Experiments on diverse benchmarks show that GTA1 achieves state-of-the-art performance in GUI grounding and task completion, outperforming existing methods across various metrics.\n- The code and models are open-sourced, allowing for further research and development in the field of GUI agents.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "Nile-Chat: Egyptian Language Models for Arabic and Latin Scripts",
+        "authors": "Mohamed Anwar, Amr Mohamed, Ahmad Chamma, Hadi Abdine, guokan-shang",
+        "link": "https://arxiv.org/abs/2507.04569",
+        "github_repo": null,
+        "summary": "- This paper introduces Nile-Chat, a family of large language models (LLMs) for Egyptian Arabic that natively supports both Arabic and Latin scripts.\n- Nile-Chat-3x4B-A6B, a Mixture-of-Experts (MoE) model, leverages a novel language adaptation approach using the Branch-Train-MiX strategy to merge script-specialized experts.\n- The models significantly outperform existing multilingual and Arabic LLMs on new Egyptian evaluation benchmarks, achieving a 14.4% performance gain over Qwen2.5-14B-Instruct on Latin-script benchmarks.\n- All models, data, and evaluation code are publicly available, making it a valuable resource for research on LLMs for underrepresented and dual-script languages.\n- The work introduces a comprehensive methodology for adapting LLMs to dual-script languages.",
+        "classification": [
+            "Translation",
+            "Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/MBZUAI-Paris/lm-evaluation-harness-nile-chat"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/MBZUAI-Paris/Nile-Chat-12B",
+            "https://hf.co/datasets/MBZUAI-Paris/Egyptian-SFT-Mixture",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianBench",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianMMLU",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianHellaSwag",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianPIQA",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianWinoGrande",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianOpenBookQA",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianRACE",
+            "https://hf.co/datasets/MBZUAI-Paris/EgyptianAlpacaEval"
+        ],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "Efficiency-Effectiveness Reranking FLOPs for LLM-based Rerankers",
+        "authors": "Yi Fang, Ting-ruen Wei, Zhiyuan Peng, yilunzhao, songtingyu",
+        "link": "https://arxiv.org/abs/2507.06223",
+        "github_repo": null,
+        "summary": "- This paper introduces new metrics, RPP and QPP, to evaluate the efficiency-effectiveness trade-off of LLM-based rerankers, addressing the limitations of existing proxy metrics.\n- It proposes a closed-form, interpretable formula for estimating the FLOPs of LLM-based rerankers and provides an open-source calculator.\n- The paper conducts a large-scale study comparing various LLM-based rerankers across different architectures and tasks using the proposed metrics.\n- Experimental results reveal that pointwise methods generally outperform pairwise and listwise methods in terms of both ranking metrics and FLOP efficiency.\n- The study highlights the importance of considering efficiency-effectiveness trade-offs when deploying LLM-based rerankers in practice.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zhiyuanpeng/EER-FLOPs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "PRING: Rethinking Protein-Protein Interaction Prediction from Pairs to\n  Graphs",
+        "authors": "Zhiyuan Liu, Fanding Xu, Hao Du, JinzheFudan, piaolaidangqu",
+        "link": "https://arxiv.org/abs/2507.05101",
+        "github_repo": "https://github.com/SophieSarceau/PRING",
+        "summary": " - This paper introduces PRING, a comprehensive benchmark for evaluating protein-protein interaction (PPI) prediction models from a graph-level perspective. \n - PRING includes topology-oriented and function-oriented tasks that assess the models' ability to reconstruct both the structural topology and functional properties of PPI networks.\n - The benchmark is evaluated on four representative model categories, consisting of sequence similarity-based, naive sequence-based, protein language model-based, and structure-based approaches. \n - Extensive experiments reveal that current PPI models have limitations in recovering both structural and functional properties of PPI networks. \n - The PRING dataset and source code are publicly available.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SophieSarceau/PRING"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "SAMed-2: Selective Memory Enhanced Medical Segment Anything Model",
+        "authors": "Rong Zhou, Yiwei Li, Sifan Song, Zhiling Yan, songdj",
+        "link": "https://arxiv.org/abs/2507.03698",
+        "github_repo": "https://github.com/ZhilingYan/Medical-SAM-Bench",
+        "summary": "- This paper introduces SAMed-2, a new foundation model for medical image segmentation that improves upon the SAM-2 architecture.\n- SAMed-2 incorporates a temporal adapter to capture temporal correlations in image sequences and a confidence-driven memory mechanism to selectively store and retrieve high-certainty features.\n- The model is trained and evaluated on MedBank-100k, a newly curated dataset with 100,000 images spanning seven imaging modalities and 21 segmentation tasks.\n- Experimental results demonstrate that SAMed-2 outperforms state-of-the-art methods on both internal and external benchmarks, particularly showing a 10.53% improvement in zero-shot performance on external datasets.\n- The code is available on Github.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/ZhilingYan/Medical-SAM-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "Tora2: Motion and Appearance Customized Diffusion Transformer for\n  Multi-Entity Video Generation",
+        "authors": "Weizhi Wang, Long Qin, Xiangyu Meng, Junchao Liao, Zhenghao Zhang",
+        "link": "https://arxiv.org/abs/2507.05963",
+        "github_repo": "https://github.com/alibaba/Tora",
+        "summary": "- Tora2 is a novel multi-entity video generation model that allows for simultaneous customization of both appearance and motion.\n- The model architecture incorporates a decoupled personalization extractor (DPE) to generate comprehensive personalization embeddings for multiple entities, preserving fine-grained visual details.\n- A gated self-attention mechanism integrates trajectory, textual description, and visual information for each entity, reducing misalignment during training.\n- Tora2 uses a contrastive loss to jointly optimize trajectory dynamics and entity consistency, achieving competitive performance with state-of-the-art methods while providing advanced motion control.\n- Experimental results on the MSRVTT-Personalization benchmark demonstrate Tora2's superior performance in multi-entity video customization with precise trajectory control, outperforming existing methods in appearance and motion customization.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba/Tora"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "LOOM-Scope: a comprehensive and efficient LOng-cOntext Model evaluation\n  framework",
+        "authors": "Ruoxi Sun, Baibei Ji, Haitian Wang, Zecheng Tang, QQTang1223",
+        "link": "https://arxiv.org/abs/2507.04723",
+        "github_repo": null,
+        "summary": "- This paper introduces LOOM-Scope, a comprehensive and efficient framework for evaluating long-context models.\n- LOOM-Scope standardizes evaluation settings, supports efficient inference acceleration methods, and provides a holistic benchmark suite.\n- The framework addresses inconsistencies in existing benchmarks by standardizing evaluation settings and minimizing confounding factors.\n- LOOM-Scope supports 22 long-context benchmarks and over 140 tasks, covering diverse capabilities and context lengths.\n- Experiments demonstrate LOOM-Scope's efficiency, enabling comprehensive evaluations with significantly reduced computational costs compared to existing benchmarks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/LCM-Lab/LOOM-Scope"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "How to Train Your LLM Web Agent: A Statistical Diagnosis",
+        "authors": "Megh Thakkar, Hadi Nekoei, Emiliano Penaloza, Santhoshi Ravichandran, Dheeraj Vattikonda",
+        "link": "https://arxiv.org/abs/2507.04103",
+        "github_repo": null,
+        "summary": "- This paper presents a statistically grounded study on compute allocation for post-training LLM web agents, addressing the challenges of high compute costs and a narrow focus on single-step tasks.\n- The authors propose a two-stage pipeline: supervised fine-tuning (SFT) with a large teacher model followed by on-policy reinforcement learning (RL) with a smaller student model.\n- Their experiments, involving 1370 configurations and bootstrapping, show that combining SFT with on-policy RL consistently outperforms either approach alone on both WorkArena and MiniWob++ benchmarks.\n- The hybrid strategy requires only 55% of the compute to match the peak of pure SFT on MiniWob++, and it is the only strategy that can close the gap with closed-source models.\n- The findings offer reproducible, budget-aware recommendations for training open LLM web agents and highlight the importance of balancing expert supervision with on-policy learning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "Differential Mamba",
+        "authors": "Eliya Nachmani, Itamar Zimerman, Nadav Schneider",
+        "link": "https://arxiv.org/abs/2507.06204",
+        "github_repo": null,
+        "summary": "- This paper introduces Diff-Mamba, a novel modification of the Mamba architecture that incorporates a differential mechanism to mitigate the issue of over-allocating attention to irrelevant context in sequence models.\n- Diff-Mamba achieves improved retrieval capabilities and superior performance compared to the vanilla Mamba architecture on language modeling benchmarks.\n- The proposed differential mechanism is empirically validated through extensive ablation studies and empirical analyses demonstrating improved performance on various language tasks.\n- The authors address the limitations of a naive adaptation of differential design to Mamba by introducing architectural modifications to effectively mitigate the over-allocation problem.\n- The code for Diff-Mamba is publicly available.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/NadavSc/Diff-Mamba"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "any4: Learned 4-bit Numeric Representation for LLMs",
+        "authors": "Jeff Johnson, melhoushi",
+        "link": "https://arxiv.org/abs/2507.04610",
+        "github_repo": "https://github.com/facebookresearch/any4",
+        "summary": "- This paper introduces any4, a novel 4-bit weight quantization technique for Large Language Models (LLMs). Unlike other methods, any4 does not require preprocessing of weights or activations. \n- Any4 achieves higher accuracy than existing 4-bit numeric representation types (int4, fp4, nf4) across various model sizes and families (Llama 2, Llama 3, Mistral, Mixtral). \n- It demonstrates competitiveness with orthogonal techniques (AWQ, GPTQ) that do require preprocessing. \n- The method uses a single, curated diverse sample for calibration rather than hundreds, improving efficiency. \n- Along with any4, the authors release tinygemm, a latency-optimized GPU matrix multiplication library.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/facebookresearch/any4"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "High-Resolution Visual Reasoning via Multi-Turn Grounding-Based\n  Reinforcement Learning",
+        "authors": "Rui Feng, Bo Li, Weiwei Tian, Yuhao Dong, Xinyu Huang",
+        "link": "https://arxiv.org/abs/2507.05920",
+        "github_repo": "https://github.com/EvolvingLMMs-Lab/MGPO",
+        "summary": "- This paper introduces Multi-turn Grounding-based Policy Optimization (MGPO), a novel reinforcement learning framework that enables large multimodal models (LMMs) to iteratively focus on key visual regions by automatically cropping sub-images. \n- MGPO effectively elicits stronger grounding capabilities compared to GRPO, leading to a 5.4% improvement on in-distribution MME-Realworld and a 5.2% improvement on the challenging out-of-distribution (OOD) V* Bench. \n- MGPO post-training on Qwen2.5-VL-7B with 21K samples surpasses OpenAI's o1 and GPT-40 models on the OOD V* Bench. \n- The proposed method overcomes the maximum pixel constraints of LMMs and does not require additional grounding annotations. \n- MGPO achieves top-down and interpretable visual reasoning by providing outputs that indicate which image regions are attended to throughout the reasoning process.",
+        "classification": [
+            "Visual Question Answering",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/EvolvingLMMs-Lab/MGPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "The Landscape of Memorization in LLMs: Mechanisms, Measurement, and\n  Mitigation",
+        "authors": "Dawn Song, Aneesh Pappu, Xuandong Zhao, Alexander Xiong",
+        "link": "https://arxiv.org/abs/2507.05578",
+        "github_repo": null,
+        "summary": "- This paper investigates the landscape of memorization in large language models (LLMs), examining its mechanisms, measurement, and mitigation.\n- It explores key drivers of memorization, including data duplication, training dynamics, and fine-tuning procedures.\n- The paper examines methodologies for detecting and measuring memorized content, such as prefix-based extraction and membership inference.\n- It discusses mitigation strategies, including data cleaning, differential privacy, and post-training unlearning.\n- Finally, the paper identifies critical directions for future research on LLM memorization, highlighting open challenges in balancing the minimization of harmful memorization with utility.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "FAROS: Fair Graph Generation via Attribute Switching Mechanisms",
+        "authors": "Fragkiskos D. Malliaros, Daniele Malitesta, Hatim Mrabet, Oussama Kharouiche, badaoui",
+        "link": "https://arxiv.org/abs/2507.03728",
+        "github_repo": null,
+        "summary": "- This paper introduces FAROS, a novel framework for generating fair graphs by leveraging attribute switching mechanisms during the generation process of a pre-trained graph diffusion model (GDM).\n- FAROS directly alters nodes' sensitive attributes during generation, optimizing the fraction of nodes to switch and the optimal time step for the switch using tailored multi-criteria constraints.\n- The proposed approach effectively reduces fairness discrepancies while maintaining accuracy comparable to or even higher than existing baselines.\n- Experiments on benchmark datasets demonstrate that FAROS achieves a better accuracy-fairness trade-off than other competitors in some settings, showcasing the effectiveness of the imposed multi-criteria constraints.\n- FAROS does not require re-training the underlying GDM, making it a computationally efficient approach for generating fair graphs.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    },
+    {
+        "title": "AXLearn: Modular Large Model Training on Heterogeneous Infrastructure",
+        "authors": "Hanzhi Zhou, John Peebles, Chang Lan, Tom Gunter, Mark Lee",
+        "link": "https://arxiv.org/abs/2507.05411",
+        "github_repo": null,
+        "summary": "- AXLearn is a production-ready deep learning system designed for scalable and high-performance training of large deep learning models.\n- It prioritizes modularity and supports heterogeneous hardware infrastructure, allowing for rapid model development and experimentation across various platforms.\n- AXLearn uses a novel method to quantify modularity via Lines-of-Code (LoC)-complexity, demonstrating its constant complexity even as components are added, unlike other systems with linear or quadratic complexity.\n- It achieves equivalent performance compared to state-of-the-art systems.\n- The paper provides details on the development and operation experiences of AXLearn.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/apple/axlearn"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-09"
+    }
+]

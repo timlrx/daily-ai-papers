@@ -1,0 +1,199 @@
+[
+    {
+        "title": "Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data",
+        "authors": "Lixing Xiao, Runyi Yu, Shunlin Lu, Ke Fan, Jixi111",
+        "link": "https://arxiv.org/abs/2507.07095",
+        "github_repo": "https://github.com/VankouF/MotionMillion-Codes",
+        "summary": "- This paper introduces MotionMillion, a large-scale human motion dataset with over 2,000 hours of high-quality motion sequences and 2 million motion clips.\n- The proposed MotionMillion-Eval benchmark is designed to assess zero-shot generalization capabilities of models.\n- A novel scalable model architecture is presented to accommodate the massive dataset, leveraging a 7B parameter model for enhanced performance.\n- The model demonstrates strong generalization to out-of-domain and complex compositional motions, achieving superior results compared to existing models on the MotionMillion-Eval benchmark.\n- This work aims to advance the field of text-to-motion generation into a new era of zero-shot capabilities.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/VankouF/MotionMillion-Codes"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "Perception-Aware Policy Optimization for Multimodal Reasoning",
+        "authors": "Hongru Wang, Sofia Stoica, Xuehang Guo, Zhenhailong Wang, xhyandwyy",
+        "link": "https://arxiv.org/abs/2507.06448",
+        "github_repo": null,
+        "summary": "- The paper introduces PAPO, a novel reinforcement learning algorithm that improves multimodal reasoning by incorporating an Implicit Perception Loss.\n- PAPO encourages models to learn to perceive visual inputs while learning to reason, using internal supervision signals without relying on external reward models or additional data.\n- Experiments demonstrate that PAPO significantly improves performance on diverse multimodal reasoning benchmarks, with gains of up to 8% on tasks with high vision dependency.\n- A comprehensive error analysis reveals that PAPO substantially reduces perception errors, indicating improved perceptual capabilities.\n- The authors rigorously analyze and mitigate a unique loss hacking issue, proposing a Double Entropy Loss to prevent model collapse.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://mikewangwzhl.github.io/PAPO"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+            "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct"
+        ],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
+        "authors": "Xinrui Jiang, Mingyang Wu, Qi Zheng, vztu, YSZuo",
+        "link": "https://arxiv.org/abs/2507.07105",
+        "github_repo": null,
+        "summary": "*- 4KAgent is a novel multi-agent system for universal image super-resolution that upscales images to 4K resolution regardless of input type, degradation level, or domain.\n- It comprises three core modules: Profiling (customizes the pipeline), Perception Agent (analyzes input using vision-language models), and Restoration Agent (executes the plan using a Q-MoE policy).\n- 4KAgent sets new state-of-the-art results across 11 distinct image categories and 26 benchmarks, outperforming existing methods in perceptual quality.\n- It includes a specialized face restoration pipeline that significantly enhances facial details in portrait and selfie images.\n- The authors make the code, models, and results available online.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://4kagent.github.io"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
+        ],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "Rethinking Verification for LLM Code Generation: From Generation to\n  Testing",
+        "authors": "Minnan Luo, Wenwei Zhang, Maosong Cao, Taolin Zhang, MichaelErchi",
+        "link": "https://arxiv.org/abs/2507.06920",
+        "github_repo": null,
+        "summary": " - This paper introduces SAGA, a novel human-LLM collaborative framework for Test Case Generation (TCG), which significantly improves the quality and diversity of generated test cases compared to existing methods.\n - The effectiveness of SAGA is demonstrated through experiments on TCGBench, achieving a 90.62% detection rate and 32.58% verifier accuracy.\n - SAGA's superior performance is further validated by its application to enhance the LiveCodeBench-v6 benchmark, demonstrating a 10.78% increase in verifier accuracy.\n - The proposed multi-dimensional evaluation metrics rigorously quantify test suite thoroughness and provide a valuable framework for assessing the quality of code verifiers.\n - Finally, the work includes the development of TCGBench, a benchmark dataset for facilitating future research into TCG.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/SAGA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "First Return, Entropy-Eliciting Explore",
+        "authors": "Xingwei Qu, Taoran Liang, Qingshui Gu, xtsssss, aaabiao",
+        "link": "https://arxiv.org/abs/2507.07017",
+        "github_repo": null,
+        "summary": "- This paper introduces FR3E (First Return, Entropy-Eliciting Explore), a novel structured exploration framework for reinforcement learning with large language models (LLMs).\n- FR3E identifies high-uncertainty decision points in reasoning trajectories and performs targeted rollouts to construct semantically grounded intermediate feedback, improving reward shaping at the trajectory level.\n- Unlike existing methods, FR3E doesn't rely on dense supervision or complex critics and leverages entropy profiles to identify critical reasoning junctures.\n- Empirical results on mathematical reasoning benchmarks (AIME24) show FR3E promotes more stable training, produces longer and more coherent responses, and increases the proportion of fully correct trajectories.\n- The proposed method addresses the instability and inefficiency of existing exploration strategies in LLM reinforcement learning, showing superior performance compared to GRPO++ across various models and benchmarks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/FR3E-Bytedance"
+        ],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "A Systematic Analysis of Hybrid Linear Attention",
+        "authors": "Taylor Kergan, Yong Shan, Steven Abreu, Dustin Wang, ridger",
+        "link": "https://arxiv.org/abs/2507.06457",
+        "github_repo": null,
+        "summary": "- This paper presents a systematic analysis of hybrid linear attention models for long sequences, addressing the quadratic complexity limitations of traditional Transformers.\n- It comprehensively evaluates various linear attention models across generations, both standalone and hybridized, training and open-sourcing 72 models with varying parameters and training data.\n- The study reveals that superior standalone linear models do not necessarily translate to superior hybrid performance, and recall significantly improves with increased full attention layers.\n- It highlights the importance of selective gating, hierarchical recurrence, and controlled forgetting in achieving efficient hybrid models, recommending architectures like HGRN-2 or GatedDeltaNet with a specific linear-to-full attention ratio.\n- The paper offers practical guidelines for building memory-efficient long-context language models based on these findings.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "AutoTriton: Automatic Triton Programming with Reinforcement Learning in\n  LLMs",
+        "authors": "Yuxuan Li, Ye He, Zefan Wang, Shangzhan Li, qshi",
+        "link": "https://arxiv.org/abs/2507.05687",
+        "github_repo": "https://github.com/AI9Stars/AutoTriton",
+        "summary": "- This paper introduces AUTOTRITON, a novel model for automatic Triton programming using reinforcement learning (RL) and large language models (LLMs).\n- AUTOTRITON utilizes a two-stage process: supervised fine-tuning (SFT) on high-quality data and RL with Group Relative Policy Optimization (GRPO) to improve Triton programming ability.\n- Experiments on TRITONBENCH and KERNELBENCH show that AUTOTRITON achieves performance comparable to mainstream large models, including Claude-4-Sonnet and DeepSeek-R1-0528.\n- The experimental analysis demonstrates the crucial role of each module within AUTOTRITON, including the SFT stage, the RL stage, and the reward design.\n- This work demonstrates the potential of RL for automatically generating high-performance kernels and contributes to building more efficient AI systems.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/AI9Stars/AutoTriton"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "Towards Solving More Challenging IMO Problems via Decoupled Reasoning\n  and Proving",
+        "authors": "Feng Zhang, Tao Yang, Yang Li, Linfeng Song, Zhenwen Liang",
+        "link": "https://arxiv.org/abs/2507.06804",
+        "github_repo": null,
+        "summary": "This paper introduces a novel framework for automated theorem proving that decouples high-level reasoning from low-level proof generation.  The framework uses two specialized models: a general-purpose Reasoner (LLM) to generate strategic lemmas and an efficient Prover to verify them.  This approach successfully solves 5 challenging post-2000 IMO problems, significantly outperforming existing methods.  The authors release a dataset of generated and verified lemmas to facilitate further research. The framework's decoupled design allows the Reasoner and Prover to leverage their respective strengths, enhancing overall problem-solving capabilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://tencent-imo.github.io/"
+        ],
+        "huggingface_urls": [
+            "https://tencent-imo.github.io/"
+        ],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "A Survey on Vision-Language-Action Models for Autonomous Driving",
+        "authors": "Tianze Zhu, Ziang Luo, Kangan Qian, Zilin Huang, Max2045",
+        "link": "https://arxiv.org/abs/2506.24044",
+        "github_repo": "https://github.com/JohnsonJiang1996/Awesome-VLA4AD",
+        "summary": "This paper provides a comprehensive survey of Vision-Language-Action (VLA) models for autonomous driving.  It presents a formalization of the architectural building blocks of these models, tracing their evolution from early explainers to more sophisticated reasoning-centric models.  The survey also analyzes over 20 representative models and consolidates existing datasets and benchmarks. Finally, it identifies open challenges such as robustness, real-time efficiency, and formal verification, outlining future research directions for improving the safety and interpretability of autonomous vehicles.  The authors identify a need for standardized benchmarks and open-source toolkits for reproducibility and comparison.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/JohnsonJiang1996/Awesome-VLA4AD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "DiffSpectra: Molecular Structure Elucidation from Spectra using\n  Diffusion Models",
+        "authors": "Zhiyuan Liu, Zhenyi Zhong, Tingyang Xu, Yu Rong, AzureLeon1",
+        "link": "https://arxiv.org/abs/2507.06853",
+        "github_repo": null,
+        "summary": "- DiffSpectra is a novel generative framework that directly infers both 2D and 3D molecular structures from multi-modal spectral data using diffusion models.\n- It formulates structure elucidation as a conditional generation process, where the denoising network is parameterized by Diffusion Molecule Transformer (DMT), an SE(3)-equivariant architecture that integrates topological and geometric information.\n- Conditioning is provided by SpecFormer, a transformer-based spectral encoder that captures intra- and inter-spectral dependencies from multi-modal spectra.\n- DiffSpectra achieves high accuracy in structure elucidation, recovering exact structures with 16.01% top-1 accuracy and 96.86% top-20 accuracy through sampling.\n- The model significantly benefits from 3D geometric modeling, SpecFormer pre-training, and multi-modal conditioning.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "ModelCitizens: Representing Community Voices in Online Safety",
+        "authors": "Karolina Naranjo, notaphonologist, hamidpalangi, christinachance, Ashima",
+        "link": "https://arxiv.org/abs/2507.05455",
+        "github_repo": "https://github.com/asuvarna31/modelcitizens",
+        "summary": "- This paper introduces MODELCITIZENS, a new dataset comprising 6.8K social media posts and 40K toxicity annotations across diverse identity groups, addressing the limitations of existing datasets which often collapse diverse annotator perspectives into a single ground truth.\n- To capture the conversational context typical of social media posts, the dataset includes LLM-generated conversational scenarios.\n- State-of-the-art toxicity detection tools underperform on MODELCITIZENS, highlighting the importance of community-informed annotation and modeling.\n- Two new models, LLAMACITIZEN-8B and GEMMACITIZEN-12B, are presented, which outperform existing models by 5.5% on in-distribution evaluations.\n- The findings underscore the significance of community-informed annotation and modeling for inclusive content moderation.",
+        "classification": [
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/asuvarna31/modelcitizens"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "Evaluating the Critical Risks of Amazon's Nova Premier under the\n  Frontier Model Safety Framework",
+        "authors": "Vincent Ponzo, Matteo Memelli, Abhinav Mohanty, Ninareh Mehrabi, Satyapriya Krishna",
+        "link": "https://arxiv.org/abs/2507.06260",
+        "github_repo": null,
+        "summary": "- This paper presents a comprehensive evaluation of Amazon's Nova Premier, a multimodal foundation model, using the Frontier Model Safety Framework.\n- The evaluation focuses on three high-risk domains: Chemical, Biological, Radiological & Nuclear (CBRN) weapons proliferation, Offensive Cyber Operations, and Automated AI R&D.\n- The methodology combines automated benchmarks, expert red-teaming, and uplift studies to assess whether the model exceeds release thresholds.\n- The findings indicate that Nova Premier is safe for public release, according to the commitments made at the 2025 Paris AI Safety Summit.\n- This work provides a template for future cross-organisational safety audits of frontier models.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    },
+    {
+        "title": "AdamMeme: Adaptively Probe the Reasoning Capacity of Multimodal Large\n  Language Models on Harmfulness",
+        "authors": "Zhen Ye, Ziyang Luo, Kaixin Li, Hongzhan Lin, Zixin Chen",
+        "link": "https://arxiv.org/abs/2507.01702",
+        "github_repo": "https://github.com/Lbotirx/AdamMeme",
+        "summary": "- This paper introduces AdamMeme, a novel evaluation framework for assessing the reasoning capabilities of multimodal large language models (mLLMs) on meme harmfulness.\n- AdamMeme uses a multi-agent system with a harmfulness mining agent, model scoring agent, and iterative refinement agent to dynamically assess the mLLMs.\n- The framework addresses the limitations of existing static benchmarks by iteratively generating challenging meme samples, revealing model-specific weaknesses.\n- Extensive experiments demonstrated that AdamMeme effectively reveals varying performance and model-specific vulnerabilities of different mLLMs on harmfulness analysis.\n- The proposed framework is adaptable to the evolving nature of memes, promoting more comprehensive and diverse evaluation.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Lbotirx/AdamMeme"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-10"
+    }
+]

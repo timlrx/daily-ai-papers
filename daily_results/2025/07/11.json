@@ -1,0 +1,207 @@
+[
+    {
+        "title": "Scaling RL to Long Videos",
+        "authors": "Hanrong Ye, Qinghao Hu, Baifeng Shi, Wei Huang, Yukang Chen",
+        "link": "https://arxiv.org/abs/2507.07966",
+        "github_repo": "https://github.com/NVlabs/Long-RL",
+        "summary": "- The paper introduces LongVILA-R1, a framework that scales reasoning in vision-language models to long videos, using reinforcement learning.\n- LongVILA-R1 incorporates a large-scale dataset (Long Video-Reason), a two-stage training pipeline (CoT-SFT and RL), and a novel training infrastructure (MR-SP) for efficient long video RL training.\n- Experiments show LongVILA-R1 achieves strong performance on long video QA benchmarks, outperforming existing methods and matching the performance of Gemini-1.5-Pro on temporal, goal, spatial, and plot reasoning tasks.\n- The MR-SP system achieves up to 2.1x speedup on long video RL training, enabling training on hour-long videos on a single A100 node.\n- The authors release their training system, supporting RL training on various modalities (video, text, and audio), various models, and even image and video generation models.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/NVlabs/Long-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "T-LoRA: Single Image Diffusion Model Customization Without Overfitting",
+        "authors": "Konstantin Sobolev, Andrey Kuznetsov, Vera Soboleva, ai-alanov",
+        "link": "https://arxiv.org/abs/2507.05964",
+        "github_repo": "https://github.com/ControlGenAI/T-LoRA",
+        "summary": "- This paper introduces T-LoRA, a novel framework for single-image diffusion model customization that mitigates overfitting by incorporating a timestep-dependent low-rank adaptation strategy.\n- T-LoRA addresses the challenge of overfitting in single-image fine-tuning by dynamically adjusting the rank of LoRA adapters based on the diffusion timestep, reducing the risk of memorization of background elements and poses.\n- The proposed Ortho-LoRA weight initialization method further enhances T-LoRA's performance by ensuring orthogonality between adapter components, improving the separation of information flow and effective rank utilization.\n- Extensive experiments demonstrate that T-LoRA outperforms standard LoRA and other personalization techniques, achieving a superior balance between concept fidelity and text alignment, particularly in data-limited scenarios.\n- The code for T-LoRA is publicly available on GitHub, enabling further research and application in the field of diffusion model customization.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ControlGenAI/T-LORA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Traceable Evidence Enhanced Visual Grounded Reasoning: Evaluation and\n  Methodology",
+        "authors": "Zilong Huang, garlicisnotmyfavor, stormthunder, LXT, HaochenWang",
+        "link": "https://arxiv.org/abs/2507.07999",
+        "github_repo": "https://github.com/Haochen-Wang409/TreeVGR",
+        "summary": " - This paper introduces TreeBench, a new benchmark for evaluating visual grounded reasoning in large multimodal models.  TreeBench emphasizes three key aspects: focused visual perception, traceable evidence, and vision-centric second-order reasoning.\n- TreeBench contains 405 challenging visual question-answering pairs with accurate bounding boxes of target instances.  Existing models achieve less than 60% accuracy, highlighting its difficulty.\n- The authors also propose TreeVGR, a training paradigm using reinforcement learning with traceable evidence. TreeVGR enhances the accuracy of localization and the explainability of reasoning pathways.\n- Experiments on TreeBench and other benchmarks show that TreeVGR improves performance compared to existing methods, demonstrating the effectiveness of its approach.\n- TreeBench and TreeVGR are publicly available and are expected to advance the field of multimodal reasoning assessment.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Haochen-Wang409/TreeVGR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "OST-Bench: Evaluating the Capabilities of MLLMs in Online\n  Spatio-temporal Scene Understanding",
+        "authors": "Xihui Liu, Xiaohan Mao, Runsen Xu, Chenming Zhu, JingLi Lin",
+        "link": "https://arxiv.org/abs/2507.07984",
+        "github_repo": null,
+        "summary": " - OST-Bench is a new benchmark for evaluating online spatio-temporal scene understanding in multi-modal large language models (MLLMs).\n - It consists of 1.4k scenes and 10k question-answer pairs collected from ScanNet, Matterport3D, and ARKitScenes, focusing on online and spatio-temporal understanding.\n - OST-Bench evaluates several leading MLLMs and finds that they fall short on tasks requiring complex spatio-temporal reasoning, with accuracy declining as the exploration horizon extends.\n - Common error patterns across models are identified, highlighting the challenges of complex clue-based spatial reasoning and long-term memory retrieval.\n - The benchmark is publicly available to foster further research and development in the field.",
+        "classification": [
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/rbler1234/OST-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Multi-Granular Spatio-Temporal Token Merging for Training-Free\n  Acceleration of Video LLMs",
+        "authors": "Inwoong Lee, Taeoh Kim, Su Ho Han, Sukjun Hwang, js-hyun",
+        "link": "https://arxiv.org/abs/2507.07990",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel training-free spatio-temporal token merging method (STTM) for accelerating video LLMs.\n- STTM leverages local spatial and temporal redundancy in video data by performing decomposed merging across spatial and temporal dimensions, resulting in multi-granular tokens.\n- The proposed method outperforms six existing token reduction methods across video QA benchmarks, achieving a 2x speed-up with only a 0.5% accuracy drop under a 50% token budget and a 3x speed-up with a 2% drop under a 30% budget.\n- STTM is query-agnostic, allowing KV cache reuse across different questions for the same video, which enhances efficiency in multi-turn or multi-query scenarios.\n- The effectiveness of the method is validated through extensive experiments on multiple video LLMs and datasets.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "PyVision: Agentic Vision with Dynamic Tooling",
+        "authors": "Qilong Wu, Ming Li, Shaoheng Lin, haoquan03, stzhao",
+        "link": "https://arxiv.org/abs/2507.07998",
+        "github_repo": null,
+        "summary": "- PyVision is a novel multi-turn framework that enables large language models (LLMs) to autonomously generate, execute, and refine Python-based tools for visual reasoning tasks.\n- It introduces dynamic tooling, allowing LLMs to create custom Python code snippets tailored to the specific problem, going beyond using pre-defined toolsets.\n- PyVision achieves consistent performance gains across various benchmarks, including a +7.8% improvement on V* with GPT-4.1 and a +31.1% improvement on VLMsAreBlind-mini with Claude-4.0-Sonnet.\n- The framework uses a multi-turn interaction loop between the LLM and a Python interpreter, allowing for iterative refinement of code and reasoning based on visual feedback.\n- PyVision's dynamic tooling enables adaptive, grounded, verifiable visual reasoning by creating highly task-specific tools, demonstrating its potential in more agentic visual reasoning scenarios.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Geometry Forcing: Marrying Video Diffusion and 3D Representation for\n  Consistent World Modeling",
+        "authors": "Yang Ye, Junliang Guo, Diankun Wu, deeptimhe, Haoyuwu",
+        "link": "https://arxiv.org/abs/2507.07982",
+        "github_repo": null,
+        "summary": "- This paper introduces Geometry Forcing (GF), a novel technique that enhances the 3D consistency of video generation models by aligning their intermediate representations with features from a pre-trained 3D foundation model.\n- GF introduces two complementary alignment objectives: Angular Alignment and Scale Alignment, which enforce directional consistency and preserve scale-related information, respectively.\n- Experiments on camera view-conditioned and action-conditioned video generation tasks show that GF significantly improves visual quality and 3D consistency compared to baseline methods, achieving lower FVD scores and better geometric coherence.\n- Ablation studies validate the design choices of GF, demonstrating the importance of both alignment objectives and the effectiveness of internalizing geometric information within the video diffusion model.\n- Qualitative and quantitative results demonstrate GF's ability to produce more realistic and temporally consistent videos, especially for long-term generation, addressing challenges like exposure bias and scene inconsistency.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://GeometryForcing.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "LangSplatV2: High-dimensional 3D Language Gaussian Splatting with 450+\n  FPS",
+        "authors": "Yuanhao Cai, Yang Liu, Minghan Qin, Yujie Zhao, Wanhua Li",
+        "link": "https://arxiv.org/abs/2507.07136",
+        "github_repo": null,
+        "summary": "- LangSplatV2 is a new model that achieves high-dimensional feature splatting at 476.2 FPS and 3D open-vocabulary text querying at 384.6 FPS for high-resolution images. \n- The model employs Gaussian Splatting to embed 2D CLIP language features into 3D, significantly enhancing speed and learning a precise 3D language field with SAM semantics. \n- LangSplatV2 addresses the decoding bottleneck in the original LangSplat model by assuming that each Gaussian acts as a sparse code within a global dictionary, eliminating the need for a heavyweight decoder. \n- Experimental results demonstrate that LangSplatV2 not only achieves better or competitive query accuracy but is also significantly faster, providing a 42x speedup and a 47x boost over LangSplat, respectively. \n- Codes and demos are available at the project page: https://langsplat-v2.github.io",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://langsplat-v2.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Skip a Layer or Loop it? Test-Time Depth Adaptation of Pretrained LLMs",
+        "authors": "Yang Li, Ziyue Li, zhoutianyi",
+        "link": "https://arxiv.org/abs/2507.07996",
+        "github_repo": null,
+        "summary": "- This paper introduces Chain-of-Layers (CoLa), a novel technique that adapts the architecture of pretrained LLMs at test time without any further training.\n- CoLa dynamically skips, repeats, or reorders layers from the pretrained model to create a customized architecture (CoLa) for each input, allowing for flexible, dynamic architectures.\n- The authors develop a Monte Carlo Tree Search (MCTS) algorithm to efficiently explore the CoLa search space and identify the optimal architecture for each sample.\n- Extensive experiments on math and commonsense reasoning benchmarks demonstrate that CoLa consistently improves prediction accuracy and efficiency compared to using the original LLM's fixed architecture.\n- CoLa's ability to dynamically adapt depth and architecture suggests a significant potential for improving the efficiency and generalization of LLMs on diverse downstream tasks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "A Survey on Long-Video Storytelling Generation: Architectures,\n  Consistency, and Cinematic Quality",
+        "authors": "Seunghyun Yoon, Ryan Rossi, Franck-Dernoncourt, taesiri, elmoghany",
+        "link": "https://arxiv.org/abs/2507.07202",
+        "github_repo": null,
+        "summary": "- This paper presents a comprehensive survey of long-video storytelling generation, focusing on architectures, consistency, and cinematic quality.\n- It proposes a novel taxonomy that categorizes existing methods based on architectural designs and performance characteristics, facilitating a structured understanding of the field.\n- The survey analyzes key architectural components such as text-visual encoders, diffusion training objectives, VAEs, attention mechanisms, and positional encoding, offering recommendations for future research.\n- It identifies under-explored cinematic and long-form video datasets with high potential, and catalogs the evaluation metrics recently adopted by the community.\n- The survey concludes by highlighting the current limitations and future research directions in long-video generation, such as the need for improved temporal coherence, multi-subject handling, and large-scale datasets.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Token Bottleneck: One Token to Remember Dynamics",
+        "authors": "Sangdoo Yun, Jeongeun Park, bhheo, calintz, taekyung-k",
+        "link": "https://arxiv.org/abs/2507.06543",
+        "github_repo": "https://github.com/naver-ai/tobo",
+        "summary": "- This paper introduces Token Bottleneck (ToBo), a novel self-supervised learning pipeline for deriving compact and temporally aware visual representations from dynamic scenes.\n- ToBo encodes a scene into a bottleneck token and predicts the subsequent scene using minimal patches as hints, encouraging the model to embed temporal dependencies.\n- Experiments on video label propagation and robot manipulation tasks in simulated and real-world environments demonstrate ToBo's superiority over existing self-supervised learning methods.\n- The ToBo model's robustness and effectiveness are validated across different model scales and real-world environments.\n- The method significantly outperforms existing baselines on various robotic manipulation and locomotion tasks, as shown by the experimental results.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/naver-ai/tobo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Machine Bullshit: Characterizing the Emergent Disregard for Truth in\n  Large Language Models",
+        "authors": "Thomas L. Griffiths, Dawn Song, Xuandong Zhao, Haimin Hu, Kaiqu Liang",
+        "link": "https://arxiv.org/abs/2507.07484",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel metric, the Bullshit Index, to quantify large language models' (LLMs) indifference to truth. \n - It proposes a taxonomy classifying four qualitative forms of machine bullshit: empty rhetoric, paltering, weasel words, and unverified claims. \n - Empirical evaluations on several benchmarks demonstrate that reinforcement learning from human feedback (RLHF) significantly exacerbates LLM bullshit. \n - The study also reveals that chain-of-thought prompting amplifies specific forms of bullshit. \n - Findings highlight systematic challenges in AI alignment and offer new insights toward enhancing truthfulness in LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://machine-bullshit.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "Beyond the Linear Separability Ceiling",
+        "authors": "Mohit Vaishnav, Tanel Tammet, envomp",
+        "link": "https://arxiv.org/abs/2507.07574",
+        "github_repo": null,
+        "summary": "This paper introduces a novel diagnostic framework to analyze the limitations of Visual-Language Models (VLMs) on abstract reasoning tasks. The framework identifies a \"linear reasoning bottleneck\" where VLM performance is limited by the linear separability of their visual embeddings.  The authors demonstrate that this bottleneck is not due to poor visual perception, but rather a failure in the reasoning pathways.  The study proposes two pathways to improve VLM performance: (1) refining embeddings for improved linear separability, (2) enabling non-linear reasoning through targeted alignment.  Finally, the framework helps identify intervention points for efficient fine-tuning to enhance VLM performance. ",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    },
+    {
+        "title": "SciMaster: Towards General-Purpose Scientific AI Agents, Part I.\n  X-Master as Foundation: Can We Lead on Humanity's Last Exam?",
+        "authors": "Xinyu Zhu, Yuwen Du, Rui Ye, Shuo Tang, Jingyi Chai",
+        "link": "https://arxiv.org/abs/2507.05241",
+        "github_repo": null,
+        "summary": "- This paper introduces X-Master, a tool-augmented reasoning agent designed to improve the capabilities of scientific AI agents.\n- X-Master leverages the concept of code as an interaction language, enabling flexible interaction with external tools.\n- The authors evaluate X-Master on the Humanity's Last Exam (HLE) benchmark, achieving a state-of-the-art score of 32.1% and exceeding the 30% threshold for the first time.\n- X-Masters, a scattered-and-stacked agentic workflow, is introduced to further enhance reasoning capabilities.\n- The open-source nature of X-Master allows for greater community participation and acceleration of progress in the field.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/sjtu-sai-agents/X-Master"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-11"
+    }
+]

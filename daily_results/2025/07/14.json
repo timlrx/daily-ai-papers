@@ -1,0 +1,220 @@
+[
+    {
+        "title": "Test-Time Scaling with Reflective Generative Model",
+        "authors": "Jie Gao, Mengting Xing, Xiaorui Wang, Yuxin Wang, Zixiao Wang",
+        "link": "https://arxiv.org/abs/2507.01951",
+        "github_repo": "https://github.com/MetaStone-AI/MetaStone-S1",
+        "summary": "- This paper introduces MetaStone-S1, a novel reflective generative model that achieves comparable performance to OpenAI's 03-mini series for various reasoning tasks.\n- MetaStone-S1 employs a new Reflective Generative Form, which features a unified interface for policy and process reward models, eliminating the reliance on process-level annotations.\n- The model architecture utilizes a shared backbone network for both reasoning trajectory prediction and scoring, reducing the number of extra parameters needed for trajectory scoring.\n- Experiments demonstrate that MetaStone-S1 achieves comparable performance to OpenAI 03-mini with only 32B parameters, outperforming several other open-source and closed-source models in various benchmarks.\n- The authors open-sourced MetaStone-S1 to support further research and development within the community.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MetaStone-AI/MetaStone-S1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "CLiFT: Compressive Light-Field Tokens for Compute-Efficient and Adaptive\n  Neural Rendering",
+        "authors": "Yasutaka Furukawa, Fuyang Zhang, Jiacheng Chen, Yuefan Wu, Zhengqing Wang",
+        "link": "https://arxiv.org/abs/2507.08776",
+        "github_repo": null,
+        "summary": "- This paper introduces CLiFT, a novel neural rendering approach that represents a scene using \"compressed light-field tokens\" to enable compute-efficient and adaptive rendering.\n- The CLiFT model architecture consists of three main steps: multi-view encoding using a transformer encoder to extract light field tokens, latent-space K-means for ray selection to reduce redundancy, and neural condensation to compress information into centroid tokens.\n-  Experiments on RealEstate10K and DL3DV datasets demonstrate that CLiFT achieves significant data reduction with comparable rendering quality and the highest overall rendering score compared to existing methods.\n- CLiFT offers flexible control over data size and rendering quality by adjusting the number of tokens used in rendering, providing trade-offs between data size, rendering quality, and speed.\n- The method achieves significant data reduction compared to state-of-the-art methods such as LVSM, MVSplat, and DepthSplat while maintaining comparable rendering quality.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://c-lift.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "NeuralOS: Towards Simulating Operating Systems via Neural Generative\n  Models",
+        "authors": "Yuntian Deng, Wenhu Chen, Hongyu Guo, Sun Sun, Luke Rivard",
+        "link": "https://arxiv.org/abs/2507.08800",
+        "github_repo": null,
+        "summary": "- NeuralOS is a novel neural framework that simulates graphical user interfaces (GUIs) by directly predicting screen frames based on user inputs (mouse movements, clicks, keyboard events).\n- The model architecture consists of a recurrent neural network (RNN) that tracks the computer's state and a diffusion-based neural renderer that generates screen images.\n- NeuralOS was trained on a large-scale dataset of Ubuntu XFCE recordings, combining randomly generated and realistic interactions from AI agents.\n- Experimental results demonstrate that NeuralOS successfully renders realistic GUI sequences, accurately captures mouse interactions, and reliably predicts state transitions.\n- While precise keyboard interaction modeling is challenging, NeuralOS is a significant step toward creating fully adaptive and generative neural interfaces for human-computer interaction systems.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Computer Vision",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/google-research/google-research/tree/master/neural_os"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "KV Cache Steering for Inducing Reasoning in Small Language Models",
+        "authors": "Cees G. M. Snoek, M. Jehanzeb Mirza, Michael Dorkenwald, Dawid J. Kopiczko, Max Belitsky",
+        "link": "https://arxiv.org/abs/2507.08799",
+        "github_repo": null,
+        "summary": "- This paper introduces cache steering, a novel method for implicitly guiding language models' reasoning behavior by directly modifying the key-value cache.\n- The method uses GPT-4-generated reasoning traces to construct steering vectors that shift model behavior toward more explicit, multi-step reasoning without requiring fine-tuning or prompt modifications.\n- Experimental evaluations on several reasoning benchmarks demonstrate that cache steering improves both the qualitative structure of model reasoning and quantitative task performance.\n- Compared to activation steering, cache steering offers substantial advantages in terms of hyperparameter stability, inference-time efficiency, and ease of integration.\n- The proposed method is lightweight and compatible with standard inference APIs, making it a more practical and robust solution for controlled generation.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MaxBelitsky/cache-steering"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "Neural-Driven Image Editing",
+        "authors": "Zilong Ye, Wangbo Zhao, Xiaopeng Peng, Jie Xia, Pengfei Zhou",
+        "link": "https://arxiv.org/abs/2507.05397",
+        "github_repo": null,
+        "summary": "- LoongX, a novel hands-free image editing approach driven by multimodal neurophysiological signals (EEG, fNIRS, PPG, and head motion) is proposed.\n- LoongX integrates two key modules: a cross-scale state space (CS3) module and a dynamic gated fusion (DGF) module to effectively address the heterogeneity of multimodal signals.\n- LoongX achieves performance comparable to text-driven methods and outperforms them when neural signals are combined with speech, highlighting the promise of neural-driven generative models.\n- The model is trained on a comprehensive dataset of 23,928 image editing pairs with synchronized multimodal neural signals.\n- Datasets and code will be released to support future work and foster progress in this emerging area.",
+        "classification": [
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://loongx1.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "Lumos-1: On Autoregressive Video Generation from a Unified Model\n  Perspective",
+        "authors": "Jingyun Liang, Hu Yu, Jun Cen, Weihua Chen, Hangjie Yuan",
+        "link": "https://arxiv.org/abs/2507.08801",
+        "github_repo": "https://github.com/alibaba-damo-academy/Lumos",
+        "summary": "- Lumos-1 is a novel autoregressive video generation model that leverages the LLM architecture with minimal modifications, addressing limitations of existing methods.\n- It incorporates a modified rotary position embedding (MM-ROPE) scheme to effectively capture spatiotemporal correlations in video data, improving upon previous 3D RoPE techniques by addressing frequency spectrum imbalances.\n- To mitigate frame-wise loss imbalance caused by spatial information redundancy, Lumos-1 introduces Autoregressive Discrete Diffusion Forcing (AR-DF), a training and inference masking strategy that maintains temporal causality.\n- The model achieves performance comparable to state-of-the-art methods on multiple benchmarks (GenEval, COSMOS-Video2World, OpenSoraPlan), despite being pre-trained on a relatively smaller scale (48 GPUs).\n- The authors introduce several memory-efficient training techniques, demonstrating the potential for effective autoregressive video generation within a unified model framework.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba-damo-academy/Lumos"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "Open Vision Reasoner: Transferring Linguistic Cognitive Behavior for\n  Visual Reasoning",
+        "authors": "Jisheng Yin, Kangheng Lin, Jianjian Sun, Liang Zhao, Yana Wei",
+        "link": "https://arxiv.org/abs/2507.05255",
+        "github_repo": null,
+        "summary": " - This paper introduces Open-Vision-Reasoner (OVR), a novel multimodal reasoning model that leverages a two-stage training paradigm: linguistic cold-start fine-tuning followed by multimodal reinforcement learning.\n- OVR achieves state-of-the-art performance on various reasoning benchmarks, including MATH500 (95.3%), MathVision (51.8%), and MathVerse (54.6%), surpassing previous open-source efforts.\n- The model's superior performance is attributed to the transfer of linguistic cognitive behaviors to visual reasoning, a phenomenon observed early in the training process.\n-  OVR exhibits high utility behaviors such as visual reflection, effectively leveraging visual cognitive behaviors in complex visual tasks.\n- The authors contribute a comprehensive analysis of the model's training dynamics and visual cognitive behavior, releasing the model, data, and training dynamics to foster further research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "From One to More: Contextual Part Latents for 3D Generation",
+        "authors": "Yuxin Wang, Yaokun Li, Xiao Chen, Lihe Ding, Shaocong Dong",
+        "link": "https://arxiv.org/abs/2507.08772",
+        "github_repo": null,
+        "summary": "- The paper introduces CoPart, a novel part-based 3D generation framework that represents 3D objects using multiple contextual part latents and generates coherent 3D parts simultaneously.\n- CoPart addresses the challenges of existing 3D generation methods by reducing the encoding burden of intricate objects, facilitating part learning and relationship modeling, and naturally supporting part-level control.\n- The model utilizes a mutual guidance strategy to ensure coherence of part latents and leverages powerful priors from foundation models for enhanced generation quality.\n- CoPart achieves promising results in various applications, including part editing, articulated object generation, and mini-scene generation, outperforming existing methods based on quantitative comparisons and user studies.\n- A new large-scale 3D part dataset named PartVerse is collected and used for training CoPart, enhancing the model's generalizability and performance.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://hkdsc.github.io/project/copart"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "One Token to Fool LLM-as-a-Judge",
+        "authors": "Haitao Mi, S. Y. Kung, Dian Yu, Haolin Liu, Yulai Zhao",
+        "link": "https://arxiv.org/abs/2507.08794",
+        "github_repo": null,
+        "summary": "This paper introduces Master-RM, a robust generative reward model designed to mitigate vulnerabilities in LLM-as-judges.  The model employs a simple data augmentation strategy to significantly improve robustness against adversarial attacks.  These attacks, termed \"master keys,\" consist of non-word symbols or reasoning openers, and induce false positive rewards in existing LLMs.  Experimental results across diverse datasets show that Master-RM maintains near-zero false positive rates while achieving high agreement with a state-of-the-art verifier, demonstrating improved reliability in reinforcement learning with verifiable rewards.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/sarosavo/Master-RM",
+            "https://huggingface.co/datasets/sarosavo/Master-RM"
+        ],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "Vision Foundation Models as Effective Visual Tokenizers for\n  Autoregressive Image Generation",
+        "authors": "Tiancai Wang, Chuofan Ma, Xuanyang Zhang, Xin Wen, Anlin Zheng",
+        "link": "https://arxiv.org/abs/2507.08441",
+        "github_repo": null,
+        "summary": "- This paper introduces VFMTok, a novel image tokenizer that leverages pre-trained vision foundation models (VFMs) to generate region-adaptive tokens for autoregressive image generation.\n- VFMTok uses a frozen VFM as an encoder and incorporates a region-adaptive quantization framework and a semantic reconstruction objective to improve token efficiency and preserve semantic fidelity.\n- The proposed method achieves substantial improvements in image reconstruction and generation quality, surpasses existing methods with a gFID of 2.07 on ImageNet benchmarks, and accelerates model convergence by three times.\n- VFMTok enables high-fidelity class-conditional synthesis without classifier-free guidance (CFG), further improving inference speed.\n- The code for VFMTok will be released publicly.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "What Has a Foundation Model Found? Using Inductive Bias to Probe for\n  World Models",
+        "authors": "Sendhil Mullainathan, Ashesh Rambachan, Peter G. Chang, Keyon Vafa",
+        "link": "https://arxiv.org/abs/2507.06952",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel technique, the inductive bias probe, to evaluate whether foundation models truly capture deeper domain understanding beyond sequence prediction.\n- The technique involves measuring how well a foundation model adapts to synthetic datasets generated from a postulated world model, assessing the alignment of the model's inductive bias with the world model.\n- Experiments across various domains, including physics, lattice problems, and Othello, reveal that foundation models may excel in training tasks but often fail to develop inductive biases aligned with the underlying world models.\n- The analysis suggests foundation models may employ task-specific heuristics instead of generalizable world models, limiting their ability to adapt and generalize to new tasks.\n- The findings highlight the importance of considering inductive bias when evaluating foundation models and underscore the need for a deeper understanding of how these models learn and generalize.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality,\n  Long Context, and Next Generation Agentic Capabilities",
+        "authors": "Noveen Sachdeva, Ice Pasupat, Mike Schaekermann, Eric Bieber, Gheorghe Comanici",
+        "link": "https://arxiv.org/abs/2507.06261",
+        "github_repo": null,
+        "summary": " - The paper introduces the Gemini 2.X family of models, including Gemini 2.5 Pro and Gemini 2.5 Flash, which are multimodal models with advanced reasoning and tool-use capabilities. \n- Gemini 2.5 Pro is a sparse mixture-of-experts (MoE) transformer that achieves state-of-the-art performance on various benchmarks, including coding, reasoning, and multimodal understanding. \n- The models support long context inputs of over 1 million tokens and have native tool use support, enabling them to comprehend vast datasets and handle complex problems from various sources. \n- Different models in the series are designed to span the Pareto frontier of model capability versus cost, offering users the ability to explore complex agentic problem-solving scenarios. \n- The paper showcases several example applications of Gemini 2.5 Pro, including Gemini Plays Pok\u00e9mon, where the model successfully completed the game autonomously.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "BlockFFN: Towards End-Side Acceleration-Friendly Mixture-of-Experts with\n  Chunk-Level Activation Sparsity",
+        "authors": "Yingfa Chen, Chaojun Xiao, Xu Han, Weilin Zhao, Chenyang Song",
+        "link": "https://arxiv.org/abs/2507.08771",
+        "github_repo": "https://github.com/thunlp/BlockFFN",
+        "summary": "- This paper introduces BlockFFN, a novel Mixture-of-Experts (MoE) architecture designed for efficient large language model (LLM) inference on resource-constrained devices.\n- BlockFFN integrates a ReLU-based differentiable and flexible routing mechanism, which is more efficient than existing MoE routers, and uses CLS-aware training objectives to improve chunk-level sparsity, making it friendlier to acceleration.\n- The proposed model achieves over 80% token-level sparsity and 70% 8-token chunk-level sparsity.\n- BlockFFN is evaluated on various tasks and demonstrates significant improvements in terms of perplexity and speed compared to existing MoE models.\n- Efficient acceleration kernels are implemented that combine activation sparsity and speculative decoding, resulting in up to 3.67x speedup on end-side devices compared to dense models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/thunlp/BlockFFN"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    },
+    {
+        "title": "Robust Multimodal Large Language Models Against Modality Conflict",
+        "authors": "Houqiang Li, Jie Zhao, Wengang Zhou, ustc-zhangzm",
+        "link": "https://arxiv.org/abs/2507.07151",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel dataset called Multimodal Modality Conflict (MMMC) to address the issue of hallucinations in multimodal large language models (MLLMs).\n- The MMMC dataset simulates modality conflicts by presenting vision-language tasks with inconsistencies between visual and textual inputs.\n- Three methods\u2014prompt engineering, supervised fine-tuning, and reinforcement learning\u2014are proposed to mitigate the hallucinations caused by modality conflicts.\n- Experimental results demonstrate that the reinforcement learning method achieves the best performance in reducing hallucinations under modality conflict, while supervised fine-tuning shows stable performance.\n- The study provides valuable insights into the robustness of MLLMs and sheds light on the previously unnoticed modality conflicts as a source of hallucinations.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zmzhang2000/MMMC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-14"
+    }
+]

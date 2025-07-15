@@ -1,0 +1,185 @@
+[
+    {
+        "title": "SpeakerVid-5M: A Large-Scale High-Quality Dataset for Audio-Visual\n  Dyadic Interactive Human Generation",
+        "authors": "Deyu Zhou, Jiahe Zhang, Duomin Wang, Zhaoyang Li, Youliang Zhang",
+        "link": "https://arxiv.org/abs/2507.09862",
+        "github_repo": null,
+        "summary": "- SpeakerVid-5M, a large-scale, high-quality dataset for audio-visual dyadic interactive human generation, is introduced.  The dataset contains over 8,743 hours of data and 5.2 million video clips, offering rich annotations such as structured text, skeletal sequences, and blur scores.\n- The dataset is structured along two key dimensions: interaction type (dialogue, single, listening, multi-turn) and data quality (pre-training and SFT subsets).\n- An autoregressive method for audio-visual dyadic human generation is proposed, using Qwen2.5-Omni for multimodal understanding and a next-chunk prediction model for joint audio and video generation.\n- The proposed method achieves state-of-the-art performance on the VidChatBench benchmark, showcasing improvements across metrics such as FID, FVD, PSNR, SSIM, and ArcFace.\n- The dataset and code are publicly released to facilitate research in audio-visual dyadic interactive human generation.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Audio"
+        ],
+        "github_urls": [
+            "https://dorniwang.github.io/SpeakerVid-5M/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "EmbRACE-3K: Embodied Reasoning and Action in Complex Environments",
+        "authors": "Kui Wu, Chengjie Jiang, Yitang Li, Wei Huang, Mingxian Lin",
+        "link": "https://arxiv.org/abs/2507.10548",
+        "github_repo": null,
+        "summary": "- EmbRACE-3K, a novel dataset of over 3,000 language-guided embodied tasks in diverse photorealistic environments, is introduced to address limitations of existing vision-language models (VLMs) in embodied settings.\n- The dataset contains approximately 26,000 decision steps, each annotated with multimodal context and step-wise reasoning, enabling fine-grained evaluation of embodied reasoning capabilities.\n- Experiments with state-of-the-art VLMs such as GPT-40, Gemini 2.5 Pro, and Qwen2.5-VL-7B reveal significant performance limitations in zero-shot settings, underscoring the challenges posed by embodied tasks.\n- Fine-tuning Qwen2.5-VL-7B using a two-stage approach (supervised fine-tuning followed by reinforcement learning) on EmbRACE-3K yields substantial improvements across three key dimensions: exploration, dynamic spatial-semantic reasoning, and multi-stage goal execution.\n- The results demonstrate the effectiveness of EmbRACE-3K in facilitating the development of embodied reasoning capabilities in VLMs.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://mxllc.github.io/EmbRACE-3K/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "Reasoning or Memorization? Unreliable Results of Reinforcement Learning\n  Due to Data Contamination",
+        "authors": "Jun Zhao, Zhiheng Xi, Qiaole Dong, Zhihao Zhang, Mingqi Wu",
+        "link": "https://arxiv.org/abs/2507.10532",
+        "github_repo": null,
+        "summary": "- This paper investigates the unreliability of reinforcement learning (RL) models for mathematical reasoning due to data contamination.\n- The authors introduce a novel reward function design for RL agents and identify the problem of data contamination as a key factor affecting the performance of RL models in solving mathematical problems.\n- They conduct a systematic evaluation, demonstrating that data contamination leads to memorization rather than true reasoning capabilities.\n- The study proposes a methodology to assess the extent of potential data contamination and evaluates various reward mechanisms to mitigate the issue.\n- The authors conclude that careful data curation and robust reward shaping are crucial for ensuring reliable performance in RL-based mathematical problem-solving.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "REST: Stress Testing Large Reasoning Models by Asking Multiple Problems\n  at Once",
+        "authors": "Zinan Tang, Qiyao Sun, Yu Li, Qizhi Pei, Zhuoshi Pan",
+        "link": "https://arxiv.org/abs/2507.10541",
+        "github_repo": null,
+        "summary": "- This paper introduces REST, a novel evaluation framework designed to rigorously assess the reasoning capabilities of Large Language Models (LLMs) by presenting them with multiple reasoning problems simultaneously.\n- REST significantly enhances the discriminative power of existing benchmarks, revealing weaknesses in LLMs that are not apparent in traditional single-question evaluations.\n- The experimental results demonstrate that under REST stress testing, the performance of various LLMs, even state-of-the-art models, degrades substantially.\n- A detailed error analysis pinpoints common issues such as question omission and reasoning errors which can inform the future development of more robust and capable LLMs.\n- The study identifies key factors affecting LLM performance under stress, including overthinking, output length limitations, and question ordering bias.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "Mixture-of-Recursions: Learning Dynamic Recursive Depths for Adaptive\n  Token-Level Computation",
+        "authors": "Jiyoun Ha, Sungnyun Kim, Reza Bayat, Yujin Kim, Sangmin Bae",
+        "link": "https://arxiv.org/abs/2507.10524",
+        "github_repo": "https://github.com/raymin0223/mixture_of_recursions",
+        "summary": "- Mixture-of-Recursions (MoR) is a novel Transformer architecture that uses dynamic recursive depths for adaptive token-level computation, achieving unified parameter efficiency and memory efficiency.\n- MoR introduces two key mechanisms: expert-choice routing and recursive key-value caching, which dynamically adjust the recursion depth and manage memory usage efficiently.\n- Experimental results demonstrate that MoR significantly improves upon existing Transformer models, achieving better performance with lower computational and memory costs.\n- Ablation studies confirm the importance of both expert-choice routing and recursive key-value caching, showing their substantial contributions to MoR's performance.\n- The paper provides comprehensive analysis of MoR's adaptive computation capabilities, showing its scalability and robustness across various model sizes and sequence lengths.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/raymin0223/mixture_of_recursions"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "LayerCake: Token-Aware Contrastive Decoding within Large Language Model\n  Layers",
+        "authors": "Yanqiang Zheng, Jiawang Cao, Wenbo Zhu, Yongliang Wu, Jingze Zhu",
+        "link": "https://arxiv.org/abs/2507.04404",
+        "github_repo": null,
+        "summary": "- This paper introduces LayerCake, a novel decoding-time method that improves the factuality of large language models (LLMs) without requiring additional training or model modifications.\n- LayerCake leverages both layer-wise dynamics and token-specific information to guide decoding, addressing the limitations of existing methods that treat these signals in isolation.\n- The method involves suppressing attention to specific token types at their most influential layers to induce controlled factual degradation and derive contrastive signals to guide final factual decoding.\n- Experiments demonstrate that LayerCake consistently improves factuality across multiple LLMs and various benchmarks, outperforming existing state-of-the-art contrastive decoding methods.\n- The code for LayerCake is available on GitHub.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Styxiian/LayerCake"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "CompassJudger-2: Towards Generalist Judge Model via Verifiable Rewards",
+        "authors": "Kai Chen, Songyang Zhang, Alexander Lam, Maosong Cao, Taolin Zhang",
+        "link": "https://arxiv.org/abs/2507.09104",
+        "github_repo": null,
+        "summary": "- CompassJudger-2 is a novel generalist judge model that uses a task-driven, multi-domain data curation strategy and verifiable rewards to improve the robustness and generalization of LLM judgment.\n- The model employs rejection sampling to select high-quality training examples and uses a margin policy gradient loss to enhance performance.\n- CompassJudger-2 achieves superior results across multiple judge and reward benchmarks, outperforming larger models like DeepSeek-V3 and Qwen3-235B-A22B.\n- The paper introduces JudgerBenchV2, a comprehensive benchmark that evaluates cross-domain judgment accuracy and rank consistency.\n- Overall, CompassJudger-2 advances robust, scalable LLM judgment and sets new performance and evaluation standards.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/CompassJudger"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "MoVieS: Motion-Aware 4D Dynamic View Synthesis in One Second",
+        "authors": "Honglei Yan, Yifan Yu, Panwang Pan, Yuchen Lin, Chenguo Lin",
+        "link": "https://arxiv.org/abs/2507.10065",
+        "github_repo": null,
+        "summary": "- MoVieS is a novel feed-forward model that synthesizes 4D dynamic novel views from monocular videos in one second.\n- The model represents dynamic 3D scenes using pixel-aligned grids of Gaussian primitives, explicitly supervising their time-varying motion.\n- MoVieS unifies appearance, geometry, and motion modeling, enabling view synthesis, reconstruction, and 3D point tracking within a single framework.\n- It achieves competitive performance across multiple tasks (view synthesis, reconstruction, 3D point tracking, scene flow estimation, and moving object segmentation) while being several orders of magnitude faster than existing methods.\n- The model\u2019s effectiveness is validated through extensive experiments on diverse benchmarks.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-Video",
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://chenguolin.github.io/projects/MoVieS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "From KMMLU-Redux to KMMLU-Pro: A Professional Korean Benchmark Suite for\n  LLM Evaluation",
+        "authors": "Yeonjung Hong, Soyeon Kim, Guijin Son, Sunkyoung Kim, Seokhee Hong",
+        "link": "https://arxiv.org/abs/2507.08924",
+        "github_repo": null,
+        "summary": "- This paper introduces KMMLU-Redux and KMMLU-Pro, two benchmarks designed to evaluate large language models (LLMs) on Korean professional knowledge.- KMMLU-Redux is a revised version of the KMMLU benchmark, with improved data quality and a focus on eliminating challenging problems.- KMMLU-Pro expands on KMMLU-Redux by incorporating questions from actual Korean professional license exams, making it a more rigorous and realistic evaluation.- The authors conduct experiments on various LLMs and show that their performance varies widely across the two benchmarks, highlighting the importance of evaluating models' real-world professional capabilities.- The results demonstrate the need for further research and development of LLMs tailored to the specific requirements of the Korean professional domain.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "A Practical Two-Stage Recipe for Mathematical LLMs: Maximizing Accuracy\n  with SFT and Efficiency with Reinforcement Learning",
+        "authors": "Yuichi Inoue, Taiki Yamaguchi, Hiroshi Yoshihara",
+        "link": "https://arxiv.org/abs/2507.08267",
+        "github_repo": "https://github.com/analokmaus/kaggle-aimo2-fast-math-r1",
+        "summary": "- This paper introduces a two-stage training recipe for mathematical LLMs that combines supervised fine-tuning (SFT) and reinforcement learning (RL) from online inference (GRPO).\n- The method first employs an extended SFT phase (up to 10 epochs) to maximize accuracy, followed by a GRPO phase to optimize solution length and token efficiency.\n- Experiments on various benchmarks, including the AI Mathematical Olympiad (AIMO), demonstrate the effectiveness of the proposed recipe, achieving top-tier performance.\n- The recipe achieves a high rank (4th place on the public set and 8th place on the private set) in AIMO, outperforming other methods.\n- The authors open-source their framework, including code and model weights, facilitating reproducibility and further research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/analokmaus/kaggle-aimo2-fast-math-r1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "DreamPoster: A Unified Framework for Image-Conditioned Generative Poster\n  Design",
+        "authors": "Dexiang Hong, Hui Zhang, Zhongqi Qi, Haokun Chen, Xiwei Hu",
+        "link": "https://arxiv.org/abs/2507.04218",
+        "github_repo": null,
+        "summary": "- DreamPoster is a novel framework that generates high-quality posters from user-provided images and text prompts, addressing the limitations of existing methods by integrating multimodal information and supporting flexible resolution and layout.\n- The model is built upon a transformer-based diffusion architecture that processes text and image inputs jointly using positional embeddings, allowing for better alignment of textual and visual information in the generated posters.\n- DreamPoster employs a three-stage progressive training strategy, starting with single-task pretraining, progressing to multi-task mixed training, and finally fine-tuning for aesthetic alignment, enabling more sophisticated poster generation.\n- Quantitative evaluations demonstrate DreamPoster's superiority over existing methods, achieving a high usability rate of 88.55%, compared to GPT-40 (47.56%) and SeedEdit3.0 (25.96%), signifying its effectiveness in generating aesthetically pleasing and relevant posters.\n- The results suggest that DreamPoster\u2019s progressive training strategy successfully improves poster design quality across several tasks and addresses several limitations of previously existing methods.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    },
+    {
+        "title": "Favicon Trojans: Executable Steganography Via Ico Alpha Channel\n  Exploitation",
+        "authors": "Forrest McKee, David Noever",
+        "link": "https://arxiv.org/abs/2507.09074",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for executable steganography that uses the alpha transparency layer of ICO image files to embed and deliver self-decompressing JavaScript payloads.\n- The method successfully conceals compressed JavaScript code within a favicon image without affecting visual fidelity, exploiting the fact that browsers automatically fetch favicons on page load.\n- A proof-of-concept implementation demonstrates that a 64x64 ICO image can embed up to 512 bytes uncompressed, or 0.8 kilobytes using compression.\n- The attack leverages the alpha channel of ICO files and uses native JavaScript APIs and canvas pixel access to extract and execute the payload in memory, requiring no additional network requests.\n- Testing across multiple browsers confirms silent execution of the embedded script, and the paper evaluates the threat model, analyzes evasion techniques, and discusses limitations of existing steganalysis and sanitization defenses.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-15"
+    }
+]

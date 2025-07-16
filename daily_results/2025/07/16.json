@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Vision-Language-Vision Auto-Encoder: Scalable Knowledge Distillation\n  from Diffusion Models",
+        "authors": "Jieneng Chen, Yu-cheng Chou, Yitong Li, lambertxiao, PatZhang11",
+        "link": "https://arxiv.org/abs/2507.07104",
+        "github_repo": null,
+        "summary": "- This paper introduces the Vision-Language-Vision (VLV) auto-encoder, a novel framework for knowledge distillation from pretrained text-to-image diffusion models.\n- The VLV auto-encoder leverages a vision encoder, a text-to-image diffusion model decoder, and a large language model (LLM) to create high-quality captions.\n- The method achieves state-of-the-art (SOTA) captioning performance comparable to leading models like GPT-4 and Gemini 2.0 Flash, with a significant reduction in training costs.\n- The VLV framework is cost-efficient, using primarily single-modal images for training and maximizing the utility of pretrained models.\n- The model demonstrates strong scalability by improving performance when scaling the training dataset from 6M to 40M images.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-16"
+    },
+    {
+        "title": "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and\n  Reasoning Modes",
+        "authors": "Stanley Jungkyu Choi, Kibong Choi, Eunbi Choi, Kyunghoon Bae, LG AI Research",
+        "link": "https://arxiv.org/abs/2507.11407",
+        "github_repo": null,
+        "summary": "\n- This technical report introduces EXAONE 4.0, a unified large language model that integrates both non-reasoning and reasoning modes, improving upon the capabilities of its predecessors, EXAONE 3.5 and EXAONE Deep.\n- The model architecture employs a hybrid attention mechanism combining local and global attention, enhancing long-context processing and reducing computational costs.  It also features a re-positioning of layer normalization for improved performance.\n- EXAONE 4.0 supports three languages: English, Korean, and Spanish, with multilingual capabilities expanded.  The model series includes two sizes: a 32B parameter model optimized for performance, and a 1.2B parameter model for on-device applications.\n- Compared to other models in its class, EXAONE 4.0 demonstrates superior performance, maintaining competitiveness even against frontier-class models and excelling in areas such as world knowledge, mathematical and coding reasoning tasks.\n- The models are publicly available for research purposes and are designed to pave the way for the agentic AI era by incorporating agentic tool use.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/LGAI-EXAONE"
+        ],
+        "date": "2025-07-16"
+    },
+    {
+        "title": "Scaling Laws for Optimal Data Mixtures",
+        "authors": "Enrico Fini, David Grangier, Dan Busbridge, Louis Bethune, Mustafa Shukor",
+        "link": "https://arxiv.org/abs/2507.09404",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel systematic method for determining the optimal data mixture for large foundation models, using scaling laws.- The approach accurately predicts model loss as a function of model size, training tokens, and domain weights, validated across LLMs, NMMs, and LVMs.- Scaling laws are shown to extrapolate well to new data mixtures and scales, allowing for the estimation of optimal domain weights using only a few small-scale training runs.- The proposed method offers a principled alternative to the costly trial-and-error approach typically used for data mixture selection in large-scale model training.- Results demonstrate that the scaling laws accurately predict performance at larger scales and new domain weights, and that the derived optimal domain weights lead to improved performance compared to other methods.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-16"
+    },
+    {
+        "title": "OpenCodeReasoning-II: A Simple Test Time Scaling Approach via\n  Self-Critique",
+        "authors": "Mehrzad Samadi, Sean Narenthiran, Aleksander Ficek, Wasi Uddin Ahmad, smajumdar94",
+        "link": "https://arxiv.org/abs/2507.09075",
+        "github_repo": null,
+        "summary": "- This paper introduces OPENCODEREASONING-II, a new dataset with 2.5M question-solution-critique triples, nearly double the size of existing datasets.\n-  It presents a two-stage supervised fine-tuning strategy for code generation and critique, achieving performance exceeding or equal to prior open-weight distilled models.\n- The integration of code generation and critique models significantly improves competitive coding performance.\n- An extension of the LiveCodeBench benchmark is introduced to specifically support the C++ programming language.\n- The paper evaluates a simple test-time scaling approach using self-critique for selecting the best code solutions from multiple generations.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/nvidia/OpenCodeReasoning-2",
+            "https://huggingface.co/datasets/nvidia/LiveCodeBench-CPP"
+        ],
+        "date": "2025-07-16"
+    },
+    {
+        "title": "AgentsNet: Coordination and Collaborative Reasoning in Multi-Agent LLMs",
+        "authors": "Bryan Perozzi, Mikhail Galkin, Jan T\u00f6nshoff, Luis M\u00fcller, Florian Gr\u00f6tschla",
+        "link": "https://arxiv.org/abs/2507.08616",
+        "github_repo": null,
+        "summary": "- This paper introduces AGENTSNET, a new benchmark for evaluating the coordination and collaborative reasoning capabilities of multi-agent large language models (LLMs).\n- AGENTSNET assesses agents' abilities across diverse network structures and scales by using five fundamental problems from distributed computing.\n- The benchmark is evaluated on a variety of LLMs, including open-source and frontier models, with network sizes scaling up to 100 agents, exceeding the scale of existing benchmarks.\n- The results show that some frontier LLMs demonstrate strong performance for smaller networks, but performance degrades as network size increases.\n- Qualitative analysis of agent communication reveals challenges in strategy coordination and information management, highlighting areas for future LLM development.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/floriangroetschla/AgentsNet"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/disco-eth/AgentsNet"
+        ],
+        "date": "2025-07-16"
+    },
+    {
+        "title": "Planted in Pretraining, Swayed by Finetuning: A Case Study on the\n  Origins of Cognitive Biases in LLMs",
+        "authors": "Gabriel Stanovsky, Yonatan Belinkov, itay1itzhak",
+        "link": "https://arxiv.org/abs/2507.07186",
+        "github_repo": null,
+        "summary": "- This paper introduces a two-step causal experimental approach to investigate the origins of cognitive biases in large language models (LLMs).\n- The first step assesses the impact of training randomness by repeatedly finetuning the same pretrained models with different random seeds.\n- The second step uses a novel \"cross-tuning\" approach that swaps instruction datasets between models with different bias patterns to isolate bias sources.\n- Results reveal that pretraining is the main factor shaping cognitive biases in LLMs, while training randomness and finetuning data have smaller effects.\n- The findings highlight the importance of considering pretraining origins when evaluating and mitigating biases in LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/itaylitzhak/planted-in-pretraining"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-16"
+    }
+]

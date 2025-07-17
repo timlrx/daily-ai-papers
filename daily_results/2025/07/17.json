@@ -1,0 +1,177 @@
+[
+    {
+        "title": "Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning\n  Systems in LLMs",
+        "authors": "Wei-Chieh Huang, Yuyao Yang, Yangning Li, TreeForest, WZDavid",
+        "link": "https://arxiv.org/abs/2507.09477",
+        "github_repo": "https://github.com/DavidZWZ/Awesome-RAG-Reasoning",
+        "summary": " - This paper surveys Retrieval-Augmented Generation (RAG) systems that incorporate deep reasoning in large language models (LLMs).\n- The authors categorize RAG-Reasoning methods into Reasoning-Enhanced RAG, RAG-Enhanced Reasoning, and Synergized RAG-Reasoning, based on how retrieval and reasoning interact.\n- The paper further categorizes methods within each category by their approach to retrieval optimization, integration enhancement, and generation enhancement.\n-  A taxonomy of recent advances in RAG-reasoning systems is presented in the paper along with a list of benchmarks and datasets used to evaluate them.\n- The paper concludes by discussing open challenges and research avenues for improving the effectiveness, adaptability, and trustworthiness of RAG-Reasoning systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/DavidZWZ/Awesome-RAG-Reasoning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "PhysX: Physical-Grounded 3D Asset Generation",
+        "authors": "Linag Pan, liuziwei7, FrozenBurning, Caoza",
+        "link": "https://arxiv.org/abs/2507.12465",
+        "github_repo": null,
+        "summary": "- This paper introduces PhysX, a novel framework for generating physically-grounded 3D assets, addressing the limitations of existing methods that neglect physical properties.\n- PhysXNet, a new dataset with over 26K 3D assets, is presented, providing comprehensive physical annotations such as scale, material, affordance, kinematics, and function descriptions.\n- PhysXGen, a feed-forward framework, is proposed for image-to-3D asset generation, incorporating physical knowledge into pre-trained 3D structural space.\n- The model uses a dual-branch architecture to explicitly model the latent correlations between 3D structures and physical properties, producing assets with plausible physical predictions while maintaining geometry quality.\n- Extensive experiments demonstrate PhysXGen's superior performance and generalization capability compared to baselines.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "MOSPA: Human Motion Generation Driven by Spatial Audio",
+        "authors": "Leo Ho, Liang Pan, Mingyi Shi, frankzydou, JimSYXu",
+        "link": "https://arxiv.org/abs/2507.11949",
+        "github_repo": null,
+        "summary": "- This paper introduces MOSPA, a novel diffusion-based generative model for human motion generation driven by spatial audio, and a new Spatial Audio-Driven Human Motion (SAM) dataset.\n- The MOSPA model effectively captures the relationship between body motion and spatial audio through an effective fusion mechanism, integrating spatial features such as Mel-Frequency Cepstral Coefficients (MFCCs), Tempograms, and root mean square (RMS) energy.\n- The SAM dataset contains diverse and high-quality spatial audio and motion data, including diverse spatial audio signals and high-quality 3D human motion pairs.\n- Extensive experiments demonstrate that MOSPA achieves state-of-the-art performance, outperforming existing baselines in generating realistic and diverse motion responses to spatial audio.\n- The model and dataset are planned to be open-sourced upon acceptance.",
+        "classification": [
+            "Multimodal",
+            "Audio",
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "MMHU: A Massive-Scale Multimodal Benchmark for Human Behavior\n  Understanding",
+        "authors": "Mingyang Wu, Renjie Li, vztu, waynefan, jerryye0110",
+        "link": "https://arxiv.org/abs/2507.12463",
+        "github_repo": null,
+        "summary": "- This paper introduces MMHU, a large-scale multimodal benchmark dataset for human behavior understanding in autonomous driving scenarios.\n- The dataset contains 57k human instances with diverse behaviors and 1.73M frames from various sources, including Waymo, YouTube, and self-collected videos.\n- MMHU provides rich annotations such as motion and trajectory, text descriptions, and critical behavior labels relevant to driving safety.\n- Multiple tasks are benchmarked including motion prediction, motion generation, and human behavior question answering, offering a comprehensive evaluation suite.\n- The dataset improves performance on several baseline models and demonstrates its effectiveness in various human-centric tasks.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video Classification",
+            "Keypoint Detection",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://MMHU-Benchmark.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "SWE-Perf: Can Language Models Optimize Code Performance on Real-World\n  Repositories?",
+        "authors": "Zhijie Fan, Lin Yan, Xinyi He, Elfsong, SivilTaram",
+        "link": "https://arxiv.org/abs/2507.12415",
+        "github_repo": null,
+        "summary": "- SWE-Perf is introduced as the first benchmark designed to systematically evaluate LLMs on code performance optimization tasks within authentic repository contexts.\n- It comprises 140 instances derived from performance-improving pull requests from popular GitHub repositories.\n- Each instance includes the codebase, target functions, performance-related tests, expert-authored patches, and executable environments.\n- The benchmark reveals a substantial capability gap between existing LLMs and expert-level optimization performance.\n- This highlights critical research opportunities in this emerging field.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://swe-perf.github.io"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "DrafterBench: Benchmarking Large Language Models for Tasks Automation in\n  Civil Engineering",
+        "authors": "Yi Shao, zhendongucb, Eason666",
+        "link": "https://arxiv.org/abs/2507.11527",
+        "github_repo": "https://github.com/Eason-Li-AIS/DrafterBench",
+        "summary": "This paper introduces DrafterBench, a comprehensive benchmark for evaluating large language models (LLMs) in automating civil engineering tasks.  It focuses on the task of technical drawing revision, providing twelve task types with 46 custom functions and 1920 tasks in total.  DrafterBench assesses LLMs' proficiency in interpreting instructions, leveraging prior knowledge, and adapting to dynamic instruction quality.  The benchmark provides detailed analysis of accuracy and error statistics to identify areas for model improvement.  The test set is hosted on HuggingFace and the open-source benchmark code is available on GitHub.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/Eason-Li-AIS/DrafterBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "AnyI2V: Animating Any Conditional Image with Motion Control",
+        "authors": "Hao Luo, HenghuiDing, XinchengShuai, TribeRinb",
+        "link": "https://arxiv.org/abs/2507.02857",
+        "github_repo": null,
+        "summary": "- AnyI2V is a novel training-free framework that animates any conditional image with user-defined motion trajectories.\n- It supports a wide range of conditional inputs, including meshes and point clouds, which are not typically supported by existing methods.\n- AnyI2V utilizes a three-stage pipeline: structure-preserved feature injection, across-frames alignment, and semantic mask generation, to achieve precise spatial and temporal control.\n- Experimental results demonstrate that AnyI2V outperforms existing state-of-the-art methods in terms of FID, FVD, and ObjMC.\n- The framework's training-free nature and support for diverse modalities make it a flexible and versatile tool for video generation.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "SpatialTrackerV2: 3D Point Tracking Made Easy",
+        "authors": "Yuxi Xiao, bykang, nikkar, cherubicxn, JianyuanWang",
+        "link": "https://arxiv.org/abs/2507.12462",
+        "github_repo": "https://github.com/henry123-boy/SpaTrackerV2",
+        "summary": "- SpatialTrackerV2 is a novel feed-forward 3D point tracking method for monocular videos that unifies point tracking, monocular depth, and camera pose estimation.\n- The model uses a front-end for video depth estimation and camera pose initialization and a back-end for joint motion optimization, employing a SyncFormer architecture to model 2D and 3D correlations.\n- SpatialTrackerV2 outperforms existing methods by 30% on the TAPVid-3D benchmark, achieving 21.2 AJ and 31.0 APD3D, surpassing state-of-the-art methods.\n- The method is trained on 17 diverse datasets, including synthetic sequences, posed RGB-D videos, and unlabeled in-the-wild footage, enabling scalability and generalization.\n-  SpatialTrackerV2 matches the accuracy of leading dynamic 3D reconstruction approaches while being 50x faster.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Video Classification",
+            "Keypoint Detection",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/henry123-boy/SpaTrackerV2"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/Yuxihenry/SpatialTrackerV2"
+        ],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "Lizard: An Efficient Linearization Framework for Large Language Models",
+        "authors": "Franck-Dernoncourt, Nikosapa, TrungBui1111, jasubram, haniehds",
+        "link": "https://arxiv.org/abs/2507.09025",
+        "github_repo": null,
+        "summary": "- This paper introduces Lizard, a novel linearization framework that transforms pre-trained transformer-based large language models (LLMs) into flexible subquadratic architectures for infinite-context generation.\n- Lizard addresses the quadratic complexity of softmax attention and the growing key-value cache by introducing a subquadratic attention mechanism that closely approximates softmax attention while preserving output quality.\n- Unlike previous linearization methods, Lizard incorporates a gating module, enabling adaptive memory control, constant-memory inference, and strong length generalization.\n- Experimental results demonstrate that Lizard achieves near-lossless recovery of the teacher model's performance across standard language modeling tasks, significantly outperforming previous linearization methods by 8-18 points on the 5-shot MMLU benchmark.\n- The authors also introduce a hardware-aware algorithm that accelerates the training speed of Lizard models by up to 24%.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "Replacing thinking with tool usage enables reasoning in small language\n  models",
+        "authors": "Roland Memisevic, Tim Bakker, crainone",
+        "link": "https://arxiv.org/abs/2507.05065",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach to improve reasoning capabilities in small language models (SLMs) by replacing \"thinking\" with tool usage.\n- The approach involves training SLMs to interact with a stateful tool (text editor) using a custom domain-specific language (DSL), where each interaction step is recorded as an action in the interaction trace.\n- The proposed method demonstrates that smaller models (up to 3 billion parameters) can learn to effectively use additional compute during inference to improve reasoning performance.\n- The method was evaluated on a code repair task, showing that the CoE (Chains-of-Edits) approach outperforms both text-based CoTs (Chains-of-Thought) and direct answering baselines, particularly for smaller models.\n- This suggests that constraining the action space during training, coupled with denser reward signals and faster sampling of experience, enables SLMs to learn more proficiently.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/simplescaling/s1K"
+        ],
+        "date": "2025-07-17"
+    },
+    {
+        "title": "RLEP: Reinforcement Learning with Experience Replay for LLM Reasoning",
+        "authors": "Jingyuan Zhang, Jia Fu, GuoruiZhou, Edrex, hongzhizhang",
+        "link": "https://arxiv.org/abs/2507.07451",
+        "github_repo": "https://github.com/Kwai-Klear/RLEP",
+        "summary": "- This paper introduces RLEP, a two-phase reinforcement learning framework for improving LLM reasoning capabilities.  The framework first collects verified trajectories and then replays them during subsequent training, combining newly generated rollouts with replayed successes.\n- RLEP addresses the instability and energy-intensiveness of RL training for LLMs by guiding the model away from unproductive exploration and focusing learning on promising reasoning paths.\n- On the Qwen2.5-Math-7B base model, RLEP achieves baseline peak accuracy with substantially fewer updates and surpasses it on several benchmark datasets (AIME-2024, AIME-2025, AMC-2023).\n- The improvements in accuracy range from +1.7% to +5.2% across the three benchmark datasets, demonstrating RLEP's effectiveness in both accelerating convergence and achieving a higher performance ceiling.\n- The code, datasets, and checkpoints are publicly available to facilitate reproducibility and further research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Kwai-Klear/RLEP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-17"
+    }
+]

@@ -1,0 +1,241 @@
+[
+    {
+        "title": "A Survey of Context Engineering for Large Language Models",
+        "authors": "ShowerMaker, LImax72, YuyaoGe, Theodyy, Chevalier",
+        "link": "https://arxiv.org/abs/2507.13334",
+        "github_repo": null,
+        "summary": "This survey introduces Context Engineering as a formal discipline for optimizing information payloads for LLMs, going beyond simple prompt design.  It presents a comprehensive taxonomy that decomposes Context Engineering into foundational components (Context Retrieval and Generation, Context Processing, Context Management) and system implementations (RAG, Memory Systems, Tool-Integrated Reasoning, Multi-Agent Systems).  The survey analyzes over 1400 research papers, revealing a critical research gap: current models, while proficient in understanding complex contexts, struggle to generate equally sophisticated outputs.  Finally, the survey provides a unified framework for researchers and engineers in the field.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Meirtz/Awesome-Context-Engineering"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "VisionThink: Smart and Efficient Vision Language Model via Reinforcement\n  Learning",
+        "authors": "Hengshuang Zhao, Bei Yu, Xin Lai, Junyi Li, Senqiao Yang",
+        "link": "https://arxiv.org/abs/2507.13348",
+        "github_repo": "https://github.com/dvlab-research/VisionThink",
+        "summary": " - VisionThink is a novel efficient vision language model (VLM) that uses reinforcement learning to dynamically adjust image resolution based on task complexity.\n - The model starts with a downsampled image and requests higher resolution only when needed, saving computational resources without sacrificing accuracy.\n - VisionThink is shown to outperform existing methods on various benchmarks, particularly those with strong OCR-related tasks, as demonstrated by achieving 102% performance on an OCR-related benchmark (compared to baseline 100%).\n - A key innovation is the LLM-as-Judge strategy for reinforcement learning, which uses an external LLM to assess the accuracy of VLM responses, enabling training on diverse general VQA tasks.\n - Extensive experiments demonstrate superior efficiency and effectiveness compared to other efficient VLMs and state-of-the-art models.",
+        "classification": [
+            "Visual Question Answering",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/dvlab-research/VisionThink"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "\u03c0^3: Scalable Permutation-Equivariant Visual Geometry Learning",
+        "authors": "Yang Zhou, Wenzheng Chang, Haoyi Zhu, Jianjun Zhou, Yifan Wang",
+        "link": "https://arxiv.org/abs/2507.13347",
+        "github_repo": null,
+        "summary": "- This paper introduces \u03c0\u00b3, a novel feed-forward neural network for visual geometry reconstruction that eliminates the reliance on a fixed reference view, improving robustness and scalability.\n- The model employs a fully permutation-equivariant architecture to predict affine-invariant camera poses and scale-invariant local point maps without any reference frames, making it inherently robust to input ordering and highly scalable.\n- \u03c0\u00b3 achieves state-of-the-art performance on various tasks, including camera pose estimation, monocular/video depth estimation, and dense point map reconstruction, outperforming existing methods in many benchmarks.\n- The permutation-equivariant design enables faster convergence and significant performance improvements as the model size increases, demonstrating enhanced scalability.\n-  The model's architecture is designed to be inherently robust to input order and free of inductive biases introduced by fixed reference frames.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/open-mmlab/mmpose"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/openai/whisper"
+        ],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "The Imitation Game: Turing Machine Imitator is Length Generalizable\n  Reasoner",
+        "authors": "Songyang Gao, Chengqi Lyu, Wenwei Zhang, vanilla1116, ZhouqiHUA",
+        "link": "https://arxiv.org/abs/2507.13332",
+        "github_repo": null,
+        "summary": "- This paper introduces TAIL (Turing Machine Imitation Learning), a novel method to enhance the length generalization ability of large language models (LLMs).\n- TAIL synthesizes chain-of-thought (CoT) data that mimics the execution process of a Turing Machine, addressing the challenge of length generalization in LLMs.\n- The proposed method uses three key structures in the synthesized CoT data: Linear Transition, Atomic State, and Memory Fetcher, which emulate the core properties of Turing Machine execution.\n- Experiments on a challenging synthetic dataset with 8 algorithm classes and 18 tasks show that TAIL significantly improves length generalization ability compared to previous methods and DeepSeek-R1.\n- Ablation studies demonstrate the necessity of each core module of TAIL for effective length generalization.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "AnyCap Project: A Unified Framework, Dataset, and Benchmark for\n  Controllable Omni-modal Captioning",
+        "authors": "Gao Meng, Yu Li, Zhiqiang Lin, Yiming Ren, Ruihang",
+        "link": "https://arxiv.org/abs/2507.12841",
+        "github_repo": null,
+        "summary": " - This paper introduces the AnyCap Project, a unified framework, dataset, and benchmark for controllable omni-modal captioning. \n- The AnyCapModel (ACM) is a lightweight, plug-and-play framework that enhances the controllability of existing foundation models for omni-modal captioning. \n- The AnyCapDataset (ACD) is a large-scale omni-modal dataset covering 3 modalities and 28 types of user instructions, with 300k high-quality data entries.\n- The AnyCapEval is a novel benchmark that offers more reliable evaluation metrics for controllable captioning by decoupling content accuracy and stylistic fidelity.\n- Experiments show ACM significantly improves caption quality across diverse base models and outperforms state-of-the-art methods on widely-used benchmarks.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/qishisuren123/AnyCap"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "Diffuman4D: 4D Consistent Human View Synthesis from Sparse-View Videos\n  with Spatio-Temporal Diffusion Models",
+        "authors": "Zhen Xu, Tao Xie, Xuan Wang, Sida Peng, krahets",
+        "link": "https://arxiv.org/abs/2507.13344",
+        "github_repo": null,
+        "summary": "- This paper introduces Diffuman4D, a novel diffusion model for high-fidelity 4D human view synthesis from sparse videos.\n- The model uses a sliding iterative denoising process to improve spatio-temporal consistency in generated videos, enhancing view synthesis quality.\n- A key innovation is the use of a latent grid encoding images, camera poses, and human poses for each viewpoint and timestamp, allowing iterative refinement.\n- Experiments demonstrate that Diffuman4D outperforms existing methods, generating high-quality and consistent novel-view videos on the DNA-Rendering and ActorsHQ datasets.\n- The method also incorporates human skeleton information as a structural prior to further boost spatio-temporal consistency.",
+        "classification": [
+            "Image-to-Video",
+            "Video Classification",
+            "Text-to-Video",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://diffuman4d.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "MindJourney: Test-Time Scaling with World Models for Spatial Reasoning",
+        "authors": "Reuben Tan, Siyuan Zhou, Zheyuan Zhang, Jiageng Liu, yyuncong",
+        "link": "https://arxiv.org/abs/2507.12508",
+        "github_repo": null,
+        "summary": "- MindJourney is a test-time scaling framework that enhances Vision-Language Models (VLMs) for spatial reasoning by integrating a controllable world model based on video diffusion.\n- The VLM iteratively generates camera trajectories, while the world model synthesizes corresponding views, enabling reasoning over multi-view evidence without fine-tuning.\n- On the SAT benchmark, MindJourney achieves an average 8% performance improvement, surpassing the performance of test-time inference VLMs trained with reinforcement learning.\n- The proposed method is model-agnostic, enhancing multiple VLMs with different world models.\n- MindJourney offers a simple, plug-and-play route for robust 3D reasoning by leveraging the strengths of both VLMs and world models.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://umass-embodied-agi.github.io/MindJourney/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "AbGen: Evaluating Large Language Models in Ablation Study Design and\n  Evaluation for Scientific Research",
+        "authors": "Yixin Liu, Manasi Patwardhan, Zhijian Xu, Weiyuan Chen, Yilun Zhao",
+        "link": "https://arxiv.org/abs/2507.13300",
+        "github_repo": null,
+        "summary": "- ABGEN, a benchmark for evaluating LLMs in designing ablation studies for scientific research, is introduced. It comprises 1,500 expert-annotated examples derived from 807 NLP papers.\n- LLMs are tasked with generating detailed ablation study designs based on given research contexts, and leading LLMs are evaluated on their performance.\n- A significant performance gap is found between LLMs and human experts regarding the importance, faithfulness, and soundness of generated designs.\n- ABGEN-EVAL, a meta-evaluation benchmark, is developed to assess the reliability of commonly used automated evaluation systems.\n- The study investigates various LLM-as-Judge systems on ABGEN-EVAL, providing insights for future research on developing reliable LLM-based evaluation systems for scientific tasks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/AbGen"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/yale-nlp/AbGen"
+        ],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "FantasyPortrait: Enhancing Multi-Character Portrait Animation with\n  Expression-Augmented Diffusion Transformers",
+        "authors": "Yonggang Qi, Yaqi Fan, Fan Jiang, Mengchao Wang, wangqiang9",
+        "link": "https://arxiv.org/abs/2507.12956",
+        "github_repo": null,
+        "summary": "- This paper introduces FantasyPortrait, a diffusion transformer-based framework for generating high-fidelity and emotion-rich portrait animations for single and multi-character scenarios.\n- The model architecture incorporates an expression-augmented learning strategy using implicit representations to capture identity-agnostic facial dynamics and a masked cross-attention mechanism for multi-character control.\n- The authors introduce two new datasets, Multi-Expr and ExprBench, for training and evaluating multi-character portrait animations.\n- Experiments demonstrate that FantasyPortrait outperforms state-of-the-art methods in both quantitative metrics (e.g., FID, FVD, PSNR, SSIM) and qualitative evaluations.\n- The model excels particularly in cross-reenactment and multi-character contexts, showcasing significant improvements in handling subtle expressions and preventing feature interference between characters.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://fantasy-amap.github.io/fantasy-portrait/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "Teach Old SAEs New Domain Tricks with Boosting",
+        "authors": "Yaroslav Aksenov, Nikita Koriagin, kefirski, elephantmipt, dlaptev",
+        "link": "https://arxiv.org/abs/2507.12990",
+        "github_repo": null,
+        "summary": "- This paper introduces SAE Boost, a novel residual learning method that enhances the interpretability of Sparse Autoencoders (SAEs) used for Large Language Model (LLM) analysis without requiring complete model retraining.\n- SAE Boost trains a secondary SAE to model the reconstruction errors of a pre-trained SAE on domain-specific data, effectively learning complementary features missed by the primary model.\n- The method improves both LLM cross-entropy and explained variance metrics across multiple specialized domains, demonstrating its effectiveness in incorporating new domain knowledge into existing SAEs.\n- Experimental results show consistent improvements across various domains and base models, highlighting the approach's generalizability and robustness.\n- SAE Boost offers a modular and efficient way to enhance SAE interpretability for specific domains of interest, opening possibilities for targeted mechanistic interpretability of LLMs.",
+        "classification": [
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "FLEXITOKENS: Flexible Tokenization for Evolving Language Models",
+        "authors": "Sachin Kumar, Orevaoghene Ahia, Abraham Toluase Owodunni",
+        "link": "https://arxiv.org/abs/2507.12720",
+        "github_repo": "https://github.com/owos/flexitokens",
+        "summary": "- This paper introduces FLEXITOKENS, a novel training objective for byte-level language models that enables flexible and adaptive tokenization.\n- The model architecture incorporates a submodule that learns to predict boundaries between byte sequences, dynamically adapting to new data distributions during finetuning.\n- FLEXITOKENS consistently outperforms existing subword and gradient-based tokenization methods across diverse multilingual benchmarks and morphologically rich tasks, showing up to 10% improvement in downstream task performance.\n- The proposed method reduces token over-fragmentation, resulting in improved efficiency and better generalization to unseen languages and domains.\n- The code and data for the experiments are publicly available at https://github.com/owos/flexitokens",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/owos/flexitokens"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "TLB-VFI: Temporal-Aware Latent Brownian Bridge Diffusion for Video Frame\n  Interpolation",
+        "authors": "Chen Chen, ucfzl",
+        "link": "https://arxiv.org/abs/2507.04984",
+        "github_repo": null,
+        "summary": "- This paper introduces TLB-VFI, a novel temporal-aware latent Brownian Bridge diffusion model for video frame interpolation.\n- The model architecture incorporates 3D wavelet feature gating and a temporal-aware autoencoder to effectively extract rich temporal information from video inputs.\n- TLB-VFI achieves a 20% improvement in FID on challenging datasets compared to state-of-the-art image-based diffusion models, while having 3 times fewer parameters and a 2.3 times speedup.\n- The model also significantly reduces training data requirements (9000 times less) and model size compared to existing video-based diffusion methods.\n- Optical flow guidance is incorporated to further enhance efficiency and performance.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "Automating Steering for Safe Multimodal Large Language Models",
+        "authors": "Nay Oo, Tri Cao, Ziwen Xu, Mengru Wang, Lyucheng Wu",
+        "link": "https://arxiv.org/abs/2507.13255",
+        "github_repo": null,
+        "summary": "- AutoSteer, a novel inference-time intervention technique, is introduced to mitigate safety risks in multimodal large language models (MLLMs) without requiring model retraining.\n- The method incorporates three core components: a Safety Awareness Score (SAS) to identify safety-relevant layers, an adaptive safety prober to estimate toxicity, and a lightweight Refusal Head to intervene when necessary.\n- Experiments on LLaVA-OV and Chameleon across diverse safety-critical benchmarks demonstrate that AutoSteer significantly reduces the attack success rate (ASR) for various threats while preserving general abilities.\n- AutoSteer is shown to be practical, interpretable, and effective, offering a modular and model-agnostic framework for safer MLLM deployment.\n- The findings highlight AutoSteer's potential as a practical solution for improving the safety of multimodal AI systems in real-world applications.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "Voxtral",
+        "authors": "Corentin Barreau, Cl\u00e9ment Denoix, Andy Lo, Andy Ehrenberg, Alexander H. Liu",
+        "link": "https://arxiv.org/abs/2507.13264",
+        "github_repo": null,
+        "summary": "- This paper introduces Voxtral Mini and Voxtral Small, two open-source multimodal audio chat models that achieve state-of-the-art performance on various audio benchmarks while maintaining strong text capabilities.\n- Voxtral models utilize a Transformer architecture with an audio encoder (Whisper large-v3), an adapter layer for downsampling, and a language decoder (Mistral).\n- The models are trained in three phases: pretraining (with audio-text repetition and cross-modal continuation patterns), supervised finetuning on speech understanding tasks, and preference alignment using Direct Preference Optimization.\n- Voxtral Small outperforms several closed-source models, demonstrating its effectiveness in speech transcription, translation, and question answering.\n- The authors also introduce three new benchmarks for evaluating speech understanding models on knowledge and trivia, contributing to the field's evaluation ecosystem.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+            "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
+            "https://huggingface.co/collections/mistralai/speech-evals-6875e9b26c78be4a081050f4"
+        ],
+        "date": "2025-07-18"
+    },
+    {
+        "title": "Einstein Fields: A Neural Perspective To Computational General\n  Relativity",
+        "authors": "Johannes Brandstetter, Arturs Berzins, Sandeep Suresh Cranganore, AndreiB137",
+        "link": "https://arxiv.org/abs/2507.11589",
+        "github_repo": "https://github.com/AndreiB137/EinFields",
+        "summary": " - The paper introduces Einstein Fields, a neural representation that compresses computationally intensive four-dimensional numerical relativity simulations into compact implicit neural network weights.\n - This model architecture enables the derivation of physical quantities via automatic differentiation and shows remarkable potential in continuum modeling of 4D spacetime, mesh-agnosticity, storage efficiency, and derivative accuracy.\n - Einstein Fields achieve an agreement down to 1E-8 relative error across several canonical test beds of general relativity.\n - The model outperforms traditional finite-difference methods by orders of magnitude in accuracy and efficiency.\n - An open-source JAX-based library, paving the way for more scalable and expressive approaches to numerical relativity, is released.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/AndreiB137/EinFields"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-18"
+    }
+]

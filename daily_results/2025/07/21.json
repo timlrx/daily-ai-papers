@@ -1,0 +1,153 @@
+[
+    {
+        "title": "A Data-Centric Framework for Addressing Phonetic and Prosodic Challenges\n  in Russian Speech Generative Models",
+        "authors": "Mikhail Gorodnichev, Maxim Maslov, Vasiliy Kudryavtsev, Nikita Vasiliev, Kirill Borodin",
+        "link": "https://arxiv.org/abs/2507.13563",
+        "github_repo": null,
+        "summary": "- The paper introduces Balalaika, a new Russian speech dataset containing over 2000 hours of high-quality speech with comprehensive annotations, including punctuation and stress markings.\n-  The dataset significantly improves the performance of speech synthesis and enhancement models compared to existing datasets, as demonstrated by experimental results.\n- The authors detail the dataset construction pipeline, including data collection, audio cutting, separation, transcription, punctuation, and stress placement, along with the various models used in these steps.\n-  The paper also presents a comparative analysis of various speech restoration and synthesis models trained on Balalaika and other datasets using different metrics, highlighting Balalaika's superior performance.\n- The results show improvements in NISQA, MOS, and CER metrics indicating higher quality speech synthesis when using the Balalaika dataset.  This is attributed to improved annotation quality and inclusion of prosodic features.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/mtuciru/balalaika"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/RUPunct",
+            "https://huggingface.co/salute-developers/GigaAM"
+        ],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "The Devil behind the mask: An emergent safety vulnerability of Diffusion\n  LLMs",
+        "authors": "Ruixi Wu, Zhiyuan Liu, Dongrui Liu, Zichen Wen, Joshua999",
+        "link": "https://arxiv.org/abs/2507.11097",
+        "github_repo": "https://github.com/ZichenWen1/DIJA",
+        "summary": "- This paper introduces DIJA, a novel jailbreak attack framework that exploits the unique safety vulnerabilities of diffusion-based large language models (dLLMs).\n- DIJA constructs adversarial interleaved mask-text prompts that leverage the bidirectional context modeling and parallel decoding mechanisms of dLLMs to generate harmful outputs.\n- Through comprehensive experiments, DIJA significantly outperforms existing jailbreak methods across multiple dLLMs and benchmarks, achieving up to 100% keyword-based attack success rate.\n- The findings underscore the urgent need for rethinking safety alignment in dLLMs and highlight the critical gaps in current alignment strategies.\n- DIJA's effectiveness is demonstrated on several publicly available dLLMs across multiple benchmarks, showing its robustness against existing defense mechanisms.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Fill-Mask"
+        ],
+        "github_urls": [
+            "https://github.com/ZichenWen1/DIJA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "Franca: Nested Matryoshka Clustering for Scalable Visual Representation\n  Learning",
+        "authors": "Spyros Gidaris, Lukas Knobel, Mohammadreza Salehi, Valentinos Pariza, Shashanka Venkataramanan",
+        "link": "https://arxiv.org/abs/2507.14137",
+        "github_repo": "https://github.com/valeoai/Franca",
+        "summary": "- This paper introduces Franca, a fully open-source vision foundation model that surpasses the performance of several state-of-the-art proprietary models on various downstream tasks.\n- The model architecture employs a multi-head clustering projection head with nested Matryoshka representations, enabling efficient multi-granular learning and improved performance.\n- A novel positional disentanglement strategy, RASA, is introduced to improve the quality of feature representations by removing positional biases.\n- Franca consistently outperforms existing models on several benchmarks, including image classification, in-context learning, out-of-distribution detection, and 3D understanding.\n- The code, model weights, and training data for Franca are publicly available, promoting reproducibility and further research in the field.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Image Segmentation",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/valeoai/Franca"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "CSD-VAR: Content-Style Decomposition in Visual Autoregressive Models",
+        "authors": "Khoi Nguyen, Anh Tran, Quang Nguyen, Minh Luu, nqbinh",
+        "link": "https://arxiv.org/abs/2507.13984",
+        "github_repo": null,
+        "summary": "- This paper introduces CSD-VAR, a novel method for content-style decomposition in visual autoregressive models that leverages a scale-aware alternating optimization strategy for improved disentanglement.\n- The proposed method also incorporates an SVD-based rectification method to mitigate content leakage and an augmented Key-Value memory to enhance content preservation.\n- A new dataset, CSD-100, is introduced to benchmark this task, which includes diverse subjects rendered in various artistic styles.\n- Experiments demonstrate that CSD-VAR outperforms prior approaches, achieving superior content preservation and stylization fidelity.\n- CSD-VAR's improvements are supported by qualitative and quantitative analysis on CSD-100 and a user preference study, which showcase its effectiveness in content-style separation and overall image generation quality.",
+        "classification": [
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "Mono-InternVL-1.5: Towards Cheaper and Faster Monolithic Multimodal\n  Large Language Models",
+        "authors": "Xue Yang, Wenhao Li, Wenhan Dou, Gen Luo, wzk1015",
+        "link": "https://arxiv.org/abs/2507.12566",
+        "github_repo": "https://github.com/OpenGVLab/Mono-InternVL",
+        "summary": "This paper introduces Mono-InternVL-1.5, a monolithic multimodal large language model (MLLM) that integrates visual encoding and language decoding into a single model.  The model architecture uses a multimodal mixture-of-experts to incorporate visual experts and addresses the challenge of catastrophic forgetting through delta tuning.  Mono-InternVL-1.5 significantly improves training and inference efficiency compared to its predecessor, Mono-InternVL, and outperforms existing monolithic MLLMs on 12 out of 15 benchmarks.  The authors also introduce an improved Endogenous Visual Pre-training (EViP++) method and a fused CUDA kernel for faster inference.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/Mono-InternVL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "RedOne: Revealing Domain-specific LLM Post-Training in Social Networking\n  Services",
+        "authors": "Ziyan Liu, Zheyong Xie, Yue Wang, Chonggang Lu, Hiiamein",
+        "link": "https://arxiv.org/abs/2507.10605",
+        "github_repo": null,
+        "summary": "- RedOne is a domain-specific large language model (LLM) for social networking services (SNS), trained using a three-stage approach (continued pre-training, supervised fine-tuning, and preference optimization).\n- It achieves an average improvement of up to 14.02% across eight major SNS tasks and 7.56% in an SNS bilingual evaluation benchmark compared to baseline models.\n- RedOne demonstrates strong generalization capabilities across various tasks and shows promising applicability in real-world scenarios, such as reducing harmful content exposure and improving click-through rates.\n- The model's performance is evaluated through extensive experiments on various benchmarks, both general and SNS-specific.\n- Ablation studies confirm the effectiveness of each training stage, highlighting the importance of a comprehensive approach for optimal performance.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "Mitigating Object Hallucinations via Sentence-Level Early Intervention",
+        "authors": "Zhuotao Tian, Li Jiang, Senqiao Yang, Shangpin Peng",
+        "link": "https://arxiv.org/abs/2507.12455",
+        "github_repo": "https://github.com/pspdada/SENTINEL",
+        "summary": "This paper introduces SENTINEL, a novel framework to reduce object hallucinations in multimodal large language models (MLLMs).  SENTINEL leverages an in-domain preference learning approach, mitigating hallucinations at early generation stages without using external models.  Experimental results show that SENTINEL reduces object hallucinations by over 90% compared to previous state-of-the-art methods and consistently improves generalization performance across various benchmark tasks.  The framework is model-agnostic and computationally efficient, addressing limitations of existing methods.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/pspdada/SENTINEL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "The Generative Energy Arena (GEA): Incorporating Energy Awareness in\n  Large Language Model (LLM) Human Evaluations",
+        "authors": "Pedro Reviriego, Javier Conde, Eneko Sendin, Gonzalo Mart\u00ednez, Carlos Arriaga",
+        "link": "https://arxiv.org/abs/2507.13302",
+        "github_repo": null,
+        "summary": "- The paper introduces the Generative Energy Arena (GEA), a platform for evaluating large language models (LLMs) that incorporates information on energy consumption into the human evaluation process.\n- GEA presents energy consumption information to users after they have made their initial model choice based on response quality, mitigating bias toward smaller models.\n- Preliminary results demonstrate that users tend to favor smaller, more energy-efficient LLMs when energy consumption is considered, suggesting that energy awareness can influence decision-making in LLM evaluation.\n-  The study employs a two-step evaluation method to collect user preferences with and without energy information.\n- Further investigation is needed to examine energy consumption's effect across diverse LLM models, question types, and languages.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/"
+        ],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "Inverse Reinforcement Learning Meets Large Language Model Post-Training:\n  Basics, Advances, and Opportunities",
+        "authors": "Mihaela van der Schaar, Hao Sun",
+        "link": "https://arxiv.org/abs/2507.13158",
+        "github_repo": null,
+        "summary": " - This paper reviews the recent advances in large language model (LLM) alignment through the lens of inverse reinforcement learning (IRL).\n - It highlights the necessity of neural reward models constructed from human data for LLM alignment and discusses the formal and practical implications of this paradigm shift.\n - The paper explores various algorithms and techniques for improving LLM alignment, such as behavior cloning, adversarial imitation learning, and direct preference optimization.\n - It also addresses challenges and opportunities in scaling up reinforcement learning for LLM alignment, including the need for efficient reward modeling, computationally efficient training, and overcoming reward hacking.\n - Finally, the paper identifies promising future research directions for improving LLM alignment through reinforcement learning and IRL techniques.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    },
+    {
+        "title": "Quantitative Risk Management in Volatile Markets with an Expectile-Based\n  Framework for the FTSE Index",
+        "authors": "0xnu",
+        "link": "https://arxiv.org/abs/2507.13391",
+        "github_repo": null,
+        "summary": "- This research introduces a novel expectile-based framework for quantitative risk management, specifically designed for volatile market conditions.\n- The framework utilizes advanced expectile regression techniques, enhanced threshold determination methods, and robust backtesting procedures to improve the accuracy and reliability of risk assessments.\n- Empirical results demonstrate that the expectile-based Value-at-Risk (EVaR) consistently outperforms traditional VaR measures across various confidence levels and market conditions, particularly during periods of high volatility.\n- The study provides practical implementation guidelines and recommendations for financial institutions, contributing significantly to the existing literature on financial risk management.\n- The findings highlight the advantages of expectiles over traditional quantile-based approaches in managing tail risks and offer new tools for practitioners dealing with volatile market environments.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-21"
+    }
+]

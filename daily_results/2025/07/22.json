@@ -1,0 +1,341 @@
+[
+    {
+        "title": "MiroMind-M1: An Open-Source Advancement in Mathematical Reasoning via\n  Context-Aware Multi-Stage Policy Optimization",
+        "authors": "Yao Xiao, LidongBing, ZonglinY, binwang, veggiebird",
+        "link": "https://arxiv.org/abs/2507.14683",
+        "github_repo": null,
+        "summary": "- This paper introduces MiroMind-M1, a series of fully open-source reasoning language models (RLMs) that match or exceed the performance of existing open-source RLMs.\n- MiroMind-M1 models are trained using a two-stage process: supervised fine-tuning (SFT) on a curated corpus of 719K math-reasoning problems and reinforcement learning with verifiable reward (RLVR) on 62K challenging problems.\n- The RLVR process employs a novel Context-Aware Multi-Stage Policy Optimization (CAMPO) algorithm to enhance robustness and efficiency.\n-  MiroMind-M1 achieves state-of-the-art or competitive performance among Qwen-2.5-based open-source models on the AIME24, AIME25, and MATH benchmarks.\n- The complete stack, including models, datasets, and training configurations, is released to foster reproducibility and further research.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MiroMindAsia/MiroMind-M1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/miromind-ai/MiroMind-M1-RL-7B",
+            "https://huggingface.co/datasets/miromind-ai/MiroMind-M1-RL-62K"
+        ],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "GUI-G^2: Gaussian Reward Modeling for GUI Grounding",
+        "authors": "Xuyang Liu, Zhangxuan Gu, Fei Tang, tricktreat, LZXzju",
+        "link": "https://arxiv.org/abs/2507.15846",
+        "github_repo": null,
+        "summary": "- This paper introduces GUI-G2, a novel reward framework for GUI grounding that models GUI elements as continuous Gaussian distributions, which is different from previous methods that use binary rewards.\n- GUI-G2 incorporates two mechanisms: Gaussian point rewards for precise localization and Gaussian coverage rewards for spatial alignment, addressing the limitations of previous approaches that treat elements as hit-or-miss targets.\n- The model significantly outperforms the state-of-the-art method UI-TARS-72B across various benchmarks, including ScreenSpot, ScreenSpot-v2, and ScreenSpot-Pro.\n- Experiments demonstrate that continuous modeling with GUI-G2 provides better robustness to interface variations and enhanced generalization to unseen layouts.\n- The findings validate the use of continuous Gaussian rewards for spatial reasoning in GUI interaction tasks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zju-real/GUI-G2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "The Invisible Leash: Why RLVR May Not Escape Its Origin",
+        "authors": "Yejin Choi, Zaid Harchaoui, Ximing Lu, Fang Wu, weihao1115",
+        "link": "https://arxiv.org/abs/2507.14843",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel theoretical perspective and empirical findings that reveal potential limitations of Reinforcement Learning with Verifiable Rewards (RLVR) in expanding the reasoning capabilities of large language models.\n -  It demonstrates that RLVR primarily operates within the support of the base model, restricting the discovery of entirely original solutions. \n - The study identifies an entropy-reward tradeoff, where RLVR enhances precision but may narrow exploration, potentially overlooking correct yet underrepresented solutions.\n -  Extensive empirical experiments validate that while RLVR consistently improves accuracy, the shrinkage of empirical support generally outweighs expansion.\n - This research suggests that breaking RLVR's limitations may require future algorithmic innovations such as explicit exploration mechanisms or hybrid strategies.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "WebShaper: Agentically Data Synthesizing via Information-Seeking\n  Formalization",
+        "authors": "Baixuan Li, Junkai Zhang, Wenbiao Yin, Jialong Wu, Zhengwei Tao",
+        "link": "https://arxiv.org/abs/2507.15061",
+        "github_repo": null,
+        "summary": "- This paper introduces WebShaper, a novel framework for synthesizing high-quality training data for information-seeking agents.\n- WebShaper employs a formalization-driven approach, systematically formalizing information-seeking tasks using set-theoretic constructs, unlike existing information-driven methods.\n- Central to WebShaper is the concept of Knowledge Projections (KP), enabling precise control over reasoning structures.\n- The framework includes an agentic Expander module, which autonomously expands formal questions with retrieval and validation tools.\n- Experimental results demonstrate that WebShaper achieves state-of-the-art performance on GAIA and WebWalkerQA benchmarks.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/WebAgent"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Alibaba-NLP/WebShaper"
+        ],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Robust 3D-Masked Part-level Editing in 3D Gaussian Splatting with\n  Regularized Score Distillation Sampling",
+        "authors": "Se Young Chun, jeeit17, yeonE",
+        "link": "https://arxiv.org/abs/2507.11061",
+        "github_repo": null,
+        "summary": "- This paper introduces RoMaP, a novel framework for robust 3D-masked part-level editing in 3D Gaussian splatting.\n- RoMaP uses a 3D-Geometry Aware Label Prediction (3D-GALP) module to generate accurate and consistent part segmentations across multiple viewpoints, addressing limitations of prior approaches.\n- It introduces a regularized score distillation sampling loss to enable precise and drastic part-level modifications, overcoming challenges in achieving precise local edits with conventional techniques.\n- Experimental results on reconstructed and generated Gaussian scenes and objects demonstrate RoMaP achieves state-of-the-art local 3D editing, surpassing existing baselines in terms of controllability and editing quality.\n- The code is available at https://janeyeon.github.io/romap.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://janeyeon.github.io/romap"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "SeC: Advancing Complex Video Object Segmentation via Progressive Concept\n  Construction",
+        "authors": "Jianfan Lin, Songxin He, Xiaoyi Dong, Shuangrui Ding, rookiexiong",
+        "link": "https://arxiv.org/abs/2507.15852",
+        "github_repo": "https://github.com/OpenIXCLab/SeC;",
+        "summary": "- The paper introduces Segment Concept (SeC), a novel concept-driven framework for video object segmentation that leverages Large Vision-Language Models (LVLMs) to construct and utilize high-level, object-centric representations.\n- SeC shifts from conventional feature matching to the progressive construction and utilization of robust conceptual priors, leading to improved robustness against drastic visual variations, occlusions, and complex scene changes.\n- A new benchmark, Semantic Complex Scenarios Video Object Segmentation (SeCVOS), is introduced to rigorously evaluate VOS methods in scenarios demanding high-level conceptual reasoning and robust semantic understanding; SeCVOS comprises 160 manually annotated multi-scenario videos.\n- Empirical evaluations on SeCVOS and standard VOS benchmarks demonstrate that SeC substantially outperforms state-of-the-art approaches, achieving an 11.8-point improvement over SAM 2.1 on SeCVOS.\n- SeC employs a scene-adaptive activation strategy, dynamically adjusting computational efforts based on scene complexity, making it computationally efficient.",
+        "classification": [
+            "Video Classification",
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/OpenIXCLab/SeC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "GR-3 Technical Report",
+        "authors": "Yingdong Hu, Zhongren Cui, Chilam Cheang, melony, CH3COOK",
+        "link": "https://arxiv.org/abs/2507.15493",
+        "github_repo": null,
+        "summary": "- This paper introduces GR-3, a large-scale vision-language-action (VLA) model for generalist robot policies.\n- GR-3 excels in generalization to novel objects, environments, and instructions, and adapts efficiently to new settings with minimal human trajectory data.\n- The model architecture uses a mixture-of-transformers design, incorporating flow-matching for action prediction.\n- GR-3 outperforms the state-of-the-art baseline method (\u03c0\u03bf) on a variety of challenging tasks, demonstrating its effectiveness in handling long-horizon and dexterous tasks.\n- The research also introduces ByteMini, a versatile bi-manual mobile robot designed for flexibility and reliability, which is integrated with GR-3 for enhanced performance.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Stabilizing Knowledge, Promoting Reasoning: Dual-Token Constraints for\n  RLVR",
+        "authors": "Guorui Zhou, Xiu Li, Fuzheng Zhang, Jiakang Wang, RyanLiu112",
+        "link": "https://arxiv.org/abs/2507.15778",
+        "github_repo": "https://github.com/wizard-III/ArcherCodeR",
+        "summary": "- This paper introduces Archer, a novel Reinforcement Learning with Verifiable Rewards (RLVR) approach that uses dual-token constraints to improve the reasoning abilities of large language models (LLMs).\n- Archer addresses the limitations of previous RLVR algorithms by applying different training signals to knowledge-related and reasoning-related tokens, maintaining factual accuracy while encouraging exploration for logical reasoning.\n- The method uses response-level entropy to distinguish token types and applies stronger KL regularization and lower clipping thresholds to knowledge-related tokens, while applying weaker regularization and higher thresholds to reasoning tokens.\n- Experimental results on mathematical reasoning and code generation benchmarks demonstrate that Archer significantly outperforms previous RLVR methods, achieving state-of-the-art results among models of comparable size.\n- The authors provide a thorough analysis of the impact of KL weights and clip ranges on model performance, showing how these parameters affect the balance between preserving factual knowledge and promoting reasoning exploration.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/wizard-III/ArcherCodeR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Being-H0: Vision-Language-Action Pretraining from Large-Scale Human\n  Videos",
+        "authors": "Sipeng Zheng, Yicheng Feng, Hao Luo, Yaya041, zawnpn",
+        "link": "https://arxiv.org/abs/2507.15597",
+        "github_repo": null,
+        "summary": " - The paper introduces Being-H0, a dexterous Vision-Language-Action (VLA) model trained on large-scale human videos using a novel physical instruction tuning paradigm. \n- Being-H0 uses a unified autoregressive architecture with shared attention across vision, language, and motion modalities, enabling seamless cross-modal reasoning. \n-  The model employs a part-level motion tokenization method using grouped residual quantization (GRQ), achieving millimeter-level reconstruction accuracy to model precise hand trajectories for action learning.\n- The paper introduces UniHand, a comprehensive dataset of over 150M samples of human hand motion from various sources, including motion capture, VR, and RGB-only videos.\n- Experiments demonstrate the effectiveness of Being-H0 in hand motion generation, instruction following, and real-world robotic manipulation tasks, outperforming existing methods.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://beingbeyond.github.io/Being-HO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Gaussian Splatting with Discretized SDF for Relightable Assets",
+        "authors": "Beibei Wang, Jian Yang, Zuo-Liang Zhu",
+        "link": "https://arxiv.org/abs/2507.15629",
+        "github_repo": "https://github.com/NK-CS-ZZL/DiscretizedSDF",
+        "summary": "- This paper introduces a novel method for relightable asset generation using Gaussian splatting with a discretized signed distance field (SDF).\n- The model encodes the continuous SDF discretely within each Gaussian primitive, linking it to the Gaussian opacity through an SDF-to-opacity transformation, enabling efficient rendering via splatting and avoiding expensive ray marching.\n- A projection-based consistency loss is introduced to regularize the discrete SDF samples, ensuring alignment with the surface from splatting. This addresses the challenges of applying gradient-based constraints to discrete samples.\n- The proposed method achieves higher relighting quality compared to existing Gaussian-based inverse rendering methods while requiring no extra memory and simplifying the optimization process.\n- Experiments demonstrate that the proposed approach outperforms existing methods across various metrics, including PSNR, SSIM, and LPIPS, showcasing robust decomposition of geometry and material for various objects.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/NK-CS-ZZL/DiscretizedSDF"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "NoHumansRequired: Autonomous High-Quality Image Editing Triplet Mining",
+        "authors": "Bulat Suleimanov, Georgii Fedorov, Grigorii Alekseenko, Maksim Kuprashevich, iitolstykh",
+        "link": "https://arxiv.org/abs/2507.14119",
+        "github_repo": null,
+        "summary": "\n- This paper introduces a novel, fully automated pipeline for mining high-quality image editing triplets without human intervention.\n- The pipeline utilizes a task-tuned Gemini validator to assess instruction adherence and aesthetics, eliminating the need for segmentation or grounding models.\n- The generated dataset, NHR-Edit, comprises 358k high-quality triplets and outperforms existing public alternatives in cross-dataset evaluations.\n- A fine-tuned LoRA-adapted BAGEL model, BAGEL-NHR-EDIT, trained on this dataset, surpasses the base model on two benchmarks.\n- The authors release both NHR-Edit and BAGEL-NHR-EDIT, facilitating further research in this domain.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Towards Video Thinking Test: A Holistic Benchmark for Advanced Video\n  Reasoning and Understanding",
+        "authors": "Bo Hu, Aria Leo, Yuhao Dong, yunicechew, ZhangYuanhan",
+        "link": "https://arxiv.org/abs/2507.15028",
+        "github_repo": null,
+        "summary": "- This paper introduces the Video Thinking Test (Video-TT), a new benchmark for evaluating advanced video reasoning and understanding capabilities. \n- Video-TT assesses both correctness (accurate interpretation of visual content) and robustness (consistent performance under challenging conditions) of video LLMs.\n- The benchmark includes 1000 YouTube Shorts videos with complex open-ended questions and four adversarial questions designed to assess complex visual narratives and robustness against natural adversarial conditions.\n- Evaluation results show a significant gap between existing video LLMs and human performance, highlighting the need for further improvements in video understanding.\n- The study provides detailed error analysis of GPT-40, revealing limitations in visual and temporal understanding, world knowledge integration and contextual reasoning.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://zhangyuanhan-ai.github.io/video-tt/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Inverse Scaling in Test-Time Compute",
+        "authors": "Jacob Goldman-Wetzler, Andy Arditi, Runjin Chen, Alexander H\u00e4gele, Aryo Pradipta Gema",
+        "link": "https://arxiv.org/abs/2507.14417",
+        "github_repo": null,
+        "summary": "This paper reveals inverse scaling in large reasoning models (LRMs), where increasing reasoning length reduces accuracy.  They identify five distinct failure modes: distraction by irrelevant information, overfitting to problem framings, reliance on spurious correlations, difficulty maintaining focus on complex tasks, and amplification of concerning behaviors.  Evaluation spans simple counting, regression, and deduction tasks.  Findings highlight the importance of evaluating models across diverse reasoning lengths to mitigate these failure modes.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/safety-research/inverse-scaling-ttc"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/inverse-scaling-ttc/inverse-scaling-ttc-main"
+        ],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "STITCH: Simultaneous Thinking and Talking with Chunked Reasoning for\n  Spoken Language Models",
+        "authors": "Kevin Lin, Chung-Ching Lin, Linjie Li, xiaofei-wang, dcml0714",
+        "link": "https://arxiv.org/abs/2507.15375",
+        "github_repo": null,
+        "summary": "- This paper introduces STITCH, a novel method for spoken language model generation that alternates between generating unspoken reasoning chunks and spoken response chunks. \n- STITCH addresses the issue of latency in spoken language models by using the remaining time between spoken response chunks to generate reasoning tokens, effectively enabling simultaneous thinking and talking.\n- Experimental results demonstrate that STITCH matches the latency of baseline models while outperforming them by 15% on math reasoning datasets and performing equally well on non-reasoning datasets.\n- The authors introduce two variants of STITCH: STITCH-R (reasoning first) and STITCH-S (speaking first), both of which exhibit improved performance over baselines.\n- The method is validated using several benchmark datasets, including math reasoning datasets and non-reasoning datasets, showing consistent improvements over baseline models.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://d223302.github.io/STITCH"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Streaming 4D Visual Geometry Transformer",
+        "authors": "Jie Zhou, Yuqi Wu, Wenzhao Zheng, lch01, paryi",
+        "link": "https://arxiv.org/abs/2507.11539",
+        "github_repo": "https://github.com/wzzheng/StreamVGGT",
+        "summary": "- The paper introduces StreamVGGT, a novel streaming 4D visual geometry transformer designed for real-time applications.  \n- StreamVGGT utilizes a causal transformer architecture with a cached memory token mechanism to process video frames incrementally and efficiently, avoiding reprocessing of the entire sequence for each new frame. \n- The model incorporates a knowledge distillation strategy to address error accumulation, using a bidirectional visual geometry grounded transformer as a teacher model to guide the causal student model. \n- Experimental results demonstrate that StreamVGGT achieves competitive performance with existing offline methods while significantly increasing inference speed in online scenarios, as shown by the inference time comparison and improved reconstruction accuracy on various datasets. \n- The model supports the integration of optimized attention mechanisms, leading to fast inference speeds, making it suitable for interactive and real-time 4D vision systems.",
+        "classification": [
+            "Computer Vision",
+            "Depth Estimation",
+            "Video Classification",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/wzzheng/StreamVGGT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Latent Denoising Makes Good Visual Tokenizers",
+        "authors": "Yue Wang, Yonglong Tian, Lijie Fan, Tianhong Li, Jiawei Yang",
+        "link": "https://arxiv.org/abs/2507.15856",
+        "github_repo": "https://github.com/Jiawei-Yang/DeTok",
+        "summary": "- This paper introduces Latent Denoising Tokenizer (l-DeTok), a novel visual tokenizer that aligns with the denoising objective of downstream generative models.\n- l-DeTok is trained to reconstruct clean images from heavily corrupted latent embeddings, achieved through interpolative noise and random masking.\n- Extensive experiments on ImageNet demonstrate that l-DeTok consistently outperforms standard tokenizers across six representative generative models (three non-autoregressive and three autoregressive models).\n- The results highlight denoising as a crucial design principle for visual tokenizer development and show the superior generalizability of l-DeTok compared to recent semantics-distilled tokenizers.\n- This approach improves the FID score for MAR models by a significant margin, reaching state-of-the-art performance.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Jiawei-Yang/DeTok"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "LLM Economist: Large Population Models and Mechanism Design in\n  Multi-Agent Generative Simulacra",
+        "authors": "Yu Bai, Samuel Kleiner, Zihan Ding, Wenzhe Li, milkkarten",
+        "link": "https://arxiv.org/abs/2507.15815",
+        "github_repo": "https://github.com/sethkarten/LLM-Economist",
+        "summary": "- This paper introduces the LLM Economist, a novel framework that uses agent-based modeling to design and assess economic policies in strategic environments with hierarchical decision-making.\n- The LLM Economist uses in-context reinforcement learning to optimize heterogeneous utilities and generate large, demographically realistic agent populations.\n- Experiments demonstrate that the planner converges near Stackelberg equilibria that improve aggregate social welfare relative to Saez solutions.\n- A periodic, persona-level voting procedure further improves gains under decentralized governance.\n- The results demonstrate that large language model-based agents can jointly model, simulate, and govern complex economic systems.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/sethkarten/LLM-Economist"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "Data Mixing Agent: Learning to Re-weight Domains for Continual\n  Pre-training",
+        "authors": "Yeyun Gong, Hao Li, Lei Ji, lx865712528, klyang",
+        "link": "https://arxiv.org/abs/2507.15640",
+        "github_repo": null,
+        "summary": "- The paper introduces Data Mixing Agent, a novel model-based, end-to-end framework that learns to re-weight domains for continual pre-training of large language models.\n- The agent utilizes a Transformer-based decoder architecture to model temporal sequences and guide domain re-weighting in an off-policy reinforcement learning manner.\n- Experiments in continual pre-training on math reasoning demonstrate that Data Mixing Agent outperforms strong baselines by achieving balanced performance across source and target fields.\n- The agent exhibits strong generalization capabilities across unseen source fields, target models, and domain spaces, adapting to code generation tasks with only partial retraining.\n- Further analysis aligns the agent's learned heuristics with human intuitions and showcases efficiency in achieving superior model performance with less source-field data.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "\"PhyWorldBench\": A Comprehensive Evaluation of Physical Realism in\n  Text-to-Video Models",
+        "authors": "Fangrui Zhu, Ashwin Nagarajan, Yu Zeng, Xian Liu, Jing Gu",
+        "link": "https://arxiv.org/abs/2507.13428",
+        "github_repo": null,
+        "summary": "This paper introduces PhyWorldBench, a comprehensive benchmark designed to rigorously evaluate the physical realism of text-to-video generation models.  The benchmark includes 10 main physics categories, each with 5 subcategories and 7 scenarios, resulting in 1050 prompts for a comprehensive assessment.  A novel \"Anti-Physics\" category tests models' ability to generate videos that intentionally violate real-world physics, further probing their understanding of physical laws.  The paper evaluates 12 state-of-the-art models and finds that despite significant advances, these models still face significant challenges in adhering to real-world physics.  A new evaluation metric is introduced to efficiently assess physics realism that uses MLLMs for zero-shot evaluation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/ashwin-333/phy-world-bench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/phyworldbench/phyworldbench"
+        ],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "A Simple \"Try Again\" Can Elicit Multi-Turn LLM Reasoning",
+        "authors": "Yiping Lu, Chenwei Xu, Linjie Li, Zihan Wang, Licheng Liu",
+        "link": "https://arxiv.org/abs/2507.14295",
+        "github_repo": "https://github.com/lichengliu03/unary-feedback",
+        "summary": "- This paper introduces Unary Feedback as Observation (UFO), a novel reinforcement learning method that uses minimal unary feedback (e.g., \"Let's try again\") to improve multi-turn LLM reasoning.\n- UFO is applied to existing single-turn RL training setups, enhancing the ability of LLMs to reflect on their reasoning and revise answers based on feedback.\n- Experimental results show that training with UFO maintains single-turn performance while improving multi-turn reasoning accuracy by up to 14%.\n- The proposed method effectively minimizes the number of turns required for a correct answer while encouraging diverse reasoning through reward shaping strategies.\n- The code and models are open-source, facilitating reproducibility and further research in multi-turn LLM reasoning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/lichengliu03/unary-feedback"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "GeoDistill: Geometry-Guided Self-Distillation for Weakly Supervised\n  Cross-View Localization",
+        "authors": "Yujiao Shi, Xuming He, Alexandre Alahi, Zimin Xia, tsw200027",
+        "link": "https://arxiv.org/abs/2507.10935",
+        "github_repo": "https://github.com/tongshw/GeoDistill",
+        "summary": "- GeoDistill is a novel weakly supervised self-distillation framework for cross-view localization that enhances local feature learning.\n- It employs a teacher-student learning paradigm with FoV-based masking to improve the robustness of cross-view localization.\n- The framework includes a novel orientation estimation network that predicts relative orientation without requiring precise planar position ground truth.\n- Experiments on the VIGOR and KITTI datasets demonstrate that GeoDistill significantly improves localization performance across different frameworks, outperforming existing weakly supervised methods and achieving comparable results to fully supervised state-of-the-art methods.\n- GeoDistill provides a scalable and efficient solution for real-world cross-view localization challenges.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/tongshw/GeoDistill"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    },
+    {
+        "title": "UGPL: Uncertainty-Guided Progressive Learning for Evidence-Based\n  Classification in Computed Tomography",
+        "authors": "Chandrakala S, Rakesh Raj Madavan, Pavan Kumar S, Shravan Venkatraman",
+        "link": "https://arxiv.org/abs/2507.14102",
+        "github_repo": "https://github.com/shravan-18/UGPL",
+        "summary": "- This paper introduces UGPL, a novel uncertainty-guided progressive learning framework for improving the accuracy of computed tomography (CT) image classification.\n- The model first performs a global analysis using a ResNet backbone with two parallel heads: a classification head and an evidence head, to produce an uncertainty map guiding subsequent analysis.\n- High-uncertainty regions are identified, and patches are extracted using a non-maximum suppression technique to maintain spatial diversity and avoid redundancy.\n- These patches undergo detailed analysis using a local refinement network which produces both local classifications and confidence scores to weigh local predictions in an adaptive fusion scheme.\n- Experiments across three CT datasets demonstrate that UGPL consistently outperforms state-of-the-art methods, achieving improvements of 3.29%, 2.46%, and 8.08% in accuracy for kidney abnormality, lung cancer, and COVID-19 detection, respectively.",
+        "classification": [
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/shravan-18/UGPL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-22"
+    }
+]

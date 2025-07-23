@@ -1,0 +1,173 @@
+[
+    {
+        "title": "Beyond Context Limits: Subconscious Threads for Long-Horizon Reasoning",
+        "authors": "Tina Li, Nathaniel Morgan, Hongyin Luo, thejackobrien, drkylj",
+        "link": "https://arxiv.org/abs/2507.16784",
+        "github_repo": null,
+        "summary": "- This paper introduces TIM, a novel family of large language models (LLMs) designed for recursive and decompositional problem-solving, and TIMRUN, an inference runtime that enables long-horizon reasoning.\n- TIM models the reasoning process as a tree structure measured by both length and depth, overcoming output limits and positional-embedding constraints of traditional LLMs that model language as linear sequences.\n- TIMRUN maintains a working memory that retains only key/value states of relevant context tokens, which enables reuse of positional embeddings and GPU memory pages throughout the reasoning process.\n- Experimental results show that TIMRUN sustains high inference throughput and delivers accurate reasoning on mathematical and information retrieval tasks that require long-horizon reasoning.\n- This approach allows for virtually unlimited working memory and multi-hop tool calls within a single language model inference, significantly improving efficiency and accuracy compared to traditional LLMs.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/subconscious-systems/TIMRUN"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "Step-Audio 2 Technical Report",
+        "authors": "Chao Yan, Boyong Wu, Insects, SmailAA, petronny",
+        "link": "https://arxiv.org/abs/2507.16632",
+        "github_repo": "https://github.com/stepfun-ai/Step-Audio2",
+        "summary": "- Step-Audio 2 is a new end-to-end multi-modal large language model designed for high-quality audio understanding and speech conversation.  It integrates a latent audio encoder and reasoning-centric reinforcement learning.\n- The model incorporates the generation of discrete audio tokens into language modeling, improving responsiveness to paralinguistic information (speaking style and emotion).\n- Step-Audio 2 utilizes retrieval-augmented generation (RAG) and external tools (web search and audio search) to mitigate hallucinations and improve audio search.\n- Evaluation results demonstrate that Step-Audio 2 achieves state-of-the-art performance on various audio understanding and conversational benchmarks compared to other open-source and commercial solutions.\n- The model was trained on 680 billion tokens of text data and 8 million hours of real and synthesized audio data.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Text-to-Speech",
+            "Audio-to-Audio",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/stepfun-ai/Step-Audio2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "MegaScience: Pushing the Frontiers of Post-Training Datasets for Science\n  Reasoning",
+        "authors": "Pengfei Liu, SinclairWang, Vfrz",
+        "link": "https://arxiv.org/abs/2507.16812",
+        "github_repo": "https://github.com/GAIR-NLP/MegaScience;",
+        "summary": "- This paper introduces MegaScience, a post-training dataset designed to improve the scientific reasoning capabilities of large language models (LLMs).\n- MegaScience comprises 25 million high-quality question-answer pairs covering diverse scientific disciplines, exhibiting superior quality and scale compared to existing datasets.\n- The dataset's curation process involves meticulous steps such as textbook sourcing, question-answer pair extraction, refinement, and difficulty level assessment, along with comprehensive data decontamination to enhance reliability.\n- Empirical evaluations demonstrate significant performance gains on various scientific reasoning benchmarks when LLMs are fine-tuned using MegaScience, surpassing the performance of models trained on other existing datasets.\n- The authors publicly release MegaScience to foster future research in scientific reasoning and advance the development of more capable LLMs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/GAIR-NLP/MegaScience"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "Upsample What Matters: Region-Adaptive Latent Sampling for Accelerated\n  Diffusion Transformers",
+        "authors": "Se Young Chun, Agorium, hirussell, ignow",
+        "link": "https://arxiv.org/abs/2507.08422",
+        "github_repo": null,
+        "summary": "- This paper introduces Region-Adaptive Latent Upsampling (RALU), a training-free framework designed to accelerate inference in diffusion transformers for text-to-image generation.\n- RALU employs a three-stage process: 1) low-resolution denoising, 2) region-adaptive upsampling of edge regions, and 3) full-resolution upsampling for detail refinement, which helps mitigate aliasing artifacts and noise-timestep mismatches.\n- The method incorporates noise-timestep rescheduling with distribution matching (NT-DM) to stabilize generation across resolution transitions.\n- Experimental results on FLUX and Stable Diffusion 3 demonstrate that RALU achieves significant speedups (up to 7.0\u00d7 on FLUX and 3.0\u00d7 on Stable Diffusion 3) with minimal degradation in image quality.\n- RALU is complementary to existing temporal acceleration methods, and can be seamlessly integrated to further reduce inference latency without compromising generation quality.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "Semi-off-Policy Reinforcement Learning for Vision-Language Slow-thinking\n  Reasoning",
+        "authors": "Songyang Gao, Harold-lkk, vanilla1116, haitengzhao, shenjunhao",
+        "link": "https://arxiv.org/abs/2507.16814",
+        "github_repo": null,
+        "summary": "- This paper introduces SOPHIA, a novel semi-off-policy reinforcement learning framework designed to enhance vision-language slow-thinking reasoning.\n- SOPHIA combines an off-policy visual understanding module with a policy model for reasoning, effectively leveraging both visual and textual information.\n- The framework is evaluated on multiple benchmarks, consistently outperforming existing baselines and achieving state-of-the-art results on several challenging datasets.\n- Ablation studies demonstrate the effectiveness of various components within SOPHIA, including the semi-off-policy learning strategy and the reward design.\n- SOPHIA's superior performance highlights the potential of reinforcement learning techniques in improving the capabilities of large language models for complex visual reasoning tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent\n  Planning",
+        "authors": "Fu-En Yang, Yu-Chiang Frank Wang, Yueh-Hua Wu, cmhungsteve, jasper0314-huang",
+        "link": "https://arxiv.org/abs/2507.16815",
+        "github_repo": null,
+        "summary": "- ThinkAct is a novel dual-system framework for vision-language-action reasoning that uses a multimodal large language model (LLM) for high-level reasoning and a downstream action model for low-level action execution.\n- The model architecture involves a multimodal LLM that generates embodied reasoning plans, which are compressed into a visual plan latent that conditions a downstream action model.\n- ThinkAct utilizes reinforcement learning with action-aligned visual rewards to guide the reasoning process, enabling few-shot adaptation, long-horizon planning, and self-correction.\n- Experimental results on embodied reasoning and robot manipulation benchmarks demonstrate that ThinkAct outperforms existing methods in terms of success rate and generalization ability.\n- The model demonstrates few-shot adaptation and self-correction capabilities through structured reasoning and visual feedback.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://jasper0314-huang.github.io/thinkact-vla/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "Zebra-CoT: A Dataset for Interleaved Vision Language Reasoning",
+        "authors": "Zikui Cai, Kaiyu Yue, deqing, charleslwang, leonli66",
+        "link": "https://arxiv.org/abs/2507.16746",
+        "github_repo": null,
+        "summary": "- This paper introduces ZEBRA-COT, a new large-scale dataset (182,384 samples) designed for interleaved vision-language reasoning.\n- The dataset focuses on four categories of tasks: scientific questions, 2D visual reasoning, 3D visual reasoning, and visual logic and strategic games.\n- Fine-tuning the Anole-7B model on ZEBRA-COT improves test-set accuracy by 12% and yields up to a 13% performance gain on standard VLM benchmark evaluations.\n- Fine-tuning Bagel-7B on ZEBRA-COT produces a model capable of generating high-quality interleaved visual reasoning chains.\n- The dataset and models are open-sourced to facilitate further research and evaluation of visual chain-of-thought reasoning.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/multimodal-reasoning-lab/Bagel-Zebra-CoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "HOComp: Interaction-Aware Human-Object Composition",
+        "authors": "Rynson W. H. Lau, Jinyuan Jia, Dong Liang, LeoLau",
+        "link": "https://arxiv.org/abs/2507.16813",
+        "github_repo": null,
+        "summary": "- This paper introduces HOComp, a novel approach for compositing a foreground object onto a human-centric background image while preserving harmonious interactions and consistent appearances.\n- HOComp uses two key designs: (1) MLLMs-driven Region-based Pose Guidance (MRPG), which uses MLLMs to identify the interaction region and type to provide constraints to the generated pose for the interaction; and (2) Detail-Consistent Appearance Preservation (DCAP), which uses a shape-aware attention modulation mechanism, a multi-view appearance loss, and a background consistency loss to ensure consistent shapes/textures of the foreground and background human.\n- The authors propose a new dataset, Interaction-aware Human-Object Composition (IHOC), for training and evaluating the proposed model.\n- Experimental results on IHOC demonstrate that HOComp effectively generates harmonious human-object interactions with consistent appearances, outperforming existing methods qualitatively and quantitatively.\n- The model integrates MLLMs to automatically determine the interaction type and region, and uses a coarse-to-fine constraint strategy to enforce fine-grained constraints on human poses within the interaction region.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://dliang293.github.io/HOComp-project/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "Experience is the Best Teacher: Grounding VLMs for Robotics through\n  Self-Generated Memory",
+        "authors": "Christopher E. Mower, Changan Chen, Ren\u00e9 Zurbr\u00fcgg, Kaixian Qu, Guowei Lan",
+        "link": "https://arxiv.org/abs/2507.16713",
+        "github_repo": null,
+        "summary": "- EXPTEACH is a novel framework that grounds Vision-Language Models (VLMs) for robotics by building a self-generated memory of real-world experiences.\n- The framework enables VLMs to autonomously plan actions, verify outcomes, reflect on failures, and adapt robot behaviors in a closed loop, enhancing spatial understanding with an on-demand image annotation module.\n- Self-generated experiences are summarized into long-term memory, enabling retrieval of learned knowledge to guide future tasks.\n- Extensive tests on 12 real-world scenarios (including 8 unseen ones) demonstrate that grounding with long-term memory significantly improves success rates (from 22% to 80%), showcasing the effectiveness and generalizability of EXPTEACH.\n- The paper demonstrates the emergence of intelligent object interactions, including creative tool use, through reflection and self-generated memory.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "RefCritic: Training Long Chain-of-Thought Critic Models with Refinement\n  Feedback",
+        "authors": "Hongyu Lin, Bowen Yu, Le Yu, Hao Xiang, Qiaoyu Tang",
+        "link": "https://arxiv.org/abs/2507.15024",
+        "github_repo": null,
+        "summary": "- RefCritic, a novel long chain-of-thought critic model, is proposed to enhance the critique abilities of LLMs.\n- RefCritic uses reinforcement learning with dual rule-based rewards focusing on instance-level correctness and refinement accuracies.\n- The model consistently outperforms existing methods across multiple benchmarks, achieving gains of up to 7.2% on AIME25 and 9.9% on Olympiad.\n- Under majority voting, policy models filtered by RefCritic demonstrate superior scaling with increased voting numbers.\n- RefCritic achieves strong performance on ProcessBench, surpassing step-level supervised approaches.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    },
+    {
+        "title": "ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via\n  Gaussian Splatting",
+        "authors": "Yixuan Li, Lihan Jiang, Linning Xu, Mulin Yu, Ruijie Zhu",
+        "link": "https://arxiv.org/abs/2507.15454",
+        "github_repo": null,
+        "summary": "- ObjectGS is a novel framework that unifies 3D scene reconstruction with semantic understanding by modeling individual objects as local anchors that generate neural Gaussians and share object IDs, enabling precise object-level reconstruction.\n- ObjectGS dynamically grows or prunes these anchors and optimizes their features during training, and a one-hot ID encoding with a classification loss enforces clear semantic constraints.\n- Experiments demonstrate that ObjectGS outperforms state-of-the-art methods on open-vocabulary and panoptic segmentation tasks, and it seamlessly integrates with applications like mesh extraction and scene editing.\n- The core components of ObjectGS are Object ID Labeling and Voting, Object-aware Neural Gaussian Generation, and Discrete Gaussian Semantics modeling.\n- The proposed method uses a classification-based approach to Gaussian semantics, eliminating ambiguity during alpha blending and ensuring precise 2D splatting and pixel-level object identification.",
+        "classification": [
+            "Image-to-3D",
+            "Image Segmentation",
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://ruijiezhu94.github.io/ObjectGS_page"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-23"
+    }
+]

@@ -1,0 +1,139 @@
+[
+    {
+        "title": "Pixels, Patterns, but No Poetry: To See The World like Humans",
+        "authors": "Xinhao Li, Jingyi Tang, Lin Xu, Zihao Huang, Hongcheng Gao",
+        "link": "https://arxiv.org/abs/2507.16863",
+        "github_repo": null,
+        "summary": "- This paper introduces the Turing Eye Test (TET), a new benchmark designed to evaluate the perceptual capabilities of Multimodal Large Language Models (MLLMs).\n- TET consists of four challenging tasks that involve intuitive human perception, focusing on synthetic images.\n- The results show that state-of-the-art MLLMs fail catastrophically on TET, indicating a significant gap between machine and human perception.\n- Fine-tuning the vision tower improves performance, suggesting that the problem lies in visual generalization and not in the knowledge and reasoning capabilities of the language backbone.\n- The authors plan to release the full set of TET tasks with more diverse challenges and will further explore methods to improve visual generalization in future work.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://TuringEyeTest.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "Yume: An Interactive World Generation Model",
+        "authors": "Zhen Li, Shaoheng Lin, Xiaofeng Mao, kpzhang, Jiangmiao",
+        "link": "https://arxiv.org/abs/2507.17744",
+        "github_repo": "https://github.com/stdstu12/YUME",
+        "summary": " - This paper introduces Yume, a novel interactive world generation model that uses images, text, or videos to create realistic and dynamic worlds which can be explored using peripheral devices or neural signals. \n- The model architecture consists of four key components: camera motion quantization, video generation architecture (Masked Video Diffusion Transformer), advanced sampler, and model acceleration techniques.\n- Yume uses a masked video diffusion transformer for improved visual quality and a training-free anti-artifact mechanism for eliminating visual artifacts. \n- A novel sampling method based on stochastic differential equations (TTS-SDE) is introduced to enhance visual quality and textual controllability. \n-Experimental results show that Yume outperforms existing state-of-the-art models in generating high-quality videos while achieving strong performance in instruction following.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/stdstu12/YUME"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/stdstu123/Yume-I2V-540P"
+        ],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "DesignLab: Designing Slides Through Iterative Detection and Correction",
+        "authors": "Shingo Takamatsu, Jaegul Choo, Yotaro Shimose, Heng Wang, YeolJoo",
+        "link": "https://arxiv.org/abs/2507.17202",
+        "github_repo": null,
+        "summary": "- This paper introduces DesignLab, a novel framework for designing presentation slides that leverages an iterative process of detection and correction.\n- DesignLab decomposes the design process into two specialized roles: a design reviewer that identifies design issues and a design contributor that corrects them.\n- Large language models are fine-tuned for these roles, using a structured JSON representation of presentation slides to facilitate processing.\n- Experiments demonstrate that DesignLab outperforms existing methods, including a commercial tool, by achieving polished, professional slides through iterative refinement.\n- The iterative approach effectively addresses complex design challenges by repeatedly isolating and correcting individual design flaws.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "Can One Domain Help Others? A Data-Centric Study on Multi-Domain\n  Reasoning via Reinforcement Learning",
+        "authors": "Conghui He, Honglin Lin, Zhuoshi Pan, blue01223, yu0226",
+        "link": "https://arxiv.org/abs/2507.17512",
+        "github_repo": null,
+        "summary": "- This paper presents a data-centric study on multi-domain reasoning via reinforcement learning (RLVR), focusing on mathematical reasoning, code generation, and logical puzzle solving.\n- The study leverages the GRPO algorithm and the Qwen-2.5-7B model family to evaluate the models' in-domain improvements and cross-domain generalization capabilities.\n- Key findings reveal nuanced insights into domain interactions, showing mutual enhancements and conflicts during combined cross-domain training.\n- The authors explore the impact of curriculum learning, variations in reward design, and language-specific effects on RL performance.\n- This research provides valuable guidance for optimizing RL methodologies to foster comprehensive, multi-domain reasoning capabilities in LLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Leey21/A-Data-Centric-Study"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "Re:Form -- Reducing Human Priors in Scalable Formal Software\n  Verification with RL in LLMs: A Preliminary Study on Dafny",
+        "authors": "Xin Li, Xu Xu, Xuhan Huang, Fengdi Che, Chuanhao Yan",
+        "link": "https://arxiv.org/abs/2507.16331",
+        "github_repo": null,
+        "summary": "This paper introduces Re:Form, a novel pipeline that leverages reinforcement learning (RL) within large language models (LLMs) to reduce reliance on human priors in scalable formal software verification.  The pipeline is built around the Dafny formal language verifier and a newly designed benchmark, DafnyComp. Re:Form surpasses prior methods by achieving stronger generalization to out-of-domain tasks and outperforming strong baselines on DafnyComp.  The RL designs incorporates feedback from the formal language verifier, and automatically generates formal specifications using proprietary frontier LLMs to seed the training data.  The use of smaller LLMs (0.5B to 14B parameters) highlights efficiency gains. ",
+        "classification": [
+            "Reinforcement Learning",
+            "Text2Text Generation",
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Veri-Code/ReForm"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Veri-Code"
+        ],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "Ultra3D: Efficient and High-Fidelity 3D Generation with Part Attention",
+        "authors": "Qin Li, Hu Zhang, Yikai Wang, Zhihao Li, Yiwen Chen",
+        "link": "https://arxiv.org/abs/2507.17745",
+        "github_repo": null,
+        "summary": "- ULTRA3D is a novel framework for efficient and high-fidelity 3D generation that leverages a two-stage pipeline: first generating a sparse voxel layout using VecSet and then refining it by generating per-voxel latent using Part Attention.- Part Attention is a geometry-aware localized attention mechanism that restricts computation within semantically consistent part regions, achieving up to a 6.7x speedup in latent generation.- The framework uses a scalable part annotation pipeline to convert raw meshes into part-labeled sparse voxels, supporting high-resolution 3D generation at 1024 resolution.- Extensive experiments demonstrate that ULTRA3D achieves state-of-the-art performance in both visual fidelity and user preference, with a 3.3x speedup over baseline methods without compromising quality.- The work addresses computational inefficiencies of existing methods by using more efficient methods to generate a coarse mesh and using Part Attention to reduce the computational cost of attention mechanisms.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://buaacyw.github.io/ultra3d/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "Elevating 3D Models: High-Quality Texture and Geometry Refinement from a\n  Low-Quality Model",
+        "authors": "Joo-Haeng Lee, Minsu Gong, Jooeun Son, Jiyun Won, Nuri Ryu",
+        "link": "https://arxiv.org/abs/2507.11465",
+        "github_repo": null,
+        "summary": " - This paper introduces Elevate3D, a novel framework for enhancing the quality of 3D models by refining both their texture and geometry. \n- The core of Elevate3D is HFS-SDEdit, a method that improves texture quality by selectively applying constraints to high-frequency components during the diffusion process. \n- Elevate3D outperforms existing methods by iteratively refining textures and geometry in a view-by-view manner, ensuring alignment between the two. \n- Experimental results show that Elevate3D achieves state-of-the-art results in 3D model refinement, significantly improving both texture and geometric details. \n- The framework is robust and can enhance the quality of 3D models from diverse sources, including those generated by existing 3D generation models.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "Finding Dori: Memorization in Text-to-Image Diffusion Models Is Less\n  Local Than Assumed",
+        "authors": "Adam Dziedzic, Kristian Kersting, Lukas Struppek, Dominik Hintersdorf, Antoni Kowalczuk",
+        "link": "https://arxiv.org/abs/2507.16880",
+        "github_repo": null,
+        "summary": "\n- This paper introduces a novel adversarial fine-tuning method for permanently removing memorized content from text-to-image diffusion models.\n- The method iteratively searches for replication triggers and updates the model to increase robustness.\n- Existing pruning-based mitigation methods are shown to be insufficient as minor adjustments to text embeddings can re-trigger data replication.\n- The research challenges the assumption of memorization locality, demonstrating that replication can be triggered from diverse locations.\n- Results indicate that the proposed method achieves more reliable removal and remains robust against adversarial embeddings, outperforming existing pruning-based approaches.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    },
+    {
+        "title": "RAVine: Reality-Aligned Evaluation for Agentic Search",
+        "authors": "Jinhua Gao, Zhi Zheng, Xiang Long, Yilong Xu",
+        "link": "https://arxiv.org/abs/2507.16725",
+        "github_repo": "https://github.com/SwordFaith/RAVine",
+        "summary": " - This paper introduces RAVine, a novel evaluation framework designed to address misalignments in existing evaluation methods for agentic search.\n - RAVine targets multi-point queries and long-form answers, reflecting real-world user scenarios more accurately.\n - It employs an attributable ground truth construction strategy and examines the iterative process inherent to agentic search.\n - The framework also accounts for efficiency factors, providing a more comprehensive assessment of model performance.\n - RAVine benchmarks a series of models, providing insights into the strengths and limitations of current agentic search systems.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/SwordFaith/RAVine"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-24"
+    }
+]

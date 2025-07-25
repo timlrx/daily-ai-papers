@@ -1,0 +1,272 @@
+[
+    {
+        "title": "Group Sequence Policy Optimization",
+        "authors": "Bowen Yu, Xiong-Hui Chen, Mingze Li, Shixuan Liu, Chujie Zheng",
+        "link": "https://arxiv.org/abs/2507.18071",
+        "github_repo": null,
+        "summary": "- This paper introduces Group Sequence Policy Optimization (GSPO), a novel reinforcement learning algorithm designed for training large language models.\n- Unlike previous methods that use token-level importance ratios, GSPO leverages sequence-level importance ratios and clipping for improved stability and efficiency.\n- GSPO demonstrates superior performance and stability compared to the GRPO algorithm, particularly when training Mixture-of-Experts (MoE) models, resolving stability challenges inherent in these models.\n- The algorithm's sequence-level optimization aligns reward and optimization units, theoretically addressing issues of high variance training noise found in existing methods.\n- The improvements made by GSPO contributed to significant enhancements in the latest Qwen3 models, showcasing its effectiveness in large-scale RL training.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "LAPO: Internalizing Reasoning Efficiency via Length-Adaptive Policy\n  Optimization",
+        "authors": "Linjuan Wu, Shangke Lyu, Xingyu Wu, tricktreat, yanyc",
+        "link": "https://arxiv.org/abs/2507.15758",
+        "github_repo": "https://github.com/zju-real/lapo;",
+        "summary": "- This paper introduces Length-Adaptive Policy Optimization (LAPO), a novel framework that enhances the reasoning efficiency of large language models (LLMs) by enabling them to dynamically adjust reasoning length based on problem complexity.\n- LAPO is a two-stage reinforcement learning process: the discovery stage learns natural reasoning patterns, and the internalization stage uses these patterns to guide the model's reasoning process.\n- The framework demonstrates remarkable efficiency gains, reducing token usage by up to 40.9% while improving accuracy by 2.3% on mathematical reasoning benchmarks.\n- LAPO outperforms existing methods that either rely on rigid length constraints or post-hoc interventions, showcasing the efficacy of internalizing length control.\n- Analysis shows that models trained with LAPO develop emergent abilities to allocate computational resources based on problem complexity, making them more efficient and effective reasoners.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zju-real/lapo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "MUR: Momentum Uncertainty guided Reasoning for Large Language Models",
+        "authors": "Jian Zhang, Yifei Li, Rongman Xu, Fangzhi Xu, Hang Yan",
+        "link": "https://arxiv.org/abs/2507.14958",
+        "github_repo": null,
+        "summary": " - This paper introduces MUR, a novel method for improving the reasoning efficiency of Large Language Models (LLMs) without additional training.\n- MUR dynamically allocates computational resources to critical reasoning steps by tracking and aggregating step-wise uncertainty using a momentum-based approach.\n- The method introduces a y-control mechanism to flexibly control the reasoning budget and performance via a single hyperparameter.\n- Comprehensive evaluations across four challenging benchmarks demonstrate that MUR reduces computation by over 50% on average while improving accuracy by 0.62-3.37%.\n- Theoretical analysis supports the superiority of MUR in terms of stability and convergence.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/yayayacc/MUR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "TTS-VAR: A Test-Time Scaling Framework for Visual Auto-Regressive\n  Generation",
+        "authors": "Yujie Wei, Shiwei Zhang, Yukang Chen, Ruihang Chu, Zhekai Chen",
+        "link": "https://arxiv.org/abs/2507.18537",
+        "github_repo": "https://github.com/ali-vilab/TTS-VAR",
+        "summary": "- This paper introduces TTS-VAR, a novel test-time scaling framework for visual autoregressive (VAR) models.  \n- The framework models the image generation process as a path-searching problem, dynamically balancing computational efficiency and exploration capacity.\n- TTS-VAR incorporates an adaptive descending batch size schedule, clustering-based diversity search (at coarse scales), and resampling-based potential selection (at fine scales). \n- Experiments on the Infinity VAR model demonstrate a notable 8.7% improvement in GenEval score (from 0.69 to 0.75), outperforming existing test-time scaling methods. \n- The authors' key insights highlight that early-stage structural features significantly influence final image quality and that resampling efficacy varies across generation scales.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ali-vilab/TTS-VAR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "Captain Cinema: Towards Short Movie Generation",
+        "authors": "Yang Zhao, Shengqu Cai, Lvmin Zhang, Ceyuan Yang, Junfei Xiao",
+        "link": "https://arxiv.org/abs/2507.18634",
+        "github_repo": null,
+        "summary": "- The paper introduces Captain Cinema, a novel framework for short movie generation that combines top-down keyframe planning with bottom-up video synthesis.\n- The model architecture consists of two modules: a top-down planner that generates keyframes based on textual descriptions and a bottom-up video synthesizer that uses these keyframes to create the video.\n- Captain Cinema uses an interleaved training strategy to generate long-context video data, addressing challenges like exploding context lengths and storyline discontinuities.\n- Experiments show that Captain Cinema outperforms existing methods in automated short movie creation, resulting in visually coherent and narratively consistent movies.\n- The approach uses GoldenMem, a memory mechanism to handle long-range dependencies, and a dynamic stride sampling strategy for efficient generation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "EarthCrafter: Scalable 3D Earth Generation via Dual-Sparse Latent\n  Diffusion",
+        "authors": "Jing Wang, Wen Qian, Chaohui Yu, Chenjie Cao, ShuYaoLiu",
+        "link": "https://arxiv.org/abs/2507.16535",
+        "github_repo": "https://github.com/whiteinblue/EarthCrafter",
+        "summary": " - The paper introduces EarthCrafter, a novel framework for large-scale 3D Earth generation, and Aerial-Earth3D, a large-scale 3D aerial dataset containing 50k curated scenes of 600m x 600m each. \n- EarthCrafter utilizes a dual-sparse latent diffusion model which separates the generation of structure and texture into two components, employing dual-sparse 3D VAEs to compress high-resolution geometric voxels and textural 2D Gaussian Splats (2DGS) into compact latent spaces. \n- The model incorporates condition-aware flow matching models trained on mixed inputs, demonstrating superior performance in large-scale generation and versatile applications such as semantic-guided urban layout generation and unconditional terrain synthesis. \n- Extensive experiments show that EarthCrafter outperforms existing methods in terms of extremely large-scale generation, maintaining geographic plausibility through rich data priors from Aerial-Earth3D. \n- EarthCrafter supports diverse applications, including semantic-guided urban layout generation, unconditional terrain synthesis, and high-fidelity geospatial modeling.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/whiteinblue/EarthCrafter"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "Hierarchical Budget Policy Optimization for Adaptive Reasoning",
+        "authors": "Xingyu Wu, Linjuan Wu, tricktreat, yanyc, paradox122",
+        "link": "https://arxiv.org/abs/2507.15844",
+        "github_repo": "https://github.com/zju-real/hbpo",
+        "summary": "- This paper introduces Hierarchical Budget Policy Optimization (HBPO), a novel reinforcement learning framework that enhances the efficiency of large reasoning models without sacrificing accuracy.\n- HBPO addresses the challenge of exploration space collapse by partitioning rollout samples into multiple subgroups with distinct token budgets, enabling efficient resource allocation.\n- The framework introduces differentiated reward mechanisms that incentivize budget-aware behavior, allowing models to automatically adjust reasoning depth based on problem complexity.\n- Extensive experiments demonstrate that HBPO reduces average token usage by up to 60.6% while improving accuracy by 3.14% across four reasoning benchmarks.\n- Unlike existing methods that rely on external constraints or discrete mode selection, HBPO exhibits emergent adaptive behavior, allowing models to automatically adjust reasoning depth based on problem complexity.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/zju-real/hbpo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "DriftMoE: A Mixture of Experts Approach to Handle Concept Drifts",
+        "authors": "Ricardo Sim\u00f3n Carbajo, Miguel Aspis, suarezcetrulo, sebasmos",
+        "link": "https://arxiv.org/abs/2507.18464",
+        "github_repo": "https://github.com/miguel-ceadar/drift-moe",
+        "summary": "- This paper introduces DriftMoE, a novel online Mixture-of-Experts (MoE) architecture designed for handling concept drift in data streams.\n- DriftMoE uses a co-training framework where a neural network router is trained alongside a pool of incremental Hoeffding tree experts, enabling expert specialization.\n- The key innovation is a symbiotic learning loop that reinforces accurate experts, accelerating specialization and improving prediction.\n- Experiments on various benchmarks demonstrated that DriftMoE achieves competitive results with state-of-the-art adaptive ensemble methods.\n- DriftMoE provides a principled and efficient approach to concept drift adaptation, especially with complex and multi-faceted drift scenarios.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/miguel-ceadar/drift-moe"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "Technical Report of TeleChat2, TeleChat2.5 and T1",
+        "authors": "Yu Zhao, Chao Wang, Yitong Yao, Xinzhang Liu, Zihan Wang",
+        "link": "https://arxiv.org/abs/2507.18013",
+        "github_repo": null,
+        "summary": "This paper introduces three new large language models: TeleChat2, TeleChat2.5, and T1.  These models utilize enhanced training strategies, including a 10-trillion token pre-training phase and techniques like Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO).  TeleChat2.5 prioritizes speed, while T1 excels in complex reasoning tasks.  Benchmark results indicate that T1-115B outperforms existing models like OpenAI's 01-mini and GPT-40.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Tele-AI/TeleChat2",
+            "https://github.com/Tele-AI/TeleChat2.5",
+            "https://github.com/Tele-AI/T1"
+        ],
+        "huggingface_urls": [
+            "https://modelscope.cn/models/TeleAI/TeleChat2-35B",
+            "https://modelscope.cn/models/TeleAI/TeleChat2-115B",
+            "https://modelscope.cn/models/TeleAI/TeleChat2.5-35B",
+            "https://modelscope.cn/models/TeleAI/TeleChat2.5-115B",
+            "https://modelscope.cn/models/TeleAI/T1-35B",
+            "https://modelscope.cn/models/TeleAI/T1-115B"
+        ],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "A New Pair of GloVes",
+        "authors": "Christopher D. Manning, John Bauer, Riley Carlson",
+        "link": "https://arxiv.org/abs/2507.18103",
+        "github_repo": null,
+        "summary": "- This paper introduces updated 2024 English GloVe word embedding models, addressing limitations of the 2014 models by incorporating newer data and improved vocabulary selection techniques.\n- The new models were trained using Wikipedia, Gigaword, and a subset of the Dolma corpus, demonstrating improved coverage of contemporary language.\n- Evaluations on word analogy and similarity tasks show comparable performance to the 2014 models, while NER evaluations highlight improved performance on recent, temporally dependent datasets.\n- The updated lexicon includes numerous new words and expressions reflecting current linguistic and cultural trends, enriching the semantic expressiveness of the embeddings.\n- Overall, these improved embeddings are valuable for low-resource settings, computationally efficient models, and interpretability-focused applications.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "DMOSpeech 2: Reinforcement Learning for Duration Prediction in\n  Metric-Optimized Speech Synthesis",
+        "authors": "Kaifeng Xu, Cheng Niu, Fei Tao, Xilin Jiang, Yinghao Aaron Li",
+        "link": "https://arxiv.org/abs/2507.14988",
+        "github_repo": null,
+        "summary": "- DMOSpeech 2 is a novel model that extends metric optimization to the duration predictor in text-to-speech synthesis using a reinforcement learning approach.\n- It uses a novel duration policy framework with group relative preference optimization (GRPO), speaker similarity, and word error rate as reward signals.\n- The model introduces teacher-guided sampling, a hybrid approach that leverages a teacher model for initial denoising steps, improving output diversity and efficiency.\n- DMOSpeech 2 demonstrates superior performance across all metrics compared to previous systems, reducing sampling steps by half without quality degradation.\n- The audio samples, code, and pre-trained models are publicly available.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://dmospeech2.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "GLiNER2: An Efficient Multi-Task Information Extraction System with\n  Schema-Driven Interface",
+        "authors": "Ash Lewis, George Hurn-Maloney, Oliver Boyd, Gil Pasternak, Urchade Zaratiana",
+        "link": "https://arxiv.org/abs/2507.18546",
+        "github_repo": "https://github.com/fastino-ai/GLiNER2",
+        "summary": "- This paper introduces GLiNER2, a unified multi-task information extraction framework that improves upon the original GLINER architecture.\n- GLiNER2 is designed for CPU efficiency and supports named entity recognition, text classification, and hierarchical structured data extraction within a single model.\n- The model utilizes a schema-driven interface for intuitive task composition and is implemented as an open-source Python library.\n- Experimental results demonstrate competitive performance across various benchmarks, with substantial improvements in accessibility compared to LLM-based alternatives.\n- The authors highlight GLiNER2's enhanced efficiency and CPU performance as key advantages for practical applications, particularly in resource-constrained environments.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Token Classification",
+            "Zero-Shot Classification",
+            "Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/fastino-ai/GLiNER2"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/knowledgator/GLiClass"
+        ],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "TeEFusion: Blending Text Embeddings to Distill Classifier-Free Guidance",
+        "authors": "Zhao Xu, Qing-Guo Chen, Xiaohao Chen, Minghao Fu, Flourish",
+        "link": "https://arxiv.org/abs/2507.18192",
+        "github_repo": "https://github.com/AIDC-AI/TeEFusion",
+        "summary": "- TeEFusion is a novel distillation method that improves the efficiency of text-to-image synthesis by directly incorporating guidance magnitude into text embeddings.\n- It reconstructs the desired guidance without adding extra parameters, allowing the student model to learn from the teacher model's complex sampling strategy.\n- TeEFusion achieves inference speeds up to 6x faster than the teacher model while maintaining comparable image quality.\n- Extensive experiments on state-of-the-art models demonstrate that TeEFusion closely mimics the teacher's performance with a simpler and more efficient sampling strategy.\n- The method is compatible with various sampling methods and shows significant improvements over baseline methods in terms of aesthetic scoring, object composition, and prompt-following ability.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/AIDC-AI/TeEFusion"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "Discovering and using Spelke segments",
+        "authors": "Luca Thomas Wheeler, Seungwoo Kim, Lilian Naing Chen, Klemen Kotar, Rahul Venkatesh",
+        "link": "https://arxiv.org/abs/2507.16038",
+        "github_repo": null,
+        "summary": "- This paper introduces SpelkeNet, a self-supervised visual world model that predicts distributions over future motions to extract Spelke segments (category-agnostic groupings of regions based on responses to forces).\n- SpelkeNet uses a statistical counterfactual probing method, applying virtual pokes to high motion-affordance regions and using expected displacement maps to define Spelke segments.\n- A new benchmark dataset, SpelkeBench, is introduced to evaluate Spelke object discovery, showing SpelkeNet outperforms supervised baselines like SegmentAnything (SAM) on this benchmark.\n- The utility of Spelke segments is demonstrated in downstream applications, including 3D object manipulation, where they achieve superior performance compared to using standard segmentation approaches on the 3DEditBench benchmark.\n-  SpelkeNet implicitly learns to understand physical properties such as support relationships and material type (rigidity/deformability) through analysis of motion patterns.",
+        "classification": [
+            "Image Segmentation",
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://neuroailab.github.io/spelke_net"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "SegDT: A Diffusion Transformer-Based Segmentation Model for Medical\n  Imaging",
+        "authors": "Abdenour Hadid, Fadi Dornaika, Gaby Maroun, Bekhouche",
+        "link": "https://arxiv.org/abs/2507.15595",
+        "github_repo": "https://github.com/Bekhouche/SegDT",
+        "summary": "- This paper introduces SegDT, a novel segmentation model for medical imaging based on the diffusion transformer (DiT).\n- The model architecture consists of a Variational Autoencoder (VAE) encoder, a DiT, and a VAE decoder, designed for efficiency on low-cost hardware.\n- SegDT incorporates rectified flow to improve generation quality with reduced inference steps, enhancing the flexibility of standard diffusion models.\n- Evaluations on three benchmark datasets demonstrate that SegDT achieves state-of-the-art results while maintaining fast inference speeds.\n- The code for SegDT is publicly available on GitHub, promoting reproducibility and facilitating real-world medical applications.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/Bekhouche/SegDT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "Deep Learning-Based Age Estimation and Gender Deep Learning-Based Age\n  Estimation and Gender Classification for Targeted Advertisement",
+        "authors": "Nisar Ahmed, ImranzamanML",
+        "link": "https://arxiv.org/abs/2507.18565",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel deep learning-based approach for simultaneously classifying age and gender from facial images, aiming to improve the effectiveness of targeted advertising.\n- A custom Convolutional Neural Network (CNN) architecture is proposed, designed to leverage the correlation between age and gender information in facial features, unlike previous methods that often handled these tasks separately.\n- The model is trained on a large, diverse dataset of facial images, pre-processed to ensure robustness against variations in lighting, pose, and image quality.\n- Experimental results show a notable improvement in gender classification accuracy (95%) and a competitive mean absolute error (5.77 years) for age estimation.\n- The performance across different age groups is analyzed, highlighting the challenges in accurately estimating the age of younger individuals, which suggests the need for further data augmentation and model refinement.",
+        "classification": [
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    },
+    {
+        "title": "Agentar-Fin-R1: Enhancing Financial Intelligence through Domain\n  Expertise, Training Efficiency, and Advanced Reasoning",
+        "authors": "Zhaowen Zhou, Xiaoke Zhao, Longfei Liao, Xiyang Du, Yanjun Zheng",
+        "link": "https://arxiv.org/abs/2507.16802",
+        "github_repo": "https://github.com/antgroup/Finova",
+        "summary": "- Agentar-Fin-R1, a family of 8B and 32B parameter financial LLMs, is introduced, enhancing financial intelligence through domain expertise, training efficiency, and advanced reasoning.\n- The models are based on the Qwen3 foundation model and utilize a high-quality, systematic financial task label system with a multi-layered trustworthiness assurance framework.\n-  Agentar-Fin-R1 achieves state-of-the-art performance on mainstream financial benchmarks (Fineva, FinEval, and FinanceIQ) and general reasoning datasets (MATH-500 and GPQA-diamond).\n- A novel evaluation benchmark, Finova, is proposed to assess real-world deployment capabilities, focusing on agent-level financial reasoning and compliance verification.\n- Experimental results demonstrate that Agentar-Fin-R1 exhibits exceptional general reasoning capabilities and is a trustworthy solution for high-stakes financial applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/antgroup/Finova"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-25"
+    }
+]

@@ -1,0 +1,274 @@
+[
+    {
+        "title": "Agentic Reinforced Policy Optimization",
+        "authors": "Yifei Chen, Licheng Bao, Kai Ma, Hangyu Mao, Guanting Dong",
+        "link": "https://arxiv.org/abs/2507.19849",
+        "github_repo": "https://github.com/dongguanting/ARPO",
+        "summary": "This paper introduces Agentic Reinforced Policy Optimization (ARPO), a novel reinforcement learning algorithm designed for training multi-turn LLM-based agents.  ARPO addresses the limitations of existing trajectory-level RL algorithms by incorporating an entropy-based adaptive rollout mechanism, dynamically balancing global and step-level sampling to improve exploration at steps with high uncertainty after tool use.  Furthermore, ARPO integrates advantage attribution estimation to help LLMs internalize advantage differences in stepwise tool-use interactions.  Experiments across 13 benchmarks demonstrate ARPO's superiority over existing methods, achieving improved performance using only half the tool-use budget.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/dongguanting/ARPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World\n  Shorts",
+        "authors": "Junfu Pu, Teng Wang, Chen Li, Yixiao Ge, Yuying Ge",
+        "link": "https://arxiv.org/abs/2507.20939",
+        "github_repo": null,
+        "summary": "- This paper introduces ARC-Hunyuan-Video-7B, a 7B-parameter multimodal model for structured video comprehension.\n- The model architecture incorporates an audio encoder with fine-grained visual-audio synchronization and timestamp overlay mechanism for temporal awareness.\n- The model undergoes a comprehensive training regimen including pre-training, instruction fine-tuning, cold start, reinforcement learning, and final instruction fine-tuning.\n- ARC-Hunyuan-Video-7B outperforms existing baselines on ShortVid-Bench, a new benchmark for real-world short video comprehension, and excels in temporal video grounding.\n- The model's real-world deployment shows improvements in user engagement and satisfaction, and stress tests indicate an inference time of just 10 seconds for a one-minute video on H20 GPU.",
+        "classification": [
+            "Video Classification",
+            "Video-Text-to-Text",
+            "Multimodal",
+            "Summarization",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/ARC-Hunyuan-Video-7B"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Rep-MTL: Unleashing the Power of Representation-level Task Saliency for\n  Multi-Task Learning",
+        "authors": "Dan Xu, Lupin1998, ZedongWangAI",
+        "link": "https://arxiv.org/abs/2507.21049",
+        "github_repo": null,
+        "summary": "- This paper introduces Rep-MTL, a novel multi-task learning (MTL) method that leverages representation-level task saliency to improve performance.\n- Rep-MTL utilizes two modules: Task-specific Saliency Regulation (TSR) and Cross-task Saliency Alignment (CSA) to mitigate negative transfer and promote complementary information sharing.\n- Experiments conducted on four challenging MTL benchmarks demonstrate that Rep-MTL achieves competitive performance gains, outperforming existing methods in several scenarios.\n- Rep-MTL shows robustness to hyper-parameter settings and favorable efficiency compared to existing gradient manipulation methods.\n- Power Law exponent analysis validates Rep-MTL's effectiveness in balancing task-specific learning and cross-task sharing.",
+        "classification": [
+            "Image Segmentation",
+            "Depth Estimation",
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Reconstructing 4D Spatial Intelligence: A Survey",
+        "authors": "Chengfeng Zhao, Zhuowei Shen, Zhisheng Huang, Jiahao Lu, Yukang Cao",
+        "link": "https://arxiv.org/abs/2507.21045",
+        "github_repo": "https://github.com/yukangcao/Awesome-4D-Spatial-Intelligence",
+        "summary": "This survey paper provides a comprehensive overview of current methods for reconstructing 4D spatial intelligence from visual observations.  It organizes existing methods into a five-level hierarchical structure, ranging from low-level 3D cues to the incorporation of physical laws.  The survey discusses key challenges at each level and highlights promising future directions.  The authors also maintain an up-to-date project page with links to relevant resources. The paper categorizes the methods according to their respective developments and open challenges, offering a detailed analysis of their capabilities and limitations.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/yukangcao/Awesome-4D-Spatial-Intelligence"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "SmallThinker: A Family of Efficient Large Language Models Natively\n  Trained for Local Deployment",
+        "authors": "Dongliang Wei, Zhenliang Xue, qsstcl, Sorrymaker2024, yixinsong",
+        "link": "https://arxiv.org/abs/2507.20984",
+        "github_repo": null,
+        "summary": "- This paper introduces SmallThinker, a family of LLMs designed for local deployment, addressing limitations of existing cloud-based models.\n- SmallThinker utilizes a two-level sparse structure combining fine-grained Mixture-of-Experts (MoE) with sparse feed-forward networks, and a pre-attention router to optimize performance on devices with limited memory and slow storage.\n- The models achieve state-of-the-art performance, exceeding 20 tokens/s on ordinary CPUs with Q4_0 quantization, while consuming only 1GB and 8GB of memory, respectively.\n- SmallThinker-4B-A0.6B and SmallThinker-21B-A3B outperform comparable models in terms of both speed and accuracy, demonstrating the efficiency of its design.\n- The research challenges the traditional paradigm of adapting cloud-based LLMs for local deployment by designing them natively for resource-constrained environments.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "hf.co/PowerInfer/SmallThinker-4BA0.6B-Instruct",
+            "hf.co/PowerInfer/SmallThinker-21BA3B-Instruct"
+        ],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "A Survey of Self-Evolving Agents: On Path to Artificial Super\n  Intelligence",
+        "authors": "Jiayi Geng, Huan-ang Gao, XiangJinYu, didiforhugface, Alphamasterliu",
+        "link": "https://arxiv.org/abs/2507.21046",
+        "github_repo": null,
+        "summary": "This survey paper systematically reviews self-evolving agents, a novel paradigm shifting from scaling static models to developing agents capable of continual learning and adaptation.  It categorizes existing methods along three dimensions: what to evolve (models, context, tools, architecture), when to evolve (intra-test-time, inter-test-time), and how to evolve (reward-based, imitation/demonstration, population-based). The study examines evolutionary mechanisms across agent components, analyzes algorithmic and architectural designs, and highlights applications across diverse domains (coding, education, healthcare).  Furthermore, it identifies critical challenges, including safety, scalability, and co-evolutionary dynamics, and proposes research directions towards Artificial Super Intelligence (ASI). Finally, it establishes a unified framework to characterize self-evolutionary processes for future developments.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/CharlesQ9/Self-Evolving-Agents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Geometric-Mean Policy Optimization",
+        "authors": "Xun Wu, Jingye Chen, Yue Liu, Yuzhong Zhao, jeepliu",
+        "link": "https://arxiv.org/abs/2507.20673",
+        "github_repo": "https://github.com/callsys/GMPO",
+        "summary": "- This paper introduces Geometric-Mean Policy Optimization (GMPO), a novel reinforcement learning algorithm designed to enhance the reasoning capabilities of large language models.\n- GMPO addresses the instability issues associated with Group Relative Policy Optimization (GRPO) by optimizing the geometric mean of token-level rewards, thereby reducing sensitivity to outliers.\n- The proposed method demonstrates improved stability and surpasses GRPO by an average of 4.1% on multiple mathematical benchmarks and 1.4% on a multimodal reasoning benchmark.\n-  GMPO achieves these improvements by maintaining a more stable range of importance sampling ratios during training and also providing comprehensive theoretical and experimental analysis to support its design choices.\n- The code for GMPO is publicly available on GitHub.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/callsys/GMPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Region-based Cluster Discrimination for Visual Representation Learning",
+        "authors": "Yongle Zhao, Yin Xie, Athinklo, xiangan, Kaichengalex",
+        "link": "https://arxiv.org/abs/2507.20025",
+        "github_repo": "https://github.com/deepglint/MVT",
+        "summary": "- This paper introduces RICE, a novel method for visual representation learning that enhances region-level visual and OCR capabilities.\n- RICE uses a region transformer layer to extract rich regional semantics from a billion-scale candidate region dataset.\n- A unified region cluster discrimination loss jointly supports object and OCR learning, enabling efficient and scalable distributed training.\n- Extensive experiments show that RICE consistently outperforms previous methods on segmentation, dense detection, and visual perception for MLLMs.\n- The pre-trained models have been released at https://github.com/deepglint/MVT.",
+        "classification": [
+            "Multimodal",
+            "Image Feature Extraction",
+            "Zero-Shot Object Detection",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/deepglint/MVT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "GPT-IMAGE-EDIT-1.5M: A Million-Scale, GPT-Generated Image Dataset",
+        "authors": "Qing Liu, Letian Zhang, Siwei Yang, Yuhan Wang, tennant",
+        "link": "https://arxiv.org/abs/2507.21033",
+        "github_repo": null,
+        "summary": "- This paper introduces GPT-IMAGE-EDIT-1.5M, a large-scale image editing dataset containing over 1.5 million high-quality image editing triplets.\n- The dataset was constructed by leveraging GPT-4 to improve three existing image editing datasets (OmniEdit, HQ-Edit, and UltraEdit) by regenerating output images, selectively rewriting prompts, and enhancing semantic clarity.\n- The effectiveness of GPT-IMAGE-EDIT-1.5M was validated by fine-tuning open-source models, which achieved state-of-the-art performance on several benchmarks, exceeding previously published open-source methods.\n- The key innovation lies in using GPT-4 to systematically unify and refine existing datasets, resulting in a high-quality, large-scale resource that addresses the scarcity of high-quality training data for open-source instruction-guided image editing.\n- The dataset's availability is expected to accelerate research in instruction-guided image editing.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/wyhlovecpp/GPT-Image-Edit"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/UCSC-VLAA/GPT-Image-Edit-1.5M"
+        ],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "UloRL:An Ultra-Long Output Reinforcement Learning Approach for Advancing\n  Large Language Models' Reasoning Abilities",
+        "authors": "Yang Li, Shaohua Chen, Tao Yang, forestliutc, dongdongdongdu",
+        "link": "https://arxiv.org/abs/2507.19766",
+        "github_repo": null,
+        "summary": "- This paper introduces UloRL, a novel ultra-long output reinforcement learning approach designed to enhance the reasoning capabilities of large language models.\n- The core of UloRL involves segmenting ultra-long outputs into shorter segments for efficient training, mitigating delays from long-tail sequence distributions.\n- It also introduces dynamic masking of well-mastered positive tokens to prevent entropy collapse, a common issue in RL training.\n- Experiments on the Qwen3-30B-A3B model show improvements on AIME2025 (from 70.9% to 85.1%) and BeyondAIME (from 50.7% to 61.9%), surpassing even the Qwen3-235B-A22B model.\n- The code and model will be released to the community for further use.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/liushulinle/ULORL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "ForCenNet: Foreground-Centric Network for Document Image Rectification",
+        "authors": "Jia Li, Dong Guo, Qiang Li, Peng Cai, Kaichengalex",
+        "link": "https://arxiv.org/abs/2507.19804",
+        "github_repo": "https://github.com/caipeng328/ForCenNet",
+        "summary": "- This paper introduces ForCenNet, a foreground-centric network for document image rectification that outperforms existing methods on four benchmark datasets.\n- ForCenNet utilizes a foreground-centric label generation method to extract detailed foreground elements (text, lines, drawings) from undistorted images.\n- A foreground-centric mask mechanism enhances the distinction between readable and background regions to guide the model's focus on important features.\n- A curvature consistency loss leverages detailed foreground labels to improve the model's understanding of geometric distortion.\n- The quantitative results show that ForCenNet effectively undistorts layout elements, achieving state-of-the-art performance on four real-world benchmarks.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/caipeng328/ForCenNet"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Met^2Net: A Decoupled Two-Stage Spatio-Temporal Forecasting Model for\n  Complex Meteorological Systems",
+        "authors": "Xiaolin Qin, Min Chen, Hao Yang, Shaohan Li",
+        "link": "https://arxiv.org/abs/2507.17189",
+        "github_repo": "https://github.com/ShremG/Met2Net",
+        "summary": "- The paper introduces Met\u00b2Net, a novel decoupled two-stage spatio-temporal forecasting model for complex meteorological systems that addresses limitations in existing end-to-end methods.\n- Met\u00b2Net uses separate encoders and decoders for each meteorological variable, improving representation consistency and mitigating task inconformity compared to traditional two-stage models.\n- The model incorporates a self-attention mechanism for multivariable fusion in the latent space, further enhancing performance.\n- Extensive experiments demonstrate state-of-the-art performance, with improvements in MSE for near-surface air temperature and relative humidity predictions by 28.82% and 23.39%, respectively.\n- The proposed implicit two-stage training method, with separate parameter updates and momentum adjustments for the different modules, effectively enhances the alignment of objectives across the two stages.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [
+            "https://github.com/ShremG/Met2Net"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "ScenePainter: Semantically Consistent Perpetual 3D Scene Generation with\n  Concept Relation Alignment",
+        "authors": "Khodchaphun Hirunyaratsameewong, Chang Liu, Fangfu Liu, Shengjun Zhang, xiac24",
+        "link": "https://arxiv.org/abs/2507.19058",
+        "github_repo": null,
+        "summary": "- ScenePainter is a novel framework for semantically consistent perpetual 3D scene generation that leverages concept relation alignment to address the semantic drift issue.\n- It employs a hierarchical graph structure (SceneConceptGraph) to represent relationships among multi-level scene concepts, guiding the outpainting process.\n- ScenePainter aligns the outpainter's scene-specific prior with the comprehension of the current scene via a two-stage framework: Concept Relation Construction and Concept Relation Refinement.\n- Extensive experiments demonstrate that ScenePainter outperforms existing methods in generating semantically consistent and visually diverse 3D view sequences.\n- Qualitative and quantitative evaluations show improved results on the tasks of Single Image Customization and 3D Views Generation compared to baselines such as WonderJourney and SceneScape.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://xiac20.github.io/ScenePainter/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Music Arena: Live Evaluation for Text-to-Music",
+        "authors": "Wei-Lin Chiang, Anastasios N. Angelopoulos, Wayne Chi, Yonghyun Kim, chrisdonahue",
+        "link": "https://arxiv.org/abs/2507.20900",
+        "github_repo": null,
+        "summary": "- The paper introduces Music Arena, an open platform for human preference evaluation of text-to-music (TTM) models. \n- Music Arena addresses challenges in TTM evaluation by providing a scalable and standardized approach for collecting human preferences. \n- The platform features an LLM-based system for prompt moderation and routing, detailed preference collection, and a rolling data release policy. \n- Music Arena's modular architecture allows for easy integration of new TTM systems while maintaining a unified evaluation protocol. \n- The authors demonstrate how Music Arena addresses key challenges in the TTM ecosystem and showcases the potential of live evaluation for AI domains with unique characteristics.",
+        "classification": [
+            "Audio",
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://github.com/gclef-cmu/music-arena"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "JAM: A Tiny Flow-based Song Generator with Fine-grained Controllability\n  and Aesthetic Alignment",
+        "authors": "Amir Ali Bagherzadeh, Taylor Gautreaux, Navonil Majumder, Renhang Liu, hungchiayu",
+        "link": "https://arxiv.org/abs/2507.20880",
+        "github_repo": "https://github.com/declare-lab/jamify",
+        "summary": "- This paper introduces JAM, a novel 530M parameter flow-based model for high-fidelity lyrics-to-song generation.\n- JAM offers fine-grained controllability at the word and phoneme levels, enabling precise control over song rhythm and timing.\n- The model incorporates aesthetic alignment through direct preference optimization, iteratively refining the model using a synthetic dataset.\n- Experimental results demonstrate that JAM outperforms existing models in terms of musical quality and lyric fidelity, achieving a word error rate (WER) of 0.151 and a phoneme error rate (PER) of 0.101.\n- The authors introduce a new evaluation dataset, JAME, to support standardized and transparent evaluation of lyrics-to-song generation models.",
+        "classification": [
+            "Text-to-Audio"
+        ],
+        "github_urls": [
+            "https://github.com/declare-lab/jamify"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/declare-lab/JAM-0.5"
+        ],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty",
+        "authors": "Leshem Choshen, Idan Shenfeld, Stewart Slocum, Isha Puri, Mehul Damani",
+        "link": "https://arxiv.org/abs/2507.16806",
+        "github_repo": null,
+        "summary": "This paper introduces RLCR, a novel reinforcement learning approach for training language models to reason about their uncertainty.  RLCR augments the standard binary correctness reward with a Brier score, incentivizing calibrated confidence estimates alongside accurate predictions.  Theoretical analysis proves that RLCR optimizes for both accuracy and calibration. Empirical results across diverse datasets demonstrate that RLCR substantially improves calibration without sacrificing accuracy, outperforming both standard RL training and post-hoc calibration methods.  Finally,  the study shows that verbalized confidence scores can be leveraged at test time to further improve model performance.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    },
+    {
+        "title": "GenoMAS: A Multi-Agent Framework for Scientific Discovery via\n  Code-Driven Gene Expression Analysis",
+        "authors": "Haohan Wang, Yijiang Li, Liu-Hy",
+        "link": "https://arxiv.org/abs/2507.21035",
+        "github_repo": "https://github.com/Liu-Hy/GenoMAS",
+        "summary": "GenoMAS is a novel multi-agent framework designed for scientific discovery through code-driven gene expression analysis. It leverages six specialized large language models (LLMs) to automate complex workflows and surpasses existing methods by 10.61% and 16.85% on the GenoTEX benchmark in data preprocessing and gene identification, respectively.  The framework integrates autonomous agents and structured workflows for enhanced flexibility and reliability, addressing challenges in handling noisy data and adapting to edge cases.  GenoMAS surfaces biologically plausible gene-phenotype associations, corroborated by the literature, while adjusting for latent confounders.  The framework introduces a novel guided-planning mechanism and uses a typed message-passing protocol for efficient agent collaboration.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/Liu-Hy/GenoMAS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-29"
+    }
+]

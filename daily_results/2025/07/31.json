@@ -1,0 +1,136 @@
+[
+    {
+        "title": "ScreenCoder: Advancing Visual-to-Code Generation for Front-End\n  Automation via Modular Multimodal Agents",
+        "authors": "Qunzhong Wang, Yuxuan Wan, Yaozhi Zheng, Yilei Jiang, csuhan",
+        "link": "https://arxiv.org/abs/2507.22827",
+        "github_repo": "https://github.com/leigest519/ScreenCoder",
+        "summary": "- This paper introduces ScreenCoder, a modular multi-agent framework for UI-to-code generation that addresses limitations of existing end-to-end methods by decomposing the task into grounding, planning, and generation stages.\n- The framework consists of three agents: a grounding agent (detects and labels UI components), a planning agent (constructs a hierarchical layout), and a generation agent (produces HTML/CSS code via adaptive prompt-based synthesis).\n- ScreenCoder achieves state-of-the-art performance in layout accuracy, structural coherence, and code correctness, outperforming existing methods on various evaluation metrics.\n- The framework also functions as a scalable data engine that automatically generates large-scale image-code pairs for training and improving vision-language models.\n- Extensive experiments demonstrate that ScreenCoder achieves significant improvements in both inference-time performance and the quality of generated code.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/leigest519/ScreenCoder"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "Falcon-H1: A Family of Hybrid-Head Language Models Redefining Efficiency\n  and Performance",
+        "authors": "Maksim Velikanov, Iheb-Chaabane, ifarhat1993, ybelkada, JingweiZuo",
+        "link": "https://arxiv.org/abs/2507.22448",
+        "github_repo": null,
+        "summary": "The paper introduces Falcon-H1, a new series of large language models featuring a parallel hybrid architecture combining Transformer attention with State Space Models (SSMs).  The models are released in various sizes (0.5B, 1.5B, 3B, 7B, and 34B parameters) and are optimized for high performance and efficiency.  Falcon-H1-34B-Instruct outperforms leading models up to 70B parameters on various benchmarks despite being approximately half the size and trained on a fraction of the data.  All Falcon-H1 models are open-source, supporting up to 256K tokens and 18 languages.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/tiiuae/falcon-h1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/tiiuae"
+        ],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "BANG: Dividing 3D Assets via Generative Exploded Dynamics",
+        "authors": "Wei Yang, Yinuo Bai, Haoran Jiang, Qixuan Zhang, ZarkLngeW",
+        "link": "https://arxiv.org/abs/2507.21493",
+        "github_repo": null,
+        "summary": " - This paper introduces BANG, a novel generative framework for dividing 3D assets into interpretable parts using Generative Exploded Dynamics.  The model uses a pre-trained latent diffusion model, fine-tuned for exploded dynamics with a lightweight exploded view adapter and temporal attention module, enabling smooth transitions and consistency. \n- BANG incorporates spatial prompts (bounding boxes and surface regions) for precise control over the decomposition process.  Furthermore, it leverages multimodal models (like GPT-4) for intuitive 2D-to-3D manipulations. \n- The framework enhances control over object decomposition, enabling users to specify which parts to decompose and how. \n- Experimental results demonstrate the effectiveness of BANG in generating high-quality exploded views with smooth transitions, which outperforms existing methods by preserving semantic and geometric coherence. \n- The authors show the application of BANG for 3D printing, part-level editing, interactive dialogues for part-level 3D analysis and creation, and 3D asset generation workflows.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Image Segmentation",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "VL-Cogito: Progressive Curriculum Reinforcement Learning for Advanced\n  Multimodal Reasoning",
+        "authors": "Sicong Leng, Chenghao Xiao, Ruifeng Yuan, 26hzhang, kenchan0226",
+        "link": "https://arxiv.org/abs/2507.22607",
+        "github_repo": null,
+        "summary": "- This paper introduces VL-Cogito, a multimodal large language model (MLLM) trained using a novel multi-stage Progressive Curriculum Reinforcement Learning (PCuRL) framework.\n- PCuRL incorporates an online difficulty soft weighting mechanism and a dynamic length reward mechanism to improve the model's reasoning abilities and efficiency.\n- VL-Cogito outperforms existing reasoning-oriented models on various multimodal benchmarks, achieving state-of-the-art or competitive performance across mathematics, science, logic, and general understanding domains.\n- Ablation studies confirm the effectiveness of PCuRL's components, demonstrating that the progressive curriculum strategy and the dynamic reward mechanism contribute significantly to VL-Cogito's superior performance.\n- The paper provides extensive experimental results and detailed visualizations of the training process, validating the effectiveness and efficiency of the proposed approach.",
+        "classification": [
+            "Multimodal",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba-damo-academy/VL-Cogito"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "Adapting Vehicle Detectors for Aerial Imagery to Unseen Domains with\n  Weak Supervision",
+        "authors": "Celso de Melo, Stanislav Panev, Zheyang Qin, Min0326, xiaofanghf",
+        "link": "https://arxiv.org/abs/2507.20976",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for adapting vehicle detectors trained on aerial imagery from one geographic region to unseen domains with weak supervision.\n- The core contribution is a multi-stage, multi-modal knowledge transfer framework that utilizes fine-tuned latent diffusion models (LDMs) to generate high-quality synthetic aerial images and their labels for data augmentation.\n- The proposed method outperforms baseline detectors trained on source domain data, weakly supervised adaptation methods, unsupervised domain adaptation methods, and open-set object detectors by a significant margin (4-23%, 6-10%, 7-40%, and more than 50%, respectively).\n- Two newly annotated aerial datasets from New Zealand and Utah are introduced to support further research in this area.\n- The effectiveness of the proposed method is demonstrated through extensive experiments across diverse aerial imagery domains.",
+        "classification": [
+            "Object Detection"
+        ],
+        "github_urls": [
+            "https://humansensinglab.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "Towards Omnimodal Expressions and Reasoning in Referring Audio-Visual\n  Segmentation",
+        "authors": "Yu-Gang Jiang, Guanquan Jie, Henghui Ding, Kaining Ying",
+        "link": "https://arxiv.org/abs/2507.22886",
+        "github_repo": null,
+        "summary": "- This paper introduces OmniAVS, a new benchmark dataset for omnimodal referring audio-visual segmentation, containing 2,104 videos and 61,095 multimodal referring expressions.\n- OmniAVS supports diverse multimodal referring expressions combining text, speech, sound, and images, emphasizing audio content understanding and complex reasoning.\n- The paper proposes Omnimodal Instructed Segmentation Assistant (OISA), a baseline model using a Multimodal Large Language Model (MLLM) for omnimodal referring audio-visual segmentation.\n- OISA incorporates Audio-Visual Interleaving for temporal alignment and query propagation for efficient segmentation, outperforming existing methods on OmniAVS and achieving competitive results on related tasks.\n- The experimental results demonstrate OISA's effectiveness on OmniAVS and other datasets, highlighting its capabilities in handling complex multimodal expressions and reasoning.",
+        "classification": [
+            "Image Segmentation",
+            "Multimodal",
+            "Audio Classification",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "Repair-R1: Better Test Before Repair",
+        "authors": "Quanjun Zhang, Xiaochen Xie, Haichuan Hu",
+        "link": "https://arxiv.org/abs/2507.22853",
+        "github_repo": "https://github.com/Tomsawyerhu/APR-RL",
+        "summary": "- Repair-R1 is a novel approach to automated program repair (APR) that incorporates test case generation into the model's training phase, unlike previous methods that only use test cases during inference.\n- The model uses reinforcement learning to co-optimize test generation and bug repair, resulting in improved defect localization and understanding.\n- Experimental results on four benchmarks show that Repair-R1 outperforms existing LLM-based APR methods by improving repair success rate by 2.68% to 48.29%, test generation success rate by 16.38% to 53.28%, and test coverage by 0.78% to 53.96%.\n- Repair-R1 addresses the limitations of existing LLM-based APR approaches by leveraging test cases during both training and inference, leading to better generalization and robustness.\n- The paper also presents a thorough experimental evaluation and ablation study which demonstrates the superiority of Repair-R1 compared to other methods.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Tomsawyerhu/APR-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-07-31"
+    },
+    {
+        "title": "Efficient Differentially Private Fine-Tuning of LLMs via Reinforcement\n  Learning",
+        "authors": "Gilbert Fridgen, Ramin Bahmani, Igor Tchappi, Amir Sartipi, akhadangi",
+        "link": "https://arxiv.org/abs/2507.22565",
+        "github_repo": null,
+        "summary": " - The paper introduces RLDP, a novel framework for differentially private fine-tuning of LLMs using reinforcement learning. \n- RLDP dynamically learns per-adapter gradient clipping thresholds and noise levels, outperforming seven strong baselines in terms of perplexity reduction (1.3-30.5%, mean 5.4%) and downstream utility gain (5.6%).\n- The framework achieves this by casting the DP optimization as a closed-loop control problem and using a soft actor-critic (SAC) hyper-policy.\n- RLDP also significantly reduces training steps (71% fewer on average) while maintaining the same privacy guarantees.\n- The approach has been validated on four model families (GPT2-small, Llama-3.2-1B/3B, and Mistral-7B) and is shown to be resistant to membership inference and canary extraction attacks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/"
+        ],
+        "date": "2025-07-31"
+    }
+]

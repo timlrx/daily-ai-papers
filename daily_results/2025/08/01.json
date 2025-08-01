@@ -1,0 +1,224 @@
+[
+    {
+        "title": "Seed-Prover: Deep and Broad Reasoning for Automated Theorem Proving",
+        "authors": "Zhicheng Jiang, Wenhao Huang, Liankai Huang, Jinming Gu, Luoxin Chen",
+        "link": "https://arxiv.org/abs/2507.23726",
+        "github_repo": null,
+        "summary": "- This paper introduces Seed-Prover, a novel lemma-style whole-proof reasoning model for automated theorem proving that iteratively refines its proof based on Lean feedback.\n- Seed-Prover outperforms the state-of-the-art by a large margin, proving 78.1% of formalized past IMO problems, saturating MiniF2F, and achieving over 50% on PutnamBench.\n- To address the lack of geometry support in Lean, the authors introduce Seed-Geometry, a geometry reasoning engine that outperforms previous formal geometry engines.\n- Seed-Prover leverages three test-time inference strategies that enable both deep and broad reasoning to solve IMO-level contest problems.\n- The authors demonstrate the effectiveness of their approach by participating in IMO 2025 and fully proving 5 out of 6 problems.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ByteDance-Seed/Seed-Prover"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Phi-Ground Tech Report: Advancing Perception in GUI Grounding",
+        "authors": "Kai Qiu, Qi Dai, Jialiang Zhu, Ziqiang Xu, Miaosen Zhang",
+        "link": "https://arxiv.org/abs/2507.23779",
+        "github_repo": null,
+        "summary": "[- The paper introduces Phi-Ground, a family of models achieving state-of-the-art performance across five GUI grounding benchmarks for models under 10B parameters in agent settings.\n- The models adopt a two-stage implementation: a large language model generates detailed reference expressions, and a smaller model outputs coordinates.\n- The study explores various data augmentation techniques, coordinate representations, and loss functions, highlighting the impact of input order and computational cost.\n- Phi-Ground demonstrates strong generalization capabilities across diverse benchmarks and improved in-domain performance through post-training.\n- The authors also discuss the challenges and ethical considerations surrounding the use of Computer Use Agents (CUAs).]",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://zhangmiaosen2000.github.io/Phi-Ground/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring\n  Challenges in Complex Conversations",
+        "authors": "Yiwen Guo, Wei Tao, Chengqian Ma",
+        "link": "https://arxiv.org/abs/2507.22968",
+        "github_repo": null,
+        "summary": "- This paper introduces C3, a new bilingual benchmark dataset for evaluating spoken dialogue models (SDMs) focusing on complex conversational phenomena like ambiguity and context-dependency.\n- The dataset contains 1079 instances in English and Chinese, encompassing five key challenges: phonological ambiguity, semantic ambiguity, omission, coreference, and multi-turn interactions.\n- C3 employs an LLM-based evaluation method aligning well with human judgment, facilitating a comprehensive analysis of SDM performance.\n- The empirical study highlights the distinct difficulties posed by the five phenomena, along with language-specific challenges.\n- The findings reveal that SDMs exhibit significant performance variations across different tasks and languages, emphasizing the need for improved robustness and cross-lingual capabilities in SDM development.",
+        "classification": [
+            "Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "RecGPT Technical Report",
+        "authors": "Jian Wu, Jiakai Tang, Gaoyang Guo, Dian Chen, Chao Yi",
+        "link": "https://arxiv.org/abs/2507.22879",
+        "github_repo": null,
+        "summary": " - RecGPT is a novel framework for recommender systems that utilizes large language models (LLMs) to model user intent and generate personalized explanations.\n- RecGPT is deployed on Taobao's homepage, demonstrating consistent performance improvements for users, merchants, and the platform. Online experiments show significant gains across various metrics like Click Through Rate (CTR), Daily Click Active Users (DCAU), and user Dwell Time (DT).\n- The framework addresses the limitations of existing log-fitting approaches by placing user intent at the center of the recommendation pipeline. This involves integrating LLMs into stages like user interest mining, item retrieval, and explanation generation.\n- RecGPT employs a multi-stage training paradigm that integrates reasoning-enhanced pre-alignment and self-training evolution, guided by a Human-LLM cooperative judge system. This ensures the effective alignment of general-purpose LLMs to domain-specific recommendation tasks.\n- The study validates the effectiveness of RecGPT through online A/B tests, human evaluation experiments, and case studies, demonstrating its ability to foster a more sustainable and mutually beneficial recommendation ecosystem.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation",
+            "Text2Text Generation",
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "villa-X: Enhancing Latent Action Modeling in Vision-Language-Action\n  Models",
+        "authors": "Kaixin Wang, Chuheng Zhang, Pushi Zhang, Hangxing Wei, Xiaoyu Chen",
+        "link": "https://arxiv.org/abs/2507.23682",
+        "github_repo": null,
+        "summary": "- This paper introduces villa-X, a novel Visual-Language-Latent-Action (ViLLA) framework that enhances latent action modeling in vision-language-action models for robot manipulation.\n- The model improves latent action learning by incorporating a proprio Forward Dynamics Model (FDM) module, which aligns latent tokens with robot states and actions.\n- villa-X jointly learns latent and robot action distributions through a joint diffusion process, conditioning robot action generation on latent action generation.\n- Experiments on simulated and real-world robotic setups demonstrate that villa-X outperforms existing methods across various benchmarks.\n- The ViLLA paradigm shows strong potential for future research on generalizable robot manipulation policies.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/villa-x"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Scalable Multi-Task Reinforcement Learning for Generalizable Spatial\n  Intelligence in Visuomotor Agents",
+        "authors": "Anji Liu, Bowei Zhang, Haiwen Xia, Zhancun Mu, Shaofei Cai",
+        "link": "https://arxiv.org/abs/2507.23698",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for scalable multi-task reinforcement learning for visuomotor agents that leverages a unified multi-task goal space and automated task synthesis.\n- The proposed method utilizes a cross-view goal specification to address the challenges of multi-task representation, which defines tasks using segmentation masks from a third-person view, enabling the agent to reason about spatial relationships.\n- An efficient distributed RL framework is developed to overcome engineering challenges in complex environments, supporting stable training of long-sequence Transformer-based policies.\n- The experimental results demonstrate that the RL-finetuned agents achieve zero-shot generalization to unseen environments, including real-world settings, significantly boosting interaction success rates and showcasing enhanced spatial reasoning capabilities.\n- This approach exhibits remarkable improvements over existing methods in complex Minecraft interaction tasks, particularly concerning scenarios with invisible target objects, emphasizing its potential in broader applications.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/CraftJarvis/ROCKET-3"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Persona Vectors: Monitoring and Controlling Character Traits in Language\n  Models",
+        "authors": "Jack Lindsey, Owain Evans, Henry Sleight, Andy Arditi, Runjin Chen",
+        "link": "https://arxiv.org/abs/2507.21509",
+        "github_repo": null,
+        "summary": "This paper introduces persona vectors, which are directions in a language model's activation space that correspond to specific personality traits.  These vectors can monitor personality changes during deployment and training.  A new automated pipeline extracts persona vectors from natural language descriptions.  Experiments show a strong correlation between persona vector shifts and personality changes, both intended and unintended.  A preventative steering method mitigates unwanted persona drift during finetuning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/safety-research/persona_vectors"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "On the Expressiveness of Softmax Attention: A Recurrent Neural Network\n  Perspective",
+        "authors": "Eric C. Larson, Gabriel Mongaras",
+        "link": "https://arxiv.org/abs/2507.23632",
+        "github_repo": null,
+        "summary": "- This paper introduces a recurrent neural network (RNN) formulation of softmax attention, which helps explain its superior performance compared to linear attention.\n- The RNN formulation reveals that softmax attention is a structured process with interpretable, sequential dynamics, not merely a heuristic construction.\n- Linear attention is derived as a first-order approximation of softmax attention in the RNN framework.\n- Ablation studies demonstrate that higher-order terms in the Taylor expansion contribute to the expressiveness of softmax attention.\n- The paper shows that replacing the softmax denominator with a vector norm maintains performance while using a gate leads to slight performance degradation.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/gmongaras/On-the-Expressiveness-of-Softmax-Attention-A-Recurrent-Neural-Network-Perspective"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "TARS: MinMax Token-Adaptive Preference Strategy for Hallucination\n  Reduction in MLLMs",
+        "authors": "Jiasheng Tang, Chang Liu, Zhiming Luo, Keda Tao, Kejia Zhang",
+        "link": "https://arxiv.org/abs/2507.21584",
+        "github_repo": null,
+        "summary": "- This paper introduces TARS, a novel token-adaptive preference strategy to mitigate hallucinations in large multimodal language models (MLLMs).\n- TARS reformulates direct preference optimization (DPO) as a min-max optimization problem, maximizing token-level distributional shifts under semantic constraints and minimizing expected preference loss.\n- The proposed method outperforms existing DPO baselines and matches GPT-40 in hallucination reduction, achieving a 13.2% hallucination rate on the AMBER benchmark.\n- Experiments show that TARS effectively reduces hallucinations without sacrificing factual grounding and improves visual grounding.\n- The method is data-efficient, requiring only 4.8k preference samples without expert feedback.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://kejiazhang-robust.github.io/tars_web"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Beyond Linear Bottlenecks: Spline-Based Knowledge Distillation for\n  Culturally Diverse Art Style Classification",
+        "authors": "Abdelmalik Taleb-Ahmed, Cosimo Distante, Salah Eddine Bekhouche, Abdellah Zakaria Sellam",
+        "link": "https://arxiv.org/abs/2507.23436",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel dual-teacher knowledge distillation framework for art style classification that uses Kolmogorov-Arnold Networks (KANs) in place of traditional MLPs for projection heads.\n- The KANs leverage spline-based activations to model nonlinear feature correlations, addressing the limitations of linear projection layers in capturing complex style-feature interactions.\n- Experiments on WikiArt and Pandora18k datasets show that the proposed method outperforms the baseline dual-teacher architecture with MLP projections in terms of Top-1 accuracy.\n- The improvement is attributed to the KANs' ability to disentangle complex style manifolds, leading to better linear probe accuracy.\n- The results highlight the importance of using nonlinear projection heads for art style classification tasks, especially when dealing with culturally diverse datasets.",
+        "classification": [
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Enhanced Arabic Text Retrieval with Attentive Relevance Scoring",
+        "authors": "Abdenour Hadid, Fadi Dornaika, Yazid Bounab, Azeddine Benlamoudi, Salah Eddine Bekhouche",
+        "link": "https://arxiv.org/abs/2507.23404",
+        "github_repo": "https://github.com/Bekhouche/APR",
+        "summary": "- The paper introduces APR, a novel Arabic Dense Passage Retrieval (DPR) framework that incorporates Attentive Relevance Scoring (ARS) for enhanced semantic matching.\n- APR uses a dual-encoder architecture with a lightweight Arabic-specific encoder (MiniBERT) and integrates ARS to improve retrieval performance.\n- The ARS module replaces standard interaction mechanisms with an adaptive scoring function, which more effectively models semantic relevance between questions and passages.\n- Experimental results on the ArabicaQA dataset show that APR outperforms existing state-of-the-art methods, achieving absolute gains of +0.91% in Top-1, +4.77% in Top-10, and +1.53% in Top-100 accuracy.\n- The code is made publicly available on GitHub.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Bekhouche/APR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "NeRF Is a Valuable Assistant for 3D Gaussian Splatting",
+        "authors": "ZeSheng Wang, Yufeng Wang, Takeo Igarashi, I-Chao Shen, Shuangkang Fang",
+        "link": "https://arxiv.org/abs/2507.23374",
+        "github_repo": null,
+        "summary": "- This paper introduces NeRF-GS, a novel framework that jointly optimizes Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) for efficient 3D scene representation.\n- NeRF-GS addresses limitations of 3DGS, such as sensitivity to Gaussian initialization, limited spatial awareness, and weak inter-Gaussian correlations, by leveraging NeRF's continuous spatial representation.\n- The framework progressively aligns 3DGS spatial features with NeRF, enabling both representations to be optimized within the same scene through shared 3D spatial information.\n- Experimental results show that NeRF-GS outperforms existing methods and achieves state-of-the-art performance on benchmark datasets.\n- The findings confirm that NeRF and 3DGS are complementary rather than competing, offering new insights into hybrid approaches combining both for efficient 3D scene representation.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "AgroBench: Vision-Language Model Benchmark in Agriculture",
+        "authors": "Yoshitaka Ushiku, Masaki Onishi, Hirokatsu Kataoka, Nakamasa Inoue, Risa Shinoda",
+        "link": "https://arxiv.org/abs/2507.20519",
+        "github_repo": null,
+        "summary": " - AgroBench, a comprehensive benchmark dataset for evaluating Vision-Language Models (VLMs) in agriculture, is introduced. \n- It contains 203 crop categories and 682 disease categories, surpassing previous benchmarks in scale and expert annotation. \n- The dataset focuses on seven key tasks, including disease identification and crop management, to evaluate various VLM capabilities in agricultural contexts.\n- Evaluation on AgroBench reveals that current VLMs struggle with fine-grained identification tasks, suggesting significant room for improvement. \n- The dataset and code are publicly available.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://dahlian00.github.io/AgroBenchPage/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Flow Equivariant Recurrent Neural Networks",
+        "authors": "T. Anderson Keller",
+        "link": "https://arxiv.org/abs/2507.14793",
+        "github_repo": null,
+        "summary": "The paper introduces a novel recurrent neural network architecture called the Flow Equivariant Recurrent Neural Network (FERNN), designed to handle time-parameterized symmetries in sequence data.  The FERNN extends existing group-equivariant RNNs by incorporating flow equivariance into the model architecture, allowing the model to generalize to unseen flow transformations.  Experiments on video sequence datasets demonstrate that FERNNs outperform standard RNNs in terms of training speed, length generalization, and velocity generalization.  FERNNs achieve superior performance on next-step prediction and sequence classification tasks. The authors provide empirical evidence supporting the benefits of flow equivariance in sequence models.",
+        "classification": [
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/akandykeller/FERNN"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    },
+    {
+        "title": "Efficient Machine Unlearning via Influence Approximation",
+        "authors": "Enhong Chen, Defu Lian, Chenwang Wu, Jiawei Liu",
+        "link": "https://arxiv.org/abs/2507.23257",
+        "github_repo": "https://github.com/Lolo1222/IAU",
+        "summary": "- This paper introduces a novel Influence Approximation Unlearning (IAU) algorithm for efficient machine unlearning, which leverages principles from incremental learning.\n- IAU achieves a superior balance among removal guarantee, unlearning efficiency, and comparable model utility compared to existing state-of-the-art unlearning methods.\n- The algorithm consists of three core modules: incremental approximation, gradient correction, and gradient restriction, working synergistically to achieve efficient unlearning.\n- Extensive empirical evaluations across diverse datasets and model architectures demonstrate IAU\u2019s superior performance in comparison with existing state-of-the-art methods.\n- The theoretical connection established between incremental learning and unlearning provides a novel framework for future advancements in unlearning research.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/Lolo1222/IAU"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-01"
+    }
+]

@@ -1,0 +1,173 @@
+[
+    {
+        "title": "Beyond Fixed: Variable-Length Denoising for Diffusion Large Language\n  Models",
+        "authors": "Jiaqi Wang, Yuhang Cao, Yuhang Zang, Xiaoyi Dong, Jinsong Li",
+        "link": "https://arxiv.org/abs/2508.00819",
+        "github_repo": "https://github.com/Li-Jinsong/DAEDAL",
+        "summary": "- This paper introduces DAEDAL, a novel training-free denoising strategy for Diffusion Large Language Models (DLLMs) that addresses the limitation of statically predefined generation lengths.\n- DAEDAL operates in two phases: 1) Initial Length Adjustment, where it iteratively expands the generation length guided by a sequence completion metric, and 2) Iterative Mask Insertion, where it dynamically expands insufficient generation regions.\n- Experiments on various benchmarks demonstrate that DAEDAL achieves performance comparable to, and in some cases superior to, meticulously tuned fixed-length baselines, while simultaneously improving computational efficiency.\n- By resolving the static length constraint, DAEDAL unlocks new potential for DLLMs, bridging the gap with autoregressive counterparts.\n- The method dynamically adjusts the length based on the task's complexity, resulting in improved performance and computational efficiency compared to fixed-length baselines.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Li-Jinsong/DAEDAL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "PixNerd: Pixel Neural Field Diffusion",
+        "authors": "Limin Wang, Weilin Huang, Chenhui Zhu, Ziteng Gao, Shuai Wang",
+        "link": "https://arxiv.org/abs/2507.23268",
+        "github_repo": null,
+        "summary": "- PixNerd is a novel single-stage, single-scale, efficient, end-to-end pixel-space diffusion model that leverages a neural field to model patch-wise decoding, eliminating the need for a VAE.\n- The model's architecture involves replacing the final linear projection in a diffusion transformer with a neural field, which predicts the weights of each patch's neural field MLPs.\n- PixNerd achieves competitive FID scores (2.15 on ImageNet 256x256 and 2.84 on ImageNet 512x512) without employing complex cascade pipelines or VAEs, outperforming several existing methods.\n- The model demonstrates effectiveness in text-to-image applications, achieving a competitive 0.73 overall score on the GenEval benchmark and an 80.9 overall score on the DPG benchmark.\n- PixNerd offers training-free arbitrary resolution generation by interpolating neural field coordinates without requiring additional training.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MCG-NJU/PixNerd"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/MCG-NJU/PixNerd"
+        ],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "SWE-Exp: Experience-Driven Software Issue Resolution",
+        "authors": "Heng Lian, Yuling Shi, Xiaodong Gu, Shaoxin Lin, Silin Chen",
+        "link": "https://arxiv.org/abs/2507.23361",
+        "github_repo": "https://github.com/YerbaPage/SWE-Exp",
+        "summary": "- This paper introduces SWE-Exp, a novel experience-enhanced approach for software issue resolution that leverages past resolution attempts to improve future performance.\n- SWE-Exp incorporates a multi-faceted experience bank that captures successful and failed repair attempts, enabling continuous learning across issues.\n- The model achieves a state-of-the-art resolution rate (41.6% Pass@1) on the SWE-bench-Verified dataset, outperforming existing methods.\n- The framework uses a dual-agent architecture, where an instructor agent formulates high-level strategies, and an assistant agent executes low-level operations.\n- The improvement in performance stems from utilizing past experiences to improve fault localization, reduce redundant exploration, and improve the quality of code modifications.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/YerbaPage/SWE-Exp"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "Multimodal Referring Segmentation: A Survey",
+        "authors": "Zuxuan Wu, Chang Liu, Shuting He, Song Tang, Henghui Ding",
+        "link": "https://arxiv.org/abs/2508.00265",
+        "github_repo": "https://github.com/henghuiding/Awesome-Multimodal-Referring-Segmentation",
+        "summary": "This survey paper provides a comprehensive overview of multimodal referring segmentation across various visual scenes (images, videos, and 3D scenes) and modalities (text, audio, and multi-modal cues).  The authors introduce a unified meta-architecture for referring segmentation, followed by a detailed review of representative methods for each scene and modality.  The survey also covers more recent trends such as Generalized Referring Expression (GREx) methods and their applications. Finally, the authors analyze existing benchmarks and their limitations.",
+        "classification": [
+            "Image Segmentation",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/henghuiding/Awesome-Multimodal-Referring-Segmentation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "3D-R1: Enhancing Reasoning in 3D VLMs for Unified Scene Understanding",
+        "authors": "Hao Tang, Zeyu Zhang, Ting Huang",
+        "link": "https://arxiv.org/abs/2507.23478",
+        "github_repo": "https://github.com/AIGeeksGroup/3D-R1",
+        "summary": " - 3D-R1 is a foundation model that enhances the reasoning capabilities of 3D Vision-Language Models (VLMs) by leveraging reinforcement learning and a high-quality synthetic dataset, Scene-30K. \n- The model architecture employs a multi-modal approach, integrating text, multi-view images, 3D point clouds, and depth maps to perform comprehensive 3D tasks as autoregressive sequence prediction.\n- 3D-R1 incorporates three reward functions within a GRPO-based RLHF policy to enhance reasoning capabilities, including perception, semantic similarity, and format rewards.\n- Experiments demonstrate that 3D-R1 significantly outperforms existing methods on various 3D scene understanding benchmarks, achieving an average improvement of 10%.\n- A dynamic view selection strategy is introduced to improve model efficiency and reduce reliance on pre-defined viewpoints.",
+        "classification": [
+            "Multimodal",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Visual Question Answering",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/AIGeeksGroup/3D-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "SWE-Debate: Competitive Multi-Agent Debate for Software Issue Resolution",
+        "authors": "Heng Lian, Xiaodong Gu, Shaoxin Lin, Yuling Shi, Han Li",
+        "link": "https://arxiv.org/abs/2507.23348",
+        "github_repo": "https://github.com/YerbaPage/SWE-Debate",
+        "summary": "- This paper introduces SWE-Debate, a novel competitive multi-agent debate framework for resolving software issues.\n- SWE-Debate leverages fault propagation traces generated from code dependency graphs and structured three-round debates among specialized agents to achieve more consolidated issue localization.\n- Experimental results on the SWE-bench benchmark demonstrate that SWE-Debate outperforms existing baselines by a large margin, achieving state-of-the-art results in open-source agent frameworks.\n- Ablation studies highlight the significant contributions of multiple chain generation, multi-agent debate, and the MCTS-based code modification agent to the overall performance.\n- The proposed method addresses the limitations of existing agent-based approaches by incorporating diverse reasoning paths and structured competitive analysis.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Question Answering",
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/YerbaPage/SWE-Debate"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges",
+        "authors": "Chengfei Lv, Zhiwen Chen, Yunfeng Wang, Kehua Feng, Yuqi Tang",
+        "link": "https://arxiv.org/abs/2508.00454",
+        "github_repo": null,
+        "summary": "- This paper introduces MTDEval, a novel multi-turn dialogue evaluator that efficiently aggregates preference knowledge from multiple Large Language Model (LLM) judges into a single model.\n- The model architecture consists of a text-embedding model with specialized scoring heads, trained using a learning-to-rank strategy.\n- MTDEval outperforms existing baselines across various multi-turn dialogue evaluation benchmarks, demonstrating its effectiveness and robustness in single rating, pairwise comparison, and multi-dimensional comparison tasks.\n- The efficiency of MTDEval is highlighted by its significantly reduced computational cost during inference compared to traditional multi-judge methods.\n- A large-scale pairwise preference dataset (P2-MTD) and a high-quality human-annotated evaluation dataset (Daily-MTD) are constructed and released to facilitate future research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/James-TYQ/MTDEval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "Investigating Hallucination in Conversations for Low Resource Languages",
+        "authors": "Fatemeh Jamshidi, Zheng Zhang, Souvika Sarkar, Md. Najib Hasan, Amit Das",
+        "link": "https://arxiv.org/abs/2507.22720",
+        "github_repo": null,
+        "summary": "- This paper investigates hallucination in conversational data across three low-resource languages (Hindi, Farsi, and Mandarin) using six different LLMs.\n- The main contribution is a comprehensive analysis of hallucination tendencies in these languages, considering both factual and linguistic errors.\n- The findings show significantly higher hallucination rates in Hindi and Farsi compared to Mandarin, highlighting the impact of data availability on LLM performance.\n- The study also analyzes the performance of different LLMs across these languages, showing that some models are more robust to hallucination than others.\n- The authors suggest several mitigation techniques for addressing hallucination, such as incorporating retrieval-augmented generation and using models specifically pretrained for the target languages.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/AmitDasRup123/LLM-Hallucination-Low-Resource-Languages/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "IGL-Nav: Incremental 3D Gaussian Localization for Image-goal Navigation",
+        "authors": "Jianjiang Feng, Ziwei Wang, Hang Yin, Xiuwei Xu, Wenxuan Guo",
+        "link": "https://arxiv.org/abs/2508.00823",
+        "github_repo": null,
+        "summary": "- This paper introduces IGL-Nav, a novel incremental 3D Gaussian Localization framework for efficient and 3D-aware image-goal navigation.\n- The model uses a feed-forward 3D Gaussian Splatting (3DGS) representation to incrementally update the scene representation as new images arrive, avoiding computationally expensive offline optimization.\n- IGL-Nav employs a coarse-to-fine localization strategy, first coarsely localizing the goal using geometric information for discrete space matching and then refining the localization with differentiable rendering when the agent is close to the goal.\n- Extensive experiments demonstrate that IGL-Nav outperforms existing state-of-the-art methods across diverse experimental configurations, including more challenging free-view image-goal settings.\n- The method is successfully deployed on a real-world robotic platform, using a cellphone image as a goal to guide navigation.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://gwxuan.github.io/IGL-Nav/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    },
+    {
+        "title": "SpA2V: Harnessing Spatial Auditory Cues for Audio-driven Spatially-aware\n  Video Generation",
+        "authors": "Long Chen, Qifeng Chen, Yazhou Xing, Yingqing He, Kien T. Pham",
+        "link": "https://arxiv.org/abs/2508.00782",
+        "github_repo": null,
+        "summary": "- SpA2V is a novel framework that leverages spatial auditory cues from audio to generate realistic videos with accurate semantic and spatial alignment.\n- The model uses a two-stage approach: Audio-guided Video Planning and Layout-grounded Video Generation.\n- Audio-guided Video Planning uses a Multimodal Large Language Model (MLLM) to construct Video Scene Layouts (VSLs) that capture spatial and semantic information from the audio.\n- Layout-grounded Video Generation uses a pre-trained diffusion model to generate videos based on the VSLs, achieving training-free video generation.\n- Experiments on a new benchmark, AVLBench, demonstrate that SpA2V outperforms state-of-the-art methods in generating videos with high semantic and spatial correspondence to input audios.",
+        "classification": [
+            "Audio-to-Audio",
+            "Text-to-Video",
+            "Audio Classification",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/tkpham3105/SpA2V"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-04"
+    }
+]

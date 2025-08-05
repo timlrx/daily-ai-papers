@@ -1,0 +1,114 @@
+[
+    {
+        "title": "Qwen-Image Technical Report",
+        "authors": "Kaiyuan Gao, Junyang Lin, Jingren Zhou, Jiahao Li, Chenfei Wu",
+        "link": "https://arxiv.org/abs/2508.02324",
+        "github_repo": "https://github.com/QwenLM/Qwen-Image",
+        "summary": "The paper introduces Qwen-Image, a multimodal image generation foundation model that achieves significant improvements in complex text rendering and precise image editing.  The model utilizes a dual-encoding mechanism incorporating Qwen2.5-VL and a VAE encoder to balance semantic consistency and visual fidelity during editing.  Evaluated on multiple benchmarks, Qwen-Image demonstrates state-of-the-art performance, particularly excelling in text rendering tasks, especially in Chinese.  The model architecture employs an improved multi-task training paradigm and a curriculum learning strategy for enhanced capabilities.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/QwenLM/Qwen-Image"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen-Image"
+        ],
+        "date": "2025-08-05"
+    },
+    {
+        "title": "SitEmb-v1.5: Improved Context-Aware Dense Retrieval for Semantic\n  Association and Long Story Comprehension",
+        "authors": "Liyan Xu, Lemao Liu, Yuqing Li, Jiangnan Li, Junjie Wu",
+        "link": "https://arxiv.org/abs/2508.01959",
+        "github_repo": null,
+        "summary": "- This paper introduces SitEmb, a novel situated embedding model for improved context-aware dense retrieval, addressing limitations of existing methods in handling long documents and complex semantic associations.\n- The model incorporates a broader context window into short chunk embeddings, enhancing retrieval performance without straining model capacity.\n- SitEmb significantly outperforms state-of-the-art embedding models on a curated book-plot retrieval dataset, showcasing superior performance with fewer parameters.\n- The model demonstrates strong results across diverse downstream applications, including long story comprehension tasks and semantic association tasks.\n- A residual learning framework is used to enhance situated context usage, enabling the model to focus on additional contextual information beyond shallow heuristics.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/SituatedEmbedding"
+        ],
+        "date": "2025-08-05"
+    },
+    {
+        "title": "CellForge: Agentic Design of Virtual Cell Models",
+        "authors": "Daniel Shao, Yan Cui, Jiapeng Chen, Zhuoyun Yu, Xiangru Tang",
+        "link": "https://arxiv.org/abs/2508.02276",
+        "github_repo": "https://github.com/gersteinlab/CellForge",
+        "summary": "This paper introduces CELLFORGE, a novel multi-agent system for automated virtual cell modeling.  CELLFORGE leverages a multi-agent framework to translate raw single-cell multi-omics data and research objectives into optimized computational models. The system consistently outperforms existing methods across diverse datasets, achieving up to 40% reduction in prediction error. CELLFORGE's architecture comprises three core modules: Task Analysis, Method Design, and Experiment Execution, enabling fully autonomous model generation.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/gersteinlab/CellForge"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-05"
+    },
+    {
+        "title": "Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report",
+        "authors": "Anu Vellore, Baturay Saglam, Blaine Nelson, Paul Kassianik, Sajana Weerawardhena",
+        "link": "https://arxiv.org/abs/2508.01059",
+        "github_repo": null,
+        "summary": "- This paper introduces Foundation-Sec-8B-Instruct, a cybersecurity-specialized large language model (LLM) built upon Llama 3.1.\n- The model undergoes instruction tuning and post-training on cybersecurity-focused datasets to enhance its cybersecurity knowledge and instruction-following capabilities.\n- Evaluation on various benchmarks demonstrates that Foundation-Sec-8B-Instruct achieves state-of-the-art performance on cybersecurity-specific tasks and competitive results on general post-training benchmarks.\n- The study analyzes the model's cybersecurity knowledge distribution across various topics and identifies potential biases and limitations, suggesting areas for further improvement.\n- A safety analysis is performed to evaluate the model's vulnerability to malicious prompts and toxic outputs, proposing safety mechanisms to mitigate risks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Foundation-models/Sec-8B-Instruct"
+        ],
+        "date": "2025-08-05"
+    },
+    {
+        "title": "Beyond the Trade-off: Self-Supervised Reinforcement Learning for\n  Reasoning Models' Instruction Following",
+        "authors": "Jiaqing Liang, Jie Zeng, Bowei Zhang, Qianyu He, Qingyu Ren",
+        "link": "https://arxiv.org/abs/2508.02150",
+        "github_repo": "https://github.com/Rainier-rq/verl-if",
+        "summary": "- This paper introduces a novel self-supervised reinforcement learning framework to enhance instruction-following capabilities in reasoning models without relying on external supervision.\n- The framework addresses the trade-off between reasoning and instruction-following abilities by leveraging the model's internal signals.\n- It employs a curriculum decomposition approach to handle multi-constraint instructions and uses a binary classification method for efficient reward modeling.\n- Extensive experiments demonstrate significant improvements in instruction following while maintaining reasoning performance across various benchmarks.\n- The proposed method offers a scalable and cost-effective solution compared to existing approaches that rely on stronger external models.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Rainier-rq/verl-if"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-05"
+    },
+    {
+        "title": "InstructVLA: Vision-Language-Action Instruction Tuning from\n  Understanding to Manipulation",
+        "authors": "Yang Tian, Bin Wang, Yilun Chen, Hao Li, Shuai Yang",
+        "link": "https://arxiv.org/abs/2507.17520",
+        "github_repo": null,
+        "summary": " - InstructVLA is a novel end-to-end vision-language-action (VLA) model that integrates multimodal reasoning with precise action generation, bridging the gap between understanding and manipulation. \n- It introduces Vision-Language-Action Instruction Tuning (VLA-IT), a new training paradigm that jointly optimizes textual reasoning and action generation using a Mixture-of-Experts adaptation strategy. \n- On SimplerEnv tasks, InstructVLA outperforms existing methods such as SpatialVLA by 30.5% and achieves a 92% improvement over OpenVLA on SimplerEnv-Instruct. \n- InstructVLA also demonstrates superior performance on multimodal tasks and exhibits inference-time scaling by leveraging textual reasoning. \n- The model shows strong potential for bridging intuitive and steerable human-robot interaction with efficient policy learning.",
+        "classification": [
+            "Robotics",
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-05"
+    },
+    {
+        "title": "VeOmni: Scaling Any Modality Model Training with Model-Centric\n  Distributed Recipe Zoo",
+        "authors": "Bin Jia, Zhongkai Zhao, Zhelun Shi, Yaowei Zheng, Qianli Ma",
+        "link": "https://arxiv.org/abs/2508.02317",
+        "github_repo": null,
+        "summary": "- VeOmni is a novel modular and efficient training framework designed to accelerate the development of omni-modal LLMs.\n- It introduces model-centric distributed recipes that decouple communication from computation, enabling efficient 3D parallelism.\n- VeOmni features a flexible configuration interface that supports seamless integration of new modalities with minimal code changes.\n- Using VeOmni, an omni-modal MoE model with 30B parameters can be trained with over 2,800 tokens/sec/GPU throughput and scale to 160K context lengths.\n- The superior efficiency and scalability of VeOmni are demonstrated through experimental results on various large-scale omni-modal LLMs.",
+        "classification": [
+            "Any-to-Any"
+        ],
+        "github_urls": [
+            "https://github.com/ByteDance-Seed/VeOmni"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-05"
+    }
+]

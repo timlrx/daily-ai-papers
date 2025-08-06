@@ -1,0 +1,201 @@
+[
+    {
+        "title": "Seed Diffusion: A Large-Scale Diffusion Language Model with High-Speed\n  Inference",
+        "authors": "Fan Xia, Pengyang Gao, Cheng Luo, Zheng Zhang, Yuxuan Song",
+        "link": "https://arxiv.org/abs/2508.02193",
+        "github_repo": null,
+        "summary": "- The paper introduces Seed Diffusion Preview, a large-scale language model based on discrete-state diffusion that offers remarkably fast inference speed.\n- The model achieves an inference speed of 2,146 tokens/s on H20 GPUs while maintaining competitive performance across various code evaluation benchmarks.\n- Seed Diffusion Preview's speed is significantly faster than contemporary models like Mercury and Gemini, establishing a new state-of-the-art in speed-quality tradeoff.\n- The model employs a two-stage curriculum for robust diffusion training, including mask-based and edit-based forward processes.\n- An on-policy learning paradigm is introduced to unlock parallel processing during inference, further enhancing efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "Skywork UniPic: Unified Autoregressive Modeling for Visual Understanding\n  and Generation",
+        "authors": "Tianyidan Xie, Liang Hu, Yimeng Gan, Yi Peng, Peiyu Wang",
+        "link": "https://arxiv.org/abs/2508.03320",
+        "github_repo": null,
+        "summary": "- Skywork UniPic is a 1.5-billion parameter unified autoregressive model that combines image understanding, text-to-image generation, and image editing into a single architecture.\n- The model uses a decoupled encoding strategy with a masked autoregressive encoder for generation and a SigLIP2 encoder for understanding, both feeding into a shared autoregressive decoder.\n- Skywork UniPic outperforms most existing unified models, achieving a GenEval score of 0.86, a DPG-Bench complex-generation record of 85.5, and high scores on image editing benchmarks.\n- The model is trained using a progressive, resolution-aware schedule and meticulously curated datasets, achieving high fidelity while maintaining efficiency (under 15 GB GPU memory).\n- Code and weights are publicly available.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/SkyworkAI/UniPic"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Skywork/Skywork-UniPic-1.5B"
+        ],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "LongVie: Multimodal-Guided Controllable Ultra-Long Video Generation",
+        "authors": "Chenyang Si, Jianfeng Feng, Xian Liu, Zhaoxi Chen, Jianxiong Gao",
+        "link": "https://arxiv.org/abs/2508.03694",
+        "github_repo": null,
+        "summary": "- LongVie is a novel controllable ultra-long video generation framework that addresses the challenges of temporal inconsistency and visual degradation in existing methods.\n- The model architecture utilizes a multi-modal control framework integrating both dense (depth maps) and sparse (keypoints) control signals, along with a degradation-aware training strategy.\n- To maintain temporal consistency, LongVie employs a unified noise initialization strategy and global control signal normalization.\n- Experiments on the LongVGenBench dataset, consisting of 100 high-resolution videos lasting over one minute, demonstrate that LongVie outperforms state-of-the-art methods in terms of long-range controllability, consistency, and quality.\n- The paper also includes an ablation study demonstrating the effectiveness of the key components of the proposed framework.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://vchitect.github.io/LongVie-project/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "CompassVerifier: A Unified and Robust Verifier for LLMs Evaluation and\n  Outcome Reward",
+        "authors": "Songyang Gao, Linchen Xiao, Junnan Liu, Hongwei Liu, Shudong Liu",
+        "link": "https://arxiv.org/abs/2508.03686",
+        "github_repo": "https://github.com/open-compass/CompassVerifier",
+        "summary": "CompassVerifier is a lightweight and robust verifier model designed for evaluating and providing outcome rewards for large language models.  It addresses limitations in existing methods by offering comprehensive benchmarks and handling complex edge cases. CompassVerifier demonstrates multi-domain competency across math, knowledge, and reasoning tasks and can process various answer types. The model is enhanced by the VerifierBench benchmark, a dataset of model outputs augmented with manual analysis of error patterns.  Experiments show CompassVerifier outperforms existing models on the VerifierBench benchmark, establishing a new state-of-the-art.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/open-compass/CompassVerifier"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "CRINN: Contrastive Reinforcement Learning for Approximate Nearest\n  Neighbor Search",
+        "authors": "Jiwei Li, Chris Shum, Albert Wang, Xiaofei Sun, Xiaoya Li",
+        "link": "https://arxiv.org/abs/2508.02091",
+        "github_repo": "https://github.com/deepreinforce-ai/CRINN",
+        "summary": "- CRINN is a novel framework that leverages contrastive reinforcement learning and large language models (LLMs) to automate the optimization of approximate nearest neighbor search (ANNS) algorithms.\n- CRINN treats ANNS optimization as a reinforcement learning problem, using execution speed as the reward signal, to generate progressively faster ANNS implementations.\n- Experimental evaluation on six benchmark datasets demonstrates CRINN's effectiveness, achieving the best performance on three datasets and matching state-of-the-art results on two others.\n- The success of CRINN highlights the potential of LLMs augmented with reinforcement learning for automating sophisticated algorithmic optimizations.\n- CRINN's approach addresses the limitations of traditional manual optimization methods, which require extensive expertise and are labor-intensive.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/deepreinforce-ai/crinn"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "Tool-integrated Reinforcement Learning for Repo Deep Search",
+        "authors": "Yanzhen Zou, Pengfei Gao, Qunhong Zeng, Chao Peng, Zexiong Ma",
+        "link": "https://arxiv.org/abs/2508.03012",
+        "github_repo": null,
+        "summary": "- ToolTrain, a novel two-stage tool-integrated training framework for enhancing LLMs' ability to utilize retrieval tools during multi-step reasoning for issue localization, is presented.\n- The framework combines rejection-sampled supervised fine-tuning and tool-integrated reinforcement learning to improve LLMs' tool-use capabilities.\n- RepoSearcher, a lightweight and LLM-friendly issue localization agent with easy-to-use retrieval tools, is implemented to streamline the training process.\n- ToolTrain-trained models achieve state-of-the-art performance, surpassing Claude-3.7 on function-level localization in some cases.\n- The improved localization performance translates to better end-to-end issue resolution performance, demonstrating the viability and effectiveness of the proposed training strategy.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/sgl-project/sglang"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "Multi-human Interactive Talking Dataset",
+        "authors": "Mike Zheng Shou, Weijia Wu, Zeyu Zhu",
+        "link": "https://arxiv.org/abs/2508.03050",
+        "github_repo": "https://github.com/showlab/Multi-human-Talking-Video-Dataset",
+        "summary": "- This paper introduces MIT, a large-scale dataset designed for multi-human talking video generation, containing 12 hours of high-resolution footage with annotations of body poses and speech interactions.\n- The authors propose CovOG, a baseline model that integrates a Multi-Human Pose Encoder (MPE) to handle varying numbers of speakers and an Interactive Audio Driver (IAD) to modulate head dynamics based on speaker-specific audio features.\n- CovOG outperforms existing methods in quantitative evaluations using metrics such as SSIM, PSNR, and FVD, demonstrating its superior performance in multi-human talking video generation.\n- A user study further validates CovOG's superior performance in terms of character consistency, background consistency, audio-visual alignment, and overall visual quality.\n- The dataset and code are publicly available, establishing MIT as a valuable benchmark for future research in multi-human talking video generation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/showlab/Multi-human-Talking-Video-Dataset"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data\n  Synthesis and Self-Correction",
+        "authors": "Jui-Hui Chung, Ziran Yang, Bohan Lyu, Shange Tang, Yong Lin",
+        "link": "https://arxiv.org/abs/2508.03613",
+        "github_repo": "https://github.com/Goedel-LM/Goedel-Prover-V2",
+        "summary": "- This paper introduces Goedel-Prover-V2, a series of open-source language models that achieve state-of-the-art performance in automated theorem proving.\n- The model incorporates three key innovations: scaffolded data synthesis, verifier-guided self-correction, and model averaging.\n- Goedel-Prover-V2-32B achieves 88.1% pass@32 on MiniF2F in standard mode and 90.4% in self-correction mode, surpassing previous SOTA.\n- The model solves 86 problems on PutnamBench at pass@184, securing first place among open-source models.\n- The models, code, and data are released at https://github.com/Goedel-LM/Goedel-Prover-V2.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Goedel-LM/Goedel-Prover-V2"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "LiveMCPBench: Can Agents Navigate an Ocean of MCP Tools?",
+        "authors": "Yaojie Lu, Xuanang Chen, Jiawei Chen, Wenliang Zhong, Guozhao Mo",
+        "link": "https://arxiv.org/abs/2508.01780",
+        "github_repo": null,
+        "summary": "- The paper introduces LiveMCPBench, a comprehensive benchmark for evaluating large language model (LLM) agents' tool-use capabilities within the Model Context Protocol (MCP) ecosystem.\n- LiveMCPBench features 95 real-world tasks across diverse domains and a curated toolset (LiveMCPTool) encompassing 70 servers and 527 tools.\n- The benchmark incorporates LiveMCPEval, an LLM-as-a-Judge framework for automated and adaptive evaluation in dynamic task environments.\n- Evaluation on 10 leading models reveals significant performance variance, with the best-performing model achieving 78.95% success rate, highlighting challenges in meta-tool learning.\n- The paper also introduces MCP Copilot Agent, a multi-step agent showcasing dynamic planning and API interaction across the entire tool suite.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/icip-cas/LiveMCPBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "LAMIC: Layout-Aware Multi-Image Composition via Scalability of\n  Multimodal Diffusion Transformer",
+        "authors": "Shunyu Yao, Kai Kang, Jianhua Wang, Zehua Ma, Yuzhuo Chen",
+        "link": "https://arxiv.org/abs/2508.00477",
+        "github_repo": "https://github.com/Suchenl/LAMIC",
+        "summary": "- LAMIC is a novel training-free framework that extends single-reference diffusion models to multi-reference scenarios for high-quality layout-aware multi-image composition.\n- It introduces two plug-and-play attention mechanisms: Group Isolation Attention (GIA) and Region-Modulated Attention (RMA) to enhance entity disentanglement and enable layout-aware generation, respectively.\n- LAMIC consistently outperforms existing multi-reference baselines in identity preservation, background consistency, layout control, and prompt following across various metrics.\n- The framework achieves state-of-the-art performance across most major metrics without any training or fine-tuning, showcasing strong zero-shot generalization ability.\n-  Three new metrics (Inclusion Ratio (IN-R), Fill Ratio (FI-R), and Background Similarity (BG-S)) are introduced to comprehensively evaluate the model's layout control and background consistency capabilities.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Suchenl/LAMIC"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "ChartCap: Mitigating Hallucination of Dense Chart Captioning",
+        "authors": "Gunhee Kim, Jaewoo Ahn, Junyoung Lim",
+        "link": "https://arxiv.org/abs/2508.03164",
+        "github_repo": null,
+        "summary": "The paper introduces ChartCap, a large-scale dataset (565K real-world chart images) designed to improve vision-language models' chart captioning abilities. ChartCap addresses existing dataset limitations by excluding extraneous information and using a type-specific, dense caption schema that emphasizes structural elements and key insights.  A novel metric, Visual Consistency Score (VCS), is proposed to evaluate caption quality independently of reference captions.  Experiments show that models fine-tuned on ChartCap generate more accurate and informative captions with fewer hallucinations, surpassing existing open-source and proprietary models. The human evaluation shows that ChartCap consistently outperforms other models and even human-annotated captions in terms of informativeness, accuracy, and fewer hallucinations.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://junyoung-00.github.io/ChartCap/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "AlignGuard-LoRA: Alignment-Preserving Fine-Tuning via Fisher-Guided\n  Decomposition and Riemannian-Geodesic Collision Regularization",
+        "authors": "Aman Chadha, Vinija Jain, Abhilekh Borah, Amitava Das",
+        "link": "https://arxiv.org/abs/2508.02079",
+        "github_repo": null,
+        "summary": "\n- This paper introduces ALIGNGUARD-LORA, a novel framework for preserving the alignment of large language models (LLMs) during low-rank fine-tuning, mitigating alignment drift.\n- ALIGNGUARD-LORA decomposes LoRA updates into alignment-critical and task-specific components, using the Fisher Information Matrix to identify and regularize alignment-sensitive directions.\n- The framework incorporates collision-aware regularization, which blends Riemannian overlap and geodesic separation penalties to ensure structural disentanglement between updates.\n- Empirical evaluations demonstrate that ALIGNGUARD-LORA mitigates alignment drift by up to 50% on safety-critical benchmarks without sacrificing downstream task performance.\n- The authors also propose DRIFTCHECK, a targeted diagnostic benchmark for quantifying alignment drift and safety degradation, and validate a scaling law for catastrophic forgetting.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    },
+    {
+        "title": "TRACEALIGN -- Tracing the Drift: Attributing Alignment Failures to\n  Training-Time Belief Sources in LLMs",
+        "authors": "Aman Chadha, Vinija Jain, Amitava Das",
+        "link": "https://arxiv.org/abs/2508.02063",
+        "github_repo": null,
+        "summary": "*- TRACEALIGN is a novel framework that traces the root causes of unsafe large language model (LLM) outputs back to their training data.\n- It leverages a suffix-array based index (TRACEINDEX) and a belief conflict index (BCI) to pinpoint and quantify problematic belief fragments.\n- TRACEALIGN proposes three defense mechanisms: TRACESHIELD (an inference-time safety filter), Contrastive Belief Deconfliction Loss (a contrastive fine-tuning objective), and Prov-Decode (a provenance-aware decoding strategy).\n- Experiments on a curated Alignment Drift Benchmark (ADB) demonstrate that these defenses reduce alignment failures by up to 85% while maintaining utility.\n- The study advances alignment research by shifting the focus from surface behavior to the underlying beliefs within the model, enabling the construction of more robust and accountable LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://anonymous.4open.science/r/tracealign-2DA7"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-06"
+    }
+]

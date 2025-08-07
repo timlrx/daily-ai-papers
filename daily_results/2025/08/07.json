@@ -1,0 +1,459 @@
+[
+    {
+        "title": "VeriGUI: Verifiable Long-Chain GUI Dataset",
+        "authors": "Zhenyu Cui, Huichi Zhou, Shunyu Liu, weihao1115, Liam-Liu",
+        "link": "https://arxiv.org/abs/2508.04026",
+        "github_repo": null,
+        "summary": " - This paper introduces VeriGUI, a novel verifiable long-chain GUI dataset designed for evaluating generalist GUI agents.\n - VeriGUI emphasizes long-chain complexity, with tasks decomposed into hundreds of interdependent steps and subtask-level verifiability.\n - The dataset contains GUI task trajectories across desktop and web environments, annotated by human experts.\n - Experiments using various agents reveal significant performance gaps in handling long-horizon tasks, highlighting the need for more robust planning and decision-making.\n - VeriGUI addresses limitations of existing GUI datasets by providing subtask-level verifiability and long-chain complexity.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/VeriGUI-Team/VeriGUI"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/2077AIDataFoundation/VeriGUI"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens",
+        "authors": "Zhen Tan, Bohan, wjldw, ympc08, chengshuaizhao",
+        "link": "https://arxiv.org/abs/2508.01191",
+        "github_repo": null,
+        "summary": "- This paper introduces DATAALCHEMY, a controlled environment for training LLMs from scratch to investigate the effects of distributional shifts on chain-of-thought (CoT) reasoning.\n- The authors propose a data distribution lens for analyzing CoT reasoning, arguing that its effectiveness is fundamentally limited by the discrepancy between training and test data distributions.\n- Their findings reveal that CoT reasoning is a fragile phenomenon, easily breaking down under moderate distributional shifts.\n- The study examines CoT reasoning across three dimensions: task, length, and format, showing that its performance significantly degrades even with modest changes in these dimensions.\n- The work underscores the need to develop models with genuine and generalizable reasoning capabilities, moving beyond surface-level pattern matching.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ChengshuaiZhao0/DataAlchemy"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Efficient Agents: Building Effective Agents While Reducing Cost",
+        "authors": "Yue Hou, He Zhu, Pai Liu, Xavier Hu, Ningning Wang",
+        "link": "https://arxiv.org/abs/2508.02694",
+        "github_repo": "https://github.com/OPPO-PersonalAI/OAgents",
+        "summary": "- This paper introduces EFFICIENT AGENTS, a novel agent framework designed to build effective agents while minimizing costs.\n- The framework optimizes cost by carefully selecting components based on empirical analysis of the efficiency-performance trade-off.\n- EFFICIENT AGENTS achieves 96.7% of the performance of OWL, a leading open-source agent framework, while reducing operational costs by 28.4%.\n- The study provides actionable insights for designing efficient, high-performing agent systems, advancing accessibility and sustainability of AI-driven solutions.\n- The empirical analysis is conducted on the GAIA benchmark, evaluating the impact of LLM backbone selection, agent framework designs, and test-time scaling strategies.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/OPPO-PersonalAI/OAgents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from\n  Experience",
+        "authors": "Xiaoyi Dong, Yuhang Cao, Ziyu Liu, yuhangzang, Zery",
+        "link": "https://arxiv.org/abs/2508.04700",
+        "github_repo": "https://github.com/SunzeY/SEAgent",
+        "summary": "- This paper introduces SEAgent, a novel self-evolving framework that enables computer-use agents (CUAs) to autonomously learn to use new software through interaction and experiential learning.\n- SEAgent uses a World State Model for step-wise trajectory assessment and a Curriculum Generator to create increasingly challenging tasks, updating the agent's policy through adversarial imitation of failures and Group Relative Policy Optimization (GRPO) on successes.\n- The specialist-to-generalist training strategy integrates experiential insights from specialist agents to develop a stronger generalist CUA capable of continuous autonomous evolution.\n- Experiments across five novel software environments show a significant improvement in success rate (from 11.3% to 34.5%), exceeding competitive open-source CUAs.\n- SEAgent demonstrates the effectiveness of self-evolving agents for mastering novel software environments without requiring human-labeled data.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SunzeY/SEAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Agent Lightning: Train ANY AI Agents with Reinforcement Learning",
+        "authors": "Zilong Wang, Xufang Luo, SiyunZhao, hzy46, ultmaster",
+        "link": "https://arxiv.org/abs/2508.03680",
+        "github_repo": null,
+        "summary": "- Agent Lightning is a novel framework for reinforcement learning-based training of LLMs as AI agents, achieving complete decoupling between agent execution and training.\n- It introduces a hierarchical RL algorithm, LightningRL, to handle complex agent interactions by decomposing trajectories into training transitions, enabling RL to work with various agent designs.\n- The Training-Agent Disaggregation architecture decouples the training process from the agent execution logic, resulting in improved modularity and flexibility.\n- Experiments across diverse tasks demonstrate stable, continuous improvements, showcasing Agent Lightning's potential for real-world agent training and deployment.\n- Agent Lightning offers several design enhancements, including unified data interface and automatic intermediate reward mechanism, to improve training stability and efficiency.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/agent-lightning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "CoTox: Chain-of-Thought-Based Molecular Toxicity Reasoning and\n  Prediction",
+        "authors": "Donghyeon Lee, Soyon Park, Minju Song, Jueon Park, P-YI",
+        "link": "https://arxiv.org/abs/2508.03159",
+        "github_repo": "https://github.com/dmis-lab/CoTox",
+        "summary": "- CoTox is a novel framework that integrates LLMs with chain-of-thought (CoT) reasoning for multi-toxicity prediction, combining chemical structure data, biological pathways, and Gene Ontology (GO) terms.\n- CoTox outperforms both traditional machine learning and deep learning models in toxicity prediction, achieving an average F1-score improvement of over 0.25 compared to structure-CoT-only prompts.\n- The model uses IUPAC names to represent chemical structures which are more interpretable for LLMs, improving performance compared to using SMILES strings.\n- CoTox incorporates biological context, such as pathways and GO terms, leading to improved prediction quality and enhanced mechanistic interpretability.\n- The framework's utility is demonstrated through case studies that show aligned predictions with physiological responses and potential for capturing latent toxicity signals not yet fully represented in regulatory documents.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/dmis-lab/CoTox"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Training Long-Context, Multi-Turn Software Engineering Agents with\n  Reinforcement Learning",
+        "authors": "Maksim Nekrashevich, Ibragim Badertdinov, Sergei Polezhaev, Maria Trofimova, Alexander Golubev",
+        "link": "https://arxiv.org/abs/2508.03501",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for training long-context, multi-turn software engineering agents using reinforcement learning.\n- The approach utilizes a modified Decoupled Advantage Policy Optimization (DAPO) algorithm to train an agent based on the Qwen2.5-72B-Instruct model.\n- The trained agent achieves a 39% success rate on the SWE-BENCH VERIFIED benchmark, surpassing a 20% baseline and matching or exceeding the performance of leading open-weight models.\n- The method addresses challenges associated with long-horizon interactions, complex feedback, sparse rewards, and computationally expensive evaluations in software engineering tasks.\n- The study demonstrates that reinforcement learning is a viable approach for building capable autonomous agents for complex real-world problems using open models.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Sotopia-RL: Reward Design for Social Intelligence",
+        "authors": "Keyang Xuan, Kolby Nottingham, Yining Zhao, Zhengyang Qi, Haofei Yu",
+        "link": "https://arxiv.org/abs/2508.03905",
+        "github_repo": "https://github.com/sotopia-lab/sotopia-rl",
+        "summary": "This paper introduces SOTOPIA-RL, a novel framework for training socially intelligent agents using reinforcement learning.  SOTOPIA-RL addresses the challenges of partial observability and multi-dimensionality in social interactions by refining episode-level feedback into utterance-level, multi-dimensional rewards.  Experiments demonstrate that SOTOPIA-RL outperforms existing approaches on social goal completion metrics.  Ablation studies highlight the importance of both utterance-level credit assignment and multi-dimensional rewards for effective RL training in social scenarios. The implementation is publicly available.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/sotopia-lab/sotopia-rl"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/ulab-ai/sotopia-rl-reward-annotation",
+            "https://huggingface.co/ulab-ai/sotopia-rl-qwen2.5-7B-rm",
+            "https://huggingface.co/ulab-ai/sotopia-rl-qwen-2.5-7B-grpo"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "LaTCoder: Converting Webpage Design to Code with Layout-as-Thought",
+        "authors": "Tianpeng Lv, Guohao Wang, Zhongyi Zhang, Zhen Li, starmage520",
+        "link": "https://arxiv.org/abs/2508.03560",
+        "github_repo": null,
+        "summary": "- The paper introduces LaTCoder, a novel approach for converting webpage designs into code that leverages Layout-as-Thought (LaT) to improve layout preservation during code generation.\n- LaTCoder divides the webpage design into image blocks, uses a chain-of-thought prompt to generate code for each block using an MLLM, and then assembles the code using either absolute positioning or MLLM-based assembly, dynamically choosing the better method.\n- LaTCoder outperforms existing design-to-code methods on both a public dataset (Design2Code-Hard) and a newly introduced dataset (CC-HARD) based on human preference evaluation and metrics.\n- The CC-HARD dataset is introduced as a more challenging dataset for evaluating design-to-code models, containing webpages with more complex layouts than existing datasets.\n- The study evaluates the effectiveness of LaTCoder using multiple backbone models (DeepSeek-VL2, Gemini, and GPT-4) on both datasets, demonstrating consistent improvement across all models.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/CGCL-codes/naturalcc/tree/main/examples/latcoder"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/xcodemind/CC-HARD"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Web-CogReasoner: Towards Knowledge-Induced Cognitive Reasoning for Web\n  Agents",
+        "authors": "Xinyu Yang, Hongliang He, Aiwen Sun, Cong Guo, Gnonymous",
+        "link": "https://arxiv.org/abs/2508.01858",
+        "github_repo": "https://github.com/Gnonymous/Web-CogReasoner",
+        "summary": "- This paper introduces Web-CogReasoner, a novel multimodal large-scale model for web agents that leverages a knowledge-driven Chain-of-Thought (CoT) reasoning framework.\n- The model's architecture incorporates three knowledge domains: Factual, Conceptual, and Procedural, which are systematically instilled using the Web-CogDataset and Web-CogBench.\n- Extensive experiments demonstrate that Web-CogReasoner significantly outperforms existing state-of-the-art models on various benchmarks, particularly in generalization to unseen tasks.\n- The Web-CogDataset comprises 12 fine-grained tasks meticulously designed to incrementally build the agent's knowledge, cognition, and reasoning abilities.\n- The Web-CogBench is a novel evaluation suite that comprehensively assesses agent performance across delineated knowledge domains and cognitive capabilities.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Gnonymous/Web-CogReasoner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "HPSv3: Towards Wide-Spectrum Human Preference Score",
+        "authors": "Hongsheng Li, Keqiang Sun, Xiaoshi Wu, Yuhang Ma",
+        "link": "https://arxiv.org/abs/2508.03789",
+        "github_repo": null,
+        "summary": "This paper introduces HPSv3, a new human preference score for evaluating text-to-image generation models.  HPSv3 leverages a VLM-based preference model trained with an uncertainty-aware ranking loss using HPDv3, a wide-spectrum human preference dataset containing 1.08M text-image pairs and 1.17M pairwise comparisons. The results demonstrate HPSv3's superior performance compared to existing methods, including PickScore, HPSv2, ImageReward, and CLIP.  Additionally, the paper introduces CoHP, an iterative image refinement method to enhance image generation quality.  The code and dataset are available at the HPSv3 Homepage.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Gaussian Variation Field Diffusion for High-fidelity Video-to-4D\n  Synthesis",
+        "authors": "Feng Zhao, Jiaolong Yang, Chuxin Wang, Sicheng Xu, BwZhang",
+        "link": "https://arxiv.org/abs/2507.23785",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework for video-to-4D generation that creates high-quality dynamic 3D content from single video inputs.\n- The framework consists of a Direct 4DMesh-to-GS Variation Field VAE that encodes canonical Gaussian Splats (GS) and their temporal variations, and a Gaussian Variation Field diffusion model with a temporal-aware Diffusion Transformer.\n- The model demonstrates superior generation quality compared to existing methods on various metrics, including PSNR, LPIPS, SSIM, CLIP, and FVD.\n- It shows remarkable generalization to in-the-wild video inputs despite being trained exclusively on synthetic data.\n- The model efficiently compresses high-dimensional animations into a compact latent space, enabling efficient diffusion modeling for 4D content generation.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "LeanK: Learnable K Cache Channel Pruning for Efficient Decoding",
+        "authors": "Yuqing Yang, Chengruidong Zhang, Huiqiang Jiang, hzy46, zhangyik21",
+        "link": "https://arxiv.org/abs/2508.02215",
+        "github_repo": null,
+        "summary": "- LeanK is a novel learning-based method for pruning unimportant key (K) cache channels in large language models (LLMs) to improve decoding efficiency. \n- It employs a two-stage training process to learn a channel-wise static mask that satisfies specific sparsity ratios and hardware alignment requirements. \n- Experiments show that LeanK achieves up to 70% K cache and 16%-18% V cache memory reduction, resulting in a 1.3x speedup for attention computation. \n- The method maintains accuracy while reducing memory usage and enhancing decoding speed. \n- LeanK is compatible with existing KV cache optimization techniques and can be combined for further acceleration.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://aka.ms/LeanK"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Sculptor: Empowering LLMs with Cognitive Agency via Active Context\n  Management",
+        "authors": "Yunxin Liu, Ting Cao, Qitai Tan, L. H. Xu, Mor-Li",
+        "link": "https://arxiv.org/abs/2508.04664",
+        "github_repo": null,
+        "summary": "- This paper introduces Sculptor, a novel framework that enhances LLMs by enabling them to actively manage their internal working memory.\n- Sculptor equips LLMs with tools for context fragmentation, summarization, hiding/restoring information, and intelligent search, allowing them to selectively focus on relevant information and filter out distractions.\n- Experimental evaluations on PI-LLM and NeedleBench Multi-Needle Reasoning benchmarks demonstrate that Sculptor significantly improves LLM performance on long-context tasks, even without specific training.\n- The key advantage of Sculptor lies in its ability to mitigate proactive interference, which is a significant challenge in processing long contexts, by enabling LLMs to selectively manage the context instead of simply increasing the context window.\n- Sculptor's active context management strategy provides a more cognitive approach to handling long contexts than simply enlarging the context window, leading to greater reliability and robustness at scale.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Position: The Current AI Conference Model is Unsustainable! Diagnosing\n  the Crisis of Centralized AI Conference",
+        "authors": "Jiaying Wu, Qian Wang, Andre Huikai Lin, Moming Duan, nuojohnchen",
+        "link": "https://arxiv.org/abs/2508.04586",
+        "github_repo": null,
+        "summary": "- This paper diagnoses the unsustainable centralized AI conference model, identifying four key areas of strain: scientific, environmental, psychological, and logistical.\n- The paper proposes a Community-Federated Conference (CFC) model as a solution, which separates peer review, presentation, and networking into globally coordinated but locally organized components.\n- This model aims to create a more sustainable, inclusive, and resilient path for AI research by mitigating the identified challenges and aligning better with the core goals of AI conferences.\n- The authors use data-driven analysis of publication trends, environmental impact modeling, and qualitative sentiment analysis to support their claims.\n- The CFC model addresses the unsustainable aspects of the current system and is presented as a paradigm shift toward sustainability and equity.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/NuoJohnChen/AI_Conf_Crisis"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "EVOC2RUST: A Skeleton-guided Framework for Project-Level C-to-Rust\n  Translation",
+        "authors": "Dong Chen, Jie Wang, Tingrui Yu, Chaofan Wang, YerbaPage",
+        "link": "https://arxiv.org/abs/2508.04295",
+        "github_repo": null,
+        "summary": "- The paper introduces EVOC2RUST, a novel framework for automated, project-level translation of C code to Rust.\n- EVOC2RUST employs a three-stage pipeline: skeleton construction, incremental translation using LLMs and safety-preserving mappings, and post-generation repair using LLMs and static analysis.\n- Experimental results on open-source and industrial benchmarks demonstrate that EVOC2RUST outperforms existing rule-based and LLM-based approaches in terms of compilation success rate, line acceptance rate, and code safety.\n- Ablation studies highlight the importance of each component in EVOC2RUST, with safety-preserving mappings being particularly crucial for ensuring safe and semantically correct Rust code.\n- The framework addresses the challenges of project-level code dependencies and substantial linguistic differences between C and Rust, leading to more robust and reliable translations.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "DreamVVT: Mastering Realistic Video Virtual Try-On in the Wild via a\n  Stage-Wise Diffusion Transformer Framework",
+        "authors": "Chao Liang, Ente Lin, Shuliang Ning, Zaiyu Huang, Tongchun Zuo",
+        "link": "https://arxiv.org/abs/2508.02807",
+        "github_repo": null,
+        "summary": "- DreamVVT is a novel two-stage framework for high-fidelity video virtual try-on, leveraging diffusion transformers and addressing limitations of existing methods by utilizing unpaired data and pretrained models. \n- The first stage generates high-fidelity try-on images for keyframes, using a multi-frame try-on model integrated with a vision-language model for semantic consistency. \n- The second stage synthesizes a coherent try-on video using a pretrained video generation model enhanced with LoRA adapters, guided by keyframe try-on images, motion information, and textual descriptions. \n- Experimental results on the ViViD and Wild-TryOn datasets demonstrate that DreamVVT surpasses existing methods in terms of garment detail preservation, temporal consistency, and generalization to unseen scenarios. \n- Ablation studies confirm the effectiveness of the two-stage design and the use of LoRA adapters for efficient fine-tuning.",
+        "classification": [
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Enhancing Vision-Language Model Training with Reinforcement Learning in\n  Synthetic Worlds for Real-World Success",
+        "authors": "Ruslan Rakhimov, Viacheslav Sinii, Stanislav Dereka, kefirski, GeorgeBredis",
+        "link": "https://arxiv.org/abs/2508.04280",
+        "github_repo": null,
+        "summary": "- This paper introduces Vision-Language Decoupled Actor-Critic (VL-DAC), a novel reinforcement learning algorithm for training vision-language models (VLMs).\n- VL-DAC decouples policy and value updates, resulting in faster, more stable training compared to previous methods like RL4VLM and LOOP.\n- The algorithm is evaluated across multiple lightweight simulators and is shown to transfer learned skills to real-world benchmarks with measurable improvements in agentic control, spatial planning, and web navigation.\n- Experiments demonstrate that VL-DAC achieves +50% relative improvement on BALROG, +5% on VSI-Bench, and +2% on VisualWebBench.\n- The authors contribute a simple, hyperparameter-free RL algorithm that enables effective transfer learning from synthetic environments to complex real-world tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/corl-team/VL-DAC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "A Coarse-to-Fine Approach to Multi-Modality 3D Occupancy Grounding",
+        "authors": "Jianke Zhu, Junbo Chen, Zhan Shi, songw-zju",
+        "link": "https://arxiv.org/abs/2508.01197",
+        "github_repo": "https://github.com/RONINGOD/GroundingOcc",
+        "summary": "- This paper introduces Talk2Occ, a novel benchmark dataset for 3D occupancy grounding in autonomous driving, and GroundingOcc, a new end-to-end model for this task.\n- GroundingOcc combines visual, textual, and point cloud features to predict object location and occupancy information from coarse to fine, incorporating a multimodal encoder, an occupancy head, and a grounding head.\n- The model architecture includes a 2D grounding module and a depth estimation module to enhance geometric understanding, improving model performance.\n- Extensive experiments on Talk2Occ demonstrate that GroundingOcc outperforms existing baselines on 3D occupancy grounding, achieving a significant improvement in localization accuracy.\n- The dataset and code are publicly available on GitHub, enabling further research and development in this area.",
+        "classification": [
+            "Multimodal",
+            "Text-to-3D",
+            "Image-to-3D",
+            "Object Detection",
+            "Depth Estimation",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/RONINGOD/GroundingOcc"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "RL-PLUS: Countering Capability Boundary Collapse of LLMs in\n  Reinforcement Learning with Hybrid-policy Optimization",
+        "authors": "Kechi Zhang, Huanyu Liu, Yongding Tao, Xue Jiang, Yihong Dong",
+        "link": "https://arxiv.org/abs/2508.00222",
+        "github_repo": null,
+        "summary": "- RL-PLUS is a novel hybrid-policy optimization approach that addresses the capability boundary collapse problem in reinforcement learning with verifiable reward (RLVR) for large language models (LLMs).\n- It integrates multiple importance sampling to mitigate distributional mismatch from external data and an exploration-based advantage function to guide the model towards high-value, unexplored reasoning paths.\n- RL-PLUS achieves state-of-the-art performance on six math reasoning benchmarks and superior performance on six out-of-distribution reasoning tasks, showing consistent and significant gains across diverse model families.\n- The analysis of Pass@k curves indicates that RL-PLUS effectively resolves the capability boundary collapse problem.\n- RL-PLUS demonstrates superior performance compared to existing RLVR methods and other baselines in both in-domain and out-of-distribution tasks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/YihongDong/RL-PLUS"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Reasoning Language Models for Root Cause Analysis in 5G Wireless\n  Networks",
+        "authors": "Haozhe Zhang, Yibin Kang, Antonio De Domenico, Mohamed Sana, nicopi",
+        "link": "https://arxiv.org/abs/2507.21974",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel lightweight framework for Root Cause Analysis (RCA) in 5G wireless networks using Large Language Models (LLMs).\n- A new curated dataset, TeleLogs, is introduced to benchmark RCA capabilities and evaluate the performance of LLMs in this task.\n- The authors propose a two-stage training methodology that leverages supervised fine-tuning with reinforcement learning to improve the accuracy and reasoning quality of LLMs for RCA.\n- The proposed approach significantly outperforms existing open-source reasoning LLMs on the TeleLogs dataset, achieving accuracy gains of up to 7x in some cases.\n- Extensive experiments demonstrate the effectiveness of the proposed method, highlighting the potential of domain-adapted reasoning-enhanced LLMs for practical and explainable RCA in network operation and management.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/netop/TeleLogs"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "IFDECORATOR: Wrapping Instruction Following Reinforcement Learning with\n  Verifiable Rewards",
+        "authors": "Ling-I Wu, Xiaogui Yang, Tong Jian, Tianyi Liang, Xu Guo",
+        "link": "https://arxiv.org/abs/2508.04632",
+        "github_repo": null,
+        "summary": " - This paper introduces IFDecorator, a framework that enhances Reinforcement Learning with Verifiable Rewards (RLVR) for instruction following in large language models (LLMs).\n - IFDecorator addresses two key limitations of RLVR4IF: training inefficiency due to inadequate difficulty assessment and over-optimization (reward hacking).\n - It consists of three components: a cooperative-adversarial data flywheel, IntentCheck (a bypass module), and trip wires (a diagnostic mechanism).\n - IFDecorator significantly improves instruction-following performance on multiple benchmarks, outperforming larger proprietary models while preserving general capabilities.\n - The trip wires effectively reduce reward hacking rates, demonstrating the robustness of the framework.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/guox18/IFDecorator"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/guox18/IFDecorator"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "OpenMed NER: Open-Source, Domain-Adapted State-of-the-Art Transformers\n  for Biomedical NER Across 12 Public Datasets",
+        "authors": "MaziyarPanahi",
+        "link": "https://arxiv.org/abs/2508.01630",
+        "github_repo": null,
+        "summary": "- This paper introduces OpenMed NER, a suite of open-source, domain-adapted transformer models for biomedical named entity recognition (NER).\n- The models combine lightweight domain-adaptive pre-training (DAPT) with parameter-efficient Low-Rank Adaptation (LoRA) and achieve state-of-the-art micro-F1 scores on 10 out of 12 benchmark datasets.\n- OpenMed NER surpasses closed-source solutions in terms of performance while maintaining high computational efficiency, completing training in under 12 hours on a single GPU.\n- The models are trained on a diverse corpus of 350,000 passages from publicly available research repositories and de-identified clinical notes.\n- All model checkpoints and code are released under a permissive Apache 2.0 license to promote widespread adoption and further research.",
+        "classification": [
+            "Token Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenMed"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "SonicMaster: Towards Controllable All-in-One Music Restoration and\n  Mastering",
+        "authors": "Ambuj Mehrish, Jan Melechovsky, dorienh",
+        "link": "https://arxiv.org/abs/2508.03448",
+        "github_repo": null,
+        "summary": "- This paper introduces SonicMaster, a unified generative model for music restoration and mastering that addresses various audio artifacts with text-based control.\n- The model architecture uses a flow-matching generative training paradigm and combines a VAE codec with multimodal and dual-stream DiT blocks to process audio and text inputs and produce high-fidelity enhanced outputs.\n- SonicMaster is trained on a large dataset of paired degraded and high-quality music tracks, created by simulating common degradation types with nineteen degradation functions.\n- Objective and subjective evaluations demonstrate that SonicMaster significantly improves sound quality across all artifact categories compared to baselines and that listeners prefer SonicMaster's outputs over original degraded audio.\n- The model, code, and dataset are available through the provided GitHub link.",
+        "classification": [
+            "Audio-to-Audio"
+        ],
+        "github_urls": [
+            "https://amaai-lab.github.io/SonicMaster/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "IAUNet: Instance-Aware U-Net",
+        "authors": "Dmytro Fishman, Ali Zeynalli, Illia Tsiporenko, YaroslavPrytula",
+        "link": "https://arxiv.org/abs/2508.01928",
+        "github_repo": "https://github.com/SlavkoPrytula/IAUNet",
+        "summary": "- The paper introduces IAUNet, a novel query-based U-Net architecture for instance segmentation in biomedical imaging.\n- IAUNet incorporates a lightweight convolutional Pixel decoder and a Transformer decoder to refine object-specific features across multiple scales.\n- The model outperforms existing state-of-the-art methods on multiple public datasets, including the new 2025 Revvity Full Cell Segmentation Dataset introduced in this work, which contains detailed annotations of overlapping cell cytoplasm in brightfield images.\n- Experiments show IAUNet's superior performance across various backbones and its efficiency in handling complex cell morphologies.\n- Code for IAUNet is publicly available on GitHub.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/SlavkoPrytula/IAUNet"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Sel3DCraft: Interactive Visual Prompts for User-Friendly Text-to-3D\n  Generation",
+        "authors": "Hao Huang, Shiqi Jiang, Haiwen Huang, Nan Xiang, tianyilt",
+        "link": "https://arxiv.org/abs/2508.00428",
+        "github_repo": null,
+        "summary": "- This paper introduces Sel3DCraft, a novel visual prompt engineering system for text-to-3D (T23D) generation that aims to transform the often unpredictable process into a guided and user-friendly one.\n- The system employs a dual-branch structure, combining both image retrieval and generation to provide diverse candidate explorations.\n- Sel3DCraft utilizes a multi-view hybrid scoring approach incorporating both low-level metrics and high-level assessments from Multi-modal Large Language Models (MLLMs) to evaluate 3D models with improved human-expert consistency.\n- The system includes a prompt-driven visual analytics suite for intuitive defect identification and prompt refinement, fostering user creativity.\n- Extensive user studies demonstrate Sel3DCraft's superior performance compared to existing T23D systems in supporting creativity and reducing generation time and prompt iterations.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "The Cow of Rembrandt - Analyzing Artistic Prompt Interpretation in\n  Text-to-Image Models",
+        "authors": "Elisabetta Rocchetti, Alfio Ferrara, sergiopicascia",
+        "link": "https://arxiv.org/abs/2507.23313",
+        "github_repo": "https://github.com/umilISLab/artistic-prompt-interpretation",
+        "summary": "- This paper investigates how transformer-based text-to-image diffusion models interpret artistic prompts by analyzing the interplay between content and style.\n- The authors leverage cross-attention heatmaps to attribute pixels in generated images to specific prompt tokens, enabling the isolation of image regions influenced by content and style.\n- Their findings reveal varying degrees of content-style separation depending on the artistic prompt and style requested, suggesting an emergent understanding of this distinction in large-scale generative models.\n- The code and dataset used in the study, along with an exploratory tool for visualizing attention maps, are publicly available.\n- This research contributes to a better understanding of how large-scale generative models internally represent complex artistic concepts without explicit supervision.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/umilISLab/artistic-prompt-interpretation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "MiDashengLM: Efficient Audio Understanding with General Audio Captions",
+        "authors": "Yadong Niu, Jian Luan, Jizhong Liu, Gang Li, Heinrich Dinkel",
+        "link": "https://arxiv.org/abs/2508.03983",
+        "github_repo": "https://github.com/xiaomi-research/dasheng-lm",
+        "summary": "- MiDashengLM is a novel open audio-language model designed for efficient and comprehensive audio understanding using general audio captions.\n- The model integrates Dasheng, an open-source audio encoder, to process diverse auditory information effectively, unlike previous works which primarily focus on ASR-based audio-text alignment.\n- MiDashengLM is trained using publicly available datasets, ensuring full transparency and reproducibility.\n- It achieves a 4x speedup in time-to-first-token (TTFT) and up to 20x higher throughput than comparable models.\n- Experiments show MiDashengLM outperforms baseline models on various benchmarks including audio captioning, question answering, and audio classification tasks.",
+        "classification": [
+            "Audio"
+        ],
+        "github_urls": [
+            "https://github.com/xiaomi-research/dasheng-lm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-07"
+    },
+    {
+        "title": "Light-IF: Endowing LLMs with Generalizable Reasoning via Preview and\n  Self-Checking for Complex Instruction Following",
+        "authors": "Liang Xu, Xiangzheng Zhang, Shousheng Jia, Liang Wen, Chenyang Wang",
+        "link": "https://arxiv.org/abs/2508.03178",
+        "github_repo": null,
+        "summary": "- The paper introduces Light-IF, a novel framework that enhances LLMs' generalizable reasoning abilities for complex instruction following through preview and self-checking mechanisms.\n- Light-IF addresses the issue of \"lazy reasoning\" in LLMs by employing an entropy-preserving supervised fine-tuning strategy coupled with a token-wise entropy-adaptive reinforcement learning approach.\n- The framework involves generating a dataset of complex instructions and uses rejection sampling to curate a high-quality subset for training.\n- Experimental results on various instruction-following benchmarks demonstrate that Light-IF significantly outperforms existing LLMs, achieving state-of-the-art performance across various model scales.\n- Light-IF-32B surpasses both large open-source models like DeepSeek-R1 and closed-source models like Doubao-1.6.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/qihoo360/Light-IF-32B"
+        ],
+        "date": "2025-08-07"
+    }
+]

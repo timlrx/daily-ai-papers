@@ -1,0 +1,165 @@
+[
+    {
+        "title": "GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models",
+        "authors": "GLM-4. 5 Team, zixuanlimit, ZAHNGYUXUAN, LiquidAmmonia, Stanislas",
+        "link": "https://arxiv.org/abs/2508.06471",
+        "github_repo": "https://github.com/zai-org/GLM-4.5",
+        "summary": " - This paper introduces GLM-4.5, a 355B parameter Mixture-of-Experts (MoE) large language model with a hybrid reasoning method.\n - GLM-4.5 achieves strong performance on agentic, reasoning, and coding benchmarks, outperforming several competitors with fewer parameters.\n - The model is trained using a multi-stage approach including pre-training, mid-training, and post-training with expert model iteration and reinforcement learning.\n - A smaller version, GLM-4.5-Air (106B parameters), is also released to facilitate research.\n - Both models are open-sourced along with evaluation tools.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zai-org/GLM-4.5"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/zai-org/GLM-4.5"
+        ],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "Voost: A Unified and Scalable Diffusion Transformer for Bidirectional\n  Virtual Try-On and Try-Off",
+        "authors": "jgkwak, RyanL22",
+        "link": "https://arxiv.org/abs/2508.04825",
+        "github_repo": null,
+        "summary": "- This paper introduces Voost, a unified and scalable diffusion transformer for bidirectional virtual try-on and try-off.\n- The model architecture uses a token-level concatenation structure, where spatially aligned garment and person images are fed into a shared embedding space, enabling bidirectional reasoning.\n- Voost achieves state-of-the-art results on both try-on and try-off benchmarks, outperforming strong baselines in alignment accuracy, visual fidelity, and generalization.\n- Two inference-time techniques are introduced: attention temperature scaling and self-corrective sampling to improve robustness.\n- The model is trained on a combination of VITON-HD, DressCode, and real-world images, supporting various aspect ratios and spatial layouts during training and inference.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "InfiGUI-G1: Advancing GUI Grounding with Adaptive Exploration Policy\n  Optimization",
+        "authors": "Pengxiang Li, Shuanghe Zhu, Zeyu Liu, xiaotianhan, SiriusL",
+        "link": "https://arxiv.org/abs/2508.05731",
+        "github_repo": "https://github.com/InfiXAI/InfiGUI-G1",
+        "summary": "- This paper introduces Adaptive Exploration Policy Optimization (AEPO), a novel policy optimization framework for improving GUI grounding in multimodal large language models (MLLMs).\n- AEPO addresses the limitation of inefficient exploration in existing Reinforcement Learning with Verifiable Rewards (RLVR) methods by using a multi-answer generation strategy and an Adaptive Exploration Reward (AER) function.\n- The proposed InfiGUI-G1 models (3B and 7B parameters), trained using AEPO, achieve state-of-the-art results on multiple GUI grounding benchmarks, significantly outperforming existing RLVR baselines and several SOTA methods.\n- AEPO's effectiveness is demonstrated through ablation studies showing the importance of multi-answer generation, AER, and a collinear penalty in achieving high accuracy and exploration efficiency.\n- The analysis of AEPO's exploration strategy reveals adaptive resource allocation based on task complexity, high exploration efficiency, and strong performance on challenging samples.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/InfiXAI/InfiGUI-G1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "Memp: Exploring Agent Procedural Memory",
+        "authors": "Shuofei Qiao, Jialong Wu, Xiaobin Wang, Yuan Liang, Runnan Fang",
+        "link": "https://arxiv.org/abs/2508.06433",
+        "github_repo": null,
+        "summary": "- This paper introduces Memp, a framework designed to equip LLMs-based agents with a learnable, updatable, and lifelong procedural memory.\n- Memp distills past agent trajectories into both fine-grained step-by-step instructions and higher-level script-like abstractions, improving accuracy and efficiency.\n- The framework explores different strategies for building, retrieving, and updating procedural memories, showing that a dynamic regimen enhances performance.\n- Evaluation on TravelPlanner and ALFWorld demonstrates that agents using Memp achieve higher success rates and greater efficiency on analogous tasks.\n-  Procedural memory built from stronger models transfers effectively to weaker models, yielding substantial performance gains.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "Pruning the Unsurprising: Efficient Code Reasoning via First-Token\n  Surprisal",
+        "authors": "Chengcheng Wan, Chao Hu, Yaoning Wang, Wenhao Zeng, YerbaPage",
+        "link": "https://arxiv.org/abs/2508.05988",
+        "github_repo": "https://github.com/Zengwh02/ASAP",
+        "summary": "- This paper introduces ASAP, a novel framework for compressing Chain-of-Thought (CoT) reasoning in large language models (LLMs) by using an anchor-guided pruning method combined with a surprisal-based refining method. \n- The ASAP framework first prunes redundant parts of the CoT using an anchor-guided approach and then refines the pruning by selecting logically essential reasoning steps based on a novel first-token surprisal metric. \n- Experimental results demonstrate that ASAP achieves state-of-the-art accuracy across multiple code generation benchmarks while substantially reducing training and inference costs. \n- On the LiveCodeBench v4_v5 benchmark, ASAP reduces token generation by 23.5% and inference latency by 43.5% compared to the strongest baseline while achieving competitive accuracy. \n- The authors also conduct ablation studies to validate the contribution of each component in ASAP and show the effectiveness of the two-stage pruning method.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Zengwh02/ASAP"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "GENIE: Gaussian Encoding for Neural Radiance Fields Interactive Editing",
+        "authors": "Przemys\u0142aw Spurek, Tomasz Szczepanik, Krzysztof Byrski, MikolajZ",
+        "link": "https://arxiv.org/abs/2508.02831",
+        "github_repo": "https://github.com/MikolajZielinski/genie",
+        "summary": "- This paper introduces GENIE, a novel hybrid model that combines the strengths of Neural Radiance Fields (NeRF) and Gaussian Splatting (GS) for interactive 3D scene editing.\n- GENIE uses trainable feature embeddings for each Gaussian in GS, which are then used to condition a NeRF network for photorealistic rendering.\n- A fast nearest Gaussian search method called Ray-Traced Gaussian Proximity Search (RT-GPS) is introduced to efficiently condition the NeRF network.\n- GENIE supports real-time, locality-aware editing, allowing for intuitive scene manipulation and integration with physics-based simulation.\n- Experimental results demonstrate that GENIE achieves comparable reconstruction quality to state-of-the-art methods while enabling more expressive and flexible editing capabilities.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/MikolajZielinski/genie"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "Adapting Vision-Language Models Without Labels: A Comprehensive Survey",
+        "authors": "Eleni Chatzi, Ran He, Jian Liang, Lijun Sheng, Hao Dong",
+        "link": "https://arxiv.org/abs/2508.05547",
+        "github_repo": "https://github.com/tim-learn/Awesome-LabelFree-VLMs",
+        "summary": "This survey paper provides a comprehensive overview of unsupervised adaptation methods for Vision-Language Models (VLMs).  It introduces a novel taxonomy categorizing existing approaches into four paradigms based on the availability of unlabeled visual data: Data-Free Transfer, Unsupervised Domain Transfer, Episodic Test-Time Adaptation, and Online Test-Time Adaptation.  The paper analyzes core methodologies and adaptation strategies within each paradigm.  It also reviews representative benchmarks across diverse applications and highlights open challenges and promising research directions.  A repository of relevant literature is provided for further research.",
+        "classification": [
+            "Zero-Shot Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/tim-learn/Awesome-LabelFree-VLMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "MELLA: Bridging Linguistic Capability and Cultural Groundedness for\n  Low-Resource Language MLLMs",
+        "authors": "Guohang Yan, Ruirui Chen, Nuo Chen, Jiaying Fei, Yufei Gao",
+        "link": "https://arxiv.org/abs/2508.05502",
+        "github_repo": null,
+        "summary": "- This paper introduces MELLA, a novel multimodal multilingual dataset designed to improve the performance of Multimodal Large Language Models (MLLMs) in low-resource languages.\n- MELLA addresses the dual objectives of enhancing linguistic capabilities and cultural groundedness by employing a dual-source data strategy.\n- The dataset consists of 6.82 million image-text pairs across eight low-resource languages, sourced from native web alt-text and MLLM-generated captions.\n- Experiments demonstrate that fine-tuning on MELLA leads to significant performance improvements across various MLLM backbones, showcasing the effectiveness of the dual-objective and dual-source strategy.\n- The authors also provide extensive qualitative analysis to further illustrate MELLA's improvement in bridging the linguistic capability and cultural groundedness gap.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "MeshLLM: Empowering Large Language Models to Progressively Understand\n  and Generate 3D Mesh",
+        "authors": "Yi Yang, Yi-Hsuan Tsai, Yufeng Wang, I-Chao Shen, Shuangkang Fang",
+        "link": "https://arxiv.org/abs/2508.01242",
+        "github_repo": null,
+        "summary": "- MeshLLM is a novel framework that uses large language models (LLMs) to understand and generate 3D meshes represented in text.\n- It addresses limitations of existing methods by introducing a Primitive-Mesh decomposition strategy, creating a large-scale dataset (1500k+ samples), and using vertex-face prediction and local mesh assembly training.\n- MeshLLM outperforms the state-of-the-art LLaMA-Mesh in mesh generation quality and shape understanding, demonstrating its effectiveness.\n- The model leverages a progressive training process, starting with large-scale pretraining on Primitive-Meshes and then fine-tuning on specific tasks for mesh generation and understanding.\n- Experimental results show MeshLLM's ability to generate diverse and high-quality meshes, while also demonstrating advanced dialogue capabilities, such as answering questions and performing mathematical reasoning.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "UI-AGILE: Advancing GUI Agents with Effective Reinforcement Learning and\n  Precise Inference-Time Grounding",
+        "authors": "Bingqi Chen, Zihan Song, Jia Ma, Yuhang Wu, LianShuQuan",
+        "link": "https://arxiv.org/abs/2507.22025",
+        "github_repo": null,
+        "summary": "- This paper introduces UI-AGILE, a framework designed to improve GUI agents through enhancements in both training and inference stages.\n- The training process uses a novel \"Simple Thinking\" reward function, continuous grounding reward, and cropping-based resampling to address challenges like ineffective rewards and sparse data.\n- The inference stage employs decomposed grounding with selection, improving grounding accuracy on high-resolution screens by breaking down images into smaller parts.\n- Experimental results on ScreenSpot-Pro and ScreenSpot-v2 datasets show state-of-the-art performance, achieving a 23% grounding accuracy improvement on ScreenSpot-Pro.\n- UI-AGILE's improvements are not limited to grounding; it also enhances overall agent capabilities in multi-step reasoning tasks, as demonstrated by evaluations on the AndroidControl benchmark.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+            "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct"
+        ],
+        "date": "2025-08-11"
+    },
+    {
+        "title": "LightSwitch: Multi-view Relighting with Material-guided Diffusion",
+        "authors": "Shubham Tulsiani, Fernando De la Torre, thebluser",
+        "link": "https://arxiv.org/abs/2508.06494",
+        "github_repo": null,
+        "summary": "- LightSwitch is a novel multi-view relighting diffusion framework that efficiently relights an arbitrary number of input images to a target lighting condition.\n- The model architecture incorporates cues from inferred intrinsic material properties, using multi-view attention and a scalable denoising scheme.\n- LightSwitch outperforms state-of-the-art diffusion inverse rendering methods in relighting synthetic and real objects, achieving comparable or better results in significantly less time (as little as 2 minutes).\n- The framework addresses the challenge of consistent multi-view relighting by formulating the task as one of consistently relighting multiple input views, leveraging cues observed in one view to inform relighting in another.\n- An efficient denoising scheme is introduced to enable scalable inference for 3D relighting, allowing for efficient relighting of high-resolution images and a large number of views.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-11"
+    }
+]

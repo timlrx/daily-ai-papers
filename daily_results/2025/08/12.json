@@ -1,0 +1,411 @@
+[
+    {
+        "title": "ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability",
+        "authors": "Yuchen Li, Yutao Zhu, Weiwei Sun, Xinyu Ma, Wenhan Liu",
+        "link": "https://arxiv.org/abs/2508.07050",
+        "github_repo": "https://github.com/8421BCD/ReasonRank",
+        "summary": " - ReasonRank is a novel reasoning-intensive passage reranker that significantly improves the performance of passage ranking tasks.\n- It employs a two-stage training framework consisting of supervised fine-tuning (SFT) and reinforcement learning (RL) to enhance reasoning ability.\n- ReasonRank uses a multi-view ranking reward that considers both single-turn and multi-turn ranking rewards for effective training.\n- Experimental results on the BRIGHT and R2MED benchmarks show that ReasonRank outperforms existing state-of-the-art methods.\n- Ablation studies demonstrate the effectiveness of each component of the proposed framework.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/8421BCD/ReasonRank"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "WideSearch: Benchmarking Agentic Broad Info-Seeking",
+        "authors": "Yan Gao, Li Chen, Junjie Zhao, Jiawei Wang, Ryan Wong",
+        "link": "https://arxiv.org/abs/2508.07999",
+        "github_repo": null,
+        "summary": "The paper introduces WideSearch, a novel benchmark designed for evaluating the capabilities of large language models (LLMs) in performing wide-scale information seeking tasks.  WideSearch tasks involve collecting large-scale atomic information and arranging it into a well-organized output. The benchmark features 200 manually curated questions (100 English, 100 Chinese) from 18 diverse domains.  Current state-of-the-art agentic search systems achieve success rates near 0%, highlighting critical deficiencies in large-scale information seeking.  A rigorous five-stage quality control pipeline ensures data quality and reliability.",
+        "classification": [
+            "Table Question Answering"
+        ],
+        "github_urls": [
+            "https://widesearch-seed.github.io/"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Omni-Effects: Unified and Spatially-Controllable Visual Effects\n  Generation",
+        "authors": "Xiaokun Feng, Dongxia Liu, Jintao Chen, Aiming Hao, Fangyuan Mao",
+        "link": "https://arxiv.org/abs/2508.07981",
+        "github_repo": null,
+        "summary": "- This paper introduces Omni-Effects, a novel unified framework for generating diverse and spatially controllable visual effects (VFX).\n- The framework comprises two key components: a LoRA-based Mixture of Experts (LoRA-MoE) for efficient multi-VFX generation, and a Spatial-Aware Prompt (SAP) with an Independent-Information Flow (IIF) module for precise spatial control.\n- Omni-Effects is evaluated on a newly constructed, comprehensive VFX dataset, Omni-VFX, demonstrating superior performance over existing state-of-the-art methods in terms of both generation quality and spatial control.\n- The proposed framework addresses the challenges of cross-adapter interference and spatial-semantic misalignment in existing VFX generation models.\n- The authors introduce a novel evaluation framework to assess controllable VFX generation, including metrics such as Effect Occurrence Rate (EOR), Effect Controllability Rate (ECR), and Regional Dynamic Degree (RDD).",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Klear-Reasoner: Advancing Reasoning Capability via Gradient-Preserving\n  Clipping Policy Optimization",
+        "authors": "Guanting Dong, Dening Liu, Xue Bai, Leiyu Pan, Zhenpeng Su",
+        "link": "https://arxiv.org/abs/2508.07629",
+        "github_repo": null,
+        "summary": "- Klear-Reasoner is a new reasoning model that demonstrates careful deliberation during problem-solving and achieves state-of-the-art performance across multiple benchmarks.\n- The model utilizes a novel Gradient-Preserving clipping Policy Optimization (GPPO) technique to address the limitations of traditional clipping mechanisms in reinforcement learning.\n- GPPO enhances the model's exploration capacity and improves its efficiency in learning from negative samples, leading to better performance.\n- Experiments show that Klear-Reasoner outperforms existing models on AIME 2024 (90.5%), AIME 2025 (83.2%), LiveCodeBench V5 (66.0%), and LiveCodeBench V6 (58.1%).\n- The paper provides a detailed analysis of the reasoning model's post-training workflow, including data preparation, fine-tuning, and reinforcement learning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/suu990901/KlearReasoner"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen3-8B",
+            "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+            "https://huggingface.co/deepseek-ai/DeepSeek-R1"
+        ],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "UserBench: An Interactive Gym Environment for User-Centric Agents",
+        "authors": "Jianguo Zhang, Zhiwei Liu, Akshara Prabhakar, Zuxin Liu, Cheng Qian",
+        "link": "https://arxiv.org/abs/2507.22034",
+        "github_repo": null,
+        "summary": "- This paper introduces UserBench, a novel user-centric benchmark designed to evaluate the ability of AI agents to collaborate effectively with humans in multi-turn, preference-driven interactions.\n- UserBench simulates users with underspecified goals, who incrementally reveal preferences, requiring agents to proactively clarify intent and make grounded decisions.\n- Evaluation of state-of-the-art LLMs on UserBench reveals a significant gap between task completion and user alignment, highlighting the challenges of building truly collaborative agents.\n- UserBench is built upon the Gymnasium framework, enabling modularity and reproducibility, and includes a dataset of over 4000+ scenarios.\n- The code and data for UserBench are publicly available to facilitate future research in user-centric AI.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/SalesforceAIResearch/UserBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "SONAR-LLM: Autoregressive Transformer that Thinks in Sentence Embeddings\n  and Speaks in Tokens",
+        "authors": "Anton Razzhigaev, Andrey Kuznetsov, Elizaveta Goncharova, Temurbek Rahmatullaev, Nikita Dragunov",
+        "link": "https://arxiv.org/abs/2508.05305",
+        "github_repo": null,
+        "summary": "- This paper introduces SONAR-LLM, a decoder-only transformer that generates text by predicting a sequence of sentence embeddings and using a token-level cross-entropy objective propagated through a frozen SONAR decoder.\n- The model architecture combines the semantic abstraction of Large Concept Models (LCMs) with the stability of likelihood-based training, eliminating the need for diffusion samplers.\n- SONAR-LLM achieves competitive generation quality across different model sizes (39M to 1.3B parameters) and exhibits strong scaling properties.\n- Experimental results on summarization tasks (XSum and CNN/DM) demonstrate that SONAR-LLM matches or exceeds the performance of other sentence-level approaches.\n- The model demonstrates superior inference efficiency on long sequences compared to standard LLMs, resulting from its operation on compressed sentence embeddings.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/FusionBrainLab/SONAR-LLM/tree/main"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm\n  Bridging Foundation Models and Lifelong Agentic Systems",
+        "authors": "Xinhao Yi, Yingxu Wang, Xi Zhang, Yanwen Peng, Jinyuan Fang",
+        "link": "https://arxiv.org/abs/2508.07407",
+        "github_repo": null,
+        "summary": " - This paper introduces a novel conceptual framework for understanding and comparing self-evolving AI agents, which highlights four key components: System inputs, Agent System, Environment, and Optimizers. \n- It provides a systematic review of existing techniques for self-evolving agentic systems, focusing on foundation models, agent prompts, memory, tools, workflows, and communication mechanisms. \n- The paper also investigates domain-specific evolution strategies developed for specialized fields such as biomedicine, programming, and finance. \n- A dedicated discussion on evaluation, safety, and ethical considerations for self-evolving agentic systems is included. \n- The authors propose a set of guiding principles for safe and effective self-evolution of AI agents, inspired by Isaac Asimov's Three Laws of Robotics.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "BrowseComp-Plus: A More Fair and Transparent Evaluation Benchmark of\n  Deep-Research Agent",
+        "authors": "Kai Zou, Ping Nie, Shengyao Zhuang, Xueguang Ma, Zijian Chen",
+        "link": "https://arxiv.org/abs/2508.06600",
+        "github_repo": null,
+        "summary": "*- The paper introduces BrowseComp-Plus, an improved benchmark for evaluating deep research agents that addresses limitations in fairness and transparency by using a fixed, curated corpus.\n*- It provides a more controlled experimental setup than previous benchmarks, enabling researchers to isolate the contributions of different components.\n*- The benchmark is shown to be effective in distinguishing the performance of various models and retrieval methods, with GPT-5 achieving state-of-the-art results.\n*- The authors conduct extensive experiments using various LLMs and retrievers, providing insights into retrieval effectiveness and the interplay between retrieval and reasoning capabilities.\n*-  All benchmark data, evaluation scripts, and baselines are publicly released to promote reproducibility and foster future advancements in the field.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://texttron.github.io/BrowseComp-Plus/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "OmniEAR: Benchmarking Agent Reasoning in Embodied Tasks",
+        "authors": "Hongxing Li, Dingming Li, tricktreat, yanyc, wangzx1210",
+        "link": "https://arxiv.org/abs/2508.05614",
+        "github_repo": "https://github.com/ZJU-REAL/OmniEmbodied",
+        "summary": "- The paper introduces OmniEAR, a comprehensive framework for evaluating embodied agent reasoning in tasks involving physical interactions, tool use, and multi-agent coordination.\n- OmniEAR models environments using text-based representations, enabling the modeling of continuous physical properties and complex spatial relationships across 1500 scenarios.\n- Evaluation reveals significant performance degradation when models must reason from constraints, highlighting limitations in current models' embodied reasoning capabilities.\n- Fine-tuning improves single-agent task performance but yields minimal gains in multi-agent tasks, further exposing the challenges posed by embodied reasoning.\n- The findings demonstrate that embodied reasoning poses unique challenges for current language models, making OmniEAR a valuable benchmark for evaluating and advancing embodied AI systems.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/ZJU-REAL/OmniEmbodied"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "MolmoAct: Action Reasoning Models that can Reason in Space",
+        "authors": "Shuo Liu, Yuquan Deng, Haoquan Fang, Jiafei Duan, Jason Lee",
+        "link": "https://arxiv.org/abs/2508.07917",
+        "github_repo": null,
+        "summary": " - MOLMOACT is a novel open-source action reasoning model (ARM) for robotic manipulation that integrates perception, planning, and control through a structured three-stage pipeline.\n - The model encodes observations and instructions into depth-aware perception tokens, generates mid-level spatial plans as editable trajectory traces, and predicts precise low-level actions.\n - MOLMOACT outperforms state-of-the-art baselines on various benchmarks, including SimplerEnv Visual Matching (70.5% zero-shot accuracy), LIBERO (86.6% average success), and real-world fine-tuning (+10% single-arm, +22.7% bimanual).\n -  The model also exhibits strong performance in open-ended instruction following and trajectory steering, achieving top human-preference scores.\n - MOLMOACT dataset and all model weights, training code, and collected dataset are released to facilitate further research.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Grove MoE: Towards Efficient and Superior MoE LLMs with Adjugate Experts",
+        "authors": "Tieyuan Chen, Zhanchao Zhou, Xiaodong Chen, Haoxing Chen, Haoyuan Wu",
+        "link": "https://arxiv.org/abs/2508.07785",
+        "github_repo": null,
+        "summary": "- This paper introduces Grove MoE, a novel Mixture-of-Experts (MoE) architecture for large language models (LLMs) that uses experts of varying sizes and a dynamic activation mechanism.\n- The Grove MoE architecture is inspired by the big.LITTLE CPU architecture and features adjugate experts that are shared among groups of experts, improving computational efficiency.\n- GroveMoE-Base and GroveMoE-Inst are two 33B-parameter LLMs built using the Grove MoE architecture by applying an upcycling strategy to the Qwen-30B-A3B-Base model.\n- Experiments show that GroveMoE models achieve performance comparable to state-of-the-art open-source LLMs of similar or even larger scales on various benchmarks.\n- The authors discuss the limitations of the current Grove MoE architecture, including the scarcity of long-CoT data and the exclusive reliance on rejection sampling, and suggest future research directions.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/GroveMoE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Temporal Self-Rewarding Language Models: Decoupling Chosen-Rejected via\n  Past-Future",
+        "authors": "Qiufeng Wang, Junfeng Fang, Cunxiang Wang, Xin Wang, Yidong Wang",
+        "link": "https://arxiv.org/abs/2508.06026",
+        "github_repo": null,
+        "summary": "- This paper introduces Temporal Self-Rewarding Language Models, a novel method to address the diminishing preference signals in existing self-rewarding language models.\n- The core idea is to decouple the chosen and rejected responses by using past model outputs for rejected responses and next-generation model predictions for chosen responses, thus maintaining a clear quality gap.\n- The proposed two-phase framework (Anchored Rejection and Future-Guided Chosen) is evaluated on three model families (Llama, Qwen, Mistral) and various model sizes.\n- Experimental results across multiple benchmarks (AlpacaEval 2.0, Arena-Hard-v0.1, MT-Bench) demonstrate significant improvements over existing self-rewarding methods, achieving higher win rates and better scores, even with fewer iterations.\n- The approach also shows superior out-of-distribution generalization across mathematical reasoning, knowledge-based QA, and code generation tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Reinforcement Learning in Vision: A Survey",
+        "authors": "Qingwei Meng, Kevin Qinghong Lin, Joya Chen, Chen Gao, Weijia Wu",
+        "link": "https://arxiv.org/abs/2508.08189",
+        "github_repo": "https://github.com/weijiawu/Awesome-Visual-Reinforcement-Learning",
+        "summary": "This survey paper provides a comprehensive overview of recent advances in reinforcement learning (RL) applied to vision.  It categorizes over 200 representative works into four thematic pillars: multi-modal large language models, visual generation, unified model frameworks, and vision-language-action models.  The survey examines algorithmic design, reward engineering, and benchmark progress in each pillar.   Key challenges and promising future directions in visual RL are identified, including sample efficiency, generalization, and safe deployment.  Finally, the paper offers a structured overview of visual reinforcement learning to support future research and practical deployment.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/weijiawu/Awesome-Visual-Reinforcement-Learning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Part I: Tricks or Traps? A Deep Dive into RL for LLM Reasoning",
+        "authors": "Jiaheng Liu, Weixun Wang, Yancheng He, Jiashun Liu, Zihe Liu",
+        "link": "https://arxiv.org/abs/2508.08221",
+        "github_repo": null,
+        "summary": "This paper introduces Lite PPO, a minimalist RL approach for LLM reasoning, combining advantage normalization and token-level loss aggregation.  Experiments across various datasets and model sizes demonstrate that Lite PPO consistently outperforms existing techniques like GRPO and DAPO.  The authors provide guidelines for selecting RL techniques based on model characteristics and problem difficulty, focusing on normalization, clipping, masking, and loss aggregation.  Their work addresses the lack of standardized guidelines and fragmented understanding within the RL4LLM community.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba/ROLL"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen3-4B",
+            "https://huggingface.co/Qwen/Qwen3-8B",
+            "https://huggingface.co/Qwen/Qwen3-4B-Base",
+            "https://huggingface.co/Qwen/Qwen3-8B-Base"
+        ],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Follow-Your-Shape: Shape-Aware Image Editing via Trajectory-Guided\n  Region Control",
+        "authors": "Hongyu Liu, Xinhua Zhang, Kunyu Feng, Mingzhe Zheng, Zeqian Long",
+        "link": "https://arxiv.org/abs/2508.08134",
+        "github_repo": null,
+        "summary": "- Follow-Your-Shape is a novel training-free and mask-free image editing framework that performs large-scale shape transformations while preserving background content.\n- The core innovation is the Trajectory Divergence Map (TDM), which accurately localizes editable regions by analyzing the difference between inversion and editing trajectories.\n- A Scheduled KV Injection mechanism utilizes the TDM to guide selective key-value feature injection, ensuring precise and faithful shape edits while maintaining background integrity.\n- Experiments on the introduced ReShapeBench benchmark demonstrate that Follow-Your-Shape outperforms state-of-the-art methods in terms of background preservation (PSNR of 35.79), visual consistency (LPIPS score of 8.23), and text-to-image alignment (CLIP Sim of 33.71).\n- The method's effectiveness is rigorously validated through qualitative and quantitative evaluations, showcasing its ability to achieve superior editability and visual fidelity compared to existing baselines, especially in tasks requiring large-scale shape replacement.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://follow-your-shape.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Less Is More: Training-Free Sparse Attention with Global Locality for\n  Efficient Reasoning",
+        "authors": "Baihong Yuan, Shijie Cao, Arti Jain, Zhihao Zhang, Lijie Yang",
+        "link": "https://arxiv.org/abs/2508.07101",
+        "github_repo": null,
+        "summary": "- LessIsMore is a novel training-free sparse attention mechanism that improves efficiency and accuracy in reasoning tasks by leveraging global attention patterns and recency locality.\n- It addresses the limitations of existing sparse attention methods that suffer from accuracy degradation due to accumulated errors during long-generation reasoning by unifying token selection across attention heads.\n- The model aggregates token selections from local attention heads with recent contextual information, enabling unified cross-head token ranking for future decoding layers.\n- Evaluations across diverse reasoning tasks and benchmarks show that LessIsMore achieves a 1.1\u00d7 average decoding speed-up compared to full attention, attends to 2\u00d7 fewer tokens without accuracy loss and achieves a 1.13\u00d7 end-to-end speed-up compared to existing sparse attention methods.\n- LessIsMore consistently outperforms existing sparse attention methods on challenging reasoning benchmarks while maintaining or even improving accuracy.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/DerrickYLJ/LessIsMore"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "VisR-Bench: An Empirical Study on Visual Retrieval-Augmented Generation\n  for Multilingual Long Document Understanding",
+        "authors": "Tong Yu, Chenguang Wang, Jihyung Kil, Ming Li, Jian Chen",
+        "link": "https://arxiv.org/abs/2508.07493",
+        "github_repo": null,
+        "summary": "- This paper introduces VisR-Bench, a multilingual benchmark for question-driven multimodal retrieval in long documents, containing over 35K QA pairs across 1.2K documents spanning sixteen languages.\n- VisR-Bench enables fine-grained evaluation of multimodal retrieval with three question types (figures, text, and tables), and queries without explicit answers to prevent superficial keyword matching.\n- The evaluation of various retrieval models, including text-based methods, multimodal encoders, and LLMs, shows that while LLMs significantly outperform other models, they still struggle with structured tables and low-resource languages.\n- VisR-Bench addresses limitations of existing benchmarks by focusing on QA relevance rather than text-image similarity and including multi-page multilingual documents.\n- This work highlights key challenges in multilingual visual retrieval and provides insights for improving LLMs.",
+        "classification": [
+            "Document Question Answering",
+            "Multimodal",
+            "Visual Question Answering",
+            "Table Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/puar-playground/VisR-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Shortcut Learning in Generalist Robot Policies: The Role of Dataset\n  Diversity and Fragmentation",
+        "authors": "Hengtao Shen, Lianli Gao, Junlin Xie, Xu Luo, Youguang Xing",
+        "link": "https://arxiv.org/abs/2508.06426",
+        "github_repo": null,
+        "summary": "- This paper investigates the problem of shortcut learning in generalist robot policies, focusing on the impact of dataset diversity and fragmentation.\n- The authors propose a theoretical analysis framework to explain how the lack of diversity within sub-datasets and large disparity between them lead to shortcut learning.\n- They introduce novel viewpoint and object augmentation strategies to alleviate shortcut learning by enhancing sub-dataset diversity and bridging the distribution gap between sub-datasets.\n- Through controlled experiments on a simulated robot and real-world experiments on an AgileX Pupper robot, the effectiveness of the proposed strategies is demonstrated.\n- The findings highlight the crucial role of dataset diversity and fragmentation in achieving robust generalization for robot policies.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "MoBE: Mixture-of-Basis-Experts for Compressing MoE-based LLMs",
+        "authors": "Jianguo Li, Jing Zhang, Zhenzhong Lan, Mingming Ha, Xiaodong Chen",
+        "link": "https://arxiv.org/abs/2508.05257",
+        "github_repo": null,
+        "summary": "- This paper introduces MoBE, a novel Mixture-of-Basis-Experts method for compressing MoE-based LLMs.\n- MoBE factorizes each expert's weight matrix using rank decomposition (W = AB), where matrix A is unique to each expert and matrix B is shared across experts as a linear combination of basis matrices.\n- Experiments show that MoBE achieves significantly lower accuracy drops compared to previous methods, reducing parameter counts by 24%-30% with only 1%-2% accuracy drop.\n- MoBE outperforms existing MoE compression methods (MoLAE and D2-MoE) across various benchmarks, demonstrating its effectiveness in compressing large MoE-based LLMs.\n- The code is open-sourced to encourage further research in efficient MoE architectures.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/MOBE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "GLiClass: Generalist Lightweight Model for Sequence Classification Tasks",
+        "authors": "Alexander Yavorskyi, Oleksandr Lukashov, Dmytro Vodianytskyi, Mykhailo Shtopko, Ihor Stepanov",
+        "link": "https://arxiv.org/abs/2508.07662",
+        "github_repo": null,
+        "summary": "- This paper introduces GLiClass, a novel sequence classification model based on the GLiNER uni-encoder architecture, designed for efficient and accurate text classification.\n- GLiClass addresses the limitations of existing methods by combining the accuracy of advanced architectures with the efficiency of embedding-based methods, achieving comparable or superior performance to cross-encoder baselines.\n- The model is designed to perform multi-label classification in a single forward pass and achieve non-linear scaling with the number of classes, enabling efficient handling of multiple categories and large-scale applications.\n- GLiClass utilizes proximal policy optimization (PPO) for multi-label text classification, allowing training in data-sparse conditions or with human feedback.\n- The experimental results demonstrate that GLiClass achieves state-of-the-art results on standard text classification benchmarks, outperforming strong cross-encoder baselines in terms of both accuracy and efficiency.",
+        "classification": [
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/Knowledgator/GLiClass"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/knowledgator/gliclass-v3-687a2d211b89659da1e3f34a"
+        ],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Deep Ignorance: Filtering Pretraining Data Builds Tamper-Resistant\n  Safeguards into Open-Weight LLMs",
+        "authors": "Robert Kirk, Tomek Korbak, Quentin Anthony, Stephen Casper, Kyle O'Brien",
+        "link": "https://arxiv.org/abs/2508.06601",
+        "github_repo": null,
+        "summary": "- This paper introduces a multi-stage data filtering pipeline for large language models (LLMs) to enhance their tamper resistance and reduce vulnerabilities related to proxy knowledge.- The pipeline involves filtering by keywords, using classifiers, and combining these techniques to mitigate different types of attacks.- Experiments show that the filtering approach achieves state-of-the-art tamper resistance, defending against fine-tuning attacks up to 10k steps and 500M tokens, and latent-space attacks.- The study also explores challenges with synthetic document training and introduces techniques to address these challenges, further improving the robustness of the LLMs.-The approach improves robustness to latent space attacks and other adversarial attacks, which makes the model more resilient, ultimately providing a significant step towards building more secure and reliable LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Fact2Fiction: Targeted Poisoning Attack to Agentic Fact-checking System",
+        "authors": "Reynold Cheng, Dacheng Wen, Bin Benjamin Zhu, Yupeng Li, Haorui He",
+        "link": "https://arxiv.org/abs/2508.06059",
+        "github_repo": null,
+        "summary": "- This paper introduces FACT2FICTION, the first poisoning attack framework targeting agentic fact-checking systems.\n- FACT2FICTION mirrors the decomposition strategy of agentic systems and leverages system-generated justifications to craft targeted malicious evidence that compromises sub-claim verification.\n- Experiments show that FACT2FICTION achieves 8.9%-21.2% higher attack success rates than state-of-the-art attacks across various poisoning budgets.\n- FACT2FICTION exposes security vulnerabilities in current fact-checking systems and highlights the need for defensive countermeasures.\n- The framework consists of two LLM-based agents: a Planner and an Executor, which collaboratively create and inject malicious evidence.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Bifrost-1: Bridging Multimodal LLMs and Diffusion Models with\n  Patch-level CLIP Latents",
+        "authors": "Mohit Bansal, Chuan Li, Amir Zadeh, Jaemin Cho, Han Lin",
+        "link": "https://arxiv.org/abs/2508.05954",
+        "github_repo": null,
+        "summary": "- This paper introduces BIFROST-1, a novel framework that bridges pre-trained multimodal LLMs (MLLMs) and diffusion models using patch-level CLIP image embeddings as latent variables.\n- The framework leverages the alignment between the MLLM's CLIP visual encoder and the patch-level image embeddings for efficient and high-fidelity controllable image generation.\n- Experiments demonstrate that BIFROST-1 achieves comparable or better performance than previous methods in terms of visual fidelity and multimodal understanding with substantially lower compute during training.\n- The model uses a lightweight adaptation of ControlNet to integrate patch-level CLIP image embeddings into the diffusion model, preserving the original multimodal reasoning capabilities of MLLMs.\n- Ablation studies show the effectiveness of using patch-level CLIP latents, demonstrating significant training cost savings compared to methods using single architectures or 1D image tokens.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://github.com/huggingface/diffusers/tree/main/examples/controlnet"
+        ],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "When Good Sounds Go Adversarial: Jailbreaking Audio-Language Models with\n  Benign Inputs",
+        "authors": "Dasol Choi, Taeyoun Kwon, Hiskias Dingeto, Bodam Kim, oneonlee",
+        "link": "https://arxiv.org/abs/2508.03365",
+        "github_repo": null,
+        "summary": "- This paper introduces WHISPERINJECT, a novel two-stage framework for launching adversarial attacks against audio-language models (ALMs).\n- Stage 1, Native Target Discovery, uses reinforcement learning with projected gradient descent (RL-PGD) to identify model-native harmful responses, which are then used as targets for Stage 2.\n- Stage 2, Payload Injection, employs projected gradient descent (PGD) to embed these payloads into benign audio carriers, making the attacks stealthy and effective.\n- Experiments demonstrate a success rate exceeding 86% across various state-of-the-art ALMs, including Qwen2.5-Omni, and Phi-4-Multimodal.\n- The work highlights a new class of practical, audio-native threats and emphasizes the need for more robust safety mechanisms in ALMs.",
+        "classification": [
+            "Audio",
+            "Audio Classification",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/AIM-Intelligence/WhisperInject"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Compressing Chain-of-Thought in LLMs via Step Entropy",
+        "authors": "Zhijian Xu, Xiangyu Wen, Ziyang Zheng, Jianyuan Zhong, Zeju Li",
+        "link": "https://arxiv.org/abs/2508.03346",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel Chain-of-Thought (CoT) compression framework for Large Language Models (LLMs) based on step entropy, a metric that quantifies the informational contribution of individual reasoning steps.\n- The proposed method identifies and prunes redundant steps with low entropy, achieving significant compression with minimal accuracy loss. Experiments show up to 80% of low-entropy steps can be pruned across multiple LLMs and benchmarks.\n- A two-stage training strategy, combining Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO), is proposed to enable LLMs to autonomously generate compressed CoTs.\n- The results demonstrate that LLMs can learn to generate compressed CoTs, further improving inference efficiency without significant accuracy degradation.\n- The findings offer profound implications for practical LLM deployment and a deeper understanding of reasoning structures.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/staymylove/COT_Compresstion_via_Step_entropy"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-12"
+    },
+    {
+        "title": "Speech-to-LaTeX: New Models and Datasets for Converting Spoken Equations\n  and Sentences",
+        "authors": "Matvey Skripkin, Elvir Karimov, Artyom Iudin, Dmitrii Tarasov, Dmitrii Korzh",
+        "link": "https://arxiv.org/abs/2508.03542",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel large-scale, open-source dataset (S2L) for spoken mathematical expressions and sentences, consisting of approximately 66,000 human-annotated and 571,000 synthetic audio samples.\n- It proposes several speech-to-LaTeX (S2L) methods, combining state-of-the-art ASR models with post-processing via fine-tuned language models (LMs) and end-to-end approaches based on Audio-LLMs.\n- The best models achieve an equation character error rate (CER) between 27.7% and 30.0% on English data, and a text CER up to 9.6% on mathematical sentences.\n- The results show that the proposed models outperform the existing MathSpeech model by a substantial margin, particularly on a newly proposed S2L-equations benchmark (27% vs. 64%).\n- This work establishes the first benchmark for mathematical sentence recognition and lays the groundwork for future advances in multimodal AI focused on mathematical content recognition.",
+        "classification": [
+            "Automatic Speech Recognition",
+            "Text2Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://hf.co/datasets/marsianin500/Speech2Latex"
+        ],
+        "date": "2025-08-12"
+    }
+]

@@ -1,0 +1,356 @@
+[
+    {
+        "title": "WebWatcher: Breaking New Frontier of Vision-Language Deep Research Agent",
+        "authors": "zhaoyd, callanwu, zhzhen23, richardxp888, Ornamentt",
+        "link": "https://arxiv.org/abs/2508.05748",
+        "github_repo": null,
+        "summary": "- This paper introduces WebWatcher, a novel multimodal deep research agent designed for complex information-seeking tasks that leverage both visual and textual data.\n- WebWatcher is equipped with enhanced visual-language reasoning capabilities and utilizes various tools for deep reasoning, including web search, image search, and code execution.\n- The model is trained using high-quality synthetic multimodal trajectories for efficient cold-start training and further enhanced via reinforcement learning.\n- To evaluate WebWatcher, the authors propose BrowseComp-VL, a challenging benchmark requiring complex information retrieval involving visual and textual data.\n- Experimental results on four benchmarks demonstrate that WebWatcher significantly outperforms existing baselines, including RAG workflow and open-source agents.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/WebAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Matrix-3D: Omnidirectional Explorable 3D World Generation",
+        "authors": "Yuqi Li, Wenhang Ge, Zhongqi Yang, kangfei, dearamy",
+        "link": "https://arxiv.org/abs/2508.08086",
+        "github_repo": null,
+        "summary": "- The paper introduces Matrix-3D, a novel framework for generating omnidirectional explorable 3D worlds from single images or text prompts.  It leverages a trajectory-guided panoramic video diffusion model and a panoramic 3D reconstruction module for high-quality and wide-coverage 3D world generation.\n- Matrix-3D uses a two-stage training strategy for 3D reconstruction: an optimization-based pipeline for detailed reconstruction and a feed-forward method for faster generation. The model integrates scene mesh renders as condition for trajectory guidance to address the issue of geometric inconsistencies in existing approaches.\n- The Matrix-Pano dataset, a large-scale synthetic dataset with 116K high-quality static panoramic video sequences and depth and trajectory annotations is introduced to facilitate effective training and evaluation. \n- Extensive experiments demonstrate that Matrix-3D outperforms state-of-the-art methods in panoramic video generation and 3D world reconstruction in terms of visual quality, camera controllability, and reconstruction speed, according to quantitative and qualitative evaluations.\n- The paper also conducts ablation studies to demonstrate the effectiveness of specific design choices, such as using scene mesh renders, and the two-stage training strategy.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://matrix-3d.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale\n  Asynchronous RL",
+        "authors": "Chuyi He, Shusheng Xu, Minyang Xie, Wei Fu, Jiaxuan Gao",
+        "link": "https://arxiv.org/abs/2508.07976",
+        "github_repo": "https://github.com/inclusionAI/ASearcher",
+        "summary": "- This paper introduces ASearcher, an open-source project for large-scale reinforcement learning of search agents that achieves expert-level search intelligence.\n- ASearcher uses a fully asynchronous RL training method to enable long-horizon search (over 40 turns and 150k output tokens), surpassing existing open-source 32B agents.\n- A key contribution is a prompt-based LLM agent that autonomously synthesizes high-quality and challenging QAs, creating a large-scale QA dataset for training.\n- ASearcher achieves substantial improvements on various benchmarks (46.7% and 20.8% Avg@4 gains on xBench and GAIA, respectively) compared to existing methods.\n- The agent design is simple, using only a search engine and a web browser as tools, without relying on any external LLMs.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/ASearcher"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "CharacterShot: Controllable and Consistent 4D Character Animation",
+        "authors": "Fei Shen, Yanhong Zeng, Wenran Liu, LiJiaxing, Gaojunyao",
+        "link": "https://arxiv.org/abs/2508.07409",
+        "github_repo": "https://github.com/Jeoyal/CharacterShot",
+        "summary": "- CharacterShot is a novel framework for controllable and consistent 4D character animation, generating dynamic 3D characters from a single reference image and a 2D pose sequence.\n- The model architecture uses a DiT-based image-to-video model enhanced with a dual-attention module and camera prior to generate multi-view videos with spatial-temporal and spatial-view consistency, followed by neighbor-constrained 4D Gaussian splatting for optimization.\n- CharacterShot outperforms existing state-of-the-art methods on the newly constructed CharacterBench benchmark, demonstrating superior performance in generating high-quality and consistent 4D character animations.\n- A large-scale dataset, Character4D, containing 13,115 unique characters with diverse appearances and motions, was also constructed to facilitate training and evaluation.\n- The framework is designed to be accessible to individual creators, democratizing the creation of high-quality 4D character animations without specialized hardware or expertise.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Jeoyal/CharacterShot"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Time Is a Feature: Exploiting Temporal Dynamics in Diffusion Language\n  Models",
+        "authors": "Chenchen Jing, Bozhen Fang, Wen Wang, qiuyuu, tricktreat",
+        "link": "https://arxiv.org/abs/2508.09138",
+        "github_repo": null,
+        "summary": "- This paper introduces two novel methods to improve the performance of diffusion language models (DLLMs) by leveraging their temporal dynamics.\n- The first method is Temporal Self-Consistency Voting, a training-free method that aggregates predictions across multiple denoising steps to select the most consistent output.\n- The second method is Temporal Consistency Reinforcement, a post-training method that uses a reward signal based on the Temporal Semantic Entropy (TSE) to encourage more stable generations.\n- Experimental results on multiple benchmarks show that these methods significantly improve the performance of DLLMs, with an average improvement of 24.7% on the Countdown dataset.\n- The findings underscore the importance of temporal dynamics in DLLMs and provide simple yet effective tools to harness them.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://aim-uofa.github.io/dLLM-MidTruth"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "HierSearch: A Hierarchical Enterprise Deep Search Framework Integrating\n  Local and Web Searches",
+        "authors": "Qiang Ju, Jiehan Cheng, Yan Yu, Zhicheng Dou, zstanjj",
+        "link": "https://arxiv.org/abs/2508.08088",
+        "github_repo": "https://github.com/plageon/HierSearch",
+        "summary": "- This paper introduces HierSearch, a hierarchical agentic deep search framework that integrates both local and web searches to enhance the retrieval of information.\n- The framework uses hierarchical reinforcement learning (HRL) to train three agents: a local deep search agent, a web deep search agent, and a planner agent, which coordinates the low-level agents.\n- To prevent hallucinations and irrelevant information propagation, a knowledge refiner is incorporated to filter the output from the low-level agents, providing a more accurate final answer.\n- Experiments across six benchmarks show that HierSearch outperforms flat RL and various deep search baselines, demonstrating the effectiveness of its hierarchical architecture and the knowledge refiner.\n- The superiority of the method is evidenced by improved performance on six benchmark datasets and more effective utilization of both local and web knowledge sources.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/plageon/HierSearch"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Test-Time Reinforcement Learning for GUI Grounding via Region\n  Consistency",
+        "authors": "Zhengxi Lu, Fei Tang, tricktreat, yanyc, DIONG1024",
+        "link": "https://arxiv.org/abs/2508.05615",
+        "github_repo": "https://github.com/zju-real/gui-rcpo",
+        "summary": "- This paper introduces GUI-RC and GUI-RCPO, two test-time scaling methods for GUI grounding that leverage spatial consistency across multiple model predictions to improve accuracy.\n- GUI-RC constructs spatial voting grids from multiple sampled predictions to identify consensus regions where models show highest agreement, improving accuracy by 2-3% across various architectures on ScreenSpot benchmarks without any training.\n- GUI-RCPO transforms consistency patterns into rewards for test-time reinforcement learning, enabling models to iteratively refine their outputs on unlabeled data during inference.\n- GUI-RCPO boosts Qwen2.5-VL-3B-Instruct from 80.11% to 85.14% on ScreenSpot-v2 through self-supervised optimization.\n- The approach reveals the untapped potential of test-time scaling and test-time reinforcement learning for GUI grounding, offering a promising path toward more robust and data-efficient GUI agents.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zju-real/gui-rcpo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "VertexRegen: Mesh Generation with Continuous Level of Detail",
+        "authors": "Jakob Engel, Chris Xie, Armen Avetisyan, Yawar Siddiqui, zx1239856",
+        "link": "https://arxiv.org/abs/2508.09062",
+        "github_repo": null,
+        "summary": "- This paper introduces VertexRegen, a novel mesh generation framework that produces meshes with a continuous level of detail, unlike existing autoregressive methods that generate meshes in a partial-to-complete manner.\n- VertexRegen is formulated as the reversal of edge collapse, i.e., vertex split, and is learned through a generative model. This enables anytime generation, where the process can be stopped at any step to yield a valid mesh.\n- Experimental results demonstrate that VertexRegen generates meshes of comparable quality to state-of-the-art methods while uniquely offering anytime generation and flexibility in controlling the level of detail.\n- The model uses a progressive mesh representation and is trained with a next-token prediction objective, which improves efficiency. The method uses a transformer network to generate meshes.\n- VertexRegen achieves superior results compared to existing methods in terms of coverage, MMD, and 1-NNA metrics during unconditional generation, demonstrating the effectiveness of the proposed continuous generation approach.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://vertexregen.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "UNCAGE: Contrastive Attention Guidance for Masked Generative\n  Transformers in Text-to-Image Generation",
+        "authors": "Kevin Galim, Minjae Lee, Byeongkeun Ahn, Wonjun Kang, JakeOh",
+        "link": "https://arxiv.org/abs/2508.05399",
+        "github_repo": "https://github.com/furiosa-ai/uncage",
+        "summary": "- This paper introduces UNCAGE, a training-free method that improves compositional text-to-image generation in Masked Generative Transformers (MGTs).\n- UNCAGE leverages attention maps to prioritize the unmasking of tokens representing individual objects, addressing the issue of misaligned attribute binding.\n- The method consistently improves performance across multiple benchmarks and metrics with negligible inference overhead.\n-  Experiments on the Attend-and-Excite and SSD datasets demonstrate that UNCAGE outperforms existing methods in terms of CLIP text-image similarity, CLIP text-text similarity, and GPT-based evaluation.\n- Qualitative results further support UNCAGE's effectiveness in generating images that accurately reflect the input prompts.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/furiosa-ai/uncage"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Aryabhata: An exam-focused language model for JEE Math",
+        "authors": "Sandeep Varma, Sachin Dharashivkar, RitvikPW",
+        "link": "https://arxiv.org/abs/2508.08665",
+        "github_repo": null,
+        "summary": "- Aryabhata 1.0 is a 7B parameter language model designed for solving mathematical problems, specifically focusing on the Indian Joint Entrance Examination (JEE).\n- The model is built by merging three strong open-weight reasoning models and then fine-tuned using supervised fine-tuning (SFT) with curriculum learning and reinforcement learning with verifiable rewards (RLVR).\n- Aryabhata outperforms existing models in accuracy and efficiency on both in-distribution (JEE Main 2025) and out-of-distribution benchmarks (MATH, GSM8K), while also providing pedagogically useful step-by-step reasoning.\n- The model is released as a foundation model to promote the development of exam-centric, open-source small language models.\n- Future work includes expanding coverage to Physics and Chemistry, scaling to the full JEE syllabus, and developing a family of exam-centric SLMs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/"
+        ],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Train Long, Think Short: Curriculum Learning for Efficient Reasoning",
+        "authors": "Marzyeh Ghassemi, Elie Bou-Zeid, Abed Hammoud, Kumail Alhamoud, Hasan Abed Al Kader Hammoud",
+        "link": "https://arxiv.org/abs/2508.08940",
+        "github_repo": "https://github.com/hammoudhasan/curriculum_grpo",
+        "summary": "- This paper introduces curriculum learning for length-controlled reasoning in large language models (LLMs) to improve efficiency.\n- It proposes a method that starts with generous token budgets and gradually tightens them over training using Group Relative Policy Optimization (GRPO), allowing the model to discover effective strategies and distill them into concise solutions.\n- The method is evaluated on several benchmark datasets (GSM8K, MATH500, SVAMP, College Math, and GSM+), demonstrating consistent outperformance of fixed-budget baselines in both accuracy and token efficiency.\n- Ablation studies show the impact of reward weighting and decay schedule design, highlighting the effectiveness of progressive constraint as an inductive bias.\n- The code and checkpoints are publicly available on GitHub.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hammoudhasan/curriculum_grpo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Towards Affordance-Aware Robotic Dexterous Grasping with Human-like\n  Priors",
+        "authors": "Haoran Xu, Cheng Zeng, Xingyue Zhao, Linghao Zhuang, Haoyu Zhao",
+        "link": "https://arxiv.org/abs/2508.08896",
+        "github_repo": null,
+        "summary": "- AffordDex, a novel two-stage framework for robotic dexterous grasping, is proposed, which integrates human motion priors with functional affordance constraints to achieve generalizable and anthropomorphic grasping.\n- The model architecture consists of two stages: a trajectory imitator pre-trained on human hand motions and a residual module trained to adapt these motions to specific objects, guided by a Negative Affordance-aware Segmentation (NAA) module and teacher-student distillation.\n- AffordDex outperforms state-of-the-art baselines across seen objects, unseen instances, and novel categories, achieving superior success rates, human-likeness scores, and affordance scores.\n- The NAA module identifies functionally inappropriate contact regions by leveraging Vision-Language Models (VLMs) to provide explicit visual-geometric constraints.\n- Extensive experiments demonstrate AffordDex's ability to generate grasps that are not only successful but also remarkably human-like and functionally correct.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/Maxwell-Zhao/AffordDex/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "DeCRED: Decoder-Centric Regularization for Encoder-Decoder Based Speech\n  Recognition",
+        "authors": "Luk\u00e1\u0161 Burget, Bolaji Yusuf, Karel Bene\u0161, Santosh Kesiraju, Alexander Polok",
+        "link": "https://arxiv.org/abs/2508.08938",
+        "github_repo": null,
+        "summary": "- This paper introduces DeCRED, a novel decoder-centric regularization technique for encoder-decoder based Automatic Speech Recognition (ASR) models.\n- DeCRED adds auxiliary classifiers to intermediate decoder layers, enabling next token prediction via intermediate logits, thus regularizing the internal language model.\n- Experiments demonstrate that DeCRED reduces the mean internal LM BPE perplexity by 36.6% and improves WER across multiple in-domain and out-of-domain datasets.\n- Compared to baselines and other regularization methods, DeCRED achieves competitive WERs, surpassing the baseline by 0.6% on TEDLIUM3.\n- Despite training on significantly less data with fewer parameters, DeCRED shows competitive WERs compared to OWSM v3.1 and Whisper-medium.",
+        "classification": [
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "https://github.com/BUTSpeechFIT/DeCRED"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Cut2Next: Generating Next Shot via In-Context Tuning",
+        "authors": "Yu Qiao, Ziqi Huang, Jiajun Li, Hongbo Liu, Jingwen He",
+        "link": "https://arxiv.org/abs/2508.08244",
+        "github_repo": null,
+        "summary": "- Cut2Next is a novel framework for Next Shot Generation (NSG), which synthesizes a subsequent, high-quality shot conforming to professional editing patterns while maintaining cinematic continuity.\n- It leverages a Diffusion Transformer (DiT) and employs in-context tuning guided by a Hierarchical Multi-Prompting strategy using Relational and Individual Prompts.\n- Architectural innovations include Context-Aware Condition Injection (CACI) and Hierarchical Attention Mask (HAM) to integrate diverse signals without introducing new parameters.\n- Cut2Next outperforms baselines on CutBench, a new benchmark, in visual consistency and text fidelity, with user studies showing strong preference for its adherence to editing patterns and cinematic continuity.\n- RawCuts and CuratedCuts datasets were constructed, with hierarchical prompts, and CutBench was introduced for evaluation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Adversarial Video Promotion Against Text-to-Video Retrieval",
+        "authors": "Shuai Liu, Qian Li, Zhengyu Zhao, Chenhao Lin, michaeltqw108",
+        "link": "https://arxiv.org/abs/2508.06964",
+        "github_repo": "https://github.com/michaeltian108/ViPro",
+        "summary": "- This paper introduces the first adversarial attack against text-to-video retrieval (T2VR) that promotes videos rather than suppressing them, termed Video Promotion (ViPro).\n- ViPro utilizes a modality refinement technique (MoRe) to enhance black-box transferability by capturing the intricate interaction between visual and textual modalities through temporal clipping and semantic weighting.\n- The experimental results demonstrate that ViPro outperforms existing baselines by over 30%, 10%, and 4% in white-box, grey-box, and black-box settings, respectively, across three popular T2VR models and datasets.\n- The robustness of ViPro is evaluated against existing defenses (JPEG compression and temporal shuffling) and human perception, indicating its practical impact.\n- ViPro's effectiveness and transferability are validated through experiments on various models and datasets, highlighting the significance of the proposed video promotion attack.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/michaeltian108/ViPro"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "OpenCUA: Open Foundations for Computer-Use Agents",
+        "authors": "Tianbao Xie, Junlin Yang, Dunjie Lu, Bowen Wang, xywang626",
+        "link": "https://arxiv.org/abs/2508.09123",
+        "github_repo": null,
+        "summary": "- OpenCUA is a comprehensive open-source framework for Computer-Use Agents (CUAs) that addresses critical gaps in existing research by providing diverse datasets, effective training recipes, and efficient evaluation benchmarks.\n- The framework introduces novel modules, including reflective reasoning and context encoding, to improve the reasoning capabilities of CUAs.\n- OpenCUA achieves state-of-the-art performance on multiple benchmarks, surpassing proprietary models in various aspects, including success rate and efficiency.\n- The framework's data processing pipeline and novel training recipes significantly enhance the performance and generalizability of CUAs, enabling the community to conduct more rigorous research.\n- Comprehensive evaluation benchmarks ensure the models' robustness and reliability across diverse tasks and platforms.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/OpenCUA/OpenCUA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "AutoCodeBench: Large Language Models are Automatic Code Benchmark\n  Generators",
+        "authors": "Tao Zhang, Zhiying Zeng, Yuchi Deng, Ao Liu, Jason Chou",
+        "link": "https://arxiv.org/abs/2508.09101",
+        "github_repo": null,
+        "summary": "- AutoCodeBench, a novel multilingual code generation benchmark, is introduced to evaluate the capabilities of large language models (LLMs) in generating code across multiple programming languages.\n- The benchmark features a fully automated workflow built on an LLM-based sandbox, ensuring high quality, diversity, and practicality for evaluating code generation performance.\n- AutoCodeBench comprises a large-scale, high-difficulty multilingual benchmark covering 20 programming languages and various programming domains, outperforming existing benchmarks.\n- Experimental results demonstrate that even the most advanced LLMs still struggle with complex and diverse multilingual code generation problems.\n- AutoCodeBench provides valuable insights for the future development of code generation benchmarks and helps evaluate the capabilities of LLMs in generating code across multiple programming languages.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Feedback-Driven Tool-Use Improvements in Large Language Models via\n  Automated Build Environments",
+        "authors": "Xuesong Yao, Yufei Xu, Zhengyin Du, Changhao Jiang, Junjie-Ye",
+        "link": "https://arxiv.org/abs/2508.08791",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel automated framework for enhancing the tool-use capabilities of large language models (LLMs) via reinforcement learning.\n- The framework generates diverse and stable tool-use environments automatically, thereby eliminating the need for manual construction.\n- Feedback-driven model training is performed within these automated environments, leading to significant improvements in LLM performance across various tool-use benchmarks.\n- The approach demonstrates consistent gains across different LLMs, showcasing its broad applicability and effectiveness.\n- The study highlights the importance of automated environment construction and feedback-driven training in improving LLM's tool-use capabilities.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "Bridging Theory and Practice in Quantum Game Theory: Optimized\n  Implementation of the Battle of the Sexes with Error Mitigation on NISQ\n  Hardware",
+        "authors": "Jhon Alejandro Andrade, Mateo Buenaventura Samboni, Carlos Andres Duran Paredes, Germ\u00e1n D\u00edaz Agreda, sebasmos",
+        "link": "https://arxiv.org/abs/2508.09050",
+        "github_repo": null,
+        "summary": "- This paper presents a full experimental realization of the \"Battle of the Sexes\" quantum game on IBM Quantum's ibm_sherbrooke processor.\n- It introduces a Guided Circuit Mapping (GCM) method for error mitigation that dynamically selects qubit pairs and optimizes routing based on real-time topology and calibration data.\n- The experimental results demonstrate that quantum advantages in strategic coordination persist under realistic NISQ conditions, with payoff improvement over classical equilibrium and a relative error between 3.5% and 12%.\n- The study compares analytical predictions and hardware execution of four quantum strategies across 31 entanglement values.\n- The findings provide a pathway toward practical applications of quantum game theory in multi-agent, economic, and distributed decision-making systems.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/Carlosandp/GCMStrategy"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "BiasGym: Fantastic Biases and How to Find (and Remove) Them",
+        "authors": "Arnav Arora, Haeun Yu, Siddhesh Milind Pawar, Nadav Borenstein, sekhcopenlu",
+        "link": "https://arxiv.org/abs/2508.08855",
+        "github_repo": null,
+        "summary": "- This paper introduces BiasGym, a novel framework for identifying and mitigating biases in large language models (LLMs).\n- BiasGym uses a two-module framework: the first module identifies biased attention heads, and the second module uses a novel fine-tuning approach to mitigate those biases.\n- The proposed approach outperforms existing methods across several LLMs and bias types, achieving higher performance in both bias mitigation and downstream task performance.\n- The framework is shown to generalize well across diverse models and bias types.\n- BiasGym provides a controlled setup for in-depth analysis of bias mitigation techniques in LLMs, supporting future research on fairness and safety in AI.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "WGAST: Weakly-Supervised Generative Network for Daily 10 m Land Surface\n  Temperature Estimation via Spatio-Temporal Fusion",
+        "authors": "Rachid Nedjai, Raphael Canals, Adel Hafiane, sofianebouaziz",
+        "link": "https://arxiv.org/abs/2508.06485",
+        "github_repo": "https://github.com/Sofianebouaziz1/WGAST.git",
+        "summary": "- This paper introduces WGAST, a novel weakly-supervised generative network designed for daily 10m land surface temperature (LST) estimation.\n- The model architecture employs a conditional generative adversarial network (cGAN) with a four-stage generator: feature extraction, fusion, LST reconstruction, and noise suppression.\n- WGAST leverages a weakly supervised learning strategy based on physical averaging principles, using Landsat 8 LST as proxy ground truth.\n- Experimental results demonstrate that WGAST outperforms state-of-the-art methods by reducing RMSE by 17.18% and improving SSIM by 11.00% on average.\n- The model is robust to cloud-induced LST gaps and effectively captures fine-scale thermal patterns, validated against 33 ground-based sensors.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Sofianebouaziz1/WGAST.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "GeRe: Towards Efficient Anti-Forgetting in Continual Learning of LLM via\n  General Samples Replay",
+        "authors": "Yang Fan, Yuefeng Li, Mengchen Zhao, Shuoran Jiang, Yunan Zhang",
+        "link": "https://arxiv.org/abs/2508.04676",
+        "github_repo": "https://github.com/Qznan/GeRe",
+        "summary": "- This paper introduces GeRe, a novel framework for efficient anti-forgetting in continual learning of LLMs via general samples replay.\n- GeRe leverages a set of general samples replayed using a threshold-based margin loss to mitigate catastrophic forgetting in the downstream tasks.\n- The proposed method demonstrates superior performance compared to existing continual learning methods, achieving better generalization capabilities and robustness.\n- GeRe shows significant improvements in both MMU and average accuracy across multiple downstream tasks compared to baseline methods.\n- The authors provide a comprehensive analysis of their method, investigating the effect of various parameters and showcasing the method's effectiveness in various continual learning scenarios.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Qznan/GeRe"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    },
+    {
+        "title": "NVSpeech: An Integrated and Scalable Pipeline for Human-Like Speech\n  Modeling with Paralinguistic Vocalizations",
+        "authors": "Haoyue Zhan, Yiheng Lu, Yuancheng Wang, Qinke Ni, Huan Liao",
+        "link": "https://arxiv.org/abs/2508.04195",
+        "github_repo": null,
+        "summary": "- This paper introduces NVSpeech, an integrated and scalable pipeline for human-like speech modeling that incorporates paralinguistic vocalizations (like laughter, breathing, and interjections).\n- NVSpeech includes a new, manually annotated dataset of 48,430 utterances with 18 word-level paralinguistic categories and an automatically annotated corpus of 174,179 utterances (573 hours).\n- The pipeline develops a paralinguistic-aware ASR model that jointly transcribes lexical and non-verbal content.\n- NVSpeech also uses a fine-tuned zero-shot TTS model to enable explicit control over paralinguistic vocalizations, allowing context-aware insertion at arbitrary token positions for human-like speech synthesis.\n- Experimental results demonstrate that NVSpeech outperforms baseline models on paralinguistic tagging, ASR, and zero-shot TTS tasks, showing the effectiveness of incorporating paralinguistic vocalizations for more natural and expressive speech synthesis.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/nvspeech170k/nvspeech"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-13"
+    }
+]

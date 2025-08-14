@@ -1,0 +1,229 @@
+[
+    {
+        "title": "Stand-In: A Lightweight and Plug-and-Play Identity Control for Video\n  Generation",
+        "authors": "Chen Li, Hao Liu, Wenjing Wang, Qixin Yan, Bowen Xue",
+        "link": "https://arxiv.org/abs/2508.07901",
+        "github_repo": null,
+        "summary": "- This paper introduces Stand-In, a lightweight and plug-and-play framework for identity preservation in video generation, addressing the challenge of generating high-fidelity human videos matching user-specified identities.\n- The framework introduces a conditional image branch into a pre-trained video generation model, achieving identity control through restricted self-attentions with conditional position mapping, and is trained quickly using only 2000 image-video pairs.\n- Stand-In outperforms other methods in video quality and identity preservation while using significantly fewer parameters (~1% additional parameters compared to full parameter training methods).\n- The plug-and-play design enables seamless integration with other applications, such as subject-driven video generation, pose-referenced video generation, stylization, and face swapping.\n- Experimental results demonstrate the framework's effectiveness, high compatibility, and generalizability across diverse applications, achieving state-of-the-art results on multiple identity-preserving video generation benchmarks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Mol-R1: Towards Explicit Long-CoT Reasoning in Molecule Discovery",
+        "authors": "Di Zhang, Junxian Li, Qinggang Zhang, Weida Wang, Jiatong Li",
+        "link": "https://arxiv.org/abs/2508.08401",
+        "github_repo": null,
+        "summary": "- Mol-R1 is a novel framework designed to enhance the explainability and reasoning performance of explicit long chain-of-thought (CoT) reasoning LLMs in text-based molecule generation.\n- It introduces Prior Regulation via In-context Distillation (PRID), a distillation strategy to generate paired reasoning traces guided by prior regulations.\n- Mol-R1 also uses Molecular Iterative Adaptation (MoIA), a training strategy combining supervised fine-tuning (SFT) with reinforced policy optimization (RPO) to improve reasoning performance.\n- Experiments show Mol-R1 outperforms existing baselines in text-based molecule reasoning generation, achieving a BLEU score that is 354% higher than QWQ-32B and an exact match score 1.5 times better than DeepSeek-R1.\n- The framework significantly enhances the interpretability and trustworthiness of generated molecules through high-quality reasoning traces.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "AWorld: Dynamic Multi-Agent System with Stable Maneuvering for Robust\n  GAIA Problem Solving",
+        "authors": "Jinjie Gu, Chenyi Zhuang, Chengyue Yu, Qintong Wu, Zhitian Xie",
+        "link": "https://arxiv.org/abs/2508.09889",
+        "github_repo": null,
+        "summary": "- This paper introduces AWorld, a dynamic multi-agent system (MAS) for robust GAIA problem solving that uses dynamic supervision and maneuvering mechanisms to improve the stability and reliability of agent-based systems.\n- The MAS architecture consists of an Execution Agent and a Guard Agent; the Guard Agent verifies and corrects the reasoning process of the Execution Agent, reducing errors and improving robustness.\n- Experiments on the GAIA benchmark show that AWorld significantly outperforms single-agent systems and standard tool-augmented systems, achieving first place among open-source projects.\n- The dynamic maneuvering mechanism in AWorld improves both the effectiveness and stability of solutions, highlighting the practical value of collaborative agent roles in developing more reliable intelligent systems.\n- This approach is inspired by principles in control theory, particularly from marine vessel navigation, where continuous and adaptive adjustments are essential to ensure a vessel converges to a desired trajectory.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/AWorld"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Diffusion LLMs Can Do Faster-Than-AR Inference via Discrete Diffusion\n  Forcing",
+        "authors": "Hao Zhang, Jiachun Jin, Yijie Jin, Chenkai Xu, Xu Wang",
+        "link": "https://arxiv.org/abs/2508.09192",
+        "github_repo": "https://github.com/zhijie-group/Discrete-Diffusion-Forcing",
+        "summary": "- This paper introduces Discrete Diffusion Forcing (D2F), a novel training paradigm for Diffusion Large Language Models (dLLMs) that achieves faster-than-autoregressive (AR) inference speeds.\n- D2F combines block-wise autoregressive generation with inter-block parallel decoding, enabling efficient KV cache utilization and significantly increased throughput.\n- The proposed method utilizes an asymmetric distillation process to train D2F dLLMs, leveraging pre-trained dLLMs to avoid the high cost of training from scratch.\n- Empirical results demonstrate that D2F dLLMs achieve more than 2.5x inference speed compared to similarly sized AR baselines on multiple benchmarks.\n- The acceleration provided by D2F is shown to be more than 50x faster than other dLLMs while maintaining comparable output quality.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/zhijie-group/Discrete-Diffusion-Forcing"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Echo-4o: Harnessing the Power of GPT-4o Synthetic Images for Improved\n  Image Generation",
+        "authors": "Zhenghao Hu, Leqi Zhu, Zihao Wang, Dongzhi Jiang, Junyan Ye",
+        "link": "https://arxiv.org/abs/2508.09987",
+        "github_repo": null,
+        "summary": "- This paper introduces Echo-40, a new unified multimodal generative model that leverages a synthetic dataset, Echo-40-Image, generated using GPT-40 to improve image generation capabilities.\n- Echo-40-Image consists of 180K synthetic images covering surreal fantasy scenes, multi-reference image generation, and complex instruction-following tasks, addressing limitations of real-world datasets.\n- The model is evaluated on several benchmarks, including GenEval, DPG-Bench, GenEval++, and Imagine-Bench, and demonstrates improved performance over existing methods in instruction-following, and imaginative generation.\n- Two novel benchmarks, GenEval++ and Imagine-Bench, are proposed to mitigate score saturation and focus on imaginative content generation, respectively.\n- The strong transferability of Echo-40-Image is demonstrated by applying it to multiple foundation models, achieving consistent performance gains across multiple metrics.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/yejy53/Echo-40"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Yejy53/Echo-40-Image/"
+        ],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with\n  Long-Term Memory",
+        "authors": "Yuan Lin, Yiyuan Pan, Wentao Ye, Yichen He, Lin Long",
+        "link": "https://arxiv.org/abs/2508.09736",
+        "github_repo": "https://github.com/bytedance-seed/m3-agent",
+        "summary": "This paper introduces M3-Agent, a novel multimodal agent framework equipped with long-term memory, which processes real-time visual and auditory inputs to build and update its memory.  M3-Agent outperforms existing methods by achieving 6.7%, 7.7%, and 5.3% higher accuracy on three benchmarks (M3-Bench-robot, M3-Bench-web, and VideoMME-long, respectively).  A new benchmark, M3-Bench, is also introduced for evaluating multimodal agent capabilities, including long-video question answering.  M3-Agent's design incorporates both episodic and semantic memory organized in an entity-centric format.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Multimodal",
+            "Video Classification",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance-seed/m3-agent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Learning to Align, Aligning to Learn: A Unified Approach for\n  Self-Optimized Alignment",
+        "authors": "Lei Fan, Shuowen Zhang, Zhiling Ye, Yun Yue, Haowen Wang",
+        "link": "https://arxiv.org/abs/2508.07750",
+        "github_repo": null,
+        "summary": "- This paper introduces GRAO (Group Relative Alignment Optimization), a novel unified framework that synergizes supervised fine-tuning (SFT) and reinforcement learning (RL) for self-optimized language model alignment.\n- GRAO addresses the limitations of SFT (offline policy trajectory) and RL (low sample efficiency, dependency on high-quality base models) through a multi-sample generation strategy, a novel Group Direct Alignment Loss, and reference-aware parameter updates.\n- Theoretical analysis demonstrates GRAO's convergence guarantees and sample efficiency advantages over conventional approaches.\n- Comprehensive evaluations across complex human alignment tasks show GRAO achieves significant relative improvements (57.70%, 17.65%, 7.95%, and 5.18%) over SFT, DPO, PPO, and GRPO baselines respectively.\n- The results indicate that GRAO enhances both the reasoning ability and alignment of language models by dynamically adjusting imitation learning and exploratory learning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Story2Board: A Training-Free Approach for Expressive Storyboard\n  Generation",
+        "authors": "Dani Lischinski, Dvir Samuel, Omri Avrahami, Matan Levy, David Dinkevich",
+        "link": "https://arxiv.org/abs/2508.09983",
+        "github_repo": null,
+        "summary": "- Story2Board is a novel training-free framework for expressive storyboard generation from natural language descriptions.\n- It introduces two components: Latent Panel Anchoring and Reciprocal Attention Value Mixing to ensure coherence across panels without architectural changes or fine-tuning.\n- The proposed method outperforms existing baselines in terms of prompt alignment, character consistency, and scene diversity, as demonstrated by qualitative and quantitative evaluations.\n- A new benchmark, Rich Storyboard Benchmark, is introduced to assess layout diversity, background storytelling, and expressive visual composition, addressing limitations of existing benchmarks.\n- The paper also proposes a new Scene Diversity metric to quantify spatial and pose variations, complementing existing metrics focusing primarily on character identity.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "MathReal: We Keep It Real! A Real Scene Benchmark for Evaluating Math\n  Reasoning in Multimodal Large Language Models",
+        "authors": "Zhihan Zhou, Yue Guo, Zhentao Zhang, Zixin Wang, junfeng0288",
+        "link": "https://arxiv.org/abs/2508.06009",
+        "github_repo": "https://github.com/junfeng0288/MathReal",
+        "summary": " - This paper introduces MATHREAL, a new benchmark dataset containing 2000 real-world mathematical questions with images captured by handheld devices. \n -  The dataset is categorized into three primary challenges: image quality degradation, perspective variation, and irrelevant content interference, which are further divided into 14 subcategories. \n -  MATHREAL spans five core knowledge and ability categories, three question types, and three difficulty levels, making it comprehensive and nuanced. \n - Experiments on MATHREAL reveal a significant performance gap between existing MLLMs' abilities on real-world versus clean or processed images. \n - The analysis of error patterns provides insights for future model improvements in multimodal mathematical reasoning.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/junfeng0288/MathReal"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Cooper: Co-Optimizing Policy and Reward Models in Reinforcement Learning\n  for Large Language Models",
+        "authors": "Guiyang Hou, Xingyu Wu, Haitao Hong, tricktreat, yanyc",
+        "link": "https://arxiv.org/abs/2508.05613",
+        "github_repo": "https://github.com/zju-real/cooper",
+        "summary": "- This paper introduces Cooper, a novel reinforcement learning framework that co-optimizes policy and reward models to enhance the reasoning capabilities of large language models.\n- Cooper addresses the limitations of both rule-based and model-based reward paradigms by dynamically updating the reward model based on positive and negative samples, thereby mitigating reward hacking.\n- The proposed VerifyRM reward model, trained on a large-scale dataset using a hybrid annotation strategy, achieves higher accuracy (89.42%) on VerifyBench compared to other models of the same size.\n- Experiments demonstrate that Cooper not only alleviates reward hacking but also improves end-to-end RL performance, achieving a 0.54% gain in average accuracy on Qwen2.5-1.5B-Instruct.\n- The findings suggest that dynamically updating the reward model during reinforcement learning is an effective strategy to combat reward hacking and improve performance on various mathematical reasoning benchmarks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zju-real/cooper"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "IAG: Input-aware Backdoor Attack on VLMs for Visual Grounding",
+        "authors": "Di Zhang, Beining Xu, Junxian Li",
+        "link": "https://arxiv.org/abs/2508.09456",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel input-aware backdoor attack method, IAG, for manipulating the grounding behavior of Vision-Language Models (VLMs).\n- IAG forces the model to ground a specific target object regardless of the user's query by embedding semantic information of the attack target's description into the original image using a text-conditional U-Net.\n- The attack's stealthiness is ensured by utilizing a reconstruction loss to minimize visual discrepancies between poisoned and clean images.\n- IAG achieves over 65% ASR@0.5 on InternVL-2.5-8B and shows promising results on Ferret-7B and LlaVA-1.5-7B, demonstrating its effectiveness and robustness.\n- Extensive experiments validate IAG's effectiveness across multiple VLMs and datasets, highlighting its potential threat to the security of VLMs in visual grounding tasks.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Noise Hypernetworks: Amortizing Test-Time Compute in Diffusion Models",
+        "authors": "Zeynep Akata, Nataniel Ruiz, Alexey Dosovitskiy, Shyamgopal Karthik, Luca Eyring",
+        "link": "https://arxiv.org/abs/2508.09968",
+        "github_repo": "https://github.com/ExplainableML/HyperNoise",
+        "summary": "\n- This paper introduces Noise Hypernetworks, a novel framework that improves the quality of images generated by diffusion models without requiring additional computation during inference.\n- The core idea is to replace the reward-guided test-time noise optimization with a noise hypernetwork that modulates the initial noise input.\n- This hypernetwork is trained using a tractable noise-space objective that maintains the fidelity to the base model while optimizing for desired characteristics.\n- Experiments show that Noise Hypernetworks recover a significant portion of the quality gains from explicit test-time optimization at a fraction of the computational cost, achieving competitive results on standard benchmarks with faster inference speeds.\n- The approach improves the quality of images across multiple diffusion models and various reward types, demonstrating its generalizability and efficiency.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/ExplainableML/HyperNoise"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "VisCodex: Unified Multimodal Code Generation via Merging Vision and\n  Coding Models",
+        "authors": "Dongdong Zhang, Yixia Li, Xun Wu, Shaohan Huang, Lingjie Jiang",
+        "link": "https://arxiv.org/abs/2508.09945",
+        "github_repo": null,
+        "summary": "- VisCodex is a unified framework that merges vision and coding language models to achieve strong multimodal code generation capabilities.  The model architecture uses a task vector-based model merging technique to integrate a state-of-the-art coding LLM into a vision-language backbone.\n- The Multimodal Coding Dataset (MCD), a large-scale and diverse dataset of 598k samples, was introduced to support training and evaluation. MCD includes various modalities such as HTML code, chart image-code pairs, image-augmented StackOverflow QA, and algorithmic problems.\n- InfiBench-V, a challenging benchmark designed to evaluate visually rich, real-world programming questions, was also introduced. \n- VisCodex achieves state-of-the-art performance among open-source MLLMs and approaches proprietary models like GPT-4, highlighting the effectiveness of the model merging strategy and new datasets.\n- Extensive experiments demonstrate VisCodex's superior performance on various benchmarks, outperforming other open-source models and approaching the performance of GPT-4.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Text2Text Generation",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/JackLingjie/VisCodex"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "Can LLM-Generated Textual Explanations Enhance Model Classification\n  Performance? An Empirical Study",
+        "authors": "Gjergji Kasneci, Zineb Attaoui, Ege Erdogan, Juraj Vladika, Mahdi Dhaini",
+        "link": "https://arxiv.org/abs/2508.09776",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel LLM-based framework for automatically generating textual explanations for natural language inference (NLI) tasks.\n- The framework leverages multiple state-of-the-art LLMs to generate high-quality textual explanations, rigorously evaluated using a suite of natural language generation (NLG) metrics.\n- Experiments demonstrate that these automated explanations exhibit highly competitive effectiveness compared to human-annotated explanations in improving model performance across various pre-trained language models (PLMs) and LLMs.\n- The findings underscore a promising avenue for scalable, automated LLM-based textual explanation generation for extending NLP datasets and enhancing model performance.\n- The research addresses the lack of definitive ground-truth explanations in Explainable NLP and the limitations of traditional human annotation approaches.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    },
+    {
+        "title": "AMFT: Aligning LLM Reasoners by Meta-Learning the Optimal\n  Imitation-Exploration Balance",
+        "authors": "Yong Li, Jie Feng, Lixuan He",
+        "link": "https://arxiv.org/abs/2508.06944",
+        "github_repo": "https://github.com/hlxtsyj/AMFT",
+        "summary": "This paper introduces AMFT, a novel single-stage algorithm for aligning large language model (LLM) reasoners by learning the optimal balance between imitation and exploration.  AMFT uses a meta-gradient adaptive weight controller to dynamically adjust the balance between supervised fine-tuning (SFT) and reinforcement learning (RL).  The proposed method consistently outperforms state-of-the-art methods on various benchmark tasks such as mathematical reasoning, visual reasoning, and vision-language navigation.  AMFT's adaptive controller learns a dynamic training curriculum without the need for manually tuning hyperparameters.  Ablation studies confirm that the meta-learning controller is crucial for AMFT's stability, sample efficiency, and performance.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/hlxtsyj/AMFT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-14"
+    }
+]

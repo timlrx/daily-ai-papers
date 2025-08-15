@@ -1,0 +1,192 @@
+[
+    {
+        "title": "We-Math 2.0: A Versatile MathBook System for Incentivizing Visual\n  Mathematical Reasoning",
+        "authors": "Xiaowan Wang, Yanzi Wang, Peiqing Yang, Qiuna Tan, Runqi Qiao",
+        "link": "https://arxiv.org/abs/2508.10433",
+        "github_repo": null,
+        "summary": "\n- This paper introduces WE-MATH 2.0, a unified system that enhances the mathematical reasoning abilities of Multimodal Large Language Models (MLLMs).\n- WE-MATH 2.0 integrates a structured mathematical knowledge system, model-centric data space modeling, and a reinforcement learning (RL)-based training paradigm.\n- The system includes three key components: MathBook Knowledge System, MathBook-Standard and Pro, and MathBookEval benchmark covering 491 knowledge points and 1819 fundamental principles.\n- The proposed MathBook-RL training framework uses a two-stage RL approach (Cold-Start Fine-tuning and Progressive Alignment RL) and outperforms existing baselines on four widely used benchmarks.\n- The comprehensive MathBookEval benchmark demonstrates that MathBook-RL performs well and shows promising generalization in mathematical reasoning.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://we-math2.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "NextStep-1: Toward Autoregressive Image Generation with Continuous\n  Tokens at Scale",
+        "authors": "Quan Sun, Jingwei Wu, Guopeng Li, Chunrui Han, NextStep Team",
+        "link": "https://arxiv.org/abs/2508.10711",
+        "github_repo": "https://github.com/stepfun-ai/NextStep-1",
+        "summary": "- NextStep-1 is a 14B parameter autoregressive model that achieves state-of-the-art performance in text-to-image generation by using continuous image tokens and a flow matching head, unlike previous methods that rely on heavy diffusion models or vector quantization.\n- The model architecture consists of a Transformer backbone, a language modeling head for text tokens, and a flow matching head for continuous image tokens, trained end-to-end with a weighted sum of cross-entropy and flow matching losses.\n- NextStep-1 demonstrates superior performance on various benchmarks, achieving 0.54 on WISE, 0.67 on GenAI-Bench, 85.28 on DPG-Bench, and 0.417 on OneIG-Bench, showcasing strong capabilities in high-fidelity image synthesis, image editing, and complex free-form manipulation.\n- The model's high performance is attributed to its unified approach which handles both text and continuous image tokens, the flow-matching head's robustness, and the use of a well-dispersed normalized latent space.\n- The code and models will be released to the community to promote open research.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/stepfun-ai/NextStep-1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/NextStep-1"
+        ],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "ToonComposer: Streamlining Cartoon Production with Generative\n  Post-Keyframing",
+        "authors": "Xiaoyu Li, Yaowei Li, Zhaoyang Zhang, Guangzhi Wang, Lingen Li",
+        "link": "https://arxiv.org/abs/2508.10881",
+        "github_repo": null,
+        "summary": "- ToonComposer is a novel generative model that unifies inbetweening and colorization into a single post-keyframing stage, reducing manual effort in cartoon production.\n- It uses a diffusion transformer (DiT) architecture with a spatial low-rank adapter (SLRA) to adapt a pre-trained video foundation model to the cartoon domain while preserving temporal consistency.\n- The model incorporates a sparse sketch injection mechanism, allowing for precise control with as few as a single keyframe sketch and a colored reference frame.\n- Experiments on synthetic and real-world benchmarks demonstrate that ToonComposer outperforms existing methods in visual quality, motion coherence, and production efficiency.\n- ToonComposer introduces region-wise control, enabling flexible motion generation without the need for fully drawn sketches, further reducing the workload of artists.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://lg-li.github.io/project/tooncomposer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "UI-Venus Technical Report: Building High-performance UI Agents with RFT",
+        "authors": "Shuheng Shen, Xingran Zhou, Zhenyu Xu, Zhengwen Zeng, Zhangxuan Gu",
+        "link": "https://arxiv.org/abs/2508.10833",
+        "github_repo": "https://github.com/antgroup/UI-Venus",
+        "summary": " *  This paper introduces UI-Venus, a novel UI agent that leverages a multimodal large language model and reinforcement learning to achieve state-of-the-art performance in UI grounding and navigation tasks. \n*  The model uses only screenshots as input and is trained on a relatively small dataset of several hundred thousand samples. \n*  UI-Venus outperforms existing baselines on standard grounding benchmarks (Screenspot-V2/Pro) and online UI navigation arenas (AndroidWorld), demonstrating its effectiveness. \n*  The authors propose Self-Evolving Trajectory History Alignment & Sparse Action Enhancement, a novel technique that enhances the navigation performance of UI agents. \n*  The code and evaluation codes are publicly available on Github, promoting further research and development in the community.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/antgroup/UI-Venus"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "PRELUDE: A Benchmark Designed to Require Global Comprehension and\n  Reasoning over Long Contexts",
+        "authors": "Rui Lu, Tong Li, Chulun Zhou, Tsz Ting Chung, Mo Yu",
+        "link": "https://arxiv.org/abs/2508.09848",
+        "github_repo": null,
+        "summary": "- This paper introduces PRELUDE, a new benchmark designed to evaluate long-context understanding and reasoning capabilities in large language models (LLMs).\n- The benchmark focuses on the task of determining whether a character's prequel story is consistent with the canonical narrative of the original book, requiring global comprehension and deep reasoning.\n-  Experimental results demonstrate that state-of-the-art LLMs, even with advanced techniques like retrieval-augmented generation (RAG) and in-domain training, lag significantly behind human performance.\n- The substantial performance gap highlights the considerable room for improvement in LLMs' long-context understanding and reasoning abilities.\n-  PRELUDE provides a novel and challenging task for evaluating LLMs, pushing the boundaries of current long-context understanding research.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://gorov.github.io/prelude"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "STream3R: Scalable Sequential 3D Reconstruction with Causal Transformer",
+        "authors": "Honghua Chen, Shangchen Zhou, Fangzhou Hong, Yihang Luo, Yushi Lan",
+        "link": "https://arxiv.org/abs/2508.10893",
+        "github_repo": null,
+        "summary": "- The paper introduces STREAM3R, a novel approach to 3D reconstruction that reformulates pointmap prediction as a decoder-only transformer problem, addressing the limitations of existing methods that struggle with streaming inputs and long sequences.\n- STREAM3R utilizes causal attention, inspired by advances in language modeling, enabling efficient processing of image sequences and generalization to diverse and challenging scenarios, including dynamic scenes.\n- The model architecture employs a causal transformer that sequentially processes incoming images, caching features from previous frames as context for future inference, leading to improved efficiency and scalability.\n- Extensive experiments demonstrate that STREAM3R outperforms state-of-the-art methods across various benchmarks for both static and dynamic scenes, showcasing its superior performance in online 3D perception.\n- The compatibility of STREAM3R with LLM-style training infrastructure allows efficient large-scale pre-training and fine-tuning for various downstream 3D tasks.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "Pass@k Training for Adaptively Balancing Exploration and Exploitation of\n  Large Reasoning Models",
+        "authors": "Qinghao Ye, Yue Ling, Youbin Wu, Xiaobo Qin, Zhipeng Chen",
+        "link": "https://arxiv.org/abs/2508.10751",
+        "github_repo": null,
+        "summary": " - This paper introduces Pass@k Training, a novel reinforcement learning technique that uses the Pass@k metric as a reward to train large language models (LLMs).\n - Pass@k Training adaptively balances exploration and exploitation, leading to improved LLM performance on downstream tasks.\n - The authors demonstrate that Pass@k Training outperforms traditional Pass@1 Training and other exploration methods, such as noise rewards and entropy regularization, across multiple datasets and tasks.\n - They further propose efficient Pass@k Training methods using bootstrap sampling and analytical derivation to reduce training time and variance.\n - Additionally, they explore implicit reward design for Pass@k Training and show promising results, providing directions for future research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/RUCAIBox/Passk_Training"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "HumanSense: From Multimodal Perception to Empathetic Context-Aware\n  Responses through Reasoning MLLMs",
+        "authors": "Yi Yuan, Tianqi Li, Yabing Wang, Ruobing Zheng, Zheng Qin",
+        "link": "https://arxiv.org/abs/2508.10576",
+        "github_repo": null,
+        "summary": "- The paper introduces HumanSense, a comprehensive benchmark designed to evaluate the human-centered perception and interaction capabilities of Multimodal Large Language Models (MLLMs).\n- HumanSense focuses on deep understanding of extended multimodal contexts and the formulation of rational feedback, covering 15 progressively challenging tests and 3882 questions.\n- The evaluation reveals considerable room for improvement in leading MLLMs, particularly for advanced interaction-oriented tasks; supplementing visual input with audio and text yields substantial improvements; and Omni-modal models show advantages.\n- A multi-stage, modality-progressive reinforcement learning approach enhances the reasoning abilities of an Omni-modal model, achieving substantial gains on evaluation results; successful reasoning processes exhibit highly consistent thought patterns.\n- The training-free manner prompts further enhance the performance of non-reasoning models.",
+        "classification": [
+            "Multimodal",
+            "Video-Text-to-Text",
+            "Visual Question Answering",
+            "Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://digital-avatar.github.io/ai/HumanSense/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "A Survey on Diffusion Language Models",
+        "authors": "Zhiqiang Shen, Bowei Guo, Mingda Chen, Tianyi Li",
+        "link": "https://arxiv.org/abs/2508.10875",
+        "github_repo": "https://github.com/VILA-Lab/Awesome-DLMs",
+        "summary": "This survey paper provides a comprehensive overview of Diffusion Language Models (DLMs), highlighting their advantages over autoregressive models in terms of speed and bidirectional context.  It details the evolution of DLMs, covering both foundational principles and state-of-the-art models, along with pre-training strategies and post-training methods.  The survey also includes a thorough analysis of DLM inference strategies and their optimization, in addition to the latest approaches in multimodal extensions. Finally, it addresses the limitations and challenges of DLMs, while outlining future research directions.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/VILA-Lab/Awesome-DLMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "From Black Box to Transparency: Enhancing Automated Interpreting\n  Assessment with Explainable AI in College Classrooms",
+        "authors": "Ziyin Zhang, Zhaokun Jiang",
+        "link": "https://arxiv.org/abs/2508.10860",
+        "github_repo": null,
+        "summary": "- This paper proposes a novel multi-dimensional modeling framework for automated interpreting quality assessment, addressing limitations of existing research in examining language use quality, handling data imbalance, and providing model explanations.\n- The framework integrates feature engineering, data augmentation using variational autoencoders (VAEs), and explainable AI (XAI) techniques such as SHAP analysis to enhance model transparency and provide detailed diagnostic feedback for learners.\n- The model demonstrates strong predictive performance on a new English-Chinese consecutive interpreting dataset, identifying key features for fidelity, fluency, and language use.\n- The explainability features of the model provide insights into the specific contributions of individual features and facilitates detailed feedback to students, unlike traditional human evaluation.\n- This approach offers a scalable and reliable alternative to traditional human evaluation, supporting self-regulated learning for interpreting students.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "Processing and acquisition traces in visual encoders: What does CLIP\n  know about your camera?",
+        "authors": "Giorgos Tolias, Yuta Nakashima, Giorgos Kordopatis-Zilos, Vladan Stojni\u0107, Ryan Ramos",
+        "link": "https://arxiv.org/abs/2508.10637",
+        "github_repo": "https://github.com/ryan-caesar-ramos/visual-encoder-traces",
+        "summary": "- This paper investigates the impact of image processing and acquisition parameters on the representations learned by visual encoders, focusing on subtle variations often imperceptible to humans.\n- The authors find that these parameters leave identifiable traces in the representation spaces of many models and can be easily recovered, impacting downstream tasks.\n-  Contrastive vision-language models are found to be most sensitive to these influences, potentially due to the absence of strong image augmentations during pretraining.\n-  The study highlights potential biases introduced by these traces, where model predictions are influenced by acquisition or processing parameters rather than object semantics.\n-  The findings raise concerns about model reliability, especially in corner cases that could occur in real-world applications, advocating for robust models less sensitive to these factors.",
+        "classification": [
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/ryan-caesar-ramos/visual-encoder-traces"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    },
+    {
+        "title": "When Explainability Meets Privacy: An Investigation at the Intersection\n  of Post-hoc Explainability and Differential Privacy in the Context of Natural\n  Language Processing",
+        "authors": "Gjergji Kasneci, Florian Matthes, Ege Erdogan, Stephen Meisenbacher, Mahdi Dhaini",
+        "link": "https://arxiv.org/abs/2508.10482",
+        "github_repo": null,
+        "summary": "- This paper investigates the interplay between post-hoc explainability and differential privacy in natural language processing (NLP).\n- The authors empirically analyze the privacy-explainability trade-off using differentially private text rewriting methods and various post-hoc explainability techniques.\n- Their findings reveal a complex relationship between privacy and explainability, highlighting the influence of downstream tasks and method choices.\n- They also demonstrate that privacy and explainability can coexist synergistically under certain configurations.\n- The authors propose practical recommendations for researchers and practitioners working at the intersection of privacy and explainability in NLP.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/dmah10/xpnlp"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-15"
+    }
+]

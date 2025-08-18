@@ -1,0 +1,155 @@
+[
+    {
+        "title": "SSRL: Self-Search Reinforcement Learning",
+        "authors": "Yanxu Chen, Yuxin Zuo, Heng Zhou, Kaiyan Zhang, Yuchen Fan",
+        "link": "https://arxiv.org/abs/2508.10874",
+        "github_repo": null,
+        "summary": " - This paper introduces Self-Search Reinforcement Learning (SSRL), a novel approach that leverages the intrinsic search capabilities of Large Language Models (LLMs) to reduce reliance on costly interactions with external search engines during reinforcement learning.\n - SSRL enhances LLMs' self-search capabilities through format-based and rule-based rewards, enabling models to iteratively refine knowledge utilization internally.\n - Empirical evaluations demonstrate that SSRL-trained policy models provide a cost-effective and stable environment for search-driven RL training, reducing reliance on external search engines and facilitating robust sim-to-real transfer.\n - The findings highlight the potential of LLMs to support more scalable RL agent training, offering an efficient and robust framework for search-based tasks.\n - The work introduces a full-sim search approach that enables training without external tools, reducing cost and dependence while achieving comparable performance to prior methods.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "Thyme: Think Beyond Images",
+        "authors": "Wei Chen, Chaoyou Fu, Shukang Yin, Xingyu Lu, Yi-Fan Zhang",
+        "link": "https://arxiv.org/abs/2508.11630",
+        "github_repo": null,
+        "summary": "This paper introduces Thyme, a novel multimodal large language model that transcends existing \"think with images\" approaches by autonomously generating and executing image processing and computational operations via executable code.  Thyme uses a two-stage training strategy: Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL), incorporating the GRPO-ATS algorithm to balance reasoning exploration with code execution precision.  Evaluations on nearly 20 benchmarks demonstrate significant and consistent performance gains, especially in challenging high-resolution perception and complex reasoning tasks.  The datasets, sandbox, and code are publicly available.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/yfzhang114/Thyme"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Kwai-Keye/Thyme-RL"
+        ],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "PaperRegister: Boosting Flexible-grained Paper Search via Hierarchical\n  Register Indexing",
+        "authors": "Xianpei Han, Yaojie Lu, Hongyu Lin, Xuanang Chen, lzq2021",
+        "link": "https://arxiv.org/abs/2508.11116",
+        "github_repo": "https://github.com/Li-Z-Q/PaperRegister",
+        "summary": "- PaperRegister is a novel approach to flexible-grained paper search that uses a hierarchical register indexing method and online adaptive retrieval.\n- It transforms traditional abstract-based indexing into a hierarchical index tree, enabling more precise retrieval of papers based on detailed queries.\n- Experiments show PaperRegister achieves state-of-the-art performance, especially excelling in fine-grained search scenarios.\n- The hierarchical register schema consists of information nodes at various granularities, and the view recognizer identifies the relevant views for the input query.\n- Offline, PaperRegister constructs a hierarchical index tree, while online, it performs view-based matching to adaptively retrieve relevant papers.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Li-Z-Q/PaperRegister"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "XQuant: Breaking the Memory Wall for LLM Inference with KV Cache\n  Rematerialization",
+        "authors": "Rishabh Tiwari, Haocheng Xi, Minjae Lee, Coleman Hooper, Aditya Tomar",
+        "link": "https://arxiv.org/abs/2508.10395",
+        "github_repo": null,
+        "summary": "- This paper introduces XQuant, a novel technique for reducing the memory footprint of large language model (LLM) inference by quantizing and caching layer input activations instead of standard key-value (KV) caching.\n- XQuant achieves up to 7.7x memory savings with less than 0.1 perplexity degradation compared to the FP16 baseline.\n- The authors further introduce XQuant-CL, which exploits cross-layer similarity in activations to achieve up to 10x memory savings with minimal perplexity degradation.\n- XQuant-CL outperforms state-of-the-art KV cache quantization methods despite using standard uniform quantization.\n- The results demonstrate that XQuant and XQuant-CL effectively alleviate the memory bottleneck in LLM inference while maintaining near FP16 accuracy across a wide range of models.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "StyleMM: Stylized 3D Morphable Face Model via Text-Driven Aligned Image\n  Translation",
+        "authors": "Junyong Noh, Kwan Yun, Seungmi Lee",
+        "link": "https://arxiv.org/abs/2508.11203",
+        "github_repo": null,
+        "summary": "- This paper introduces StyleMM, a novel framework for creating stylized 3D Morphable Face Models (3DMMs) using text-driven image translation.\n- StyleMM fine-tunes pre-trained mesh deformation and texture generation networks using stylized facial images generated via text-guided image-to-image translation.\n- The framework incorporates Explicit Attribute-preserving Stylization (EAS) to maintain identity, alignment, and expression during stylization.\n- StyleMM outperforms existing methods in terms of identity-level facial diversity and stylization capability, as demonstrated through quantitative and qualitative evaluations.\n- The code and videos are available at the provided GitHub link.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://kwanyun.github.io/stylemm_page"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "FantasyTalking2: Timestep-Layer Adaptive Preference Optimization for\n  Audio-Driven Portrait Animation",
+        "authors": "Mu Xu, Fan Jiang, MengChao Wang, wangqiang9",
+        "link": "https://arxiv.org/abs/2508.11255",
+        "github_repo": null,
+        "summary": "- This paper introduces Talking-Critic, a multimodal reward model, and Talking-NSQ, a large-scale multi-dimensional human preference dataset containing 410K preference pairs, to address the limitations of existing audio-driven portrait animation methods.\n- A novel framework called Timestep-Layer adaptive multi-expert Preference Optimization (TLPO) is proposed to align diffusion-based portrait animation models with fine-grained, multidimensional preferences.\n- TLPO decouples preferences into specialized expert modules and fuses them across timesteps and network layers, enabling comprehensive, fine-grained enhancement across all dimensions.\n- Experiments demonstrate that Talking-Critic significantly outperforms existing methods in aligning with human preference ratings, and TLPO achieves substantial improvements over baseline models in lip-sync accuracy, motion naturalness, and visual quality.\n- The proposed methods exhibit superior performance in both qualitative and quantitative evaluations, showcasing the effectiveness of the proposed approach for generating high-fidelity, human-aligned audio-driven portrait animations.",
+        "classification": [
+            "Audio-to-Audio",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://fantasyamap.github.io/fantasy-talking2/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "TexVerse: A Universe of 3D Objects with High-Resolution Textures",
+        "authors": "Nan Cao, Rui Ma, Li Zhang, YiboZhang2001",
+        "link": "https://arxiv.org/abs/2508.10868",
+        "github_repo": null,
+        "summary": "- This paper introduces TexVerse, a large-scale 3D asset dataset containing over 858K unique high-resolution 3D models with 1.6M 3D instances, sourced from Sketchfab. \n- TexVerse includes subsets such as TexVerse-Skeleton (69K rigged models) and TexVerse-Animation (54K animated models), preserving original skeleton and animation data. \n- The dataset features detailed model annotations describing overall characteristics, structural components, and intricate features, offering high-quality data for various 3D vision and graphics tasks. \n- Compared to existing datasets like Objaverse, TexVerse significantly outperforms in terms of high-resolution textures, with fewer low-resolution or missing textures. \n- TexVerse is released under Creative Commons licenses, making it a valuable resource for both academic and commercial applications in areas such as texture synthesis, PBR material development, animation, and various 3D vision and graphics tasks.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/yiboz2001/TexVerse"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "Controlling Multimodal LLMs via Reward-guided Decoding",
+        "authors": "Michal Drozdzal, Adriana Romero-Soriano, Koustuv Sinha, Pierluca D'Oro, oscmansan",
+        "link": "https://arxiv.org/abs/2508.11616",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for reward-guided decoding of Multimodal Large Language Models (MLLMs) to improve visual grounding.\n- The method involves building two separate reward models to independently control object precision and recall, enabling on-the-fly controllability of an MLLM's inference process.\n- The proposed method allows users to dynamically trade off between object precision and recall, as well as between compute and visual grounding quality.\n- Evaluation on standard object hallucination benchmarks demonstrates that the method provides significant controllability over MLLM inference while consistently outperforming existing hallucination mitigation methods.\n- The method is shown to be effective on various MLLMs and robust to changes in the reward model's quality.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "X-Node: Self-Explanation is All We Need",
+        "authors": "Islem Rekik, prajit123",
+        "link": "https://arxiv.org/abs/2508.10461",
+        "github_repo": "https://github.com/basiralab/X-Node",
+        "summary": "- This paper introduces X-Node, a novel self-explaining GNN framework where each node generates its own explanation as part of the prediction process.\n- The model architecture involves constructing a structured context vector for each node, encoding interpretable cues such as degree, centrality, and label agreement within its local topology.  A lightweight Reasoner module then maps this context into a compact explanation vector.\n- This explanation vector serves three purposes: reconstructing the node's latent embedding (to enforce faithfulness), generating a natural language explanation using a pre-trained LLM, and guiding the GNN itself via a \"text-injection\" mechanism.\n- X-Node was evaluated on graph datasets derived from MedMNIST and MorphoMNIST, integrated with GCN, GAT, and GIN backbones. Results show that X-Node maintains competitive classification accuracy while producing faithful, per-node explanations.\n- The experiments demonstrate that X-Node consistently improves over baseline GNNs across all datasets, showing gains in both accuracy and sensitivity, particularly in sensitivity which is critical for medical applications.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/basiralab/X-Node"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    },
+    {
+        "title": "SPARSE Data, Rich Results: Few-Shot Semi-Supervised Learning via\n  Class-Conditioned Image Translation",
+        "authors": "Paolo Soda, Loredana Zollo, Clemente Lauretti, Guido Manni",
+        "link": "https://arxiv.org/abs/2508.06429",
+        "github_repo": "https://github.com/GuidoManni/SPARSE",
+        "summary": "- This paper introduces SPARSE, a novel GAN-based semi-supervised learning framework designed for medical image classification with limited labeled data.\n- SPARSE integrates three neural networks: a class-conditioned image translation generator, an authenticity assessment and classification discriminator, and a dedicated classifier.\n- The framework uses a three-phase training schedule alternating between supervised and unsupervised learning to optimize learning efficiency.\n- Evaluation on eleven MedMNIST datasets shows that SPARSE significantly outperforms six state-of-the-art GAN-based semi-supervised learning methods, particularly in low-data (5-shot) settings.\n- The method's superiority is attributed to its use of class-conditioned image translation instead of image generation from noise, enhancing feature representation and pseudo-labeling reliability.",
+        "classification": [
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/GuidoManni/SPARSE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-18"
+    }
+]

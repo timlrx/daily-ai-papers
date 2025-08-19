@@ -1,0 +1,250 @@
+[
+    {
+        "title": "Ovis2.5 Technical Report",
+        "authors": "Yang Li, cqgwin, Suikong, xxyyy123, runninglsy",
+        "link": "https://arxiv.org/abs/2508.11737",
+        "github_repo": null,
+        "summary": " - Ovis2.5 is a multimodal large language model designed for native resolution visual perception and strong multimodal reasoning. It integrates a native resolution vision transformer and is trained with a five-phase curriculum.\n - To enhance reasoning, it performs reflection, including self-checking and revision, exposed as an optional \"thinking mode\".\n - Ovis2.5-9B achieves state-of-the-art results on the OpenCompass multimodal leaderboard, averaging 78.3, and Ovis2.5-2B achieves state-of-the-art results for its size, scoring 73.9.\n -  The model shows strong capabilities in grounding and video tasks, and achieves leading results on STEM benchmarks and complex chart analysis.\n - Two open-source models, Ovis2.5-9B and Ovis2.5-2B, are released.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/AIDC-AI/Ovis"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/AIDC-AI/Ovis2.5-9B"
+        ],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "ComoRAG: A Cognitive-Inspired Memory-Organized RAG for Stateful Long\n  Narrative Reasoning",
+        "authors": "Yufeng Wang, Wei Wei, Rongchen Zhao, Juyuan Wang, lxucs",
+        "link": "https://arxiv.org/abs/2508.10419",
+        "github_repo": "https://github.com/EternityJune25/ComoRAG",
+        "summary": "- ComoRAG is a novel cognitive-inspired memory-organized retrieval-augmented generation (RAG) framework for stateful long narrative reasoning.\n- It introduces a dynamic memory workspace and iterative reasoning cycles, inspired by the human prefrontal cortex, to address the limitations of traditional RAG methods.\n-  ComoRAG outperforms strong RAG baselines across four challenging long-context narrative benchmarks, achieving consistent relative gains up to 11%.\n- Its performance is particularly advantageous for complex queries requiring global comprehension and demonstrates remarkable modularity and generalizability.\n- The code is publicly released at https://github.com/EternityJune25/ComoRAG.",
+        "classification": [
+            "Document Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/EternityJune25/ComoRAG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "4DNeX: Feed-Forward 4D Generative Modeling Made Easy",
+        "authors": "Zeng Tao, Jiawei Ren, Long Zhuo, Tianqi Liu, Zhaoxi Chen",
+        "link": "https://arxiv.org/abs/2508.13154",
+        "github_repo": null,
+        "summary": "- This paper introduces 4DNeX, the first feed-forward framework capable of generating 4D scene representations from a single image.\n- The model architecture involves fine-tuning a pre-trained video diffusion model, using a unified 6D video representation that combines RGB and XYZ sequences to model both appearance and geometry.\n- To address the scarcity of 4D training data, a large-scale dataset, 4DNeX-10M, containing high-quality 4D annotations is constructed.\n- Experimental results show that 4DNeX outperforms existing methods in terms of efficiency and generalizability, achieving comparable or better results in novel-view video generation.\n- The proposed approach provides a scalable and efficient solution for image-to-4D modeling, offering a foundation for generative 4D world models.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [
+            "https://4dnex.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Next Visual Granularity Generation",
+        "authors": "Kang Liao, Qingyi Tao, Zhonghua Wu, Zhouxia Wang, yikaiwang",
+        "link": "https://arxiv.org/abs/2508.12811",
+        "github_repo": null,
+        "summary": "- The paper introduces a novel image generation framework called Next Visual Granularity (NVG) that generates images by progressively refining them from a global layout to fine details in a structured manner.\n- The NVG framework represents images as structured sequences with varying numbers of unique tokens at different granularity levels, enabling fine-grained control over the generation process.\n- The model's architecture consists of separate content and structure generators, with the structure generator using a lightweight rectified flow model and the content generator employing a self-attention block with parallel linear layers.\n- Experimental results on the ImageNet dataset demonstrate that NVG consistently outperforms state-of-the-art models in terms of FID scores (3.30 \u2192 3.03, 2.57 \u2192 2.44, 2.09 \u2192 2.06), highlighting its superior performance.\n- The structured coarse-to-fine generation approach allows for natural control during generation, addressing limitations of existing autoregressive and diffusion models.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://yikai-wang.github.io/nvg"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Speed Always Wins: A Survey on Efficient Architectures for Large\n  Language Models",
+        "authors": "Jusen Du, Yucheng Zhou, Jiaxi Hu, Weigao Sun, landisen",
+        "link": "https://arxiv.org/abs/2508.09834",
+        "github_repo": "https://github.com/weigao266/Awesome-Efficient-Arch",
+        "summary": "This paper surveys recent advancements in efficient architectures for large language models (LLMs).\n- The authors systematically examine innovative LLM architectures that address the inherent limitations of transformers and boost efficiency.\n- The survey covers linear and sparse sequence modeling, efficient full attention variants, sparse mixture-of-experts, hybrid model architectures, and emerging diffusion LLMs.\n- The authors provide a blueprint of modern efficient LLM architectures and discuss applications of efficient techniques to other modalities.\n- The study categorizes the reviewed studies for efficient LLM architecture, and hopes to help researchers develop scalable resource-aware foundation models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/weigao266/Awesome-Efficient-Arch"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Has GPT-5 Achieved Spatial Intelligence? An Empirical Study",
+        "authors": "Ruisi Wang, Qingping Sun, Yubo Wang, yl-1993, caizhongang",
+        "link": "https://arxiv.org/abs/2508.13142",
+        "github_repo": null,
+        "summary": "This paper empirically evaluates the spatial intelligence capabilities of GPT-5 and other state-of-the-art multi-modal language models (MLLMs).  A comprehensive taxonomy of spatial tasks is proposed to unify existing benchmarks, ensuring fair evaluations.  GPT-5 demonstrates significant advancements in spatial intelligence, surpassing other models across various benchmarks. However, GPT-5 still falls short of human performance on many challenging spatial reasoning tasks, highlighting ongoing limitations in MLLMs.  The paper identifies areas where further research is needed to advance MLLMs towards achieving true spatial intelligence.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "HeroBench: A Benchmark for Long-Horizon Planning and Structured\n  Reasoning in Virtual Worlds",
+        "authors": "Artyom Sorokin, Viktor Volkov, Stefan Rebrikov, Petr Anokhin, roxal",
+        "link": "https://arxiv.org/abs/2508.12782",
+        "github_repo": "https://github.com/stefanrer/HeroBench",
+        "summary": "- HeroBench, a novel benchmark, is introduced to evaluate long-horizon planning and structured reasoning in complex virtual worlds.\n- It uses a rigorously constructed dataset of RPG-inspired tasks challenging models to plan strategically, gather resources, and defeat adversaries.\n- The benchmark includes a simulated environment and analytical tools for evaluating model performance, revealing substantial performance disparities across state-of-the-art LLMs.\n- Detailed error analysis identifies specific weaknesses in current models' abilities to generate robust high-level plans and execute structured actions.\n- HeroBench advances the evaluation of LLM reasoning and provides a foundation for future research in autonomous planning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/stefanrer/HeroBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "When Punctuation Matters: A Large-Scale Comparison of Prompt Robustness\n  Methods for LLMs",
+        "authors": "Elena Tutubalina, Gleb Ershov, Mikhail Chaichuk, apanc, myyycroft",
+        "link": "https://arxiv.org/abs/2508.11383",
+        "github_repo": "https://github.com/AIRI-Institute/when-punctuation-matters",
+        "summary": "- This paper presents the first systematic evaluation of five methods for improving prompt robustness in large language models (LLMs).\n- The evaluation is conducted on eight models from Llama, Qwen, and Gemma families across 52 tasks from the Natural Instructions dataset, covering various robustness methods and learning paradigms.\n- The study analyzes the generalization of these methods against multiple types of distribution shifts and extends the analysis to GPT-4.1 and DeepSeek V3.\n- The findings offer insights into the effectiveness of different robustness methods, enabling practitioners to make informed decisions.\n- The code for the study is publicly available on GitHub.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/AIRI-Institute/when-punctuation-matters"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Matrix-Game 2.0: An Open-Source, Real-Time, and Streaming Interactive\n  World Model",
+        "authors": "Yifan Zhang, Boyang Wang, Zexiang Liu, Chunli Peng, Xianglong He",
+        "link": "https://arxiv.org/abs/2508.13009",
+        "github_repo": null,
+        "summary": "- Matrix-Game 2.0 is a novel interactive world model that generates high-quality, minute-level videos at 25 FPS using a few-step autoregressive diffusion approach, addressing limitations of existing models that rely on bidirectional attention and lengthy inference steps.\n- The model architecture consists of three key components: a scalable data production pipeline using Unreal Engine and GTA5, an action injection module for frame-level user inputs, and a few-step distillation technique.\n- Matrix-Game 2.0 outperforms existing methods in terms of speed and video quality, achieving real-time performance on a single H100 GPU.  Quantitative evaluations show improvements in visual quality, temporal coherence, and action controllability compared to baselines such as Oasis and YUME.\n- The model's strong generalization capability is demonstrated through experiments on diverse scenes including Minecraft, GTA5 driving scenarios, and TempleRun game environments.\n- The model weights and codebase are open-sourced to advance research in interactive world modeling.",
+        "classification": [
+            "Text-to-Video",
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Lumen: Consistent Video Relighting and Harmonious Background Replacement\n  with Video Generative Models",
+        "authors": "Zixiang Gao, Chenxuan Miao, Yutong Feng, Yuxuan Liu, Jianshu Zeng",
+        "link": "https://arxiv.org/abs/2508.12945",
+        "github_repo": null,
+        "summary": "- Lumen is a novel video relighting framework that uses large-scale video generative models to achieve consistent video relighting with harmonious background replacement.\n- The model architecture uses a diffusion transformer (DiT) architecture and a multi-domain joint training curriculum to leverage both synthetic and realistic video data, enhancing the quality and realism of the output.\n- A style adapter is incorporated into the model to decouple the learning of relighting and domain appearance distribution, leading to improved foreground preservation.\n- Lumen outperforms existing methods on multiple quantitative metrics (PSNR, SSIM, LPIPS, CLIP-T, V-Bench) across paired and unpaired video data, demonstrating significant improvements in lighting consistency and background harmonization.\n- The paper proposes a new evaluation metric, intrinsic consistency, to assess foreground preservation without ground-truth pairs and includes an extensive user study to support its qualitative evaluation.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://lumen-relight.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "S^2-Guidance: Stochastic Self Guidance for Training-Free Enhancement of\n  Diffusion Models",
+        "authors": "Meiqi Wu, Nisha Huang, Xiaokun Feng, Jiashu Zhu, Chubin Chen",
+        "link": "https://arxiv.org/abs/2508.12880",
+        "github_repo": null,
+        "summary": "- This paper introduces S^2-Guidance, a novel training-free method for enhancing the quality of diffusion models.\n- S^2-Guidance leverages stochastic block-dropping during the forward process to guide the model away from low-quality predictions.\n- The method consistently surpasses existing state-of-the-art guidance strategies (e.g., Classifier-Free Guidance) on both image and video generation tasks, demonstrating superior performance across multiple benchmarks.\n- Extensive qualitative and quantitative experiments show that S^2-Guidance produces higher-quality, more coherent outputs with better adherence to prompts.\n-  The core of the method lies in its ability to refine the model's suboptimal predictions using stochastic sub-networks of the model itself.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://s2guidance.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Representing Speech Through Autoregressive Prediction of Cochlear Tokens",
+        "authors": "Daniel L. K. Yamins, Evelina Fedorenko, Greta Tuckute, klemenk",
+        "link": "https://arxiv.org/abs/2508.11598",
+        "github_repo": null,
+        "summary": "- AuriStream, a novel biologically-inspired model for speech representation, is introduced. It uses a two-stage framework: WavCoch transforms audio into a time-frequency representation based on the human cochlea, and AuriStream, an autoregressive model, predicts cochlear tokens.\n- AuriStream demonstrates competitive performance on various speech tasks, including phoneme and word decoding, and achieves state-of-the-art results on lexical semantics.\n- Unlike other models, AuriStream generates audio continuations which are interpretable in a cochleagram space, providing insights into the model's internal representations and predictions. \n- The results show that the model efficiently learns short and long-range speech statistics without ground-truth phoneme, word, or task labels.\n- The proposed framework combines autoregressive prediction with biologically plausible inputs, contributing to advancements in human-like speech models.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Audio Classification",
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://tukoresearch.github.io/auristream-speech/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Inverse-LLaVA: Eliminating Alignment Pre-training Through Text-to-Vision\n  Mapping",
+        "authors": "Tyler Derr, xuhuizhan5",
+        "link": "https://arxiv.org/abs/2508.12466",
+        "github_repo": null,
+        "summary": "- This paper introduces Inverse-LLaVA, a novel multimodal learning approach that eliminates the need for expensive alignment pre-training by inverting the traditional mapping direction.\n- Unlike existing methods that project visual features into discrete text token spaces, Inverse-LLaVA maps text embeddings into continuous visual representation space and performs fusion within transformer intermediate layers.\n- Inverse-LLaVA achieves notable improvements on reasoning-intensive and cognitive tasks while showing expected decreases in perception tasks requiring memorized visual-text associations, providing empirical evidence that alignment pre-training is not necessary for effective multimodal learning, particularly for complex reasoning tasks.\n- The proposed method reduces computational requirements by 45% compared to traditional methods.\n- Inverse-LLaVA's performance is validated across nine multimodal benchmarks demonstrating nuanced performance trade-offs across different tasks.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://inverse-llava.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Precise Action-to-Video Generation Through Visual Action Prompts",
+        "authors": "Minghan Qin, Sida Peng, Haoyu Guo, walsvid, angshineee",
+        "link": "https://arxiv.org/abs/2508.13104",
+        "github_repo": null,
+        "summary": "- The paper introduces visual action prompts, a novel approach to action-to-video generation that uses skeletons as unified action representations for high-degree-of-freedom actions.\n- This approach addresses the precision-generality tradeoff in existing methods by balancing action precision and dynamic transferability across domains.\n- The proposed method utilizes a pretrained video generation model, CogVideoX, fine-tuned with visual action prompts via lightweight techniques such as ControlNet and LoRA.\n- Experimental results demonstrate the superior performance of visual action prompts compared to text and agent-centric action representations on several datasets, including EgoVid, RT-1, and DROID.\n- The method shows effective cross-domain knowledge transfer, generating high-quality videos with consistent dynamics even for novel skills and scenarios.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "G-CUT3R: Guided 3D Reconstruction with Camera and Depth Prior\n  Integration",
+        "authors": "Evgeny Burnaev, Peter Wonka, Artem Komarichev, rusrakhimov, smileyenot983",
+        "link": "https://arxiv.org/abs/2508.11379",
+        "github_repo": null,
+        "summary": "- G-CUT3R is a novel feed-forward approach for guided 3D scene reconstruction that enhances the CUT3R model by integrating prior information such as depth, camera calibrations, or camera positions.\n- The model architecture incorporates a lightweight modification to CUT3R, adding a dedicated encoder for each modality to extract features, which are fused with RGB image tokens via zero convolution.\n- G-CUT3R demonstrates significant performance improvements across multiple benchmarks, including 3D reconstruction and other multi-view tasks, showing its ability to effectively utilize available priors.\n- The model's flexible design enables seamless integration of any combination of prior information during inference and maintains compatibility with varying input modalities.\n- Experiments demonstrate significant performance improvements, achieving state-of-the-art results across multiple benchmark datasets and tasks.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-19"
+    },
+    {
+        "title": "Beyond Solving Math Quiz: Evaluating the Ability of Large Reasoning\n  Models to Ask for Information",
+        "authors": "Xi Yang, Duanyu Feng, Chen Huang, Bowen Qin, YouchengHuang",
+        "link": "https://arxiv.org/abs/2508.11252",
+        "github_repo": null,
+        "summary": " - This paper introduces CRITIC-math, a new benchmark dataset for evaluating the ability of Large Reasoning Models (LRMs) to ask for information when presented with incomplete mathematical problems. \n- The dataset consists of two types of incomplete problems: missing goals and missing premises, with diverse contexts and challenging mathematical problems. \n- Experiments on several state-of-the-art LRMs reveal their inability in proactively asking for information, highlighting behaviors related to overthinking and hallucination. \n- Supervised fine-tuning (SFT) is explored as a potential solution for improving LRMs' ability to ask for information, though it shows a dilemma between solving problems and asking questions. \n- CRITIC-math offers new insights into the development of LRMs with genuine intelligence, going beyond simple problem-solving abilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/YouchengHuang/CRITIC-math",
+            "https://huggingface.co/datasets/YouchengHuang/CRITIC-math-sft"
+        ],
+        "date": "2025-08-19"
+    }
+]

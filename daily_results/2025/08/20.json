@@ -1,0 +1,363 @@
+[
+    {
+        "title": "Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent\n  Distillation and Agentic RL",
+        "authors": "Liam-Liu, hugteste, kangz, wanwan1212, tianyue818",
+        "link": "https://arxiv.org/abs/2508.13167",
+        "github_repo": null,
+        "summary": "This paper introduces Chain-of-Agents (CoA), a novel paradigm for large language model (LLM) reasoning that enables end-to-end complex problem solving.  The CoA paradigm supports multi-agent collaboration within a single model by dynamically activating different tool agents and role-playing agents.  To achieve this, a multi-agent distillation framework is used to transfer capabilities from state-of-the-art multi-agent systems into LLM trajectories for agentic supervised fine-tuning, followed by agentic reinforcement learning.  The resulting models, Agent Foundation Models (AFMs), establish new state-of-the-art performance across diverse benchmarks in web and code agent settings.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/huggingface/Math-Verify"
+        ],
+        "huggingface_urls": [
+            "https://github.com/huggingface/smolagents"
+        ],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "LongSplat: Robust Unposed 3D Gaussian Splatting for Casual Long Videos",
+        "authors": "Yen-Yu Lin, Fu-En Yang, Cheng Sun, cmhungsteve, linjohnss",
+        "link": "https://arxiv.org/abs/2508.14041",
+        "github_repo": null,
+        "summary": "- LongSplat is a novel framework for robust novel view synthesis from casually captured long videos without camera poses, addressing challenges of irregular camera motion and expansive scenes.\n- It employs an incremental joint optimization strategy that concurrently optimizes camera poses and 3D Gaussians, using a robust pose estimation module leveraging learned 3D priors.\n- The method incorporates an efficient Octree Anchor Formation mechanism to reduce memory usage, enabling processing of long videos.\n- Extensive experiments demonstrate that LongSplat substantially improves rendering quality and pose accuracy compared to existing methods.\n- The approach addresses critical challenges in novel view synthesis from casually captured long videos, including pose drift, inaccurate geometry initialization, and memory limitations.",
+        "classification": [
+            "Image-to-3D",
+            "Video Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Prompt Orchestration Markup Language",
+        "authors": "Yuqing Yang, Nan Chen, Yuge Zhang, Jiahang",
+        "link": "https://arxiv.org/abs/2508.13948",
+        "github_repo": null,
+        "summary": "POML is a novel markup language designed for prompt engineering, addressing challenges in prompt structure, data integration, format sensitivity, and tooling.  It offers specialized components for diverse data types (documents, tables, images) and a CSS-like styling system, decoupling content from presentation.  Two case studies (PomLink and TableQA) and a user study demonstrate POML's effectiveness in complex applications and real-world development.  The PomLink application showcases POML's support for multimodal data, while the TableQA case study explores the significant impact of prompt styling on model performance. ",
+        "classification": [
+            "Table Question Answering",
+            "Summarization",
+            "Text Generation",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/poml"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Mind the Generation Process: Fine-Grained Confidence Estimation During\n  LLM Generation",
+        "authors": "Xinyi Wang, Jie Shi, Shisong Chen, Tingyun Li, JinyiHan",
+        "link": "https://arxiv.org/abs/2508.12040",
+        "github_repo": null,
+        "summary": "- This paper introduces FineCE, a novel confidence estimation method that provides fine-grained, continuous confidence scores throughout the text generation process.\n- FineCE first develops a comprehensive pipeline for constructing training data that effectively captures the underlying probabilistic distribution of LLM responses.\n- Then, it trains a model to predict confidence scores for arbitrary text sequences in a supervised manner, and proposes a Backward Confidence Integration (BCI) strategy to enhance confidence estimation.\n- Extensive experiments demonstrate that FineCE consistently outperforms existing confidence estimation methods on multiple benchmark datasets.\n- FineCE provides three strategies for identifying optimal positions to perform confidence estimation within the generation process, which balances the trade-off between performance and computational efficiency.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/JinyiHan99/FineCE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Training-Free Text-Guided Color Editing with Multi-Modal Diffusion\n  Transformer",
+        "authors": "Deyu Zhou, Xili Dai, dorni, EvanTHU, zachary-yin",
+        "link": "https://arxiv.org/abs/2508.09131",
+        "github_repo": null,
+        "summary": "- This paper introduces ColorCtrl, a novel training-free method for text-guided color editing that leverages multi-modal diffusion transformers.\n- ColorCtrl excels in precise color control across multiple materials while preserving physical consistency (lighting, geometry, material properties).\n- The method outperforms existing training-free approaches and even surpasses strong commercial models in terms of edit quality and consistency.\n- Extensive experiments demonstrate ColorCtrl's effectiveness on various image and video datasets, showcasing its versatility and robustness.\n- ColorCtrl's architecture allows for fine-grained control over color attributes through attention manipulation and word-level control.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Evaluating Podcast Recommendations with Profile-Aware LLM-as-a-Judge",
+        "authors": "Alice Wang, Edoardo D'Amico, Gustavo Penha, marcodena, frafabbri",
+        "link": "https://arxiv.org/abs/2508.08777",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework that uses Large Language Models (LLMs) as offline judges to evaluate the quality of podcast recommendations.\n- The framework employs a two-stage profile-aware approach: it first creates natural-language user profiles from listening history, then uses these profiles to provide context for the LLM to judge the recommendations.\n- In a controlled study with 47 participants, the proposed method matched human judgments with high fidelity and outperformed a variant using raw listening histories.\n- The framework enables efficient, profile-aware evaluation, which is useful for iterative testing and model selection in recommender systems.\n- The contributions of this paper include a new evaluation framework, demonstrating the effectiveness of using LLMs as judges and the benefits of incorporating user profiles into the evaluation process.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "OmniTry: Virtual Try-On Anything without Masks",
+        "authors": "Xiaoduan Feng, Yiming Chen, Hengyuan Cao, Linlin Zhang, fengyutong",
+        "link": "https://arxiv.org/abs/2508.13632",
+        "github_repo": null,
+        "summary": "- OmniTry is a novel mask-free virtual try-on framework that extends virtual try-on beyond clothing to any wearable object.\n- It uses a two-stage training pipeline: the first stage uses unpaired images to train a mask-free localization model, and the second stage uses paired images to fine-tune an ID-preservation model.\n- OmniTry outperforms existing methods on a comprehensive benchmark consisting of 12 common classes of wearable objects, achieving better performance on both object localization and ID-preservation.\n- The model leverages a diffusion transformer architecture and incorporates traceless erasing to eliminate artifacts and improve generalization.\n-  The authors propose a comprehensive benchmark, OmniTry-Bench, for the virtual try-on task and provide extensive experimental results validating the effectiveness of their approach.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "A Stitch in Time Saves Nine: Proactive Self-Refinement for Language\n  Models",
+        "authors": "Zishang Jiang, Tingyun li, Haiquan Zhao, Xinyi Wang, JinyiHan",
+        "link": "https://arxiv.org/abs/2508.12903",
+        "github_repo": null,
+        "summary": "- This paper introduces ProActive Self-Refinement (PASR), a novel method that allows large language models (LLMs) to refine their outputs during the generation process, unlike traditional methods that refine after generation.\n- PASR uses reinforcement learning to train the LLM to make proactive refinement decisions based on its internal state and context, addressing the limitations of reactive, post-hoc refinement methods.\n- Experimental results on ten diverse tasks show that PASR significantly improves problem-solving performance, reducing average token consumption and increasing accuracy, particularly on Qwen3-8B.\n- The method uses a comparison-based reward strategy to encourage effective and timely refinements, avoiding unnecessary refinements and improving efficiency.\n- PASR demonstrates strong generalization capabilities, outperforming existing self-refinement methods across various tasks and achieving performance gains without external supervision or task-specific training.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/JinyiHan99/Proactive-Self-Refine-in-LLMs/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Advances in Speech Separation: Techniques, Challenges, and Future Trends",
+        "authors": "Zhuo Chen, Yi Luo, Wendi Sang, Guo Chen, JusperLee",
+        "link": "https://arxiv.org/abs/2508.10830",
+        "github_repo": null,
+        "summary": "This paper provides a comprehensive survey of deep neural network-based speech separation techniques, covering various learning paradigms, architectural components, evaluation metrics, and datasets.  It offers a unique perspective by considering higher-level learning paradigms, including scenarios with a known or unknown number of speakers, and by evaluating technological trajectories. The authors critically evaluate existing methods, identify emerging trends, and suggest promising research directions.  The work differentiates itself from previous surveys by providing fair quantitative evaluations across datasets, including benchmark results.  Finally, the paper reviews existing open-source toolkits for the benefit of the research community.",
+        "classification": [
+            "Audio"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Embodied-R1: Reinforced Embodied Reasoning for General Robotic\n  Manipulation",
+        "authors": "Fei Ni, Yibin Chen, Yaoting Huang, Haiqin Cui, Yifu Yuan",
+        "link": "https://arxiv.org/abs/2508.13998",
+        "github_repo": null,
+        "summary": " - This paper introduces Embodied-R1, a 3B Vision-Language Model (VLM) specifically designed for embodied reasoning and pointing, which bridges the gap between high-level vision-language comprehension and low-level action primitives.\n - Embodied-R1 uses a two-stage Reinforced Fine-tuning (RFT) curriculum with a specialized multi-task reward design and achieves state-of-the-art performance on 11 embodied spatial and pointing benchmarks.\n - It demonstrates robust zero-shot generalization by achieving a 56.2% success rate in the SIMPLEREnv and 87.5% across 8 real-world XArm tasks without any task-specific fine-tuning.\n - The model exhibits high robustness against diverse visual disturbances and uses a pointing-centric representation.\n - The core mechanism is to achieve unified anchoring of objects and spatial concepts through \u201cpointing\u201d, thereby mastering general robotic manipulation.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/pickxiguapi/Embodied-R1"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/IffYuan"
+        ],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Copyright Protection for Large Language Models: A Survey of Methods,\n  Challenges, and Trends",
+        "authors": "Xixiang Zhao, Qichen Liu, Xubin Yue, Zhenhua Xu, BreynaldDva",
+        "link": "https://arxiv.org/abs/2508.11548",
+        "github_repo": null,
+        "summary": "This paper presents a comprehensive survey of current Large Language Model (LLM) copyright protection technologies, focusing on model fingerprinting.\n- It clarifies the conceptual connection from text watermarking to model watermarking and fingerprinting, using a unified terminology.\n- It provides an overview and comparison of diverse text watermarking techniques, highlighting cases where these methods can function as model fingerprinting.\n- It systematically categorizes and compares existing model fingerprinting approaches for LLM copyright protection.\n- It presents techniques for fingerprint transfer and fingerprint removal, which are novel contributions in this area.\n- It summarizes evaluation metrics for model fingerprints.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Xuzhenhua55/awesome-llm-copyright-protection"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "TempFlow-GRPO: When Timing Matters for GRPO in Flow Models",
+        "authors": "Jian Yang, Wanli Li, Yuke Zhao, Siming Fu, shreddedpork",
+        "link": "https://arxiv.org/abs/2508.04324",
+        "github_repo": null,
+        "summary": "- This paper introduces TempFlow-GRPO, a novel reinforcement learning framework designed to improve the training of Generative Flow models for text-to-image generation.\n- The core contribution is addressing the temporal uniformity assumption in existing GRPO approaches by introducing trajectory branching and noise-aware weighting.\n- Trajectory branching assigns credit more precisely to actions at various steps of image generation. \n- Noise-aware weighting focuses optimization on high-impact earlier stages while ensuring stable refinement in later phases.\n- Experimental results on standard benchmarks demonstrate that TempFlow-GRPO outperforms existing flow-based RL methods, achieving state-of-the-art results in human preference alignment and compositional image generation.",
+        "classification": [
+            "Text-to-Image",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Leveraging Large Language Models for Predictive Analysis of Human Misery",
+        "authors": "Abhilash Nandy, Aman Bansal, Rahul Seetharaman, Bishanka Seal",
+        "link": "https://arxiv.org/abs/2508.12669",
+        "github_repo": "https://github.com/abhi1nandy2/Misery_Data_Exps_GitHub",
+        "summary": "- This research paper introduces a novel approach for predicting human misery scores from natural language descriptions using large language models (LLMs).\n- The study compares different prompting strategies including zero-shot, few-shot, and retrieval-augmented prompting, demonstrating that few-shot and retrieval-based methods significantly outperform zero-shot baselines.\n- A gamified evaluation framework, \"Misery Game Show\", is introduced to assess the model's ability to adapt and refine predictions through feedback-driven reasoning; this shows measurable improvement in adaptive learning.\n- The paper uses a dataset of 516 real-world and imagined scenarios with human-annotated misery scores (0-100) to evaluate the performance of different LLMs.\n- The findings suggest that LLMs possess significant potential for subjective emotional reasoning tasks but also reveal limitations requiring further refinement of prompting strategies and model calibration.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Zero-Shot Classification",
+            "Text Generation",
+            "Text2Text Generation",
+            "Tabular Regression"
+        ],
+        "github_urls": [
+            "https://github.com/abhi1nandy2/Misery_Data_Exps_GitHub"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Motion2Motion: Cross-topology Motion Transfer with Sparse Correspondence",
+        "authors": "Xin Chen, Zhiyang Dou, Zixin Yin, Yuhong Zhang, Ling-Hao Chen",
+        "link": "https://arxiv.org/abs/2508.13139",
+        "github_repo": null,
+        "summary": "- This paper introduces MOTION2MOTION, a novel training-free framework for cross-topology motion transfer that utilizes sparse bone correspondences.\n- MOTION2MOTION effectively transfers animations between characters with significantly different skeletal structures, addressing the limitations of existing methods that require dense correspondences or large-scale datasets.\n- The framework achieves this by formulating motion transfer as a conditional patch-based motion matching problem, synthesizing target motions by matching motion patches of bound joints from few example target motions.\n- Comprehensive evaluations demonstrate MOTION2MOTION's superior performance in both in-species and cross-species motion transfer scenarios, outperforming state-of-the-art methods in terms of motion quality, temporal coherence, and diversity.\n- The approach is further validated through its successful integration into downstream applications and user interfaces, highlighting its potential for real-world applications in computer animation.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "CorrSteer: Steering Improves Task Performance and Safety in LLMs through\n  Correlation-based Sparse Autoencoder Feature Selection",
+        "authors": "Adriano Koshiyama, Zekun Wu, seonglae",
+        "link": "https://arxiv.org/abs/2508.12535",
+        "github_repo": null,
+        "summary": "\n- CorrSteer is a novel method for improving task performance and safety in large language models (LLMs) by leveraging correlation-based sparse autoencoder (SAE) feature selection.\n- It addresses the limitations of existing SAE-based steering approaches by using only inference-time activations and avoiding the need for contrastive datasets or large activation storage.\n- CorrSteer demonstrates improved performance on various benchmarks, including question answering, bias mitigation, and safety tasks.\n- The selected features reveal semantically meaningful patterns that align with each task's requirements, highlighting the approach's interpretability.\n- The study establishes correlation-based feature selection as an effective and scalable approach for automated SAE steering across LLM applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/seonglae/CorrSteer"
+        ],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "MedSAMix: A Training-Free Model Merging Approach for Medical Image\n  Segmentation",
+        "authors": "Jonas Geiping, Francesco Sammarco, Jiesi Hu, guinansu, podismine",
+        "link": "https://arxiv.org/abs/2508.11032",
+        "github_repo": null,
+        "summary": "- The paper introduces MedSAMix, a training-free model merging approach for medical image segmentation that combines generalist and specialist models.\n- MedSAMix uses a zero-order optimization method to automatically discover optimal layer-wise merging solutions, outperforming existing methods such as MedSAM and MedicoSAM on 25 medical segmentation tasks.\n- Two optimization regimes (single-task and multi-objective) are developed to balance domain-specificity and generalizability.\n- Experiments demonstrate that MedSAMix improves performance by 6.67% on specialized tasks and 4.37% on multi-task evaluations, showcasing its effectiveness in mitigating model bias and enhancing generalization.\n- MedSAMix offers an efficient and training-free solution for improving medical image segmentation without relying on extensive data or retraining.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/podismine/MedSAMix.git"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/guinansu/MedSAMix"
+        ],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Semantic IDs for Joint Generative Search and Recommendation",
+        "authors": "Enrico Palumbo, Edoardo D'Amico, Gustavo Penha, frafabbri, marcodena",
+        "link": "https://arxiv.org/abs/2508.10478",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel approach to constructing semantic IDs for joint generative search and recommendation models, focusing on creating a unified representation that performs well for both tasks.\n- The proposed method uses a bi-encoder model fine-tuned on both search and recommendation datasets to generate item embeddings, which are then used to create a unified semantic ID space.\n- Experimental results demonstrate that the proposed method outperforms existing task-specific approaches, achieving a strong performance trade-off between search and recommendation tasks without sacrificing the effectiveness of either task.\n- The study also explores several ID construction strategies, including task-specific, cross-task, and embedding combination methods, showing that the proposed unified approach is more effective.\n- The findings suggest that using a shared representation space for semantic IDs can streamline generative model design without sacrificing quality, especially in multi-task systems.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Describe What You See with Multimodal Large Language Models to Enhance\n  Video Recommendations",
+        "authors": "Mounia Lalmas, Andreas Damianou, marcodena",
+        "link": "https://arxiv.org/abs/2508.09789",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel framework that leverages Multimodal Large Language Models (MLLMs) to enhance video recommendations by generating rich natural-language descriptions of video clips.\n- The framework is model-agnostic and requires zero-finetuning, making it easily adaptable to existing recommendation systems.\n- Experiments on the MicroLens-100K dataset demonstrate that MLLM-generated features consistently outperform traditional video, audio, and metadata features across various recommendation models.\n- The findings highlight the promise of using MLLMs as on-the-fly knowledge extractors to build more intent-aware video recommenders.\n- The authors make their prompts and generated data publicly available to promote reproducibility.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Video Classification",
+            "Multimodal",
+            "Feature Extraction",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/marcodena/video-recs-describe-what-you-see"
+        ],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned\n  and Addressed for XR Research",
+        "authors": "Susanne Schmidt, Mana Masuda, Mugichoko445, cocolinux",
+        "link": "https://arxiv.org/abs/2508.04326",
+        "github_repo": null,
+        "summary": "This survey paper investigates the use of radiance fields (RFs) in extended reality (XR) research.  It analyzes how RFs are envisioned for XR applications and how they have been implemented, identifying a significant research gap between the potential and actual implementation. The paper presents a systematic review of 365 RF contributions related to XR and analyzes the 66 papers that directly address XR applications.  Key themes identified in how RFs are envisioned for XR include interactive experiences, user-centric rendering, benchmarking, and multi-modality. The survey highlights current achievements, identifies research gaps, and suggests future research directions for the integration of RFs into XR systems.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "MMAU-Pro: A Challenging and Comprehensive Benchmark for Holistic\n  Evaluation of Audio General Intelligence",
+        "authors": "Fernando L\u00f3pez, Vaibhavi Lokegaonkar, \u0160imon Sedl\u00e1\u010dek, Sonal Kumar, Sreyan88",
+        "link": "https://arxiv.org/abs/2508.13992",
+        "github_repo": null,
+        "summary": "- MMAU-Pro, a comprehensive benchmark for evaluating holistic audio intelligence in AI systems, is introduced.  It contains 5,305 instances with expert-generated question-answer pairs spanning speech, sound, and music.\n- The benchmark assesses auditory intelligence across 49 unique skills and multiple complex dimensions, including long-form audio comprehension and spatial audio reasoning.\n- Evaluation of 22 leading multimodal AI models reveals significant limitations, with even state-of-the-art models achieving accuracy as low as 51.7%, highlighting areas for future model development.\n- The benchmark's novel challenges and insights are expected to accelerate the progression of AI systems towards audio general intelligence.\n- MMAU-Pro surpasses existing benchmarks by including a wider range of audio types, incorporating diverse question formats and requiring more complex reasoning abilities.",
+        "classification": [
+            "Audio",
+            "Audio Classification",
+            "Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://sonalkum.github.io/mmau-pro"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents",
+        "authors": "Jun Dong, Jiaheng Liu, Wenjie Wang, Xingyuan Bu, Shilong Li",
+        "link": "https://arxiv.org/abs/2508.13186",
+        "github_repo": "https://github.com/MMBrowseComp/MM-BrowseComp",
+        "summary": "This paper introduces MM-BrowseComp, a comprehensive benchmark designed to evaluate the multimodal browsing capabilities of AI agents.  The benchmark includes 224 challenging questions, many incorporating images and videos, requiring agents to retrieve and reason with multimodal content.  MM-BrowseComp reveals that even state-of-the-art models achieve low accuracy (around 29%), highlighting suboptimal multimodal capabilities and limited native multimodal reasoning. The benchmark also features a verified checklist for each question, enabling fine-grained analysis of agent behavior and reasoning paths.  The dataset is designed to address limitations in existing benchmarks that focus primarily on text-based information.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/MMBrowseComp/MM-BrowseComp"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "ZARA: Zero-shot Motion Time-Series Analysis via Knowledge and Retrieval\n  Driven LLM Agents",
+        "authors": "Flora D. Salim, Hao Xue, Breezelled, zechenli03",
+        "link": "https://arxiv.org/abs/2508.04038",
+        "github_repo": "https://github.com/zechenli03/ZARA",
+        "summary": "- This paper introduces ZARA, a novel framework for zero-shot motion time-series analysis that uses LLM agents.\n- ZARA incorporates a hierarchical agent pipeline that guides the LLM to iteratively select features, draw on evidence, and produce activity predictions and natural language explanations.\n- The model consists of three main components: an automatically derived pair-wise feature knowledge base, a multi-sensor retrieval module, and a hierarchical agent pipeline.\n- ZARA achieves state-of-the-art zero-shot performance on 8 HAR benchmarks, outperforming the strongest baselines by 2.53x in macro F1 score.\n- Ablation studies confirm the necessity of each module, demonstrating the effectiveness of ZARA's design.",
+        "classification": [
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/zechenli03/ZARA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Beyond Human Judgment: A Bayesian Evaluation of LLMs' Moral Values\n  Understanding",
+        "authors": "Alina Landowska, maciejskorski",
+        "link": "https://arxiv.org/abs/2508.13804",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel Bayesian framework for evaluating large language models' (LLMs) understanding of moral values, addressing limitations of previous deterministic approaches.\n- The framework models annotator disagreements to capture both aleatoric and epistemic uncertainties, leading to more robust and nuanced evaluations.\n- A large-scale evaluation across three datasets (MFTC, eMFD, MFRC) with over 250K annotations and 1M+ model queries demonstrates that LLMs consistently outperform human annotators in balanced accuracy.\n- Interestingly, LLMs exhibit significantly fewer false negatives than humans, suggesting a more sensitive moral detection capability.\n- These findings have important implications for developing ethically aligned AI systems and highlight the potential of LLMs in moral reasoning tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/maciejskorski/moral-foundations-llm-eval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-20"
+    }
+]

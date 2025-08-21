@@ -1,0 +1,248 @@
+[
+    {
+        "title": "From Scores to Skills: A Cognitive Diagnosis Framework for Evaluating\n  Financial Large Language Models",
+        "authors": "Ziyan Kuang, Effoula, QianqianXie1994, hugai101, 2083L",
+        "link": "https://arxiv.org/abs/2508.13491",
+        "github_repo": null,
+        "summary": "- This paper introduces FinCDM, the first cognitive diagnosis framework designed for evaluating financial LLMs at the knowledge-skill level, moving beyond traditional score-level evaluations.\n- FinCDM leverages CPA-QKA, a new cognitively informed financial evaluation dataset derived from the Certified Public Accountant (CPA) examination, rigorously annotated by domain experts.\n- Experiments on 30 LLMs demonstrate FinCDM's ability to reveal hidden knowledge gaps, identify under-tested areas, and uncover behavioral clusters among models, supporting more trustworthy and targeted model development.\n- The proposed framework enables interpretable, skill-aware diagnosis, offering a more nuanced understanding of LLM capabilities compared to existing aggregate-score benchmarks.\n- All datasets and evaluation scripts are publicly released to foster further research in financial LLM evaluation.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/WHUNextGen/FinCDM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "FutureX: An Advanced Live Benchmark for LLM Agents in Future Prediction",
+        "authors": "tianlecai, Nuori, YinLingyue, Tianci-He, liujiashuo77",
+        "link": "https://arxiv.org/abs/2508.11987",
+        "github_repo": null,
+        "summary": "FutureX is a novel, live benchmark designed for evaluating LLM agents on future prediction tasks.  It addresses limitations of existing benchmarks by using a dynamic, real-time data pipeline to eliminate data contamination and ensure continuous updates. The benchmark includes a variety of question types and difficulty levels, covering a broad range of domains.  Results show that while LLMs equipped with search capabilities generally outperform base LLMs, performance on complex, open-ended tasks remains a challenge, highlighting a substantial gap between current LLM capabilities and human-level expertise. The authors also conduct a series of case studies that reveal limitations of current models, particularly their susceptibility to misinformation and challenges in gathering timely information from the web.",
+        "classification": [
+            "Time Series Forecasting"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "DuPO: Enabling Reliable LLM Self-Verification via Dual Preference\n  Optimization",
+        "authors": "Yu Lu, Yu Bao, Shanbo, ShujianHuang, kevinpro",
+        "link": "https://arxiv.org/abs/2508.14460",
+        "github_repo": null,
+        "summary": "- The paper introduces DuPO, a dual learning-based preference optimization framework for reliable LLM self-verification, addressing the limitations of RLVR's reliance on costly labels and traditional dual learning's restriction to strictly dual task pairs.\n- DuPO decomposes a primal task's input into known and unknown components, constructing a dual task to reconstruct the unknown part using the primal output and known information, thus broadening applicability to non-invertible tasks.\n- The quality of this reconstruction serves as a self-supervised reward to optimize the primal task, achieving substantial gains across diverse tasks such as translation and mathematical reasoning.\n- Empirical results demonstrate that DuPO enhances translation quality by an average of 2.13 COMET points and boosts mathematical reasoning accuracy by an average of 6.4 points.\n- DuPO is presented as a scalable, general, and annotation-free paradigm for LLM optimization, showcasing its effectiveness in both training and inference-time reranking.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Translation",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ByteDance-Seed/Seed-X-7B/tree/main/challenge_set"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds",
+        "authors": "Jiangmiao, ZhaoyangLyu, asrnline, Qmh, tangqh",
+        "link": "https://arxiv.org/abs/2508.14879",
+        "github_repo": null,
+        "summary": "MeshCoder is a novel framework that reconstructs complex 3D objects from point clouds into editable Blender Python scripts.  It leverages a set of expressive Blender Python APIs and a large-scale paired object-code dataset to train a multimodal large language model (LLM). The LLM translates 3D point clouds into executable Blender Python scripts, outperforming existing methods in shape-to-code reconstruction tasks.  Furthermore, the code-based representation enhances reasoning capabilities of LLMs in 3D shape understanding tasks.  MeshCoder also facilitates intuitive geometric and topological editing through convenient code modifications.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://daibingquan.github.io/MeshCoder"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "Tinker: Diffusion's Gift to 3D--Multi-View Consistent Editing From\n  Sparse Inputs without Per-Scene Optimization",
+        "authors": "Hao Chen, Zhiyue Zhao, Tianjian Feng, Xiaoman Li, Canyu",
+        "link": "https://arxiv.org/abs/2508.14811",
+        "github_repo": null,
+        "summary": "- This paper introduces TINKER, a framework for high-fidelity 3D editing from sparse inputs without per-scene optimization. \n- TINKER leverages pretrained diffusion models and introduces a novel two-component framework: a referring multi-view editor and an any-view-to-video synthesizer. \n- The framework generates multi-view consistent edited views from as few as one or two images. \n- Experiments show that TINKER achieves state-of-the-art performance on editing, novel-view synthesis, and rendering enhancement tasks, significantly reducing the barrier to generalizable 3D content creation.\n- The authors also contribute a new large-scale multi-view editing dataset to support research in this area.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "From AI for Science to Agentic Science: A Survey on Autonomous\n  Scientific Discovery",
+        "authors": "zijieqiu, Wanggsh, schrodingers-tiger, ZhangyangGao, VitaCoco",
+        "link": "https://arxiv.org/abs/2508.14111",
+        "github_repo": null,
+        "summary": "This paper introduces the concept of Agentic Science, a pivotal stage in AI for Science where AI systems transition from partial assistance to full scientific agency.  It presents a comprehensive framework that unifies fragmented perspectives on process, autonomy, and mechanism to analyze the evolution of AI for Science, including five core capabilities that underpin scientific agency.  The paper reviews applications across multiple natural sciences, identifying key challenges and opportunities for future research, and it proposes the \"Nobel-Turing Test\" as a benchmark for evaluating the discoveries made by these systems.  The framework is applied to the four core processes that underpin agentic science: (1) Observation and Hypothesis Generation, (2) Experimental Planning and Execution, (3) Data and Result Analysis, and (4) Synthesis, Validation, and Evolution. Finally, this paper identifies future opportunities and challenges in Agentic Science that relate to reproducibility and reliability, validation of novelty, transparency in scientific reasoning, and ethical and societal dimensions.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/AgenticScience/Awesome-Agent-Scientists"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/InternLM"
+        ],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "Quantization Meets dLLMs: A Systematic Study of Post-training\n  Quantization for Diffusion LLMs",
+        "authors": "Haobo Xu, cityug7353, ZiyuG, chriswyc, Felix1023",
+        "link": "https://arxiv.org/abs/2508.14896",
+        "github_repo": null,
+        "summary": "- This paper presents the first systematic study on post-training quantization (PTQ) for diffusion large language models (dLLMs).\n- The authors identify activation outliers as a key challenge to low-bit quantization in dLLMs and implement state-of-the-art PTQ methods.\n- Their comprehensive evaluation across various task types and model variants offers practical insights into the quantization behavior of dLLMs.\n- The results show that 4-bit is the most effective configuration for weight-only quantization, while 8-bit is recommended for weight-activation quantization.\n- GPTQ consistently outperforms AWQ, and rotation-based methods like DuQuant demonstrate clear advantages over SmoothQuant for weight-activation quantization.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "RynnEC: Bringing MLLMs into Embodied World",
+        "authors": "jiangpinliu, CausalLi, maoyunxuan, CircleRadon, RH-Dang",
+        "link": "https://arxiv.org/abs/2508.14160",
+        "github_repo": "https://github.com/alibaba-damo-academy/RynnEC",
+        "summary": " - RynnEC, a novel video multimodal large language model (MLLM), is introduced for embodied cognition, incorporating a region encoder and a mask decoder for flexible region-level video interaction.\n - The model achieves state-of-the-art performance in object property understanding, object segmentation, and spatial reasoning.\n - To address the scarcity of annotated 3D datasets, an egocentric video-based pipeline is proposed for embodied cognition data generation.\n - A new benchmark, RynnEC-Bench, is introduced for evaluating embodied cognitive capabilities, covering 22 tasks in object and spatial cognition.\n - Extensive experiments demonstrate RynnEC's superior performance in embodied cognitive abilities compared to existing general and task-specific MLLMs.",
+        "classification": [
+            "Robotics",
+            "Video Classification",
+            "Visual Question Answering",
+            "Multimodal",
+            "Mask Generation"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba-damo-academy/RynnEC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid\n  Mamba-Transformer Reasoning Model",
+        "authors": "abercovich, aditya-malte, adirendu, aklife97, apaithan",
+        "link": "https://arxiv.org/abs/2508.14444",
+        "github_repo": null,
+        "summary": " - The paper introduces Nemotron-Nano-9B-v2, a hybrid Mamba-Transformer language model designed for reasoning workloads.\n- The model architecture combines Mamba-2 and self-attention layers, resulting in improved inference speed.\n- Nemotron-Nano-9B-v2 outperforms similarly-sized models (e.g., Qwen3-8B) by achieving on-par accuracy and up to 6x higher throughput on reasoning benchmarks.\n- The model was trained using a novel FP8 training recipe on 20 trillion tokens and further aligned with various post-training methods like SFT and RLHF.\n- The authors are releasing the model, along with the majority of their pre-training and post-training datasets, on Hugging Face.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v1"
+        ],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "MCP-Universe: Benchmarking Large Language Models with Real-World Model\n  Context Protocol Servers",
+        "authors": "Prathyusha Jwalapuram, Zirui Zhao, Wenzhuo Yang, Zhiqi Shen, Ziyang Luo",
+        "link": "https://arxiv.org/abs/2508.14704",
+        "github_repo": null,
+        "summary": "This paper introduces MCP-Universe, a comprehensive benchmark designed for evaluating large language models (LLMs) interacting with real-world Model Context Protocol (MCP) servers.\n- MCP-Universe includes six core domains spanning eleven different MCP servers, evaluating LLMs on realistic, challenging tasks.\n- The benchmark employs execution-based evaluators (format, static, and dynamic) for rigorous evaluation, overcoming limitations of simpler benchmarks.\n- Extensive evaluation reveals performance limitations of leading LLMs, highlighting challenges such as long-context handling and unfamiliar tools.\n- The benchmark is open-sourced to facilitate innovation and seamless integration of new agents and MCP servers.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/SalesforceAIResearch/MCP-Universe"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "ViExam: Are Vision Language Models Better than Humans on Vietnamese\n  Multimodal Exam Questions?",
+        "authors": "Daeyoung Kim, Duc Dm, Quang Tau, anvo25, tuongvy2603",
+        "link": "https://arxiv.org/abs/2508.13680",
+        "github_repo": null,
+        "summary": " - This paper introduces ViExam, a benchmark dataset consisting of 2,548 multimodal Vietnamese exam questions across 7 academic domains.\n- ViExam is the first comprehensive multimodal benchmark for evaluating Vision Language Models (VLMs) on Vietnamese educational assessments.\n- State-of-the-art (SOTA) VLMs achieve only 57.74% mean accuracy on ViExam, while open-source models achieve 27.70%, underperforming human test-takers (66.54%).\n- The findings reveal that multimodal reasoning and cross-lingual prompting pose significant challenges for VLMs on low-resource languages, and that human-in-the-loop collaboration is effective in improving VLM performance.\n- The dataset includes a variety of visual elements (charts, diagrams, illustrations, tables) which present additional challenges for VLMs.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "On-Policy RL Meets Off-Policy Experts: Harmonizing Supervised\n  Fine-Tuning and Reinforcement Learning via Dynamic Weighting",
+        "authors": "Guoyin Wang, Yanxi Chen, Yuchang Sun, Yuexiang Xie, xiaoniqiu",
+        "link": "https://arxiv.org/abs/2508.11408",
+        "github_repo": "https://github.com/modelscope/Trinity-RFT/tree/main/examples/mix_chord",
+        "summary": "- This paper introduces CHORD, a novel framework that harmonizes supervised fine-tuning (SFT) and reinforcement learning (RL) for improving large language models (LLMs).\n- CHORD addresses the limitations of the sequential SFT-then-RL approach by reframing SFT as a dynamically weighted auxiliary objective within the on-policy RL process.\n- The framework incorporates a dual-control mechanism using a global coefficient to balance on-policy exploration and off-policy imitation and a token-wise weighting function to mitigate disruptions from off-policy expert data.\n- Extensive experiments demonstrate that CHORD significantly outperforms baseline methods on various benchmarks, achieving improvements in both in-domain reasoning and general reasoning capabilities.\n- The implementation of CHORD is released to inspire further research.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/modelscope/Trinity-RFT/tree/main/examples/mix_chord"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "Leuvenshtein: Efficient FHE-based Edit Distance Computation with Single\n  Bootstrap per Cell",
+        "authors": "Ingrid Verbauwhede, Nam-Luc Tran, Bojan Spasic, Jan-Pieter D'Anvers, woutLegiest",
+        "link": "https://arxiv.org/abs/2508.14568",
+        "github_repo": null,
+        "summary": "- This paper introduces Leuvenshtein, a novel algorithm for computing edit distance using Fully Homomorphic Encryption (FHE), specifically targeting third-generation schemes like TFHE.\n- Leuvenshtein significantly reduces the computational cost by minimizing the number of programmable bootstraps (PBS) required per cell, from approximately 94 operations to just 1.\n- The algorithm achieves a speedup of up to 278 times compared to the best available TFHE implementation and up to 39 times compared to an optimized Wagner-Fisher algorithm.\n- An efficient method for performing equality checks on characters is also proposed, reducing the number of PBS operations from 5 to 2.\n- Offline preprocessing further enhances performance when one input string is unencrypted, providing an additional 3 times speedup.",
+        "classification": [
+            "Sentence Similarity"
+        ],
+        "github_urls": [
+            "https://github.com/KULeuven-COSIC/leuvenshtein"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "Local Scale Equivariance with Latent Deep Equilibrium Canonicalizer",
+        "authors": "Jeremiah Jiang, Lim Jun Hao, Michael N. Cheng, Chiao-An Yang, ashiq24",
+        "link": "https://arxiv.org/abs/2508.14187",
+        "github_repo": "https://github.com/ashiq24/local-scale-equivariance",
+        "summary": "- This paper introduces a novel Deep Equilibrium Canonicalizer (DEC) to improve the local scale equivariance of deep learning models.\n- The DEC module is based on deep equilibrium models and can be easily incorporated into existing network architectures.\n- Experiments on ImageNet and other datasets demonstrate that DEC improves both model performance and local scale consistency across different architectures.\n- The proposed method addresses the challenge of local scale variations in images, where different objects may change size differently within the same image.\n- The paper provides a theoretical framework and evaluation metrics for local scale equivariance, using the concept of monotone scaling to address the lack of group structure in real-world local scaling.",
+        "classification": [
+            "Computer Vision",
+            "Image Classification",
+            "Image Segmentation"
+        ],
+        "github_urls": [
+            "https://github.com/ashiq24/local-scale-equivariance"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "mSCoRe: a Multilingual and Scalable Benchmark for Skill-based\n  Commonsense Reasoning",
+        "authors": "anoperson, Franck-Dernoncourt, ntnghia1811",
+        "link": "https://arxiv.org/abs/2508.10137",
+        "github_repo": null,
+        "summary": " - mSCoRe, a novel multilingual and scalable benchmark for skill-based commonsense reasoning, is introduced.  The benchmark systematically evaluates large language models (LLMs) using three key components: a taxonomy of reasoning skills, a data synthesis pipeline, and a complexity scaling framework.\n - The benchmark incorporates general and cultural commonsense knowledge across multiple languages (English, German, French, Chinese, and Japanese).\n - Extensive experiments on eight state-of-the-art LLMs reveal that mSCoRe remains challenging for current models, particularly at higher complexity levels, demonstrating the limitations of current reasoning-reinforced models in handling nuanced multilingual commonsense. \n - The results reveal the limitations of current models in handling nuanced multilingual commonsense and suggest future directions for improving these capabilities. \n - The paper provides a detailed analysis of the models' reasoning processes, suggesting future directions for improving multilingual commonsense reasoning capabilities.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    },
+    {
+        "title": "Refining Contrastive Learning and Homography Relations for Multi-Modal\n  Recommendation",
+        "authors": "Shiqing Wu, Yawen Zeng, guandongxu, MrShouxingMa",
+        "link": "https://arxiv.org/abs/2508.13745",
+        "github_repo": "https://github.com/MrShouxingMa/REARM",
+        "summary": "- This paper introduces REARM, a novel framework that refines multi-modal contrastive learning and homography relations for multi-modal recommendation.\n- REARM employs a meta-network and orthogonal constraint strategies to filter noise from modal-shared features while preserving valuable modal-unique information.\n- It integrates user interest graphs and item co-occurrence graphs with existing user co-occurrence and item semantic graphs for improved graph learning.\n- Extensive experiments on three real-world datasets demonstrate that REARM outperforms several state-of-the-art baselines.\n- Visualization results further show REARM's improvement in distinguishing between modal-shared and modal-unique features.",
+        "classification": [
+            "Graph Machine Learning"
+        ],
+        "github_urls": [
+            "https://github.com/MrShouxingMa/REARM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-21"
+    }
+]

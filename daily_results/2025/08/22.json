@@ -1,0 +1,164 @@
+[
+    {
+        "title": "Intern-S1: A Scientific Multimodal Foundation Model",
+        "authors": "xuhuang87, ZhouqiHUA, Jerry-hyl, guox18, gaoyang07",
+        "link": "https://arxiv.org/abs/2508.15763",
+        "github_repo": null,
+        "summary": "This paper introduces Intern-S1, a 28-billion parameter (241 billion total parameters) multimodal Mixture-of-Experts (MoE) model pre-trained on 5 trillion tokens, including over 2.5 trillion from scientific domains.  Intern-S1 utilizes offline and online reinforcement learning via InternBootCamp, employing a novel Mixture-of-Rewards (MoR) algorithm to handle over 1000 tasks simultaneously.  It achieves top-tier performance on general reasoning benchmarks and significantly surpasses existing open-source models in scientific domains.  The model incorporates several novel techniques, including a dynamic tokenizer for efficient handling of scientific data and an adaptive downsampling module for time-series data.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/internlm/Intern-S1"
+        ],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "Deep Think with Confidence",
+        "authors": "Xuewei Wang, jiaweizhao, tydsh, Viol2000",
+        "link": "https://arxiv.org/abs/2508.15260",
+        "github_repo": null,
+        "summary": "This paper introduces Deep Think with Confidence (DeepConf), a novel method that enhances large language model (LLM) reasoning performance and efficiency. DeepConf utilizes internal confidence signals to filter low-quality reasoning traces, improving accuracy and reducing computational cost.  Evaluations on various reasoning benchmarks demonstrate that DeepConf significantly outperforms baseline methods, achieving up to 99.9% accuracy and reducing generated tokens by up to 84.7%. The method is applicable across various LLMs and integrates seamlessly into existing serving frameworks.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/jiaweizzhao/deepconf"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+        ],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "SceneGen: Single-Image 3D Scene Generation in One Feedforward Pass",
+        "authors": "Ya Zhang, Yanxu Meng, Weidi, haoningwu",
+        "link": "https://arxiv.org/abs/2508.15769",
+        "github_repo": null,
+        "summary": "- SceneGen is a novel single-stage feedforward 3D scene generation model that simultaneously generates multiple 3D assets with coherent geometry, texture, and spatial arrangement from a single scene image and corresponding object masks.\n- The model architecture consists of three key modules: feature extraction, feature aggregation, and output module. The feature aggregation module integrates local and global scene information from visual and geometric encoders to ensure plausible geometric topologies and spatial arrangements.\n- SceneGen outperforms existing methods in terms of both geometric and visual quality, as demonstrated by extensive quantitative and qualitative evaluations on the 3D-FUTURE dataset. For example, it significantly improves F-score and IoU metrics while reducing Chamfer distance compared to state-of-the-art models.\n- The model's efficiency is highlighted by its ability to generate scenes with four assets in approximately two minutes using a single A100 GPU, showcasing its advantage over optimization-based two-stage methods.\n- SceneGen demonstrates remarkable generalization capabilities to multi-image input scenarios, leveraging its architectural design to improve generation performance without requiring additional training.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "Waver: Wave Your Way to Lifelike Video Generation",
+        "authors": "Yifu Zhang, sweetrabor, xiaofengmei, clin1223, yifeihu",
+        "link": "https://arxiv.org/abs/2508.15761",
+        "github_repo": "https://github.com/FoundationVision/Waver",
+        "summary": "*- The paper introduces Waver, a high-performance foundation model for unified image and video generation, capable of generating videos with durations ranging from 5 to 10 seconds at 720p resolution (upscaled to 1080p).\n- Waver uses a Hybrid Stream DiT architecture to improve modality alignment and training convergence, and a Cascade Refiner to upscale videos to 1080p.\n- The model supports text-to-video (T2V), image-to-video (I2V), and text-to-image (T2I) generation, outperforming existing open-source models and matching or surpassing state-of-the-art commercial solutions on several benchmarks.\n- Training data quality is ensured via a data curation pipeline and a video quality model, and detailed training and inference recipes are provided.\n- Waver excels at capturing complex motion in video synthesis, demonstrating a more pronounced advantage in complex motion scenarios compared to general scenarios.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://github.com/FoundationVision/Waver"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "LiveMCP-101: Stress Testing and Diagnosing MCP-enabled Agents on\n  Challenging Queries",
+        "authors": "huuuyeah, Ironieser, sileixu, dinghanshen, Kevin355",
+        "link": "https://arxiv.org/abs/2508.15760",
+        "github_repo": null,
+        "summary": "- This paper introduces LiveMCP-101, a benchmark containing 101 real-world queries designed to test the ability of AI agents to utilize multiple tools.\n- The benchmark focuses on multi-step tasks that require coordination between different tools and features a novel evaluation approach using ground-truth execution plans.\n- Experiments reveal that even state-of-the-art LLMs struggle, achieving success rates below 60%, highlighting the challenges in tool orchestration.\n- The paper also provides detailed error analysis that reveals distinct failure modes, offering insights for improving future models.\n- LiveMCP-101 provides a challenging and standardized evaluation approach for real-world AI agent capabilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "ATLAS: Decoupling Skeletal and Shape Parameters for Expressive\n  Parametric Human Modeling",
+        "authors": "Shunsuke Saito, Javier Romero, Jinhyung Park, rawalkhirodkar, TakaakiWB",
+        "link": "https://arxiv.org/abs/2508.15767",
+        "github_repo": null,
+        "summary": "- This paper introduces ATLAS, a novel high-fidelity 3D human body model that explicitly decouples skeletal and shape parameters.\n- The model architecture consists of separate bases for external shape and internal skeleton, enabling precise and independent control of body attributes.\n- ATLAS outperforms existing methods in fitting unseen subjects in diverse poses, showcasing enhanced shape expressivity and fine-grained customization.\n- A single-image model fitting pipeline is developed, leveraging the model's decoupling and recent advancements in human-centric models.\n- Quantitative and qualitative evaluations demonstrate ATLAS's superior performance in capturing complex poses and details compared to state-of-the-art models.",
+        "classification": [
+            "Image-to-3D",
+            "Keypoint Detection"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "A Survey on Large Language Model Benchmarks",
+        "authors": "Siyi Li, Xuanang Chen, Shuaimin Li, Guhong Chen, Shiwen Ni",
+        "link": "https://arxiv.org/abs/2508.15361",
+        "github_repo": null,
+        "summary": " - This paper presents a comprehensive survey of Large Language Model (LLM) benchmarks, categorizing 283 benchmarks into three categories: general capabilities, domain-specific, and target-specific. \n- The study identifies key issues with current benchmarks such as inflated scores due to data contamination, unfair evaluation due to cultural and linguistic biases, and lack of evaluation on process credibility and dynamic environments. \n- It provides a referable design paradigm for future benchmark innovation.  \n-  The paper offers a detailed taxonomy of LLM benchmarks, which serves as a valuable resource for researchers working on LLM development and evaluation. \n- The work is the first to conduct such a systematic review and prospective analysis, highlighting its importance as a foundational contribution to the field.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "aiXiv: A Next-Generation Open Access Ecosystem for Scientific Discovery\n  Generated by AI Scientists",
+        "authors": "Heng Zhang, Yang Qi, Guowei Huang, Xiang Hu, Pengsong Zhang",
+        "link": "https://arxiv.org/abs/2508.15126",
+        "github_repo": "https://github.com/aixiv-org",
+        "summary": " - This paper introduces aiXiv, a novel open-access platform designed to facilitate collaborative scientific research between human and AI scientists.\n - aiXiv leverages a multi-agent system to handle research proposals and papers, providing a structured review and iterative refinement process.\n - The platform is designed to be scalable and extensible, incorporating APIs and MCPs for seamless integration with various human and AI researchers.\n - Through extensive experiments, the authors demonstrate that aiXiv significantly enhances the quality of AI-generated scientific content after iterative review and refinement.\n - aiXiv provides a robust framework that addresses the challenges of disseminating high-quality AI-generated scientific research within the current fragmented publication ecosystem.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/aixiv-org"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "Snap-Snap: Taking Two Images to Reconstruct 3D Human Gaussians in\n  Milliseconds",
+        "authors": "Chuiyun Wu, Chen Yang, Jiemin Fang, Jia Lu, thewhole",
+        "link": "https://arxiv.org/abs/2508.14892",
+        "github_repo": null,
+        "summary": "- This paper introduces Snap-Snap, a novel feed-forward framework that reconstructs 3D human Gaussians from only two images (front and back views) in milliseconds.\n- The model architecture consists of three main stages: Point Cloud Prediction, Side-view Enhancement, and Gaussian Attribute Regression.\n- Snap-Snap achieves state-of-the-art performance on the THuman2.0 and cross-domain datasets, outperforming existing methods that require more input views or computationally expensive processes.\n- The framework is efficient enough to reconstruct a complete human in 190ms on a single NVIDIA RTX 4090, significantly reducing the computational cost.\n- The proposed method also reduces the requirements for data collection by using images captured by low-cost mobile devices.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://hustvl.github.io/Snap-Snap/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "When and What: Diffusion-Grounded VideoLLM with Entity Aware\n  Segmentation for Long Video Understanding",
+        "authors": "Rui Guo, Yuxia Chen, Pengcheng Fang",
+        "link": "https://arxiv.org/abs/2508.15641",
+        "github_repo": null,
+        "summary": "- The paper introduces Diffusion-Grounded VideoLLM, a novel video-language model designed for enhanced long-video understanding.\n- The model architecture integrates structured temporal and entity-aware information before language modeling, utilizing a diffusion-based video encoder to generate differentiable temporal latent tokens.\n- Grounded-SAM2 and WAN are incorporated for efficient object-level representation and cross-frame tracking, thus providing an explicit binding of entities to localized visual evidence.\n- The model outperforms existing state-of-the-art approaches on multiple benchmarks, achieving improvements in temporal grounding, grounded video question answering, and open-ended video question answering.\n- The results demonstrate the effectiveness of combining diffusion models with object-centric grounding for robust and accurate spatiotemporal reasoning in videos.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-22"
+    },
+    {
+        "title": "INTIMA: A Benchmark for Human-AI Companionship Behavior",
+        "authors": "Yacine Jernite, Giada Pistilli, frimelle",
+        "link": "https://arxiv.org/abs/2508.09998",
+        "github_repo": null,
+        "summary": "- This paper introduces INTIMA, a benchmark designed to evaluate AI companionship behaviors in language models.\n- INTIMA uses a taxonomy of 31 behaviors across four categories (Assistant Traits, Emotional Investment, User Vulnerabilities, and Relationship & Intimacy), with 368 targeted prompts.\n- The benchmark is grounded in psychological theories of parasocial interaction, attachment, and anthropomorphism.\n- Evaluation of model responses is based on whether they reinforce companionship, maintain boundaries, or are neutral.\n- Applying INTIMA to four models reveals differences in how they handle emotionally charged interactions, highlighting the need for consistent approaches.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/AI-companionship/INTIMA"
+        ],
+        "date": "2025-08-22"
+    }
+]

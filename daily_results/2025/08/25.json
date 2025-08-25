@@ -1,0 +1,233 @@
+[
+    {
+        "title": "AgentFly: Fine-tuning LLM Agents without Fine-tuning LLMs",
+        "authors": "Xue Yan, Siyuan Guo, Yihang Chen, linyiyang2023, Zhouhc",
+        "link": "https://arxiv.org/abs/2508.16153",
+        "github_repo": "https://github.com/Agent-on-the-Fly/AgentFly",
+        "summary": "AgentFly is a novel memory-based learning paradigm for Large Language Models that eliminates the need for fine-tuning LLMs.  It leverages online reinforcement learning with a memory-augmented Markov Decision Process (M-MDP), incorporating a neural case-selection policy. AgentFly achieves top performance on various benchmarks, including GAIA, outperforming state-of-the-art methods.  Its continual learning capabilities allow for adaptation without gradient updates, demonstrating efficiency and scalability. The method's performance gains are attributed to case-based reasoning, enhancing adaptability and generalization.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering",
+            "Natural Language Processing",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Agent-on-the-Fly/AgentFly"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "ODYSSEY: Open-World Quadrupeds Exploration and Manipulation for\n  Long-Horizon Tasks",
+        "authors": "Zeju Li, Jianuo Jiang, Mingyu Liu, Liqin Lu, Ka12un",
+        "link": "https://arxiv.org/abs/2508.08240",
+        "github_repo": null,
+        "summary": "- ODYSSEY is a novel mobile manipulation framework for agile quadruped robots that integrates high-level task planning with low-level whole-body control.\n- It addresses the challenges of egocentric perception in language-conditioned tasks through a hierarchical planner powered by a vision-language model.\n- The framework achieves robust coordination of locomotion and manipulation across challenging terrains using a novel whole-body control policy.\n- ODYSSEY introduces a comprehensive benchmark for long-horizon mobile manipulation, featuring diverse indoor and outdoor scenarios and enabling sim-to-real transfer evaluation.\n- The experimental results demonstrate ODYSSEY's strong generalization and robustness in real-world deployments, highlighting the practicality of legged manipulators in unstructured environments.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "Beyond Pass@1: Self-Play with Variational Problem Synthesis Sustains\n  RLVR",
+        "authors": "Ying Nian Wu, Yelong Shen, Yeyun Gong, Zhongzhi Li, MasterVito",
+        "link": "https://arxiv.org/abs/2508.14029",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel self-play with variational problem synthesis (SvS) strategy for reinforcement learning with verifiable rewards (RLVR) training. \n- SvS addresses the issue of policy entropy collapse in standard RLVR by generating varied problems based on the model's correct solutions to challenging problems. \n- The proposed method improves both Pass@1 and Pass@k performance across various reasoning benchmarks and model sizes (3B to 32B). \n- Experiments show significant improvements in Pass@32 performance (18.3% and 22.8% on AIME24 and AIME25 benchmarks, respectively) compared with standard RLVR. \n- SvS maintains policy entropy during training, leading to sustained improvements and greater exploration, unlike standard RLVR which experiences entropy collapse.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/MasterVito/SvS"
+        ],
+        "huggingface_urls": [
+            "https://MasterVito.SvS.github.io"
+        ],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "CRISP: Persistent Concept Unlearning via Sparse Autoencoders",
+        "authors": "Yonatan Belinkov, Martin Tutek, Aaron Mueller, Dana Arad, Tomertech",
+        "link": "https://arxiv.org/abs/2508.13650",
+        "github_repo": null,
+        "summary": "- This paper introduces CRISP, a novel parameter-efficient method for persistent concept unlearning in large language models (LLMs) that uses sparse autoencoders (SAEs).\n- CRISP outperforms existing methods on safety-critical unlearning tasks by automatically identifying and suppressing salient SAE features across multiple layers, achieving better trade-offs between unlearning efficacy and preserving model utility.\n- The method is shown to be effective on two LLMs and outperforms previous approaches on the WMDP benchmark, indicating its robustness and generalizability.\n- Feature-level analysis demonstrates that CRISP achieves semantically coherent separation between target and benign concepts, ensuring precise suppression of the target features while maintaining coherence.\n- The method is parameter-efficient and is thus suited for open-source deployment, and it addresses the issue of inference-time interventions that can be bypassed by malicious actors.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "Selective Contrastive Learning for Weakly Supervised Affordance\n  Grounding",
+        "authors": "Jae-Pil Heo, hynnsk, WJ0830",
+        "link": "https://arxiv.org/abs/2508.07877",
+        "github_repo": "http://github.com/hynnsk/SelectiveCL",
+        "summary": "- This paper introduces a novel method for weakly supervised affordance grounding (WSAG) that leverages selective contrastive learning to improve the accuracy of affordance detection.\n- The proposed method uses CLIP to identify action-associated objects in both egocentric and exocentric images and adaptively learns affordance-relevant cues at both the part and object levels.\n- The model architecture employs prototypical and pixel contrastive learning objectives to enhance the model's ability to distinguish affordance-relevant regions from irrelevant background context.\n- Experimental results demonstrate that the proposed method outperforms several state-of-the-art methods on the AGD20K and HICO-IIF datasets, particularly in challenging unseen scenarios.\n- Ablation studies further validate the effectiveness of each component of the proposed method, including prototypical contrastive learning, pixel contrastive learning, and object discovery.",
+        "classification": [
+            "Zero-Shot Object Detection"
+        ],
+        "github_urls": [
+            "http://github.com/hynnsk/SelectiveCL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "AetherCode: Evaluating LLMs' Ability to Win In Premier Programming\n  Competitions",
+        "authors": "Yidi Du, Markus Mak, Zhicheng Liu, Jiaze Chen, zhwang01",
+        "link": "https://arxiv.org/abs/2508.16402",
+        "github_repo": null,
+        "summary": "- AetherCode, a new benchmark for evaluating LLMs' coding and reasoning capabilities, is introduced.  It uses problems from premier programming competitions (IOI and ICPC) offering broader coverage and higher difficulty than existing benchmarks.\n- The benchmark addresses shortcomings of existing benchmarks by incorporating comprehensive, expert-validated test suites, combining automated generation and human curation to ensure rigorous assessment.\n- AetherCode's hybrid methodology combines automated test case generation with expert annotation to achieve 100% TPR and 100% TNR, ensuring high-quality test cases.\n- Evaluation reveals a significant performance gap between reasoning and non-reasoning models, with reasoning models demonstrating superior performance, particularly on complex algorithmic problems.\n- The results highlight the remaining challenges for LLMs in competitive programming and the need for continued improvement in reasoning and coding capabilities.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/m-a-p/AetherCode"
+        ],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "EgoTwin: Dreaming Body and View in First Person",
+        "authors": "Wentao Wang, Mengze Li, Yicong Li, Fangzhou Hong, Jingqiao Xiu",
+        "link": "https://arxiv.org/abs/2508.13013",
+        "github_repo": null,
+        "summary": "- The paper introduces EgoTwin, a novel framework for generating egocentric videos and human motion jointly. The model architecture uses a diffusion transformer with three branches for text, video, and motion, incorporating head-centric motion representation and a cybernetics-inspired interaction mechanism.\n- EgoTwin addresses the challenges of viewpoint alignment and causal interplay between video and motion in egocentric video generation. It achieves this by anchoring human motion to the head joint and modeling the recursive dependency between video and motion.\n- The experimental results demonstrate that EgoTwin outperforms baselines on various metrics, showcasing improvements in video quality, motion quality, and video-motion consistency.  This is supported by quantitative results presented in Table 1.\n- A large-scale dataset of synchronized text-video-motion triplets was curated for evaluation, and novel metrics were designed to assess video-motion consistency. \n- The authors suggest broader applications of their model, including conditional generation and scene reconstruction, highlighting the potential of EgoTwin for various tasks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "Do What? Teaching Vision-Language-Action Models to Reject the Impossible",
+        "authors": "Roei Herzig, Trevor Darrell, Dantong Niu, Elvis Hsieh, Wen-Han Hsieh",
+        "link": "https://arxiv.org/abs/2508.16292",
+        "github_repo": null,
+        "summary": "- This paper introduces Instruct-Verify-and-Act (IVA), a novel framework designed to enhance Vision-Language-Action (VLA) models' ability to handle false-premise instructions.\n- The IVA framework consists of three stages: detecting false premises, engaging in clarification through natural language, and grounding plausible alternatives in perception and action.\n- A large-scale instruction tuning setup with structured language prompts and paired positive/false-premise instructions was used to train the VLA model.\n- Experimental results demonstrate that IVA significantly improves false premise detection accuracy (by 97.56%) and increases successful responses in false-premise scenarios (by 50.78%) compared to baseline methods.\n- The study highlights the importance of addressing false premises in real-world robotic applications where ambiguous or unfeasible instructions are common.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "End-to-End Agentic RAG System Training for Traceable Diagnostic\n  Reasoning",
+        "authors": "Pengcheng Qiu, Chaoyi Wu, Yuze Sun, Qiaoyu Zheng, Angelakeke",
+        "link": "https://arxiv.org/abs/2508.15746",
+        "github_repo": "https://github.com/MAGIC-AI4Med/Deep-DxSearch",
+        "summary": "This paper introduces Deep-DxSearch, a novel agentic RAG system for medical diagnosis trained end-to-end with reinforcement learning.  The model uses a large-scale medical retrieval corpus and a tailored reward function to improve diagnostic accuracy and traceability. Deep-DxSearch significantly outperforms several strong baselines across various datasets, achieving substantial gains in both in-distribution and out-of-distribution settings.  The model's performance is further enhanced by its ability to adapt retrieval strategies, perform effective differential diagnosis, and filter out irrelevant information.  The authors provide code and data for reproducibility.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/MAGIC-AI4Med/Deep-DxSearch"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated\n  Prefill \\& Decode Inference",
+        "authors": "Di Yin, Yuxuan Wang, Pingzhi Tang, Fanxu Meng, xiaojuan0920",
+        "link": "https://arxiv.org/abs/2508.15881",
+        "github_repo": null,
+        "summary": "- This paper introduces Tensor Parallel Latent Attention (TPLA), a novel technique designed to enhance the efficiency of disaggregated prefill and decode inference in large language models (LLMs).\n- TPLA addresses the limitations of existing methods like Multi-Head Latent Attention (MLA) in tensor parallel settings by partitioning both the latent representation and each head's input dimension across devices.\n- The proposed method preserves the benefits of compressed KV caching while achieving significant speedups (1.79x and 1.93x for DeepSeek-V3 and Kimi-K2, respectively) at a 32K-token context length.\n- TPLA maintains strong performance on commonsense and LongBench benchmarks and is compatible with FlashAttention-3 for end-to-end acceleration.\n- The authors demonstrate that TPLA is drop-in compatible with MLA pre-trained models and requires minimal retraining.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/fxmeng/TransMLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "AgentScope 1.0: A Developer-Centric Framework for Building Agentic\n  Applications",
+        "authors": "Liuyi Yao, Weirui Kuang, Yuexiang Xie, Zitao Li, Dawei Gao",
+        "link": "https://arxiv.org/abs/2508.16279",
+        "github_repo": null,
+        "summary": "- AgentScope 1.0 is a developer-centric framework for building agentic applications that leverages Large Language Models (LLMs).\n- It introduces improvements in supporting flexible and efficient tool-based agent-environment interactions, abstracting foundational components and providing unified interfaces.\n- AgentScope incorporates several built-in agents tailored to specific practical scenarios, along with robust engineering support for developer-friendly experiences.\n- It features a scalable evaluation module with a visual studio interface, a runtime sandbox for safe agent execution, and facilitates rapid deployment in production environments.\n- The framework is based on the ReAct paradigm and supports parallel tool calls, asynchronous executions, and real-time steering.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/agentscope-ai/agentscope"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "InMind: Evaluating LLMs in Capturing and Applying Individual Human\n  Reasoning Styles",
+        "authors": "Diping Song, Qi Chen, Yibin Wang, Chuanhao Li, Zizhen Li",
+        "link": "https://arxiv.org/abs/2508.16072",
+        "github_repo": null,
+        "summary": "InMind is a novel, cognitively grounded evaluation framework designed to assess LLMs' capacity for individualized reasoning.  It uses social deduction games (SDGs) like Avalon, enhancing structured gameplay data with strategy traces and post-game reflections. InMind evaluates LLMs on four cognitively motivated tasks: Player Identification, Reflection Alignment, Trace Attribution, and Role Inference.  The results reveal key limitations in current LLMs' capacity for individualized reasoning, highlighting the need for further research to bridge the gap between human-like reasoning and current AI capabilities. The InMind-Avalon dataset is also introduced, containing detailed annotations of human gameplay.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/leroy9472/InMind"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "CARFT: Boosting LLM Reasoning via Contrastive Learning with Annotated\n  Chain-of-Thought-based Reinforced Fine-Tuning",
+        "authors": "Yulun Zhang, Haipang Wu, Rongjuncheng Zhang, Ji Liu, Wenqiao Zhu",
+        "link": "https://arxiv.org/abs/2508.15868",
+        "github_repo": "https://github.com/WNQzhu/CARFT",
+        "summary": "- This paper introduces CARFT, a novel contrastive learning approach for enhancing the reasoning capabilities of Large Language Models (LLMs).\n- CARFT leverages annotated Chain-of-Thought (CoT) and incorporates contrastive signals to guide the fine-tuning process, addressing limitations of existing RL-based methods.\n- The method uses CoT embeddings to generate contrastive signals, including positive (correct answers) and negative signals (incorrect answers), improving both performance and stability.\n- Experiments on the SVAMP and GSM8K datasets demonstrate that CARFT significantly outperforms baselines (SFT, ReFT, and Dr.GRPO) in terms of accuracy and robustness, achieving improvements of up to 10.15%.\n- CARFT's efficiency is also highlighted, showing improvements of up to 30.62% compared to Dr.GRPO.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/WNQzhu/CARFT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "Learnable SMPLify: A Neural Solution for Optimization-Free Human Pose\n  Inverse Kinematics",
+        "authors": "Xiao Sun, Zhihang Zhong, Wei Wang, Linfeng Dong, Charlie019",
+        "link": "https://arxiv.org/abs/2508.13562",
+        "github_repo": "https://github.com/Charrrrrlie/Learnable-SMPLify",
+        "summary": "- This paper introduces Learnable SMPLify, a neural network-based method for human pose inverse kinematics that replaces the iterative optimization in traditional SMPLify with a single-pass regression model.\n- The model architecture consists of a Graph Convolutional Network (GCN)-based feature extractor and a Multi-Layer Perceptron (MLP)-based regressor, which predicts residual SMPL pose parameters.\n- Learnable SMPLify achieves nearly 200x faster runtime than SMPLify while maintaining high accuracy, as demonstrated by experiments on AMASS, 3DPW, and RICH datasets.\n- The method utilizes a human-centric normalization scheme and a temporal sampling strategy to improve generalization and robustness across diverse motions and unseen poses.\n- Learnable SMPLify supports both sequential inference and plug-in post-processing, enhancing its practicality and flexibility as a model-agnostic tool for refining existing image-based human pose estimators.",
+        "classification": [
+            "Keypoint Detection"
+        ],
+        "github_urls": [
+            "https://github.com/Charrrrrlie/Learnable-SMPLify"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    },
+    {
+        "title": "Jailbreaking Commercial Black-Box LLMs with Explicitly Harmful Prompts",
+        "authors": "Liming Fang, Jiafei Wu, Xiaogang Xu, Lu Zhou, AlienZhang1996",
+        "link": "https://arxiv.org/abs/2508.10390",
+        "github_repo": "https://github.com/AlienZhang1996/DH-CoT",
+        "summary": "- This paper introduces MDH, a malicious content detection framework that combines LLM-based annotation with human oversight to improve the accuracy and efficiency of cleaning red-teaming datasets and identifying jailbroken responses.\n- Two new jailbreaking strategies, D-Attack and DH-CoT, are proposed.  D-Attack leverages context simulation, while DH-CoT incorporates hijacked chains of thought to improve the success rate of jailbreaks.\n- The MDH framework achieves over 95% accuracy in detecting malicious content across multiple datasets with less than 10% manual effort.\n- The proposed jailbreaking methods demonstrate significant improvements in attack success rates compared to existing approaches, particularly on reasoning models with the DH-CoT method.\n- The paper contributes datasets, judgements, and detection results to a GitHub repository for reproducibility and further research.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/AlienZhang1996/DH-CoT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-25"
+    }
+]

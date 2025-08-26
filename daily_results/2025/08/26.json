@@ -1,0 +1,242 @@
+[
+    {
+        "title": "InternVL3.5: Advancing Open-Source Multimodal Models in Versatility,\n  Reasoning, and Efficiency",
+        "authors": "jinglinglin, WesKwong, MIASANMIA, gulixin0922, Weiyun1025",
+        "link": "https://arxiv.org/abs/2508.18265",
+        "github_repo": null,
+        "summary": " - InternVL 3.5 is a new family of open-source multimodal models that significantly improves versatility, reasoning, and inference efficiency. \n- A key innovation is the Cascade Reinforcement Learning (Cascade RL) framework, which enhances reasoning through a two-stage process: offline RL for stable convergence and online RL for refined alignment. \n- To optimize efficiency, a Visual Resolution Router (ViR) dynamically adjusts the resolution of visual tokens and a Decoupled Vision-Language Deployment (DvD) strategy separates the vision encoder and language model across different GPUs. \n- InternVL3.5-241B-A28B achieves state-of-the-art results among open-source MLLMs across various tasks and narrows the performance gap with leading commercial models like GPT-5. \n- All models and code are publicly released.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/InternVL"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/OpenGVLab/InternVL3_5-241B-A28B"
+        ],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "Visual-CoG: Stage-Aware Reinforcement Learning with Chain of Guidance\n  for Text-to-Image Generation",
+        "authors": "Haoxiang Shi, Bu Pi, Mingyang Han, Peng Chen, Yaqi Li",
+        "link": "https://arxiv.org/abs/2508.18032",
+        "github_repo": null,
+        "summary": "- This paper introduces Visual-CoG, a novel reinforcement learning framework for text-to-image generation that leverages a chain of guidance with stage-aware rewards.\n- Visual-CoG is divided into three stages: semantic reasoning, process refining, and outcome evaluation, each with its own reward signal to guide the generation process.\n- The method is evaluated on several benchmarks (GenEval, T2I-CompBench, and VisCog-Bench), showing improvements of 15%, 5%, and 19% respectively, compared to existing methods.\n- A new benchmark, VisCog-Bench, is introduced to specifically evaluate semantic reasoning capabilities in challenging scenarios.\n- Visual-CoG demonstrates superior performance, particularly in handling multi-attribute and ambiguous prompts that require strong reasoning capabilities.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "MV-RAG: Retrieval Augmented Multiview Diffusion",
+        "authors": "sagiebenaim, omerbenishu, yosepyossi",
+        "link": "https://arxiv.org/abs/2508.16577",
+        "github_repo": null,
+        "summary": "- The paper introduces MV-RAG, a novel retrieval-augmented diffusion framework for text-to-multiview 3D generation.\n- MV-RAG leverages a hybrid training strategy using structured multiview data and diverse 2D image collections to improve generation quality.\n- The model architecture incorporates retrieval-attention modules to condition the multiview diffusion process on retrieved images, dynamically adjusting the prior's relative contribution based on the input prompt's OOD characteristics.\n- Experiments show MV-RAG significantly outperforms existing methods, particularly on out-of-distribution (OOD) or rare concepts, while maintaining competitive performance on standard benchmarks.\n- A new collection of challenging OOD prompts (OOD-Eval) was introduced to rigorously evaluate the OOD generation capabilities of various models.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://yosefdayani.github.io/MV-RAG/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "T2I-ReasonBench: Benchmarking Reasoning-Informed Text-to-Image\n  Generation",
+        "authors": "Xihui Liu, Xian Liu, Chengqi Duan, Rongyao Fang, Kaiyue",
+        "link": "https://arxiv.org/abs/2508.17472",
+        "github_repo": "https://github.com/KaiyueSun98/T2I-ReasonBench",
+        "summary": "- This paper introduces T2I-ReasonBench, a new benchmark designed to evaluate the reasoning capabilities of text-to-image (T2I) models across four dimensions: Idiom Interpretation, Textual Image Design, Entity-Reasoning, and Scientific-Reasoning.\n- The benchmark comprises 800 meticulously designed prompts and uses a two-stage evaluation framework involving LLMs and MLLMs to assess reasoning accuracy and image quality.\n- Experiments on 14 state-of-the-art T2I models show that open-source models exhibit critical limitations in reasoning-informed generation, while proprietary models demonstrate stronger reasoning abilities.\n- The findings highlight the need to improve reasoning capabilities in next-generation T2I systems and provide a foundational benchmark for future research in this area.\n- The code for the benchmark is publicly available on GitHub.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/KaiyueSun98/T2I-ReasonBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "Beyond Memorization: Extending Reasoning Depth with Recurrence, Memory\n  and Test-Time Compute Scaling",
+        "authors": "Daniil Orel, mbur, yurakuratov, b1l4lx1, irodkin",
+        "link": "https://arxiv.org/abs/2508.16745",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel benchmark, 1dCA-Reasoning, for evaluating the multi-step reasoning capabilities of neural models, focusing on rule generalization rather than memorization.\n- The authors conduct a comprehensive study across diverse neural architectures (Transformers, LSTMs, state-space models, and ARMT), demonstrating that increasing model depth significantly improves multi-step reasoning performance.\n- They investigate several depth-extension strategies, including recurrence, memory, and test-time compute scaling (ACT), finding that ACT yields a noticeable improvement while preserving parameter efficiency.\n-  Reinforcement learning with GRPO allows for successful multi-step reasoning without intermediate supervision, and chain-of-thought prompting achieves near-perfect accuracy up to k=4.\n- The study highlights the importance of both architectural inductive biases and training objectives in determining the reasoning capabilities of neural models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/irodkin/1dCA_r2s20T20"
+        ],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "Breaking the Exploration Bottleneck: Rubric-Scaffolded Reinforcement\n  Learning for General LLM Reasoning",
+        "authors": "Jiale Zhao, Wenkai Fang, Shunyu Liu, Sunzhu Li, BAOLONGZHANSHEN",
+        "link": "https://arxiv.org/abs/2508.16949",
+        "github_repo": null,
+        "summary": "- The paper introduces Rubric-Scaffolded Reinforcement Learning (RuscaRL), a novel framework designed to enhance general LLM reasoning capabilities by addressing exploration limitations in reinforcement learning.- RuscaRL uses checklist-style rubrics as explicit scaffolding for exploration and verifiable rewards for exploitation.- This framework effectively guides diverse high-quality responses by gradually decaying guidance and using rubrics as verifiable rewards.- The experiments showcase RuscaRL's effectiveness across multiple benchmarks, including substantial improvements on HealthBench-500, surpassing the performance of GPT-4.1 and competitive with OpenAI-03.- RuscaRL is shown to be scalable across various model sizes and improves upon existing approaches by addressing the exploration bottleneck in reinforcement learning for LLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "PosterGen: Aesthetic-Aware Paper-to-Poster Generation via Multi-Agent\n  LLMs",
+        "authors": "Chenyu You, Yiwei Xu, Xiang Zhang, VitaCoco, HadlayZ",
+        "link": "https://arxiv.org/abs/2508.17188",
+        "github_repo": null,
+        "summary": "- PosterGen is a novel multi-agent framework for generating academic posters that is guided by core design principles.\n- It consists of four specialized agents: Parser, Curator, Layout, and Stylist agents that mimic the workflow of professional poster designers.\n- The agents work collaboratively to extract content, organize storyboards, create layouts, apply visual design elements, and render final posters.\n- PosterGen significantly outperforms existing methods in visual designs, generating presentation-ready posters with minimal human refinements.\n- The design quality is evaluated using a vision-language model (VLM)-based rubric that measures layout balance, readability, and aesthetic coherence.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Y-Research-SBU/PosterGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "UQ: Assessing Language Models on Unsolved Questions",
+        "authors": "Wei Liu, Rui Sun, Zihao Wang, Fan Nie, kzliu",
+        "link": "https://arxiv.org/abs/2508.17580",
+        "github_repo": null,
+        "summary": "This paper introduces UQ, a new benchmark for evaluating language models on unsolved questions sourced from Stack Exchange.  UQ addresses the limitations of existing benchmarks by focusing on challenging, open-ended problems with inherent real-world value. The benchmark is composed of 500 questions across diverse topics, curated through a multi-stage pipeline employing rule-based filters, LLM judges, and human review.  The evaluation of models on UQ is performed asynchronously and uses validator strategies that leverage the generator-validator gap to provide evaluation signals before human verification. A platform supports community-driven evaluation and asynchronous verification of solutions.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/"
+        ],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "MEENA (PersianMMMU): Multimodal-Multilingual Educational Exams for\n  N-level Assessment",
+        "authors": "Doratossadat Dastgheib, Seyed Mohammad Hadi Hosseini, Marzia Nouri, Arshia Hemmat, omidgh",
+        "link": "https://arxiv.org/abs/2508.17290",
+        "github_repo": null,
+        "summary": " - This paper introduces MEENA, a new multimodal-multilingual dataset designed to evaluate Persian VLMs across a wide range of educational tasks. \n - MEENA includes approximately 7,500 Persian and 3,000 English questions, covering diverse subjects and educational levels. \n - The dataset incorporates various question formats, including multiple-choice, mathematical problem solving and visual reasoning. \n - MEENA also includes rich metadata, such as difficulty levels, descriptive answers, and human performance data. \n - Experimental results demonstrate the challenges that current VLMs face in handling both reasoning and complex multimodal tasks, especially in Persian.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "Explain Before You Answer: A Survey on Compositional Visual Reasoning",
+        "authors": "Xin Zheng, Zixian Ma, Joy Hsu, Fucai Ke, ControlNet",
+        "link": "https://arxiv.org/abs/2508.17298",
+        "github_repo": null,
+        "summary": "This survey paper comprehensively reviews the field of compositional visual reasoning (CVR), focusing on works from 2023 to 2025.  It identifies key advantages of CVR over monolithic approaches, including improved cognitive alignment, semantic fidelity, robustness, and data efficiency. The paper traces the evolution of CVR paradigms across five stages: prompt-enhanced language-centric methods, tool-enhanced LLMs and VLMs, chain-of-thought reasoning VLMs, and unified agentic VLMs.  It catalogs benchmarks and metrics for evaluating CVR systems, highlighting challenges such as LLM limitations, hallucinations, and bias toward deductive reasoning.  Finally, the survey proposes future directions for CVR research, including world-model integration, human-AI collaborative reasoning, and improved evaluation protocols.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "ST-Raptor: LLM-Powered Semi-Structured Table Question Answering",
+        "authors": "Wei Zhou, Boxiu Li, Xuanhe Zhou, Boyu Niu, Zirui Tang",
+        "link": "https://arxiv.org/abs/2508.18190",
+        "github_repo": "https://github.com/weAIDB/ST-Raptor",
+        "summary": "- The paper introduces ST-Raptor, a novel tree-based framework for semi-structured table question answering that leverages large language models.\n- ST-Raptor employs the Hierarchical Orthogonal Tree (HO-Tree) to represent complex table layouts and defines basic tree operations to guide LLMs in executing common QA tasks.\n- The model decomposes questions into simpler sub-questions, generates corresponding tree operation pipelines, and incorporates a two-stage verification mechanism for accuracy.\n- Experimental results on the SSTQA benchmark dataset demonstrate that ST-Raptor outperforms nine baselines by up to 20% in answer accuracy.\n- The code is publicly available on GitHub.",
+        "classification": [
+            "Table Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/weAIDB/ST-Raptor"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "SpotEdit: Evaluating Visually-Guided Image Editing Methods",
+        "authors": "Ersin Yumer, Haitong Tian, Wei-An Lin, Sara Ghazanfari",
+        "link": "https://arxiv.org/abs/2508.18159",
+        "github_repo": "https://github.com/SaraGhazanfari/SpotEdit",
+        "summary": "- SpotEdit is a comprehensive benchmark for evaluating visually-guided image editing methods across diverse generative models.\n- It addresses the underexplored challenge of hallucination in visually-guided editing, where models incorrectly generate edits based on missing visual cues.\n- SpotEdit includes a dedicated hallucination component and reveals that even leading models often fail in such scenarios.\n- The benchmark consists of 500 samples spanning synthetic and real images and evaluates models across various dimensions, including global and fine-grained metrics.\n- The results highlight substantial performance disparities among existing models and reveal complementary strengths and weaknesses across different architectures.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/SaraGhazanfari/SpotEdit"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "German4All - A Dataset and Model for Readability-Controlled Paraphrasing\n  in German",
+        "authors": "Cristian-George Craciun, Maximilian M\u00fcller, Eslam Nasrallah, Thanh Mai Pham, Miriam Ansch\u00fctz",
+        "link": "https://arxiv.org/abs/2508.17973",
+        "github_repo": null,
+        "summary": "- The paper introduces German4All, the first large-scale German dataset of aligned readability-controlled, paragraph-level paraphrases, spanning five readability levels and comprising over 25,000 samples.\n- German4All was automatically synthesized using GPT-4 and rigorously evaluated through human and LLM-based judgments to ensure data quality and usefulness.\n- An open-source, readability-controlled paraphrasing model trained on German4All achieves state-of-the-art performance in German text simplification, allowing for nuanced reader-specific adaptations.\n- The dataset and model are open-sourced to encourage further research on multi-level paraphrasing and readability control in German.\n- The study also shows how the model outperforms existing German ATS systems on existing text simplification datasets in terms of SARI scores and FRE, demonstrating its effectiveness in handling different complexity levels.",
+        "classification": [
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/MiriUll/German4All"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "Limitations of Normalization in Attention Mechanism",
+        "authors": "Radu State, Tatiana Petrova, mbur, opensapce",
+        "link": "https://arxiv.org/abs/2508.17821",
+        "github_repo": null,
+        "summary": "- This paper investigates the limitations of normalization in attention mechanisms, focusing on the softmax function.\n- The authors provide a theoretical framework to analyze the model's selective ability and geometric separation in token selection, deriving explicit bounds on distances and separation criteria.\n- Through experiments with pre-trained GPT-2 models, they validate their theoretical results and demonstrate that the model's ability to distinguish informative tokens declines as the number of selected tokens increases.\n- They also show that gradient sensitivity under softmax normalization poses challenges during training, especially at low temperatures.\n- This work advances the understanding of softmax-based attention mechanisms and motivates the development of more robust normalization and selection strategies for future attention architectures.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "TaDiCodec: Text-aware Diffusion Speech Tokenizer for Speech Language\n  Modeling",
+        "authors": "Jiaqi Li, Junan Zhang, Xueyao Zhang, Dekun Chen, Yuancheng Wang",
+        "link": "https://arxiv.org/abs/2508.16790",
+        "github_repo": "https:/github.com/HeCheng0625/Diffusion-Speech-Tokenizer",
+        "summary": "- TaDiCodec, a novel text-aware diffusion speech tokenizer, is proposed to address limitations of existing methods by employing end-to-end optimization for quantization and reconstruction through a diffusion autoencoder, while integrating text guidance.- TaDiCodec achieves an extremely low frame rate of 6.25 Hz and a corresponding bitrate of 0.0875 kbps, outperforming existing methods in terms of compression while maintaining competitive performance on speech generation evaluation metrics.- The model architecture uses a diffusion autoencoder with a single-layer codebook and incorporates text guidance into the diffusion decoder to improve reconstruction quality.- TaDiCodec demonstrates compatibility with language model-based zero-shot text-to-speech using both autoregressive and masked generative modeling, showcasing its effectiveness for speech language modeling.- The authors will open-source the code and model checkpoints, and audio samples are available on the project website.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "https://github.com/HeCheng0625/Diffusion-Speech-Tokenizer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    },
+    {
+        "title": "Neither Valid nor Reliable? Investigating the Use of LLMs as Judges",
+        "authors": "Golnoosh Farnadi, Jackie Chi Kit Cheung, Mohammed Haddou, Khaoula Chehbouni",
+        "link": "https://arxiv.org/abs/2508.18076",
+        "github_repo": null,
+        "summary": "This paper investigates the use of Large Language Models (LLMs) as judges for evaluating Natural Language Generation (NLG) systems.  It critically examines four core assumptions underlying the use of LLMs as evaluators: their ability to act as proxies for human judgment, their capabilities as evaluators, their scalability, and their cost-effectiveness. The authors identify and assess challenges to these assumptions, drawing on measurement theory from the social sciences. Three applications of LLMs as judges are explored: text summarization, data annotation, and safety alignment. Finally, the paper highlights the need for more responsible evaluation practices to ensure that the growing role of LLMs in NLG evaluation supports, rather than undermines, progress in the field.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-26"
+    }
+]

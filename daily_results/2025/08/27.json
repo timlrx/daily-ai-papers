@@ -1,0 +1,321 @@
+[
+    {
+        "title": "CMPhysBench: A Benchmark for Evaluating Large Language Models in\n  Condensed Matter Physics",
+        "authors": "Dongchen Huang, komusama0930, BoringMarsh, di-zhang-fdu, weidawang",
+        "link": "https://arxiv.org/abs/2508.18124",
+        "github_repo": "https://github.com/CMPhysBench/CMPhysBench",
+        "summary": "CMPhysBench is a new benchmark for evaluating large language models (LLMs) in condensed matter physics.  It comprises over 520 graduate-level physics problems, meticulously designed to require comprehensive solutions and deep understanding.  The benchmark introduces a novel evaluation metric, SEED (Scalable Expression Edit Distance), which provides fine-grained accuracy assessment.  Experimental results reveal a substantial performance gap between current LLMs and human-level expertise in this complex domain. The code and dataset are publicly available.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/CMPhysBench/CMPhysBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "TreePO: Bridging the Gap of Policy Optimization and Efficacy and\n  Inference Efficiency with Heuristic Tree-based Modeling",
+        "authors": "Zhoufutu Wen, Qingshui Gu, zhangysk, aaabiao, yizhilll",
+        "link": "https://arxiv.org/abs/2508.17445",
+        "github_repo": null,
+        "summary": "- TreePO is a novel reinforcement learning algorithm that improves policy optimization and inference efficiency for large language models (LLMs) by employing a heuristic tree-based modeling approach.\n- The algorithm views sequence generation as a tree-structured search process, leveraging local uncertainty to guide the exploration of diverse reasoning paths.\n- TreePO reduces the computational burden by amortizing computation across common prefixes and pruning low-value paths, while preserving or enhancing exploration diversity.\n- Experimental results demonstrate that TreePO achieves a significant performance gain on reasoning benchmarks, reducing GPU hours by 22% to 43% and showing up to a 40% reduction at the trajectory level and 35% at the token level in sampling compute for existing models.\n- These efficiency gains come without sacrificing model performance, showcasing a practical path toward scaling RL-based post-training with fewer samples and less compute.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "VibeVoice Technical Report",
+        "authors": "Yaoyao Chang, Wenhui Wang, Jianwei Yu, Zhiliang Peng, unilm",
+        "link": "https://arxiv.org/abs/2508.19205",
+        "github_repo": null,
+        "summary": "- This paper introduces VIBEVOICE, a novel model for synthesizing long-form speech with multiple speakers using a next-token diffusion approach.\n- The model employs a novel continuous speech tokenizer that improves data compression by 80 times compared to Encodec, enhancing computational efficiency for long sequences.\n- VIBEVOICE can generate long-form speech of up to 90 minutes, supporting up to 4 speakers, and outperforms existing open-source and proprietary dialogue models in subjective evaluations of preference, realism, and richness.\n- The model architecture integrates a Large Language Model (LLM) with specialized audio encoding and diffusion-based decoding modules for scalable, high-fidelity multi-speaker speech synthesis.\n- Experiments demonstrate VIBEVOICE's superior performance on both long conversational speech and short utterances, showcasing its versatility and effectiveness.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [
+            "github.com/microsoft/VibeVoice"
+        ],
+        "huggingface_urls": [
+            "microsoft/VibeVoice"
+        ],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "VoxHammer: Training-Free Precise and Coherent 3D Editing in Native 3D\n  Space",
+        "authors": "Rui Chen, Gengxiong Zhuang, Zehuan Huang, fenghora, Nelipot",
+        "link": "https://arxiv.org/abs/2508.19247",
+        "github_repo": null,
+        "summary": "- VoxHammer is a novel training-free approach for precise and coherent 3D editing in native 3D space, addressing the limitations of existing methods that operate in 2D or require extensive training.\n- The method involves a two-stage process: precise 3D inversion to obtain inverted latents and key-value tokens, followed by denoising and editing where denoising features of preserved regions are replaced with the corresponding inverted latents and tokens.\n- VoxHammer significantly outperforms existing methods on the Edit3D-Bench dataset, demonstrating superior performance in terms of 3D consistency of preserved regions and overall quality.\n- The paper introduces Edit3D-Bench, a new benchmark dataset comprising hundreds of samples with carefully labeled 3D editing regions for evaluating the consistency of preserved regions.\n- The training-free nature of VoxHammer makes it efficient and cost-effective, holding promise for synthesizing high-quality edited paired data and advancing in-context 3D generation.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://huanngzh.github.io/VoxHammer-Page/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Spacer: Towards Engineered Scientific Inspiration",
+        "authors": "zerojun48, kohandy, rallyduck1005, MoonRainy21, mhlee1022",
+        "link": "https://arxiv.org/abs/2508.17661",
+        "github_repo": null,
+        "summary": " - Spacer is a novel scientific discovery system that generates original scientific concepts by leveraging deliberate decontextualization and a multi-stage pipeline. \n- The system consists of NURI, an inspiration engine that extracts high-potential keyword sets from a keyword graph, and the Manifesting Pipeline that refines these sets into elaborate scientific statements. \n- NURI's performance in classifying high-impact publications shows an AUROC score of 0.737, while the Manifesting Pipeline successfully reconstructs core concepts from top-journal articles using keyword sets. \n- Spacer's outputs show significantly more similarity to leading publications than outputs from state-of-the-art LLMs, indicating its potential for generating novel and impactful scientific concepts.\n- The system is evaluated in terms of NURI's effectiveness, Weaver's capability to find concepts, and Spacer's overall end-to-end performance.  ",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "OmniHuman-1.5: Instilling an Active Mind in Avatars via Cognitive\n  Simulation",
+        "authors": "Jiaqi Yang, Zerong Zheng, Weihong Zeng, Jianwen Jiang, chao0412",
+        "link": "https://arxiv.org/abs/2508.19209",
+        "github_repo": null,
+        "summary": "- This paper introduces OmniHuman-1.5, a novel framework for generating character animations that are both physically plausible and semantically coherent.\n- The model leverages multimodal large language models (MLLMs) to synthesize a structured textual representation of conditions providing high-level semantic guidance and a specialized multimodal DiT architecture with a novel Pseudo Last Frame design to effectively fuse multimodal inputs.\n- Extensive experiments demonstrate that OmniHuman-1.5 outperforms existing methods in terms of lip-sync accuracy, video quality, motion naturalness, and semantic consistency with textual prompts.\n- The model exhibits remarkable extensibility to complex scenarios, such as those involving multi-person and non-human subjects.\n- The study introduces a dual-system framework inspired by cognitive science to address limitations of current audio-driven video avatar models, effectively generating more natural and coherent behavior.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "UltraMemV2: Memory Networks Scaling to 120B Parameters with Superior\n  Long-Context Learning",
+        "authors": "Ran Guo, Siyan Chen, Qiyang Min, Yu Bao, FetchFortune",
+        "link": "https://arxiv.org/abs/2508.18756",
+        "github_repo": null,
+        "summary": "- UltraMemV2 is a redesigned memory-layer architecture that improves upon previous memory-layer architectures by achieving performance parity with 8-expert Mixture of Experts (MoE) models while maintaining significantly lower memory access costs.\n- The model introduces five key improvements: integrating memory layers into every transformer block, simplifying value expansion with single linear projections, adopting FFN-based value processing from PEER, implementing principled parameter initialization, and rebalancing memory-to-FFN computation ratios.\n- UltraMemV2 demonstrates superior performance on memory-intensive tasks, showing improvements of +1.6 points on long-context memorization, +6.2 points on multi-round memorization, and +7.9 points on in-context learning compared to 8-expert MoE models.\n- The model scales effectively to 120B parameters, with 2.5B activated parameters, establishing that activation density has a greater impact on performance than total sparse parameter count.\n- The research validates the effectiveness of UltraMemV2 as a compelling alternative to state-of-the-art MoE models for efficient sparse computation.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ZihaoHuang-notabot/Ultra-Sparse-Memory-Network"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Pixie: Fast and Generalizable Supervised Learning of 3D Physics from\n  Pixels",
+        "authors": "Dinesh Jayaraman, Chuhao Chen, Chen Wang, Ryan Lucas, vlongle",
+        "link": "https://arxiv.org/abs/2508.17437",
+        "github_repo": null,
+        "summary": " - PIXIE is a novel method for supervised learning of 3D physics from pixels, using a feed-forward U-Net architecture with CLIP features to predict material properties and a physics solver (e.g., MPM) for simulation.\n- The model predicts both discrete material types and continuous values (Young's modulus, Poisson's ratio, density) and is significantly faster than test-time optimization methods.\n- PIXIE outperforms previous state-of-the-art methods by 1.46-4.39x in terms of realism scores evaluated by a vision-language model while being three orders of magnitude faster.\n- The model generalizes to real-world scenes despite being trained solely on synthetic data.\n- The PIXIEVERSE dataset, containing 1624 3D assets with material annotations, is also introduced to support the research.",
+        "classification": [
+            "Image-to-3D",
+            "Computer Vision",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://pixie-3d.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Autoregressive Universal Video Segmentation Model",
+        "authors": "Albert Gu, Yu-Chiang Frank Wang, Sukjun Hwang, Miran Heo, cmhungsteve",
+        "link": "https://arxiv.org/abs/2508.19242",
+        "github_repo": null,
+        "summary": "- This paper introduces the Autoregressive Universal Segmentation Model (AUSM), a novel model that unifies both prompted and unprompted video segmentation tasks.\n- AUSM employs a fixed-size spatial state and scales to video streams of arbitrary length, addressing limitations of previous methods.\n- The model outperforms existing universal streaming video segmentation methods on several benchmark datasets, achieving up to 2.5x faster training on 16-frame sequences.\n- AUSM's architecture incorporates components like History Marker and History Compressor, specialized for handling streaming videos and preserving fine-grained spatio-temporal details.\n- The training of AUSM is designed for parallelism across frames, resulting in significant speedups compared to iterative training approaches.",
+        "classification": [
+            "Image Segmentation",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Wan-S2V: Audio-Driven Cinematic Video Generation",
+        "authors": "Chaonan Ji, Mingyang Huang, Siqi Hu, Li Hu, Xin Gao",
+        "link": "https://arxiv.org/abs/2508.18621",
+        "github_repo": null,
+        "summary": "- This paper introduces Wan-S2V, a novel audio-driven model for generating cinematic videos, which significantly outperforms existing state-of-the-art methods in terms of expressiveness and realism, as demonstrated by experimental results.\n- The model architecture leverages a hybrid training strategy combining FSDP with Context Parallel, enabling large-scale, full-parameter model training and improving training efficiency.\n- Wan-S2V incorporates both text and audio inputs to control the video generation process; text guides the overall scene dynamics, while audio controls the fine-grained details of character actions and expressions.\n- The model addresses the challenge of long video generation by employing a FramePack module to reduce computational costs and improve the consistency of long-term video generation.\n- Extensive experiments on a comprehensive dataset consisting of both public and internally collected data demonstrate that Wan-S2V surpasses existing methods in terms of various quantitative metrics (e.g., FID, FVD, SSIM, PSNR) and qualitative evaluations.",
+        "classification": [
+            "Audio-to-Audio",
+            "Text-to-Video",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "CineScale: Free Lunch in High-Resolution Cinematic Visual Generation",
+        "authors": "Ziwei Liu, Paul Debevec, Ziqi Huang, Ning Yu, Haonan Qiu",
+        "link": "https://arxiv.org/abs/2508.15774",
+        "github_repo": "https://github.com/Eyeline-Labs/CineScale",
+        "summary": "- CineScale is a novel inference paradigm that enables high-resolution visual generation without extensive fine-tuning, addressing limitations of existing methods which produce low-quality outputs with repetitive patterns.\n- It introduces tailored self-cascade upscaling and restrained dilated convolution to maintain visual structure and quality during upscaling, and a scale fusion mechanism to combine global and local details for enhanced visual fidelity.\n- CineScale supports high-resolution image (up to 8k) and video (up to 4k) generation for various tasks including text-to-image, image-to-video, text-to-video, and video-to-video, showing significant improvements over baselines.\n- The method is evaluated on multiple datasets and tasks, demonstrating its effectiveness and outperformance compared to several state-of-the-art approaches in both quantitative metrics and qualitative visual assessment.\n- Minimal LoRA fine-tuning further enhances the performance, achieving superior results in high-resolution video generation, while maintaining computational efficiency.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Image-to-Image",
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/Eyeline-Labs/CineScale"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "FastMesh:Efficient Artistic Mesh Generation via Component Decoupling",
+        "authors": "Xingang Pan, Yongwei Chen, Armando Fortes, Yushi Lan, Jeonghwan Kim",
+        "link": "https://arxiv.org/abs/2508.19188",
+        "github_repo": null,
+        "summary": "- This paper introduces FastMesh, a novel framework for efficient artistic mesh generation that surpasses existing methods in speed and quality.\n- The model architecture involves decoupling vertex and face generation, using an autoregressive model for vertices and a bidirectional transformer for faces to reduce redundancy and computational cost.\n- FastMesh achieves more than 8x faster speed on mesh generation compared to state-of-the-art approaches while producing higher mesh quality.\n- A fidelity enhancer module refines vertex positioning for improved mesh quality, and a post-processing framework removes undesirable edge connections.\n- The framework is evaluated on the Toys4K dataset, demonstrating significant improvements in both speed and quality compared to existing methods.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://jhkim0759.github.io/projects/FastMesh"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "ReportBench: Evaluating Deep Research Agents via Academic Survey Tasks",
+        "authors": "Kai Jia, Cong Ma, Zhihao Cheng, Ying Zeng, Minghao Li",
+        "link": "https://arxiv.org/abs/2508.15804",
+        "github_repo": "https://github.com/ByteDance-BandAI/ReportBench",
+        "summary": "- ReportBench is a novel benchmark designed to evaluate the content quality of research reports generated by LLMs, focusing on the quality of cited literature and the faithfulness of generated statements.\n- It leverages high-quality published survey papers available on arXiv as gold-standard references, applying reverse prompt engineering to derive prompts and create a comprehensive evaluation corpus.\n- ReportBench uses an agent-based automated framework to analyze reports, extracting citations and statements, verifying cited content against original sources, and validating non-cited claims using web-based resources.\n- Evaluations show that commercial Deep Research agents generate more comprehensive and reliable reports than standalone LLMs.\n- The complete code and data are available at https://github.com/ByteDance-BandAI/ReportBench.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ByteDance-BandAI/ReportBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "ThinkDial: An Open Recipe for Controlling Reasoning Effort in Large\n  Language Models",
+        "authors": "Jiangjie Chen, Mingxuan Wang, Xuefeng Li, Siyu Yuan, Qianyu He",
+        "link": "https://arxiv.org/abs/2508.18773",
+        "github_repo": null,
+        "summary": "- This paper introduces ThinkDial, the first open-source framework that implements controllable reasoning in large language models (LLMs) through discrete operational modes, similar to the proprietary gpt-oss series.\n- ThinkDial enables seamless switching between three reasoning regimes: High (full capability), Medium (50% token reduction with <10% performance degradation), and Low (75% token reduction with <15% performance degradation).\n- The framework employs an end-to-end training paradigm that integrates budget-mode control throughout the pipeline, including budget-mode supervised fine-tuning and two-phase budget-aware reinforcement learning with adaptive reward shaping.\n- Extensive experiments demonstrate ThinkDial's ability to achieve target compression-performance trade-offs while maintaining performance thresholds and exhibiting strong generalization on out-of-distribution tasks.\n- The authors' main contribution is the creation of an open recipe for controlling reasoning effort, moving beyond existing approaches that primarily rely on explicit token budget specification or adaptive mode switching.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "MovieCORE: COgnitive REasoning in Movies",
+        "authors": "Hung-Ting Su, Ying Cheng, Jia-Fong Yeh, Gueter Josmy Faure, cmhungsteve",
+        "link": "https://arxiv.org/abs/2508.19026",
+        "github_repo": null,
+        "summary": "- MovieCORE, a novel video question answering (VQA) dataset, is introduced to assess deeper cognitive understanding of movie content.  Unlike existing datasets focusing on surface-level comprehension, MovieCORE emphasizes questions requiring System-2 thinking.\n- An innovative agentic brainstorming approach, using multiple LLMs as thought agents, generates high-quality question-answer pairs.  Dataset quality is evaluated through cognitive tests assessing depth and thought-provocation.\n- A comprehensive evaluation scheme assesses VQA model performance on deeper cognitive tasks, revealing critical insights about existing models' limitations.\n- To address these limitations, Agentic Choice Enhancement (ACE), a post-training module, improves model reasoning capabilities by up to 25%, demonstrating significant performance gains.\n- MovieCORE contributes to advancing movie understanding in AI and provides insights into the capabilities and limitations of current VQA models in complex scenarios.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://joslefaure.github.io/assets/html/moviecore.html"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Optimal Sparsity of Mixture-of-Experts Language Models for Reasoning\n  Tasks",
+        "authors": "Daisuke Nohara, Takumi Okamoto, Masaki Kawamura, Satoki Ishikawa, Taishi-N324",
+        "link": "https://arxiv.org/abs/2508.18672",
+        "github_repo": "https://github.com/rioyokotalab/optimal-sparsity",
+        "summary": " - This paper investigates the optimal sparsity of Mixture-of-Experts (MoE) language models for reasoning tasks. \n - The authors train families of MoE Transformers with varying parameters, active parameters, and top-k routing, while holding the compute budget fixed. \n - Their findings show that reasoning performance saturates and can regress despite continued gains in total parameters and training loss, unlike memorization performance which improves monotonically. \n - They also find that changing top-k alone has little effect when active parameters are constant and that classic hyperparameters such as learning rate and initialization modulate the generalization gap in the same direction as sparsity. \n - The authors conclude that finding the optimal sparsity of MoE during pre-training is crucial for training a reasoning model under a fixed compute budget.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/rioyokotalab/optimal-sparsity"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Training Language Model Agents to Find Vulnerabilities with CTF-Dojo",
+        "authors": "Zijian Wang, Varun Kumar, Hantian Ding, Dingmin Wang, terryyz",
+        "link": "https://arxiv.org/abs/2508.18370",
+        "github_repo": null,
+        "summary": " - This paper introduces CTF-DOJO, a large-scale, executable runtime environment with 658 CTF challenges for training LLMs to find vulnerabilities. \n - It also presents CTF-FORGE, an automated pipeline that creates Dockerized CTF environments in minutes. \n - The authors train LLM agents on CTF-DOJO and achieve state-of-the-art performance on multiple benchmarks, outperforming prior work by up to 11.6% absolute gains. \n - Their experiments highlight the importance of writeups, runtime augmentation, and teacher model diversity for effective agent training. \n - Overall, CTF-DOJO offers a scalable and democratized platform for advancing the development of LLM-based cybersecurity agents.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/pwncollege/ctf-archive"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "QueryBandits for Hallucination Mitigation: Exploiting Semantic Features\n  for No-Regret Rewriting",
+        "authors": "Manuela Veloso, Sumitra Ganesh, Alec Koppel, William Watson, Nicole Cho",
+        "link": "https://arxiv.org/abs/2508.16697",
+        "github_repo": null,
+        "summary": "This paper introduces QueryBandits, a novel bandit framework designed to mitigate hallucinations in Large Language Models (LLMs) by strategically rewriting queries.  The framework leverages 17 linguistic features to predict hallucination propensity and employs Thompson Sampling to select optimal query rewrites.  Empirical results across 13 diverse QA benchmarks show that QueryBandits significantly outperforms both a no-rewrite baseline and existing static prompting strategies, achieving an 87.5% win rate over the no-rewrite baseline.  The study also reveals that no single rewrite strategy is universally optimal and highlights the importance of context-aware rewriting for hallucination mitigation.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "ObjFiller-3D: Consistent Multi-view 3D Inpainting via Video Diffusion\n  Models",
+        "authors": "Beiqi Chen, Gangshan Wu, Jie Tang, Jie Liu, Haitang Feng",
+        "link": "https://arxiv.org/abs/2508.18271",
+        "github_repo": "https://github.com/objfiller3d/ObjFiller-3D",
+        "summary": "- ObjFiller-3D is a novel framework that reconstructs complete 3D objects from partial inputs by leveraging state-of-the-art video diffusion models.\n- It addresses the limitations of conventional 2D image inpainting methods by ensuring consistency across multiple views, resulting in high-quality and faithful 3D reconstructions.\n- The model adapts a video inpainting model for 3D scene inpainting and introduces a reference-based 3D inpainting method to further enhance reconstruction quality.\n- Experimental results show that ObjFiller-3D outperforms previous state-of-the-art methods, achieving a PSNR of 26.6 compared to NeRFiller's 15.9 and an LPIPS score of 0.19 compared to Instant3dit's 0.25.\n- The method demonstrates strong potential for practical deployment in real-world 3D editing applications.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/objfiller3d/ObjFiller-3D"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Demystifying Scientific Problem-Solving in LLMs by Probing Knowledge and\n  Reasoning",
+        "authors": "Arman Cohan, Doug Downey, Arpan Sarkar, Yixin Liu, Alan Li",
+        "link": "https://arxiv.org/abs/2508.19202",
+        "github_repo": null,
+        "summary": " - This paper introduces SCIREAS, a unified benchmark suite for evaluating scientific reasoning in LLMs, and SCIREAS-PRO, a challenging subset that better differentiates weak and strong reasoners.\n- It proposes KRUX, a probing framework to study the distinct roles of knowledge and reasoning in scientific tasks.\n- The findings reveal that retrieving task-relevant knowledge from model parameters is a critical bottleneck for LLMs in scientific reasoning.\n- The study shows reasoning models consistently benefit from external knowledge added in-context.\n- Finally, it introduces SCILIT01, a strong 8B baseline for scientific reasoning.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/yale-nlp/SciReas-Eval"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-27"
+    },
+    {
+        "title": "Unraveling the cognitive patterns of Large Language Models through\n  module communities",
+        "authors": "Jianxi Gao, Pin-Yu Chen, KBhandari11",
+        "link": "https://arxiv.org/abs/2508.18192",
+        "github_repo": null,
+        "summary": "This paper introduces a novel network-based framework to study the cognitive patterns of large language models (LLMs) by connecting cognitive skills, LLM architectures, and datasets.  The framework reveals that LLMs exhibit modular structures with communities of modules whose emergent skill patterns partially mirror the distributed organization seen in avian and small mammalian brains.  However, it highlights a key divergence from biological systems, where skill acquisition benefits substantially from cross-regional interactions and neural plasticity, unlike the rigid modularity of LLMs.  The results suggest that effective fine-tuning strategies should leverage distributed learning dynamics rather than modular interventions.  Further, the findings are validated using community-based fine-tuning strategies.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/KBhandari11/LLMNeuron"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/KBhandari11/collections"
+        ],
+        "date": "2025-08-27"
+    }
+]

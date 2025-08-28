@@ -1,0 +1,215 @@
+[
+    {
+        "title": "Self-Rewarding Vision-Language Model via Reasoning Decomposition",
+        "authors": "Zhenwen Liang, Rui Liu, Wenhao Yu, Zongxia Li, ChengsongHuang",
+        "link": "https://arxiv.org/abs/2508.19652",
+        "github_repo": null,
+        "summary": "- This paper introduces Vision-SR1, a novel self-rewarding method for improving visual reasoning in Vision-Language Models (VLMs) without external supervision.\n- Vision-SR1 decomposes VLM reasoning into two stages: visual perception and language reasoning, using a self-contained visual perception to compute reward.\n- The model is first prompted to generate a self-contained visual perception, and then it's re-prompted to perform language reasoning using only the generated perception.\n- Experiments demonstrate that Vision-SR1 significantly improves visual reasoning, mitigates visual hallucinations, and reduces reliance on language shortcuts across diverse vision-language tasks, outperforming existing methods.\n- The approach uses a balanced training signal that strengthens both visual perception and language reasoning, addressing the limitations of prior methods that rely on external supervision or simple answer matching.",
+        "classification": [
+            "Visual Question Answering",
+            "Multimodal",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zli12321/Vision-SR1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Beyond Transcription: Mechanistic Interpretability in ASR",
+        "authors": "Aviv Shamsian, Hilit Segev, Yael Segal-Feldman, AvivNavon, netag",
+        "link": "https://arxiv.org/abs/2508.15882",
+        "github_repo": null,
+        "summary": "- This paper introduces novel interpretability techniques for Automatic Speech Recognition (ASR) models, adapting methods from Large Language Models (LLMs).\n- The study reveals previously unknown internal dynamics within ASR systems, including specific encoder-decoder interactions contributing to hallucinations and semantic biases.\n- Through probing techniques, the researchers demonstrate the benefits of extending interpretability methods to ASR, enhancing model transparency and robustness.\n- The findings show that acoustic and semantic attributes are linearly decoded in encoder layers, with clearer separation in upper layers; and that hallucination-related signals are strongly expressed in the decoder's residual stream.\n- This work opens promising new directions for improving ASR model reliability and performance by providing insights into their internal decision-making processes.",
+        "classification": [
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding\n  in Vision-Language-Action Policies",
+        "authors": "Sitong Mao, Chengyue Wu, Tianshuo Yang, Yizhuo Li, Zhixuan Liang",
+        "link": "https://arxiv.org/abs/2508.20072",
+        "github_repo": null,
+        "summary": "- This paper introduces Discrete Diffusion VLA, a novel vision-language-action (VLA) model that uses discrete diffusion to decode action sequences.\n- The model architecture is a single-transformer that processes visual, language, and action tokens, allowing for parallel decoding and efficient training.\n- Discrete Diffusion VLA outperforms both autoregressive and continuous diffusion baselines on multiple robotics benchmarks, achieving state-of-the-art results on LIBERO (96.3% success rate).\n- The model incorporates adaptive decoding and secondary re-masking to improve consistency and robustness, addressing limitations of previous approaches.\n-  The unified architecture and adaptive decoding strategy offer potential for scaling VLA models to larger datasets and more complex tasks.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer\n  Use Agent with Decoupled Reinforcement Learning",
+        "authors": "Jianze Liang, Yuhang Cao, yuhangzang, rookiexiong, Zery",
+        "link": "https://arxiv.org/abs/2508.20096",
+        "github_repo": "https://github.com/OpenIXCLab/CODA",
+        "summary": "- This paper introduces CODA, a novel trainable compositional framework for GUI agents that combines a generalist planner (Cerebrum) with a specialist executor (Cerebellum).\n- CODA uses a decoupled reinforcement learning approach, training the planner and executor separately to improve performance and generalization.\n- The model consists of two modules: a planner (Qwen2.5-VL) for high-level planning and an executor (UI-TARS-1.5) for precise low-level actions.\n- A two-stage training pipeline is used. The first stage specializes the planner for each application, and the second stage generalizes the planner's knowledge across all applications. \n- Experiments on four challenging applications show that CODA significantly outperforms baselines and achieves state-of-the-art performance.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/OpenIXCLab/CODA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "MIDAS: Multimodal Interactive Digital-human Synthesis via Real-time\n  Autoregressive Video Generation",
+        "authors": "Yan Zhou, Haoxian Zhang, Wenyuan Zhang, Liyuan Cui, ChenMing-thu14",
+        "link": "https://arxiv.org/abs/2508.19320",
+        "github_repo": null,
+        "summary": "- This paper introduces MIDAS, a multimodal interactive digital human synthesis framework that uses an autoregressive model for real-time video generation.\n- The model accepts multimodal inputs (audio, pose, and text) and outputs spatially and semantically coherent video frames.\n- A large-scale dialogue dataset of approximately 20,000 hours was created to train the model.\n- The authors introduced a deep compression autoencoder to reduce the computational burden of the autoregressive model.\n- Extensive experiments demonstrate MIDAS's advantages in low latency, high efficiency, and fine-grained multimodal controllability.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://chenmingthu.github.io/milm/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Predicting the Order of Upcoming Tokens Improves Language Modeling",
+        "authors": "Alham Fikri Aji, Erland, zaydzuhri",
+        "link": "https://arxiv.org/abs/2508.19228",
+        "github_repo": "https://github.com/zaydzuhri/token-order-prediction",
+        "summary": "- This paper introduces Token Order Prediction (TOP), a novel auxiliary training objective for language models that aims to improve next-token prediction (NTP) performance.\n- TOP trains models to predict the order of upcoming tokens based on their proximity, using a learning-to-rank loss. This is in contrast to Multi-Token Prediction (MTP), which tries to predict the exact future tokens.\n- TOP only requires a single additional unembedding layer, compared to MTP's multiple transformer layers, making it more efficient and scalable.\n- Experiments on eight standard NLP benchmarks showed that TOP outperforms both NTP and MTP across different model sizes (340M, 1.8B, and 7B parameters).\n- The results suggest that TOP is a more effective auxiliary objective than MTP for improving general language modeling performance.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/zaydzuhri/token-order-prediction"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Gaze into the Heart: A Multi-View Video Dataset for rPPG and Health\n  Biomarkers Estimation",
+        "authors": "Anton Ivaschenko, Galina Zubkova, Stepan Botman, Konstantin Egorov, blinoff",
+        "link": "https://arxiv.org/abs/2508.17924",
+        "github_repo": null,
+        "summary": "- The paper introduces MCD-rPPG, a comprehensive multi-view video dataset for rPPG and health biomarker estimation, comprising 3600 synchronized video recordings from 600 subjects under varied conditions.\n- It includes a fast baseline model for rPPG and health biomarker estimation, utilizing a 1D fully convolutional feature pyramid network.\n- The model achieves a speed improvement of up to 13% over existing models, while maintaining competitive accuracy in cross-dataset scenarios.\n- The dataset includes extended health metrics such as ECG, blood pressure, and stress levels, addressing limitations of existing datasets.\n- Public release of the dataset and model should accelerate progress in AI medical assistants.",
+        "classification": [
+            "Computer Vision",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/ksyegorov/mcd_rppg"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/kyegorov/mcd_rppg"
+        ],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Diffusion Language Models Know the Answer Before Decoding",
+        "authors": "Shilin Yan, Lu Yin, Dilxat Muhtar, Yefan Zhou, Pengxiang Li",
+        "link": "https://arxiv.org/abs/2508.19982",
+        "github_repo": "https://github.com/pixeli99/Prophet",
+        "summary": "- This paper introduces Prophet, a training-free fast decoding paradigm for diffusion language models (DLMs) that leverages the observation of early answer convergence.\n- Prophet dynamically decides whether to continue refinement or decode all remaining tokens at once, using the confidence gap between the top-2 prediction candidates as a criterion.\n- Empirical evaluations on LLaDA-8B and Dream-7B across multiple tasks show that Prophet reduces the number of decoding steps by up to 3.4x while preserving high generation quality.\n- The method integrates seamlessly into existing DLM implementations, incurs negligible overhead, and requires no additional training.\n- Prophet recasts DLM decoding as a problem of when to stop sampling, demonstrating that early decode convergence provides a simple yet powerful mechanism for accelerating DLM inference.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/pixeli99/Prophet"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Mind the Third Eye! Benchmarking Privacy Awareness in MLLM-powered\n  Smartphone Agents",
+        "authors": "Yue Yao, Yibo Shi, Shidong Pan, Zhixin Lin, Jungang",
+        "link": "https://arxiv.org/abs/2508.19493",
+        "github_repo": null,
+        "summary": "- This paper introduces SAPA-Bench, the first large-scale benchmark for evaluating the privacy awareness of smartphone agents, comprising 7,138 real-world scenarios.\n- The benchmark includes annotations for privacy presence, leakage modality, privacy category, risk severity, and expected risk prompt, enabling a comprehensive evaluation of agents' privacy capabilities.\n- Five specialized privacy metrics (PRR, PLR, PLAR, PCAR, RA) are defined to quantitatively evaluate agents' privacy understanding and response capabilities.\n- The evaluation of seven mainstream smartphone agents reveals that almost all agents exhibit unsatisfactory privacy awareness, with performance below 60% even with explicit hints.\n- Closed-source agents generally outperform open-source ones, highlighting the need for further research and development to enhance the privacy awareness of these agents.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://zhixin-l.github.io/SAPA-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "AudioStory: Generating Long-Form Narrative Audio with Large Language\n  Models",
+        "authors": "Yixiao Ge, Shijie Ma, Yuying Ge, Yuxin Guo, wybertwang",
+        "link": "https://arxiv.org/abs/2508.20088",
+        "github_repo": "https://github.com/TencentARC/AudioStory",
+        "summary": "- AudioStory is a novel framework that integrates LLMs with TTA systems to generate long-form narrative audio.\n- It employs LLMs to decompose complex narrative queries into temporally ordered sub-tasks, enabling coherent scene transitions and emotional tone consistency.\n- AudioStory introduces a decoupled bridging mechanism and an end-to-end training approach, improving both audio fidelity and temporal consistency.\n- Experiments on the AudioStory-10k benchmark show that AudioStory surpasses prior TTA baselines in instruction-following ability and audio fidelity.\n- AudioStory demonstrates strong performance on both single-audio generation and narrative audio generation tasks.",
+        "classification": [
+            "Text-to-Audio",
+            "Audio-to-Audio",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/TencentARC/AudioStory"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "StepWiser: Stepwise Generative Judges for Wiser Reasoning",
+        "authors": "Olga Golovneva, Weizhe Yuan, Wenting Zhao, Wei Xiong, sainbar",
+        "link": "https://arxiv.org/abs/2508.19229",
+        "github_repo": null,
+        "summary": " - This paper introduces STEPWISER, a novel approach to training stepwise generative judges for large language models (LLMs) that uses reinforcement learning to improve the accuracy and generalization of intermediate reasoning steps. \n- STEPWISER addresses the limitations of existing process reward models by reframing the task as a reasoning task, employing a meta-reasoning process that reasons about the policy model's reasoning steps before delivering a final verdict.\n- The model demonstrates improved judgment accuracy on intermediate steps, facilitates better policy model training, and enhances inference-time search.\n- STEPWISER is evaluated on ProcessBench, showing significant improvements over existing baselines across multiple dimensions including accuracy on intermediate steps and overall task performance.\n- Experimental results highlight the effectiveness of the proposed meta-reasoning process, reinforcement learning, and self-segmentation techniques in improving LLM reasoning capabilities.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "MotionFlux: Efficient Text-Guided Motion Generation through Rectified\n  Flow Matching and Preference Alignment",
+        "authors": "An-An Liu, Chao Xue, Diqiong Jiang, Dan Song, Zhiting Gao",
+        "link": "https://arxiv.org/abs/2508.19527",
+        "github_repo": null,
+        "summary": "- MotionFlux is a novel text-guided motion generation framework that uses rectified flow matching for efficient and high-quality motion synthesis. Unlike traditional diffusion models, it constructs optimal transport paths between noise and motion spaces, facilitating real-time generation.\n- The model architecture of MotionFlux integrates a hybrid Transformer backbone, including MMDiT and DiT blocks for multimodal fusion and temporal reasoning, respectively. The design balances parameter efficiency and strong performance.\n- TAPO, a novel preference alignment framework, is introduced to enhance semantic alignment between generated motions and complex textual inputs. It uses an internal scoring mechanism to construct preference pairs automatically without manual annotation or external reward models.\n- Experimental results demonstrate that MotionFlux outperforms state-of-the-art approaches in both semantic consistency and motion quality while significantly accelerating inference speed. The improvement in speed enables real-time applications.\n- MotionFlux achieves superior performance in both qualitative and quantitative evaluations, particularly excelling in inference speed and semantic alignment when compared to prior art. ",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Taming the Chaos: Coordinated Autoscaling for Heterogeneous and\n  Disaggregated LLM Inference",
+        "authors": "Chunlei Han, Sida Zhao, Zefang Chu, Ruogu Du, Rongzhi Li",
+        "link": "https://arxiv.org/abs/2508.19559",
+        "github_repo": null,
+        "summary": "- This paper introduces HeteroScale, a coordinated autoscaling framework designed to address challenges in serving large language models (LLMs) using modern Prefill-Decode (P/D) disaggregated architectures.\n- HeteroScale combines a topology-aware scheduler that accounts for heterogeneous hardware and network constraints with a novel metric-driven scaling policy.\n- The core of HeteroScale's policy is based on the finding that Decode Tokens-Per-Second (TPS) is a robust metric for jointly scaling prefill and decode pools, maintaining architectural balance.\n- When deployed on tens of thousands of GPUs in a production environment, HeteroScale demonstrated significant improvements, including a 26.6 percentage point increase in average GPU utilization and considerable cost savings.\n- The HeteroScale system's effectiveness is validated through comprehensive experiments across various LLM service types and workloads, demonstrating its robust performance and stability in real-world production settings.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    },
+    {
+        "title": "DeepScholar-Bench: A Live Benchmark and Automated Evaluation for\n  Generative Research Synthesis",
+        "authors": "Ion Stoica, Ankita Sundar, Harshit Gupta, Negar Arabzadeh, Liana Patel",
+        "link": "https://arxiv.org/abs/2508.20033",
+        "github_repo": "https://github.com/guestrin-lab/deepscholar-bench",
+        "summary": " * The main contribution of this paper is DeepScholar-Bench, a live benchmark and automated evaluation framework for generative research synthesis. \n* It addresses the challenge of evaluating generative research synthesis systems by using queries from recent, high-quality ArXiv papers and focusing on the related work section generation task. \n* The framework assesses performance across three dimensions: knowledge synthesis, retrieval quality, and verifiability, using metrics that show strong agreement with human judgments. \n* DeepScholar-base, a reference pipeline, is introduced and evaluated, showing competitive or higher performance than existing open-source systems and commercial models. \n* The benchmark is far from saturated, highlighting the importance and difficulty of generative research synthesis.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering",
+            "Text2Text Generation",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/guestrin-lab/deepscholar-bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-28"
+    }
+]

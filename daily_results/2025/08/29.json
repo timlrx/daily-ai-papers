@@ -1,0 +1,275 @@
+[
+    {
+        "title": "Pref-GRPO: Pairwise Preference Reward-based GRPO for Stable\n  Text-to-Image Reinforcement Learning",
+        "authors": "Jiazi Bu, Yujie Zhou, Zhimin Li, yuhangzang, CodeGoat24",
+        "link": "https://arxiv.org/abs/2508.20751",
+        "github_repo": null,
+        "summary": "- This paper introduces PREF-GRPO, a novel pairwise preference reward-based GRPO method for stable text-to-image reinforcement learning, which addresses the reward hacking problem in existing methods.\n- PREF-GRPO shifts the optimization objective from reward score maximization to pairwise preference fitting, mitigating the issue of illusory advantage and leading to more stable policy optimization.\n- The proposed method utilizes a pairwise preference reward model (PPRM) to compare generated images and uses their win rates as reward signals, making the training process more robust and less susceptible to reward hacking.\n- The paper also introduces UNIGENBENCH, a new unified text-to-image generation benchmark that enables fine-grained evaluation of T2I models across various dimensions, offering a more comprehensive and robust assessment than existing benchmarks.\n- Extensive experiments demonstrate that PREF-GRPO outperforms existing GRPO methods on both in-domain and out-of-domain semantic consistency and image quality evaluations, validating its effectiveness in mitigating reward hacking and improving the stability and quality of text-to-image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://codegoat24.github.io/UnifiedReward/Pref-GRPO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "rStar2-Agent: Agentic Reasoning Technical Report",
+        "authors": "Weijiang Xu, Yi Zhu, Yifei Liu, Ning Shang, lynazhang",
+        "link": "https://arxiv.org/abs/2508.20722",
+        "github_repo": "https://github.com/microsoft/rStar",
+        "summary": "- This paper introduces rStar2-Agent, a 14B parameter large language model trained with agentic reinforcement learning to achieve state-of-the-art performance in mathematical reasoning.\n- The model demonstrates advanced cognitive behaviors such as using Python coding tools and reflecting on code execution feedback to refine intermediate steps in problem-solving.\n- rStar2-Agent outperforms existing models like DeepSeek-R1 (671B parameters) on benchmarks like AIME24 and AIME25, achieving 80.6% and 69.8% accuracy respectively, with significantly shorter responses.\n- The model's success is attributed to three key innovations: an efficient RL infrastructure, a novel agentic RL algorithm (GRPO-RoC), and an efficient training recipe.\n- Code and training recipes are publicly available on Github.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/rStar"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "USO: Unified Style and Subject-Driven Generation via Disentangled and\n  Reward Learning",
+        "authors": "Jiahe Tian, Mengqi Huang, wuwx, cb1cyf, fenfan",
+        "link": "https://arxiv.org/abs/2508.18966",
+        "github_repo": "https://github.com/bytedance/USO",
+        "summary": "- This paper introduces USO, a unified model for style-driven and subject-driven image generation that uses a cross-task co-disentanglement paradigm and reward learning.\n- The model architecture consists of two stages: style alignment training and content-style disentanglement training, both supervised by a style reward.\n- USO achieves state-of-the-art performance on both subject and style consistency across multiple benchmarks, outperforming existing methods.\n- A new benchmark dataset, USO-Bench, is introduced for unified evaluation of style and subject driven generation, comprising style-driven, subject-driven, and combined style-subject generation tasks.\n- The results of extensive experiments demonstrate that USO significantly outperforms existing methods in terms of subject consistency and style similarity.",
+        "classification": [
+            "Text-to-Image",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/USO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "AWorld: Orchestrating the Training Recipe for Agentic AI",
+        "authors": "Qintong Wu, Dong Wang, Chenyi Zhuang, Chengyue Yu, IcyFish",
+        "link": "https://arxiv.org/abs/2508.20404",
+        "github_repo": null,
+        "summary": "- This paper introduces AWORLD, an open-source framework designed to improve the training efficiency of reinforcement learning agents.\n- AWORLD uses a distributed architecture to accelerate experience collection by a factor of 14.6x compared to standard single-node, sequential execution.\n- Using AWORLD, the authors trained a Qwen3-32B-based agent that outperforms its base model on the GAIA benchmark, achieving a 10.6% absolute improvement in overall accuracy.\n- The improved agent achieves a score of 16.33% on the most challenging levels of the GAIA benchmark, surpassing leading proprietary models.\n- AWORLD provides a practical and scalable framework for training agentic AI systems, as shown through its open-source design and improved performance on real-world benchmarks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/inclusionAI/AWorld/tree/main/train"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "TCIA: A Task-Centric Instruction Augmentation Method for Instruction\n  Finetuning",
+        "authors": "Simin Ma, kqsong, songwang41, huuuyeah, shujian2025",
+        "link": "https://arxiv.org/abs/2508.20374",
+        "github_repo": null,
+        "summary": "- This paper introduces TCIA, a novel task-centric instruction augmentation method designed to enhance instruction finetuning for large language models (LLMs).\n- TCIA addresses the limitations of existing methods by systematically expanding instructions while maintaining both diversity and task alignment, represented in a discrete query-constraints space.\n- Experiments demonstrate that TCIA improves the performance of open-source LLMs by an average of 8.7% across four real-world, task-specific applications, surpassing even some leading closed-source models.\n- The method's effectiveness is attributed to its ability to maintain high instruction diversity across multiple augmentation steps while preserving task relevance.\n- TCIA's scalability and efficiency make it a promising solution for adapting LLMs to real-world, task-focused applications.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Summarization"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Mixture of Contexts for Long Video Generation",
+        "authors": "Junfei Xiao, Yuwei Guo, Lvmin Zhang, Ceyuan Yang, Shengqu Cai",
+        "link": "https://arxiv.org/abs/2508.21058",
+        "github_repo": null,
+        "summary": "- This paper introduces Mixture of Contexts (MoC), a novel sparse attention routing module for long video generation that addresses the quadratic cost of self-attention in diffusion transformers.\n- MoC formulates long-context video generation as an internal information retrieval task, where each query dynamically selects a few informative chunks to attend to.\n- The proposed method achieves near-linear scaling, enabling practical training and synthesis of long videos with increased memory and consistency.\n- MoC outperforms existing long-video generation methods in terms of efficiency while maintaining comparable or better performance in terms of video quality.\n- The effectiveness of MoC is demonstrated through both quantitative and qualitative evaluations on single-shot and multi-shot video generation tasks.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://primecai.github.io/moc/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via\n  Instruction-Driven Routing & Sparsification",
+        "authors": "Liqiang Nie, Jie He, Rui Shao, Renshan Zhang, Wei Li",
+        "link": "https://arxiv.org/abs/2508.21046",
+        "github_repo": "https://github.com/JiuTian-VL/CogVLA",
+        "summary": "- CogVLA is a novel Cognition-Aligned Vision-Language-Action (VLA) model that uses instruction-driven routing and sparsification to improve efficiency and performance.\n- The model architecture consists of three stages: Encoder-FiLM based Aggregation Routing (EFA-Routing), LLM-FiLM based Pruning Routing (LFP-Routing), and V-L-A Coupled Attention (CAtten).\n- EFA-Routing and LFP-Routing are used to selectively aggregate and compress visual tokens, resulting in a 8x reduction of visual tokens.\n- CogVLA achieves state-of-the-art performance on the LIBERO benchmark (97.4% success rate) and real-world robotic tasks (70% success rate), while significantly reducing training costs (2.5x) and inference latency (2.8x) compared to OpenVLA.\n- The improvements are attributed to the synergistic effects of the three stages and the utilization of parallel decoding, which enhances both efficiency and coherence.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/JiuTian-VL/CogVLA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World\n  Tasks via MCP Servers",
+        "authors": "Shashank Biju, Hemani Patel, Qi Chang, Zhenting Wang, ankits0052",
+        "link": "https://arxiv.org/abs/2508.20453",
+        "github_repo": "https://github.com/Accenture/mcp-bench",
+        "summary": "This paper introduces MCP-BENCH, a benchmark for evaluating large language models (LLMs) on complex, multi-step tasks requiring tool use and cross-tool coordination.  MCP-BENCH connects LLMs to 28 real-world MCP servers with 250 tools across diverse domains.  It evaluates agents on tool schema understanding, multi-hop planning, and cross-domain workflow orchestration, capabilities not fully captured in prior benchmarks.  Experiments on 20 advanced LLMs reveal persistent challenges in these areas, highlighting the need for further research.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Accenture/mcp-bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "OneReward: Unified Mask-Guided Image Generation via Multi-Task Human\n  Preference Learning",
+        "authors": "Yitong Wang, Shiyin Wang, Yuan Gong, wujie10, XionghuiWang",
+        "link": "https://arxiv.org/abs/2508.21066",
+        "github_repo": null,
+        "summary": "- This paper introduces OneReward, a unified reinforcement learning framework for mask-guided image generation, which uses a single vision-language model (VLM) as a reward model to improve the generation capabilities across various sub-tasks.\n- The framework effectively handles diverse sub-tasks like image fill, image extension, object removal, and text rendering, which are trained simultaneously without task-specific supervised fine-tuning (SFT).\n- The proposed model, Seedream 3.0 Fill, outperforms existing commercial and open-source competitors, including Ideogram, Adobe Photoshop, and FLUX Fill [Pro] in various evaluation dimensions.\n- OneReward enhances model generalization across tasks by integrating task category and evaluation metrics into its queries, enabling the VLM to make pairwise judgments and determine the better output.\n- The code and model are available at https://one-reward.github.io",
+        "classification": [
+            "Image-to-Image",
+            "Reinforcement Learning",
+            "Fill-Mask"
+        ],
+        "github_urls": [
+            "https://one-reward.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Turning the Spell Around: Lightweight Alignment Amplification via\n  Rank-One Safety Injection",
+        "authors": "Bernard Ghanem, George Turkiyyah, Hasan Abed Al Kader Hammoud, Harethah Abu Shairah",
+        "link": "https://arxiv.org/abs/2508.20766",
+        "github_repo": null,
+        "summary": "- This paper introduces RANK-One SafetY INJECTION (ROSI), a novel method for enhancing the safety alignment of Large Language Models (LLMs).\n- ROSI operates by injecting a safety direction into the model's weights, amplifying the model's tendency to refuse unsafe requests, without requiring any fine-tuning.\n- The safety direction is derived from a small set of harmful and harmless instruction pairs, making ROSI computationally efficient.\n- Empirical evaluation demonstrates that ROSI consistently increases safety refusal rates across various LLMs, while preserving model utility on standard benchmarks.\n- ROSI can also re-align \"uncensored\" models by amplifying their own latent safety directions, showcasing its effectiveness as a last-mile safety procedure.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Persuasion Dynamics in LLMs: Investigating Robustness and Adaptability\n  in Knowledge and Safety with DuET-PD",
+        "authors": "Roy Ka-Wei Lee, Nancy F. Chen, Zhengyuan Liu, Daniel Wai Kit Chin, Incomple",
+        "link": "https://arxiv.org/abs/2508.17450",
+        "github_repo": "https://github.com/Social-AI-Studio/DuET-PD",
+        "summary": "This research introduces DuET-PD, a novel framework for evaluating Large Language Models' (LLMs) stance-change dynamics in persuasive dialogues.  DuET-PD assesses LLMs across knowledge and safety domains using a dual-evaluation approach and identifies a concerning trend of increasing sycophancy in newer open-source models.  The study proposes Holistic DPO, a training method which improves LLM robustness to misinformation and receptiveness to corrections, significantly enhancing performance compared to baselines.  The results highlight a critical capability-adaptability trade-off, with larger models exhibiting greater robustness but reduced adaptability, underscoring the need for balanced training approaches.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Social-AI-Studio/DuET-PD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Dress&Dance: Dress up and Dance as You Like It - Technical Preview",
+        "authors": "Yu-Xiong Wang, Minh Phuoc Vo, Aayush Bansal, Jun-Kun Chen",
+        "link": "https://arxiv.org/abs/2508.21070",
+        "github_repo": null,
+        "summary": "- This paper introduces Dress&Dance, a novel video diffusion framework that generates high-quality videos of a user wearing desired garments and performing specified motions.\n- The model architecture includes CondNet, a conditioning network that effectively combines multi-modal inputs (user image, garment image, motion video, and text prompt) using attention mechanisms.\n- Dress&Dance surpasses existing open-source and commercial methods in terms of video quality and accuracy, achieving state-of-the-art results in generating high-resolution videos (1152x720, 24 FPS).\n- The framework handles multiple garments simultaneously,supports garment combinations and various poses, and even allows transfer of garments from existing images.\n- Training strategies, such as a curriculum learning approach and a progressive resolution training, contribute to the efficiency and effectiveness of the model.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "OnGoal: Tracking and Visualizing Conversational Goals in Multi-Turn\n  Dialogue with Large Language Models",
+        "authors": "Alex Endert, Eunyee Koh, Shunan Guo, Adam Coscia",
+        "link": "https://arxiv.org/abs/2508.21061",
+        "github_repo": null,
+        "summary": "OnGoal is a novel chat interface designed to enhance user experience in multi-turn dialogues with Large Language Models (LLMs) by tracking and visualizing conversational goals.  It addresses challenges in managing evolving goals by providing real-time feedback on goal alignment and visualizing goal progress over time.  The system uses a three-stage pipeline to infer, merge, and evaluate goals against LLM responses, incorporating explanations and examples for evaluation results.  A user study showed that OnGoal improved goal evaluation and review compared to a baseline chat interface, suggesting the value of visualizing goals in multi-turn LLM dialogues.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Multi-View 3D Point Tracking",
+        "authors": "Irem Demir, Siyuan Li, Marko Mihajlovic, Haofei Xu, Frano Raji\u010d",
+        "link": "https://arxiv.org/abs/2508.21060",
+        "github_repo": null,
+        "summary": "- This paper introduces MVTracker, a novel multi-view 3D point tracker that leverages a fused 3D feature point cloud and a transformer-based update to reliably estimate long-range 3D correspondences.\n- The model architecture comprises a CNN-based encoder for feature extraction, a kNN-based correlation for capturing spatiotemporal relationships, and a transformer for iterative refinement of point tracks.\n- MVTracker outperforms existing state-of-the-art methods on two real-world benchmarks (Panoptic Studio and DexYCB) with median trajectory errors of 3.1 cm and 2.0 cm, respectively.\n- The method generalizes well to diverse camera setups (1-8 views) and video lengths (24-150 frames) and achieves real-time performance (7.2 FPS with RGB-D input).\n- The authors release the tracker along with training and evaluation datasets to encourage further research and provide a practical tool for real-world applications.",
+        "classification": [
+            "Computer Vision",
+            "Keypoint Detection",
+            "Video Classification",
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://github.com/ethz-vlg/mvtracker"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "FakeParts: a New Family of AI-Generated DeepFakes",
+        "authors": "Xi Wang, Awais Hussain Sani, Samy Aimeur, Soobash Daiboo, Gaetan Brison",
+        "link": "https://arxiv.org/abs/2508.21052",
+        "github_repo": null,
+        "summary": "- Introduced FakePartsBench, the first benchmark dataset for detecting FakeParts, a new class of deepfakes characterized by subtle, localized manipulations.\n- FakeParts are deceptive because they seamlessly blend with real elements, unlike fully synthetic content, which makes detection harder.\n- The dataset contains over 25K videos with pixel-level and frame-level manipulation annotations, enabling comprehensive evaluation of detection methods.\n- User studies demonstrate that FakeParts reduce human detection accuracy by over 30% compared to traditional deepfakes, highlighting a critical vulnerability.\n- The study provides the necessary resources to develop more robust methods for detecting partial video manipulations.",
+        "classification": [
+            "Video Classification"
+        ],
+        "github_urls": [
+            "https://github.com/hi-paris/FakeParts"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Provable Benefits of In-Tool Learning for Large Language Models",
+        "authors": "Vivien Cabannes, Charles Arnal, Ambroise Odonnat, Sam Houliston",
+        "link": "https://arxiv.org/abs/2508.20755",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel method for improving large language models (LLMs) by using external tools for factual recall, which it calls in-tool learning.\n- The authors prove that the number of facts an LLM can memorize in its weights is fundamentally limited by its parameter count, whereas tool use enables unbounded factual recall.\n- They present a formal circuit construction to support this claim and validate it with controlled experiments where tool-using models consistently outperform memorizing models.\n- Furthermore, they demonstrate that teaching LLMs to use tools is more effective than fine-tuning facts into memory.\n- The study offers both theoretical and empirical evidence showing that tool-augmented workflows are not only practical but also provably more scalable.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/ambroiseodt/itl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "Collaborative Multi-Modal Coding for High-Quality 3D Generation",
+        "authors": "Ziwei Liu, Liang Pan, Zhaoxi Chen, Ziang Cao",
+        "link": "https://arxiv.org/abs/2508.15228",
+        "github_repo": null,
+        "summary": "- This paper introduces TriMM, a novel feed-forward 3D-native generative model that leverages collaborative multi-modal coding to generate high-quality 3D assets from multiple modalities (RGB, RGBD, and point clouds).\n- TriMM's architecture incorporates modality-specific encoders to capture unique features, a shared decoder to integrate these features into a unified triplane latent representation, and a triplane latent diffusion model for 3D asset generation.\n- The model uses auxiliary 2D and 3D supervision to improve the robustness and performance of multi-modal coding, and a reconstruction-based mechanism to guide the model to effectively utilize the strengths of each modality.\n- Extensive experiments demonstrate that TriMM achieves competitive performance with models trained on large-scale datasets, even when trained on a relatively small amount of data.\n- The results showcase TriMM's ability to generate high-quality 3D assets with superior texture and geometric details, validating the effectiveness of its multi-modal approach.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    },
+    {
+        "title": "ROSE: Remove Objects with Side Effects in Videos",
+        "authors": "Hantang Liu, Zixiang Gao, Jianshu Zeng, Yutong Feng, Chenxuan Miao",
+        "link": "https://arxiv.org/abs/2508.18633",
+        "github_repo": null,
+        "summary": "- This paper introduces ROSE, a novel framework for removing objects from videos while also addressing the often-overlooked side effects (shadows, reflections, etc.).\n- ROSE uses a 3D rendering engine to generate a large-scale synthetic dataset of paired videos with and without the object and its effects, overcoming the limitations of real-world data scarcity.\n- The model architecture is based on a diffusion transformer and utilizes reference-based erasing, where the entire video is fed into the model as a reference to facilitate the localization of the affected areas.\n- To further improve side effect removal, ROSE incorporates a difference mask predictor that explicitly predicts the areas impacted by the object's side effects.\n- Experiments demonstrate that ROSE outperforms existing video object removal methods and achieves state-of-the-art performance on a new benchmark, ROSE-Bench, which includes various side effect scenarios.",
+        "classification": [
+            "Video Classification",
+            "Image-to-Video",
+            "Video-Text-to-Text",
+            "Image Segmentation",
+            "Mask Generation"
+        ],
+        "github_urls": [
+            "https://rose2025-inpaint.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-08-29"
+    }
+]

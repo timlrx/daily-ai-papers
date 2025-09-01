@@ -1,0 +1,228 @@
+[
+    {
+        "title": "R-4B: Incentivizing General-Purpose Auto-Thinking Capability in MLLMs\n  via Bi-Mode Annealing and Reinforce Learning",
+        "authors": "Han Hu, Shiming Xiang, Bolin Ni, Qi Yang, Jie Jiang",
+        "link": "https://arxiv.org/abs/2508.21113",
+        "github_repo": null,
+        "summary": "- This paper introduces R-4B, a novel multimodal large language model (MLLM) that can adaptively decide whether to engage in step-by-step reasoning based on problem complexity.\n- The model architecture uses a bi-mode annealing approach, training on both thinking and non-thinking examples to enable efficient and flexible reasoning.\n- Bi-mode Policy Optimization (BPO) is introduced to further incentivize auto-thinking by optimizing the model's decision-making process.\n- R-4B outperforms existing state-of-the-art models on 25 challenging benchmarks, showing significant improvement in reasoning-intensive tasks while maintaining efficiency.\n- The model is open-sourced to promote further advancement in MLLMs.",
+        "classification": [
+            "Multimodal",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/yannqi/R-4B"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/YannQi/R-4B"
+        ],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for\n  General Robot Control",
+        "authors": "Zhaoqing Chen, Qizhi Chen, Haoming Song, sundrops, delinqu",
+        "link": "https://arxiv.org/abs/2508.21112",
+        "github_repo": null,
+        "summary": "The paper introduces EO-Robotics, which comprises the EO-1 model and the EO-Data1.5M dataset.  EO-1 is a unified embodied foundation model that leverages interleaved vision-text-action pretraining for superior performance in multimodal embodied reasoning and robot control.  The model's architecture uses a single unified decoder-only transformer excelling at mix-modality generation.  EO-Data1.5M, a high-quality multimodal dataset, contains over 1.5 million samples emphasizing interleaved vision-text-action comprehension.  Extensive experiments across various manipulation tasks demonstrate EO-1's effectiveness and generalization capabilities, outperforming existing methods.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/eo-robotics"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/IPEC-COMMUNITY"
+        ],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "A.S.E: A Repository-Level Benchmark for Evaluating Security in\n  AI-Generated Code",
+        "authors": "Libo Chen, Lei Zhang, Bin Wang, wanng, KekeLian",
+        "link": "https://arxiv.org/abs/2508.18106",
+        "github_repo": null,
+        "summary": "- This paper introduces A.S.E., a novel repository-level benchmark designed for evaluating the security of AI-generated code.  Unlike existing benchmarks, A.S.E focuses on real-world repositories with documented CVEs, providing a more comprehensive and realistic evaluation.\n- The benchmark constructs tasks from real-world repositories, preserving the full context including build systems and cross-file dependencies, ensuring reproducibility and auditability.\n- A.S.E uses expert-defined rules and a containerized evaluation framework to provide stable assessments of security, build quality, and generation stability, leading to more reliable evaluation results.\n- The evaluation of several leading LLMs on A.S.E reveals Claude-3.7-Sonnet as the top performer overall, with Qwen3-235B-A22B-Instruct achieving the best security score.  The study highlights a narrow gap between proprietary and open-source models.\n- The findings also indicate that concise, fast-thinking decoding strategies significantly outperform complex, slow-thinking reasoning methods for security patching, offering valuable insights into efficient code generation strategies.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "Droplet3D: Commonsense Priors from Videos Facilitate 3D Generation",
+        "authors": "Qi Jia, Liang Jin, Runze Zhang, Guoguang Du, lixiaochuan",
+        "link": "https://arxiv.org/abs/2508.20470",
+        "github_repo": null,
+        "summary": " - This paper introduces Droplet3D, a novel 3D generative model that leverages commonsense priors from videos to enhance 3D generation capabilities. \n- The model architecture is based on a video backbone model (DropletVideo) fine-tuned with a large-scale video dataset (Droplet3D-4M) containing multi-view annotations and detailed text descriptions. \n- Droplet3D supports both image and dense text input, generating spatially consistent and semantically plausible 3D content. \n- Experimental results demonstrate Droplet3D's superior performance compared to existing baselines, showcasing its potential for scene-level applications. \n- The authors open-sourced the dataset, code, framework, and model weights.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://dropletx.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "TalkVid: A Large-Scale Diversified Dataset for Audio-Driven Talking Head\n  Synthesis",
+        "authors": "Pengcheng Chen, Zihan Ye, Yexin Liu, Hejin Huang, Shunian Chen",
+        "link": "https://arxiv.org/abs/2508.13618",
+        "github_repo": "https://github.com/FreedomIntelligence/TalkVid",
+        "summary": "- This paper introduces TalkVid, a large-scale, high-quality, and diverse dataset for audio-driven talking head synthesis, containing 1244 hours of video from 7729 unique speakers.\n- TalkVid addresses the generalization gap of existing datasets by providing data with diversity in ethnicity, language, and age groups, rigorously filtered for motion stability, aesthetic quality, and facial detail.\n- The authors also introduce TalkVid-Bench, a stratified evaluation set of 500 clips for assessing model fairness and generalization, revealing performance disparities across subgroups.\n- Experiments demonstrate that a model trained on TalkVid outperforms counterparts trained on previous datasets, exhibiting superior cross-dataset generalization.\n- The dataset and code are publicly available at https://github.com/FreedomIntelligence/TalkVid.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Audio-to-Audio",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/TalkVid"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "UItron: Foundational GUI Agent with Advanced Perception and Planning",
+        "authors": "Yufeng Zhong, Wenkang Han, Liming Zheng, Jing Huang, Zhixiong Zeng",
+        "link": "https://arxiv.org/abs/2508.21767",
+        "github_repo": null,
+        "summary": "- This paper introduces Ultron, an open-source foundational model for GUI agents that excels in perception, grounding, and planning.\n- Ultron incorporates advanced data engineering strategies, including data unification, trajectory distillation, and manual annotation to enhance training effectiveness.\n- The model employs a three-stage training strategy: supervised fine-tuning for perception and planning, followed by curriculum reinforcement learning for complex reasoning and online adaptation.\n- Ultron significantly surpasses existing methods in benchmark evaluations, including Chinese language scenarios.\n- The interactive infrastructure developed for Ultron supports scalable data collection, dynamic training, and online evaluation.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/UITron-hub/UItron"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "Think in Games: Learning to Reason in Games via Reinforcement Learning\n  with Large Language Models",
+        "authors": "Yifan Lu, Zining Zhu, Yuan Sui, Yu Gu, Yi Liao",
+        "link": "https://arxiv.org/abs/2508.21365",
+        "github_repo": null,
+        "summary": "- This paper introduces Think-In-Games (TiG), a novel framework that combines large language models (LLMs) with reinforcement learning to improve procedural reasoning in games.\n- TiG reformulates reinforcement learning as a language modeling task, where LLMs generate language-guided policies that are refined through interaction with the game environment.\n- Experimental results on the Honor of Kings game demonstrate that TiG bridges the gap between declarative and procedural knowledge, achieving competitive performance with significantly lower data and computational requirements than conventional RL methods.\n- TiG also provides natural language explanations for its decisions, improving transparency and interpretability.\n- The method is evaluated on multiple benchmarks, showing improvements in both game-specific tasks and general language understanding benchmarks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "A Survey of Scientific Large Language Models: From Data Foundations to\n  Agent Frontiers",
+        "authors": "Jiamin Wu, Wanghan Xu, Wei Li, Chenglong Ma, Ming Hu",
+        "link": "https://arxiv.org/abs/2508.21148",
+        "github_repo": null,
+        "summary": "This paper surveys scientific large language models (Sci-LLMs), presenting a unified taxonomy of scientific data and knowledge. It systematically reviews existing Sci-LLMs and analyzes over 270 pre-/post-training datasets, highlighting the challenges of heterogeneous, multi-scale scientific corpora.  The paper further examines over 190 benchmark datasets, tracing a shift from static assessments towards process-oriented evaluations. Finally, it outlines a paradigm shift towards closed-loop systems based on Sci-LLMs that actively experiment, validate, and contribute to a living knowledge base.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/open-sciencelab/Awesome-Scientific-Datasets-and-LLMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "TiKMiX: Take Data Influence into Dynamic Mixture for Language Model\n  Pre-training",
+        "authors": "Jiyao Deng, Yuanfan Guo, Fengze Liu, Binbin Liu, Yifan Wang",
+        "link": "https://arxiv.org/abs/2508.17677",
+        "github_repo": null,
+        "summary": "- This paper introduces TiKMiX, a novel method for dynamically adjusting the data mixture during language model pre-training according to the model's evolving preferences.\n- TiKMiX uses a new metric called Group Influence to efficiently evaluate the impact of data domains on the model, enabling dynamic adjustment of the data mixture.\n- The method is evaluated using two approaches: TiKMiX-D for direct optimization and TiKMiX-M which utilizes a regression model to predict a superior mixture.\n- Experiments show that TiKMiX-D outperforms state-of-the-art methods like REGMIX while using significantly fewer computational resources, and TiKMiX-M achieves an average performance gain of 2% across multiple benchmarks.\n- The results demonstrate that dynamically adjusting the data mixture based on evolving preferences significantly improves performance.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "Efficient Code Embeddings from Code Generation Models",
+        "authors": "Han Xiao, Scott Martens, Michael G\u00fcnther, Saba Sturua, dariakryvosheieva",
+        "link": "https://arxiv.org/abs/2508.21290",
+        "github_repo": null,
+        "summary": "- This paper introduces *jina-code-embeddings*, a novel code embedding model suite designed for code retrieval from natural language queries, question answering, and identifying semantically similar code snippets across programming languages.\n- The model suite leverages an autoregressive decoder backbone pre-trained on text and code, generating embeddings via last-token pooling, and incorporates several key innovations including task-specific training strategies.\n- *jina-code-embeddings* demonstrates state-of-the-art performance despite its relatively small size (0.5B and 1.5B parameters), outperforming other models of comparable size and some larger alternatives.\n- The models are evaluated on various benchmarks including MTEB-COIR, showing significant improvements across different code retrieval tasks.\n- The authors explore different pooling techniques and training procedures to optimize the model's performance, providing insights into effective strategies for code embedding model construction.",
+        "classification": [
+            "Natural Language Processing",
+            "Text2Text Generation",
+            "Question Answering",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "Morae: Proactively Pausing UI Agents for User Choices",
+        "authors": "Amy Pavel, Jeffrey P. Bigham, Dingzeyu Li, Yi-Hao Peng",
+        "link": "https://arxiv.org/abs/2508.21456",
+        "github_repo": null,
+        "summary": " - This paper introduces Morae, a novel accessible UI agent designed to proactively pause automation at critical decision points, empowering blind and low-vision users to actively participate in the process.\n - Morae leverages a large multimodal model to interpret user queries and analyze UI representations, dynamically identifying ambiguous choices.\n - The system uses a dynamic verification of ambiguous choices mechanism to pause when needed and generates interactive UIs to facilitate user input and clarification.\n - In a user study, Morae outperformed existing agents such as OpenAI Operator, significantly improving task success rates and empowering users to make more informed and preference-aligned choices.\n - Results from a technical evaluation demonstrated that Morae\u2019s approach of dynamically verifying ambiguities surpasses baselines in terms of both task completion and pausing performance.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "AHELM: A Holistic Evaluation of Audio-Language Models",
+        "authors": "Siwei Yang, Zijun Wang, Chi Heem Wong, Haoqin Tu, Tony Lee",
+        "link": "https://arxiv.org/abs/2508.21376",
+        "github_repo": null,
+        "summary": "This paper introduces AHELM, a holistic benchmark for evaluating audio-language models.  AHELM addresses the limitations of existing benchmarks by aggregating diverse datasets and evaluating models across ten key aspects (audio perception, knowledge, reasoning, etc.).  Two new datasets, PARADE and CoRe-Bench, are introduced to evaluate specific capabilities. Results demonstrate that while Gemini 2.5 Pro performs well overall, there is no single dominant model. The AHELM framework and data are publicly available for transparency and future development.",
+        "classification": [
+            "Audio",
+            "Automatic Speech Recognition",
+            "Audio Classification"
+        ],
+        "github_urls": [
+            "https://github.com/stanford-crfm/helm"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/UCSC-VLAA/PARADE_audio",
+            "https://huggingface.co/datasets/stanford-crfm/CoReBench_v1"
+        ],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "HERMES: Human-to-Robot Embodied Learning from Multi-Source Motion Data\n  for Mobile Dexterous Manipulation",
+        "authors": "Tianhai Liang, Pu Hua, Langzhe Gu, Tianming Wei, Zhecheng Yuan",
+        "link": "https://arxiv.org/abs/2508.20085",
+        "github_repo": null,
+        "summary": "- This paper introduces HERMES, a novel human-to-robot learning framework for mobile bimanual dexterous manipulation that leverages multi-source human motion data.\n- HERMES uses a unified reinforcement learning approach to transform heterogeneous human hand motions into physically plausible robotic behaviors and addresses the sim2real gap via an end-to-end, depth image-based transfer method.\n- The framework augments a navigation foundation model with a closed-loop Perspective-n-Point (PnP) localization mechanism for precise alignment of visual goals in unstructured environments.\n- Experimental results demonstrate HERMES's generalizable behaviors across diverse scenarios and successful performance in complex manipulation tasks, outperforming existing methods in sample efficiency.\n- The model employs a four-stage pipeline including human motion collection, RL training & DAgger training, navigation & localization, and sim2real manipulation.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://gemcollector.github.io/HERMES/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    },
+    {
+        "title": "CLIPSym: Delving into Symmetry Detection with CLIP",
+        "authors": "Raymond A. Yeh, Md Ashiqur Rahman, Tinghan Yang",
+        "link": "https://arxiv.org/abs/2508.14197",
+        "github_repo": "https://github.com/timyoung2333/CLIPSym",
+        "summary": "- The paper introduces CLIPSym, a novel framework for reflection and rotation symmetry detection that leverages the pre-trained CLIP model.\n- CLIPSym utilizes CLIP's image and text encoders and incorporates a rotation-equivariant decoder based on Transformers and G-Convolution.\n- A novel prompting technique, Semantic-Aware Prompt Grouping (SAPG), is introduced to enhance the model's understanding of symmetry by aggregating diverse object-based prompts.\n- Empirical evaluation on three standard symmetry detection datasets demonstrates that CLIPSym outperforms the current state-of-the-art.\n- Ablation studies validate the contributions of CLIP's pre-training, the equivariant decoder, and the SAPG technique.",
+        "classification": [
+            "Computer Vision",
+            "Object Detection",
+            "Image-to-Image",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/timyoung2333/CLIPSym"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-01"
+    }
+]

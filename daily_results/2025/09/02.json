@@ -1,0 +1,87 @@
+[
+    {
+        "title": "PVPO: Pre-Estimated Value-Based Policy Optimization for Agentic\n  Reasoning",
+        "authors": "Yuewei Zhang, Penghong Zhao, Wenfeng Feng, Chuzhan, Nothing2Say",
+        "link": "https://arxiv.org/abs/2508.21104",
+        "github_repo": null,
+        "summary": "- PVPO is a novel reinforcement learning method that uses a pre-estimated value function as a reference anchor to improve the efficiency and stability of policy optimization, particularly in complex tasks with sparse rewards.\n- It addresses the limitations of critic-free reinforcement learning methods that heavily rely on multiple sampling and comparisons, leading to suboptimal local solutions and increased computational cost.\n- PVPO incorporates a reference model to pre-sample data, providing more efficient training data selection and improved convergence speed compared to existing critic-free methods.\n- Experimental results on multiple datasets across two different domains demonstrate PVPO achieves state-of-the-art performance, showing robustness and scalability across various model scales.\n- The use of a static value function (as opposed to a dynamic one) provides stability to the advantage estimation process, enabling more efficient and robust policy optimization.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-02"
+    },
+    {
+        "title": "T2R-bench: A Benchmark for Generating Article-Level Reports from Real\n  World Industrial Tables",
+        "authors": "Yu Zhao, Sishi Xiong, Kaiwen Wei, Changzai Pan, Jie Zhang",
+        "link": "https://arxiv.org/abs/2508.19813",
+        "github_repo": null,
+        "summary": "This paper introduces T2R-bench, a new benchmark for evaluating large language models' (LLMs) ability to generate article-level reports from real-world industrial tables.  The benchmark includes 457 tables from 19 industrial domains, and a novel evaluation system incorporating three criteria: numerical accuracy, information coverage, and general quality. Experiments on 25 LLMs demonstrate the challenge of this task, with even state-of-the-art models achieving only 62.71% overall accuracy. The dataset and code will be made publicly available after acceptance.  The benchmark is designed to address the shortcomings of existing datasets which lack the complexity and diversity of real-world industrial tables.",
+        "classification": [
+            "Tabular"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-02"
+    },
+    {
+        "title": "No Label Left Behind: A Unified Surface Defect Detection Model for all\n  Supervision Regimes",
+        "authors": "Danijel Sko\u010daj, MaticFuc, blaz-r",
+        "link": "https://arxiv.org/abs/2508.19060",
+        "github_repo": "https://github.com/blaz-r/SuperSimpleNet",
+        "summary": "- This paper introduces SuperSimpleNet, a novel unified surface defect detection model that leverages all available supervision regimes (unsupervised, weakly supervised, mixed supervised, and fully supervised).\n- The model architecture is based on SimpleNet, enhanced with a synthetic anomaly generation process, an improved classification head, and an enhanced learning procedure.\n- SuperSimpleNet achieves state-of-the-art performance across all supervision regimes on four challenging benchmark datasets.\n- It demonstrates significantly faster inference times (below 10ms), addressing efficiency challenges in real-world industrial settings.\n- The code is publicly available at https://github.com/blaz-r/SuperSimpleNet.",
+        "classification": [
+            "Image Segmentation",
+            "Object Detection",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://github.com/blaz-r/SuperSimpleNet"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-02"
+    },
+    {
+        "title": "UI-Level Evaluation of ALLaM 34B: Measuring an Arabic-Centric LLM via\n  HUMAIN Chat",
+        "authors": "Omartificial-Intelligence-Space",
+        "link": "https://arxiv.org/abs/2508.17378",
+        "github_repo": null,
+        "summary": "- This paper presents an expanded UI-level evaluation of the ALLaM-34B Arabic language model, using a prompt pack covering various aspects of Arabic language and culture.\n- The evaluation involved three frontier LLMs (GPT-5, Gemini 2.5 Pro, Claude Sonnet-4) as judges, rating 115 outputs on accuracy, fluency, instruction following, safety, and dialect fidelity.\n- ALLaM-34B demonstrated high performance in code-switching and generation tasks, as well as strong results in MSA handling and reasoning.\n- Dialect fidelity varied across regions, with Najdi, Hijazi, and Egyptian dialects showing better results than Levantine and Moroccan.\n- The model showed robustness and reliability in safety-related prompts, demonstrating its readiness for real-world deployment.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-02"
+    },
+    {
+        "title": "From reactive to cognitive: brain-inspired spatial intelligence for\n  embodied agents",
+        "authors": "Songming Liu, Qihui Zhu, Caixin Kang, Liyuan Wang, Shouwei Ruan",
+        "link": "https://arxiv.org/abs/2508.17198",
+        "github_repo": null,
+        "summary": "This paper introduces BSC-Nav, a novel framework for constructing and leveraging structured spatial memory in embodied agents.  BSC-Nav integrates three interconnected forms of spatial knowledge (landmarks, route knowledge, survey knowledge) and powerful multi-modal large language models (MLLMs).  It achieves state-of-the-art performance on diverse navigation tasks, demonstrating strong zero-shot generalization and supporting versatile embodied behaviors.  The model's architecture includes landmark memory, a cognitive map module, and a working memory module that dynamically retrieves and combines spatial representations from the other modules.  The code is available on Github.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/Heathcliff-saku/BSC-Nav"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-02"
+    },
+    {
+        "title": "How Can Input Reformulation Improve Tool Usage Accuracy in a Complex\n  Dynamic Environment? A Study on \u03c4-bench",
+        "authors": "Jayanth Srinivasa, Mutsumi Nakamura, Satyam Raj, Amir Saeidi, Venkatesh Mishra",
+        "link": "https://arxiv.org/abs/2508.20931",
+        "github_repo": null,
+        "summary": "- This paper introduces the Input Reformulation Multi-Agent (IRMA) framework to improve the accuracy of tool-using language agents in complex dynamic environments.\n- IRMA enhances agent decision-making by reformulating user prompts with structured context, including domain rules and tool suggestions.\n- Experimental results on the \u03c4-bench benchmark demonstrate that IRMA significantly outperforms existing methods (ReAct, Function Calling, and Self-Reflection) across various metrics, achieving a 43% pass^5 score.\n- The framework is shown to be more robust to errors (like hallucination) compared to baselines.\n- The improvements achieved by IRMA highlight the potential of context engineering to improve the reliability of LLM agents.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-02"
+    }
+]

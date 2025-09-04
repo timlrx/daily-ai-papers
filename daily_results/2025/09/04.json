@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Robix: A Unified Model for Robot Interaction, Reasoning and Planning",
+        "authors": "Zixuan Wang, Wei Li, Heng Dong, Mengxi Zhang, Huang Fang",
+        "link": "https://arxiv.org/abs/2509.01106",
+        "github_repo": null,
+        "summary": " - Robix is a unified vision-language model that integrates robot reasoning, task planning, and natural language interaction within a single architecture. \n- It dynamically generates atomic commands for low-level control and verbal responses for human interaction, enabling robots to follow complex instructions. \n- Robix introduces novel capabilities such as proactive dialogue, real-time interruption handling, and context-aware commonsense reasoning during task execution. \n- Extensive experiments demonstrate that Robix outperforms both open-source and commercial baselines in interactive task execution across diverse instructions and tasks. \n- The model is trained using a three-stage strategy: continued pretraining, supervised fine-tuning, and reinforcement learning.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://robix-seed.github.io/robix/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-04"
+    },
+    {
+        "title": "Open Data Synthesis For Deep Research",
+        "authors": "Zheng Liu, Hongjin Qian, Kun Luo, ZiyiXia",
+        "link": "https://arxiv.org/abs/2509.00375",
+        "github_repo": "https://github.com/VectorSpaceLab/InfoSeek",
+        "summary": "- This paper introduces InfoSeek, a novel framework for synthesizing complex deep research tasks, which are formalized as Hierarchical Constraint Satisfaction Problems (HCSPs).\n- InfoSeek uses a dual-agent system to recursively build research trees from large-scale webpages, converting these trees into natural language questions.\n- Experiments show that models trained on InfoSeek consistently outperform strong baselines, including surpassing much larger models and lightweight commercial APIs on the BrowseComp-Plus benchmark.\n- InfoSeek addresses the limitations of existing benchmarks by generating datasets with controllable complexity, preventing shortcut reasoning, and ensuring verifiable answers.\n- The framework is open-source and includes over 50K training examples and a curated test set.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/VectorSpaceLab/InfoSeek"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-04"
+    },
+    {
+        "title": "LMEnt: A Suite for Analyzing Knowledge in Language Models from\n  Pretraining Data to Representations",
+        "authors": "Yoav Gur-Arieh, Ido Cohen, Alon Gilae-Dotan, Daniela Gottesman, mega",
+        "link": "https://arxiv.org/abs/2509.03405",
+        "github_repo": null,
+        "summary": " - This paper introduces LMEnt, a suite of resources designed to analyze knowledge acquisition in Language Models (LMs).\n- LMEnt comprises a knowledge-rich pretraining corpus (annotated with entity mentions from English Wikipedia), an efficient entity-based retrieval method, and twelve pretrained models (with varying parameter counts and intermediate checkpoints).\n- The entity-based retrieval method significantly outperforms previous string-based approaches, achieving up to 80.4% improvement in relevant document retrieval.\n- Through experiments using LMEnt, the authors demonstrate that fact frequency is a key factor in knowledge acquisition but does not fully explain learning dynamics.\n- LMEnt is publicly available via GitHub and Hugging Face, enabling further research on knowledge representation, plasticity, editing, attribution, and learning dynamics in LMs.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/LMEnt"
+        ],
+        "huggingface_urls": [
+            "huggingface.co/LMEnt"
+        ],
+        "date": "2025-09-04"
+    },
+    {
+        "title": "Mixture of Global and Local Experts with Diffusion Transformer for\n  Controllable Face Generation",
+        "authors": "Kai Li, Yue Li, Xing Fu, Shun Zhang, Xuechao Zou",
+        "link": "https://arxiv.org/abs/2509.00428",
+        "github_repo": "https://github.com/XavierJiezou/Face-MoGLE",
+        "summary": "- This paper introduces Face-MoGLE, a novel framework for high-quality and controllable face generation that uses a Mixture of Global and Local Experts (MoGLE) with a Diffusion Transformer.\n- The model architecture consists of semantic-decoupled latent modeling through mask-conditioned space factorization, a mixture of global and local experts, and a dynamic gating network.\n- Face-MoGLE supports text-to-face, mask-to-face, and multimodal face generation, achieving state-of-the-art results on several benchmark datasets.\n- The authors demonstrate Face-MoGLE's superior performance on high-quality and controllable face generation compared to existing methods.\n- The model also exhibits robust zero-shot generalization capabilities, making it a flexible and powerful tool for various applications.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Mask Generation"
+        ],
+        "github_urls": [
+            "https://github.com/XavierJiezou/Face-MoGLE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-04"
+    },
+    {
+        "title": "MOSAIC: Multi-Subject Personalized Generation via Correspondence-Aware\n  Alignment and Disentanglement",
+        "authors": "Hualiang Wang, Qiaoqiao Jin, Mushui Liu, Siming Fu, Dong She",
+        "link": "https://arxiv.org/abs/2509.01977",
+        "github_repo": null,
+        "summary": "- The paper introduces MOSAIC, a novel framework for multi-subject personalized image generation that addresses the limitations of existing methods in maintaining identity fidelity and semantic coherence.\n- MOSAIC leverages a novel semantic correspondence attention loss to enforce precise alignment between reference and generated images, along with a multi-reference disentanglement loss to mitigate interference.\n- The authors introduce SemAlign-MS, a meticulously annotated dataset with fine-grained semantic correspondences to facilitate training.\n- Extensive experiments demonstrate that MOSAIC achieves state-of-the-art performance across multiple benchmarks, even exceeding the capabilities of existing methods in scenarios with 4+ reference subjects.\n- MOSAIC's improved performance is attributed to the effective combination of precise semantic alignment and feature disentanglement, resulting in higher-quality and more consistent image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://bytedance-fanqie-ai.github.io/MOSAIC"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-04"
+    }
+]

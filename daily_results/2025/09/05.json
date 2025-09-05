@@ -1,0 +1,196 @@
+[
+    {
+        "title": "From Editor to Dense Geometry Estimator",
+        "authors": "Lang Nie, Rongying Liu, Lei Sun, Chunyu Lin, exander",
+        "link": "https://arxiv.org/abs/2509.04338",
+        "github_repo": null,
+        "summary": "- This paper introduces FE2E, a foundation model for monocular dense geometry prediction that adapts an advanced image editing model based on the Diffusion Transformer (DiT) architecture.\n- FE2E achieves promising performance improvements in zero-shot depth and normal estimation by leveraging inherent structural priors in editing models and reformulating the editor's loss function.\n- The model uses logarithmic quantization to address the precision conflict between the editor's native BFloat16 format and the high precision demand of dense geometry estimation tasks.\n- FE2E performs cost-free joint estimation of depth and normals using the DiT's global attention mechanism, allowing supervisory signals to mutually enhance each other.\n- Without scaling up the training data, FE2E achieves impressive performance improvements in zero-shot monocular depth and normal estimation, outperforming existing methods by over 35% on the ETH3D dataset.",
+        "classification": [
+            "Depth Estimation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Drivel-ology: Challenging LLMs with Interpreting Nonsense with Depth",
+        "authors": "Chi-Li Chen, Zi Yan Chang, Chia-Yi Hsiao, Chenghao Xiao, Yang Wang",
+        "link": "https://arxiv.org/abs/2509.03867",
+        "github_repo": null,
+        "summary": "- This paper introduces Drivelology, a novel linguistic phenomenon characterized by utterances that are syntactically coherent but pragmatically paradoxical, and proposes a benchmark dataset (DRIVELHUB) to evaluate LLMs' ability to understand such nuanced language.\n- DRIVELHUB contains over 1200 examples of Drivelological text in multiple languages (English, Mandarin, Spanish, French, Japanese, Korean), each meticulously curated and annotated with implicit meaning.\n- The authors evaluate several LLMs on four tasks: Drivelology Detection, Drivelology Tagging, Implicit Narrative Writing, and Narrative Selection, revealing clear limitations in LLMs' understanding of nuanced semantics.\n- Their findings challenge the assumption that statistical fluency in LLMs implies true cognitive comprehension, highlighting the importance of deeper pragmatic understanding.\n- The DRIVELHUB dataset and code are publicly available to facilitate further research on modelling linguistic depth beyond surface-level coherence.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/ExtraordinaryLab/drivelology"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/extraordinarylab/drivel-hub"
+        ],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Towards a Unified View of Large Language Model Post-Training",
+        "authors": "Hongyi Liu, Youbang Sun, Yuxin Zuo, Xingtai Lv, iseesaw",
+        "link": "https://arxiv.org/abs/2509.04419",
+        "github_repo": null,
+        "summary": "- This paper introduces a unified framework for large language model (LLM) post-training, unifying supervised fine-tuning (SFT) and reinforcement learning (RL) under a single perspective.\n-  A novel Unified Policy Gradient Estimator is proposed, which combines the advantages of both SFT and RL, demonstrating that different post-training algorithms can be viewed as variations of this estimator.\n- The Hybrid Post-Training (HPT) algorithm dynamically adapts between SFT for exploitation and RL for exploration based on the model's performance, improving both reasoning and exploration capabilities.\n-  Empirical results across various benchmarks and models show that HPT outperforms existing SFT and RL baselines, achieving significant improvements in both in-distribution and out-of-distribution performance.\n- The theoretical analysis and extensive empirical evidence presented provide insights into the dynamic interplay between exploration and exploitation in LLM post-training.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Inverse IFEval: Can LLMs Unlearn Stubborn Training Conventions to Follow\n  Real Instructions?",
+        "authors": "Yu Fu, Ruijie Miao, Xinping Lei, Qinyan Zhang, zhangysk",
+        "link": "https://arxiv.org/abs/2509.04292",
+        "github_repo": null,
+        "summary": "- This paper introduces Inverse IFEval, a new benchmark designed to evaluate Large Language Models' (LLMs) ability to overcome ingrained training biases and follow counterintuitive instructions.\n- Inverse IFEval comprises eight categories of challenging instructions, including question correction, intentional textual flaws, and code without comments, systematically inverting conventional training paradigms.\n- The benchmark uses a human-in-the-loop pipeline to create a dataset of 1012 high-quality questions in Chinese and English across 23 diverse domains.\n- Experiments on leading LLMs demonstrate the benchmark's effectiveness in identifying models' limitations in handling unconventional instructions.\n- The authors hope that Inverse IFEval serves as a diagnostic tool and encourages the development of methods to mitigate cognitive inertia and enhance LLMs' instruction-following reliability.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/m-a-p/Inverse_IFEval"
+        ],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "DeepResearch Arena: The First Exam of LLMs' Research Abilities via\n  Seminar-Grounded Tasks",
+        "authors": "Jiaxuan Lu, Meiqi Tu, Junchi Yu, Chen Yang, haiyuanwan",
+        "link": "https://arxiv.org/abs/2509.01396",
+        "github_repo": null,
+        "summary": "- This paper introduces DeepResearch Arena, a novel benchmark designed to evaluate the research abilities of large language models (LLMs) using seminar-grounded tasks.\n- The benchmark is constructed using a Multi-Agent Hierarchical Task Generation (MAHTG) system, which extracts research-worthy inspirations from seminar transcripts and translates them into high-quality research tasks.\n- DeepResearch Arena includes over 10,000 high-quality research tasks from over 200 academic seminars, spanning 12 disciplines.\n- The evaluation results show that DeepResearch Arena presents substantial challenges for current state-of-the-art LLMs, with clear performance gaps observed across different models.\n- The benchmark is designed to reduce data leakage and better reflect real-world research environments.",
+        "classification": [
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Transition Models: Rethinking the Generative Learning Objective",
+        "authors": "Yangguang Li, Xiangyu Yue, Xiaoyu Yue, Yiyuan Zhang, GoodEnough",
+        "link": "https://arxiv.org/abs/2509.04394",
+        "github_repo": "https://github.com/WZDTHU/TiM",
+        "summary": "The paper introduces Transition Models (TiM), a novel generative model that learns to model state transitions across any arbitrary time interval.  The model architecture uses decoupled time and interval embeddings and interval-aware attention.  TiM achieves state-of-the-art performance on several benchmarks, surpassing previous models such as SD3.5 and FLUX.1 across all evaluated step counts. This improvement is demonstrated by superior performance in terms of FID scores and consistent quality improvement with increased sampling steps.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/WZDTHU/TiM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "NER Retriever: Zero-Shot Named Entity Retrieval with Type-Aware\n  Embeddings",
+        "authors": "Oren Glickman, Yoav Goldberg, Uri Katz, Or Shachar",
+        "link": "https://arxiv.org/abs/2509.04011",
+        "github_repo": "https://github.com/ShacharOr100/ner_retriever",
+        "summary": "- This paper introduces NER Retriever, a novel zero-shot retrieval framework for ad-hoc Named Entity Retrieval (NER).\n- The model leverages internal representations from large language models (LLMs) to embed both entity mentions and user-provided type descriptions into a shared semantic space.\n- It employs a lightweight contrastive projection network to refine these representations, aligning type-compatible entities while separating unrelated types.\n- NER Retriever significantly outperforms lexical and dense sentence-level retrieval baselines across three benchmarks, demonstrating the effectiveness of representation selection within LLMs and providing a practical solution for scalable, schema-free entity retrieval.\n- The proposed method generalizes to novel entity types without requiring task-specific LLM fine-tuning.",
+        "classification": [
+            "Natural Language Processing",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [
+            "https://github.com/ShacharOr100/ner_retriever"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/CascadeNER/models_for_CascadeNER"
+        ],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Few-step Flow for 3D Generation via Marginal-Data Transport Distillation",
+        "authors": "Lingxi Xie, Chen Yang, Jiemin Fang, Zanwei Zhou, thewhole",
+        "link": "https://arxiv.org/abs/2509.04406",
+        "github_repo": "https://github.com/Zanue/MDT-dist",
+        "summary": "- This paper introduces MDT-dist, a novel framework for few-step 3D flow distillation, addressing the computational cost of existing flow-based 3D generation models.\n- MDT-dist leverages two novel loss functions: Velocity Matching (VM) and Velocity Distillation (VD), which convert the optimization target from the transport level to the velocity and distribution levels, respectively.\n- When evaluated on the TRELLIS framework, MDT-dist reduces sampling steps from 25 to 1\u20132, achieving significant speedup (9.0\u00d7 and 6.5\u00d7) while maintaining high visual and geometric fidelity.\n- Extensive experiments demonstrate that MDT-dist significantly outperforms existing consistency model distillation methods.\n- The proposed method enables TRELLIS to achieve superior performance in few-step 3D generation, making fast 3D content generation more feasible for various downstream applications.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/Zanue/MDT-dist"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Video-MTR: Reinforced Multi-Turn Reasoning for Long Video Understanding",
+        "authors": "Lionel Ni, Zheng Ge, Tianshui Chen, Yuan Xie",
+        "link": "https://arxiv.org/abs/2508.20478",
+        "github_repo": null,
+        "summary": "- The paper introduces Video-MTR, a novel reinforced multi-turn reasoning framework for long video understanding that iteratively selects key video segments and comprehends questions.\n- Unlike traditional single-turn approaches, Video-MTR performs reasoning in multiple turns, progressively refining its understanding based on previously processed segments and the current question.\n- To optimize the intermediate reasoning process, Video-MTR incorporates a gated bi-level reward system that combines trajectory-level rewards based on answer correctness and turn-level rewards focusing on frame-query relevance.\n- Extensive experiments on VideoMME, MLVU, and EgoSchema datasets demonstrate that Video-MTR outperforms existing methods in both accuracy and efficiency, achieving state-of-the-art results.\n- The model uses a bi-level reward system to guide the iterative selection of video segments and achieve better accuracy in video question answering tasks.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Reinforcement Learning",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Durian: Dual Reference-guided Portrait Animation with Attribute Transfer",
+        "authors": "Hanbyul Joo, Byungjun Kim, Hyunsoo Cha",
+        "link": "https://arxiv.org/abs/2509.04434",
+        "github_repo": null,
+        "summary": "- The paper introduces Durian, a novel model for generating portrait animation videos with facial attribute transfer from a reference image to a target portrait in a zero-shot manner.\n- Durian uses dual reference networks that inject spatial features from both the portrait and attribute images into the denoising process of a diffusion model, enabling high-fidelity and spatially consistent attribute transfer.\n- The model is trained using a self-reconstruction formulation, where frames from the same portrait video are used for training, and a mask expansion strategy is used to improve the model's robustness.\n- Durian achieves state-of-the-art performance on portrait animation with attribute transfer, outperforming existing baselines across multiple metrics.\n- The dual reference design of Durian enables multi-attribute composition in a single generation pass without additional training.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Drawing2CAD: Sequence-to-Sequence Learning for CAD Generation from\n  Vector Drawings",
+        "authors": "Meie Fang, Changmiao Wang, Shichao Lu, Feiwei Qin, 1nnoh",
+        "link": "https://arxiv.org/abs/2508.18733",
+        "github_repo": "https://github.com/lllssc/Drawing2CAD",
+        "summary": "- Drawing2CAD is a novel framework that generates parametric CAD models from 2D vector engineering drawings, addressing the limitations of existing methods that use raster images or text descriptions.\n- It employs a dual-decoder transformer architecture to decouple command type and parameter generation, improving the accuracy and fidelity of the generated CAD models.\n- The model utilizes a soft target distribution loss function to accommodate inherent flexibility in CAD parameters, allowing for more realistic and nuanced models.\n- Experiments demonstrate that Drawing2CAD outperforms baseline methods across multiple metrics, including command accuracy, parameter accuracy, and invalidity ratio.\n- The introduction of the CAD-VGDrawing dataset, containing over 150,000 paired engineering drawings and parametric CAD models, enhances the potential for future research in this domain.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/lllssc/Drawing2CAD"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Delta Activations: A Representation for Finetuned Large Language Models",
+        "authors": "Ser-Nam Lim, Mayur Naik, Amish Sethi, OscarXZQ",
+        "link": "https://arxiv.org/abs/2509.04442",
+        "github_repo": "https://github.com/OscarXZQ/delta_activations",
+        "summary": "- This paper introduces Delta Activations, a novel method for representing fine-tuned large language models (LLMs) as vector embeddings.\n- Delta Activations measures the shifts in internal activations of a fine-tuned model relative to a base model, enabling effective clustering by domain and task.\n- The method demonstrates desirable properties, such as robustness across different finetuning settings and an additive property when combining datasets.\n- Delta Activations can be used for model selection and merging, and it is shown to outperform baseline methods in clustering quality based on silhouette score.\n- The code for Delta Activations is publicly available on GitHub.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/OscarXZQ/delta_activations"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    },
+    {
+        "title": "False Sense of Security: Why Probing-based Malicious Input Detection\n  Fails to Generalize",
+        "authors": "Muhao Chen, Qin Liu, Zeming Wei, Cheng Wang",
+        "link": "https://arxiv.org/abs/2509.03888",
+        "github_repo": "https://github.com/WangCheng0116/Why-Probe-Fails",
+        "summary": "- This paper reveals that probing-based methods for detecting malicious inputs in large language models (LLMs) are unreliable and fail to generalize to out-of-distribution data.\n- The authors demonstrate that these probing classifiers learn superficial patterns, such as n-grams and trigger words, rather than capturing the underlying semantic harmfulness of the input.\n- Controlled experiments using semantically cleaned datasets and paraphrased inputs confirm that probing classifiers over-rely on surface-level features and fail to generalize.\n-  A comparison with simple n-gram based methods shows similar performance, further highlighting the limitations of probing-based approaches.\n- The study concludes that a redesign of both models and evaluation protocols is necessary to enhance the safety and reliability of LLM safety detection.",
+        "classification": [
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/WangCheng0116/Why-Probe-Fails"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-05"
+    }
+]

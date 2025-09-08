@@ -1,0 +1,181 @@
+[
+    {
+        "title": "Why Language Models Hallucinate",
+        "authors": "Edwin Zhang, Santosh S. Vempala, Ofir Nachum, Adam Tauman Kalai",
+        "link": "https://arxiv.org/abs/2509.04664",
+        "github_repo": null,
+        "summary": "This paper investigates the causes of hallucinations in large language models (LLMs).  The authors argue that current training and evaluation methods reward guessing over acknowledging uncertainty, leading to the generation of plausible but incorrect statements.  They introduce a novel reduction from the problem of hallucination to binary classification, providing a theoretical framework to analyze the statistical origins of hallucinations and why they persist in post-training. The paper concludes by suggesting that modifying existing benchmarks to better align with trustworthy AI systems is key to mitigating this issue.  This involves modifying existing benchmarks and leaderboards to reduce the penalization of uncertainty.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "Symbolic Graphics Programming with Large Language Models",
+        "authors": "Kaipeng Zhang, Zeju Qiu, Haoquan Zhang, Yamei Chen, YangyiH",
+        "link": "https://arxiv.org/abs/2509.05208",
+        "github_repo": null,
+        "summary": "This paper introduces a novel method for training large language models (LLMs) to generate symbolic graphics programs (SGPs) from natural language descriptions.  The method utilizes reinforcement learning with a custom reward function that incorporates both format validity and cross-modal alignment using vision encoders. The resulting model achieves performance comparable to state-of-the-art proprietary models on a new benchmark, SGP-GenBench, which evaluates object fidelity, scene fidelity, and compositionality of generated SVGs.  Furthermore, analysis reveals emergent behaviors, such as finer decomposition of objects and the generation of semantically relevant contextual details. The proposed approach facilitates efficient and effective symbolic graphics programming by directly leveraging the knowledge encoded in pre-trained vision models without requiring extensive paired data.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "Set Block Decoding is a Language Model Inference Accelerator",
+        "authors": "Jeremy Reizenstein, Daniel Haziza, Marton Havasi, Heli Ben-Hamu, Itai Gat",
+        "link": "https://arxiv.org/abs/2509.04185",
+        "github_repo": null,
+        "summary": "- This paper introduces Set Block Decoding (SBD), a novel method to accelerate language model inference by integrating next token prediction (NTP) and masked token prediction (MATP).\n- SBD allows the model to sample multiple tokens in parallel, unlike previous acceleration methods.\n- The method uses advanced solvers from the discrete diffusion literature to achieve significant speedups without accuracy loss.\n- Experiments on Llama-3.1 8B and Qwen-3 8B show that SBD achieves a 3-5x reduction in the number of forward passes required for generation.\n- SBD maintains compatibility with exact KV-caching and can be implemented by fine-tuning existing NTP models.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "WildScore: Benchmarking MLLMs in-the-Wild Symbolic Music Reasoning",
+        "authors": "Amit Namburi, Yash Vishe, Gagan Mundada, ZacharyNovack, XinXuNLPer",
+        "link": "https://arxiv.org/abs/2509.04744",
+        "github_repo": null,
+        "summary": "- WildScore, a novel benchmark dataset for evaluating multimodal large language models (MLLMs) on symbolic music reasoning tasks, is introduced.  The dataset is unique in that it uses real-world music scores paired with user-generated questions and discussions, offering a significant step towards evaluating the true capabilities of models.\n- The dataset creation process is detailed, including data collection from online forums, multimodal filtering, and the transformation of user queries into multiple choice questions for a standardized evaluation.\n- A comprehensive taxonomy is proposed, covering multiple high-level and fine-grained musicological ontologies, allowing for a rigorous and interpretable assessment of model performance across different reasoning categories.\n- Experimental results reveal that state-of-the-art MLLMs exhibit inconsistent accuracy across various music reasoning tasks, with certain models struggling significantly more than others, showing the existing challenges in this area.\n- Further analysis highlights the importance of visual context for accurate reasoning, with some models showing improved performance when provided with symbolic score images, while others perform less well or even worse with images than without.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/GaganVM/WildScore"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/GM77/WildScore"
+        ],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "LatticeWorld: A Multimodal Large Language Model-Empowered Framework for\n  Interactive Complex World Generation",
+        "authors": "Zhan Zhao, Wei Jia, Tongwei Gu, Zhengxia Zou, Yinglin Duan",
+        "link": "https://arxiv.org/abs/2509.05263",
+        "github_repo": null,
+        "summary": "- LatticeWorld is a novel framework that leverages multimodal large language models (LLMs) and industry-grade rendering engines to generate interactive 3D worlds from textual and visual inputs.\n- The framework uses lightweight LLMs and the Unreal Engine, improving efficiency by over 90 times compared to traditional manual methods.\n- LatticeWorld incorporates multimodal inputs (textual descriptions and visual instructions) to produce large-scale, interactive worlds with dynamic agents and high-fidelity physics.\n- The paper demonstrates LatticeWorld's superiority in scene generation and visual fidelity through comprehensive experiments, showing that it achieves superior accuracy in scene layout generation and visual fidelity.\n- The framework has applications in embodied AI, autonomous driving, entertainment, and sequential decision-making, minimizing the sim-to-real gap.",
+        "classification": [
+            "Text-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "LuxDiT: Lighting Estimation with Video Diffusion Transformer",
+        "authors": "Sanja Fidler, Igor Gilitschenski, Zan Gojcic, Kai He, Ruofan Liang",
+        "link": "https://arxiv.org/abs/2509.03680",
+        "github_repo": null,
+        "summary": "- LuxDiT is a novel data-driven approach that leverages a video diffusion transformer to generate high-dynamic-range (HDR) environment maps, conditioned on visual input.\n- The model is trained on a large synthetic dataset with diverse lighting conditions, enabling it to infer illumination from indirect visual cues.\n- To improve semantic alignment, a low-rank adaptation fine-tuning strategy is introduced using a collected dataset of HDR panoramas.\n- LuxDiT outperforms existing state-of-the-art techniques in quantitative and qualitative evaluations, demonstrating accuracy in lighting prediction and realistic angular high-frequency details.\n- The model demonstrates robust generalization across various datasets and its effectiveness is shown in downstream applications such as virtual object insertion.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool",
+        "authors": "Wenzheng Chang, Yifan Wang, Jianjun Zhou, Zizun Li, ghy0324",
+        "link": "https://arxiv.org/abs/2509.05296",
+        "github_repo": "https://github.com/LiZizun/WinT3R",
+        "summary": "- WinT3R is a novel feed-forward reconstruction model that performs online prediction of precise camera poses and high-quality point maps, addressing the trade-off between reconstruction quality and real-time performance in previous methods.\n- The model employs a sliding window mechanism to ensure sufficient information exchange among frames, improving geometric prediction quality without extensive computation and a camera token pool to enhance camera pose estimation reliability.\n- WinT3R achieves state-of-the-art performance in online reconstruction quality, camera pose estimation, and reconstruction speed across diverse datasets.\n- The model architecture consists of a ViT encoder, a dual-branch decoder that interacts with state tokens, a lightweight convolutional head for predicting point maps, and a camera head for predicting camera poses.\n- The effectiveness of the model is demonstrated through extensive experiments on various datasets, showing superior performance compared to existing online reconstruction methods.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/LiZizun/WinT3R"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "On Robustness and Reliability of Benchmark-Based Evaluation of LLMs",
+        "authors": "Kevin Roitero, Stefano Mizzaro, Vincenzo Della Mea, Riccardo Lunardi",
+        "link": "https://arxiv.org/abs/2509.04013",
+        "github_repo": null,
+        "summary": "- This paper investigates the robustness and reliability of benchmark-based evaluations for Large Language Models (LLMs) by systematically assessing their performance on paraphrased benchmark questions.\n- The study finds that while LLM rankings remain relatively stable across paraphrased inputs, absolute effectiveness scores decline significantly, suggesting LLMs struggle with linguistic variability.\n- The results challenge the reliability of current benchmark-based evaluations, indicating that high benchmark scores may not fully reflect a model's real-world robustness.\n- The authors emphasize the need for robustness-aware benchmarks that better reflect practical deployment scenarios and incorporate linguistic variability.\n- The findings have implications for LLM evaluation methodologies and highlight the limitations of relying solely on fixed, standardized question formats.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in\n  3D CT Disease Detection, Understanding and Reporting",
+        "authors": "Vanessa Wildman, Jike Zhong, Yuxiang Lai, Yenho Chen, Yuheng Li",
+        "link": "https://arxiv.org/abs/2509.03800",
+        "github_repo": null,
+        "summary": "- MedVista3D is a novel multi-scale semantic-enriched vision-language model for 3D CT analysis that performs local and global image-text alignment for fine-grained representation learning within full-volume context.\n- It addresses the challenges of under-reading, inattentional blindness, and communication failures in radiology by jointly performing local detection and global understanding of diseases.\n- The model uses a multi-scale loss function that simultaneously aligns CT volumes and organ-level features with their corresponding text descriptions to maximize mutual information.\n- MedVista3D achieves state-of-the-art performance on zero-shot disease classification, report retrieval, and medical visual question answering, and transfers well to organ segmentation and prognosis prediction.\n- The model addresses the variability of radiology reports by using language model rewrites and introducing a Radiology Semantic Matching Bank for semantics-aware alignment.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Image-to-3D",
+            "Zero-Shot Image Classification",
+            "Image Segmentation",
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "U-ARM : Ultra low-cost general teleoperation interface for robot\n  manipulation",
+        "authors": "Junda Huang, Zewei Ye, Chenyang Shi, Zhaoye Zhou, Yanwen Zou",
+        "link": "https://arxiv.org/abs/2509.02437",
+        "github_repo": "https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm",
+        "summary": "- This paper introduces U-Arm, a low-cost and adaptable leader-follower teleoperation framework for robot manipulation, significantly reducing the cost of data collection for dual-arm robots.\n- The system uses three 3D-printed leader arms with consistent control logic, ensuring compatibility with various commercial robots and achieving a BOM cost of only $50.5 for the 6-DoF version and $56.8 for the 7-DoF version.\n- Mechanical and control optimizations mitigate the challenges of controlling redundant degrees of freedom, resulting in 39% higher data collection efficiency compared to Joycon while maintaining comparable task success rates.\n- The design and CAD models are open-sourced, and simulation support is provided along with real-world manipulation data, facilitating broader adoption and promoting collaborative research.\n- U-Arm's low cost and ease of use makes it suitable for researchers and practitioners requiring extensive and high-quality data for training robust robot manipulation policies.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "Behavioral Fingerprinting of Large Language Models",
+        "authors": "Xing Li, Zhiyuan Yang, Ying Zhang, Hui-Ling Zhen, Zehua Pei",
+        "link": "https://arxiv.org/abs/2509.04504",
+        "github_repo": "https://github.com/JarvisPei/Behavioral-Fingerprinting",
+        "summary": "- This paper introduces a novel framework called \"Behavioral Fingerprinting\" to evaluate Large Language Models (LLMs) by assessing their nuanced behavioral characteristics beyond traditional performance metrics.\n- The framework uses a curated Diagnostic Prompt Suite and an automated evaluation pipeline where a powerful LLM acts as an impartial judge to analyze models across various dimensions such as reasoning, biases, and robustness.\n- Eighteen models were evaluated, revealing convergence in core capabilities like reasoning but significant divergence in alignment-related behaviors like sycophancy and semantic robustness.\n- A cross-model default persona clustering was observed, suggesting that interactive nature of models is a consequence of developer alignment strategies rather than an emergent property of model size or reasoning power.\n- The framework provides a reproducible and scalable methodology for uncovering deep behavioral differences in LLMs, offering insights into alignment strategies and model development.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/JarvisPei/Behavioral-Fingerprinting"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    },
+    {
+        "title": "Bootstrapping Task Spaces for Self-Improvement",
+        "authors": "Yoram Bachrach, Andrei Lupu, Minqi Jiang",
+        "link": "https://arxiv.org/abs/2509.04575",
+        "github_repo": null,
+        "summary": "- This paper introduces EXIT, a novel auto-curriculum reinforcement learning method that enables large language models (LLMs) to perform multi-step self-improvement at inference time.\n- EXIT directly exploits the recurrent structure of self-improvement tasks, training LLMs to perform multi-step self-improvement by only training on the most informative single-step iterations.\n- The method trains the LLM to iterate on its own solutions, treating intermediate outputs as new self-iteration task instances.\n- EXIT is evaluated across various domains like competition math, multi-turn tool use, and machine learning engineering, showing strong performance.\n- EXIT produces policies that demonstrate strong inference-time self-improvement and the ability to iterate beyond the average iteration depth encountered during training.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-08"
+    }
+]

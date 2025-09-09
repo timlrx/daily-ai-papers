@@ -1,0 +1,281 @@
+[
+    {
+        "title": "Reverse-Engineered Reasoning for Open-Ended Generation",
+        "authors": "Wangchunshu Zhou, Minghao Liu, Qixin Xu, Haoran Que, Haozhe Wang",
+        "link": "https://arxiv.org/abs/2509.06160",
+        "github_repo": null,
+        "summary": "- This paper introduces Reverse-Engineered Reasoning (REER), a novel paradigm that recovers latent reasoning processes from known good outputs to overcome limitations of traditional methods like reinforcement learning and instruction distillation for open-ended generation.\n- REER is operationalized as a gradient-free search problem, iteratively refining an initial thinking process to discover a trajectory that best explains a high-quality output, using perplexity as a proxy for quality.\n- DeepWriting-20K, a large-scale dataset of 20,000 deep reasoning trajectories for open-ended tasks, is created and open-sourced.\n- The DeepWriter-8B model, trained on DeepWriting-20K, outperforms strong open-source baselines and achieves performance competitive with leading proprietary models on various benchmarks, demonstrating the effectiveness of REER.\n- Experiments show the contribution of each component, indicating that synthesized deep thinking trajectories and iterative refinement are crucial for success.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "WebExplorer: Explore and Evolve for Training Long-Horizon Web Agents",
+        "authors": "Aili Chen, Jingyang Li, Chi Zhang, Yunji Li, Junteng Liu",
+        "link": "https://arxiv.org/abs/2509.06501",
+        "github_repo": null,
+        "summary": "- This paper introduces WebExplorer, a novel method for training long-horizon web agents that uses model-based exploration and iterative query evolution to generate a challenging dataset of query-answer pairs.\n- WebExplorer-8B, an 8B parameter model trained using this dataset, achieves state-of-the-art performance on several information-seeking benchmarks, outperforming larger models in many cases.\n- The method uses supervised fine-tuning followed by reinforcement learning to improve the model's reasoning capabilities and ability to handle longer contexts.\n- The dataset, WebExplorer-QA, contains approximately 40K query-answer pairs that require multi-step reasoning and complex web navigation.\n- The results demonstrate the effectiveness of the proposed approach for training advanced web agents capable of complex information seeking.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/hkust-nlp/WebExplorer"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Revolutionizing Reinforcement Learning Framework for Diffusion Large\n  Language Models",
+        "authors": "Ke Shen, Ye Tian, Bowen Li, Ling Yang, Yinjie Wang",
+        "link": "https://arxiv.org/abs/2509.06949",
+        "github_repo": "https://github.com/Gen-Verse/dLLM-RL",
+        "summary": "- This paper introduces TraceRL, a novel trajectory-aware reinforcement learning framework for diffusion language models (DLMs).\n- TraceRL incorporates preferred inference trajectories into post-training, improving reasoning performance on complex tasks such as math and coding.\n- The framework is applicable across different DLM architectures, including full-attention and block-attention models, and enhances sampling flexibility.\n-  Employing TraceRL, the authors developed a series of state-of-the-art diffusion language models, TraDo, which outperform existing AR models on various benchmarks.\n- A comprehensive open-source framework is released, facilitating reproducible research and practical applications of diffusion LLMs.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/Gen-Verse/dLLM-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Does DINOv3 Set a New Medical Vision Standard?",
+        "authors": "Bailiang Jian, Jinpeng Lu, Haoyuan Shi, Yinda Chen, Che Liu",
+        "link": "https://arxiv.org/abs/2509.06467",
+        "github_repo": null,
+        "summary": "- This paper benchmarks the performance of DINOv3, a self-supervised vision transformer, on various medical vision tasks, including 2D/3D classification and segmentation.\n- DINOv3 demonstrates competitive performance across several tasks and establishes a new baseline, even outperforming some medical-specific models on certain tasks.\n- However, the study also reveals limitations, such as performance degradation on tasks requiring deep domain specialization, like Whole-Slide Pathological Images (WSIs).\n- The paper highlights the inconsistent scaling behavior of DINOv3 in the medical domain, where performance does not always improve with larger models or higher resolutions.\n- The findings provide insights into the potential and limitations of using large-scale vision foundation models for medical image analysis, opening promising future directions for leveraging these models.",
+        "classification": [
+            "Image Feature Extraction",
+            "Image Classification",
+            "Image Segmentation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Reinforced Visual Perception with Tools",
+        "authors": "Mingyang Fu, Zhihan Hu, Zixian Ma, Dongping Chen, Zetong Zhou",
+        "link": "https://arxiv.org/abs/2509.01656",
+        "github_repo": "https://github.com/ls-kelvin/REVPT",
+        "summary": "- This paper introduces REVPT, a novel two-stage framework that enhances multi-modal language models' visual perception capabilities by integrating visual processing tools as reasoning steps.\n- REVPT uses a novel RL algorithm based on GRPO to train models to reason with four visual tools (object detection, depth estimation, edge detection, and zoom).\n- Experimental results show that REVPT achieves state-of-the-art performance on several perception-heavy benchmarks, outperforming supervised and text-based RL finetuning baselines.\n- Notably, REVPT-3B and REVPT-7B outperform instruct models by 9.03% and 9.44% on CV-Bench.\n- The authors provide extensive ablations and insights into RL-based visual tool usage.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning",
+            "Object Detection",
+            "Depth Estimation"
+        ],
+        "github_urls": [
+            "https://github.com/ls-kelvin/REVPT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Reinforcement Learning Foundations for Deep Research Systems: A Survey",
+        "authors": "Wei Han, Hannan Cao, Jingru Lin, Zhi Chen, Wenjun Li",
+        "link": "https://arxiv.org/abs/2509.06733",
+        "github_repo": null,
+        "summary": "This survey paper examines the RL foundations of deep research systems, focusing on recent work (post-DeepSeek-R1) that goes beyond the widely adopted DeepSeek-R1 style baselines.  The paper systematizes work along three axes: data synthesis and curation, RL methods for agentic research, and agentic RL training frameworks.  The authors analyze various RL methods and training regimes used in deep research systems and their effectiveness in achieving long-horizon capabilities like robust reasoning and tool use.  Finally, the survey addresses infrastructure bottlenecks, offering practical guidance for training deep research agents and highlighting two cross-cutting axes, agent architecture and coordination, and evaluation and benchmarks.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/wenjunli-0/deepresearch-survey"
+        ],
+        "huggingface_urls": [
+            "None"
+        ],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Focusing by Contrastive Attention: Enhancing VLMs' Visual Reasoning",
+        "authors": "Baolong Bi, Lingrui Mei, Yiwei Wang, Shenghua Liu, Yuyao Ge",
+        "link": "https://arxiv.org/abs/2509.06461",
+        "github_repo": null,
+        "summary": "- This paper introduces Contrastive Attention Refinement for Visual Enhancement (CARVE), a training-free method to improve visual reasoning in Vision-Language Models (VLMs).\n- CARVE addresses the issue of VLMs' performance degradation in complex visual environments by contrasting attention maps between general and task-specific queries to extract task-relevant visual signals.\n- The method leverages the observation that visual complexity strongly correlates with attention entropy, negatively impacting reasoning performance, and that attention patterns progressively refine from global scanning to focused convergence.\n- Experimental results demonstrate that CARVE consistently enhances performance across various open-source models, achieving up to a 75% improvement on certain tasks.\n- CARVE offers an efficient pathway for improving visual reasoning without requiring additional training or external tools.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "UniVerse-1: Unified Audio-Video Generation via Stitching of Experts",
+        "authors": "Xinyao Liao, Ling-Hao Chen, Aojie Li, Wei Zuo, Duomin Wang",
+        "link": "https://arxiv.org/abs/2509.06155",
+        "github_repo": null,
+        "summary": "- This paper introduces UniVerse-1, a novel unified audio-video generation model that leverages a stitching of experts technique to combine pre-trained video and audio generation models.\n- UniVerse-1 uses an online annotation pipeline for accurate data alignment, and addresses cross-modal noise correlation by employing independent noise sampling.\n- The model is evaluated using a new benchmark dataset called Verse-Bench, demonstrating good performance on both audio-visual and unimodal generation tasks.\n- The model and code are publicly available, closing the gap between closed-source and open-source research in this area. \n- UniVerse-1 achieves high-quality video and audio generation, showing strong alignment between both modalities.",
+        "classification": [
+            "Text-to-Video",
+            "Audio",
+            "Text-to-Audio",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://dorniwang.github.io/UniVerse-1/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Easier Painting Than Thinking: Can Text-to-Image Models Set the Stage,\n  but Not Direct the Play?",
+        "authors": "Rui Chen, Huijuan Huang, Xinting Hu, Yuan Wang, lioooox",
+        "link": "https://arxiv.org/abs/2509.03516",
+        "github_repo": null,
+        "summary": "- This paper introduces T2I-COREBENCH, a comprehensive benchmark designed to evaluate both the composition and reasoning capabilities of text-to-image (T2I) models.\n- The benchmark evaluates T2I models across 12 dimensions, covering various aspects of composition and reasoning, including multi-instance, multi-attribute, multi-relation, text rendering, logical reasoning, behavioral reasoning, hypothetical reasoning, procedural reasoning, generalization reasoning, analogical reasoning, commonsense reasoning, and reconstructive reasoning.\n- Experiments across 27 current T2I models (including both open and closed-source models) reveal that composition capabilities remain limited in complex, high-density scenarios, while reasoning capabilities lag even further behind.\n- The benchmark facilitates fine-grained evaluation by pairing each prompt with a checklist that assesses individual elements independently.\n- The project page provides additional resources for the benchmark.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://t2i-corebench.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Interleaving Reasoning for Better Text-to-Image Generation",
+        "authors": "Shixiang Tang, Shaosheng Cao, Zheyong Xie, Shuang Chen, Wenxuan Huang",
+        "link": "https://arxiv.org/abs/2509.06945",
+        "github_repo": "https://github.com/Osilly/Interleaving-Reasoning-Generation",
+        "summary": "- This paper introduces Interleaving Reasoning Generation (IRG), a novel framework that enhances text-to-image (T2I) generation by alternating between text-based reasoning and image synthesis.\n- The IRG model first produces a text-based reasoning process to guide the initial image generation, and then reflects on the initial image to refine fine-grained details and visual quality.\n- The proposed Interleaving Reasoning Generation Learning (IRGL) training strategy targets two sub-goals: strengthening the initial think-and-generate stage and enabling high-quality textual reflection to improve image quality.\n- IRG achieves state-of-the-art performance on multiple mainstream T2I benchmarks, showing significant improvements in visual quality and fine-grained details.\n- The experiments demonstrate that interleaving reasoning is a powerful paradigm for advancing text-to-image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/Osilly/Interleaving-Reasoning-Generation"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI\n  Agents",
+        "authors": "James Zou, Jonathan K. Pritchard, Joe R. Davis, Jiacheng Miao",
+        "link": "https://arxiv.org/abs/2509.06917",
+        "github_repo": null,
+        "summary": "- Paper2Agent is a novel framework that transforms research papers into interactive and reliable AI agents.\n- It addresses the challenge of passive research outputs by automatically converting papers into AI agents that act as knowledgeable research assistants.\n- Paper2Agent systematically analyzes papers and codebases to construct MCP servers, which are then flexibly connected to chat agents to answer scientific queries.\n- The framework's effectiveness is demonstrated through case studies using AlphaGenome, Scanpy, and TISSUE, showing that generated agents can reproduce original results and handle novel user queries.\n- Paper2Agent introduces a new paradigm for knowledge dissemination and collaboration, lowering barriers to adoption and accelerating scientific discovery.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/jmiao24/Paper2Agent"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/spaces/Paper2Agent/alphagenome_agent"
+        ],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM\n  Step-Provers",
+        "authors": "Xia Xiao, Kun Yuan, Yanchen Nie, Zeyu Zheng, Ran Xin",
+        "link": "https://arxiv.org/abs/2509.06493",
+        "github_repo": null,
+        "summary": "This paper introduces BFS-Prover-V2, a system designed to address the dual scaling problem in LLM step-provers.  It presents two key innovations: a multi-turn off-policy RL framework for continual performance improvement during training and a planner-enhanced multi-agent search architecture for improved inference-time scalability. The RL framework uses adaptive tactic-level data filtering and periodic retraining to overcome performance plateaus. The multi-agent search architecture uses a high-level planner to decompose complex theorems into simpler subgoals, enabling parallel prover agents to collaborate more efficiently. BFS-Prover-V2 achieves state-of-the-art results on established benchmarks, outperforming previous methods.  The techniques presented are of broader interest and may be applied to other domains requiring complex search and reasoning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "R^textbf{2AI}: Towards Resistant and Resilient AI in an\n  Evolving World",
+        "authors": "Bowen Zhou, Chaochao Lu, Jie Fu, Xiang Wang, Youbang Sun",
+        "link": "https://arxiv.org/abs/2509.06786",
+        "github_repo": null,
+        "summary": "This research paper introduces R^2AI, a novel framework designed to cultivate resistant and resilient AI systems capable of adapting to evolving environments and threats.  The framework integrates a fast-slow model architecture, adversarial simulations (Safety Wind Tunnel), and continual learning to ensure safety evolves alongside AI capabilities. R^2AI addresses the limitation of existing paradigms by emphasizing co-evolution as a fundamental safety principle, inspired by biological immunity.  This approach promotes scalable and proactive safety through dynamic interaction with environments and the internal Safety Wind Tunnel.  It ensures continually safe models, suitable for high-stakes applications, through multi-level safety strategies.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Llama-GENBA-10B: A Trilingual Large Language Model for German, English\n  and Bavarian",
+        "authors": "Hoi-Fong Mak, Gokul Ramakrishnan, Stefan Schweter, Jophin John, Michael Hoffmann",
+        "link": "https://arxiv.org/abs/2509.05668",
+        "github_repo": null,
+        "summary": "- This paper introduces Llama-GENBA-10B, a 10B parameter trilingual large language model trained on a balanced corpus of English, German, and Bavarian.\n- The model addresses the challenge of English-centric bias in LLMs by balancing resources across languages and includes Bavarian to support low-resource languages.\n- Four key challenges were addressed during development: multilingual corpus curation, a unified tokenizer, optimized architecture and language ratios, and a standardized trilingual evaluation suite.\n- Llama-GENBA-10B achieves strong cross-lingual performance, surpassing existing models in Bavarian and matching or exceeding performance in English and German according to the benchmark used in this paper.\n- The model's training on a single Cerebras CS-2 system is highlighted as an example of efficient large-scale multilingual pretraining.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Translation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Test-Time Scaling in Reasoning Models Is Not Effective for\n  Knowledge-Intensive Tasks Yet",
+        "authors": "See-Kiong Ng, Bryan Hooi, James Xu Zhao",
+        "link": "https://arxiv.org/abs/2509.06861",
+        "github_repo": "https://github.com/XuZhao0/tts-knowledge",
+        "summary": "- This paper explores the effectiveness of test-time scaling (TTS) in improving the performance of reasoning models on knowledge-intensive tasks.\n- The authors conduct a comprehensive evaluation of 12 reasoning models on two benchmarks, SimpleQA and FRAMES, to assess how increasing test-time computation affects accuracy and hallucination rates.\n- The findings reveal that increasing test-time computation does not consistently improve accuracy and often leads to more hallucinations, challenging the common assumption that more thinking leads to better performance.\n- Through analysis, the authors identify that reduced hallucinations frequently result from model abstention rather than factual recall improvements, while increased hallucinations often stem from models attempting previously unanswered questions.\n- The study concludes that despite some benefits of enabling the models to think before answering, increasing test-time computation is not yet a reliable strategy to improve factual accuracy and reduce hallucinations in knowledge-intensive tasks.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/XuZhao0/tts-knowledge"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "MAS-Bench: A Unified Benchmark for Shortcut-Augmented Hybrid Mobile GUI\n  Agents",
+        "authors": "Zhengxi Lu, Weiqing He, Yaozhen Liang, Guangyi Liu, Pengxiang Zhao",
+        "link": "https://arxiv.org/abs/2509.06477",
+        "github_repo": null,
+        "summary": "- This paper introduces MAS-Bench, a benchmark designed to evaluate GUI-shortcut hybrid mobile agents.\n- MAS-Bench features 139 complex tasks across 11 real-world applications, a knowledge base of 88 predefined shortcuts, and 7 evaluation metrics.\n- Experiments show that hybrid agents achieve significantly higher success rates and efficiency than GUI-only counterparts.\n- A novel framework is introduced to evaluate the capacity of agents to generate new shortcuts.\n- The results highlight the significant potential of dynamic shortcuts for achieving higher efficiency, though robustness remains a challenge.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://pengxiang-zhao.github.io/MAS-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "Saturation-Driven Dataset Generation for LLM Mathematical Reasoning in\n  the TPTP Ecosystem",
+        "authors": "Damien Sileo, Valentin Quesnel",
+        "link": "https://arxiv.org/abs/2509.06809",
+        "github_repo": "https://github.com/sileod/reasoning_core",
+        "summary": "- This paper introduces a novel framework for generating a large-scale, high-quality dataset for training LLMs in mathematical reasoning.\n- The framework leverages the TPTP library and E-prover to generate a massive corpus of mathematically valid theorems, eliminating factual errors.\n- It generates three types of tasks: entailment verification, premise selection, and proof graph reconstruction, each with controllable difficulty levels.\n- Experiments on several LLMs reveal that performance significantly decreases with increased task complexity, particularly for tasks requiring deep structural reasoning.\n- The authors make the code and data publicly available to facilitate further research on LLM mathematical reasoning.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/sileod/reasoning_core"
+        ],
+        "huggingface_urls": [
+            "https://hf.co/datasets/reasoning-core/rc1"
+        ],
+        "date": "2025-09-09"
+    },
+    {
+        "title": "D-HUMOR: Dark Humor Understanding via Multimodal Open-ended Reasoning",
+        "authors": "Dhanvin Sanjay Namboodiri, Rishi Bharat Junghare, Shahid Shafi Dar, Mohammad Zia Ur Rehman, Sai Kartheek Reddy Kasu",
+        "link": "https://arxiv.org/abs/2509.06771",
+        "github_repo": "https://github.com/Sai-Kartheek-Reddy/D-Humor-Dark-Humor-Understanding-via-Multimodal-Open-ended-Reasoning",
+        "summary": "- This paper introduces D-HUMOR, a novel dataset comprising 4,379 Reddit memes annotated for dark humor detection, target categories, and intensity levels.\n- A Tri-stream Cross-Reasoning Network (TCRNet) is proposed, which fuses textual, visual, and reasoning features via pairwise attention mechanisms.\n- The TCRNet incorporates an iterative reasoning refinement via Role-Reversal Self-Loop to enhance the model's understanding of implicit cues in dark humor.\n- Experimental results demonstrate that the proposed method outperforms strong baselines across three tasks: dark humor detection, target identification, and intensity prediction.\n- The dataset, annotations, and code are publicly released to facilitate further research in multimodal humor understanding and content moderation.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Sai-Kartheek-Reddy/D-Humor-Dark-Humor-Understanding-via-Multimodal-Open-ended-Reasoning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-09"
+    }
+]

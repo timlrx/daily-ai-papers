@@ -1,0 +1,221 @@
+[
+    {
+        "title": "Parallel-R1: Towards Parallel Thinking via Reinforcement Learning",
+        "authors": "Xinyu Yang, Xiaoyang Wang, Wenhao Yu, Hongming Zhang, Tong Zheng",
+        "link": "https://arxiv.org/abs/2509.07980",
+        "github_repo": "https://github.com/zhengkid/Parallel-R1",
+        "summary": "- Parallel-R1 is a novel reinforcement learning framework designed to enhance the reasoning capabilities of large language models (LLMs) by enabling parallel thinking behaviors for complex real-world reasoning tasks.\n- The framework employs a progressive curriculum that addresses the cold-start problem in training parallel thinking with RL, using supervised fine-tuning (SFT) on easier tasks to instill the ability before transitioning to RL for exploration and generalization.\n- Experiments on math benchmarks (MATH, AMC23, AIME) show that Parallel-R1 successfully instills parallel thinking, resulting in improvements over a sequential thinking model trained directly on challenging tasks with RL.\n- Analysis reveals that Parallel-R1 uses parallel thinking as an exploration strategy at an early stage and for multi-perspective verification later.\n- The proposed method achieves a peak accuracy of 25.6% on the AIME25 benchmark, outperforming baseline models significantly.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zhengkid/Parallel-R1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Mini-o3: Scaling Up Reasoning Patterns and Interaction Turns for Visual\n  Search",
+        "authors": "Tianjian Li, Tao Liu, Wei Li, Junyi Li, Xin Lai",
+        "link": "https://arxiv.org/abs/2509.07969",
+        "github_repo": "https://github.com/Mini-o3/Mini-o3",
+        "summary": "- Mini-o3 is a novel system designed to overcome limitations in existing open-source visual search approaches by scaling up tool-based interactions and enabling deep, multi-turn reasoning.\n- It achieves state-of-the-art performance on challenging visual search tasks by employing a multi-stage training process that includes constructing a new Visual Probe Dataset, developing an iterative data collection pipeline, and using an over-turn masking strategy to balance training efficiency and test-time scalability. \n- The model generates trajectories with tens of interaction turns, showcasing improved accuracy as the number of turns increases, despite being trained with a limited budget of six turns. \n- Experiments demonstrate that Mini-o3 produces rich reasoning patterns and deep thinking paths, effectively solving challenging visual search problems and outperforming existing methods on various benchmarks.\n- The over-turn masking technique is crucial for enabling the scalability of the interaction turns during inference without compromising test-time performance.",
+        "classification": [
+            "Multimodal",
+            "Reinforcement Learning",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Mini-o3/Mini-o3"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Visual Representation Alignment for Multimodal Large Language Models",
+        "authors": "Heeseong Shin, Hyungyu Choi, Junwan Kim, Jaewoo Jung, Heeji Yoon",
+        "link": "https://arxiv.org/abs/2509.07979",
+        "github_repo": null,
+        "summary": "- This paper introduces VIRAL, a novel regularization strategy that aligns the internal visual representations of Multimodal Large Language Models (MLLMs) with those of pre-trained Vision Foundation Models (VFMs).\n- VIRAL addresses the limitation of existing MLLMs in vision-centric tasks by explicitly enforcing the alignment, allowing the model to retain critical visual details and enhance its reasoning capabilities over complex visual inputs.\n- The experimental results demonstrate consistent improvements across various vision-centric and general multimodal benchmarks, showcasing the effectiveness of VIRAL.\n- Ablation studies validate the key design choices of VIRAL, including the selection of VFMs, alignment target layers, and alignment objectives.\n- The authors suggest that this simple regularization strategy opens up a new direction for the effective integration of visual information in training MLLMs.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://cvlab-kaist.github.io/VIRAL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Reconstruction Alignment Improves Unified Multimodal Models",
+        "authors": "XuDong Wang, Luke Zettlemoyer, Trevor Darrell, Ji Xie",
+        "link": "https://arxiv.org/abs/2509.07295",
+        "github_repo": null,
+        "summary": "This paper introduces Reconstruction Alignment (RecA), a resource-efficient post-training method that enhances image generation and editing in Unified Multimodal Models (UMMs). RecA leverages visual understanding encoder embeddings as dense prompts, providing rich supervision without captions. The method conditions a UMM on its visual understanding embeddings and optimizes it using a self-supervised reconstruction loss.  Experiments show that RecA improves image generation and editing performance across various UMM architectures, outperforming larger open-source models on several benchmarks including GenEval and DPGBench.  RecA is broadly applicable to autoregressive, masked autoregressive, and diffusion-based UMMs.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://reconstruction-alignment.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "UMO: Scaling Multi-Identity Consistency for Image Customization via\n  Matching Reward",
+        "authors": "Fei Ding, Mengqi Huang, Wenxu Wu, fenfan, cb1cyf",
+        "link": "https://arxiv.org/abs/2509.06818",
+        "github_repo": "https://github.com/bytedance/UMO",
+        "summary": "- This paper introduces UMO, a Unified Multi-identity Optimization framework that improves the consistency of multiple identities in image customization.\n- UMO uses a multi-to-multi matching paradigm to reformulate multi-identity generation as a global assignment optimization problem, maximizing the overall matching quality.\n- The framework employs a novel Reference Reward Feedback Learning (ReReFL) technique to optimize the reward function.\n- Experiments demonstrate that UMO significantly improves identity consistency and reduces identity confusion, achieving state-of-the-art performance on several benchmarks.\n- A new metric, ID-Conf, is proposed to measure identity confusion.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/bytedance/UMO"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Curia: A Multi-Modal Foundation Model for Radiology",
+        "authors": "Elodie Ferreres, Helene Philippe, Antoine Saporta, Julien Khlaut, Corentin Dancette",
+        "link": "https://arxiv.org/abs/2509.06830",
+        "github_repo": null,
+        "summary": " - The paper introduces Curia, a multi-modal foundation model for radiology trained on a large dataset of CT and MRI images using the DINOv2 algorithm. \n- Curia uses a Vision Transformer architecture and demonstrates strong performance on a benchmark of 19 radiology tasks, surpassing previous foundation models and often matching or exceeding radiologist performance. \n- The model exhibits strong cross-modal generalization abilities, effectively transferring knowledge between CT and MRI modalities. \n- The model achieves high accuracy in low-data regimes, showing data efficiency in few-shot learning scenarios. \n- The authors release the base model's weights to accelerate research progress in radiology.",
+        "classification": [
+            "Image-to-Image",
+            "Image Classification",
+            "Image Segmentation",
+            "Image Feature Extraction",
+            "Zero-Shot Image Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/raidium/curia"
+        ],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "F1: A Vision-Language-Action Model Bridging Understanding and Generation\n  to Actions",
+        "authors": "Zherui Qiu, Jia Zeng, Hao Li, Weijie Kong, aopolin-lv",
+        "link": "https://arxiv.org/abs/2509.06951",
+        "github_repo": null,
+        "summary": " - This paper introduces F1, a novel Vision-Language-Action (VLA) model that incorporates visual foresight generation into its decision-making pipeline.\n - F1 employs a Mixture-of-Transformer architecture with dedicated modules for perception, foresight generation, and control.\n - The model uses a next-scale prediction mechanism to synthesize goal-conditioned visual foresight, enabling it to formulate action generation as a foresight-guided inverse dynamics problem.\n - Extensive evaluations on real-world tasks and simulation benchmarks demonstrate that F1 achieves substantial gains in both task success rate and generalization ability compared to existing approaches.\n - A three-stage training recipe further enhances the model's robustness and generalizable capabilities.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/InternRobotics/F1-VLA"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/InternRobotics/F1-VLA"
+        ],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Staying in the Sweet Spot: Responsive Reasoning Evolution via\n  Capability-Adaptive Hint Scaffolding",
+        "authors": "Yongcheng Zeng, Erxue Min, Zexu Sun, zhaojinm, ChillingDream",
+        "link": "https://arxiv.org/abs/2509.06923",
+        "github_repo": null,
+        "summary": "- This paper introduces SEELE, a novel supervision-aided reinforcement learning framework that dynamically adjusts problem difficulty during training to optimize learning efficiency.\n- SEELE achieves this by appending hints of varying lengths to training samples, adjusting the hint length based on a model that predicts the optimal difficulty for the current model's capabilities.\n- The method uses a multi-round rollout sampling strategy and an Item Response Theory model to predict the required hint length for each problem.\n- Experimental results demonstrate that SEELE outperforms existing methods on various math and general domain reasoning benchmarks, achieving significant improvements in accuracy.\n- The theoretical analysis in the paper supports the proposed approach, showing that the learning efficiency of reinforcement learning algorithms is maximized when the rollout accuracy is around 50%.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/ChillingDream/seele"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Language Self-Play For Data-Free Training",
+        "authors": "Vijai Mohan, Yuandong Tian, Qi Ma, Mengting Gu, Jakub Grudzien Kuba",
+        "link": "https://arxiv.org/abs/2509.07414",
+        "github_repo": null,
+        "summary": "- This paper introduces Language Self-Play (LSP), a reinforcement learning approach that allows large language models (LLMs) to improve without additional training data.\n- LSP leverages a game-theoretic framework of self-play, where an LLM acts as both the challenger (generating increasingly difficult prompts) and the solver (answering the prompts).\n- Experiments using Llama-3.2-3B-Instruct on instruction-following benchmarks demonstrated that LSP can enhance model performance, sometimes exceeding data-driven baselines.\n- The LSP algorithm iteratively improves both the LLM and the distribution of examples it learns from, without requiring an adversarial expert.\n- This data-free training method is particularly useful for overcoming the data bottleneck in LLM training and improving models on challenging tasks.",
+        "classification": [
+            "Natural Language Processing",
+            "Reinforcement Learning",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Causal Attention with Lookahead Keys",
+        "authors": "Quanquan Gu, Huizhuo Yuan, Peng Sun, Zhuoqing Song",
+        "link": "https://arxiv.org/abs/2509.07301",
+        "github_repo": null,
+        "summary": " - This paper introduces CASTLE, a novel attention mechanism that incorporates information from future tokens into the attention mechanism while maintaining the autoregressive property.\n- CASTLE continually updates each token's keys as the context unfolds, allowing the model to access information from subsequent tokens.\n- The authors derive a mathematical equivalence that enables efficient parallel training, avoiding the explicit materialization of lookahead keys.\n- Experimental results on various language modeling benchmarks show that CASTLE consistently outperforms standard causal attention across different model scales, reducing validation perplexity and improving performance on downstream tasks.\n- The improved performance is attributed to CASTLE's ability to capture global context more effectively than standard causal attention.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Directly Aligning the Full Diffusion Trajectory with Fine-Grained Human\n  Preference",
+        "authors": "Yingfang Zhang, Shiyi Zhang, Zhantao Yang, Zhimin Li, Xiangwei Shen",
+        "link": "https://arxiv.org/abs/2509.06942",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel reinforcement learning framework called Semantic Relative Preference Optimization (SRPO) for aligning diffusion models with human preferences.\n- The SRPO method directly aligns the full diffusion trajectory by using a single-step image recovery technique and online reward adjustment.\n- SRPO mitigates reward hacking through a semantic relative preference mechanism, which regularizes the reward signal using text-conditioned preferences.\n- Experimental results demonstrate that SRPO significantly improves upon existing online RL methods on FLUX.1.dev, achieving over a 3x increase in human-evaluated realism and aesthetic quality.\n- The approach is highly efficient, converging in just 10 minutes, compared to other methods which may take hours.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "SimpleQA Verified: A Reliable Factuality Benchmark to Measure Parametric\n  Knowledge",
+        "authors": "Dipanjan Das, Sasha Goldshtein, Giovanni D'Antonio, Gal Yona, Lukas Haas",
+        "link": "https://arxiv.org/abs/2509.07968",
+        "github_repo": null,
+        "summary": "- This paper introduces SimpleQA Verified, a new benchmark dataset designed to evaluate the factuality of large language models (LLMs) in short-answer questions.\n- It addresses limitations of the original SimpleQA benchmark, such as noisy labels, biases, and question redundancy, by applying a rigorous multi-stage filtering process.\n- SimpleQA Verified achieves a state-of-the-art F1-score of 55.6 with Gemini 2.5 Pro, outperforming other leading models such as GPT-5.\n- The dataset, evaluation code, and leaderboard are publicly available to foster progress toward more reliable AI systems.\n- This work provides a higher-fidelity tool to track progress in parametric model factuality and mitigate hallucinations.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Q-Sched: Pushing the Boundaries of Few-Step Diffusion Models with\n  Quantization-Aware Scheduling",
+        "authors": "Diana Marculescu, Natalia Frumkin",
+        "link": "https://arxiv.org/abs/2509.01624",
+        "github_repo": null,
+        "summary": "- This paper introduces Q-Sched, a novel quantization-aware noise scheduler for few-step diffusion models that modifies the diffusion model scheduler rather than model weights.\n- Q-Sched achieves full-precision accuracy with a 4x reduction in model size by adjusting the few-step sampling trajectory.\n- The proposed method uses a Joint Alignment Quality (JAQ) loss function that combines text-image compatibility with an image quality metric for fine-grained optimization.\n- Extensive experiments demonstrate that Q-Sched outperforms existing methods, achieving a 15.5% FID improvement over the FP16 4-step Latent Consistency Model and a 16.6% improvement over the FP16 8-step Phased Consistency Model.\n- Q-Sched is shown to be highly effective across multiple compressed few-step models and is compatible with various diffusion model backbones.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/enyac-group/q-sched"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/black-forest-labs/FLUX.1-schnell"
+        ],
+        "date": "2025-09-10"
+    },
+    {
+        "title": "\u0394L Normalization: Rethink Loss Aggregation in RLVR",
+        "authors": "Lili Qiu, Yuqing Yang, Yike Zhang, Xufang Luo, Zhiyuan He",
+        "link": "https://arxiv.org/abs/2509.07558",
+        "github_repo": "https://github.com/zerolllin/Delta-L-Normalization",
+        "summary": "- This paper introduces a novel loss aggregation method called \u0394L Normalization, designed to address the challenges of high gradient variance caused by varying response lengths in Reinforcement Learning with Verifiable Rewards (RLVR).\n- \u0394L Normalization is formulated as a minimum-variance unbiased estimator, which ensures unbiased gradient estimation and minimizes gradient variance.\n- Experiments on multiple tasks and model sizes demonstrate that \u0394L Normalization consistently achieves superior results compared to existing methods, showcasing improved stability and higher accuracy.\n- The theoretical analysis shows that the proposed method addresses the bias and high variance issues present in existing length-dependent and length-independent loss aggregation methods.\n- The authors provide their code publicly on GitHub, facilitating reproducibility and further research in this area.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/zerolllin/Delta-L-Normalization"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-10"
+    }
+]

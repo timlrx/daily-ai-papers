@@ -1,0 +1,140 @@
+[
+    {
+        "title": "A Survey of Reinforcement Learning for Large Reasoning Models",
+        "authors": "Runze Liu, Youbang Sun, Bingxiang He, Yuxin Zuo, Kaiyan Zhang",
+        "link": "https://arxiv.org/abs/2509.08827",
+        "github_repo": "https://github.com/TsinghuaC3I/Awesome-RL-for-LRMs",
+        "summary": "This survey paper examines recent advancements in reinforcement learning (RL) for large reasoning models (LRMs).  It focuses on reinforcement learning's role in enhancing LLM capabilities, specifically in complex reasoning tasks. The paper reviews various reward design techniques, optimization algorithms, and sampling strategies used in RL for LRMs. It also addresses several foundational challenges in this field, such as the selection of model priors and the trade-off between generalization and memorization. Finally, it highlights some promising future research directions, including continual RL for LLMs and memory-based RL for LLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/TsinghuaC3I/Awesome-RL-for-LRMs"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "RewardDance: Reward Scaling in Visual Generation",
+        "authors": "Liang Li, Ming Li, Zilyu Ye, Yu Gao, Jie Wu",
+        "link": "https://arxiv.org/abs/2509.08826",
+        "github_repo": null,
+        "summary": "- RewardDance is a novel reward modeling framework for visual generation that addresses limitations of existing approaches by using a generative paradigm and aligning reward objectives with Vision-Language Model (VLM) architectures.\n- It overcomes the reward hacking issue by reformulating the reward score as the model's probability of predicting a \"yes\" token, indicating superior image quality.\n- RewardDance achieves state-of-the-art results on various visual generation tasks (text-to-image, text-to-video, image-to-video), significantly outperforming existing methods.\n- The framework enables scaling along two dimensions: model scaling (up to 26B parameters) and context scaling (integrating task instructions, reference examples, chain-of-thought reasoning).\n- Extensive experiments demonstrate that RewardDance's large-scale RMs exhibit high reward variance during RL fine-tuning, proving their resistance to hacking and ability to generate diverse, high-quality outputs.",
+        "classification": [
+            "Text-to-Image",
+            "Text-to-Video",
+            "Image-to-Video",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "3D and 4D World Modeling: A Survey",
+        "authors": "Ao Liang, Youquan Liu, Jianbiao Mei, Wesley Yang, Lingdong Kong",
+        "link": "https://arxiv.org/abs/2509.07996",
+        "github_repo": "https://github.com/worldbench/survey",
+        "summary": "\n- This survey provides a comprehensive review of 3D and 4D world modeling and generation, addressing the lack of standardized definitions and taxonomies in the field.\n- It introduces a structured taxonomy spanning video-based (VideoGen), occupancy-based (OccGen), and LiDAR-based (LiDARGen) approaches.\n- The survey systematically summarizes datasets and evaluation metrics tailored to 3D/4D settings, and discusses practical applications, open challenges, and promising research directions.\n- It establishes precise definitions for \"world models\" and \"3D/4D world modeling\", providing the research community with consistent terminology and conceptual clarity.\n- This work proposes a hierarchical taxonomy of methodologies, categorizing current approaches based on their representation modalities.",
+        "classification": [
+            "Computer Vision",
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/worldbench/survey"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making\n  through Multi-Turn Reinforcement Learning",
+        "authors": "Honglin Guo, Baodai Huang, Chenyang Liao, Jixuan Huang, Zhiheng Xi",
+        "link": "https://arxiv.org/abs/2509.08755",
+        "github_repo": "https://github.com/woooodyy/AgentGym",
+        "summary": "*- The paper introduces AgentGym-RL, a novel framework for training large language models (LLMs) as agents for multi-turn interactive decision-making through reinforcement learning (RL). \n- AgentGym-RL features a modular and decoupled architecture, ensuring high flexibility and extensibility. It supports various mainstream RL algorithms and diverse real-world scenarios. \n- The authors also propose ScalingInter-RL, a training approach designed for exploration-exploitation balance and stable RL optimization. \n- The framework is evaluated across 27 tasks, demonstrating that the agents match or surpass commercial models in performance, particularly regarding large language models. \n- The complete AgentGym-RL framework, including code and datasets, will be made open-source to empower the research community.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/woooodyy/AgentGym-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "P3-SAM: Native 3D Part Segmentation",
+        "authors": "Yunhan Yang, Jiachen Xu, Xinhao Yan, Yang Li, murcherful",
+        "link": "https://arxiv.org/abs/2509.06784",
+        "github_repo": null,
+        "summary": "- This paper introduces P3-SAM, a novel 3D point-promptable part segmentation model designed for fully automated segmentation of 3D objects into constituent parts.\n- The model architecture comprises a feature extractor (Point TransformerV3), multiple segmentation heads, and an IoU predictor, enabling interactive segmentation.\n- An algorithm is proposed to automatically select and merge masks predicted by the model for part instance segmentation.\n- The model was trained on a new dataset containing nearly 3.7 million 3D models with reasonable segmentation labels.\n- Experimental results indicate that P3-SAM achieves superior performance to state-of-the-art methods across various segmentation tasks, demonstrating high precision and robustness.",
+        "classification": [
+            "Image Segmentation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "Hunyuan-MT Technical Report",
+        "authors": "Yang Du, Mingyang Song, Bingxin Qu, Zheng Li, Mao Zheng",
+        "link": "https://arxiv.org/abs/2509.05209",
+        "github_repo": null,
+        "summary": "- This paper introduces Hunyuan-MT-7B and Hunyuan-MT-Chimera-7B, two open-source multilingual translation models.\n- Hunyuan-MT-7B supports bidirectional translation across 33 major languages, with a focus on Mandarin and minority languages.\n- Hunyuan-MT-Chimera-7B integrates multiple outputs from Hunyuan-MT-7B to improve translation quality.\n- Both models outperform existing translation models of comparable size and many state-of-the-art large models, particularly in translating between Mandarin and minority languages.\n- The training process incorporates supervised fine-tuning, reinforcement learning, and weak-to-strong reinforcement learning.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [
+            "https://github.com/Tencent-Hunyuan/Hunyuan-MT"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/tencent/Hunyuan-MT-7B",
+            "https://huggingface.co/tencent/Hunyuan-MT-Chimera-7B"
+        ],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "<think> So let's replace this phrase with insult... </think> Lessons\n  learned from generation of toxic texts with LLMs",
+        "authors": "Alexander Panchenko, Daniil Moskovskiy, Sergey Pletenev",
+        "link": "https://arxiv.org/abs/2509.08358",
+        "github_repo": null,
+        "summary": "- This paper investigates the use of large language models (LLMs) to generate synthetic toxic data for training text detoxification models.\n- Experiments using Llama 3 and Qwen activation-patched models show that models trained on synthetic data perform worse than those trained on human-annotated data, with up to a 30% drop in performance.\n- The key limitation identified is the lack of lexical diversity in LLM-generated toxic text, which uses repetitive vocabulary compared to the nuanced language of human-generated toxic data.\n- These results highlight the current limitations of LLMs in generating diverse and nuanced toxic text for training detoxification models.\n- The paper emphasizes the continued importance of using human-annotated data for building robust and effective detoxification systems.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/AlexRey/Lessons-from-Generating-Toxic-Texts"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "EnvX: Agentize Everything with Agentic AI",
+        "authors": "Wenzheng Tom Tang, Yikun Wang, Yingxuan Yang, Zimian Peng, Linyao Chen",
+        "link": "https://arxiv.org/abs/2509.08088",
+        "github_repo": null,
+        "summary": "- EnvX is a novel framework that leverages Agentic AI to transform GitHub repositories into intelligent agents capable of natural language interaction and inter-agent collaboration.\n- Unlike existing approaches that treat repositories as static code resources, EnvX reimagines them as active agents through a three-phase process: TODO-guided environment initialization, human-aligned agentic automation, and Agent-to-Agent (A2A) protocol.\n- EnvX achieves a 74.07% execution completion rate and 51.85% task pass rate on the GitTaskBench benchmark, outperforming existing frameworks.\n- Case studies demonstrate EnvX's ability to enable multi-repository collaboration via the A2A protocol.\n- This work marks a shift from treating repositories as passive code resources to intelligent, interactive agents, fostering greater accessibility and collaboration within the open-source ecosystem.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-11"
+    },
+    {
+        "title": "HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI\n  Assistants",
+        "authors": "Jacy Reese Anthis, Jacob Haimes, Daniel Samuelson, Benjamin Sturgeon",
+        "link": "https://arxiv.org/abs/2509.08494",
+        "github_repo": null,
+        "summary": " - This paper introduces HUMANAGENCYBENCH (HAB), a novel benchmark for evaluating human agency support in AI assistants.\n - HAB is scalable and adaptive, using large language models (LLMs) to simulate user queries and evaluate AI responses across six dimensions of human agency.\n - The six dimensions measure AI's tendency to ask clarifying questions, avoid value manipulation, correct misinformation, defer important decisions, encourage learning, and maintain social boundaries.\n - HAB reveals low-to-moderate agency support in contemporary LLMs, with substantial variation across developers and dimensions.\n - The authors encourage future research and the development of more robust safety and alignment targets for LLMs.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/BenSturgeon/HumanAgencyBench/"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-09-11"
+    }
+]

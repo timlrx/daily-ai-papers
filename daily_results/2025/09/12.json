@@ -1,0 +1,272 @@
+[
+    {
+        "title": "HuMo: Human-Centric Video Generation via Collaborative Multi-Modal\n  Conditioning",
+        "authors": "Zhuowei Chen, Bingchuan Li, Jiawei Liu, Tianxiang Ma, Liyang Chen",
+        "link": "https://arxiv.org/abs/2509.08519",
+        "github_repo": null,
+        "summary": "- HuMo is a novel unified framework for collaborative multimodal-conditioned Human-Centric Video Generation (HCVG).\n- It addresses the challenges of data scarcity and the difficulty of coordinating heterogeneous modalities by proposing a two-stage progressive multimodal training paradigm and a time-adaptive Classifier-Free Guidance strategy.\n- HuMo achieves state-of-the-art performance in sub-tasks, such as subject preservation and audio-visual synchronization.\n- The model utilizes a minimal-invasive image injection strategy for subject preservation and a focus-by-predicting strategy for audio-visual synchronization.\n- Extensive experiments demonstrate that HuMo surpasses specialized state-of-the-art methods in sub-tasks, establishing a unified framework for collaborative multimodal-conditioned HCVG.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://phantom-video.github.io/HuMo"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning",
+        "authors": "Zhaohui Yang, Yuhao Zhang, Jiale Yu, Yuxin Zuo, Haozhan Li",
+        "link": "https://arxiv.org/abs/2509.09674",
+        "github_repo": "https://github.com/PRIME-RL/SimpleVLA-RL",
+        "summary": "- This paper introduces SimpleVLA-RL, a novel reinforcement learning framework designed to improve Vision-Language-Action (VLA) model training.\n- SimpleVLA-RL builds upon the veRL framework, incorporating VLA-specific trajectory sampling, scalable parallelization, and optimized loss computation to enhance efficiency.\n- The model achieves state-of-the-art performance on multiple benchmarks (LIBERO and RoboTwin), surpassing existing methods by a significant margin (10-15%).\n- SimpleVLA-RL demonstrates notable improvements in data efficiency and generalization, outperforming supervised fine-tuning (SFT) in real-world tasks.\n- A novel phenomenon called \"pushcut\" is observed during training, wherein the policy discovers unseen patterns beyond those in the training data.",
+        "classification": [
+            "Robotics",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/PRIME-RL/SimpleVLA-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "EchoX: Towards Mitigating Acoustic-Semantic Gap via Echo Training for\n  Speech-to-Speech LLMs",
+        "authors": "Kaiqi Kou, Xiangnan Ma, Zhanchen Dai, Yuhao Du, Yuhao Zhang",
+        "link": "https://arxiv.org/abs/2509.09174",
+        "github_repo": "https://github.com/FreedomIntelligence/EchoX",
+        "summary": "- EchoX is a novel speech-to-speech large language model (SLLM) designed to mitigate the acoustic-semantic gap, a common limitation in existing SLLMs.\n- It leverages semantic representations and dynamically generates speech training targets via an \"echo training\" approach, integrating acoustic and semantic learning.\n- The model architecture comprises three stages: speech-to-text, text-to-codec, and echo training, utilizing a unit language for efficient speech token construction.\n- Experimental results show that EchoX achieves advanced performance on multiple knowledge-based question-answering benchmarks, surpassing existing methods with significantly less training data.\n- The project is available on Github, demonstrating the effectiveness and efficiency of the proposed method.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech",
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [
+            "https://github.com/FreedomIntelligence/EchoX"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Kling-Avatar: Grounding Multimodal Instructions for Cascaded\n  Long-Duration Avatar Animation Synthesis",
+        "authors": "Wentao Hu, Zekun Wang, Wenyuan Zhang, Jiwen Liu, Yikang Ding",
+        "link": "https://arxiv.org/abs/2509.09595",
+        "github_repo": null,
+        "summary": "- Kling-Avatar is a novel cascaded framework that unifies multimodal instruction understanding with photorealistic portrait generation, addressing limitations in narrative coherence and character expressiveness found in existing methods.\n- It uses a two-stage pipeline: a multimodal large language model (MLLM) director produces a blueprint video governing high-level semantics, and a second stage generates sub-clips guided by blueprint keyframes, preserving fine-grained details.\n- Kling-Avatar achieves superior performance against its counterparts OmniHuman-1 and HeyGen across most sub-dimensions (lip synchronization, visual quality, control, identity consistency) according to GSB metrics.\n- The framework enables fast and stable generation of long-duration videos (up to 1080p and 48 fps), suitable for real-world applications like livestreaming and vlogging.\n- A benchmark of 375 curated samples covering diverse instructions and scenarios is constructed to comprehensively evaluate the proposed method.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://klingavatar.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for\n  Long-Horizon LLM Agents",
+        "authors": "Xintao Wang, Yingru Li, Yuqian Fu, Jiacai Liu, Jiawei Wang",
+        "link": "https://arxiv.org/abs/2509.09265",
+        "github_repo": null,
+        "summary": "- The paper introduces Entropy-Modulated Policy Gradients (EMPG), a novel framework to enhance the efficiency and stability of reinforcement learning for long-horizon tasks with Large Language Models (LLMs).\n- EMPG addresses the challenge of sparse rewards by dynamically modulating policy gradients based on step-wise uncertainty, amplifying updates for confident actions and attenuating updates for uncertain ones.\n- The method is theoretically grounded by showing the inherent coupling between gradient magnitude and policy entropy, which leads to inefficient updates for confident correct actions and potential instability for uncertain ones.\n- Through comprehensive experiments on three challenging tasks (WebShop, ALFWorld, and Deep Search), EMPG demonstrates significant performance gains and outperforms strong baselines (GRPO and DAPO).\n- The results show that EMPG improves the stability of training and leads to substantial performance gains on various tasks and model sizes.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://empgseed-seed.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "FLUX-Reason-6M & PRISM-Bench: A Million-Scale Text-to-Image Reasoning\n  Dataset and Comprehensive Benchmark",
+        "authors": "Shuai Bai, Linjiang Huang, Chengqi Duan, Aldrich Yu, Rongyao Fang",
+        "link": "https://arxiv.org/abs/2509.09680",
+        "github_repo": null,
+        "summary": "- This paper introduces FLUX-Reason-6M, a massive dataset containing 6 million high-quality images and 20 million bilingual descriptions, designed to advance text-to-image reasoning capabilities.\n- It also presents PRISM-Bench, a novel evaluation benchmark featuring seven distinct tracks, including a challenging long text track, to assess different aspects of image generation capabilities.\n- The dataset is meticulously designed around six key characteristics: Imagination, Entity, Text rendering, Style, Affection, and Composition, with explicit Generation Chain-of-Thought (GCoT) for detailed breakdowns.\n- Evaluation of 19 state-of-the-art models reveals significant performance gaps, particularly in long text and text rendering, highlighting the need for datasets like FLUX-Reason-6M.\n- The authors publicly release the dataset, benchmark, and evaluation code to catalyze further research in reasoning-oriented text-to-image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/rongyaofang/prism-bench"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M"
+        ],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action\n  Model",
+        "authors": "Zirui Ge, Can Cui, Lingxiao Li, Pengxiang Ding, Yihao Wang",
+        "link": "https://arxiv.org/abs/2509.09372",
+        "github_repo": null,
+        "summary": "This paper introduces VLA-Adapter, a novel paradigm for efficiently bridging vision-language representations to action spaces in vision-language-action (VLA) models.  The model utilizes a lightweight Policy module with Bridge Attention, reducing reliance on large-scale VLMs and extensive pre-training.  Experiments on simulated and real-world robotic benchmarks demonstrate state-of-the-art performance, fast inference speed, and significantly reduced training time (8 hours on a single consumer-grade GPU).  VLA-Adapter achieves this by systematically analyzing the effectiveness of various VL conditions to autonomously inject the optimal condition into the action space.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://vla-adapter.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Can Understanding and Generation Truly Benefit Together -- or Just\n  Coexist?",
+        "authors": "Hui Han, Junyan Ye, Zongjian Li, Kaiqing Lin, Zhiyuan Yan",
+        "link": "https://arxiv.org/abs/2509.09666",
+        "github_repo": null,
+        "summary": "- This paper introduces UAE, a novel framework for unified multimodal learning that uses an auto-encoder approach to unify image understanding and generation. \n- The model uses reconstruction fidelity as a unified training objective, enforcing coherent bidirectional information flow between encoding and decoding processes. \n- The UAE architecture consists of an encoder (I2T) that compresses images into text and a decoder (T2I) that reconstructs images from text.  \n- Unified-GRPO, a reinforcement learning approach, is proposed to maximize a unified score and drive the co-evolution of the encoder and decoder. \n- Experiments on Unified-Bench, a new benchmark tailored to assess the degree of unification of UMMs, show that UAE outperforms existing models, demonstrating compelling evidence for genuine multimodal unification and intelligence.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Text Generation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/PKU-YuanGroup/UAE"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "SpatialVID: A Large-Scale Video Dataset with Spatial Annotations",
+        "authors": "Jian Gao, Youtian Lin, Rujie Zheng, Yufeng Yuan, Jiahao Wang",
+        "link": "https://arxiv.org/abs/2509.09676",
+        "github_repo": null,
+        "summary": "- This paper introduces SpatialVID, a large-scale video dataset containing 7,089 hours of real-world dynamic scenes with comprehensive spatial annotations.- SpatialVID provides various annotations such as camera poses, depth maps, dynamic masks, structured captions, and serialized motion instructions, surpassing existing datasets in scale and richness.- The dataset's curation involves a hierarchical filtering pipeline and a dual annotation pipeline which ensures high-quality clips with detailed spatial and semantic information.- Evaluation metrics show that SpatialVID significantly outperforms existing datasets in terms of diversity and annotation richness, fostering improved model generalization and performance.- SpatialVID's richness and diversity establish it as a key asset for video and 3D vision research, facilitating the development of more advanced models in spatial intelligence.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Visual Programmability: A Guide for Code-as-Thought in Chart\n  Understanding",
+        "authors": "Ethan Chern, Jiadi Su, Fei Zhang, Yan Ma, Bohao Tang",
+        "link": "https://arxiv.org/abs/2509.09286",
+        "github_repo": null,
+        "summary": "- This paper introduces Visual Programmability, a novel concept that determines whether a chart question pair is best addressed using code-based reasoning or direct visual analysis.\n- An adaptive framework is proposed that uses reinforcement learning to dynamically select between code-based reasoning and direct visual analysis.\n- The model is trained using a dual-reward system that combines data accuracy and decision rewards, preventing mode collapse.\n- Experiments demonstrate superior performance across diverse benchmarks, showcasing the model's ability to dynamically select the most effective reasoning strategy.\n- Ablation studies verify the importance of the dual reward mechanism and visual programmability in achieving improved performance and generalization.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Aphelios-Tang/Code-as-Thought"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust\n  Text-based Person Retrieval",
+        "authors": "Kaicheng Yang, Ziyong Feng, Xiang An, Yifan Zhang, Tianlu Zheng",
+        "link": "https://arxiv.org/abs/2509.09118",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel large-scale dataset called WebPerson, containing 5 million high-quality person-centric image-text pairs, which addresses the data scarcity issue in text-based person retrieval.\n- A new model architecture named GA-DMS (Gradient-Attention Guided Dual-Masking Synergetic) is proposed, which enhances cross-modal alignment and fine-grained semantic representation learning through dual masking and masked token prediction.\n- The GA-DMS model outperforms state-of-the-art methods on multiple benchmarks for text-based person retrieval, achieving new state-of-the-art performance across multiple benchmarks.\n- The WebPerson dataset is constructed using a novel pipeline that leverages the in-context learning capabilities of large language models (LLMs) to filter and annotate web-sourced images, ensuring high quality and scale.\n- Extensive experiments demonstrate the effectiveness of the proposed GA-DMS framework and WebPerson dataset, showcasing superior performance in text-based person retrieval.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Multimodal-Representation-Learning-MRL/GA-DMS"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Kaichengalex/WebPerson-5M"
+        ],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "2D Gaussian Splatting with Semantic Alignment for Image Inpainting",
+        "authors": "Guangming Lu, Xiaoming Li, Chaofeng Chen, learn12138",
+        "link": "https://arxiv.org/abs/2509.01964",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel image inpainting framework based on 2D Gaussian Splatting (2DGS), which encodes incomplete images into a continuous field of 2D Gaussian splat coefficients and reconstructs the final image via a differentiable rasterization process.\n- A patch-wise rasterization strategy is introduced to improve efficiency and scalability by reducing memory overhead and accelerating inference.\n- DINO features are incorporated to ensure global semantic consistency, demonstrating robustness to small missing regions and effective adaptation to guide semantic alignment in large-mask scenarios.\n- Extensive experiments show that the proposed method achieves competitive performance in both quantitative metrics and perceptual quality on standard benchmarks.\n- The continuous rendering paradigm of 2DGS inherently promotes pixel-level coherence in the inpainted results, leading to superior visual quality compared to existing methods.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/hitlhy715/2DGS-inpaint"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "LoCoBench: A Benchmark for Long-Context Large Language Models in Complex\n  Software Engineering",
+        "authors": "Jianguo Zhang, Rithesh Murthy, Zhiwei Liu, Zuxin Liu, Jielin Qiu",
+        "link": "https://arxiv.org/abs/2509.09614",
+        "github_repo": "https://github.com/SalesforceAIResearch/LoCoBench",
+        "summary": " - LoCoBench is a novel benchmark designed for evaluating the long-context capabilities of large language models (LLMs) in complex software engineering tasks. \n- It offers 8,000 evaluation scenarios spanning 10 programming languages and 36 domains with context lengths ranging from 10K to 1M tokens. \n- LoCoBench introduces 8 new evaluation metrics for assessing long-context capabilities, including architectural understanding, cross-file refactoring, and multi-session development. \n- Evaluation of state-of-the-art models reveals significant performance gaps, highlighting the challenges of long-context understanding in complex software engineering tasks. \n- The benchmark is publicly available on GitHub, providing a valuable resource for the community.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/SalesforceAIResearch/LoCoBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "OmniEVA: Embodied Versatile Planner via Task-Adaptive 3D-Grounded and\n  Embodiment-aware Reasoning",
+        "authors": "Yuzheng Zhuang, Zhanguang Zhang, Shiguang Wu, Dafeng Chi, Yuecheng Liu",
+        "link": "https://arxiv.org/abs/2509.09332",
+        "github_repo": null,
+        "summary": " - OmniEVA is a novel embodied versatile planner that uses task-adaptive 3D grounding and embodiment-aware reasoning to achieve state-of-the-art performance on various embodied reasoning benchmarks.\n - It incorporates a gated routing mechanism that dynamically modulates the infusion of 3D features based on task requirements, improving adaptability across tasks with diverse spatial demands.\n - OmniEVA also addresses the embodiment constraint gap by jointly incorporating task goals and embodiment constraints into the reasoning loop, resulting in executable plans.\n - Extensive experiments demonstrate OmniEVA's strong ability across a wide range of downstream scenarios, including both primitive and composite tasks, confirming its robustness and versatility.\n - The model achieves state-of-the-art results on 7 out of 8 benchmarks, outperforming previous methods and showcasing its ability to handle both 2D and 3D spatial reasoning tasks.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "The Choice of Divergence: A Neglected Key to Mitigating Diversity\n  Collapse in Reinforcement Learning with Verifiable Reward",
+        "authors": "Xiaoyu Tan, Zhijian Zhou, Jason Klein Liu, Jiaran Hao, Long Li",
+        "link": "https://arxiv.org/abs/2509.07430",
+        "github_repo": null,
+        "summary": "- This paper introduces Diversity-Preserving Hybrid RL (DPH-RL), a novel framework that addresses the diversity collapse issue in Reinforcement Learning with Verifiable Rewards (RLVR).\n- DPH-RL uses mass-covering f-divergences (like forward-KL and JS-divergence) as a \"rehearsal mechanism\" to maintain broad solution coverage by continuously referencing the initial policy.\n- Extensive experiments on math and SQL generation demonstrate that DPH-RL improves both single-attempt (Pass@1) and multi-attempt (Pass@k) performance, in-domain and out-of-domain.\n- DPH-RL is more training-efficient than existing methods because it computes f-divergence using generator functions, requiring only sampling from the initial policy and no online reference model.\n- The paper highlights the crucial role of divergence term selection in RLVR, showing that proper selection is a powerful tool for building more general and diverse reasoning models.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/seamoke/DPH-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Modality Alignment with Multi-scale Bilateral Attention for Multimodal\n  Recommendation",
+        "authors": "Dong-Ho Lee, Chan-Yang Ju, renkelin",
+        "link": "https://arxiv.org/abs/2509.09114",
+        "github_repo": "https://github.com/rkl71/MambaRec",
+        "summary": "- The paper introduces MambaRec, a novel framework for multimodal recommendation that integrates local feature alignment and global distribution regularization via attention-guided learning.\n- MambaRec uses a Dilated Refinement Attention Module (DREAM) to align fine-grained semantic patterns between visual and textual modalities by employing multi-scale dilated convolutions with channel-wise and spatial attention.\n- The model uses Maximum Mean Discrepancy (MMD) and contrastive loss functions to constrain global modality alignment, enhancing semantic consistency and reducing mode-specific deviations.\n- Experiments on real-world e-commerce datasets demonstrate that MambaRec outperforms existing methods in fusion quality, generalization, and efficiency.\n- The code for MambaRec is publicly available on GitHub.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/rkl71/MambaRec"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-12"
+    },
+    {
+        "title": "Reasoning Introduces New Poisoning Attacks Yet Makes Them More\n  Complicated",
+        "authors": "Jamie Hayes, Harsh Chaudhari, Yiren Zhao, Ilia Shumailov, Hanna Foerster",
+        "link": "https://arxiv.org/abs/2509.05739",
+        "github_repo": null,
+        "summary": "This paper introduces a novel data poisoning attack against large language models (LLMs) that leverages the intermediate chain-of-thought (CoT) reasoning process.  The attack, termed \"decomposed reasoning poison,\" modifies only the reasoning path, leaving the prompts and final answers unchanged, which makes it more stealthy than previous approaches.  However, the authors find that reliably activating these decomposed poisons is surprisingly difficult due to the model's self-correction capabilities and the inherent unfaithfulness of CoT generation.  The emergent robustness of LLMs to these attacks highlights the complexity introduced by reasoning capabilities. The study's results suggest that enhancing the model's reasoning robustness inadvertently improves its resistance to this type of poisoning attack.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-09-12"
+    }
+]

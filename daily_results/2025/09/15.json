@@ -1,0 +1,187 @@
+[
+    {
+        "title": "IntrEx: A Dataset for Modeling Engagement in Educational Conversations",
+        "authors": "Gabriele Pergola, Chiara Gambi, Mahathi Parvatham, XingweiT",
+        "link": "https://arxiv.org/abs/2509.06652",
+        "github_repo": null,
+        "summary": "- This paper introduces IntrEx, the first large-scale dataset annotated for interestingness and expected interestingness in teacher-student interactions, built upon the Teacher-Student Chatroom Corpus (TSCC).\n- IntrEx incorporates sequence-level annotations, enabling the study of engagement beyond isolated turns and capturing how interest evolves over dialogues.\n- The dataset employs a rigorous annotation process with over 100 second-language learners and utilizes a comparison-based rating approach, improving inter-annotator agreement.\n- Experiments show that LLMs fine-tuned on IntrEx outperform larger proprietary models in predicting human interestingness judgments.\n- Finally, the paper analyzes linguistic and cognitive factors such as concreteness, comprehensibility, and uptake to determine their influence on engagement in educational dialogues.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/collections/XingweiT/intrex-68a8f2c97688157066860ae2"
+        ],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "The Illusion of Diminishing Returns: Measuring Long Horizon Execution in\n  LLMs",
+        "authors": "Jonas Geiping, Steffen Staab, Shashwat Goel, arvindh75, viciousa3gis",
+        "link": "https://arxiv.org/abs/2509.09677",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel methodology for evaluating the long-horizon execution capabilities of Large Language Models (LLMs).\n- The authors demonstrate that even with perfect single-step accuracy, LLMs struggle with long sequences of steps due to a self-conditioning effect; models make more mistakes when their context contains past errors. \n- They find that increasing model size non-diminishingly improves the number of steps LLMs can execute but does not mitigate the self-conditioning effect.\n- Interestingly, incorporating \"thinking\" mechanisms, such as chain-of-thought prompting, significantly improves performance on long-horizon tasks. \n- The study provides benchmarks of several leading LLMs on the number of steps they can execute in a single turn, highlighting the benefits of scaling model size and test-time compute.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "X-Part: high fidelity and structure coherent shape decomposition",
+        "authors": "Yunhan Yang, Changfeng Ma, Yang Li, Jiachen Xu, HowieYan",
+        "link": "https://arxiv.org/abs/2509.08643",
+        "github_repo": null,
+        "summary": "- This paper introduces X-Part, a novel diffusion-based framework for decomposing holistic 3D objects into semantically meaningful and structurally coherent parts.\n- The model leverages bounding boxes as prompts and incorporates point-wise semantic features to guide the decomposition process, resulting in improved controllability and fidelity compared to existing methods.\n- X-Part utilizes a synchronized multi-part diffusion process to generate latent tokens for all parts simultaneously, enhancing the coherence of the generated parts.\n- Experimental results demonstrate that X-Part achieves state-of-the-art performance on part-level shape generation, surpassing existing methods in terms of geometric fidelity and semantic coherence.\n- The framework integrates an editable pipeline for interactive part generation, enabling users to refine and adjust the decomposition further through bounding box manipulation.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "InfGen: A Resolution-Agnostic Paradigm for Scalable Image Synthesis",
+        "authors": "Song Guo, Xiaoyu Yue, Junchao Gong, Wanghan Xu, Tao Han",
+        "link": "https://arxiv.org/abs/2509.10441",
+        "github_repo": null,
+        "summary": "- This paper introduces InfGen, a novel resolution-agnostic paradigm for scalable image synthesis that replaces the VAE decoder in existing diffusion models with a lightweight generator.\n- InfGen generates images at arbitrary resolutions from a fixed-size latent without retraining the diffusion models, significantly reducing computational complexity.\n- Experiments show that InfGen improves the generation speed and quality of various diffusion models across different resolutions, cutting 4K image generation time to under 10 seconds.\n- The model architecture consists of a transformer-based latent generator that maps the fixed-size latent into an output image of any resolution and aspect ratio.\n- An iterative extrapolation scheme allows InfGen to generate images beyond the training resolution, achieving arbitrary ultra-high resolutions without further training.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/taohan10200/InfGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "HANRAG: Heuristic Accurate Noise-resistant Retrieval-Augmented\n  Generation for Multi-hop Question Answering",
+        "authors": "Zhehao Tan, Yihan Jiao, Yue Shen, Dan Yang, Duolin Sun",
+        "link": "https://arxiv.org/abs/2509.09713",
+        "github_repo": null,
+        "summary": "- This paper introduces HANRAG, a novel heuristic-based framework for multi-hop question answering that addresses challenges like excessive iterative retrieval and noise accumulation.\n- HANRAG uses a \"Revelator\" agent to route queries, decompose them into sub-queries, and filter noise from retrieved documents, improving adaptability and noise resistance.\n- The framework incorporates a noise-resistant one-step retrieval method called ANRAG.\n- Experimental results on various benchmarks demonstrate HANRAG's superior performance in single-hop and multi-hop question answering tasks compared to other leading methods.\n- The results show improvements in both effectiveness (EM, F1, Accuracy) and efficiency (number of retrieval steps) across multiple datasets.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "VStyle: A Benchmark for Voice Style Adaptation with Spoken Instructions",
+        "authors": "Dong Zhang, Chen Wang, Yuxuan Xie, Mingyang Han, Jun Zhan",
+        "link": "https://arxiv.org/abs/2509.09716",
+        "github_repo": null,
+        "summary": "- This paper introduces VStyle, a new benchmark dataset for evaluating voice style adaptation (VSA) in spoken language models (SLMs).\n- VStyle is a bilingual (Chinese and English) benchmark covering four categories of speech generation tasks: acoustic attributes, natural language instructions, role play, and implicit empathy.\n- The paper also introduces a novel evaluation framework called LALM-as-a-Judge, which uses large audio language models to automatically assess the generated speech outputs.\n- Experiments on commercial and open-source SLMs demonstrate the challenges of controllable style adaptation and highlight the novelty of this task.\n- The VStyle dataset and evaluation toolkit are publicly available to facilitate future research in human-centered spoken interaction.",
+        "classification": [
+            "Audio",
+            "Text-to-Speech"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "FLOWER: Democratizing Generalist Robot Policies with Efficient\n  Vision-Language-Action Flow Policies",
+        "authors": "Fabian Otto, \u00d6mer Erdin\u00e7 Ya\u011fmurlu, Marcel R\u00fchle, Hongyi Zhou, Moritz Reuss",
+        "link": "https://arxiv.org/abs/2509.04996",
+        "github_repo": null,
+        "summary": " - This paper introduces FLOWER, a novel 950M parameter Vision-Language-Action (VLA) model for generalist robotic manipulation.\n- FLOWER uses an intermediate-modality fusion strategy, pruning up to 50% of Large Language Model (LLM) layers and employing action-specific Global-AdaLN conditioning to reduce parameters by 20%.\n-  Pretrained on 200 H100 GPU hours, FLOWER achieves competitive performance with larger VLAs across 190 tasks spanning ten simulation and real-world benchmarks.\n- The model achieves a new state-of-the-art (SOTA) of 4.53 on the CALVIN ABC benchmark.\n- FLOWER demonstrates robustness across diverse robotic embodiments and is computationally efficient for real-time deployment.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://intuitive-robots.github.io/flower_vla/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "Inpainting-Guided Policy Optimization for Diffusion Large Language\n  Models",
+        "authors": "Chenyu Wang, Miao Liu, Jing Huang, Mengchen Liu, Siyan Zhao",
+        "link": "https://arxiv.org/abs/2509.10396",
+        "github_repo": null,
+        "summary": "- This paper introduces IGPO (Inpainting-Guided Policy Optimization), a novel reinforcement learning framework that leverages the inpainting capabilities of masked diffusion large language models (dLLMs) to improve exploration efficiency.\n- IGPO strategically inserts partial ground-truth reasoning traces during online sampling, guiding exploration towards promising trajectory spaces while preserving self-generated reasoning.\n- The method is particularly effective for group-based optimization techniques like GRPO, where exploration failures can lead to zero gradients. IGPO restores meaningful gradients by reducing all-wrong groups.\n- The paper also proposes a Length-Aligned supervised fine-tuning strategy for dLLMs using concise reasoning traces to better align with dLLM generation patterns and improve sample efficiency.\n- Experiments on three mathematical benchmarks (GSM8K, Math500, and AMC) demonstrate that IGPO achieves new state-of-the-art results for full-attention masked dLLMs.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "Virtual Agent Economies",
+        "authors": "William A. Cunningham, Julian Jacobs, Joel Z. Leibo, Matija Franklin, Nenad Tomasev",
+        "link": "https://arxiv.org/abs/2509.10147",
+        "github_repo": null,
+        "summary": " - This research paper proposes the concept of a 'sandbox economy' for analyzing the emergent economic layer where autonomous AI agents transact and coordinate. \n- The framework characterizes this system along two dimensions: origins (emergent vs. intentional) and its separateness from the established human economy (permeable vs. impermeable).\n- The authors discuss design choices for safely steerable AI agent markets, including auction mechanisms for fair resource allocation, the design of AI mission economies, and socio-technical infrastructure for ensuring trust and accountability. \n- They investigate the potential of market-based mechanisms for resolving conflicts among agents, using AI-driven auctions to coordinate resource allocation, and examine the use of AI mission economies.\n- The paper explores the potential for establishing steerable agent markets, arguing for proactive design to ensure that technological shift aligns with humanity\u2019s long-term collective flourishing.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Natural Language Processing",
+            "Other"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "QuantAgent: Price-Driven Multi-Agent LLMs for High-Frequency Trading",
+        "authors": "Chenyu You, Siqi Sun, Aosong Feng, Xiang Zhang, Fei Xiong",
+        "link": "https://arxiv.org/abs/2509.09995",
+        "github_repo": null,
+        "summary": "- QuantAgent is a novel multi-agent large language model (LLM) framework specifically designed for high-frequency algorithmic trading.\n- The model decomposes trading into four specialized agents (Indicator, Pattern, Trend, and Risk), each equipped with domain-specific tools and structured reasoning capabilities to capture distinct aspects of market dynamics.\n- In zero-shot evaluations across various financial instruments, QuantAgent outperforms strong neural and rule-based baselines in terms of predictive accuracy and cumulative return.\n- The framework integrates classical technical analysis with prompt-structured LLM reasoning, facilitating modular and interpretable financial intelligence.\n- QuantAgent offers a browser-based interface that enables users to visualize market dynamics and interact with LLM-generated analyses, emphasizing transparency and interpretability.",
+        "classification": [
+            "Time Series Forecasting",
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/Y-Research-SBU/QuantAgent"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "MCP-AgentBench: Evaluating Real-World Language Agent Performance with\n  MCP-Mediated Tools",
+        "authors": "Xiaorui Wang, Wentao Hong, Chiwei Zhu, Benfeng Xu, Zikang Guo",
+        "link": "https://arxiv.org/abs/2509.09734",
+        "github_repo": null,
+        "summary": "- MCP-AgentBench, a comprehensive benchmark for evaluating real-world language agent performance with MCP-mediated tools, is introduced.\n- The benchmark includes a robust MCP testbed with 33 operational servers and 188 distinct tools, along with 600 systematically designed queries across 6 categories.\n- MCP-Eval, a novel outcome-oriented evaluation methodology that prioritizes real-world task success, is presented.\n- Extensive empirical evaluations of leading language agents provide foundational insights into current capabilities and challenges.\n- The benchmark aims to equip the research community with a standardized and reliable framework to advance agents capable of fully leveraging MCP's benefits.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "LoFT: Parameter-Efficient Fine-Tuning for Long-tailed Semi-Supervised\n  Learning in Open-World Scenarios",
+        "authors": "Bing Su, Yurou Liu, Zhiyuan Huang, Jiahao Chen",
+        "link": "https://arxiv.org/abs/2509.09926",
+        "github_repo": null,
+        "summary": "- This paper introduces LoFT, a novel parameter-efficient fine-tuning framework for long-tailed semi-supervised learning (LTSSL) that leverages transformer-based foundation models.\n- LoFT addresses the challenges of overconfidence and low-quality pseudo-labels in existing LTSSL methods by utilizing a fine-tuned foundation model to generate more reliable pseudo-labels.\n- The framework is extended to handle open-world scenarios (LoFT-OW) by incorporating an OOD detection mechanism to filter out irrelevant samples from the unlabeled data.\n- Experimental results on multiple benchmarks demonstrate that LoFT achieves superior performance compared to previous approaches, even with only 1% of the unlabeled data used by previous work.\n- LoFT-OW shows improved performance on open-world scenarios by effectively mitigating the negative impact of out-of-distribution (OOD) samples.",
+        "classification": [
+            "Image Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-15"
+    },
+    {
+        "title": "CMHG: A Dataset and Benchmark for Headline Generation of Minority\n  Languages in China",
+        "authors": "XU Han, Jianing Liu, Ziyin Zhang, Zeli Su, Guixian Xu",
+        "link": "https://arxiv.org/abs/2509.09990",
+        "github_repo": null,
+        "summary": "- This paper introduces CMHG, a new dataset for headline generation in three minority Chinese languages: Tibetan, Uyghur, and Mongolian.\n- CMHG contains 100,000 Tibetan entries and 50,000 entries each for Uyghur and Mongolian, specifically curated for headline generation.\n- A high-quality test set, annotated by native speakers, is included to serve as a benchmark for future research.\n- The dataset addresses the scarcity of resources for headline generation in minority languages, promoting research and development in this area.\n- The paper contributes to advancing natural language processing research on underrepresented languages.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/KEVVVV/CMHG"
+        ],
+        "date": "2025-09-15"
+    }
+]

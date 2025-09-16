@@ -1,0 +1,214 @@
+[
+    {
+        "title": "OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling",
+        "authors": "Yang Zhou, MingyuLiu, Xxxy13, lizizun, ZhouTimeMachine",
+        "link": "https://arxiv.org/abs/2509.12201",
+        "github_repo": null,
+        "summary": "- This paper introduces OmniWorld, a large-scale, multi-domain, and multi-modal dataset designed for 4D world modeling. \n- The dataset surpasses existing public synthetic datasets in both modal diversity and data scale. \n- The paper proposes a new benchmark for 3D geometric foundation models and camera control video generation, revealing limitations in current state-of-the-art (SOTA) approaches. \n- Fine-tuning existing SOTA methods on OmniWorld leads to significant performance gains across 4D reconstruction and video generation tasks, strongly validating OmniWorld's value as a training resource. \n- The dataset includes over 96K video clips and more than 18M frames with multiple modalities.",
+        "classification": [
+            "Multimodal",
+            "Computer Vision",
+            "Depth Estimation",
+            "Image-to-Video",
+            "Video Classification",
+            "Text-to-Video",
+            "Mask Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "UI-S1: Advancing GUI Automation via Semi-online Reinforcement Learning",
+        "authors": "Yongliang Shen, Fei Tang, xhyandwyy, Mizukiluke, LZXzju",
+        "link": "https://arxiv.org/abs/2509.11543",
+        "github_repo": "https://github.com/X-PLUG/MobileAgent/tree/main/UI-S1",
+        "summary": "- This paper introduces Semi-online Reinforcement Learning (Semi-online RL), a novel paradigm that simulates online RL on offline trajectories to advance GUI automation.\n- The core of Semi-online RL is a Patch Module that recovers the divergence between rollout and expert trajectories during the rollout process.\n- To capture long-term training signals, Semi-online RL incorporates discounted future returns into the reward computation and optimizes the policy with weighted step-level and episode-level advantages.\n- The proposed UI-S1-7B model achieves state-of-the-art performance among 7B models across four dynamic benchmarks, significantly outperforming existing methods.\n- Experiments demonstrate that Semi-online RL bridges the gap between offline training efficiency and online multi-turn reasoning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/X-PLUG/MobileAgent/tree/main/UI-S1"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "InternScenes: A Large-scale Simulatable Indoor Scene Dataset with\n  Realistic Layouts",
+        "authors": "Wenzhe Cai, Li Luo, Yichen Jin, Peizhou Cao, Weipeng Zhong",
+        "link": "https://arxiv.org/abs/2509.10813",
+        "github_repo": null,
+        "summary": "- InternScenes, a novel large-scale indoor scene dataset, is introduced, comprising approximately 40,000 diverse scenes with realistic layouts.\n- The dataset integrates three disparate sources: real-world scans, procedurally generated scenes, and designer-created scenes, containing 1.96M 3D objects across 288 object classes.\n- InternScenes addresses limitations of existing datasets in data scale, diversity, sanitized layouts, and object collisions by preserving massive small items and resolving collisions through physical simulations.\n- Two benchmark applications, scene layout generation and point-goal navigation, demonstrate the challenges posed by the complex layouts and the dataset's potential for scaling up model training.\n- The dataset, models, and benchmarks are committed to being open-sourced.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "LazyDrag: Enabling Stable Drag-Based Editing on Multi-Modal Diffusion\n  Transformers via Explicit Correspondence",
+        "authors": "Lionel M. Ni, Xianfang Zeng, Xili Dai, Zixin Yin, dorni",
+        "link": "https://arxiv.org/abs/2509.12203",
+        "github_repo": null,
+        "summary": "- LazyDrag is a novel training-free method for drag-based image editing that utilizes multi-modal diffusion transformers.\n- It addresses the instability of existing drag-based editing methods by employing an explicit correspondence map to guide the attention mechanism during the generation process.\n- This explicit correspondence map eliminates the need for test-time optimization, leading to stable and high-fidelity edits under full-strength inversion.\n- LazyDrag achieves state-of-the-art performance on the DragBench benchmark, outperforming existing methods in terms of accuracy, perceptual quality, and overall effectiveness.\n- The method supports natural inpainting, precise geometric control, and effective text guidance, enabling complex image manipulations previously out of reach.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "Locality in Image Diffusion Models Emerges from Data Statistics",
+        "authors": "Vincent Sitzmann, Justin Solomon, Chenyang Yuan, Artem Lukoianov",
+        "link": "https://arxiv.org/abs/2509.09672",
+        "github_repo": null,
+        "summary": "- This paper introduces an analytical model for image diffusion that outperforms existing methods by accurately predicting images generated by deep diffusion models.\n- The model leverages the statistical properties of the image dataset, specifically pixel correlations, to predict image generations, rather than relying on inductive biases of convolutional neural networks.\n- The authors demonstrate that the locality observed in deep diffusion models emerges from data statistics and not architectural constraints.\n- An optimal parametric linear denoiser is shown to exhibit similar locality properties to deep neural denoisers, confirming the dataset's role in determining locality.\n- Experiments across multiple datasets demonstrate that this analytical model yields better performance than the prior expert-crafted alternatives.",
+        "classification": [
+            "Image-to-Image",
+            "Unconditional Image Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "Measuring Epistemic Humility in Multimodal Large Language Models",
+        "authors": "Kaiyang Zhou, Sifeng Shang, Bingkui Tong, JiaerX",
+        "link": "https://arxiv.org/abs/2509.09658",
+        "github_repo": "https://github.com/maifoundations/HumbleBench",
+        "summary": "- This paper introduces HumbleBench, a new benchmark for evaluating multimodal large language models (MLLMs).\n- HumbleBench focuses on measuring epistemic humility, which is the ability of a model to recognize when it does not know the answer and to abstain from generating incorrect answers.\n- The benchmark is built from a panoptic scene graph dataset and consists of 22,831 multiple-choice questions, each with a \"None of the above\" option.\n- Evaluation of various state-of-the-art MLLMs on HumbleBench reveals that even the best-performing models struggle to accurately reject incorrect options, highlighting a key area for improvement in MLLM development.\n- The authors also share findings and insights about the challenges of achieving epistemic humility in MLLMs, and they encourage future research into the development of more reliable and trustworthy MLLMs.",
+        "classification": [
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/maifoundations/HumbleBench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "Lost in Embeddings: Information Loss in Vision-Language Models",
+        "authors": "Ivan Vuli\u0107, Caiqi Zhang, Chengzu Li, Raphael Tang, lyan62",
+        "link": "https://arxiv.org/abs/2509.11986",
+        "github_repo": null,
+        "summary": "- This paper introduces two novel methods to quantify information loss in vision-language model (VLM) connectors: k-nearest neighbors overlap ratio and patch-level embedding reconstruction.\n- The k-nearest neighbors overlap ratio measures how well the local geometry of visual representations is preserved before and after projection through the connector, while patch-level embedding reconstruction allows for the localization of information loss at the image patch level.\n- Experiments across six datasets reveal that connectors substantially distort the local geometry of visual representations and cause significant information loss, which correlates with performance degradation on downstream tasks.\n- The patch-level analysis provides insights into model behavior by identifying areas of high information loss that reliably predict instances where models struggle.\n- The authors suggest that future work could explore designing dynamic projection layers or better visual feature selection mechanisms for modality fusion.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/lyan62/vlm-info-loss"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "CognitiveSky: Scalable Sentiment and Narrative Analysis for\n  Decentralized Social Media",
+        "authors": "Subasish Das, Anandi Dutta, gauravfs-14",
+        "link": "https://arxiv.org/abs/2509.11444",
+        "github_repo": null,
+        "summary": "- CognitiveSky is an open-source, scalable framework designed for real-time sentiment, emotion, and narrative analysis of decentralized social media platforms, specifically Bluesky.\n- It leverages transformer-based models (ROBERTa and DistilRoBERTa) to annotate user-generated content and produces structured JSON summaries, visualized via a dynamic dashboard.\n-  The system is built on free-tier infrastructure (Oracle Cloud Virtual Machine, Supabase, Turso), achieving both low operational cost and high accessibility.\n-  CognitiveSky demonstrates capabilities in detecting evolving patterns in emotion, activity, and conversation topics, shown through a case study on mental health discourse.\n- Its modular design allows for adaptation across various domains including disinformation detection, crisis response, and civic sentiment analysis.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Summarization",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/gauravfs-14/CognitiveSky"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language\n  Models",
+        "authors": "Shuo Ren, Chen Wang, Wei Sun, Junhong Wu, Pu Jian",
+        "link": "https://arxiv.org/abs/2509.12132",
+        "github_repo": null,
+        "summary": "- This paper introduces Reflection-V, a novel visual reasoning model that enhances visual reflection capabilities by leveraging a two-stage training strategy.\n- The first stage involves constructing vision-centered reasoning data using an agent that interacts between Vision-Language Models (VLMs) and Large Language Models (LLMs), enabling cold-start learning of visual reflection patterns.\n- The second stage employs a visual attention-based reward model during reinforcement learning (RL) to encourage reasoning based on visual information.\n- Experiments on multiple visual reasoning benchmarks demonstrate that Reflection-V achieves significant improvements and maintains a stronger, more consistent reliance on visual information during reasoning.\n- The results indicate that Reflection-V effectively enhances visual reflection capabilities compared to existing methods.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/jian0805/Reflection-V"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "EthicsMH: A Pilot Benchmark for Ethical Reasoning in Mental Health AI",
+        "authors": "UVSKKR",
+        "link": "https://arxiv.org/abs/2509.11648",
+        "github_repo": null,
+        "summary": "- This paper introduces EthicsMH, a pilot benchmark dataset designed to evaluate AI systems' ethical reasoning capabilities in mental health contexts.\n- EthicsMH comprises 125 scenarios with structured annotations encompassing multiple decision options, expert-aligned reasoning, expected model behavior, real-world impact, and multi-stakeholder viewpoints.\n- The dataset addresses ethical challenges unique to mental health, such as confidentiality, autonomy, beneficence, and bias, which are often neglected in existing benchmarks.\n- EthicsMH's structured schema allows for a multi-faceted evaluation of AI systems, going beyond simple accuracy assessments to encompass explanation quality and alignment with professional norms.\n- The authors aim for EthicsMH to serve as a seed resource that can be expanded upon through community and expert contributions, fostering the development of more responsible AI systems in mental health.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/EthicsMH"
+        ],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "Learning to Optimize Multi-Objective Alignment Through Dynamic Reward\n  Weighting",
+        "authors": "Changlong Yu, Xin Liu, Shiyang Li, Zilong Wang, ylu610",
+        "link": "https://arxiv.org/abs/2509.11452",
+        "github_repo": null,
+        "summary": "This paper introduces dynamic reward weighting, a novel technique for optimizing multi-objective alignment in large language models (LLMs).  It proposes two methods: hypervolume-guided weight adaptation and gradient-based weight optimization. Extensive experiments demonstrate that these methods consistently outperform static weighting baselines across multiple datasets, model families, and online reinforcement learning algorithms, achieving Pareto dominant solutions with fewer training steps.  The gradient-based method shows superior performance due to its flexibility in adapting weights without explicit human preference specification. This approach directly addresses the limitation of static weighting schemes that fail to capture non-convex Pareto fronts.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/yining610/dynamic-reward-weighting"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/HuggingFaceH4/MATH-500",
+            "https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval",
+            "https://huggingface.co/Qwen/Qwen3-8B",
+            "https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat"
+        ],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "PersonaX: Multimodal Datasets with LLM-Inferred Behavior Traits",
+        "authors": "Zhenhao Chen, Guangyi Chen, Minghao Fu, Wong Yu Kang, Loka Li",
+        "link": "https://arxiv.org/abs/2509.11362",
+        "github_repo": null,
+        "summary": " - This paper introduces PersonaX, a novel multimodal dataset designed for analyzing human behavior traits. \n- PersonaX combines LLM-inferred behavioral traits (Big Five personality dimensions) with visual (facial images) and biographical features.\n- The dataset includes two subsets: CelebPersona (9444 public figures) and AthlePersona (4181 athletes). \n- The paper proposes a two-level analysis framework, including structured statistical analysis and a novel causal representation learning method for uncovering relationships between modalities. \n- Experimental results on synthetic and real-world datasets demonstrate the effectiveness of the proposed approach.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Text2Text Generation",
+            "Natural Language Processing",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "huggingface.co/datasets/Persona-X/celebpersona",
+            "huggingface.co/datasets/Persona-X/athlepersona"
+        ],
+        "date": "2025-09-16"
+    },
+    {
+        "title": "GAPrune: Gradient-Alignment Pruning for Domain-Aware Embeddings",
+        "authors": "Yixuan Tang, yixuantt",
+        "link": "https://arxiv.org/abs/2509.10844",
+        "github_repo": "https://github.com/yixuantt/GAPrune",
+        "summary": "- This paper introduces GAPrune, a novel pruning framework for domain-aware embedding models that prioritizes both domain-specific importance and the preservation of general linguistic capabilities.\n- GAPrune utilizes Fisher Information to assess parameter importance for domain-specific tasks and gradient cosine similarity to evaluate the alignment of parameters across general and domain-specific objectives.\n- The framework incorporates a Domain Alignment Importance (DAI) scoring mechanism to balance these two aspects, enabling principled trade-offs between model compression and domain expertise preservation.\n- Experimental results demonstrate that GAPrune maintains performance within 2.5% of dense models in one-shot pruning at 50% sparsity while outperforming all baselines.\n- After retraining, GAPrune achieves significant performance improvements (+4.51% on FinMTEB and +1.73% on ChemTEB), showcasing that the pruning strategy not only preserves but also enhances domain-specific capabilities.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification",
+            "Sentence Similarity"
+        ],
+        "github_urls": [
+            "https://github.com/yixuantt/GAPrune"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-16"
+    }
+]

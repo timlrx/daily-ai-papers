@@ -1,0 +1,220 @@
+[
+    {
+        "title": "WebWeaver: Structuring Web-Scale Evidence with Dynamic Outlines for\n  Open-Ended Deep Research",
+        "authors": "Houquan Zhou, Shen Huang, Bo Zhang, Xin Guan, Zijian Li",
+        "link": "https://arxiv.org/abs/2509.13312",
+        "github_repo": null,
+        "summary": "WebWeaver is a novel dual-agent framework for open-ended deep research (OEDR) that uses a dynamic research cycle to iteratively interleave evidence acquisition with outline optimization.  The planner dynamically refines the outline using human-like reasoning, and the writer composes the report section-by-section, mitigating long-context issues.  WebWeaver outperforms existing methods on major OEDR benchmarks, including DeepResearch Bench, DeepConsult, and DeepResearchGym.  The model's architecture consists of a planner agent and a writer agent that work together to generate comprehensive, source-grounded reports. A high-quality SFT dataset was created to improve the smaller models' performance.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/DeepResearch"
+        ],
+        "huggingface_urls": [
+            "https://tongyi-agent.github.io/blog"
+        ],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Scaling Agents via Continual Pre-training",
+        "authors": "Chenxi Wang, Zhuo Chen, Guangyu Li, Zhen Zhang, Liangcai Su",
+        "link": "https://arxiv.org/abs/2509.13310",
+        "github_repo": null,
+        "summary": "AgentFounder-30B is a novel deep research agent model that leverages Agentic Continual Pre-training (Agentic CPT).  Agentic CPT addresses the limitations of post-training approaches by incorporating agentic behaviors into the model's foundation.  AgentFounder-30B achieves state-of-the-art performance on 10 benchmark tasks, significantly outperforming existing open-source models and demonstrating comparable results to closed-source models.  The model's strong tool-use abilities and impressive scaling properties highlight the effectiveness of Agentic CPT.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/DeepResearch"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/Qwen/Qwen3-30B-A3B-Base"
+        ],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "WebSailor-V2: Bridging the Chasm to Proprietary Agents via Synthetic\n  Data and Scalable Reinforcement Learning",
+        "authors": "Yida Zhao, Rui Ye, Huifeng Yin, Zhongwang Zhang, Kuan Li",
+        "link": "https://arxiv.org/abs/2509.13305",
+        "github_repo": null,
+        "summary": " - WebSailor-V2 is a novel post-training pipeline for open-source web agents, incorporating data construction, supervised fine-tuning (SFT), and reinforcement learning (RL).\n - It introduces SailorFog-QA-V2, a dataset built from a densely interconnected knowledge graph, designed to foster more sophisticated reasoning.\n - A dual-environment RL framework combines high-fidelity simulation for rapid iteration with a real-world environment for stable policy training.\n - On Qwen3-30B-A3B, WebSailor-V2 achieves state-of-the-art results on BrowseComp-EN, BrowseComp-ZH, and Humanity's Last Exam, even surpassing the 671B DeepSeek-V3.1.\n - The model demonstrates performance comparable to leading proprietary systems.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/DeepResearch"
+        ],
+        "huggingface_urls": [
+            "string"
+        ],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "WebResearcher: Unleashing unbounded reasoning capability in Long-Horizon\n  Agents",
+        "authors": "Wenbiao Yin, Donglei Yu, Xuanzhong Chen, Guoxin Chen, Zile Qiao",
+        "link": "https://arxiv.org/abs/2509.13309",
+        "github_repo": null,
+        "summary": "- This paper introduces WebResearcher, a novel framework for building AI agents capable of autonomous deep research.\n- WebResearcher uses two key components: IterResearch, an iterative deep-research paradigm that reformulates deep research as a Markov Decision Process, and WebFrontier, a scalable data synthesis engine that generates high-quality training data.\n- IterResearch overcomes the context limitations of existing methods by periodically consolidating findings into reports, maintaining focused workspaces, and enabling sustained reasoning.\n- WebFrontier generates training data through tool-augmented complexity escalation, bridging the gap between passive knowledge recall and active knowledge construction.\n- Experiments demonstrate WebResearcher's state-of-the-art performance on several challenging benchmarks, exceeding existing methods including open-source and proprietary systems.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/DeepResearch"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "ReSum: Unlocking Long-Horizon Search Intelligence via Context\n  Summarization",
+        "authors": "Litu Ou, Liwen Zhang, Yida Zhao, Kuan Li, Xixi Wu",
+        "link": "https://arxiv.org/abs/2509.13313",
+        "github_repo": null,
+        "summary": " - This paper introduces ReSum, a novel paradigm for long-horizon web search that uses periodic context summarization to overcome context window limitations of large language models.\n - ReSum converts growing interaction histories into compact reasoning states, maintaining awareness of prior discoveries while bypassing context constraints.\n - ReSum-GRPO, integrating GRPO with segmented trajectory training and advantage broadcasting, is proposed to familiarize agents with summary-conditioned reasoning.\n - Experiments on web agents of varying scales across three benchmarks demonstrate that ReSum delivers an average absolute improvement of 4.5% over ReAct, with further gains of up to 8.2% following ReSum-GRPO training.\n - ReSumTool-30B, a specialized summarization model, is fine-tuned to excel at extracting key clues and evidence from lengthy interactions for web search tasks.",
+        "classification": [
+            "Reinforcement Learning",
+            "Question Answering",
+            "Summarization"
+        ],
+        "github_urls": [
+            "https://github.com/Alibaba-NLP/DeepResearch"
+        ],
+        "huggingface_urls": [
+            "https://tongyi-agent.github.io/blog"
+        ],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Single-stream Policy Optimization",
+        "authors": "Zihan Ding, Zhongwen Xu",
+        "link": "https://arxiv.org/abs/2509.13232",
+        "github_repo": null,
+        "summary": "- This paper introduces Single-stream Policy Optimization (SPO), a novel policy-gradient optimization method for Large Language Models (LLMs) that avoids the inefficiencies of group-based methods like GRPO.\n- SPO uses a persistent, KL-adaptive value tracker instead of per-group baselines, which eliminates issues caused by frequent degenerate groups and synchronization barriers.\n- Experiments on five hard math benchmarks using the Qwen3-8B model show that SPO improves the average maj@32 by +3.4 percentage points over GRPO, with substantial gains on individual datasets.\n- Ablation studies confirm that SPO's gains are due to its principled approach to baseline estimation and advantage normalization.\n- The group-free nature of SPO enables higher throughput and scalability, particularly in long-horizon or tool-integrated settings.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/dingzihan737/SPO_Qwen3-8B_DAPO_16k_Tool"
+        ],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Hunyuan3D Studio: End-to-End AI Pipeline for Game-Ready 3D Asset\n  Generation",
+        "authors": "Lixin Xu, Shuhui Yang, Xinhai Liu, Yang Li, Biwen Lei",
+        "link": "https://arxiv.org/abs/2509.12815",
+        "github_repo": null,
+        "summary": "- This paper introduces Hunyuan3D Studio, an end-to-end AI pipeline for generating game-ready 3D assets from images or text.\n- The pipeline consists of seven core modules: Controllable Image Generation, High-Fidelity Geometry Generation, Part-level 3D Generation, Polygon Generation, Semantic UV Unwrapping, Texture Synthesis and Editing, and Animation.\n- Hunyuan3D Studio integrates several advanced neural modules, including ShapeVAE and DiT for geometry generation, P3-SAM and X-Part for part-level generation and decomposition, and an auto-regressive model for polygon generation.\n- The results demonstrate that the assets generated by Hunyuan3D Studio meet the technical requirements of game engines and exhibit high visual fidelity.\n- The modular design of the pipeline allows for seamless automation, artistic control, and efficient integration with game engines.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "3D Aware Region Prompted Vision Language Model",
+        "authors": "Xiaolong Li, Zhijian Liu, Yukang Chen, Yang Fu, An-Chieh Cheng",
+        "link": "https://arxiv.org/abs/2509.13317",
+        "github_repo": null,
+        "summary": "- This paper introduces SR-3D, a novel vision-language model that unifies 2D and 3D representations to enhance spatial reasoning capabilities.\n- SR-3D employs a dynamic tiling-based region extractor and integrates 3D positional embeddings to allow flexible region prompting and robust spatial reasoning across frames.\n- The model achieves state-of-the-art performance on various benchmarks, including general 2D and 3D vision-language tasks and specialized 3D spatial benchmarks, demonstrating its effectiveness in both image and video scenarios.\n- SR-3D shows strong zero-shot generalization capabilities, accurately inferring spatial relationships and metric measurements in videos without 3D inputs or annotations.\n- The model's unified architecture allows for seamless integration of spatial reasoning at different levels, leveraging both single-view and multi-view inputs.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering",
+            "Video-Text-to-Text",
+            "Image-to-3D",
+            "Image Feature Extraction",
+            "Question Answering",
+            "Zero-Shot Classification"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "EconProver: Towards More Economical Test-Time Scaling for Automated\n  Theorem Proving",
+        "authors": "Shansan Gong, Jiahao Xu, Zhenwen Liang, Linfeng Song, Mukai Li",
+        "link": "https://arxiv.org/abs/2509.12603",
+        "github_repo": null,
+        "summary": "- This paper introduces EconProver, a novel framework for more economical test-time scaling in automated theorem proving (ATP).\n- EconProver integrates two complementary methods: dynamic Chain-of-Thought (CoT) switching and diverse parallel-scaled reinforcement learning (RL), to reduce token usage and enhance efficiency.\n- The dynamic CoT switching mechanism dynamically chooses to apply extended reasoning only when necessary for complex problems, thus avoiding unnecessary token consumption.\n- The diverse parallel-scaled RL utilizes specialized reasoning heads trained on difficulty-partitioned data to improve solution diversity and parallel scaling efficiency.\n- Experiments demonstrate that EconProver achieves comparable performance to SOTA methods while reducing token consumption to 12%, highlighting significant efficiency gains without sacrificing accuracy.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Exact Coset Sampling for Quantum Lattice Algorithms",
+        "authors": "Yifan Zhang",
+        "link": "https://arxiv.org/abs/2509.12341",
+        "github_repo": "https://github.com/yifanzhang-pro/quantum-lattice",
+        "summary": "- This paper presents a new algorithm for exact coset sampling in quantum lattice algorithms, addressing a previously contested step in existing methods.\n- The proposed algorithm uses a pair-shift difference construction to coherently cancel unknown offsets and produce an exact uniform CRT-coset state.\n- It employs a reversible unitary operation with a gate cost of poly(log M2), maintaining the algorithm's asymptotic efficiency.\n- The algorithm avoids issues of periodicity/support mismatch present in previous approaches.\n- The correctness of the algorithm is rigorously proven, and its complexity and resource requirements are analyzed.",
+        "classification": [
+            "Other"
+        ],
+        "github_urls": [
+            "https://github.com/yifanzhang-pro/quantum-lattice"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Multimodal Reasoning for Science: Technical Report and 1st Place\n  Solution to the ICML 2025 SeePhys Challenge",
+        "authors": "Wentao Zhang, Junbo Niu, Bohan Zeng, Ruitao Wu, Hao Liang",
+        "link": "https://arxiv.org/abs/2509.06079",
+        "github_repo": "https://github.com/OpenDCAI/SciReasoner",
+        "summary": "- The paper introduces a caption-assisted reasoning framework that effectively bridges visual and textual modalities for multimodal reasoning in scientific scenarios.\n- This framework achieved first place in the ICML 2025 AI for Math Workshop & Challenge 2: SeePhys, outperforming state-of-the-art methods.\n- The approach addresses key limitations of current multimodal reasoning methods, such as unstable integration between visual perception and logical inference, restricted generalization, and dependence on costly fine-tuning.\n- The framework's effectiveness is validated through generalization on the MathVerse benchmark for geometric reasoning, demonstrating its versatility.\n- The code for this method is publicly available on Github.",
+        "classification": [
+            "Multimodal",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/OpenDCAI/SciReasoner"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Multiple Instance Learning Framework with Masked Hard Instance Mining\n  for Gigapixel Histopathology Image Analysis",
+        "authors": "Bo Liu, Fengtao Zhou, Heng Fang, Sheng Huang, Wenhao Tang",
+        "link": "https://arxiv.org/abs/2509.11526",
+        "github_repo": "https://github.com/DearCaat/MHIM-MIL",
+        "summary": " - The paper introduces a novel Multiple Instance Learning (MIL) framework, MHIM-MIL, designed for gigapixel histopathology image analysis.\n- MHIM-MIL incorporates masked hard instance mining (MHIM), using a Siamese structure with a momentum teacher and a consistency constraint to focus on hard-to-classify instances.\n- The model employs a class-aware instance probability and a global recycle network to improve the quality of mined hard instances.\n- Experimental results on various cancer diagnosis, subtyping, and survival analysis benchmarks show that MHIM-MIL outperforms state-of-the-art methods.\n- The code for the MHIM-MIL framework is publicly available on GitHub.",
+        "classification": [
+            "Image Classification",
+            "Image Feature Extraction"
+        ],
+        "github_urls": [
+            "https://github.com/DearCaat/MHIM-MIL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-17"
+    },
+    {
+        "title": "Optimal Brain Restoration for Joint Quantization and Sparsification of\n  LLMs",
+        "authors": "Luca Benini, Yawei Li, Hang Guo",
+        "link": "https://arxiv.org/abs/2509.11177",
+        "github_repo": null,
+        "summary": "- This paper introduces Optimal Brain Restoration (OBR), a novel training-free framework for jointly quantizing and sparsifying large language models (LLMs).\n- OBR addresses the conflicting requirements of these compression techniques by using error compensation between pruning and quantization, minimizing performance degradation.\n- The framework uses a second-order Hessian objective and surrogate approximation to arrive at a closed-form solution for optimal weight adjustments.\n- Experiments demonstrate that OBR enables aggressive W4A4KV4 quantization with 50% sparsity, resulting in up to 4.72x speedup and 6.4x memory reduction compared to the FP16-dense baseline.\n- The method is applied to Llama2, Llama3, and Qwen2.5 LLMs, showing consistent improvements across various tasks and achieving perplexity comparable to full-precision models.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/csguoh/OBR"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/HangGuo/OBR"
+        ],
+        "date": "2025-09-17"
+    }
+]

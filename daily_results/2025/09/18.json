@@ -1,0 +1,160 @@
+[
+    {
+        "title": "Hala Technical Report: Building Arabic-Centric Instruction & Translation\n  Models at Scale",
+        "authors": "Bernard Ghanem, Mohammad Zbeeb, Hasan Abed Al Kader Hammoud",
+        "link": "https://arxiv.org/abs/2509.14008",
+        "github_repo": null,
+        "summary": "- This paper introduces HALA, a family of Arabic-centric instruction and translation models built using a translate-and-tune pipeline.\n- The pipeline first compresses a strong AR-EN teacher model to FP8, then uses it to create high-fidelity bilingual supervision for a lightweight language model which translates English instruction sets into Arabic, generating a million-scale Arabic instruction-following corpus.\n- HALA models are trained at 350M, 700M, 1.2B, and 9B parameters, incorporating slerp merging to balance Arabic specialization and base-model strengths.\n- On Arabic-centric benchmarks, HALA achieves state-of-the-art results, outperforming its bases in both the \"nano\" and \"small\" categories.\n- The authors release the models, data, evaluation, and recipes to encourage further research in Arabic NLP.",
+        "classification": [
+            "Translation"
+        ],
+        "github_urls": [
+            "github.com/Hala"
+        ],
+        "huggingface_urls": [
+            "hf.co/collections/Hala"
+        ],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "SAIL-VL2 Technical Report",
+        "authors": "Zijian Kang, Yue Liao, Fangxun Shu, Yongjie Ye, Weijie Yin",
+        "link": "https://arxiv.org/abs/2509.14033",
+        "github_repo": null,
+        "summary": " - This paper introduces SAIL-VL2, a comprehensive multimodal vision-language foundation model (LVM).\n - SAIL-VL2 improves upon its predecessor, SAIL-VL, by incorporating three key innovations: large-scale data curation, a progressive training framework, and architectural advances using sparse Mixture-of-Experts (MoE) designs.\n - SAIL-VL2 achieves state-of-the-art performance across diverse image and video benchmarks at the 2B and 8B parameter scales, demonstrating strong capabilities in fine-grained perception and complex reasoning.\n - The model's effectiveness is validated through extensive experiments across 106 datasets and on challenging reasoning benchmarks such as MMMU and Math-Vista.\n - On the OpenCompass leaderboard, SAIL-VL2-2B ranks first among officially released open-source models under the 4B parameter scale.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/BytedanceDouyinContent"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/BytedanceDouyinContent"
+        ],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "PANORAMA: The Rise of Omnidirectional Vision in the Embodied AI Era",
+        "authors": "Zihao Dongfang, Kaiyu Lei, Ziqiao Weng, Chenfei Liao, Xu Zheng",
+        "link": "https://arxiv.org/abs/2509.12989",
+        "github_repo": null,
+        "summary": "- This paper introduces PANORAMA, a novel panoramic system architecture for embodied AI, focusing on omnidirectional vision.\n- The architecture consists of four key subsystems: data acquisition and pre-processing, perception, application, and acceleration and deployment.\n- PANORAMA addresses challenges in omnidirectional vision, including data bottlenecks, model capabilities, and application blanks, through the integration of various techniques like adversarial learning and diffusion models.\n- The paper reviews recent technical advances in omnidirectional generation, perception, and understanding, highlighting breakthroughs in model architectures and datasets.\n- The authors propose a roadmap for future research, emphasizing the need for unified models, multi-modal data, and robust generalization for omnidirectional vision in the context of embodied AI.",
+        "classification": [
+            "Computer Vision",
+            "Image Segmentation",
+            "Object Detection",
+            "Depth Estimation",
+            "Image Feature Extraction",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "GenExam: A Multidisciplinary Text-to-Image Exam",
+        "authors": "Yu Qiao, Changyao Tian, Xiangyu Zhao, Penghao Yin, Zhaokai Wang",
+        "link": "https://arxiv.org/abs/2509.14232",
+        "github_repo": null,
+        "summary": " - GenExam is the first benchmark for multidisciplinary text-to-image exams, containing 1000 samples across 10 subjects with exam-style prompts and fine-grained scoring points.\n - It poses a significant challenge to existing state-of-the-art models, with even the best-performing models achieving less than 15% accuracy on strict scoring criteria.\n - GenExam's evaluation framework considers semantic correctness and visual plausibility, enabling a more thorough assessment of model capabilities.\n - The benchmark is organized under a four-level taxonomy, providing a hierarchical structure for evaluation and facilitating insights into model strengths and limitations across different disciplines.\n - GenExam's code and evaluation protocol are publicly available, enabling the community to contribute and further advance the field of text-to-image generation.",
+        "classification": [
+            "Text-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/GenExam"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "Scrub It Out! Erasing Sensitive Memorization in Code Language Models via\n  Machine Unlearning",
+        "authors": "Zhou Yang, Di Wang, Zhikun Zhang, Yao Wan, Zhaoyang Chu",
+        "link": "https://arxiv.org/abs/2509.13755",
+        "github_repo": null,
+        "summary": "- This paper introduces CODEERASER, a novel machine unlearning technique designed to selectively erase sensitive information memorized by Code Language Models (CLMs) without requiring full model retraining.\n- CODEERASER achieves this by utilizing a selective gradient ascent-based approach, targeting only sensitive segments within code while preserving the functionality of the surrounding code.\n- Experiments on three families of CLMs (CodeParrot, CodeGen-Mono, and Qwen2.5-Coder) demonstrate that CODEERASER effectively reduces memorization of sensitive data by up to 93.89% while maintaining high model utility.\n- The study also includes the creation of a new dataset containing 50,000 sensitive memorized samples, which serves as a benchmark for evaluating sensitive memorization erasure techniques.\n- The results suggest CODEERASER outperforms existing methods like vanilla and constraint-based unlearning in terms of both effectiveness and efficiency.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/CGCL-codes/naturalcc/tree/main/examples/code-unlearning"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "THOR: Tool-Integrated Hierarchical Optimization via RL for Mathematical\n  Reasoning",
+        "authors": "Yicheng Pan, Jiefeng Ma, Pengfei Hu, Zhenrong Zhang, Qikai Chang",
+        "link": "https://arxiv.org/abs/2509.13761",
+        "github_repo": "https://github.com/JingMog/THOR",
+        "summary": "- This paper introduces THOR, a novel framework that enhances the mathematical reasoning capabilities of LLMs by integrating external tools.\n- THOR leverages a hierarchical reinforcement learning strategy, optimizing both at the trajectory and step levels for improved efficiency.\n- A key contribution is TIRGen, a multi-agent pipeline for constructing high-quality tool-integrated reasoning datasets.\n- THOR incorporates a self-correction mechanism that uses immediate feedback from tools to dynamically rectify erroneous reasoning steps during inference.\n- The results demonstrate that THOR achieves state-of-the-art performance on various mathematical benchmarks, generalizing effectively across reasoning models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/JingMog/THOR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "Wan-Animate: Unified Character Animation and Replacement with Holistic\n  Replication",
+        "authors": "Mingyang Huang, Siqi Hu, Li Hu, Xin Gao, Gang Cheng",
+        "link": "https://arxiv.org/abs/2509.14055",
+        "github_repo": null,
+        "summary": "- Wan-Animate is a novel unified framework for character animation and replacement that generates high-fidelity videos by precisely replicating expressions and movements from a reference video.\n- The model uses a modified input paradigm that unifies multiple tasks into a common symbolic representation, using spatially-aligned skeleton signals and implicit facial features.\n- An auxiliary Relighting LoRA module is developed to enhance environmental integration during character replacement, preserving appearance consistency.\n- Experimental results demonstrate that Wan-Animate achieves state-of-the-art performance, outperforming existing open-source methods in both quantitative and qualitative evaluations.\n- The authors are committed to open-sourcing the model weights and source code.",
+        "classification": [
+            "Image-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+        "authors": "Xiangru Tang, Shiqi Li, Xinyu Wang, Jinlin Wang, Suyuchen Wang",
+        "link": "https://arxiv.org/abs/2509.13683",
+        "github_repo": null,
+        "summary": "- This paper introduces CARE, a novel native retrieval-augmented reasoning framework that enhances context fidelity in LLMs.\n- CARE teaches LLMs to integrate in-context evidence into their reasoning process using the model's own retrieval capabilities, eliminating the need for expensive supervised fine-tuning or external retrieval mechanisms.\n- The framework consists of two phases: supervised fine-tuning (SFT) to establish the evidence integration pattern and reinforcement learning (RL) to refine the self-retrieval mechanism.\n- Extensive experiments on multiple benchmarks demonstrate that CARE significantly outperforms existing methods, including supervised fine-tuning, traditional RAG methods, and external retrieval solutions.\n- The proposed approach is fundamentally different from existing methods as it leverages the LLM's inherent language understanding capabilities for in-context retrieval, making LLMs more accurate and efficient.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "SteeringControl: Holistic Evaluation of Alignment Steering in LLMs",
+        "authors": "Zhun Wang, Nathan W. Henry, David Park, Nicholas Crispino, Vincent Siu",
+        "link": "https://arxiv.org/abs/2509.13450",
+        "github_repo": "https://github.com/wang-research-lab/SteeringControl.git",
+        "summary": " - This paper introduces STEERINGCONTROL, a benchmark for evaluating representation steering methods in LLMs.  \n - The benchmark focuses on core alignment objectives (bias, harmful generation, and hallucination) and their effects on secondary behaviors (sycophancy and commonsense morality).\n - STEERINGCONTROL includes a dataset of safety-relevant primary and secondary behaviors and a modular steering framework to evaluate five popular steering methods.\n - Experiments on Qwen-2.5-7B and Llama-3.1-8B show that strong steering performance depends on method, model, and behavior, and entanglement can be severe. \n - The code for STEERINGCONTROL is publicly available.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation"
+        ],
+        "github_urls": [
+            "https://github.com/wang-research-lab/SteeringControl.git"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    },
+    {
+        "title": "MARS2 2025 Challenge on Multimodal Reasoning: Datasets, Methods,\n  Results, Discussion, and Outlook",
+        "authors": "Bowen Zhou, Yaxiong Chen, Jiajun Zhang, Shengwu Xiong, Peng Xu",
+        "link": "https://arxiv.org/abs/2509.14142",
+        "github_repo": "https://github.com/mars2workshop/",
+        "summary": "This paper introduces the MARS2 2025 challenge, focusing on multimodal reasoning using large language models (LLMs).  The challenge features two new datasets, Lens and AdsQA, designed for general and domain-specific reasoning tasks, respectively.  Three competition tracks (Visual Grounding in Real-world Scenarios, Visual Question Answering with Spatial Awareness, and Visual Reasoning in Creative Advertisement Videos) were introduced to assess the models' performance.  The paper presents the results from 76 teams and discusses the strengths and weaknesses of the submitted methods, highlighting the challenges in multimodal reasoning and areas for future research.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/mars2workshop/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-18"
+    }
+]

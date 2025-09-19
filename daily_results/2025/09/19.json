@@ -1,0 +1,215 @@
+[
+    {
+        "title": "ScaleCUA: Scaling Open-Source Computer Use Agents with Cross-Platform\n  Data",
+        "authors": "Zehao Li, QiushiSun, heroding77, ownerEli, zyliu",
+        "link": "https://arxiv.org/abs/2509.15221",
+        "github_repo": "https://github.com/OpenGVLab/ScaleCUA",
+        "summary": "This paper introduces ScaleCUA, a large-scale dataset of computer use agent (CUA) interactions across six operating systems and three task domains. The dataset is created using a closed-loop pipeline combining automated agents and human experts.  ScaleCUA models, trained on this dataset, significantly outperform existing baselines on various GUI-centric benchmarks.  The authors achieve state-of-the-art results on several benchmarks, demonstrating the effectiveness of their cross-platform data and models. The ScaleCUA dataset, models, and code are publicly released.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/OpenGVLab/ScaleCUA"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "FlowRL: Matching Reward Distributions for LLM Reasoning",
+        "authors": "Hengli Li, Dinghuai Zhang, jayyoung0802, daixuancheng, xuekai",
+        "link": "https://arxiv.org/abs/2509.15207",
+        "github_repo": null,
+        "summary": "- This paper introduces FlowRL, a novel policy optimization algorithm that matches the full reward distribution instead of solely maximizing rewards in reinforcement learning for large language models (LLMs).\n- FlowRL transforms scalar rewards into a normalized target distribution using a learnable partition function, minimizing the reverse KL divergence between the policy and the target distribution.\n- Experiments on math and code reasoning tasks demonstrate that FlowRL significantly outperforms existing reward-maximizing methods like GRPO and PPO, achieving a 10.0% average improvement over GRPO and 5.1% over PPO on math benchmarks.\n- The improved performance is attributed to FlowRL's ability to promote diverse exploration and generate more generalizable reasoning trajectories, addressing the mode collapse issue often observed in reward-maximizing approaches.\n- Further analysis confirms that FlowRL generates substantially more diverse rollouts compared to baseline methods, highlighting the effectiveness of reward distribution matching in fostering diverse reasoning.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "Reasoning over Boundaries: Enhancing Specification Alignment via\n  Test-time Delibration",
+        "authors": "Zhilin Wang, Dongrui Liu, Xuyang Hu, Yafu Li, zzzhr97",
+        "link": "https://arxiv.org/abs/2509.14760",
+        "github_repo": null,
+        "summary": " - This paper introduces ALIGN3, a lightweight method for enhancing specification alignment in LLMs using Test-Time Deliberation (TTD).\n - ALIGN3 employs hierarchical reflection and revision to reason over specification boundaries, improving both safety and helpfulness.\n - The paper also introduces SPECBENCH, a new benchmark for evaluating specification alignment across five diverse scenarios, 103 specifications, and 1500 prompts.\n - Experimental results demonstrate that ALIGN3 outperforms existing TTD methods, achieving a significant improvement in specification alignment with minimal overhead.\n - The findings highlight the effectiveness of test-time deliberation for improving specification alignment and provide a valuable resource for future research in this area.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Generation",
+            "Text2Text Generation"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "Evolving Language Models without Labels: Majority Drives Selection,\n  Novelty Promotes Variation",
+        "authors": "Kishan Panaganti, Wenhao Yu, Haolin Liu, invokerliang, yujunzhou",
+        "link": "https://arxiv.org/abs/2509.15194",
+        "github_repo": null,
+        "summary": "- This paper introduces EVOL-RL, a novel label-free reinforcement learning method for evolving language models that balances stability (majority vote) and variation (novelty reward).\n- EVOL-RL addresses the entropy collapse issue often observed in label-free training, where models' generations become shorter, less diverse, and brittle.\n- Experimental results demonstrate that EVOL-RL consistently outperforms the majority-only TTRL baseline across various mathematical reasoning benchmarks, significantly improving both pass@1 and pass@16 performance.\n- The method is shown to improve model generalization across domains, demonstrating its broader applicability.\n- EVOL-RL employs GRPO (Generalized Reward-consistency Policy Optimization) algorithm with asymmetric clipping and entropy regularization to enhance stable learning and exploration.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/YujunZhou/EVOL-RL"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "Understand Before You Generate: Self-Guided Training for Autoregressive\n  Image Generation",
+        "authors": "Xihui Liu, Wenlong Zhang, Yuqing Wang, GoodEnough, YueXY233",
+        "link": "https://arxiv.org/abs/2509.15185",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel training framework, Self-guided Training for Autoregressive models (ST-AR), to improve autoregressive image generation.\n- ST-AR addresses three key limitations of autoregressive models in visual understanding: local and conditional dependence, inter-step semantic inconsistency, and spatial invariance deficiency.\n- The approach uses self-supervised learning objectives, including masked image modeling and contrastive learning, without relying on pre-trained representation models.\n- Experiments on ImageNet show that ST-AR significantly improves the image understanding ability and generation quality of LlamaGen models, achieving a 49% FID improvement for LlamaGen-XL.\n- This improvement is demonstrated across various model sizes and demonstrates the effectiveness of the proposed method in enhancing both visual understanding and generation capabilities.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/yuexy/ST-AR"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial\n  Search and Reasoning",
+        "authors": "Jiashuo Liu, Jianpeng Jiao, Liang Hu, WenhaoHuang, zhangysk",
+        "link": "https://arxiv.org/abs/2509.13160",
+        "github_repo": null,
+        "summary": " - FinSearchComp, a new benchmark for evaluating financial search and reasoning capabilities of LLM-based agents, is introduced. \n- It comprises three tasks mirroring real-world analyst workflows: Time-Sensitive Data Fetching, Simple Historical Lookup, and Complex Historical Investigation. \n- 70 professional financial experts contributed to annotation and a rigorous multi-stage quality-assurance pipeline. \n- Results show that Grok 4 (web) outperforms other models on a global subset while Doubao (web) leads on the Greater China subset. \n- The study highlights the significance of equipping agents with web search and financial plugins, emphasizing the importance of end-to-end evaluation for complex financial search and reasoning.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://randomtutu.github.io/FinSearchComp/"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/ByteSeedXpert/FinSearchComp/"
+        ],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "RynnVLA-001: Using Human Demonstrations to Improve Robot Manipulation",
+        "authors": "SpaceProduct, Sicong, yaniii, huangsiteng, yumingj",
+        "link": "https://arxiv.org/abs/2509.15212",
+        "github_repo": "https://github.com/alibaba-damo-academy/RynnVLA-001",
+        "summary": "- The paper introduces RynnVLA-001, a vision-language-action (VLA) model for robot manipulation that uses a two-stage pretraining approach.\n- The first stage, Ego-Centric Video Generative Pretraining, trains an Image-to-Video model to predict future frames based on an initial frame and language instruction.\n- The second stage, Human-Centric Trajectory-Aware Modeling, jointly predicts future keypoint trajectories and frames, improving action representation.\n- To enhance action representation, the paper proposes ActionVAE, a variational autoencoder that compresses action sequences.\n- RynnVLA-001 outperforms state-of-the-art baselines on robot manipulation datasets, demonstrating the effectiveness of the proposed pretraining strategy.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba-damo-academy/RynnVLA-001"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "AToken: A Unified Tokenizer for Vision",
+        "authors": "Mingze Xu, Liangchen Song, afshin525, byeongjooahn, Jiasenlu",
+        "link": "https://arxiv.org/abs/2509.14476",
+        "github_repo": null,
+        "summary": " - ATOKEN is a novel unified visual tokenizer that processes images, videos, and 3D assets within a shared 4D latent space, enabling both high-fidelity reconstruction and semantic understanding across diverse visual modalities.\n- It employs a pure transformer architecture with 4D rotary position embeddings, addressing format discrepancies across modalities and achieving state-of-the-art reconstruction quality through an adversarial-free training objective combining perceptual and Gram matrix losses.\n- The model utilizes a progressive training curriculum, starting from single images and gradually expanding to videos and 3D data, and supports both continuous and discrete latent tokens.\n- In downstream applications, ATOKEN enables both visual generation tasks (image generation, text-to-video generation, image-to-3D synthesis) and understanding tasks (multimodal LLMs), achieving competitive performance on various benchmarks.\n- This unified approach addresses limitations of existing tokenizers that specialize in either reconstruction or understanding for single modalities, and the superior results demonstrate the potential of unified visual tokenization for next-generation multimodal AI systems.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "WorldForge: Unlocking Emergent 3D/4D Generation in Video Diffusion Model\n  via Training-Free Guidance",
+        "authors": "Ruibo Li, Tong Zhao, ChiZhang, 2hiTee, ChenxiSong",
+        "link": "https://arxiv.org/abs/2509.15130",
+        "github_repo": null,
+        "summary": "- WorldForge is a novel training-free framework for controllable 3D/4D video generation that leverages pre-trained video diffusion models.\n- It consists of three tightly coupled modules: Intra-Step Recursive Refinement, Flow-Gated Latent Fusion, and Dual-Path Self-Corrective Guidance, which enable precise trajectory injection and high-quality outputs without retraining.\n- WorldForge achieves superior performance compared to state-of-the-art methods in both 3D scene generation and dynamic 4D scene re-rendering tasks, as demonstrated by extensive experiments.\n- The framework is model-agnostic, readily adapting to different video diffusion models and achieving consistent improvements across multiple datasets and benchmarks.\n- The approach offers a new plug-and-play paradigm for controllable video synthesis, offering a new perspective on leveraging generative priors for spatial intelligence.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video",
+            "Video Classification",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://worldforge-agi.github.io"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "MultiEdit: Advancing Instruction-based Image Editing on Diverse and\n  Challenging Tasks",
+        "authors": "Xijun Gu, Lin Liu, HaoxingChen, dreamzz5, Mingsong07",
+        "link": "https://arxiv.org/abs/2509.14638",
+        "github_repo": null,
+        "summary": "- The paper introduces MultiEdit, a comprehensive dataset with over 107K high-quality image editing samples, addressing limitations in existing datasets.\n- MultiEdit encompasses six challenging editing tasks, including 18 non-style-transfer and 38 style transfer operations, covering a wide range of editing complexities.\n- A novel dataset construction pipeline utilizing two multi-modal large language models (MLLMs) is employed to generate visual-adaptive editing instructions and produce high-fidelity edited images.\n- Experiments demonstrate that fine-tuning foundational models with MultiEdit substantially improves performance on complex editing tasks while preserving capabilities on standard benchmarks.\n- The MultiEdit dataset is made publicly available to advance research in instruction-based image editing.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/inclusionAI/MultiEdit"
+        ],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "Unleashing the Potential of Multimodal LLMs for Zero-Shot\n  Spatio-Temporal Video Grounding",
+        "authors": "Rynson W. H. Lau, Gerhard Hancke, yuhaoliu, zaiquan",
+        "link": "https://arxiv.org/abs/2509.15178",
+        "github_repo": "https://github.com/zaiquanyang/LLaVA_Next_STVG",
+        "summary": "- This paper proposes a novel zero-shot framework for spatio-temporal video grounding (STVG) that leverages multimodal large language models (MLLMs).\n- The framework introduces two novel strategies: decomposed spatio-temporal highlighting (DSTH) and temporal-augmented assembling (TAS).\n- DSTH decomposes the query into attribute and action sub-queries to improve the reasoning capabilities of MLLMs, while TAS enhances the temporal consistency of the spatial grounding.\n- The proposed method outperforms state-of-the-art (SOTA) methods on three common STVG benchmarks (HCSTVG v1 & v2, and VidSTG).\n- The code for the proposed method will be available on Github.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Zero-Shot Object Detection",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/zaiquanyang/LLaVA_Next_STVG"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "Mind the Gap: A Closer Look at Tokenization for Multiple-Choice Question\n  Answering with LLMs",
+        "authors": "Katharina von der Wense, MinhDucBui, mario-sanz",
+        "link": "https://arxiv.org/abs/2509.15020",
+        "github_repo": null,
+        "summary": "- This paper investigates the impact of tokenization choices on the performance of large language models (LLMs) in multiple-choice question answering (MCQA).\n- The authors find that the seemingly trivial decision of whether to tokenize the space after the colon in the prompt \"Answer:\" significantly impacts accuracy, with a difference of up to 11% observed in experiments.\n- The recommended strategy is to tokenize the space together with the answer letter, which consistently improves performance across various LLMs and datasets.\n- This finding underscores the importance of careful evaluation design, highlighting the need for standardized and transparent evaluation protocols.\n- The study also shows that this tokenization strategy improves model calibration, making the model's confidence estimates more reliable.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "EchoVLM: Dynamic Mixture-of-Experts Vision-Language Model for Universal\n  Ultrasound Intelligence",
+        "authors": "Qinghua Huang, WeiWang, lidachen, Ruimed, chaoyinshe",
+        "link": "https://arxiv.org/abs/2509.14977",
+        "github_repo": "https://github.com/Asunatan/EchoVLM",
+        "summary": "EchoVLM is a novel vision-language model designed for universal ultrasound intelligence.  It utilizes a Mixture-of-Experts (MoE) architecture trained on a large-scale, multi-organ ultrasound dataset.  EchoVLM achieves significant performance improvements compared to existing methods in multiple tasks such as report generation and visual question answering, as demonstrated by experimental results showing substantial gains in BLEU-1 and ROUGE-1 scores. The model's effectiveness stems from its dynamic routing mechanism and task-specific expert subnetworks. The source code and model weights are publicly available.",
+        "classification": [
+            "Multimodal",
+            "Image-Text-to-Text",
+            "Visual Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/Asunatan/EchoVLM"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    },
+    {
+        "title": "FSG-Net: Frequency-Spatial Synergistic Gated Network for High-Resolution\n  Remote Sensing Change Detection",
+        "authors": "Zhewei Zhang, Yuhan Jiang, Shuangxi Miao, pedramghamisi, zx-Xie",
+        "link": "https://arxiv.org/abs/2509.06482",
+        "github_repo": "https://github.com/zxXie-Air/FSG-Net",
+        "summary": "- This paper introduces FSG-Net, a novel change detection model that utilizes frequency-spatial analysis to improve accuracy and mitigate pseudo-changes.\n- The model architecture consists of three main modules: Discrepancy-Aware Wavelet Interaction Module (DAWIM), Synergistic Temporal-Spatial Attention Module (STSAM), and Lightweight Gated Fusion Unit (LGFU).\n- FSG-Net achieved state-of-the-art performance on three benchmark datasets (CDD, GZ-CD, and LEVIR-CD), outperforming existing methods by a significant margin in F1-scores.\n- The DAWIM effectively mitigates pseudo-changes by selectively processing different frequency components, while the STSAM enhances the saliency of genuine changes through attention mechanisms.\n- The LGFU integrates multi-level features to achieve precise boundary delineation by leveraging semantic gates to refine the integration of low and high-level features.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [
+            "https://github.com/zxXie-Air/FSG-Net"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-19"
+    }
+]

@@ -1,0 +1,196 @@
+[
+    {
+        "title": "RPG: A Repository Planning Graph for Unified and Scalable Codebase\n  Generation",
+        "authors": "Steven Liu, Xin Zhang, Kyleraha, Cipherxzc, Luo2003",
+        "link": "https://arxiv.org/abs/2509.16198",
+        "github_repo": null,
+        "summary": "This paper introduces a novel approach to codebase generation using a Repository Planning Graph (RPG). The RPG unifies proposal and implementation levels of planning, enabling scalable and unified repository generation.  Experiments on a benchmark dataset (RepoCraft) show that the proposed method (ZeroRepo), outperforms existing baselines, generating larger and more functionally complete repositories.  ZeroRepo also demonstrates near-linear scaling in functionality and code size, further highlighting the efficiency of the RPG.  Finally, the RPG improves LLMs' understanding of repositories, improving agent localization.",
+        "classification": [
+            "Text Generation"
+        ],
+        "github_urls": [
+            "null"
+        ],
+        "huggingface_urls": [
+            "null"
+        ],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid\n  Vision Tokenizer",
+        "authors": "jialingt, haosoul122, haotiz, bpan, FrozzZen",
+        "link": "https://arxiv.org/abs/2509.16197",
+        "github_repo": null,
+        "summary": "- Manzano is a novel unified multimodal large language model (MLLM) that integrates both understanding and generation capabilities using an autoregressive approach.\n- The model architecture consists of a hybrid vision tokenizer that produces both continuous and discrete visual representations, a unified LLM decoder that predicts the next discrete image or text tokens, and an image decoder that renders pixels.\n- Manzano significantly mitigates the task conflict often present in unified models through the use of a shared visual encoder and two lightweight specialized adapters (continuous for understanding, discrete for generation) that originate from the same encoder.\n- The model achieves state-of-the-art results among unified models on various image understanding and generation benchmarks, showing competitive performance against specialist models, particularly on text-rich evaluations.\n- The authors demonstrate consistent gains from scaling the model size, validating the design choice of a hybrid tokenizer and highlighting the minimal task conflicts under the joint training recipe.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "Latent Zoning Network: A Unified Principle for Generative Modeling,\n  Representation Learning, and Classification",
+        "authors": "Wenyu Wang, Junyi Zhu, Xuefei Ning, Enshu Liu, fjxmlzn",
+        "link": "https://arxiv.org/abs/2509.15591",
+        "github_repo": "https://github.com/microsoft/latent-zoning-networks",
+        "summary": " - The paper introduces a novel model, Latent Zoning Network (LZN), designed to unify generative modeling, representation learning, and classification using a shared Gaussian latent space.\n - LZN utilizes separate encoder-decoder pairs for each data type (images, text, labels), mapping samples to disjoint latent zones and enabling various tasks through different encoder-decoder combinations.\n - Experiments on image generation show LZN improves the Fr\u00e9chet Inception Distance (FID) score on CIFAR10 by enhancing the state-of-the-art rectified flow model, while results on representation learning outperform MoCo and SimCLR methods on ImageNet.\n - On CIFAR10, LZN achieves improved FID and state-of-the-art classification accuracy when jointly solving both image generation and classification tasks. \n - The code and trained models are publicly available.",
+        "classification": [
+            "Multimodal",
+            "Unconditional Image Generation",
+            "Image Feature Extraction",
+            "Image Classification"
+        ],
+        "github_urls": [
+            "https://github.com/microsoft/latent-zoning-networks"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "BaseReward: A Strong Baseline for Multimodal Reward Model",
+        "authors": "jianfeipan, xuwang, KaiWu123, achernarcursa, yifanzhang114",
+        "link": "https://arxiv.org/abs/2509.16127",
+        "github_repo": null,
+        "summary": "- This paper introduces BaseReward, a strong baseline for multimodal reward models, which achieves state-of-the-art performance on major benchmarks.\n- BaseReward uses a simple yet effective architecture built upon a Qwen2.5-VL backbone with an optimized two-layer reward head.\n- The model is trained on a carefully curated mixture of high-quality multimodal and text-only preference data.\n- BaseReward outperforms previous open-source and proprietary models on MM-RLHF-Reward Bench, VL-Reward Bench, and Multimodal Reward Bench.\n-  The work also provides empirical guidance for developing robust reward models for future multimodal large language models.",
+        "classification": [
+            "Reinforcement Learning",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "SPATIALGEN: Layout-guided 3D Indoor Scene Generation",
+        "authors": "Yongsen Mao, Yixun Liang, Heng Li, Chuan Fang, bertjiazheng",
+        "link": "https://arxiv.org/abs/2509.14981",
+        "github_repo": null,
+        "summary": "- This paper introduces SpatialGen, a novel framework for high-fidelity 3D indoor scene generation using a multi-view multi-modal diffusion model.\n- The model takes as input a 3D semantic layout and either a textual description or reference image, generating realistic and semantically consistent 3D scenes from arbitrary viewpoints.\n- SpatialGen is trained on a new large-scale synthetic dataset featuring 12,328 structured scenes, 57,440 rooms, and 4.7M photorealistic renderings, outperforming prior methods.\n- The model employs an iterative dense view generation strategy to ensure complete scene coverage and uses a layout-guided attention mechanism to improve multi-view consistency and cross-modal alignment.\n- SpatialGen demonstrates superior performance compared to existing score distillation and panorama-as-proxy methods across different evaluation metrics.",
+        "classification": [
+            "Text-to-3D",
+            "Image-to-3D",
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://manycore-research.github.io/SpatialGen"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "BTL-UI: Blink-Think-Link Reasoning Model for GUI Agent",
+        "authors": "Jiahui Yang, Shaokang Wang, Pei Fu, Ruoceng Zhang, Shaojie Zhang",
+        "link": "https://arxiv.org/abs/2509.15566",
+        "github_repo": null,
+        "summary": "- The paper introduces BTL-UI, a novel GUI agent model based on a brain-inspired \"Blink-Think-Link\" framework that mimics human cognitive processes.\n- The model decomposes interactions into three phases: Blink (rapid detection and attention), Think (high-level reasoning), and Link (command generation).\n- BTL-UI incorporates two key technical innovations: Blink Data Generation (automated annotation pipeline) and BTL Reward (rule-based reward mechanism).\n- Experimental results demonstrate that BTL-UI achieves state-of-the-art performance across various GUI benchmarks, outperforming existing methods in both static GUI understanding and dynamic interaction tasks.\n- The superior performance of BTL-UI is attributed to its biologically-inspired design and the novel reward mechanism, which effectively guides the model's learning process and improves generalization capability.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/xiaomi-research/btl-ui"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "Lynx: Towards High-Fidelity Personalized Video Generation",
+        "authors": "Linjie Luo, Jing Liu, gutianpei, tzhi-bytedance, shensang",
+        "link": "https://arxiv.org/abs/2509.15496",
+        "github_repo": null,
+        "summary": "- Lynx is a high-fidelity personalized video generation model that uses two lightweight adapters to maintain identity fidelity while generating videos from a single input image.\n- The ID-adapter converts facial embeddings into identity tokens, and the Ref-adapter integrates dense VAE features to inject fine-grained details across all transformer layers.\n- Evaluated on a benchmark of 40 subjects and 20 prompts, Lynx demonstrated superior face resemblance and competitive prompt following compared to other methods.\n- The model uses a multi-stage training strategy with spatio-temporal frame packing to handle varying aspect ratios and temporal lengths.\n- Lynx advances the state-of-the-art in personalized video generation by achieving a strong balance between identity preservation, prompt alignment, and video quality.",
+        "classification": [
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://byteaigc.github.io/Lynx/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "A Vision-Language-Action-Critic Model for Robotic Real-World\n  Reinforcement Learning",
+        "authors": "Jiangmiao, simonlin123, andyzsz123, haoranzhang, fuxian",
+        "link": "https://arxiv.org/abs/2509.15937",
+        "github_repo": null,
+        "summary": "- This paper introduces VLAC, a Vision-Language-Action-Critic model for robotic real-world reinforcement learning that addresses the limitations of sparse, handcrafted rewards and inefficient exploration in existing methods.\n- VLAC is a general process reward model built upon InternVL and trained on large-scale heterogeneous datasets, providing dense progress rewards and supporting one-shot in-context transfer to unseen tasks.\n- The model uses a single VLAC model to alternately generate reward and action tokens, unifying critic and policy, and is deployed inside an asynchronous real-world RL loop with a graded human-in-the-loop protocol to accelerate exploration and stabilize early learning.\n- Experiments on four real-world manipulation tasks show that VLAC improves success rates from about 30% to about 90% within 200 real-world interaction episodes, with human-in-the-loop interventions yielding a further 50% improvement in sample efficiency.\n- The VLAC model demonstrates strong generalization capabilities to unseen environments and tasks, showcasing its potential for real-world robotic applications.",
+        "classification": [
+            "Reinforcement Learning",
+            "Robotics",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "RGB-Only Supervised Camera Parameter Optimization in Dynamic Scenes",
+        "authors": "Narendra Ahuja, Hao Zhang, fangli3",
+        "link": "https://arxiv.org/abs/2509.15123",
+        "github_repo": null,
+        "summary": " - This paper introduces ROS-Cam, a novel method for camera parameter optimization in dynamic scenes using only RGB video as supervision.\n- ROS-Cam consists of three key components: Patch-wise Tracking Filters, Outlier-aware Joint Optimization, and a Two-stage Optimization Strategy, which work together to produce accurate and efficient camera parameter estimations.\n- The method's efficiency is demonstrated by its linear runtime compared to the exponential runtime of COLMAP, a common method for camera parameter optimization.\n- Experiments were performed on five real-world datasets (NeRF-DS, DAVIS, iPhone, TUM-dynamics, and MPI-Sintel), showing improved camera parameter estimation and superior performance compared to existing methods.\n- Limitations of the method, such as handling scenes with significant movement and maintaining robustness, were noted for future work.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in\n  Instruction-Guided Expressive Text-To-Speech Systems",
+        "authors": "Hung-yi Lee, Kuan-Yu Chen, Tzu-Chieh Wei, Huang-Cheng Chou, Yi-Cheng Lin",
+        "link": "https://arxiv.org/abs/2509.13989",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel evaluation framework for Instruction-Guided Text-to-Speech (ITTS) systems, focusing on fine-grained control of expressiveness.\n- The framework incorporates human perceptual ratings on expressive dimensions (adverbs of degree, graded emotion intensity, speaker age, and word-level emphasis).\n- It presents the Expressive VOice Control (E-VOC) corpus, a large-scale dataset of human evaluations for ITTS controllability.\n- The results reveal a significant instruction-perception gap, where most ITTS systems struggle with fine-grained control, particularly in generating child or elderly voices and handling word-level emphasis.\n- The study shows that gpt-40-mini-tts is the most reliable ITTS model, demonstrating better alignment between instructions and generated utterances across various dimensions.",
+        "classification": [
+            "Text-to-Speech"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "Video2Roleplay: A Multimodal Dataset and Framework for Video-Guided\n  Role-playing Agents",
+        "authors": "Chao Zhang, Xueqiao Zhang, RoyalVane, YifanZhu, raul678",
+        "link": "https://arxiv.org/abs/2509.15233",
+        "github_repo": null,
+        "summary": "- This paper introduces Video2Roleplay, a multimodal dataset and framework for video-guided role-playing agents.\n- The framework combines adaptive temporal sampling with dynamic and static role profile representations.\n- The dynamic profile is created by adaptively sampling video frames and feeding them to the LLM in temporal order, while the static profile consists of character dialogues and a summary context from the input video.\n- A new dataset, Role-playing-Video60k, containing 60k videos and 700k corresponding dialogues, is constructed to support this framework.\n- Experimental results demonstrate the effectiveness of the framework, showing superior performance compared to existing methods on eight evaluation metrics.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/zxqSled/Video2Roleplay"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "WhisTLE: Deeply Supervised, Text-Only Domain Adaptation for Pretrained\n  Speech Recognition Transformers",
+        "authors": "Karun Kumar, Akshat Pandey, tetrisd",
+        "link": "https://arxiv.org/abs/2509.10452",
+        "github_repo": null,
+        "summary": "- This paper introduces WhisTLE, a novel deeply supervised, text-only domain adaptation method for pretrained encoder-decoder Automatic Speech Recognition (ASR) models.\n- WhisTLE trains a variational autoencoder (VAE) to model the encoder outputs from text and fine-tunes the decoder using the learned text-to-latent encoder, optionally combined with text-to-speech (TTS) adaptation.\n- Across four out-of-domain datasets and four ASR models, WhisTLE with TTS adaptation reduces word error rate (WER) by 12.3% relative to TTS-only adaptation and outperforms all other baselines in 27 out of 32 experimental scenarios.\n- The method leverages deep supervision to improve adaptation, addressing the limitations of input-output supervision alone provided by TTS adaptation.\n- The proposed approach does not incur any additional runtime cost during inference as the original encoder is restored.",
+        "classification": [
+            "Automatic Speech Recognition"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    },
+    {
+        "title": "Ask-to-Clarify: Resolving Instruction Ambiguity through Multi-turn\n  Dialogue",
+        "authors": "Hui Zhang, Sicheng Xie, Tianyi Lu, Xinghao Zhu, leolin9248",
+        "link": "https://arxiv.org/abs/2509.15061",
+        "github_repo": null,
+        "summary": "- The paper introduces the Ask-to-Clarify framework, a novel approach for building collaborative embodied agents that can resolve ambiguous instructions through multi-turn dialogue with humans.\n- The framework consists of two key components: a Vision-Language Model (VLM) for collaboration and a diffusion model for action generation, connected by a connection module that refines conditions for the diffusion model based on VLM output.\n- A two-stage knowledge-insulation training strategy is employed, first fine-tuning the collaboration component for ambiguity resolution and then integrating the action component while preserving interaction abilities.\n- Experiments on 8 real-world tasks demonstrate that the Ask-to-Clarify framework significantly outperforms existing state-of-the-art VLAs, achieving higher success rates in completing tasks with ambiguous instructions.\n- Ablation studies validate the effectiveness of the framework's key components (connection module and training strategy) and highlight its robustness under challenging conditions (low light, distractors).",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-22"
+    }
+]

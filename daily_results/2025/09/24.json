@@ -1,0 +1,223 @@
+[
+    {
+        "title": "Baseer: A Vision-Language Model for Arabic Document-to-Markdown OCR",
+        "authors": "Zeina Aldallal, Ahmad Bastati, Mohamed Motasim Hamed, Muhammad Hreden, Khalil Hennara",
+        "link": "https://arxiv.org/abs/2509.18174",
+        "github_repo": null,
+        "summary": "- This paper introduces Baseer, a vision-language model fine-tuned for Arabic document OCR using a decoder-only strategy. \n- Baseer leverages a large-scale dataset combining synthetic and real-world data and significantly outperforms existing open-source and commercial solutions, achieving a WER of 0.25 on the Misraj-DocOCR benchmark. \n- The authors also present Misraj-DocOCR, a high-quality benchmark for evaluating Arabic OCR systems. \n- The results highlight the benefits of domain-specific adaptation of general-purpose MLLMs for high-accuracy OCR on morphologically rich languages. \n- This model utilizes a decoder-only fine-tuning strategy to adapt a pre-trained MLLM while preserving general visual features.",
+        "classification": [
+            "Image-to-Text"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://huggingface.co/datasets/Misraj/Misraj-DocOCR",
+            "https://huggingface.co/datasets/Misraj/KITAB_pdf_to_markdown_reviewed",
+            "https://huggingface.co/datasets/Misraj/msdd"
+        ],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "Reinforcement Learning on Pre-Training Data",
+        "authors": "Evander Yang, Guanhua Huang, Zenan Xu, Kejiao Li, Siheng Li",
+        "link": "https://arxiv.org/abs/2509.19249",
+        "github_repo": null,
+        "summary": "- This paper introduces Reinforcement Learning on Pre-Training data (RLPT), a novel training-time scaling paradigm for optimizing Large Language Models (LLMs).\n- Unlike previous scaling approaches that primarily rely on supervised learning, RLPT leverages reinforcement learning to enable the policy to autonomously explore meaningful trajectories from pre-training data.\n- RLPT eliminates the dependence on human annotation by deriving reward signals directly from pre-training data, using a next-segment reasoning objective.\n- Experiments across various benchmarks demonstrate that RLPT yields substantial improvements in both general-domain and mathematical reasoning tasks, showcasing consistent gains across multiple models.\n- The results indicate that RLPT exhibits favorable scaling properties, suggesting potential for further performance gains with increased computational resources.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "Do You Need Proprioceptive States in Visuomotor Policies?",
+        "authors": "Yushen Liang, Yufeng Liu, Di Zhang, Wenbo Lu, Juntu Zhao",
+        "link": "https://arxiv.org/abs/2509.18644",
+        "github_repo": null,
+        "summary": "- This paper introduces State-free Policies, a novel approach to visuomotor control that removes the reliance on proprioceptive state inputs, leading to improved spatial generalization.\n- State-free Policies predict actions based solely on visual observations in the relative end-effector action space, enabling the model to learn more robust and generalizable representations.\n- Empirical results across various real-world robotic manipulation tasks (such as pick-and-place and shirt-folding) demonstrate that State-free Policies significantly outperform state-based policies in terms of spatial generalization, achieving an average success rate improvement from 0% to 85% in height generalization and from 6% to 64% in horizontal generalization.\n- The proposed approach also shows advantages in data efficiency and cross-embodiment adaptation, making it more practical for real-world deployment.\n- The authors demonstrate the importance of 'full task observation' with dual wide-angle wrist cameras as a key factor enabling the success of State-free Policies.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and\n  Training Recipe",
+        "authors": "Wenshuo Ma, Fuwei Huang, Chongyi Wang, Zefan Wang, Tianyu Yu",
+        "link": "https://arxiv.org/abs/2509.18154",
+        "github_repo": "https://github.com/OpenBMB/MiniCPM-V",
+        "summary": "MiniCPM-V 4.5 is an 8B parameter multimodal large language model that prioritizes efficiency.  The model uses a unified 3D-Resampler architecture for compact image and video encoding, a unified learning paradigm for document knowledge and text recognition, and a hybrid reinforcement learning strategy for improved reasoning.  Experiments show MiniCPM-V 4.5 outperforms existing models such as GPT-4 and Qwen2.5-VL 72B in several benchmarks, achieving state-of-the-art results on VideoMME with significantly reduced memory and inference time. The model is open-sourced on Github.",
+        "classification": [
+            "Multimodal"
+        ],
+        "github_urls": [
+            "https://github.com/OpenBMB/MiniCPM-V"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "MAPO: Mixed Advantage Policy Optimization",
+        "authors": "Xuankun Rong, Jian Liang, Yiyang Fang, Quan Zhang, Wenke Huang",
+        "link": "https://arxiv.org/abs/2509.18849",
+        "github_repo": null,
+        "summary": "- This paper introduces a novel reinforcement learning strategy called Mixed Advantage Policy Optimization (MAPO) for improving the reasoning capabilities of foundation models.\n- MAPO addresses the limitations of existing Group Relative Policy Optimization (GRPO) methods by introducing a dynamic advantage function that accounts for the varying certainty of different trajectories.\n- The core idea is to use trajectory certainty to adaptively reweight the advantage function and mitigate the issues of advantage reversion and advantage mirroring.\n- Experimental results on multiple datasets show that MAPO outperforms existing GRPO variants in terms of accuracy and stability, achieving superior performance on both in-domain and out-of-domain reasoning tasks.\n- The authors provide a theoretical analysis to explain how MAPO improves the optimization process and show the proposed method does not require additional hyperparameters.",
+        "classification": [
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "VolSplat: Rethinking Feed-Forward 3D Gaussian Splatting with\n  Voxel-Aligned Prediction",
+        "authors": "Haoxiao Wang, Hengyu Liu, Zeyu Zhang, Yeqing Chen, Weijie Wang",
+        "link": "https://arxiv.org/abs/2509.19297",
+        "github_repo": "https://github.com/ziplab/VolSplat",
+        "summary": "- This paper introduces VolSplat, a novel multi-view feed-forward paradigm that replaces pixel-aligned Gaussian prediction with voxel-aligned Gaussians for 3D reconstruction.\n- VolSplat directly predicts Gaussians from a predicted 3D voxel grid, overcoming limitations of pixel alignment such as view bias and alignment errors.\n- The model employs a sparse 3D decoder (3D U-Net) to refine 3D features and predict Gaussian parameters.\n- Experiments on RealEstate10K and ScanNet demonstrate that VolSplat achieves state-of-the-art performance, producing more plausible and view-consistent reconstructions compared to existing methods.\n- VolSplat offers adaptive control over Gaussian density based on scene complexity, leading to more faithful Gaussian point clouds and improved geometric consistency.",
+        "classification": [
+            "Image-to-3D"
+        ],
+        "github_urls": [
+            "https://github.com/ziplab/VolSplat"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "Hyper-Bagel: A Unified Acceleration Framework for Multimodal\n  Understanding and Generation",
+        "authors": "Jianbin Zheng, Huafeng Kuang, Manlin Zhang, Xin Xia, Yanzuo Lu",
+        "link": "https://arxiv.org/abs/2509.18824",
+        "github_repo": null,
+        "summary": "- The paper introduces Hyper-Bagel, a unified acceleration framework designed to enhance both multimodal understanding and generation tasks.\n- The framework employs a divide-and-conquer strategy, using speculative decoding for next-token prediction and a multi-stage distillation process for diffusion denoising.\n- Hyper-Bagel achieves over a 2x speedup in multimodal understanding and significant speedups in text-to-image generation (16.67x) and image editing (22x), while maintaining high-quality outputs.\n- A highly efficient 1-NFE model is also presented, enabling near real-time interactive editing and generation.\n- The model is trained using a combination of advanced distillation techniques and human feedback learning, resulting in seamless and instantaneous multimodal interactions.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Image",
+            "Image-to-Text"
+        ],
+        "github_urls": [
+            "https://hyper-bagel.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "Lyra: Generative 3D Scene Reconstruction via Video Diffusion Model\n  Self-Distillation",
+        "authors": "Yifeng Jiang, Jiahui Huang, Jiawei Ren, Tianchang Shen, Sherwin Bahmani",
+        "link": "https://arxiv.org/abs/2509.19296",
+        "github_repo": null,
+        "summary": " - The paper introduces Lyra, a novel generative 3D scene reconstruction method that leverages self-distillation from a pre-trained camera-controlled video diffusion model. This approach eliminates the need for real-world multi-view data during training.\n- The Lyra model architecture incorporates a 3D Gaussian Splatting (3DGS) decoder, which is trained using a self-distillation framework where the output of a pre-trained RGB decoder (teacher) supervises the 3DGS decoder (student). This allows for purely synthetic data training.\n- The proposed method achieves state-of-the-art performance in both static and dynamic 3D scene generation, outperforming existing methods on standard benchmarks like RealEstate10K, DL3DV, and Tanks-and-Temples.\n- The paper demonstrates that Lyra can generate high-quality 3D scenes from either a single image or a video input in real-time, offering interactive control over both time and viewpoint.\n- The model's generated 3D scenes are shown to be suitable for downstream applications such as robot simulation, highlighting its potential for applications in robotics and other physically interactive AI domains.",
+        "classification": [
+            "Image-to-3D",
+            "Text-to-3D",
+            "Video-Text-to-Text",
+            "Video-Text-to-Text",
+            "Robotics"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "What Characterizes Effective Reasoning? Revisiting Length, Review, and\n  Structure of CoT",
+        "authors": "Anthony Hartshorn, Parag Jain, Cheng Zhang, Julia Kempe, Yunzhen Feng",
+        "link": "https://arxiv.org/abs/2509.19284",
+        "github_repo": null,
+        "summary": "- This paper introduces the Failed-Step Fraction (FSF), a novel metric for evaluating the effectiveness of chain-of-thought (CoT) reasoning in large language models (LLMs).\n- The study demonstrates that FSF consistently outperforms existing metrics like length and review ratio in predicting the accuracy of LLM reasoning.\n- Two causal experiments, including test-time selection and controlled CoT editing, are conducted to validate the findings, providing compelling evidence that FSF is a key factor influencing reasoning performance.\n- The results suggest that indiscriminately generating long CoTs is not always beneficial and that a focus on structural quality, minimizing failed reasoning branches, is a more effective approach to enhancing reasoning accuracy.\n- The study provides a valuable contribution to the field of LLM reasoning by advancing our understanding of effective reasoning strategies and offering a new perspective on test-time scaling.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "Large Language Models Discriminate Against Speakers of German Dialects",
+        "authors": "Katharina von der Wense, Anne Lauscher, Valentin Hofmann, Carolin Holtermann, Minh Duc Bui",
+        "link": "https://arxiv.org/abs/2509.13835",
+        "github_repo": null,
+        "summary": "This paper investigates whether Large Language Models (LLMs) exhibit biases against speakers of German dialects.  The study uses two tasks: an association task and a decision task to assess dialect naming bias and dialect usage bias. The results show that all evaluated LLMs exhibit significant biases, reflecting negative stereotypes.  Explicitly labeling linguistic demographics amplifies this bias more than implicit cues.  Larger LLMs exhibit stronger biases than smaller ones.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [
+            "https://github.com/UhhDS/German-Dialect-Bias"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/LeoLM/leo-hessianai-70b"
+        ],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "OpenGVL - Benchmarking Visual Temporal Progress for Data Curation",
+        "authors": "Viktor Petrenko, Igor Kulakov, Gracjan G\u00f3ral, Emilia Wi\u015bnios, Pawe\u0142 Budzianowski",
+        "link": "https://arxiv.org/abs/2509.17321",
+        "github_repo": "http://github.com/budzianowski/opengvl",
+        "summary": "- This paper introduces OpenGVL, a benchmark for evaluating the performance of Vision-Language Models (VLMs) in predicting temporal task progress, primarily focused on robotics applications.\n- OpenGVL utilizes the Generative Value Learning (GVL) approach, which leverages VLMs to predict task progress from visual observations. It offers both zero-shot and few-shot conditioning.\n- The benchmark reveals a significant performance gap between open-source and closed-source VLMs, with open-source models achieving only about 70% of the performance of their closed-source counterparts.\n- OpenGVL is designed to facilitate efficient data curation and filtering for large-scale robotics datasets. It is shown to be effective in identifying datasets with problematic aspects such as poorly defined tasks, labeling ambiguity, or out-of-distribution examples.\n- The benchmark is released publicly along with the complete codebase, facilitating community contribution and further development.",
+        "classification": [
+            "Robotics"
+        ],
+        "github_urls": [
+            "http://github.com/budzianowski/opengvl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "CAR-Flow: Condition-Aware Reparameterization Aligns Source and Target\n  for Better Flow Matching",
+        "authors": "Rui Qian, Jiasen Lu, Liangchen Song, Pengsheng Guo, Chen Chen",
+        "link": "https://arxiv.org/abs/2509.19300",
+        "github_repo": null,
+        "summary": "- This paper introduces CAR-Flow, a novel technique for improving conditional generative models by aligning the source and target distributions through condition-aware reparameterization.\n- CAR-Flow uses lightweight maps to condition either the source, target, or both distributions, which simplifies the task for the generative model and enhances learning efficiency.\n- The method is evaluated on both low-dimensional synthetic data and high-dimensional ImageNet-256 data, demonstrating improved performance and faster training in both cases.\n- Compared to the baseline model SiT-XL/2 on ImageNet-256, CAR-Flow reduces the FID score from 2.07 to 1.68 while introducing less than 0.6% additional parameters.\n- Theoretical analysis supports the proposed approach by highlighting the existence of zero-cost solutions in unrestricted reparameterization and demonstrating how the proposed constraint alleviates the issue.",
+        "classification": [
+            "Image-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel\n  View Synthesis",
+        "authors": "Dan Xu, ZipW",
+        "link": "https://arxiv.org/abs/2509.17083",
+        "github_repo": null,
+        "summary": "- HyRF is a novel scene representation that combines explicit Gaussians and neural fields for memory-efficient and high-quality novel view synthesis.\n- The model architecture consists of a compact set of explicit Gaussians storing critical high-frequency parameters and grid-based neural fields that predict remaining properties.\n- It uses a decoupled neural field architecture, separately modeling geometry and view-dependent color, enhancing representational capacity.\n- A hybrid rendering scheme composites Gaussian splatting with a neural field-predicted background, addressing limitations in distant scene representation.\n- Experimental results show that HyRF achieves state-of-the-art rendering quality, reduces model size by over 20x compared to 3DGS while maintaining real-time performance.",
+        "classification": [
+            "Computer Vision"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "Zero-Shot Multi-Spectral Learning: Reimagining a Generalist Multimodal\n  Gemini 2.5 Model for Remote Sensing Applications",
+        "authors": "Genady Beryozkin, Maxim Neumann, Dahun Kim, Yotam Gigi, Ganesh Mallya",
+        "link": "https://arxiv.org/abs/2509.19087",
+        "github_repo": null,
+        "summary": "- This paper proposes a training-free approach for incorporating multi-spectral data into generalist multimodal models for remote sensing applications.\n- The method leverages the model's understanding of visual space and injects domain-specific information as instructions, enabling zero-shot performance gains.\n- Using the Gemini 2.5 model, the approach achieves strong zero-shot performance improvements on popular remote sensing benchmarks like BigEarthNet and EuroSAT for land cover and land use classification.\n- The results demonstrate the adaptability of Gemini 2.5 to new inputs without retraining, highlighting its potential for geospatial professionals.\n- The work showcases the potential of generalist multimodal models for handling non-standard inputs and specialized tasks in remote sensing.",
+        "classification": [
+            "Zero-Shot Image Classification",
+            "Multimodal"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    },
+    {
+        "title": "VIR-Bench: Evaluating Geospatial and Temporal Understanding of MLLMs via\n  Travel Video Itinerary Reconstruction",
+        "authors": "So Fukuda, Ayako Sato, Lingfang Zhang, Eiki Murata, Hao Wang",
+        "link": "https://arxiv.org/abs/2509.19002",
+        "github_repo": null,
+        "summary": "The paper introduces VIR-Bench, a new benchmark for evaluating the geospatial and temporal understanding of large multimodal language models (MLLMs) using travel video itinerary reconstruction.  VIR-Bench consists of 200 travel videos paired with annotated visiting order graphs, which are used to assess model performance on node and edge prediction tasks.  Experimental results reveal the limitations of existing MLLMs, and a prototype travel-planning agent that leverages the benchmark demonstrates the potential for improving user-facing applications.  The benchmark addresses the lack of large-scale datasets focusing on long-distance travel, thus contributing to a more comprehensive evaluation of MLLMs in realistic scenarios.  The findings highlight the challenges in handling extended spatial and temporal scales within videos, underscoring the need for more advanced geospatial-temporal reasoning capabilities in future MLLMs.",
+        "classification": [
+            "Video-Text-to-Text"
+        ],
+        "github_urls": [
+            "https://github.com/nlp-waseda/VIR-Bench"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-24"
+    }
+]

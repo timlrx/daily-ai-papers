@@ -1,0 +1,167 @@
+[
+    {
+        "title": "Video models are zero-shot learners and reasoners",
+        "authors": "rgeirhos, kswersky, nmatares, yuxuanli, ThaddaeusWiedemer",
+        "link": "https://arxiv.org/abs/2509.20328",
+        "github_repo": null,
+        "summary": "This paper introduces Veo 3, a generative video model that demonstrates emergent zero-shot capabilities in solving a wide range of vision tasks.  The model's performance is evaluated across 62 qualitative and 7 quantitative tasks, showcasing abilities in perception, modeling, manipulation, and reasoning.  Veo 3 shows significant improvement over its predecessor, Veo 2, highlighting the rapid advancement in video model capabilities.  The minimalist approach of prompting Veo 3 mirrors the transformation of natural language processing, suggesting a potential shift towards unified, general-purpose foundation models for machine vision.  The results indicate that video models are on a path to becoming unifying, generalist vision foundation models.",
+        "classification": [
+            "Video-Text-to-Text",
+            "Zero-Shot Classification",
+            "Computer Vision"
+        ],
+        "github_urls": [
+            "https://video-zero-shot.github.io/"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "SIM-CoT: Supervised Implicit Chain-of-Thought",
+        "authors": "Yuhang Cao, Xiaoyi Dong, Yuhang Zang, LiuXR, Wiselnn",
+        "link": "https://arxiv.org/abs/2509.20317",
+        "github_repo": null,
+        "summary": "- This paper introduces SIM-CoT, a novel training module designed to enhance implicit Chain-of-Thought (CoT) reasoning in Large Language Models (LLMs).\n- SIM-CoT addresses the latent instability issue in existing implicit CoT methods by introducing step-level supervision, which stabilizes the training process and enriches the latent reasoning space.\n- The method employs an auxiliary decoder during training to align each implicit token with its corresponding explicit reasoning step, which is removed during inference to maintain efficiency.\n- Experimental results demonstrate that SIM-CoT significantly improves both the in-domain accuracy and out-of-domain stability of various implicit CoT methods, outperforming existing baselines on various benchmarks.\n- SIM-CoT exhibits strong scalability, surpassing the explicit CoT baseline on certain models while maintaining greater token efficiency.",
+        "classification": [
+            "Question Answering"
+        ],
+        "github_urls": [
+            "https://github.com/InternLM/SIM-COT"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "Advancing Speech Understanding in Speech-Aware Language Models with GRPO",
+        "authors": "Avihu, rhoory, NimrodShabtay1986, hagaia, avishai-elmakies",
+        "link": "https://arxiv.org/abs/2509.16990",
+        "github_repo": null,
+        "summary": "- This paper introduces a Group Relative Policy Optimization (GRPO)-based method for training Speech-Aware Large Language Models (SALLMs) on open-format speech understanding tasks.\n- The proposed method uses BLEU as the reward signal to optimize SALLMs and empirically surpasses standard supervised fine-tuning (SFT) across several key metrics on both Spoken Question Answering (SQA) and Automatic Speech Translation (AST).\n- The study explores the potential of incorporating off-policy samples within GRPO to further enhance performance.\n- Experiments demonstrate that the proposed GRPO approach outperforms SFT, achieving significant improvements in BLEU scores on both SQA and AST tasks.\n- The paper analyzes the effectiveness of different reward functions and explores mixed-policy GRPO which incorporates off-policy samples for improved learning.",
+        "classification": [
+            "Automatic Speech Recognition",
+            "Translation",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "LLMs4All: A Review on Large Language Models for Research and\n  Applications in Academic Disciplines",
+        "authors": "Yanfang, lalor, Sweson, ZehongWang, mtybilly",
+        "link": "https://arxiv.org/abs/2509.19580",
+        "github_repo": null,
+        "summary": "This paper reviews the applications of large language models (LLMs) across multiple academic disciplines, including arts, letters, and law; economics and business; and science and engineering.  It discusses the integration of LLMs into existing research workflows and practices, highlighting key observations and insights. The paper also addresses the limitations of LLMs and the challenges for future research.  The authors find that while LLMs show promise across various disciplines, there are still challenges regarding robustness, accuracy, and ethical considerations.  Overall, the review provides useful guidance for researchers and practitioners who are interested in exploiting LLMs to advance their work in diverse real-world applications.",
+        "classification": [
+            "Natural Language Processing"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "EditVerse: Unifying Image and Video Editing and Generation with\n  In-Context Learning",
+        "authors": "Tianyu Wang, sooyek, Shaldon, CaiYuanhao, juxuan27",
+        "link": "https://arxiv.org/abs/2509.20360",
+        "github_repo": null,
+        "summary": "- The paper introduces EditVerse, a unified framework for image and video generation and editing, leveraging a transformer architecture with self-attention for robust in-context learning.\n- EditVerse represents all modalities (text, image, video) as a unified token sequence, enabling cross-modal knowledge transfer and flexible handling of arbitrary resolutions and durations.\n- To address the scarcity of video editing data, the authors design a scalable data pipeline, curating 232K video editing samples and combining them with large-scale image and video datasets for training.\n- EditVerse achieves state-of-the-art performance on the introduced benchmark, EditVerseBench, and surpasses existing open-source and commercial models.\n- The model demonstrates emergent editing and generation abilities across modalities, showcasing its ability to perform tasks beyond those explicitly seen during training.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Video",
+            "Text-to-Video",
+            "Video-Text-to-Text",
+            "Image-to-Image",
+            "Text-to-Image"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "EmbeddingGemma: Powerful and Lightweight Text Representations",
+        "authors": "Marksherwood, osanseviero, ssmoot, SindhuRaghuram97, hschechter",
+        "link": "https://arxiv.org/abs/2509.20354",
+        "github_repo": null,
+        "summary": "- The paper introduces EmbeddingGemma, a lightweight text embedding model based on the Gemma 3 language model family.\n- EmbeddingGemma uses an encoder-decoder architecture and incorporates several techniques, including encoder-decoder initialization, geometric embedding distillation, a spread-out regularizer, and model souping (merging checkpoints from varied, optimized mixtures), to improve model robustness and expressiveness.\n- Evaluated on the Massive Text Embedding Benchmark (MTEB), EmbeddingGemma (300M parameters) achieves state-of-the-art results, outperforming existing models with fewer than 500M parameters, and providing performance comparable to models double its size.\n- The model demonstrates exceptional performance even when model weights are quantized or embedding outputs are truncated, making it well-suited for low-latency, high-throughput use cases.\n- The authors release EmbeddingGemma to the research community.",
+        "classification": [
+            "Natural Language Processing",
+            "Sentence Similarity",
+            "Feature Extraction"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [
+            "https://ai.google.dev/gemma/docs/embeddinggemma"
+        ],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "PhysCtrl: Generative Physics for Controllable and Physics-Grounded Video\n  Generation",
+        "authors": "Yiming Huang, thomagram, frankzydou, MorPhLingXD, chenwang",
+        "link": "https://arxiv.org/abs/2509.20358",
+        "github_repo": null,
+        "summary": "- PhysCtrl is a novel framework for physics-grounded image-to-video generation with physical material and force control. It uses a generative physics network that learns the distribution of physical dynamics across four materials (elastic, sand, plasticine, and rigid) via a diffusion model.\n- The model represents physical dynamics as 3D point trajectories and is trained on a large-scale synthetic dataset of 550K animations generated by physics simulators.\n- PhysCtrl incorporates a novel spatiotemporal attention block that emulates particle interactions and incorporates physics-based constraints during training to enforce physical plausibility.\n- Experimental results demonstrate that PhysCtrl generates realistic, physics-grounded motion trajectories, leading to high-fidelity, controllable videos that outperform existing methods in both visual quality and physical plausibility.\n- The model's architecture consists of a diffusion-based model that is conditioned on physics parameters and applied forces, enabling control over physical parameters and external forces during video generation.",
+        "classification": [
+            "Image-to-Video",
+            "Text-to-Video"
+        ],
+        "github_urls": [
+            "https://cwchenwang.github.io/physctrl"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "Logics-Parsing Technical Report",
+        "authors": "Fan Yang, Shuzhao Li, Xiangyang Chen, ZjuCv, xiuwenzhu",
+        "link": "https://arxiv.org/abs/2509.19760",
+        "github_repo": "https://github.com/alibaba/Logics-Parsing",
+        "summary": "- This paper introduces Logics-Parsing, a novel end-to-end large vision-language model (LVLM) for layout-aware document parsing that incorporates reinforcement learning.\n- The model architecture consists of a two-stage training process: supervised fine-tuning (SFT) followed by layout-centric reinforcement learning (LC-RL) using a multi-component reward function that evaluates text accuracy, layout precision, and logical reading order.\n- The LogicsParsingBench, a new benchmark dataset with 1078 pages, is introduced to rigorously evaluate the model's performance, focusing on complex layouts and diverse document types.\n- Experiments on LogicsParsingBench demonstrate that Logics-Parsing achieves state-of-the-art (SOTA) performance across various metrics compared to existing methods, particularly excelling in complex document scenarios with intricate layouts and diverse content types.\n- The approach showcases the effectiveness of combining SFT and RL for layout-aware document parsing, leading to improved accuracy and efficiency.",
+        "classification": [
+            "Multimodal",
+            "Image-to-Text",
+            "Document Question Answering",
+            "Reinforcement Learning"
+        ],
+        "github_urls": [
+            "https://github.com/alibaba/Logics-Parsing"
+        ],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "Lavida-O: Elastic Large Masked Diffusion Models for Unified Multimodal\n  Understanding and Generation",
+        "authors": "Zhe Lin, xternalz, kl3141, JoshuaGu, jacklishufan",
+        "link": "https://arxiv.org/abs/2509.19244",
+        "github_repo": null,
+        "summary": " - Lavida-O is a novel unified Masked Diffusion Model (MDM) for multimodal understanding and generation, incorporating an Elastic Mixture-of-Transformers (Elastic-MoT) architecture.\n- Unlike existing multimodal MDMs, Lavida-O supports high-resolution image generation (1024px) and various tasks including image editing and object grounding.\n- Lavida-O incorporates planning and iterative self-reflection in image generation and editing tasks, improving the quality and efficiency of generation.\n- Extensive experiments demonstrate that Lavida-O achieves state-of-the-art performance on multiple benchmarks (RefCOCO, GenEval, and ImgEdit), outperforming existing autoregressive and continuous diffusion models.\n- Lavida-O introduces several efficient training and inference techniques, including token compression, universal text conditioning, and stratified sampling, for efficient scaling and high-quality generation.",
+        "classification": [
+            "Multimodal",
+            "Text-to-Image",
+            "Image-to-Text",
+            "Image-to-Image",
+            "Image-to-Video",
+            "Text-to-Video"
+        ],
+        "github_urls": [],
+        "huggingface_urls": [],
+        "date": "2025-09-25"
+    },
+    {
+        "title": "On the Use of Agentic Coding: An Empirical Study of Pull Requests on\n  GitHub",
+        "authors": "Hajimu Iida, Brittany Reid, Yutaro Kashiwa, Miku Watanabe, hao-li",
+        "link": "https://arxiv.org/abs/2509.14745",
+        "github_repo": null,
+        "summary": "- This paper presents an empirical study on the use of agentic coding tools for generating pull requests on GitHub, focusing on Claude Code.\n- The study analyzes 567 pull requests generated by Claude Code across 157 open-source projects to investigate the acceptance rate, revision frequency, and reasons for rejection.\n- Results show that 83.8% of agentic pull requests are accepted, with 54.9% merged without modifications;  when revisions are required, they primarily address bug fixes, documentation updates, and code style improvements.\n- The findings suggest that agentic coding is largely acceptable, but human oversight is still essential for maintaining code quality and project standards.\n- The authors propose future research directions focusing on quantifying the socio-technical costs of building trust in AI-generated code and developing PR-centric benchmarks.",
+        "classification": [
+            "Natural Language Processing",
+            "Text Classification"
+        ],
+        "github_urls": [
+            "https://github.com/mmikuu/OnTheUseOfAgenticCoding"
+        ],
+        "huggingface_urls": [
+            "https://huggingface.co/google/flan-t5-xxl"
+        ],
+        "date": "2025-09-25"
+    }
+]
